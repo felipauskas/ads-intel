@@ -24,3 +24,23 @@ def test_diff_empty_old_is_all_new():
 def test_diff_no_changes():
     d = diff_snapshots(NEW, NEW)
     assert d == {"new": [], "ended": [], "changed": []}
+
+
+def test_diff_revived_ad_is_new_not_changed():
+    """An ad flipping ended -> active is `new`, never `changed`; a status that
+    differs only by case/whitespace is not a change at all."""
+    old = {"ads": {"R1": {"id": "R1", "status": "ended", "creative_text": "back again"},
+                   "Q1": {"id": "Q1", "status": "active", "creative_text": "steady"}}}
+    new = {"ads": {"R1": {"id": "R1", "status": "active", "creative_text": "back again"},
+                   "Q1": {"id": "Q1", "status": "Active ", "creative_text": "steady"}}}
+    d = diff_snapshots(old, new)
+    assert [a["id"] for a in d["new"]] == ["R1"]
+    assert d["changed"] == []
+    assert d["ended"] == []
+
+
+def test_diff_all_ads_ended():
+    """Every ad present in old and absent from new is reported as ended."""
+    d = diff_snapshots(OLD, {"ads": {}})
+    assert sorted(a["id"] for a in d["ended"]) == ["A1", "A2"]
+    assert d["new"] == [] and d["changed"] == []

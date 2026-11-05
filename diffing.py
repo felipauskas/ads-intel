@@ -8,15 +8,25 @@ which ads started or stopped running, not merely which ids appeared.
 _ENDED_STATUSES = {"ended", "inactive", "stopped"}
 
 
+def _norm_status(ad: dict) -> str:
+    return str(ad.get("status") or "").strip().lower()
+
+
 def _is_ended(ad: dict) -> bool:
-    return str(ad.get("status") or "").strip().lower() in _ENDED_STATUSES
+    return _norm_status(ad) in _ENDED_STATUSES
 
 
 def _sig(ad: dict) -> tuple:
-    return (ad.get("status"), ad.get("creative_text"))
+    return (_norm_status(ad), ad.get("creative_text"))
 
 
 def diff_snapshots(old: dict, new: dict) -> dict:
+    """Classify two snapshots into `new`, `ended` and `changed` buckets.
+
+    Status strings are compared case- and whitespace-insensitively. An id absent
+    from the new snapshot is reported as `ended`, so callers must pass complete
+    listings — a partial fetch will produce false `ended` reports.
+    """
     old_ads = old.get("ads") or {}
     new_ads = new.get("ads") or {}
 
