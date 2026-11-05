@@ -34,13 +34,15 @@ def _summary(ad: dict) -> dict:
 
 
 def ad_search(args, **kwargs):
-    query = args.get("query") or ""
+    query = str(args.get("query") or "").strip()
+    if not query:
+        return json.dumps({"error": "query required"})
     try:
-        ads = sources.fetch_ads(
-            query,
-            limit=int(args.get("limit", 20)),
-            dispatch=_dispatch,
-        )
+        limit = int(args.get("limit", 20))
+    except (TypeError, ValueError):
+        return json.dumps({"error": "invalid limit"})
+    try:
+        ads = sources.fetch_ads(query, limit=limit, dispatch=_dispatch)
         return json.dumps({"count": len(ads), "ads": ads}, ensure_ascii=False)
     except Exception as exc:
         logger.warning("ad_search failed for %r: %s", query, exc)
@@ -48,19 +50,32 @@ def ad_search(args, **kwargs):
 
 
 def ad_watch(args, **kwargs):
-    action = (args.get("action") or "").strip()
-    query = args.get("query", "")
-    if action == "add":
-        if not str(query).strip():
-            return json.dumps({"error": "query required"})
-        items = store.watch_add(query)
-    elif action == "remove":
-        items = store.watch_remove(query)
-    elif action == "list":
-        items = store.watch_list()
-    else:
-        return json.dumps({"error": f"unknown action: {action}"})
-    return json.dumps({"action": action, "watchlist": items}, ensure_ascii=False)
+    try:
+        action = (args.get("action") or "").strip()
+        query = args.get("query", "")
+        if action == "add":
+            if not str(query).strip():
+                return json.dumps({"error": "query required"})
+            items = store.watch_add(query)
+        elif action == "remove":
+            items = store.watch_remove(query)
+        elif action == "list":
+            items = store.watch_list()
+        else:
+            return json.dumps({"error": f"unknown action: {action}"})
+        return json.dumps(
+            {"action": action, "watchlist": items}, ensure_ascii=False
+        )
+    except Exception as exc:
+        logger.warning("ad_watch failed for %r: %s", args, exc)
+        return json.dumps({"error": f"watch_failed: {exc}"}, ensure_ascii=False)
+
+
+def _prior_ads(query: str) -> dict:
+    try:
+        return (store.load_snapshot(query) or {}).get("ads") or {}
+    except Exception:
+        return {}
 
 
 def ad_check(args, **kwargs):
@@ -68,6 +83,24 @@ def ad_check(args, **kwargs):
     for query in store.watch_list():
         try:
             ads = sources.fetch_ads(query, dispatch=_dispatch)
+        except Exception as exc:
+            logger.warning("ad_check fetch failed for %r: %s", query, exc)
+            if _prior_ads(query):
+                results.append(
+                    {"query": query, "skipped": True, "reason": "fetch_empty"}
+                )
+            else:
+                results.append({"query": query, "error": str(exc)})
+            continue
+
+        if not ads and _prior_ads(query):
+            # A blank page must not be read as "every ad ended".
+            results.append(
+                {"query": query, "skipped": True, "reason": "fetch_empty"}
+            )
+            continue
+
+        try:
             by_id = {ad["id"]: ad for ad in ads}
             diff = diffing.diff_snapshots(store.load_snapshot(query), {"ads": by_id})
             store.save_snapshot(query, {"ads": by_id})
