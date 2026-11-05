@@ -14,9 +14,26 @@ No network code lives here: fetching is delegated to the host's
 from __future__ import annotations
 
 import re
-from urllib.parse import quote_plus
 
 _LIBRARY_BASE = "https://www.facebook.com/ads/library/"
+
+_UNRESERVED = frozenset(
+    "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789-_.~"
+)
+
+
+def _quote_plus(text: str) -> str:
+    """Percent-encode like a query component, stdlib-free of network imports."""
+    parts = []
+    for byte in str(text).encode("utf-8"):
+        char = chr(byte)
+        if char in _UNRESERVED:
+            parts.append(char)
+        elif char == " ":
+            parts.append("+")
+        else:
+            parts.append(f"%{byte:02X}")
+    return "".join(parts)
 
 _STATUS_RE = re.compile(r"^(Active|Inactive)$")
 _LIBRARY_ID_RE = re.compile(r"^Library ID:\s*(\d+)$")
@@ -53,7 +70,7 @@ def build_url(query: str, country: str = "US") -> str:
     """Public ad-library search URL for ``query``."""
     return (
         f"{_LIBRARY_BASE}?active_status=all&ad_type=all&country={country}"
-        f"&q={quote_plus(query)}&media_type=all&search_type=keyword_unordered"
+        f"&q={_quote_plus(query)}&media_type=all&search_type=keyword_unordered"
     )
 
 
