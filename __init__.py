@@ -10,6 +10,7 @@ def register(ctx):
     # where a relative import at module level raises ImportError.
     from . import schemas, tools
 
+    tools.set_ctx(ctx)
     ctx.register_tool(name="ad_search", toolset="ads-intel",
                       schema=schemas.AD_SEARCH, handler=tools.ad_search)
     ctx.register_tool(name="ad_watch", toolset="ads-intel",
