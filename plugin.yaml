@@ -1,0 +1,8 @@
+name: ads-intel
+version: "0.1.0"
+description: Search public ad libraries and watch competitors for new/ended ads
+provides_tools:
+  - ad_search
+  - ad_watch
+  - ad_check
+author: Felipe Leon
