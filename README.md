@@ -1,0 +1,63 @@
+# ads-intel
+
+Free, local, zero-API-key ad-library intelligence for Hermes. `ads-intel` searches the public Meta Ad Library and watches competitors for new, ended and changed ads through three tools — `ad_search`, `ad_watch` and `ad_check` — using only the Python standard library and Hermes' built-in `web_extract`; no API keys, accounts, cookies or third-party services, and nothing leaves your machine except the read-only library request itself.
+
+## Install
+
+```bash
+hermes plugins install felipauskas/ads-intel
+hermes plugins enable ads-intel
+```
+
+## Tools
+
+### `ad_search(query, limit)`
+
+Find the ads a brand, advertiser or keyword is running. `query` is required; `limit` defaults to 20.
+
+> "Search the Meta Ad Library for ads from Notion and show me the first 10."
+
+Returns `{count, ads}`, where each ad carries `id`, `page_name`, `status` (`active`/`ended`), `first_seen`, `last_seen`, `creative_text` and `library_url`.
+
+### `ad_watch(action, query)`
+
+Manage the local watchlist: `add` a query, `remove` a query, or `list` saved queries. `query` is required for `add` and `remove`.
+
+> "Add 'linear.app' to my ad watchlist."
+> "What am I watching?"
+> "Remove 'linear.app' from my ad watchlist."
+
+### `ad_check()`
+
+Fetch every watchlist entry, diff it against the last saved snapshot, and report what changed.
+
+> "Check my ad watchlist and tell me what's new."
+
+Diff semantics:
+
+- **new** — an ad id appears that was not in the prior snapshot, or an ad went `ended` → `active`.
+- **ended** — an ad id is no longer present, or an ad went `active` → `ended`.
+- **changed** — an ad kept its id but its creative text or status string changed.
+- **baseline** — the first `ad_check()` after adding a watch has no prior snapshot, so every ad it finds reports as `new`. That run seeds the baseline; diffs start on the next run.
+- **fail-safe** — if a fetch fails or returns an empty page while a snapshot exists, that query is reported as `skipped` (`fetch_empty`) and the diff is skipped. The snapshot is never overwritten with an empty result, so a transient failure cannot be mistaken for "every ad ended".
+
+## Disclosures
+
+- **Network: yes.** When a tool runs, the plugin asks Hermes to fetch exactly one URL per query: `https://www.facebook.com/ads/library/...`, a read-only GET performed by Hermes' built-in `web_extract`. No other hosts are contacted, and the plugin makes no requests while idle.
+- **Filesystem:** writes only inside the plugin data directory — `watchlist.json` and `snapshots/<sha1>.json` (a truncated SHA-1 of the query is the filename). It reads nothing outside that directory, runs no shell commands, starts no background processes, and needs no credentials, environment variables or secrets.
+- **Data stored locally:** watchlist queries and ad snapshots (id, page name, status, dates, creative text). Nothing is sent anywhere.
+- **ToS posture:** public ad library only — no login, no cookies, no logged-in scraping. Polite by design: `ad_check` issues one request per watchlist entry, sequentially.
+
+## Keyword matching
+
+Queries are keyword searches, not brand filters: the library returns any page whose ads mention the term, so a watch acts as a keyword watch rather than a strict brand watch.
+
+## Limitations
+
+- Meta may change the ad-library page markup; the parser lives in a single file (`sources.py`) and would need updating.
+- Large result pages are truncated by the fetcher (`char_limit=45000`), so very broad queries may return a partial set.
+- No pagination in v1: one page of results per query, and `ad_check` diffs the first 20 results per watch.
+
+## License
+
+MIT — see [LICENSE](LICENSE).
