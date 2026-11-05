@@ -30,10 +30,44 @@ def test_snapshot_roundtrip(data_dir):
     store.save_snapshot("nike", snap)
     assert store.load_snapshot("nike") == snap
     assert store.load_snapshot("never") == {"ads": {}}
-    assert (data_dir / "snapshots" / "nike.json").exists()
+    files = list((data_dir / "snapshots").glob("*.json"))
+    assert len(files) == 1
+    # The query is kept inside the payload for debugging.
+    assert json.loads(files[0].read_text())["query"] == "nike"
 
 
-def test_snapshot_query_with_slash(tmp_path):
+def test_snapshot_filenames_are_hashed_and_collision_free(tmp_path):
     store.save_snapshot("nike/air", {"ads": {}})
-    assert (tmp_path / "snapshots" / "nike_air.json").exists()
+    store.save_snapshot("nike_air", {"ads": {}})
+    files = sorted((tmp_path / "snapshots").glob("*.json"))
+    assert len(files) == 2
     assert store.load_snapshot("nike/air") == {"ads": {}}
+    assert store.load_snapshot("nike_air") == {"ads": {}}
+
+
+def test_snapshot_long_query_roundtrips(tmp_path):
+    query = "n" * 300
+    assert len(query) == 300
+    snap = {"ads": {"1": {"id": "1"}}}
+    store.save_snapshot(query, snap)
+    assert store.load_snapshot(query) == snap
+    names = [p.name for p in (tmp_path / "snapshots").glob("*.json")]
+    assert len(names) == 1
+    assert len(names[0]) <= 21  # 16 hex chars + ".json"
+
+
+def test_consecutive_saves_both_load(tmp_path):
+    store.save_snapshot("nike", {"ads": {"1": {"id": "1"}}})
+    store.save_snapshot("nike", {"ads": {"2": {"id": "2"}}})
+    assert store.load_snapshot("nike") == {"ads": {"2": {"id": "2"}}}
+
+
+def test_watch_remove_absent_does_not_rewrite(monkeypatch):
+    store.watch_add("nike")
+    writes = []
+    real = store._write_json
+    monkeypatch.setattr(
+        store, "_write_json", lambda p, d: (writes.append(p), real(p, d))[1]
+    )
+    assert store.watch_remove("absent") == ["nike"]
+    assert writes == []
