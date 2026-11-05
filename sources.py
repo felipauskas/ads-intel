@@ -13,9 +13,18 @@ No network code lives here: fetching is delegated to the host's
 
 from __future__ import annotations
 
+import json
 import re
 
 _LIBRARY_BASE = "https://www.facebook.com/ads/library/"
+
+# The ad-library page renders to ~49k chars of markdown; the host's default
+# 15k truncation silently drops most cards.
+_CHAR_LIMIT = 45000
+
+
+class FetchError(RuntimeError):
+    """The host fetch failed or returned no usable content."""
 
 _UNRESERVED = frozenset(
     "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789-_.~"
@@ -193,6 +202,8 @@ def _parse_block(lines: list[str]) -> dict | None:
 
 def parse_library_markdown(md: str) -> list[dict]:
     """Parse a rendered Meta Ad Library results page into ad dicts."""
+    if not md or not isinstance(md, str):
+        return []
     records = [rec for rec in (_parse_block(b) for b in _card_blocks(md)) if rec]
 
     # Recover cards cut in two by a capture/separator boundary: a status block
@@ -221,14 +232,61 @@ def parse_library_markdown(md: str) -> list[dict]:
     return ads
 
 
+def _content_from_payload(payload: dict) -> str:
+    """Extract rendered markdown from a host ``web_extract`` result object.
+
+    Raises :class:`FetchError` for tool-level errors, per-result errors and
+    empty content so callers never mistake a failed fetch for "no ads".
+    """
+    error = payload.get("error")
+    if error:
+        raise FetchError(str(error))
+
+    results = payload.get("results")
+    if isinstance(results, list) and results:
+        first = results[0] if isinstance(results[0], dict) else {}
+        result_error = first.get("error")
+        if result_error:
+            raise FetchError(str(result_error))
+        content = first.get("content") or first.get("markdown")
+    elif results == []:
+        raise FetchError("empty results")
+    else:
+        # Tolerate a bare dict carrying the content directly.
+        content = payload.get("content") or payload.get("markdown")
+
+    if not content or not isinstance(content, str) or not content.strip():
+        raise FetchError("empty content")
+    return content
+
+
 def fetch_ads(query: str, limit: int = 20, dispatch=None) -> list[dict]:
-    """Fetch and parse the ad library for ``query`` via host ``web_extract``."""
-    if dispatch is None:
-        return []
-    result = dispatch("web_extract", {"urls": [build_url(query)]})
+    """Fetch and parse the ad library for ``query`` via host ``web_extract``.
+
+    Returns ``[]`` only when a fetch succeeded and the page genuinely carried
+    no ads; transport/decoding failures raise :class:`FetchError`.
+    """
+    if dispatch is None or not callable(dispatch):
+        raise FetchError("web_extract unavailable")
+    result = dispatch(
+        "web_extract",
+        {"urls": [build_url(query)], "char_limit": _CHAR_LIMIT},
+    )
     if isinstance(result, dict):
-        # Tolerate a direct dict result with content from the host tool.
-        result = result.get("content") or result.get("markdown") or ""
-    if not result or not isinstance(result, str):
-        return []
-    return parse_library_markdown(result)[: max(int(limit), 0)]
+        content = _content_from_payload(result)
+    elif isinstance(result, str):
+        if not result.strip():
+            raise FetchError("empty content")
+        content = result
+        if result.lstrip().startswith("{"):
+            try:
+                decoded = json.loads(result)
+            except ValueError:
+                pass  # not JSON: treat as raw markdown
+            else:
+                if isinstance(decoded, dict):
+                    content = _content_from_payload(decoded)
+    else:
+        raise FetchError("web_extract returned no result")
+
+    return parse_library_markdown(content)[: max(int(limit), 0)]

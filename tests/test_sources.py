@@ -68,9 +68,64 @@ def test_fetch_ads_uses_dispatch_and_limit():
     assert len(ads) == 5
     assert calls[0][0] == "web_extract"
     assert calls[0][1]["urls"] == [sources.build_url("nike")]
+    # The ad-library page is ~49k chars; the host default truncates at 15k.
+    assert calls[0][1]["char_limit"] >= 45000
 
 
-def test_fetch_ads_empty_results():
+def test_fetch_ads_decodes_json_envelope():
+    text = FIXTURE.read_text()
+    envelope = json.dumps(
+        {
+            "results": [
+                {"url": "u", "title": "t", "content": text, "error": None}
+            ],
+            "has_more": False,
+        }
+    )
+    ads = sources.fetch_ads("nike", limit=40, dispatch=lambda n, a: envelope)
+    assert len(ads) == 28
+
+    # A dict result with the same shape (no JSON encoding) also decodes.
+    ads_dict = sources.fetch_ads(
+        "nike", limit=40, dispatch=lambda n, a: json.loads(envelope)
+    )
+    assert len(ads_dict) == 28
+
+
+def test_fetch_ads_envelope_result_error_raises():
+    envelope = json.dumps(
+        {"results": [{"url": "u", "content": None, "error": "blocked"}]}
+    )
+    with pytest.raises(sources.FetchError):
+        sources.fetch_ads("nike", dispatch=lambda n, a: envelope)
+
+
+def test_fetch_ads_error_payload_raises():
+    with pytest.raises(sources.FetchError):
+        sources.fetch_ads(
+            "nike", dispatch=lambda n, a: json.dumps({"error": "boom"})
+        )
+    with pytest.raises(sources.FetchError):
+        sources.fetch_ads("nike", dispatch=lambda n, a: {"error": "boom"})
+
+
+def test_fetch_ads_empty_envelope_results_raises():
+    with pytest.raises(sources.FetchError):
+        sources.fetch_ads(
+            "nike", dispatch=lambda n, a: json.dumps({"results": []})
+        )
+
+
+def test_fetch_ads_no_cards_is_empty():
     assert sources.fetch_ads("nike", dispatch=lambda n, a: "no cards here") == []
-    assert sources.fetch_ads("nike", dispatch=lambda n, a: None) == []
-    assert sources.fetch_ads("nike") == []
+
+
+def test_fetch_ads_missing_dispatch_or_result_raises():
+    with pytest.raises(sources.FetchError):
+        sources.fetch_ads("nike")
+    with pytest.raises(sources.FetchError):
+        sources.fetch_ads("nike", dispatch=lambda n, a: None)
+
+
+def test_parse_library_markdown_none_is_empty():
+    assert sources.parse_library_markdown(None) == []
