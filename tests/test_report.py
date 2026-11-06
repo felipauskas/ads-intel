@@ -1,6 +1,8 @@
 import json
 from pathlib import Path
 
+import pytest
+
 import report
 import store
 
@@ -253,3 +255,43 @@ def test_build_html_coerces_mismatched_bucket_types(tmp_path):
     empty = report.build_html("nike", {}, ["not-a-mapping"], META)  # type: ignore[arg-type]
     assert "No ads in this check." in empty
     assert "0 ads tracked" in empty
+
+
+@pytest.mark.parametrize("bad", [None, [], "str", 5])
+@pytest.mark.parametrize("bad_meta", [None, [], "meta"])
+def test_build_html_and_digest_tolerate_non_mapping_payloads(bad, bad_meta):
+    """The public builder API degrades junk to empty, never AttributeError.
+
+    ``write_report`` normalises, but ``build_html``/``build_digest`` are called
+    directly by embedders; a None/list/str diff or metadata object is a no-op,
+    not a crash.
+    """
+    ad = _ad(1)
+    document = report.build_html("nike", bad, {"1": ad}, bad_meta)
+    digest = report.build_digest("nike", bad, {"1": ad}, bad_meta)
+
+    assert "0 new / 0 ended / 0 changed" in document
+    assert 'data-ad-id="1"' in document
+    assert digest["new"] == digest["ended"] == digest["changed"] == 0
+    assert digest["total"] == 1
+    assert digest["checked_at"] is None
+    assert digest["partial"] is False
+
+
+def test_same_creative_count_clamps_numeric_extremes(tmp_path):
+    """inf/1e999 and 5000-digit counts render a safe int, never crash.
+
+    JSON ``1e999`` decodes to ``inf`` (whose ``int()`` raises OverflowError),
+    and a hand-edited snapshot can carry ``10**5000``; both must stay printable.
+    """
+    assert report._same_creative_count({"same_creative_count": float("inf")}) == 0
+    assert report._same_creative_count({"same_creative_count": 1e999}) == 0
+    assert report._same_creative_count({"same_creative_count": "1e999"}) == 0
+    assert report._same_creative_count({"same_creative_count": "junk"}) == 0
+    assert report._same_creative_count({"same_creative_count": -4}) == 0
+    assert report._same_creative_count({"same_creative_count": 10**5000}) == report._MAX_SAME_CREATIVE
+
+    ad = _ad(1, same_creative_count=10**5000)
+    html = report.build_html("nike", {"new": [ad]}, {"1": ad}, META)
+    assert f"{report._MAX_SAME_CREATIVE} use this creative" in html
+    assert len(html) < 200_000  # no 5000-digit badge

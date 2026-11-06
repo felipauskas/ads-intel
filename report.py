@@ -9,6 +9,7 @@ creative copy) goes through :func:`html.escape`.
 import html
 import json
 import logging
+import math
 from pathlib import Path
 
 try:
@@ -80,11 +81,22 @@ def _http_url(value) -> str:
     return url if url.lower().startswith(("https://", "http://")) else ""
 
 
+#: Upper bound for the render's "N ads use this creative" number. A live card
+#: never approaches it; clamping keeps a corrupt or hand-edited snapshot from
+#: emitting a 5000-digit badge (or an int too large to stringify).
+_MAX_SAME_CREATIVE = 1_000_000
+
+
 def _same_creative_count(ad: dict) -> int:
+    value = ad.get("same_creative_count") if isinstance(ad, dict) else 0
     try:
-        return max(int(ad.get("same_creative_count") or 0), 0)
-    except (TypeError, ValueError):
+        if isinstance(value, float) and not math.isfinite(value):
+            # JSON 1e999 decodes to inf; there is no honest integer for it.
+            return 0
+        count = int(value or 0)
+    except (TypeError, ValueError, OverflowError):
         return 0
+    return max(0, min(count, _MAX_SAME_CREATIVE))
 
 
 def _image_count(ad: dict) -> int:
@@ -166,6 +178,17 @@ def _render_card(ad: dict) -> str:
     )
 
 
+def _as_mapping(value) -> dict:
+    """A snapshot/diff/meta payload; anything else (None/list/str) is empty.
+
+    ``build_html`` and ``build_digest`` are public and are called directly in
+    tests and by embedders, not only through ``write_report``. Normalising here
+    means a ``None`` diff or metadata object degrades to "nothing to show"
+    rather than raising ``AttributeError`` on ``.get``.
+    """
+    return value if isinstance(value, dict) else {}
+
+
 def _as_list(value) -> list:
     """Diff buckets are lists; anything else (dict/str/int/None) is empty.
 
@@ -207,12 +230,14 @@ def _ordered_ads(diff: dict, ads_by_id: dict) -> list[dict]:
 
 def build_html(
     query: str,
-    diff: dict,
-    ads_by_id: dict,
-    meta: dict,
+    diff,
+    ads_by_id,
+    meta,
     country: str = "US",
     advertiser: str = "",
 ) -> str:
+    diff = _as_mapping(diff)
+    meta = _as_mapping(meta)
     counts = {key: len(_as_list(diff.get(key))) for key in ("new", "ended", "changed")}
     total = len(_ad_values(ads_by_id))
     checked_at = html.escape(str(meta.get("checked_at") or ""))
@@ -252,12 +277,14 @@ def build_html(
 
 def build_digest(
     query: str,
-    diff: dict,
-    ads_by_id: dict,
-    meta: dict,
+    diff,
+    ads_by_id,
+    meta,
     country: str = "US",
     advertiser: str = "",
 ) -> dict:
+    diff = _as_mapping(diff)
+    meta = _as_mapping(meta)
     digest = {
         "query": str(query),
         "country": str(country or "US"),

@@ -478,6 +478,8 @@ def _content_from_payload(payload: dict) -> str:
     Raises :class:`FetchError` for tool-level errors, per-result errors and
     empty content so callers never mistake a failed fetch for "no ads".
     """
+    if not isinstance(payload, dict):
+        raise FetchError("malformed json")
     error = payload.get("error")
     if error:
         raise FetchError(str(error))
@@ -604,6 +606,8 @@ def _ads_from_payload_list(
     whether ``limit`` itself truncated the listing. ``limit=None`` returns
     every ad and reports ``total_parsed`` unchanged.
     """
+    if not isinstance(items, list):
+        raise FetchError("malformed json")
     if not items:
         raise FetchError("empty results")
     first = items[0]
@@ -619,6 +623,27 @@ def _ads_from_payload_list(
             "unrecognised JSON array payload", cards_seen=len(items)
         )
     return ads if limit is None else ads[:limit], len(ads)
+
+
+def _looks_like_json_scalar(text: str) -> bool:
+    """True when the whole body is a bare JSON scalar (``null``, ``12345``…).
+
+    A rendered ad-library page is never a single JSON scalar, so decoding one
+    means the payload is corrupt; treating it as markdown would produce a
+    zero-ad "success" that hides the transport failure.
+    """
+    head = text[:1]
+    if not (
+        head in ('"', "-", "+")
+        or head.isdigit()
+        or text.startswith(("null", "true", "false"))
+    ):
+        return False
+    try:
+        decoded = json.loads(text)
+    except ValueError:
+        return False
+    return not isinstance(decoded, (dict, list))
 
 
 def fetch_ads_with_meta(
@@ -698,27 +723,38 @@ def fetch_ads_with_meta(
             raise FetchError("empty content")
         content = result
         stripped = result.lstrip()
-        if stripped.startswith("{") or stripped.startswith("["):
+        decoded = None
+        if stripped.startswith(("{", "[")):
             try:
                 decoded = json.loads(result)
             except ValueError:
-                pass  # not JSON (markdown can start with '['): raw content
-            else:
-                if isinstance(decoded, dict):
-                    content = _content_from_payload(decoded)
-                elif isinstance(decoded, list):
-                    ads, total = _ads_from_payload_list(decoded, lim)
-                    # With limit=None nothing was sliced off, so the listing
-                    # is whole: a JSON array carries no footer or char budget.
-                    # `total == lim` means every parsed ad was returned; only
-                    # a total beyond the limit proves the tail was sliced.
-                    return ads, {
-                        "complete": True if lim is None else total <= lim,
-                        "fetched": len(ads),
-                        "total_returned": total,
-                        "fetched_chars": 0,
-                        "char_limit": budget,
-                    }
+                if stripped.startswith("{"):
+                    # A `{`-shaped body that will not decode is a transport
+                    # failure, not an empty render. Parsing it as markdown
+                    # would silently turn corruption into a zero-ad success.
+                    raise FetchError("malformed json") from None
+                # A render can legitimately begin with a markdown link `[`.
+        if isinstance(decoded, dict):
+            content = _content_from_payload(decoded)
+        elif isinstance(decoded, list):
+            ads, total = _ads_from_payload_list(decoded, lim)
+            # With limit=None nothing was sliced off, so the listing
+            # is whole: a JSON array carries no footer or char budget.
+            # `total == lim` means every parsed ad was returned; only
+            # a total beyond the limit proves the tail was sliced.
+            return ads, {
+                "complete": True if lim is None else total <= lim,
+                "fetched": len(ads),
+                "total_returned": total,
+                "fetched_chars": 0,
+                "char_limit": budget,
+            }
+        elif decoded is not None:
+            # Any other decoded top-level value (scalar/null/bool) is a
+            # corrupt payload, never a rendered page.
+            raise FetchError("malformed json")
+        elif _looks_like_json_scalar(result):
+            raise FetchError("malformed json")
     else:
         raise FetchError("web_extract returned no result")
 

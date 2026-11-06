@@ -2,6 +2,12 @@
 
 Free, local, zero-API-key ad-library intelligence for Hermes. `ads-intel` searches the public Meta Ad Library and watches competitors for new, ended and changed ads through three tools — `ad_search`, `ad_watch` and `ad_check` — using only the Python standard library and Hermes' built-in `web_extract`; no API keys, accounts, cookies or third-party services, and nothing leaves your machine except the read-only library request itself.
 
+## Requirements
+
+- **Python 3.10+.** The source uses PEP 604 annotations (`str | None`, `dict | None`); 3.9 fails at import. The plugin runs inside Hermes's own Python, but a local checkout's test suite needs a 3.10+ interpreter.
+- **git.** Hermes installs a local checkout from a `file://` URL by cloning it, so the directory must be a git repository.
+- **Hermes CLI with plugin support**, `>= 0.21.5` (the `requires_hermes` floor in `plugin.yaml`), including the `hermes plugins` subcommands.
+
 ## Install (local checkout only)
 
 This plugin is **not published yet** — there is no published catalog entry and no public repo. Install it from the local checkout (it must be a git repo, since Hermes installs from a `file://` URL):
@@ -15,6 +21,24 @@ hermes plugins enable ads-intel
 
 `file://` installs prompt with an "insecure source" warning: the path is local, unsigned and has no catalog entry. That warning is expected here; the source is the checkout you just validated.
 
+Verify the install and the checkout's scan:
+
+```bash
+hermes plugins list            # ads-intel should be listed as enabled
+hermes plugins validate .      # expect a clean scan: no errors or warnings
+```
+
+If `hermes plugins list` does not show it, re-run the install block from the same checkout; the `file://` path must point at the directory that contains `plugin.yaml`.
+
+## Uninstall
+
+```bash
+hermes plugins disable ads-intel     # stop loading its tools
+hermes plugins uninstall ads-intel   # remove the installed copy
+```
+
+`uninstall` removes the plugin code, not its data. To delete the watchlist, snapshots and reports as well, remove the plugin data directory named under Disclosures: `~/.hermes/profiles/<profile>/plugin-data/ads-intel/`.
+
 ## Try it in 60 seconds
 
 ```bash
@@ -23,9 +47,11 @@ hermes plugins validate .      # manifest, declarations and security scan
 
 Then, in a Hermes chat:
 
-- *"Search the Meta Ad Library for ads from Notion in the US, limit 10."* → `ad_search`
+- *"Search the Meta Ad Library for ads mentioning Notion in the US, limit 10."* → `ad_search`, a **keyword** search: it returns any page whose ads mention Notion, not only Notion's own page. Add `advertiser: "Notion"` to keep only the resolved Notion page, and expect `name_not_matched` when that page is absent from the keyword listing.
 - *"Watch linear.app's ads, then check my ad watchlist for what changed."* → `ad_watch` + `ad_check`
 - *"Show me KFC's ads in the UAE, but only from KFC's own page."* → `ad_search` with `advertiser`
+
+The `country` code selects that market's ad-library listing, but Meta's public render does not guarantee market-pure creatives: an international brand can still show US-market copy or prices in the `AE` listing, and the plugin reports what the card shows rather than relabelling it. Treat `country` as the listing queried, not as proof of where an ad ran.
 
 The first `ad_check()` seeds a baseline and reports every ad as `new`; the next call reports real diffs. Each `ad_check()` also writes an HTML report and JSON digest under the plugin data directory (see Disclosures).
 
@@ -37,13 +63,15 @@ Find the ads a brand, advertiser or keyword is running. `query` is required; `li
 
 `active_status` (`all` default, or `active` / `inactive`) and `media_type` (`all` default, or `image` / `video`) narrow the listing using the public library's own URL parameters — they are part of the same single free GET, not a second request or a paid endpoint. An unsupported value returns `{"error": "invalid_active_status"}` or `{"error": "invalid_media_type"}` rather than silently widening the search. The filters also apply when `advertiser` is set: the page is still resolved against the full fetched listing, then the filtered ads are kept.
 
+`active_status` is passed to the library unchanged, but the per-ad `status` this plugin returns uses the render's own vocabulary: the library's **Active** is surfaced as `active` and its **Inactive** as `ended`. A filter of `inactive` therefore returns ads whose returned `status` is `ended`; the filter names and the surfaced status values deliberately differ, matching the diff vocabulary in `ad_check`.
+
 Pass `advertiser` to keep only the resolved brand's page. Because the library is keyword-searched, a query like `Burger King` also returns unrelated pages that merely mention the term; with `advertiser` set, page names are scored (`0.80` exact, `0.85` normalized, `0.60` substring, threshold `0.80`) and only the winning page's ads come back, with `resolved: {page_name, score}`. If nothing reaches the threshold the response is `{"error": "name_not_matched", target, candidates, threshold}` — never the unfiltered keyword noise.
 
 > "Search the Meta Ad Library for ads from Notion and show me the first 10."
 > "What ads is KFC running in the UAE?"
 > "Show me Burger King's ads but only from Burger King's own page."
 
-Returns `{count, country, ads}` (plus `advertiser` and `resolved` when filtering). Each ad carries:
+Returns `{count, complete, fetched, country, ads}` (plus `advertiser` and `resolved` when filtering). `count` is the number of ads actually returned in `ads` — after `limit` and after any `advertiser` filter — not the number matched on the page; `complete` is the signal that the page held more ads than were returned, and `fetched` is the number fetched into this response. Each ad carries:
 
 | Field | Meaning | Source |
 | --- | --- | --- |
@@ -68,6 +96,8 @@ Manage the local watchlist: `add` a query, `remove` a query, or `list` saved que
 > "What am I watching?"
 > "Remove 'linear.app' from my ad watchlist."
 
+Returns `{"action": "add" | "remove" | "list", "watchlist": [...]}` — the full watchlist after the change, in every case (not the single entry or a count). Each entry is `{"query", "country"}`, plus `"advertiser"` when one was set and `"active_status"` / `"media_type"` when they differ from `all`; an unfiltered, advertiser-less entry keeps exactly the two-key shape. Invalid input returns `{"error": "..."}` (`query required`, `invalid_country`, `invalid_active_status`, `invalid_media_type`, or `unknown action: <action>`).
+
 ### `ad_check()`
 
 Fetch every watchlist entry (re-applying its country, advertiser and filters), diff it against that entry's last saved snapshot, and report what changed.
@@ -81,6 +111,36 @@ Diff semantics:
 - **changed** — an ad kept its id but its status or creative signature changed. The signature is creative text plus, when both the old and new record carry them, `link_url`, `link_title` and `cta_text`; a field added by a newer version is not compared against an older baseline, so upgrading does not report every ad as changed. Image lists are not part of the signature.
 - **baseline** — the first `ad_check()` after adding a watch has no prior snapshot, so every ad it finds reports as `new`. That run seeds the baseline; diffs start on the next run.
 - **fail-safe** — if a fetch fails or returns an empty page while a snapshot exists, that query is reported as `skipped` (`fetch_empty`) and the diff is skipped. The snapshot is never overwritten with an empty result, so a transient failure cannot be mistaken for "every ad ended".
+
+Response shape — one row per watchlist entry, in watchlist order:
+
+```json
+{
+  "checked_at": "2026-11-06T12:00:00",
+  "results": [
+    {
+      "query": "linear.app",
+      "country": "US",
+      "partial": true,
+      "new_ads": 1,
+      "ended_ads": 0,
+      "changed_ads": 2,
+      "new": [{"id": "…", "page_name": "…", "status": "active", "…": "…"}],
+      "ended": [],
+      "changed": [{"id": "…", "status": "active", "…": "…"}],
+      "artifacts": {"html": "/…/reports/<sha1>.html", "digest": "/…/reports/<sha1>.digest.json"}
+    }
+  ]
+}
+```
+
+There is no top-level count — sum the rows if you need one. A processed row always carries `query`, `country`, `partial`, the three integer counts (`new_ads`, `ended_ads`, `changed_ads`) and the three matching arrays (`new`, `ended`, `changed`). Each bucket entry is an ad summary with the same 16 keys as an `ad_search` ad (`id`, `page_name`, `status`, `first_seen`, `last_seen`, `creative_text`, `library_url`, `page_url`, `page_id`, `link_url`, `link_title`, `cta_text`, `images`, `has_video`, `same_creative_count`, `multiple_versions`), defaulted to `""` / `[]` / `0` / `false`. An advertiser watch adds `advertiser` and `resolved`; a non-default filter adds `active_status` / `media_type`.
+
+Rows that did not diff carry the same `query`, `country` and `artifacts: {error}` plus `partial: true`, and one of:
+
+- `skipped: true` with `reason: "fetch_empty"` or `"parse_failed"` — no snapshot was written and no endings were inferred.
+- `error: "name_not_matched"` with `advertiser`, `target`, `candidates` and `threshold` — the page could not be resolved, so no snapshot was written.
+- `error: "<detail>"` — an unexpected failure for that entry; the other entries still run.
 
 ## Disclosures
 
@@ -96,7 +156,7 @@ Diff semantics:
 
 Queries are keyword searches, not brand filters: the library returns any page whose ads mention the term, so a watch acts as a keyword watch rather than a strict brand watch. Passing `advertiser` narrows a search or watch to one page after the fetch.
 
-Advertiser resolution works on page names only (`ad-intel`'s page-id and handle rungs do not exist here), so the highest score it can award is `0.85` — a target differing only in punctuation or case (`KFC` vs `K.F.C.`). An identical name scores `0.80`, the threshold; substring hits score `0.60` and never match on their own. That means an owned page named `KFC UAE` is *not* selected by `advertiser: "KFC"`, and a miss is reported as `name_not_matched` (in `ad_check`: a row with `error` and `partial`, no snapshot write — on a clipped render the miss only proves the page was not in what rendered) rather than falling back to the keyword hits. Adding or changing `advertiser` starts a filtered watch from a clean baseline, because filtered and unfiltered snapshots are keyed separately; the one exception is a watch that adopts a legacy unstamped snapshot (written before snapshots carried an `advertiser` stamp), where other pages' ads stored earlier can be reported as `ended` once.
+Advertiser resolution works on page names only (there are no page-id or handle matching rungs here), so the highest score it can award is `0.85` — a target differing only in punctuation or case (`KFC` vs `K.F.C.`). An identical name scores `0.80`, the threshold; substring hits score `0.60` and never match on their own. That means an owned page named `KFC UAE` is *not* selected by `advertiser: "KFC"`, and a miss is reported as `name_not_matched` (in `ad_check`: a row with `error` and `partial`, no snapshot write — on a clipped render the miss only proves the page was not in what rendered) rather than falling back to the keyword hits. Adding or changing `advertiser` starts a filtered watch from a clean baseline, because filtered and unfiltered snapshots are keyed separately; the one exception is a watch that adopts a legacy unstamped snapshot (written before snapshots carried an `advertiser` stamp), where other pages' ads stored earlier can be reported as `ended` once.
 
 ## Limitations
 

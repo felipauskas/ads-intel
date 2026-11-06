@@ -76,3 +76,30 @@ def test_diff_compares_enriched_fields_when_both_sides_have_them():
     new = {"ads": {"E1": {"id": "E1", "status": "active", "creative_text": "x",
                           "link_url": "", "link_title": "", "cta_text": ""}}}
     assert diff_snapshots(old, new)["changed"] == []
+
+
+def test_diff_tolerates_malformed_snapshot_payloads():
+    """A corrupt snapshot (None, or {"ads": "notadict"}) is empty, not a crash.
+
+    On-disk JSON is hand-editable; a bad ``ads`` value must degrade to "no ads"
+    so the check still runs instead of being lost to AttributeError.
+    """
+    assert diff_snapshots(None, {"ads": {}}) == {"new": [], "ended": [], "changed": []}
+    assert diff_snapshots({"ads": "notadict"}, {"ads": {}}) == {
+        "new": [], "ended": [], "changed": []
+    }
+    assert diff_snapshots([], {"ads": {}}) == {"new": [], "ended": [], "changed": []}
+    # A corrupt *new* side means every old id is absent: the same "all ended"
+    # result an explicit empty listing gives.
+    d = diff_snapshots(OLD, {"ads": "notadict"})
+    assert sorted(a["id"] for a in d["ended"]) == ["A1", "A2"]
+    assert d["new"] == [] and d["changed"] == []
+
+
+def test_diff_skips_non_dict_ad_values():
+    """Junk values inside an otherwise valid ads map are ignored, not compared."""
+    old = {"ads": {"A1": {"id": "A1", "status": "active"},
+                   "J": "not-an-ad", "N": None}}
+    new = {"ads": {"A1": {"id": "A1", "status": "active"},
+                   "J2": ["junk"]}}
+    assert diff_snapshots(old, new) == {"new": [], "ended": [], "changed": []}

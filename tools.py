@@ -26,6 +26,8 @@ _SUMMARY_KEYS = (
     "page_name",
     "status",
     "first_seen",
+    "last_seen",
+    "creative_text",
     "library_url",
     "page_url",
     "page_id",
@@ -47,6 +49,8 @@ _SUMMARY_DEFAULTS = {
     "page_name": "",
     "status": "",
     "first_seen": "",
+    "last_seen": "",
+    "creative_text": "",
     "library_url": "",
     "page_url": "",
     "page_id": "",
@@ -135,7 +139,9 @@ def ad_search(args, **kwargs):
     advertiser = str(args.get("advertiser") or "").strip()
     try:
         limit = int(args.get("limit", 20))
-    except (TypeError, ValueError):
+    except (TypeError, ValueError, OverflowError):
+        # JSON `1e309` decodes to inf; `int(inf)` is an OverflowError, not a
+        # ValueError, and must not escape as a handler crash.
         return json.dumps({"error": "invalid limit"})
     try:
         if not advertiser:

@@ -803,3 +803,44 @@ def test_json_meta_reports_fetched_and_total_returned():
         "fetched_chars": 0,
         "char_limit": sources._CHAR_LIMIT,
     }
+
+
+@pytest.mark.parametrize(
+    "body",
+    [
+        "{not json",
+        '{"results": [{"content":',
+        '"just a string"',
+        "null",
+        "true",
+        "12345",
+    ],
+)
+def test_short_malformed_json_body_raises_fetch_error(body):
+    """A body that is JSON-shaped but unusable must fail, not read as 0 ads.
+
+    With no prior snapshot a silent empty page seeds an empty baseline and
+    reports a successful zero-ad check, masking a transport failure.
+    """
+    with pytest.raises(sources.FetchError):
+        sources.fetch_ads_with_meta("nike", dispatch=lambda n, a: body)
+    with pytest.raises(sources.FetchError):
+        sources.fetch_ads("nike", dispatch=lambda n, a: body)
+
+
+@pytest.mark.parametrize("payload", [None, 123, "a string", [], [1, 2]])
+def test_content_from_payload_rejects_non_object_payload(payload):
+    with pytest.raises(sources.FetchError):
+        sources._content_from_payload(payload)
+
+
+@pytest.mark.parametrize("payload", [{}, {"foo": "bar"}, {"results": [{"content": None}]}])
+def test_content_from_payload_object_without_results_raises(payload):
+    with pytest.raises(sources.FetchError):
+        sources._content_from_payload(payload)
+
+
+@pytest.mark.parametrize("items", ["a string", 12345, None])
+def test_ads_from_payload_list_rejects_non_list_payload(items):
+    with pytest.raises(sources.FetchError):
+        sources._ads_from_payload_list(items, None)

@@ -37,7 +37,20 @@ def _same_creative(before: dict, after: dict) -> bool:
     return _sig(before, keys) == _sig(after, keys)
 
 
-def diff_snapshots(old: dict, new: dict) -> dict:
+def _ads_map(snapshot) -> dict:
+    """The ``ads`` mapping of a snapshot; anything malformed is empty.
+
+    A corrupt snapshot file (``null``, a list, or ``{"ads": "notadict"}``)
+    must degrade to "no ads" instead of raising on ``.items()``: the caller
+    then sees a clean baseline rather than losing the whole check.
+    """
+    if not isinstance(snapshot, dict):
+        return {}
+    ads = snapshot.get("ads")
+    return ads if isinstance(ads, dict) else {}
+
+
+def diff_snapshots(old, new) -> dict:
     """Classify two snapshots into `new`, `ended` and `changed` buckets.
 
     Status strings are compared case- and whitespace-insensitively. An id absent
@@ -47,16 +60,24 @@ def diff_snapshots(old: dict, new: dict) -> dict:
     restricted to ids the fetch actually returned, or drop the `ended` bucket.
     :func:`tools.ad_check` does the former for partial renders.
     """
-    old_ads = old.get("ads") or {}
-    new_ads = new.get("ads") or {}
+    old_ads = _ads_map(old)
+    new_ads = _ads_map(new)
 
-    new_ads_list = [ad for ad_id, ad in new_ads.items() if ad_id not in old_ads]
-    ended = [ad for ad_id, ad in old_ads.items() if ad_id not in new_ads]
+    new_ads_list = [
+        ad for ad_id, ad in new_ads.items()
+        if ad_id not in old_ads and isinstance(ad, dict)
+    ]
+    ended = [
+        ad for ad_id, ad in old_ads.items()
+        if ad_id not in new_ads and isinstance(ad, dict)
+    ]
     changed = []
 
     for ad_id, after in new_ads.items():
+        if not isinstance(after, dict):
+            continue
         before = old_ads.get(ad_id)
-        if before is None:
+        if not isinstance(before, dict):
             continue
         if _is_ended(before) != _is_ended(after):
             (ended if _is_ended(after) else new_ads_list).append(after)

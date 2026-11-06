@@ -816,3 +816,94 @@ def test_search_reports_complete_and_fetched(monkeypatch):
     assert whole["count"] == 28
     assert whole["complete"] is True
     assert whole["fetched"] == 28
+
+
+def test_search_rejects_infinite_and_nan_limit(monkeypatch):
+    """JSON `1e309` decodes to inf; `int(inf)` must not escape as a crash."""
+    dispatched = []
+
+    def fake_fetch(*args, **kwargs):
+        dispatched.append((args, kwargs))
+        return [], {}
+
+    _patch_fetch(monkeypatch, fake_fetch)
+    for bad in (float("inf"), float("-inf"), float("nan")):
+        payload = json.loads(tools.ad_search({"query": "x", "limit": bad}))
+        assert payload == {"error": "invalid limit"}, bad
+    assert dispatched == []
+
+
+def test_check_advertiser_ignores_unstamped_unfiltered_baseline(monkeypatch):
+    """Regression: advertiser watch on a pre-stamp unfiltered baseline.
+
+    The baseline holds all 28 keyword-hit ads; only Nike's 4 may be reported
+    new, and the 24 non-Nike ones must never be reported `ended`.
+    """
+    tools.ad_watch({"action": "add", "query": "nike", "advertiser": "Nike"})
+    text = FIXTURE.read_text()
+    baseline = {
+        ad["id"]: ad for ad in tools.sources.parse_library_markdown(text)
+    }
+    path = tools.store._snapshot_path("nike", "US")
+    path.parent.mkdir(parents=True, exist_ok=True)
+    path.write_text(json.dumps({"query": "nike", "ads": baseline}))
+    _serve_fixture(monkeypatch)
+
+    row = json.loads(tools.ad_check({}))["results"][0]
+    assert row["new_ads"] == 4
+    assert row["ended_ads"] == 0
+    assert sorted(ad["id"] for ad in row["new"]) == sorted(NIKE_IDS)
+
+
+def test_summary_carries_last_seen_and_creative_text():
+    assert "last_seen" in tools._SUMMARY_KEYS
+    assert "creative_text" in tools._SUMMARY_KEYS
+    summary = tools._summary(AD)
+    assert len(summary) == 16
+    assert summary["last_seen"] == AD["last_seen"]
+    assert summary["creative_text"] == AD["creative_text"]
+
+    old = {"id": "1", "page_name": "Nike", "status": "active"}
+    defaults = tools._summary(old)
+    assert defaults["last_seen"] == ""
+    assert defaults["creative_text"] == ""
+
+
+def test_check_bucket_items_are_sixteen_fields(monkeypatch):
+    tools.ad_watch({"action": "add", "query": "nike"})
+    monkeypatch.setattr(tools.sources, "fetch_ads_with_meta", _stub_fetch([AD]))
+
+    row = json.loads(tools.ad_check({}))["results"][0]
+    item = row["new"][0]
+    assert set(item) == set(tools._SUMMARY_KEYS)
+    assert len(item) == 16
+    assert all(value is not None for value in item.values())
+
+
+def test_check_malformed_body_does_not_seed_empty_snapshot(monkeypatch):
+    """A short corrupt body must be a fetch failure, not a 0-ad success."""
+    tools.ad_watch({"action": "add", "query": "nike"})
+    monkeypatch.setattr(tools, "_CTX", _StringCtx("{not json"))
+
+    row = json.loads(tools.ad_check({}))["results"][0]
+    assert "error" in row
+    assert row["artifacts"] == {"error": row["error"]}
+    assert tools.store.load_snapshot("nike") == {"ads": {}}
+
+    # With a prior baseline the run skips and keeps the snapshot untouched.
+    tools.store.save_snapshot("nike", {"ads": {"1": AD}})
+    row = json.loads(tools.ad_check({}))["results"][0]
+    assert row["skipped"] is True
+    assert row["reason"] == "fetch_empty"
+    assert row["artifacts"] == {"error": "fetch_failed"}
+    assert tools.store.load_snapshot("nike")["ads"]["1"]["id"] == "1"
+
+
+class _StringCtx:
+    """Host context stub returning a raw string body from web_extract."""
+
+    def __init__(self, body):
+        self.body = body
+
+    def dispatch_tool(self, name, args):
+        return self.body

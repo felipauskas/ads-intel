@@ -307,15 +307,17 @@ def _snapshot_candidates(
 
     * the advertiser-/filter-keyed file (when a target or filter is set)
     * the unfiltered ``query + country`` file, which is also the exact key for
-      entries without an advertiser
+      entries without an advertiser or filter
     * the pre-country ``sha1(query)`` file, US only, and only for a watch with
       neither an advertiser nor a filter
 
-    A watch with a non-default filter never falls back to the unfiltered file:
-    that baseline holds ads the filter excludes, so endings computed against
-    it would be wrong. It starts from an empty baseline instead. The same
-    applies to the pre-country legacy file: it predates metadata stamps, so
-    the load guard cannot tell it apart from an unfiltered baseline.
+    A watch with an advertiser, or with a non-default filter, never falls back
+    to the unfiltered file: that baseline holds ads the target/filter excludes,
+    so endings computed against it would be wrong (an advertiser watch would
+    report every other page's ads as ended). It starts from an empty baseline
+    instead. The same applies to the pre-country legacy file: it predates
+    metadata stamps, so the load guard cannot tell it apart from an unfiltered
+    baseline.
     """
     paths = [
         _snapshot_path(query, country, advertiser, active_status, media_type)
@@ -326,13 +328,12 @@ def _snapshot_candidates(
         or _norm_filter(media_type, DEFAULT_MEDIA_TYPE, _MEDIA_TYPES)
         != DEFAULT_MEDIA_TYPE
     )
-    if not filtered:
+    scoped = filtered or bool(_norm(advertiser))
+    if not scoped:
         unfiltered = _snapshot_path(query, country)
         if unfiltered not in paths:
             paths.append(unfiltered)
-    if not filtered and not _norm(advertiser) and (
-        _norm_country(country) == DEFAULT_COUNTRY
-    ):
+    if not scoped and (_norm_country(country) == DEFAULT_COUNTRY):
         legacy = _legacy_snapshot_path(query)
         if legacy not in paths:
             paths.append(legacy)
@@ -348,12 +349,12 @@ def load_snapshot(
 ) -> dict:
     """Load the snapshot for query + market (+ advertiser).
 
-    Fallbacks keep old baselines alive: an advertiser watch added to a watch
-    that predates it reads that watch's unfiltered file, and pre-country
-    snapshots (hash of the query alone) are still read for US. A fallback file
-    is only accepted when it carries no ``advertiser`` stamp — files written
-    by this version under another key belong to another watch, and adopting
-    one would report its ads as ended.
+    Fallbacks keep old *unfiltered* baselines alive: pre-country snapshots
+    (hash of the query alone) are still read for US. An advertiser or filtered
+    watch never reads an unfiltered or unscoped file; its key is its own.
+    A fallback file is only accepted when it carries no ``advertiser`` stamp —
+    files written by this version under another key belong to another watch,
+    and adopting one would report its ads as ended.
     """
     for index, path in enumerate(
         _snapshot_candidates(

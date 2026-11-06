@@ -46,7 +46,7 @@ parameters (`plugin.yaml:12`).
 `tests/fixtures/library_page.md:11` (identical at `:545`):
 
 ```
-[​](https://www.facebook.com/ads/library/?active_status=all&ad_type=all&country=US&is_targeted_country=false&media_type=all&q=nike&search_type=keyword_unordered&sort_data[mode]=total_impressions&sort_data[direction]=desc#)
+[](https://www.facebook.com/ads/library/?active_status=all&ad_type=all&country=US&is_targeted_country=false&media_type=all&q=nike&search_type=keyword_unordered&sort_data[mode]=total_impressions&sort_data[direction]=desc#)
 ```
 
 That is the *only* distinctive query URL in the fixture (2 occurrences of
