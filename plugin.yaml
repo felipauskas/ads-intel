@@ -1,8 +1,14 @@
 name: ads-intel
-version: "0.1.0"
-description: Search public ad libraries and watch competitors for new/ended ads
-provides_tools:
-  - ad_search
-  - ad_watch
-  - ad_check
-author: Felipe Leon
+label: "Ads Intel"
+version: "0.2.0"
+description: "Search public ad libraries and watch competitors for new/ended ads"
+author: "Felipe V. Leon (felipauskas)"
+maintainer: "felipauskas"
+license: MIT
+homepage: "https://github.com/felipauskas/ads-intel"
+tags: [ads, competitor-intelligence, marketing, scraping]
+manifest_version: 2
+requires_hermes: ">=0.21.5"
+python_dependencies: []
+capabilities: []
+provides_tools: [ad_search, ad_watch, ad_check]
