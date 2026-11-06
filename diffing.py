@@ -16,8 +16,25 @@ def _is_ended(ad: dict) -> bool:
     return _norm_status(ad) in _ENDED_STATUSES
 
 
-def _sig(ad: dict) -> tuple:
-    return (_norm_status(ad), ad.get("creative_text"))
+def _sig(ad: dict, keys: tuple[str, ...] = ()) -> tuple:
+    """Comparable ad signature: status plus the creative keys ``keys``.
+
+    Only keys named by the caller are included, so a field that a stored
+    baseline predates is not compared at all: an upgrade must not report every
+    ad as changed just because it now carries ``link_url``/``cta_text``.
+    """
+    return (_norm_status(ad),) + tuple(
+        str(ad.get(key) or "").strip() for key in keys
+    )
+
+
+#: Creative fields whose change is worth reporting, beyond creative text.
+_CREATIVE_KEYS = ("creative_text", "link_url", "link_title", "cta_text")
+
+
+def _same_creative(before: dict, after: dict) -> bool:
+    keys = tuple(k for k in _CREATIVE_KEYS if k in before and k in after)
+    return _sig(before, keys) == _sig(after, keys)
 
 
 def diff_snapshots(old: dict, new: dict) -> dict:
@@ -43,7 +60,7 @@ def diff_snapshots(old: dict, new: dict) -> dict:
             continue
         if _is_ended(before) != _is_ended(after):
             (ended if _is_ended(after) else new_ads_list).append(after)
-        elif _sig(before) != _sig(after):
+        elif not _same_creative(before, after):
             changed.append(after)
 
     return {"new": new_ads_list, "ended": ended, "changed": changed}

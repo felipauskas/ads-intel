@@ -18,6 +18,10 @@ import re
 
 _LIBRARY_BASE = "https://www.facebook.com/ads/library/"
 
+# The market code is interpolated into the URL; the tool layer validates it
+# too, but build_url is public and is called directly by fetch_ads.
+_COUNTRY_RE = re.compile(r"^[A-Z]{2}$")
+
 # The ad-library page renders to ~50k chars of markdown (BMW: 58,344), and the
 # host's default 15k truncation silently drops most cards. Budget generously:
 # a render that fills the whole budget comes back as a clipped prefix.
@@ -73,11 +77,22 @@ def _quote_plus(text: str) -> str:
 
 _STATUS_RE = re.compile(r"^(Active|Inactive)$")
 _LIBRARY_ID_RE = re.compile(r"^Library ID:\s*(\d+)$")
-_PAGE_LINK_RE = re.compile(
-    r"^\[([^\]]+)\]\(https://www\.facebook\.com/[^)]*\)"
-    r"(?:\s+with\s+\[[^\]]+\]\([^)]*\))?$"
+_PAGE_LINK_URL_RE = re.compile(
+    r"^\[([^\]]+)\]\((https://www\.facebook\.com/[^)\s]*)\)"
 )
+_NUMERIC_PAGE_RE = re.compile(r"facebook\.com/(\d+)(?:[/?#]|$)")
 _IMAGE_ALT_RE = re.compile(r"^!\[([^\]]*)\]\(")
+_IMAGE_URL_RE = re.compile(r"!\[[^\]]*\]\((https?://[^)\s]+)\)")
+_CTA_DEST_RE = re.compile(r"\]\((https?://[^)\s]+)\)")
+_HELP_URL_RE = re.compile(r"^https?://(?:www\.)?facebook\.com/help/")
+_DOMAIN_RE = re.compile(
+    r"^[A-Z0-9][A-Z0-9-]*\.[A-Z][A-Z0-9.-]*$", re.IGNORECASE
+)
+_SAME_CREATIVE_RE = re.compile(
+    r"\*\*(\d+)\s+ads?\*\*\s+use this creative and text"
+)
+_VIDEO_MARKER = "Sorry, we're having trouble playing this video."
+_MULTIPLE_VERSIONS_MARKER = "This ad has multiple versions"
 _DATE_RANGE_RE = re.compile(r"^(.+?)\s+-\s+(.+)$")
 _STARTED_RE = re.compile(r"^Started running on\s+(.+)$")
 
@@ -102,11 +117,45 @@ _NOISE_PREFIXES = (
 )
 
 
-def build_url(query: str, country: str = "US") -> str:
-    """Public ad-library search URL for ``query``."""
+#: Filter vocabularies, mirroring the public library's own URL parameters.
+ACTIVE_STATUSES = ("all", "active", "inactive")
+MEDIA_TYPES = ("all", "image", "video")
+
+
+def _choice(name: str, value, allowed: tuple[str, ...]) -> str:
+    """Validate a filter value, raising ``ValueError`` with its tool error name.
+
+    The message matches the tool-level error token
+    (``invalid_active_status`` / ``invalid_media_type``) so a caller that just
+    surfaces the exception still names the bad field.
+    """
+    text = value.strip() if isinstance(value, str) else ""
+    if text not in allowed:
+        raise ValueError(f"invalid_{name}")
+    return text
+
+
+def build_url(
+    query: str,
+    country: str = "US",
+    active_status: str = "all",
+    media_type: str = "all",
+) -> str:
+    """Public ad-library search URL for ``query``.
+
+    ``active_status`` (``all``/``active``/``inactive``) and ``media_type``
+    (``all``/``image``/``video``) are the library's own free query parameters:
+    no key, token or third-party service is involved. ``country`` must be a
+    two-letter uppercase market code. Invalid values raise ``ValueError``.
+    """
+    if not isinstance(country, str) or not _COUNTRY_RE.fullmatch(country):
+        raise ValueError("invalid_country")
+    active_status = _choice("active_status", active_status, ACTIVE_STATUSES)
+    media_type = _choice("media_type", media_type, MEDIA_TYPES)
     return (
-        f"{_LIBRARY_BASE}?active_status=all&ad_type=all&country={country}"
-        f"&q={_quote_plus(query)}&media_type=all&search_type=keyword_unordered"
+        f"{_LIBRARY_BASE}?active_status={active_status}&ad_type=all"
+        f"&country={country}&q={_quote_plus(query)}&media_type={media_type}"
+        f"&search_type=keyword_unordered"
     )
 
 
@@ -189,22 +238,113 @@ def _dates(lines: list[str], start: int) -> tuple[str, str]:
     return "", ""
 
 
-def _page_name_before(lines: list[str], sponsored_idx: int) -> str:
+def _page_label_before(lines: list[str], sponsored_idx: int) -> tuple[str, str]:
+    """``(page_name, page_url)`` for the label above ``**Sponsored**``.
+
+    The URL is the label's own link (``facebook.com/nike/`` or a numeric
+    profile id), taken from the first link of a co-advertiser label such as
+    ``[Noemimisma](…) with [Nike](…)``. When only an image alt text names the
+    page, it is the name and the URL is ``""``.
+    """
     for raw in reversed(lines[:sponsored_idx]):
         line = raw.strip()
         if not line:
             continue
-        link = _PAGE_LINK_RE.match(line)
+        link = _PAGE_LINK_URL_RE.match(line)
         if link:
-            return link.group(1).strip()
+            return link.group(1).strip(), link.group(2).strip()
         image = _IMAGE_ALT_RE.match(line)
         if image and image.group(1).strip():
-            return image.group(1).strip()
-        # Other markdown between the label and "Sponsored" means there is no
-        # page label for this card.
+            return image.group(1).strip(), ""
         if line != "**Sponsored**":
-            return ""
-    return ""
+            return "", ""
+    return "", ""
+
+
+def _numeric_page_id(page_url: str) -> str:
+    """The digits in a numeric profile URL, else ``""``.
+
+    Vanity handles (``facebook.com/nike/``) carry no page id in the public
+    render, and inventing one would poison joins.
+    """
+    match = _NUMERIC_PAGE_RE.search(page_url or "")
+    return match.group(1) if match else ""
+
+
+def _link_blocks(lines: list[str]) -> list[list[str]]:
+    """Group multi-line markdown links (CTA cards) into whole blocks.
+
+    A block starts at a line beginning with ``[`` and ends at the line that
+    carries ``](`` (the destination), because the title/CTA text is wrapped
+    across several ``\\\\``-terminated lines. Single-line links are blocks of
+    one.
+    """
+    blocks: list[list[str]] = []
+    current: list[str] | None = None
+    for raw in lines:
+        line = raw.strip()
+        complete = line.endswith(")") and "](" in line
+        if current is not None:
+            current.append(line)
+            if complete:
+                blocks.append(current)
+                current = None
+            continue
+        if not line.startswith("["):
+            continue
+        if complete:
+            blocks.append([line])
+        else:
+            current = [line]
+    return blocks
+
+
+def _cta_fields(block: list[str]) -> dict | None:
+    """``link_url``/``link_title``/``cta_text`` from one CTA link block.
+
+    Returns ``None`` for help-centre links: they are UI chrome ("Learn more"
+    opens Meta's help page), not the advertiser's destination.
+    """
+    text = "\n".join(block)
+    destinations = _CTA_DEST_RE.findall(text)
+    if not destinations:
+        return None
+    dest = destinations[-1]
+    if _HELP_URL_RE.match(dest):
+        return None
+
+    start = text.find("[")
+    stop = text.rfind("](")
+    if start < 0 or stop <= start:
+        return None
+    body = _IMAGE_URL_RE.sub(" ", text[start + 1 : stop])
+    body = re.sub(r"\\+", "\n", body)
+
+    segments: list[str] = []
+    for part in body.split("\n"):
+        value = part.strip().strip("\\").strip()
+        if value and (not segments or segments[-1] != value):
+            segments.append(value)
+    cta_text = segments[-1] if segments else ""
+    # The first segment is the display domain (AD.DOUBLECLICK.NET); drop it.
+    title_parts = [s for s in segments[:-1] if not _DOMAIN_RE.match(s)]
+    return {
+        "link_url": dest,
+        "link_title": " ".join(title_parts),
+        "cta_text": cta_text,
+    }
+
+
+def _image_urls(lines: list[str]) -> list[str]:
+    """Creative image URLs, excluding the 60x60 page profile picture."""
+    urls: list[str] = []
+    for raw in lines:
+        for url in _IMAGE_URL_RE.findall(raw):
+            if "60x60" in url:
+                continue
+            if url not in urls:
+                urls.append(url)
+    return urls
 
 
 def _parse_block(lines: list[str]) -> dict | None:
@@ -234,11 +374,38 @@ def _parse_block(lines: list[str]) -> dict | None:
         }
 
     if sponsored_idx is not None:
-        ad["page_name"] = _page_name_before(lines, sponsored_idx)
+        page_name, page_url = _page_label_before(lines, sponsored_idx)
+        ad["page_name"] = page_name
+        ad["page_url"] = page_url
+        ad["page_id"] = _numeric_page_id(page_url)
         end = status_idx if status_idx is not None else len(lines)
-        ad["creative_text"] = _clean_creative(lines[sponsored_idx + 1 : end])
+        creative_lines = lines[sponsored_idx + 1 : end]
+        ad["creative_text"] = _clean_creative(creative_lines)
+        ad["images"] = _image_urls(creative_lines)
+        ad["has_video"] = any(
+            line.strip() == _VIDEO_MARKER for line in creative_lines
+        )
+        for block in _link_blocks(creative_lines):
+            cta = _cta_fields(block)
+            if cta:
+                ad.update(cta)
+                break
 
-    return ad or None
+    if not ad:
+        return None
+
+    # Creative-grouping annotations sit in the status region of the card.
+    same_creative = 0
+    for raw in lines:
+        match = _SAME_CREATIVE_RE.match(raw.strip())
+        if match:
+            same_creative = int(match.group(1))
+            break
+    ad["same_creative_count"] = same_creative
+    ad["multiple_versions"] = any(
+        line.strip() == _MULTIPLE_VERSIONS_MARKER for line in lines
+    )
+    return ad
 
 
 def parse_library_markdown(md: str) -> list[dict]:
@@ -260,7 +427,15 @@ def parse_library_markdown(md: str) -> list[dict]:
     orphans = [r for r in records if "id" not in r and r.get("page_name")]
     for rec in records:
         if "id" in rec and not rec.get("page_name") and orphans:
-            rec["page_name"] = orphans.pop(0)["page_name"]
+            orphan = orphans.pop(0)
+            rec["page_name"] = orphan["page_name"]
+            rec["page_url"] = orphan.get("page_url", "")
+            rec["page_id"] = orphan.get("page_id", "")
+            # The creative lives on the header side of the split. Carry it
+            # over rather than reporting the status-only half as a blank ad.
+            for key in _CREATIVE_KEYS:
+                if not rec.get(key) and orphan.get(key):
+                    rec[key] = orphan[key]
 
     ads: list[dict] = []
     for rec in records:
@@ -275,6 +450,15 @@ def parse_library_markdown(md: str) -> list[dict]:
                 "last_seen": rec.get("last_seen", ""),
                 "creative_text": rec.get("creative_text", ""),
                 "library_url": f"{_LIBRARY_BASE}?id={rec['id']}",
+                "page_url": rec.get("page_url", ""),
+                "page_id": rec.get("page_id", ""),
+                "link_url": rec.get("link_url", ""),
+                "link_title": rec.get("link_title", ""),
+                "cta_text": rec.get("cta_text", ""),
+                "images": rec.get("images", []),
+                "has_video": rec.get("has_video", False),
+                "same_creative_count": rec.get("same_creative_count", 0),
+                "multiple_versions": rec.get("multiple_versions", False),
             }
         )
     if not ads and cards_seen:
@@ -316,18 +500,95 @@ def _content_from_payload(payload: dict) -> str:
     return content
 
 
-_AD_TEXT_KEYS = ("page_name", "status", "first_seen", "last_seen", "creative_text")
+_AD_TEXT_KEYS = (
+    "page_name",
+    "status",
+    "first_seen",
+    "last_seen",
+    "creative_text",
+    "page_url",
+    "page_id",
+    "link_url",
+    "link_title",
+    "cta_text",
+)
+
+# The fields that belong to the creative side of a card, so an orphan header
+# can hand them to a status-only half at a capture boundary.
+_CREATIVE_KEYS = (
+    "creative_text",
+    "images",
+    "link_url",
+    "link_title",
+    "cta_text",
+    "has_video",
+    "same_creative_count",
+    "multiple_versions",
+)
+
+_TRUTHY_STRINGS = frozenset({"1", "true", "yes", "y", "on"})
+
+
+def _http_url(value) -> str:
+    """``value`` when it is an ``http(s)://`` URL, else ``""``.
+
+    Stored JSON payloads are untrusted: a ``javascript:`` or ``data:`` URL
+    handed to a report becomes an injection vector, so it is dropped rather
+    than passed through.
+    """
+    if not isinstance(value, str):
+        return ""
+    url = value.strip()
+    if not url.lower().startswith(("http://", "https://")):
+        return ""
+    return url
+
+
+def _as_bool(value) -> bool:
+    """Strict boolean: the string ``"false"`` is False, not truthy."""
+    if isinstance(value, bool):
+        return value
+    if isinstance(value, (int, float)):
+        return value != 0
+    if isinstance(value, str):
+        return value.strip().lower() in _TRUTHY_STRINGS
+    return False
 
 
 def _normalise_ad(rec: dict) -> dict | None:
-    """Normalize an already-parsed ad object from a JSON-array payload."""
+    """Normalize an already-parsed ad object from a JSON-array payload.
+
+    Old snapshots predate the enrichment fields: every one defaults to an
+    empty value so a stored ad never fails to load. Payload values are
+    untrusted, so URLs are restricted to http(s), page ids to digits, and
+    flags to strict booleans.
+    """
     rid = rec.get("id")
     if rid in (None, ""):
         return None
     ad: dict = {"id": str(rid)}
     for key in _AD_TEXT_KEYS:
         ad[key] = str(rec.get(key) or "")
-    ad["library_url"] = rec.get("library_url") or f"{_LIBRARY_BASE}?id={ad['id']}"
+    ad["library_url"] = _http_url(rec.get("library_url")) or (
+        f"{_LIBRARY_BASE}?id={ad['id']}"
+    )
+
+    # A page id is digits only; a URL or mixed token would poison joins.
+    page_id = str(rec.get("page_id") or "").strip()
+    ad["page_id"] = page_id if page_id.isdigit() else ""
+    ad["link_url"] = _http_url(rec.get("link_url"))
+
+    images = rec.get("images") or []
+    if not isinstance(images, list):
+        images = [images]
+    ad["images"] = [url for url in (_http_url(item) for item in images) if url]
+    ad["has_video"] = _as_bool(rec.get("has_video", False))
+    try:
+        count = int(rec.get("same_creative_count") or 0)
+    except (TypeError, ValueError):
+        count = 0
+    ad["same_creative_count"] = max(count, 0)
+    ad["multiple_versions"] = _as_bool(rec.get("multiple_versions", False))
     return ad
 
 
@@ -366,6 +627,8 @@ def fetch_ads_with_meta(
     dispatch=None,
     char_limit: int | None = None,
     country: str = "US",
+    active_status: str = "all",
+    media_type: str = "all",
 ) -> tuple[list[dict], dict]:
     """Fetch and parse ``query``, returning ``(ads, meta)``.
 
@@ -400,6 +663,9 @@ def fetch_ads_with_meta(
     production callers leave it at :data:`_CHAR_LIMIT`.
 
     ``country`` is the two-letter ad-library market code (default ``US``).
+    ``active_status`` and ``media_type`` narrow the listing with the library's
+    own free URL parameters (defaults ``all``); invalid values raise
+    ``ValueError`` before any network call.
     """
     budget = _CHAR_LIMIT if char_limit is None else max(int(char_limit), 0)
     lim = None if limit is None else max(int(limit), 0)
@@ -407,7 +673,17 @@ def fetch_ads_with_meta(
         raise FetchError("web_extract unavailable")
     result = dispatch(
         "web_extract",
-        {"urls": [build_url(query, country=country)], "char_limit": budget},
+        {
+            "urls": [
+                build_url(
+                    query,
+                    country=country,
+                    active_status=active_status,
+                    media_type=media_type,
+                )
+            ],
+            "char_limit": budget,
+        },
     )
     if isinstance(result, dict):
         content = _content_from_payload(result)
@@ -451,7 +727,12 @@ def fetch_ads_with_meta(
 
 
 def fetch_ads(
-    query: str, limit: int | None = 20, dispatch=None, country: str = "US"
+    query: str,
+    limit: int | None = 20,
+    dispatch=None,
+    country: str = "US",
+    active_status: str = "all",
+    media_type: str = "all",
 ) -> list[dict]:
     """Fetch and parse the ad library for ``query`` via host ``web_extract``.
 
@@ -466,5 +747,10 @@ def fetch_ads(
     complete listing from a truncated one use :func:`fetch_ads_with_meta`.
     """
     return fetch_ads_with_meta(
-        query, limit=limit, dispatch=dispatch, country=country
+        query,
+        limit=limit,
+        dispatch=dispatch,
+        country=country,
+        active_status=active_status,
+        media_type=media_type,
     )[0]

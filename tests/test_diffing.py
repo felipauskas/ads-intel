@@ -44,3 +44,35 @@ def test_diff_all_ads_ended():
     d = diff_snapshots(OLD, {"ads": {}})
     assert sorted(a["id"] for a in d["ended"]) == ["A1", "A2"]
     assert d["new"] == [] and d["changed"] == []
+
+def test_diff_detects_destination_and_cta_changes():
+    old = {"ads": {"D1": {"id": "D1", "status": "active", "creative_text": "x",
+                          "link_url": "https://a.example/", "link_title": "A",
+                          "cta_text": "Shop Now"}}}
+    for key, value in (
+        ("link_url", "https://b.example/"),
+        ("link_title", "B"),
+        ("cta_text", "Learn More"),
+    ):
+        new = {"ads": {"D1": {**old["ads"]["D1"], key: value}}}
+        d = diff_snapshots(old, new)
+        assert [a["id"] for a in d["changed"]] == ["D1"], key
+        assert d["new"] == [] and d["ended"] == []
+
+
+def test_diff_ignores_fields_absent_from_old_snapshot():
+    """Enriched fields added after a baseline was written must not make every
+    ad look changed on the first run after the upgrade."""
+    old = {"ads": {"L1": {"id": "L1", "status": "active", "creative_text": "x"}}}
+    new = {"ads": {"L1": {"id": "L1", "status": "active", "creative_text": "x",
+                          "link_url": "https://a.example/", "link_title": "A",
+                          "cta_text": "Shop Now"}}}
+    assert diff_snapshots(old, new) == {"new": [], "ended": [], "changed": []}
+
+
+def test_diff_compares_enriched_fields_when_both_sides_have_them():
+    old = {"ads": {"E1": {"id": "E1", "status": "active", "creative_text": "x",
+                          "link_url": "", "link_title": "", "cta_text": ""}}}
+    new = {"ads": {"E1": {"id": "E1", "status": "active", "creative_text": "x",
+                          "link_url": "", "link_title": "", "cta_text": ""}}}
+    assert diff_snapshots(old, new)["changed"] == []

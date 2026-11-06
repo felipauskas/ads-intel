@@ -103,6 +103,96 @@ def test_digest_counts_match_diff(tmp_path):
     assert digest["query"] == "nike"
 
 
+def test_card_shows_cta_link_creative_count_versions_and_images(tmp_path):
+    """Task-1 fields render as text/metadata, never as external assets."""
+    ad = _ad(
+        1,
+        cta_text="Shop Now",
+        link_url="https://www.nike.com/sale?x=1&y=2",
+        link_title="Nike Sale",
+        same_creative_count=42,
+        multiple_versions=True,
+        images=["https://scontent.example/a.jpg", "https://scontent.example/b.jpg"],
+    )
+    paths = report.write_report("nike", {"new": [ad]}, {"1": ad}, META, tmp_path)
+    html = Path(paths["html"]).read_text()
+
+    assert (
+        '<a href="https://www.nike.com/sale?x=1&amp;y=2" target="_blank" '
+        'rel="noopener noreferrer"' in html
+    )
+    assert ">Shop Now</a>" in html
+    assert "Nike Sale" in html
+    assert "42 use this creative" in html
+    assert "Multiple versions" in html
+    assert "2 images" in html
+    # Offline-safe: no image elements, no external subresources.
+    assert "<img" not in html.lower()
+    assert 'src="http' not in html
+
+
+def test_card_keeps_non_http_destination_inert(tmp_path):
+    """A javascript:/data:/relative link_url must stay text, not an href."""
+    ads = {
+        "1": _ad(1, cta_text="Click me", link_url="javascript:alert(1)"),
+        "2": _ad(2, cta_text="Relative", link_url="/account/settings"),
+        "3": _ad(3, cta_text="Data", link_url="data:text/html;base64,PHNjcmlwdD4="),
+    }
+    paths = report.write_report("nike", {"new": list(ads.values())}, ads, META, tmp_path)
+    html = Path(paths["html"]).read_text()
+
+    assert "javascript:" not in html
+    assert "data:text/html" not in html
+    assert 'href="javascript' not in html
+    assert 'href="data:' not in html
+    assert 'href="/account' not in html
+    # CTA copy still shows, just inert.
+    for text in ("Click me", "Relative", "Data"):
+        assert text in html
+
+
+def test_card_escapes_xss_in_cta_and_link_title(tmp_path):
+    ad = _ad(
+        1,
+        cta_text='<img src=x onerror="alert(1)">Buy',
+        link_url="https://evil.example/x",
+        link_title='"><script>alert(2)</script>',
+        same_creative_count=1,
+    )
+    paths = report.write_report("nike", {"new": [ad]}, {"1": ad}, META, tmp_path)
+    html = Path(paths["html"]).read_text()
+
+    assert "<img src=x" not in html
+    assert "<script>alert(2)</script>" not in html
+    assert "&lt;img src=x onerror=&quot;alert(1)&quot;&gt;Buy" in html
+    assert "&quot;&gt;&lt;script&gt;" in html
+
+
+def test_digest_enrichment_counts(tmp_path):
+    ads = {
+        "1": _ad(
+            1,
+            cta_text="Shop",
+            link_url="https://ok.example/a",
+            images=["https://img.example/a.jpg"],
+            same_creative_count=3,
+            multiple_versions=True,
+        ),
+        "2": _ad(2, cta_text="Bad", link_url="javascript:alert(1)", same_creative_count=0),
+        "3": _ad(3, images=["https://img.example/b.jpg"], multiple_versions=True),
+        "4": _ad(4),
+    }
+    paths = report.write_report("nike", {"new": [ads["1"]]}, ads, META, tmp_path)
+    digest = json.loads(Path(paths["digest"]).read_text())
+
+    assert digest["with_link"] == 1
+    assert digest["with_cta"] == 2
+    assert digest["with_images"] == 2
+    assert digest["with_same_creative"] == 1
+    assert digest["with_multiple_versions"] == 2
+    assert digest["total"] == 4
+
+
 def test_report_paths_differ_by_country(tmp_path, monkeypatch):
     """The same query in two markets must never share report artifacts."""
     monkeypatch.setattr(store, "_data_dir", lambda: tmp_path)
@@ -117,3 +207,49 @@ def test_report_paths_differ_by_country(tmp_path, monkeypatch):
     # Country is part of the key exactly like the snapshot filename.
     assert us["html"].parent == tmp_path / "reports"
     assert us["html"].name == store._snapshot_path("KFC", "US").stem + ".html"
+
+
+def test_build_html_skips_non_dict_ads_by_id(tmp_path):
+    """A junk value in ads_by_id must not crash the card renderer."""
+    ads = {"1": _ad(1), "2": "not-an-ad", "3": None, "4": ["list"]}
+    paths = report.write_report(
+        "nike", {"new": [ads["1"]], "ended": [], "changed": []}, ads, META, tmp_path
+    )
+    html = Path(paths["html"]).read_text()
+    digest = json.loads(Path(paths["digest"]).read_text())
+
+    assert 'data-ad-id="1"' in html
+    # Only dicts are ads; junk entries are neither cards nor counted.
+    assert html.count('class="card"') == 1
+    assert digest["total"] == 1
+
+
+def test_build_html_skips_non_dict_entries_in_diff_buckets(tmp_path):
+    """Non-dict entries inside diff buckets are ignored, not rendered."""
+    ad = _ad(1)
+    diff = {
+        "new": [ad, "junk", None, 7],
+        "changed": [{"id": "2"}, {}],
+        "ended": [42],
+    }
+    paths = report.write_report("nike", diff, {"1": ad}, META, tmp_path)
+    html = Path(paths["html"]).read_text()
+
+    assert 'data-ad-id="1"' in html
+    assert 'data-ad-id="2"' in html
+    # {"id": "2"} is a dict and still renders; its data-ad-id is present.
+    assert html.count('class="card"') <= 2
+
+
+def test_build_html_coerces_mismatched_bucket_types(tmp_path):
+    """A bucket that is not a list (dict/str/int/None) must not crash counts."""
+    ad = _ad(1)
+    diff = {"new": "not-a-list", "changed": {"id": "1"}, "ended": 5}
+    document = report.build_html("nike", diff, {"1": ad}, META)
+
+    assert "0 new / 0 ended / 0 changed" in document
+    assert 'data-ad-id="1"' in document
+    # A non-dict ads_by_id container degrades to "no ads" instead of raising.
+    empty = report.build_html("nike", {}, ["not-a-mapping"], META)  # type: ignore[arg-type]
+    assert "No ads in this check." in empty
+    assert "0 ads tracked" in empty

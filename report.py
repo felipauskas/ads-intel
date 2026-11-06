@@ -45,6 +45,13 @@ h1 { font-size: 22px; font-weight: 700; word-break: break-word; }
 .chip-ended { background: #fee2e2; color: var(--ended); }
 .copy { font-size: 12.5px; line-height: 1.45; color: #334155; white-space: pre-wrap;
         word-break: break-word; }
+.cta { font-size: 12.5px; display: flex; flex-wrap: wrap; gap: 6px; align-items: baseline; }
+.cta a { font-weight: 600; }
+.cta-text { font-weight: 600; color: #334155; }
+.cta-dest { color: var(--muted); font-size: 11px; }
+.badges { display: flex; flex-wrap: wrap; gap: 6px; }
+.badge { font-size: 10px; padding: 2px 6px; border-radius: 5px; background: #eef2ff;
+         color: #3730a3; }
 .foot { border-top: 1px solid var(--border); padding-top: 8px; font-size: 11px;
         color: var(--muted); display: flex; flex-wrap: wrap; gap: 10px;
         justify-content: space-between; }
@@ -63,6 +70,68 @@ def _chip_class(status: str) -> str:
     return "chip-ended" if status.strip().lower() in {"ended", "inactive", "stopped"} else "chip-active"
 
 
+def _http_url(value) -> str:
+    """Return ``value`` only when it is an absolute http(s) URL, else ``""``.
+
+    Destination links come from an untrusted page render: ``javascript:``,
+    ``data:`` and relative paths must never reach an ``href``.
+    """
+    url = str(value or "").strip()
+    return url if url.lower().startswith(("https://", "http://")) else ""
+
+
+def _same_creative_count(ad: dict) -> int:
+    try:
+        return max(int(ad.get("same_creative_count") or 0), 0)
+    except (TypeError, ValueError):
+        return 0
+
+
+def _image_count(ad: dict) -> int:
+    images = ad.get("images") or []
+    return len(images) if isinstance(images, list) else 0
+
+
+def _is_flagged(ad: dict, key: str) -> bool:
+    value = ad.get(key)
+    if isinstance(value, str):
+        return value.strip().lower() in {"true", "1", "yes"}
+    return bool(value)
+
+
+def _render_cta(ad: dict) -> str:
+    """CTA copy plus its destination; a non-http(s) URL stays inert text."""
+    cta = html.escape(str(ad.get("cta_text") or "").strip())
+    title = html.escape(str(ad.get("link_title") or "").strip())
+    url = _http_url(ad.get("link_url"))
+    label = cta or title or html.escape(url)
+    if not label:
+        return ""
+    if not url:
+        return f'<div class="cta"><span class="cta-text">{label}</span></div>'
+    attrs = f' title="{title}"' if title else ""
+    dest = f'<span class="cta-dest">{title}</span>' if cta and title else ""
+    return (
+        f'<div class="cta"><a href="{html.escape(url, quote=True)}" '
+        f'target="_blank" rel="noopener noreferrer"{attrs}>{label}</a>{dest}</div>'
+    )
+
+
+def _render_badges(ad: dict) -> str:
+    badges = []
+    same = _same_creative_count(ad)
+    if same:
+        badges.append(f'<span class="badge">{same} use this creative</span>')
+    if _is_flagged(ad, "multiple_versions"):
+        badges.append('<span class="badge">Multiple versions</span>')
+    images = _image_count(ad)
+    if images:
+        badges.append(
+            f'<span class="badge">{images} image{"s" if images != 1 else ""}</span>'
+        )
+    return f'<div class="badges">{"".join(badges)}</div>' if badges else ""
+
+
 def _render_card(ad: dict) -> str:
     ad_id = html.escape(str(ad.get("id") or ""))
     page = html.escape(str(ad.get("page_name") or "Unknown"))
@@ -70,12 +139,12 @@ def _render_card(ad: dict) -> str:
     copy = html.escape(str(ad.get("creative_text") or "—"))
     first_seen = html.escape(str(ad.get("first_seen") or "—"))
     last_seen = html.escape(str(ad.get("last_seen") or "—"))
-    url = str(ad.get("library_url") or "").strip()
+    url = _http_url(ad.get("library_url"))
     # Only http(s) URLs become anchors: a javascript:/data: library_url is
     # untrusted data and must stay inert text.
     link = (
-        f'<a href="{html.escape(url, quote=True)}" target="_blank" rel="noopener">Ad library &rarr;</a>'
-        if url.lower().startswith(("https://", "http://"))
+        f'<a href="{html.escape(url, quote=True)}" target="_blank" rel="noopener noreferrer">Ad library &rarr;</a>'
+        if url
         else ""
     )
     return (
@@ -85,6 +154,8 @@ def _render_card(ad: dict) -> str:
         f'<span class="card-page" title="{page}">{page}</span>'
         "</div>"
         f'<div class="copy">{copy}</div>'
+        f"{_render_cta(ad)}"
+        f"{_render_badges(ad)}"
         '<div class="foot">'
         f"<span>First seen: {first_seen}</span>"
         f"<span>Last seen: {last_seen}</span>"
@@ -95,20 +166,42 @@ def _render_card(ad: dict) -> str:
     )
 
 
+def _as_list(value) -> list:
+    """Diff buckets are lists; anything else (dict/str/int/None) is empty.
+
+    Snapshots and diffs come from JSON on disk, so a hand-edited or corrupt
+    file can hand us a non-list bucket. Treat it as empty rather than
+    iterating a string character by character or raising.
+    """
+    return value if isinstance(value, list) else []
+
+
+def _ad_values(ads_by_id) -> list:
+    """The dict entries of an ads-by-id mapping; junk values are skipped."""
+    if not isinstance(ads_by_id, dict):
+        return []
+    return [ad for ad in ads_by_id.values() if isinstance(ad, dict)]
+
+
 def _ordered_ads(diff: dict, ads_by_id: dict) -> list[dict]:
     """Diff buckets first (new, changed, ended), then every other known ad."""
     seen = set()
     ordered = []
     for key in ("new", "changed", "ended"):
-        for ad in diff.get(key) or []:
+        for ad in _as_list(diff.get(key)):
+            if not isinstance(ad, dict):
+                continue
             ad_id = str(ad.get("id") or "")
             if ad_id and ad_id not in seen:
                 seen.add(ad_id)
                 ordered.append(ad)
-    for ad_id, ad in ads_by_id.items():
-        if str(ad_id) not in seen:
-            seen.add(str(ad_id))
-            ordered.append(ad)
+    if isinstance(ads_by_id, dict):
+        for ad_id, ad in ads_by_id.items():
+            if not isinstance(ad, dict):
+                continue
+            if str(ad_id) not in seen:
+                seen.add(str(ad_id))
+                ordered.append(ad)
     return ordered
 
 
@@ -120,8 +213,8 @@ def build_html(
     country: str = "US",
     advertiser: str = "",
 ) -> str:
-    counts = {key: len(diff.get(key) or []) for key in ("new", "ended", "changed")}
-    total = len(ads_by_id)
+    counts = {key: len(_as_list(diff.get(key))) for key in ("new", "ended", "changed")}
+    total = len(_ad_values(ads_by_id))
     checked_at = html.escape(str(meta.get("checked_at") or ""))
     partial = bool(meta.get("partial"))
     market = html.escape(str(country or "US"))
@@ -170,32 +263,52 @@ def build_digest(
         "country": str(country or "US"),
         "checked_at": meta.get("checked_at"),
         "partial": bool(meta.get("partial")),
-        "total": len(ads_by_id),
-        "new": len(diff.get("new") or []),
-        "ended": len(diff.get("ended") or []),
-        "changed": len(diff.get("changed") or []),
+        "total": len(_ad_values(ads_by_id)),
+        "new": len(_as_list(diff.get("new"))),
+        "ended": len(_as_list(diff.get("ended"))),
+        "changed": len(_as_list(diff.get("changed"))),
     }
+    ads = _ad_values(ads_by_id)
+    digest["with_link"] = sum(1 for ad in ads if _http_url(ad.get("link_url")))
+    digest["with_cta"] = sum(
+        1 for ad in ads if str(ad.get("cta_text") or "").strip()
+    )
+    digest["with_images"] = sum(1 for ad in ads if _image_count(ad))
+    digest["with_same_creative"] = sum(1 for ad in ads if _same_creative_count(ad))
+    digest["with_multiple_versions"] = sum(
+        1 for ad in ads if _is_flagged(ad, "multiple_versions")
+    )
     if str(advertiser or "").strip():
         digest["advertiser"] = str(advertiser).strip()
     return digest
 
 
 def write_report(
-    query, diff, ads_by_id, meta, out_dir=None, country="US", advertiser=""
+    query,
+    diff,
+    ads_by_id,
+    meta,
+    out_dir=None,
+    country="US",
+    advertiser="",
+    active_status="all",
+    media_type="all",
 ) -> dict:
     """Write one HTML report and its digest; return their paths as strings.
 
     ``out_dir`` defaults to the plugin's ``reports`` directory for query +
-    ``country`` (+ ``advertiser``); callers that let it default must pass the
-    watch entry's market and target so two variants never overwrite each
-    other's artifacts.
+    ``country`` (+ ``advertiser``, + filters); callers that let it default must
+    pass the watch entry's market, target and filters so two variants never
+    overwrite each other's artifacts.
     """
     meta = dict(meta or {})
     diff = diff or {}
     ads_by_id = ads_by_id or {}
 
     if out_dir is None:
-        paths = store.report_paths(query, country, advertiser)
+        paths = store.report_paths(
+            query, country, advertiser, active_status, media_type
+        )
         html_path, digest_path = paths["html"], paths["digest"]
     else:
         out = Path(out_dir)

@@ -31,9 +31,11 @@ The first `ad_check()` seeds a baseline and reports every ad as `new`; the next 
 
 ## Tools
 
-### `ad_search(query, limit, country, advertiser)`
+### `ad_search(query, limit, country, advertiser, active_status, media_type)`
 
 Find the ads a brand, advertiser or keyword is running. `query` is required; `limit` defaults to 20. `country` is the two-letter ad-library market code and defaults to `US`; pass e.g. `AE` or `GB` to search that market's library. A malformed code returns `{"error": "invalid_country"}`.
+
+`active_status` (`all` default, or `active` / `inactive`) and `media_type` (`all` default, or `image` / `video`) narrow the listing using the public library's own URL parameters — they are part of the same single free GET, not a second request or a paid endpoint. An unsupported value returns `{"error": "invalid_active_status"}` or `{"error": "invalid_media_type"}` rather than silently widening the search. The filters also apply when `advertiser` is set: the page is still resolved against the full fetched listing, then the filtered ads are kept.
 
 Pass `advertiser` to keep only the resolved brand's page. Because the library is keyword-searched, a query like `Burger King` also returns unrelated pages that merely mention the term; with `advertiser` set, page names are scored (`0.80` exact, `0.85` normalized, `0.60` substring, threshold `0.80`) and only the winning page's ads come back, with `resolved: {page_name, score}`. If nothing reaches the threshold the response is `{"error": "name_not_matched", target, candidates, threshold}` — never the unfiltered keyword noise.
 
@@ -41,11 +43,25 @@ Pass `advertiser` to keep only the resolved brand's page. Because the library is
 > "What ads is KFC running in the UAE?"
 > "Show me Burger King's ads but only from Burger King's own page."
 
-Returns `{count, country, ads}` (plus `advertiser` and `resolved` when filtering), where each ad carries `id`, `page_name`, `status` (`active`/`ended`), `first_seen`, `last_seen`, `creative_text` and `library_url`.
+Returns `{count, country, ads}` (plus `advertiser` and `resolved` when filtering). Each ad carries:
 
-### `ad_watch(action, query, country, advertiser)`
+| Field | Meaning | Source |
+| --- | --- | --- |
+| `id`, `page_name`, `status`, `first_seen`, `last_seen`, `creative_text`, `library_url` | The original seven fields, unchanged. | public render + library URL |
+| `page_url` | The advertiser's Facebook page link shown on the card (`facebook.com/nike/`, or a numeric `facebook.com/615…/`). | public render |
+| `page_id` | The numeric page id parsed from `page_url`; `""` when the page link is a vanity handle. | derived |
+| `link_url`, `link_title` | Destination URL and title/caption of the ad's CTA block; `""` when the ad has no external CTA (help/facebook.com links are ignored). | public render |
+| `cta_text` | CTA label such as `Shop Now` or `Learn More`; `""` when absent. | public render |
+| `images` | Creative image URLs found on the card (the 60×60 profile thumbnail is excluded); `[]` when none render. | public render |
+| `has_video` | `true` only when the card shows the "having trouble playing this video" signal. There is no video file URL. | public-render signal |
+| `same_creative_count` | `N` from "**N ads** use this creative and text"; `0` when the card does not say. | public render |
+| `multiple_versions` | `true` when the card says "This ad has multiple versions". | public render |
 
-Manage the local watchlist: `add` a query, `remove` a query, or `list` saved queries. `query` is required for `add`; `country` applies to `add` (default `US`). The watchlist stores `{query, country}` entries, plus `advertiser` when given; `remove` drops every entry for that query regardless of market.
+Missing values are always `""` / `[]` / `0` / `false`, never absent keys, so old snapshots and new reads have the same shape.
+
+### `ad_watch(action, query, country, advertiser, active_status, media_type)`
+
+Manage the local watchlist: `add` a query, `remove` a query, or `list` saved queries. `query` is required for `add`; `country`, `advertiser`, `active_status` and `media_type` apply to `add` (defaults `US`, none, `all`, `all`). The watchlist stores `{query, country}` entries, plus `advertiser` and any non-default filter; `remove` drops every entry for that query regardless of market or filters. Filters are stored only when they differ from `all`, so an unfiltered watch keeps exactly the entry shape and snapshot filename it had before filters existed. A filtered watch has its own snapshot and report, and never falls back to the unfiltered baseline — the excluded ads would otherwise be reported as `ended`.
 
 > "Add 'linear.app' to my ad watchlist."
 > "Watch KFC in the UAE too."
@@ -54,7 +70,7 @@ Manage the local watchlist: `add` a query, `remove` a query, or `list` saved que
 
 ### `ad_check()`
 
-Fetch every watchlist entry, diff it against the last saved snapshot, and report what changed.
+Fetch every watchlist entry (re-applying its country, advertiser and filters), diff it against that entry's last saved snapshot, and report what changed.
 
 > "Check my ad watchlist and tell me what's new."
 
@@ -62,7 +78,7 @@ Diff semantics:
 
 - **new** — an ad id appears that was not in the prior snapshot, or an ad went `ended` → `active`.
 - **ended** — an ad id is no longer present, or an ad went `active` → `ended`.
-- **changed** — an ad kept its id but its creative text or status string changed.
+- **changed** — an ad kept its id but its status or creative signature changed. The signature is creative text plus, when both the old and new record carry them, `link_url`, `link_title` and `cta_text`; a field added by a newer version is not compared against an older baseline, so upgrading does not report every ad as changed. Image lists are not part of the signature.
 - **baseline** — the first `ad_check()` after adding a watch has no prior snapshot, so every ad it finds reports as `new`. That run seeds the baseline; diffs start on the next run.
 - **fail-safe** — if a fetch fails or returns an empty page while a snapshot exists, that query is reported as `skipped` (`fetch_empty`) and the diff is skipped. The snapshot is never overwritten with an empty result, so a transient failure cannot be mistaken for "every ad ended".
 
@@ -70,8 +86,8 @@ Diff semantics:
 
 - **Network: yes.** When a tool runs, the plugin asks Hermes to fetch exactly one URL per query: `https://www.facebook.com/ads/library/...`, a read-only GET performed by Hermes' built-in `web_extract`. No other hosts are contacted, and the plugin makes no requests while idle.
 - **Filesystem:** writes only inside the plugin data directory (`plugin_data_dir("ads-intel")`) — `watchlist.json`, `snapshots/<sha1>.json` and `reports/`. It reads nothing outside that directory, runs no shell commands, starts no background processes, and needs no credentials, environment variables or secrets — there is no account, API key or token to configure. Outside Hermes (for example when the test suite imports `store` directly), `store` falls back to `~/.ads-intel-dev` because `plugins.plugin_storage` is not importable there.
-- **Reports in `reports/`:** each `ad_check()` run writes a self-contained pair per query + country + advertiser — `reports/<sha1>.html` (the rendered `report.html` card gallery, inline CSS, no CDN, no scripts, no external images) and `reports/<sha1>.digest.json` (the same counts as machine-readable JSON). The filename hashes the `(query, country, advertiser)` key, so the same query in two markets, or filtered vs. unfiltered, never overwrites the other. The HTML escapes untrusted page names and creative copy, and only `http(s)` library URLs become links.
-- **Data stored locally:** watchlist `{query, country}` (plus `advertiser` when set) entries, ad snapshots (id, page name, status, dates, creative text) and the generated reports. Nothing is sent anywhere; the only outbound traffic is the library GET above.
+- **Reports in `reports/`:** each `ad_check()` run writes a self-contained pair per query + country + advertiser + filters — `reports/<sha1>.html` (the rendered `report.html` card gallery, inline CSS, no CDN, no scripts, no external images) and `reports/<sha1>.digest.json` (machine-readable counts for the same run). Cards now show the CTA label and its destination link (only absolute `http(s)` URLs become anchors; anything else stays inert text), plus badges for `N use this creative`, `Multiple versions` and the number of creative images — the image count is text, the URLs are never embedded as `<img>`, so the report stays offline and fetches nothing. The digest adds `with_link`, `with_cta`, `with_images`, `with_same_creative` and `with_multiple_versions` alongside `total`/`new`/`ended`/`changed`. The filename hashes the `(query, country, advertiser, active_status, media_type)` key, so the same query in two markets, two filter slices, or filtered vs. unfiltered, never overwrites the other. The HTML escapes untrusted page names and creative copy.
+- **Data stored locally:** watchlist `{query, country}` (plus `advertiser` and any non-default filters when set) entries, ad snapshots (id, page name, status, dates, creative text, page URL/id, destination link and title, CTA text, creative image URLs, video flag, creative-grouping signals) and the generated reports. Nothing is sent anywhere; the only outbound traffic is the library GET above.
 - **Country:** `country` is the two-letter ad-library market code (`US` by default; `AE`, `GB`, …). It selects the market in the library URL and is part of every snapshot and report key, so a country change starts a fresh baseline for that market instead of mixing markets.
 - **Upgrade note:** an older watchlist of plain query strings loads as `US` watches, and their pre-country `US` snapshots are still read, so no baseline is lost. The watchlist is rewritten in the new `{query, country}` format on the next `ad_watch` change; the snapshot is written to its new country-keyed file on the next `ad_check`. The old `sha1(query)` snapshot file is orphaned after that but harmless, and can be deleted.
 - **Terms of service posture — stated plainly:** this reads Meta's *public* Ad Library with no login, no cookies and no logged-in scraping, but Meta's terms do not authorise automated collection, and this plugin does not claim that authorisation. It is a read-only, low-rate client (one request per watch per `ad_check()`, sequential, no pagination, no retries hammering the endpoint), intended for personal, small-scale research. **You are responsible for your own use**; if Meta's terms or your jurisdiction forbid it, do not run it.
@@ -88,6 +104,9 @@ Advertiser resolution works on page names only (`ad-intel`'s page-id and handle 
 - Large result pages are truncated by the fetcher (`char_limit=120000`). A render that fills the whole budget, or that carries the fetch host's head+tail truncation footer, is treated as partial: `ad_check` merges the fetched ads into the stored snapshot and suppresses endings for ids missing from the clipped page (`partial: true`), because an id absent from a clipped page has not necessarily stopped running. Status flips on ads that *did* render are still reported.
 - A fetch that returns at least `limit` ads is also treated as partial: the tail past the limit was sliced off, so absent ids prove nothing there either. An unfiltered `ad_check` fetches the default `limit` of 20 ads per watch, which means **an unfiltered watch with 20 or more live ads reports `partial: true`; endings are suppressed for ids missing from the clipped page, while status flips that did render are still reported**. That is deliberate — a false "ended" is worse than a missed one — but it is a real ceiling: keep keyword watches narrow enough to stay under 20 results, and read `new`/`changed` (which stay accurate) rather than relying on retirements. A watch with `advertiser` is exempt: it fetches the full listing, resolves the page name against all of it, and tracks every ad on that page.
 - No pagination in v1: one page of results per query, capped at 20 ads for an unfiltered `ad_check` (an `advertiser` watch keeps every ad on the resolved page).
+- **Fields the public render does not expose — and this plugin therefore does not return:** publisher `platforms` (Facebook/Instagram/Audience Network placement), `page_likes`, `spend` and `impressions`, and direct video file URLs. These exist in paid/authenticated ad-intel products but not in Meta's public, logged-out page render. They are reported as absent, not guessed or back-filled from other sources. `has_video` is only the render's "trouble playing this video" signal; it is not a media inventory, and `images` is only what rendered on the card.
+- The CTA fields are likewise render-derived: an ad whose card shows no outbound CTA block returns `link_url`/`link_title`/`cta_text` as `""` rather than an inferred destination.
+- **Free-only invariant:** the new fields and filters add no request, no key, no login and no third-party service. Every tool call still performs exactly one read-only GET to `www.facebook.com/ads/library/`; the filters are query-string parameters on that same URL.
 
 ## License
 

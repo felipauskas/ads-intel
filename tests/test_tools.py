@@ -120,7 +120,7 @@ def test_search_rejects_malformed_country(monkeypatch):
         return []
 
     monkeypatch.setattr(tools.sources, "fetch_ads", fake_fetch)
-    for bad in ("ae", "AEX", "", "A1", "U", 123, ["AE"], {"country": "AE"}):
+    for bad in ("ae", "AEX", "", "A1", "U", "US\n", 123, ["AE"], {"country": "AE"}):
         payload = json.loads(tools.ad_search({"query": "KFC", "country": bad}))
         assert payload == {"error": "invalid_country"}, bad
     assert dispatched == []
@@ -194,6 +194,9 @@ def test_ad_check_empty_fetch_keeps_snapshot(monkeypatch):
     row = json.loads(tools.ad_check({}))["results"][0]
     assert row["skipped"] is True
     assert row["reason"] == "fetch_empty"
+    # Skipped rows keep the result contract: completeness and an artifact slot.
+    assert row["partial"] is True
+    assert row["artifacts"] == {"error": "fetch_empty"}
     assert "new_ads" not in row
     assert tools.store.load_snapshot("nike")["ads"]["1"]["id"] == "1"
 
@@ -208,6 +211,8 @@ def test_ad_check_fetch_error_keeps_snapshot(monkeypatch):
     monkeypatch.setattr(tools.sources, "fetch_ads_with_meta", boom)
     row = json.loads(tools.ad_check({}))["results"][0]
     assert row["skipped"] is True
+    assert row["partial"] is True
+    assert row["artifacts"] == {"error": "fetch_failed"}
     assert tools.store.load_snapshot("nike")["ads"]["1"]["id"] == "1"
 
 
@@ -224,9 +229,36 @@ def test_check_labels_parse_failure_and_preserves_snapshot(monkeypatch):
     row = json.loads(tools.ad_check({}))["results"][0]
     assert row["skipped"] is True
     assert row["reason"] == "parse_failed"
+    assert row["partial"] is True
+    assert row["artifacts"] == {"error": "parse_failed"}
     assert "new_ads" not in row
     assert snap_path.read_bytes() == before
     assert tools.store.load_snapshot("nike")["ads"]["1"]["id"] == "1"
+
+
+def test_ad_check_name_not_matched_keeps_result_contract(monkeypatch):
+    tools.ad_watch({"action": "add", "query": "nike", "advertiser": "KFC"})
+    monkeypatch.setattr(tools.sources, "fetch_ads_with_meta", _stub_fetch([AD]))
+
+    row = json.loads(tools.ad_check({}))["results"][0]
+    assert row["error"] == "name_not_matched"
+    assert row["partial"] is False
+    assert row["artifacts"] == {"error": "name_not_matched"}
+    assert "new_ads" not in row
+
+
+def test_ad_check_unexpected_failure_row_keeps_result_contract(monkeypatch):
+    tools.ad_watch({"action": "add", "query": "nike"})
+    monkeypatch.setattr(tools.sources, "fetch_ads_with_meta", _stub_fetch([AD]))
+
+    def explode(*args, **kwargs):
+        raise RuntimeError("disk full")
+
+    monkeypatch.setattr(tools.store, "save_snapshot", explode)
+    row = json.loads(tools.ad_check({}))["results"][0]
+    assert row["error"] == "disk full"
+    assert row["partial"] is True
+    assert row["artifacts"] == {"error": "disk full"}
 
 
 def test_truncated_fetch_reports_no_ended_ads(monkeypatch):
@@ -557,3 +589,135 @@ def test_search_advertiser_resolves_beyond_limit(monkeypatch):
     assert payload["count"] == 1
     assert [ad["id"] for ad in payload["ads"]] == [HEPSIBURADA_ID]
 
+def test_search_rejects_invalid_filters(monkeypatch):
+    dispatched = []
+
+    def fake_fetch(*args, **kwargs):
+        dispatched.append(kwargs)
+        return []
+
+    monkeypatch.setattr(tools.sources, "fetch_ads", fake_fetch)
+    for bad in ("paused", "", "ALL", 1, ["active"]):
+        payload = json.loads(
+            tools.ad_search({"query": "nike", "active_status": bad})
+        )
+        assert payload == {"error": "invalid_active_status"}, bad
+    for bad in ("carousel", "", "VIDEO", 1, ["image"]):
+        payload = json.loads(tools.ad_search({"query": "nike", "media_type": bad}))
+        assert payload == {"error": "invalid_media_type"}, bad
+    assert dispatched == []
+
+
+def test_search_passes_filters_to_fetch(monkeypatch):
+    seen = {}
+
+    def fake_fetch(query, **kwargs):
+        seen.update(kwargs)
+        return [AD]
+
+    monkeypatch.setattr(tools.sources, "fetch_ads", fake_fetch)
+    payload = json.loads(
+        tools.ad_search(
+            {"query": "nike", "active_status": "active", "media_type": "image"}
+        )
+    )
+    assert "error" not in payload
+    assert seen["active_status"] == "active"
+    assert seen["media_type"] == "image"
+
+    # Omitted or JSON-null filters mean "all", never an error.
+    json.loads(tools.ad_search({"query": "nike"}))
+    assert seen["active_status"] == "all" and seen["media_type"] == "all"
+    json.loads(
+        tools.ad_search({"query": "nike", "active_status": None, "media_type": None})
+    )
+    assert seen["active_status"] == "all" and seen["media_type"] == "all"
+
+
+def test_watch_add_persists_filters():
+    json.loads(
+        tools.ad_watch(
+            {
+                "action": "add",
+                "query": "nike",
+                "active_status": "active",
+                "media_type": "video",
+            }
+        )
+    )
+    assert json.loads(tools.ad_watch({"action": "list"}))["watchlist"] == [
+        {
+            "query": "nike",
+            "country": "US",
+            "active_status": "active",
+            "media_type": "video",
+        }
+    ]
+
+
+def test_watch_add_rejects_invalid_filters():
+    payload = json.loads(
+        tools.ad_watch({"action": "add", "query": "nike", "active_status": "paused"})
+    )
+    assert payload == {"error": "invalid_active_status"}
+    payload = json.loads(
+        tools.ad_watch({"action": "add", "query": "nike", "media_type": "carousel"})
+    )
+    assert payload == {"error": "invalid_media_type"}
+    assert json.loads(tools.ad_watch({"action": "list"}))["watchlist"] == []
+
+
+def test_check_uses_entry_filters_and_isolates_snapshots(monkeypatch):
+    tools.ad_watch({"action": "add", "query": "nike"})
+    tools.ad_watch(
+        {"action": "add", "query": "nike", "active_status": "active", "media_type": "image"}
+    )
+    seen = []
+
+    def fake_fetch(query, **kwargs):
+        seen.append(kwargs)
+        return [AD], {"complete": True, "fetched_chars": 10, "char_limit": 120000}
+
+    monkeypatch.setattr(tools.sources, "fetch_ads_with_meta", fake_fetch)
+    payload = json.loads(tools.ad_check({}))
+    assert "error" not in payload
+    filters = sorted(
+        (kw.get("active_status"), kw.get("media_type")) for kw in seen
+    )
+    assert filters == [("active", "image"), ("all", "all")]
+    # Each variant keeps its own baseline and artifacts.
+    htmls = {r["artifacts"]["html"] for r in payload["results"]}
+    assert len(htmls) == 2
+
+
+def test_check_summaries_surface_enriched_fields(monkeypatch):
+    ad = {
+        **AD,
+        "page_url": "https://www.facebook.com/nike/",
+        "page_id": "15087023444",
+        "link_url": "https://nike.com/shoes",
+        "link_title": "Air Max",
+        "cta_text": "Shop Now",
+        "images": ["https://scontent.xx.fbcdn.net/600x600/a.jpg"],
+        "has_video": False,
+        "same_creative_count": 4,
+        "multiple_versions": True,
+    }
+    tools.ad_watch({"action": "add", "query": "nike"})
+    monkeypatch.setattr(tools.sources, "fetch_ads_with_meta", _stub_fetch([ad]))
+    payload = json.loads(tools.ad_check({}))
+    row = payload["results"][0]["new"][0]
+    for key in (
+        "page_url",
+        "page_id",
+        "link_url",
+        "link_title",
+        "cta_text",
+        "images",
+        "has_video",
+        "same_creative_count",
+        "multiple_versions",
+    ):
+        assert key in row, key
+    assert row["cta_text"] == "Shop Now"
+    assert row["same_creative_count"] == 4
