@@ -1,9 +1,9 @@
 # ads-intel — catalog submission (PR body)
 
 > **DRAFT — local only, repo not yet published (rule 5 pending).**
-> This file is not a PR yet: there is no public repo, no remote, and no
-> `plugin-catalog/*.yaml` entry in this change. Do not submit until the repo is
-> published and the catalog YAML lands in the separate local task.
+> This file is not a PR yet: there is no public repo and no remote. The catalog
+> entry exists locally as an unpublished draft (`plugin-catalog/ads-intel.yaml`).
+> Do not submit until the repo is published and that entry is ready to land.
 
 ---
 
@@ -107,7 +107,10 @@ suppressed rather than guessed, while status flips that did render are still rep
   `name_not_matched`, never keyword noise.
 - Result pages are clipped at `char_limit=120000`; a clipped or limit-sliced fetch
   is partial, and partial runs suppress endings for ids missing from the clipped
-  page while still reporting status flips on ads that did render.
+  page while still reporting status flips on ads that did render. An `advertiser`
+  watch resolves the page name against the full listing before filtering, so a
+  brand page anywhere in the keyword hits is found and all of its ads are tracked.
 - A markup change on Meta's side surfaces as `parse_failed` (search) /
   `reason: "parse_failed"` (check) instead of a false "all ads ended".
-- No pagination in v1: one page, 20 ads per watch for `ad_check`.
+- No pagination in v1: one page per watch. Unfiltered `ad_check` keeps the first
+  20 ads; an `advertiser` watch keeps every ad on the resolved page.

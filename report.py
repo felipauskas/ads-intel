@@ -137,7 +137,10 @@ def build_html(
         if partial
         else ""
     )
-    title = html.escape(f"Ad check — {query} ({scope})")
+    # ``query``, ``market`` and ``target`` are escaped exactly once, above (or
+    # here for query); escaping the composed title again would render an
+    # advertiser like "A&B" as "A&amp;amp;B".
+    title = f"Ad check — {html.escape(str(query))} ({scope})"
     return (
         "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n"
         '<meta charset="UTF-8">\n'

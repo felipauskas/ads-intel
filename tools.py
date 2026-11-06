@@ -63,19 +63,27 @@ def ad_search(args, **kwargs):
     except (TypeError, ValueError):
         return json.dumps({"error": "invalid limit"})
     try:
-        ads = sources.fetch_ads(query, limit=limit, dispatch=_dispatch, country=country)
         if not advertiser:
+            ads = sources.fetch_ads(
+                query, limit=limit, dispatch=_dispatch, country=country
+            )
             return json.dumps(
                 {"count": len(ads), "country": country, "ads": ads}, ensure_ascii=False
             )
         # Keyword hits are not a brand filter: resolve the advertiser to one
         # page name, or say so instead of passing noise off as the brand.
+        # Resolve against the FULL parse — the brand's page can sit anywhere
+        # in the listing — and only then apply the caller's `limit`.
+        ads = sources.fetch_ads(
+            query, limit=None, dispatch=_dispatch, country=country
+        )
         resolution, kept = resolve.filter_ads(ads, advertiser)
         if "error" in resolution:
             return json.dumps(
                 {**resolution, "country": country, "query": query},
                 ensure_ascii=False,
             )
+        kept = kept[: max(limit, 0)]
         return json.dumps(
             {
                 "count": len(kept),
@@ -148,9 +156,16 @@ def ad_check(args, **kwargs):
         try:
             # Meta-aware fetch: a render clipped at the char budget, carrying a
             # truncation footer, or sliced by the result limit is a partial
-            # listing, and ids missing from it are not "ended".
+            # listing, and ids missing from it are not "ended". An advertiser
+            # watch resolves the page name first, so it fetches the FULL parse:
+            # the brand's page can appear anywhere in the keyword hits, and a
+            # slice taken before resolution hides both the page and its tail
+            # ads. No advertiser: the default 20-ad limit applies.
             ads, meta = sources.fetch_ads_with_meta(
-                query, dispatch=_dispatch, country=country
+                query,
+                limit=None if advertiser else 20,
+                dispatch=_dispatch,
+                country=country,
             )
             # Fail safe: an unknown completeness is treated as partial.
             complete = bool(meta.get("complete", False))
@@ -254,5 +269,4 @@ def ad_check(args, **kwargs):
             logger.warning("ad_check failed for %r: %s", query, exc)
             results.append({"query": query, "country": country, "error": str(exc)})
 
-    checked_at = datetime.now().isoformat(timespec="seconds")
     return json.dumps({"checked_at": checked_at, "results": results}, ensure_ascii=False)

@@ -65,6 +65,25 @@ def test_report_drops_non_https_library_url(tmp_path):
     assert "href=" not in html
 
 
+def test_report_title_escapes_once():
+    """An `&` in query/advertiser renders as `&amp;`, never `&amp;amp;`.
+
+    The advertiser was escaped, folded into the title, then the whole title was
+    escaped again, so "A&B" showed up in the page heading as "A&amp;amp;B".
+    """
+    ads = {"1": _ad(1, page_name="A&B")}
+    document = report.build_html(
+        "A&B",
+        {"new": [ads["1"]], "ended": [], "changed": []},
+        ads,
+        META,
+        advertiser="A&B",
+    )
+
+    assert "Ad check — A&amp;B (US · A&amp;B)" in document
+    assert "A&amp;amp;B" not in document
+
+
 def test_digest_counts_match_diff(tmp_path):
     ads = {str(i): _ad(i) for i in range(1, 8)}
     diff = {

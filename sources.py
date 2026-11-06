@@ -331,14 +331,17 @@ def _normalise_ad(rec: dict) -> dict | None:
     return ad
 
 
-def _ads_from_payload_list(items: list, limit: int) -> tuple[list[dict], int]:
+def _ads_from_payload_list(
+    items: list, limit: int | None
+) -> tuple[list[dict], int]:
     """Ads from a JSON-array payload, or :class:`ParseError` if unrecognized.
 
     Accepts either a list of ``web_extract`` result objects (the envelope as
     an array instead of a dict) or a list of already-parsed ad objects.
 
     Returns ``(ads_sliced_to_limit, total_parsed)`` so the caller can tell
-    whether ``limit`` itself truncated the listing.
+    whether ``limit`` itself truncated the listing. ``limit=None`` returns
+    every ad and reports ``total_parsed`` unchanged.
     """
     if not items:
         raise FetchError("empty results")
@@ -348,18 +351,18 @@ def _ads_from_payload_list(items: list, limit: int) -> tuple[list[dict], int]:
     ):
         content = _content_from_payload({"results": items})
         parsed = parse_library_markdown(content)
-        return parsed[:limit], len(parsed)
+        return parsed if limit is None else parsed[:limit], len(parsed)
     ads = [ad for ad in (_normalise_ad(i) for i in items if isinstance(i, dict)) if ad]
     if not ads:
         raise ParseError(
             "unrecognised JSON array payload", cards_seen=len(items)
         )
-    return ads[:limit], len(ads)
+    return ads if limit is None else ads[:limit], len(ads)
 
 
 def fetch_ads_with_meta(
     query: str,
-    limit: int = 20,
+    limit: int | None = 20,
     dispatch=None,
     char_limit: int | None = None,
     country: str = "US",
@@ -378,12 +381,20 @@ def fetch_ads_with_meta(
     * ``limit`` itself sliced the parsed ads (total parsed ``>= limit``), so
       the tail beyond the limit was never returned.
 
+    ``limit=None`` disables result slicing: every parsed ad is returned and
+    the limit signal is inapplicable (it is omitted from the completeness
+    test). The char-budget and truncation-footer signals still apply, so
+    ``complete`` keeps its meaning: the render itself was not clipped. Use
+    this when the caller must see the whole page before narrowing it — for
+    example resolving an advertiser name that may appear anywhere in the
+    listing.
+
     A partial listing only suppresses the ``ended`` bucket, so a false
     positive costs a missed retirement report while a false negative
     manufactures ``new`` ads out of a shrunken baseline.
 
     JSON payloads carry whole ads and have no footer, but their length is
-    still capped by ``limit``.
+    still capped by ``limit``; with ``limit=None`` they are returned whole.
 
     ``char_limit`` exists so tests (and future tiering) can use a small budget;
     production callers leave it at :data:`_CHAR_LIMIT`.
@@ -391,7 +402,7 @@ def fetch_ads_with_meta(
     ``country`` is the two-letter ad-library market code (default ``US``).
     """
     budget = _CHAR_LIMIT if char_limit is None else max(int(char_limit), 0)
-    lim = max(int(limit), 0)
+    lim = None if limit is None else max(int(limit), 0)
     if dispatch is None or not callable(dispatch):
         raise FetchError("web_extract unavailable")
     result = dispatch(
@@ -415,8 +426,10 @@ def fetch_ads_with_meta(
                     content = _content_from_payload(decoded)
                 elif isinstance(decoded, list):
                     ads, total = _ads_from_payload_list(decoded, lim)
+                    # With limit=None nothing was sliced off, so the listing
+                    # is whole: a JSON array carries no footer or char budget.
                     return ads, {
-                        "complete": total < lim,
+                        "complete": True if lim is None else total < lim,
                         "fetched_chars": 0,
                         "char_limit": budget,
                     }
@@ -426,7 +439,7 @@ def fetch_ads_with_meta(
     parsed = parse_library_markdown(content)
     complete = (
         len(content) < budget
-        and len(parsed) < lim
+        and (lim is None or len(parsed) < lim)
         and not any(marker in content for marker in _TRUNCATION_MARKERS)
     )
     meta = {
@@ -434,17 +447,20 @@ def fetch_ads_with_meta(
         "fetched_chars": len(content),
         "char_limit": budget,
     }
-    return parsed[:lim], meta
+    return parsed if lim is None else parsed[:lim], meta
 
 
 def fetch_ads(
-    query: str, limit: int = 20, dispatch=None, country: str = "US"
+    query: str, limit: int | None = 20, dispatch=None, country: str = "US"
 ) -> list[dict]:
     """Fetch and parse the ad library for ``query`` via host ``web_extract``.
 
     Returns ``[]`` only when a fetch succeeded and the render carried no card
     markers at all; transport/decoding failures raise :class:`FetchError` and
     an unparseable render raises :class:`ParseError`.
+
+    ``limit=None`` returns every parsed ad (see
+    :func:`fetch_ads_with_meta`).
 
     Ads only, for backwards compatibility. Callers that must distinguish a
     complete listing from a truncated one use :func:`fetch_ads_with_meta`.

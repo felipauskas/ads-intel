@@ -151,6 +151,35 @@ def test_fetch_marks_partial_when_result_limit_hits():
     assert all_meta["complete"] is True
 
 
+def test_fetch_with_limit_none_returns_full_parse():
+    """`limit=None` means no result slicing; only clipping makes it partial."""
+    text = FIXTURE.read_text()
+
+    ads, meta = sources.fetch_ads_with_meta(
+        "nike", limit=None, dispatch=lambda n, a: text, char_limit=sources._CHAR_LIMIT
+    )
+    assert len(ads) == 28
+    assert meta["complete"] is True
+
+    # The char-budget signal still applies: a clipped prefix is partial.
+    budget = 8000
+    clipped, clipped_meta = sources.fetch_ads_with_meta(
+        "nike", limit=None, dispatch=lambda n, a: text[:budget], char_limit=budget
+    )
+    assert clipped
+    assert clipped_meta["complete"] is False
+
+    # A JSON array is returned whole, and nothing was sliced off it.
+    payload = json.dumps([{"id": str(i), "page_name": "Nike"} for i in range(1, 30)])
+    json_ads, json_meta = sources.fetch_ads_with_meta(
+        "nike", limit=None, dispatch=lambda n, a: payload
+    )
+    assert len(json_ads) == 29
+    assert json_meta["complete"] is True
+    # The compat wrapper passes `limit=None` through too.
+    assert len(sources.fetch_ads("nike", limit=None, dispatch=lambda n, a: text)) == 28
+
+
 def test_fetch_marks_partial_on_truncation_footer_marker():
     """The host's head+tail footer means cards were dropped from the middle."""
     text = FIXTURE.read_text()

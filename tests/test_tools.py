@@ -5,6 +5,18 @@ import pytest
 
 import tools
 
+FIXTURE = Path(__file__).parent / "fixtures" / "library_page.md"
+
+# Facts from the recorded render, asserted here so a fixture edit that moves
+# them is caught by the regression tests below rather than silently weakening.
+HEPSIBURADA_ID = "8932462163548008"
+NIKE_IDS = {
+    "1785179045778580",
+    "962050096457659",
+    "1700063364126216",
+    "1841713136987087",
+}
+
 AD = {
     "id": "1",
     "page_name": "Nike",
@@ -417,7 +429,8 @@ def test_check_returns_artifact_paths(monkeypatch, tmp_path):
     tools.ad_watch({"action": "add", "query": "nike"})
     monkeypatch.setattr(tools.sources, "fetch_ads_with_meta", _stub_fetch([AD]))
 
-    row = json.loads(tools.ad_check({}))["results"][0]
+    payload = json.loads(tools.ad_check({}))
+    row = payload["results"][0]
     artifacts = row["artifacts"]
     assert set(artifacts) == {"html", "digest"}
 
@@ -430,6 +443,8 @@ def test_check_returns_artifact_paths(monkeypatch, tmp_path):
     digest = json.loads(digest_path.read_text())
     assert digest["query"] == "nike"
     assert digest["new"] == row["new_ads"] == 1
+    # One stamp per run: the digest and the response agree.
+    assert digest["checked_at"] == payload["checked_at"]
 
 
 def test_check_survives_report_failure(monkeypatch):
@@ -448,4 +463,77 @@ def test_check_survives_report_failure(monkeypatch):
     assert row["ended_ads"] == 0
     assert row["changed_ads"] == 0
     assert "error" not in row
+
+
+class _FixtureCtx:
+    """Host context stub: every web_extract returns the recorded render."""
+
+    def __init__(self, content):
+        self.content = content
+
+    def dispatch_tool(self, name, args):
+        return {"results": [{"url": args["urls"][0], "content": self.content}]}
+
+
+def _serve_fixture(monkeypatch):
+    """Drive the real fetch/parse path off the recorded library page."""
+    text = FIXTURE.read_text()
+    # Guard the fixture facts the assertions below depend on.
+    parsed = tools.sources.parse_library_markdown(text)
+    assert len(parsed) == 28
+    assert [ad["id"] for ad in parsed].index(HEPSIBURADA_ID) > 20
+    assert {ad["id"] for ad in parsed if ad["page_name"] == "Nike"} == NIKE_IDS
+
+    monkeypatch.setattr(tools, "_CTX", _FixtureCtx(text))
+
+
+def test_check_advertiser_resolves_beyond_first_twenty(monkeypatch):
+    """A page that only appears past position 20 must still resolve.
+
+    Resolution used to run on the first 20 keyword hits, so Hepsiburada (index
+    24 of 28 in the recorded render) reported `name_not_matched` even though
+    the page was on the page.
+    """
+    tools.ad_watch({"action": "add", "query": "nike", "advertiser": "Hepsiburada"})
+    _serve_fixture(monkeypatch)
+
+    row = json.loads(tools.ad_check({}))["results"][0]
+    assert row.get("error") != "name_not_matched"
+    assert row["resolved"]["page_name"] == "Hepsiburada"
+    assert row["new_ads"] >= 1
+    assert HEPSIBURADA_ID in [ad["id"] for ad in row["new"]]
+    # The snapshot is keyed by advertiser and seeded with the resolved ad.
+    snap = tools.store.load_snapshot("nike", advertiser="Hepsiburada")["ads"]
+    assert list(snap) == [HEPSIBURADA_ID]
+
+
+def test_check_advertiser_keeps_all_brand_ads(monkeypatch):
+    """Nike has 4 ads; only 3 sit inside the first 20 hits.
+
+    The 4th used to be invisible to the diff, so the snapshot stalled at 3 and
+    the complete render still looked complete.
+    """
+    tools.ad_watch({"action": "add", "query": "nike", "advertiser": "Nike"})
+    _serve_fixture(monkeypatch)
+
+    first = json.loads(tools.ad_check({}))["results"][0]
+    assert sorted(ad["id"] for ad in first["new"]) == sorted(NIKE_IDS)
+    assert first["new_ads"] == 4
+    assert len(tools.store.load_snapshot("nike", advertiser="Nike")["ads"]) == 4
+
+    second = json.loads(tools.ad_check({}))["results"][0]
+    assert (second["new_ads"], second["ended_ads"], second["changed_ads"]) == (0, 0, 0)
+    assert set(tools.store.load_snapshot("nike", advertiser="Nike")["ads"]) == NIKE_IDS
+
+
+def test_search_advertiser_resolves_beyond_limit(monkeypatch):
+    """`advertiser` resolves against the full parse, then applies `limit`."""
+    _serve_fixture(monkeypatch)
+
+    payload = json.loads(
+        tools.ad_search({"query": "nike", "advertiser": "Hepsiburada", "limit": 10})
+    )
+    assert payload["resolved"]["page_name"] == "Hepsiburada"
+    assert payload["count"] == 1
+    assert [ad["id"] for ad in payload["ads"]] == [HEPSIBURADA_ID]
 
