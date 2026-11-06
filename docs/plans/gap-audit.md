@@ -129,14 +129,19 @@ Rows: 20. Every `yes` cites a fixture line or `sources.py` line.
 - Verdict: **not yet free-feasible as a filter.** Same rule: confirm the exact
   phrase value in a live URL before exposing it.
 
-### `sort_data[mode]=total_impressions` + `sort_data[direction]=desc` — confirmed, unimplemented
+### `sort_data[mode]=total_impressions` + `sort_data[direction]=desc` — confirmed in URL, NO observable effect (not implemented)
 
-- Both keys are present in the captured page URL (`:11`, `:545`), which is
-  direct evidence the library accepts them, but `build_url` does not emit
-  either. `total_impressions` never appears as a card value, so this is
-  ordering only, not spend/impression data.
-- Verdict: **free-feasible (yes), not implemented.** Distinct from the Treg
-  "impressions" field — it must not be presented as a metric.
+- Both keys are present in the captured page URL (`:11`, `:545`), which shows
+  the library accepts them, but `build_url` does not emit either.
+  `total_impressions` never appears as a card value, so this is ordering only,
+  not spend/impression data.
+- Live negative result: `sort_data[mode]=total_impressions&direction=desc`
+  present in captured URL but produces identical id sequences live on
+  `ad_type=all` keyword searches (nike / burger king / linear app) — NOT
+  implemented as a filter. Revisit only with a live capture proving reordering.
+- Verdict: **no observable effect — removed, not exposed.** Ordering that does
+  not reorder is dead surface area; the parameter must not be presented as a
+  metric or a filter.
 
 ### `is_targeted_country=false` — confirmed, unimplemented
 
@@ -147,14 +152,16 @@ Rows: 20. Every `yes` cites a fixture line or `sources.py` line.
 ## 6. Consequences for Phase 1 Task 1
 
 - Only parameters with a confirmed value in a real URL may be coded. Today that
-  is `ad_type` (`all` only), `search_type` (`keyword_unordered` only), and the
-  two `sort_data` keys; the two filter enums the plan expected are **not**
-  confirmed beyond their defaults.
-- Recommended Task 1 scope: implement `sort_data[mode]`/`sort_data[direction]`
-  (evidence-backed, changes ordering) and hold `ad_type`/`search_type` until a
-  live capture shows at least one non-default value. If the user insists on
-  shipping them, ship the parameter with the single confirmed value plus a
-  documented "unverified enum" note — never invent the other values.
+  is `ad_type` (`all` only) and `search_type` (`keyword_unordered` only); the
+  two filter enums the plan expected are **not** confirmed beyond their
+  defaults, and the two `sort_data` keys are confirmed in the URL but showed no
+  observable reordering when fetched live.
+- Task 1 scope: hold `ad_type`/`search_type` until a live capture shows at least
+  one non-default value, and do **not** implement `sort_data` — the captured
+  pair produced identical id sequences on three live searches, so there is no
+  observable effect to expose. If the user insists on shipping a parameter, ship
+  the single confirmed value plus a documented "unverified enum" note — never
+  invent the other values.
 - No rows justify parser work: every Treg field marked `no` (platforms,
   page_likes, spend/impressions, video URLs, cards, display_format,
   publisher/date/language filters, pagination) is absent from the render or the
