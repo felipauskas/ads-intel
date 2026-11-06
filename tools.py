@@ -210,6 +210,10 @@ def ad_check(args, **kwargs):
                         "country": country,
                         "advertiser": advertiser,
                         "error": "name_not_matched",
+                        # A miss on a clipped render only means the page was
+                        # not in what rendered: report the same completeness
+                        # every other row carries.
+                        "partial": not complete,
                         "target": resolution["target"],
                         "candidates": resolution["candidates"],
                         "threshold": resolution["threshold"],

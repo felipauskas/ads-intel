@@ -57,7 +57,8 @@ import tools  # noqa: E402
 
 FIXTURE = ROOT / "tests" / "fixtures" / "library_page.md"
 
-# ad_check does not pass a limit, so it inherits fetch_ads_with_meta's default.
+# Unfiltered ad_check passes limit=20, so it inherits that slice; an advertiser
+# entry passes limit=None (full parse) so resolution sees every keyword hit.
 AD_CHECK_LIMIT = 20
 
 LIVE_QUERIES = (("KFC", "US"), ("KFC", "AE"), ("BMW", "US"), ("Nike", "US"))

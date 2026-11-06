@@ -507,6 +507,23 @@ def test_check_advertiser_resolves_beyond_first_twenty(monkeypatch):
     assert list(snap) == [HEPSIBURADA_ID]
 
 
+def test_name_not_matched_marks_partial_on_clipped_render(monkeypatch):
+    """A clipped render that hides the brand page is a partial miss, not a fact.
+
+    The row used to report `name_not_matched` with no `partial` at all, so a
+    caller could not tell "the page is absent" from "the render stopped early".
+    """
+    tools.ad_watch({"action": "add", "query": "nike", "advertiser": "Nike"})
+    noise = [{**AD, "id": "entel", "page_name": "entel"}]
+    monkeypatch.setattr(
+        tools.sources, "fetch_ads_with_meta", _stub_fetch(noise, complete=False)
+    )
+
+    row = json.loads(tools.ad_check({}))["results"][0]
+    assert row["error"] == "name_not_matched"
+    assert row["partial"] is True
+
+
 def test_check_advertiser_keeps_all_brand_ads(monkeypatch):
     """Nike has 4 ads; only 3 sit inside the first 20 hits.
 
@@ -517,6 +534,9 @@ def test_check_advertiser_keeps_all_brand_ads(monkeypatch):
     _serve_fixture(monkeypatch)
 
     first = json.loads(tools.ad_check({}))["results"][0]
+    # The advertiser path fetches the full parse: nothing was sliced, so the
+    # row must not be flagged partial.
+    assert first["partial"] is False
     assert sorted(ad["id"] for ad in first["new"]) == sorted(NIKE_IDS)
     assert first["new_ads"] == 4
     assert len(tools.store.load_snapshot("nike", advertiser="Nike")["ads"]) == 4
