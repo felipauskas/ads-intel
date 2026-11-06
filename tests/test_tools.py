@@ -124,6 +124,24 @@ def test_ad_check_fetch_error_keeps_snapshot(monkeypatch):
     assert tools.store.load_snapshot("nike")["ads"]["1"]["id"] == "1"
 
 
+def test_check_labels_parse_failure_and_preserves_snapshot(monkeypatch):
+    tools.ad_watch({"action": "add", "query": "nike"})
+    tools.store.save_snapshot("nike", {"ads": {"1": AD}})
+    snap_path = tools.store._snapshot_path("nike")
+    before = snap_path.read_bytes()
+
+    def broken(q, **kw):
+        raise tools.sources.ParseError("no cards parsed", cards_seen=3)
+
+    monkeypatch.setattr(tools.sources, "fetch_ads", broken)
+    row = json.loads(tools.ad_check({}))["results"][0]
+    assert row["skipped"] is True
+    assert row["reason"] == "parse_failed"
+    assert "new_ads" not in row
+    assert snap_path.read_bytes() == before
+    assert tools.store.load_snapshot("nike")["ads"]["1"]["id"] == "1"
+
+
 def test_ad_check_empty_watchlist(monkeypatch):
     monkeypatch.setattr(tools.sources, "fetch_ads", lambda q, **kw: [])
     payload = json.loads(tools.ad_check({}))

@@ -26,6 +26,21 @@ _CHAR_LIMIT = 45000
 class FetchError(RuntimeError):
     """The host fetch failed or returned no usable content."""
 
+
+class ParseError(Exception):
+    """The page rendered content that looks like ads but parsed to none.
+
+    Raised instead of returning ``[]`` so a markup change is never mistaken
+    for "this advertiser has no ads".
+
+    ``cards_seen`` is the number of card markers found in the render.
+    """
+
+    def __init__(self, message: str = "no cards parsed", cards_seen: int = 0):
+        super().__init__(message)
+        self.cards_seen = cards_seen
+
+
 _UNRESERVED = frozenset(
     "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789-_.~"
 )
@@ -91,6 +106,20 @@ def _card_blocks(md: str) -> list[list[str]]:
         else:
             blocks[-1].append(line.rstrip())
     return blocks
+
+
+def _has_card_marker(lines: list[str]) -> bool:
+    """A block that claims to be an ad card, whether or not it parses.
+
+    Card markers, not separators, are the signal: a genuinely empty results
+    page still has ``* * *`` chrome separators but no ``**Sponsored**`` or
+    ``Library ID`` anywhere.
+    """
+    for raw in lines:
+        line = raw.strip()
+        if line == "**Sponsored**" or "Library ID" in line:
+            return True
+    return False
 
 
 def _status_index(lines: list[str]) -> int | None:
@@ -201,10 +230,17 @@ def _parse_block(lines: list[str]) -> dict | None:
 
 
 def parse_library_markdown(md: str) -> list[dict]:
-    """Parse a rendered Meta Ad Library results page into ad dicts."""
+    """Parse a rendered Meta Ad Library results page into ad dicts.
+
+    Returns ``[]`` only when the render carries no card markers at all (a
+    genuinely empty results page). Markers without any parseable card mean
+    the markup changed, so :class:`ParseError` is raised instead.
+    """
     if not md or not isinstance(md, str):
         return []
-    records = [rec for rec in (_parse_block(b) for b in _card_blocks(md)) if rec]
+    blocks = _card_blocks(md)
+    records = [rec for rec in (_parse_block(b) for b in blocks) if rec]
+    cards_seen = sum(1 for block in blocks if _has_card_marker(block))
 
     # Recover cards cut in two by a capture/separator boundary: a status block
     # with no page label picks up a page label with no status block. Complete
@@ -228,6 +264,10 @@ def parse_library_markdown(md: str) -> list[dict]:
                 "creative_text": rec.get("creative_text", ""),
                 "library_url": f"{_LIBRARY_BASE}?id={rec['id']}",
             }
+        )
+    if not ads and cards_seen:
+        raise ParseError(
+            f"{cards_seen} card markers but no parseable ad", cards_seen=cards_seen
         )
     return ads
 
@@ -260,11 +300,49 @@ def _content_from_payload(payload: dict) -> str:
     return content
 
 
+_AD_TEXT_KEYS = ("page_name", "status", "first_seen", "last_seen", "creative_text")
+
+
+def _normalise_ad(rec: dict) -> dict | None:
+    """Normalize an already-parsed ad object from a JSON-array payload."""
+    rid = rec.get("id")
+    if rid in (None, ""):
+        return None
+    ad: dict = {"id": str(rid)}
+    for key in _AD_TEXT_KEYS:
+        ad[key] = str(rec.get(key) or "")
+    ad["library_url"] = rec.get("library_url") or f"{_LIBRARY_BASE}?id={ad['id']}"
+    return ad
+
+
+def _ads_from_payload_list(items: list, limit: int) -> list[dict]:
+    """Ads from a JSON-array payload, or :class:`ParseError` if unrecognized.
+
+    Accepts either a list of ``web_extract`` result objects (the envelope as
+    an array instead of a dict) or a list of already-parsed ad objects.
+    """
+    if not items:
+        raise FetchError("empty results")
+    first = items[0]
+    if isinstance(first, dict) and any(
+        key in first for key in ("content", "markdown", "error")
+    ):
+        content = _content_from_payload({"results": items})
+        return parse_library_markdown(content)[:limit]
+    ads = [ad for ad in (_normalise_ad(i) for i in items if isinstance(i, dict)) if ad]
+    if not ads:
+        raise ParseError(
+            "unrecognised JSON array payload", cards_seen=len(items)
+        )
+    return ads[:limit]
+
+
 def fetch_ads(query: str, limit: int = 20, dispatch=None) -> list[dict]:
     """Fetch and parse the ad library for ``query`` via host ``web_extract``.
 
-    Returns ``[]`` only when a fetch succeeded and the page genuinely carried
-    no ads; transport/decoding failures raise :class:`FetchError`.
+    Returns ``[]`` only when a fetch succeeded and the render carried no card
+    markers at all; transport/decoding failures raise :class:`FetchError` and
+    an unparseable render raises :class:`ParseError`.
     """
     if dispatch is None or not callable(dispatch):
         raise FetchError("web_extract unavailable")
@@ -278,14 +356,17 @@ def fetch_ads(query: str, limit: int = 20, dispatch=None) -> list[dict]:
         if not result.strip():
             raise FetchError("empty content")
         content = result
-        if result.lstrip().startswith("{"):
+        stripped = result.lstrip()
+        if stripped.startswith("{") or stripped.startswith("["):
             try:
                 decoded = json.loads(result)
             except ValueError:
-                pass  # not JSON: treat as raw markdown
+                pass  # not JSON (markdown can start with '['): raw content
             else:
                 if isinstance(decoded, dict):
                     content = _content_from_payload(decoded)
+                elif isinstance(decoded, list):
+                    return _ads_from_payload_list(decoded, max(int(limit), 0))
     else:
         raise FetchError("web_extract returned no result")
 

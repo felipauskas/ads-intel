@@ -44,6 +44,15 @@ def ad_search(args, **kwargs):
     try:
         ads = sources.fetch_ads(query, limit=limit, dispatch=_dispatch)
         return json.dumps({"count": len(ads), "ads": ads}, ensure_ascii=False)
+    except sources.ParseError as exc:
+        logger.warning("ad_search parse failed for %r: %s", query, exc)
+        return json.dumps(
+            {
+                "error": f"parse_failed: {exc}",
+                "cards_seen": getattr(exc, "cards_seen", 0),
+            },
+            ensure_ascii=False,
+        )
     except Exception as exc:
         logger.warning("ad_search failed for %r: %s", query, exc)
         return json.dumps({"error": f"fetch_failed: {exc}"}, ensure_ascii=False)
@@ -83,6 +92,14 @@ def ad_check(args, **kwargs):
     for query in store.watch_list():
         try:
             ads = sources.fetch_ads(query, dispatch=_dispatch)
+        except sources.ParseError as exc:
+            # Markup changed: do not treat it as "every ad ended" and do not
+            # overwrite the snapshot with an empty baseline.
+            logger.warning("ad_check parse failed for %r: %s", query, exc)
+            results.append(
+                {"query": query, "skipped": True, "reason": "parse_failed"}
+            )
+            continue
         except Exception as exc:
             logger.warning("ad_check fetch failed for %r: %s", query, exc)
             if _prior_ads(query):

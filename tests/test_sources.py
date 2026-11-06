@@ -129,3 +129,57 @@ def test_fetch_ads_missing_dispatch_or_result_raises():
 
 def test_parse_library_markdown_none_is_empty():
     assert sources.parse_library_markdown(None) == []
+
+
+def test_json_array_payload_is_parsed_not_silently_zero():
+    text = FIXTURE.read_text()
+
+    # The host envelope may arrive as a JSON array of result objects.
+    envelope = json.dumps(
+        [{"url": "u", "title": "t", "content": text, "error": None}]
+    )
+    ads = sources.fetch_ads("nike", limit=40, dispatch=lambda n, a: envelope)
+    assert ads
+    assert all(ad["id"] for ad in ads)
+
+    # A bare array of ad objects is decoded too.
+    bare = json.dumps(
+        [
+            {
+                "id": "123",
+                "page_name": "Nike",
+                "status": "active",
+                "first_seen": "May 1, 2026",
+                "last_seen": "",
+                "creative_text": "v1",
+            }
+        ]
+    )
+    assert [ad["id"] for ad in sources.fetch_ads("nike", dispatch=lambda n, a: bare)] == [
+        "123"
+    ]
+
+    # An array we cannot interpret must never come back as a silent [].
+    with pytest.raises(sources.ParseError):
+        sources.fetch_ads(
+            "nike", dispatch=lambda n, a: json.dumps([{"weird": True}])
+        )
+
+
+def test_nonempty_render_without_cards_raises_parse_error():
+    # A markup change: the card markers are still there but nothing parses.
+    page = (
+        "Ad Library\n\n**Sponsored**\n\nBuy shoes now.\n\nActive\n\n"
+        "Library ID 1046730950862281\n"
+    )
+    with pytest.raises(sources.ParseError):
+        sources.parse_library_markdown(page)
+    with pytest.raises(sources.ParseError):
+        sources.fetch_ads("nike", dispatch=lambda n, a: page)
+
+    # A genuinely empty results page has no card markers and stays empty.
+    empty = (
+        "Ad Library\n\nNo ads match your search.\n\n"
+        "* * *\n\nFilters\n\n* * *\n\nPrivacy\n"
+    )
+    assert sources.parse_library_markdown(empty) == []
