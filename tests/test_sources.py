@@ -183,3 +183,13 @@ def test_nonempty_render_without_cards_raises_parse_error():
         "* * *\n\nFilters\n\n* * *\n\nPrivacy\n"
     )
     assert sources.parse_library_markdown(empty) == []
+
+
+def test_long_render_without_markers_raises_parse_error():
+    # A render far longer than an empty results page that still carries no card
+    # markers is drift: pagination/JS chrome rendered without the card markup.
+    page = "Ad Library\n\n" + ("Some unrelated chrome line.\n\n" * 400)
+    assert len(page) > 5000
+    assert "* * *" not in page and "**Sponsored**" not in page
+    with pytest.raises(sources.ParseError):
+        sources.parse_library_markdown(page)

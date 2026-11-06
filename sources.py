@@ -22,6 +22,11 @@ _LIBRARY_BASE = "https://www.facebook.com/ads/library/"
 # 15k truncation silently drops most cards.
 _CHAR_LIMIT = 45000
 
+# An empty results page renders short (a few hundred chars of chrome). A render
+# past this size with no card markers at all means the page shape drifted, not
+# that the advertiser has no ads.
+_MAX_EMPTY_RENDER_CHARS = 5000
+
 
 class FetchError(RuntimeError):
     """The host fetch failed or returned no usable content."""
@@ -117,7 +122,7 @@ def _has_card_marker(lines: list[str]) -> bool:
     """
     for raw in lines:
         line = raw.strip()
-        if line == "**Sponsored**" or "Library ID" in line:
+        if line == "**Sponsored**" or line.startswith("Library ID:"):
             return True
     return False
 
@@ -268,6 +273,10 @@ def parse_library_markdown(md: str) -> list[dict]:
     if not ads and cards_seen:
         raise ParseError(
             f"{cards_seen} card markers but no parseable ad", cards_seen=cards_seen
+        )
+    if not ads and len(md) > _MAX_EMPTY_RENDER_CHARS:
+        raise ParseError(
+            f"long render ({len(md)} chars) with no card markers", cards_seen=0
         )
     return ads
 

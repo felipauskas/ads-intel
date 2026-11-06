@@ -37,6 +37,17 @@ def test_ad_search_fetch_failure(monkeypatch):
     assert payload["error"].startswith("fetch_failed")
 
 
+def test_search_labels_parse_failure(monkeypatch):
+    def boom(query, **kwargs):
+        raise tools.sources.ParseError("3 card markers but no parseable ad", cards_seen=3)
+
+    monkeypatch.setattr(tools.sources, "fetch_ads", boom)
+    payload = json.loads(tools.ad_search({"query": "nike"}))
+    assert payload["error"].startswith("parse_failed")
+    assert payload["cards_seen"] == 3
+    assert "count" not in payload
+
+
 def test_ad_search_requires_query():
     assert json.loads(tools.ad_search({})) == {"error": "query required"}
     assert json.loads(tools.ad_search({"query": "  "})) == {
