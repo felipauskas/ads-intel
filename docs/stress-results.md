@@ -175,3 +175,7 @@ Known limits of the harness (deliberate, not findings):
   path, not cross-process scheduling.
 - Live mode depends on the host's extract backend and its cache; a cold fetch
   costs ~3–4 s here and later fetches are cache hits.
+
+## Addendum 2026-11-06 (post-review fix, HEAD `a9b75a0`)
+
+Independent review found the advertiser filter ran after the 20-ad keyword slice (brand past position 20 reported `name_not_matched`; Nike lost its 4th ad). Fixed in `42f5438` (advertiser paths fetch the full parse, resolve, then slice) + `a9b75a0` (`name_not_matched` now carries `partial`). Suite is now **84 passed** (was 78 at the run above). Re-run: pytest ×3 = 84/84/84, offline stress 50/50 PASS, validate green, live AE+advertiser flow PASS (KFC/AE: 27 ads resolved at 0.80, settle 0/0/0).
