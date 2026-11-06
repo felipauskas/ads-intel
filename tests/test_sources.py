@@ -109,6 +109,8 @@ def test_fetch_marks_truncated_when_render_hits_budget():
     assert ads
     assert meta == {
         "complete": False,
+        "fetched": 2,
+        "total_returned": 2,
         "fetched_chars": budget,
         "char_limit": budget,
     }
@@ -178,6 +180,23 @@ def test_fetch_with_limit_none_returns_full_parse():
     assert json_meta["complete"] is True
     # The compat wrapper passes `limit=None` through too.
     assert len(sources.fetch_ads("nike", limit=None, dispatch=lambda n, a: text)) == 28
+
+
+def test_json_array_exactly_limit_is_complete():
+    """A JSON array whose length equals `limit` was not sliced: complete."""
+    payload = json.dumps([{"id": str(i), "page_name": "Nike"} for i in range(1, 6)])
+    ads, meta = sources.fetch_ads_with_meta("nike", limit=5, dispatch=lambda n, a: payload)
+    assert len(ads) == 5
+    assert meta["total_returned"] == 5
+    assert meta["fetched"] == 5
+    assert meta["complete"] is True
+
+    # One more ad than the limit: the tail was sliced off, so partial.
+    wider = json.dumps([{"id": str(i), "page_name": "Nike"} for i in range(1, 7)])
+    ads, meta = sources.fetch_ads_with_meta("nike", limit=5, dispatch=lambda n, a: wider)
+    assert len(ads) == 5
+    assert meta["total_returned"] == 6
+    assert meta["complete"] is False
 
 
 def test_fetch_marks_partial_on_truncation_footer_marker():
@@ -742,3 +761,45 @@ def test_fetch_rejects_invalid_filters():
         sources.fetch_ads("nike", dispatch=fake_dispatch, active_status="paused")
     with pytest.raises(ValueError):
         sources.fetch_ads("nike", dispatch=fake_dispatch, media_type="carousel")
+
+
+def test_meta_reports_fetched_and_total_returned():
+    """Meta names how many ads were returned and how many the render held."""
+    text = FIXTURE.read_text()
+
+    ads, meta = sources.fetch_ads_with_meta(
+        "nike",
+        limit=5,
+        dispatch=lambda n, a: text,
+        char_limit=sources._CHAR_LIMIT,
+    )
+    assert len(ads) == 5
+    assert meta["complete"] is False
+    assert meta["fetched"] == 5
+    assert meta["total_returned"] == 28
+
+    full_ads, full_meta = sources.fetch_ads_with_meta(
+        "nike",
+        limit=None,
+        dispatch=lambda n, a: text,
+        char_limit=sources._CHAR_LIMIT,
+    )
+    assert len(full_ads) == 28
+    assert full_meta["complete"] is True
+    assert full_meta["fetched"] == 28
+    assert full_meta["total_returned"] == 28
+
+
+def test_json_meta_reports_fetched_and_total_returned():
+    payload = json.dumps([{"id": str(i), "page_name": "Nike"} for i in range(1, 30)])
+    ads, meta = sources.fetch_ads_with_meta(
+        "nike", limit=5, dispatch=lambda n, a: payload
+    )
+    assert len(ads) == 5
+    assert meta == {
+        "complete": False,
+        "fetched": 5,
+        "total_returned": 29,
+        "fetched_chars": 0,
+        "char_limit": sources._CHAR_LIMIT,
+    }

@@ -633,7 +633,13 @@ def fetch_ads_with_meta(
     """Fetch and parse ``query``, returning ``(ads, meta)``.
 
     ``meta`` is
-    ``{"complete": bool, "fetched_chars": int, "char_limit": int}``.
+    ``{"complete": bool, "fetched": int, "total_returned": int,
+    "fetched_chars": int, "char_limit": int}``.
+
+    ``fetched`` is the number of ads actually returned and ``total_returned``
+    the number of ads the render held before ``limit`` sliced it, so a caller
+    can see how much of the listing it is missing. Both count the parsed ads,
+    not the char budget.
 
     Completeness is a *heuristic*, not a guarantee, and it fails toward
     ``False``. Three independent signals make a listing partial:
@@ -704,8 +710,12 @@ def fetch_ads_with_meta(
                     ads, total = _ads_from_payload_list(decoded, lim)
                     # With limit=None nothing was sliced off, so the listing
                     # is whole: a JSON array carries no footer or char budget.
+                    # `total == lim` means every parsed ad was returned; only
+                    # a total beyond the limit proves the tail was sliced.
                     return ads, {
-                        "complete": True if lim is None else total < lim,
+                        "complete": True if lim is None else total <= lim,
+                        "fetched": len(ads),
+                        "total_returned": total,
                         "fetched_chars": 0,
                         "char_limit": budget,
                     }
@@ -720,6 +730,8 @@ def fetch_ads_with_meta(
     )
     meta = {
         "complete": complete,
+        "fetched": len(parsed) if lim is None else min(len(parsed), lim),
+        "total_returned": len(parsed),
         "fetched_chars": len(content),
         "char_limit": budget,
     }

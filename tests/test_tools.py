@@ -28,6 +28,21 @@ AD = {
 }
 
 
+def _patch_fetch(monkeypatch, fn):
+    """Adapt an ads-returning stub to ad_search's meta-aware fetch seam."""
+    def wrapper(*args, **kwargs):
+        ads = fn(*args, **kwargs)
+        return list(ads), {
+            "complete": True,
+            "fetched": len(ads),
+            "total_returned": len(ads),
+            "fetched_chars": 100,
+            "char_limit": 120000,
+        }
+
+    monkeypatch.setattr(tools.sources, "fetch_ads_with_meta", wrapper)
+
+
 @pytest.fixture(autouse=True)
 def data_dir(tmp_path, monkeypatch):
     monkeypatch.setattr(tools.store, "_data_dir", lambda: tmp_path)
@@ -35,7 +50,7 @@ def data_dir(tmp_path, monkeypatch):
 
 
 def test_ad_search_returns_count_and_ads(monkeypatch):
-    monkeypatch.setattr(tools.sources, "fetch_ads", lambda q, **kw: [AD])
+    _patch_fetch(monkeypatch, lambda q, **kw: [AD])
     payload = json.loads(tools.ad_search({"query": "nike"}))
     assert payload["count"] == 1
     assert payload["ads"][0]["id"] == "1"
@@ -45,7 +60,7 @@ def test_ad_search_fetch_failure(monkeypatch):
     def boom(query, **kwargs):
         raise RuntimeError("network down")
 
-    monkeypatch.setattr(tools.sources, "fetch_ads", boom)
+    _patch_fetch(monkeypatch, boom)
     payload = json.loads(tools.ad_search({"query": "nike"}))
     assert payload["error"].startswith("fetch_failed")
 
@@ -54,7 +69,7 @@ def test_search_labels_parse_failure(monkeypatch):
     def boom(query, **kwargs):
         raise tools.sources.ParseError("3 card markers but no parseable ad", cards_seen=3)
 
-    monkeypatch.setattr(tools.sources, "fetch_ads", boom)
+    _patch_fetch(monkeypatch, boom)
     payload = json.loads(tools.ad_search({"query": "nike"}))
     assert payload["error"].startswith("parse_failed")
     assert payload["cards_seen"] == 3
@@ -69,13 +84,13 @@ def test_ad_search_requires_query():
 
 
 def test_ad_search_rejects_bad_limit(monkeypatch):
-    monkeypatch.setattr(tools.sources, "fetch_ads", lambda q, **kw: [AD])
+    _patch_fetch(monkeypatch, lambda q, **kw: [AD])
     payload = json.loads(tools.ad_search({"query": "nike", "limit": "many"}))
     assert payload == {"error": "invalid limit"}
 
 
 def test_ad_search_accepts_host_kwargs(monkeypatch):
-    monkeypatch.setattr(tools.sources, "fetch_ads", lambda q, **kw: [])
+    _patch_fetch(monkeypatch, lambda q, **kw: [])
     raw = tools.ad_search({"query": "x"}, task_id="t", session_id="s")
     assert isinstance(json.loads(raw), dict)
 
@@ -119,7 +134,7 @@ def test_search_rejects_malformed_country(monkeypatch):
         dispatched.append((args, kwargs))
         return []
 
-    monkeypatch.setattr(tools.sources, "fetch_ads", fake_fetch)
+    _patch_fetch(monkeypatch, fake_fetch)
     for bad in ("ae", "AEX", "", "A1", "U", "US\n", 123, ["AE"], {"country": "AE"}):
         payload = json.loads(tools.ad_search({"query": "KFC", "country": bad}))
         assert payload == {"error": "invalid_country"}, bad
@@ -147,7 +162,7 @@ def test_search_with_advertiser_filters_keyword_noise(monkeypatch):
         {**AD, "id": "entel", "page_name": "entel"},
         {**AD, "id": "sound", "page_name": "Soundlines Group"},
     ]
-    monkeypatch.setattr(tools.sources, "fetch_ads", lambda q, **kw: list(noise))
+    _patch_fetch(monkeypatch, lambda q, **kw: list(noise))
 
     payload = json.loads(
         tools.ad_search({"query": "Burger King", "advertiser": "Burger King"})
@@ -589,6 +604,25 @@ def test_search_advertiser_resolves_beyond_limit(monkeypatch):
     assert payload["count"] == 1
     assert [ad["id"] for ad in payload["ads"]] == [HEPSIBURADA_ID]
 
+
+def test_search_advertiser_exactly_limit_is_complete(monkeypatch):
+    """An advertiser page with exactly `limit` ads was not sliced: complete."""
+    _serve_fixture(monkeypatch)
+
+    payload = json.loads(
+        tools.ad_search({"query": "nike", "advertiser": "Nike", "limit": len(NIKE_IDS)})
+    )
+    assert payload["count"] == len(NIKE_IDS)
+    assert payload["complete"] is True
+
+    # One fewer: the requested limit clipped the brand's ads, so partial.
+    payload = json.loads(
+        tools.ad_search({"query": "nike", "advertiser": "Nike", "limit": len(NIKE_IDS) - 1})
+    )
+    assert payload["count"] == len(NIKE_IDS) - 1
+    assert payload["complete"] is False
+
+
 def test_search_rejects_invalid_filters(monkeypatch):
     dispatched = []
 
@@ -596,7 +630,7 @@ def test_search_rejects_invalid_filters(monkeypatch):
         dispatched.append(kwargs)
         return []
 
-    monkeypatch.setattr(tools.sources, "fetch_ads", fake_fetch)
+    _patch_fetch(monkeypatch, fake_fetch)
     for bad in ("paused", "", "ALL", 1, ["active"]):
         payload = json.loads(
             tools.ad_search({"query": "nike", "active_status": bad})
@@ -615,7 +649,7 @@ def test_search_passes_filters_to_fetch(monkeypatch):
         seen.update(kwargs)
         return [AD]
 
-    monkeypatch.setattr(tools.sources, "fetch_ads", fake_fetch)
+    _patch_fetch(monkeypatch, fake_fetch)
     payload = json.loads(
         tools.ad_search(
             {"query": "nike", "active_status": "active", "media_type": "image"}
@@ -721,3 +755,64 @@ def test_check_summaries_surface_enriched_fields(monkeypatch):
         assert key in row, key
     assert row["cta_text"] == "Shop Now"
     assert row["same_creative_count"] == 4
+
+
+def test_summary_never_null_for_missing_fields():
+    """A pre-upgrade 7-key snapshot must summarize with typed defaults."""
+    old = {
+        key: AD[key]
+        for key in (
+            "id",
+            "page_name",
+            "status",
+            "first_seen",
+            "last_seen",
+            "creative_text",
+            "library_url",
+        )
+    }
+    # Every summarized key must have an explicit typed default; the two
+    # declarations are maintained by hand and drift silently otherwise.
+    assert tuple(tools._SUMMARY_KEYS) == tuple(tools._SUMMARY_DEFAULTS)
+    summary = tools._summary(old)
+    assert summary["page_url"] == ""
+    assert summary["page_id"] == ""
+    assert summary["link_url"] == ""
+    assert summary["link_title"] == ""
+    assert summary["cta_text"] == ""
+    assert summary["images"] == []
+    assert summary["has_video"] is False
+    assert summary["same_creative_count"] == 0
+    assert summary["multiple_versions"] is False
+    assert all(value is not None for value in summary.values())
+    # Caller-owned lists must not share one mutable default.
+    summary["images"].append("x")
+    assert tools._summary(old)["images"] == []
+
+
+def test_check_row_echoes_filters_only_when_non_default(monkeypatch):
+    tools.ad_watch(
+        {"action": "add", "query": "nike", "active_status": "active", "media_type": "video"}
+    )
+    tools.ad_watch({"action": "add", "query": "kfc"})
+    monkeypatch.setattr(tools.sources, "fetch_ads_with_meta", _stub_fetch([AD]))
+
+    rows = json.loads(tools.ad_check({}))["results"]
+    assert rows[0]["active_status"] == "active"
+    assert rows[0]["media_type"] == "video"
+    assert "active_status" not in rows[1]
+    assert "media_type" not in rows[1]
+
+
+def test_search_reports_complete_and_fetched(monkeypatch):
+    _serve_fixture(monkeypatch)
+
+    sliced = json.loads(tools.ad_search({"query": "nike", "limit": 5}))
+    assert sliced["count"] == 5
+    assert sliced["complete"] is False
+    assert sliced["fetched"] == 5
+
+    whole = json.loads(tools.ad_search({"query": "nike", "limit": 50}))
+    assert whole["count"] == 28
+    assert whole["complete"] is True
+    assert whole["fetched"] == 28

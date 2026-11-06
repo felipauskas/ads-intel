@@ -38,6 +38,27 @@ _SUMMARY_KEYS = (
     "multiple_versions",
 )
 
+#: Typed defaults for every summarized field. Pre-upgrade snapshots and
+#: renders that omit an enriched field must never surface JSON null: a caller
+#: reading `images[0]` or counting `same_creative_count` should see the empty
+#: value, not a type error.
+_SUMMARY_DEFAULTS = {
+    "id": "",
+    "page_name": "",
+    "status": "",
+    "first_seen": "",
+    "library_url": "",
+    "page_url": "",
+    "page_id": "",
+    "link_url": "",
+    "link_title": "",
+    "cta_text": "",
+    "images": [],
+    "has_video": False,
+    "same_creative_count": 0,
+    "multiple_versions": False,
+}
+
 _COUNTRY_RE = re.compile(r"^[A-Z]{2}$")
 
 _FILTER_CHOICES = {
@@ -86,7 +107,16 @@ def _dispatch(name, args):
 
 
 def _summary(ad: dict) -> dict:
-    return {key: ad.get(key) for key in _SUMMARY_KEYS}
+    summary = {}
+    for key in _SUMMARY_KEYS:
+        value = ad.get(key)
+        if value is None:
+            value = _SUMMARY_DEFAULTS[key]
+            if isinstance(value, list):
+                # Never hand out the shared default list itself.
+                value = list(value)
+        summary[key] = value
+    return summary
 
 
 def ad_search(args, **kwargs):
@@ -109,7 +139,7 @@ def ad_search(args, **kwargs):
         return json.dumps({"error": "invalid limit"})
     try:
         if not advertiser:
-            ads = sources.fetch_ads(
+            ads, meta = sources.fetch_ads_with_meta(
                 query,
                 limit=limit,
                 dispatch=_dispatch,
@@ -118,13 +148,20 @@ def ad_search(args, **kwargs):
                 media_type=media_type,
             )
             return json.dumps(
-                {"count": len(ads), "country": country, "ads": ads}, ensure_ascii=False
+                {
+                    "count": len(ads),
+                    "complete": bool(meta.get("complete", False)),
+                    "fetched": len(ads),
+                    "country": country,
+                    "ads": ads,
+                },
+                ensure_ascii=False,
             )
         # Keyword hits are not a brand filter: resolve the advertiser to one
         # page name, or say so instead of passing noise off as the brand.
         # Resolve against the FULL parse — the brand's page can sit anywhere
         # in the listing — and only then apply the caller's `limit`.
-        ads = sources.fetch_ads(
+        ads, meta = sources.fetch_ads_with_meta(
             query,
             limit=None,
             dispatch=_dispatch,
@@ -138,10 +175,17 @@ def ad_search(args, **kwargs):
                 {**resolution, "country": country, "query": query},
                 ensure_ascii=False,
             )
+        total = len(kept)
         kept = kept[: max(limit, 0)]
+        # The full parse was whole; `limit` may still have sliced the brand's
+        # own ads, so carry the same conservative signal as an unfiltered
+        # search. `total == limit` returned every ad: nothing was sliced.
+        complete = bool(meta.get("complete", False)) and total <= max(limit, 0)
         return json.dumps(
             {
                 "count": len(kept),
+                "complete": complete,
+                "fetched": len(kept),
                 "country": country,
                 "advertiser": advertiser,
                 "resolved": resolution,
@@ -234,6 +278,14 @@ def ad_check(args, **kwargs):
         # Filters are absent on entries written before they existed.
         active_status = entry.get("active_status") or store.DEFAULT_ACTIVE_STATUS
         media_type = entry.get("media_type") or store.DEFAULT_MEDIA_TYPE
+        # Echo the filters that narrow this watch so a row is self-describing.
+        # Same rule as storage: defaults stay implicit, so an unfiltered row
+        # keeps its pre-filter shape byte for byte.
+        echo = {}
+        if active_status != store.DEFAULT_ACTIVE_STATUS:
+            echo["active_status"] = active_status
+        if media_type != store.DEFAULT_MEDIA_TYPE:
+            echo["media_type"] = media_type
         try:
             # Meta-aware fetch: a render clipped at the char budget, carrying a
             # truncation footer, or sliced by the result limit is a partial
@@ -260,6 +312,7 @@ def ad_check(args, **kwargs):
                 {
                     "query": query,
                     "country": country,
+                    **echo,
                     "skipped": True,
                     "reason": "parse_failed",
                     # Completeness is unknown, so the row is partial by rule.
@@ -275,6 +328,7 @@ def ad_check(args, **kwargs):
                     {
                         "query": query,
                         "country": country,
+                        **echo,
                         "skipped": True,
                         "reason": "fetch_empty",
                         "partial": True,
@@ -286,6 +340,7 @@ def ad_check(args, **kwargs):
                     {
                         "query": query,
                         "country": country,
+                        **echo,
                         "error": str(exc),
                         "partial": True,
                         "artifacts": {"error": str(exc)},
@@ -301,6 +356,7 @@ def ad_check(args, **kwargs):
                 {
                     "query": query,
                     "country": country,
+                    **echo,
                     "skipped": True,
                     "reason": "fetch_empty",
                     "partial": True,
@@ -323,6 +379,7 @@ def ad_check(args, **kwargs):
                     {
                         "query": query,
                         "country": country,
+                        **echo,
                         "advertiser": advertiser,
                         "error": "name_not_matched",
                         # A miss on a clipped render only means the page was
@@ -387,6 +444,7 @@ def ad_check(args, **kwargs):
                 {
                     "query": query,
                     "country": country,
+                    **echo,
                     "partial": not complete,
                     **({"advertiser": advertiser, "resolved": resolution} if resolution else {}),
                     "new_ads": len(diff["new"]),
@@ -404,6 +462,7 @@ def ad_check(args, **kwargs):
                 {
                     "query": query,
                     "country": country,
+                    **echo,
                     "error": str(exc),
                     "partial": True,
                     "artifacts": {"error": str(exc)},
