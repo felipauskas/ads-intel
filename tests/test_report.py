@@ -54,6 +54,16 @@ def test_report_is_single_file_without_external_assets(tmp_path):
     assert len(files) == 2
 
 
+def test_report_drops_non_https_library_url(tmp_path):
+    """A javascript:/data: library_url must never become an anchor href."""
+    ads = {"1": _ad(1, library_url="javascript:alert(document.cookie)")}
+    paths = report.write_report("nike", {"new": [ads["1"]]}, ads, META, tmp_path)
+    html = Path(paths["html"]).read_text()
+
+    assert "javascript:" not in html
+    assert "href=" not in html
+
+
 def test_digest_counts_match_diff(tmp_path):
     ads = {str(i): _ad(i) for i in range(1, 8)}
     diff = {

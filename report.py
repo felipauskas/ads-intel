@@ -70,10 +70,12 @@ def _render_card(ad: dict) -> str:
     copy = html.escape(str(ad.get("creative_text") or "—"))
     first_seen = html.escape(str(ad.get("first_seen") or "—"))
     last_seen = html.escape(str(ad.get("last_seen") or "—"))
-    url = str(ad.get("library_url") or "")
+    url = str(ad.get("library_url") or "").strip()
+    # Only http(s) URLs become anchors: a javascript:/data: library_url is
+    # untrusted data and must stay inert text.
     link = (
         f'<a href="{html.escape(url, quote=True)}" target="_blank" rel="noopener">Ad library &rarr;</a>'
-        if url
+        if url.lower().startswith(("https://", "http://"))
         else ""
     )
     return (

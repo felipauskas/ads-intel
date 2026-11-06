@@ -279,3 +279,21 @@ def test_check_returns_artifact_paths(monkeypatch, tmp_path):
     assert digest["query"] == "nike"
     assert digest["new"] == row["new_ads"] == 1
 
+
+def test_check_survives_report_failure(monkeypatch):
+    """A report write failure must degrade `artifacts`, never fail the check."""
+    tools.ad_watch({"action": "add", "query": "nike"})
+    monkeypatch.setattr(tools.sources, "fetch_ads_with_meta", _stub_fetch([AD]))
+
+    def boom(*args, **kwargs):
+        raise OSError("disk full")
+
+    monkeypatch.setattr(tools.report, "write_report", boom)
+    row = json.loads(tools.ad_check({}))["results"][0]
+    assert row["artifacts"] == {"error": "disk full"}
+    assert row["new_ads"] == 1
+    assert row["new"][0]["id"] == "1"
+    assert row["ended_ads"] == 0
+    assert row["changed_ads"] == 0
+    assert "error" not in row
+
