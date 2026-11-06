@@ -2,7 +2,7 @@
 
 Audit date: 2026-11-06 (local +04, UTC+04:00)
 Repo: `~/coding-projects/ads-intel`
-HEAD: `0c2e6ec74e853efdb0773ea4d5c70ded33601f56` (`chore: local catalog entry pinned (unpublished, rule 5 pending)`)
+HEAD: `0c2e6ec74e853efdb0773ea4d5c70ded33601f56` (`chore: local catalog entry pinned (unpublished, rule 5 pending)`) — run at `0c2e6ec`; committed as `8941692`
 Host: macOS 27.2, Python 3.14.10 (`./.venv/bin/python`), binary tree clean apart from this branch's own commit.
 
 Everything below is a local run. No push, no remote, no publish.

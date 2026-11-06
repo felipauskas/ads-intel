@@ -4,7 +4,7 @@ Free, local, zero-API-key ad-library intelligence for Hermes. `ads-intel` search
 
 ## Install (local checkout only)
 
-This plugin is **not published yet** — there is no catalog entry and no public repo. Install it from the local checkout (it must be a git repo, since Hermes installs from a `file://` URL):
+This plugin is **not published yet** — there is no published catalog entry and no public repo. Install it from the local checkout (it must be a git repo, since Hermes installs from a `file://` URL):
 
 ```bash
 cd /path/to/ads-intel          # the checkout that contains plugin.yaml
