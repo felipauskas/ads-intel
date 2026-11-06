@@ -116,7 +116,11 @@ def test_manifest_declares_catalog_fields():
     assert isinstance(m.get("description"), str) and m["description"].strip()
     assert m.get("author")
     assert isinstance(m.get("license"), str) and m["license"].strip()
-    assert (m.get("homepage") or "").startswith("https://")
+    # Rule 5: not published yet, so there is no homepage URL to point at.
+    # Added at publication, together with the GitHub slug in the README.
+    assert "homepage" not in m, (
+        "plugin.yaml must not declare a homepage until the repo is published"
+    )
 
     assert m.get("tags") == EXPECTED_TAGS
     assert m.get("requires_hermes"), "requires_hermes must declare a Hermes version range"

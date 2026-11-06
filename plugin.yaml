@@ -4,7 +4,6 @@ version: "0.2.0"
 description: "Search public ad libraries and watch competitors for new/ended ads"
 author: "Felipe V. Leon (felipauskas)"
 license: MIT
-homepage: "https://github.com/felipauskas/ads-intel"
 tags: [ads, competitor-intelligence, marketing, ad-library]
 manifest_version: 2
 requires_hermes: ">=0.21.5"

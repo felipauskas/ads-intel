@@ -96,7 +96,8 @@ ad_check
 The first `ad_check()` after a watch is added seeds the baseline and reports every
 ad as `new`; the next run reports real diffs. `ad_check` returns artifacts
 (`{html, digest}` paths under `reports/`). Expect `partial: true` on broad keyword
-watches with 20+ live ads — retirements are suppressed rather than guessed.
+watches with 20+ live ads — endings for ids missing from the clipped page are
+suppressed rather than guessed, while status flips that did render are still reported.
 
 ## Limitations a reviewer should know
 
@@ -105,7 +106,8 @@ watches with 20+ live ads — retirements are suppressed rather than guessed.
   owned page with extra words (`KFC UAE` vs `KFC`) is not selected; a miss returns
   `name_not_matched`, never keyword noise.
 - Result pages are clipped at `char_limit=120000`; a clipped or limit-sliced fetch
-  is partial, and partial runs never emit `ended`.
+  is partial, and partial runs suppress endings for ids missing from the clipped
+  page while still reporting status flips on ads that did render.
 - A markup change on Meta's side surfaces as `parse_failed` (search) /
   `reason: "parse_failed"` (check) instead of a false "all ads ended".
 - No pagination in v1: one page, 20 ads per watch for `ad_check`.
