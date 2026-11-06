@@ -2,12 +2,30 @@
 
 Free, local, zero-API-key ad-library intelligence for Hermes. `ads-intel` searches the public Meta Ad Library and watches competitors for new, ended and changed ads through three tools — `ad_search`, `ad_watch` and `ad_check` — using only the Python standard library and Hermes' built-in `web_extract`; no API keys, accounts, cookies or third-party services, and nothing leaves your machine except the read-only library request itself.
 
-## Install
+## Install (local checkout only)
+
+This plugin is **not published yet** — there is no catalog entry and no public repo. Install it from the local checkout (it must be a git repo, since Hermes installs from a `file://` URL):
 
 ```bash
-hermes plugins install felipauskas/ads-intel
+cd /path/to/ads-intel          # the checkout that contains plugin.yaml
+hermes plugins validate .      # manifest + tool schema check, installs nothing
+hermes plugins install "file://$PWD"
 hermes plugins enable ads-intel
 ```
+
+## Try it in 60 seconds
+
+```bash
+hermes plugins validate .      # manifest, declarations and security scan
+```
+
+Then, in a Hermes chat:
+
+- *"Search the Meta Ad Library for ads from Notion in the US, limit 10."* → `ad_search`
+- *"Watch linear.app's ads, then check my ad watchlist for what changed."* → `ad_watch` + `ad_check`
+- *"Show me KFC's ads in the UAE, but only from KFC's own page."* → `ad_search` with `advertiser`
+
+The first `ad_check()` seeds a baseline and reports every ad as `new`; the next call reports real diffs. Each `ad_check()` also writes an HTML report and JSON digest under the plugin data directory (see Disclosures).
 
 ## Tools
 
@@ -49,10 +67,12 @@ Diff semantics:
 ## Disclosures
 
 - **Network: yes.** When a tool runs, the plugin asks Hermes to fetch exactly one URL per query: `https://www.facebook.com/ads/library/...`, a read-only GET performed by Hermes' built-in `web_extract`. No other hosts are contacted, and the plugin makes no requests while idle.
-- **Filesystem:** writes only inside the plugin data directory — `watchlist.json` and `snapshots/<sha1>.json` (a truncated SHA-1 of the query plus market code is the filename). It reads nothing outside that directory, runs no shell commands, starts no background processes, and needs no credentials, environment variables or secrets.
-- **Data stored locally:** watchlist `{query, country}` (plus `advertiser` when set) entries and ad snapshots (id, page name, status, dates, creative text). Nothing is sent anywhere.
+- **Filesystem:** writes only inside the plugin data directory (`plugin_data_dir("ads-intel")`) — `watchlist.json`, `snapshots/<sha1>.json` and `reports/`. It reads nothing outside that directory, runs no shell commands, starts no background processes, and needs no credentials, environment variables or secrets — there is no account, API key or token to configure.
+- **Reports in `reports/`:** each `ad_check()` run writes a self-contained pair per query + country + advertiser — `reports/<sha1>.html` (the rendered `report.html` card gallery, inline CSS, no CDN, no scripts, no external images) and `reports/<sha1>.digest.json` (the same counts as machine-readable JSON). The filename hashes the `(query, country, advertiser)` key, so the same query in two markets, or filtered vs. unfiltered, never overwrites the other. The HTML escapes untrusted page names and creative copy, and only `http(s)` library URLs become links.
+- **Data stored locally:** watchlist `{query, country}` (plus `advertiser` when set) entries, ad snapshots (id, page name, status, dates, creative text) and the generated reports. Nothing is sent anywhere; the only outbound traffic is the library GET above.
+- **Country:** `country` is the two-letter ad-library market code (`US` by default; `AE`, `GB`, …). It selects the market in the library URL and is part of every snapshot and report key, so a country change starts a fresh baseline for that market instead of mixing markets.
 - **Upgrade note:** an older watchlist of plain query strings loads as `US` watches, and their pre-country `US` snapshots are still read, so no baseline is lost. The watchlist is rewritten in the new `{query, country}` format on the next `ad_watch` change; the snapshot is written to its new country-keyed file on the next `ad_check`. The old `sha1(query)` snapshot file is orphaned after that but harmless, and can be deleted.
-- **ToS posture:** public ad library only — no login, no cookies, no logged-in scraping. Polite by design: `ad_check` issues one request per watchlist entry, sequentially.
+- **Terms of service posture — stated plainly:** this reads Meta's *public* Ad Library with no login, no cookies and no logged-in scraping, but Meta's terms do not authorise automated collection, and this plugin does not claim that authorisation. It is a read-only, low-rate client (one request per watch per `ad_check()`, sequential, no pagination, no retries hammering the endpoint), intended for personal, small-scale research. **You are responsible for your own use**; if Meta's terms or your jurisdiction forbid it, do not run it.
 
 ## Keyword matching
 
@@ -62,7 +82,7 @@ Advertiser resolution works on page names only (`ad-intel`'s page-id and handle 
 
 ## Limitations
 
-- Meta may change the ad-library page markup; the parser lives in a single file (`sources.py`) and would need updating.
+- Meta may change the ad-library page markup; the parser lives in a single file (`sources.py`) and would need updating. When the page cannot be parsed at all, `ad_search` returns `{"error": "parse_failed: <detail>"}` and `ad_check` reports that entry as skipped with `reason: "parse_failed"` — it never writes an empty snapshot, so a markup break cannot masquerade as "everything ended".
 - Large result pages are truncated by the fetcher (`char_limit=120000`). A render that fills the whole budget, or that carries the fetch host's head+tail truncation footer, is treated as partial: `ad_check` merges the fetched ads into the stored snapshot and reports new/changed ads but suppresses the `ended` bucket (`partial: true`), because ids missing from a clipped page have not necessarily stopped running.
 - A fetch that returns at least `limit` ads is also treated as partial: the tail past the limit was sliced off, so absent ids prove nothing there either. `ad_check` fetches the default `limit` of 20 ads per watch, which means **any watch with 20 or more live ads reports `partial: true` and never reports `ended` ads**. That is deliberate — a false "ended" is worse than a missed one — but it is a real ceiling: keep keyword watches narrow enough to stay under 20 results, and read `new`/`changed` (which stay accurate) rather than relying on retirements.
 - No pagination in v1: one page of results per query, capped at 20 ads for `ad_check`.
