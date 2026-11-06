@@ -143,9 +143,14 @@ def _write_text(path: Path, data: str) -> None:
         raise
 
 
-def report_paths(query: str) -> dict:
-    """Where the HTML report and its digest live for a query."""
-    digest = hashlib.sha1(_norm(query).encode("utf-8")).hexdigest()[:16]
+def report_paths(query: str, country: str = DEFAULT_COUNTRY) -> dict:
+    """Where the HTML report and its digest live for query + market.
+
+    The filename hashes ``query\\x00country`` exactly like the snapshot key:
+    the same query watched in two markets must never share an artifact.
+    """
+    key = f"{_norm(query)}\x00{_norm_country(country)}"
+    digest = hashlib.sha1(key.encode("utf-8")).hexdigest()[:16]
     base = _data_dir() / "reports"
     return {
         "html": base / f"{digest}.html",

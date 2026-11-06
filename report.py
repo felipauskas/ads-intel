@@ -112,11 +112,12 @@ def _ordered_ads(diff: dict, ads_by_id: dict) -> list[dict]:
     return ordered
 
 
-def build_html(query: str, diff: dict, ads_by_id: dict, meta: dict) -> str:
+def build_html(query: str, diff: dict, ads_by_id: dict, meta: dict, country: str = "US") -> str:
     counts = {key: len(diff.get(key) or []) for key in ("new", "ended", "changed")}
     total = len(ads_by_id)
     checked_at = html.escape(str(meta.get("checked_at") or ""))
     partial = bool(meta.get("partial"))
+    market = html.escape(str(country or "US"))
     banner = f"{counts['new']} new / {counts['ended']} ended / {counts['changed']} changed"
     cards = "".join(_render_card(ad) for ad in _ordered_ads(diff, ads_by_id))
     if not cards:
@@ -127,7 +128,7 @@ def build_html(query: str, diff: dict, ads_by_id: dict, meta: dict) -> str:
         if partial
         else ""
     )
-    title = html.escape(f"Ad check — {query}")
+    title = html.escape(f"Ad check — {query} ({market})")
     return (
         "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n"
         '<meta charset="UTF-8">\n'
@@ -144,9 +145,10 @@ def build_html(query: str, diff: dict, ads_by_id: dict, meta: dict) -> str:
     )
 
 
-def build_digest(query: str, diff: dict, ads_by_id: dict, meta: dict) -> dict:
+def build_digest(query: str, diff: dict, ads_by_id: dict, meta: dict, country: str = "US") -> dict:
     return {
         "query": str(query),
+        "country": str(country or "US"),
         "checked_at": meta.get("checked_at"),
         "partial": bool(meta.get("partial")),
         "total": len(ads_by_id),
@@ -156,25 +158,31 @@ def build_digest(query: str, diff: dict, ads_by_id: dict, meta: dict) -> dict:
     }
 
 
-def write_report(query, diff, ads_by_id, meta, out_dir=None) -> dict:
+def write_report(query, diff, ads_by_id, meta, out_dir=None, country="US") -> dict:
     """Write one HTML report and its digest; return their paths as strings.
 
-    ``out_dir`` defaults to the plugin's ``reports`` directory for the query.
+    ``out_dir`` defaults to the plugin's ``reports`` directory for query +
+    ``country``; callers that let it default must pass the watch entry's
+    market so two markets never overwrite each other's artifacts.
     """
     meta = dict(meta or {})
     diff = diff or {}
     ads_by_id = ads_by_id or {}
 
     if out_dir is None:
-        paths = store.report_paths(query)
+        paths = store.report_paths(query, country)
         html_path, digest_path = paths["html"], paths["digest"]
     else:
         out = Path(out_dir)
         html_path, digest_path = out / "report.html", out / "digest.json"
 
-    store._write_text(html_path, build_html(query, diff, ads_by_id, meta))
+    store._write_text(html_path, build_html(query, diff, ads_by_id, meta, country))
     store._write_text(
         digest_path,
-        json.dumps(build_digest(query, diff, ads_by_id, meta), ensure_ascii=False, indent=2),
+        json.dumps(
+            build_digest(query, diff, ads_by_id, meta, country),
+            ensure_ascii=False,
+            indent=2,
+        ),
     )
     return {"html": str(html_path), "digest": str(digest_path)}

@@ -1,3 +1,4 @@
+import hashlib
 import json
 
 import pytest
@@ -70,6 +71,18 @@ def test_consecutive_saves_both_load(tmp_path):
     store.save_snapshot("nike", {"ads": {"1": {"id": "1"}}})
     store.save_snapshot("nike", {"ads": {"2": {"id": "2"}}})
     assert store.load_snapshot("nike") == {"ads": {"2": {"id": "2"}}}
+
+
+def test_legacy_snapshot_fallback_us_only(data_dir):
+    """Pre-country files (sha1 of the query alone) are read for US only."""
+    query = "KFC"
+    digest = hashlib.sha1(query.encode("utf-8")).hexdigest()[:16]
+    legacy = data_dir / "snapshots" / f"{digest}.json"
+    legacy.parent.mkdir(parents=True, exist_ok=True)
+    legacy.write_text(json.dumps({"query": query, "ads": {"1": {"id": "1"}}}))
+
+    assert store.load_snapshot(query, "US") == {"ads": {"1": {"id": "1"}}}
+    assert store.load_snapshot(query, "AE") == {"ads": {}}
 
 
 def test_watch_remove_absent_does_not_rewrite(monkeypatch):

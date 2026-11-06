@@ -2,6 +2,7 @@ import json
 from pathlib import Path
 
 import report
+import store
 
 
 def _ad(i, **over):
@@ -81,3 +82,19 @@ def test_digest_counts_match_diff(tmp_path):
     assert digest["partial"] is True
     assert digest["checked_at"] == META["checked_at"]
     assert digest["query"] == "nike"
+
+
+def test_report_paths_differ_by_country(tmp_path, monkeypatch):
+    """The same query in two markets must never share report artifacts."""
+    monkeypatch.setattr(store, "_data_dir", lambda: tmp_path)
+
+    us = store.report_paths("KFC", "US")
+    ae = store.report_paths("KFC", "AE")
+
+    assert us["html"] != ae["html"]
+    assert us["digest"] != ae["digest"]
+    assert str(us["html"]).endswith(".html")
+    assert str(ae["html"]).endswith(".html")
+    # Country is part of the key exactly like the snapshot filename.
+    assert us["html"].parent == tmp_path / "reports"
+    assert us["html"].name == store._snapshot_path("KFC", "US").stem + ".html"

@@ -23,10 +23,12 @@ _COUNTRY_RE = re.compile(r"^[A-Z]{2}$")
 
 
 def _requested_country(args) -> str | None:
-    """Market code from tool args: absent means US, present must be XX."""
-    if "country" not in args:
-        return store.DEFAULT_COUNTRY
+    """Market code from tool args: absent/null means US, present must be XX."""
     raw = args.get("country")
+    # Hosts routinely send missing optional fields as JSON null; treat that
+    # exactly like an omitted field.
+    if raw is None:
+        return store.DEFAULT_COUNTRY
     if isinstance(raw, str) and _COUNTRY_RE.match(raw):
         return raw
     return None
@@ -174,6 +176,7 @@ def ad_check(args, **kwargs):
                     diff,
                     baseline,
                     {"checked_at": checked_at, "partial": not complete},
+                    country=country,
                 )
             except Exception as exc:
                 logger.warning("ad_check report failed for %r: %s", query, exc)
@@ -194,7 +197,7 @@ def ad_check(args, **kwargs):
             )
         except Exception as exc:
             logger.warning("ad_check failed for %r: %s", query, exc)
-            results.append({"query": query, "error": str(exc)})
+            results.append({"query": query, "country": country, "error": str(exc)})
 
     checked_at = datetime.now().isoformat(timespec="seconds")
     return json.dumps({"checked_at": checked_at, "results": results}, ensure_ascii=False)

@@ -108,13 +108,18 @@ def test_search_rejects_malformed_country(monkeypatch):
         return []
 
     monkeypatch.setattr(tools.sources, "fetch_ads", fake_fetch)
-    for bad in ("ae", "AEX", "", "A1", "U"):
+    for bad in ("ae", "AEX", "", "A1", "U", 123, ["AE"], {"country": "AE"}):
         payload = json.loads(tools.ad_search({"query": "KFC", "country": bad}))
         assert payload == {"error": "invalid_country"}, bad
     assert dispatched == []
 
     # An absent country defaults to US rather than erroring.
     payload = json.loads(tools.ad_search({"query": "KFC"}))
+    assert "error" not in payload
+    assert dispatched[-1][1]["country"] == "US"
+
+    # A host that sends an optional field as JSON null means "not provided".
+    payload = json.loads(tools.ad_search({"query": "KFC", "country": None}))
     assert "error" not in payload
     assert dispatched[-1][1]["country"] == "US"
 
@@ -290,6 +295,44 @@ def test_check_uses_watch_entry_country(monkeypatch, data_dir):
     assert seen == [("KFC", "AE")]
     assert row["query"] == "KFC"
     assert row["new_ads"] == 1
+
+
+def test_check_artifacts_differ_by_country(monkeypatch, data_dir):
+    """Same query in US and AE: separate artifacts, each with its own market's ads."""
+    (data_dir / tools.store.WATCH).write_text(
+        json.dumps(
+            [
+                {"query": "KFC", "country": "US"},
+                {"query": "KFC", "country": "AE"},
+            ]
+        )
+    )
+
+    def fake_fetch(query, **kwargs):
+        country = kwargs.get("country")
+        ad = {**AD, "id": f"ad-{country}", "page_name": f"KFC {country}"}
+        return ([ad], {"complete": True, "fetched_chars": 100, "char_limit": 120000})
+
+    monkeypatch.setattr(tools.sources, "fetch_ads_with_meta", fake_fetch)
+    rows = json.loads(tools.ad_check({}))["results"]
+    assert [row["country"] for row in rows] == ["US", "AE"]
+
+    us_row, ae_row = rows
+    assert us_row["artifacts"]["html"] != ae_row["artifacts"]["html"]
+    assert us_row["artifacts"]["digest"] != ae_row["artifacts"]["digest"]
+
+    us_html = Path(us_row["artifacts"]["html"]).read_text()
+    ae_html = Path(ae_row["artifacts"]["html"]).read_text()
+    assert 'data-ad-id="ad-US"' in us_html
+    assert 'data-ad-id="ad-AE"' not in us_html
+    assert 'data-ad-id="ad-AE"' in ae_html
+    assert 'data-ad-id="ad-US"' not in ae_html
+    # The market is visible on the page, not only in the filename.
+    assert "KFC (US)" in us_html
+    assert "KFC (AE)" in ae_html
+
+    assert json.loads(Path(us_row["artifacts"]["digest"]).read_text())["country"] == "US"
+    assert json.loads(Path(ae_row["artifacts"]["digest"]).read_text())["country"] == "AE"
 
 
 def test_ad_check_empty_watchlist(monkeypatch):

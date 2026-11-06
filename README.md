@@ -48,7 +48,7 @@ Diff semantics:
 - **Network: yes.** When a tool runs, the plugin asks Hermes to fetch exactly one URL per query: `https://www.facebook.com/ads/library/...`, a read-only GET performed by Hermes' built-in `web_extract`. No other hosts are contacted, and the plugin makes no requests while idle.
 - **Filesystem:** writes only inside the plugin data directory — `watchlist.json` and `snapshots/<sha1>.json` (a truncated SHA-1 of the query plus market code is the filename). It reads nothing outside that directory, runs no shell commands, starts no background processes, and needs no credentials, environment variables or secrets.
 - **Data stored locally:** watchlist `{query, country}` entries and ad snapshots (id, page name, status, dates, creative text). Nothing is sent anywhere.
-- **Upgrade note:** an older watchlist of plain query strings loads as `US` watches, and their pre-country `US` snapshots are still read, so no baseline is lost; the first check after upgrading rewrites both in the new format.
+- **Upgrade note:** an older watchlist of plain query strings loads as `US` watches, and their pre-country `US` snapshots are still read, so no baseline is lost. The watchlist is rewritten in the new `{query, country}` format on the next `ad_watch` change; the snapshot is written to its new country-keyed file on the next `ad_check`. The old `sha1(query)` snapshot file is orphaned after that but harmless, and can be deleted.
 - **ToS posture:** public ad library only — no login, no cookies, no logged-in scraping. Polite by design: `ad_check` issues one request per watchlist entry, sequentially.
 
 ## Keyword matching
