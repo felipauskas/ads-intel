@@ -68,8 +68,44 @@ def test_fetch_ads_uses_dispatch_and_limit():
     assert len(ads) == 5
     assert calls[0][0] == "web_extract"
     assert calls[0][1]["urls"] == [sources.build_url("nike")]
-    # The ad-library page is ~49k chars; the host default truncates at 15k.
+    # The ad-library page renders to ~58k chars; the host default truncates at 15k.
     assert calls[0][1]["char_limit"] >= 45000
+
+
+def test_char_limit_exceeds_largest_fixture():
+    # The real page renders ~50k+ chars; a budget at or below the render size
+    # makes the host return a truncated prefix and silently loses cards.
+    assert sources._CHAR_LIMIT > len(FIXTURE.read_text())
+
+
+def test_fetch_marks_truncated_when_render_hits_budget():
+    text = FIXTURE.read_text()
+    budget = 8000
+    # A render that fills the whole budget is a truncated prefix, so the
+    # listing is not complete even though parsing succeeds.
+    ads, meta = sources.fetch_ads_with_meta(
+        "nike",
+        limit=50,
+        dispatch=lambda n, a: text[:budget],
+        char_limit=budget,
+    )
+    assert ads
+    assert meta == {
+        "complete": False,
+        "fetched_chars": budget,
+        "char_limit": budget,
+    }
+
+    # A short render fits inside the budget: the listing is complete.
+    short_ads, short_meta = sources.fetch_ads_with_meta(
+        "nike",
+        limit=50,
+        dispatch=lambda n, a: text,
+        char_limit=sources._CHAR_LIMIT,
+    )
+    assert len(short_ads) == 28
+    assert short_meta["complete"] is True
+    assert short_meta["fetched_chars"] == len(text)
 
 
 def test_fetch_ads_decodes_json_envelope():

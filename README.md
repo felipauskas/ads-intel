@@ -55,7 +55,7 @@ Queries are keyword searches, not brand filters: the library returns any page wh
 ## Limitations
 
 - Meta may change the ad-library page markup; the parser lives in a single file (`sources.py`) and would need updating.
-- Large result pages are truncated by the fetcher (`char_limit=45000`), so very broad queries may return a partial set.
+- Large result pages are truncated by the fetcher (`char_limit=120000`). A render that fills the whole budget is treated as partial: `ad_check` still saves the snapshot and reports new/changed ads but suppresses the `ended` bucket (`partial: true`), because ids missing from a clipped page have not necessarily stopped running.
 - No pagination in v1: one page of results per query, and `ad_check` diffs the first 20 results per watch.
 
 ## License

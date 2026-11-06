@@ -25,7 +25,10 @@ def diff_snapshots(old: dict, new: dict) -> dict:
 
     Status strings are compared case- and whitespace-insensitively. An id absent
     from the new snapshot is reported as `ended`, so callers must pass complete
-    listings — a partial fetch will produce false `ended` reports.
+    listings — a partial fetch will produce false `ended` reports. When a
+    listing may be truncated, the caller must either pass an old snapshot
+    restricted to ids the fetch actually returned, or drop the `ended` bucket.
+    :func:`tools.ad_check` does the former for partial renders.
     """
     old_ads = old.get("ads") or {}
     new_ads = new.get("ads") or {}

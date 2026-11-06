@@ -18,9 +18,11 @@ import re
 
 _LIBRARY_BASE = "https://www.facebook.com/ads/library/"
 
-# The ad-library page renders to ~49k chars of markdown; the host's default
-# 15k truncation silently drops most cards.
-_CHAR_LIMIT = 45000
+# The ad-library page renders to ~50k chars of markdown (BMW: 58,344), and the
+# host's default 15k truncation silently drops most cards. Budget generously:
+# a render that fills the whole budget comes back as a clipped prefix.
+_CHAR_LIMIT = 120_000
+
 
 # An empty results page renders short (a few hundred chars of chrome). A render
 # past this size with no card markers at all means the page shape drifted, not
@@ -346,18 +348,32 @@ def _ads_from_payload_list(items: list, limit: int) -> list[dict]:
     return ads[:limit]
 
 
-def fetch_ads(query: str, limit: int = 20, dispatch=None) -> list[dict]:
-    """Fetch and parse the ad library for ``query`` via host ``web_extract``.
+def fetch_ads_with_meta(
+    query: str,
+    limit: int = 20,
+    dispatch=None,
+    char_limit: int | None = None,
+) -> tuple[list[dict], dict]:
+    """Fetch and parse ``query``, returning ``(ads, meta)``.
 
-    Returns ``[]`` only when a fetch succeeded and the render carried no card
-    markers at all; transport/decoding failures raise :class:`FetchError` and
-    an unparseable render raises :class:`ParseError`.
+    ``meta`` is ``{"complete": bool, "fetched_chars": int, "char_limit": int}``.
+
+    Completeness is a *heuristic*, not a guarantee: a render whose length
+    reaches the char budget is assumed to be a truncated prefix, because the
+    host clips oversized pages silently and gives no marker of its own. A page
+    that happens to end exactly at the budget is therefore reported as partial
+    — the safe direction, since a partial listing only suppresses the ``ended``
+    bucket. JSON payloads carry whole ads and are always ``complete``.
+
+    ``char_limit`` exists so tests (and future tiering) can use a small budget;
+    production callers leave it at :data:`_CHAR_LIMIT`.
     """
+    budget = _CHAR_LIMIT if char_limit is None else max(int(char_limit), 0)
     if dispatch is None or not callable(dispatch):
         raise FetchError("web_extract unavailable")
     result = dispatch(
         "web_extract",
-        {"urls": [build_url(query)], "char_limit": _CHAR_LIMIT},
+        {"urls": [build_url(query)], "char_limit": budget},
     )
     if isinstance(result, dict):
         content = _content_from_payload(result)
@@ -375,8 +391,31 @@ def fetch_ads(query: str, limit: int = 20, dispatch=None) -> list[dict]:
                 if isinstance(decoded, dict):
                     content = _content_from_payload(decoded)
                 elif isinstance(decoded, list):
-                    return _ads_from_payload_list(decoded, max(int(limit), 0))
+                    ads = _ads_from_payload_list(decoded, max(int(limit), 0))
+                    return ads, {
+                        "complete": True,
+                        "fetched_chars": 0,
+                        "char_limit": budget,
+                    }
     else:
         raise FetchError("web_extract returned no result")
 
-    return parse_library_markdown(content)[: max(int(limit), 0)]
+    meta = {
+        "complete": len(content) < budget,
+        "fetched_chars": len(content),
+        "char_limit": budget,
+    }
+    return parse_library_markdown(content)[: max(int(limit), 0)], meta
+
+
+def fetch_ads(query: str, limit: int = 20, dispatch=None) -> list[dict]:
+    """Fetch and parse the ad library for ``query`` via host ``web_extract``.
+
+    Returns ``[]`` only when a fetch succeeded and the render carried no card
+    markers at all; transport/decoding failures raise :class:`FetchError` and
+    an unparseable render raises :class:`ParseError`.
+
+    Ads only, for backwards compatibility. Callers that must distinguish a
+    complete listing from a truncated one use :func:`fetch_ads_with_meta`.
+    """
+    return fetch_ads_with_meta(query, limit=limit, dispatch=dispatch)[0]

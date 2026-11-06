@@ -97,12 +97,19 @@ def test_ad_watch_store_failure_is_contained(monkeypatch):
     assert payload["error"].startswith("watch_failed")
 
 
+def _stub_fetch(ads=None, complete=True):
+    """Patch target for ad_check's meta-aware fetch seam."""
+    meta = {"complete": complete, "fetched_chars": 100, "char_limit": 120000}
+    return lambda q, **kw: (list(ads or []), dict(meta))
+
+
 def test_ad_check_detects_then_settles(monkeypatch):
     tools.ad_watch({"action": "add", "query": "nike"})
-    monkeypatch.setattr(tools.sources, "fetch_ads", lambda q, **kw: [AD])
+    monkeypatch.setattr(tools.sources, "fetch_ads_with_meta", _stub_fetch([AD]))
 
     first = json.loads(tools.ad_check({}))
     assert first["results"][0]["new_ads"] == 1
+    assert first["results"][0]["partial"] is False
     assert first["results"][0]["new"][0]["id"] == "1"
 
     second = json.loads(tools.ad_check({}))
@@ -113,7 +120,7 @@ def test_ad_check_detects_then_settles(monkeypatch):
 def test_ad_check_empty_fetch_keeps_snapshot(monkeypatch):
     tools.ad_watch({"action": "add", "query": "nike"})
     tools.store.save_snapshot("nike", {"ads": {"1": AD}})
-    monkeypatch.setattr(tools.sources, "fetch_ads", lambda q, **kw: [])
+    monkeypatch.setattr(tools.sources, "fetch_ads_with_meta", _stub_fetch([]))
 
     row = json.loads(tools.ad_check({}))["results"][0]
     assert row["skipped"] is True
@@ -129,7 +136,7 @@ def test_ad_check_fetch_error_keeps_snapshot(monkeypatch):
     def boom(q, **kw):
         raise tools.sources.FetchError("blocked")
 
-    monkeypatch.setattr(tools.sources, "fetch_ads", boom)
+    monkeypatch.setattr(tools.sources, "fetch_ads_with_meta", boom)
     row = json.loads(tools.ad_check({}))["results"][0]
     assert row["skipped"] is True
     assert tools.store.load_snapshot("nike")["ads"]["1"]["id"] == "1"
@@ -144,7 +151,7 @@ def test_check_labels_parse_failure_and_preserves_snapshot(monkeypatch):
     def broken(q, **kw):
         raise tools.sources.ParseError("no cards parsed", cards_seen=3)
 
-    monkeypatch.setattr(tools.sources, "fetch_ads", broken)
+    monkeypatch.setattr(tools.sources, "fetch_ads_with_meta", broken)
     row = json.loads(tools.ad_check({}))["results"][0]
     assert row["skipped"] is True
     assert row["reason"] == "parse_failed"
@@ -153,8 +160,52 @@ def test_check_labels_parse_failure_and_preserves_snapshot(monkeypatch):
     assert tools.store.load_snapshot("nike")["ads"]["1"]["id"] == "1"
 
 
+def test_truncated_fetch_reports_no_ended_ads(monkeypatch):
+    tools.ad_watch({"action": "add", "query": "nike"})
+    # A full prior listing of 29 ads.
+    prior = {
+        str(i): {**AD, "id": str(i)} for i in range(1, 30)
+    }
+    tools.store.save_snapshot("nike", {"ads": prior})
+
+    # The new render was truncated: only 21 of them came back, one changed and
+    # one genuinely new ad. The 8 missing ids are not evidence of anything.
+    fetched = [
+        {**AD, "id": str(i), "creative_text": "v2" if i == 1 else "v1"}
+        for i in range(1, 22)
+    ]
+    fetched.append({**AD, "id": "99", "creative_text": "brand new"})
+    monkeypatch.setattr(
+        tools.sources,
+        "fetch_ads_with_meta",
+        lambda q, **kw: (
+            fetched,
+            {
+                "complete": False,
+                "fetched_chars": 120000,
+                "char_limit": 120000,
+            },
+        ),
+    )
+
+    row = json.loads(tools.ad_check({}))["results"][0]
+    assert row["partial"] is True
+    assert row["ended_ads"] == 0
+    assert row["ended"] == []
+    assert row["new_ads"] == 1
+    assert [ad["id"] for ad in row["new"]] == ["99"]
+    assert row["changed_ads"] == 1
+    assert [ad["id"] for ad in row["changed"]] == ["1"]
+
+    # The partial baseline is still saved so the next run has something to
+    # diff against.
+    snap = tools.store.load_snapshot("nike")["ads"]
+    assert len(snap) == 22
+    assert "1" in snap and "99" in snap
+
+
 def test_ad_check_empty_watchlist(monkeypatch):
-    monkeypatch.setattr(tools.sources, "fetch_ads", lambda q, **kw: [])
+    monkeypatch.setattr(tools.sources, "fetch_ads_with_meta", _stub_fetch([]))
     payload = json.loads(tools.ad_check({}))
     assert payload["results"] == []
     assert payload["checked_at"]

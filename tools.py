@@ -91,7 +91,10 @@ def ad_check(args, **kwargs):
     results = []
     for query in store.watch_list():
         try:
-            ads = sources.fetch_ads(query, dispatch=_dispatch)
+            # Meta-aware fetch: a render clipped at the char budget is a
+            # partial listing, and ids missing from it are not "ended".
+            ads, meta = sources.fetch_ads_with_meta(query, dispatch=_dispatch)
+            complete = bool(meta.get("complete", True))
         except sources.ParseError as exc:
             # Markup changed: do not treat it as "every ad ended" and do not
             # overwrite the snapshot with an empty baseline.
@@ -119,11 +122,21 @@ def ad_check(args, **kwargs):
 
         try:
             by_id = {ad["id"]: ad for ad in ads}
-            diff = diffing.diff_snapshots(store.load_snapshot(query), {"ads": by_id})
+            prior = store.load_snapshot(query)
+            if complete:
+                diff_old = prior
+            else:
+                # Partial listing: mask out prior ads the render never reached,
+                # so an absent id is not counted as ended. Status flips on ads
+                # that did render are still reported.
+                prior_ads = prior.get("ads") or {}
+                diff_old = {"ads": {k: v for k, v in prior_ads.items() if k in by_id}}
+            diff = diffing.diff_snapshots(diff_old, {"ads": by_id})
             store.save_snapshot(query, {"ads": by_id})
             results.append(
                 {
                     "query": query,
+                    "partial": not complete,
                     "new_ads": len(diff["new"]),
                     "ended_ads": len(diff["ended"]),
                     "changed_ads": len(diff["changed"]),
