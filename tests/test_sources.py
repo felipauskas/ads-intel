@@ -56,6 +56,23 @@ def test_active_ad_with_single_date(ads):
     assert ad["last_seen"] == ""
 
 
+def test_build_url_uses_country_param():
+    url = sources.build_url("KFC", country="AE")
+    assert "country=AE" in url
+    assert "country=US" not in url
+    assert "country=US" in sources.build_url("KFC")
+
+    # The country is threaded through the fetcher, not just the URL builder.
+    calls = []
+
+    def fake_dispatch(name, args):
+        calls.append(args)
+        return "no cards here"
+
+    sources.fetch_ads("KFC", country="AE", dispatch=fake_dispatch)
+    assert calls[0]["urls"] == [sources.build_url("KFC", country="AE")]
+
+
 def test_fetch_ads_uses_dispatch_and_limit():
     text = FIXTURE.read_text()
     calls = []

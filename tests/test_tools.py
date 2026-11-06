@@ -71,8 +71,10 @@ def test_ad_search_accepts_host_kwargs(monkeypatch):
 def test_ad_watch_roundtrip():
     assert json.loads(tools.ad_watch({"action": "add", "query": "nike"}))[
         "watchlist"
-    ] == ["nike"]
-    assert json.loads(tools.ad_watch({"action": "list"}))["watchlist"] == ["nike"]
+    ] == [{"query": "nike", "country": "US"}]
+    assert json.loads(tools.ad_watch({"action": "list"}))["watchlist"] == [
+        {"query": "nike", "country": "US"}
+    ]
     assert json.loads(tools.ad_watch({"action": "remove", "query": "nike"}))[
         "watchlist"
     ] == []
@@ -96,6 +98,25 @@ def test_ad_watch_store_failure_is_contained(monkeypatch):
     monkeypatch.setattr(tools.store, "watch_add", boom)
     payload = json.loads(tools.ad_watch({"action": "add", "query": "nike"}))
     assert payload["error"].startswith("watch_failed")
+
+
+def test_search_rejects_malformed_country(monkeypatch):
+    dispatched = []
+
+    def fake_fetch(*args, **kwargs):
+        dispatched.append((args, kwargs))
+        return []
+
+    monkeypatch.setattr(tools.sources, "fetch_ads", fake_fetch)
+    for bad in ("ae", "AEX", "", "A1", "U"):
+        payload = json.loads(tools.ad_search({"query": "KFC", "country": bad}))
+        assert payload == {"error": "invalid_country"}, bad
+    assert dispatched == []
+
+    # An absent country defaults to US rather than erroring.
+    payload = json.loads(tools.ad_search({"query": "KFC"}))
+    assert "error" not in payload
+    assert dispatched[-1][1]["country"] == "US"
 
 
 def _stub_fetch(ads=None, complete=True):
@@ -252,6 +273,23 @@ def test_check_partial_when_limit_truncates(monkeypatch):
     assert row["partial"] is True
     assert row["ended_ads"] == 0
     assert len(tools.store.load_snapshot("nike")["ads"]) == 29
+
+
+def test_check_uses_watch_entry_country(monkeypatch, data_dir):
+    (data_dir / tools.store.WATCH).write_text(
+        json.dumps([{"query": "KFC", "country": "AE"}])
+    )
+    seen = []
+
+    def fake_fetch(query, **kwargs):
+        seen.append((query, kwargs.get("country")))
+        return ([AD], {"complete": True, "fetched_chars": 100, "char_limit": 120000})
+
+    monkeypatch.setattr(tools.sources, "fetch_ads_with_meta", fake_fetch)
+    row = json.loads(tools.ad_check({}))["results"][0]
+    assert seen == [("KFC", "AE")]
+    assert row["query"] == "KFC"
+    assert row["new_ads"] == 1
 
 
 def test_ad_check_empty_watchlist(monkeypatch):

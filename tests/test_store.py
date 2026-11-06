@@ -11,18 +11,28 @@ def data_dir(tmp_path, monkeypatch):
     return tmp_path
 
 
+def test_watchlist_migrates_legacy_strings(data_dir):
+    (data_dir / store.WATCH).write_text(json.dumps(["KFC"]))
+    assert store.watch_list() == [{"query": "KFC", "country": "US"}]
+    # Card view stays compatible: remove by query still works on legacy data.
+    assert store.watch_remove("KFC") == []
+
+
 def test_watchlist_roundtrip():
-    assert store.watch_add("nike") == ["nike"]
-    assert store.watch_add("nike") == ["nike"]
-    assert store.watch_add("allbirds") == ["nike", "allbirds"]
-    assert store.watch_remove("nike") == ["allbirds"]
-    assert store.watch_list() == ["allbirds"]
+    assert store.watch_add("nike") == [{"query": "nike", "country": "US"}]
+    assert store.watch_add("nike") == [{"query": "nike", "country": "US"}]
+    assert store.watch_add("allbirds") == [
+        {"query": "nike", "country": "US"},
+        {"query": "allbirds", "country": "US"},
+    ]
+    assert store.watch_remove("nike") == [{"query": "allbirds", "country": "US"}]
+    assert store.watch_list() == [{"query": "allbirds", "country": "US"}]
 
 
 def test_watchlist_is_file_backed(data_dir):
     store.watch_add("nike")
     on_disk = json.loads((data_dir / store.WATCH).read_text())
-    assert on_disk == ["nike"]
+    assert on_disk == [{"query": "nike", "country": "US"}]
 
 
 def test_snapshot_roundtrip(data_dir):
@@ -69,5 +79,5 @@ def test_watch_remove_absent_does_not_rewrite(monkeypatch):
     monkeypatch.setattr(
         store, "_write_json", lambda p, d: (writes.append(p), real(p, d))[1]
     )
-    assert store.watch_remove("absent") == ["nike"]
+    assert store.watch_remove("absent") == [{"query": "nike", "country": "US"}]
     assert writes == []

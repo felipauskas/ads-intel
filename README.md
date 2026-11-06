@@ -11,19 +11,21 @@ hermes plugins enable ads-intel
 
 ## Tools
 
-### `ad_search(query, limit)`
+### `ad_search(query, limit, country)`
 
-Find the ads a brand, advertiser or keyword is running. `query` is required; `limit` defaults to 20.
+Find the ads a brand, advertiser or keyword is running. `query` is required; `limit` defaults to 20. `country` is the two-letter ad-library market code and defaults to `US`; pass e.g. `AE` or `GB` to search that market's library. A malformed code returns `{"error": "invalid_country"}`.
 
 > "Search the Meta Ad Library for ads from Notion and show me the first 10."
+> "What ads is KFC running in the UAE?"
 
-Returns `{count, ads}`, where each ad carries `id`, `page_name`, `status` (`active`/`ended`), `first_seen`, `last_seen`, `creative_text` and `library_url`.
+Returns `{count, country, ads}`, where each ad carries `id`, `page_name`, `status` (`active`/`ended`), `first_seen`, `last_seen`, `creative_text` and `library_url`.
 
-### `ad_watch(action, query)`
+### `ad_watch(action, query, country)`
 
-Manage the local watchlist: `add` a query, `remove` a query, or `list` saved queries. `query` is required for `add` and `remove`.
+Manage the local watchlist: `add` a query, `remove` a query, or `list` saved queries. `query` is required for `add`; `country` applies to `add` (default `US`). The watchlist stores `{query, country}` entries; `remove` drops every entry for that query regardless of market.
 
 > "Add 'linear.app' to my ad watchlist."
+> "Watch KFC in the UAE too."
 > "What am I watching?"
 > "Remove 'linear.app' from my ad watchlist."
 
@@ -44,8 +46,9 @@ Diff semantics:
 ## Disclosures
 
 - **Network: yes.** When a tool runs, the plugin asks Hermes to fetch exactly one URL per query: `https://www.facebook.com/ads/library/...`, a read-only GET performed by Hermes' built-in `web_extract`. No other hosts are contacted, and the plugin makes no requests while idle.
-- **Filesystem:** writes only inside the plugin data directory — `watchlist.json` and `snapshots/<sha1>.json` (a truncated SHA-1 of the query is the filename). It reads nothing outside that directory, runs no shell commands, starts no background processes, and needs no credentials, environment variables or secrets.
-- **Data stored locally:** watchlist queries and ad snapshots (id, page name, status, dates, creative text). Nothing is sent anywhere.
+- **Filesystem:** writes only inside the plugin data directory — `watchlist.json` and `snapshots/<sha1>.json` (a truncated SHA-1 of the query plus market code is the filename). It reads nothing outside that directory, runs no shell commands, starts no background processes, and needs no credentials, environment variables or secrets.
+- **Data stored locally:** watchlist `{query, country}` entries and ad snapshots (id, page name, status, dates, creative text). Nothing is sent anywhere.
+- **Upgrade note:** an older watchlist of plain query strings loads as `US` watches, and their pre-country `US` snapshots are still read, so no baseline is lost; the first check after upgrading rewrites both in the new format.
 - **ToS posture:** public ad library only — no login, no cookies, no logged-in scraping. Polite by design: `ad_check` issues one request per watchlist entry, sequentially.
 
 ## Keyword matching

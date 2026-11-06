@@ -2,6 +2,7 @@
 
 import json
 import logging
+import re
 from datetime import datetime
 
 try:
@@ -17,6 +18,18 @@ logger = logging.getLogger(__name__)
 _CTX = None
 
 _SUMMARY_KEYS = ("id", "page_name", "status", "first_seen", "library_url")
+
+_COUNTRY_RE = re.compile(r"^[A-Z]{2}$")
+
+
+def _requested_country(args) -> str | None:
+    """Market code from tool args: absent means US, present must be XX."""
+    if "country" not in args:
+        return store.DEFAULT_COUNTRY
+    raw = args.get("country")
+    if isinstance(raw, str) and _COUNTRY_RE.match(raw):
+        return raw
+    return None
 
 
 def set_ctx(ctx) -> None:
@@ -38,13 +51,18 @@ def ad_search(args, **kwargs):
     query = str(args.get("query") or "").strip()
     if not query:
         return json.dumps({"error": "query required"})
+    country = _requested_country(args)
+    if country is None:
+        return json.dumps({"error": "invalid_country"})
     try:
         limit = int(args.get("limit", 20))
     except (TypeError, ValueError):
         return json.dumps({"error": "invalid limit"})
     try:
-        ads = sources.fetch_ads(query, limit=limit, dispatch=_dispatch)
-        return json.dumps({"count": len(ads), "ads": ads}, ensure_ascii=False)
+        ads = sources.fetch_ads(query, limit=limit, dispatch=_dispatch, country=country)
+        return json.dumps(
+            {"count": len(ads), "country": country, "ads": ads}, ensure_ascii=False
+        )
     except sources.ParseError as exc:
         logger.warning("ad_search parse failed for %r: %s", query, exc)
         return json.dumps(
@@ -66,7 +84,10 @@ def ad_watch(args, **kwargs):
         if action == "add":
             if not str(query).strip():
                 return json.dumps({"error": "query required"})
-            items = store.watch_add(query)
+            country = _requested_country(args)
+            if country is None:
+                return json.dumps({"error": "invalid_country"})
+            items = store.watch_add(query, country=country)
         elif action == "remove":
             items = store.watch_remove(query)
         elif action == "list":
@@ -81,9 +102,9 @@ def ad_watch(args, **kwargs):
         return json.dumps({"error": f"watch_failed: {exc}"}, ensure_ascii=False)
 
 
-def _prior_ads(query: str) -> dict:
+def _prior_ads(query: str, country: str = store.DEFAULT_COUNTRY) -> dict:
     try:
-        return (store.load_snapshot(query) or {}).get("ads") or {}
+        return (store.load_snapshot(query, country=country) or {}).get("ads") or {}
     except Exception:
         return {}
 
@@ -91,12 +112,16 @@ def _prior_ads(query: str) -> dict:
 def ad_check(args, **kwargs):
     results = []
     checked_at = datetime.now().isoformat(timespec="seconds")
-    for query in store.watch_list():
+    for entry in store.watch_list():
+        query = entry["query"]
+        country = entry["country"]
         try:
             # Meta-aware fetch: a render clipped at the char budget, carrying a
             # truncation footer, or sliced by the result limit is a partial
             # listing, and ids missing from it are not "ended".
-            ads, meta = sources.fetch_ads_with_meta(query, dispatch=_dispatch)
+            ads, meta = sources.fetch_ads_with_meta(
+                query, dispatch=_dispatch, country=country
+            )
             # Fail safe: an unknown completeness is treated as partial.
             complete = bool(meta.get("complete", False))
         except sources.ParseError as exc:
@@ -104,29 +129,29 @@ def ad_check(args, **kwargs):
             # overwrite the snapshot with an empty baseline.
             logger.warning("ad_check parse failed for %r: %s", query, exc)
             results.append(
-                {"query": query, "skipped": True, "reason": "parse_failed"}
+                {"query": query, "country": country, "skipped": True, "reason": "parse_failed"}
             )
             continue
         except Exception as exc:
             logger.warning("ad_check fetch failed for %r: %s", query, exc)
-            if _prior_ads(query):
+            if _prior_ads(query, country):
                 results.append(
-                    {"query": query, "skipped": True, "reason": "fetch_empty"}
+                    {"query": query, "country": country, "skipped": True, "reason": "fetch_empty"}
                 )
             else:
-                results.append({"query": query, "error": str(exc)})
+                results.append({"query": query, "country": country, "error": str(exc)})
             continue
 
-        if not ads and _prior_ads(query):
+        if not ads and _prior_ads(query, country):
             # A blank page must not be read as "every ad ended".
             results.append(
-                {"query": query, "skipped": True, "reason": "fetch_empty"}
+                {"query": query, "country": country, "skipped": True, "reason": "fetch_empty"}
             )
             continue
 
         try:
             by_id = {ad["id"]: ad for ad in ads}
-            prior = store.load_snapshot(query)
+            prior = store.load_snapshot(query, country=country)
             if complete:
                 diff_old = prior
                 baseline = by_id
@@ -141,7 +166,7 @@ def ad_check(args, **kwargs):
                 # as new.
                 baseline = {**prior_ads, **by_id}
             diff = diffing.diff_snapshots(diff_old, {"ads": by_id})
-            store.save_snapshot(query, {"ads": baseline})
+            store.save_snapshot(query, {"ads": baseline}, country=country)
             # A report failure must never fail the check itself.
             try:
                 artifacts = report.write_report(
@@ -156,6 +181,7 @@ def ad_check(args, **kwargs):
             results.append(
                 {
                     "query": query,
+                    "country": country,
                     "partial": not complete,
                     "new_ads": len(diff["new"]),
                     "ended_ads": len(diff["ended"]),

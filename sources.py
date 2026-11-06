@@ -362,6 +362,7 @@ def fetch_ads_with_meta(
     limit: int = 20,
     dispatch=None,
     char_limit: int | None = None,
+    country: str = "US",
 ) -> tuple[list[dict], dict]:
     """Fetch and parse ``query``, returning ``(ads, meta)``.
 
@@ -386,6 +387,8 @@ def fetch_ads_with_meta(
 
     ``char_limit`` exists so tests (and future tiering) can use a small budget;
     production callers leave it at :data:`_CHAR_LIMIT`.
+
+    ``country`` is the two-letter ad-library market code (default ``US``).
     """
     budget = _CHAR_LIMIT if char_limit is None else max(int(char_limit), 0)
     lim = max(int(limit), 0)
@@ -393,7 +396,7 @@ def fetch_ads_with_meta(
         raise FetchError("web_extract unavailable")
     result = dispatch(
         "web_extract",
-        {"urls": [build_url(query)], "char_limit": budget},
+        {"urls": [build_url(query, country=country)], "char_limit": budget},
     )
     if isinstance(result, dict):
         content = _content_from_payload(result)
@@ -434,7 +437,9 @@ def fetch_ads_with_meta(
     return parsed[:lim], meta
 
 
-def fetch_ads(query: str, limit: int = 20, dispatch=None) -> list[dict]:
+def fetch_ads(
+    query: str, limit: int = 20, dispatch=None, country: str = "US"
+) -> list[dict]:
     """Fetch and parse the ad library for ``query`` via host ``web_extract``.
 
     Returns ``[]`` only when a fetch succeeded and the render carried no card
@@ -444,4 +449,6 @@ def fetch_ads(query: str, limit: int = 20, dispatch=None) -> list[dict]:
     Ads only, for backwards compatibility. Callers that must distinguish a
     complete listing from a truncated one use :func:`fetch_ads_with_meta`.
     """
-    return fetch_ads_with_meta(query, limit=limit, dispatch=dispatch)[0]
+    return fetch_ads_with_meta(
+        query, limit=limit, dispatch=dispatch, country=country
+    )[0]
