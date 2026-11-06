@@ -125,10 +125,27 @@ def _legacy_snapshot_path(query: str) -> Path:
     return _data_dir() / "snapshots" / f"{digest}.json"
 
 
-def _snapshot_path(query: str, country: str = DEFAULT_COUNTRY) -> Path:
+def _artifact_key(query: str, country: str, advertiser: str | None = None) -> str:
+    """Key for query + market (+ advertiser).
+
+    Without an advertiser the key is the pre-existing ``query\\x00country``
+    string, so every baseline written before advertiser-keyed watches keeps
+    its filename. An advertiser-filtered watch gets its own key: two watches
+    for the same query, one filtered and one not, must never share a
+    snapshot or report.
+    """
+    base = f"{_norm(query)}\x00{_norm_country(country)}"
+    adv = _norm(advertiser)
+    return f"{base}\x00{adv}" if adv else base
+
+
+def _snapshot_path(
+    query: str, country: str = DEFAULT_COUNTRY, advertiser: str | None = None
+) -> Path:
     """Stable, collision-free, length-bounded filename for query + market."""
-    key = f"{_norm(query)}\x00{_norm_country(country)}"
-    digest = hashlib.sha1(key.encode("utf-8")).hexdigest()[:16]
+    digest = hashlib.sha1(
+        _artifact_key(query, country, advertiser).encode("utf-8")
+    ).hexdigest()[:16]
     return _data_dir() / "snapshots" / f"{digest}.json"
 
 
@@ -153,14 +170,18 @@ def _write_text(path: Path, data: str) -> None:
         raise
 
 
-def report_paths(query: str, country: str = DEFAULT_COUNTRY) -> dict:
+def report_paths(
+    query: str, country: str = DEFAULT_COUNTRY, advertiser: str | None = None
+) -> dict:
     """Where the HTML report and its digest live for query + market.
 
-    The filename hashes ``query\\x00country`` exactly like the snapshot key:
-    the same query watched in two markets must never share an artifact.
+    The filename hashes the same key as the snapshot: the same query watched
+    in two markets, or once unfiltered and once for one advertiser, must never
+    share an artifact.
     """
-    key = f"{_norm(query)}\x00{_norm_country(country)}"
-    digest = hashlib.sha1(key.encode("utf-8")).hexdigest()[:16]
+    digest = hashlib.sha1(
+        _artifact_key(query, country, advertiser).encode("utf-8")
+    ).hexdigest()[:16]
     base = _data_dir() / "reports"
     return {
         "html": base / f"{digest}.html",
@@ -168,32 +189,73 @@ def report_paths(query: str, country: str = DEFAULT_COUNTRY) -> dict:
     }
 
 
-def save_snapshot(query: str, snap: dict, country: str = DEFAULT_COUNTRY) -> None:
+def save_snapshot(
+    query: str,
+    snap: dict,
+    country: str = DEFAULT_COUNTRY,
+    advertiser: str | None = None,
+) -> None:
     payload = dict(snap or {})
     payload["query"] = _norm(query)
+    # Stamped on every write: a file written by an unfiltered watch is marked
+    # advertiser "", so a filtered watch cannot mistake it for its own baseline.
+    payload["advertiser"] = _norm(advertiser)
     payload.setdefault("ads", {})
-    _write_json(_snapshot_path(query, country), payload)
+    _write_json(_snapshot_path(query, country, advertiser), payload)
 
 
-def load_snapshot(query: str, country: str = DEFAULT_COUNTRY) -> dict:
-    """Load the snapshot for query + market.
-
-    Snapshots written before the country parameter lived under a hash of the
-    query alone; for US those are still read so an upgrade does not lose a
-    baseline.
-    """
-    path = _snapshot_path(query, country)
-    if not path.exists() and _norm_country(country) == DEFAULT_COUNTRY:
-        path = _legacy_snapshot_path(query)
+def _read_snapshot_file(path: Path) -> dict | None:
     if not path.exists():
-        return {"ads": {}}
+        return None
     try:
         data = json.loads(path.read_text())
     except (OSError, ValueError):
-        return {"ads": {}}
-    if not isinstance(data, dict):
-        return {"ads": {}}
-    # ``query`` is file metadata; keep the public payload shape stable and
-    # tolerate payloads written before it existed.
-    data.pop("query", None)
-    return data
+        return None
+    return data if isinstance(data, dict) else None
+
+
+def _snapshot_candidates(query: str, country: str, advertiser: str | None) -> list[Path]:
+    """Paths to try, most specific first.
+
+    * the advertiser-keyed file (when a target is set)
+    * the unfiltered ``query + country`` file, which is also the exact key for
+      entries without an advertiser
+    * the pre-country ``sha1(query)`` file, US only
+    """
+    paths = [_snapshot_path(query, country, advertiser)]
+    unfiltered = _snapshot_path(query, country)
+    if unfiltered not in paths:
+        paths.append(unfiltered)
+    if _norm_country(country) == DEFAULT_COUNTRY:
+        legacy = _legacy_snapshot_path(query)
+        if legacy not in paths:
+            paths.append(legacy)
+    return paths
+
+
+def load_snapshot(
+    query: str,
+    country: str = DEFAULT_COUNTRY,
+    advertiser: str | None = None,
+) -> dict:
+    """Load the snapshot for query + market (+ advertiser).
+
+    Fallbacks keep old baselines alive: an advertiser watch added to a watch
+    that predates it reads that watch's unfiltered file, and pre-country
+    snapshots (hash of the query alone) are still read for US. A fallback file
+    is only accepted when it carries no ``advertiser`` stamp — files written
+    by this version under another key belong to another watch, and adopting
+    one would report its ads as ended.
+    """
+    for index, path in enumerate(_snapshot_candidates(query, country, advertiser)):
+        data = _read_snapshot_file(path)
+        if data is None:
+            continue
+        if index and "advertiser" in data:
+            continue
+        # ``query``/``advertiser`` are file metadata; keep the public payload
+        # shape stable and tolerate payloads written before they existed.
+        data.pop("query", None)
+        data.pop("advertiser", None)
+        return data
+    return {"ads": {}}

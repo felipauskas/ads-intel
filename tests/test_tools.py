@@ -365,6 +365,47 @@ def test_check_artifacts_differ_by_country(monkeypatch, data_dir):
     assert json.loads(Path(ae_row["artifacts"]["digest"]).read_text())["country"] == "AE"
 
 
+def test_duplicate_watch_variants_do_not_clobber(monkeypatch, data_dir):
+    """Same query+country, one unfiltered watch and one KFC watch.
+
+    They used to share one snapshot/report key, so each run rewrote the other's
+    baseline and every check reported spurious new/ended ads.
+    """
+    (data_dir / tools.store.WATCH).write_text(
+        json.dumps(
+            [
+                {"query": "KFC", "country": "US"},
+                {"query": "KFC", "country": "US", "advertiser": "KFC"},
+            ]
+        )
+    )
+    ads = [
+        {**AD, "id": "k1", "page_name": "KFC"},
+        {**AD, "id": "o1", "page_name": "Other"},
+    ]
+    monkeypatch.setattr(tools.sources, "fetch_ads_with_meta", _stub_fetch(ads))
+
+    first = json.loads(tools.ad_check({}))["results"]
+    second = json.loads(tools.ad_check({}))["results"]
+
+    assert len(first) == len(second) == 2
+    assert (first[0]["new_ads"], first[0]["ended_ads"]) == (2, 0)
+    assert (first[1]["new_ads"], first[1]["ended_ads"]) == (1, 0)
+    for rows in (first, second):
+        assert rows[0]["artifacts"]["html"] != rows[1]["artifacts"]["html"]
+    for row in second:
+        assert (row["new_ads"], row["ended_ads"], row["changed_ads"]) == (0, 0, 0)
+
+
+def test_watch_add_persists_advertiser(data_dir):
+    items = json.loads(
+        tools.ad_watch({"action": "add", "query": "KFC", "advertiser": "KFC"})
+    )["watchlist"]
+    assert items == [{"query": "KFC", "country": "US", "advertiser": "KFC"}]
+    # Legacy entries without the field still load untouched.
+    assert json.loads(tools.ad_watch({"action": "list"}))["watchlist"] == items
+
+
 def test_ad_check_empty_watchlist(monkeypatch):
     monkeypatch.setattr(tools.sources, "fetch_ads_with_meta", _stub_fetch([]))
     payload = json.loads(tools.ad_check({}))

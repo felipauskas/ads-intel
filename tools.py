@@ -126,9 +126,13 @@ def ad_watch(args, **kwargs):
         return json.dumps({"error": f"watch_failed: {exc}"}, ensure_ascii=False)
 
 
-def _prior_ads(query: str, country: str = store.DEFAULT_COUNTRY) -> dict:
+def _prior_ads(
+    query: str, country: str = store.DEFAULT_COUNTRY, advertiser: str | None = None
+) -> dict:
     try:
-        return (store.load_snapshot(query, country=country) or {}).get("ads") or {}
+        return (
+            store.load_snapshot(query, country=country, advertiser=advertiser) or {}
+        ).get("ads") or {}
     except Exception:
         return {}
 
@@ -160,7 +164,7 @@ def ad_check(args, **kwargs):
             continue
         except Exception as exc:
             logger.warning("ad_check fetch failed for %r: %s", query, exc)
-            if _prior_ads(query, country):
+            if _prior_ads(query, country, advertiser):
                 results.append(
                     {"query": query, "country": country, "skipped": True, "reason": "fetch_empty"}
                 )
@@ -168,7 +172,7 @@ def ad_check(args, **kwargs):
                 results.append({"query": query, "country": country, "error": str(exc)})
             continue
 
-        if not ads and _prior_ads(query, country):
+        if not ads and _prior_ads(query, country, advertiser):
             # A blank page must not be read as "every ad ended".
             results.append(
                 {"query": query, "country": country, "skipped": True, "reason": "fetch_empty"}
@@ -200,7 +204,7 @@ def ad_check(args, **kwargs):
 
         try:
             by_id = {ad["id"]: ad for ad in ads}
-            prior = store.load_snapshot(query, country=country)
+            prior = store.load_snapshot(query, country=country, advertiser=advertiser)
             if complete:
                 diff_old = prior
                 baseline = by_id
@@ -215,7 +219,9 @@ def ad_check(args, **kwargs):
                 # as new.
                 baseline = {**prior_ads, **by_id}
             diff = diffing.diff_snapshots(diff_old, {"ads": by_id})
-            store.save_snapshot(query, {"ads": baseline}, country=country)
+            store.save_snapshot(
+                query, {"ads": baseline}, country=country, advertiser=advertiser
+            )
             # A report failure must never fail the check itself.
             try:
                 artifacts = report.write_report(
@@ -224,6 +230,7 @@ def ad_check(args, **kwargs):
                     baseline,
                     {"checked_at": checked_at, "partial": not complete},
                     country=country,
+                    advertiser=advertiser,
                 )
             except Exception as exc:
                 logger.warning("ad_check report failed for %r: %s", query, exc)

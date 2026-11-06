@@ -85,6 +85,33 @@ def test_legacy_snapshot_fallback_us_only(data_dir):
     assert store.load_snapshot(query, "AE") == {"ads": {}}
 
 
+def test_snapshot_paths_differ_by_advertiser(tmp_path):
+    """An advertiser-filtered watch must never share an unfiltered one's file."""
+    plain = store._snapshot_path("KFC", "US")
+    kfc = store._snapshot_path("KFC", "US", "KFC")
+    assert plain != kfc
+    assert store._snapshot_path("KFC", "US", "KFC") == kfc
+    assert store.report_paths("KFC", "US")["html"] != store.report_paths(
+        "KFC", "US", "KFC"
+    )["html"]
+    # The unfiltered key is unchanged, so existing baselines stay readable.
+    assert plain.name == hashlib.sha1("KFC\x00US".encode("utf-8")).hexdigest()[:16] + ".json"
+
+
+def test_advertiser_snapshot_falls_back_to_legacy_unstamped_baseline(data_dir):
+    """Adding an advertiser to a pre-fix watch keeps reading its baseline."""
+    snap = {"ads": {"1": {"id": "1"}}}
+    legacy = store._snapshot_path("KFC", "US")
+    legacy.parent.mkdir(parents=True, exist_ok=True)
+    legacy.write_text(json.dumps({"query": "KFC", **snap}))
+    assert store.load_snapshot("KFC", "US", "KFC") == snap
+
+    # But a baseline written now by the unfiltered watch is stamped, and the
+    # filtered watch must not adopt it.
+    store.save_snapshot("KFC", {"ads": {"2": {"id": "2"}}}, "US")
+    assert store.load_snapshot("KFC", "US", "KFC") == {"ads": {}}
+
+
 def test_watch_remove_absent_does_not_rewrite(monkeypatch):
     store.watch_add("nike")
     writes = []

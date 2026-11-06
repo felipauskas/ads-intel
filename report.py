@@ -112,12 +112,21 @@ def _ordered_ads(diff: dict, ads_by_id: dict) -> list[dict]:
     return ordered
 
 
-def build_html(query: str, diff: dict, ads_by_id: dict, meta: dict, country: str = "US") -> str:
+def build_html(
+    query: str,
+    diff: dict,
+    ads_by_id: dict,
+    meta: dict,
+    country: str = "US",
+    advertiser: str = "",
+) -> str:
     counts = {key: len(diff.get(key) or []) for key in ("new", "ended", "changed")}
     total = len(ads_by_id)
     checked_at = html.escape(str(meta.get("checked_at") or ""))
     partial = bool(meta.get("partial"))
     market = html.escape(str(country or "US"))
+    target = html.escape(str(advertiser or "").strip())
+    scope = f"{market} · {target}" if target else market
     banner = f"{counts['new']} new / {counts['ended']} ended / {counts['changed']} changed"
     cards = "".join(_render_card(ad) for ad in _ordered_ads(diff, ads_by_id))
     if not cards:
@@ -128,7 +137,7 @@ def build_html(query: str, diff: dict, ads_by_id: dict, meta: dict, country: str
         if partial
         else ""
     )
-    title = html.escape(f"Ad check — {query} ({market})")
+    title = html.escape(f"Ad check — {query} ({scope})")
     return (
         "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n"
         '<meta charset="UTF-8">\n'
@@ -145,8 +154,15 @@ def build_html(query: str, diff: dict, ads_by_id: dict, meta: dict, country: str
     )
 
 
-def build_digest(query: str, diff: dict, ads_by_id: dict, meta: dict, country: str = "US") -> dict:
-    return {
+def build_digest(
+    query: str,
+    diff: dict,
+    ads_by_id: dict,
+    meta: dict,
+    country: str = "US",
+    advertiser: str = "",
+) -> dict:
+    digest = {
         "query": str(query),
         "country": str(country or "US"),
         "checked_at": meta.get("checked_at"),
@@ -156,31 +172,39 @@ def build_digest(query: str, diff: dict, ads_by_id: dict, meta: dict, country: s
         "ended": len(diff.get("ended") or []),
         "changed": len(diff.get("changed") or []),
     }
+    if str(advertiser or "").strip():
+        digest["advertiser"] = str(advertiser).strip()
+    return digest
 
 
-def write_report(query, diff, ads_by_id, meta, out_dir=None, country="US") -> dict:
+def write_report(
+    query, diff, ads_by_id, meta, out_dir=None, country="US", advertiser=""
+) -> dict:
     """Write one HTML report and its digest; return their paths as strings.
 
     ``out_dir`` defaults to the plugin's ``reports`` directory for query +
-    ``country``; callers that let it default must pass the watch entry's
-    market so two markets never overwrite each other's artifacts.
+    ``country`` (+ ``advertiser``); callers that let it default must pass the
+    watch entry's market and target so two variants never overwrite each
+    other's artifacts.
     """
     meta = dict(meta or {})
     diff = diff or {}
     ads_by_id = ads_by_id or {}
 
     if out_dir is None:
-        paths = store.report_paths(query, country)
+        paths = store.report_paths(query, country, advertiser)
         html_path, digest_path = paths["html"], paths["digest"]
     else:
         out = Path(out_dir)
         html_path, digest_path = out / "report.html", out / "digest.json"
 
-    store._write_text(html_path, build_html(query, diff, ads_by_id, meta, country))
+    store._write_text(
+        html_path, build_html(query, diff, ads_by_id, meta, country, advertiser)
+    )
     store._write_text(
         digest_path,
         json.dumps(
-            build_digest(query, diff, ads_by_id, meta, country),
+            build_digest(query, diff, ads_by_id, meta, country, advertiser),
             ensure_ascii=False,
             indent=2,
         ),

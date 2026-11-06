@@ -26,6 +26,7 @@ Pure stdlib, pure functions over dicts.
 """
 
 import re
+import unicodedata
 
 MATCH_THRESHOLD = 0.80
 
@@ -36,8 +37,16 @@ MAX_CANDIDATES = 10
 
 
 def normalize(name) -> str:
-    """Lowercase and strip everything but ``a-z0-9`` (A's normalization)."""
-    return _NON_ALNUM.sub("", str(name or "").strip().lower())
+    """Lowercase, fold accents, strip everything but ``a-z0-9``.
+
+    NFKD decomposition is required before dropping non-alphanumerics: without
+    it ``L'Oréal`` loses the accented ``é`` and normalizes to ``loral`` instead
+    of ``loreal``. A's original normalization skipped this and mismatched
+    accented page names.
+    """
+    text = unicodedata.normalize("NFKD", str(name or "").strip().lower())
+    text = "".join(ch for ch in text if unicodedata.category(ch) != "Mn")
+    return _NON_ALNUM.sub("", text)
 
 
 def score_candidate(target, page_name) -> float:
@@ -76,6 +85,17 @@ def resolve_advertiser(target, page_names) -> dict:
     ]
     scored = [c for c in scored if c["score"] > 0]
     scored.sort(key=lambda c: c["score"], reverse=True)
+    # One candidate per page: six ads from the same page used to fill six of
+    # the ten diagnostic slots. Sorted best-first, so the first hit per page
+    # is the best-scoring one.
+    seen_pages = set()
+    unique = []
+    for candidate in scored:
+        page = normalize(candidate["page_name"])
+        if page not in seen_pages:
+            seen_pages.add(page)
+            unique.append(candidate)
+    scored = unique
 
     if scored and scored[0]["score"] >= MATCH_THRESHOLD:
         return {"page_name": scored[0]["page_name"], "score": scored[0]["score"]}
@@ -89,11 +109,16 @@ def resolve_advertiser(target, page_names) -> dict:
 
 
 def filter_ads(ads, target):
-    """Split ads by advertiser: ``(resolution, ads_on_winning_page)``."""
+    """Split ads by advertiser: ``(resolution, ads_on_winning_page)``.
+
+    Ads are matched on the *normalized* page name, not the raw string: the
+    library renders one page as ``K.F.C.``, ``KFC`` or `` kfc ``, and a raw
+    equality check dropped every variant but the winner's spelling.
+    """
     ads = list(ads or [])
     resolution = resolve_advertiser(target, [ad.get("page_name") for ad in ads])
     if "error" in resolution:
         return resolution, []
-    winner = resolution["page_name"]
-    kept = [ad for ad in ads if str(ad.get("page_name") or "") == winner]
+    winner = normalize(resolution["page_name"])
+    kept = [ad for ad in ads if normalize(ad.get("page_name")) == winner]
     return resolution, kept
