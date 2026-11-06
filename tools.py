@@ -5,9 +5,10 @@ import logging
 from datetime import datetime
 
 try:
-    from . import diffing, sources, store
+    from . import diffing, report, sources, store
 except ImportError:  # imported as a bare module in tests
     import diffing
+    import report
     import sources
     import store
 
@@ -89,6 +90,7 @@ def _prior_ads(query: str) -> dict:
 
 def ad_check(args, **kwargs):
     results = []
+    checked_at = datetime.now().isoformat(timespec="seconds")
     for query in store.watch_list():
         try:
             # Meta-aware fetch: a render clipped at the char budget, carrying a
@@ -140,6 +142,17 @@ def ad_check(args, **kwargs):
                 baseline = {**prior_ads, **by_id}
             diff = diffing.diff_snapshots(diff_old, {"ads": by_id})
             store.save_snapshot(query, {"ads": baseline})
+            # A report failure must never fail the check itself.
+            try:
+                artifacts = report.write_report(
+                    query,
+                    diff,
+                    baseline,
+                    {"checked_at": checked_at, "partial": not complete},
+                )
+            except Exception as exc:
+                logger.warning("ad_check report failed for %r: %s", query, exc)
+                artifacts = {"error": str(exc)}
             results.append(
                 {
                     "query": query,
@@ -150,6 +163,7 @@ def ad_check(args, **kwargs):
                     "new": [_summary(ad) for ad in diff["new"]],
                     "ended": [_summary(ad) for ad in diff["ended"]],
                     "changed": [_summary(ad) for ad in diff["changed"]],
+                    "artifacts": artifacts,
                 }
             )
         except Exception as exc:

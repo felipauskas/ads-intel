@@ -1,4 +1,5 @@
 import json
+from pathlib import Path
 
 import pytest
 
@@ -258,3 +259,23 @@ def test_ad_check_empty_watchlist(monkeypatch):
     payload = json.loads(tools.ad_check({}))
     assert payload["results"] == []
     assert payload["checked_at"]
+
+
+def test_check_returns_artifact_paths(monkeypatch, tmp_path):
+    tools.ad_watch({"action": "add", "query": "nike"})
+    monkeypatch.setattr(tools.sources, "fetch_ads_with_meta", _stub_fetch([AD]))
+
+    row = json.loads(tools.ad_check({}))["results"][0]
+    artifacts = row["artifacts"]
+    assert set(artifacts) == {"html", "digest"}
+
+    html_path = Path(artifacts["html"])
+    digest_path = Path(artifacts["digest"])
+    assert html_path.is_file() and html_path.suffix == ".html"
+    assert digest_path.is_file() and digest_path.suffix == ".json"
+    assert str(html_path).startswith(str(tmp_path))
+    assert "html" in html_path.read_text().lower()
+    digest = json.loads(digest_path.read_text())
+    assert digest["query"] == "nike"
+    assert digest["new"] == row["new_ads"] == 1
+

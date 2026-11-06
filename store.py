@@ -89,6 +89,37 @@ def _snapshot_path(query: str) -> Path:
     return _data_dir() / "snapshots" / f"{digest}.json"
 
 
+def _write_text(path: Path, data: str) -> None:
+    """Write UTF-8 text atomically: temp file in the same dir, fsync, replace."""
+    path.parent.mkdir(parents=True, exist_ok=True)
+    fd, tmp_name = tempfile.mkstemp(
+        dir=str(path.parent), prefix=path.name + ".", suffix=".tmp"
+    )
+    tmp = Path(tmp_name)
+    try:
+        with os.fdopen(fd, "w", encoding="utf-8") as fh:
+            fh.write(data)
+            fh.flush()
+            os.fsync(fh.fileno())
+        os.replace(tmp, path)
+    except BaseException:
+        try:
+            os.unlink(tmp)
+        except OSError:
+            pass
+        raise
+
+
+def report_paths(query: str) -> dict:
+    """Where the HTML report and its digest live for a query."""
+    digest = hashlib.sha1(_norm(query).encode("utf-8")).hexdigest()[:16]
+    base = _data_dir() / "reports"
+    return {
+        "html": base / f"{digest}.html",
+        "digest": base / f"{digest}.digest.json",
+    }
+
+
 def save_snapshot(query: str, snap: dict) -> None:
     payload = dict(snap or {})
     payload["query"] = _norm(query)

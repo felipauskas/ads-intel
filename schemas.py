@@ -38,7 +38,11 @@ AD_CHECK = {
         "(unknown completeness counts as partial). A partial result suppresses "
         "the `ended` bucket and merges the fetched ads into the saved baseline; "
         "new and changed ads stay accurate. Watches with 20 or more live ads "
-        "therefore never report ended ads."
+        "therefore never report ended ads. Each result also carries "
+        "`artifacts: {html, digest}`: paths to a single-file, offline HTML "
+        "report (all ads as cards) and its JSON digest of the same counts; "
+        "a report write failure sets `artifacts` to `{error}` without "
+        "failing the check."
     ),
     "properties": {},
 }
