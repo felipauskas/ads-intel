@@ -1,0 +1,32 @@
+# LOCAL PREPARATION ONLY - repo not yet published (rule 5 pending). Do NOT open PR until pushed.
+#
+# Schema: NousResearch/hermes-agent plugin-catalog entry
+#   keys      -> scripts/validate_plugin_catalog.py (KNOWN_KEYS / REQUIRED_KEYS)
+#   semantics -> hermes_cli/plugin_catalog.py (PluginCatalogEntry) + plugin-catalog/README.md
+# Notes for publication day:
+#   * sha below is the repo's HEAD (46253a14b22289d5d0b75ad95e98a7545c23ddcc) taken BEFORE
+#     the commit that added this file. Committing moves HEAD, so re-pin sha to the final
+#     published commit in the same batch as the version bump (rules 2 and 4).
+#   * repo is the intended public slug and must be confirmed live before the PR (rule 5:
+#     owner submission from felipauskas' own account).
+#   * there is deliberately no license field: the loader has none and would warn on an
+#     unknown top-level key. License lives in plugin.yaml (MIT).
+name: ads-intel
+title: Ads Intel
+repo: https://github.com/felipauskas/ads-intel
+sha: 46253a14b22289d5d0b75ad95e98a7545c23ddcc
+version: "0.2.0"
+description: "Search the public Meta Ad Library and watch competitor pages for new, ended and changed ads through three tools (ad_search, ad_watch, ad_check), with local snapshot diffing and HTML/JSON reports. STDlib Python only, zero API keys, no accounts, no credentials. Disclosure - network: one read-only GET per query to https://www.facebook.com/ads/library/ performed by Hermes' built-in web_extract, no other hosts, no idle traffic, no pagination and no retries; filesystem: writes only inside plugin_data_dir('ads-intel') (watchlist.json, snapshots/, reports/) and reads nothing outside it; no shell commands, no background processes, no stored secrets or environment variables. Meta's terms do not authorise automated collection and this plugin does not claim that authorisation: it is a low-rate read-only client intended for personal, small-scale research, and the user is responsible for their own use."
+maintainer: felipauskas
+tier: community
+category: tools
+requires_hermes: ">=0.21.5"
+platforms: []
+capabilities:
+  provides_tools:
+    - ad_search
+    - ad_watch
+    - ad_check
+  provides_hooks: []
+  provides_middleware: []
+  requires_env: []
