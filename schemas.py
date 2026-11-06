@@ -6,10 +6,19 @@ AD_SEARCH = {
         "returns ad id, page name, run status, start/end dates, creative text "
         "and a library URL. It is a keyword search, so results include any page "
         "that mentions the term. Supports an optional result limit (default 20) "
-        "and an optional two-letter market code (`country`, default US)."
+        "and an optional two-letter market code (`country`, default US). Pass "
+        "`advertiser` to keep only ads from that brand's page: the keyword hits "
+        "are resolved to one page name by score (exact 0.80, normalized 0.85, "
+        "substring 0.60, threshold 0.80). A target no page matches returns "
+        "`{\"error\": \"name_not_matched\", target, candidates, threshold}` "
+        "instead of unfiltered ads."
     ),
     "properties": {
         "query": {"type": "string", "description": "Brand, advertiser, or keyword to search public ad libraries for"},
+        "advertiser": {
+            "type": "string",
+            "description": "Optional page/brand name to resolve and keep only that page's ads",
+        },
         "limit": {"type": "integer", "description": "Max ads to return (default 20)"},
         "country": {
             "type": "string",
@@ -27,9 +36,12 @@ AD_WATCH = {
         "'add' saves a search query to the local watchlist (query required), "
         "'remove' deletes a saved query, and 'list' shows the current watchlist. "
         "Run ad_check afterwards to seed the baseline and detect new, ended or "
-        "changed ads."
+        "changed ads. Pass `advertiser` on add to track one brand's page: "
+        "ad_check then resolves each entry to that page and keeps only its ads; "
+        "an unresolvable name reports `name_not_matched` and leaves the "
+        "snapshot alone."
     ),
-    "properties": {"action": {"type": "string", "enum": ["add", "remove", "list"], "description": "Watchlist action"}, "query": {"type": "string", "description": "Search query to add/remove"}, "country": {"type": "string", "description": "Two-letter market code to watch (default US); used on add", "pattern": "^[A-Z]{2}$", "default": "US"}},
+    "properties": {"action": {"type": "string", "enum": ["add", "remove", "list"], "description": "Watchlist action"}, "query": {"type": "string", "description": "Search query to add/remove"}, "advertiser": {"type": "string", "description": "Optional page/brand name to resolve and watch (used on add)"}, "country": {"type": "string", "description": "Two-letter market code to watch (default US); used on add", "pattern": "^[A-Z]{2}$", "default": "US"}},
     "required": ["action"],
 }
 AD_CHECK = {

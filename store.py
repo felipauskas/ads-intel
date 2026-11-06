@@ -62,7 +62,11 @@ def _norm_country(country) -> str:
 
 
 def _entry(item) -> dict | None:
-    """One watch entry as ``{query, country}``; legacy strings migrate to US."""
+    """One watch entry as ``{query, country[, advertiser]}``.
+
+    Legacy strings migrate to US; entries written before advertiser
+    resolution existed simply have no ``advertiser`` key.
+    """
     if isinstance(item, str):
         query = _norm(item)
         return {"query": query, "country": DEFAULT_COUNTRY} if query else None
@@ -70,7 +74,11 @@ def _entry(item) -> dict | None:
         query = _norm(item.get("query"))
         if not query:
             return None
-        return {"query": query, "country": _norm_country(item.get("country"))}
+        entry = {"query": query, "country": _norm_country(item.get("country"))}
+        advertiser = _norm(item.get("advertiser"))
+        if advertiser:
+            entry["advertiser"] = advertiser
+        return entry
     return None
 
 
@@ -87,8 +95,10 @@ def watch_list() -> list[dict]:
     return [e for e in (_entry(x) for x in data) if e]
 
 
-def watch_add(query: str, country: str = DEFAULT_COUNTRY) -> list[dict]:
-    entry = _entry({"query": query, "country": country})
+def watch_add(
+    query: str, country: str = DEFAULT_COUNTRY, advertiser: str | None = None
+) -> list[dict]:
+    entry = _entry({"query": query, "country": country, "advertiser": advertiser})
     if entry is None:
         return watch_list()
     items = watch_list()

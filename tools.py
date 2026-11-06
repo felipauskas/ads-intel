@@ -6,10 +6,11 @@ import re
 from datetime import datetime
 
 try:
-    from . import diffing, report, sources, store
+    from . import diffing, report, resolve, sources, store
 except ImportError:  # imported as a bare module in tests
     import diffing
     import report
+    import resolve
     import sources
     import store
 
@@ -56,14 +57,34 @@ def ad_search(args, **kwargs):
     country = _requested_country(args)
     if country is None:
         return json.dumps({"error": "invalid_country"})
+    advertiser = str(args.get("advertiser") or "").strip()
     try:
         limit = int(args.get("limit", 20))
     except (TypeError, ValueError):
         return json.dumps({"error": "invalid limit"})
     try:
         ads = sources.fetch_ads(query, limit=limit, dispatch=_dispatch, country=country)
+        if not advertiser:
+            return json.dumps(
+                {"count": len(ads), "country": country, "ads": ads}, ensure_ascii=False
+            )
+        # Keyword hits are not a brand filter: resolve the advertiser to one
+        # page name, or say so instead of passing noise off as the brand.
+        resolution, kept = resolve.filter_ads(ads, advertiser)
+        if "error" in resolution:
+            return json.dumps(
+                {**resolution, "country": country, "query": query},
+                ensure_ascii=False,
+            )
         return json.dumps(
-            {"count": len(ads), "country": country, "ads": ads}, ensure_ascii=False
+            {
+                "count": len(kept),
+                "country": country,
+                "advertiser": advertiser,
+                "resolved": resolution,
+                "ads": kept,
+            },
+            ensure_ascii=False,
         )
     except sources.ParseError as exc:
         logger.warning("ad_search parse failed for %r: %s", query, exc)
@@ -89,7 +110,8 @@ def ad_watch(args, **kwargs):
             country = _requested_country(args)
             if country is None:
                 return json.dumps({"error": "invalid_country"})
-            items = store.watch_add(query, country=country)
+            advertiser = str(args.get("advertiser") or "").strip()
+            items = store.watch_add(query, country=country, advertiser=advertiser or None)
         elif action == "remove":
             items = store.watch_remove(query)
         elif action == "list":
@@ -117,6 +139,8 @@ def ad_check(args, **kwargs):
     for entry in store.watch_list():
         query = entry["query"]
         country = entry["country"]
+        # Entries written before advertiser resolution existed have no target.
+        advertiser = entry.get("advertiser") or ""
         try:
             # Meta-aware fetch: a render clipped at the char budget, carrying a
             # truncation footer, or sliced by the result limit is a partial
@@ -150,6 +174,29 @@ def ad_check(args, **kwargs):
                 {"query": query, "country": country, "skipped": True, "reason": "fetch_empty"}
             )
             continue
+
+        resolution = None
+        if advertiser:
+            # Filter to the resolved page before diffing, so a keyword watch
+            # tracks the advertiser's ads only. No match: report it and leave
+            # the snapshot untouched.
+            resolution, ads = resolve.filter_ads(ads, advertiser)
+            if "error" in resolution:
+                logger.warning(
+                    "ad_check advertiser %r not matched for %r", advertiser, query
+                )
+                results.append(
+                    {
+                        "query": query,
+                        "country": country,
+                        "advertiser": advertiser,
+                        "error": "name_not_matched",
+                        "target": resolution["target"],
+                        "candidates": resolution["candidates"],
+                        "threshold": resolution["threshold"],
+                    }
+                )
+                continue
 
         try:
             by_id = {ad["id"]: ad for ad in ads}
@@ -186,6 +233,7 @@ def ad_check(args, **kwargs):
                     "query": query,
                     "country": country,
                     "partial": not complete,
+                    **({"advertiser": advertiser, "resolved": resolution} if resolution else {}),
                     "new_ads": len(diff["new"]),
                     "ended_ads": len(diff["ended"]),
                     "changed_ads": len(diff["changed"]),

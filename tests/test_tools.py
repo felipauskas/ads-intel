@@ -124,6 +124,36 @@ def test_search_rejects_malformed_country(monkeypatch):
     assert dispatched[-1][1]["country"] == "US"
 
 
+def test_search_with_advertiser_filters_keyword_noise(monkeypatch):
+    """`advertiser` keeps only the winning page, not every page mentioning it.
+
+    The recorded library fixture holds a Nike render, so the Burger King noise
+    from the live run (entel, Soundlines Group) is synthesised here.
+    """
+    noise = [
+        {**AD, "id": "bk", "page_name": "Burger King"},
+        {**AD, "id": "entel", "page_name": "entel"},
+        {**AD, "id": "sound", "page_name": "Soundlines Group"},
+    ]
+    monkeypatch.setattr(tools.sources, "fetch_ads", lambda q, **kw: list(noise))
+
+    payload = json.loads(
+        tools.ad_search({"query": "Burger King", "advertiser": "Burger King"})
+    )
+    assert payload["count"] == 1
+    assert [ad["id"] for ad in payload["ads"]] == ["bk"]
+    assert payload["resolved"] == {"page_name": "Burger King", "score": 0.80}
+
+    # A target no page matches reports the mismatch instead of pretending the
+    # keyword hits are the advertiser.
+    missed = json.loads(
+        tools.ad_search({"query": "Burger King", "advertiser": "KFC"})
+    )
+    assert missed["error"] == "name_not_matched"
+    assert missed["threshold"] == 0.80
+    assert "ads" not in missed
+
+
 def _stub_fetch(ads=None, complete=True):
     """Patch target for ad_check's meta-aware fetch seam."""
     meta = {"complete": complete, "fetched_chars": 100, "char_limit": 120000}
