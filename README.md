@@ -136,11 +136,13 @@ Response shape — one row per watchlist entry, in watchlist order:
 
 There is no top-level count — sum the rows if you need one. A processed row always carries `query`, `country`, `partial`, the three integer counts (`new_ads`, `ended_ads`, `changed_ads`) and the three matching arrays (`new`, `ended`, `changed`). Each bucket entry is an ad summary with the same 16 keys as an `ad_search` ad (`id`, `page_name`, `status`, `first_seen`, `last_seen`, `creative_text`, `library_url`, `page_url`, `page_id`, `link_url`, `link_title`, `cta_text`, `images`, `has_video`, `same_creative_count`, `multiple_versions`), defaulted to `""` / `[]` / `0` / `false`. An advertiser watch adds `advertiser` and `resolved`; a non-default filter adds `active_status` / `media_type`.
 
-Rows that did not diff carry the same `query`, `country` and `artifacts: {error}` plus `partial: true`, and one of:
+Rows that did not diff carry the same `query`, `country` and `artifacts: {error}`, and one of:
 
 - `skipped: true` with `reason: "fetch_empty"` or `"parse_failed"` — no snapshot was written and no endings were inferred.
 - `error: "name_not_matched"` with `advertiser`, `target`, `candidates` and `threshold` — the page could not be resolved, so no snapshot was written.
 - `error: "<detail>"` — an unexpected failure for that entry; the other entries still run.
+
+`partial` reports fetch completeness, not success: it is `true` when the listing was clipped or could not be read, and `false` when the outcome is a fact about a complete listing. `name_not_matched` is therefore `partial: false` on a complete listing, but `true` when the render was clipped and the page may simply not have rendered.
 
 ## Disclosures
 
@@ -156,7 +158,7 @@ Rows that did not diff carry the same `query`, `country` and `artifacts: {error}
 
 Queries are keyword searches, not brand filters: the library returns any page whose ads mention the term, so a watch acts as a keyword watch rather than a strict brand watch. Passing `advertiser` narrows a search or watch to one page after the fetch.
 
-Advertiser resolution works on page names only (there are no page-id or handle matching rungs here), so the highest score it can award is `0.85` — a target differing only in punctuation or case (`KFC` vs `K.F.C.`). An identical name scores `0.80`, the threshold; substring hits score `0.60` and never match on their own. That means an owned page named `KFC UAE` is *not* selected by `advertiser: "KFC"`, and a miss is reported as `name_not_matched` (in `ad_check`: a row with `error` and `partial`, no snapshot write — on a clipped render the miss only proves the page was not in what rendered) rather than falling back to the keyword hits. Adding or changing `advertiser` starts a filtered watch from a clean baseline, because filtered and unfiltered snapshots are keyed separately; the one exception is a watch that adopts a legacy unstamped snapshot (written before snapshots carried an `advertiser` stamp), where other pages' ads stored earlier can be reported as `ended` once.
+Advertiser resolution works on page names only (there are no page-id or handle matching rungs here), so the highest score it can award is `0.85` — a target differing only in punctuation or case (`KFC` vs `K.F.C.`). An identical name scores `0.80`, the threshold; substring hits score `0.60` and never match on their own. That means an owned page named `KFC UAE` is *not* selected by `advertiser: "KFC"`, and a miss is reported as `name_not_matched` (in `ad_check`: a row with `error`, `partial` reflecting fetch completeness, and no snapshot write — on a clipped render the miss only proves the page was not in what rendered) rather than falling back to the keyword hits. Adding or changing `advertiser` starts a filtered watch from a clean baseline, because filtered and unfiltered snapshots are keyed separately. An advertiser watch, and any watch with non-default filters, never adopts a legacy unstamped snapshot — only a plain unfiltered watch keeps a pre-stamp baseline.
 
 ## Limitations
 

@@ -141,5 +141,5 @@ records what the same three tools now return without adding a surface.
   `has_video` is only the render's video-playback signal.
 - **Invariants unchanged:** no key, account, cookie, third-party service or extra
   host; one read-only GET per query; stdlib only; `plugin_data_dir("ads-intel")`
-  is still the only filesystem path. Suite: **129 passed**; `hermes plugins
+  is still the only filesystem path. Suite: **173 passed**; `hermes plugins
   validate .` passed.

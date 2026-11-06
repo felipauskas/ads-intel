@@ -4,7 +4,7 @@ Run date: 2026-11-06 (local +04, UTC+04:00)
 Repo: `~/coding-projects/ads-intel`, HEAD `96c0b3d` (`feat: summary null-coercion, filter echo, completeness meta (136 tests)`).
 Host: macOS 27.2 (arm64), Python 3.14.10 `./.venv/bin/python`. Mode: local, offline (fake `web_extract` dispatch), no network. No source or test file was modified; only `evals/adversarial.md` and its probe were added.
 
-Probe: `./.venv/bin/python evals/adversarial_probe.py` — 250 assertions, 233 pass, 17 fail grouped into 6 findings below.
+Probe: `./.venv/bin/python evals/adversarial_probe.py` — 250 assertions, 233 pass, 17 fail grouped into 6 findings below. (Historical: this run predates the fixes; see the re-run addendum at the end for the current result.)
 
 Method: every report is parsed with `html.parser` and the tag/attribute tree is asserted structurally — forbidden tags (`script img iframe object embed svg math link base form input video audio source template`), `on*` attributes, `src`/`srcset`/`formaction`/`action`, `style` containing `expression|url(|javascript:`, and any `href` not starting `http(s)://`. Text payloads are additionally checked to decode back verbatim (no double-escaping). The strongest case was also opened in a real Chromium via CDP.
 
@@ -245,3 +245,17 @@ Fix: when a payload begins with `{` or `[` but fails to decode, raise `FetchErro
 | K numeric-field abuse | 8 |
 
 233/250 pass. The 17 failures are exactly F1 (1), F2 (5), F3 (2), F4 (3), F5 (6). No injection, no script execution, no image or event-handler emission in any case.
+
+---
+
+## Addendum — re-run after fixes (2026-11-06)
+
+Re-ran the unchanged probe on the current branch, `feat/free-treg-fields` @ `aa61ac3` + the docs/NUL-validation fixes:
+
+```
+./.venv/bin/python evals/adversarial_probe.py
+total 250 passed 249 failed 1
+FAIL G.meta_shape {'partial': 'false'} ->
+```
+
+**249/250 pass.** F1–F5 are fixed (the `ad_search limit=inf` crash, the malformed-payload crash classes, and the earlier contract failures no longer reproduce). The single remaining failure is **F6**, the cosmetic `partial: "false"` string-truthiness case in `build_html`; `ad_check` always passes a bool, so it is reachable only by a direct API caller. No XSS, script execution, image/event-handler emission, or URL-scheme escape was found in any case. This supersedes the 233/250 count above, which records the pre-fix state.

@@ -127,6 +127,10 @@ def ad_search(args, **kwargs):
     query = str(args.get("query") or "").strip()
     if not query:
         return json.dumps({"error": "query required"})
+    # NUL is the snapshot-key field separator (store._artifact_key), so a
+    # query containing it could alias another watch's baseline file.
+    if "\x00" in query:
+        return json.dumps({"error": "invalid query"})
     country = _requested_country(args)
     if country is None:
         return json.dumps({"error": "invalid_country"})
@@ -220,6 +224,10 @@ def ad_watch(args, **kwargs):
         if action == "add":
             if not str(query).strip():
                 return json.dumps({"error": "query required"})
+            # NUL separates the fields of a snapshot key; reject it here so a
+            # watch cannot alias another watch's baseline.
+            if "\x00" in str(query):
+                return json.dumps({"error": "invalid query"})
             country = _requested_country(args)
             if country is None:
                 return json.dumps({"error": "invalid_country"})

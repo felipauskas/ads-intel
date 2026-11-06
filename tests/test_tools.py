@@ -83,6 +83,14 @@ def test_ad_search_requires_query():
     }
 
 
+def test_ad_search_rejects_nul_query():
+    # NUL is the snapshot-key separator; a query containing it could alias
+    # another watch's baseline file.
+    assert json.loads(tools.ad_search({"query": "ni\x00ke"})) == {
+        "error": "invalid query"
+    }
+
+
 def test_ad_search_rejects_bad_limit(monkeypatch):
     _patch_fetch(monkeypatch, lambda q, **kw: [AD])
     payload = json.loads(tools.ad_search({"query": "nike", "limit": "many"}))
@@ -111,6 +119,12 @@ def test_ad_watch_add_requires_query():
     assert json.loads(tools.ad_watch({"action": "add", "query": "  "})) == {
         "error": "query required"
     }
+
+
+def test_ad_watch_add_rejects_nul_query():
+    assert json.loads(
+        tools.ad_watch({"action": "add", "query": "ni\x00ke"})
+    ) == {"error": "invalid query"}
 
 
 def test_ad_watch_unknown_action():

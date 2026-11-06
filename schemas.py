@@ -102,8 +102,11 @@ AD_CHECK = {
         "report (all ads as cards) and its JSON digest of the same counts; "
         "a report write failure sets `artifacts` to `{error}` without "
         "failing the check. Skipped rows (`skipped: true` with `reason`) and "
-        "failed rows (`error`) keep the same contract: they carry `partial: "
-        "true` and `artifacts: {error}` because no report was written."
+        "failed rows (`error`) keep the row shape (`query`, `country`, "
+        "`artifacts: {error}`). Their `partial` follows the same completeness "
+        "rule as every other row — `true` when the listing was clipped or "
+        "could not be read, `false` when the miss is a fact about a complete "
+        "listing (for example `name_not_matched` with every ad fetched)."
     ),
     "properties": {},
 }
