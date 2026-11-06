@@ -91,10 +91,12 @@ def ad_check(args, **kwargs):
     results = []
     for query in store.watch_list():
         try:
-            # Meta-aware fetch: a render clipped at the char budget is a
-            # partial listing, and ids missing from it are not "ended".
+            # Meta-aware fetch: a render clipped at the char budget, carrying a
+            # truncation footer, or sliced by the result limit is a partial
+            # listing, and ids missing from it are not "ended".
             ads, meta = sources.fetch_ads_with_meta(query, dispatch=_dispatch)
-            complete = bool(meta.get("complete", True))
+            # Fail safe: an unknown completeness is treated as partial.
+            complete = bool(meta.get("complete", False))
         except sources.ParseError as exc:
             # Markup changed: do not treat it as "every ad ended" and do not
             # overwrite the snapshot with an empty baseline.
@@ -125,14 +127,19 @@ def ad_check(args, **kwargs):
             prior = store.load_snapshot(query)
             if complete:
                 diff_old = prior
+                baseline = by_id
             else:
                 # Partial listing: mask out prior ads the render never reached,
                 # so an absent id is not counted as ended. Status flips on ads
                 # that did render are still reported.
                 prior_ads = prior.get("ads") or {}
                 diff_old = {"ads": {k: v for k, v in prior_ads.items() if k in by_id}}
+                # Merge instead of replacing: a truncated render must not shrink
+                # the baseline, or the next complete run reports every masked id
+                # as new.
+                baseline = {**prior_ads, **by_id}
             diff = diffing.diff_snapshots(diff_old, {"ads": by_id})
-            store.save_snapshot(query, {"ads": by_id})
+            store.save_snapshot(query, {"ads": baseline})
             results.append(
                 {
                     "query": query,

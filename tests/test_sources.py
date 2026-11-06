@@ -108,6 +108,51 @@ def test_fetch_marks_truncated_when_render_hits_budget():
     assert short_meta["fetched_chars"] == len(text)
 
 
+def test_fetch_marks_partial_when_result_limit_hits():
+    """A render with more ads than `limit` is partial: the tail was sliced off."""
+    text = FIXTURE.read_text()
+    assert len(sources.parse_library_markdown(text)) == 28
+
+    ads, meta = sources.fetch_ads_with_meta(
+        "nike",
+        limit=20,
+        dispatch=lambda n, a: text,
+        char_limit=sources._CHAR_LIMIT,
+    )
+    assert len(ads) == 20
+    assert meta["complete"] is False
+    assert meta["fetched_chars"] == len(text)
+
+    # The whole render fits under the limit: complete.
+    all_ads, all_meta = sources.fetch_ads_with_meta(
+        "nike",
+        limit=50,
+        dispatch=lambda n, a: text,
+        char_limit=sources._CHAR_LIMIT,
+    )
+    assert len(all_ads) == 28
+    assert all_meta["complete"] is True
+
+
+def test_fetch_marks_partial_on_truncation_footer_marker():
+    """The host's head+tail footer means cards were dropped from the middle."""
+    text = FIXTURE.read_text()
+    clipped = text[: len(text) // 2] + (
+        "\n\n[... middle omitted — see footer ...]\n\n"
+        "──────── [TRUNCATED] ────────\n"
+        "Showing 40,000 chars (head) + 13,000 chars (tail) of 90,000 total clean characters.\n"
+    )
+
+    ads, meta = sources.fetch_ads_with_meta(
+        "nike",
+        limit=50,
+        dispatch=lambda n, a: clipped,
+        char_limit=sources._CHAR_LIMIT,
+    )
+    assert ads
+    assert meta["complete"] is False
+
+
 def test_fetch_ads_decodes_json_envelope():
     text = FIXTURE.read_text()
     envelope = json.dumps(

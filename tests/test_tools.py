@@ -197,11 +197,60 @@ def test_truncated_fetch_reports_no_ended_ads(monkeypatch):
     assert row["changed_ads"] == 1
     assert [ad["id"] for ad in row["changed"]] == ["1"]
 
-    # The partial baseline is still saved so the next run has something to
-    # diff against.
+    # The partial baseline is merged with the prior one: ads that the render
+    # never reached stay in the snapshot, and the one truly-new ad is added.
     snap = tools.store.load_snapshot("nike")["ads"]
-    assert len(snap) == 22
+    assert len(snap) == 30
     assert "1" in snap and "99" in snap
+    assert all(str(i) in snap for i in range(1, 30))
+
+
+def test_partial_run_then_complete_reports_no_new_ads(monkeypatch):
+    """A partial run must not shrink the baseline into a false-new next run."""
+    tools.ad_watch({"action": "add", "query": "nike"})
+    prior = {str(i): {**AD, "id": str(i), "creative_text": "v1"} for i in range(1, 30)}
+    tools.store.save_snapshot("nike", {"ads": prior})
+
+    # First run: the render only reached the first 20 of the 29 known ads.
+    partial_ads = [{**AD, "id": str(i), "creative_text": "v1"} for i in range(1, 21)]
+    monkeypatch.setattr(tools.sources, "fetch_ads_with_meta", _stub_fetch(partial_ads, complete=False))
+
+    first = json.loads(tools.ad_check({}))["results"][0]
+    assert first["partial"] is True
+    assert first["new_ads"] == 0
+    assert first["ended_ads"] == 0
+    snap = tools.store.load_snapshot("nike")["ads"]
+    assert len(snap) == 29
+    assert all(str(i) in snap for i in range(1, 30))
+
+    # Second run: a complete render returns all 29. Nothing is new or ended.
+    complete_ads = [{**AD, "id": str(i), "creative_text": "v1"} for i in range(1, 30)]
+    monkeypatch.setattr(tools.sources, "fetch_ads_with_meta", _stub_fetch(complete_ads))
+
+    second = json.loads(tools.ad_check({}))["results"][0]
+    assert second["partial"] is False
+    assert second["new_ads"] == 0
+    assert second["ended_ads"] == 0
+    assert second["changed_ads"] == 0
+
+
+def test_check_partial_when_limit_truncates(monkeypatch):
+    """Unknown completeness (no `complete` key) fails safe to partial."""
+    tools.ad_watch({"action": "add", "query": "nike"})
+    prior = {str(i): {**AD, "id": str(i), "creative_text": "v1"} for i in range(1, 30)}
+    tools.store.save_snapshot("nike", {"ads": prior})
+
+    truncated = [{**AD, "id": str(i), "creative_text": "v1"} for i in range(1, 21)]
+    monkeypatch.setattr(
+        tools.sources,
+        "fetch_ads_with_meta",
+        lambda q, **kw: (truncated, {"fetched_chars": 50000, "char_limit": 120000}),
+    )
+
+    row = json.loads(tools.ad_check({}))["results"][0]
+    assert row["partial"] is True
+    assert row["ended_ads"] == 0
+    assert len(tools.store.load_snapshot("nike")["ads"]) == 29
 
 
 def test_ad_check_empty_watchlist(monkeypatch):

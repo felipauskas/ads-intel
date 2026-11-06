@@ -55,8 +55,9 @@ Queries are keyword searches, not brand filters: the library returns any page wh
 ## Limitations
 
 - Meta may change the ad-library page markup; the parser lives in a single file (`sources.py`) and would need updating.
-- Large result pages are truncated by the fetcher (`char_limit=120000`). A render that fills the whole budget is treated as partial: `ad_check` still saves the snapshot and reports new/changed ads but suppresses the `ended` bucket (`partial: true`), because ids missing from a clipped page have not necessarily stopped running.
-- No pagination in v1: one page of results per query, and `ad_check` diffs the first 20 results per watch.
+- Large result pages are truncated by the fetcher (`char_limit=120000`). A render that fills the whole budget, or that carries the fetch host's head+tail truncation footer, is treated as partial: `ad_check` merges the fetched ads into the stored snapshot and reports new/changed ads but suppresses the `ended` bucket (`partial: true`), because ids missing from a clipped page have not necessarily stopped running.
+- A fetch that returns at least `limit` ads is also treated as partial: the tail past the limit was sliced off, so absent ids prove nothing there either. `ad_check` fetches the default `limit` of 20 ads per watch, which means **any watch with 20 or more live ads reports `partial: true` and never reports `ended` ads**. That is deliberate — a false "ended" is worse than a missed one — but it is a real ceiling: keep keyword watches narrow enough to stay under 20 results, and read `new`/`changed` (which stay accurate) rather than relying on retirements.
+- No pagination in v1: one page of results per query, capped at 20 ads for `ad_check`.
 
 ## License
 

@@ -32,7 +32,13 @@ AD_CHECK = {
         "watchlisted query. Fetches each entry, diffs it against the stored "
         "snapshot and reports new, ended and changed ads. The first check after "
         "adding a watch seeds the baseline and reports every ad as new; a "
-        "failed or empty fetch is skipped rather than reported as all-ended."
+        "failed or empty fetch is skipped rather than reported as all-ended. "
+        "Each result carries `partial`: true when the fetch was clipped by the "
+        "char budget, the host's truncation footer, or the 20-ad result limit "
+        "(unknown completeness counts as partial). A partial result suppresses "
+        "the `ended` bucket and merges the fetched ads into the saved baseline; "
+        "new and changed ads stay accurate. Watches with 20 or more live ads "
+        "therefore never report ended ads."
     ),
     "properties": {},
 }

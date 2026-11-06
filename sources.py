@@ -23,6 +23,11 @@ _LIBRARY_BASE = "https://www.facebook.com/ads/library/"
 # a render that fills the whole budget comes back as a clipped prefix.
 _CHAR_LIMIT = 120_000
 
+# The host clips oversized pages head+tail and appends a footer (tools/
+# web_tools_truncate.py): the middle is dropped, so any of these substrings in
+# the returned text means cards may be missing regardless of char count.
+_TRUNCATION_MARKERS = ("[TRUNCATED]", "middle omitted")
+
 
 # An empty results page renders short (a few hundred chars of chrome). A render
 # past this size with no card markers at all means the page shape drifted, not
@@ -326,11 +331,14 @@ def _normalise_ad(rec: dict) -> dict | None:
     return ad
 
 
-def _ads_from_payload_list(items: list, limit: int) -> list[dict]:
+def _ads_from_payload_list(items: list, limit: int) -> tuple[list[dict], int]:
     """Ads from a JSON-array payload, or :class:`ParseError` if unrecognized.
 
     Accepts either a list of ``web_extract`` result objects (the envelope as
     an array instead of a dict) or a list of already-parsed ad objects.
+
+    Returns ``(ads_sliced_to_limit, total_parsed)`` so the caller can tell
+    whether ``limit`` itself truncated the listing.
     """
     if not items:
         raise FetchError("empty results")
@@ -339,13 +347,14 @@ def _ads_from_payload_list(items: list, limit: int) -> list[dict]:
         key in first for key in ("content", "markdown", "error")
     ):
         content = _content_from_payload({"results": items})
-        return parse_library_markdown(content)[:limit]
+        parsed = parse_library_markdown(content)
+        return parsed[:limit], len(parsed)
     ads = [ad for ad in (_normalise_ad(i) for i in items if isinstance(i, dict)) if ad]
     if not ads:
         raise ParseError(
             "unrecognised JSON array payload", cards_seen=len(items)
         )
-    return ads[:limit]
+    return ads[:limit], len(ads)
 
 
 def fetch_ads_with_meta(
@@ -356,19 +365,30 @@ def fetch_ads_with_meta(
 ) -> tuple[list[dict], dict]:
     """Fetch and parse ``query``, returning ``(ads, meta)``.
 
-    ``meta`` is ``{"complete": bool, "fetched_chars": int, "char_limit": int}``.
+    ``meta`` is
+    ``{"complete": bool, "fetched_chars": int, "char_limit": int}``.
 
-    Completeness is a *heuristic*, not a guarantee: a render whose length
-    reaches the char budget is assumed to be a truncated prefix, because the
-    host clips oversized pages silently and gives no marker of its own. A page
-    that happens to end exactly at the budget is therefore reported as partial
-    — the safe direction, since a partial listing only suppresses the ``ended``
-    bucket. JSON payloads carry whole ads and are always ``complete``.
+    Completeness is a *heuristic*, not a guarantee, and it fails toward
+    ``False``. Three independent signals make a listing partial:
+
+    * the render reaches the char budget (the host clips oversized pages);
+    * the text carries the host's head+tail truncation footer
+      (:data:`_TRUNCATION_MARKERS`), which drops cards from the middle;
+    * ``limit`` itself sliced the parsed ads (total parsed ``>= limit``), so
+      the tail beyond the limit was never returned.
+
+    A partial listing only suppresses the ``ended`` bucket, so a false
+    positive costs a missed retirement report while a false negative
+    manufactures ``new`` ads out of a shrunken baseline.
+
+    JSON payloads carry whole ads and have no footer, but their length is
+    still capped by ``limit``.
 
     ``char_limit`` exists so tests (and future tiering) can use a small budget;
     production callers leave it at :data:`_CHAR_LIMIT`.
     """
     budget = _CHAR_LIMIT if char_limit is None else max(int(char_limit), 0)
+    lim = max(int(limit), 0)
     if dispatch is None or not callable(dispatch):
         raise FetchError("web_extract unavailable")
     result = dispatch(
@@ -391,21 +411,27 @@ def fetch_ads_with_meta(
                 if isinstance(decoded, dict):
                     content = _content_from_payload(decoded)
                 elif isinstance(decoded, list):
-                    ads = _ads_from_payload_list(decoded, max(int(limit), 0))
+                    ads, total = _ads_from_payload_list(decoded, lim)
                     return ads, {
-                        "complete": True,
+                        "complete": total < lim,
                         "fetched_chars": 0,
                         "char_limit": budget,
                     }
     else:
         raise FetchError("web_extract returned no result")
 
+    parsed = parse_library_markdown(content)
+    complete = (
+        len(content) < budget
+        and len(parsed) < lim
+        and not any(marker in content for marker in _TRUNCATION_MARKERS)
+    )
     meta = {
-        "complete": len(content) < budget,
+        "complete": complete,
         "fetched_chars": len(content),
         "char_limit": budget,
     }
-    return parse_library_markdown(content)[: max(int(limit), 0)], meta
+    return parsed[:lim], meta
 
 
 def fetch_ads(query: str, limit: int = 20, dispatch=None) -> list[dict]:
