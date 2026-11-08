@@ -38,6 +38,37 @@ def test_candidates_deduped_by_page():
     }
 
 
+def test_country_suffix_scores_as_exact_match():
+    """A country-qualified page is still the same advertiser.
+
+    Live QSR sweep 2026-11-08: `Burger King Arabia` scored 0.60 (substring)
+    and was rejected at the 0.80 threshold, taking 10/25 pairs down with it.
+    """
+    assert resolve.score_candidate("Burger King", "Burger King Arabia") >= 0.80
+    assert resolve.score_candidate("Pizza Hut", "Pizza Hut KSA") >= 0.80
+    assert resolve.score_candidate("Burger King", "Burger King UK") >= 0.80
+    assert resolve.score_candidate("Burger King", "Burger King Malaysia") >= 0.80
+    assert resolve.score_candidate("Domino's Pizza", "Domino's Pizza India") >= 0.80
+
+
+def test_country_suffix_resolves_through_resolve_advertiser():
+    result = resolve.resolve_advertiser("Burger King", ["Burger King Arabia"])
+    assert "error" not in result
+    assert result["page_name"] == "Burger King Arabia"
+
+    result = resolve.resolve_advertiser("Pizza Hut", ["Pizza Hut KSA"])
+    assert "error" not in result
+    assert result["page_name"] == "Pizza Hut KSA"
+
+
+def test_country_suffix_does_not_weaken_substring_rung():
+    """Stripping is trailing-only: a brand buried mid-name stays a 0.60 miss."""
+    assert resolve.score_candidate(
+        "Burger King", "Manila Polyclinic - Al Rigga Burger King"
+    ) == 0.60
+    assert resolve.score_candidate("Burger King", "Burger King Arabia Grill") == 0.60
+
+
 def test_below_threshold_returns_name_not_matched():
     result = resolve.resolve_advertiser(
         "Burger King", ["entel", "Soundlines Group"]

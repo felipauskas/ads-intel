@@ -40,12 +40,14 @@ import sources  # noqa: E402
 import tools  # noqa: E402
 
 # Brand -> advertiser page-name filter. Apostrophes are kept: quoting was ruled
-# out as a cause on 2026-11-08.
+# out as a cause on 2026-11-08. The filter must be the page's display name, not
+# a short form: Meta renders the Domino's page as "Domino's Pizza", and the old
+# "Domino's" filter rejected it at substring 0.60 on all five countries.
 BRANDS: tuple[tuple[str, str], ...] = (
     ("KFC", "KFC"),
     ("McDonald's", "McDonald's"),
     ("Burger King", "Burger King"),
-    ("Domino's Pizza", "Domino's"),
+    ("Domino's Pizza", "Domino's Pizza"),
     ("Pizza Hut", "Pizza Hut"),
 )
 COUNTRIES: tuple[str, ...] = ("AE", "SA", "EG", "US", "GB")

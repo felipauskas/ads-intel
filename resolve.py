@@ -6,7 +6,8 @@ scope and its 0.70 rung (handle containment) has no analogue here. What is
 kept is A's name ladder and its threshold:
 
 * ``0.85`` normalized name — ``re.sub(r"[^a-z0-9]", "", name)`` on both sides
-* ``0.80`` exact name
+* ``0.80`` exact name, including a page that differs only by a trailing
+  country qualifier (``Burger King Arabia`` == ``Burger King``)
 * ``0.60`` substring containment (normalized or raw), same as A's name rung
 
 One deliberate divergence from A: A tests the normalized rung *before* the
@@ -31,6 +32,44 @@ import unicodedata
 MATCH_THRESHOLD = 0.80
 
 _NON_ALNUM = re.compile(r"[^a-z0-9]")
+
+#: Trailing tokens that qualify *where* a page operates, not *who* it is.
+#: `Burger King Arabia` / `Pizza Hut KSA` are the same advertiser as their
+#: bare brand names; scoring them as substring 0.60 rejected the correct page.
+#: Stripping is trailing-only and case/accent-folded. Full country names and
+#: the codes that show up in page names are both listed; multi-word names work
+#: because the loop peels one token at a time ("Saudi Arabia" -> "Saudi").
+_COUNTRY_TOKENS = frozenset(
+    {
+        # Gulf / Middle East
+        "ae", "arabia", "bahrain", "bh", "emirates", "jordan", "jo",
+        "ksa", "kuwait", "kw", "lebanon", "lb", "oman", "om", "qatar",
+        "qa", "sa", "saudi", "uae",
+        # Africa / Asia
+        "eg", "egypt", "india", "malaysia", "pakistan", "pk",
+        # North America / Europe
+        "canada", "ca", "gb", "uk", "united", "kingdom", "us", "usa",
+        "spain", "espana", "es",
+    }
+)
+
+_WORD = re.compile(r"[^\W_]+", re.UNICODE)
+
+
+def _strip_trailing_countries(name) -> tuple[str, bool]:
+    """Drop trailing country-qualifier tokens, returning spaced words.
+
+    ``"Burger King Arabia"`` -> ``("burger king", True)``;
+    ``"Pizza Hut K.S.A."`` -> ``("pizza hut", True)``. A name that is nothing
+    but qualifiers is left intact so stripping can never empty it.
+    """
+    text = str(name or "").strip().lower()
+    tokens = _WORD.findall(text)
+    original = list(tokens)
+    while len(tokens) > 1 and normalize(tokens[-1]) in _COUNTRY_TOKENS:
+        tokens.pop()
+    return " ".join(tokens), tokens != original
+
 
 #: Cap on the diagnostic candidate list returned with a mismatch.
 MAX_CANDIDATES = 10
@@ -63,7 +102,14 @@ def score_candidate(target, page_name) -> float:
 
     if raw_name == raw_target:
         return 0.80
-    if norm_name == norm_target:
+
+    # Compare the advertiser core, not the geographic qualifier: the correct
+    # page for a brand is routinely named "<Brand> <Country>".
+    target_core, target_stripped = _strip_trailing_countries(raw_target)
+    name_core, name_stripped = _strip_trailing_countries(raw_name)
+    if (target_stripped or name_stripped) and target_core == name_core:
+        return 0.80
+    if normalize(target_core) == normalize(name_core):
         return 0.85
     if norm_target in norm_name or raw_target in raw_name:
         return 0.60
