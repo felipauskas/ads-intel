@@ -77,3 +77,21 @@ Observed shell rate across the matrix is roughly 50% per fetch, and failures clu
 - `evals/raw/extra-retries.json` — the two extra fresh fetches per failed combo.
 - `evals/raw/recovered-names.json` — parsed ads + page-name sets for combos that rendered on a later attempt (McDonald's AE, KFC AE, McDonald's SA).
 - `evals/raw/ad_search-live-plugin-matrix.json` — the nine live plugin payloads + staleness probe.
+
+---
+
+## 7. QSR live-eval matrix definition (2026-11-08 sweep)
+
+Five QSR brands × five countries = 25 pairs. Runner: `evals/live_eval.py`; artifacts: `evals/live-matrix/<brand-slug>-<CC>/`.
+
+| Brand | `ad_search` query | `advertiser` filter | Slug |
+|---|---|---|---|
+| KFC | `KFC` | `KFC` | `kfc` |
+| McDonald's | `McDonald's` | `McDonald's` | `mcdonalds` |
+| Burger King | `Burger King` | `Burger King` | `burger-king` |
+| Domino's Pizza | `Domino's Pizza` | `Domino's` | `dominos-pizza` |
+| Pizza Hut | `Pizza Hut` | `Pizza Hut` | `pizza-hut` |
+
+Countries: `AE`, `SA`, `EG`, `US`, `GB` (five). Optional `KW`/`QA` only if time allows.
+
+Per pair: `ad_search(active_status=active, limit=20)` → keyword search; `ad_search(advertiser=<brand>)` → page-name resolution; `ad_watch(add, advertiser=<brand>, active_status=active)` → `ad_check` baseline then settle. Apostrophes are kept in queries and advertiser names — quoting was ruled out as a cause.
