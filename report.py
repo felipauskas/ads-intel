@@ -189,6 +189,18 @@ def _as_mapping(value) -> dict:
     return value if isinstance(value, dict) else {}
 
 
+def _as_partial(value) -> bool:
+    """Strict partial flag: only a boolean ``True`` (or a truthy string like
+    ``"true"``) counts. ``bool("false")`` is True, so a raw ``bool()`` cast
+    would show the banner for the string ``"false"`` — a cosmetic false alarm.
+    ``ad_check`` always passes a real bool; this guards direct API callers."""
+    if isinstance(value, bool):
+        return value
+    if isinstance(value, str):
+        return value.strip().lower() in {"1", "true", "yes", "y", "on"}
+    return False
+
+
 def _as_list(value) -> list:
     """Diff buckets are lists; anything else (dict/str/int/None) is empty.
 
@@ -241,7 +253,7 @@ def build_html(
     counts = {key: len(_as_list(diff.get(key))) for key in ("new", "ended", "changed")}
     total = len(_ad_values(ads_by_id))
     checked_at = html.escape(str(meta.get("checked_at") or ""))
-    partial = bool(meta.get("partial"))
+    partial = _as_partial(meta.get("partial"))
     market = html.escape(str(country or "US"))
     target = html.escape(str(advertiser or "").strip())
     scope = f"{market} · {target}" if target else market
@@ -289,7 +301,7 @@ def build_digest(
         "query": str(query),
         "country": str(country or "US"),
         "checked_at": meta.get("checked_at"),
-        "partial": bool(meta.get("partial")),
+        "partial": _as_partial(meta.get("partial")),
         "total": len(_ad_values(ads_by_id)),
         "new": len(_as_list(diff.get("new"))),
         "ended": len(_as_list(diff.get("ended"))),

@@ -149,10 +149,14 @@ def test_search_rejects_malformed_country(monkeypatch):
         return []
 
     _patch_fetch(monkeypatch, fake_fetch)
-    for bad in ("ae", "AEX", "", "A1", "U", "US\n", 123, ["AE"], {"country": "AE"}):
+    for bad in ("AEX", "", "A1", "U", "US\n", 123, ["AE"], {"country": "AE"}):
         payload = json.loads(tools.ad_search({"query": "KFC", "country": bad}))
         assert payload == {"error": "invalid_country"}, bad
     assert dispatched == []
+
+    # Lowercase codes normalize instead of erroring.
+    payload = json.loads(tools.ad_search({"query": "KFC", "country": "ae"}))
+    assert payload["country"] == "AE"
 
     # An absent country defaults to US rather than erroring.
     payload = json.loads(tools.ad_search({"query": "KFC"}))

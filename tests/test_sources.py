@@ -67,7 +67,7 @@ def test_build_url_uses_country_param():
 
     def fake_dispatch(name, args):
         calls.append(args)
-        return "no cards here"
+        return "no cards here. No ads match your search."
 
     sources.fetch_ads("KFC", country="AE", dispatch=fake_dispatch)
     assert calls[0]["urls"] == [sources.build_url("KFC", country="AE")]
@@ -263,7 +263,7 @@ def test_fetch_ads_empty_envelope_results_raises():
 
 
 def test_fetch_ads_no_cards_is_empty():
-    assert sources.fetch_ads("nike", dispatch=lambda n, a: "no cards here") == []
+    assert sources.fetch_ads("nike", dispatch=lambda n, a: "No ads match your search.") == []
 
 
 def test_fetch_ads_missing_dispatch_or_result_raises():
@@ -329,6 +329,48 @@ def test_nonempty_render_without_cards_raises_parse_error():
         "* * *\n\nFilters\n\n* * *\n\nPrivacy\n"
     )
     assert sources.parse_library_markdown(empty) == []
+
+
+def test_chrome_shell_render_is_parse_error_not_silent_zero():
+    # A pre-hydration shell (nav + country list, no cards, no empty-state
+    # wording) must never be reported as a confident empty listing, at ANY
+    # size. Live Meta renders hit both variants: ~2k and ~5.1k chars.
+    shell = Path("evals/raw/web_extract-KFC-AE.md").read_text()
+    assert "Library ID" not in shell and "**Sponsored**" not in shell
+    with pytest.raises(sources.ParseError):
+        sources.parse_library_markdown(shell)
+    short_shell = "Ad Library\n\nSelect country\n\n* * *\n\nPrivacy\n"
+    assert len(short_shell) < 5000
+    with pytest.raises(sources.ParseError):
+        sources.parse_library_markdown(short_shell)
+
+
+def test_fetch_retries_once_with_cache_bust_on_parse_error():
+    text = FIXTURE.read_text()
+    calls = []
+
+    def dispatch(name, args):
+        calls.append(args["urls"][0])
+        if len(calls) == 1:
+            return {"results": [{"content": "Ad Library\n\nSelect country\n\n"}]}
+        return {"results": [{"content": text}]}
+
+    ads = sources.fetch_ads("nike", limit=5, dispatch=dispatch)
+    assert len(ads) == 5
+    assert len(calls) == 2
+    assert calls[1] != calls[0] and "cache_bust" in calls[1]
+
+
+def test_lowercase_country_is_normalized_not_rejected():
+    import tools
+
+    assert tools.ad_watch(
+        {"action": "list"}  # warm path; country logic tested below
+    ) is not None
+    # tools._requested_country uppercases before validating.
+    assert tools._requested_country({"country": "ae"}) == "AE"
+    assert tools._requested_country({"country": "sa"}) == "SA"
+    assert tools._requested_country({"country": "eg"}) == "EG"
 
 
 def test_long_render_without_markers_raises_parse_error():
@@ -736,7 +778,7 @@ def test_fetch_threads_filters_into_the_url():
 
     def fake_dispatch(name, args):
         calls.append(args)
-        return "no cards here"
+        return "no cards here. No ads match your search."
 
     sources.fetch_ads(
         "nike", dispatch=fake_dispatch, active_status="active", media_type="image"
@@ -755,7 +797,7 @@ def test_fetch_threads_filters_into_the_url():
 
 def test_fetch_rejects_invalid_filters():
     def fake_dispatch(name, args):
-        return "no cards here"
+        return "no cards here. No ads match your search."
 
     with pytest.raises(ValueError):
         sources.fetch_ads("nike", dispatch=fake_dispatch, active_status="paused")

@@ -72,14 +72,14 @@ _FILTER_CHOICES = {
 
 
 def _requested_country(args) -> str | None:
-    """Market code from tool args: absent/null means US, present must be XX."""
+    """Market code from tool args: absent/null means US, else upper-normalized XX."""
     raw = args.get("country")
     # Hosts routinely send missing optional fields as JSON null; treat that
     # exactly like an omitted field.
     if raw is None:
         return store.DEFAULT_COUNTRY
-    if isinstance(raw, str) and _COUNTRY_RE.fullmatch(raw):
-        return raw
+    if isinstance(raw, str) and _COUNTRY_RE.fullmatch(raw.upper()):
+        return raw.upper()
     return None
 
 

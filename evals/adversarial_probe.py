@@ -173,10 +173,13 @@ for c in COUNTRY_BAD:
     except Exception as e:
         record("D.build_url", repr(c), "ValueError invalid_country", False, f"{type(e).__name__}: {e}")
 
-for c in ["US&q=evil", "us", "USA", "U1"]:
+for c in ["US&q=evil", "USA", "U1"]:
     out = json.loads(tools.ad_search({"query": "nike", "country": c}))
     record("D.ad_search", repr(c), "error invalid_country",
            out.get("error") == "invalid_country", json.dumps(out)[:120])
+out = json.loads(tools.ad_search({"query": "nike", "country": "us"}))
+record("D.ad_search", repr("us"), "lowercase normalizes to US, not invalid_country",
+       out.get("error") != "invalid_country" and out.get("country", "US") in ("US", None), json.dumps(out)[:120])
 out = json.loads(tools.ad_search({"query": "nike", "country": None}))
 record("D.ad_search", "None", "null treated as absent (US), gets fetch error not invalid_country",
        out.get("error") != "invalid_country", json.dumps(out)[:120])

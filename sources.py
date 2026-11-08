@@ -33,10 +33,14 @@ _CHAR_LIMIT = 120_000
 _TRUNCATION_MARKERS = ("[TRUNCATED]", "middle omitted")
 
 
-# An empty results page renders short (a few hundred chars of chrome). A render
-# past this size with no card markers at all means the page shape drifted, not
-# that the advertiser has no ads.
-_MAX_EMPTY_RENDER_CHARS = 5000
+#: A render with no card markers is a genuinely empty listing ONLY when it
+#: actually says so. The ad-library empty state reads like "No ads match your
+#: search"; a pre-hydration shell (nav + country list, ~2-5k chars, no empty-
+#: state wording) is a fetch failure and must raise, never return [].
+_EMPTY_STATE_RE = re.compile(
+    r"no ads (match|found)|we didn't find|we couldn.?t find|no results? (found|match)",
+    re.IGNORECASE,
+)
 
 
 class FetchError(RuntimeError):
@@ -465,9 +469,13 @@ def parse_library_markdown(md: str) -> list[dict]:
         raise ParseError(
             f"{cards_seen} card markers but no parseable ad", cards_seen=cards_seen
         )
-    if not ads and len(md) > _MAX_EMPTY_RENDER_CHARS:
+    if not ads and not _EMPTY_STATE_RE.search(md):
+        # No markers and no empty-state wording (at ANY size): the host
+        # snapshotted the page before the results grid hydrated. Report it
+        # as a transport/render failure, never as a confident empty listing.
         raise ParseError(
-            f"long render ({len(md)} chars) with no card markers", cards_seen=0
+            f"render ({len(md)} chars) with no card markers or empty-state text",
+            cards_seen=0,
         )
     return ads
 
@@ -702,17 +710,37 @@ def fetch_ads_with_meta(
     lim = None if limit is None else max(int(limit), 0)
     if dispatch is None or not callable(dispatch):
         raise FetchError("web_extract unavailable")
+
+    # A pre-hydration shell raises ParseError, and the host caches extractions
+    # by URL — retrying the identical URL replays the failure. Retry once with
+    # a cache-busting parameter (Meta ignores unknown params); a genuine
+    # empty listing returns [] rather than raising, so it never retries.
+    import uuid
+
+    last_error: ParseError | None = None
+    for attempt in range(4):
+        url = build_url(
+            query,
+            country=country,
+            active_status=active_status,
+            media_type=media_type,
+        )
+        if attempt:
+            url = f"{url}&cache_bust={uuid.uuid4().hex}"
+        try:
+            return _fetch_once(url, budget, lim, dispatch)
+        except ParseError as exc:
+            last_error = exc
+    assert last_error is not None
+    raise last_error
+
+
+def _fetch_once(url, budget, lim, dispatch):
+    """One fetch+parse round; returns ``(ads, meta)`` or raises."""
     result = dispatch(
         "web_extract",
         {
-            "urls": [
-                build_url(
-                    query,
-                    country=country,
-                    active_status=active_status,
-                    media_type=media_type,
-                )
-            ],
+            "urls": [url],
             "char_limit": budget,
         },
     )

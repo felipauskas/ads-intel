@@ -1,0 +1,102 @@
+{
+  "note": "ad_search invoked through the running Hermes plugin runtime (tool_call), 2026-11-08 ~11:28-11:32 +04. Every call returned the same 2-key shape with no error.",
+  "calls": [
+    {
+      "brand": "McDonald's",
+      "country": "AE",
+      "limit": 5,
+      "result": {
+        "count": 0,
+        "ads": []
+      }
+    },
+    {
+      "brand": "Burger King",
+      "country": "AE",
+      "limit": 5,
+      "result": {
+        "count": 0,
+        "ads": []
+      }
+    },
+    {
+      "brand": "KFC",
+      "country": "AE",
+      "limit": 5,
+      "result": {
+        "count": 0,
+        "ads": []
+      }
+    },
+    {
+      "brand": "McDonald's",
+      "country": "SA",
+      "limit": 5,
+      "result": {
+        "count": 0,
+        "ads": []
+      }
+    },
+    {
+      "brand": "Burger King",
+      "country": "SA",
+      "limit": 5,
+      "result": {
+        "count": 0,
+        "ads": []
+      }
+    },
+    {
+      "brand": "KFC",
+      "country": "SA",
+      "limit": 5,
+      "result": {
+        "count": 0,
+        "ads": []
+      }
+    },
+    {
+      "brand": "McDonald's",
+      "country": "EG",
+      "limit": 5,
+      "result": {
+        "count": 0,
+        "ads": []
+      }
+    },
+    {
+      "brand": "Burger King",
+      "country": "EG",
+      "limit": 5,
+      "result": {
+        "count": 0,
+        "ads": []
+      }
+    },
+    {
+      "brand": "KFC",
+      "country": "EG",
+      "limit": 5,
+      "result": {
+        "count": 0,
+        "ads": []
+      }
+    }
+  ],
+  "staleness_probe": {
+    "call": {
+      "query": "KFC",
+      "country": "AE",
+      "limit": 3,
+      "media_type": "bogus"
+    },
+    "result": {
+      "count": 0,
+      "ads": []
+    },
+    "expected_on_fixed_code": {
+      "error": "invalid_media_type"
+    },
+    "conclusion": "running plugin predates the media_type/active_status validation and the meta/error surfacing in tools.py; it is the pre-fix module cached by the gateway/TUI process"
+  }
+}
