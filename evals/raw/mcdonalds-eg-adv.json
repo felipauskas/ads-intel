@@ -1,0 +1,434 @@
+{
+  "case_id": "mcdonalds-eg-adv",
+  "query": "McDonald's",
+  "country": "EG",
+  "advertiser": "McDonald's",
+  "limit": 20,
+  "started_at": "2026-11-08T11:45:26+0400",
+  "meta": {
+    "complete": true,
+    "fetched": 30,
+    "total_returned": 30,
+    "fetched_chars": 41629,
+    "char_limit": 120000
+  },
+  "resolved": {
+    "page_name": "McDonald's",
+    "score": 0.8
+  },
+  "total_after_filter": 24,
+  "count": 20,
+  "page_names": [
+    "McDonald's"
+  ],
+  "ads": [
+    {
+      "id": "818177571095368",
+      "page_name": "McDonald's",
+      "status": "ended",
+      "first_seen": "Nov 13, 2025",
+      "last_seen": "Nov 29, 2025",
+      "creative_text": "Get a $6 McDouble Meal Deal or a $5 Hot ‘n Spicy or classic McChicken Meal Deal.\nSystem status\n- [Ad Library API](https://www.facebook.com/ads/library/api/?source=archive-landing-page)\n- [About ads and data use](https://www.facebook.com/ads/about/?entry_product=ad_library)\n- [Privacy](https://www.facebook.com/privacy/center/?entry_point=privacy_basics_redirect)\n- [Terms](https://www.facebook.com/policies/)\n- [Cookies](https://www.facebook.com/policies/cookies/)",
+      "library_url": "https://www.facebook.com/ads/library/?id=818177571095368",
+      "page_url": "https://www.facebook.com/McDonalds/",
+      "page_id": "",
+      "link_url": "https://www.mcdonalds.com/us/en-us/download-app.html",
+      "link_title": "$6 McDouble/$5 McChicken Meal Deal",
+      "cta_text": "Order Now",
+      "images": [],
+      "has_video": true,
+      "same_creative_count": 0,
+      "multiple_versions": false
+    },
+    {
+      "id": "974928678694215",
+      "page_name": "McDonald's",
+      "status": "ended",
+      "first_seen": "Jul 7, 2026",
+      "last_seen": "Jul 10, 2026",
+      "creative_text": "actually replace toxic with “completely reasonable”",
+      "library_url": "https://www.facebook.com/ads/library/?id=974928678694215",
+      "page_url": "https://www.facebook.com/McDonalds/",
+      "page_id": "",
+      "link_url": "https://smart.link/hgor0kfm1ewew",
+      "link_title": "",
+      "cta_text": "Order Now",
+      "images": [],
+      "has_video": true,
+      "same_creative_count": 0,
+      "multiple_versions": true
+    },
+    {
+      "id": "1896187258456228",
+      "page_name": "McDonald's",
+      "status": "ended",
+      "first_seen": "Aug 17, 2026",
+      "last_seen": "Sep 14, 2026",
+      "creative_text": "actually replace toxic with “completely reasonable\"",
+      "library_url": "https://www.facebook.com/ads/library/?id=1896187258456228",
+      "page_url": "https://www.facebook.com/McDonalds/",
+      "page_id": "",
+      "link_url": "https://smart.link/hgor0kfm1ewew",
+      "link_title": "",
+      "cta_text": "Order Now",
+      "images": [],
+      "has_video": true,
+      "same_creative_count": 0,
+      "multiple_versions": true
+    },
+    {
+      "id": "976301902105105",
+      "page_name": "McDonald's",
+      "status": "ended",
+      "first_seen": "Jul 2, 2026",
+      "last_seen": "Jul 30, 2026",
+      "creative_text": "Your favorite breakfast awaits.",
+      "library_url": "https://www.facebook.com/ads/library/?id=976301902105105",
+      "page_url": "https://www.facebook.com/McDonalds/",
+      "page_id": "",
+      "link_url": "https://www.mcdonalds.com/us/en-us/download-app.html",
+      "link_title": "McDonald's Click here",
+      "cta_text": "Order Now",
+      "images": [
+        "https://scontent-lax3-1.xx.fbcdn.net/v/t39.35426-6/773662668_1632375375259493_3609100204186330040_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=110&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=OOdmCXTf_WcQ7kNvwEi_K0A&_nc_oc=AdpheBbgHw-wIScgdAya0rIi-1gZaIL-pKGZolajvO96SAxgU16_8tEsDV8M9O30MFw&_nc_zt=14&_nc_ht=scontent-lax3-1.xx&_nc_gid=soAI9CzMU1dp-IJFMHwuOg&_nc_ss=7b289&oh=00_AQT9bx9jgOwAYTI5o2snVpjkagCwXgNM-PH1KOgeBn9E-w&oe=6AF5FE23"
+      ],
+      "has_video": false,
+      "same_creative_count": 0,
+      "multiple_versions": true
+    },
+    {
+      "id": "1994665467741517",
+      "page_name": "McDonald's",
+      "status": "ended",
+      "first_seen": "Nov 13, 2025",
+      "last_seen": "Nov 29, 2025",
+      "creative_text": "Hol dir die leckere Beute aus aller Welt direkt nach Hause! Bequem bestellt und geliefert mit McDelivery. ✈️🌍🍔 #ichliebees #mcdelivery #meccesumdiewelt",
+      "library_url": "https://www.facebook.com/ads/library/?id=1994665467741517",
+      "page_url": "https://www.facebook.com/mcd/",
+      "page_id": "",
+      "link_url": "https://mcdelivery.de/?mtm_campaign=missionworld&mtm_source=facebook&mtm_placement=stories&mtm_medium=carouselad&mtm_cid=41378640",
+      "link_title": "Jetzt die Welt liefern lassen Schnell bestellen!",
+      "cta_text": "Learn More",
+      "images": [
+        "https://scontent-lax3-2.xx.fbcdn.net/v/t39.35426-6/729658528_1026915743615032_3762142628506258871_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=103&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=f5_0vXUGzTEQ7kNvwGq7AFA&_nc_oc=AdqrxsD7zAMY0t51vMrAIvPCnMWJHKZWEZU-H_a0zIh-WImsd0Z1IAmHAIp0bYf5AyM&_nc_zt=14&_nc_ht=scontent-lax3-2.xx&_nc_gid=soAI9CzMU1dp-IJFMHwuOg&_nc_ss=7b289&oh=00_AQS8OWXyOugUoOaIOOJw4OcXcyCBXYkU0f9TTPm1crOHoQ&oe=6AF5ED86"
+      ],
+      "has_video": false,
+      "same_creative_count": 0,
+      "multiple_versions": false
+    },
+    {
+      "id": "1002348525650938",
+      "page_name": "McDonald's",
+      "status": "ended",
+      "first_seen": "Jun 7, 2026",
+      "last_seen": "Jul 27, 2026",
+      "creative_text": "Find a treat for under $3",
+      "library_url": "https://www.facebook.com/ads/library/?id=1002348525650938",
+      "page_url": "https://www.facebook.com/McDonalds/",
+      "page_id": "",
+      "link_url": "https://www.mcdonalds.com/us/en-us/download-app.html",
+      "link_title": "it’s as simple as McDonald's Download",
+      "cta_text": "Order Now",
+      "images": [
+        "https://scontent-lax3-2.xx.fbcdn.net/v/t39.35426-6/721383225_27187805364191302_5071464491231237070_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=107&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=HNx05Y14EU4Q7kNvwGmspG2&_nc_oc=Adra85UvZuiRMk51rvj1Xe1lRGOEtba_N38V-dJJ0Q12FtvHHsrXa1I7a4HAmPpLXtk&_nc_zt=14&_nc_ht=scontent-lax3-2.xx&_nc_gid=soAI9CzMU1dp-IJFMHwuOg&_nc_ss=7b289&oh=00_AQRg1CxwsQGqdvfj4EQWogWO4PmXcRDDxxk2o6DvZORGig&oe=6AF5EA61"
+      ],
+      "has_video": false,
+      "same_creative_count": 0,
+      "multiple_versions": true
+    },
+    {
+      "id": "1565833581793299",
+      "page_name": "McDonald's",
+      "status": "ended",
+      "first_seen": "Jul 12, 2026",
+      "last_seen": "Aug 24, 2026",
+      "creative_text": "Get your hands on this great deal",
+      "library_url": "https://www.facebook.com/ads/library/?id=1565833581793299",
+      "page_url": "https://www.facebook.com/McDonalds/",
+      "page_id": "",
+      "link_url": "https://www.mcdonalds.com/us/en-us/download-app.html",
+      "link_title": "it’s as simple as McDonald's Download",
+      "cta_text": "Order Now",
+      "images": [
+        "https://scontent-lax3-1.xx.fbcdn.net/v/t39.35426-6/714824062_1670368327553356_6233284638678309098_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=102&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=S9LpOFJscPgQ7kNvwHsFPUv&_nc_oc=AdpB0-PZZDe7ZkB2w6Y-CifPl9TB32vgzJmeE7sp_UFSj3TwLfB84aUJTajsRufR5Ec&_nc_zt=14&_nc_ht=scontent-lax3-1.xx&_nc_gid=soAI9CzMU1dp-IJFMHwuOg&_nc_ss=7b289&oh=00_AQR8bPV7WAv3R422LHjwkTiZyZ0QtkWZQvJK--EV1epsCg&oe=6AF600E2"
+      ],
+      "has_video": false,
+      "same_creative_count": 0,
+      "multiple_versions": true
+    },
+    {
+      "id": "1708269720205568",
+      "page_name": "McDonald's",
+      "status": "ended",
+      "first_seen": "Jun 29, 2026",
+      "last_seen": "Aug 24, 2026",
+      "creative_text": "all-new McCafé drinks are here.",
+      "library_url": "https://www.facebook.com/ads/library/?id=1708269720205568",
+      "page_url": "https://www.facebook.com/McDonalds/",
+      "page_id": "",
+      "link_url": "https://www.mcdonalds.com/us/en-us/download-app.html",
+      "link_title": "it’s as simple as McDonald's Download",
+      "cta_text": "Order Now",
+      "images": [
+        "https://scontent-lax7-1.xx.fbcdn.net/v/t39.35426-6/737845299_2209182769904488_1854506507431951696_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=105&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=p9sN_8abp4kQ7kNvwFxHy-J&_nc_oc=AdrdlVYAsNpRN7N5hlwDPtxNZRVOvdI0-3XUV8Oxn03q-oad_WYeWXLfsKl5efZ9I_Y&_nc_zt=14&_nc_ht=scontent-lax7-1.xx&_nc_gid=soAI9CzMU1dp-IJFMHwuOg&_nc_ss=7b289&oh=00_AQSsU9fRbLcZ_yVVGYE__zAcMug58gsXkjK3HOCyMI8Xqw&oe=6AF604BB"
+      ],
+      "has_video": false,
+      "same_creative_count": 2,
+      "multiple_versions": true
+    },
+    {
+      "id": "1544185484030357",
+      "page_name": "McDonald's",
+      "status": "ended",
+      "first_seen": "Jul 7, 2026",
+      "last_seen": "Jul 10, 2026",
+      "creative_text": "the lineup I need in my life. all-new drinks are here",
+      "library_url": "https://www.facebook.com/ads/library/?id=1544185484030357",
+      "page_url": "https://www.facebook.com/McDonalds/",
+      "page_id": "",
+      "link_url": "https://mcdonalds.smart.link/uob1j3gfz?qr_code=true",
+      "link_title": "",
+      "cta_text": "Order Now",
+      "images": [],
+      "has_video": true,
+      "same_creative_count": 0,
+      "multiple_versions": true
+    },
+    {
+      "id": "3048483262209812",
+      "page_name": "McDonald's",
+      "status": "ended",
+      "first_seen": "Jul 7, 2026",
+      "last_seen": "Jul 10, 2026",
+      "creative_text": "si esto es toxic… explícame por qué mi cartera está feliz",
+      "library_url": "https://www.facebook.com/ads/library/?id=3048483262209812",
+      "page_url": "https://www.facebook.com/McDonalds/",
+      "page_id": "",
+      "link_url": "https://smart.link/kg3ppctzjl5sf",
+      "link_title": "consiéntete con un $1.50 McChicken",
+      "cta_text": "Order Now",
+      "images": [],
+      "has_video": true,
+      "same_creative_count": 0,
+      "multiple_versions": true
+    },
+    {
+      "id": "1048662347723052",
+      "page_name": "McDonald's",
+      "status": "ended",
+      "first_seen": "Jul 13, 2026",
+      "last_seen": "Aug 10, 2026",
+      "creative_text": "muchas formas de disfrutar y más razones pa’ consentirme",
+      "library_url": "https://www.facebook.com/ads/library/?id=1048662347723052",
+      "page_url": "https://www.facebook.com/McDonalds/",
+      "page_id": "",
+      "link_url": "https://smart.link/kg3ppctzjl5sf",
+      "link_title": "consiéntete por menos de $3",
+      "cta_text": "Order Now",
+      "images": [],
+      "has_video": true,
+      "same_creative_count": 0,
+      "multiple_versions": true
+    },
+    {
+      "id": "4504121899914499",
+      "page_name": "McDonald's",
+      "status": "ended",
+      "first_seen": "Jul 28, 2026",
+      "last_seen": "Aug 15, 2026",
+      "creative_text": "Entering our beverage era. The new Dirty Sodas + Refreshers are giving main character energy.\nRefreshers contain caffeine. ©2026 McDonald’s.",
+      "library_url": "https://www.facebook.com/ads/library/?id=4504121899914499",
+      "page_url": "https://www.facebook.com/McDonalds/",
+      "page_id": "",
+      "link_url": "https://www.mcdonalds.com/us/en-us/download-app.html",
+      "link_title": "Sip of the Summer Refresh at McD",
+      "cta_text": "Learn More",
+      "images": [
+        "https://scontent-lax3-2.xx.fbcdn.net/v/t39.35426-6/742102404_903120212139331_7737315877138517840_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=106&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=1L76e9dxjeQQ7kNvwGU9RCc&_nc_oc=AdqIYR5WTe97SO9U13vdtEi5vom894iGeZZGHyy_i5Mjhh6BfgnK5vY3KhHWKAwSY8s&_nc_zt=14&_nc_ht=scontent-lax3-2.xx&_nc_gid=soAI9CzMU1dp-IJFMHwuOg&_nc_ss=7b289&oh=00_AQQVeWQbTnPTT9MCB-ZCHNw3vYDvuH1BHkaVG3EXflfPCw&oe=6AF60D9E"
+      ],
+      "has_video": false,
+      "same_creative_count": 0,
+      "multiple_versions": true
+    },
+    {
+      "id": "2199576097506496",
+      "page_name": "McDonald's",
+      "status": "ended",
+      "first_seen": "May 26, 2026",
+      "last_seen": "Jun 22, 2026",
+      "creative_text": "Hol dir die leckere Beute aus aller Welt direkt nach Hause! Bequem bestellt und geliefert mit McDelivery. ✈️🌍#ichliebees #mcdelivery #meccesumdiewelt",
+      "library_url": "https://www.facebook.com/ads/library/?id=2199576097506496",
+      "page_url": "https://www.facebook.com/mcd/",
+      "page_id": "",
+      "link_url": "https://mcdelivery.de/?mtm_campaign=missionworld&mtm_source=facebook&mtm_placement=stories&mtm_medium=carouselad&mtm_cid=41378640",
+      "link_title": "Jetzt die Welt liefern lassen Schnell bestellen!",
+      "cta_text": "Learn More",
+      "images": [
+        "https://scontent-lax3-2.xx.fbcdn.net/v/t39.35426-6/741266020_2030527731004499_509987811806546840_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=107&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=O4fSyy_C9hEQ7kNvwFBxlSq&_nc_oc=Adqq6j27PBPih6OOkeJeuBEf5H_-2oXtd6VMQxxkNQepCK4DJx_sBCjW9BNhbwTpngU&_nc_zt=14&_nc_ht=scontent-lax3-2.xx&_nc_gid=soAI9CzMU1dp-IJFMHwuOg&_nc_ss=7b289&oh=00_AQSSObjb_MhA1o8JItm66nwFcQc2y2jgPT8xeZM-bzYIVw&oe=6AF5DFD8"
+      ],
+      "has_video": false,
+      "same_creative_count": 0,
+      "multiple_versions": true
+    },
+    {
+      "id": "1181560100034606",
+      "page_name": "McDonald's",
+      "status": "ended",
+      "first_seen": "Dec 3, 2025",
+      "last_seen": "Dec 12, 2025",
+      "creative_text": "McDonald’s just gets it. A McChicken®, McDouble®, Sausage McMuffin®, or a $1 Vanilla Cone—each under $3. Say less.",
+      "library_url": "https://www.facebook.com/ads/library/?id=1181560100034606",
+      "page_url": "https://www.facebook.com/McDonalds/",
+      "page_id": "",
+      "link_url": "https://www.mcdonalds.com/us/en-us/download-app.html",
+      "link_title": "Under $3 😍 McD favorites are so 😍",
+      "cta_text": "Learn More",
+      "images": [
+        "https://scontent-lax3-1.xx.fbcdn.net/v/t39.35426-6/705394673_986164474275471_6020134450350404909_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=104&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=29PzmSAMsE8Q7kNvwEQEJOd&_nc_oc=AdpRk-yLiCd2wDmebkyiJnnthZREnrXan4W05XEKuAfawPdxfnNJW19hBw3yOsQdWoI&_nc_zt=14&_nc_ht=scontent-lax3-1.xx&_nc_gid=soAI9CzMU1dp-IJFMHwuOg&_nc_ss=7b289&oh=00_AQSawm7Zk3Fqe3B9KlTqjGq7HBDPuOOYVLBUowCQw72ftA&oe=6AF60A40"
+      ],
+      "has_video": false,
+      "same_creative_count": 2,
+      "multiple_versions": false
+    },
+    {
+      "id": "1732384371464750",
+      "page_name": "McDonald's",
+      "status": "ended",
+      "first_seen": "May 19, 2026",
+      "last_seen": "Jun 15, 2026",
+      "creative_text": "Get your hands on this great deal",
+      "library_url": "https://www.facebook.com/ads/library/?id=1732384371464750",
+      "page_url": "https://www.facebook.com/McDonalds/",
+      "page_id": "",
+      "link_url": "https://www.mcdonalds.com/us/en-us/download-app.html",
+      "link_title": "it’s as simple as McDonald's Download",
+      "cta_text": "Order Now",
+      "images": [
+        "https://scontent-lax3-2.xx.fbcdn.net/v/t39.35426-6/699987536_983425567525795_7620726245475063938_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=107&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=hBk8isOtBL4Q7kNvwG3Z4_5&_nc_oc=Adq-q-zDKNZjY0flEfG7KezsjYiT7TEEVxfxczFkdm43YoElpFKvorMsU6isPQcIz9Y&_nc_zt=14&_nc_ht=scontent-lax3-2.xx&_nc_gid=soAI9CzMU1dp-IJFMHwuOg&_nc_ss=7b289&oh=00_AQRB-qZ3la7hNhBgaXbZAjV12V2vb8ffoRsTZwI6nOnsRQ&oe=6AF5E963"
+      ],
+      "has_video": false,
+      "same_creative_count": 3,
+      "multiple_versions": true
+    },
+    {
+      "id": "1046116514633243",
+      "page_name": "McDonald's",
+      "status": "ended",
+      "first_seen": "Aug 2, 2026",
+      "last_seen": "Aug 31, 2026",
+      "creative_text": "$6 McDouble/$5 McChicken Meal Deal",
+      "library_url": "https://www.facebook.com/ads/library/?id=1046116514633243",
+      "page_url": "https://www.facebook.com/McDonalds/",
+      "page_id": "",
+      "link_url": "https://www.mcdonalds.com/us/en-us/download-app.html",
+      "link_title": "",
+      "cta_text": "Order Now",
+      "images": [],
+      "has_video": true,
+      "same_creative_count": 0,
+      "multiple_versions": true
+    },
+    {
+      "id": "1564122245431088",
+      "page_name": "McDonald's",
+      "status": "ended",
+      "first_seen": "Aug 5, 2026",
+      "last_seen": "Sep 12, 2026",
+      "creative_text": "Get your hands on this great deal",
+      "library_url": "https://www.facebook.com/ads/library/?id=1564122245431088",
+      "page_url": "https://www.facebook.com/McDonalds/",
+      "page_id": "",
+      "link_url": "https://www.mcdonalds.com/us/en-us/download-app.html",
+      "link_title": "it’s as simple as McDonald's Download",
+      "cta_text": "Order Now",
+      "images": [
+        "https://scontent-lax3-1.xx.fbcdn.net/v/t39.35426-6/760288935_1675658586858003_4801219004310259469_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=109&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=lv01hZD4wM0Q7kNvwFTFLgb&_nc_oc=AdpVEuQkn6K9pW3cBxZJwOFVDQCYEwEo4NzbvUDgKQuL0kAoYkWzobte-6NZl843Cdc&_nc_zt=14&_nc_ht=scontent-lax3-1.xx&_nc_gid=soAI9CzMU1dp-IJFMHwuOg&_nc_ss=7b289&oh=00_AQQQLArF3c_qqNxEjw7PYIKZImGAdsA0dNy24aMvv5DSHw&oe=6AF604B6"
+      ],
+      "has_video": false,
+      "same_creative_count": 0,
+      "multiple_versions": true
+    },
+    {
+      "id": "2106472833299885",
+      "page_name": "McDonald's",
+      "status": "ended",
+      "first_seen": "Aug 4, 2026",
+      "last_seen": "Sep 14, 2026",
+      "creative_text": "Wake up for this deal",
+      "library_url": "https://www.facebook.com/ads/library/?id=2106472833299885",
+      "page_url": "https://www.facebook.com/McDonalds/",
+      "page_id": "",
+      "link_url": "https://www.mcdonalds.com/us/en-us/download-app.html",
+      "link_title": "it’s as simple as McDonald's Download",
+      "cta_text": "Order Now",
+      "images": [
+        "https://scontent-lax3-1.xx.fbcdn.net/v/t39.35426-6/765796929_1526943412007190_8836214227565681265_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=110&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=-qcUAOyprCcQ7kNvwEzYJKE&_nc_oc=Adrr_EokcMNXwm7Sc55RxIHZjPqKXY1imOjjZyJIu2GjFsrP-ofiPxCPt2I_C3PPUR0&_nc_zt=14&_nc_ht=scontent-lax3-1.xx&_nc_gid=soAI9CzMU1dp-IJFMHwuOg&_nc_ss=7b289&oh=00_AQSAj2zpjAW3f53hq30godYydAwk5VyOq5oApSTz2jxEiQ&oe=6AF5FFD6"
+      ],
+      "has_video": false,
+      "same_creative_count": 0,
+      "multiple_versions": true
+    },
+    {
+      "id": "1329720105270189",
+      "page_name": "McDonald's",
+      "status": "ended",
+      "first_seen": "Jun 7, 2026",
+      "last_seen": "Jul 6, 2026",
+      "creative_text": "Hol dir die leckere Beute aus aller Welt direkt nach Hause! Bequem bestellt und geliefert mit McDelivery. ✈️🌍#ichliebees #mcdelivery #meccesumdiewelt",
+      "library_url": "https://www.facebook.com/ads/library/?id=1329720105270189",
+      "page_url": "https://www.facebook.com/mcd/",
+      "page_id": "",
+      "link_url": "https://mcdelivery.de/?mtm_campaign=missionworld&mtm_source=facebook&mtm_placement=stories&mtm_medium=carouselad&mtm_cid=41378640",
+      "link_title": "Jetzt die Welt liefern lassen Schnell bestellen!",
+      "cta_text": "Learn More",
+      "images": [
+        "https://scontent-lax3-2.xx.fbcdn.net/v/t39.35426-6/741266020_2030527731004499_509987811806546840_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=107&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=O4fSyy_C9hEQ7kNvwFBxlSq&_nc_oc=Adqq6j27PBPih6OOkeJeuBEf5H_-2oXtd6VMQxxkNQepCK4DJx_sBCjW9BNhbwTpngU&_nc_zt=14&_nc_ht=scontent-lax3-2.xx&_nc_gid=soAI9CzMU1dp-IJFMHwuOg&_nc_ss=7b289&oh=00_AQSSObjb_MhA1o8JItm66nwFcQc2y2jgPT8xeZM-bzYIVw&oe=6AF5DFD8"
+      ],
+      "has_video": false,
+      "same_creative_count": 0,
+      "multiple_versions": true
+    },
+    {
+      "id": "883782218102982",
+      "page_name": "McDonald's",
+      "status": "ended",
+      "first_seen": "Jul 1, 2026",
+      "last_seen": "Aug 17, 2026",
+      "creative_text": "Get your hands on this great deal",
+      "library_url": "https://www.facebook.com/ads/library/?id=883782218102982",
+      "page_url": "https://www.facebook.com/McDonalds/",
+      "page_id": "",
+      "link_url": "https://www.mcdonalds.com/us/en-us/download-app.html",
+      "link_title": "it’s as simple as McDonald's Download",
+      "cta_text": "Order Now",
+      "images": [
+        "https://scontent-lax3-2.xx.fbcdn.net/v/t39.35426-6/713843465_976457971655560_6765172225601915581_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=100&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=DXQzJrPvq70Q7kNvwHhMW4X&_nc_oc=AdqJUdFTRzG1KohC-NTdJ0gs0Oqqm8SfSifFypbCAKfMHKsukm9XkYjZgakS__hsCYs&_nc_zt=14&_nc_ht=scontent-lax3-2.xx&_nc_gid=soAI9CzMU1dp-IJFMHwuOg&_nc_ss=7b289&oh=00_AQRsM_DAinlU27Uu1nm7QifnPI9Gsz0_Czsf3p1ExMXoVw&oe=6AF5E8DE"
+      ],
+      "has_video": false,
+      "same_creative_count": 5,
+      "multiple_versions": true
+    }
+  ],
+  "elapsed_s": 0.0,
+  "attempts": 1,
+  "raw_payloads": [
+    {
+      "request": {
+        "urls": [
+          "https://www.facebook.com/ads/library/?active_status=all&ad_type=all&country=EG&q=McDonald%27s&media_type=all&search_type=keyword_unordered"
+        ],
+        "char_limit": 120000
+      },
+      "response": {
+        "results": [
+          {
+            "url": "https://www.facebook.com/ads/library/?active_status=all&ad_type=all&country=EG&q=McDonald%27s&media_type=all&search_type=keyword_unordered",
+            "title": "Ad Library",
+            "content": "[_Meta Ad Library_](https://www.facebook.com/ads/library/?source=fb-logo)\n\nAd Library\n\n[Ad Library Report](https://www.facebook.com/ads/library/report/?source=nav-header)\n\n[Ad Library API](https://www.facebook.com/ads/library/api/?source=nav-header)\n\n[Branded Content](https://www.facebook.com/ads/library/branded_content/?source=fb-logo)\n\n[](https://www.facebook.com/ads/library/?active_status=all&ad_type=all&country=EG&is_targeted_country=false&media_type=all&q=McDonald%27s&search_type=keyword_unordered&sort_data[mode]=total_impressions&sort_data[direction]=desc#)\n\nEgypt\n\n\n\nSelect country\n\nCurrent location\n\nUnited States\n\nAll\n\nAfghanistan\n\nAland Islands\n\nAlbania\n\nAlgeria\n\nAmerican Samoa\n\nAndorra\n\nAngola\n\nAnguilla\n\nAntarctica\n\nAntigua\n\nArgentina\n\nArmenia\n\nAruba\n\nAustralia\n\nAustria\n\nAzerbaijan\n\nBahrain\n\nBangladesh\n\nBarbados\n\nBelarus\n\nBelgium\n\nBelize\n\nBenin\n\nBermuda\n\nBhutan\n\nBolivia\n\nBonaire, Sint Eustatius and Saba\n\nBosnia and Herzegovina\n\nBotswana\n\nBouvet Island\n\nBrazil\n\nBritish Indian Ocean Territory\n\nBritish Virgin Islands\n\nBrunei\n\nBulgaria\n\nBurkina Faso\n\nBurundi\n\nCambodia\n\nCameroon\n\nCanada\n\nCape Verde\n\nCayman Islands\n\nCentral African Republic\n\nChad\n\nChile\n\nChina\n\nChristmas Island\n\nCocos (Keeling) Islands\n\nColombia\n\nComoros\n\nCook Islands\n\nCosta Rica\n\nCôte d'Ivoire\n\nCroatia\n\nCuraçao\n\nCyprus\n\nCzech Republic\n\nDemocratic Republic of the Congo\n\nDenmark\n\nDjibouti\n\nDominica\n\nDominican Republic\n\nEcuador\n\nEgypt\n\nEl Salvador\n\nEquatorial Guinea\n\nEritrea\n\nEstonia\n\nEswatini\n\nEthiopia\n\nFalkland Islands\n\nFaroe Islands\n\nFederated States of Micronesia\n\nFiji\n\nFinland\n\nFrance\n\nFrench Guiana\n\nFrench Polynesia\n\nFrench Southern Territories\n\nGabon\n\nGeorgia\n\nGermany\n\nGhana\n\nGibraltar\n\nGreece\n\nGreenland\n\nGrenada\n\nGuadeloupe\n\nGuam\n\nGuatemala\n\nGuernsey\n\nGuinea\n\nGuinea-Bissau\n\nGuyana\n\nHaiti\n\nHeard Island and McDonald Islands\n\nHonduras\n\nHong Kong\n\nHungary\n\nIceland\n\nIndia\n\nIndonesia\n\nIraq\n\nIreland\n\nIsle Of Man\n\nIsrael\n\nItaly\n\nJamaica\n\nJapan\n\nJersey\n\nJordan\n\nKazakhstan\n\nKenya\n\nKiribati\n\nKosovo\n\nKuwait\n\nKyrgyzstan\n\nLaos\n\nLatvia\n\nLebanon\n\nLesotho\n\nLiberia\n\nLibya\n\nLiechtenstein\n\nLithuania\n\nLuxembourg\n\nMacau\n\nMadagascar\n\nMalawi\n\nMalaysia\n\nMaldives\n\nMali\n\nMalta\n\nMarshall Islands\n\nMartinique\n\nMauritania\n\nMauritius\n\nMayotte\n\nMexico\n\nMoldova\n\nMonaco\n\nMongolia\n\nMontenegro\n\nMontserrat\n\nMorocco\n\nMozambique\n\nMyanmar\n\nNamibia\n\nNauru\n\nNepal\n\nNetherlands\n\nNetherlands Antilles\n\nNew Caledonia\n\nNew Zealand\n\nNicaragua\n\nNiger\n\nNigeria\n\nNiue\n\nNorfolk Island\n\nNorth Macedonia\n\nNorthern Mariana Islands\n\nNorway\n\nOman\n\nPakistan\n\nPalau\n\nPalestine\n\nPanama\n\nPapua New Guinea\n\nParaguay\n\nPeru\n\nPhilippines\n\nPitcairn\n\nPoland\n\nPortugal\n\nPuerto Rico\n\nQatar\n\nRepublic of the Congo\n\nRéunion\n\nRomania\n\nRussia\n\nRwanda\n\nSaint Barthélemy\n\nSaint Helena\n\nSaint Kitts and Nevis\n\nSaint Martin\n\nSaint Pierre and Miquelon\n\nSaint Vincent and the Grenadines\n\nSamoa\n\nSan Marino\n\nSao Tome and Principe\n\nSaudi Arabia\n\nSenegal\n\nSerbia\n\nSeychelles\n\nSierra Leone\n\nSingapore\n\nSint Maarten\n\nSlovakia\n\nSlovenia\n\nSolomon Islands\n\nSomalia\n\nSouth Africa\n\nSouth Georgia and the South Sandwich Islands\n\nSouth Korea\n\nSouth Sudan\n\nSpain\n\nSri Lanka\n\nSt. Lucia\n\nSuriname\n\nSvalbard and Jan Mayen\n\nSweden\n\nSwitzerland\n\nSyria\n\nTaiwan\n\nTajikistan\n\nTanzania\n\nThailand\n\nThe Bahamas\n\nThe Gambia\n\nTimor-Leste\n\nTogo\n\nTokelau\n\nTonga\n\nTrinidad and Tobago\n\nTunisia\n\nTurkey\n\nTurkmenistan\n\nTurks and Caicos Islands\n\nTuvalu\n\nUganda\n\nUkraine\n\nUnited Arab Emirates\n\nUnited Kingdom\n\nUnited States\n\nUnited States Minor Outlying Islands\n\nUruguay\n\nUS Virgin Islands\n\nUzbekistan\n\nVanuatu\n\nVatican City\n\nVenezuela\n\nVietnam\n\nWallis and Futuna\n\nWestern Sahara\n\nYemen\n\nZambia\n\nZimbabwe\n\n\n\n\n\nAll ads\n\n\n\nSelect ad category\n\nAll ads\n\nIssues, elections or politics\n\nSearch by keyword or advertiser\n\n\n\n\n\n[Log in](https://www.facebook.com/) [Close navigation panel](https://www.facebook.com/ads/library/?active_status=all&ad_type=all&country=EG&is_targeted_country=false&media_type=all&q=McDonald%27s&search_type=keyword_unordered&sort_data[mode]=total_impressions&sort_data[direction]=desc#)\n\nAd Library\n\n[Ad Library Report](https://www.facebook.com/ads/library/report/?source=nav-panel)\n\n[Ad Library API](https://www.facebook.com/ads/library/api/?source=nav-panel)\n\n[Branded Content](https://www.facebook.com/ads/library/branded_content/?source=fb-logo)\n\n* * *\n\n[System status](https://metastatus.com/ads-transparency)\n\nSubscribe to email updates\n\n[FAQ](https://www.facebook.com/ads/library/?show_faq=true)\n\n[About ads and data use](https://www.facebook.com/ads/about/?entry_product=ad_library)\n\n[Privacy](https://www.facebook.com/privacy/center/?entry_point=privacy_basics_redirect)\n\n[Terms](https://www.facebook.com/policies/)\n\n[Cookies](https://www.facebook.com/policies/cookies/)\n\n~27,000 results\n\nThese results include ads that match your **keyword search.**\n\nFilters\n\nSort\n\n\n\nSort by\n\n\n\nInactive\n\nLibrary ID: 818177571095368\n\nNov 13, 2025 - Nov 29, 2025\n\nPlatforms\n\n\n\nEU transparency\n\n\n\nOpen Dropdown\n\n\n\nSee ad details\n\n* * *\n\n![Ligue 1 McDonald's](https://scontent-lax3-2.xx.fbcdn.net/v/t39.35426-6/578793012_1126004176406945_1893369754389548828_n.jpg?stp=dst-jpg_s60x60_tt6&_nc_cat=100&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=efl7YGOmavYQ7kNvwHTgZXS&_nc_oc=AdqZu69esxpn-BlUGdX0l-cyuFLp3kqGIwuIYb3gQVzK7LO5tmq4dK8NpGNSZ1aWaFI&_nc_zt=14&_nc_ht=scontent-lax3-2.xx&_nc_gid=soAI9CzMU1dp-IJFMHwuOg&_nc_ss=7b289&oh=00_AQQJtOr2qdCNprmFMtHX51VdhCcfzZTu-0ZZWVRXH78GBw&oe=6AF60147)\n\n[Ligue 1 McDonald's](https://www.facebook.com/Ligue1/)\n\n**Sponsored**\n\nOusmane Dembélé’s special Ballon d’Or boots 🌕😍\n\n[![](https://scontent-lax3-1.xx.fbcdn.net/v/t39.35426-6/580504891_1886952378698715_3123894330127318697_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=104&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=NKYdBVZFzwQQ7kNvwFf0Tjs&_nc_oc=AdopS--y5xjXzAMupnWU4CbmAM7EtUl3CzcxH4HjIlQWV-M5tqKZ1v9ZiJFKJtIZPfY&_nc_zt=14&_nc_ht=scontent-lax3-1.xx&_nc_gid=soAI9CzMU1dp-IJFMHwuOg&_nc_ss=7b289&oh=00_AQSPMbF4OC7DJtvKTY52dmtLpf5DQ0Ba1O64TPvo6hjVVw&oe=6AF61385)\\\\\n\\\\\nLigue 1 McDonald's\\\\\n\\\\\nInterest\\\\\n\\\\\n19,720,345 people like this\\\\\n\\\\\nLike Page](https://www.facebook.com/128876393864352)\n\n\n\nInactive\n\nLibrary ID: 1073078301901887\n\nJul 7, 2026 - Jul 10, 2026\n\nPlatforms\n\n\n\n\n\nThis ad has multiple versions\n\n\n\nEU transparency\n\n\n\nOpen Dropdown\n\n\n\nSee ad details\n\n* * *\n\n![McDonald's](https://scontent-lax3-1.xx.fbcdn.net/v/t39.35426-6/733524171_2179522496175096_7704977431107994396_n.jpg?stp=dst-jpg_s60x60_tt6&_nc_cat=109&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=jMVVwUyQWdIQ7kNvwHEeRIV&_nc_oc=AdrHt--7AWbI5BEhPkmbep84qEHQfJApPeUzIudTPHmhVvHpGFUfqNorJ208z_2gmO0&_nc_zt=14&_nc_ht=scontent-lax3-1.xx&_nc_gid=soAI9CzMU1dp-IJFMHwuOg&_nc_ss=7b289&oh=00_AQTT6DSJeuJLJmDIung8QjH9z_IEGO9hhe2azJrvasfWQQ&oe=6AF5F52B)\n\n[McDonald's](https://www.facebook.com/McDonalds/)\n\n**Sponsored**\n\nactually replace toxic with “completely reasonable”\n\nSorry, we're having trouble playing this video.\n\n[Learn more](https://www.facebook.com/help/396404120401278/list)\n\n[Order Now](https://smart.link/hgor0kfm1ewew)\n\n\n\nInactive\n\nLibrary ID: 974928678694215\n\nJul 7, 2026 - Jul 10, 2026\n\nPlatforms\n\n\n\n\n\nThis ad has multiple versions\n\n\n\nEU transparency\n\n\n\nOpen Dropdown\n\n\n\nSee ad details\n\n* * *\n\n![McDonald's](https://scontent-lax7-1.xx.fbcdn.net/v/t39.35426-6/734129032_854311424407706_2528358404950586406_n.jpg?stp=dst-jpg_s60x60_tt6&_nc_cat=101&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=jb27vSi2ItsQ7kNvwHiBcI8&_nc_oc=Adp7i9n8HSGn7jlFOuPIe-L0iUEPn0na5Rt02CuhHmdr0fpjpAJQkU7rsR-s0cl9WcM&_nc_zt=14&_nc_ht=scontent-lax7-1.xx&_nc_gid=soAI9CzMU1dp-IJFMHwuOg&_nc_ss=7b289&oh=00_AQQ5tvy0_RapzbkAXWDBxvlCMUqGb9bSziejay5Gc9wiKg&oe=6AF5F5E6)\n\n[McDonald's](https://www.facebook.com/McDonalds/)\n\n**Sponsored**\n\nactually replace toxic with “completely reasonable\"\n\nSorry, we're having trouble playing this video.\n\n[Learn more](https://www.facebook.com/help/396404120401278/list)\n\n[Order Now](https://smart.link/hgor0kfm1ewew)\n\n\n\nInactive\n\nLibrary ID: 1896187258456228\n\nAug 17, 2026 - Sep 14, 2026\n\nPlatforms\n\n\n\n\n\nThis ad has multiple versions\n\n\n\nEU transparency\n\n\n\nOpen Dropdown\n\n\n\nSee ad details\n\n* * *\n\n![McDonald's](https://scontent-lax3-2.xx.fbcdn.net/v/t39.35426-6/773645337_2564641130699719_5075569665219259078_n.jpg?stp=dst-jpg_s60x60_tt6&_nc_cat=111&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=NaDkSUga8JwQ7kNvwEn69oh&_nc_oc=AdpKv0V7e5uucc-kq7rb5pNZ9lk0FtO5mzd6jfuPzbWppMRQJG3E6jfqGBnMWG1hS3A&_nc_zt=14&_nc_ht=scontent-lax3-2.xx&_nc_gid=soAI9CzMU1dp-IJFMHwuOg&_nc_ss=7b289&oh=00_AQQiucb-qxRf0NXzTK-jgFD8i5BBIzAOH1U6uCKfsbLqAQ&oe=6AF61419)\n\n[McDonald's](https://www.facebook.com/McDonalds/)\n\n**Sponsored**\n\nYour favorite breakfast awaits.\n\n[![](https://scontent-lax3-1.xx.fbcdn.net/v/t39.35426-6/773662668_1632375375259493_3609100204186330040_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=110&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=OOdmCXTf_WcQ7kNvwEi_K0A&_nc_oc=AdpheBbgHw-wIScgdAya0rIi-1gZaIL-pKGZolajvO96SAxgU16_8tEsDV8M9O30MFw&_nc_zt=14&_nc_ht=scontent-lax3-1.xx&_nc_gid=soAI9CzMU1dp-IJFMHwuOg&_nc_ss=7b289&oh=00_AQT9bx9jgOwAYTI5o2snVpjkagCwXgNM-PH1KOgeBn9E-w&oe=6AF5FE23)\\\\\n\\\\\nWWW.MCDONALDS.COM\\\\\n\\\\\nMcDonald's\\\\\n\\\\\nClick here\\\\\n\\\\\nOrder Now](https://www.mcdonalds.com/us/en-us/download-app.html)\n\n\n\nInactive\n\nLibrary ID: 976301902105105\n\nJul 2, 2026 - Jul 30, 2026\n\nPlatforms\n\n\n\n\n\nThis ad has multiple versions\n\n\n\nEU transparency\n\n\n\nOpen Dropdown\n\n\n\nSee ad details\n\n* * *\n\n![McDonald's](https://scontent-lax7-1.xx.fbcdn.net/v/t39.35426-6/728280915_27167622889597139_1506045737377604539_n.jpg?stp=dst-jpg_s60x60_tt6&_nc_cat=101&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=SQvPqUWQmr8Q7kNvwEHL3kx&_nc_oc=Adqfh1ufpEGXamsRzcdvJE-fHh5-wUSG1FHXwlInnAtOZkFqrv_y1_A-OWMSH-FIevk&_nc_zt=14&_nc_ht=scontent-lax7-1.xx&_nc_gid=soAI9CzMU1dp-IJFMHwuOg&_nc_ss=7b289&oh=00_AQTeuJGhQVE9I2SIq4jdgV7VcwPoqV-6L61iwDI0cY7skg&oe=6AF61342)\n\n[McDonald's](https://www.facebook.com/mcd/)\n\n**Sponsored**\n\nHol dir die leckere Beute aus aller Welt direkt nach Hause! Bequem bestellt und geliefert mit McDelivery. ✈️🌍🍔 #ichliebees #mcdelivery #meccesumdiewelt\n\n[![](https://scontent-lax3-2.xx.fbcdn.net/v/t39.35426-6/729658528_1026915743615032_3762142628506258871_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=103&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=f5_0vXUGzTEQ7kNvwGq7AFA&_nc_oc=AdqrxsD7zAMY0t51vMrAIvPCnMWJHKZWEZU-H_a0zIh-WImsd0Z1IAmHAIp0bYf5AyM&_nc_zt=14&_nc_ht=scontent-lax3-2.xx&_nc_gid=soAI9CzMU1dp-IJFMHwuOg&_nc_ss=7b289&oh=00_AQS8OWXyOugUoOaIOOJw4OcXcyCBXYkU0f9TTPm1crOHoQ&oe=6AF5ED86)\\\\\n\\\\\nJetzt die Welt liefern lassen\\\\\n\\\\\nSchnell bestellen!\\\\\n\\\\\nLearn More](https://mcdelivery.de/?mtm_campaign=missionworld&mtm_source=facebook&mtm_placement=stories&mtm_medium=carouselad&mtm_cid=41378640)\n\n\n\nInactive\n\nLibrary ID: 1994665467741517\n\nNov 13, 2025 - Nov 29, 2025\n\nPlatforms\n\n\n\nEU transparency\n\n\n\nOpen Dropdown\n\n\n\nSee ad details\n\n* * *\n\n![Ligue 1 McDonald's](https://scontent-lax3-1.xx.fbcdn.net/v/t39.35426-6/581208663_2082456695861221_4222526439903906031_n.jpg?stp=dst-jpg_s60x60_tt6&_nc_cat=108&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=ml4Lk5-sljkQ7kNvwGhHIFB&_nc_oc=AdoxjlWnOi4M3JozmJgdzoNTm4KgHWuCfnmkD4vEVN0Sh449_Ta-fLCSwn70Dq5rhLk&_nc_zt=14&_nc_ht=scontent-lax3-1.xx&_nc_gid=soAI9CzMU1dp-IJFMHwuOg&_nc_ss=7b289&oh=00_AQSH_YOA5bxH-IlGYXja3lajzpaf_OfYxatYP8eTnL9Cog&oe=6AF607C3)\n\n[Ligue 1 McDonald's](https://www.facebook.com/Ligue1/)\n\n**Sponsored**\n\nCatch Neves if you can! 🇵🇹\n\n[![](https://scontent-lax7-1.xx.fbcdn.net/v/t39.35426-6/581222030_1915662162679554_1132369737178589593_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=105&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=8qfu5NZ1H_sQ7kNvwFTcXMd&_nc_oc=AdqYec8215AUnuT-yMup2K_8bIPClOBhzvwhD3YM-oV8jONXN1N1D_IcUZZuY3JMr-A&_nc_zt=14&_nc_ht=scontent-lax7-1.xx&_nc_gid=soAI9CzMU1dp-IJFMHwuOg&_nc_ss=7b289&oh=00_AQSPe669iCOWsCxIjswf9MLtGqPJY9zcKQbAriWBMQkadw&oe=6AF5E731)\\\\\n\\\\\nLigue 1 McDonald's\\\\\n\\\\\nInterest\\\\\n\\\\\n19,720,345 people like this\\\\\n\\\\\nLike Page](https://www.facebook.com/128876393864352)\n\n\n\nInactive\n\nLibrary ID: 4735861266700178\n\nJun 15, 2026 - Aug 24, 2026\n\nPlatforms\n\n\n\n\n\n\n\n\n\n\n\nThis ad has multiple versions\n\n\n\nEU transparency\n\n\n\nOpen Dropdown\n\n\n\nSee ad details\n\n* * *\n\n![McDonald's](https://scontent-lax7-1.xx.fbcdn.net/v/t39.35426-6/721135797_849165324517383_4700449140027618960_n.jpg?stp=dst-jpg_s60x60_tt6&_nc_cat=105&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=tSGPgkU4Li8Q7kNvwEriFG-&_nc_oc=Adqg94BhxfC60NsmPOqAKkinD5UUYksI_iUovdBtH019pxMyEsKMP6SHzoKGngo_3PY&_nc_zt=14&_nc_ht=scontent-lax7-1.xx&_nc_gid=soAI9CzMU1dp-IJFMHwuOg&_nc_ss=7b289&oh=00_AQT1xVVinzrDOQLrI6clB86uSADB-eEhYYIxooYbdcTqwA&oe=6AF5F51E)\n\n[McDonald's](https://www.facebook.com/McDonalds/)\n\n**Sponsored**\n\nFind a treat for under $3\n\n[![](https://scontent-lax3-2.xx.fbcdn.net/v/t39.35426-6/721383225_27187805364191302_5071464491231237070_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=107&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=HNx05Y14EU4Q7kNvwGmspG2&_nc_oc=Adra85UvZuiRMk51rvj1Xe1lRGOEtba_N38V-dJJ0Q12FtvHHsrXa1I7a4HAmPpLXtk&_nc_zt=14&_nc_ht=scontent-lax3-2.xx&_nc_gid=soAI9CzMU1dp-IJFMHwuOg&_nc_ss=7b289&oh=00_AQRg1CxwsQGqdvfj4EQWogWO4PmXcRDDxxk2o6DvZORGig&oe=6AF5EA61)\\\\\n\\\\\nMCDONALDS.COM\\\\\n\\\\\nit’s as simple as McDonald's\\\\\n\\\\\nDownload\\\\\n\\\\\nOrder Now](https://www.mcdonalds.com/us/en-us/download-app.html)\n\n\n\nInactive\n\nLibrary ID: 1002348525650938\n\nJun 7, 2026 - Jul 27, 2026\n\nPlatforms\n\n\n\n\n\n\n\n\n\n\n\nThis ad has multiple versions\n\n\n\nEU transparency\n\n\n\nOpen Dropdown\n\n\n\nSee ad details\n\n* * *\n\n![McDonald's](https://scontent-lax3-2.xx.fbcdn.net/v/t39.35426-6/713205214_1666787607914921_512431546459923845_n.jpg?stp=dst-jpg_s60x60_tt6&_nc_cat=107&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=VPIlerGlM9IQ7kNvwGZ8Xl2&_nc_oc=AdrT20OoBZ__7QWVQBGqz_ZvoG-xjV19A1n2UtV7oN7qbvxUerbPX0xzywAAmsfZpfQ&_nc_zt=14&_nc_ht=scontent-lax3-2.xx&_nc_gid=soAI9CzMU1dp-IJFMHwuOg&_nc_ss=7b289&oh=00_AQTFzpG_Vsd4H3hut0x0DFnJiWzpk4b-n_RkSfnWPKhJlw&oe=6AF5F4AF)\n\n[McDonald's](https://www.facebook.com/McDonalds/)\n\n**Sponsored**\n\nGet your hands on this great deal\n\n[![](https://scontent-lax3-1.xx.fbcdn.net/v/t39.35426-6/714824062_1670368327553356_6233284638678309098_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=102&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=S9LpOFJscPgQ7kNvwHsFPUv&_nc_oc=AdpB0-PZZDe7ZkB2w6Y-CifPl9TB32vgzJmeE7sp_UFSj3TwLfB84aUJTajsRufR5Ec&_nc_zt=14&_nc_ht=scontent-lax3-1.xx&_nc_gid=soAI9CzMU1dp-IJFMHwuOg&_nc_ss=7b289&oh=00_AQR8bPV7WAv3R422LHjwkTiZyZ0QtkWZQvJK--EV1epsCg&oe=6AF600E2)\\\\\n\\\\\nMCDONALDS.COM\\\\\n\\\\\nit’s as simple as McDonald's\\\\\n\\\\\nDownload\\\\\n\\\\\nOrder Now](https://www.mcdonalds.com/us/en-us/download-app.html)\n\n\n\nInactive\n\nLibrary ID: 1565833581793299\n\nJul 12, 2026 - Aug 24, 2026\n\nPlatforms\n\n\n\n\n\n\n\n\n\n\n\nThis ad has multiple versions\n\n\n\nEU transparency\n\n\n\nOpen Dropdown\n\n\n\nSee ad details\n\n* * *\n\n![McDonald's](https://scontent-lax3-2.xx.fbcdn.net/v/t39.35426-6/737730452_961967490223169_9210795523294606263_n.jpg?stp=dst-jpg_s60x60_tt6&_nc_cat=107&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=L4yF4hZmbyUQ7kNvwGMOe9J&_nc_oc=AdqQORD6bnGiaWIxu_VdBGXQUBBBn0T7W6iLfMQcUDXYWpFjvgKzg6S45hwtNSAeN2E&_nc_zt=14&_nc_ht=scontent-lax3-2.xx&_nc_gid=soAI9CzMU1dp-IJFMHwuOg&_nc_ss=7b289&oh=00_AQRUxP6FxlPDbWGJ2U8q9InTufQ5SPXVqLIIFjc_eA9ERg&oe=6AF5F757)\n\n[McDonald's](https://www.facebook.com/McDonalds/)\n\n**Sponsored**\n\nall-new McCafé drinks are here.\n\n[![](https://scontent-lax7-1.xx.fbcdn.net/v/t39.35426-6/737845299_2209182769904488_1854506507431951696_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=105&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=p9sN_8abp4kQ7kNvwFxHy-J&_nc_oc=AdrdlVYAsNpRN7N5hlwDPtxNZRVOvdI0-3XUV8Oxn03q-oad_WYeWXLfsKl5efZ9I_Y&_nc_zt=14&_nc_ht=scontent-lax7-1.xx&_nc_gid=soAI9CzMU1dp-IJFMHwuOg&_nc_ss=7b289&oh=00_AQSsU9fRbLcZ_yVVGYE__zAcMug58gsXkjK3HOCyMI8Xqw&oe=6AF604BB)\\\\\n\\\\\nMCDONALDS.COM\\\\\n\\\\\nit’s as simple as McDonald's\\\\\n\\\\\nDownload\\\\\n\\\\\nOrder Now](https://www.mcdonalds.com/us/en-us/download-app.html)\n\n\n\nInactive\n\nLibrary ID: 1708269720205568\n\nJun 29, 2026 - Aug 24, 2026\n\nPlatforms\n\n\n\n\n\nThis ad has multiple versions\n\n\n\n**2 ads** use this creative and text\n\nOpen Dropdown\n\n\n\nSee summary details\n\n* * *\n\n![McDonald's](https://scontent-lax7-1.xx.fbcdn.net/v/t39.35426-6/731754475_1558791762568607_7829070093610811055_n.jpg?stp=dst-jpg_s60x60_tt6&_nc_cat=101&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=87O68V6NTy8Q7kNvwF120PJ&_nc_oc=Adp6LgVPSKQEp_yi3y5XWvq81OTMjFMFjUyunZNq4flHy54FfpIgsDwsgkitAnb55NE&_nc_zt=14&_nc_ht=scontent-lax7-1.xx&_nc_gid=soAI9CzMU1dp-IJFMHwuOg&_nc_ss=7b289&oh=00_AQRPBVnO7H0DyQ9OBmjUCLxBfOcWINj124lRdUqeXpZT0A&oe=6AF5F2F2)\n\n[McDonald's](https://www.facebook.com/McDonalds/)\n\n**Sponsored**\n\nthe lineup I need in my life. all-new drinks are here\n\nSorry, we're having trouble playing this video.\n\n[Learn more](https://www.facebook.com/help/396404120401278/list)\n\n[Order Now](https://mcdonalds.smart.link/uob1j3gfz?qr_code=true)\n\n\n\nInactive\n\nLibrary ID: 1544185484030357\n\nJul 7, 2026 - Jul 10, 2026\n\nPlatforms\n\n\n\n\n\nThis ad has multiple versions\n\n\n\nEU transparency\n\n\n\nOpen Dropdown\n\n\n\nSee ad details\n\n* * *\n\n![McDonald's](https://scontent-lax7-1.xx.fbcdn.net/v/t39.35426-6/739231187_1937297313655562_7621301393894017059_n.jpg?stp=dst-jpg_s60x60_tt6&_nc_cat=105&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=grJSNGHreP0Q7kNvwGrotP9&_nc_oc=Adozvbl7WGcBvpLejJ-IzCjPU5fpYGKCtgONCYc7aGTtzsTDMK1yFcZrjo8JZbit2Cc&_nc_zt=14&_nc_ht=scontent-lax7-1.xx&_nc_gid=soAI9CzMU1dp-IJFMHwuOg&_nc_ss=7b289&oh=00_AQR11AzxxEpc4mHUsi7zkAywlZbKb1OBUo35OeNgGU8_eg&oe=6AF5F637)\n\n[McDonald's](https://www.facebook.com/McDonalds/)\n\n**Sponsored**\n\nsi esto es toxic… explícame por qué mi cartera está feliz\n\nSorry, we're having trouble playing this video.\n\n[Learn more](https://www.facebook.com/help/396404120401278/list)\n\n[consiéntete con un $1.50 McChicken\\\\\n\\\\\nOrder Now](https://smart.link/kg3ppctzjl5sf)\n\n\n\nInactive\n\nLibrary ID: 3048483262209812\n\nJul 7, 2026 - Jul 10, 2026\n\nPlatforms\n\n\n\n\n\nThis ad has multiple versions\n\n\n\nEU transparency\n\n\n\nOpen Dropdown\n\n\n\nSee ad details\n\n* * *\n\n![McDonald's](https://scontent-lax3-1.xx.fbcdn.net/v/t39.35426-6/738916335_1555071345970119_3314506410399275681_n.jpg?stp=dst-jpg_s60x60_tt6&_nc_cat=104&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=aBTTNTGTGu4Q7kNvwHet1vY&_nc_oc=Adp_PkJyG4IYC-BydAeF8pG_Z-4vaEtv-_R9qNt63Cv9jvEK5ngWACDm1Q8FgxVNrc4&_nc_zt=14&_nc_ht=scontent-lax3-1.xx&_nc_gid=soAI9CzMU1dp-IJFMHwuOg&_nc_ss=7b289&oh=00_AQQYlYY3keTz3RvdIb5d83ELh8z3qF9epl_LB42WLS8GDw&oe=6AF5F413)\n\n[McDonald's](https://www.facebook.com/McDonalds/)\n\n**Sponsored**\n\nmuchas formas de disfrutar y más razones pa’ consentirme\n\nSorry, we're having trouble playing this video.\n\n[Learn more](https://www.facebook.com/help/396404120401278/list)\n\n[consiéntete por menos de $3\\\\\n\\\\\nOrder Now](https://smart.link/kg3ppctzjl5sf)\n\n\n\nInactive\n\nLibrary ID: 1048662347723052\n\nJul 13, 2026 - Aug 10, 2026\n\nPlatforms\n\n\n\n\n\nThis ad has multiple versions\n\n\n\nEU transparency\n\n\n\nOpen Dropdown\n\n\n\nSee ad details\n\n* * *\n\n![McDonald's](https://scontent-lax3-1.xx.fbcdn.net/v/t39.35426-6/743276575_1564422575220103_6030661960826030594_n.jpg?stp=dst-jpg_s60x60_tt6&_nc_cat=102&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=179CgfFBL-QQ7kNvwEr-r6L&_nc_oc=Adq53V3z02dFC5W_8PsTYMg_JFrpAN8Cbxp7bQYWKe8FbAYu_gG26fjt3gfWKkCN4dk&_nc_zt=14&_nc_ht=scontent-lax3-1.xx&_nc_gid=soAI9CzMU1dp-IJFMHwuOg&_nc_ss=7b289&oh=00_AQSyC4ErvRTw5NadyiNa9yMcTIgBS81_G3B7Rx9dS_RRKQ&oe=6AF60BD3)\n\n[McDonald's](https://www.facebook.com/McDonalds/)\n\n**Sponsored**\n\nEntering our beverage era. The new Dirty Sodas + Refreshers are giving main character energy.\n\nRefreshers contain caffeine. ©2026 McDonald’s.\n\n[![](https://scontent-lax3-2.xx.fbcdn.net/v/t39.35426-6/742102404_903120212139331_7737315877138517840_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=106&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=1L76e9dxjeQQ7kNvwGU9RCc&_nc_oc=AdqIYR5WTe97SO9U13vdtEi5vom894iGeZZGHyy_i5Mjhh6BfgnK5vY3KhHWKAwSY8s&_nc_zt=14&_nc_ht=scontent-lax3-2.xx&_nc_gid=soAI9CzMU1dp-IJFMHwuOg&_nc_ss=7b289&oh=00_AQQVeWQbTnPTT9MCB-ZCHNw3vYDvuH1BHkaVG3EXflfPCw&oe=6AF60D9E)\\\\\n\\\\\nWWW.MCDONALDS.COM\\\\\n\\\\\nSip of the Summer\\\\\n\\\\\nRefresh at McD\\\\\n\\\\\nLearn More](https://www.mcdonalds.com/us/en-us/download-app.html)\n\n\n\nInactive\n\nLibrary ID: 4504121899914499\n\nJul 28, 2026 - Aug 15, 2026\n\nPlatforms\n\n\n\n\n\nThis ad has multiple versions\n\n\n\nEU transparency\n\n\n\nOpen Dropdown\n\n\n\nSee ad details\n\n* * *\n\n![McDonald's](https://scontent-lax3-1.xx.fbcdn.net/v/t39.35426-6/743817490_1052122124152208_5547889818727697903_n.jpg?stp=dst-jpg_s60x60_tt6&_nc_cat=110&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=kEj0Bfl7LUAQ7kNvwF_3yEn&_nc_oc=AdptZkjPPG40t_2KbKjRmHQIRaBAQeY-G2B8ZJaybhMKdKj8NHqqDW4pcoJlki_6GgQ&_nc_zt=14&_nc_ht=scontent-lax3-1.xx&_nc_gid=soAI9CzMU1dp-IJFMHwuOg&_nc_ss=7b289&oh=00_AQToA_LdAVLN-oN1poPy3RxazLsX1FspQbWbBLVyAuvcuw&oe=6AF60608)\n\n[McDonald's](https://www.facebook.com/mcd/)\n\n**Sponsored**\n\nHol dir die leckere Beute aus aller Welt direkt nach Hause! Bequem bestellt und geliefert mit McDelivery. ✈️🌍#ichliebees #mcdelivery #meccesumdiewelt\n\n[![](https://scontent-lax3-2.xx.fbcdn.net/v/t39.35426-6/741266020_2030527731004499_509987811806546840_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=107&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=O4fSyy_C9hEQ7kNvwFBxlSq&_nc_oc=Adqq6j27PBPih6OOkeJeuBEf5H_-2oXtd6VMQxxkNQepCK4DJx_sBCjW9BNhbwTpngU&_nc_zt=14&_nc_ht=scontent-lax3-2.xx&_nc_gid=soAI9CzMU1dp-IJFMHwuOg&_nc_ss=7b289&oh=00_AQSSObjb_MhA1o8JItm66nwFcQc2y2jgPT8xeZM-bzYIVw&oe=6AF5DFD8)\\\\\n\\\\\nJetzt die Welt liefern lassen\\\\\n\\\\\nSchnell bestellen!\\\\\n\\\\\nLearn More](https://mcdelivery.de/?mtm_campaign=missionworld&mtm_source=facebook&mtm_placement=stories&mtm_medium=carouselad&mtm_cid=41378640)\n\n\n\nInactive\n\nLibrary ID: 2199576097506496\n\nMay 26, 2026 - Jun 22, 2026\n\nPlatforms\n\n\n\n\n\nThis ad has multiple versions\n\n\n\nEU transparency\n\n\n\nOpen Dropdown\n\n\n\nSee ad details\n\n* * *\n\n![McDonald's](https://scontent-lax3-1.xx.fbcdn.net/v/t39.35426-6/705440609_2076517256263029_1383851307194522978_n.jpg?stp=dst-jpg_s60x60_tt6&_nc_cat=102&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=z8rIt9ngMi4Q7kNvwFjK6l_&_nc_oc=Ado6uro0YaeYyyhGqJqdQjhh7o7eng1TAaCGXqVk2FTC7rGE8mi1NfbvtdpVah-EHcE&_nc_zt=14&_nc_ht=scontent-lax3-1.xx&_nc_gid=soAI9CzMU1dp-IJFMHwuOg&_nc_ss=7b289&oh=00_AQSOEglc3EEFSNF-pamk74D3rBDzHuAR3o75T4D7baC0GQ&oe=6AF6018E)\n\n[McDonald's](https://www.facebook.com/McDonalds/)\n\n**Sponsored**\n\nMcDonald’s just gets it. A McChicken®, McDouble®, Sausage McMuffin®, or a $1 Vanilla Cone—each under $3. Say less.\n\n[![](https://scontent-lax3-1.xx.fbcdn.net/v/t39.35426-6/705394673_986164474275471_6020134450350404909_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=104&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=29PzmSAMsE8Q7kNvwEQEJOd&_nc_oc=AdpRk-yLiCd2wDmebkyiJnnthZREnrXan4W05XEKuAfawPdxfnNJW19hBw3yOsQdWoI&_nc_zt=14&_nc_ht=scontent-lax3-1.xx&_nc_gid=soAI9CzMU1dp-IJFMHwuOg&_nc_ss=7b289&oh=00_AQSawm7Zk3Fqe3B9KlTqjGq7HBDPuOOYVLBUowCQw72ftA&oe=6AF60A40)\\\\\n\\\\\nWWW.MCDONALDS.COM\\\\\n\\\\\nUnder $3 😍\\\\\n\\\\\nMcD favorites are so 😍\\\\\n\\\\\nLearn More](https://www.mcdonalds.com/us/en-us/download-app.html)\n\n\n\nInactive\n\nLibrary ID: 1181560100034606\n\nDec 3, 2025 - Dec 12, 2025\n\nPlatforms\n\n\n\n**2 ads** use this creative and text\n\nOpen Dropdown\n\n\n\nSee summary details\n\n* * *\n\n![Ligue 1 McDonald's](https://scontent-lax3-2.xx.fbcdn.net/v/t39.35426-6/592313147_845239265165266_4404280873091132673_n.jpg?stp=dst-jpg_s60x60_tt6&_nc_cat=100&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=m7n_uKZ5bpoQ7kNvwEEjvu9&_nc_oc=AdrFEgLZNP-7Uq94kWf7UoJRPHDDSupFXyyunFd2E8Wys4kikeiYNtccESxzsWBHQbQ&_nc_zt=14&_nc_ht=scontent-lax3-2.xx&_nc_gid=soAI9CzMU1dp-IJFMHwuOg&_nc_ss=7b289&oh=00_AQRZeJtTbz1CNUdztaPIPhFzZ7j0dvINAQpt3-wKdoNLuw&oe=6AF5FDC5)\n\n[Ligue 1 McDonald's](https://www.facebook.com/Ligue1/)\n\n**Sponsored**\n\nSay it louder: Paul Pogba is officially back! ❤️🔥\n\n[![](https://scontent-lax3-2.xx.fbcdn.net/v/t39.35426-6/592300200_914832901221976_5381648113018188818_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=107&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=2DodDSMzLjAQ7kNvwE6xO0Y&_nc_oc=AdqzIUwAjveZ2w_-MGLdBnyN8DqIBlp13jWSNQZ9HKMV1tegn-65XkB3jOHoYTtn5SU&_nc_zt=14&_nc_ht=scontent-lax3-2.xx&_nc_gid=soAI9CzMU1dp-IJFMHwuOg&_nc_ss=7b289&oh=00_AQR1dBdU1vB9WLSsCN7QTlUlnGCJeb-qOVf17TWKvXKQcQ&oe=6AF5DF46)](https://www.facebook.com/128876393864352)\n\n\n\nInactive\n\nLibrary ID: 2166669114067839\n\nMay 17, 2026 - Jun 22, 2026\n\nPlatforms\n\n\n\n\n\n\n\n\n\n\n\nThis ad has multiple versions\n\n\n\nEU transparency\n\n\n\nOpen Dropdown\n\n\n\nSee ad details\n\n* * *\n\n![McDonald's](https://scontent-lax3-2.xx.fbcdn.net/v/t39.35426-6/701716893_1001569585714650_6059858879167914503_n.jpg?stp=dst-jpg_s60x60_tt6&_nc_cat=111&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=YVkOD0LaLqcQ7kNvwHit-Bo&_nc_oc=AdoIb8ciLwiv814CCF3Q-0llsrjx09W-2pginyHGnVjGMFSacrO_6s8-Uh8bSV66j1A&_nc_zt=14&_nc_ht=scontent-lax3-2.xx&_nc_gid=soAI9CzMU1dp-IJFMHwuOg&_nc_ss=7b289&oh=00_AQRujHxTtUeSWUypeORHSThS6gr9Nc1uoO0E_z43yjElGQ&oe=6AF5EAB1)\n\n[McDonald's](https://www.facebook.com/McDonalds/)\n\n**Sponsored**\n\nGet your hands on this great deal\n\n[![](https://scontent-lax3-2.xx.fbcdn.net/v/t39.35426-6/699987536_983425567525795_7620726245475063938_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=107&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=hBk8isOtBL4Q7kNvwG3Z4_5&_nc_oc=Adq-q-zDKNZjY0flEfG7KezsjYiT7TEEVxfxczFkdm43YoElpFKvorMsU6isPQcIz9Y&_nc_zt=14&_nc_ht=scontent-lax3-2.xx&_nc_gid=soAI9CzMU1dp-IJFMHwuOg&_nc_ss=7b289&oh=00_AQRB-qZ3la7hNhBgaXbZAjV12V2vb8ffoRsTZwI6nOnsRQ&oe=6AF5E963)\\\\\n\\\\\nMCDONALDS.COM\\\\\n\\\\\nit’s as simple as McDonald's\\\\\n\\\\\nDownload\\\\\n\\\\\nOrder Now](https://www.mcdonalds.com/us/en-us/download-app.html)\n\n\n\nInactive\n\nLibrary ID: 1732384371464750\n\nMay 19, 2026 - Jun 15, 2026\n\nPlatforms\n\n\n\n\n\nThis ad has multiple versions\n\n\n\n**3 ads** use this creative and text\n\nOpen Dropdown\n\n\n\nSee summary details\n\n* * *\n\n![McDonald's](https://scontent-lax7-1.xx.fbcdn.net/v/t39.35426-6/702494780_1539954184529979_169145134038030840_n.jpg?stp=dst-jpg_s60x60_tt6&_nc_cat=101&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=qeabYMzJ0ogQ7kNvwEytPkU&_nc_oc=Ado398qQZWG_-U8gUm-cNGer477lVJPq98Mi6nXYisef6s1PTubCxEUG1nneZu4Rg0Y&_nc_zt=14&_nc_ht=scontent-lax7-1.xx&_nc_gid=soAI9CzMU1dp-IJFMHwuOg&_nc_ss=7b289&oh=00_AQSMenUDnCoWVf5enCuFBDQV_XhkQXMChqrrK5DIlYRdIg&oe=6AF6057E)\n\n[McDonald's](https://www.facebook.com/McDonalds/)\n\n**Sponsored**\n\n$6 McDouble/$5 McChicken Meal Deal\n\nSorry, we're having trouble playing this video.\n\n[Learn more](https://www.facebook.com/help/396404120401278/list)\n\n[WWW.MCDONALDS.COM\\\\\n\\\\\nOrder Now](https://www.mcdonalds.com/us/en-us/download-app.html)\n\n\n\nInactive\n\nLibrary ID: 1046116514633243\n\nAug 2, 2026 - Aug 31, 2026\n\nPlatforms\n\n\n\n\n\n\n\n\n\n\n\nThis ad has multiple versions\n\n\n\nEU transparency\n\n\n\nOpen Dropdown\n\n\n\nSee ad details\n\n* * *\n\n![McDonald's](https://scontent-lax7-1.xx.fbcdn.net/v/t39.35426-6/760915720_1343384012182403_9216753739350641923_n.jpg?stp=dst-jpg_s60x60_tt6&_nc_cat=101&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=vs_Gp6O25LQQ7kNvwHwTRN9&_nc_oc=AdrtWFzFLeb9ktqGYKJvkYymQsJYi7jrg0a5YBIO7xKaz82OyQrxxNPgJu5CjK83iiU&_nc_zt=14&_nc_ht=scontent-lax7-1.xx&_nc_gid=soAI9CzMU1dp-IJFMHwuOg&_nc_ss=7b289&oh=00_AQQd4C_dMuWm1qEUwJNCWRhhE6NTlyYncNmIxtkGrstMqQ&oe=6AF5E45F)\n\n[McDonald's](https://www.facebook.com/McDonalds/)\n\n**Sponsored**\n\nGet your hands on this great deal\n\n[![](https://scontent-lax3-1.xx.fbcdn.net/v/t39.35426-6/760288935_1675658586858003_4801219004310259469_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=109&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=lv01hZD4wM0Q7kNvwFTFLgb&_nc_oc=AdpVEuQkn6K9pW3cBxZJwOFVDQCYEwEo4NzbvUDgKQuL0kAoYkWzobte-6NZl843Cdc&_nc_zt=14&_nc_ht=scontent-lax3-1.xx&_nc_gid=soAI9CzMU1dp-IJFMHwuOg&_nc_ss=7b289&oh=00_AQQQLArF3c_qqNxEjw7PYIKZImGAdsA0dNy24aMvv5DSHw&oe=6AF604B6)\\\\\n\\\\\nMCDONALDS.COM\\\\\n\\\\\nit’s as simple as McDonald's\\\\\n\\\\\nDownload\\\\\n\\\\\nOrder Now](https://www.mcdonalds.com/us/en-us/download-app.html)\n\n\n\nInactive\n\nLibrary ID: 1564122245431088\n\nAug 5, 2026 - Sep 12, 2026\n\nPlatforms\n\n\n\n\n\n\n\n\n\n\n\nThis ad has multiple versions\n\n\n\nEU transparency\n\n\n\nOpen Dropdown\n\n\n\nSee ad details\n\n* * *\n\n![Grubhub](https://scontent-lax3-1.xx.fbcdn.net/v/t39.35426-6/763878223_909257618890113_7260632354813670294_n.jpg?stp=dst-jpg_s60x60_tt6&_nc_cat=104&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=U3UA1xmI_P4Q7kNvwF2OZxv&_nc_oc=Adpu-xcV4KuOJ-hNmolFprAyHfUTH-8_lcxk0odwWzs75CtcFtLcVyx8V6phjwyLyl0&_nc_zt=14&_nc_ht=scontent-lax3-1.xx&_nc_gid=soAI9CzMU1dp-IJFMHwuOg&_nc_ss=7b289&oh=00_AQRv8RlOB9Z0lIOqjP3-WuccX22Bp396XVc0Ib3vlDHOww&oe=6AF5E312)\n\n[Grubhub](https://www.facebook.com/grubhub/)\n\n**Sponsored**\n\nDouble up on your faves with BOGO 6pc McNuggets® on $15+, Fri–Sun. ✨ Terms & fees apply.\n\n[![](https://scontent-lax3-1.xx.fbcdn.net/v/t39.35426-6/763824689_1085417087477612_7658799748375988112_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=102&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=DB7yF4hvK5sQ7kNvwHVN7Hc&_nc_oc=Adoltj1QES1J0dzPTkNEyXRSzyYLUTvGKMTsg0B1sTnk50iFann4xJ3mcimkjZOM2ck&_nc_zt=14&_nc_ht=scontent-lax3-1.xx&_nc_gid=soAI9CzMU1dp-IJFMHwuOg&_nc_ss=7b289&oh=00_AQRkPEKvAzzoU__Ng4U0e9Qo5VwCdlSK56hEDxwNuso7cg&oe=6AF609E9)\\\\\n\\\\\nMcDonald’s weekend freebies\\\\\n\\\\\nGet it on Grubhub\\\\\n\\\\\nOrder Now](https://www.grubhub.com/food/mcdonalds?utm_source=meta&utm_medium=social_paid&utm_campaign=brand_active_mcdonaldsfreebie)\n\n\n\nInactive\n\nLibrary ID: 1185663513041879\n\nDec 3, 2025 - Dec 12, 2025\n\nPlatforms\n\n\n\nEU transparency\n\n\n\nOpen Dropdown\n\n\n\nSee ad details\n\n* * *\n\n![Ligue 1 McDonald's](https://scontent-lax7-1.xx.fbcdn.net/v/t39.35426-6/591970315_1358712009322980_5561384995567695271_n.jpg?stp=dst-jpg_s60x60_tt6&_nc_cat=105&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=CE2YtD334hMQ7kNvwGc0NkQ&_nc_oc=AdotfLGWtBAh2RbpNUdKe-Lm-Z-BpcaAGOclDzEgxR4ggm5CeQkyd065yItXpJh4Pd0&_nc_zt=14&_nc_ht=scontent-lax7-1.xx&_nc_gid=soAI9CzMU1dp-IJFMHwuOg&_nc_ss=7b289&oh=00_AQSLQAFG4nC1TSluAs4IXTRWkvSyOdJ0QDdTJA-miU9g0g&oe=6AF5ED0D)\n\n[Ligue 1 McDonald's](https://www.facebook.com/Ligue1/)\n\n**Sponsored**\n\nPogba and Dembélé, the World Cup champions are reunited! 😍🏆\n\n[![](https://scontent-lax3-1.xx.fbcdn.net/v/t39.35426-6/593213136_1503681070913371_6670203445331490850_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=102&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=gsF2g1gK52UQ7kNvwGmpe1d&_nc_oc=AdrfwSH_SsL40DPMWH-GCnovZhes0g3wY2gOa0U2eW2T_SNwjVFoz4JvLSoR6INTrkE&_nc_zt=14&_nc_ht=scontent-lax3-1.xx&_nc_gid=soAI9CzMU1dp-IJFMHwuOg&_nc_ss=7b289&oh=00_AQTr0Ygx6-R8Rhgh6VFI68XpAO2nNPAfgbIUV4SIublwYA&oe=6AF5EE57)\\\\\n\\\\\nLigue 1 McDonald's\\\\\n\\\\\nInterest\\\\\n\\\\\n19,720,345 people like this\\\\\n\\\\\nLike Page](https://www.facebook.com/128876393864352)\n\n\n\nInactive\n\nLibrary ID: 1023330390339499\n\nAug 9, 2026 - Sep 7, 2026\n\nPlatforms\n\n\n\n\n\n\n\n\n\n\n\nThis ad has multiple versions\n\n\n\nEU transparency\n\n\n\nOpen Dropdown\n\n\n\nSee ad details\n\n* * *\n\n![McDonald's](https://scontent-lax3-1.xx.fbcdn.net/v/t39.35426-6/763355915_1762253764796157_5184867780126961433_n.jpg?stp=dst-jpg_s60x60_tt6&_nc_cat=104&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=eKl5ZLjaJuMQ7kNvwEcJIts&_nc_oc=AdrDesaPcYaY_IEhcEc0dC-9h2wFBkmTK7IH2Q34L0Iz0GVN817DidB0MeQ_Vc96zz0&_nc_zt=14&_nc_ht=scontent-lax3-1.xx&_nc_gid=soAI9CzMU1dp-IJFMHwuOg&_nc_ss=7b289&oh=00_AQSHENQBHHMHg_zvXgvzoIrw3OcA1LJmwlzR5-gVeig6kQ&oe=6AF5EB9C)\n\n[McDonald's](https://www.facebook.com/McDonalds/)\n\n**Sponsored**\n\nWake up for this deal\n\n[![](https://scontent-lax3-1.xx.fbcdn.net/v/t39.35426-6/765796929_1526943412007190_8836214227565681265_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=110&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=-qcUAOyprCcQ7kNvwEzYJKE&_nc_oc=Adrr_EokcMNXwm7Sc55RxIHZjPqKXY1imOjjZyJIu2GjFsrP-ofiPxCPt2I_C3PPUR0&_nc_zt=14&_nc_ht=scontent-lax3-1.xx&_nc_gid=soAI9CzMU1dp-IJFMHwuOg&_nc_ss=7b289&oh=00_AQSAj2zpjAW3f53hq30godYydAwk5VyOq5oApSTz2jxEiQ&oe=6AF5FFD6)\\\\\n\\\\\nMCDONALDS.COM\\\\\n\\\\\nit’s as simple as McDonald's\\\\\n\\\\\nDownload\\\\\n\\\\\nOrder Now](https://www.mcdonalds.com/us/en-us/download-app.html)\n\n\n\nInactive\n\nLibrary ID: 2106472833299885\n\nAug 4, 2026 - Sep 14, 2026\n\nPlatforms\n\n\n\n\n\n\n\n\n\nThis ad has multiple versions\n\n\n\nEU transparency\n\n\n\nOpen Dropdown\n\n\n\nSee ad details\n\n* * *\n\n![Uber Eats](https://scontent-lax3-2.xx.fbcdn.net/v/t39.35426-6/765731919_1423407003178187_6805890136766966804_n.jpg?stp=dst-jpg_s60x60_tt6&_nc_cat=100&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=3qUyq1I4nkoQ7kNvwFg2bW2&_nc_oc=Ado6l68aBv63cjzje9tI_AJlcBxQc8RjDbCnF189plAzxZuUE-Uh8DVHfJeX_qufxIk&_nc_zt=14&_nc_ht=scontent-lax3-2.xx&_nc_gid=soAI9CzMU1dp-IJFMHwuOg&_nc_ss=7b289&oh=00_AQQUc4UIXMAJY5Ir4nYweWHHb-71LUtxDW26s7kOcJkZDA&oe=6AF600BB)\n\n[Uber Eats](https://www.facebook.com/UberEats/)\n\n**Sponsored**\n\n-10€ sur vos 2 premières commandes si vous dépensez 20€. Code: FR6J4V. Seulement pour les nouveaux utilisateurs. Sous conditions.\n\n[![](https://scontent-lax7-1.xx.fbcdn.net/v/t39.35426-6/765777143_1019923950675497_100495739705009788_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=105&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=cJ6FlYO5Hg4Q7kNvwEoPyDL&_nc_oc=AdqvHvS6R4bhj3aTK8WzLNq7iag0NvoAxIoxuwcSjq30KgWJlyTnKWiwauaEqfJ0Gwc&_nc_zt=14&_nc_ht=scontent-lax7-1.xx&_nc_gid=soAI9CzMU1dp-IJFMHwuOg&_nc_ss=7b289&oh=00_AQQ8Z034vSyG9TpzcQcYG0t7Jt7MAZjNno44Kop9U4lOMg&oe=6AF60C18)\\\\\n\\\\\n10€ offerts sur deux commandes\\\\\n\\\\\nOrder Now](http://play.google.com/store/apps/details?id=com.ubercab.eats)\n\n\n\nInactive\n\nLibrary ID: 1336822228612245\n\nAug 14, 2026 - Aug 26, 2026\n\nPlatforms\n\n\n\n\n\nThis ad has multiple versions\n\n\n\nEU transparency\n\n\n\nOpen Dropdown\n\n\n\nSee ad details\n\n* * *\n\n![McDonald's](https://scontent-lax3-1.xx.fbcdn.net/v/t39.35426-6/743817490_1052122124152208_5547889818727697903_n.jpg?stp=dst-jpg_s60x60_tt6&_nc_cat=110&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=kEj0Bfl7LUAQ7kNvwF_3yEn&_nc_oc=AdptZkjPPG40t_2KbKjRmHQIRaBAQeY-G2B8ZJaybhMKdKj8NHqqDW4pcoJlki_6GgQ&_nc_zt=14&_nc_ht=scontent-lax3-1.xx&_nc_gid=soAI9CzMU1dp-IJFMHwuOg&_nc_ss=7b289&oh=00_AQToA_LdAVLN-oN1poPy3RxazLsX1FspQbWbBLVyAuvcuw&oe=6AF60608)\n\n[McDonald's](https://www.facebook.com/mcd/)\n\n**Sponsored**\n\nHol dir die leckere Beute aus aller Welt direkt nach Hause! Bequem bestellt und geliefert mit McDelivery. ✈️🌍#ichliebees #mcdelivery #meccesumdiewelt\n\n[![](https://scontent-lax3-2.xx.fbcdn.net/v/t39.35426-6/741266020_2030527731004499_509987811806546840_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=107&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=O4fSyy_C9hEQ7kNvwFBxlSq&_nc_oc=Adqq6j27PBPih6OOkeJeuBEf5H_-2oXtd6VMQxxkNQepCK4DJx_sBCjW9BNhbwTpngU&_nc_zt=14&_nc_ht=scontent-lax3-2.xx&_nc_gid=soAI9CzMU1dp-IJFMHwuOg&_nc_ss=7b289&oh=00_AQSSObjb_MhA1o8JItm66nwFcQc2y2jgPT8xeZM-bzYIVw&oe=6AF5DFD8)\\\\\n\\\\\nJetzt die Welt liefern lassen\\\\\n\\\\\nSchnell bestellen!\\\\\n\\\\\nLearn More](https://mcdelivery.de/?mtm_campaign=missionworld&mtm_source=facebook&mtm_placement=stories&mtm_medium=carouselad&mtm_cid=41378640)\n\n\n\nInactive\n\nLibrary ID: 1329720105270189\n\nJun 7, 2026 - Jul 6, 2026\n\nPlatforms\n\n\n\n\n\n\n\n\n\n\n\nThis ad has multiple versions\n\n\n\nEU transparency\n\n\n\nOpen Dropdown\n\n\n\nSee ad details\n\n* * *\n\n![McDonald's](https://scontent-lax3-2.xx.fbcdn.net/v/t39.35426-6/716430180_1543107800622034_8170282800421948982_n.jpg?stp=dst-jpg_s60x60_tt6&_nc_cat=107&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=2XbPByy86BYQ7kNvwEd1wGj&_nc_oc=AdpY0Z6FCNoTj_7PrZfYr-BWO3SaYHk7jqe3NnUmpWHUNK9bw2LjVh6J94we5TC_iZs&_nc_zt=14&_nc_ht=scontent-lax3-2.xx&_nc_gid=soAI9CzMU1dp-IJFMHwuOg&_nc_ss=7b289&oh=00_AQRZQQpqA4VODuyh1mGfqisqtRAYYafGTuttTMODWopAuQ&oe=6AF60A64)\n\n[McDonald's](https://www.facebook.com/McDonalds/)\n\n**Sponsored**\n\nGet your hands on this great deal\n\n[![](https://scontent-lax3-2.xx.fbcdn.net/v/t39.35426-6/713843465_976457971655560_6765172225601915581_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=100&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=DXQzJrPvq70Q7kNvwHhMW4X&_nc_oc=AdqJUdFTRzG1KohC-NTdJ0gs0Oqqm8SfSifFypbCAKfMHKsukm9XkYjZgakS__hsCYs&_nc_zt=14&_nc_ht=scontent-lax3-2.xx&_nc_gid=soAI9CzMU1dp-IJFMHwuOg&_nc_ss=7b289&oh=00_AQRsM_DAinlU27Uu1nm7QifnPI9Gsz0_Czsf3p1ExMXoVw&oe=6AF5E8DE)\\\\\n\\\\\nMCDONALDS.COM\\\\\n\\\\\nit’s as simple as McDonald's\\\\\n\\\\\nDownload\\\\\n\\\\\nOrder Now](https://www.mcdonalds.com/us/en-us/download-app.html)\n\n\n\nInactive\n\nLibrary ID: 883782218102982\n\nJul 1, 2026 - Aug 17, 2026\n\nPlatforms\n\n\n\n\n\nThis ad has multiple versions\n\n\n\n**5 ads** use this creative and text\n\nOpen Dropdown\n\n\n\nSee summary details\n\n* * *\n\n![McDonald's](https://scontent-lax3-2.xx.fbcdn.net/v/t39.35426-6/733975040_1560129042431892_2514506006827094103_n.jpg?stp=dst-jpg_s60x60_tt6&_nc_cat=106&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=DY_UIcyKxIgQ7kNvwFA55al&_nc_oc=AdqWNwzn3VunzBQN6w0jj-z54YuMw24hVSVyORPbs6CoDvJ4NIQzXT7gLLFoIyPMJbg&_nc_zt=14&_nc_ht=scontent-lax3-2.xx&_nc_gid=soAI9CzMU1dp-IJFMHwuOg&_nc_ss=7b289&oh=00_AQSfU3IAhVY-xb-JTkK47otis7Zr4-yLzePK2AnBia0akA&oe=6AF5E5AA)\n\n[McDonald's](https://www.facebook.com/McDonalds/)\n\n**Sponsored**\n\nName a place the all-new drinks aren't perfect for. i'll wait.\n\nSorry, we're having trouble playing this video.\n\n[Learn more](https://www.facebook.com/help/396404120401278/list)\n\n[WWW.MCDONALDS.COM\\\\\n\\\\\nOrder Now](https://www.mcdonalds.com/us/en-us/download-app.html)\n\n\n\nInactive\n\nLibrary ID: 1791850255281546\n\nJul 5, 2026 - Aug 17, 2026\n\nPlatforms\n\n\n\n\n\n\n\n\n\n\n\nThis ad has multiple versions\n\n\n\nEU transparency\n\n\n\nOpen Dropdown\n\n\n\nSee ad details\n\n* * *\n\n![McDonald's](https://scontent-lax3-2.xx.fbcdn.net/v/t39.35426-6/734685929_1461937602629142_709907025593037626_n.jpg?stp=dst-jpg_s60x60_tt6&_nc_cat=106&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=knV2ICjHOC0Q7kNvwF3hFet&_nc_oc=AdpsDgB6NqlMcaTUtGP26TlhjK8sZrzvficE6i48sln_wtX-Eb4chWeqfmBkL5OA3eQ&_nc_zt=14&_nc_ht=scontent-lax3-2.xx&_nc_gid=soAI9CzMU1dp-IJFMHwuOg&_nc_ss=7b289&oh=00_AQSX0ruHo7SY1cqQpvg5PW5LS49orQEY-_5wEENABNNRwQ&oe=6AF5E514)\n\n[McDonald's](https://www.facebook.com/McDonalds/)\n\n**Sponsored**\n\nall-new McCafé drinks are here.\n\n[![](https://scontent-lax3-2.xx.fbcdn.net/v/t39.35426-6/732871549_1035744165654986_7250987223038373617_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=103&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=VrR1doyBdnEQ7kNvwH7p11D&_nc_oc=AdqB-0lQePkvwY6gG9Sc7wb8w3qenpFGjBezQc7C32fJDC3EVup4T8ivJujVI9RCcPw&_nc_zt=14&_nc_ht=scontent-lax3-2.xx&_nc_gid=soAI9CzMU1dp-IJFMHwuOg&_nc_ss=7b289&oh=00_AQRNqpOkJyOyFutAVm3BCw-i1HB8ro1GaY0Ftk_KhsQH3A&oe=6AF5F914)\\\\\n\\\\\nWWW.MCDONALDS.COM\\\\\n\\\\\nit’s as simple as McDonald's\\\\\n\\\\\nDownload\\\\\n\\\\\nOrder Now](https://www.mcdonalds.com/us/en-us/download-app.html)\n\n\n\nInactive\n\nLibrary ID: 978700148071845\n\nMay 17, 2026 - Jun 15, 2026\n\nPlatforms\n\n\n\n\n\n\n\n\n\n\n\nThis ad has multiple versions\n\n\n\nEU transparency\n\n\n\nOpen Dropdown\n\n\n\nSee ad details\n\n* * *\n\n![McDonald's](https://scontent-lax3-2.xx.fbcdn.net/v/t39.35426-6/699046318_1286751600331273_8037499248459320571_n.jpg?stp=dst-jpg_s60x60_tt6&_nc_cat=100&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=OmDu-MhcjUkQ7kNvwGcZYCb&_nc_oc=Adop8uEZY0dqqeZ6oBHU5tQFJwB6Rw4FxQM-6MnfsxLBZc5h72DEd4YUq8pm18RYY90&_nc_zt=14&_nc_ht=scontent-lax3-2.xx&_nc_gid=soAI9CzMU1dp-IJFMHwuOg&_nc_ss=7b289&oh=00_AQQCr-KOHkZIxAzbiULHNzbMDPwMBHLv3gPLta1Cj5yMww&oe=6AF60227)\n\n[McDonald's](https://www.facebook.com/McDonalds/)\n\n**Sponsored**\n\nGet your hands on this great deal\n\n[![](https://scontent-lax3-1.xx.fbcdn.net/v/t39.35426-6/697103506_1626087435264285_119430892721588051_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=104&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=vdAPH3ysLLIQ7kNvwFgMt69&_nc_oc=AdqFiC_HU1dfqP4uD7fIlOTk6xCHeoAl0Gls3Wd-FHn5iQiaOePBJDBHmwVRWkJrm7M&_nc_zt=14&_nc_ht=scontent-lax3-1.xx&_nc_gid=soAI9CzMU1dp-IJFMHwuOg&_nc_ss=7b289&oh=00_AQSh-DYcgBZre2GGiZEb261KpXfIW_aYtCuHmttKdYH37w&oe=6AF5FA88)\\\\\n\\\\\nMCDONALDS.COM\\\\\n\\\\\nit’s as simple as McDonald's\\\\\n\\\\\nDownload\\\\\n\\\\\nOrder Now](https://www.mcdonalds.com/us/en-us/download-app.html)\n\n\n\nInactive\n\nLibrary ID: 1592979792432328\n\nJul 19, 2026 - Aug 17, 2026\n\nPlatforms\n\n\n\n\n\n\n\n\n\n\n\nThis ad has multiple versions\n\n\n\nEU transparency\n\n\n\nOpen Dropdown\n\n\n\nSee ad details\n\n* * *\n\n![McDonald's](https://scontent-lax3-1.xx.fbcdn.net/v/t39.35426-6/748597631_1066586549292519_7417699419703600739_n.jpg?stp=dst-jpg_s60x60_tt6&_nc_cat=102&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=R4NyFHz2e8IQ7kNvwFN8WuG&_nc_oc=Adrj72f9w6Th4g4IX43c_sIOpOYG8C4uXFwno41BYJQafnZB5k6jvYVtKGwivqOYLVY&_nc_zt=14&_nc_ht=scontent-lax3-1.xx&_nc_gid=soAI9CzMU1dp-IJFMHwuOg&_nc_ss=7b289&oh=00_AQR-lCyefBNVSx6IarLnEdRLjhMXO3APHn2k5v3dj1_9cg&oe=6AF5E7F9)\n\n[McDonald's](https://www.facebook.com/McDonalds/)\n\n**Sponsored**\n\nThe Braves got a double! Free McDouble!\n\n[![](https://scontent-lax3-1.xx.fbcdn.net/v/t39.35426-6/747941248_2413817286094361_3604509387705055538_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=104&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=SINJs266wB8Q7kNvwELOMct&_nc_oc=AdrTyfFZxStWkKNGg9Tc5hOJVa_dCnYCLSVSSwA974L9XHDUVWpXnyv1X72jwcdPwv8&_nc_zt=14&_nc_ht=scontent-lax3-1.xx&_nc_gid=soAI9CzMU1dp-IJFMHwuOg&_nc_ss=7b289&oh=00_AQThqH4n-biRnye2yA7RaewOFfh5PDSEeU5t0-hzB2GeCg&oe=6AF5E447)\\\\\n\\\\\nMCDONALDS.COM\\\\\n\\\\\nMcDonald's\\\\\n\\\\\nDownload\\\\\n\\\\\nOrder Now](https://www.mcdonalds.com/us/en-us/download-app.html)\n\n\n\nInactive\n\nLibrary ID: 28460934990261798\n\nAug 10, 2026 - Aug 31, 2026\n\nPlatforms\n\n\n\n\n\nThis ad has multiple versions\n\n\n\nEU transparency\n\n\n\nOpen Dropdown\n\n\n\nSee ad details\n\n* * *\n\n![McDonald's](https://scontent-lax7-1.xx.fbcdn.net/v/t39.35426-6/768962983_1829609151363552_6399702151212660831_n.jpg?stp=dst-jpg_s60x60_tt6&_nc_cat=105&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=Tv0Un_o85dYQ7kNvwGQXK8K&_nc_oc=Ado2mOvf-rxztw24zZPfY9Ccc8YmcRls_4_of0Hrc03v4-I6RIb6NvnyO6DzgcYa1lc&_nc_zt=14&_nc_ht=scontent-lax7-1.xx&_nc_gid=soAI9CzMU1dp-IJFMHwuOg&_nc_ss=7b289&oh=00_AQQ-sBpIQHC6IJsJ1RISqK0eBVivIlWCvGBb4wMx4uncDQ&oe=6AF60B9A)\n\n[McDonald's](https://www.facebook.com/McDonalds/)\n\n**Sponsored**\n\nGet a $6 McDouble Meal Deal or a $5 Hot ‘n Spicy or classic McChicken Meal Deal.\n\nSorry, we're having trouble playing this video.\n\n[Learn more](https://www.facebook.com/help/396404120401278/list)\n\n[WWW.MCDONALDS.COM\\\\\n\\\\\n$6 McDouble/$5 McChicken Meal Deal\\\\\n\\\\\nOrder Now](https://www.mcdonalds.com/us/en-us/download-app.html)\n\nSee more\n\nSystem status\n\n- [Ad Library API](https://www.facebook.com/ads/library/api/?source=archive-landing-page)\n- [About ads and data use](https://www.facebook.com/ads/about/?entry_product=ad_library)\n- [Privacy](https://www.facebook.com/privacy/center/?entry_point=privacy_basics_redirect)\n- [Terms](https://www.facebook.com/policies/)\n- [Cookies](https://www.facebook.com/policies/cookies/)\n\n[English (US)](https://www.facebook.com/language/)",
+            "error": null
+          }
+        ]
+      }
+    }
+  ]
+}

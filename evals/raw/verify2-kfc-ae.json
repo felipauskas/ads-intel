@@ -1,0 +1,402 @@
+{
+ "count": 20,
+ "complete": false,
+ "fetched": 20,
+ "country": "AE",
+ "ads": [
+  {
+   "id": "1623342965548455",
+   "page_name": "KFC",
+   "status": "ended",
+   "first_seen": "Mar 30, 2026",
+   "last_seen": "May 4, 2026",
+   "creative_text": "The Supergirl Ultimate Meal is here with three new Supergirl sauces. It's Chicken, Fries, Whatever. Now available at KFC.\nSystem status\n- [Ad Library API](https://www.facebook.com/ads/library/api/?source=archive-landing-page)\n- [About ads and data use](https://www.facebook.com/ads/about/?entry_product=ad_library)\n- [Privacy](https://www.facebook.com/privacy/center/?entry_point=privacy_basics_redirect)\n- [Terms](https://www.facebook.com/policies/)\n- [Cookies](https://www.facebook.com/policies/cookies/)",
+   "library_url": "https://www.facebook.com/ads/library/?id=1623342965548455",
+   "page_url": "https://www.facebook.com/KFC/",
+   "page_id": "",
+   "link_url": "https://www.kfc.com/menu?utm_source=meta&utm_medium=social&utm_campaign=supergirlultimatemeal&utm_creative=ultimatemealstatic#supergirl",
+   "link_title": "Supergirl Ultimate Meal",
+   "cta_text": "Order Now",
+   "images": [
+    "https://scontent-lax3-1.xx.fbcdn.net/v/t39.35426-6/711680071_4325336314385077_1938483967802546104_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=109&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=cC1R8IzlWjMQ7kNvwFSMSml&_nc_oc=AdoXRoE7mAbMb3535xuTKYVtKRcPfdip9NMdKkjJFUexNZFkSgSP-sBpLVo7R_v4Ttc&_nc_zt=14&_nc_ht=scontent-lax3-1.xx&_nc_gid=xNcdr4MHZaxYxRrJu2_c8Q&_nc_ss=7b289&oh=00_AQTfcdMW02tHc4LhP1_ov7zWG3bj3ePfw9h9P94y0vEg7A&oe=6AF5F055"
+   ],
+   "has_video": false,
+   "same_creative_count": 0,
+   "multiple_versions": true
+  },
+  {
+   "id": "1893393507996643",
+   "page_name": "KFC",
+   "status": "ended",
+   "first_seen": "Jul 13, 2026",
+   "last_seen": "Aug 13, 2026",
+   "creative_text": "Get two crispy KFC Snackers, 5 juicy nuggets, fries, and a drink for just $9.",
+   "library_url": "https://www.facebook.com/ads/library/?id=1893393507996643",
+   "page_url": "https://www.facebook.com/KFC/",
+   "page_id": "",
+   "link_url": "https://www.kfc.com/menu?utm_source=meta&utm_medium=social&utm_campaign=kfcvaluefeast&utm_creative=9box#the-latest",
+   "link_title": "The new KFC Value Feast",
+   "cta_text": "Order Now",
+   "images": [
+    "https://scontent-lax3-2.xx.fbcdn.net/v/t39.35426-6/656211103_1051735488020550_3559865182863376252_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=106&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=o7jRBwoKmZQQ7kNvwE4Xmrq&_nc_oc=Adpke0L4VWjbO89oQtZjlUBp3McOzcU097X9h84HApfJaBvXPSnYqkqlsdWLwbSNEEU&_nc_zt=14&_nc_ht=scontent-lax3-2.xx&_nc_gid=xNcdr4MHZaxYxRrJu2_c8Q&_nc_ss=7b289&oh=00_AQSJiZVP3up42y16LyAF4FO1Ntkhptinjzi2nATZUIj6_w&oe=6AF5FF34"
+   ],
+   "has_video": false,
+   "same_creative_count": 0,
+   "multiple_versions": true
+  },
+  {
+   "id": "1566459058474318",
+   "page_name": "KFC",
+   "status": "ended",
+   "first_seen": "Jun 8, 2026",
+   "last_seen": "Jul 13, 2026",
+   "creative_text": "Get the $4.99 Country Fried Steak while you can. Wednesdays only at KFC.",
+   "library_url": "https://www.facebook.com/ads/library/?id=1566459058474318",
+   "page_url": "https://www.facebook.com/KFC/",
+   "page_id": "",
+   "link_url": "https://www.kfc.com/newsroom/wednesday-exclusive-country-fried-steak?utm_source=meta&utm_medium=social&utm_campaign=countryfriedsteak&utm_creative=countryfriedsteakstatic",
+   "link_title": "KFC's Country Fried Steak",
+   "cta_text": "Order Now",
+   "images": [
+    "https://scontent-lax3-2.xx.fbcdn.net/v/t39.35426-6/736384618_4818419455069072_7710688552984259986_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=100&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=7RIXojr9FCQQ7kNvwGprdC7&_nc_oc=Adp-2nbykza5M469YwWlMN6-vJI3aKBAC7qUpwHlLblZGsiHlBDaAz94meHwxgbDWRE&_nc_zt=14&_nc_ht=scontent-lax3-2.xx&_nc_gid=xNcdr4MHZaxYxRrJu2_c8Q&_nc_ss=7b289&oh=00_AQQmNgoOLwQzuS6s3T_n5WkeyqGjpC7gIFERvo8V5L9FBQ&oe=6AF5F862"
+   ],
+   "has_video": false,
+   "same_creative_count": 2,
+   "multiple_versions": true
+  },
+  {
+   "id": "947327155032742",
+   "page_name": "KFC",
+   "status": "ended",
+   "first_seen": "Jul 13, 2026",
+   "last_seen": "Aug 14, 2026",
+   "creative_text": "Get a $10 Bucket of the Day EVERY WEEK DAY at KFC.",
+   "library_url": "https://www.facebook.com/ads/library/?id=947327155032742",
+   "page_url": "https://www.facebook.com/KFC/",
+   "page_id": "",
+   "link_url": "https://www.kfc.com/menu?utm_source=meta&utm_medium=social&utm_campaign=%2410bucketoftheday&utm_creative=monday#deals",
+   "link_title": "Get a $10 Bucket today",
+   "cta_text": "Order Now",
+   "images": [
+    "https://scontent-lax3-2.xx.fbcdn.net/v/t39.35426-6/713224862_1946410799400924_8034738997219425670_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=111&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=SPLJDoO0T_0Q7kNvwEQptaN&_nc_oc=AdqDf1NIBOhsYCqKOR0XHLAUhKieXXUF76sjRpjT5pcrsUdD4i9qv6acJla0KHXcC9g&_nc_zt=14&_nc_ht=scontent-lax3-2.xx&_nc_gid=xNcdr4MHZaxYxRrJu2_c8Q&_nc_ss=7b289&oh=00_AQQs5_Pm5cUJrel0qnx67OrhT48BCISPirpkgbsGbLeMyw&oe=6AF600DC"
+   ],
+   "has_video": false,
+   "same_creative_count": 0,
+   "multiple_versions": true
+  },
+  {
+   "id": "1016091844085545",
+   "page_name": "KFC",
+   "status": "ended",
+   "first_seen": "May 25, 2026",
+   "last_seen": "Jun 8, 2026",
+   "creative_text": "Get a $10 Bucket of the Day EVERY WEEK DAY at KFC.",
+   "library_url": "https://www.facebook.com/ads/library/?id=1016091844085545",
+   "page_url": "https://www.facebook.com/KFC/",
+   "page_id": "",
+   "link_url": "https://www.kfc.com/menu?utm_source=meta&utm_medium=social&utm_campaign=%2410bucketoftheday&utm_creative=monday#deals",
+   "link_title": "Get a $10 Bucket today",
+   "cta_text": "Order Now",
+   "images": [
+    "https://scontent-lax3-2.xx.fbcdn.net/v/t39.35426-6/736314101_2212646862913156_3232102813177186278_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=106&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=ueKfZj_EEwMQ7kNvwE9upuo&_nc_oc=AdqoLKQ8jOrH_RKsOVZu7uP_yAMBi1X2BHRaLOGw0JzF0z9Z-ARRW9zpOX-JAz6FXWg&_nc_zt=14&_nc_ht=scontent-lax3-2.xx&_nc_gid=xNcdr4MHZaxYxRrJu2_c8Q&_nc_ss=7b289&oh=00_AQRfbURjWAqJLNE5Wz-esS5V0En1kXI5gwO1G5KRldfbNQ&oe=6AF5F387"
+   ],
+   "has_video": false,
+   "same_creative_count": 0,
+   "multiple_versions": true
+  },
+  {
+   "id": "2015225385698360",
+   "page_name": "KFC",
+   "status": "ended",
+   "first_seen": "Apr 20, 2026",
+   "last_seen": "May 2, 2026",
+   "creative_text": "Five Original Recipe® Tenders for just $5—big crunch, bold flavor, gone soon.",
+   "library_url": "https://www.facebook.com/ads/library/?id=2015225385698360",
+   "page_url": "https://www.facebook.com/KFC/",
+   "page_id": "",
+   "link_url": "https://www.kfc.com/menu?utm_source=meta&utm_medium=social&utm_campaign=thebig%245dunk&utm_creative=thebig%245dunkv2#deals",
+   "link_title": "Dunk it. Love it. Repeat.",
+   "cta_text": "Order Now",
+   "images": [
+    "https://scontent-lax3-2.xx.fbcdn.net/v/t39.35426-6/699056567_1949033472482469_3109545540025163705_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=100&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=peXAQhWGH0gQ7kNvwFAuyLD&_nc_oc=AdoTF1ICEsmS9J9-AkR6c6r4xsxTzhkztA2bxM4zYifzusf3pyUy8H-fSM6RhegUcAQ&_nc_zt=14&_nc_ht=scontent-lax3-2.xx&_nc_gid=xNcdr4MHZaxYxRrJu2_c8Q&_nc_ss=7b289&oh=00_AQRYZrEbs_QSe7GT-BwO5acjiZIjDNocXnW_bYjXmNid4w&oe=6AF5FB11"
+   ],
+   "has_video": false,
+   "same_creative_count": 0,
+   "multiple_versions": true
+  },
+  {
+   "id": "1353320809549028",
+   "page_name": "KFC",
+   "status": "ended",
+   "first_seen": "Jul 17, 2026",
+   "last_seen": "Aug 2, 2026",
+   "creative_text": "The ultimate bang for your bucket—perfect for family dinners or hangouts.",
+   "library_url": "https://www.facebook.com/ads/library/?id=1353320809549028",
+   "page_url": "https://www.facebook.com/KFC/",
+   "page_id": "",
+   "link_url": "https://www.kfc.com/menu?utm_source=meta&utm_medium=social&utm_campaign=dwow&utm_creative=%2420chicknnugmealv1#deals",
+   "link_title": "Gather. Share. Feast.",
+   "cta_text": "Order Now",
+   "images": [
+    "https://scontent-lax3-1.xx.fbcdn.net/v/t39.35426-6/670783779_1488636142753980_2681998619138337050_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=110&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=9JINheIVFV8Q7kNvwFlB-br&_nc_oc=Adq6QH-HwmVkj_49rLi4tc0QJef-7JWHiMWkW3cuXZBEgJllwV4W4cLPppECakDefWA&_nc_zt=14&_nc_ht=scontent-lax3-1.xx&_nc_gid=xNcdr4MHZaxYxRrJu2_c8Q&_nc_ss=7b289&oh=00_AQSkXX2hBG5VYCO68YgmveOe-l39wXKPBQySNCDvurwg_w&oe=6AF6119A"
+   ],
+   "has_video": false,
+   "same_creative_count": 0,
+   "multiple_versions": true
+  },
+  {
+   "id": "1554725346163428",
+   "page_name": "Zomato",
+   "status": "ended",
+   "first_seen": "Jun 29, 2026",
+   "last_seen": "Jul 9, 2026",
+   "creative_text": "Bucket deals KFC, 60% off + free delivery",
+   "library_url": "https://www.facebook.com/ads/library/?id=1554725346163428",
+   "page_url": "https://www.facebook.com/zomato/",
+   "page_id": "",
+   "link_url": "http://play.google.com/store/apps/details?id=com.application.zomato",
+   "link_title": "Load up on KFC crispy goodness at 60% off with free delivery.",
+   "cta_text": "Order Now",
+   "images": [
+    "https://scontent-lax3-1.xx.fbcdn.net/v/t39.35426-6/748088874_1041055528271283_4547833103901873178_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=110&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=zXBiyi8BXxkQ7kNvwEu22Qn&_nc_oc=AdoM4aXcHJx5s_sqtkKs9H3LeepCIKkiZcvatDOJCrQ3rhnMN3v_-T3UWSl3mBqDoTk&_nc_zt=14&_nc_ht=scontent-lax3-1.xx&_nc_gid=xNcdr4MHZaxYxRrJu2_c8Q&_nc_ss=7b289&oh=00_AQRb8enlkgpcalav0-o1dnf_9PW0zq0_4ehlpnwlWzb_Zg&oe=6AF5F4CD"
+   ],
+   "has_video": false,
+   "same_creative_count": 0,
+   "multiple_versions": false
+  },
+  {
+   "id": "1761907665136122",
+   "page_name": "KFC",
+   "status": "ended",
+   "first_seen": "Jun 29, 2026",
+   "last_seen": "Jul 13, 2026",
+   "creative_text": "The most dangerous day of the year for your fingers, is now the most delicious.",
+   "library_url": "https://www.facebook.com/ads/library/?id=1761907665136122",
+   "page_url": "https://www.facebook.com/KFC/",
+   "page_id": "",
+   "link_url": "https://www.kfc.com/menu?utm_source=meta&utm_medium=social&utm_campaign=fingerlickinfourth&utm_creative=field#deals",
+   "link_title": "Finger Lickin' Fourth",
+   "cta_text": "Order now",
+   "images": [
+    "https://scontent-lax3-1.xx.fbcdn.net/v/t39.35426-6/731380673_3167173556826915_6169000656005812326_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=102&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=ARMcJ1-Kk4EQ7kNvwHrPfBp&_nc_oc=Ado2Kpg1yNL4rXMKBbFy7NR6057kHJYnQvGFFX7ufEoIW9cE_WOHirICGcqgAK-I5TA&_nc_zt=14&_nc_ht=scontent-lax3-1.xx&_nc_gid=xNcdr4MHZaxYxRrJu2_c8Q&_nc_ss=7b289&oh=00_AQSD-9C3eeCpUY7Es5aDp1oEBFtdbkWUWLRXqTdA87Jr1g&oe=6AF5E6B8"
+   ],
+   "has_video": false,
+   "same_creative_count": 0,
+   "multiple_versions": true
+  },
+  {
+   "id": "3946689335638264",
+   "page_name": "KFC",
+   "status": "ended",
+   "first_seen": "Jul 20, 2026",
+   "last_seen": "Aug 13, 2026",
+   "creative_text": "Get the $4.99 Country Fried Steak while you can. Wednesdays only at KFC.",
+   "library_url": "https://www.facebook.com/ads/library/?id=3946689335638264",
+   "page_url": "https://www.facebook.com/KFC/",
+   "page_id": "",
+   "link_url": "https://www.kfc.com/newsroom/wednesday-exclusive-country-fried-steak?utm_source=meta&utm_medium=social&utm_campaign=countryfriedsteak&utm_creative=countryfriedsteakstatic",
+   "link_title": "KFC's Country Fried Steak",
+   "cta_text": "Order Now",
+   "images": [
+    "https://scontent-lax3-1.xx.fbcdn.net/v/t39.35426-6/729517862_858187010697637_7556717038481546898_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=104&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=F5qmSr8R_QYQ7kNvwEiQ1RG&_nc_oc=AdrguDyNgUZ0R2VetKUFVRASfNDzUolA4Kfg3HCs2GlbAtU2HQ_dTCvFLSX_4L318PM&_nc_zt=14&_nc_ht=scontent-lax3-1.xx&_nc_gid=xNcdr4MHZaxYxRrJu2_c8Q&_nc_ss=7b289&oh=00_AQRAUAbpdVFs0RdZ8EgygMeCUtaGnH4q2cgd3-spGpm6iA&oe=6AF5F4B4"
+   ],
+   "has_video": false,
+   "same_creative_count": 0,
+   "multiple_versions": true
+  },
+  {
+   "id": "1556551805746757",
+   "page_name": "KFC",
+   "status": "ended",
+   "first_seen": "May 4, 2026",
+   "last_seen": "May 25, 2026",
+   "creative_text": "They say ask 100,000 times and you shall receive. Popcorn Chicken is back at KFC!",
+   "library_url": "https://www.facebook.com/ads/library/?id=1556551805746757",
+   "page_url": "https://www.facebook.com/KFC/",
+   "page_id": "",
+   "link_url": "https://www.kfc.com/menu?utm_source=meta&utm_medium=social&utm_campaign=popcornchicken&utm_creative=back#the-latest",
+   "link_title": "Popcorn Chicken is back",
+   "cta_text": "Order Now",
+   "images": [
+    "https://scontent-lax3-1.xx.fbcdn.net/v/t39.35426-6/741324634_905974902527872_61140011321372063_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=104&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=sbTs4BcwywgQ7kNvwEbkBrr&_nc_oc=Adq-abHKBM3yfSDAbqGWC8mNZex7qb71prFdYVTRlShE70-MvZSBxm0GQ1LcejLqcOU&_nc_zt=14&_nc_ht=scontent-lax3-1.xx&_nc_gid=xNcdr4MHZaxYxRrJu2_c8Q&_nc_ss=7b289&oh=00_AQQ2MpGtTi1qNkBgAG0s3JqXdaCbb8p2vy86tsToHG4x7A&oe=6AF5EB7C"
+   ],
+   "has_video": false,
+   "same_creative_count": 0,
+   "multiple_versions": true
+  },
+  {
+   "id": "899558779793919",
+   "page_name": "KFC",
+   "status": "ended",
+   "first_seen": "May 4, 2026",
+   "last_seen": "Jun 1, 2026",
+   "creative_text": "Get dipping with new Honey Chili Crisp and Jalapeño Ranch sauces.",
+   "library_url": "https://www.facebook.com/ads/library/?id=899558779793919",
+   "page_url": "https://www.facebook.com/KFC/",
+   "page_id": "",
+   "link_url": "https://www.kfc.com/menu?utm_source=meta&utm_medium=social&utm_campaign=saucyseason&utm_creative=messy#the-latest",
+   "link_title": "It's Saucy Season at KFC",
+   "cta_text": "Order Now",
+   "images": [],
+   "has_video": true,
+   "same_creative_count": 0,
+   "multiple_versions": true
+  },
+  {
+   "id": "1393914789552157",
+   "page_name": "KFC",
+   "status": "ended",
+   "first_seen": "Aug 13, 2026",
+   "last_seen": "Aug 24, 2026",
+   "creative_text": "Get a $10 Bucket of the Day EVERY WEEK DAY at KFC.",
+   "library_url": "https://www.facebook.com/ads/library/?id=1393914789552157",
+   "page_url": "https://www.facebook.com/KFC/",
+   "page_id": "",
+   "link_url": "https://www.kfc.com/menu?utm_source=meta&utm_medium=social&utm_campaign=%2410bucketoftheday&utm_creative=crunchin#deals",
+   "link_title": "Get a $10 Bucket today",
+   "cta_text": "Order Now",
+   "images": [],
+   "has_video": true,
+   "same_creative_count": 0,
+   "multiple_versions": true
+  },
+  {
+   "id": "1102257768817243",
+   "page_name": "KFC",
+   "status": "ended",
+   "first_seen": "Aug 14, 2026",
+   "last_seen": "Aug 31, 2026",
+   "creative_text": "Get the $4.99 Country Fried Steak while you can. Wednesdays only at KFC.",
+   "library_url": "https://www.facebook.com/ads/library/?id=1102257768817243",
+   "page_url": "https://www.facebook.com/KFC/",
+   "page_id": "",
+   "link_url": "https://www.kfc.com/newsroom/wednesday-exclusive-country-fried-steak?utm_source=meta&utm_medium=social&utm_campaign=countryfriedsteak&utm_creative=countryfriedsteakstatic",
+   "link_title": "KFC's Country Fried Steak",
+   "cta_text": "Order Now",
+   "images": [
+    "https://scontent-lax3-2.xx.fbcdn.net/v/t39.35426-6/736384618_4818419455069072_7710688552984259986_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=100&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=7RIXojr9FCQQ7kNvwGprdC7&_nc_oc=Adp-2nbykza5M469YwWlMN6-vJI3aKBAC7qUpwHlLblZGsiHlBDaAz94meHwxgbDWRE&_nc_zt=14&_nc_ht=scontent-lax3-2.xx&_nc_gid=xNcdr4MHZaxYxRrJu2_c8Q&_nc_ss=7b289&oh=00_AQQmNgoOLwQzuS6s3T_n5WkeyqGjpC7gIFERvo8V5L9FBQ&oe=6AF5F862"
+   ],
+   "has_video": false,
+   "same_creative_count": 0,
+   "multiple_versions": true
+  },
+  {
+   "id": "2149459069323636",
+   "page_name": "KFC",
+   "status": "ended",
+   "first_seen": "Aug 14, 2026",
+   "last_seen": "Aug 31, 2026",
+   "creative_text": "your first @ owes you a Big Box. the good news? one of ‘em comes free. order now for only a limited time.",
+   "library_url": "https://www.facebook.com/ads/library/?id=2149459069323636",
+   "page_url": "https://www.facebook.com/KFC/",
+   "page_id": "",
+   "link_url": "https://www.kfc.com/menu?utm_source=meta&utm_medium=social&utm_campaign=bogobigbox&utm_creative=bogobigboxv1#deals",
+   "link_title": "Mix & Match BOGO Big Box",
+   "cta_text": "Order Now",
+   "images": [
+    "https://scontent-lax3-1.xx.fbcdn.net/v/t39.35426-6/769691946_3384569188380923_1001890239455119928_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=108&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=tjP3IL-R2KsQ7kNvwF1ZlUJ&_nc_oc=AdqFS5ZrpTzBS6lWtO2RiUdz1rH0a7Ty7FYE3KJnAf4tjQtJJdMRi2RblQSDRTyg-Rw&_nc_zt=14&_nc_ht=scontent-lax3-1.xx&_nc_gid=xNcdr4MHZaxYxRrJu2_c8Q&_nc_ss=7b289&oh=00_AQQ_3yw1ONXsC5b9XT-DMyh0aShj-6nQXR20kTYSpqD_-w&oe=6AF5FEAE"
+   ],
+   "has_video": false,
+   "same_creative_count": 0,
+   "multiple_versions": true
+  },
+  {
+   "id": "867483243039073",
+   "page_name": "KFC",
+   "status": "ended",
+   "first_seen": "May 4, 2026",
+   "last_seen": "Jun 1, 2026",
+   "creative_text": "tastes so nice you can get it twice. 🙂↕️ mix and match any BOGO Big Box for a limited time. order now for a good time.",
+   "library_url": "https://www.facebook.com/ads/library/?id=867483243039073",
+   "page_url": "https://www.facebook.com/KFC/",
+   "page_id": "",
+   "link_url": "https://www.kfc.com/menu?utm_source=meta&utm_medium=social&utm_campaign=bogobigbox&utm_creative=bogobigboxv2#deals",
+   "link_title": "Mix & Match BOGO Big Box",
+   "cta_text": "Order Now",
+   "images": [
+    "https://scontent-lax3-2.xx.fbcdn.net/v/t39.35426-6/771821224_1081207144414250_6250512097749015067_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=103&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=VPaYpTKCPYsQ7kNvwE6VEWY&_nc_oc=Adrel71UEDJqzjcAuwUF247o2MlKs3ov7Qs2Ye4yVSZH-m1XXUIO3ZTsbjWa3cyJJNs&_nc_zt=14&_nc_ht=scontent-lax3-2.xx&_nc_gid=xNcdr4MHZaxYxRrJu2_c8Q&_nc_ss=7b289&oh=00_AQRzCq57vj5k7EMW4XHwLww6bEO25xxn9Smknl6p0gCnsQ&oe=6AF606DE"
+   ],
+   "has_video": false,
+   "same_creative_count": 0,
+   "multiple_versions": true
+  },
+  {
+   "id": "1006625611745579",
+   "page_name": "KFC",
+   "status": "ended",
+   "first_seen": "Jun 29, 2026",
+   "last_seen": "Jul 9, 2026",
+   "creative_text": "Get a $10 Bucket of the Day EVERY WEEK DAY at KFC.",
+   "library_url": "https://www.facebook.com/ads/library/?id=1006625611745579",
+   "page_url": "https://www.facebook.com/KFC/",
+   "page_id": "",
+   "link_url": "https://www.kfc.com/menu?utm_source=meta&utm_medium=social&utm_campaign=%2410bucketoftheday&utm_creative=monday#deals",
+   "link_title": "Get a $10 Bucket today",
+   "cta_text": "Order Now",
+   "images": [
+    "https://scontent-lax3-1.xx.fbcdn.net/v/t39.35426-6/683756089_1298365565264948_734382372084783372_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=108&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=3Hr_dPKgu-EQ7kNvwElNe_f&_nc_oc=AdoE5Z0TJYnaDl1hnqYFAJMmByX03ZGKoQcDzu60i_HevXwF1K0fnw3WpEG0CC-NAHM&_nc_zt=14&_nc_ht=scontent-lax3-1.xx&_nc_gid=xNcdr4MHZaxYxRrJu2_c8Q&_nc_ss=7b289&oh=00_AQT7jLFVKChx8f4p3Ll0B5xmEoG-fZ-U6PDPfTAROE0Ghg&oe=6AF5F2EE"
+   ],
+   "has_video": false,
+   "same_creative_count": 0,
+   "multiple_versions": false
+  },
+  {
+   "id": "1263825981607615",
+   "page_name": "KFC",
+   "status": "ended",
+   "first_seen": "Dec 3, 2024",
+   "last_seen": "Aug 20, 2026",
+   "creative_text": "The most dangerous day of the year for your fingers, is now the most delicious.",
+   "library_url": "https://www.facebook.com/ads/library/?id=1263825981607615",
+   "page_url": "https://www.facebook.com/KFC/",
+   "page_id": "",
+   "link_url": "https://www.kfc.com/menu?utm_source=meta&utm_medium=social&utm_campaign=fingerlickinfourth&utm_creative=flag#deals",
+   "link_title": "Finger Lickin' Fourth",
+   "cta_text": "Order now",
+   "images": [
+    "https://scontent-lax3-2.xx.fbcdn.net/v/t39.35426-6/733443431_1683773036266459_2855747530424863828_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=111&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=CMyQYfoqo8UQ7kNvwEu1eR2&_nc_oc=AdodpUGf66L0-B_Odlg0YiUzrKyl9rlQwT3y8BpecCyg3sThIZWh1SVl7EhckzmPLew&_nc_zt=14&_nc_ht=scontent-lax3-2.xx&_nc_gid=xNcdr4MHZaxYxRrJu2_c8Q&_nc_ss=7b289&oh=00_AQSdXRkjVA5m2iLdm23W7rbbhzFBQOljzi3_6_v0RhuAqA&oe=6AF5E6A8"
+   ],
+   "has_video": false,
+   "same_creative_count": 0,
+   "multiple_versions": true
+  },
+  {
+   "id": "1459548629048637",
+   "page_name": "KFC",
+   "status": "ended",
+   "first_seen": "Apr 20, 2026",
+   "last_seen": "May 3, 2026",
+   "creative_text": "Zamów i ciesz się smakiem KFC w dostawie lub z odbiorem w restauracji. 🍗",
+   "library_url": "https://www.facebook.com/ads/library/?id=1459548629048637",
+   "page_url": "https://www.facebook.com/kfcpolska/",
+   "page_id": "",
+   "link_url": "https://kfc.pl/menu/Qurrito-Grande-10001241#dostawa",
+   "link_title": "Qurrito Grande Sprawdź najnowsze menu i promocje. Znajdź najbliższą restaurację lub zamów ulubione dania KFC on-line z dostawą pod wskazany adres!",
+   "cta_text": "Order Now",
+   "images": [
+    "https://scontent-lax3-1.xx.fbcdn.net/v/t39.35426-6/469048189_442628618684631_4030362472965308984_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=102&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=OtpgkcvtiagQ7kNvwEuXAy-&_nc_oc=AdqfBBJkfFRX858wdJ9HqiwHX7n9j608CKGCSGdizYBfWiDP56Qh9mgc6aOtmcXeNuU&_nc_zt=14&_nc_ht=scontent-lax3-1.xx&_nc_gid=xNcdr4MHZaxYxRrJu2_c8Q&_nc_ss=7b289&oh=00_AQTANf-MoCqyAsXvwYkGO7XuJRxdAKLGK5p_fZBYYwuQEw&oe=6AF603C1"
+   ],
+   "has_video": false,
+   "same_creative_count": 0,
+   "multiple_versions": true
+  },
+  {
+   "id": "1508589967729718",
+   "page_name": "KFC",
+   "status": "ended",
+   "first_seen": "May 4, 2026",
+   "last_seen": "Jun 1, 2026",
+   "creative_text": "The ultimate bang for your bucket—perfect for family dinners or hangouts.",
+   "library_url": "https://www.facebook.com/ads/library/?id=1508589967729718",
+   "page_url": "https://www.facebook.com/KFC/",
+   "page_id": "",
+   "link_url": "https://www.kfc.com/menu?utm_source=meta&utm_medium=social&utm_campaign=dwow&utm_creative=%2420chicknnugmeal_video_v1#deals",
+   "link_title": "KFC's Chick N’ Nug Meal",
+   "cta_text": "Order Now",
+   "images": [],
+   "has_video": true,
+   "same_creative_count": 0,
+   "multiple_versions": true
+  }
+ ]
+}

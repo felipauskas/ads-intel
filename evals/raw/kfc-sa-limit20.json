@@ -1,0 +1,453 @@
+{
+  "case_id": "kfc-sa-limit20",
+  "query": "KFC",
+  "country": "SA",
+  "advertiser": null,
+  "limit": 20,
+  "started_at": "2026-11-08T11:42:35+0400",
+  "meta": {
+    "complete": false,
+    "fetched": 20,
+    "total_returned": 28,
+    "fetched_chars": 40406,
+    "char_limit": 120000
+  },
+  "count": 20,
+  "page_names": [
+    "KFC",
+    "KFC Masr",
+    "Zomato"
+  ],
+  "ads": [
+    {
+      "id": "1623342965548455",
+      "page_name": "KFC",
+      "status": "ended",
+      "first_seen": "Mar 30, 2026",
+      "last_seen": "May 4, 2026",
+      "creative_text": "The Supergirl Ultimate Meal is here with three new Supergirl sauces. It's Chicken, Fries, Whatever. Now available at KFC.\nSystem status\n- [Ad Library API](https://www.facebook.com/ads/library/api/?source=archive-landing-page)\n- [About ads and data use](https://www.facebook.com/ads/about/?entry_product=ad_library)\n- [Privacy](https://www.facebook.com/privacy/center/?entry_point=privacy_basics_redirect)\n- [Terms](https://www.facebook.com/policies/)\n- [Cookies](https://www.facebook.com/policies/cookies/)",
+      "library_url": "https://www.facebook.com/ads/library/?id=1623342965548455",
+      "page_url": "https://www.facebook.com/KFC/",
+      "page_id": "",
+      "link_url": "https://www.kfc.com/menu?utm_source=meta&utm_medium=social&utm_campaign=supergirlultimatemeal&utm_creative=ultimatemealstatic#supergirl",
+      "link_title": "Supergirl Ultimate Meal",
+      "cta_text": "Order Now",
+      "images": [
+        "https://scontent-lax3-1.xx.fbcdn.net/v/t39.35426-6/711680071_4325336314385077_1938483967802546104_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=109&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=cC1R8IzlWjMQ7kNvwH2vGk4&_nc_oc=AdqjGC4GfAWS7vB7UMKSHtNU3yfciskEbbYkEVVJPHqmYmJAPe7Gh0l8o1CWG-XpB70&_nc_zt=14&_nc_ht=scontent-lax3-1.xx&_nc_gid=swNK8bOifSBrFIl_k2gxOQ&_nc_ss=7b289&oh=00_AQQdoncjZEZifRbkPgDYs7ASTtiITKKv96puSRETLcDKSw&oe=6AF5F055"
+      ],
+      "has_video": false,
+      "same_creative_count": 0,
+      "multiple_versions": true
+    },
+    {
+      "id": "1893393507996643",
+      "page_name": "KFC",
+      "status": "ended",
+      "first_seen": "Jul 13, 2026",
+      "last_seen": "Aug 13, 2026",
+      "creative_text": "Get two crispy KFC Snackers, 5 juicy nuggets, fries, and a drink for just $9.",
+      "library_url": "https://www.facebook.com/ads/library/?id=1893393507996643",
+      "page_url": "https://www.facebook.com/KFC/",
+      "page_id": "",
+      "link_url": "https://www.kfc.com/menu?utm_source=meta&utm_medium=social&utm_campaign=kfcvaluefeast&utm_creative=9box#the-latest",
+      "link_title": "The new KFC Value Feast",
+      "cta_text": "Order Now",
+      "images": [
+        "https://scontent-lax3-2.xx.fbcdn.net/v/t39.35426-6/656211103_1051735488020550_3559865182863376252_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=106&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=o7jRBwoKmZQQ7kNvwGOqmAo&_nc_oc=AdoRLZMbk9S2PURT49GS0LtqTLWLGkFRY7fzHeXL_769sSYuNhz-k27J3fyOZqIHYRA&_nc_zt=14&_nc_ht=scontent-lax3-2.xx&_nc_gid=swNK8bOifSBrFIl_k2gxOQ&_nc_ss=7b289&oh=00_AQTOZs3M0Bv-MJVgVOMaOTxGJca40raTB4DhdWNo7RiCjQ&oe=6AF5FF34"
+      ],
+      "has_video": false,
+      "same_creative_count": 0,
+      "multiple_versions": true
+    },
+    {
+      "id": "1566459058474318",
+      "page_name": "KFC",
+      "status": "ended",
+      "first_seen": "Jun 8, 2026",
+      "last_seen": "Jul 13, 2026",
+      "creative_text": "Get the $4.99 Country Fried Steak while you can. Wednesdays only at KFC.",
+      "library_url": "https://www.facebook.com/ads/library/?id=1566459058474318",
+      "page_url": "https://www.facebook.com/KFC/",
+      "page_id": "",
+      "link_url": "https://www.kfc.com/newsroom/wednesday-exclusive-country-fried-steak?utm_source=meta&utm_medium=social&utm_campaign=countryfriedsteak&utm_creative=countryfriedsteakstatic",
+      "link_title": "KFC's Country Fried Steak",
+      "cta_text": "Order Now",
+      "images": [
+        "https://scontent-lax3-2.xx.fbcdn.net/v/t39.35426-6/736384618_4818419455069072_7710688552984259986_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=100&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=7RIXojr9FCQQ7kNvwHVbrfE&_nc_oc=Adr3PvUj3ozrFlWjnRoiSbPKlGsBEbuWqwJbtAcPC0LIb3TqisvVAZoGWd5nH9ZH24s&_nc_zt=14&_nc_ht=scontent-lax3-2.xx&_nc_gid=swNK8bOifSBrFIl_k2gxOQ&_nc_ss=7b289&oh=00_AQRubDheGkXissSxHbIEEt3NtKr0Sk60_xx2EtxIpx00hA&oe=6AF5F862"
+      ],
+      "has_video": false,
+      "same_creative_count": 2,
+      "multiple_versions": true
+    },
+    {
+      "id": "947327155032742",
+      "page_name": "KFC",
+      "status": "ended",
+      "first_seen": "Jul 13, 2026",
+      "last_seen": "Aug 14, 2026",
+      "creative_text": "Get a $10 Bucket of the Day EVERY WEEK DAY at KFC.",
+      "library_url": "https://www.facebook.com/ads/library/?id=947327155032742",
+      "page_url": "https://www.facebook.com/KFC/",
+      "page_id": "",
+      "link_url": "https://www.kfc.com/menu?utm_source=meta&utm_medium=social&utm_campaign=%2410bucketoftheday&utm_creative=monday#deals",
+      "link_title": "Get a $10 Bucket today",
+      "cta_text": "Order Now",
+      "images": [
+        "https://scontent-lax3-2.xx.fbcdn.net/v/t39.35426-6/713224862_1946410799400924_8034738997219425670_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=111&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=SPLJDoO0T_0Q7kNvwEP2uPB&_nc_oc=AdqKKN8ldI2UWfu6c6u3nBIUZiVYcZ8tL7L1lILVHiUvJ28-Mb6vKHqEvXY1aFYw9uM&_nc_zt=14&_nc_ht=scontent-lax3-2.xx&_nc_gid=swNK8bOifSBrFIl_k2gxOQ&_nc_ss=7b289&oh=00_AQR9pmuuHWfvl2BqI119nQavnUibsZ34Rb_-faVFBWf9Nw&oe=6AF600DC"
+      ],
+      "has_video": false,
+      "same_creative_count": 0,
+      "multiple_versions": true
+    },
+    {
+      "id": "1016091844085545",
+      "page_name": "KFC",
+      "status": "ended",
+      "first_seen": "May 25, 2026",
+      "last_seen": "Jun 8, 2026",
+      "creative_text": "Get a $10 Bucket of the Day EVERY WEEK DAY at KFC.",
+      "library_url": "https://www.facebook.com/ads/library/?id=1016091844085545",
+      "page_url": "https://www.facebook.com/KFC/",
+      "page_id": "",
+      "link_url": "https://www.kfc.com/menu?utm_source=meta&utm_medium=social&utm_campaign=%2410bucketoftheday&utm_creative=monday#deals",
+      "link_title": "Get a $10 Bucket today",
+      "cta_text": "Order Now",
+      "images": [
+        "https://scontent-lax3-2.xx.fbcdn.net/v/t39.35426-6/736314101_2212646862913156_3232102813177186278_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=106&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=ueKfZj_EEwMQ7kNvwHw7s46&_nc_oc=AdoCEq5YAzJw2X2bkRW1IflfiSyAMpzyM9pAJ7ZRJ5MIbjRPvVw-91orzsjNlYmetmY&_nc_zt=14&_nc_ht=scontent-lax3-2.xx&_nc_gid=swNK8bOifSBrFIl_k2gxOQ&_nc_ss=7b289&oh=00_AQSgZmyYYYc8FRQtFXDuf3_EyB1IRvjoMk6q6Up0CV3k7A&oe=6AF5F387"
+      ],
+      "has_video": false,
+      "same_creative_count": 0,
+      "multiple_versions": true
+    },
+    {
+      "id": "1240955014433233",
+      "page_name": "KFC",
+      "status": "ended",
+      "first_seen": "Apr 1, 2026",
+      "last_seen": "Apr 21, 2026",
+      "creative_text": "Five Original Recipe® Tenders for just $5—big crunch, bold flavor, gone soon.",
+      "library_url": "https://www.facebook.com/ads/library/?id=1240955014433233",
+      "page_url": "https://www.facebook.com/KFC/",
+      "page_id": "",
+      "link_url": "https://www.kfc.com/menu?utm_source=meta&utm_medium=social&utm_campaign=thebig%245dunk&utm_creative=thebig%245dunkv2#deals",
+      "link_title": "Dunk it. Love it. Repeat.",
+      "cta_text": "Order Now",
+      "images": [
+        "https://scontent-lax3-2.xx.fbcdn.net/v/t39.35426-6/699056567_1949033472482469_3109545540025163705_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=100&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=peXAQhWGH0gQ7kNvwGCmhOZ&_nc_oc=Adq2cLaTYv1eDeP9InnNAHhC3NJtN8xBmmna-Q1nlQZIAcPK4oxHCro4geRjBnEpoQQ&_nc_zt=14&_nc_ht=scontent-lax3-2.xx&_nc_gid=swNK8bOifSBrFIl_k2gxOQ&_nc_ss=7b289&oh=00_AQQF-e1Om3uqgkdIq2kU9_czc_UFF08rtVRkVPWtKen7-w&oe=6AF5FB11"
+      ],
+      "has_video": false,
+      "same_creative_count": 0,
+      "multiple_versions": false
+    },
+    {
+      "id": "1353320809549028",
+      "page_name": "KFC Masr",
+      "status": "ended",
+      "first_seen": "Jul 17, 2026",
+      "last_seen": "Aug 2, 2026",
+      "creative_text": "تيم عادي ولا تيم سبايسي؟\nفي الحالتين… هتحب البوكس ماستر الجديد من كنتاكي.. جبنة من الآخر وطعم مايتقاومش!\nاطلبه دلوقتي من فروعنا، من الأبلكيشن، أو كلمنا على 19019 📞",
+      "library_url": "https://www.facebook.com/ads/library/?id=1353320809549028",
+      "page_url": "https://www.facebook.com/KFCegypt/",
+      "page_id": "",
+      "link_url": "https://8tyb.adj.st/customize?Home&adj_t=78bvy9i&adj_campaign=W3BoxMasterViews&adj_adgroup=Meta&adj",
+      "link_title": "KFC Masr",
+      "cta_text": "Order now",
+      "images": [],
+      "has_video": true,
+      "same_creative_count": 0,
+      "multiple_versions": true
+    },
+    {
+      "id": "1554725346163428",
+      "page_name": "Zomato",
+      "status": "ended",
+      "first_seen": "Jun 29, 2026",
+      "last_seen": "Jul 9, 2026",
+      "creative_text": "Bucket deals KFC, 60% off + free delivery",
+      "library_url": "https://www.facebook.com/ads/library/?id=1554725346163428",
+      "page_url": "https://www.facebook.com/zomato/",
+      "page_id": "",
+      "link_url": "http://play.google.com/store/apps/details?id=com.application.zomato",
+      "link_title": "Load up on KFC crispy goodness at 60% off with free delivery.",
+      "cta_text": "Order Now",
+      "images": [
+        "https://scontent-lax3-1.xx.fbcdn.net/v/t39.35426-6/748088874_1041055528271283_4547833103901873178_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=110&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=zXBiyi8BXxkQ7kNvwFXxbIq&_nc_oc=AdqB1WAhrFSplh4aLurHE_IFwz_WLwdOp8HRPcFPMrLOM9tzOfg0yKo1GxcT-BSTEVc&_nc_zt=14&_nc_ht=scontent-lax3-1.xx&_nc_gid=swNK8bOifSBrFIl_k2gxOQ&_nc_ss=7b289&oh=00_AQRhGWjzqalMASuJV9GhlQbVCShelXwhP8M84Sa7pENvjQ&oe=6AF5F4CD"
+      ],
+      "has_video": false,
+      "same_creative_count": 0,
+      "multiple_versions": false
+    },
+    {
+      "id": "1761907665136122",
+      "page_name": "KFC",
+      "status": "ended",
+      "first_seen": "Jun 29, 2026",
+      "last_seen": "Jul 13, 2026",
+      "creative_text": "The most dangerous day of the year for your fingers, is now the most delicious.",
+      "library_url": "https://www.facebook.com/ads/library/?id=1761907665136122",
+      "page_url": "https://www.facebook.com/KFC/",
+      "page_id": "",
+      "link_url": "https://www.kfc.com/menu?utm_source=meta&utm_medium=social&utm_campaign=fingerlickinfourth&utm_creative=field#deals",
+      "link_title": "Finger Lickin' Fourth",
+      "cta_text": "Order now",
+      "images": [
+        "https://scontent-lax3-1.xx.fbcdn.net/v/t39.35426-6/731380673_3167173556826915_6169000656005812326_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=102&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=ARMcJ1-Kk4EQ7kNvwG2hlbM&_nc_oc=Adq6TandHUZR3nrnHRQ-zmQsWqMKoJ-Uj1v-RcCdlKh1NvdeDKU9XUexfB_fUjKZCzo&_nc_zt=14&_nc_ht=scontent-lax3-1.xx&_nc_gid=swNK8bOifSBrFIl_k2gxOQ&_nc_ss=7b289&oh=00_AQSJ1U-zz7DASfLLB4DCNjBPl2kiZ94nXKtK8y-N-bQE7Q&oe=6AF5E6B8"
+      ],
+      "has_video": false,
+      "same_creative_count": 0,
+      "multiple_versions": true
+    },
+    {
+      "id": "3946689335638264",
+      "page_name": "KFC",
+      "status": "ended",
+      "first_seen": "Jul 20, 2026",
+      "last_seen": "Aug 13, 2026",
+      "creative_text": "Get the $4.99 Country Fried Steak while you can. Wednesdays only at KFC.",
+      "library_url": "https://www.facebook.com/ads/library/?id=3946689335638264",
+      "page_url": "https://www.facebook.com/KFC/",
+      "page_id": "",
+      "link_url": "https://www.kfc.com/newsroom/wednesday-exclusive-country-fried-steak?utm_source=meta&utm_medium=social&utm_campaign=countryfriedsteak&utm_creative=countryfriedsteakstatic",
+      "link_title": "KFC's Country Fried Steak",
+      "cta_text": "Order Now",
+      "images": [
+        "https://scontent-lax3-1.xx.fbcdn.net/v/t39.35426-6/729517862_858187010697637_7556717038481546898_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=104&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=F5qmSr8R_QYQ7kNvwH_XlxF&_nc_oc=AdoXNgOlAAm1oinELqSaIS48B9K6znjkt91FZbVDiju20qVxShHvG5Izvwesn3w3M40&_nc_zt=14&_nc_ht=scontent-lax3-1.xx&_nc_gid=swNK8bOifSBrFIl_k2gxOQ&_nc_ss=7b289&oh=00_AQRDE0Daa4mXXhPZACz6i4NDcUG7DyfYWH7TRIuHqpaonA&oe=6AF5F4B4"
+      ],
+      "has_video": false,
+      "same_creative_count": 0,
+      "multiple_versions": true
+    },
+    {
+      "id": "1556551805746757",
+      "page_name": "KFC",
+      "status": "ended",
+      "first_seen": "May 4, 2026",
+      "last_seen": "May 25, 2026",
+      "creative_text": "They say ask 100,000 times and you shall receive. Popcorn Chicken is back at KFC!",
+      "library_url": "https://www.facebook.com/ads/library/?id=1556551805746757",
+      "page_url": "https://www.facebook.com/KFC/",
+      "page_id": "",
+      "link_url": "https://www.kfc.com/menu?utm_source=meta&utm_medium=social&utm_campaign=popcornchicken&utm_creative=back#the-latest",
+      "link_title": "Popcorn Chicken is back",
+      "cta_text": "Order Now",
+      "images": [
+        "https://scontent-lax3-1.xx.fbcdn.net/v/t39.35426-6/741324634_905974902527872_61140011321372063_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=104&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=sbTs4BcwywgQ7kNvwF7WXHR&_nc_oc=Adr_oUjkuCtH_sNXgqbivTvj-yTbVzraC8ikgiL8aALHbtLWKStrySdyRDC9otBoRpo&_nc_zt=14&_nc_ht=scontent-lax3-1.xx&_nc_gid=swNK8bOifSBrFIl_k2gxOQ&_nc_ss=7b289&oh=00_AQSCK4BUTT_1MbOEJt9dQq7XjKV3VPRbRkgmjqO6xHEl0w&oe=6AF5EB7C"
+      ],
+      "has_video": false,
+      "same_creative_count": 0,
+      "multiple_versions": true
+    },
+    {
+      "id": "899558779793919",
+      "page_name": "KFC",
+      "status": "ended",
+      "first_seen": "May 4, 2026",
+      "last_seen": "Jun 1, 2026",
+      "creative_text": "Get dipping with new Honey Chili Crisp and Jalapeño Ranch sauces.",
+      "library_url": "https://www.facebook.com/ads/library/?id=899558779793919",
+      "page_url": "https://www.facebook.com/KFC/",
+      "page_id": "",
+      "link_url": "https://www.kfc.com/menu?utm_source=meta&utm_medium=social&utm_campaign=saucyseason&utm_creative=messy#the-latest",
+      "link_title": "It's Saucy Season at KFC",
+      "cta_text": "Order Now",
+      "images": [],
+      "has_video": true,
+      "same_creative_count": 0,
+      "multiple_versions": true
+    },
+    {
+      "id": "1393914789552157",
+      "page_name": "KFC",
+      "status": "ended",
+      "first_seen": "Aug 13, 2026",
+      "last_seen": "Aug 24, 2026",
+      "creative_text": "Get a $10 Bucket of the Day EVERY WEEK DAY at KFC.",
+      "library_url": "https://www.facebook.com/ads/library/?id=1393914789552157",
+      "page_url": "https://www.facebook.com/KFC/",
+      "page_id": "",
+      "link_url": "https://www.kfc.com/menu?utm_source=meta&utm_medium=social&utm_campaign=%2410bucketoftheday&utm_creative=crunchin#deals",
+      "link_title": "Get a $10 Bucket today",
+      "cta_text": "Order Now",
+      "images": [],
+      "has_video": true,
+      "same_creative_count": 0,
+      "multiple_versions": true
+    },
+    {
+      "id": "1102257768817243",
+      "page_name": "KFC",
+      "status": "ended",
+      "first_seen": "Aug 14, 2026",
+      "last_seen": "Aug 31, 2026",
+      "creative_text": "Get the $4.99 Country Fried Steak while you can. Wednesdays only at KFC.",
+      "library_url": "https://www.facebook.com/ads/library/?id=1102257768817243",
+      "page_url": "https://www.facebook.com/KFC/",
+      "page_id": "",
+      "link_url": "https://www.kfc.com/newsroom/wednesday-exclusive-country-fried-steak?utm_source=meta&utm_medium=social&utm_campaign=countryfriedsteak&utm_creative=countryfriedsteakstatic",
+      "link_title": "KFC's Country Fried Steak",
+      "cta_text": "Order Now",
+      "images": [
+        "https://scontent-lax3-2.xx.fbcdn.net/v/t39.35426-6/736384618_4818419455069072_7710688552984259986_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=100&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=7RIXojr9FCQQ7kNvwHVbrfE&_nc_oc=Adr3PvUj3ozrFlWjnRoiSbPKlGsBEbuWqwJbtAcPC0LIb3TqisvVAZoGWd5nH9ZH24s&_nc_zt=14&_nc_ht=scontent-lax3-2.xx&_nc_gid=swNK8bOifSBrFIl_k2gxOQ&_nc_ss=7b289&oh=00_AQRubDheGkXissSxHbIEEt3NtKr0Sk60_xx2EtxIpx00hA&oe=6AF5F862"
+      ],
+      "has_video": false,
+      "same_creative_count": 0,
+      "multiple_versions": true
+    },
+    {
+      "id": "2149459069323636",
+      "page_name": "KFC",
+      "status": "ended",
+      "first_seen": "Aug 14, 2026",
+      "last_seen": "Aug 31, 2026",
+      "creative_text": "your first @ owes you a Big Box. the good news? one of ‘em comes free. order now for only a limited time.",
+      "library_url": "https://www.facebook.com/ads/library/?id=2149459069323636",
+      "page_url": "https://www.facebook.com/KFC/",
+      "page_id": "",
+      "link_url": "https://www.kfc.com/menu?utm_source=meta&utm_medium=social&utm_campaign=bogobigbox&utm_creative=bogobigboxv1#deals",
+      "link_title": "Mix & Match BOGO Big Box",
+      "cta_text": "Order Now",
+      "images": [
+        "https://scontent-lax3-1.xx.fbcdn.net/v/t39.35426-6/769691946_3384569188380923_1001890239455119928_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=108&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=tjP3IL-R2KsQ7kNvwED361I&_nc_oc=Adr-zkFVL68pq77FR-mChP5zQ2zfYEguncuQ_-umRvOE9YwfZobD0oLQSnUiwj_wLeY&_nc_zt=14&_nc_ht=scontent-lax3-1.xx&_nc_gid=swNK8bOifSBrFIl_k2gxOQ&_nc_ss=7b289&oh=00_AQSy6kQXBD3pdvVFmybtI5yemFu-THVpLAYYUAaKCSGkdw&oe=6AF5FEAE"
+      ],
+      "has_video": false,
+      "same_creative_count": 0,
+      "multiple_versions": true
+    },
+    {
+      "id": "867483243039073",
+      "page_name": "KFC",
+      "status": "ended",
+      "first_seen": "May 4, 2026",
+      "last_seen": "Jun 1, 2026",
+      "creative_text": "tastes so nice you can get it twice. 🙂↕️ mix and match any BOGO Big Box for a limited time. order now for a good time.",
+      "library_url": "https://www.facebook.com/ads/library/?id=867483243039073",
+      "page_url": "https://www.facebook.com/KFC/",
+      "page_id": "",
+      "link_url": "https://www.kfc.com/menu?utm_source=meta&utm_medium=social&utm_campaign=bogobigbox&utm_creative=bogobigboxv2#deals",
+      "link_title": "Mix & Match BOGO Big Box",
+      "cta_text": "Order Now",
+      "images": [
+        "https://scontent-lax3-2.xx.fbcdn.net/v/t39.35426-6/771821224_1081207144414250_6250512097749015067_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=103&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=VPaYpTKCPYsQ7kNvwGxxVOx&_nc_oc=AdoieQIJ6MZCUj4k6vn-OXtBD0QPD4G8a_8DfoTcCiVxVA9qGVhqFY1r0sqQ_jEPk_M&_nc_zt=14&_nc_ht=scontent-lax3-2.xx&_nc_gid=swNK8bOifSBrFIl_k2gxOQ&_nc_ss=7b289&oh=00_AQSi94i_Qg_jDZNINuE5egw-VUS3jboxd_9zPirxsUk4ig&oe=6AF606DE"
+      ],
+      "has_video": false,
+      "same_creative_count": 0,
+      "multiple_versions": true
+    },
+    {
+      "id": "1006625611745579",
+      "page_name": "KFC",
+      "status": "ended",
+      "first_seen": "Jun 29, 2026",
+      "last_seen": "Jul 9, 2026",
+      "creative_text": "Get a $10 Bucket of the Day EVERY WEEK DAY at KFC.",
+      "library_url": "https://www.facebook.com/ads/library/?id=1006625611745579",
+      "page_url": "https://www.facebook.com/KFC/",
+      "page_id": "",
+      "link_url": "https://www.kfc.com/menu?utm_source=meta&utm_medium=social&utm_campaign=%2410bucketoftheday&utm_creative=monday#deals",
+      "link_title": "Get a $10 Bucket today",
+      "cta_text": "Order Now",
+      "images": [
+        "https://scontent-lax3-1.xx.fbcdn.net/v/t39.35426-6/683756089_1298365565264948_734382372084783372_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=108&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=3Hr_dPKgu-EQ7kNvwGvmJKZ&_nc_oc=AdqejupU9xoHQhf4qh1rU3GVEXa7ShhVAwbawpqb8qZvxmMpgJjfG168yMy8ffL5ecY&_nc_zt=14&_nc_ht=scontent-lax3-1.xx&_nc_gid=swNK8bOifSBrFIl_k2gxOQ&_nc_ss=7b289&oh=00_AQQ1noJ8xatsqoJGhyWjBPO1uRW7Y4WaXlGD2rJnbov_lA&oe=6AF5F2EE"
+      ],
+      "has_video": false,
+      "same_creative_count": 0,
+      "multiple_versions": false
+    },
+    {
+      "id": "1459548629048637",
+      "page_name": "KFC",
+      "status": "ended",
+      "first_seen": "Apr 20, 2026",
+      "last_seen": "May 3, 2026",
+      "creative_text": "The most dangerous day of the year for your fingers, is now the most delicious.",
+      "library_url": "https://www.facebook.com/ads/library/?id=1459548629048637",
+      "page_url": "https://www.facebook.com/KFC/",
+      "page_id": "",
+      "link_url": "https://www.kfc.com/menu?utm_source=meta&utm_medium=social&utm_campaign=fingerlickinfourth&utm_creative=flag#deals",
+      "link_title": "Finger Lickin' Fourth",
+      "cta_text": "Order now",
+      "images": [
+        "https://scontent-lax3-2.xx.fbcdn.net/v/t39.35426-6/733443431_1683773036266459_2855747530424863828_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=111&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=CMyQYfoqo8UQ7kNvwHCnSzU&_nc_oc=AdpbfKs6nO4QrtI3owc5l3cICh-IuyYJoNu0zEXQNgIfQrRSEE2PQnQ40LTpJkN46nE&_nc_zt=14&_nc_ht=scontent-lax3-2.xx&_nc_gid=swNK8bOifSBrFIl_k2gxOQ&_nc_ss=7b289&oh=00_AQQ-OJioEBH0c790DPIwFvp3xT0OXskUh4uxYeX4OPKYBA&oe=6AF5E6A8"
+      ],
+      "has_video": false,
+      "same_creative_count": 0,
+      "multiple_versions": true
+    },
+    {
+      "id": "1379796414111694",
+      "page_name": "KFC",
+      "status": "ended",
+      "first_seen": "Jul 13, 2026",
+      "last_seen": "Jul 14, 2026 · Total active time 14 hrs",
+      "creative_text": "The ultimate bang for your bucket—perfect for family dinners or hangouts.",
+      "library_url": "https://www.facebook.com/ads/library/?id=1379796414111694",
+      "page_url": "https://www.facebook.com/KFC/",
+      "page_id": "",
+      "link_url": "https://www.kfc.com/menu?utm_source=meta&utm_medium=social&utm_campaign=dwow&utm_creative=%2420chicknnugmeal_video_v1#deals",
+      "link_title": "KFC's Chick N’ Nug Meal",
+      "cta_text": "Order Now",
+      "images": [],
+      "has_video": true,
+      "same_creative_count": 0,
+      "multiple_versions": true
+    },
+    {
+      "id": "1470155561326972",
+      "page_name": "KFC",
+      "status": "ended",
+      "first_seen": "Apr 20, 2026",
+      "last_seen": "May 4, 2026",
+      "creative_text": "They say ask 100,000 times and you shall receive. Popcorn Chicken is back at KFC!",
+      "library_url": "https://www.facebook.com/ads/library/?id=1470155561326972",
+      "page_url": "https://www.facebook.com/KFC/",
+      "page_id": "",
+      "link_url": "https://www.kfc.com/menu?utm_source=meta&utm_medium=social&utm_campaign=popcornchicken&utm_creative=back#the-latest",
+      "link_title": "Popcorn Chicken is back",
+      "cta_text": "Order Now",
+      "images": [],
+      "has_video": true,
+      "same_creative_count": 0,
+      "multiple_versions": true
+    }
+  ],
+  "elapsed_s": 8.7,
+  "attempts": 2,
+  "raw_payloads": [
+    {
+      "request": {
+        "urls": [
+          "https://www.facebook.com/ads/library/?active_status=all&ad_type=all&country=SA&q=KFC&media_type=all&search_type=keyword_unordered"
+        ],
+        "char_limit": 120000
+      },
+      "response": {
+        "results": [
+          {
+            "url": "https://www.facebook.com/ads/library/?active_status=all&ad_type=all&country=SA&is_targeted_country=false&media_type=all&q=KFC&search_type=keyword_unordered&sort_data[mode]=total_impressions&sort_data[direction]=desc",
+            "title": "Ad Library",
+            "content": "[_Meta Ad Library_](https://www.facebook.com/ads/library/?source=fb-logo)\n\nAd Library\n\n[Ad Library Report](https://www.facebook.com/ads/library/report/?source=nav-header)\n\n[Ad Library API](https://www.facebook.com/ads/library/api/?source=nav-header)\n\n[Branded Content](https://www.facebook.com/ads/library/branded_content/?source=fb-logo)\n\n[](https://www.facebook.com/ads/library/?active_status=all&ad_type=all&country=SA&is_targeted_country=false&media_type=all&q=KFC&search_type=keyword_unordered&sort_data[mode]=total_impressions&sort_data[direction]=desc#)\n\nSaudi Arabia\n\n\n\n\n\n\n\nAll ads\n\n\n\nSearch by keyword or advertiser\n\n\n\n\n\n[Log in](https://www.facebook.com/) [Close navigation panel](https://www.facebook.com/ads/library/?active_status=all&ad_type=all&country=SA&is_targeted_country=false&media_type=all&q=KFC&search_type=keyword_unordered&sort_data[mode]=total_impressions&sort_data[direction]=desc#)\n\nAd Library\n\n[Ad Library Report](https://www.facebook.com/ads/library/report/?source=nav-panel)\n\n[Ad Library API](https://www.facebook.com/ads/library/api/?source=nav-panel)\n\n[Branded Content](https://www.facebook.com/ads/library/branded_content/?source=fb-logo)\n\n* * *\n\n[System status](https://metastatus.com/ads-transparency)\n\nSubscribe to email updates\n\n[FAQ](https://www.facebook.com/ads/library/?show_faq=true)\n\n[About ads and data use](https://www.facebook.com/ads/about/?entry_product=ad_library)\n\n[Privacy](https://www.facebook.com/privacy/center/?entry_point=privacy_basics_redirect)\n\n[Terms](https://www.facebook.com/policies/)\n\n[Cookies](https://www.facebook.com/policies/cookies/)\n\nSystem status\n\n- [Ad Library API](https://www.facebook.com/ads/library/api/?source=archive-landing-page)\n- [About ads and data use](https://www.facebook.com/ads/about/?entry_product=ad_library)\n- [Privacy](https://www.facebook.com/privacy/center/?entry_point=privacy_basics_redirect)\n- [Terms](https://www.facebook.com/policies/)\n- [Cookies](https://www.facebook.com/policies/cookies/)\n\n[English (US)](https://www.facebook.com/language/)",
+            "error": null
+          }
+        ]
+      }
+    },
+    {
+      "request": {
+        "urls": [
+          "https://www.facebook.com/ads/library/?active_status=all&ad_type=all&country=SA&q=KFC&media_type=all&search_type=keyword_unordered&cache_bust=8d05c354938248f2a25276df0d73a498"
+        ],
+        "char_limit": 120000
+      },
+      "response": {
+        "results": [
+          {
+            "url": "https://www.facebook.com/ads/library/?active_status=all&ad_type=all&country=SA&is_targeted_country=false&media_type=all&q=KFC&search_type=keyword_unordered&sort_data[mode]=total_impressions&sort_data[direction]=desc",
+            "title": "Ad Library",
+            "content": "[_Meta Ad Library_](https://www.facebook.com/ads/library/?source=fb-logo)\n\nAd Library\n\n[Ad Library Report](https://www.facebook.com/ads/library/report/?source=nav-header)\n\n[Ad Library API](https://www.facebook.com/ads/library/api/?source=nav-header)\n\n[Branded Content](https://www.facebook.com/ads/library/branded_content/?source=fb-logo)\n\n[](https://www.facebook.com/ads/library/?active_status=all&ad_type=all&country=SA&is_targeted_country=false&media_type=all&q=KFC&search_type=keyword_unordered&sort_data[mode]=total_impressions&sort_data[direction]=desc#)\n\nSaudi Arabia\n\n\n\nSelect country\n\nCurrent location\n\nUnited States\n\nAll\n\nAfghanistan\n\nAland Islands\n\nAlbania\n\nAlgeria\n\nAmerican Samoa\n\nAndorra\n\nAngola\n\nAnguilla\n\nAntarctica\n\nAntigua\n\nArgentina\n\nArmenia\n\nAruba\n\nAustralia\n\nAustria\n\nAzerbaijan\n\nBahrain\n\nBangladesh\n\nBarbados\n\nBelarus\n\nBelgium\n\nBelize\n\nBenin\n\nBermuda\n\nBhutan\n\nBolivia\n\nBonaire, Sint Eustatius and Saba\n\nBosnia and Herzegovina\n\nBotswana\n\nBouvet Island\n\nBrazil\n\nBritish Indian Ocean Territory\n\nBritish Virgin Islands\n\nBrunei\n\nBulgaria\n\nBurkina Faso\n\nBurundi\n\nCambodia\n\nCameroon\n\nCanada\n\nCape Verde\n\nCayman Islands\n\nCentral African Republic\n\nChad\n\nChile\n\nChina\n\nChristmas Island\n\nCocos (Keeling) Islands\n\nColombia\n\nComoros\n\nCook Islands\n\nCosta Rica\n\nCôte d'Ivoire\n\nCroatia\n\nCuraçao\n\nCyprus\n\nCzech Republic\n\nDemocratic Republic of the Congo\n\nDenmark\n\nDjibouti\n\nDominica\n\nDominican Republic\n\nEcuador\n\nEgypt\n\nEl Salvador\n\nEquatorial Guinea\n\nEritrea\n\nEstonia\n\nEswatini\n\nEthiopia\n\nFalkland Islands\n\nFaroe Islands\n\nFederated States of Micronesia\n\nFiji\n\nFinland\n\nFrance\n\nFrench Guiana\n\nFrench Polynesia\n\nFrench Southern Territories\n\nGabon\n\nGeorgia\n\nGermany\n\nGhana\n\nGibraltar\n\nGreece\n\nGreenland\n\nGrenada\n\nGuadeloupe\n\nGuam\n\nGuatemala\n\nGuernsey\n\nGuinea\n\nGuinea-Bissau\n\nGuyana\n\nHaiti\n\nHeard Island and McDonald Islands\n\nHonduras\n\nHong Kong\n\nHungary\n\nIceland\n\nIndia\n\nIndonesia\n\nIraq\n\nIreland\n\nIsle Of Man\n\nIsrael\n\nItaly\n\nJamaica\n\nJapan\n\nJersey\n\nJordan\n\nKazakhstan\n\nKenya\n\nKiribati\n\nKosovo\n\nKuwait\n\nKyrgyzstan\n\nLaos\n\nLatvia\n\nLebanon\n\nLesotho\n\nLiberia\n\nLibya\n\nLiechtenstein\n\nLithuania\n\nLuxembourg\n\nMacau\n\nMadagascar\n\nMalawi\n\nMalaysia\n\nMaldives\n\nMali\n\nMalta\n\nMarshall Islands\n\nMartinique\n\nMauritania\n\nMauritius\n\nMayotte\n\nMexico\n\nMoldova\n\nMonaco\n\nMongolia\n\nMontenegro\n\nMontserrat\n\nMorocco\n\nMozambique\n\nMyanmar\n\nNamibia\n\nNauru\n\nNepal\n\nNetherlands\n\nNetherlands Antilles\n\nNew Caledonia\n\nNew Zealand\n\nNicaragua\n\nNiger\n\nNigeria\n\nNiue\n\nNorfolk Island\n\nNorth Macedonia\n\nNorthern Mariana Islands\n\nNorway\n\nOman\n\nPakistan\n\nPalau\n\nPalestine\n\nPanama\n\nPapua New Guinea\n\nParaguay\n\nPeru\n\nPhilippines\n\nPitcairn\n\nPoland\n\nPortugal\n\nPuerto Rico\n\nQatar\n\nRepublic of the Congo\n\nRéunion\n\nRomania\n\nRussia\n\nRwanda\n\nSaint Barthélemy\n\nSaint Helena\n\nSaint Kitts and Nevis\n\nSaint Martin\n\nSaint Pierre and Miquelon\n\nSaint Vincent and the Grenadines\n\nSamoa\n\nSan Marino\n\nSao Tome and Principe\n\nSaudi Arabia\n\nSenegal\n\nSerbia\n\nSeychelles\n\nSierra Leone\n\nSingapore\n\nSint Maarten\n\nSlovakia\n\nSlovenia\n\nSolomon Islands\n\nSomalia\n\nSouth Africa\n\nSouth Georgia and the South Sandwich Islands\n\nSouth Korea\n\nSouth Sudan\n\nSpain\n\nSri Lanka\n\nSt. Lucia\n\nSuriname\n\nSvalbard and Jan Mayen\n\nSweden\n\nSwitzerland\n\nSyria\n\nTaiwan\n\nTajikistan\n\nTanzania\n\nThailand\n\nThe Bahamas\n\nThe Gambia\n\nTimor-Leste\n\nTogo\n\nTokelau\n\nTonga\n\nTrinidad and Tobago\n\nTunisia\n\nTurkey\n\nTurkmenistan\n\nTurks and Caicos Islands\n\nTuvalu\n\nUganda\n\nUkraine\n\nUnited Arab Emirates\n\nUnited Kingdom\n\nUnited States\n\nUnited States Minor Outlying Islands\n\nUruguay\n\nUS Virgin Islands\n\nUzbekistan\n\nVanuatu\n\nVatican City\n\nVenezuela\n\nVietnam\n\nWallis and Futuna\n\nWestern Sahara\n\nYemen\n\nZambia\n\nZimbabwe\n\n\n\n\n\nAll ads\n\n\n\nSelect ad category\n\nAll ads\n\nIssues, elections or politics\n\nSearch by keyword or advertiser\n\n\n\n\n\n[Log in](https://www.facebook.com/) [Close navigation panel](https://www.facebook.com/ads/library/?active_status=all&ad_type=all&country=SA&is_targeted_country=false&media_type=all&q=KFC&search_type=keyword_unordered&sort_data[mode]=total_impressions&sort_data[direction]=desc#)\n\nAd Library\n\n[Ad Library Report](https://www.facebook.com/ads/library/report/?source=nav-panel)\n\n[Ad Library API](https://www.facebook.com/ads/library/api/?source=nav-panel)\n\n[Branded Content](https://www.facebook.com/ads/library/branded_content/?source=fb-logo)\n\n* * *\n\n[System status](https://metastatus.com/ads-transparency)\n\nSubscribe to email updates\n\n[FAQ](https://www.facebook.com/ads/library/?show_faq=true)\n\n[About ads and data use](https://www.facebook.com/ads/about/?entry_product=ad_library)\n\n[Privacy](https://www.facebook.com/privacy/center/?entry_point=privacy_basics_redirect)\n\n[Terms](https://www.facebook.com/policies/)\n\n[Cookies](https://www.facebook.com/policies/cookies/)\n\n~7,800 results\n\nThese results include ads that match your **keyword search.**\n\nFilters\n\nSort\n\n\n\nSort by\n\n\n\nInactive\n\nLibrary ID: 1623342965548455\n\nMar 30, 2026 - May 4, 2026\n\nPlatforms\n\n\n\n\n\nThis ad has multiple versions\n\n\n\nEU transparency\n\n\n\nOpen Dropdown\n\n\n\nSee ad details\n\n* * *\n\n![KFC](https://scontent-lax3-2.xx.fbcdn.net/v/t39.35426-6/655852577_2980593518802457_6990263556421030619_n.jpg?stp=dst-jpg_s60x60_tt6&_nc_cat=111&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=gVBWxlXeQOMQ7kNvwHpJdrW&_nc_oc=AdqXXbz6PTOqqU-iv3SQzmyIY6dCjTgazy5mnipYL6T4eHDb9vu1iY75r7eDhOWiWd0&_nc_zt=14&_nc_ht=scontent-lax3-2.xx&_nc_gid=swNK8bOifSBrFIl_k2gxOQ&_nc_ss=7b289&oh=00_AQQXAJB1AymQMjhWroheOmVH1aBiVrbkSJH5izFaipUJLg&oe=6AF5F5E1)\n\n[KFC](https://www.facebook.com/KFC/)\n\n**Sponsored**\n\nGet two crispy KFC Snackers, 5 juicy nuggets, fries, and a drink for just $9.\n\n[![](https://scontent-lax3-2.xx.fbcdn.net/v/t39.35426-6/656211103_1051735488020550_3559865182863376252_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=106&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=o7jRBwoKmZQQ7kNvwGOqmAo&_nc_oc=AdoRLZMbk9S2PURT49GS0LtqTLWLGkFRY7fzHeXL_769sSYuNhz-k27J3fyOZqIHYRA&_nc_zt=14&_nc_ht=scontent-lax3-2.xx&_nc_gid=swNK8bOifSBrFIl_k2gxOQ&_nc_ss=7b289&oh=00_AQTOZs3M0Bv-MJVgVOMaOTxGJca40raTB4DhdWNo7RiCjQ&oe=6AF5FF34)\\\\\n\\\\\nKFC.COM\\\\\n\\\\\nThe new KFC Value Feast\\\\\n\\\\\nOrder Now](https://www.kfc.com/menu?utm_source=meta&utm_medium=social&utm_campaign=kfcvaluefeast&utm_creative=9box#the-latest)\n\n\n\nInactive\n\nLibrary ID: 1893393507996643\n\nJul 13, 2026 - Aug 13, 2026\n\nPlatforms\n\n\n\n\n\nThis ad has multiple versions\n\n\n\nEU transparency\n\n\n\nOpen Dropdown\n\n\n\nSee ad details\n\n* * *\n\n![KFC](https://scontent-lax3-1.xx.fbcdn.net/v/t39.35426-6/735018261_1046882534970756_5941938129504655076_n.jpg?stp=dst-jpg_s60x60_tt6&_nc_cat=110&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=qrpwwuszktwQ7kNvwEms_6P&_nc_oc=Ado6iAtevRVGmKwYPmGegsP8wLOJXV4Gymljrova5thPa6QN6rSQ61c1PmePZGG4J_U&_nc_zt=14&_nc_ht=scontent-lax3-1.xx&_nc_gid=swNK8bOifSBrFIl_k2gxOQ&_nc_ss=7b289&oh=00_AQTKWjARVIfizMBW1jYHe-C8PmkRRTg1xvKt-5Suv2Gklw&oe=6AF60C62)\n\n[KFC](https://www.facebook.com/KFC/)\n\n**Sponsored**\n\nGet the $4.99 Country Fried Steak while you can. Wednesdays only at KFC.\n\n[![](https://scontent-lax3-2.xx.fbcdn.net/v/t39.35426-6/736384618_4818419455069072_7710688552984259986_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=100&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=7RIXojr9FCQQ7kNvwHVbrfE&_nc_oc=Adr3PvUj3ozrFlWjnRoiSbPKlGsBEbuWqwJbtAcPC0LIb3TqisvVAZoGWd5nH9ZH24s&_nc_zt=14&_nc_ht=scontent-lax3-2.xx&_nc_gid=swNK8bOifSBrFIl_k2gxOQ&_nc_ss=7b289&oh=00_AQRubDheGkXissSxHbIEEt3NtKr0Sk60_xx2EtxIpx00hA&oe=6AF5F862)\\\\\n\\\\\nKFC.COM\\\\\n\\\\\nKFC's Country Fried Steak\\\\\n\\\\\nOrder Now](https://www.kfc.com/newsroom/wednesday-exclusive-country-fried-steak?utm_source=meta&utm_medium=social&utm_campaign=countryfriedsteak&utm_creative=countryfriedsteakstatic)\n\n\n\nInactive\n\nLibrary ID: 1566459058474318\n\nJun 8, 2026 - Jul 13, 2026\n\nPlatforms\n\n\n\n\n\nThis ad has multiple versions\n\n\n\n**2 ads** use this creative and text\n\nOpen Dropdown\n\n\n\nSee summary details\n\n* * *\n\n![KFC](https://scontent-lax3-2.xx.fbcdn.net/v/t39.35426-6/715971312_1667495661174430_5845716990660147328_n.jpg?stp=dst-jpg_s60x60_tt6&_nc_cat=100&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=X5reaSLZFs4Q7kNvwEHbPR4&_nc_oc=Ado_sEvZzlJY90Trlz_PLbbs5MMP_ZRjm2AdP97aVp_LKvQ27znaRb8keHtbfA7nL34&_nc_zt=14&_nc_ht=scontent-lax3-2.xx&_nc_gid=swNK8bOifSBrFIl_k2gxOQ&_nc_ss=7b289&oh=00_AQSJfhtG9B6-Grwj26GWqZCugYMhGk_ujhrWUg69cTAVSw&oe=6AF5EC1D)\n\n[KFC](https://www.facebook.com/KFC/)\n\n**Sponsored**\n\nGet a $10 Bucket of the Day EVERY WEEK DAY at KFC.\n\n[![](https://scontent-lax3-2.xx.fbcdn.net/v/t39.35426-6/713224862_1946410799400924_8034738997219425670_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=111&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=SPLJDoO0T_0Q7kNvwEP2uPB&_nc_oc=AdqKKN8ldI2UWfu6c6u3nBIUZiVYcZ8tL7L1lILVHiUvJ28-Mb6vKHqEvXY1aFYw9uM&_nc_zt=14&_nc_ht=scontent-lax3-2.xx&_nc_gid=swNK8bOifSBrFIl_k2gxOQ&_nc_ss=7b289&oh=00_AQR9pmuuHWfvl2BqI119nQavnUibsZ34Rb_-faVFBWf9Nw&oe=6AF600DC)\\\\\n\\\\\nGet a $10 Bucket today\\\\\n\\\\\nOrder Now](https://www.kfc.com/menu?utm_source=meta&utm_medium=social&utm_campaign=%2410bucketoftheday&utm_creative=monday#deals)\n\n\n\nInactive\n\nLibrary ID: 947327155032742\n\nJul 13, 2026 - Aug 14, 2026\n\nPlatforms\n\n\n\n\n\nThis ad has multiple versions\n\n\n\nEU transparency\n\n\n\nOpen Dropdown\n\n\n\nSee ad details\n\n* * *\n\n![KFC](https://scontent-lax3-2.xx.fbcdn.net/v/t39.35426-6/736032906_2098867881028835_2198603238076407801_n.jpg?stp=dst-jpg_s60x60_tt6&_nc_cat=111&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=vB1AilNKcOQQ7kNvwFpplTe&_nc_oc=AdoQzO0215XnQCdM-P5VP7UPuy9avFbgs0nBtBaj9e1PWl5VjR8vTTxri8EZzRHtYAI&_nc_zt=14&_nc_ht=scontent-lax3-2.xx&_nc_gid=swNK8bOifSBrFIl_k2gxOQ&_nc_ss=7b289&oh=00_AQRsMdChDDqU0PZEe-7NDexo6NkKTdfEJ4pLRjXPV22nTA&oe=6AF5FB78)\n\n[KFC](https://www.facebook.com/KFC/)\n\n**Sponsored**\n\nGet a $10 Bucket of the Day EVERY WEEK DAY at KFC.\n\n[![](https://scontent-lax3-2.xx.fbcdn.net/v/t39.35426-6/736314101_2212646862913156_3232102813177186278_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=106&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=ueKfZj_EEwMQ7kNvwHw7s46&_nc_oc=AdoCEq5YAzJw2X2bkRW1IflfiSyAMpzyM9pAJ7ZRJ5MIbjRPvVw-91orzsjNlYmetmY&_nc_zt=14&_nc_ht=scontent-lax3-2.xx&_nc_gid=swNK8bOifSBrFIl_k2gxOQ&_nc_ss=7b289&oh=00_AQSgZmyYYYc8FRQtFXDuf3_EyB1IRvjoMk6q6Up0CV3k7A&oe=6AF5F387)\\\\\n\\\\\nGet a $10 Bucket today\\\\\n\\\\\nOrder Now](https://www.kfc.com/menu?utm_source=meta&utm_medium=social&utm_campaign=%2410bucketoftheday&utm_creative=monday#deals)\n\n\n\nInactive\n\nLibrary ID: 1016091844085545\n\nMay 25, 2026 - Jun 8, 2026\n\nPlatforms\n\n\n\n\n\nThis ad has multiple versions\n\n\n\nEU transparency\n\n\n\nOpen Dropdown\n\n\n\nSee ad details\n\n* * *\n\n![KFC](https://scontent-lax3-1.xx.fbcdn.net/v/t39.35426-6/699830522_2159857348194892_5920618312933978158_n.jpg?stp=dst-jpg_s60x60_tt6&_nc_cat=108&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=85sEJ3UQ3soQ7kNvwEMI-_N&_nc_oc=Adpe7aujC5ZEMRg98QrYTiHh8bMZ67RXn-2jeEMtldgS65GE0Pa_4En_vJXVLu9jbP0&_nc_zt=14&_nc_ht=scontent-lax3-1.xx&_nc_gid=swNK8bOifSBrFIl_k2gxOQ&_nc_ss=7b289&oh=00_AQSArrwSzvS2r_tyODSLBcYgw2UWUntZXSjqStqFi-41Iw&oe=6AF5F4FD)\n\n[KFC](https://www.facebook.com/KFC/)\n\n**Sponsored**\n\nFive Original Recipe® Tenders for just $5—big crunch, bold flavor, gone soon.\n\n[![](https://scontent-lax3-2.xx.fbcdn.net/v/t39.35426-6/699056567_1949033472482469_3109545540025163705_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=100&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=peXAQhWGH0gQ7kNvwGCmhOZ&_nc_oc=Adq2cLaTYv1eDeP9InnNAHhC3NJtN8xBmmna-Q1nlQZIAcPK4oxHCro4geRjBnEpoQQ&_nc_zt=14&_nc_ht=scontent-lax3-2.xx&_nc_gid=swNK8bOifSBrFIl_k2gxOQ&_nc_ss=7b289&oh=00_AQQF-e1Om3uqgkdIq2kU9_czc_UFF08rtVRkVPWtKen7-w&oe=6AF5FB11)\\\\\n\\\\\nKFC.COM\\\\\n\\\\\nDunk it. Love it. Repeat.\\\\\n\\\\\nOrder Now](https://www.kfc.com/menu?utm_source=meta&utm_medium=social&utm_campaign=thebig%245dunk&utm_creative=thebig%245dunkv2#deals)\n\n\n\nInactive\n\nLibrary ID: 1240955014433233\n\nApr 1, 2026 - Apr 21, 2026\n\nPlatforms\n\n\n\n\n\n\n\n\n\nEU transparency\n\n\n\nOpen Dropdown\n\n\n\nSee ad details\n\n* * *\n\n![KFC Masr](https://scontent-lax3-2.xx.fbcdn.net/v/t39.35426-6/661256099_1643751786934753_5511476410938626054_n.jpg?stp=dst-jpg_s60x60_tt6&_nc_cat=107&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=YEDutJAl3i0Q7kNvwEiFEDh&_nc_oc=Adp0HBsS-dkAO62BZXgFQrBxLj40lNmSyDkdkTMAjCg0dmeRjhd6vOvGq3FPT9Anl7Q&_nc_zt=14&_nc_ht=scontent-lax3-2.xx&_nc_gid=swNK8bOifSBrFIl_k2gxOQ&_nc_ss=7b289&oh=00_AQRiwDHdH18xZF4G4Rgn5H933iFsyDnLUkJGD9efSQ_FTQ&oe=6AF5EEDB)\n\n[KFC Masr](https://www.facebook.com/KFCegypt/)\n\n**Sponsored**\n\nتيم عادي ولا تيم سبايسي؟\n\nفي الحالتين… هتحب البوكس ماستر الجديد من كنتاكي.. جبنة من الآخر وطعم مايتقاومش!\n\nاطلبه دلوقتي من فروعنا، من الأبلكيشن، أو كلمنا على 19019 📞\n\nSorry, we're having trouble playing this video.\n\n[Learn more](https://www.facebook.com/help/396404120401278/list)\n\n[8TYB.ADJ.ST\\\\\n\\\\\nKFC Masr\\\\\n\\\\\nOrder now](https://8tyb.adj.st/customize?Home&adj_t=78bvy9i&adj_campaign=W3BoxMasterViews&adj_adgroup=Meta&adj)\n\n\n\nInactive\n\nLibrary ID: 1353320809549028\n\nJul 17, 2026 - Aug 2, 2026\n\nPlatforms\n\n\n\n\n\n\n\nThis ad has multiple versions\n\n\n\nEU transparency\n\n\n\nOpen Dropdown\n\n\n\nSee ad details\n\n* * *\n\n![Zomato](https://scontent-lax3-1.xx.fbcdn.net/v/t39.35426-6/749355018_1331153049165159_2733086008743627715_n.jpg?stp=dst-jpg_s60x60_tt6&_nc_cat=104&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=r4V7EBW-vAoQ7kNvwGupLG4&_nc_oc=Adq7nxQgWN1IXHRtWD043OSb_43rydQf3ced8Wg7wJpKM_iiNVwWmcK6J5DlhphTbWk&_nc_zt=14&_nc_ht=scontent-lax3-1.xx&_nc_gid=swNK8bOifSBrFIl_k2gxOQ&_nc_ss=7b289&oh=00_AQTXTAkWriQYv7HcVL8vRJxbiOxU0F22PI2UNO_ab0MOWw&oe=6AF5EDFC)\n\n[Zomato](https://www.facebook.com/zomato/)\n\n**Sponsored**\n\nBucket deals KFC, 60% off + free delivery\n\n[![](https://scontent-lax3-1.xx.fbcdn.net/v/t39.35426-6/748088874_1041055528271283_4547833103901873178_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=110&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=zXBiyi8BXxkQ7kNvwFXxbIq&_nc_oc=AdqB1WAhrFSplh4aLurHE_IFwz_WLwdOp8HRPcFPMrLOM9tzOfg0yKo1GxcT-BSTEVc&_nc_zt=14&_nc_ht=scontent-lax3-1.xx&_nc_gid=swNK8bOifSBrFIl_k2gxOQ&_nc_ss=7b289&oh=00_AQRhGWjzqalMASuJV9GhlQbVCShelXwhP8M84Sa7pENvjQ&oe=6AF5F4CD)\\\\\n\\\\\nLoad up on KFC crispy goodness at 60% off with free delivery.\\\\\n\\\\\nOrder Now](http://play.google.com/store/apps/details?id=com.application.zomato)\n\n\n\nInactive\n\nLibrary ID: 1554725346163428\n\nJun 29, 2026 - Jul 9, 2026\n\nPlatforms\n\n\n\n\n\nEU transparency\n\n\n\nOpen Dropdown\n\n\n\nSee ad details\n\n* * *\n\n![KFC](https://scontent-lax3-1.xx.fbcdn.net/v/t39.35426-6/730474140_2063954937826819_3989133826872849895_n.jpg?stp=dst-jpg_s60x60_tt6&_nc_cat=102&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=7FYjjCBeYpUQ7kNvwEFXn1C&_nc_oc=AdpTX6yVmypOLPsXiAetGjTk5cDYPFrS0qymuNYZdySYWvxtmDajuOwTmjNOnU0FVa8&_nc_zt=14&_nc_ht=scontent-lax3-1.xx&_nc_gid=swNK8bOifSBrFIl_k2gxOQ&_nc_ss=7b289&oh=00_AQRW8_D2nHlMlrfUHFt6fNuisBsoHleR-hEnscvOi9Tw-Q&oe=6AF5DFE4)\n\n[KFC](https://www.facebook.com/KFC/)\n\n**Sponsored**\n\nThe most dangerous day of the year for your fingers, is now the most delicious.\n\n[![](https://scontent-lax3-1.xx.fbcdn.net/v/t39.35426-6/731380673_3167173556826915_6169000656005812326_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=102&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=ARMcJ1-Kk4EQ7kNvwG2hlbM&_nc_oc=Adq6TandHUZR3nrnHRQ-zmQsWqMKoJ-Uj1v-RcCdlKh1NvdeDKU9XUexfB_fUjKZCzo&_nc_zt=14&_nc_ht=scontent-lax3-1.xx&_nc_gid=swNK8bOifSBrFIl_k2gxOQ&_nc_ss=7b289&oh=00_AQSJ1U-zz7DASfLLB4DCNjBPl2kiZ94nXKtK8y-N-bQE7Q&oe=6AF5E6B8)\\\\\n\\\\\nKFC.COM\\\\\n\\\\\nFinger Lickin' Fourth\\\\\n\\\\\nOrder now](https://www.kfc.com/menu?utm_source=meta&utm_medium=social&utm_campaign=fingerlickinfourth&utm_creative=field#deals)\n\n\n\nInactive\n\nLibrary ID: 1761907665136122\n\nJun 29, 2026 - Jul 13, 2026\n\nPlatforms\n\n\n\n\n\nThis ad has multiple versions\n\n\n\nEU transparency\n\n\n\nOpen Dropdown\n\n\n\nSee ad details\n\n* * *\n\n![KFC](https://scontent-lax7-1.xx.fbcdn.net/v/t39.35426-6/727845623_1545537667286420_909534262163577929_n.jpg?stp=dst-jpg_s60x60_tt6&_nc_cat=105&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=5O0ZvB2nr0sQ7kNvwHAMb0Y&_nc_oc=AdrWDv7gAIvuCcHDGsdicGrQTkl1HWiej0AChGzYL2YP0dxBGAkg18nGnVs4vhDvic8&_nc_zt=14&_nc_ht=scontent-lax7-1.xx&_nc_gid=swNK8bOifSBrFIl_k2gxOQ&_nc_ss=7b289&oh=00_AQR2BQnKxR8JfXDi0pueVO9BWTnJpnaEcIzWDDPg2QZIeA&oe=6AF60095)\n\n[KFC](https://www.facebook.com/KFC/)\n\n**Sponsored**\n\nGet the $4.99 Country Fried Steak while you can. Wednesdays only at KFC.\n\n[![](https://scontent-lax3-1.xx.fbcdn.net/v/t39.35426-6/729517862_858187010697637_7556717038481546898_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=104&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=F5qmSr8R_QYQ7kNvwH_XlxF&_nc_oc=AdoXNgOlAAm1oinELqSaIS48B9K6znjkt91FZbVDiju20qVxShHvG5Izvwesn3w3M40&_nc_zt=14&_nc_ht=scontent-lax3-1.xx&_nc_gid=swNK8bOifSBrFIl_k2gxOQ&_nc_ss=7b289&oh=00_AQRDE0Daa4mXXhPZACz6i4NDcUG7DyfYWH7TRIuHqpaonA&oe=6AF5F4B4)\\\\\n\\\\\nKFC.COM\\\\\n\\\\\nKFC's Country Fried Steak\\\\\n\\\\\nOrder Now](https://www.kfc.com/newsroom/wednesday-exclusive-country-fried-steak?utm_source=meta&utm_medium=social&utm_campaign=countryfriedsteak&utm_creative=countryfriedsteakstatic)\n\n\n\nInactive\n\nLibrary ID: 3946689335638264\n\nJul 20, 2026 - Aug 13, 2026\n\nPlatforms\n\n\n\n\n\nThis ad has multiple versions\n\n\n\nEU transparency\n\n\n\nOpen Dropdown\n\n\n\nSee ad details\n\n* * *\n\n![KFC](https://scontent-lax3-1.xx.fbcdn.net/v/t39.35426-6/739175450_1335809915346143_6832743278706771914_n.jpg?stp=dst-jpg_s60x60_tt6&_nc_cat=109&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=MhJc0CEk0vkQ7kNvwEi0nQi&_nc_oc=Adoxb61FeCfoX0x0mPCHVv2R-8diM56CBMeSQ2MsKMlCa3aB8fqst3OZfqrcQ3OWU2g&_nc_zt=14&_nc_ht=scontent-lax3-1.xx&_nc_gid=swNK8bOifSBrFIl_k2gxOQ&_nc_ss=7b289&oh=00_AQRR1nALuTanoaIT67DvRhrWSK3jIDX_g_1vtFbS0CaN7Q&oe=6AF5E4BF)\n\n[KFC](https://www.facebook.com/KFC/)\n\n**Sponsored**\n\nThey say ask 100,000 times and you shall receive. Popcorn Chicken is back at KFC!\n\n[![](https://scontent-lax3-1.xx.fbcdn.net/v/t39.35426-6/741324634_905974902527872_61140011321372063_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=104&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=sbTs4BcwywgQ7kNvwF7WXHR&_nc_oc=Adr_oUjkuCtH_sNXgqbivTvj-yTbVzraC8ikgiL8aALHbtLWKStrySdyRDC9otBoRpo&_nc_zt=14&_nc_ht=scontent-lax3-1.xx&_nc_gid=swNK8bOifSBrFIl_k2gxOQ&_nc_ss=7b289&oh=00_AQSCK4BUTT_1MbOEJt9dQq7XjKV3VPRbRkgmjqO6xHEl0w&oe=6AF5EB7C)\\\\\n\\\\\nKFC.COM\\\\\n\\\\\nPopcorn Chicken is back\\\\\n\\\\\nOrder Now](https://www.kfc.com/menu?utm_source=meta&utm_medium=social&utm_campaign=popcornchicken&utm_creative=back#the-latest)\n\n\n\nInactive\n\nLibrary ID: 1556551805746757\n\nMay 4, 2026 - May 25, 2026\n\nPlatforms\n\n\n\n\n\nThis ad has multiple versions\n\n\n\nEU transparency\n\n\n\nOpen Dropdown\n\n\n\nSee ad details\n\n* * *\n\n![KFC](https://scontent-lax3-2.xx.fbcdn.net/v/t39.35426-6/678508955_1176085087890353_723124578612656751_n.jpg?stp=dst-jpg_s60x60_tt6&_nc_cat=100&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=HeRRY5XszjoQ7kNvwF7WJBL&_nc_oc=AdrYCnmdeP-b-EfZQGQEy-lzUtxEaDdzYtpn4mpd5YhBgtvlMkeH-icyN52bfZTun_E&_nc_zt=14&_nc_ht=scontent-lax3-2.xx&_nc_gid=swNK8bOifSBrFIl_k2gxOQ&_nc_ss=7b289&oh=00_AQSe2ZQnnddcGZMPJE59gOjU40WcH9dryzJq_lmczsGzGA&oe=6AF5E503)\n\n[KFC](https://www.facebook.com/KFC/)\n\n**Sponsored**\n\nGet dipping with new Honey Chili Crisp and Jalapeño Ranch sauces.\n\nSorry, we're having trouble playing this video.\n\n[Learn more](https://www.facebook.com/help/396404120401278/list)\n\n[KFC.COM\\\\\n\\\\\nIt's Saucy Season at KFC\\\\\n\\\\\nOrder Now](https://www.kfc.com/menu?utm_source=meta&utm_medium=social&utm_campaign=saucyseason&utm_creative=messy#the-latest)\n\n\n\nInactive\n\nLibrary ID: 899558779793919\n\nMay 4, 2026 - Jun 1, 2026\n\nPlatforms\n\n\n\n\n\nThis ad has multiple versions\n\n\n\nEU transparency\n\n\n\nOpen Dropdown\n\n\n\nSee ad details\n\n* * *\n\n![KFC](https://scontent-lax7-1.xx.fbcdn.net/v/t39.35426-6/685029409_2037829973509793_7085524518675728029_n.jpg?stp=dst-jpg_s60x60_tt6&_nc_cat=105&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=k8pypINzMGIQ7kNvwEY_x20&_nc_oc=AdozLk_OeH4IDqBtJ8GiFo3bN4kSwkaTFdszcXXVgKcrcqr1_XZRLhrDUOQy7EpgZCU&_nc_zt=14&_nc_ht=scontent-lax7-1.xx&_nc_gid=swNK8bOifSBrFIl_k2gxOQ&_nc_ss=7b289&oh=00_AQQzbduT-kN_-tL9tAi3zOx8q2iGQJ0OzymHTolAt9t8qw&oe=6AF61556)\n\n[KFC](https://www.facebook.com/KFC/)\n\n**Sponsored**\n\nGet a $10 Bucket of the Day EVERY WEEK DAY at KFC.\n\nSorry, we're having trouble playing this video.\n\n[Learn more](https://www.facebook.com/help/396404120401278/list)\n\n[KFC.COM\\\\\n\\\\\nGet a $10 Bucket today\\\\\n\\\\\nOrder Now](https://www.kfc.com/menu?utm_source=meta&utm_medium=social&utm_campaign=%2410bucketoftheday&utm_creative=crunchin#deals)\n\n\n\nInactive\n\nLibrary ID: 1393914789552157\n\nAug 13, 2026 - Aug 24, 2026\n\nPlatforms\n\n\n\n\n\nThis ad has multiple versions\n\n\n\nEU transparency\n\n\n\nOpen Dropdown\n\n\n\nSee ad details\n\n* * *\n\n![KFC](https://scontent-lax3-1.xx.fbcdn.net/v/t39.35426-6/735018261_1046882534970756_5941938129504655076_n.jpg?stp=dst-jpg_s60x60_tt6&_nc_cat=110&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=qrpwwuszktwQ7kNvwEms_6P&_nc_oc=Ado6iAtevRVGmKwYPmGegsP8wLOJXV4Gymljrova5thPa6QN6rSQ61c1PmePZGG4J_U&_nc_zt=14&_nc_ht=scontent-lax3-1.xx&_nc_gid=swNK8bOifSBrFIl_k2gxOQ&_nc_ss=7b289&oh=00_AQTKWjARVIfizMBW1jYHe-C8PmkRRTg1xvKt-5Suv2Gklw&oe=6AF60C62)\n\n[KFC](https://www.facebook.com/KFC/)\n\n**Sponsored**\n\nGet the $4.99 Country Fried Steak while you can. Wednesdays only at KFC.\n\n[![](https://scontent-lax3-2.xx.fbcdn.net/v/t39.35426-6/736384618_4818419455069072_7710688552984259986_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=100&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=7RIXojr9FCQQ7kNvwHVbrfE&_nc_oc=Adr3PvUj3ozrFlWjnRoiSbPKlGsBEbuWqwJbtAcPC0LIb3TqisvVAZoGWd5nH9ZH24s&_nc_zt=14&_nc_ht=scontent-lax3-2.xx&_nc_gid=swNK8bOifSBrFIl_k2gxOQ&_nc_ss=7b289&oh=00_AQRubDheGkXissSxHbIEEt3NtKr0Sk60_xx2EtxIpx00hA&oe=6AF5F862)\\\\\n\\\\\nKFC.COM\\\\\n\\\\\nKFC's Country Fried Steak\\\\\n\\\\\nOrder Now](https://www.kfc.com/newsroom/wednesday-exclusive-country-fried-steak?utm_source=meta&utm_medium=social&utm_campaign=countryfriedsteak&utm_creative=countryfriedsteakstatic)\n\n\n\nInactive\n\nLibrary ID: 1102257768817243\n\nAug 14, 2026 - Aug 31, 2026\n\nPlatforms\n\n\n\n\n\nThis ad has multiple versions\n\n\n\nEU transparency\n\n\n\nOpen Dropdown\n\n\n\nSee ad details\n\n* * *\n\n![KFC](https://scontent-lax3-1.xx.fbcdn.net/v/t39.35426-6/771997985_1057998456731687_7165683423055208833_n.jpg?stp=dst-jpg_s60x60_tt6&_nc_cat=104&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=_y9HKlEvv0cQ7kNvwE7N7pR&_nc_oc=Adrx_H8qndlbHfgF5KaFDzRMquWxVl1U_InT7WyhuRYmfyHm24QGdZqzyDaCNVITIoQ&_nc_zt=14&_nc_ht=scontent-lax3-1.xx&_nc_gid=swNK8bOifSBrFIl_k2gxOQ&_nc_ss=7b289&oh=00_AQQa438S5828DJw-GtIQbYBN1BrJl924qeFQLyPcRVLcsg&oe=6AF606A2)\n\n[KFC](https://www.facebook.com/KFC/)\n\n**Sponsored**\n\nyour first @ owes you a Big Box. the good news? one of ‘em comes free. order now for only a limited time.\n\n[![](https://scontent-lax3-1.xx.fbcdn.net/v/t39.35426-6/769691946_3384569188380923_1001890239455119928_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=108&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=tjP3IL-R2KsQ7kNvwED361I&_nc_oc=Adr-zkFVL68pq77FR-mChP5zQ2zfYEguncuQ_-umRvOE9YwfZobD0oLQSnUiwj_wLeY&_nc_zt=14&_nc_ht=scontent-lax3-1.xx&_nc_gid=swNK8bOifSBrFIl_k2gxOQ&_nc_ss=7b289&oh=00_AQSy6kQXBD3pdvVFmybtI5yemFu-THVpLAYYUAaKCSGkdw&oe=6AF5FEAE)\\\\\n\\\\\nKFC.COM\\\\\n\\\\\nMix & Match BOGO Big Box\\\\\n\\\\\nOrder Now](https://www.kfc.com/menu?utm_source=meta&utm_medium=social&utm_campaign=bogobigbox&utm_creative=bogobigboxv1#deals)\n\n\n\nInactive\n\nLibrary ID: 2149459069323636\n\nAug 14, 2026 - Aug 31, 2026\n\nPlatforms\n\n\n\n\n\nThis ad has multiple versions\n\n\n\nEU transparency\n\n\n\nOpen Dropdown\n\n\n\nSee ad details\n\n* * *\n\n![KFC](https://scontent-lax7-1.xx.fbcdn.net/v/t39.35426-6/772840042_1610595297266381_4852488884372606891_n.jpg?stp=dst-jpg_s60x60_tt6&_nc_cat=101&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=Z2D2_qcxilsQ7kNvwHvkUVx&_nc_oc=Adrey_HvtRlUSGrHHRqc-JlyCXdx09TVbdalXXZjwLUQD0z3c3tiqZ5lwfuVMAiTiew&_nc_zt=14&_nc_ht=scontent-lax7-1.xx&_nc_gid=swNK8bOifSBrFIl_k2gxOQ&_nc_ss=7b289&oh=00_AQQWL8jH25kjzi_gvJjLZErOpo2NgtWPd613W1Zh_vzJEg&oe=6AF5FE87)\n\n[KFC](https://www.facebook.com/KFC/)\n\n**Sponsored**\n\ntastes so nice you can get it twice. 🙂↕️ mix and match any BOGO Big Box for a limited time. order now for a good time.\n\n[![](https://scontent-lax3-2.xx.fbcdn.net/v/t39.35426-6/771821224_1081207144414250_6250512097749015067_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=103&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=VPaYpTKCPYsQ7kNvwGxxVOx&_nc_oc=AdoieQIJ6MZCUj4k6vn-OXtBD0QPD4G8a_8DfoTcCiVxVA9qGVhqFY1r0sqQ_jEPk_M&_nc_zt=14&_nc_ht=scontent-lax3-2.xx&_nc_gid=swNK8bOifSBrFIl_k2gxOQ&_nc_ss=7b289&oh=00_AQSi94i_Qg_jDZNINuE5egw-VUS3jboxd_9zPirxsUk4ig&oe=6AF606DE)\\\\\n\\\\\nKFC.COM\\\\\n\\\\\nMix & Match BOGO Big Box\\\\\n\\\\\nOrder Now](https://www.kfc.com/menu?utm_source=meta&utm_medium=social&utm_campaign=bogobigbox&utm_creative=bogobigboxv2#deals)\n\n\n\nInactive\n\nLibrary ID: 867483243039073\n\nMay 4, 2026 - Jun 1, 2026\n\nPlatforms\n\n\n\n\n\nThis ad has multiple versions\n\n\n\nEU transparency\n\n\n\nOpen Dropdown\n\n\n\nSee ad details\n\n* * *\n\n![KFC](https://scontent-lax3-2.xx.fbcdn.net/v/t39.35426-6/683376015_939277992058317_7419874032537853489_n.jpg?stp=dst-jpg_s60x60_tt6&_nc_cat=103&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=Rzje0OzsuFEQ7kNvwE-eueQ&_nc_oc=AdqFsdiTKqlIrdo8PpHv5fghL7Qz7wyHzQ7qj_vYh90Z_ngUDe1_CMnHE7jFKvaP70w&_nc_zt=14&_nc_ht=scontent-lax3-2.xx&_nc_gid=swNK8bOifSBrFIl_k2gxOQ&_nc_ss=7b289&oh=00_AQShAxPk7KzXyl_WlpeRSNWf_2fI3S2shb0yilIjTX3lMg&oe=6AF5F0DF)\n\n[KFC](https://www.facebook.com/KFC/)\n\n**Sponsored**\n\nGet a $10 Bucket of the Day EVERY WEEK DAY at KFC.\n\n[![](https://scontent-lax3-1.xx.fbcdn.net/v/t39.35426-6/683756089_1298365565264948_734382372084783372_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=108&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=3Hr_dPKgu-EQ7kNvwGvmJKZ&_nc_oc=AdqejupU9xoHQhf4qh1rU3GVEXa7ShhVAwbawpqb8qZvxmMpgJjfG168yMy8ffL5ecY&_nc_zt=14&_nc_ht=scontent-lax3-1.xx&_nc_gid=swNK8bOifSBrFIl_k2gxOQ&_nc_ss=7b289&oh=00_AQQ1noJ8xatsqoJGhyWjBPO1uRW7Y4WaXlGD2rJnbov_lA&oe=6AF5F2EE)\\\\\n\\\\\nGet a $10 Bucket today\\\\\n\\\\\nOrder Now](https://www.kfc.com/menu?utm_source=meta&utm_medium=social&utm_campaign=%2410bucketoftheday&utm_creative=monday#deals)\n\n\n\nInactive\n\nLibrary ID: 1006625611745579\n\nJun 29, 2026 - Jul 9, 2026\n\nPlatforms\n\n\n\n\n\nEU transparency\n\n\n\nOpen Dropdown\n\n\n\nSee ad details\n\n* * *\n\n![KFC](https://scontent-lax3-2.xx.fbcdn.net/v/t39.35426-6/730459368_2035754934000955_6869478164162979943_n.jpg?stp=dst-jpg_s60x60_tt6&_nc_cat=100&ccb=1-7&_nc_sid=c53f8f&_nc_aid=0&_nc_ohc=q2jFZvyVyPEQ7kNvwEmxeHD&_nc_oc=AdqT9xeHCtIPYR6G-EzdXVgwRye6su-Ck59IPzZTeicD4f7atpztHcpDW9hxu3L2EQw&_nc_zt=14&_nc_ht=scontent-lax3-2.xx&_nc_gid=swNK8bOifSBrFIl_k2gxOQ&_nc_ss=7b289&oh=00_AQQ1WJnSIy1a6M_Zq0AgR9Ggi8bHse4_oi2rFFg_Ox6F4g&oe=6AF5F755)\n\n[KFC](https://www.facebook.com/KFC/)\n\n**Sponsored**\n\nThe most dangerous day of the year for your fingers, is now the most delicious.\n\n[![](https://scontent-lax3-2.xx.fbcdn.net/v/t39.35426-6/733443431_1683773036266459_2855747530424863828_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=111&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=CMyQYfoqo8UQ7kNvwHCnSzU&_nc_oc=AdpbfKs6nO4QrtI3owc5l3cICh-IuyYJoNu0zEXQNgIfQrRSEE2PQnQ40LTpJkN46nE&_nc_zt=14&_nc_ht=scontent-lax3-2.xx&_nc_gid=swNK8bOifSBrFIl_k2gxOQ&_nc_ss=7b289&oh=00_AQQ-OJioEBH0c790DPIwFvp3xT0OXskUh4uxYeX4OPKYBA&oe=6AF5E6A8)\\\\\n\\\\\nKFC.COM\\\\\n\\\\\nFinger Lickin' Fourth\\\\\n\\\\\nOrder now](https://www.kfc.com/menu?utm_source=meta&utm_medium=social&utm_campaign=fingerlickinfourth&utm_creative=flag#deals)\n\n\n\nInactive\n\nLibrary ID: 1459548629048637\n\nApr 20, 2026 - May 3, 2026\n\nPlatforms\n\n\n\n\n\nThis ad has multiple versions\n\n\n\nEU transparency\n\n\n\nOpen Dropdown\n\n\n\nSee ad details\n\n* * *\n\n![KFC](https://scontent-lax7-1.xx.fbcdn.net/v/t39.35426-6/671649344_1641667900501319_3909512933983202170_n.jpg?stp=dst-jpg_s60x60_tt6&_nc_cat=105&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=7Bt3QOtd_sUQ7kNvwF9iAAn&_nc_oc=Ado_ei97lC-c4aqpeL5lnbgwrZrAULzshdUAb5WepP50aUtTPxwg61cN9gUuxoRgNLc&_nc_zt=14&_nc_ht=scontent-lax7-1.xx&_nc_gid=swNK8bOifSBrFIl_k2gxOQ&_nc_ss=7b289&oh=00_AQQSx6QEj4r47dEUzQInyUlyRMEfYZOjpOJvZ67cvwyY6Q&oe=6AF60357)\n\n[KFC](https://www.facebook.com/KFC/)\n\n**Sponsored**\n\nThe ultimate bang for your bucket—perfect for family dinners or hangouts.\n\nSorry, we're having trouble playing this video.\n\n[Learn more](https://www.facebook.com/help/396404120401278/list)\n\n[KFC.COM\\\\\n\\\\\nKFC's Chick N’ Nug Meal\\\\\n\\\\\nOrder Now](https://www.kfc.com/menu?utm_source=meta&utm_medium=social&utm_campaign=dwow&utm_creative=%2420chicknnugmeal_video_v1#deals)\n\n\n\nInactive\n\nLibrary ID: 1379796414111694\n\nJul 13, 2026 - Jul 14, 2026 · Total active time 14 hrs\n\nPlatforms\n\n\n\n\n\nThis ad has multiple versions\n\n\n\nEU transparency\n\n\n\nOpen Dropdown\n\n\n\nSee ad details\n\n* * *\n\n![KFC](https://scontent-lax3-2.xx.fbcdn.net/v/t39.35426-6/742943406_1025316869977177_4296272645865584494_n.jpg?stp=dst-jpg_s60x60_tt6&_nc_cat=100&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=8hmwIcluMQcQ7kNvwG5_p6J&_nc_oc=AdrnwYsD3lMHCKDSW3LObcwhtoYiNh59lLkAmkio_cPqFNtkl7dCP1K6s2JsA9pQCxs&_nc_zt=14&_nc_ht=scontent-lax3-2.xx&_nc_gid=swNK8bOifSBrFIl_k2gxOQ&_nc_ss=7b289&oh=00_AQRg-JgPxnkmFWhBPns765k5LgLJi5azrO55gg6ahGQ6pQ&oe=6AF60751)\n\n[KFC](https://www.facebook.com/KFC/)\n\n**Sponsored**\n\nThey say ask 100,000 times and you shall receive. Popcorn Chicken is back at KFC!\n\nSorry, we're having trouble playing this video.\n\n[Learn more](https://www.facebook.com/help/396404120401278/list)\n\n[KFC.COM\\\\\n\\\\\nPopcorn Chicken is back\\\\\n\\\\\nOrder Now](https://www.kfc.com/menu?utm_source=meta&utm_medium=social&utm_campaign=popcornchicken&utm_creative=back#the-latest)\n\n\n\nInactive\n\nLibrary ID: 1470155561326972\n\nApr 20, 2026 - May 4, 2026\n\nPlatforms\n\n\n\n\n\nThis ad has multiple versions\n\n\n\nEU transparency\n\n\n\nOpen Dropdown\n\n\n\nSee ad details\n\n* * *\n\n![KFC](https://scontent-lax3-2.xx.fbcdn.net/v/t39.35426-6/672681465_1680940083332281_3272855131507339632_n.jpg?stp=dst-jpg_s60x60_tt6&_nc_cat=106&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=N1J9R3sBTI8Q7kNvwE5rumH&_nc_oc=AdrQ1HxhynjBLkJOWXbVWF6cFkFuJhtIhmkUEZjW6GG6JUA70fBnskK1Zl1F7VfxidM&_nc_zt=14&_nc_ht=scontent-lax3-2.xx&_nc_gid=swNK8bOifSBrFIl_k2gxOQ&_nc_ss=7b289&oh=00_AQTpNzNqGg8pwWD-FR0sfzEdgcYXPgaspD1gNWke7IVSKw&oe=6AF60FAF)\n\n[KFC](https://www.facebook.com/KFC/)\n\n**Sponsored**\n\nAn unbeatable bang for your bucket—only for Rewards members\n\n[![](https://scontent-lax3-1.xx.fbcdn.net/v/t39.35426-6/672692809_971669352208366_3844239094602090365_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=109&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=03w8tD4ygZ8Q7kNvwG6jrfM&_nc_oc=Adpna0eHuNEMkQKpW_H9R4Gx4r2jGWCHrKIPPaPDDjG4_yynY6TQzV7t_Pfk6KwUa9g&_nc_zt=14&_nc_ht=scontent-lax3-1.xx&_nc_gid=swNK8bOifSBrFIl_k2gxOQ&_nc_ss=7b289&oh=00_AQT0iHALNGqUSWTZa-X27F1uMVkkVov0xffTFqS5Jy7ipQ&oe=6AF60EC6)\\\\\n\\\\\nKFC.COM\\\\\n\\\\\nKFC's Chick N’ Nug Meal\\\\\n\\\\\nOrder Now](https://www.kfc.com/menu?utm_source=meta&utm_medium=social&utm_campaign=dwow&utm_creative=%2420chicknnugmealv2#deals)\n\n\n\nInactive\n\nLibrary ID: 1263417482043578\n\nMar 30, 2026 - May 4, 2026\n\nPlatforms\n\n\n\n\n\nThis ad has multiple versions\n\n\n\nEU transparency\n\n\n\nOpen Dropdown\n\n\n\nSee ad details\n\n* * *\n\n![KFC](https://scontent-lax3-2.xx.fbcdn.net/v/t39.35426-6/656747399_1500950248317978_8342401383868180198_n.jpg?stp=dst-jpg_s60x60_tt6&_nc_cat=100&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=o1eQpfA3NakQ7kNvwHCBy-d&_nc_oc=Ado9VDpIcgfy7E_S4ZJbu9rk0UxwUBuj2AnkrW4CdL_QyVM9MYOqSPreWrX6aSRNThY&_nc_zt=14&_nc_ht=scontent-lax3-2.xx&_nc_gid=swNK8bOifSBrFIl_k2gxOQ&_nc_ss=7b289&oh=00_AQT1n_hKjqUU7A9jBolXSK1-TzlwbELrsuYwi9zdu72Bmw&oe=6AF5EC95)\n\n[KFC](https://www.facebook.com/KFC/)\n\n**Sponsored**\n\nThe new KFC Value Feast is here. Starting at just $7.\n\nSorry, we're having trouble playing this video.\n\n[Learn more](https://www.facebook.com/help/396404120401278/list)\n\n[KFC.COM\\\\\n\\\\\nThe new KFC Value Feast\\\\\n\\\\\nOrder Now](https://www.kfc.com/menu?utm_source=meta&utm_medium=social&utm_campaign=kfcvaluefeast&utm_creative=crazy#the-latest)\n\n\n\nInactive\n\nLibrary ID: 1762069498109546\n\nJun 8, 2026 - Jul 13, 2026\n\nPlatforms\n\n\n\n\n\nThis ad has multiple versions\n\n\n\nEU transparency\n\n\n\nOpen Dropdown\n\n\n\nSee ad details\n\n* * *\n\n![KFC](https://scontent-lax3-1.xx.fbcdn.net/v/t39.35426-6/711643345_1357765979545063_3073893651751302932_n.jpg?stp=dst-jpg_s60x60_tt6&_nc_cat=102&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=aufxBS1o40gQ7kNvwEe445W&_nc_oc=AdomzhYVi7bsOxWpc8_X111H4tHl_XTrrZ4seAE5Z4wgQE2qmpOz7fI2ht3vjPSOuxU&_nc_zt=14&_nc_ht=scontent-lax3-1.xx&_nc_gid=swNK8bOifSBrFIl_k2gxOQ&_nc_ss=7b289&oh=00_AQQJzXjcKc5gffcl4OYX0Ss61piqTIkOyuaVEmWtSZwwbw&oe=6AF5E2DA)\n\n[KFC](https://www.facebook.com/KFC/)\n\n**Sponsored**\n\nGet a $10 Bucket of the Day EVERY WEEK DAY at KFC.\n\n[![](https://scontent-lax7-1.xx.fbcdn.net/v/t39.35426-6/712704463_1003105445910191_7043508389601013192_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=101&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=QI8bmY2qxRQQ7kNvwFF8z3-&_nc_oc=AdqHVuo5i8faYqEmwumbtMJHYIqKWD801UCWSWE9WR4KU8xa1J6Q8Eqz1UHwEucs4og&_nc_zt=14&_nc_ht=scontent-lax7-1.xx&_nc_gid=swNK8bOifSBrFIl_k2gxOQ&_nc_ss=7b289&oh=00_AQSm35BJHH9BE6KMmhGsnm7CwkBFPC0wLSXLppjhskwTog&oe=6AF5FFFD)\\\\\n\\\\\nGet a $10 Bucket today\\\\\n\\\\\nOrder Now](https://www.kfc.com/menu?utm_source=meta&utm_medium=social&utm_campaign=%2410bucketoftheday&utm_creative=monday#deals)\n\n\n\nInactive\n\nLibrary ID: 1670401290735829\n\nJun 8, 2026 - Jun 24, 2026\n\nPlatforms\n\n\n\n\n\nThis ad has multiple versions\n\n\n\nEU transparency\n\n\n\nOpen Dropdown\n\n\n\nSee ad details\n\n* * *\n\n![KFC](https://scontent-lax3-2.xx.fbcdn.net/v/t39.35426-6/714631577_1725295895132892_2562279819321417778_n.jpg?stp=dst-jpg_s60x60_tt6&_nc_cat=107&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=kFTlGDDRk3IQ7kNvwGAFmNj&_nc_oc=AdoVBXmIEplNAGCy6WtpC-HUubNlpyH40no3PWho_vn0c-Xgv7tSUny_q6v0q5S3sns&_nc_zt=14&_nc_ht=scontent-lax3-2.xx&_nc_gid=swNK8bOifSBrFIl_k2gxOQ&_nc_ss=7b289&oh=00_AQTz7u8yVMexJrwAziRLgvGUhswE5OVc3iPcgnZfL22Vuw&oe=6AF61359)\n\n[KFC](https://www.facebook.com/KFC/)\n\n**Sponsored**\n\nThe Supergirl Ultimate Meal is here with the new Kryptonian Kooler. Now available at KFC.\n\n[![](https://scontent-lax3-2.xx.fbcdn.net/v/t39.35426-6/710424027_1290450642798119_2292838471724335973_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=107&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=P6iTs1XF0HgQ7kNvwHGd715&_nc_oc=Adon4dAtBYtJZPhGqAo9se6j-nnQEsAAskkdMruDPwywx73BmG0HcL8Cu0tqeqRHRIs&_nc_zt=14&_nc_ht=scontent-lax3-2.xx&_nc_gid=swNK8bOifSBrFIl_k2gxOQ&_nc_ss=7b289&oh=00_AQTCGlAXwmOuPU3ZUSryH7wytYzlQchF5fX_Y4IYFpQSfA&oe=6AF60225)\\\\\n\\\\\nKFC.COM\\\\\n\\\\\nSupergirl Ultimate Meal\\\\\n\\\\\nOrder Now](https://www.kfc.com/menu?utm_source=meta&utm_medium=social&utm_campaign=supergirlultimatemeal&utm_creative=kryptoniankoolerstatic#supergirl)\n\n\n\nInactive\n\nLibrary ID: 1067213629400082\n\nAug 13, 2026 - Aug 24, 2026\n\nPlatforms\n\n\n\n\n\nThis ad has multiple versions\n\n\n\nEU transparency\n\n\n\nOpen Dropdown\n\n\n\nSee ad details\n\n* * *\n\n![KFC](https://scontent-lax3-2.xx.fbcdn.net/v/t39.35426-6/741047050_27293616206958509_6931701606353961488_n.jpg?stp=dst-jpg_s60x60_tt6&_nc_cat=100&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=X3qaKK0zcTEQ7kNvwHjFula&_nc_oc=AdqOOlqbpjSpBcjmQiEZ1o1q32wckAD-gfy1w6JO5NK08_HMG62mweIx_B4skRkG4XY&_nc_zt=14&_nc_ht=scontent-lax3-2.xx&_nc_gid=swNK8bOifSBrFIl_k2gxOQ&_nc_ss=7b289&oh=00_AQQYMqih_KTjUy3s8jKkz4eTfdzmspR4XBH5sDlVK7uUHA&oe=6AF5E1B5)\n\n[KFC](https://www.facebook.com/KFC/)\n\n**Sponsored**\n\nThey say ask 100,000 times and you shall receive. Popcorn Chicken is back at KFC!\n\n[![](https://scontent-lax3-2.xx.fbcdn.net/v/t39.35426-6/740445677_1625163485988965_8036015400381286090_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=111&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=QG-wSozBwKsQ7kNvwG7MslS&_nc_oc=Ado8Cg3f-MPoUATxClLGFhsGArYhK50Nz90aEpyy0Qm5o7xhHnko2vIzsxGVklY1krM&_nc_zt=14&_nc_ht=scontent-lax3-2.xx&_nc_gid=swNK8bOifSBrFIl_k2gxOQ&_nc_ss=7b289&oh=00_AQSYxSw3h3R-jsSFtPNNV8CQ3pnMwv-y-S1t8jWJo6jefw&oe=6AF5ED2E)\\\\\n\\\\\nKFC.COM\\\\\n\\\\\nPopcorn Chicken is back\\\\\n\\\\\nOrder Now](https://www.kfc.com/menu?utm_source=meta&utm_medium=social&utm_campaign=popcornchicken&utm_creative=getpoppin#the-latest)\n\n\n\nInactive\n\nLibrary ID: 1034524466252920\n\nAug 13, 2026 - Aug 24, 2026\n\nPlatforms\n\n\n\n\n\nThis ad has multiple versions\n\n\n\nEU transparency\n\n\n\nOpen Dropdown\n\n\n\nSee ad details\n\n* * *\n\n![KFC](https://scontent-lax3-1.xx.fbcdn.net/v/t39.35426-6/739175450_1335809915346143_6832743278706771914_n.jpg?stp=dst-jpg_s60x60_tt6&_nc_cat=109&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=MhJc0CEk0vkQ7kNvwEi0nQi&_nc_oc=Adoxb61FeCfoX0x0mPCHVv2R-8diM56CBMeSQ2MsKMlCa3aB8fqst3OZfqrcQ3OWU2g&_nc_zt=14&_nc_ht=scontent-lax3-1.xx&_nc_gid=swNK8bOifSBrFIl_k2gxOQ&_nc_ss=7b289&oh=00_AQRR1nALuTanoaIT67DvRhrWSK3jIDX_g_1vtFbS0CaN7Q&oe=6AF5E4BF)\n\n[KFC](https://www.facebook.com/KFC/)\n\n**Sponsored**\n\nThey say ask 100,000 times and you shall receive. Popcorn Chicken is back at KFC!\n\n[![](https://scontent-lax3-1.xx.fbcdn.net/v/t39.35426-6/741324634_905974902527872_61140011321372063_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=104&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=sbTs4BcwywgQ7kNvwF7WXHR&_nc_oc=Adr_oUjkuCtH_sNXgqbivTvj-yTbVzraC8ikgiL8aALHbtLWKStrySdyRDC9otBoRpo&_nc_zt=14&_nc_ht=scontent-lax3-1.xx&_nc_gid=swNK8bOifSBrFIl_k2gxOQ&_nc_ss=7b289&oh=00_AQSCK4BUTT_1MbOEJt9dQq7XjKV3VPRbRkgmjqO6xHEl0w&oe=6AF5EB7C)\\\\\n\\\\\nKFC.COM\\\\\n\\\\\nPopcorn Chicken is back\\\\\n\\\\\nOrder Now](https://www.kfc.com/menu?utm_source=meta&utm_medium=social&utm_campaign=popcornchicken&utm_creative=back#the-latest)\n\n\n\nInactive\n\nLibrary ID: 1446081207282726\n\nJul 13, 2026 - Jul 14, 2026 · Total active time 14 hrs\n\nPlatforms\n\n\n\n\n\nThis ad has multiple versions\n\n\n\nEU transparency\n\n\n\nOpen Dropdown\n\n\n\nSee ad details\n\n* * *\n\n![KFC](https://scontent-lax3-2.xx.fbcdn.net/v/t39.35426-6/743763922_1386102326714840_4164334426867616658_n.jpg?stp=dst-jpg_s60x60_tt6&_nc_cat=100&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=jjKLgVxVPUkQ7kNvwG9-O7Q&_nc_oc=Adq64izjDSnlsL5R7UA1OaGBjSg3ihSN3lbvlaoCeChOWMuLL3srsnWN_znfZQkjfm4&_nc_zt=14&_nc_ht=scontent-lax3-2.xx&_nc_gid=swNK8bOifSBrFIl_k2gxOQ&_nc_ss=7b289&oh=00_AQR2GamkQGYSjustTP5ElzrStpOSrdZBE133F_4e5njJ7g&oe=6AF6111C)\n\n[KFC](https://www.facebook.com/KFC/)\n\n**Sponsored**\n\nThey say ask 100,000 times and you shall receive. Popcorn Chicken is back at KFC!\n\nSorry, we're having trouble playing this video.\n\n[Learn more](https://www.facebook.com/help/396404120401278/list)\n\n[KFC.COM\\\\\n\\\\\nPopcorn Chicken is back\\\\\n\\\\\nOrder Now](https://www.kfc.com/menu?utm_source=meta&utm_medium=social&utm_campaign=popcornchicken&utm_creative=goodtime#the-latest)\n\n\n\nActive\n\nLibrary ID: 1622130499587455\n\nStarted running on Oct 22, 2026\n\nPlatforms\n\n\n\n\n\nThis ad has multiple versions\n\n\n\nOpen Dropdown\n\n\n\nSee ad details\n\n* * *\n\n![KFC](https://scontent-lax3-2.xx.fbcdn.net/v/t39.35426-6/857370672_1674505530725507_5899526632484025947_n.jpg?stp=dst-jpg_s60x60_tt6&_nc_cat=103&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=Xau-gTUkjAEQ7kNvwEz5LtK&_nc_oc=AdogzX9h56eHTqsSF4KPe7yY72_dNklsBmfyC-gEa4CBT8Q7nHSv4XL9zg2Ibgh3r8A&_nc_zt=14&_nc_ht=scontent-lax3-2.xx&_nc_gid=swNK8bOifSBrFIl_k2gxOQ&_nc_ss=7b289&oh=00_AQREKChUfFiUSRuG-1Y2BsQATOW4AB9uTLdBFjW2GSm_PA&oe=6AF5ED70)\n\n[KFC](https://www.facebook.com/kfcarabia/)\n\n**Sponsored**\n\nSorry, we're having trouble playing this video.\n\n[Learn more](https://www.facebook.com/help/396404120401278/list)\n\n[HTTPS://7CV7.ADJ.ST/HOME?&ADJ\\_T=2KU4Q1W&ADJ\\_CAMPAIGN=21234115-YUM-KFC-KSA-META-NA-AWAR-W9-BRAND\\_CAMPAIGN-AUC-REA-CPM-BO#52924&ADJ\\_ADGROUP=META&ADJ\\_CREATIVE=BRAND\\\\\n\\\\\nOrder Now](https://7cv7.adj.st/home?&adj_t=2ku4q1w&adj_campaign=21234115-YUM-KFC-KSA-META-NA-AWAR-W9-Brand_Campaign-AUC-REA-CPM-BO#52924&adj_adgroup=Meta&adj_creative=Brand)\n\n\n\nInactive\n\nLibrary ID: 1751644556248914\n\nJun 8, 2026 - Jun 15, 2026\n\nPlatforms\n\n\n\n\n\nThis ad has multiple versions\n\n\n\nEU transparency\n\n\n\nOpen Dropdown\n\n\n\nSee ad details\n\n* * *\n\n![KFC](https://scontent-lax7-1.xx.fbcdn.net/v/t39.35426-6/711095755_1388479300125735_6254076298571700658_n.jpg?stp=dst-jpg_s60x60_tt6&_nc_cat=105&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=-aagcR4At2EQ7kNvwF9jS45&_nc_oc=Adp-mDS4mPd4_gexHBquOd3KmcYDjYZFS1xFvudouQU1_TBCzaIBEYmVjVepPHK13FI&_nc_zt=14&_nc_ht=scontent-lax7-1.xx&_nc_gid=swNK8bOifSBrFIl_k2gxOQ&_nc_ss=7b289&oh=00_AQShOMv0KlXZEGGwFdm95idx-iiPBTCYgHIMV-gcfnNI_w&oe=6AF60AA6)\n\n[KFC](https://www.facebook.com/KFC/)\n\n**Sponsored**\n\nThe Supergirl Ultimate Meal is here with three new Supergirl sauces. It's Chicken, Fries, Whatever. Now available at KFC.\n\n[![](https://scontent-lax3-1.xx.fbcdn.net/v/t39.35426-6/711680071_4325336314385077_1938483967802546104_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=109&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=cC1R8IzlWjMQ7kNvwH2vGk4&_nc_oc=AdqjGC4GfAWS7vB7UMKSHtNU3yfciskEbbYkEVVJPHqmYmJAPe7Gh0l8o1CWG-XpB70&_nc_zt=14&_nc_ht=scontent-lax3-1.xx&_nc_gid=swNK8bOifSBrFIl_k2gxOQ&_nc_ss=7b289&oh=00_AQQdoncjZEZifRbkPgDYs7ASTtiITKKv96puSRETLcDKSw&oe=6AF5F055)\\\\\n\\\\\nKFC.COM\\\\\n\\\\\nSupergirl Ultimate Meal\\\\\n\\\\\nOrder Now](https://www.kfc.com/menu?utm_source=meta&utm_medium=social&utm_campaign=supergirlultimatemeal&utm_creative=ultimatemealstatic#supergirl)\n\nSee more\n\nSystem status\n\n- [Ad Library API](https://www.facebook.com/ads/library/api/?source=archive-landing-page)\n- [About ads and data use](https://www.facebook.com/ads/about/?entry_product=ad_library)\n- [Privacy](https://www.facebook.com/privacy/center/?entry_point=privacy_basics_redirect)\n- [Terms](https://www.facebook.com/policies/)\n- [Cookies](https://www.facebook.com/policies/cookies/)\n\n[English (US)](https://www.facebook.com/language/)",
+            "error": null
+          }
+        ]
+      }
+    }
+  ]
+}
