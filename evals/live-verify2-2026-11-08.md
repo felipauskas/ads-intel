@@ -92,11 +92,22 @@ checks), and its reply shape matches the matrix files exactly
 
 ## 5. Observations (no source changes made)
 
-1. **Market filter is loose.** `country` is echoed and sent to the Ad Library,
-   yet results are not restricted to that market: KFC/SA and KFC/AE both return
-   `KFC Masr` (Egypt), and BK/SA returns `Burger King UK` and `entel` (Chile).
-   This matches verification #1 — pre-existing behaviour of the free render, not
-   a regression from 58877e8.
+1. **CORRECTED — `country` does filter; the earlier "market filter is loose"
+   reading was a category error.** `country` selects the *delivery-market*
+   listing (ads that reached that market); a card's `page_name` is the
+   *advertiser page* that ran the ad. `KFC Masr` in an AE/SA listing, or
+   `Burger King UK` in SA, is that Page reaching the market (or a keyword
+   hit) — it does not mean the country filter failed. The identical US
+   `$`-priced cards heading every listing are the default `active_status=all`
+   + impression sort: high-impression *inactive* global creatives rank
+   first everywhere. Active AE listings show AED. Use `active_status=active`
+   when the current market set is what matters.
+
+   Related: `advertiser` here is a local **page-name filter after the
+   keyword fetch**, not Meta's advertiser (Page) search
+   (`search_type=page&view_all_page_id=`). Pages named "KFC" (e.g.
+   `@kfcarabia`, id 48754878397) tie at 0.80 and cannot be told apart by
+   name — distinguish by `page_url`/`page_id` on the cards.
 2. **Keyword noise on 2-token brands.** "Burger King" pulls marketplace and
    telco ads (`Mercado Libre`, `Nequi`, `ALDI SÜD`, `entel`) because the search
    is keyword-based. The `advertiser` parameter is the documented way to cut it.
