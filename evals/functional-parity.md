@@ -172,6 +172,24 @@ or only adopt a legacy file when it carries an explicit legacy marker.
   watch in this state produces no baseline and no report forever.
 - `ad_watch remove` deletes all filter variants of a query (documented).
 
+## Resolution (post-`b3a0c2c`)
+
+- **M1 — fixed** in `aa61ac3`: `_SUMMARY_KEYS` carries all 16 fields
+  (`last_seen`, `creative_text` included) and every bucket is 16 keys wide.
+  Regression guard: `test_check_bucket_items_are_sixteen_fields` and
+  `test_changed_and_ended_buckets_are_sixteen_fields`.
+- **M2 — documented, `ended` kept as the surfaced status.** Surfacing
+  `inactive` would change the diff vocabulary, reports and every existing
+  baseline, so the smaller contract change won: the library's `Inactive`
+  label continues to surface as `status: "ended"`, and the mapping is stated
+  in README, `schemas.AD_SEARCH`/`AD_CHECK`, and locked by
+  `tests/test_schemas.py`.
+- **M3 — fixed** in `aa61ac3`: `store._snapshot_candidates` treats
+  `advertiser` as scoped, so neither the unfiltered country-keyed file nor
+  the pre-country `sha1(query)` fallback is offered to an advertiser watch.
+  Regression guards: the tool-level advertiser test and the store-level
+  stamped/unstamped/legacy tests.
+
 ## Blockers
 
 None. All findings are reproducible offline from the fixture; no network or
