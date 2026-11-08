@@ -98,20 +98,6 @@ def test_snapshot_paths_differ_by_advertiser(tmp_path):
     assert plain.name == hashlib.sha1("KFC\x00US".encode("utf-8")).hexdigest()[:16] + ".json"
 
 
-def test_advertiser_snapshot_falls_back_to_legacy_unstamped_baseline(data_dir):
-    """Adding an advertiser to a pre-fix watch keeps reading its baseline."""
-    snap = {"ads": {"1": {"id": "1"}}}
-    legacy = store._snapshot_path("KFC", "US")
-    legacy.parent.mkdir(parents=True, exist_ok=True)
-    legacy.write_text(json.dumps({"query": "KFC", **snap}))
-    assert store.load_snapshot("KFC", "US", "KFC") == snap
-
-    # But a baseline written now by the unfiltered watch is stamped, and the
-    # filtered watch must not adopt it.
-    store.save_snapshot("KFC", {"ads": {"2": {"id": "2"}}}, "US")
-    assert store.load_snapshot("KFC", "US", "KFC") == {"ads": {}}
-
-
 def test_watch_remove_absent_does_not_rewrite(monkeypatch):
     store.watch_add("nike")
     writes = []
@@ -121,3 +107,90 @@ def test_watch_remove_absent_does_not_rewrite(monkeypatch):
     )
     assert store.watch_remove("absent") == [{"query": "nike", "country": "US"}]
     assert writes == []
+
+def test_watch_add_persists_filters_and_dedupes():
+    items = store.watch_add(
+        "nike", active_status="active", media_type="image"
+    )
+    assert items == [
+        {
+            "query": "nike",
+            "country": "US",
+            "active_status": "active",
+            "media_type": "image",
+        }
+    ]
+    # Same filters: no duplicate. Different filters: a separate watch.
+    assert store.watch_add("nike", active_status="active", media_type="image") == items
+    items = store.watch_add("nike")
+    assert items == [
+        {
+            "query": "nike",
+            "country": "US",
+            "active_status": "active",
+            "media_type": "image",
+        },
+        {"query": "nike", "country": "US"},
+    ]
+
+
+def test_snapshot_and_report_keys_differ_by_filters():
+    plain = store._snapshot_path("KFC", "US")
+    filtered = store._snapshot_path("KFC", "US", None, "active", "video")
+    assert plain != filtered
+    # The default key is unchanged, so existing baselines stay readable.
+    assert plain.name == (
+        hashlib.sha1("KFC\x00US".encode("utf-8")).hexdigest()[:16] + ".json"
+    )
+    assert store.report_paths("KFC", "US", None, "active")["html"] != (
+        store.report_paths("KFC", "US")["html"]
+    )
+
+
+def test_filtered_watch_does_not_adopt_unfiltered_baseline(data_dir):
+    store.save_snapshot("KFC", {"ads": {"1": {"id": "1"}}}, "US")
+    # A pre-country legacy file (sha1 of the query alone) has no filter stamps,
+    # so the load guard cannot reject it: the path itself must not be offered
+    # to a filtered watch.
+    digest = hashlib.sha1("KFC".encode("utf-8")).hexdigest()[:16]
+    legacy = data_dir / "snapshots" / f"{digest}.json"
+    legacy.parent.mkdir(parents=True, exist_ok=True)
+    legacy.write_text(json.dumps({"ads": {"9": {"id": "9"}}}))
+    for filters in (
+        ("active", "all"),
+        ("all", "video"),
+        ("inactive", "image"),
+    ):
+        assert store.load_snapshot("KFC", "US", None, *filters) == {"ads": {}}, filters
+    # A plain US watch still upgrades from the legacy file when no newer
+    # keyed baseline exists.
+    old_digest = hashlib.sha1("OLD".encode("utf-8")).hexdigest()[:16]
+    (data_dir / "snapshots" / f"{old_digest}.json").write_text(
+        json.dumps({"ads": {"8": {"id": "8"}}})
+    )
+    assert store.load_snapshot("OLD", "US") == {"ads": {"8": {"id": "8"}}}
+    # Its own baseline round-trips, with metadata kept out of the payload.
+    store.save_snapshot(
+        "KFC", {"ads": {"2": {"id": "2"}}}, "US", None, "active", "all"
+    )
+    assert store.load_snapshot("KFC", "US", None, "active", "all") == {
+        "ads": {"2": {"id": "2"}}
+    }
+
+
+def test_advertiser_watch_does_not_adopt_unstamped_unfiltered_baseline(data_dir):
+    """An advertiser watch must never diff against an unfiltered baseline.
+
+    The 24 non-brand ads in that baseline would be reported as `ended` on the
+    first advertiser-filtered run. The old leniency was a documented upgrade
+    exception; it contradicts the blanket "filtered watches never adopt
+    unfiltered baselines" rule.
+    """
+    snap = {"ads": {"1": {"id": "1"}}}
+    legacy = store._snapshot_path("KFC", "US")
+    legacy.parent.mkdir(parents=True, exist_ok=True)
+    legacy.write_text(json.dumps({"query": "KFC", **snap}))
+    assert store.load_snapshot("KFC", "US", "KFC") == {"ads": {}}
+
+    # The unfiltered watch itself still reads its own baseline.
+    assert store.load_snapshot("KFC", "US") == snap

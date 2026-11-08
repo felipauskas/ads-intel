@@ -179,3 +179,21 @@ Known limits of the harness (deliberate, not findings):
 ## Addendum 2026-11-06 (post-review fix, HEAD `a9b75a0`)
 
 Independent review found the advertiser filter ran after the 20-ad keyword slice (brand past position 20 reported `name_not_matched`; Nike lost its 4th ad). Fixed in `42f5438` (advertiser paths fetch the full parse, resolve, then slice) + `a9b75a0` (`name_not_matched` now carries `partial`). Suite is now **84 passed** (was 78 at the run above). Re-run: pytest ×3 = 84/84/84, offline stress 50/50 PASS, validate green, live AE+advertiser flow PASS (KFC/AE: 27 ads resolved at 0.80, settle 0/0/0).
+
+## Addendum 2026-11-06 (free field enrichment, Tasks 1–4)
+
+Field/filter enrichment landed on top of the tree measured above (new per-ad
+fields, `active_status`/`media_type` filters, richer diff signature and report
+badges). Re-run on the working tree before commit:
+
+- `pytest -q` → **129 passed** (was 84 at the last addendum). 0 failed.
+- `scripts/stress_e2e.py` (offline) → **PASS**, 50/50 iterations, 0 failures,
+  max 9.8 ms, total 0.46 s; concurrency 10×100 → 0 corrupt, 0 exceptions;
+  corruption section PASS.
+- `hermes plugins validate .` → **Validation passed** (one informational note
+  that `scripts/stress_e2e.py` patches a module attribute in-process; unchanged
+  from the earlier run).
+
+Live mode was not re-run in this pass, so the live table above remains the
+recorded 4/4 run on the pre-enrichment tree. The new fields do not add a host or
+a request; the filters are query-string parameters on the same GET.

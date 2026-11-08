@@ -8,11 +8,11 @@ Ad Library
 
 [Branded Content](https://www.facebook.com/ads/library/branded_content/?source=fb-logo)
 
-[​](https://www.facebook.com/ads/library/?active_status=all&ad_type=all&country=US&is_targeted_country=false&media_type=all&q=nike&search_type=keyword_unordered&sort_data[mode]=total_impressions&sort_data[direction]=desc#)
+[](https://www.facebook.com/ads/library/?active_status=all&ad_type=all&country=US&is_targeted_country=false&media_type=all&q=nike&search_type=keyword_unordered&sort_data[mode]=total_impressions&sort_data[direction]=desc#)
 
 United States
 
-​
+
 
 Select country
 
@@ -516,13 +516,13 @@ Zambia
 
 Zimbabwe
 
-​
 
-​
+
+
 
 All ads
 
-​
+
 
 Select ad category
 
@@ -538,9 +538,9 @@ Financial products and services
 
 Search by keyword or advertiser
 
-​
 
-​
+
+
 
 [Log in](https://www.facebook.com/) [Close navigation panel](https://www.facebook.com/ads/library/?active_status=all&ad_type=all&country=US&is_targeted_country=false&media_type=all&q=nike&search_type=keyword_unordered&sort_data[mode]=total_impressions&sort_data[direction]=desc#)
 
@@ -576,11 +576,11 @@ Filters
 
 Sort
 
-​
+
 
 Sort by
 
-​
+
 
 Inactive
 
@@ -590,11 +590,11 @@ Jul 9, 2025 - Nov 21, 2025
 
 Platforms
 
-​
+
 
 Open Dropdown
 
-​
+
 
 See ad details
 
@@ -642,7 +642,7 @@ Sukeban World\\
 \\
 Visit Instagram profile](http://instagram.com/sukeban_world)
 
-​
+
 
 Inactive
 
@@ -652,25 +652,25 @@ Aug 15, 2023 - Mar 30, 2026
 
 Platforms
 
-​
 
-​
 
-​
 
-​
+
+
+
+
 
 This ad has multiple versions
 
-​
+
 
 EU transparency
 
-​
+
 
 Open Dropdown
 
-​
+
 
 See ad details
 
@@ -692,7 +692,7 @@ Calzado de entrenamiento para hombre Nike MC Trainer 2 - Azul\\
 \\
 Shop Now](https://www.nike.com/mx/t/calzado-de-entrenamiento-1100-trainer-2-vGRwc3?cp=77438547234_soc_)
 
-​
+
 
 Inactive
 
@@ -702,23 +702,23 @@ May 7, 2026 - Jun 29, 2026
 
 Platforms
 
-​
 
-​
 
-​
 
-​
 
-​
+
+
+
+
+
 
 EU transparency
 
-​
+
 
 Open Dropdown
 
-​
+
 
 See ad details
 
@@ -740,7 +740,7 @@ PLAY.GOOGLE.COM\\
 \\
 Install now](http://play.google.com/store/apps/details?id=com.icontrol.easy.widgets.themes)
 
-​
+
 
 Inactive
 
@@ -750,21 +750,21 @@ Jan 19, 2026 - Feb 28, 2026
 
 Platforms
 
-​
 
-​
 
-​
 
-​
 
-​
+
+
+
+
+
 
 **4 ads** use this creative and text
 
 Open Dropdown
 
-​
+
 
 See summary details
 
@@ -780,7 +780,7 @@ See summary details
 
 [![](https://scontent-lax3-1.xx.fbcdn.net/v/t39.35426-6/619089507_1802993010269704_687925495532822348_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=108&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=f3mcZCADq0AQ7kNvwFuBUyP&_nc_oc=AdoiGdiwREBmwfj4ZAdBmuqkyyBRRWYrXgnqcCd3clId9iVVWBkY__yXlnYXeVchyIY&_nc_zt=14&_nc_ht=scontent-lax3-1.xx&_nc_gid=B-AXfSSJGKpJv2cAG9hG7Q&_nc_ss=7b289&oh=00_AQQ2Ls3sEP8HFm2AuBC83Zh2QtIYig095AwzY_y4u3dW_w&oe=6AF25B25)](http://play.google.com/store/apps/details?id=com.ioscontrol.themed.control.center.smart)
 
-​
+
 
 Inactive
 
@@ -790,25 +790,25 @@ Mar 20, 2026 - Jun 20, 2026
 
 Platforms
 
-​
 
-​
 
-​
 
-​
+
+
+
+
 
 This ad has multiple versions
 
-​
+
 
 EU transparency
 
-​
+
 
 Open Dropdown
 
-​
+
 
 See ad details
 
@@ -830,7 +830,7 @@ Sorry, we're having trouble playing this video.
 \\
 Shop Now](https://www.jdsports.com/plp/only-at-jd/brand=nike)
 
-​
+
 
 Inactive
 
@@ -840,23 +840,23 @@ Nov 15, 2025 - Nov 17, 2025
 
 Platforms
 
-​
 
-​
 
-​
 
-​
 
-​
+
+
+
+
+
 
 EU transparency
 
-​
+
 
 Open Dropdown
 
-​
+
 
 See ad details
 
@@ -884,7 +884,7 @@ CACTUS JACK BY TRAVIS SCOTT\\
 \\
 Shop now](https://shop.travisscott.com/)
 
-​
+
 
 Inactive
 
@@ -894,23 +894,23 @@ Jun 27, 2026 - Aug 15, 2026
 
 Platforms
 
-​
 
-​
 
-​
 
-​
 
-​
+
+
+
+
+
 
 EU transparency
 
-​
+
 
 Open Dropdown
 
-​
+
 
 See ad details
 
@@ -932,7 +932,7 @@ PLAY.GOOGLE.COM\\
 \\
 Install now](http://play.google.com/store/apps/details?id=com.icontrol.easy.widgets.themes)
 
-​
+
 
 Active
 
@@ -942,23 +942,23 @@ Started running on May 19, 2026
 
 Platforms
 
-​
 
-​
 
-​
 
-​
 
-​
+
+
+
+
+
 
 EU transparency
 
-​
+
 
 Open Dropdown
 
-​
+
 
 See ad details
 
@@ -980,7 +980,7 @@ PLAY.GOOGLE.COM\\
 \\
 Install now](http://play.google.com/store/apps/details?id=com.iconchanger.widget.theme.shortcut)
 
-​
+
 
 Inactive
 
@@ -990,25 +990,25 @@ Aug 15, 2023 - Mar 30, 2026
 
 Platforms
 
-​
 
-​
 
-​
 
-​
+
+
+
+
 
 This ad has multiple versions
 
-​
+
 
 EU transparency
 
-​
+
 
 Open Dropdown
 
-​
+
 
 See ad details
 
@@ -1030,7 +1030,7 @@ Shorts de tejido Woven para hombre Jordan Essentials - Negro\\
 \\
 Shop Now](https://www.nike.com/mx/t/shorts-de-tejido-woven-jordan-essentials-sPBbsb?cp=77438547234_soc_)
 
-​
+
 
 Active
 
@@ -1040,19 +1040,19 @@ Started running on May 22, 2026
 
 Platforms
 
-​
 
-​
 
-​
+
+
+
 
 This ad has multiple versions
 
-​
+
 
 Open Dropdown
 
-​
+
 
 See ad details
 
@@ -1076,7 +1076,7 @@ Download Depop - Buy & Sell Clothes by Depop Ltd on the App Store. See screensho
 \\
 Download](https://www.depop.com/products/nwcollectibles-brand-new-with-tags-officially-214/)
 
-​
+
 
 Inactive
 
@@ -1086,23 +1086,23 @@ Jun 23, 2026 - Sep 4, 2026
 
 Platforms
 
-​
 
-​
 
-​
 
-​
 
-​
+
+
+
+
+
 
 EU transparency
 
-​
+
 
 Open Dropdown
 
-​
+
 
 See ad details
 
@@ -1126,7 +1126,7 @@ Take transit to the trail\\
 \\
 Learn more](https://trailheaddirect.org/?utm_source=meta&utm_medium=social&utm_campaign=trailheaddirect26_eng)
 
-​
+
 
 Inactive
 
@@ -1136,23 +1136,23 @@ Jun 27, 2026 - Aug 14, 2026
 
 Platforms
 
-​
 
-​
 
-​
 
-​
 
-​
+
+
+
+
+
 
 EU transparency
 
-​
+
 
 Open Dropdown
 
-​
+
 
 See ad details
 
@@ -1174,7 +1174,7 @@ PLAY.GOOGLE.COM\\
 \\
 Install now](http://play.google.com/store/apps/details?id=com.icontrol.easy.widgets.themes)
 
-​
+
 
 Inactive
 
@@ -1184,25 +1184,25 @@ Aug 3, 2026 - Oct 1, 2026
 
 Platforms
 
-​
 
-​
 
-​
 
-​
 
-​
+
+
+
+
+
 
 This ad has multiple versions
 
-​
+
 
 **2 ads** use this creative and text
 
 Open Dropdown
 
-​
+
 
 See summary details
 
@@ -1224,7 +1224,7 @@ Sorry, we're having trouble playing this video.
 \\
 Shop Now](https://www.jdsports.com/pdp/mens-nike-air-liquid-max-casual-shoes/prod30142121/IQ7635/005)
 
-​
+
 
 Inactive
 
@@ -1234,23 +1234,23 @@ Jun 23, 2026 - Sep 5, 2026
 
 Platforms
 
-​
 
-​
 
-​
 
-​
 
-​
+
+
+
+
+
 
 EU transparency
 
-​
+
 
 Open Dropdown
 
-​
+
 
 See ad details
 
@@ -1274,7 +1274,7 @@ Park. Ride. Hike.\\
 \\
 Learn more](https://trailheaddirect.org/?utm_source=meta&utm_medium=social&utm_campaign=trailheaddirect26_eng)
 
-​
+
 
 Inactive
 
@@ -1284,15 +1284,15 @@ Apr 29, 2026 - May 25, 2026
 
 Platforms
 
-​
 
-​
+
+
 
 **3 ads** use this creative and text
 
 Open Dropdown
 
-​
+
 
 See summary details
 
@@ -1308,7 +1308,7 @@ Add a retro touch to any fit.
 
 [![](https://scontent-lax3-1.xx.fbcdn.net/v/t39.35426-6/680240861_2253494738391384_3575563137545011641_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=102&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=RgVg6sjODD4Q7kNvwFUG4fy&_nc_oc=Adr0AmYegzg8vS0RUVW--lwgIYDu3YThxe5nlu7bVPnar79bydeiE8KED1LT9CHD2j4&_nc_zt=14&_nc_ht=scontent-lax3-1.xx&_nc_gid=B-AXfSSJGKpJv2cAG9hG7Q&_nc_ss=7b289&oh=00_AQQuivJSiEpC-6Szz0m1_QJynInV2ZvBGgHzbX5xn1fMMw&oe=6AF24598)](https://www.nike.com/w/womens-summer-essentials-lifestyle-13jrmz5e1x6z6pei9)
 
-​
+
 
 Inactive
 
@@ -1318,25 +1318,25 @@ Oct 9, 2024 - Apr 8, 2026
 
 Platforms
 
-​
 
-​
 
-​
 
-​
+
+
+
+
 
 This ad has multiple versions
 
-​
+
 
 EU transparency
 
-​
+
 
 Open Dropdown
 
-​
+
 
 See ad details
 
@@ -1360,7 +1360,7 @@ Nike Evry Cush NS 3 Pack Socks Black - 8-11\\
 \\
 Shop Now](http://www.elverys.ie/products/nike-evry-cush-ns-3-pack-socks-black?variant=49187051471164&currency=EUR)
 
-​
+
 
 Inactive
 
@@ -1370,21 +1370,21 @@ Dec 19, 2025 - Jan 5, 2026
 
 Platforms
 
-​
 
-​
 
-​
 
-​
+
+
+
+
 
 EU transparency
 
-​
+
 
 Open Dropdown
 
-​
+
 
 See ad details
 
@@ -1452,7 +1452,7 @@ Super Brand Super Deal🎁
 
 ![](https://scontent-lax3-2.xx.fbcdn.net/v/t39.35426-6/602335955_1486177362444372_174648420248983876_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=111&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=mFBapoBteBUQ7kNvwGBc0tE&_nc_oc=Adq1G3ADfqG7RPgKLpQtnzo04gjAeP6NApDYNI1VsLzL81U-HeDBrZOxEOghUWlasPo&_nc_zt=14&_nc_ht=scontent-lax3-2.xx&_nc_gid=B-AXfSSJGKpJv2cAG9hG7Q&_nc_ss=7b289&oh=00_AQSZ7fOyyF7bK0lzo6qEdW6KHHqYTO4dqr1bz8zny1dRAQ&oe=6AF264A7)
 
-​
+
 
 Inactive
 
@@ -1462,15 +1462,15 @@ Apr 11, 2026 - Apr 22, 2026
 
 Platforms
 
-​
+
 
 EU transparency
 
-​
+
 
 Open Dropdown
 
-​
+
 
 See ad details
 
@@ -1496,7 +1496,7 @@ Myles Turner\\
 \\
 Visit Instagram profile](http://instagram.com/turner_myles)
 
-​
+
 
 Inactive
 
@@ -1506,23 +1506,23 @@ Feb 3, 2026 - Apr 10, 2026
 
 Platforms
 
-​
 
-​
 
-​
 
-​
 
-​
+
+
+
+
+
 
 EU transparency
 
-​
+
 
 Open Dropdown
 
-​
+
 
 See ad details
 
@@ -1544,7 +1544,7 @@ PLAY.GOOGLE.COM\\
 \\
 Install now](http://play.google.com/store/apps/details?id=com.icontrol.easy.widgets.themes)
 
-​
+
 
 Active
 
@@ -1554,17 +1554,17 @@ Started running on Jun 20, 2025
 
 Platforms
 
-​
 
-​
+
+
 
 This ad has multiple versions
 
-​
+
 
 Open Dropdown
 
-​
+
 
 See ad details
 
@@ -1586,7 +1586,7 @@ Nike Air Monarch IV \\
 \\
 Shop Now](https://www.nike.com/t/air-monarch-iv-mens-workout-shoes-p8qNlT/415445-001?dplnk=member)
 
-​
+
 
 Inactive
 
@@ -1596,23 +1596,23 @@ Aug 28, 2026 - Sep 2, 2026
 
 Platforms
 
-​
 
-​
 
-​
 
-​
 
-​
+
+
+
+
+
 
 EU transparency
 
-​
+
 
 Open Dropdown
 
-​
+
 
 See ad details
 
@@ -1644,7 +1644,7 @@ Noemimisma\\
 \\
 Shop now](https://www.nike.com/es/w/back-to-school-840ik?cp=55375835631_soc_CRA9GQKQYSJV)
 
-​
+
 
 Inactive
 
@@ -1654,23 +1654,23 @@ May 7, 2026 - Jun 28, 2026
 
 Platforms
 
-​
 
-​
 
-​
 
-​
 
-​
+
+
+
+
+
 
 EU transparency
 
-​
+
 
 Open Dropdown
 
-​
+
 
 See ad details
 
@@ -1692,7 +1692,7 @@ PLAY.GOOGLE.COM\\
 \\
 Install now](http://play.google.com/store/apps/details?id=com.icontrol.easy.widgets.themes)
 
-​
+
 
 Inactive
 
@@ -1702,23 +1702,23 @@ Aug 14, 2026 - Sep 21, 2026
 
 Platforms
 
-​
 
-​
 
-​
 
-​
 
-​
+
+
+
+
+
 
 EU transparency
 
-​
+
 
 Open Dropdown
 
-​
+
 
 See ad details
 
@@ -1740,7 +1740,7 @@ PLAY.GOOGLE.COM\\
 \\
 Install now](http://play.google.com/store/apps/details?id=com.icontrol.easy.widgets.themes)
 
-​
+
 
 Inactive
 
@@ -1750,25 +1750,25 @@ Apr 3, 2026 - Sep 19, 2026
 
 Platforms
 
-​
 
-​
 
-​
 
-​
+
+
+
+
 
 This ad has multiple versions
 
-​
+
 
 EU transparency
 
-​
+
 
 Open Dropdown
 
-​
+
 
 See ad details
 
@@ -1792,7 +1792,7 @@ En Dayanıklı Spor ve Fitness Aletlerini incelemek, En Uygun Koşu Bandı ve Ko
 \\
 Shop Now](https://www.hepsiburada.com/xiaomi-m365-m365-pro-gaz-kolu-p-HBCV0000023KZJ?magaza=trescooter)
 
-​
+
 
 Active
 
@@ -1802,21 +1802,21 @@ Started running on Feb 3, 2025
 
 Platforms
 
-​
 
-​
 
-​
 
-​
+
+
+
+
 
 This ad has multiple versions
 
-​
+
 
 Open Dropdown
 
-​
+
 
 See ad details
 
@@ -1848,7 +1848,7 @@ Find the hottest brands at Shiekh and best styles from Nike, Adidas, Jordan, Tim
 \\
 Shop Now](https://www.shiekh.com/jordan-td-true-flight-black-white.html)
 
-​
+
 
 Inactive
 
@@ -1858,21 +1858,21 @@ Nov 8, 2025 - Nov 15, 2025
 
 Platforms
 
-​
 
-​
 
-​
 
-​
 
-​
+
+
+
+
+
 
 **2 ads** use this creative and text
 
 Open Dropdown
 
-​
+
 
 See summary details
 
@@ -1892,7 +1892,7 @@ Cactus Jack/Fragment AJ-1 Low SOON
 
 [![](https://scontent-lax7-1.xx.fbcdn.net/v/t39.35426-6/577795286_1813120906040022_343515759085456542_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=105&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=29lIOV31hakQ7kNvwFeE9Qf&_nc_oc=AdrXa7uZu5jtBiLNEjIPXSVrr5n9-YnIJCdMUMYlD6xma6QOju-f3Xa1CjULoHG4rF4&_nc_zt=14&_nc_ht=scontent-lax7-1.xx&_nc_gid=B-AXfSSJGKpJv2cAG9hG7Q&_nc_ss=7b289&oh=00_AQTMlpLOcGG5If5Na_q6V04KQoS9emVS-sBlZovG4LWAKg&oe=6AF24DB9)](https://shop.travisscott.com/)
 
-​
+
 
 Inactive
 
@@ -1902,25 +1902,25 @@ Oct 9, 2024 - Apr 8, 2026
 
 Platforms
 
-​
 
-​
 
-​
 
-​
+
+
+
+
 
 This ad has multiple versions
 
-​
+
 
 EU transparency
 
-​
+
 
 Open Dropdown
 
-​
+
 
 See ad details
 
@@ -1944,7 +1944,7 @@ Bodylogic Womens Classic Regular Leg Jog Pant - 12\\
 \\
 Shop Now](http://www.elverys.ie/products/bodylogic-womens-classic-regular-leg-jog-pant?variant=49186935537980&currency=EUR)
 
-​
+
 
 Inactive
 
@@ -1954,21 +1954,21 @@ Jul 13, 2026 - Aug 13, 2026
 
 Platforms
 
-​
 
-​
 
-​
 
-​
 
-​
+
+
+
+
+
 
 **5 ads** use this creative and text
 
 Open Dropdown
 
-​
+
 
 See summary details
 

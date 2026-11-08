@@ -114,3 +114,32 @@ suppressed rather than guessed, while status flips that did render are still rep
   `reason: "parse_failed"` (check) instead of a false "all ads ended".
 - No pagination in v1: one page per watch. Unfiltered `ad_check` keeps the first
   20 ads; an `advertiser` watch keeps every ad on the resolved page.
+
+## Addendum 2026-11-06 (free field enrichment, Tasks 1–4)
+
+The argument table above still names the original three arguments; this addendum
+records what the same three tools now return without adding a surface.
+
+- **New per-ad fields, all from the public render:** `page_url`, `page_id`,
+  `link_url`, `link_title`, `cta_text`, `images`, `has_video`,
+  `same_creative_count`, `multiple_versions`. Missing values are `""` / `[]` / `0`
+  / `false`; the original seven fields are unchanged.
+- **New optional filters:** `active_status` (`all|active|inactive`) and
+  `media_type` (`all|image|video`) on `ad_search` and on `ad_watch add`. They are
+  query-string parameters on the same single `www.facebook.com` GET, stored on the
+  watch entry when non-default, and each filtered watch keeps its own snapshot and
+  report key. Invalid values return `invalid_active_status` / `invalid_media_type`.
+- **`ad_check` and reports:** the changed-ad signature now includes `link_url`,
+  `link_title` and `cta_text` (compared only when both the old and new record
+  carry them). Bucket summaries include the new fields. HTML cards show the CTA
+  and destination link (absolute `http(s)` only) plus creative-grouping and
+  image-count badges; the digest adds `with_link`, `with_cta`, `with_images`,
+  `with_same_creative`, `with_multiple_versions`.
+- **Still absent, deliberately:** `platforms` (publisher placements),
+  `page_likes`, `spend`, `impressions` and direct video file URLs are not in the
+  public logged-out render and are not returned, estimated or sourced elsewhere.
+  `has_video` is only the render's video-playback signal.
+- **Invariants unchanged:** no key, account, cookie, third-party service or extra
+  host; one read-only GET per query; stdlib only; `plugin_data_dir("ads-intel")`
+  is still the only filesystem path. Suite: **173 passed**; `hermes plugins
+  validate .` passed.
