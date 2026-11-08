@@ -205,3 +205,120 @@ Resolution and filtering are correct — no `name_not_matched`, no third-party p
 | Overall | **FAIL** | **PASS** |
 
 No new blockers found. The only non-blocking observations are the `linear.app` sample (agent substitutes `linear`) and the permanent `partial: true` at the render limit — both UX/sample-quality issues, not install or tool failures. Nothing was edited in the repo except this eval log.
+
+---
+
+# EVAL A — fresh install, re-run at `571e945`
+
+- **Date:** 2026-11-08 11:56–12:05 (+04)
+- **Repo:** `ads-intel` @ `571e945` (`docs: record resolution of eval gaps M1-M3`, 183 tests passing)
+- **Environment:** macOS 27.2, Hermes Agent v0.23.0 (2026.9.24), Python 3.14.9; gateway restarted today with the post-fix code.
+- **Method:** clean `git clone` of the repo into a scratch directory (tracked files only, `git status` empty), new empty profile `evalfresh3` (`hermes profile create evalfresh3 --no-alias --no-skills`), README followed verbatim from that checkout. Profile selected with `HERMES_HOME=~/.hermes/profiles/evalfresh3` (the CLI does not honour `HERMES_PROFILE`; `HERMES_HOME` is the selector). No code edits, no `--force`, no extra flags.
+- **Overall verdict: PASS on install and security; FAIL on one of the three try-its as written.** Validate is clean, install succeeds without `--force`, all three tools register and execute live, and try-its 1 and 3 are good. Try-it 2 (`linear.app`) cannot produce the documented baseline/diff because Linear runs no Meta ads, and the agent's improvisation leaves a watch that can never match.
+
+## Step results
+
+| # | README step | Verdict |
+| --- | --- | --- |
+| 0 | `git clone` checkout | **PASS** |
+| 1 | `hermes plugins validate .` | **PASS** — 15/15, security scan `safe`, no warnings |
+| 2 | `hermes plugins install "file://$PWD"` | **PASS** — exit 0, warnings only, no `--force` |
+| 3 | `hermes plugins enable ads-intel` | **PASS** — listed `enabled`, doctor OK, 3 tools |
+| 4 | "Search … ads mentioning Notion in the US, limit 10" | **PASS** — 10 ads, keyword behaviour as documented |
+| 5 | "Watch linear.app's ads, then check … what changed" | **FAIL (intent)** — mechanical calls work, but no baseline or diff for the documented brand |
+| 6 | "Show me KFC's ads in the UAE, only from KFC's own page" | **PASS** — resolves `KFC` at `0.80`, 17 ads, complete listing |
+
+## Details
+
+### 0. Checkout — PASS
+
+Clone of `571e945` into the scratch directory; `git status --porcelain` returned 0 lines. No bootstrap needed (stdlib only, `python_dependencies: []`).
+
+### 1. Validate — PASS
+
+Exit 0, all 15 checks green:
+
+```
+✓ security scan — safe
+✓ no core override — no runtime rebinds of Hermes core
+◇ Isolation — in-process only: scripts/stress_e2e.py:236 patches
+  tools.store._data_dir (a Hermes module attribute; the host's copy is not the
+  one Hermes runs)
+Validation passed.
+```
+
+No errors and no warnings; the `◇ Isolation` line is informational. The 212 invisible-unicode findings from the first-ever run remain resolved.
+
+### 2. Install — PASS as documented
+
+Verbatim `hermes plugins install "file://$PWD"` (no `--force`) exits **0**:
+
+```
+Warning: custom (unreviewed) source — not from the Hermes catalog.
+Warning: Using insecure/local URL scheme. Consider using https:// or git@ for
+production installs.
+Cloning file:///…/eval3-checkout …
+✓ Installed
+Location: /Users/felipevleon/.hermes/profiles/evalfresh3/plugins/ads-intel
+Plugin installed but not enabled.
+```
+
+Warning-only, exactly as the README states. Installed copy is 3.4 MB at the profile's plugins path. (An earlier attempt in this run used `HERMES_PROFILE=evalfresh3`, which the CLI ignores, so it targeted the `partner` profile and hit that profile's existing dev symlink. Correcting the selector to `HERMES_HOME` made the install land in `evalfresh3`; this was an invocation error, not a plugin or README fault.)
+
+### 3. Enable — PASS
+
+```
+✓ Plugin ads-intel enabled.
+Gateway reloaded plugins — deferred: tools (next session).
+```
+
+- `plugins list --plain --no-bundled` → `enabled  git  0.2.0  ads-intel`
+- `plugins doctor ads-intel` → runtime discovery, manifest parsing, import and registration all OK; `registrations: 3 tool(s), 0 hook(s)`
+- `plugins capabilities ads-intel` → `declared: (none)`
+
+All three tool flows below ran inside the `evalfresh3` profile via one-shot sessions, so this is the installed copy, not the working tree.
+
+### 4. Try-it: Notion — PASS
+
+Exact README prompt. `ad_search` returned `{count: 10, complete: false, fetched: 10, country: "US"}`. Results: Shane Mahoney, Coursiv (×5), T-Pain, Career Unlocked, Masterly AI, Angelica Georges — zero Notion-owned pages, which is now precisely what the README labels a keyword search. The agent stated the limitation unprompted and offered `advertiser` filtering. No `name_not_matched` was triggered because no advertiser filter was requested.
+
+### 5. Try-it: watch + check — FAIL as written
+
+The documented prompt ran end-to-end, but the sample brand does not exist in the ad library, so the promised baseline-then-diff never happens:
+
+- The agent searched US (28 complete keyword hits) and GB (`name_not_matched`) and found no Linear page.
+- It briefly seeded an unfiltered `"Linear app"` watch: snapshot + `reports/90e96ee4076810f9.html` (31 KB) + digest with `total: 20, new: 20`, `partial: true`, `with_link: 10`, `with_cta: 7`, `with_images: 7`, `with_same_creative: 7`, `with_multiple_versions: 4` — all documented fields present.
+- It then replaced that with `{"query": "Linear", "country": "US", "advertiser": "Linear"}`, which can never resolve.
+- The follow-up `ad_check` returned `error: "name_not_matched"`, `partial: false`, `target: "Linear"`, best candidate `Hojama Ball Screw Linear Guide` at `0.60 < 0.80`, and wrote no snapshot.
+
+Final state: no baseline, no diff, no current report for the watch the README tells the user to create. The plugin behaves correctly (a miss is reported, not papered over); the sample is the failure. Every earlier run hit the same wall and substituted a noisy `linear` keyword watch. The sample should use a brand that actually advertises on Meta (KFC, Nike, a local retailer) so a new user sees a baseline and a second-run diff, which is the whole point of `ad_check`.
+
+### 6. Try-it: KFC UAE with advertiser — PASS
+
+Direct tool result from the installed plugin:
+
+```
+count: 17, complete: true, fetched: 17, country: "AE",
+advertiser: "KFC", resolved: {page_name: "KFC", score: 0.8}
+```
+
+No `name_not_matched`; all returned ads carry `page_name: "KFC"`. The agent first asked with `active_status: "active"` at the default limit (20 fetched, `complete: false`, mixed ended US creatives), then refetched the full listing (17 active, `complete: true`) and reported UAE-priced campaigns: AED 19 Deal of the Day, 69 AED Big Crunch'n Deal, 12 AED Chicken Deal, app-install offers, MIX'D launch, with Adjust deep links naming `YUM-KFC-UAE-META`. It correctly excluded the ended US-market cards and noted why they appeared in the `AE` listing — consistent with the README's country caveat.
+
+Two small notes:
+
+- The agent called the resolved page "KFC Arabia" from `page_url: facebook.com/kfcarabia` while `page_name` is `KFC`. That is the render's own label/URL pair, not a plugin mismatch, but it shows why `advertiser` can select a regional page while the display name is the global brand.
+- The README's claim that an owned page named `KFC UAE` is *not* selected by `advertiser: "KFC"` still holds; here the page's display name is exactly `KFC`, so 0.80 applied.
+
+## Delta vs. the `aa61ac3` run
+
+| Item | `aa61ac3` | `571e945` |
+| --- | --- | --- |
+| Validate security scan | `safe` | `safe` (unchanged) |
+| Install without `--force` | PASS | **PASS** (unchanged) |
+| Enable / doctor | PASS, 3 tools | PASS, 3 tools |
+| Notion try-it | PASS | PASS |
+| Watch try-it | PASS mechanical, agent substituted `linear` | **FAIL** — ends in a `name_not_matched` watch with no baseline |
+| KFC try-it | PASS mechanical, 27 ads | PASS, 17 active ads, UAE-priced copy |
+| Overall | PASS | **PASS on install; FAIL on try-it 2** |
+
+No regressions in install, security, registration or tool data shape. The single actionable item is the sample, not the code: replace `linear.app` in the README with a brand that runs Meta ads (KFC already appears in the same list), or state explicitly that the sample only creates a watch and will report `name_not_matched` until the brand advertises. Nothing in the repo was edited except this eval log.

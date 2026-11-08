@@ -48,7 +48,7 @@ hermes plugins validate .      # manifest, declarations and security scan
 Then, in a Hermes chat:
 
 - *"Search the Meta Ad Library for ads mentioning Notion in the US, limit 10."* → `ad_search`, a **keyword** search: it returns any page whose ads mention Notion, not only Notion's own page. Add `advertiser: "Notion"` to keep only the resolved Notion page, and expect `name_not_matched` when that page is absent from the keyword listing.
-- *"Watch linear.app's ads, then check my ad watchlist for what changed."* → `ad_watch` + `ad_check`
+- *"Watch KFC's ads, then check my ad watchlist for what changed."* → `ad_watch` + `ad_check`
 - *"Show me KFC's ads in the UAE, but only from KFC's own page."* → `ad_search` with `advertiser`
 
 The `country` code selects that market's ad-library listing, but Meta's public render does not guarantee market-pure creatives: an international brand can still show US-market copy or prices in the `AE` listing, and the plugin reports what the card shows rather than relabelling it. Treat `country` as the listing queried, not as proof of where an ad ran.
@@ -91,10 +91,10 @@ Missing values are always `""` / `[]` / `0` / `false`, never absent keys, so old
 
 Manage the local watchlist: `add` a query, `remove` a query, or `list` saved queries. `query` is required for `add`; `country`, `advertiser`, `active_status` and `media_type` apply to `add` (defaults `US`, none, `all`, `all`). The watchlist stores `{query, country}` entries, plus `advertiser` and any non-default filter; `remove` drops every entry for that query regardless of market or filters. Filters are stored only when they differ from `all`, so an unfiltered watch keeps exactly the entry shape and snapshot filename it had before filters existed. A filtered watch has its own snapshot and report, and never falls back to the unfiltered baseline — the excluded ads would otherwise be reported as `ended`.
 
-> "Add 'linear.app' to my ad watchlist."
-> "Watch KFC in the UAE too."
+> "Add 'KFC' to my ad watchlist, country AE, advertiser KFC."
+> "Add a US keyword watch too, e.g. 'nike'."
 > "What am I watching?"
-> "Remove 'linear.app' from my ad watchlist."
+> "Remove 'KFC' from my ad watchlist."
 
 Returns `{"action": "add" | "remove" | "list", "watchlist": [...]}` — the full watchlist after the change, in every case (not the single entry or a count). Each entry is `{"query", "country"}`, plus `"advertiser"` when one was set and `"active_status"` / `"media_type"` when they differ from `all`; an unfiltered, advertiser-less entry keeps exactly the two-key shape. Invalid input returns `{"error": "..."}` (`query required`, `invalid_country`, `invalid_active_status`, `invalid_media_type`, or `unknown action: <action>`).
 
@@ -119,7 +119,7 @@ Response shape — one row per watchlist entry, in watchlist order:
   "checked_at": "2026-11-06T12:00:00",
   "results": [
     {
-      "query": "linear.app",
+      "query": "KFC",
       "country": "US",
       "partial": true,
       "new_ads": 1,
