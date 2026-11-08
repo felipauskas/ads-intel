@@ -1,0 +1,97 @@
+{
+  "brand": "Domino's Pizza",
+  "country": "SA",
+  "attempts": [
+    {
+      "phase": "search",
+      "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=SA&q=Domino%27s+Pizza&media_type=all&search_type=keyword_unordered",
+      "seconds": 5.69,
+      "chars": 5173,
+      "failed": false
+    },
+    {
+      "phase": "search",
+      "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=SA&q=Domino%27s+Pizza&media_type=all&search_type=keyword_unordered&cache_bust=6fc7462fdca24a0a968c627bec0f83f1",
+      "seconds": 5.82,
+      "chars": 5173,
+      "failed": false
+    },
+    {
+      "phase": "search",
+      "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=SA&q=Domino%27s+Pizza&media_type=all&search_type=keyword_unordered&cache_bust=1342aeb37dd64870b1d6129cde1d9b57",
+      "seconds": 6.43,
+      "chars": 5173,
+      "failed": false
+    },
+    {
+      "phase": "search",
+      "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=SA&q=Domino%27s+Pizza&media_type=all&search_type=keyword_unordered&cache_bust=9accc0d9057249a7b029ad334c001088",
+      "seconds": 5.74,
+      "chars": 5173,
+      "failed": false
+    },
+    {
+      "phase": "advertiser_search",
+      "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=SA&q=Domino%27s+Pizza&media_type=all&search_type=keyword_unordered",
+      "seconds": 0.01,
+      "chars": 5173,
+      "failed": false
+    },
+    {
+      "phase": "advertiser_search",
+      "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=SA&q=Domino%27s+Pizza&media_type=all&search_type=keyword_unordered&cache_bust=da243761ae75422a87475212fa5c0b92",
+      "seconds": 5.42,
+      "chars": 5173,
+      "failed": false
+    },
+    {
+      "phase": "advertiser_search",
+      "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=SA&q=Domino%27s+Pizza&media_type=all&search_type=keyword_unordered&cache_bust=cb500c6f699a4ed38fa6291ba8278047",
+      "seconds": 7.19,
+      "chars": 5173,
+      "failed": false
+    },
+    {
+      "phase": "advertiser_search",
+      "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=SA&q=Domino%27s+Pizza&media_type=all&search_type=keyword_unordered&cache_bust=e055dedd1cfd4817923e8389da60af3a",
+      "seconds": 9.22,
+      "chars": 120503,
+      "failed": false
+    },
+    {
+      "phase": "check1",
+      "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=SA&q=Domino%27s+Pizza&media_type=all&search_type=keyword_unordered",
+      "seconds": 0.01,
+      "chars": 5173,
+      "failed": false
+    },
+    {
+      "phase": "check1",
+      "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=SA&q=Domino%27s+Pizza&media_type=all&search_type=keyword_unordered&cache_bust=46120fccf35a4d92ae86e088b2ac4a85",
+      "seconds": 5.59,
+      "chars": 5173,
+      "failed": false
+    },
+    {
+      "phase": "check1",
+      "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=SA&q=Domino%27s+Pizza&media_type=all&search_type=keyword_unordered&cache_bust=83f01c5ac41842588383f1658cdc4fcf",
+      "seconds": 8.95,
+      "chars": 120388,
+      "failed": false
+    },
+    {
+      "phase": "check2",
+      "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=SA&q=Domino%27s+Pizza&media_type=all&search_type=keyword_unordered",
+      "seconds": 0.01,
+      "chars": 5173,
+      "failed": false
+    },
+    {
+      "phase": "check2",
+      "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=SA&q=Domino%27s+Pizza&media_type=all&search_type=keyword_unordered&cache_bust=819d4fa8d7734c209836e14d71e8a57f",
+      "seconds": 11.08,
+      "chars": 120097,
+      "failed": false
+    }
+  ]
+}

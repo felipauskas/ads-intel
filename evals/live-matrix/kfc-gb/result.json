@@ -1,0 +1,114 @@
+{
+  "brand": "KFC",
+  "country": "GB",
+  "advertiser": "KFC",
+  "folder": "evals/live-matrix/kfc-gb",
+  "data_dir": "/var/folders/zf/g9bpd9s55sv10tz2mnhqch800000gn/T/ads-intel-live-eval-nh_o8wp3/tmp337b19g2",
+  "search_summary": {
+    "count": 20,
+    "complete": false,
+    "fetched": 20,
+    "country": "GB",
+    "error": null,
+    "page_names": [
+      "KFC",
+      "foodora Česko",
+      "La Vieille Ferme",
+      "Pepsi Max",
+      "Jessica Bennett",
+      "LBBonline - Little Black Book",
+      "Fitatu Global",
+      "ScrapCity",
+      "Yorkshire Home Interiors",
+      "Gigahertz Giveaways UK",
+      "Panacea Palm",
+      "Hiring Now",
+      "Welcome Break"
+    ],
+    "seconds": 11.53
+  },
+  "advertiser_summary": {
+    "count": null,
+    "complete": null,
+    "resolved": null,
+    "error": "parse_failed: render (5199 chars) with no card markers or empty-state text",
+    "target": null,
+    "candidates": null,
+    "threshold": null,
+    "page_names": [],
+    "seconds": 17.37
+  },
+  "watch_add": {
+    "error": null,
+    "watchlist": [
+      {
+        "query": "KFC",
+        "country": "GB",
+        "advertiser": "KFC",
+        "active_status": "active"
+      }
+    ]
+  },
+  "check1": {
+    "query": "KFC",
+    "country": "GB",
+    "advertiser": "KFC",
+    "resolved": {
+      "page_name": "KFC",
+      "score": 0.8
+    },
+    "new_ads": 10,
+    "ended_ads": 0,
+    "changed_ads": 0,
+    "partial": false,
+    "artifacts": {
+      "html": "artifacts/html.html",
+      "digest": "artifacts/digest.json"
+    },
+    "new_page_names": [
+      "KFC"
+    ],
+    "seconds": 6.09
+  },
+  "check2": {
+    "query": "KFC",
+    "country": "GB",
+    "advertiser": "KFC",
+    "resolved": {
+      "page_name": "KFC",
+      "score": 0.8
+    },
+    "new_ads": 0,
+    "ended_ads": 0,
+    "changed_ads": 10,
+    "partial": false,
+    "artifacts": {
+      "html": "/var/folders/zf/g9bpd9s55sv10tz2mnhqch800000gn/T/ads-intel-live-eval-nh_o8wp3/tmp337b19g2/reports/f85eb1c21a8e9172.html",
+      "digest": "/var/folders/zf/g9bpd9s55sv10tz2mnhqch800000gn/T/ads-intel-live-eval-nh_o8wp3/tmp337b19g2/reports/f85eb1c21a8e9172.digest.json"
+    },
+    "new_page_names": [],
+    "seconds": 10.35
+  },
+  "artifacts_ok": true,
+  "currency": {
+    "expected": null,
+    "found": [],
+    "ok": null
+  },
+  "status": "FAIL",
+  "failures": [
+    "advertiser_error: parse_failed: render (5199 chars) with no card markers or empty-state text",
+    "check2_not_settled: (0, 0, 10)"
+  ],
+  "timings": {
+    "search": 11.53,
+    "advertiser_search": 17.37,
+    "check1": 6.09,
+    "check2": 10.35,
+    "total": 45.34
+  },
+  "attempts": {
+    "total": 11,
+    "failed": 0
+  }
+}

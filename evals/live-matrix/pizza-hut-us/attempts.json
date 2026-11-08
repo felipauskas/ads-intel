@@ -1,0 +1,104 @@
+{
+  "brand": "Pizza Hut",
+  "country": "US",
+  "attempts": [
+    {
+      "phase": "search",
+      "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=US&q=Pizza+Hut&media_type=all&search_type=keyword_unordered",
+      "seconds": 5.43,
+      "chars": 5214,
+      "failed": false
+    },
+    {
+      "phase": "search",
+      "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=US&q=Pizza+Hut&media_type=all&search_type=keyword_unordered&cache_bust=abcb75231b294a43b94742d694bc6b20",
+      "seconds": 5.83,
+      "chars": 58226,
+      "failed": false
+    },
+    {
+      "phase": "advertiser_search",
+      "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=US&q=Pizza+Hut&media_type=all&search_type=keyword_unordered",
+      "seconds": 0.01,
+      "chars": 5214,
+      "failed": false
+    },
+    {
+      "phase": "advertiser_search",
+      "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=US&q=Pizza+Hut&media_type=all&search_type=keyword_unordered&cache_bust=449241f5eba44ddbb7a2f37cb80c0e8d",
+      "seconds": 3.68,
+      "chars": 2070,
+      "failed": false
+    },
+    {
+      "phase": "advertiser_search",
+      "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=US&q=Pizza+Hut&media_type=all&search_type=keyword_unordered&cache_bust=07ee8e93caef4f60afb9571024fc08c8",
+      "seconds": 4.62,
+      "chars": 5214,
+      "failed": false
+    },
+    {
+      "phase": "advertiser_search",
+      "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=US&q=Pizza+Hut&media_type=all&search_type=keyword_unordered&cache_bust=4552e7a2a7a3458eb1b49ce72ae05fc6",
+      "seconds": 5.66,
+      "chars": 5214,
+      "failed": false
+    },
+    {
+      "phase": "check1",
+      "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=US&q=Pizza+Hut&media_type=all&search_type=keyword_unordered",
+      "seconds": 0.01,
+      "chars": 5214,
+      "failed": false
+    },
+    {
+      "phase": "check1",
+      "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=US&q=Pizza+Hut&media_type=all&search_type=keyword_unordered&cache_bust=7b95f75f501449f18b5518f2265c5027",
+      "seconds": 4.79,
+      "chars": 5214,
+      "failed": false
+    },
+    {
+      "phase": "check1",
+      "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=US&q=Pizza+Hut&media_type=all&search_type=keyword_unordered&cache_bust=db6150478f62439494793083dc55ae66",
+      "seconds": 4.72,
+      "chars": 5214,
+      "failed": false
+    },
+    {
+      "phase": "check1",
+      "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=US&q=Pizza+Hut&media_type=all&search_type=keyword_unordered&cache_bust=cb74dfc1565d4c038c66022761019c3b",
+      "seconds": 4.98,
+      "chars": 5214,
+      "failed": false
+    },
+    {
+      "phase": "check2",
+      "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=US&q=Pizza+Hut&media_type=all&search_type=keyword_unordered",
+      "seconds": 0.01,
+      "chars": 5214,
+      "failed": false
+    },
+    {
+      "phase": "check2",
+      "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=US&q=Pizza+Hut&media_type=all&search_type=keyword_unordered&cache_bust=233ff4613da74402b0d04bfabee03948",
+      "seconds": 4.28,
+      "chars": 5214,
+      "failed": false
+    },
+    {
+      "phase": "check2",
+      "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=US&q=Pizza+Hut&media_type=all&search_type=keyword_unordered&cache_bust=4be1d67ee1cd4cef894b054341b91be4",
+      "seconds": 4.81,
+      "chars": 2070,
+      "failed": false
+    },
+    {
+      "phase": "check2",
+      "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=US&q=Pizza+Hut&media_type=all&search_type=keyword_unordered&cache_bust=3b91d923a2184603b035808af93ba261",
+      "seconds": 6.5,
+      "chars": 5214,
+      "failed": false
+    }
+  ]
+}

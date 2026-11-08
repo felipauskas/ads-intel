@@ -1,0 +1,34 @@
+{
+  "brand": "Domino's Pizza",
+  "country": "US",
+  "attempts": [
+    {
+      "phase": "search",
+      "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=US&q=Domino%27s+Pizza&media_type=all&search_type=keyword_unordered",
+      "seconds": 6.07,
+      "chars": 31126,
+      "failed": false
+    },
+    {
+      "phase": "advertiser_search",
+      "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=US&q=Domino%27s+Pizza&media_type=all&search_type=keyword_unordered",
+      "seconds": 0.01,
+      "chars": 31126,
+      "failed": false
+    },
+    {
+      "phase": "check1",
+      "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=US&q=Domino%27s+Pizza&media_type=all&search_type=keyword_unordered",
+      "seconds": 0.01,
+      "chars": 31126,
+      "failed": false
+    },
+    {
+      "phase": "check2",
+      "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=US&q=Domino%27s+Pizza&media_type=all&search_type=keyword_unordered",
+      "seconds": 0.01,
+      "chars": 31126,
+      "failed": false
+    }
+  ]
+}

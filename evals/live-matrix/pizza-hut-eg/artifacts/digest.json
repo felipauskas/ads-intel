@@ -1,0 +1,16 @@
+{
+  "query": "Pizza Hut",
+  "country": "EG",
+  "checked_at": "2026-11-08T13:44:01",
+  "partial": true,
+  "total": 9,
+  "new": 0,
+  "ended": 0,
+  "changed": 0,
+  "with_link": 4,
+  "with_cta": 4,
+  "with_images": 3,
+  "with_same_creative": 7,
+  "with_multiple_versions": 7,
+  "advertiser": "Pizza Hut"
+}

@@ -1,0 +1,97 @@
+{
+  "brand": "Pizza Hut",
+  "country": "GB",
+  "attempts": [
+    {
+      "phase": "search",
+      "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=GB&q=Pizza+Hut&media_type=all&search_type=keyword_unordered",
+      "seconds": 6.98,
+      "chars": 5215,
+      "failed": false
+    },
+    {
+      "phase": "search",
+      "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=GB&q=Pizza+Hut&media_type=all&search_type=keyword_unordered&cache_bust=94bd77cc8b6b4086984e23ae724d8ee2",
+      "seconds": 7.18,
+      "chars": 120356,
+      "failed": false
+    },
+    {
+      "phase": "advertiser_search",
+      "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=GB&q=Pizza+Hut&media_type=all&search_type=keyword_unordered",
+      "seconds": 0.01,
+      "chars": 5215,
+      "failed": false
+    },
+    {
+      "phase": "advertiser_search",
+      "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=GB&q=Pizza+Hut&media_type=all&search_type=keyword_unordered&cache_bust=fd91c3261a6243b4a6300560fd482877",
+      "seconds": 4.62,
+      "chars": 2071,
+      "failed": false
+    },
+    {
+      "phase": "advertiser_search",
+      "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=GB&q=Pizza+Hut&media_type=all&search_type=keyword_unordered&cache_bust=452d01b47b7d49f4b072f34419b6a515",
+      "seconds": 4.61,
+      "chars": 5215,
+      "failed": false
+    },
+    {
+      "phase": "advertiser_search",
+      "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=GB&q=Pizza+Hut&media_type=all&search_type=keyword_unordered&cache_bust=91568f44964e48a9b2e16370171dac99",
+      "seconds": 4.73,
+      "chars": 5215,
+      "failed": false
+    },
+    {
+      "phase": "check1",
+      "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=GB&q=Pizza+Hut&media_type=all&search_type=keyword_unordered",
+      "seconds": 0.01,
+      "chars": 5215,
+      "failed": false
+    },
+    {
+      "phase": "check1",
+      "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=GB&q=Pizza+Hut&media_type=all&search_type=keyword_unordered&cache_bust=c4ab1e4c20cb4bd8b6c705663f7e3db5",
+      "seconds": 3.78,
+      "chars": 2071,
+      "failed": false
+    },
+    {
+      "phase": "check1",
+      "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=GB&q=Pizza+Hut&media_type=all&search_type=keyword_unordered&cache_bust=ce618dc3f4be4f5799bfe04557847121",
+      "seconds": 7.94,
+      "chars": 120356,
+      "failed": false
+    },
+    {
+      "phase": "check2",
+      "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=GB&q=Pizza+Hut&media_type=all&search_type=keyword_unordered",
+      "seconds": 0.01,
+      "chars": 5215,
+      "failed": false
+    },
+    {
+      "phase": "check2",
+      "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=GB&q=Pizza+Hut&media_type=all&search_type=keyword_unordered&cache_bust=8a640b2c59684b3aaf6609a5f8ee1276",
+      "seconds": 4.52,
+      "chars": 5215,
+      "failed": false
+    },
+    {
+      "phase": "check2",
+      "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=GB&q=Pizza+Hut&media_type=all&search_type=keyword_unordered&cache_bust=495dbe3d5aba47008e4853b32f12db9a",
+      "seconds": 4.69,
+      "chars": 5215,
+      "failed": false
+    },
+    {
+      "phase": "check2",
+      "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=GB&q=Pizza+Hut&media_type=all&search_type=keyword_unordered&cache_bust=65197ad0afe04c9f8d73d57dd168654d",
+      "seconds": 4.32,
+      "chars": 5215,
+      "failed": false
+    }
+  ]
+}

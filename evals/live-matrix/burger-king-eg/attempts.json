@@ -1,0 +1,34 @@
+{
+  "brand": "Burger King",
+  "country": "EG",
+  "attempts": [
+    {
+      "phase": "search",
+      "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=EG&q=Burger+King&media_type=all&search_type=keyword_unordered",
+      "seconds": 8.14,
+      "chars": 120502,
+      "failed": false
+    },
+    {
+      "phase": "advertiser_search",
+      "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=EG&q=Burger+King&media_type=all&search_type=keyword_unordered",
+      "seconds": 0.02,
+      "chars": 120502,
+      "failed": false
+    },
+    {
+      "phase": "check1",
+      "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=EG&q=Burger+King&media_type=all&search_type=keyword_unordered",
+      "seconds": 0.01,
+      "chars": 120502,
+      "failed": false
+    },
+    {
+      "phase": "check2",
+      "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=EG&q=Burger+King&media_type=all&search_type=keyword_unordered",
+      "seconds": 0.01,
+      "chars": 120502,
+      "failed": false
+    }
+  ]
+}

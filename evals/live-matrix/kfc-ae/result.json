@@ -3,7 +3,7 @@
   "country": "AE",
   "advertiser": "KFC",
   "folder": "evals/live-matrix/kfc-ae",
-  "data_dir": "/var/folders/zf/g9bpd9s55sv10tz2mnhqch800000gn/T/ads-intel-live-eval-qzasfiif/tmpsmkcitfq",
+  "data_dir": "/var/folders/zf/g9bpd9s55sv10tz2mnhqch800000gn/T/ads-intel-live-eval-nh_o8wp3/tmp15homd51",
   "search_summary": {
     "count": 20,
     "complete": false,
@@ -14,7 +14,7 @@
       "KFC",
       "Deliveroo"
     ],
-    "seconds": 3.55
+    "seconds": 0.61
   },
   "advertiser_summary": {
     "count": 17,
@@ -77,8 +77,8 @@
     "changed_ads": 0,
     "partial": false,
     "artifacts": {
-      "html": "/var/folders/zf/g9bpd9s55sv10tz2mnhqch800000gn/T/ads-intel-live-eval-qzasfiif/tmpsmkcitfq/reports/d9d810ebac0240eb.html",
-      "digest": "/var/folders/zf/g9bpd9s55sv10tz2mnhqch800000gn/T/ads-intel-live-eval-qzasfiif/tmpsmkcitfq/reports/d9d810ebac0240eb.digest.json"
+      "html": "/var/folders/zf/g9bpd9s55sv10tz2mnhqch800000gn/T/ads-intel-live-eval-nh_o8wp3/tmp15homd51/reports/d9d810ebac0240eb.html",
+      "digest": "/var/folders/zf/g9bpd9s55sv10tz2mnhqch800000gn/T/ads-intel-live-eval-nh_o8wp3/tmp15homd51/reports/d9d810ebac0240eb.digest.json"
     },
     "new_page_names": [],
     "seconds": 0.01
@@ -94,11 +94,11 @@
   "status": "PASS",
   "failures": [],
   "timings": {
-    "search": 3.55,
+    "search": 0.61,
     "advertiser_search": 0.01,
     "check1": 0.01,
     "check2": 0.01,
-    "total": 3.58
+    "total": 0.64
   },
   "attempts": {
     "total": 4,

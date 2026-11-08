@@ -1,0 +1,104 @@
+{
+  "brand": "McDonald's",
+  "country": "SA",
+  "attempts": [
+    {
+      "phase": "search",
+      "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=SA&q=McDonald%27s&media_type=all&search_type=keyword_unordered",
+      "seconds": 5.37,
+      "chars": 5161,
+      "failed": false
+    },
+    {
+      "phase": "search",
+      "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=SA&q=McDonald%27s&media_type=all&search_type=keyword_unordered&cache_bust=8d5e6102bb254c9cafdd412add138836",
+      "seconds": 5.56,
+      "chars": 5161,
+      "failed": false
+    },
+    {
+      "phase": "search",
+      "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=SA&q=McDonald%27s&media_type=all&search_type=keyword_unordered&cache_bust=91a400fb13a14640ba94bb5eb1e983ec",
+      "seconds": 5.38,
+      "chars": 5161,
+      "failed": false
+    },
+    {
+      "phase": "search",
+      "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=SA&q=McDonald%27s&media_type=all&search_type=keyword_unordered&cache_bust=fe20470756884259a511fd72b5546351",
+      "seconds": 5.41,
+      "chars": 5161,
+      "failed": false
+    },
+    {
+      "phase": "advertiser_search",
+      "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=SA&q=McDonald%27s&media_type=all&search_type=keyword_unordered",
+      "seconds": 0.01,
+      "chars": 5161,
+      "failed": false
+    },
+    {
+      "phase": "advertiser_search",
+      "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=SA&q=McDonald%27s&media_type=all&search_type=keyword_unordered&cache_bust=69ba477bf99b4609ac50633b497fdfa9",
+      "seconds": 6.13,
+      "chars": 5161,
+      "failed": false
+    },
+    {
+      "phase": "advertiser_search",
+      "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=SA&q=McDonald%27s&media_type=all&search_type=keyword_unordered&cache_bust=b904cecbf47a4d4b95767438ff835fa1",
+      "seconds": 6.89,
+      "chars": 5161,
+      "failed": false
+    },
+    {
+      "phase": "advertiser_search",
+      "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=SA&q=McDonald%27s&media_type=all&search_type=keyword_unordered&cache_bust=e6fcc70b621548b283861afeab6148be",
+      "seconds": 6.61,
+      "chars": 54822,
+      "failed": false
+    },
+    {
+      "phase": "check1",
+      "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=SA&q=McDonald%27s&media_type=all&search_type=keyword_unordered",
+      "seconds": 0.01,
+      "chars": 5161,
+      "failed": false
+    },
+    {
+      "phase": "check1",
+      "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=SA&q=McDonald%27s&media_type=all&search_type=keyword_unordered&cache_bust=7730e083453d406f907190cc8f9db1b1",
+      "seconds": 4.98,
+      "chars": 5161,
+      "failed": false
+    },
+    {
+      "phase": "check1",
+      "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=SA&q=McDonald%27s&media_type=all&search_type=keyword_unordered&cache_bust=4d8abb233e5644dfa4f6b8dc12c9a7de",
+      "seconds": 6.64,
+      "chars": 54820,
+      "failed": false
+    },
+    {
+      "phase": "check2",
+      "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=SA&q=McDonald%27s&media_type=all&search_type=keyword_unordered",
+      "seconds": 0.01,
+      "chars": 5161,
+      "failed": false
+    },
+    {
+      "phase": "check2",
+      "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=SA&q=McDonald%27s&media_type=all&search_type=keyword_unordered&cache_bust=b90da0b4cbd94fa0aada705ca8252324",
+      "seconds": 5.5,
+      "chars": 5161,
+      "failed": false
+    },
+    {
+      "phase": "check2",
+      "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=SA&q=McDonald%27s&media_type=all&search_type=keyword_unordered&cache_bust=5cbc4723ebcb4f39b5805de8773d1d36",
+      "seconds": 6.28,
+      "chars": 54818,
+      "failed": false
+    }
+  ]
+}

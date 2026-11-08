@@ -1,0 +1,108 @@
+{
+  "brand": "McDonald's",
+  "country": "US",
+  "advertiser": "McDonald's",
+  "folder": "evals/live-matrix/mcdonalds-us",
+  "data_dir": "/var/folders/zf/g9bpd9s55sv10tz2mnhqch800000gn/T/ads-intel-live-eval-nh_o8wp3/tmp5qa92fro",
+  "search_summary": {
+    "count": 20,
+    "complete": false,
+    "fetched": 20,
+    "country": "US",
+    "error": null,
+    "page_names": [
+      "McDonald's",
+      "Monopoly GO",
+      "Whatnot",
+      "Dan Lok",
+      "Uber Eats"
+    ],
+    "seconds": 6.24
+  },
+  "advertiser_summary": {
+    "count": 19,
+    "complete": true,
+    "resolved": {
+      "page_name": "McDonald's",
+      "score": 0.8
+    },
+    "error": null,
+    "target": null,
+    "candidates": null,
+    "threshold": null,
+    "page_names": [
+      "McDonald's"
+    ],
+    "seconds": 0.02
+  },
+  "watch_add": {
+    "error": null,
+    "watchlist": [
+      {
+        "query": "McDonald's",
+        "country": "US",
+        "advertiser": "McDonald's",
+        "active_status": "active"
+      }
+    ]
+  },
+  "check1": {
+    "query": "McDonald's",
+    "country": "US",
+    "advertiser": "McDonald's",
+    "resolved": {
+      "page_name": "McDonald's",
+      "score": 0.8
+    },
+    "new_ads": 19,
+    "ended_ads": 0,
+    "changed_ads": 0,
+    "partial": false,
+    "artifacts": {
+      "html": "artifacts/html.html",
+      "digest": "artifacts/digest.json"
+    },
+    "new_page_names": [
+      "McDonald's"
+    ],
+    "seconds": 0.02
+  },
+  "check2": {
+    "query": "McDonald's",
+    "country": "US",
+    "advertiser": "McDonald's",
+    "resolved": {
+      "page_name": "McDonald's",
+      "score": 0.8
+    },
+    "new_ads": 0,
+    "ended_ads": 0,
+    "changed_ads": 0,
+    "partial": false,
+    "artifacts": {
+      "html": "/var/folders/zf/g9bpd9s55sv10tz2mnhqch800000gn/T/ads-intel-live-eval-nh_o8wp3/tmp5qa92fro/reports/7c5862091461982a.html",
+      "digest": "/var/folders/zf/g9bpd9s55sv10tz2mnhqch800000gn/T/ads-intel-live-eval-nh_o8wp3/tmp5qa92fro/reports/7c5862091461982a.digest.json"
+    },
+    "new_page_names": [],
+    "seconds": 0.02
+  },
+  "artifacts_ok": true,
+  "currency": {
+    "expected": null,
+    "found": [],
+    "ok": null
+  },
+  "status": "PASS",
+  "failures": [],
+  "timings": {
+    "search": 6.24,
+    "advertiser_search": 0.02,
+    "check1": 0.02,
+    "check2": 0.02,
+    "total": 6.3
+  },
+  "attempts": {
+    "total": 4,
+    "failed": 0
+  }
+}

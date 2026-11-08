@@ -5,7 +5,7 @@
     {
       "phase": "search",
       "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=AE&q=KFC&media_type=all&search_type=keyword_unordered",
-      "seconds": 3.55,
+      "seconds": 0.61,
       "chars": 34154,
       "failed": false
     },
@@ -19,7 +19,7 @@
     {
       "phase": "check1",
       "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=AE&q=KFC&media_type=all&search_type=keyword_unordered",
-      "seconds": 0.01,
+      "seconds": 0.0,
       "chars": 34154,
       "failed": false
     },

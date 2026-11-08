@@ -1,0 +1,109 @@
+{
+  "brand": "KFC",
+  "country": "EG",
+  "advertiser": "KFC",
+  "folder": "evals/live-matrix/kfc-eg",
+  "data_dir": "/var/folders/zf/g9bpd9s55sv10tz2mnhqch800000gn/T/ads-intel-live-eval-nh_o8wp3/tmpoy7hfrcf",
+  "search_summary": {
+    "count": 19,
+    "complete": true,
+    "fetched": 19,
+    "country": "EG",
+    "error": null,
+    "page_names": [
+      "KFC Masr",
+      "foodpanda",
+      "KFC"
+    ],
+    "seconds": 5.71
+  },
+  "advertiser_summary": {
+    "count": 2,
+    "complete": true,
+    "resolved": {
+      "page_name": "KFC",
+      "score": 0.8
+    },
+    "error": null,
+    "target": null,
+    "candidates": null,
+    "threshold": null,
+    "page_names": [
+      "KFC"
+    ],
+    "seconds": 0.02
+  },
+  "watch_add": {
+    "error": null,
+    "watchlist": [
+      {
+        "query": "KFC",
+        "country": "EG",
+        "advertiser": "KFC",
+        "active_status": "active"
+      }
+    ]
+  },
+  "check1": {
+    "query": "KFC",
+    "country": "EG",
+    "advertiser": "KFC",
+    "resolved": {
+      "page_name": "KFC",
+      "score": 0.8
+    },
+    "new_ads": 2,
+    "ended_ads": 0,
+    "changed_ads": 0,
+    "partial": false,
+    "artifacts": {
+      "html": "artifacts/html.html",
+      "digest": "artifacts/digest.json"
+    },
+    "new_page_names": [
+      "KFC"
+    ],
+    "seconds": 0.01
+  },
+  "check2": {
+    "query": "KFC",
+    "country": "EG",
+    "advertiser": "KFC",
+    "resolved": {
+      "page_name": "KFC",
+      "score": 0.8
+    },
+    "new_ads": 0,
+    "ended_ads": 0,
+    "changed_ads": 0,
+    "partial": false,
+    "artifacts": {
+      "html": "/var/folders/zf/g9bpd9s55sv10tz2mnhqch800000gn/T/ads-intel-live-eval-nh_o8wp3/tmpoy7hfrcf/reports/eabc181e314ade7a.html",
+      "digest": "/var/folders/zf/g9bpd9s55sv10tz2mnhqch800000gn/T/ads-intel-live-eval-nh_o8wp3/tmpoy7hfrcf/reports/eabc181e314ade7a.digest.json"
+    },
+    "new_page_names": [],
+    "seconds": 0.01
+  },
+  "artifacts_ok": true,
+  "currency": {
+    "expected": "EGP/جنيه",
+    "found": [
+      "EGP",
+      "جنيه"
+    ],
+    "ok": true
+  },
+  "status": "PASS",
+  "failures": [],
+  "timings": {
+    "search": 5.71,
+    "advertiser_search": 0.02,
+    "check1": 0.01,
+    "check2": 0.01,
+    "total": 5.75
+  },
+  "attempts": {
+    "total": 4,
+    "failed": 0
+  }
+}

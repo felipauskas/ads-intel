@@ -1,0 +1,87 @@
+{
+  "brand": "McDonald's",
+  "country": "AE",
+  "advertiser": "McDonald's",
+  "folder": "evals/live-matrix/mcdonalds-ae",
+  "data_dir": "/var/folders/zf/g9bpd9s55sv10tz2mnhqch800000gn/T/ads-intel-live-eval-nh_o8wp3/tmpkfp6j4kh",
+  "search_summary": {
+    "count": null,
+    "complete": null,
+    "fetched": null,
+    "country": null,
+    "error": "parse_failed: render (2079 chars) with no card markers or empty-state text",
+    "page_names": [],
+    "seconds": 20.55
+  },
+  "advertiser_summary": {
+    "count": null,
+    "complete": null,
+    "resolved": null,
+    "error": "parse_failed: render (5169 chars) with no card markers or empty-state text",
+    "target": null,
+    "candidates": null,
+    "threshold": null,
+    "page_names": [],
+    "seconds": 14.17
+  },
+  "watch_add": {
+    "error": null,
+    "watchlist": [
+      {
+        "query": "McDonald's",
+        "country": "AE",
+        "advertiser": "McDonald's",
+        "active_status": "active"
+      }
+    ]
+  },
+  "check1": {
+    "query": "McDonald's",
+    "country": "AE",
+    "partial": true,
+    "skipped": true,
+    "reason": "parse_failed",
+    "artifacts": {
+      "error": "parse_failed"
+    },
+    "new_page_names": [],
+    "seconds": 17.82
+  },
+  "check2": {
+    "query": "McDonald's",
+    "country": "AE",
+    "partial": true,
+    "skipped": true,
+    "reason": "parse_failed",
+    "artifacts": {
+      "error": "parse_failed"
+    },
+    "new_page_names": [],
+    "seconds": 16.32
+  },
+  "artifacts_ok": false,
+  "currency": {
+    "expected": "AED",
+    "found": [],
+    "ok": false
+  },
+  "status": "FAIL",
+  "failures": [
+    "search_error: parse_failed: render (2079 chars) with no card markers or empty-state text",
+    "advertiser_error: parse_failed: render (5169 chars) with no card markers or empty-state text",
+    "check1_no_new_ads: (None, None, None)",
+    "check2_not_settled: (None, None, None)",
+    "artifacts_missing: html/digest"
+  ],
+  "timings": {
+    "search": 20.55,
+    "advertiser_search": 14.17,
+    "check1": 17.82,
+    "check2": 16.32,
+    "total": 68.86
+  },
+  "attempts": {
+    "total": 16,
+    "failed": 0
+  }
+}

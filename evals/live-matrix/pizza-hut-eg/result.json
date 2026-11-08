@@ -1,0 +1,107 @@
+{
+  "brand": "Pizza Hut",
+  "country": "EG",
+  "advertiser": "Pizza Hut",
+  "folder": "evals/live-matrix/pizza-hut-eg",
+  "data_dir": "/var/folders/zf/g9bpd9s55sv10tz2mnhqch800000gn/T/ads-intel-live-eval-nh_o8wp3/tmpqwp46ah7",
+  "search_summary": {
+    "count": 10,
+    "complete": false,
+    "fetched": 10,
+    "country": "EG",
+    "error": null,
+    "page_names": [
+      "Read well",
+      "Pizza Hut"
+    ],
+    "seconds": 6.23
+  },
+  "advertiser_summary": {
+    "count": 9,
+    "complete": false,
+    "resolved": {
+      "page_name": "Pizza Hut",
+      "score": 0.8
+    },
+    "error": null,
+    "target": null,
+    "candidates": null,
+    "threshold": null,
+    "page_names": [
+      "Pizza Hut"
+    ],
+    "seconds": 0.02
+  },
+  "watch_add": {
+    "error": null,
+    "watchlist": [
+      {
+        "query": "Pizza Hut",
+        "country": "EG",
+        "advertiser": "Pizza Hut",
+        "active_status": "active"
+      }
+    ]
+  },
+  "check1": {
+    "query": "Pizza Hut",
+    "country": "EG",
+    "advertiser": "Pizza Hut",
+    "resolved": {
+      "page_name": "Pizza Hut",
+      "score": 0.8
+    },
+    "new_ads": 9,
+    "ended_ads": 0,
+    "changed_ads": 0,
+    "partial": true,
+    "artifacts": {
+      "html": "artifacts/html.html",
+      "digest": "artifacts/digest.json"
+    },
+    "new_page_names": [
+      "Pizza Hut"
+    ],
+    "seconds": 0.02
+  },
+  "check2": {
+    "query": "Pizza Hut",
+    "country": "EG",
+    "advertiser": "Pizza Hut",
+    "resolved": {
+      "page_name": "Pizza Hut",
+      "score": 0.8
+    },
+    "new_ads": 0,
+    "ended_ads": 0,
+    "changed_ads": 0,
+    "partial": true,
+    "artifacts": {
+      "html": "/var/folders/zf/g9bpd9s55sv10tz2mnhqch800000gn/T/ads-intel-live-eval-nh_o8wp3/tmpqwp46ah7/reports/168e6da1dc8ab0c6.html",
+      "digest": "/var/folders/zf/g9bpd9s55sv10tz2mnhqch800000gn/T/ads-intel-live-eval-nh_o8wp3/tmpqwp46ah7/reports/168e6da1dc8ab0c6.digest.json"
+    },
+    "new_page_names": [],
+    "seconds": 0.02
+  },
+  "artifacts_ok": true,
+  "currency": {
+    "expected": "EGP/جنيه",
+    "found": [
+      "جنيه"
+    ],
+    "ok": true
+  },
+  "status": "PASS",
+  "failures": [],
+  "timings": {
+    "search": 6.23,
+    "advertiser_search": 0.02,
+    "check1": 0.02,
+    "check2": 0.02,
+    "total": 6.29
+  },
+  "attempts": {
+    "total": 4,
+    "failed": 0
+  }
+}

@@ -6,7 +6,7 @@
 ## Keyword search (`active_status=active`, limit 20)
 - count: 20  complete: False  fetched: 20  error: None
 - page names: KFC, Deliveroo
-- seconds: 3.55
+- seconds: 0.61
 
 ## Advertiser search
 - count: 17  resolved: {'page_name': 'KFC', 'score': 0.8}  error: None

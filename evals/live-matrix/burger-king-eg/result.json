@@ -1,0 +1,120 @@
+{
+  "brand": "Burger King",
+  "country": "EG",
+  "advertiser": "Burger King",
+  "folder": "evals/live-matrix/burger-king-eg",
+  "data_dir": "/var/folders/zf/g9bpd9s55sv10tz2mnhqch800000gn/T/ads-intel-live-eval-nh_o8wp3/tmpci979jz3",
+  "search_summary": {
+    "count": 20,
+    "complete": false,
+    "fetched": 20,
+    "country": "EG",
+    "error": null,
+    "page_names": [
+      "Shortdrama-zlin-06",
+      "BUFFALO BURGER",
+      "Burger King Malaysia",
+      "DoorDash",
+      "عيادة أ.د/ عبد السلام عيد لجراحات العظام وجراحات ومناظير الكتف واليد",
+      "Cholesterol Relief Community",
+      "BlazeReel Drama",
+      "Tatiana Salazar",
+      "Ns-YXB-ST2dd",
+      "Xc-twoseven-One",
+      "NS-Zs-02",
+      "宵の語り",
+      "Ns-st-zsuse"
+    ],
+    "seconds": 8.15
+  },
+  "advertiser_summary": {
+    "count": null,
+    "complete": null,
+    "resolved": null,
+    "error": "name_not_matched",
+    "target": "Burger King",
+    "candidates": [
+      {
+        "page_name": "Burger King Malaysia",
+        "score": 0.6
+      }
+    ],
+    "threshold": 0.8,
+    "page_names": [],
+    "seconds": 0.02
+  },
+  "watch_add": {
+    "error": null,
+    "watchlist": [
+      {
+        "query": "Burger King",
+        "country": "EG",
+        "advertiser": "Burger King",
+        "active_status": "active"
+      }
+    ]
+  },
+  "check1": {
+    "query": "Burger King",
+    "country": "EG",
+    "advertiser": "Burger King",
+    "partial": true,
+    "error": "name_not_matched",
+    "target": "Burger King",
+    "candidates": [
+      {
+        "page_name": "Burger King Malaysia",
+        "score": 0.6
+      }
+    ],
+    "threshold": 0.8,
+    "artifacts": {
+      "error": "name_not_matched"
+    },
+    "new_page_names": [],
+    "seconds": 0.02
+  },
+  "check2": {
+    "query": "Burger King",
+    "country": "EG",
+    "advertiser": "Burger King",
+    "partial": true,
+    "error": "name_not_matched",
+    "target": "Burger King",
+    "candidates": [
+      {
+        "page_name": "Burger King Malaysia",
+        "score": 0.6
+      }
+    ],
+    "threshold": 0.8,
+    "artifacts": {
+      "error": "name_not_matched"
+    },
+    "new_page_names": [],
+    "seconds": 0.02
+  },
+  "artifacts_ok": false,
+  "currency": {
+    "expected": "EGP/جنيه",
+    "found": [],
+    "ok": false
+  },
+  "status": "FAIL",
+  "failures": [
+    "check1_error: name_not_matched",
+    "check2_error: name_not_matched",
+    "artifacts_missing: html/digest"
+  ],
+  "timings": {
+    "search": 8.15,
+    "advertiser_search": 0.02,
+    "check1": 0.02,
+    "check2": 0.02,
+    "total": 8.21
+  },
+  "attempts": {
+    "total": 4,
+    "failed": 0
+  }
+}

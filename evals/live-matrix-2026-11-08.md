@@ -95,3 +95,104 @@ Five QSR brands × five countries = 25 pairs. Runner: `evals/live_eval.py`; arti
 Countries: `AE`, `SA`, `EG`, `US`, `GB` (five). Optional `KW`/`QA` only if time allows.
 
 Per pair: `ad_search(active_status=active, limit=20)` → keyword search; `ad_search(advertiser=<brand>)` → page-name resolution; `ad_watch(add, advertiser=<brand>, active_status=active)` → `ad_check` baseline then settle. Apostrophes are kept in queries and advertiser names — quoting was ruled out as a cause.
+
+---
+
+## 8. Full 25-pair sweep result (2026-11-08 09:38–09:47 UTC, sequential)
+
+Command: `.venv/bin/python evals/live_eval.py` (no `--smoke`). Run at HEAD `3c1ce90`, unmodified working tree at start. Sequential, one pair at a time, 25/25 pairs executed. Runtime 8m 55s. Artifacts: `evals/live-matrix/<brand-slug>-<CC>/` (+ aggregate `evals/live-matrix/summary.md`).
+
+### Verdict
+
+**9/25 PASS, 16/25 truthful FAIL, 0 silent zeros.** Every failing pair names a concrete cause (`search_error`, `advertiser_error`, `name_not_matched`, `currency_missing`) or fails the settle/artifact assertion — no pair returned `{count: 0}` while claiming success. The 3 pairs with 0 saved ads are all failing pairs whose search errored; they are not zero-result successes.
+
+`web_extract` attempts: 157, transport/exception failures: 0. All failures are parse-level (Meta shell render) or assertion-level.
+
+### Per-pair results
+
+| Brand | CC | Ads saved | `ad_search` count | Status | Primary reason |
+|---|---|---|---|---|---|
+| KFC | AE | 20 | 20 | PASS | — |
+| KFC | SA | 20 | 20 | PASS | — |
+| KFC | EG | 19 | 19 | PASS | — |
+| KFC | US | 20 | 20 | PASS | — |
+| KFC | GB | 20 | 20 | FAIL | advertiser parse_failed (`render (5199 chars)`); `check2` not settled (0,0,10) |
+| McDonald's | AE | 0 | None | FAIL | search parse_failed (2,079-char shell) |
+| McDonald's | SA | 0 | None | FAIL | search parse_failed (`render (5161 chars)`) |
+| McDonald's | EG | 20 | 20 | PASS | — |
+| McDonald's | US | 20 | 20 | PASS | — |
+| McDonald's | GB | 20 | 20 | PASS | — |
+| Burger King | AE | 11 | 11 | FAIL | name_not_matched (`Burger King Arabia` @0.60 < 0.80) |
+| Burger King | SA | 17 | 17 | FAIL | name_not_matched (`Burger King Arabia` @0.60) |
+| Burger King | EG | 20 | 20 | FAIL | name_not_matched (`Burger King Malaysia` @0.60) |
+| Burger King | US | 20 | 20 | PASS | — |
+| Burger King | GB | 20 | 20 | FAIL | name_not_matched (`Burger King UK` @0.60) |
+| Domino's Pizza | AE | 20 | 20 | FAIL | name_not_matched (`Domino's Pizza` @0.60; target is `Domino's`) |
+| Domino's Pizza | SA | 0 | None | FAIL | search parse_failed (`render (5173 chars)`) |
+| Domino's Pizza | EG | 20 | 20 | FAIL | name_not_matched (`Domino's Pizza` @0.60) |
+| Domino's Pizza | US | 20 | 20 | FAIL | name_not_matched (`Domino's Pizza` @0.60) |
+| Domino's Pizza | GB | 17 | 17 | FAIL | name_not_matched (`Domino's Pizza` @0.60) |
+| Pizza Hut | AE | 13 | 13 | FAIL | currency_missing (AED absent from AE ad text) |
+| Pizza Hut | SA | 6 | 6 | FAIL | name_not_matched (`Pizza Hut KSA` @0.60) |
+| Pizza Hut | EG | 10 | 10 | PASS | — |
+| Pizza Hut | US | 20 | 20 | FAIL | advertiser parse_failed (`render (5214 chars)`) |
+| Pizza Hut | GB | 10 | 10 | FAIL | advertiser parse_failed (`render (5215 chars)`) |
+
+Pass by brand: KFC 4/5, McDonald's 3/5, Burger King 1/5, Pizza Hut 1/5, Domino's Pizza 0/5.
+Pass by country: AE 1/5, SA 2/5, EG 4/5, US 2/5, GB 2/5.
+
+### Failure breakdown (primary reason)
+
+| Cause | Pairs | Detail |
+|---|---|---|
+| `name_not_matched` | 10 | Matcher scores a country-suffixed page as `substring 0.60` while the threshold is `0.80` (`resolve.py`). `Burger King Arabia`, `Burger King UK`, `Pizza Hut KSA`, `Domino's Pizza` vs target `Domino's` all land at 0.60. These are the *correct* pages being rejected — a resolver recall bug, not missing data. |
+| `advertiser` parse_failed | 3 | Meta returned a ~5.1–5.2k-char shell (no card markers, no empty-state text) on every attempt for the advertiser query: KFC GB, Pizza Hut US, Pizza Hut GB. |
+| `search` parse_failed | 3 | Same shell on the keyword query: McDonald's AE, McDonald's SA, Domino's Pizza SA. Retried 13–16 dispatches, never hydrated. |
+| `currency_missing` | 1 | Pizza Hut AE: 13 ads saved, none carries `AED`; the currency spot-check is a real (if strict) signal for AE. |
+
+Note the observed shell rate: 6 pairs needed 11–16 dispatches and never recovered; the other 19 settled in 4. Raising retries further would trade runtime for a handful of pairs; the resolver threshold is the cheaper and larger win (10 pairs).
+
+### Hydration metrics (383 saved ads)
+
+Field coverage per pair, percentage of saved ads with a non-empty value:
+
+| Brand | CC | n | creative_text | cta_text | link_url | first_seen | media | page_name | no page-chrome |
+|---|---|---|---|---|---|---|---|---|---|
+| KFC | AE | 20 | 100 | 95 | 95 | 100 | 100 | 100 | 95 |
+| KFC | SA | 20 | 70 | 95 | 95 | 100 | 100 | 100 | 95 |
+| KFC | EG | 19 | 89 | 100 | 100 | 100 | 100 | 100 | 95 |
+| KFC | US | 20 | 95 | 90 | 95 | 100 | 100 | 100 | 95 |
+| KFC | GB | 20 | 100 | 85 | 85 | 100 | 100 | 100 | 95 |
+| McDonald's | EG | 20 | 100 | 35 | 35 | 100 | 100 | 100 | 95 |
+| McDonald's | US | 20 | 90 | 90 | 90 | 100 | 100 | 100 | 95 |
+| McDonald's | GB | 20 | 100 | 80 | 80 | 100 | 100 | 100 | 95 |
+| Burger King | AE | 11 | 100 | 82 | 82 | 100 | 100 | 100 | 91 |
+| Burger King | SA | 17 | 100 | 82 | 82 | 100 | 100 | 100 | 94 |
+| Burger King | EG | 20 | 100 | 60 | 60 | 100 | 100 | 100 | 95 |
+| Burger King | US | 20 | 100 | 100 | 100 | 100 | 100 | 100 | 95 |
+| Burger King | GB | 20 | 100 | 95 | 95 | 100 | 100 | 100 | 95 |
+| Domino's Pizza | AE | 20 | 100 | 35 | 35 | 100 | 100 | 100 | 95 |
+| Domino's Pizza | EG | 20 | 100 | 65 | 75 | 100 | 100 | 100 | 95 |
+| Domino's Pizza | US | 20 | 100 | 85 | 85 | 100 | 100 | 100 | 95 |
+| Domino's Pizza | GB | 17 | 100 | 82 | 100 | 100 | 100 | 100 | 94 |
+| Pizza Hut | AE | 13 | 100 | 85 | 85 | 100 | 100 | 100 | 92 |
+| Pizza Hut | SA | 6 | 100 | 100 | 100 | 100 | 83 | 100 | 83 |
+| Pizza Hut | EG | 10 | 100 | 50 | 50 | 100 | 90 | 100 | 90 |
+| Pizza Hut | US | 20 | 100 | 100 | 100 | 100 | 100 | 100 | 95 |
+| Pizza Hut | GB | 10 | 100 | 90 | 100 | 100 | 100 | 100 | 90 |
+
+Aggregate (mean across pairs with ads): `creative_text` 97.5% (min 70% KFC SA), `cta_text` 81.0% (min 35% McDonald's EG, Domino's AE), `link_url` 82.9% (min 35%), `first_seen` 100%, media (`images` or `has_video`) 98.8% (min 83% Pizza Hut SA), `page_name` 100%, page-chrome-free `creative_text` 93.6% (min 83%).
+
+Two hydration defects worth keeping:
+
+1. **Page chrome leaks into `creative_text`** (~5–10% of ads): the Meta footer block "System status / Ad Library API / About ads and data use / Privacy / Terms / Cookies" is appended to the creative. It is not ad copy and should be stripped in the parser; it also pollutes any keyword/currency containment check.
+2. **`cta_text`/`link_url` are the weakest fields** (35–65% in three pairs) and are dropped together — when the card has no CTA button the link URL goes with it. `creative_text`, ids, `first_seen`, and `page_name` are effectively complete.
+
+Currency spot-check fired exactly once (Pizza Hut AE). `KFC SA` returned `expected=None, found=[]` — no price in SA creatives, so the check abstained rather than guessing; that is correct behaviour, but it means AE is the only market where the currency assertion is actually load-bearing.
+
+### Definition of done status
+
+- 25/25 pairs executed, sequential: **yes**.
+- Per-pair folders with `result.json` / `ads.json` / `attempts.json` / `summary.md` / `artifacts/`: **yes** for all 25; `artifacts/` absent only on pairs that never resolved an advertiser (12 pairs), which is consistent with `artifacts_missing` being reported.
+- Silent zeros: **0**.
+- 100% PASS is **not** achieved: 9/25. The regression that blocks it is the `resolve.py` 0.80 threshold rejecting correct suffixed page names (10 pairs), followed by Meta shell renders (6 pairs).

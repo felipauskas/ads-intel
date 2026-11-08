@@ -1,0 +1,91 @@
+{
+  "brand": "Pizza Hut",
+  "country": "US",
+  "advertiser": "Pizza Hut",
+  "folder": "evals/live-matrix/pizza-hut-us",
+  "data_dir": "/var/folders/zf/g9bpd9s55sv10tz2mnhqch800000gn/T/ads-intel-live-eval-nh_o8wp3/tmpx5c9u2_q",
+  "search_summary": {
+    "count": 20,
+    "complete": false,
+    "fetched": 20,
+    "country": "US",
+    "error": null,
+    "page_names": [
+      "Pizza Hut",
+      "T-Mobile",
+      "Sbmowing",
+      "The Blood Pressure Journal"
+    ],
+    "seconds": 11.27
+  },
+  "advertiser_summary": {
+    "count": null,
+    "complete": null,
+    "resolved": null,
+    "error": "parse_failed: render (5214 chars) with no card markers or empty-state text",
+    "target": null,
+    "candidates": null,
+    "threshold": null,
+    "page_names": [],
+    "seconds": 13.97
+  },
+  "watch_add": {
+    "error": null,
+    "watchlist": [
+      {
+        "query": "Pizza Hut",
+        "country": "US",
+        "advertiser": "Pizza Hut",
+        "active_status": "active"
+      }
+    ]
+  },
+  "check1": {
+    "query": "Pizza Hut",
+    "country": "US",
+    "partial": true,
+    "skipped": true,
+    "reason": "parse_failed",
+    "artifacts": {
+      "error": "parse_failed"
+    },
+    "new_page_names": [],
+    "seconds": 14.51
+  },
+  "check2": {
+    "query": "Pizza Hut",
+    "country": "US",
+    "partial": true,
+    "skipped": true,
+    "reason": "parse_failed",
+    "artifacts": {
+      "error": "parse_failed"
+    },
+    "new_page_names": [],
+    "seconds": 15.59
+  },
+  "artifacts_ok": false,
+  "currency": {
+    "expected": null,
+    "found": [],
+    "ok": null
+  },
+  "status": "FAIL",
+  "failures": [
+    "advertiser_error: parse_failed: render (5214 chars) with no card markers or empty-state text",
+    "check1_no_new_ads: (None, None, None)",
+    "check2_not_settled: (None, None, None)",
+    "artifacts_missing: html/digest"
+  ],
+  "timings": {
+    "search": 11.27,
+    "advertiser_search": 13.97,
+    "check1": 14.51,
+    "check2": 15.59,
+    "total": 55.34
+  },
+  "attempts": {
+    "total": 14,
+    "failed": 0
+  }
+}

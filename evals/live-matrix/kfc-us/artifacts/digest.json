@@ -1,0 +1,16 @@
+{
+  "query": "KFC",
+  "country": "US",
+  "checked_at": "2026-11-08T13:37:58",
+  "partial": false,
+  "total": 11,
+  "new": 0,
+  "ended": 0,
+  "changed": 0,
+  "with_link": 11,
+  "with_cta": 11,
+  "with_images": 6,
+  "with_same_creative": 5,
+  "with_multiple_versions": 9,
+  "advertiser": "KFC"
+}

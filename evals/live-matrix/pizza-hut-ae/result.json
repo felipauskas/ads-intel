@@ -1,0 +1,107 @@
+{
+  "brand": "Pizza Hut",
+  "country": "AE",
+  "advertiser": "Pizza Hut",
+  "folder": "evals/live-matrix/pizza-hut-ae",
+  "data_dir": "/var/folders/zf/g9bpd9s55sv10tz2mnhqch800000gn/T/ads-intel-live-eval-nh_o8wp3/tmpyqmwtx3d",
+  "search_summary": {
+    "count": 13,
+    "complete": true,
+    "fetched": 13,
+    "country": "AE",
+    "error": null,
+    "page_names": [
+      "Al Nahda Gift Center",
+      "Pizza Hut"
+    ],
+    "seconds": 7.84
+  },
+  "advertiser_summary": {
+    "count": 10,
+    "complete": true,
+    "resolved": {
+      "page_name": "Pizza Hut",
+      "score": 0.8
+    },
+    "error": null,
+    "target": null,
+    "candidates": null,
+    "threshold": null,
+    "page_names": [
+      "Pizza Hut"
+    ],
+    "seconds": 0.01
+  },
+  "watch_add": {
+    "error": null,
+    "watchlist": [
+      {
+        "query": "Pizza Hut",
+        "country": "AE",
+        "advertiser": "Pizza Hut",
+        "active_status": "active"
+      }
+    ]
+  },
+  "check1": {
+    "query": "Pizza Hut",
+    "country": "AE",
+    "advertiser": "Pizza Hut",
+    "resolved": {
+      "page_name": "Pizza Hut",
+      "score": 0.8
+    },
+    "new_ads": 10,
+    "ended_ads": 0,
+    "changed_ads": 0,
+    "partial": false,
+    "artifacts": {
+      "html": "artifacts/html.html",
+      "digest": "artifacts/digest.json"
+    },
+    "new_page_names": [
+      "Pizza Hut"
+    ],
+    "seconds": 0.01
+  },
+  "check2": {
+    "query": "Pizza Hut",
+    "country": "AE",
+    "advertiser": "Pizza Hut",
+    "resolved": {
+      "page_name": "Pizza Hut",
+      "score": 0.8
+    },
+    "new_ads": 0,
+    "ended_ads": 0,
+    "changed_ads": 0,
+    "partial": false,
+    "artifacts": {
+      "html": "/var/folders/zf/g9bpd9s55sv10tz2mnhqch800000gn/T/ads-intel-live-eval-nh_o8wp3/tmpyqmwtx3d/reports/04d0893737dfd95a.html",
+      "digest": "/var/folders/zf/g9bpd9s55sv10tz2mnhqch800000gn/T/ads-intel-live-eval-nh_o8wp3/tmpyqmwtx3d/reports/04d0893737dfd95a.digest.json"
+    },
+    "new_page_names": [],
+    "seconds": 0.01
+  },
+  "artifacts_ok": true,
+  "currency": {
+    "expected": "AED",
+    "found": [],
+    "ok": false
+  },
+  "status": "FAIL",
+  "failures": [
+    "currency_missing: AED absent from AE ad text"
+  ],
+  "timings": {
+    "search": 7.84,
+    "advertiser_search": 0.01,
+    "check1": 0.01,
+    "check2": 0.01,
+    "total": 7.87
+  },
+  "attempts": {
+    "total": 4,
+    "failed": 0
+  }
+}

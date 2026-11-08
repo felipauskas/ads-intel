@@ -1,0 +1,112 @@
+{
+  "brand": "McDonald's",
+  "country": "GB",
+  "advertiser": "McDonald's",
+  "folder": "evals/live-matrix/mcdonalds-gb",
+  "data_dir": "/var/folders/zf/g9bpd9s55sv10tz2mnhqch800000gn/T/ads-intel-live-eval-nh_o8wp3/tmpolhxvfss",
+  "search_summary": {
+    "count": 20,
+    "complete": false,
+    "fetched": 20,
+    "country": "GB",
+    "error": null,
+    "page_names": [
+      "McDonald's",
+      "Dan Lok",
+      "Dollyholly86",
+      "Barbygant",
+      "The Dutch Tile Project",
+      "Gold Arthur",
+      "Protein.com",
+      "Osprey Charging Network",
+      "Protein.com UK"
+    ],
+    "seconds": 8.06
+  },
+  "advertiser_summary": {
+    "count": 12,
+    "complete": true,
+    "resolved": {
+      "page_name": "McDonald's",
+      "score": 0.8
+    },
+    "error": null,
+    "target": null,
+    "candidates": null,
+    "threshold": null,
+    "page_names": [
+      "McDonald's"
+    ],
+    "seconds": 0.02
+  },
+  "watch_add": {
+    "error": null,
+    "watchlist": [
+      {
+        "query": "McDonald's",
+        "country": "GB",
+        "advertiser": "McDonald's",
+        "active_status": "active"
+      }
+    ]
+  },
+  "check1": {
+    "query": "McDonald's",
+    "country": "GB",
+    "advertiser": "McDonald's",
+    "resolved": {
+      "page_name": "McDonald's",
+      "score": 0.8
+    },
+    "new_ads": 12,
+    "ended_ads": 0,
+    "changed_ads": 0,
+    "partial": false,
+    "artifacts": {
+      "html": "artifacts/html.html",
+      "digest": "artifacts/digest.json"
+    },
+    "new_page_names": [
+      "McDonald's"
+    ],
+    "seconds": 0.02
+  },
+  "check2": {
+    "query": "McDonald's",
+    "country": "GB",
+    "advertiser": "McDonald's",
+    "resolved": {
+      "page_name": "McDonald's",
+      "score": 0.8
+    },
+    "new_ads": 0,
+    "ended_ads": 0,
+    "changed_ads": 0,
+    "partial": false,
+    "artifacts": {
+      "html": "/var/folders/zf/g9bpd9s55sv10tz2mnhqch800000gn/T/ads-intel-live-eval-nh_o8wp3/tmpolhxvfss/reports/278609d6b6b08f7f.html",
+      "digest": "/var/folders/zf/g9bpd9s55sv10tz2mnhqch800000gn/T/ads-intel-live-eval-nh_o8wp3/tmpolhxvfss/reports/278609d6b6b08f7f.digest.json"
+    },
+    "new_page_names": [],
+    "seconds": 0.02
+  },
+  "artifacts_ok": true,
+  "currency": {
+    "expected": null,
+    "found": [],
+    "ok": null
+  },
+  "status": "PASS",
+  "failures": [],
+  "timings": {
+    "search": 8.06,
+    "advertiser_search": 0.02,
+    "check1": 0.02,
+    "check2": 0.02,
+    "total": 8.12
+  },
+  "attempts": {
+    "total": 4,
+    "failed": 0
+  }
+}
