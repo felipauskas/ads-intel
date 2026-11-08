@@ -194,3 +194,16 @@ def test_advertiser_watch_does_not_adopt_unstamped_unfiltered_baseline(data_dir)
 
     # The unfiltered watch itself still reads its own baseline.
     assert store.load_snapshot("KFC", "US") == snap
+
+
+def test_advertiser_watch_does_not_adopt_pre_country_legacy_baseline(data_dir):
+    """The sha1(query) fallback is unfiltered too, so an advertiser watch skips it."""
+    digest = hashlib.sha1("KFC".encode("utf-8")).hexdigest()[:16]
+    legacy = data_dir / "snapshots" / f"{digest}.json"
+    legacy.parent.mkdir(parents=True, exist_ok=True)
+    legacy.write_text(json.dumps({"ads": {"9": {"id": "9"}}}))
+
+    assert store.load_snapshot("KFC", "US", "KFC") == {"ads": {}}
+    # The same file is still the upgrade path for the unfiltered US watch.
+    assert store.load_snapshot("KFC", "US") == {"ads": {"9": {"id": "9"}}}
+
