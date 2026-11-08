@@ -5,14 +5,14 @@
     {
       "phase": "search",
       "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=AE&q=Burger+King&media_type=all&search_type=keyword_unordered",
-      "seconds": 8.89,
+      "seconds": 3.95,
       "chars": 120397,
       "failed": false
     },
     {
       "phase": "advertiser_search",
       "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=AE&q=Burger+King&media_type=all&search_type=keyword_unordered",
-      "seconds": 0.02,
+      "seconds": 0.01,
       "chars": 120397,
       "failed": false
     },

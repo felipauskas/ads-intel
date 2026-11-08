@@ -1,9 +1,9 @@
 {
   "brand": "Domino's Pizza",
   "country": "AE",
-  "advertiser": "Domino's",
+  "advertiser": "Domino's Pizza",
   "folder": "evals/live-matrix/dominos-pizza-ae",
-  "data_dir": "/var/folders/zf/g9bpd9s55sv10tz2mnhqch800000gn/T/ads-intel-live-eval-nh_o8wp3/tmpilk7iatk",
+  "data_dir": "/var/folders/zf/g9bpd9s55sv10tz2mnhqch800000gn/T/ads-intel-live-eval-50w011gi/tmpp_jvt9qr",
   "search_summary": {
     "count": 20,
     "complete": false,
@@ -20,27 +20,23 @@
       "DePaul Parties and Events",
       "Empirio"
     ],
-    "seconds": 9.29
+    "seconds": 3.33
   },
   "advertiser_summary": {
-    "count": null,
-    "complete": null,
-    "resolved": null,
-    "error": "name_not_matched",
-    "target": "Domino's",
-    "candidates": [
-      {
-        "page_name": "Domino's Pizza India",
-        "score": 0.6
-      },
-      {
-        "page_name": "Domino's Pizza",
-        "score": 0.6
-      }
+    "count": 1,
+    "complete": true,
+    "resolved": {
+      "page_name": "Domino's Pizza India",
+      "score": 0.8
+    },
+    "error": null,
+    "target": null,
+    "candidates": null,
+    "threshold": null,
+    "page_names": [
+      "Domino's Pizza India"
     ],
-    "threshold": 0.8,
-    "page_names": [],
-    "seconds": 0.01
+    "seconds": 0.02
   },
   "watch_add": {
     "error": null,
@@ -48,7 +44,7 @@
       {
         "query": "Domino's Pizza",
         "country": "AE",
-        "advertiser": "Domino's",
+        "advertiser": "Domino's Pizza",
         "active_status": "active"
       }
     ]
@@ -56,52 +52,44 @@
   "check1": {
     "query": "Domino's Pizza",
     "country": "AE",
-    "advertiser": "Domino's",
-    "partial": false,
-    "error": "name_not_matched",
-    "target": "Domino's",
-    "candidates": [
-      {
-        "page_name": "Domino's Pizza India",
-        "score": 0.6
-      },
-      {
-        "page_name": "Domino's Pizza",
-        "score": 0.6
-      }
-    ],
-    "threshold": 0.8,
-    "artifacts": {
-      "error": "name_not_matched"
+    "advertiser": "Domino's Pizza",
+    "resolved": {
+      "page_name": "Domino's Pizza India",
+      "score": 0.8
     },
-    "new_page_names": [],
-    "seconds": 0.01
+    "new_ads": 1,
+    "ended_ads": 0,
+    "changed_ads": 0,
+    "partial": false,
+    "artifacts": {
+      "html": "artifacts/html.html",
+      "digest": "artifacts/digest.json"
+    },
+    "new_page_names": [
+      "Domino's Pizza India"
+    ],
+    "seconds": 0.02
   },
   "check2": {
     "query": "Domino's Pizza",
     "country": "AE",
-    "advertiser": "Domino's",
+    "advertiser": "Domino's Pizza",
+    "resolved": {
+      "page_name": "Domino's Pizza India",
+      "score": 0.8
+    },
+    "new_ads": 0,
+    "ended_ads": 0,
+    "changed_ads": 0,
     "partial": false,
-    "error": "name_not_matched",
-    "target": "Domino's",
-    "candidates": [
-      {
-        "page_name": "Domino's Pizza India",
-        "score": 0.6
-      },
-      {
-        "page_name": "Domino's Pizza",
-        "score": 0.6
-      }
-    ],
-    "threshold": 0.8,
     "artifacts": {
-      "error": "name_not_matched"
+      "html": "/var/folders/zf/g9bpd9s55sv10tz2mnhqch800000gn/T/ads-intel-live-eval-50w011gi/tmpp_jvt9qr/reports/be4af8fe7da52b6b.html",
+      "digest": "/var/folders/zf/g9bpd9s55sv10tz2mnhqch800000gn/T/ads-intel-live-eval-50w011gi/tmpp_jvt9qr/reports/be4af8fe7da52b6b.digest.json"
     },
     "new_page_names": [],
-    "seconds": 0.01
+    "seconds": 0.02
   },
-  "artifacts_ok": false,
+  "artifacts_ok": true,
   "currency": {
     "expected": "AED",
     "found": [
@@ -109,18 +97,14 @@
     ],
     "ok": true
   },
-  "status": "FAIL",
-  "failures": [
-    "check1_error: name_not_matched",
-    "check2_error: name_not_matched",
-    "artifacts_missing: html/digest"
-  ],
+  "status": "PASS",
+  "failures": [],
   "timings": {
-    "search": 9.29,
-    "advertiser_search": 0.01,
-    "check1": 0.01,
-    "check2": 0.01,
-    "total": 9.32
+    "search": 3.33,
+    "advertiser_search": 0.02,
+    "check1": 0.02,
+    "check2": 0.02,
+    "total": 3.39
   },
   "attempts": {
     "total": 4,

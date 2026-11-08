@@ -264,5 +264,46 @@
       "multiple_versions": false
     }
   ],
-  "advertiser_search": []
+  "advertiser_search": [
+    {
+      "id": "28821958667470769",
+      "page_name": "Burger King Arabia",
+      "status": "active",
+      "first_seen": "Oct 29, 2026",
+      "last_seen": "",
+      "creative_text": "We said EXTREEEEME, and we meant it! 🧀🔥\nFLAME GRILLED CHEESE is here to turn up the cheesy madness! 🍔\nGo ahead, PRESS FOR EXCESS! 👀\nقلنا إكسترييييم، وكنا قدّها! 🧀🔥\nالجبن المشوي على اللهب وصل عشان يولعها! 🍔\nمليانة جبنة.. اضغطها وخلها تسيح 👀",
+      "library_url": "https://www.facebook.com/ads/library/?id=28821958667470769",
+      "page_url": "https://www.facebook.com/BurgerKingArabia/",
+      "page_id": "",
+      "link_url": "https://qr2.mobi/28xqz",
+      "link_title": "Burger King Arabia",
+      "cta_text": "Order now",
+      "images": [],
+      "has_video": true,
+      "same_creative_count": 0,
+      "multiple_versions": false
+    },
+    {
+      "id": "2051979676195385",
+      "page_name": "Burger King Arabia",
+      "status": "active",
+      "first_seen": "Jun 10, 2026",
+      "last_seen": "",
+      "creative_text": "⚠️ DOUBLE CHEESE WARNING: May cause extreme cravings and make you want to PRESS FOR EXCESS! 🧀🔥\nSwipe at your own risk! 👀\n⚠️ تحذير دبل تشيز: ممكن يسبب شهية مب طبيعية للجبن ويخليك تطلب المزيد والمزيد! 🧀🔥\nاسحب على مسؤوليتك! 👀",
+      "library_url": "https://www.facebook.com/ads/library/?id=2051979676195385",
+      "page_url": "https://www.facebook.com/BurgerKingArabia/",
+      "page_id": "",
+      "link_url": "https://qr2.mobi/28xqz",
+      "link_title": "QR code 1",
+      "cta_text": "Order Now",
+      "images": [
+        "https://scontent-lax3-1.xx.fbcdn.net/v/t39.35426-6/860365865_1458994199520780_4081323594309958746_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=109&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=ka836PTjcfUQ7kNvwGSxsFB&_nc_oc=AdoxqDZxYBFjklM9HvTMP_uW6721guQISG0tb_BkjMu12IIez6FBJcmfC8XtX-Xhbpg&_nc_zt=14&_nc_ht=scontent-lax3-1.xx&_nc_gid=h9TaCN6GO0h4DlTMNz5ktA&_nc_ss=7b289&oh=00_AQR54bZL_F80bB8_JVhDak6BEkhOrmh0ZEAAH4DwtwC0iQ&oe=6AF5FB26",
+        "https://scontent-lax3-2.xx.fbcdn.net/v/t39.35426-6/862763727_4884971695107595_5910746216642301190_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=100&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=xvT2jpLIf8UQ7kNvwF8JXgr&_nc_oc=AdoDP_p3_NkVs_fhTpVoM_kTNwSWSP9YI4uDMVsmccEU5WDYjpyby072trB-swpnbq0&_nc_zt=14&_nc_ht=scontent-lax3-2.xx&_nc_gid=h9TaCN6GO0h4DlTMNz5ktA&_nc_ss=7b289&oh=00_AQSWogCX8oQmZ9GgdqYpCl5atYnJ23fhww3sMkGAO-XsSA&oe=6AF614B6",
+        "https://scontent-lax3-2.xx.fbcdn.net/v/t39.35426-6/858923145_1073423915752579_5798229863278305982_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=107&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=kNWQRdIxM_MQ7kNvwEZogd7&_nc_oc=AdrJNzLfQaKWWo9bTLY36agW-HHnAqWkN0w2cGJwMwpxkoaCkA0gUNrf-lZtQX8q20s&_nc_zt=14&_nc_ht=scontent-lax3-2.xx&_nc_gid=h9TaCN6GO0h4DlTMNz5ktA&_nc_ss=7b289&oh=00_AQQUMRqaU9mHM2g5927TLKCeq5eEXR0HlVk3RLmPTLYzHA&oe=6AF5FD80"
+      ],
+      "has_video": false,
+      "same_creative_count": 0,
+      "multiple_versions": false
+    }
+  ]
 }

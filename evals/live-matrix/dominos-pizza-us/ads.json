@@ -391,5 +391,358 @@
       "multiple_versions": true
     }
   ],
-  "advertiser_search": []
+  "advertiser_search": [
+    {
+      "id": "3773713419458456",
+      "page_name": "Domino's Pizza",
+      "status": "active",
+      "first_seen": "Oct 26, 2026",
+      "last_seen": "",
+      "creative_text": "Collect all six limited edition Domino's x Minecraft Dungeons II boxes when you order a Domino™ online. While supplies last. T&C apply.\nSystem status\n- [Ad Library API](https://www.facebook.com/ads/library/api/?source=archive-landing-page)\n- [About ads and data use](https://www.facebook.com/ads/about/?entry_product=ad_library)\n- [Privacy](https://www.facebook.com/privacy/center/?entry_point=privacy_basics_redirect)\n- [Terms](https://www.facebook.com/policies/)\n- [Cookies](https://www.facebook.com/policies/cookies/)",
+      "library_url": "https://www.facebook.com/ads/library/?id=3773713419458456",
+      "page_url": "https://www.facebook.com/Dominos/",
+      "page_id": "",
+      "link_url": "https://www.dominos.com/",
+      "link_title": "Yea, you can keep those boxes 🔥🔥",
+      "cta_text": "Order Now",
+      "images": [
+        "https://scontent-lax3-2.xx.fbcdn.net/v/t39.35426-6/864402553_1440209501649991_3754543250622199269_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=111&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=tu7VVE32_PoQ7kNvwGmeeBH&_nc_oc=AdrnlYFbpQnD3hw6D5u_ZilwMw-1GbzGbFgxnx6uYc4FJsR1Ayoz57JH1IqKvex3ZMg&_nc_zt=14&_nc_ht=scontent-lax3-2.xx&_nc_gid=7sA9WzuurzaPpxZ2m36qnA&_nc_ss=7b289&oh=00_AQSUdRJa4JsPu-supae7GF-Q7fCV4RVQBQIMZ4JQOSlolQ&oe=6AF6328C"
+      ],
+      "has_video": false,
+      "same_creative_count": 3,
+      "multiple_versions": true
+    },
+    {
+      "id": "1608737927036224",
+      "page_name": "Domino's Pizza",
+      "status": "active",
+      "first_seen": "Oct 29, 2026",
+      "last_seen": "",
+      "creative_text": "Fuel your next adventure in Minecraft Dungeons II! Order a Domino™ online to snag collectible boxes, unlock 1 of 3 exclusive in-game items and more.",
+      "library_url": "https://www.facebook.com/ads/library/?id=1608737927036224",
+      "page_url": "https://www.facebook.com/Dominos/",
+      "page_id": "",
+      "link_url": "https://www.dominos.com/",
+      "link_title": "Ultimate 🍕🎮 collab: unlocked",
+      "cta_text": "Order Now",
+      "images": [
+        "https://scontent-lax3-2.xx.fbcdn.net/v/t39.35426-6/858745382_3402746339933924_3305020295277766220_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=107&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=zutmh7hPNs4Q7kNvwH3D_wZ&_nc_oc=AdqG9T_EPJTiSlpxtqzbbb0aKshvsHPf9EdZY_AnZ2gxoujesRommEPND5A9G6USjds&_nc_zt=14&_nc_ht=scontent-lax3-2.xx&_nc_gid=7sA9WzuurzaPpxZ2m36qnA&_nc_ss=7b289&oh=00_AQSaiqsCAfmdIwC1zQuMTD2xTyORNoxjjphepCz4mgmXtQ&oe=6AF5FD9E"
+      ],
+      "has_video": false,
+      "same_creative_count": 6,
+      "multiple_versions": false
+    },
+    {
+      "id": "2196218851251668",
+      "page_name": "Domino's Pizza",
+      "status": "active",
+      "first_seen": "Oct 29, 2026",
+      "last_seen": "",
+      "creative_text": "Fuel your next adventure in Minecraft Dungeons II! Order a Domino™ online to snag collectible boxes, unlock 1 of 3 exclusive in-game items and more.",
+      "library_url": "https://www.facebook.com/ads/library/?id=2196218851251668",
+      "page_url": "https://www.facebook.com/Dominos/",
+      "page_id": "",
+      "link_url": "https://www.dominos.com/",
+      "link_title": "Ultimate 🍕🎮 collab: unlocked",
+      "cta_text": "Order Now",
+      "images": [
+        "https://scontent-lax3-1.xx.fbcdn.net/v/t39.35426-6/860882078_2743210336108223_8862758267430567664_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=102&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=L9OUWWQjg3cQ7kNvwFuyHx2&_nc_oc=Adp8jsrwtJ7DWu9PVmRL8_xIYQDC1mXppJ2yvT-Gf4PS5TZe3ZEDowa3bd3mFwP_BzQ&_nc_zt=14&_nc_ht=scontent-lax3-1.xx&_nc_gid=7sA9WzuurzaPpxZ2m36qnA&_nc_ss=7b289&oh=00_AQSrH2RvJ_AiAn5NHLLZyFgvz9c3mRqRJF5bqP-l-rGgXA&oe=6AF61FF5"
+      ],
+      "has_video": false,
+      "same_creative_count": 2,
+      "multiple_versions": false
+    },
+    {
+      "id": "2226758787905656",
+      "page_name": "Domino's Pizza",
+      "status": "active",
+      "first_seen": "Oct 26, 2026",
+      "last_seen": "",
+      "creative_text": "Give family style a refresh. Grab a Domino: it's made for one with exactly the toppings you want. And if you're grabbing a few, they're just $6.99 when you Mix & Match.",
+      "library_url": "https://www.facebook.com/ads/library/?id=2226758787905656",
+      "page_url": "https://www.facebook.com/Dominos/",
+      "page_id": "",
+      "link_url": "https://www.dominos.com/",
+      "link_title": "Make it a party of one",
+      "cta_text": "Order Now",
+      "images": [
+        "https://scontent-lax3-1.xx.fbcdn.net/v/t39.35426-6/861854202_1091854670307920_7971508418726729167_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=104&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=PCNrGYCLvkkQ7kNvwHNcf8f&_nc_oc=AdoH_1883FojkTdtUl4SSKKuAqWW55NpKql-oFCXpYCEJurwXl-V0sRL4pftxXiB3qE&_nc_zt=14&_nc_ht=scontent-lax3-1.xx&_nc_gid=7sA9WzuurzaPpxZ2m36qnA&_nc_ss=7b289&oh=00_AQTLQJyUTPj5ie_KJwfCPoMh4iCWSZIemqSPMEkwOiiyXQ&oe=6AF60431"
+      ],
+      "has_video": false,
+      "same_creative_count": 0,
+      "multiple_versions": true
+    },
+    {
+      "id": "1740963170328810",
+      "page_name": "Domino's Pizza",
+      "status": "active",
+      "first_seen": "Oct 26, 2026",
+      "last_seen": "",
+      "creative_text": "The NEW Domino is perfect when everyone wants their own thing. Because the Domino is made for one, and just $6.99 each with 2-toppings when you Mix & Match.",
+      "library_url": "https://www.facebook.com/ads/library/?id=1740963170328810",
+      "page_url": "https://www.facebook.com/Dominos/",
+      "page_id": "",
+      "link_url": "https://www.dominos.com/",
+      "link_title": "Like what you like",
+      "cta_text": "Order Now",
+      "images": [
+        "https://scontent-lax3-2.xx.fbcdn.net/v/t39.35426-6/861108187_1648991226579201_1255131494968621341_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=100&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=28hbfAX5wRIQ7kNvwHvd5p8&_nc_oc=AdrzBuW1Yv9ogPi9IS4UgxpgNy_iNHJhRMNtNoKbT3FapMjO0rusgizZRwX4zJDEXKg&_nc_zt=14&_nc_ht=scontent-lax3-2.xx&_nc_gid=7sA9WzuurzaPpxZ2m36qnA&_nc_ss=7b289&oh=00_AQTHqNKimE4RedtToIzcHKHcRubOFM8XDQ8Pzhvb7h3m3A&oe=6AF60CFB"
+      ],
+      "has_video": false,
+      "same_creative_count": 0,
+      "multiple_versions": true
+    },
+    {
+      "id": "1085244571163201",
+      "page_name": "Domino's Pizza",
+      "status": "active",
+      "first_seen": "Nov 2, 2026",
+      "last_seen": "",
+      "creative_text": "Fuel your next adventure in Minecraft Dungeons II! Order a Domino™ online to snag collectible boxes, unlock 1 of 3 exclusive in-game items and more.",
+      "library_url": "https://www.facebook.com/ads/library/?id=1085244571163201",
+      "page_url": "https://www.facebook.com/Dominos/",
+      "page_id": "",
+      "link_url": "https://www.dominos.com/",
+      "link_title": "Ultimate 🍕🎮 collab: unlocked",
+      "cta_text": "Order Now",
+      "images": [
+        "https://scontent-lax3-1.xx.fbcdn.net/v/t39.35426-6/858986721_1128666759647716_5623804349782422152_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=109&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=BG3C1GP_uiYQ7kNvwFAeOTF&_nc_oc=AdofbRfjCYGl12p5vgYasamr4P1XFpI1YoY1JH6ZFb6d8qfz-8Xldt9rrshL-bwMtHA&_nc_zt=14&_nc_ht=scontent-lax3-1.xx&_nc_gid=7sA9WzuurzaPpxZ2m36qnA&_nc_ss=7b289&oh=00_AQTEpjVqqVJwj86I4iGnYkKwRjplRJQ2cXwNKKCsB-Dr7Q&oe=6AF60129"
+      ],
+      "has_video": false,
+      "same_creative_count": 0,
+      "multiple_versions": true
+    },
+    {
+      "id": "1043813594880498",
+      "page_name": "Domino's Pizza",
+      "status": "active",
+      "first_seen": "Jun 18, 2026",
+      "last_seen": "",
+      "creative_text": "Mix and match any of the all new 2-topping Dominos™ for $6.99 each. Via @theangelfoodieg",
+      "library_url": "https://www.facebook.com/ads/library/?id=1043813594880498",
+      "page_url": "https://www.facebook.com/Dominos/",
+      "page_id": "",
+      "link_url": "https://www.dominos.com/",
+      "link_title": "Order now",
+      "cta_text": "Order Now",
+      "images": [],
+      "has_video": true,
+      "same_creative_count": 0,
+      "multiple_versions": false
+    },
+    {
+      "id": "2366054620871448",
+      "page_name": "Domino's Pizza",
+      "status": "active",
+      "first_seen": "Oct 26, 2026",
+      "last_seen": "",
+      "creative_text": "A personal pizza worth the hype! Via @codychows",
+      "library_url": "https://www.facebook.com/ads/library/?id=2366054620871448",
+      "page_url": "https://www.facebook.com/Dominos/",
+      "page_id": "",
+      "link_url": "https://www.dominos.com/",
+      "link_title": "Order now!",
+      "cta_text": "Order Now",
+      "images": [],
+      "has_video": true,
+      "same_creative_count": 0,
+      "multiple_versions": true
+    },
+    {
+      "id": "2322505848573329",
+      "page_name": "Domino's Pizza",
+      "status": "active",
+      "first_seen": "Oct 26, 2026",
+      "last_seen": "",
+      "creative_text": "A new freebie just landed. You can get FREE 16-Piece\nParmesan Bread Bites from now until 11/19. Just redeem for 20 points in My Rewards.",
+      "library_url": "https://www.facebook.com/ads/library/?id=2322505848573329",
+      "page_url": "https://www.facebook.com/Dominos/",
+      "page_id": "",
+      "link_url": "https://www.dominos.com/",
+      "link_title": "",
+      "cta_text": "Order Now",
+      "images": [
+        "https://scontent-lax3-1.xx.fbcdn.net/v/t39.35426-6/858122879_1007425945724045_9125208625112852260_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=108&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=SPzMxg5Hau8Q7kNvwGszxMt&_nc_oc=Ado1drTdvxl5qTZaCd4Hu48a-GdKxB1jiDs9uOeJPAmq5TYuTT_FA4aQGa6bCzm_T7U&_nc_zt=14&_nc_ht=scontent-lax3-1.xx&_nc_gid=7sA9WzuurzaPpxZ2m36qnA&_nc_ss=7b289&oh=00_AQTBE9uRyJdp89UM8zOVeWmY7n31y6gqIpeI1_D0cH2Ing&oe=6AF63051"
+      ],
+      "has_video": false,
+      "same_creative_count": 0,
+      "multiple_versions": true
+    },
+    {
+      "id": "1114389478049651",
+      "page_name": "Domino's Pizza",
+      "status": "active",
+      "first_seen": "Oct 26, 2026",
+      "last_seen": "",
+      "creative_text": "Fuel your next adventure in Minecraft Dungeons II! Order a Domino™ online to snag collectible boxes, unlock 1 of 3 exclusive in-game items and more.",
+      "library_url": "https://www.facebook.com/ads/library/?id=1114389478049651",
+      "page_url": "https://www.facebook.com/Dominos/",
+      "page_id": "",
+      "link_url": "https://www.dominos.com/",
+      "link_title": "Ultimate 🍕🎮 collab: unlocked",
+      "cta_text": "Order Now",
+      "images": [
+        "https://scontent-lax3-2.xx.fbcdn.net/v/t39.35426-6/859508335_2681073982325058_8880423982175920784_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=106&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=TR8MF6OVDb0Q7kNvwGzqX0S&_nc_oc=Adr0BcgJHEy6TyHb785gIGQGuMNOclUmrQjUQaJaHN1GfQ1rJCwLzoxC70mSQ-uNWjU&_nc_zt=14&_nc_ht=scontent-lax3-2.xx&_nc_gid=7sA9WzuurzaPpxZ2m36qnA&_nc_ss=7b289&oh=00_AQSIRp2OlDzjLMjdc29L6HzoezK_eP1ImdNU4Jm7SiKO8A&oe=6AF61EB1"
+      ],
+      "has_video": false,
+      "same_creative_count": 3,
+      "multiple_versions": true
+    },
+    {
+      "id": "2263596961207754",
+      "page_name": "Domino's Pizza",
+      "status": "active",
+      "first_seen": "Oct 26, 2026",
+      "last_seen": "",
+      "creative_text": "Fuel your next adventure in Minecraft Dungeons II! Order a Domino™ online to snag collectible boxes, unlock 1 of 3 exclusive in-game items and more.",
+      "library_url": "https://www.facebook.com/ads/library/?id=2263596961207754",
+      "page_url": "https://www.facebook.com/Dominos/",
+      "page_id": "",
+      "link_url": "https://www.dominos.com/",
+      "link_title": "Ultimate 🍕🎮 collab: unlocked",
+      "cta_text": "Order Now",
+      "images": [
+        "https://scontent-lax3-1.xx.fbcdn.net/v/t39.35426-6/861943775_1122336707358090_8257600028312631503_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=108&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=tsMNRPOLWHUQ7kNvwE4LEqY&_nc_oc=Adp1FWLMx8tzTqUOPTiYzXPN_3eucmPuRT24SIA0-fH2ur5AtrgNRRfujJAPv5H5Ybc&_nc_zt=14&_nc_ht=scontent-lax3-1.xx&_nc_gid=7sA9WzuurzaPpxZ2m36qnA&_nc_ss=7b289&oh=00_AQRk1vlaHHI1Xy7pPoALStlRIZTRHeAk-bs7TwvRYf_FXQ&oe=6AF607BC"
+      ],
+      "has_video": false,
+      "same_creative_count": 0,
+      "multiple_versions": true
+    },
+    {
+      "id": "1392711659310000",
+      "page_name": "Domino's Pizza",
+      "status": "active",
+      "first_seen": "Oct 26, 2026",
+      "last_seen": "",
+      "creative_text": "Your sauce ✅ Your toppings ✅ Two squares all for you ✅ NEW Domino's got you covered.",
+      "library_url": "https://www.facebook.com/ads/library/?id=1392711659310000",
+      "page_url": "https://www.facebook.com/Dominos/",
+      "page_id": "",
+      "link_url": "https://www.dominos.com/",
+      "link_title": "It's all about you",
+      "cta_text": "Order Now",
+      "images": [
+        "https://scontent-lax3-2.xx.fbcdn.net/v/t39.35426-6/860418491_1606562233922987_8966207820295572490_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=106&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=uqcjvMasm5gQ7kNvwFtAHNx&_nc_oc=Adr-4b2W9Bln8OUskIKe9PWhB67IkiHy8A9BO8Cq9RB7xZ8c0zCAac6ME6OIuypJ0I0&_nc_zt=14&_nc_ht=scontent-lax3-2.xx&_nc_gid=7sA9WzuurzaPpxZ2m36qnA&_nc_ss=7b289&oh=00_AQSr9g9d_a-1pWJ9DF2ecCiCiwS3x5Mbn3hmoutMaUL6Dg&oe=6AF60C3B"
+      ],
+      "has_video": false,
+      "same_creative_count": 0,
+      "multiple_versions": true
+    },
+    {
+      "id": "1454671399964199",
+      "page_name": "Domino's Pizza",
+      "status": "active",
+      "first_seen": "Oct 30, 2026",
+      "last_seen": "",
+      "creative_text": "Fuel your next adventure in Minecraft Dungeons II! Order a Domino™ online to snag collectible boxes, unlock 1 of 3 exclusive in-game items and more.",
+      "library_url": "https://www.facebook.com/ads/library/?id=1454671399964199",
+      "page_url": "https://www.facebook.com/Dominos/",
+      "page_id": "",
+      "link_url": "https://www.dominos.com/",
+      "link_title": "Ultimate 🍕🎮 collab: unlocked",
+      "cta_text": "Order Now",
+      "images": [
+        "https://scontent-lax7-1.xx.fbcdn.net/v/t39.35426-6/863793326_1101834836099274_796005812285548237_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=105&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=nOjRZeKTEFAQ7kNvwHAlmzI&_nc_oc=AdqzWVePmUPTKk3bpMte5kdyy1Cqv9OZ0pnt9baQ1RBrhvO7SsOrKkdzLSuQOU0VNYc&_nc_zt=14&_nc_ht=scontent-lax7-1.xx&_nc_gid=7sA9WzuurzaPpxZ2m36qnA&_nc_ss=7b289&oh=00_AQRLATO3vjQ9D1s061ZPTmDCJwxPpk5ggYUbzoXiWxO2TA&oe=6AF61089"
+      ],
+      "has_video": false,
+      "same_creative_count": 3,
+      "multiple_versions": true
+    },
+    {
+      "id": "1665877351576881",
+      "page_name": "Domino's Pizza",
+      "status": "active",
+      "first_seen": "Oct 26, 2026",
+      "last_seen": "",
+      "creative_text": "Trying the NEW ‪Domino's‬ x ‪Minecraft Dungeons II collab! Via @hannahxxrose",
+      "library_url": "https://www.facebook.com/ads/library/?id=1665877351576881",
+      "page_url": "https://www.facebook.com/Dominos/",
+      "page_id": "",
+      "link_url": "https://www.dominos.com/",
+      "link_title": "Order now!",
+      "cta_text": "Order Now",
+      "images": [],
+      "has_video": true,
+      "same_creative_count": 0,
+      "multiple_versions": true
+    },
+    {
+      "id": "1882249262622793",
+      "page_name": "Domino's Pizza",
+      "status": "active",
+      "first_seen": "Oct 30, 2026",
+      "last_seen": "",
+      "creative_text": "Give family style a refresh. Grab a Domino: it's made for one with exactly the toppings you want. And if you're grabbing a few, they're just $6.99 when you Mix & Match.",
+      "library_url": "https://www.facebook.com/ads/library/?id=1882249262622793",
+      "page_url": "https://www.facebook.com/Dominos/",
+      "page_id": "",
+      "link_url": "https://www.dominos.com/",
+      "link_title": "Make it a party of one",
+      "cta_text": "Order Now",
+      "images": [
+        "https://scontent-lax3-2.xx.fbcdn.net/v/t39.35426-6/860021335_2262859541162813_5818649979046056470_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=106&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=PR4zVbScxqsQ7kNvwEZRK8_&_nc_oc=AdohjFoiVENHfiR1HJdqZYnfygfhgZDR63k1bZpsaA6seokymsMYoWfrrJOE0IlvXA8&_nc_zt=14&_nc_ht=scontent-lax3-2.xx&_nc_gid=7sA9WzuurzaPpxZ2m36qnA&_nc_ss=7b289&oh=00_AQTCMTf8sD3G1JiQzB5C9v-pH9o5xtrHRSp7wmCfEnE0Ag&oe=6AF63056"
+      ],
+      "has_video": false,
+      "same_creative_count": 3,
+      "multiple_versions": true
+    },
+    {
+      "id": "1877094443468417",
+      "page_name": "Domino's Pizza",
+      "status": "active",
+      "first_seen": "Oct 29, 2026",
+      "last_seen": "",
+      "creative_text": "Trying the NEW ‪Domino's‬ x ‪Minecraft Dungeons II collab! Via @hannahxxrose",
+      "library_url": "https://www.facebook.com/ads/library/?id=1877094443468417",
+      "page_url": "https://www.facebook.com/Dominos/",
+      "page_id": "",
+      "link_url": "https://www.dominos.com/",
+      "link_title": "Order now!",
+      "cta_text": "Order Now",
+      "images": [],
+      "has_video": true,
+      "same_creative_count": 0,
+      "multiple_versions": false
+    },
+    {
+      "id": "2453924462096268",
+      "page_name": "Domino's Pizza",
+      "status": "active",
+      "first_seen": "Oct 26, 2026",
+      "last_seen": "",
+      "creative_text": "we did it first",
+      "library_url": "https://www.facebook.com/ads/library/?id=2453924462096268",
+      "page_url": "https://www.facebook.com/Dominos/",
+      "page_id": "",
+      "link_url": "https://www.dominos.com/",
+      "link_title": "Order Pizza & Pasta Online for Carryout & Delivery - Domino's Pizza Order pizza, pasta, sandwiches & more online for carryout or delivery from Domino’s Pizza. View menu, find locations, track orders. Sign up for coupons & buy gift cards.",
+      "cta_text": "Order now",
+      "images": [
+        "https://scontent-lax3-1.xx.fbcdn.net/v/t39.35426-6/876600173_4387064391607902_7266290117493077791_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=109&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=xwwEN7vAkA8Q7kNvwGVrdJG&_nc_oc=AdpcOPK1p8uGCwRAlTqc5ciszak4fxX-wW0f1wK8UvULVrOYCnZGsTUNvjmeHo81I-w&_nc_zt=14&_nc_ht=scontent-lax3-1.xx&_nc_gid=7sA9WzuurzaPpxZ2m36qnA&_nc_ss=7b289&oh=00_AQQOF4Y0PGP4buu_28OuCjrqZrAiZ29-pyhw5yOeeVAnOg&oe=6AF6280F"
+      ],
+      "has_video": false,
+      "same_creative_count": 0,
+      "multiple_versions": true
+    },
+    {
+      "id": "1465671358823038",
+      "page_name": "Domino's Pizza",
+      "status": "active",
+      "first_seen": "Oct 26, 2026",
+      "last_seen": "",
+      "creative_text": "Detroit Style. Parmesan Crusted. Just for you? 🔥 🔥",
+      "library_url": "https://www.facebook.com/ads/library/?id=1465671358823038",
+      "page_url": "https://www.facebook.com/Dominos/",
+      "page_id": "",
+      "link_url": "https://www.dominos.com/",
+      "link_title": "NEW Domino. Enough said.",
+      "cta_text": "Order Now",
+      "images": [
+        "https://scontent-lax3-2.xx.fbcdn.net/v/t39.35426-6/864383109_1137574348783380_1819293114774794433_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=103&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=ugJgFTGhPHEQ7kNvwHqGNEP&_nc_oc=Adq3ClBnmL6myDPU2HuVgmaWHl1jwmxD-7ZgfL9HpVKXxeGUdhj22ZZHuOVpFdWUHs8&_nc_zt=14&_nc_ht=scontent-lax3-2.xx&_nc_gid=7sA9WzuurzaPpxZ2m36qnA&_nc_ss=7b289&oh=00_AQRLdq_LnMbX62dvFvT5CSpn_5Ci0PREToz0s4tiK9zOrQ&oe=6AF62353"
+      ],
+      "has_video": false,
+      "same_creative_count": 0,
+      "multiple_versions": true
+    }
+  ]
 }

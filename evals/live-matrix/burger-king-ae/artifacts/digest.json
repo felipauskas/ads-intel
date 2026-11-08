@@ -1,0 +1,16 @@
+{
+  "query": "Burger King",
+  "country": "AE",
+  "checked_at": "2026-11-08T14:02:24",
+  "partial": true,
+  "total": 2,
+  "new": 0,
+  "ended": 0,
+  "changed": 0,
+  "with_link": 2,
+  "with_cta": 2,
+  "with_images": 1,
+  "with_same_creative": 0,
+  "with_multiple_versions": 0,
+  "advertiser": "Burger King"
+}

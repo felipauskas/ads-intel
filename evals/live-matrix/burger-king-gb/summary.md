@@ -1,4 +1,4 @@
-# Burger King × GB — FAIL
+# Burger King × GB — PASS
 
 - folder: `evals/live-matrix/burger-king-gb`
 - advertiser filter: `Burger King`
@@ -6,17 +6,17 @@
 ## Keyword search (`active_status=active`, limit 20)
 - count: 20  complete: False  fetched: 20  error: None
 - page names: Burger King UK, Deliveroo, 37GS Residences, Wolt, DoorDash, The Sparrow Hotel, Bar & Restaurant
-- seconds: 6.98
+- seconds: 3.13
 
 ## Advertiser search
-- count: None  resolved: None  error: name_not_matched
-- page names: —
+- count: 4  resolved: {'page_name': 'Burger King UK', 'score': 0.8}  error: None
+- page names: Burger King UK
 - seconds: 0.02
 
 ## Watch checks
-- check1: new=None ended=None changed=None partial=True error=name_not_matched seconds=0.02
-- check2: new=None ended=None changed=None partial=True error=name_not_matched seconds=0.01
-- artifacts: {"error": "name_not_matched"} (ok=False)
+- check1: new=4 ended=0 changed=0 partial=True error=None seconds=0.02
+- check2: new=0 ended=0 changed=0 partial=True error=None seconds=0.01
+- artifacts: {"html": "artifacts/html.html", "digest": "artifacts/digest.json"} (ok=True)
 
 ## Currency spot-check
 - expected: —  found: none  ok: None
@@ -25,6 +25,4 @@
 - attempts: 4  failed: 0
 
 ## Failures
-- check1_error: name_not_matched
-- check2_error: name_not_matched
-- artifacts_missing: html/digest
+- none

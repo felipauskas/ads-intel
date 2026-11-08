@@ -519,5 +519,26 @@
       "multiple_versions": false
     }
   ],
-  "advertiser_search": []
+  "advertiser_search": [
+    {
+      "id": "1108799028440590",
+      "page_name": "Domino's Pizza",
+      "status": "active",
+      "first_seen": "Nov 5, 2026",
+      "last_seen": "",
+      "creative_text": "حاجتين بتحبهم في عرض واحد.👀❤️\nالبيتزا والسوبر توفير اطلب دلوقتي 2 بيتزا ميديم بـ 395ج.\nاطلب من Dominos.com، أو تطبيق Domino’s pizza أو من خلال رقمنا 19223\nTerms and conditions apply.\nTax Registration Number: 382- 107- 586",
+      "library_url": "https://www.facebook.com/ads/library/?id=1108799028440590",
+      "page_url": "https://www.facebook.com/DominosEgypt/",
+      "page_id": "",
+      "link_url": "https://www.dominos.com.eg/en/",
+      "link_title": "",
+      "cta_text": "",
+      "images": [
+        "https://scontent-lax3-1.xx.fbcdn.net/v/t39.35426-6/886261955_27968008172875494_5633749431614298874_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=109&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=bE-7-OGyzF4Q7kNvwF4jfAe&_nc_oc=AdqTGKMs3d9pbEeS6f9osS8BrGVgVP_yVuq-iZmEW4p4ylC4-55gUZOEUWpHDvDirVM&_nc_zt=14&_nc_ht=scontent-lax3-1.xx&_nc_gid=DD0Jixi5kfHwqZPMlWVFaw&_nc_ss=7b289&oh=00_AQQsrW3D-eq-1y8-gn8-n7aS7D8Jt8idGgZnqbM-YBI2ew&oe=6AF61750"
+      ],
+      "has_video": false,
+      "same_creative_count": 0,
+      "multiple_versions": false
+    }
+  ]
 }

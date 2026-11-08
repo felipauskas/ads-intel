@@ -402,5 +402,82 @@
       "multiple_versions": false
     }
   ],
-  "advertiser_search": []
+  "advertiser_search": [
+    {
+      "id": "1416612976733340",
+      "page_name": "Burger King UK",
+      "status": "active",
+      "first_seen": "Oct 12, 2026",
+      "last_seen": "",
+      "creative_text": "Game ON in the BK® App. Play for rewards, grab £3 Whopper® Wednesday, and win your next flame-grilled favourite. Tap in.\nSystem status\n- [Ad Library API](https://www.facebook.com/ads/library/api/?source=archive-landing-page)\n- [About ads and data use](https://www.facebook.com/ads/about/?entry_product=ad_library)\n- [Privacy](https://www.facebook.com/privacy/center/?entry_point=privacy_basics_redirect)\n- [Terms](https://www.facebook.com/policies/)\n- [Cookies](https://www.facebook.com/policies/cookies/)\n──────── [TRUNCATED] ────────\nShowing 89,673 chars (head) + 29,950 chars (tail) of 175,291 total clean characters.\nFull text saved to: /Users/felipevleon/.hermes/profiles/partner/cache/web/www.facebook.com-7b93ea801b.md\nTo read the omitted middle: read_file path=\"/Users/felipevleon/.hermes/profiles/partner/cache/web/www.facebook.com-7b93ea801b.md\" offset=3531 limit=200  (the file is the complete page; raise/lower offset to page through it).\n─────────────────────────────",
+      "library_url": "https://www.facebook.com/ads/library/?id=1416612976733340",
+      "page_url": "https://www.facebook.com/burgerkinguk/",
+      "page_id": "",
+      "link_url": "http://itunes.apple.com/app/id1062524641",
+      "link_title": "£3 Whopper® Wednesday. Game ON",
+      "cta_text": "Install Now",
+      "images": [
+        "https://scontent-lax3-2.xx.fbcdn.net/v/t39.35426-6/825271348_2034219753937603_5133710031583673702_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=100&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=OyvmxBuhv6AQ7kNvwEHIYmB&_nc_oc=Adr_0I0yvtcMKwDyiZgNTbQY4iU4czEAbN7PdX58JBSJxZ_8B3RCuO2py8x_53qZ33U&_nc_zt=14&_nc_ht=scontent-lax3-2.xx&_nc_gid=P4FseqiB5B3Q024EsQg1jw&_nc_ss=7b289&oh=00_AQSnMZUVOh29enpo1bIH1RcCj92wtOEuoSwM1WEhVHk3fA&oe=6AF5FDD2"
+      ],
+      "has_video": false,
+      "same_creative_count": 0,
+      "multiple_versions": true
+    },
+    {
+      "id": "1832342047767236",
+      "page_name": "Burger King UK",
+      "status": "active",
+      "first_seen": "Oct 12, 2026",
+      "last_seen": "",
+      "creative_text": "The Whopper, made with 100% British and Irish beef and flamed grilled to perfection. Order Now",
+      "library_url": "https://www.facebook.com/ads/library/?id=1832342047767236",
+      "page_url": "https://www.facebook.com/burgerkinguk/",
+      "page_id": "",
+      "link_url": "https://burgerkinguk.app.link/app-downloads?%243p=a_facebook&~ad_id=%7B%7Bad.id%7D%7D&~ad_name=%7B%7Bad.name%7D%7D&~ad_set_id=%7B%7Badset.id%7D%7D&~ad_set_name=%7B%7Badset.name%7D%7D&~campaign=%7B%7Bcampaign.name%7D%7D&~campaign_id=%7B%7Bcampaign.id%7D%7D",
+      "link_title": "The flame-grilled icon",
+      "cta_text": "Learn More",
+      "images": [],
+      "has_video": true,
+      "same_creative_count": 0,
+      "multiple_versions": true
+    },
+    {
+      "id": "1751842596065886",
+      "page_name": "Burger King UK",
+      "status": "active",
+      "first_seen": "Oct 12, 2026",
+      "last_seen": "",
+      "creative_text": "Every home can be the home of the Whopper. Order now on delivery",
+      "library_url": "https://www.facebook.com/ads/library/?id=1751842596065886",
+      "page_url": "https://www.facebook.com/burgerkinguk/",
+      "page_id": "",
+      "link_url": "https://burgerkinguk.app.link/app-downloads?%243p=a_facebook&~ad_id=%7B%7Bad.id%7D%7D&~ad_name=%7B%7Bad.name%7D%7D&~ad_set_id=%7B%7Badset.id%7D%7D&~ad_set_name=%7B%7Badset.name%7D%7D&~campaign=%7B%7Bcampaign.name%7D%7D&~campaign_id=%7B%7Bcampaign.id%7D%7D",
+      "link_title": "",
+      "cta_text": "Learn More",
+      "images": [
+        "https://scontent-lax3-2.xx.fbcdn.net/v/t39.35426-6/809544112_1949625933109424_1828060615044121496_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=107&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=PIliNtizDvcQ7kNvwHRnFNs&_nc_oc=Adr6Q0HKRjTs2vZpuT4h3jG_cKnI91sNJf2GgkN59DfoTdDGvb4P71_sJPfq6bE2wUc&_nc_zt=14&_nc_ht=scontent-lax3-2.xx&_nc_gid=P4FseqiB5B3Q024EsQg1jw&_nc_ss=7b289&oh=00_AQTyY0TkLNQ2bNRmFF71lJUzSdojFNHkfYJaN7kpvxGytw&oe=6AF62F2C"
+      ],
+      "has_video": false,
+      "same_creative_count": 0,
+      "multiple_versions": true
+    },
+    {
+      "id": "935431319288947",
+      "page_name": "Burger King UK",
+      "status": "active",
+      "first_seen": "Oct 12, 2026",
+      "last_seen": "",
+      "creative_text": "The Whopper, made with 100% British and Irish beef and flamed grilled to perfection. Order Now",
+      "library_url": "https://www.facebook.com/ads/library/?id=935431319288947",
+      "page_url": "https://www.facebook.com/burgerkinguk/",
+      "page_id": "",
+      "link_url": "https://burgerkinguk.app.link/app-downloads?%243p=a_facebook&~ad_id=%7B%7Bad.id%7D%7D&~ad_name=%7B%7Bad.name%7D%7D&~ad_set_id=%7B%7Badset.id%7D%7D&~ad_set_name=%7B%7Badset.name%7D%7D&~campaign=%7B%7Bcampaign.name%7D%7D&~campaign_id=%7B%7Bcampaign.id%7D%7D",
+      "link_title": "The flame-grilled icon",
+      "cta_text": "Learn More",
+      "images": [],
+      "has_video": true,
+      "same_creative_count": 0,
+      "multiple_versions": true
+    }
+  ]
 }

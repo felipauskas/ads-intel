@@ -343,5 +343,226 @@
       "multiple_versions": true
     }
   ],
-  "advertiser_search": []
+  "advertiser_search": [
+    {
+      "id": "2168171060761728",
+      "page_name": "Domino's Pizza",
+      "status": "active",
+      "first_seen": "Aug 28, 2026",
+      "last_seen": "",
+      "creative_text": "For a limited time order 2 Large pizzas for only £20!\nSystem status\n- [Ad Library API](https://www.facebook.com/ads/library/api/?source=archive-landing-page)\n- [About ads and data use](https://www.facebook.com/ads/about/?entry_product=ad_library)\n- [Privacy](https://www.facebook.com/privacy/center/?entry_point=privacy_basics_redirect)\n- [Terms](https://www.facebook.com/policies/)\n- [Cookies](https://www.facebook.com/policies/cookies/)",
+      "library_url": "https://www.facebook.com/ads/library/?id=2168171060761728",
+      "page_url": "https://www.facebook.com/DominosPizza/",
+      "page_id": "",
+      "link_url": "https://www.dominos.co.uk/?utm_medium=paidsocial&utm_source=facebook%20instagram&utm_campaign=Local_FBIG_C5_Franchisee_Raj_CPID1402&utm_content=%7B%7Bad.name%7D%7D",
+      "link_title": "2 Large Pizzas for £20!",
+      "cta_text": "Order Now",
+      "images": [
+        "https://scontent-lax3-1.xx.fbcdn.net/v/t39.35426-6/841651530_4359050907738934_7255466109380582120_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=102&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=yIVJpblhMLEQ7kNvwFtFdPx&_nc_oc=AdoDmNlJiSygdNEAAbMiwy1eesb1mbaUcY1IPfyfcQ_fRl11B1EYcIj2z7fRat0czm8&_nc_zt=14&_nc_ht=scontent-lax3-1.xx&_nc_gid=eeOgY8dfw1TmWlqRsDq5vA&_nc_ss=7b289&oh=00_AQQdFminSbQEVeLa3TgXPGZ_XCvg4Vz_WZeE94NHDaP1Ig&oe=6AF624D3"
+      ],
+      "has_video": false,
+      "same_creative_count": 7,
+      "multiple_versions": true
+    },
+    {
+      "id": "2015898885702870",
+      "page_name": "Domino's Pizza",
+      "status": "active",
+      "first_seen": "Aug 5, 2026",
+      "last_seen": "",
+      "creative_text": "No really, just £8.99 for any 2 Topping Medium Pizza! 🍕🤯",
+      "library_url": "https://www.facebook.com/ads/library/?id=2015898885702870",
+      "page_url": "https://www.facebook.com/DominosPizza/",
+      "page_id": "",
+      "link_url": "https://www.dominos.co.uk/",
+      "link_title": "Order online now Collection Perfection",
+      "cta_text": "Order Now",
+      "images": [
+        "https://scontent-lax3-2.xx.fbcdn.net/v/t39.35426-6/698389763_1747165436664281_1862077151496898672_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=111&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=Rew0IWJy5lUQ7kNvwGr-gWQ&_nc_oc=AdoSPelqNNu14QANwcHDMH8H5Mm40-inUbE0TtYbfQF0baQtjqfosZrE0AjoxoJ6S-s&_nc_zt=14&_nc_ht=scontent-lax3-2.xx&_nc_gid=eeOgY8dfw1TmWlqRsDq5vA&_nc_ss=7b289&oh=00_AQTSB4gegjRvTuAv4G0O1Q6DwUJ0U-Wq8jDVjbicBsl3Lg&oe=6AF61148"
+      ],
+      "has_video": false,
+      "same_creative_count": 0,
+      "multiple_versions": false
+    },
+    {
+      "id": "3247044478825423",
+      "page_name": "Domino's Pizza",
+      "status": "active",
+      "first_seen": "Oct 25, 2026",
+      "last_seen": "",
+      "creative_text": "No really, just £8.99 for any 2 Topping Medium Pizza! 🍕🤯",
+      "library_url": "https://www.facebook.com/ads/library/?id=3247044478825423",
+      "page_url": "https://www.facebook.com/DominosPizza/",
+      "page_id": "",
+      "link_url": "https://apps.apple.com/gb/app/dominos-pizza-delivery-uk-roi/id426415753",
+      "link_title": "Order online now",
+      "cta_text": "Order Now",
+      "images": [
+        "https://scontent-lax3-1.xx.fbcdn.net/v/t39.35426-6/674681872_987421817149978_7456134774538047763_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=102&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=KmJvH3lH2ckQ7kNvwEjelqB&_nc_oc=AdqJJ4Fq1gwRKGukeFbaMqDOem6O_-aGOKNPuIsNc490Xh9cUJsKP2iun6F8FkFRVEw&_nc_zt=14&_nc_ht=scontent-lax3-1.xx&_nc_gid=eeOgY8dfw1TmWlqRsDq5vA&_nc_ss=7b289&oh=00_AQQPHFnu1OYnGBFSHQOX7EB4pdyXpwW4d7qogMB0pjo52Q&oe=6AF61051"
+      ],
+      "has_video": false,
+      "same_creative_count": 0,
+      "multiple_versions": true
+    },
+    {
+      "id": "1682641656610390",
+      "page_name": "Domino's Pizza",
+      "status": "active",
+      "first_seen": "Oct 6, 2026",
+      "last_seen": "",
+      "creative_text": "For a limited time order 2 Large pizzas for only £20!",
+      "library_url": "https://www.facebook.com/ads/library/?id=1682641656610390",
+      "page_url": "https://www.facebook.com/DominosPizza/",
+      "page_id": "",
+      "link_url": "https://www.dominos.co.uk/?utm_medium=paidsocial&utm_source=facebook%20instagram&utm_campaign=Local_FBIG_C5_Franchisee_Raj_CPID1402&utm_content=%7B%7Bad.name%7D%7D",
+      "link_title": "2 Large Pizzas for £20!",
+      "cta_text": "Order Now",
+      "images": [
+        "https://scontent-lax3-1.xx.fbcdn.net/v/t39.35426-6/840499502_1918533212442776_5786685192092118280_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=110&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=2FUgjfLrCvEQ7kNvwEsFs_B&_nc_oc=Adqj-7_7CGkPU7pzzQjo3D6pXm8bW3srP62yhUW3ZX7VJa9x47jXjI6kalcR_npgjjc&_nc_zt=14&_nc_ht=scontent-lax3-1.xx&_nc_gid=eeOgY8dfw1TmWlqRsDq5vA&_nc_ss=7b289&oh=00_AQTevMSUQwrf1-TugKeTPVcZQIEsfpgZvoNRNKF6_k-YbQ&oe=6AF5FEBA"
+      ],
+      "has_video": false,
+      "same_creative_count": 2,
+      "multiple_versions": true
+    },
+    {
+      "id": "1629417432130177",
+      "page_name": "Domino's Pizza",
+      "status": "active",
+      "first_seen": "Sep 11, 2026",
+      "last_seen": "",
+      "creative_text": "Altrincham, this one's for you! Any 2 large pizzas for only £26",
+      "library_url": "https://www.facebook.com/ads/library/?id=1629417432130177",
+      "page_url": "https://www.facebook.com/DominosPizza/",
+      "page_id": "",
+      "link_url": "https://www.dominos.co.uk/?utm_medium=paidsocial&utm_source=facebook%20instagram&utm_campaign=Local_FBIG_C5_Franchisee_Hala_CPID1423&utm_content=%7B%7Bad.name%7D%7D",
+      "link_title": "Double up today!",
+      "cta_text": "Order Now",
+      "images": [
+        "https://scontent-lax3-1.xx.fbcdn.net/v/t39.35426-6/836261578_1120804377156783_5047017088758607409_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=102&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=765PKzA33hUQ7kNvwGH6OzF&_nc_oc=Adrd2R4713P2ehIWPcTeD8qrE76FQxbeftFUgoqpEh7qwZSPKY7E-Q8D71FWiLbGero&_nc_zt=14&_nc_ht=scontent-lax3-1.xx&_nc_gid=eeOgY8dfw1TmWlqRsDq5vA&_nc_ss=7b289&oh=00_AQQDyYGnrL5Tsoz0mrFt0CVWU4sIjHXPioQd9abblY5-og&oe=6AF62FE8"
+      ],
+      "has_video": false,
+      "same_creative_count": 106,
+      "multiple_versions": true
+    },
+    {
+      "id": "1781522942909429",
+      "page_name": "Domino's Pizza",
+      "status": "active",
+      "first_seen": "Sep 10, 2026",
+      "last_seen": "",
+      "creative_text": "Inspired by your fave Chinese takeaway 🥡 From just £10",
+      "library_url": "https://www.facebook.com/ads/library/?id=1781522942909429",
+      "page_url": "https://www.facebook.com/DominosPizza/",
+      "page_id": "",
+      "link_url": "https://www.dominos.co.uk/?utm_medium=paidsocial&utm_source=facebook%20instagram&utm_campaign=Local_FBIG_C5_Franchisee_Solent_CPID1227&utm_content=%7B%7Bad.name%7D%7D",
+      "link_title": "Feel the heat from £10",
+      "cta_text": "Order Now",
+      "images": [
+        "https://scontent-lax7-1.xx.fbcdn.net/v/t39.35426-6/805121455_950357874103670_4765934010830225535_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=101&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=E2_B6WY47fMQ7kNvwHPmP67&_nc_oc=Adr4OFc7ggP94VFqrtpYhq72rqhDmkaVBLqnWSFpg8YHxAoK6be82Vwc31lPgch3eWE&_nc_zt=14&_nc_ht=scontent-lax7-1.xx&_nc_gid=eeOgY8dfw1TmWlqRsDq5vA&_nc_ss=7b289&oh=00_AQRWceKqCqzWGuRX51e147Iy0h0CfHugPa-kbPrMphwuyg&oe=6AF60073"
+      ],
+      "has_video": false,
+      "same_creative_count": 25,
+      "multiple_versions": true
+    },
+    {
+      "id": "2478082262685483",
+      "page_name": "Domino's Pizza",
+      "status": "active",
+      "first_seen": "Sep 15, 2026",
+      "last_seen": "",
+      "creative_text": "Taste the sweet and feel the heat with our latest Chinese-inspired creation",
+      "library_url": "https://www.facebook.com/ads/library/?id=2478082262685483",
+      "page_url": "https://www.facebook.com/DominosPizza/",
+      "page_id": "",
+      "link_url": "https://www.dominos.co.uk/?utm_medium=paidsocial&utm_source=facebook%20instagram&utm_campaign=Local_FBIG_C5_Franchisee_KG_CPID1128&utm_content=%7B%7Bad.name%7D%7D",
+      "link_title": "Sweet, spicy and new!",
+      "cta_text": "Order Now",
+      "images": [
+        "https://scontent-lax7-1.xx.fbcdn.net/v/t39.35426-6/802899693_1789481795574615_4448149303930719787_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=101&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=GUJH-PEXQ1QQ7kNvwHSG0ie&_nc_oc=AdrJkpatcr-L4nsJvU2PunpZDmqqxRAKNqJ0iklsWo5jI24fIPAte5pkUlQM7VYYVO8&_nc_zt=14&_nc_ht=scontent-lax7-1.xx&_nc_gid=eeOgY8dfw1TmWlqRsDq5vA&_nc_ss=7b289&oh=00_AQQqan0PQ5T4xUScJBZMbL7XOL592xS7Y42zBXM9BVH_9g&oe=6AF6251D"
+      ],
+      "has_video": false,
+      "same_creative_count": 0,
+      "multiple_versions": true
+    },
+    {
+      "id": "1435557534420410",
+      "page_name": "Domino's Pizza",
+      "status": "active",
+      "first_seen": "Sep 5, 2025",
+      "last_seen": "",
+      "creative_text": "Inspired by your fave Chinese takeaway 🥡 From just £10",
+      "library_url": "https://www.facebook.com/ads/library/?id=1435557534420410",
+      "page_url": "https://www.facebook.com/DominosPizza/",
+      "page_id": "",
+      "link_url": "https://www.dominos.co.uk/?utm_medium=paidsocial&utm_source=facebook%20instagram&utm_campaign=Local_FBIG_C5_Franchisee_LS_CPID1205&utm_content=%7B%7Bad.name%7D%7D",
+      "link_title": "Feel the heat from £10",
+      "cta_text": "Order Now",
+      "images": [
+        "https://scontent-lax3-2.xx.fbcdn.net/v/t39.35426-6/797774229_28247575721573563_6807565241266033048_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=107&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=lad-S3qCQ6wQ7kNvwHKg5w2&_nc_oc=AdrSZguzJC8-Tkqho--9Kw7qEQVqibw0cRCu5Cwr8tWavdQCxTtbZq_EAUrJAnM1cVA&_nc_zt=14&_nc_ht=scontent-lax3-2.xx&_nc_gid=eeOgY8dfw1TmWlqRsDq5vA&_nc_ss=7b289&oh=00_AQSplkyAGu6suhJrFkqm6hTQaa6oNH2MtfesTEMGDEXluw&oe=6AF62B8B"
+      ],
+      "has_video": false,
+      "same_creative_count": 0,
+      "multiple_versions": false
+    },
+    {
+      "id": "1801305187682511",
+      "page_name": "Domino's Pizza",
+      "status": "active",
+      "first_seen": "Oct 22, 2026",
+      "last_seen": "",
+      "creative_text": "Bag a bargain on all our pizzas from just £10!",
+      "library_url": "https://www.facebook.com/ads/library/?id=1801305187682511",
+      "page_url": "https://www.facebook.com/DominosPizza/",
+      "page_id": "",
+      "link_url": "https://www.dominos.co.uk/",
+      "link_title": "",
+      "cta_text": "",
+      "images": [
+        "https://scontent-lax3-2.xx.fbcdn.net/v/t39.35426-6/888415243_1854020898977396_2288375673666391395_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=106&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=7Q8wLNfrzxcQ7kNvwECMJ2Q&_nc_oc=AdosYjc-ma6HQFpUqgMupUIfBnQBQNGmcfBWQ9oIPJMJaH_IsqqYzFlvA74RTdrLiz0&_nc_zt=14&_nc_ht=scontent-lax3-2.xx&_nc_gid=eeOgY8dfw1TmWlqRsDq5vA&_nc_ss=7b289&oh=00_AQRF9W8lG8h5lbplhRoBifK4LaA9cog3q4FUV7gStfVDSQ&oe=6AF61A27"
+      ],
+      "has_video": false,
+      "same_creative_count": 8,
+      "multiple_versions": false
+    },
+    {
+      "id": "1552723316891530",
+      "page_name": "Domino's Pizza",
+      "status": "active",
+      "first_seen": "Oct 22, 2026",
+      "last_seen": "",
+      "creative_text": "Inspired by your fave Chinese takeaway. From just £10",
+      "library_url": "https://www.facebook.com/ads/library/?id=1552723316891530",
+      "page_url": "https://www.facebook.com/DominosPizza/",
+      "page_id": "",
+      "link_url": "https://www.dominos.co.uk/",
+      "link_title": "",
+      "cta_text": "",
+      "images": [
+        "https://scontent-lax3-1.xx.fbcdn.net/v/t39.35426-6/858894222_1459743022764603_5282851121672445587_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=102&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=Fr4ZHSRMQ6gQ7kNvwG5jLmn&_nc_oc=AdqS8uKPJ15-iYMNVtCiFZlw3lgN72H-1INdAPX1mI4Z3qZ6zrcHGIHRcAyd9OS_PWw&_nc_zt=14&_nc_ht=scontent-lax3-1.xx&_nc_gid=eeOgY8dfw1TmWlqRsDq5vA&_nc_ss=7b289&oh=00_AQQ9_lazyav_ePNHKLMNl_dOeijkkwwHy54gAcrhf9D0nw&oe=6AF60465"
+      ],
+      "has_video": false,
+      "same_creative_count": 6,
+      "multiple_versions": false
+    },
+    {
+      "id": "1082670138091208",
+      "page_name": "Domino's Pizza",
+      "status": "active",
+      "first_seen": "Oct 25, 2026",
+      "last_seen": "",
+      "creative_text": "New Italianos range from £10",
+      "library_url": "https://www.facebook.com/ads/library/?id=1082670138091208",
+      "page_url": "https://www.facebook.com/DominosPizza/",
+      "page_id": "",
+      "link_url": "https://www.dominos.co.uk/",
+      "link_title": "",
+      "cta_text": "",
+      "images": [
+        "https://scontent-lax7-1.xx.fbcdn.net/v/t39.35426-6/858259163_1145591827814651_9080470213607343981_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=101&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=IDZS46TGgJoQ7kNvwHi7yb1&_nc_oc=AdrdnY5aanbEgkqUew6OGAseRjI7B_a1bMlc2fw1NNtMqMiTHEUftj6E3MCkGylOt-M&_nc_zt=14&_nc_ht=scontent-lax7-1.xx&_nc_gid=eeOgY8dfw1TmWlqRsDq5vA&_nc_ss=7b289&oh=00_AQQ3WnAsAVlhn0e25Z4mgboAcfrZLblPqAJJazGV8YUf3A&oe=6AF60642"
+      ],
+      "has_video": false,
+      "same_creative_count": 0,
+      "multiple_versions": true
+    }
+  ]
 }

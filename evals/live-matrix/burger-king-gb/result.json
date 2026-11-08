@@ -3,7 +3,7 @@
   "country": "GB",
   "advertiser": "Burger King",
   "folder": "evals/live-matrix/burger-king-gb",
-  "data_dir": "/var/folders/zf/g9bpd9s55sv10tz2mnhqch800000gn/T/ads-intel-live-eval-nh_o8wp3/tmpejdquviz",
+  "data_dir": "/var/folders/zf/g9bpd9s55sv10tz2mnhqch800000gn/T/ads-intel-live-eval-loijggjy/tmpflhpysfh",
   "search_summary": {
     "count": 20,
     "complete": false,
@@ -18,22 +18,22 @@
       "DoorDash",
       "The Sparrow Hotel, Bar & Restaurant"
     ],
-    "seconds": 6.98
+    "seconds": 3.13
   },
   "advertiser_summary": {
-    "count": null,
-    "complete": null,
-    "resolved": null,
-    "error": "name_not_matched",
-    "target": "Burger King",
-    "candidates": [
-      {
-        "page_name": "Burger King UK",
-        "score": 0.6
-      }
+    "count": 4,
+    "complete": false,
+    "resolved": {
+      "page_name": "Burger King UK",
+      "score": 0.8
+    },
+    "error": null,
+    "target": null,
+    "candidates": null,
+    "threshold": null,
+    "page_names": [
+      "Burger King UK"
     ],
-    "threshold": 0.8,
-    "page_names": [],
     "seconds": 0.02
   },
   "watch_add": {
@@ -51,60 +51,56 @@
     "query": "Burger King",
     "country": "GB",
     "advertiser": "Burger King",
-    "partial": true,
-    "error": "name_not_matched",
-    "target": "Burger King",
-    "candidates": [
-      {
-        "page_name": "Burger King UK",
-        "score": 0.6
-      }
-    ],
-    "threshold": 0.8,
-    "artifacts": {
-      "error": "name_not_matched"
+    "resolved": {
+      "page_name": "Burger King UK",
+      "score": 0.8
     },
-    "new_page_names": [],
+    "new_ads": 4,
+    "ended_ads": 0,
+    "changed_ads": 0,
+    "partial": true,
+    "artifacts": {
+      "html": "artifacts/html.html",
+      "digest": "artifacts/digest.json"
+    },
+    "new_page_names": [
+      "Burger King UK"
+    ],
     "seconds": 0.02
   },
   "check2": {
     "query": "Burger King",
     "country": "GB",
     "advertiser": "Burger King",
+    "resolved": {
+      "page_name": "Burger King UK",
+      "score": 0.8
+    },
+    "new_ads": 0,
+    "ended_ads": 0,
+    "changed_ads": 0,
     "partial": true,
-    "error": "name_not_matched",
-    "target": "Burger King",
-    "candidates": [
-      {
-        "page_name": "Burger King UK",
-        "score": 0.6
-      }
-    ],
-    "threshold": 0.8,
     "artifacts": {
-      "error": "name_not_matched"
+      "html": "/var/folders/zf/g9bpd9s55sv10tz2mnhqch800000gn/T/ads-intel-live-eval-loijggjy/tmpflhpysfh/reports/8453ad70264c55f8.html",
+      "digest": "/var/folders/zf/g9bpd9s55sv10tz2mnhqch800000gn/T/ads-intel-live-eval-loijggjy/tmpflhpysfh/reports/8453ad70264c55f8.digest.json"
     },
     "new_page_names": [],
     "seconds": 0.01
   },
-  "artifacts_ok": false,
+  "artifacts_ok": true,
   "currency": {
     "expected": null,
     "found": [],
     "ok": null
   },
-  "status": "FAIL",
-  "failures": [
-    "check1_error: name_not_matched",
-    "check2_error: name_not_matched",
-    "artifacts_missing: html/digest"
-  ],
+  "status": "PASS",
+  "failures": [],
   "timings": {
-    "search": 6.98,
+    "search": 3.13,
     "advertiser_search": 0.02,
     "check1": 0.02,
     "check2": 0.01,
-    "total": 7.03
+    "total": 3.18
   },
   "attempts": {
     "total": 4,

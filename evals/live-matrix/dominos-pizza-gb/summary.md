@@ -1,22 +1,22 @@
-# Domino's Pizza × GB — FAIL
+# Domino's Pizza × GB — PASS
 
 - folder: `evals/live-matrix/dominos-pizza-gb`
-- advertiser filter: `Domino's`
+- advertiser filter: `Domino's Pizza`
 
 ## Keyword search (`active_status=active`, limit 20)
 - count: 17  complete: True  fetched: 17  error: None
 - page names: Domino's Pizza, Alfre-dough Pizza & Kebab, Big Potato, Carpe, Pizza Town Sudbury, SPORTbible, Pizza Pizza
-- seconds: 7.3
+- seconds: 2.96
 
 ## Advertiser search
-- count: None  resolved: None  error: name_not_matched
-- page names: —
-- seconds: 0.01
+- count: 11  resolved: {'page_name': "Domino's Pizza", 'score': 0.8}  error: None
+- page names: Domino's Pizza
+- seconds: 0.02
 
 ## Watch checks
-- check1: new=None ended=None changed=None partial=False error=name_not_matched seconds=0.01
-- check2: new=None ended=None changed=None partial=False error=name_not_matched seconds=0.01
-- artifacts: {"error": "name_not_matched"} (ok=False)
+- check1: new=11 ended=0 changed=0 partial=False error=None seconds=0.02
+- check2: new=0 ended=0 changed=0 partial=False error=None seconds=0.01
+- artifacts: {"html": "artifacts/html.html", "digest": "artifacts/digest.json"} (ok=True)
 
 ## Currency spot-check
 - expected: —  found: none  ok: None
@@ -25,6 +25,4 @@
 - attempts: 4  failed: 0
 
 ## Failures
-- check1_error: name_not_matched
-- check2_error: name_not_matched
-- artifacts_missing: html/digest
+- none

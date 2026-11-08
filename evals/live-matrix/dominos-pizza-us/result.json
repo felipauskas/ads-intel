@@ -1,9 +1,9 @@
 {
   "brand": "Domino's Pizza",
   "country": "US",
-  "advertiser": "Domino's",
+  "advertiser": "Domino's Pizza",
   "folder": "evals/live-matrix/dominos-pizza-us",
-  "data_dir": "/var/folders/zf/g9bpd9s55sv10tz2mnhqch800000gn/T/ads-intel-live-eval-nh_o8wp3/tmptpawoktb",
+  "data_dir": "/var/folders/zf/g9bpd9s55sv10tz2mnhqch800000gn/T/ads-intel-live-eval-50w011gi/tmp5c5105a3",
   "search_summary": {
     "count": 20,
     "complete": false,
@@ -16,23 +16,23 @@
       "Jas and Kam The Foodies",
       "CERRAJERÍA BY FABBRO"
     ],
-    "seconds": 6.07
+    "seconds": 2.9
   },
   "advertiser_summary": {
-    "count": null,
-    "complete": null,
-    "resolved": null,
-    "error": "name_not_matched",
-    "target": "Domino's",
-    "candidates": [
-      {
-        "page_name": "Domino's Pizza",
-        "score": 0.6
-      }
+    "count": 18,
+    "complete": true,
+    "resolved": {
+      "page_name": "Domino's Pizza",
+      "score": 0.8
+    },
+    "error": null,
+    "target": null,
+    "candidates": null,
+    "threshold": null,
+    "page_names": [
+      "Domino's Pizza"
     ],
-    "threshold": 0.8,
-    "page_names": [],
-    "seconds": 0.01
+    "seconds": 0.02
   },
   "watch_add": {
     "error": null,
@@ -40,7 +40,7 @@
       {
         "query": "Domino's Pizza",
         "country": "US",
-        "advertiser": "Domino's",
+        "advertiser": "Domino's Pizza",
         "active_status": "active"
       }
     ]
@@ -48,61 +48,57 @@
   "check1": {
     "query": "Domino's Pizza",
     "country": "US",
-    "advertiser": "Domino's",
-    "partial": false,
-    "error": "name_not_matched",
-    "target": "Domino's",
-    "candidates": [
-      {
-        "page_name": "Domino's Pizza",
-        "score": 0.6
-      }
-    ],
-    "threshold": 0.8,
-    "artifacts": {
-      "error": "name_not_matched"
+    "advertiser": "Domino's Pizza",
+    "resolved": {
+      "page_name": "Domino's Pizza",
+      "score": 0.8
     },
-    "new_page_names": [],
+    "new_ads": 18,
+    "ended_ads": 0,
+    "changed_ads": 0,
+    "partial": false,
+    "artifacts": {
+      "html": "artifacts/html.html",
+      "digest": "artifacts/digest.json"
+    },
+    "new_page_names": [
+      "Domino's Pizza"
+    ],
     "seconds": 0.01
   },
   "check2": {
     "query": "Domino's Pizza",
     "country": "US",
-    "advertiser": "Domino's",
+    "advertiser": "Domino's Pizza",
+    "resolved": {
+      "page_name": "Domino's Pizza",
+      "score": 0.8
+    },
+    "new_ads": 0,
+    "ended_ads": 0,
+    "changed_ads": 0,
     "partial": false,
-    "error": "name_not_matched",
-    "target": "Domino's",
-    "candidates": [
-      {
-        "page_name": "Domino's Pizza",
-        "score": 0.6
-      }
-    ],
-    "threshold": 0.8,
     "artifacts": {
-      "error": "name_not_matched"
+      "html": "/var/folders/zf/g9bpd9s55sv10tz2mnhqch800000gn/T/ads-intel-live-eval-50w011gi/tmp5c5105a3/reports/3b622fb454bd92f8.html",
+      "digest": "/var/folders/zf/g9bpd9s55sv10tz2mnhqch800000gn/T/ads-intel-live-eval-50w011gi/tmp5c5105a3/reports/3b622fb454bd92f8.digest.json"
     },
     "new_page_names": [],
     "seconds": 0.01
   },
-  "artifacts_ok": false,
+  "artifacts_ok": true,
   "currency": {
     "expected": null,
     "found": [],
     "ok": null
   },
-  "status": "FAIL",
-  "failures": [
-    "check1_error: name_not_matched",
-    "check2_error: name_not_matched",
-    "artifacts_missing: html/digest"
-  ],
+  "status": "PASS",
+  "failures": [],
   "timings": {
-    "search": 6.07,
-    "advertiser_search": 0.01,
+    "search": 2.9,
+    "advertiser_search": 0.02,
     "check1": 0.01,
     "check2": 0.01,
-    "total": 6.1
+    "total": 2.94
   },
   "attempts": {
     "total": 4,

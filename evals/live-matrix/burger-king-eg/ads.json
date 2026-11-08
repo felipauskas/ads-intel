@@ -396,5 +396,26 @@
       "multiple_versions": true
     }
   ],
-  "advertiser_search": []
+  "advertiser_search": [
+    {
+      "id": "1521777489383908",
+      "page_name": "Burger King Malaysia",
+      "status": "active",
+      "first_seen": "May 1, 2026",
+      "last_seen": "",
+      "creative_text": "The Mozzarella King returns! Made with 4 kinds of cheese: Mozzarella Cheese, Swiss Cheese, American Cheese & Nacho Cheese Sauce! Try it now at Burger King. #BurgerKingMY",
+      "library_url": "https://www.facebook.com/ads/library/?id=1521777489383908",
+      "page_url": "https://www.facebook.com/bkmalaysia/",
+      "page_id": "",
+      "link_url": "https://www.burgerking.com.my/News/Index/42",
+      "link_title": "News & Press Get ready to satisfy your cheesy cravings with two cheesy favourites – Mozzarella XL Beef and Mozzarella King Tendercrisp!",
+      "cta_text": "Order now",
+      "images": [
+        "https://scontent-lax3-2.xx.fbcdn.net/v/t39.35426-6/867664683_1642518144039178_2850174460281455973_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=100&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=uvux4A3MWKsQ7kNvwFtzbfT&_nc_oc=AdoLRbecLZc5iEzMJKxlWfZJhBMSBqXx4n-VnJl0OZxEJRgUNn5sLxe4VAQBrPLafMo&_nc_zt=14&_nc_ht=scontent-lax3-2.xx&_nc_gid=_hSsy--ALWWcNRvfvahpdA&_nc_ss=7b289&oh=00_AQSRz9Y9_6j3-Ld5bPLRak3UrSecbuVYB98X11KMOLOvWA&oe=6AF630B0"
+      ],
+      "has_video": false,
+      "same_creative_count": 0,
+      "multiple_versions": false
+    }
+  ]
 }

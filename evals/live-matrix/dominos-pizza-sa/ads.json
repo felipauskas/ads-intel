@@ -2,5 +2,144 @@
   "brand": "Domino's Pizza",
   "country": "SA",
   "search": [],
-  "advertiser_search": []
+  "advertiser_search": [
+    {
+      "id": "1487551922605973",
+      "page_name": "Domino's Pizza",
+      "status": "active",
+      "first_seen": "Jun 10, 2026",
+      "last_seen": "",
+      "creative_text": "أطعم بيتزا تجيك حاارة وبـ 9 ريال بس للتوصيل 👌 اطلب أي 2 بيتزا كبيرة بـ 29 ريال للوحدة 🍕",
+      "library_url": "https://www.facebook.com/ads/library/?id=1487551922605973",
+      "page_url": "https://www.facebook.com/DominosKSA/",
+      "page_id": "",
+      "link_url": "https://www.dominos.sa/ar/",
+      "link_title": "اطلب والتوصيل بـ 9 ريال بس 🚗 اطلبها الحين",
+      "cta_text": "Order Now",
+      "images": [
+        "https://scontent-lax3-1.xx.fbcdn.net/v/t39.35426-6/740779659_2114995379131189_532121214577279106_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=108&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=f53yANxLzCoQ7kNvwFBY9_6&_nc_oc=AdrRi8q1XVmTs6Q5R-EhgUKvDcbGfgvzguSAh3l2eV3wPscUVwSDp9VrfKlpMjdOE3c&_nc_zt=14&_nc_ht=scontent-lax3-1.xx&_nc_gid=_xxjHG1cU3gWj2SVb5bJ2Q&_nc_ss=7b289&oh=00_AQRagweLtpIxzsaY1LQYULpymRDeJjrflTeHqelnqSepsA&oe=6AF605B0"
+      ],
+      "has_video": false,
+      "same_creative_count": 0,
+      "multiple_versions": true
+    },
+    {
+      "id": "1310128874544601",
+      "page_name": "Domino's Pizza",
+      "status": "active",
+      "first_seen": "Nov 2, 2026",
+      "last_seen": "",
+      "creative_text": "اطلب بوكس الجمعات واجمع الكل 😍 أي 3 بيتزا كبيرة مع 4 أصناف جانبية وبيبسي كبير بـ 129 ريال 🍕",
+      "library_url": "https://www.facebook.com/ads/library/?id=1310128874544601",
+      "page_url": "https://www.facebook.com/DominosKSA/",
+      "page_id": "",
+      "link_url": "https://www.dominos.sa/ar/",
+      "link_title": "بيتزا مع توصيل بـ 9 ريال 😍 اطلب بوكس الجمعات أونلاين!",
+      "cta_text": "Order now",
+      "images": [
+        "https://scontent-lax7-1.xx.fbcdn.net/v/t39.35426-6/888089039_3377590655768004_6548120610802867031_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=105&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=OVyJGB0vSqcQ7kNvwGbHHPw&_nc_oc=Ado8usPtPJa-oJpCoAO0p-onG21gpgchnXmchXhNcy1jCZZWM51fRynoyY4ZdPivmPY&_nc_zt=14&_nc_ht=scontent-lax7-1.xx&_nc_gid=_xxjHG1cU3gWj2SVb5bJ2Q&_nc_ss=7b289&oh=00_AQRL9pwHKvVzjFGWmQfH8lNMwsXXQPOY1mBIrq5sYK3Tww&oe=6AF5FF71"
+      ],
+      "has_video": false,
+      "same_creative_count": 0,
+      "multiple_versions": true
+    },
+    {
+      "id": "1665902281803620",
+      "page_name": "Domino's Pizza",
+      "status": "active",
+      "first_seen": "Nov 2, 2026",
+      "last_seen": "",
+      "creative_text": "أطعم بيتزا تجيك حاارة وبـ 9 ريال بس للتوصيل 👌 اطلب أي 2 بيتزا كبيرة بـ 29 ريال للوحدة 🍕",
+      "library_url": "https://www.facebook.com/ads/library/?id=1665902281803620",
+      "page_url": "https://www.facebook.com/DominosKSA/",
+      "page_id": "",
+      "link_url": "https://www.dominos.sa/ar/",
+      "link_title": "اطلب والتوصيل بـ 9 ريال بس 🚗 اطلبها الحين",
+      "cta_text": "Order Now",
+      "images": [
+        "https://scontent-lax3-1.xx.fbcdn.net/v/t39.35426-6/881748721_1105015218796321_1612514091354230664_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=109&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=OHX7YQVmhw0Q7kNvwHPC670&_nc_oc=AdouQ-p9jqa77I3t3RzCm8ZMp6UcbsXRuO0zw6wcKJanKSOgISebR_sPlMszPDmxwKo&_nc_zt=14&_nc_ht=scontent-lax3-1.xx&_nc_gid=_xxjHG1cU3gWj2SVb5bJ2Q&_nc_ss=7b289&oh=00_AQQ1l0oEmQivevinvI_Omp5sJx-OZ0r-CSjxjkuGsSjbAg&oe=6AF60169"
+      ],
+      "has_video": false,
+      "same_creative_count": 0,
+      "multiple_versions": true
+    },
+    {
+      "id": "991370083688471",
+      "page_name": "Domino's Pizza",
+      "status": "active",
+      "first_seen": "Jun 18, 2026",
+      "last_seen": "",
+      "creative_text": "اطلب بوكس الجمعات 😍 أي 3 بيتزا كبيرة مع 4 أصناف جانبية وبيبسي كبير بـ 129 ريال🍕",
+      "library_url": "https://www.facebook.com/ads/library/?id=991370083688471",
+      "page_url": "https://www.facebook.com/DominosKSA/",
+      "page_id": "",
+      "link_url": "https://www.dominos.sa/ar/",
+      "link_title": "بوكس الجمعات من دومينوز 🍕 اطلب بوكس الجمعات أونلاين!",
+      "cta_text": "Order Now",
+      "images": [
+        "https://scontent-lax3-1.xx.fbcdn.net/v/t39.35426-6/874336019_1112317938431897_5183829985328481091_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=102&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=Ozcou1UMnFsQ7kNvwH3eY7m&_nc_oc=Adrrr9kWgJksPgjMtOAOmTK-7fDlruYAA_JN-QQIe_aiHeEvw24gtzA3KUO239rj8eg&_nc_zt=14&_nc_ht=scontent-lax3-1.xx&_nc_gid=_xxjHG1cU3gWj2SVb5bJ2Q&_nc_ss=7b289&oh=00_AQRTVp5WTMy9iy3hYVvXNOsJHYIROMimlphOySePm9g8bw&oe=6AF60EB5"
+      ],
+      "has_video": false,
+      "same_creative_count": 0,
+      "multiple_versions": false
+    },
+    {
+      "id": "1155065930552854",
+      "page_name": "Domino's Pizza",
+      "status": "active",
+      "first_seen": "Nov 4, 2026",
+      "last_seen": "",
+      "creative_text": "New! Domino's Solo Box comes with pizza, pasta, with more options and sides 👌🍕🍝",
+      "library_url": "https://www.facebook.com/ads/library/?id=1155065930552854",
+      "page_url": "https://www.facebook.com/DominosKSA/",
+      "page_id": "",
+      "link_url": "https://www.dominos.sa/ar/",
+      "link_title": "",
+      "cta_text": "",
+      "images": [
+        "https://scontent-lax3-2.xx.fbcdn.net/v/t39.35426-6/885149456_1134789502536008_140390894831582010_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=106&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=cGpr4_oYzHwQ7kNvwFxDaW1&_nc_oc=Adqov7n95Yboc5xhWatRU3R6RCPE0y-ywAHVreESkEN_V0rOI6EXSe0qom6ZnbCwwdE&_nc_zt=14&_nc_ht=scontent-lax3-2.xx&_nc_gid=_xxjHG1cU3gWj2SVb5bJ2Q&_nc_ss=7b289&oh=00_AQT95_ABTKn8_4z-5ZDy5aA5jAuOxfqc3hZfFefPI8O4bg&oe=6AF619B6"
+      ],
+      "has_video": false,
+      "same_creative_count": 2,
+      "multiple_versions": false
+    },
+    {
+      "id": "28901602699504810",
+      "page_name": "Domino's Pizza",
+      "status": "active",
+      "first_seen": "Nov 4, 2026",
+      "last_seen": "",
+      "creative_text": "جديد! بوكس السولو من دومينوز يجي بوقته.. بيتزا أو باستا وغيرها مع أصناف جانبية ومشروب وصوص 👌🍕🍝",
+      "library_url": "https://www.facebook.com/ads/library/?id=28901602699504810",
+      "page_url": "https://www.facebook.com/DominosKSA/",
+      "page_id": "",
+      "link_url": "https://www.dominos.sa/ar/",
+      "link_title": "",
+      "cta_text": "",
+      "images": [
+        "https://scontent-lax3-2.xx.fbcdn.net/v/t39.35426-6/885818237_1694680275349434_4284431636424577131_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=103&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=FoxohsfydVEQ7kNvwEAukGt&_nc_oc=AdoXoLeOXVtw2XJGvNN-CVenQKXRN77M-hQOc6gbgOKmr2pwZSMJjJxn2DtWr5yyR_E&_nc_zt=14&_nc_ht=scontent-lax3-2.xx&_nc_gid=_xxjHG1cU3gWj2SVb5bJ2Q&_nc_ss=7b289&oh=00_AQSopNnxh7OiDbalqBU6Va1FnzTPFVq5mVMbBRWvuKZ99A&oe=6AF60866"
+      ],
+      "has_video": false,
+      "same_creative_count": 2,
+      "multiple_versions": false
+    },
+    {
+      "id": "1493593229499587",
+      "page_name": "Domino's Pizza",
+      "status": "active",
+      "first_seen": "Nov 7, 2026 · Total active time 14 hrs",
+      "last_seen": "",
+      "creative_text": "جديد! بوكس السولو من دومينوز يجي بوقته.. بيتزا أو باستا وغيرها مع أصناف جانبية ومشروب وصوص 👌🍕🍝",
+      "library_url": "https://www.facebook.com/ads/library/?id=1493593229499587",
+      "page_url": "https://www.facebook.com/DominosKSA/",
+      "page_id": "",
+      "link_url": "",
+      "link_title": "",
+      "cta_text": "",
+      "images": [],
+      "has_video": true,
+      "same_creative_count": 0,
+      "multiple_versions": false
+    }
+  ]
 }

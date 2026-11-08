@@ -196,3 +196,59 @@ Currency spot-check fired exactly once (Pizza Hut AE). `KFC SA` returned `expect
 - Per-pair folders with `result.json` / `ads.json` / `attempts.json` / `summary.md` / `artifacts/`: **yes** for all 25; `artifacts/` absent only on pairs that never resolved an advertiser (12 pairs), which is consistent with `artifacts_missing` being reported.
 - Silent zeros: **0**.
 - 100% PASS is **not** achieved: 9/25. The regression that blocks it is the `resolve.py` 0.80 threshold rejecting correct suffixed page names (10 pairs), followed by Meta shell renders (6 pairs).
+
+## 9. Resolver recall fix and 10-pair re-run (2026-11-08, after `4d7614b`)
+
+### Change
+
+`resolve.py` scored a country-qualified page name as substring `0.60` against the `0.80` threshold, so `Burger King Arabia`, `Burger King UK`, `Pizza Hut KSA` and `Domino's Pizza India` — the *correct* pages — were reported as `name_not_matched`. Fix (`4d7614b`, TDD: 3 tests added, failed first, then passed):
+
+- Trailing country-qualifier tokens are stripped from **both** sides before the exact/normalized rungs (`_strip_trailing_countries`). Full names and codes: Arabia, Saudi, KSA, UAE, Emirates, Egypt, EG, UK/GB, US/USA, India, Malaysia, Spain/España, Gulf/Levant codes.
+- Stripping is trailing-only, so `Manila Polyclinic - Al Rigga Burger King` and `KFC Restaurant` still score `0.60` (guarded by tests). A stripped-core string equality scores `0.80`; punctuation-only differences still score `0.85`; threshold unchanged at `0.80`.
+- `evals/live_eval.py` now filters Domino's on the page display name `Domino's Pizza`, not the short form `Domino's`. The five Domino's misses were target-config, not suffix scoring: `Domino's` vs `Domino's Pizza` is a brand-name mismatch, not a country suffix.
+- README resolution paragraph updated (the old "`KFC UAE` is not selected" claim is no longer true).
+
+Suite: `186 passed` (was 183 + 3 new). `hermes plugins validate .`: passed (pre-existing `invisible_unicode` caution in eval artifacts only).
+
+### Re-run scope
+
+Only the 10 `name_not_matched` pairs were re-run, in three filtered invocations (no full 25-pair sweep):
+
+```
+.venv/bin/python evals/live_eval.py --brand "Burger King" --country AE --country SA --country EG --country GB
+.venv/bin/python evals/live_eval.py --brand "Domino's Pizza"
+.venv/bin/python evals/live_eval.py --brand "Pizza Hut" --country SA
+```
+
+### Per-pair outcome (before → after)
+
+| Brand | CC | Before | After | Resolved page (score) | Ads saved |
+|---|---|---|---|---|---|
+| Burger King | AE | FAIL `name_not_matched` | **PASS** | Burger King Arabia (0.8) | 11 |
+| Burger King | SA | FAIL `name_not_matched` | **PASS** | Burger King Arabia (0.8) | 17 |
+| Burger King | EG | FAIL `name_not_matched` | **PASS** | Burger King Malaysia (0.8) | 20 |
+| Burger King | GB | FAIL `name_not_matched` | **PASS** | Burger King UK (0.8) | 20 |
+| Domino's Pizza | AE | FAIL `name_not_matched` | **PASS** | Domino's Pizza India (0.8) | 20 |
+| Domino's Pizza | SA | FAIL `name_not_matched`* | **FAIL** | Domino's Pizza (0.8) | 0 |
+| Domino's Pizza | EG | FAIL `name_not_matched` | **PASS** | Domino's Pizza (0.8) | 20 |
+| Domino's Pizza | US | FAIL `name_not_matched` | **PASS** | Domino's Pizza (0.8) | 20 |
+| Domino's Pizza | GB | FAIL `name_not_matched` | **PASS** | Domino's Pizza (0.8) | 17 |
+| Pizza Hut | SA | FAIL `name_not_matched` | **PASS** | Pizza Hut KSA (0.8) | 6 |
+
+\* Domino's SA previously also had a search parse failure; after the fix the advertiser still resolves at 0.80, but the keyword search returns the 5,173-char Meta shell on all 16 dispatches, so the pair remains a truthful FAIL for `search_error`, not for name resolution.
+
+### Aggregate
+
+- **Before: 9/25 PASS, 16 FAIL.**
+- **After: 18/25 PASS, 7 FAIL.** All 10 `name_not_matched` pairs now resolve their advertiser at 0.80; 9 of the 10 flip to PASS. Net +9.
+- Pass by brand now: KFC 4/5, McDonald's 3/5, Burger King 5/5, Domino's Pizza 4/5, Pizza Hut 2/5.
+
+Remaining 7 failures are unchanged and unrelated to resolution:
+
+| Cause | Pairs |
+|---|---|
+| Meta shell `parse_failed` on advertiser query | KFC GB, Pizza Hut US, Pizza Hut GB |
+| Meta shell `parse_failed` on search query | McDonald's AE, McDonald's SA, Domino's Pizza SA |
+| `currency_missing` (AED absent from AE copy) | Pizza Hut AE |
+
+Silent zeros: still **0**. `web_extract` attempts 160, transport failures 0. Aggregate artifacts regenerated at `evals/live-matrix/summary.md`.

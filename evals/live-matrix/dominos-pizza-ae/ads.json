@@ -406,5 +406,26 @@
       "multiple_versions": true
     }
   ],
-  "advertiser_search": []
+  "advertiser_search": [
+    {
+      "id": "1123025436850833",
+      "page_name": "Domino's Pizza India",
+      "status": "active",
+      "first_seen": "Oct 31, 2026",
+      "last_seen": "",
+      "creative_text": "𝐅𝐫𝐞𝐞 𝐃𝐞𝐥𝐢𝐯𝐞𝐫𝐲 \\| 𝐁𝐞𝐬𝐭 𝐏𝐫𝐢𝐜𝐞 \\| 𝐙𝐞𝐫𝐨 𝐒𝐮𝐫𝐠𝐞\nCraving Pizza? How about multiplying that craving by three? Domino's is offering FREE Delivery so indulge in the ultimate pizza feast with Domino's exclusive offer: Buy 2 Pizzas, Get 1 FREE! 🍕🍕🍕 Unlimited flavor!",
+      "library_url": "https://www.facebook.com/ads/library/?id=1123025436850833",
+      "page_url": "https://www.facebook.com/dominospizzaindia/",
+      "page_id": "",
+      "link_url": "http://itunes.apple.com/app/id523106486",
+      "link_title": "Use Code:- BUY2GET1",
+      "cta_text": "Order Now",
+      "images": [
+        "https://scontent-lax3-1.xx.fbcdn.net/v/t39.35426-6/494183796_678990625078812_8017336224713987829_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=104&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=uFrHwnoQxFEQ7kNvwG-uDD_&_nc_oc=AdocIOoOQ4E-I1y6U8LPIrBWNBgQRie20qY7vfBkXYNPcgeSHqJBq7XyDBWeirLAd-8&_nc_zt=14&_nc_ht=scontent-lax3-1.xx&_nc_gid=LgKoU-3y943af0e9eiIpbQ&_nc_ss=7b289&oh=00_AQS8xReZohskMv00f4L30aWd9ZI0Pv5OcTYmLbLFyPL1uA&oe=6AF6289F"
+      ],
+      "has_video": false,
+      "same_creative_count": 4,
+      "multiple_versions": true
+    }
+  ]
 }

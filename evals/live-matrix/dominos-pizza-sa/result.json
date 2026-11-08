@@ -1,9 +1,9 @@
 {
   "brand": "Domino's Pizza",
   "country": "SA",
-  "advertiser": "Domino's",
+  "advertiser": "Domino's Pizza",
   "folder": "evals/live-matrix/dominos-pizza-sa",
-  "data_dir": "/var/folders/zf/g9bpd9s55sv10tz2mnhqch800000gn/T/ads-intel-live-eval-nh_o8wp3/tmp_vm62b2y",
+  "data_dir": "/var/folders/zf/g9bpd9s55sv10tz2mnhqch800000gn/T/ads-intel-live-eval-50w011gi/tmpuzk45w2s",
   "search_summary": {
     "count": null,
     "complete": null,
@@ -11,31 +11,23 @@
     "country": null,
     "error": "parse_failed: render (5173 chars) with no card markers or empty-state text",
     "page_names": [],
-    "seconds": 23.68
+    "seconds": 17.8
   },
   "advertiser_summary": {
-    "count": null,
-    "complete": null,
-    "resolved": null,
-    "error": "name_not_matched",
-    "target": "Domino's",
-    "candidates": [
-      {
-        "page_name": "Domino's Pizza",
-        "score": 0.6
-      },
-      {
-        "page_name": "Domino's Pizza India",
-        "score": 0.6
-      },
-      {
-        "page_name": "Domino's Pizza España (Oficial)",
-        "score": 0.6
-      }
+    "count": 7,
+    "complete": false,
+    "resolved": {
+      "page_name": "Domino's Pizza",
+      "score": 0.8
+    },
+    "error": null,
+    "target": null,
+    "candidates": null,
+    "threshold": null,
+    "page_names": [
+      "Domino's Pizza"
     ],
-    "threshold": 0.8,
-    "page_names": [],
-    "seconds": 21.84
+    "seconds": 19.66
   },
   "watch_add": {
     "error": null,
@@ -43,7 +35,7 @@
       {
         "query": "Domino's Pizza",
         "country": "SA",
-        "advertiser": "Domino's",
+        "advertiser": "Domino's Pizza",
         "active_status": "active"
       }
     ]
@@ -51,58 +43,26 @@
   "check1": {
     "query": "Domino's Pizza",
     "country": "SA",
-    "advertiser": "Domino's",
     "partial": true,
-    "error": "name_not_matched",
-    "target": "Domino's",
-    "candidates": [
-      {
-        "page_name": "Domino's Pizza",
-        "score": 0.6
-      },
-      {
-        "page_name": "Domino's Pizza India",
-        "score": 0.6
-      },
-      {
-        "page_name": "Domino's Pizza España (Oficial)",
-        "score": 0.6
-      }
-    ],
-    "threshold": 0.8,
+    "skipped": true,
+    "reason": "parse_failed",
     "artifacts": {
-      "error": "name_not_matched"
+      "error": "parse_failed"
     },
     "new_page_names": [],
-    "seconds": 14.55
+    "seconds": 17.54
   },
   "check2": {
     "query": "Domino's Pizza",
     "country": "SA",
-    "advertiser": "Domino's",
     "partial": true,
-    "error": "name_not_matched",
-    "target": "Domino's",
-    "candidates": [
-      {
-        "page_name": "Domino's Pizza",
-        "score": 0.6
-      },
-      {
-        "page_name": "Domino's Pizza India",
-        "score": 0.6
-      },
-      {
-        "page_name": "Domino's Pizza España (Oficial)",
-        "score": 0.6
-      }
-    ],
-    "threshold": 0.8,
+    "skipped": true,
+    "reason": "parse_failed",
     "artifacts": {
-      "error": "name_not_matched"
+      "error": "parse_failed"
     },
     "new_page_names": [],
-    "seconds": 11.09
+    "seconds": 16.77
   },
   "artifacts_ok": false,
   "currency": {
@@ -113,19 +73,19 @@
   "status": "FAIL",
   "failures": [
     "search_error: parse_failed: render (5173 chars) with no card markers or empty-state text",
-    "check1_error: name_not_matched",
-    "check2_error: name_not_matched",
+    "check1_no_new_ads: (None, None, None)",
+    "check2_not_settled: (None, None, None)",
     "artifacts_missing: html/digest"
   ],
   "timings": {
-    "search": 23.68,
-    "advertiser_search": 21.84,
-    "check1": 14.55,
-    "check2": 11.09,
-    "total": 71.16
+    "search": 17.8,
+    "advertiser_search": 19.66,
+    "check1": 17.54,
+    "check2": 16.77,
+    "total": 71.77
   },
   "attempts": {
-    "total": 13,
+    "total": 16,
     "failed": 0
   }
 }
