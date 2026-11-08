@@ -898,6 +898,31 @@ def test_check_bucket_items_are_sixteen_fields(monkeypatch):
     assert all(value is not None for value in item.values())
 
 
+def test_changed_and_ended_buckets_are_sixteen_fields(monkeypatch):
+    """Every bucket, not just `new`, carries the full ad-summary contract."""
+    tools.ad_watch({"action": "add", "query": "nike"})
+    prior = {
+        "1": {**AD, "id": "1", "creative_text": "v1"},
+        "2": {**AD, "id": "2", "creative_text": "retired copy"},
+    }
+    tools.store.save_snapshot("nike", {"ads": prior})
+    monkeypatch.setattr(
+        tools.sources,
+        "fetch_ads_with_meta",
+        _stub_fetch([{**AD, "id": "1", "creative_text": "v2"}]),
+    )
+
+    row = json.loads(tools.ad_check({}))["results"][0]
+    assert row["changed_ads"] == 1
+    assert row["ended_ads"] == 1
+    for bucket in ("changed", "ended"):
+        item = row[bucket][0]
+        assert set(item) == set(tools._SUMMARY_KEYS), bucket
+        assert len(item) == 16, bucket
+        assert item["last_seen"] == AD["last_seen"]
+        assert item["creative_text"] != ""
+
+
 def test_check_malformed_body_does_not_seed_empty_snapshot(monkeypatch):
     """A short corrupt body must be a fetch failure, not a 0-ad success."""
     tools.ad_watch({"action": "add", "query": "nike"})
