@@ -5,29 +5,29 @@
     {
       "phase": "search",
       "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=AE&q=McDonald%27s&media_type=all&search_type=keyword_unordered",
-      "seconds": 5.41,
+      "seconds": 6.22,
       "chars": 5169,
       "failed": false
     },
     {
       "phase": "search",
-      "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=AE&q=McDonald%27s&media_type=all&search_type=keyword_unordered&cache_bust=896bb91754b74c4a98d133ed5e94a424",
-      "seconds": 4.93,
+      "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=AE&q=McDonald%27s&media_type=all&search_type=keyword_unordered&cache_bust=db420e69f5b74dea912a91170e113002",
+      "seconds": 5.62,
       "chars": 5169,
       "failed": false
     },
     {
       "phase": "search",
-      "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=AE&q=McDonald%27s&media_type=all&search_type=keyword_unordered&cache_bust=206bcefb6f614c94b0aeb811afc2a533",
-      "seconds": 6.04,
+      "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=AE&q=McDonald%27s&media_type=all&search_type=keyword_unordered&cache_bust=ddb6e273718e405bb71fb86b1094c741",
+      "seconds": 6.15,
       "chars": 5169,
       "failed": false
     },
     {
       "phase": "search",
-      "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=AE&q=McDonald%27s&media_type=all&search_type=keyword_unordered&cache_bust=41e187b401a34a8e9a99212a825dd492",
-      "seconds": 4.17,
-      "chars": 2079,
+      "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=AE&q=McDonald%27s&media_type=all&search_type=keyword_unordered&cache_bust=a514fbe29bb34ffdb9daf30bde825a3e",
+      "seconds": 5.71,
+      "chars": 5169,
       "failed": false
     },
     {
@@ -39,23 +39,23 @@
     },
     {
       "phase": "advertiser_search",
-      "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=AE&q=McDonald%27s&media_type=all&search_type=keyword_unordered&cache_bust=1ed1f9566bd54f8eb1029cd2aa091ffb",
-      "seconds": 5.12,
+      "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=AE&q=McDonald%27s&media_type=all&search_type=keyword_unordered&cache_bust=2d3f75f34aeb46bbb33529c6df4cc940",
+      "seconds": 6.14,
       "chars": 5169,
       "failed": false
     },
     {
       "phase": "advertiser_search",
-      "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=AE&q=McDonald%27s&media_type=all&search_type=keyword_unordered&cache_bust=36c299d83d6042fd865b23211fa77155",
-      "seconds": 4.39,
-      "chars": 2079,
+      "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=AE&q=McDonald%27s&media_type=all&search_type=keyword_unordered&cache_bust=27dc4b829dbb4d49a20f76bb8358c345",
+      "seconds": 6.44,
+      "chars": 5169,
       "failed": false
     },
     {
       "phase": "advertiser_search",
-      "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=AE&q=McDonald%27s&media_type=all&search_type=keyword_unordered&cache_bust=2a75f8936dcc4a95accef0056080d55f",
-      "seconds": 4.63,
-      "chars": 5169,
+      "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=AE&q=McDonald%27s&media_type=all&search_type=keyword_unordered&cache_bust=4d610e8855234ab58cbe8781b4f597c2",
+      "seconds": 7.37,
+      "chars": 37302,
       "failed": false
     },
     {
@@ -67,22 +67,22 @@
     },
     {
       "phase": "check1",
-      "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=AE&q=McDonald%27s&media_type=all&search_type=keyword_unordered&cache_bust=70257c0a8d23455bae74bdfca377fa9d",
-      "seconds": 5.1,
+      "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=AE&q=McDonald%27s&media_type=all&search_type=keyword_unordered&cache_bust=8b967c04ef484ad3982054c7d47bffe4",
+      "seconds": 7.13,
       "chars": 5169,
       "failed": false
     },
     {
       "phase": "check1",
-      "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=AE&q=McDonald%27s&media_type=all&search_type=keyword_unordered&cache_bust=c07582f4b66e4dd4951f3242a838718a",
-      "seconds": 7.59,
+      "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=AE&q=McDonald%27s&media_type=all&search_type=keyword_unordered&cache_bust=3069fd416ce2409ebc3a45759a40ccfc",
+      "seconds": 4.94,
       "chars": 5169,
       "failed": false
     },
     {
       "phase": "check1",
-      "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=AE&q=McDonald%27s&media_type=all&search_type=keyword_unordered&cache_bust=6e924b1df7304bc3a498acbb5ed13c68",
-      "seconds": 5.11,
+      "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=AE&q=McDonald%27s&media_type=all&search_type=keyword_unordered&cache_bust=fe55adbd992241ad919c2e90df8cb23a",
+      "seconds": 4.84,
       "chars": 5169,
       "failed": false
     },
@@ -95,23 +95,16 @@
     },
     {
       "phase": "check2",
-      "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=AE&q=McDonald%27s&media_type=all&search_type=keyword_unordered&cache_bust=a4dfce152dfb412cbbcdfb8145cad5e8",
-      "seconds": 5.6,
+      "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=AE&q=McDonald%27s&media_type=all&search_type=keyword_unordered&cache_bust=7b493843cbff4d298dba17f86805cedd",
+      "seconds": 5.74,
       "chars": 5169,
       "failed": false
     },
     {
       "phase": "check2",
-      "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=AE&q=McDonald%27s&media_type=all&search_type=keyword_unordered&cache_bust=27c2f25bbbab48d58f18e3f7137b0c4b",
-      "seconds": 5.92,
-      "chars": 5169,
-      "failed": false
-    },
-    {
-      "phase": "check2",
-      "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=AE&q=McDonald%27s&media_type=all&search_type=keyword_unordered&cache_bust=7a53b19195e74d5f8e0772eb3fe7ca98",
-      "seconds": 4.78,
-      "chars": 5169,
+      "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=AE&q=McDonald%27s&media_type=all&search_type=keyword_unordered&cache_bust=3e423b6348634b3980a14f9e81d8e25a",
+      "seconds": 8.07,
+      "chars": 37302,
       "failed": false
     }
   ]

@@ -3,7 +3,7 @@
   "country": "EG",
   "advertiser": "KFC",
   "folder": "evals/live-matrix/kfc-eg",
-  "data_dir": "/var/folders/zf/g9bpd9s55sv10tz2mnhqch800000gn/T/ads-intel-live-eval-nh_o8wp3/tmpoy7hfrcf",
+  "data_dir": "/var/folders/zf/g9bpd9s55sv10tz2mnhqch800000gn/T/ads-intel-live-eval-a5skrx5s/tmpb9m6np9d",
   "search_summary": {
     "count": 19,
     "complete": true,
@@ -13,9 +13,10 @@
     "page_names": [
       "KFC Masr",
       "foodpanda",
-      "KFC"
+      "KFC",
+      "Porto Sokhna"
     ],
-    "seconds": 5.71
+    "seconds": 6.16
   },
   "advertiser_summary": {
     "count": 2,
@@ -31,7 +32,7 @@
     "page_names": [
       "KFC"
     ],
-    "seconds": 0.02
+    "seconds": 0.01
   },
   "watch_add": {
     "error": null,
@@ -78,13 +79,14 @@
     "changed_ads": 0,
     "partial": false,
     "artifacts": {
-      "html": "/var/folders/zf/g9bpd9s55sv10tz2mnhqch800000gn/T/ads-intel-live-eval-nh_o8wp3/tmpoy7hfrcf/reports/eabc181e314ade7a.html",
-      "digest": "/var/folders/zf/g9bpd9s55sv10tz2mnhqch800000gn/T/ads-intel-live-eval-nh_o8wp3/tmpoy7hfrcf/reports/eabc181e314ade7a.digest.json"
+      "html": "artifacts/check2/html.html",
+      "digest": "artifacts/check2/digest.json"
     },
     "new_page_names": [],
     "seconds": 0.01
   },
   "artifacts_ok": true,
+  "artifacts2_ok": true,
   "currency": {
     "expected": "EGP/جنيه",
     "found": [
@@ -96,11 +98,11 @@
   "status": "PASS",
   "failures": [],
   "timings": {
-    "search": 5.71,
-    "advertiser_search": 0.02,
+    "search": 6.16,
+    "advertiser_search": 0.01,
     "check1": 0.01,
     "check2": 0.01,
-    "total": 5.75
+    "total": 6.19
   },
   "attempts": {
     "total": 4,

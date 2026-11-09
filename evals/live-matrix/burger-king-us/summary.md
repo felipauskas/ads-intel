@@ -1,28 +1,30 @@
-# Burger King × US — PASS
+# Burger King × US — FAIL
 
 - folder: `evals/live-matrix/burger-king-us`
 - advertiser filter: `Burger King`
 
 ## Keyword search (`active_status=active`, limit 20)
-- count: 20  complete: False  fetched: 20  error: None
-- page names: Burger King, The Krazy Coupon Lady, DoorDash, WNC Dist. Shop, Wolt, Extra News
-- seconds: 6.06
+- count: None  complete: None  fetched: None  error: parse_failed: render (5218 chars) with no card markers or empty-state text
+- page names: —
+- seconds: 39.28
 
 ## Advertiser search
-- count: 10  resolved: {'page_name': 'Burger King', 'score': 0.8}  error: None
-- page names: Burger King
-- seconds: 0.01
+- count: None  resolved: None  error: parse_failed: render (5218 chars) with no card markers or empty-state text
+- page names: —
+- seconds: 22.63
 
 ## Watch checks
-- check1: new=10 ended=0 changed=0 partial=False error=None seconds=0.02
-- check2: new=0 ended=0 changed=0 partial=False error=None seconds=0.01
+- check1: new=10 ended=0 changed=0 partial=False error=None seconds=16.85
+- check2: new=0 ended=0 changed=0 partial=False error=None seconds=20.29
 - artifacts: {"html": "artifacts/html.html", "digest": "artifacts/digest.json"} (ok=True)
+- artifacts check2: {"html": "artifacts/check2/html.html", "digest": "artifacts/check2/digest.json"} (ok=True)
 
 ## Currency spot-check
 - expected: —  found: none  ok: None
 
 ## Hydration
-- attempts: 4  failed: 0
+- attempts: 15  failed: 0
 
 ## Failures
-- none
+- search_error: parse_failed: render (5218 chars) with no card markers or empty-state text
+- advertiser_error: parse_failed: render (5218 chars) with no card markers or empty-state text

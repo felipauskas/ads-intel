@@ -3,7 +3,7 @@
   "country": "US",
   "advertiser": "McDonald's",
   "folder": "evals/live-matrix/mcdonalds-us",
-  "data_dir": "/var/folders/zf/g9bpd9s55sv10tz2mnhqch800000gn/T/ads-intel-live-eval-nh_o8wp3/tmp5qa92fro",
+  "data_dir": "/var/folders/zf/g9bpd9s55sv10tz2mnhqch800000gn/T/ads-intel-live-eval-a5skrx5s/tmpkbjmumz_",
   "search_summary": {
     "count": 20,
     "complete": false,
@@ -17,7 +17,7 @@
       "Dan Lok",
       "Uber Eats"
     ],
-    "seconds": 6.24
+    "seconds": 13.94
   },
   "advertiser_summary": {
     "count": 19,
@@ -33,7 +33,7 @@
     "page_names": [
       "McDonald's"
     ],
-    "seconds": 0.02
+    "seconds": 6.31
   },
   "watch_add": {
     "error": null,
@@ -49,60 +49,56 @@
   "check1": {
     "query": "McDonald's",
     "country": "US",
-    "advertiser": "McDonald's",
-    "resolved": {
-      "page_name": "McDonald's",
-      "score": 0.8
-    },
-    "new_ads": 19,
-    "ended_ads": 0,
-    "changed_ads": 0,
-    "partial": false,
+    "partial": true,
+    "skipped": true,
+    "reason": "parse_failed",
     "artifacts": {
-      "html": "artifacts/html.html",
-      "digest": "artifacts/digest.json"
+      "error": "parse_failed"
     },
-    "new_page_names": [
-      "McDonald's"
-    ],
-    "seconds": 0.02
+    "new_page_names": [],
+    "seconds": 19.19,
+    "artifact_problems": [
+      "artifacts_error: parse_failed"
+    ]
   },
   "check2": {
     "query": "McDonald's",
     "country": "US",
-    "advertiser": "McDonald's",
-    "resolved": {
-      "page_name": "McDonald's",
-      "score": 0.8
-    },
-    "new_ads": 0,
-    "ended_ads": 0,
-    "changed_ads": 0,
-    "partial": false,
+    "partial": true,
+    "skipped": true,
+    "reason": "parse_failed",
     "artifacts": {
-      "html": "/var/folders/zf/g9bpd9s55sv10tz2mnhqch800000gn/T/ads-intel-live-eval-nh_o8wp3/tmp5qa92fro/reports/7c5862091461982a.html",
-      "digest": "/var/folders/zf/g9bpd9s55sv10tz2mnhqch800000gn/T/ads-intel-live-eval-nh_o8wp3/tmp5qa92fro/reports/7c5862091461982a.digest.json"
+      "error": "parse_failed"
     },
     "new_page_names": [],
-    "seconds": 0.02
+    "seconds": 20.71,
+    "artifact_problems": [
+      "artifacts_error: parse_failed"
+    ]
   },
-  "artifacts_ok": true,
+  "artifacts_ok": false,
+  "artifacts2_ok": false,
   "currency": {
     "expected": null,
     "found": [],
     "ok": null
   },
-  "status": "PASS",
-  "failures": [],
+  "status": "FAIL",
+  "failures": [
+    "check1_no_new_ads: (None, None, None)",
+    "check2_not_settled: (None, None, None)",
+    "artifacts_error: parse_failed",
+    "artifacts2_error: parse_failed"
+  ],
   "timings": {
-    "search": 6.24,
-    "advertiser_search": 0.02,
-    "check1": 0.02,
-    "check2": 0.02,
-    "total": 6.3
+    "search": 13.94,
+    "advertiser_search": 6.31,
+    "check1": 19.19,
+    "check2": 20.71,
+    "total": 60.15
   },
   "attempts": {
-    "total": 4,
+    "total": 12,
     "failed": 0
   }
 }

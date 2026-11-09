@@ -3,7 +3,7 @@
   "country": "GB",
   "advertiser": "McDonald's",
   "folder": "evals/live-matrix/mcdonalds-gb",
-  "data_dir": "/var/folders/zf/g9bpd9s55sv10tz2mnhqch800000gn/T/ads-intel-live-eval-nh_o8wp3/tmpolhxvfss",
+  "data_dir": "/var/folders/zf/g9bpd9s55sv10tz2mnhqch800000gn/T/ads-intel-live-eval-a5skrx5s/tmpx_ur1osi",
   "search_summary": {
     "count": 20,
     "complete": false,
@@ -21,7 +21,7 @@
       "Osprey Charging Network",
       "Protein.com UK"
     ],
-    "seconds": 8.06
+    "seconds": 7.64
   },
   "advertiser_summary": {
     "count": 12,
@@ -84,13 +84,14 @@
     "changed_ads": 0,
     "partial": false,
     "artifacts": {
-      "html": "/var/folders/zf/g9bpd9s55sv10tz2mnhqch800000gn/T/ads-intel-live-eval-nh_o8wp3/tmpolhxvfss/reports/278609d6b6b08f7f.html",
-      "digest": "/var/folders/zf/g9bpd9s55sv10tz2mnhqch800000gn/T/ads-intel-live-eval-nh_o8wp3/tmpolhxvfss/reports/278609d6b6b08f7f.digest.json"
+      "html": "artifacts/check2/html.html",
+      "digest": "artifacts/check2/digest.json"
     },
     "new_page_names": [],
-    "seconds": 0.02
+    "seconds": 0.01
   },
   "artifacts_ok": true,
+  "artifacts2_ok": true,
   "currency": {
     "expected": null,
     "found": [],
@@ -99,11 +100,11 @@
   "status": "PASS",
   "failures": [],
   "timings": {
-    "search": 8.06,
+    "search": 7.64,
     "advertiser_search": 0.02,
     "check1": 0.02,
-    "check2": 0.02,
-    "total": 8.12
+    "check2": 0.01,
+    "total": 7.69
   },
   "attempts": {
     "total": 4,

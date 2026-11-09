@@ -1,31 +1,29 @@
-# Pizza Hut × US — FAIL
+# Pizza Hut × US — PASS
 
 - folder: `evals/live-matrix/pizza-hut-us`
 - advertiser filter: `Pizza Hut`
 
 ## Keyword search (`active_status=active`, limit 20)
 - count: 20  complete: False  fetched: 20  error: None
-- page names: Pizza Hut, T-Mobile, Sbmowing, The Blood Pressure Journal
-- seconds: 11.27
+- page names: Pizza Hut British Columbia, T-Mobile, Sbmowing, Pizza Hut, The Blood Pressure Journal
+- seconds: 7.23
 
 ## Advertiser search
-- count: None  resolved: None  error: parse_failed: render (5214 chars) with no card markers or empty-state text
-- page names: —
-- seconds: 13.97
+- count: 18  resolved: {'page_name': 'Pizza Hut', 'score': 0.8}  error: None
+- page names: Pizza Hut
+- seconds: 0.02
 
 ## Watch checks
-- check1: new=None ended=None changed=None partial=True error=None seconds=14.51
-- check2: new=None ended=None changed=None partial=True error=None seconds=15.59
-- artifacts: {"error": "parse_failed"} (ok=False)
+- check1: new=18 ended=0 changed=0 partial=False error=None seconds=0.02
+- check2: new=0 ended=0 changed=0 partial=False error=None seconds=0.01
+- artifacts: {"html": "artifacts/html.html", "digest": "artifacts/digest.json"} (ok=True)
+- artifacts check2: {"html": "artifacts/check2/html.html", "digest": "artifacts/check2/digest.json"} (ok=True)
 
 ## Currency spot-check
 - expected: —  found: none  ok: None
 
 ## Hydration
-- attempts: 14  failed: 0
+- attempts: 4  failed: 0
 
 ## Failures
-- advertiser_error: parse_failed: render (5214 chars) with no card markers or empty-state text
-- check1_no_new_ads: (None, None, None)
-- check2_not_settled: (None, None, None)
-- artifacts_missing: html/digest
+- none

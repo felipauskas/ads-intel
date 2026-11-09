@@ -3,7 +3,7 @@
   "country": "AE",
   "advertiser": "Pizza Hut",
   "folder": "evals/live-matrix/pizza-hut-ae",
-  "data_dir": "/var/folders/zf/g9bpd9s55sv10tz2mnhqch800000gn/T/ads-intel-live-eval-nh_o8wp3/tmpyqmwtx3d",
+  "data_dir": "/var/folders/zf/g9bpd9s55sv10tz2mnhqch800000gn/T/ads-intel-live-eval-a5skrx5s/tmp5o3yik_r",
   "search_summary": {
     "count": 13,
     "complete": true,
@@ -14,7 +14,7 @@
       "Al Nahda Gift Center",
       "Pizza Hut"
     ],
-    "seconds": 7.84
+    "seconds": 12.88
   },
   "advertiser_summary": {
     "count": 10,
@@ -30,7 +30,7 @@
     "page_names": [
       "Pizza Hut"
     ],
-    "seconds": 0.01
+    "seconds": 6.49
   },
   "watch_add": {
     "error": null,
@@ -62,7 +62,7 @@
     "new_page_names": [
       "Pizza Hut"
     ],
-    "seconds": 0.01
+    "seconds": 5.6
   },
   "check2": {
     "query": "Pizza Hut",
@@ -77,13 +77,14 @@
     "changed_ads": 0,
     "partial": false,
     "artifacts": {
-      "html": "/var/folders/zf/g9bpd9s55sv10tz2mnhqch800000gn/T/ads-intel-live-eval-nh_o8wp3/tmpyqmwtx3d/reports/04d0893737dfd95a.html",
-      "digest": "/var/folders/zf/g9bpd9s55sv10tz2mnhqch800000gn/T/ads-intel-live-eval-nh_o8wp3/tmpyqmwtx3d/reports/04d0893737dfd95a.digest.json"
+      "html": "artifacts/check2/html.html",
+      "digest": "artifacts/check2/digest.json"
     },
     "new_page_names": [],
-    "seconds": 0.01
+    "seconds": 6.26
   },
   "artifacts_ok": true,
+  "artifacts2_ok": true,
   "currency": {
     "expected": "AED",
     "found": [],
@@ -94,14 +95,14 @@
     "currency_missing: AED absent from AE ad text"
   ],
   "timings": {
-    "search": 7.84,
-    "advertiser_search": 0.01,
-    "check1": 0.01,
-    "check2": 0.01,
-    "total": 7.87
+    "search": 12.88,
+    "advertiser_search": 6.49,
+    "check1": 5.6,
+    "check2": 6.26,
+    "total": 31.23
   },
   "attempts": {
-    "total": 4,
+    "total": 8,
     "failed": 0
   }
 }

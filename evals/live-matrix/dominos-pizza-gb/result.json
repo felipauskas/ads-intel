@@ -3,26 +3,26 @@
   "country": "GB",
   "advertiser": "Domino's Pizza",
   "folder": "evals/live-matrix/dominos-pizza-gb",
-  "data_dir": "/var/folders/zf/g9bpd9s55sv10tz2mnhqch800000gn/T/ads-intel-live-eval-50w011gi/tmpphegnr7c",
+  "data_dir": "/var/folders/zf/g9bpd9s55sv10tz2mnhqch800000gn/T/ads-intel-live-eval-a5skrx5s/tmp9bz7gddr",
   "search_summary": {
-    "count": 17,
+    "count": 19,
     "complete": true,
-    "fetched": 17,
+    "fetched": 19,
     "country": "GB",
     "error": null,
     "page_names": [
       "Domino's Pizza",
       "Alfre-dough Pizza & Kebab",
       "Big Potato",
+      "giftitng",
       "Carpe",
       "Pizza Town Sudbury",
-      "SPORTbible",
       "Pizza Pizza"
     ],
-    "seconds": 2.96
+    "seconds": 7.78
   },
   "advertiser_summary": {
-    "count": 11,
+    "count": 13,
     "complete": true,
     "resolved": {
       "page_name": "Domino's Pizza",
@@ -35,7 +35,7 @@
     "page_names": [
       "Domino's Pizza"
     ],
-    "seconds": 0.02
+    "seconds": 0.01
   },
   "watch_add": {
     "error": null,
@@ -56,7 +56,7 @@
       "page_name": "Domino's Pizza",
       "score": 0.8
     },
-    "new_ads": 11,
+    "new_ads": 13,
     "ended_ads": 0,
     "changed_ads": 0,
     "partial": false,
@@ -67,7 +67,7 @@
     "new_page_names": [
       "Domino's Pizza"
     ],
-    "seconds": 0.02
+    "seconds": 0.01
   },
   "check2": {
     "query": "Domino's Pizza",
@@ -82,13 +82,14 @@
     "changed_ads": 0,
     "partial": false,
     "artifacts": {
-      "html": "/var/folders/zf/g9bpd9s55sv10tz2mnhqch800000gn/T/ads-intel-live-eval-50w011gi/tmpphegnr7c/reports/e236b5d9abfb0240.html",
-      "digest": "/var/folders/zf/g9bpd9s55sv10tz2mnhqch800000gn/T/ads-intel-live-eval-50w011gi/tmpphegnr7c/reports/e236b5d9abfb0240.digest.json"
+      "html": "artifacts/check2/html.html",
+      "digest": "artifacts/check2/digest.json"
     },
     "new_page_names": [],
     "seconds": 0.01
   },
   "artifacts_ok": true,
+  "artifacts2_ok": true,
   "currency": {
     "expected": null,
     "found": [],
@@ -97,11 +98,11 @@
   "status": "PASS",
   "failures": [],
   "timings": {
-    "search": 2.96,
-    "advertiser_search": 0.02,
-    "check1": 0.02,
+    "search": 7.78,
+    "advertiser_search": 0.01,
+    "check1": 0.01,
     "check2": 0.01,
-    "total": 3.01
+    "total": 7.81
   },
   "attempts": {
     "total": 4,

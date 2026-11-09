@@ -5,29 +5,71 @@
     {
       "phase": "search",
       "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=SA&q=Pizza+Hut&media_type=all&search_type=keyword_unordered",
-      "seconds": 4.32,
-      "chars": 120424,
+      "seconds": 4.7,
+      "chars": 2069,
+      "failed": false
+    },
+    {
+      "phase": "search",
+      "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=SA&q=Pizza+Hut&media_type=all&search_type=keyword_unordered&cache_bust=02ecf42976c943c0b91d9b260afcb68b",
+      "seconds": 5.35,
+      "chars": 2069,
+      "failed": false
+    },
+    {
+      "phase": "search",
+      "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=SA&q=Pizza+Hut&media_type=all&search_type=keyword_unordered&cache_bust=ff7da1d6fbc4448f8103481b2d138a02",
+      "seconds": 6.3,
+      "chars": 5159,
+      "failed": false
+    },
+    {
+      "phase": "search",
+      "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=SA&q=Pizza+Hut&media_type=all&search_type=keyword_unordered&cache_bust=ec61b9b49b9545c886c22066b646b491",
+      "seconds": 7.1,
+      "chars": 46840,
       "failed": false
     },
     {
       "phase": "advertiser_search",
       "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=SA&q=Pizza+Hut&media_type=all&search_type=keyword_unordered",
       "seconds": 0.01,
-      "chars": 120424,
+      "chars": 2069,
+      "failed": false
+    },
+    {
+      "phase": "advertiser_search",
+      "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=SA&q=Pizza+Hut&media_type=all&search_type=keyword_unordered&cache_bust=23c35f6c86f0492980286526ed7b7b7d",
+      "seconds": 6.67,
+      "chars": 46840,
       "failed": false
     },
     {
       "phase": "check1",
       "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=SA&q=Pizza+Hut&media_type=all&search_type=keyword_unordered",
       "seconds": 0.01,
-      "chars": 120424,
+      "chars": 2069,
+      "failed": false
+    },
+    {
+      "phase": "check1",
+      "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=SA&q=Pizza+Hut&media_type=all&search_type=keyword_unordered&cache_bust=410cef0673cf4bd5b5ea2129fce635c9",
+      "seconds": 6.21,
+      "chars": 46840,
       "failed": false
     },
     {
       "phase": "check2",
       "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=SA&q=Pizza+Hut&media_type=all&search_type=keyword_unordered",
       "seconds": 0.01,
-      "chars": 120424,
+      "chars": 2069,
+      "failed": false
+    },
+    {
+      "phase": "check2",
+      "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=SA&q=Pizza+Hut&media_type=all&search_type=keyword_unordered&cache_bust=1a7796d3b14240ce92817039b621602a",
+      "seconds": 6.82,
+      "chars": 46840,
       "failed": false
     }
   ]

@@ -3,7 +3,7 @@
   "country": "SA",
   "advertiser": "KFC",
   "folder": "evals/live-matrix/kfc-sa",
-  "data_dir": "/var/folders/zf/g9bpd9s55sv10tz2mnhqch800000gn/T/ads-intel-live-eval-nh_o8wp3/tmp1prs44ql",
+  "data_dir": "/var/folders/zf/g9bpd9s55sv10tz2mnhqch800000gn/T/ads-intel-live-eval-a5skrx5s/tmpwpfv8_ob",
   "search_summary": {
     "count": 20,
     "complete": false,
@@ -14,7 +14,7 @@
       "KFC",
       "Zain Bahrain"
     ],
-    "seconds": 5.41
+    "seconds": 5.66
   },
   "advertiser_summary": {
     "count": 20,
@@ -77,13 +77,14 @@
     "changed_ads": 0,
     "partial": false,
     "artifacts": {
-      "html": "/var/folders/zf/g9bpd9s55sv10tz2mnhqch800000gn/T/ads-intel-live-eval-nh_o8wp3/tmp1prs44ql/reports/1a89429d91ab91bc.html",
-      "digest": "/var/folders/zf/g9bpd9s55sv10tz2mnhqch800000gn/T/ads-intel-live-eval-nh_o8wp3/tmp1prs44ql/reports/1a89429d91ab91bc.digest.json"
+      "html": "artifacts/check2/html.html",
+      "digest": "artifacts/check2/digest.json"
     },
     "new_page_names": [],
     "seconds": 0.01
   },
   "artifacts_ok": true,
+  "artifacts2_ok": true,
   "currency": {
     "expected": null,
     "found": [],
@@ -92,11 +93,11 @@
   "status": "PASS",
   "failures": [],
   "timings": {
-    "search": 5.41,
+    "search": 5.66,
     "advertiser_search": 0.01,
     "check1": 0.01,
     "check2": 0.01,
-    "total": 5.44
+    "total": 5.69
   },
   "attempts": {
     "total": 4,

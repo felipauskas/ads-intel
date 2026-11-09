@@ -4,25 +4,29 @@
 - advertiser filter: `McDonald's`
 
 ## Keyword search (`active_status=active`, limit 20)
-- count: None  complete: None  fetched: None  error: parse_failed: render (5161 chars) with no card markers or empty-state text
-- page names: —
-- seconds: 21.73
+- count: 20  complete: False  fetched: 20  error: None
+- page names: McDonald's, 蝦皮購物 (Shopee), McDonaldsksa\_ws, اسلامي نبض حياتي, DoubleData, Motive8 Auto detailing and auto accessories, Franquicia IA, Monopoly GO, Room for Rent para sa mga OFW'S
+- seconds: 20.16
 
 ## Advertiser search
-- count: 2  resolved: {'page_name': "McDonald's", 'score': 0.8}  error: None
+- count: 3  resolved: {'page_name': "McDonald's", 'score': 0.8}  error: None
 - page names: McDonald's
-- seconds: 19.65
+- seconds: 7.59
 
 ## Watch checks
-- check1: new=2 ended=0 changed=0 partial=False error=None seconds=11.63
-- check2: new=0 ended=0 changed=0 partial=False error=None seconds=11.8
-- artifacts: {"html": "artifacts/html.html", "digest": "artifacts/digest.json"} (ok=True)
+- check1: new=None ended=None changed=None partial=True error=None seconds=19.52
+- check2: new=None ended=None changed=None partial=True error=None seconds=17.93
+- artifacts: {"error": "parse_failed"} (ok=False)
+- artifacts check2: {"error": "parse_failed"} (ok=False)
 
 ## Currency spot-check
 - expected: —  found: none  ok: None
 
 ## Hydration
-- attempts: 14  failed: 0
+- attempts: 13  failed: 0
 
 ## Failures
-- search_error: parse_failed: render (5161 chars) with no card markers or empty-state text
+- check1_no_new_ads: (None, None, None)
+- check2_not_settled: (None, None, None)
+- artifacts_error: parse_failed
+- artifacts2_error: parse_failed

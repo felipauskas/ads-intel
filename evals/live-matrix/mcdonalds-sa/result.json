@@ -3,18 +3,28 @@
   "country": "SA",
   "advertiser": "McDonald's",
   "folder": "evals/live-matrix/mcdonalds-sa",
-  "data_dir": "/var/folders/zf/g9bpd9s55sv10tz2mnhqch800000gn/T/ads-intel-live-eval-nh_o8wp3/tmpvb0fdet1",
+  "data_dir": "/var/folders/zf/g9bpd9s55sv10tz2mnhqch800000gn/T/ads-intel-live-eval-a5skrx5s/tmpsdpra5xw",
   "search_summary": {
-    "count": null,
-    "complete": null,
-    "fetched": null,
-    "country": null,
-    "error": "parse_failed: render (5161 chars) with no card markers or empty-state text",
-    "page_names": [],
-    "seconds": 21.73
+    "count": 20,
+    "complete": false,
+    "fetched": 20,
+    "country": "SA",
+    "error": null,
+    "page_names": [
+      "McDonald's",
+      "蝦皮購物 (Shopee)",
+      "McDonaldsksa\\_ws",
+      "اسلامي نبض حياتي",
+      "DoubleData",
+      "Motive8 Auto detailing and auto accessories",
+      "Franquicia IA",
+      "Monopoly GO",
+      "Room for Rent para sa mga OFW'S"
+    ],
+    "seconds": 20.16
   },
   "advertiser_summary": {
-    "count": 2,
+    "count": 3,
     "complete": true,
     "resolved": {
       "page_name": "McDonald's",
@@ -27,7 +37,7 @@
     "page_names": [
       "McDonald's"
     ],
-    "seconds": 19.65
+    "seconds": 7.59
   },
   "watch_add": {
     "error": null,
@@ -43,44 +53,35 @@
   "check1": {
     "query": "McDonald's",
     "country": "SA",
-    "advertiser": "McDonald's",
-    "resolved": {
-      "page_name": "McDonald's",
-      "score": 0.8
-    },
-    "new_ads": 2,
-    "ended_ads": 0,
-    "changed_ads": 0,
-    "partial": false,
+    "partial": true,
+    "skipped": true,
+    "reason": "parse_failed",
     "artifacts": {
-      "html": "artifacts/html.html",
-      "digest": "artifacts/digest.json"
+      "error": "parse_failed"
     },
-    "new_page_names": [
-      "McDonald's"
-    ],
-    "seconds": 11.63
+    "new_page_names": [],
+    "seconds": 19.52,
+    "artifact_problems": [
+      "artifacts_error: parse_failed"
+    ]
   },
   "check2": {
     "query": "McDonald's",
     "country": "SA",
-    "advertiser": "McDonald's",
-    "resolved": {
-      "page_name": "McDonald's",
-      "score": 0.8
-    },
-    "new_ads": 0,
-    "ended_ads": 0,
-    "changed_ads": 0,
-    "partial": false,
+    "partial": true,
+    "skipped": true,
+    "reason": "parse_failed",
     "artifacts": {
-      "html": "/var/folders/zf/g9bpd9s55sv10tz2mnhqch800000gn/T/ads-intel-live-eval-nh_o8wp3/tmpvb0fdet1/reports/71a541e7f365c9ab.html",
-      "digest": "/var/folders/zf/g9bpd9s55sv10tz2mnhqch800000gn/T/ads-intel-live-eval-nh_o8wp3/tmpvb0fdet1/reports/71a541e7f365c9ab.digest.json"
+      "error": "parse_failed"
     },
     "new_page_names": [],
-    "seconds": 11.8
+    "seconds": 17.93,
+    "artifact_problems": [
+      "artifacts_error: parse_failed"
+    ]
   },
-  "artifacts_ok": true,
+  "artifacts_ok": false,
+  "artifacts2_ok": false,
   "currency": {
     "expected": null,
     "found": [],
@@ -88,17 +89,20 @@
   },
   "status": "FAIL",
   "failures": [
-    "search_error: parse_failed: render (5161 chars) with no card markers or empty-state text"
+    "check1_no_new_ads: (None, None, None)",
+    "check2_not_settled: (None, None, None)",
+    "artifacts_error: parse_failed",
+    "artifacts2_error: parse_failed"
   ],
   "timings": {
-    "search": 21.73,
-    "advertiser_search": 19.65,
-    "check1": 11.63,
-    "check2": 11.8,
-    "total": 64.81
+    "search": 20.16,
+    "advertiser_search": 7.59,
+    "check1": 19.52,
+    "check2": 17.93,
+    "total": 65.2
   },
   "attempts": {
-    "total": 14,
+    "total": 13,
     "failed": 0
   }
 }

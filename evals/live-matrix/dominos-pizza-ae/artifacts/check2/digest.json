@@ -1,0 +1,16 @@
+{
+  "query": "Domino's Pizza",
+  "country": "AE",
+  "checked_at": "2026-11-09T12:05:49",
+  "partial": false,
+  "total": 2,
+  "new": 0,
+  "ended": 0,
+  "changed": 0,
+  "with_link": 2,
+  "with_cta": 2,
+  "with_images": 2,
+  "with_same_creative": 0,
+  "with_multiple_versions": 0,
+  "advertiser": "Domino's Pizza"
+}

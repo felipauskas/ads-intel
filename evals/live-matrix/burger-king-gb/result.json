@@ -3,38 +3,26 @@
   "country": "GB",
   "advertiser": "Burger King",
   "folder": "evals/live-matrix/burger-king-gb",
-  "data_dir": "/var/folders/zf/g9bpd9s55sv10tz2mnhqch800000gn/T/ads-intel-live-eval-loijggjy/tmpflhpysfh",
+  "data_dir": "/var/folders/zf/g9bpd9s55sv10tz2mnhqch800000gn/T/ads-intel-live-eval-a5skrx5s/tmpt05ug46_",
   "search_summary": {
-    "count": 20,
-    "complete": false,
-    "fetched": 20,
-    "country": "GB",
-    "error": null,
-    "page_names": [
-      "Burger King UK",
-      "Deliveroo",
-      "37GS Residences",
-      "Wolt",
-      "DoorDash",
-      "The Sparrow Hotel, Bar & Restaurant"
-    ],
-    "seconds": 3.13
+    "count": null,
+    "complete": null,
+    "fetched": null,
+    "country": null,
+    "error": "parse_failed: render (5219 chars) with no card markers or empty-state text",
+    "page_names": [],
+    "seconds": 30.16
   },
   "advertiser_summary": {
-    "count": 4,
-    "complete": false,
-    "resolved": {
-      "page_name": "Burger King UK",
-      "score": 0.8
-    },
-    "error": null,
+    "count": null,
+    "complete": null,
+    "resolved": null,
+    "error": "parse_failed: render (5219 chars) with no card markers or empty-state text",
     "target": null,
     "candidates": null,
     "threshold": null,
-    "page_names": [
-      "Burger King UK"
-    ],
-    "seconds": 0.02
+    "page_names": [],
+    "seconds": 22.41
   },
   "watch_add": {
     "error": null,
@@ -50,60 +38,58 @@
   "check1": {
     "query": "Burger King",
     "country": "GB",
-    "advertiser": "Burger King",
-    "resolved": {
-      "page_name": "Burger King UK",
-      "score": 0.8
-    },
-    "new_ads": 4,
-    "ended_ads": 0,
-    "changed_ads": 0,
     "partial": true,
+    "skipped": true,
+    "reason": "parse_failed",
     "artifacts": {
-      "html": "artifacts/html.html",
-      "digest": "artifacts/digest.json"
+      "error": "parse_failed"
     },
-    "new_page_names": [
-      "Burger King UK"
-    ],
-    "seconds": 0.02
+    "new_page_names": [],
+    "seconds": 20.88,
+    "artifact_problems": [
+      "artifacts_error: parse_failed"
+    ]
   },
   "check2": {
     "query": "Burger King",
     "country": "GB",
-    "advertiser": "Burger King",
-    "resolved": {
-      "page_name": "Burger King UK",
-      "score": 0.8
-    },
-    "new_ads": 0,
-    "ended_ads": 0,
-    "changed_ads": 0,
     "partial": true,
+    "skipped": true,
+    "reason": "parse_failed",
     "artifacts": {
-      "html": "/var/folders/zf/g9bpd9s55sv10tz2mnhqch800000gn/T/ads-intel-live-eval-loijggjy/tmpflhpysfh/reports/8453ad70264c55f8.html",
-      "digest": "/var/folders/zf/g9bpd9s55sv10tz2mnhqch800000gn/T/ads-intel-live-eval-loijggjy/tmpflhpysfh/reports/8453ad70264c55f8.digest.json"
+      "error": "parse_failed"
     },
     "new_page_names": [],
-    "seconds": 0.01
+    "seconds": 19.91,
+    "artifact_problems": [
+      "artifacts_error: parse_failed"
+    ]
   },
-  "artifacts_ok": true,
+  "artifacts_ok": false,
+  "artifacts2_ok": false,
   "currency": {
     "expected": null,
     "found": [],
     "ok": null
   },
-  "status": "PASS",
-  "failures": [],
+  "status": "FAIL",
+  "failures": [
+    "search_error: parse_failed: render (5219 chars) with no card markers or empty-state text",
+    "advertiser_error: parse_failed: render (5219 chars) with no card markers or empty-state text",
+    "check1_no_new_ads: (None, None, None)",
+    "check2_not_settled: (None, None, None)",
+    "artifacts_error: parse_failed",
+    "artifacts2_error: parse_failed"
+  ],
   "timings": {
-    "search": 3.13,
-    "advertiser_search": 0.02,
-    "check1": 0.02,
-    "check2": 0.01,
-    "total": 3.18
+    "search": 30.16,
+    "advertiser_search": 22.41,
+    "check1": 20.88,
+    "check2": 19.91,
+    "total": 93.36
   },
   "attempts": {
-    "total": 4,
+    "total": 16,
     "failed": 0
   }
 }

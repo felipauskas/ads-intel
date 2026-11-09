@@ -5,29 +5,29 @@
     {
       "phase": "search",
       "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=GB&q=Domino%27s+Pizza&media_type=all&search_type=keyword_unordered",
-      "seconds": 2.96,
-      "chars": 31806,
+      "seconds": 7.78,
+      "chars": 30775,
       "failed": false
     },
     {
       "phase": "advertiser_search",
       "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=GB&q=Domino%27s+Pizza&media_type=all&search_type=keyword_unordered",
       "seconds": 0.01,
-      "chars": 31806,
+      "chars": 30775,
       "failed": false
     },
     {
       "phase": "check1",
       "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=GB&q=Domino%27s+Pizza&media_type=all&search_type=keyword_unordered",
       "seconds": 0.01,
-      "chars": 31806,
+      "chars": 30775,
       "failed": false
     },
     {
       "phase": "check2",
       "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=GB&q=Domino%27s+Pizza&media_type=all&search_type=keyword_unordered",
       "seconds": 0.01,
-      "chars": 31806,
+      "chars": 30775,
       "failed": false
     }
   ]

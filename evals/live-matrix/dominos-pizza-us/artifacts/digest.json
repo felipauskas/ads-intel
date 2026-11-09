@@ -1,10 +1,10 @@
 {
   "query": "Domino's Pizza",
   "country": "US",
-  "checked_at": "2026-11-08T14:03:56",
+  "checked_at": "2026-11-09T12:07:25",
   "partial": false,
   "total": 18,
-  "new": 0,
+  "new": 18,
   "ended": 0,
   "changed": 0,
   "with_link": 18,

@@ -3,38 +3,26 @@
   "country": "US",
   "advertiser": "Burger King",
   "folder": "evals/live-matrix/burger-king-us",
-  "data_dir": "/var/folders/zf/g9bpd9s55sv10tz2mnhqch800000gn/T/ads-intel-live-eval-nh_o8wp3/tmp9nelfnxs",
+  "data_dir": "/var/folders/zf/g9bpd9s55sv10tz2mnhqch800000gn/T/ads-intel-live-eval-a5skrx5s/tmppb5plb2z",
   "search_summary": {
-    "count": 20,
-    "complete": false,
-    "fetched": 20,
-    "country": "US",
-    "error": null,
-    "page_names": [
-      "Burger King",
-      "The Krazy Coupon Lady",
-      "DoorDash",
-      "WNC Dist. Shop",
-      "Wolt",
-      "Extra News"
-    ],
-    "seconds": 6.06
+    "count": null,
+    "complete": null,
+    "fetched": null,
+    "country": null,
+    "error": "parse_failed: render (5218 chars) with no card markers or empty-state text",
+    "page_names": [],
+    "seconds": 39.28
   },
   "advertiser_summary": {
-    "count": 10,
-    "complete": true,
-    "resolved": {
-      "page_name": "Burger King",
-      "score": 0.8
-    },
-    "error": null,
+    "count": null,
+    "complete": null,
+    "resolved": null,
+    "error": "parse_failed: render (5218 chars) with no card markers or empty-state text",
     "target": null,
     "candidates": null,
     "threshold": null,
-    "page_names": [
-      "Burger King"
-    ],
-    "seconds": 0.01
+    "page_names": [],
+    "seconds": 22.63
   },
   "watch_add": {
     "error": null,
@@ -66,7 +54,7 @@
     "new_page_names": [
       "Burger King"
     ],
-    "seconds": 0.02
+    "seconds": 16.85
   },
   "check2": {
     "query": "Burger King",
@@ -81,29 +69,33 @@
     "changed_ads": 0,
     "partial": false,
     "artifacts": {
-      "html": "/var/folders/zf/g9bpd9s55sv10tz2mnhqch800000gn/T/ads-intel-live-eval-nh_o8wp3/tmp9nelfnxs/reports/9f1398139319eafc.html",
-      "digest": "/var/folders/zf/g9bpd9s55sv10tz2mnhqch800000gn/T/ads-intel-live-eval-nh_o8wp3/tmp9nelfnxs/reports/9f1398139319eafc.digest.json"
+      "html": "artifacts/check2/html.html",
+      "digest": "artifacts/check2/digest.json"
     },
     "new_page_names": [],
-    "seconds": 0.01
+    "seconds": 20.29
   },
   "artifacts_ok": true,
+  "artifacts2_ok": true,
   "currency": {
     "expected": null,
     "found": [],
     "ok": null
   },
-  "status": "PASS",
-  "failures": [],
+  "status": "FAIL",
+  "failures": [
+    "search_error: parse_failed: render (5218 chars) with no card markers or empty-state text",
+    "advertiser_error: parse_failed: render (5218 chars) with no card markers or empty-state text"
+  ],
   "timings": {
-    "search": 6.06,
-    "advertiser_search": 0.01,
-    "check1": 0.02,
-    "check2": 0.01,
-    "total": 6.1
+    "search": 39.28,
+    "advertiser_search": 22.63,
+    "check1": 16.85,
+    "check2": 20.29,
+    "total": 99.05
   },
   "attempts": {
-    "total": 4,
+    "total": 15,
     "failed": 0
   }
 }

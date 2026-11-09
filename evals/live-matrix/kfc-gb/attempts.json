@@ -5,78 +5,29 @@
     {
       "phase": "search",
       "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=GB&q=KFC&media_type=all&search_type=keyword_unordered",
-      "seconds": 5.1,
-      "chars": 5199,
-      "failed": false
-    },
-    {
-      "phase": "search",
-      "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=GB&q=KFC&media_type=all&search_type=keyword_unordered&cache_bust=e5c3110f24124a5280b975dcaee72b86",
-      "seconds": 6.42,
-      "chars": 83225,
+      "seconds": 8.18,
+      "chars": 120008,
       "failed": false
     },
     {
       "phase": "advertiser_search",
       "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=GB&q=KFC&media_type=all&search_type=keyword_unordered",
       "seconds": 0.02,
-      "chars": 5199,
-      "failed": false
-    },
-    {
-      "phase": "advertiser_search",
-      "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=GB&q=KFC&media_type=all&search_type=keyword_unordered&cache_bust=c5ae1d563b2c47719fdb6afab75550c5",
-      "seconds": 6.12,
-      "chars": 5199,
-      "failed": false
-    },
-    {
-      "phase": "advertiser_search",
-      "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=GB&q=KFC&media_type=all&search_type=keyword_unordered&cache_bust=c5c50b507d1543089862fef627869926",
-      "seconds": 5.45,
-      "chars": 5199,
-      "failed": false
-    },
-    {
-      "phase": "advertiser_search",
-      "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=GB&q=KFC&media_type=all&search_type=keyword_unordered&cache_bust=78bf3f188b674cef92638bb22cbfb409",
-      "seconds": 5.78,
-      "chars": 5199,
+      "chars": 120008,
       "failed": false
     },
     {
       "phase": "check1",
       "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=GB&q=KFC&media_type=all&search_type=keyword_unordered",
       "seconds": 0.01,
-      "chars": 5199,
-      "failed": false
-    },
-    {
-      "phase": "check1",
-      "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=GB&q=KFC&media_type=all&search_type=keyword_unordered&cache_bust=eff26acc8a6d4570a708ce5675faaf0c",
-      "seconds": 6.07,
-      "chars": 78653,
+      "chars": 120008,
       "failed": false
     },
     {
       "phase": "check2",
       "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=GB&q=KFC&media_type=all&search_type=keyword_unordered",
       "seconds": 0.01,
-      "chars": 5199,
-      "failed": false
-    },
-    {
-      "phase": "check2",
-      "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=GB&q=KFC&media_type=all&search_type=keyword_unordered&cache_bust=023965040ec6432a87223e7215f185ab",
-      "seconds": 4.68,
-      "chars": 2055,
-      "failed": false
-    },
-    {
-      "phase": "check2",
-      "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=GB&q=KFC&media_type=all&search_type=keyword_unordered&cache_bust=684e698f48434529811ed46e987ac4af",
-      "seconds": 5.65,
-      "chars": 83225,
+      "chars": 120008,
       "failed": false
     }
   ]

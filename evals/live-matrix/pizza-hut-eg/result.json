@@ -3,22 +3,23 @@
   "country": "EG",
   "advertiser": "Pizza Hut",
   "folder": "evals/live-matrix/pizza-hut-eg",
-  "data_dir": "/var/folders/zf/g9bpd9s55sv10tz2mnhqch800000gn/T/ads-intel-live-eval-nh_o8wp3/tmpqwp46ah7",
+  "data_dir": "/var/folders/zf/g9bpd9s55sv10tz2mnhqch800000gn/T/ads-intel-live-eval-a5skrx5s/tmp06_ttbve",
   "search_summary": {
-    "count": 10,
-    "complete": false,
-    "fetched": 10,
+    "count": 11,
+    "complete": true,
+    "fetched": 11,
     "country": "EG",
     "error": null,
     "page_names": [
-      "Read well",
-      "Pizza Hut"
+      "Igigrcia",
+      "Pizza Hut",
+      "Life Luxury"
     ],
-    "seconds": 6.23
+    "seconds": 6.14
   },
   "advertiser_summary": {
     "count": 9,
-    "complete": false,
+    "complete": true,
     "resolved": {
       "page_name": "Pizza Hut",
       "score": 0.8
@@ -54,7 +55,7 @@
     "new_ads": 9,
     "ended_ads": 0,
     "changed_ads": 0,
-    "partial": true,
+    "partial": false,
     "artifacts": {
       "html": "artifacts/html.html",
       "digest": "artifacts/digest.json"
@@ -62,7 +63,7 @@
     "new_page_names": [
       "Pizza Hut"
     ],
-    "seconds": 0.02
+    "seconds": 0.01
   },
   "check2": {
     "query": "Pizza Hut",
@@ -75,15 +76,16 @@
     "new_ads": 0,
     "ended_ads": 0,
     "changed_ads": 0,
-    "partial": true,
+    "partial": false,
     "artifacts": {
-      "html": "/var/folders/zf/g9bpd9s55sv10tz2mnhqch800000gn/T/ads-intel-live-eval-nh_o8wp3/tmpqwp46ah7/reports/168e6da1dc8ab0c6.html",
-      "digest": "/var/folders/zf/g9bpd9s55sv10tz2mnhqch800000gn/T/ads-intel-live-eval-nh_o8wp3/tmpqwp46ah7/reports/168e6da1dc8ab0c6.digest.json"
+      "html": "artifacts/check2/html.html",
+      "digest": "artifacts/check2/digest.json"
     },
     "new_page_names": [],
-    "seconds": 0.02
+    "seconds": 0.01
   },
   "artifacts_ok": true,
+  "artifacts2_ok": true,
   "currency": {
     "expected": "EGP/جنيه",
     "found": [
@@ -94,11 +96,11 @@
   "status": "PASS",
   "failures": [],
   "timings": {
-    "search": 6.23,
+    "search": 6.14,
     "advertiser_search": 0.02,
-    "check1": 0.02,
-    "check2": 0.02,
-    "total": 6.29
+    "check1": 0.01,
+    "check2": 0.01,
+    "total": 6.18
   },
   "attempts": {
     "total": 4,

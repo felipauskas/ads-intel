@@ -3,23 +3,26 @@
   "country": "SA",
   "advertiser": "Pizza Hut",
   "folder": "evals/live-matrix/pizza-hut-sa",
-  "data_dir": "/var/folders/zf/g9bpd9s55sv10tz2mnhqch800000gn/T/ads-intel-live-eval-jzjdo48k/tmp_zxx2rqo",
+  "data_dir": "/var/folders/zf/g9bpd9s55sv10tz2mnhqch800000gn/T/ads-intel-live-eval-a5skrx5s/tmp7gsk11a2",
   "search_summary": {
-    "count": 6,
-    "complete": false,
-    "fetched": 6,
+    "count": 15,
+    "complete": true,
+    "fetched": 15,
     "country": "SA",
     "error": null,
     "page_names": [
-      "Read well",
+      "Past Insights",
       "Pizza Hut KSA",
-      "Giftops Delivery Services"
+      "Giftops Delivery Services",
+      "Pizza Hut ME",
+      "Frederick Wilson",
+      "Igigrcia"
     ],
-    "seconds": 4.33
+    "seconds": 23.45
   },
   "advertiser_summary": {
     "count": 4,
-    "complete": false,
+    "complete": true,
     "resolved": {
       "page_name": "Pizza Hut KSA",
       "score": 0.8
@@ -31,7 +34,7 @@
     "page_names": [
       "Pizza Hut KSA"
     ],
-    "seconds": 0.02
+    "seconds": 6.69
   },
   "watch_add": {
     "error": null,
@@ -55,7 +58,7 @@
     "new_ads": 4,
     "ended_ads": 0,
     "changed_ads": 0,
-    "partial": true,
+    "partial": false,
     "artifacts": {
       "html": "artifacts/html.html",
       "digest": "artifacts/digest.json"
@@ -63,7 +66,7 @@
     "new_page_names": [
       "Pizza Hut KSA"
     ],
-    "seconds": 0.02
+    "seconds": 6.22
   },
   "check2": {
     "query": "Pizza Hut",
@@ -76,15 +79,16 @@
     "new_ads": 0,
     "ended_ads": 0,
     "changed_ads": 0,
-    "partial": true,
+    "partial": false,
     "artifacts": {
-      "html": "/var/folders/zf/g9bpd9s55sv10tz2mnhqch800000gn/T/ads-intel-live-eval-jzjdo48k/tmp_zxx2rqo/reports/5bd5298a4d29d9b7.html",
-      "digest": "/var/folders/zf/g9bpd9s55sv10tz2mnhqch800000gn/T/ads-intel-live-eval-jzjdo48k/tmp_zxx2rqo/reports/5bd5298a4d29d9b7.digest.json"
+      "html": "artifacts/check2/html.html",
+      "digest": "artifacts/check2/digest.json"
     },
     "new_page_names": [],
-    "seconds": 0.02
+    "seconds": 6.84
   },
   "artifacts_ok": true,
+  "artifacts2_ok": true,
   "currency": {
     "expected": null,
     "found": [],
@@ -93,14 +97,14 @@
   "status": "PASS",
   "failures": [],
   "timings": {
-    "search": 4.33,
-    "advertiser_search": 0.02,
-    "check1": 0.02,
-    "check2": 0.02,
-    "total": 4.39
+    "search": 23.45,
+    "advertiser_search": 6.69,
+    "check1": 6.22,
+    "check2": 6.84,
+    "total": 43.2
   },
   "attempts": {
-    "total": 4,
+    "total": 10,
     "failed": 0
   }
 }

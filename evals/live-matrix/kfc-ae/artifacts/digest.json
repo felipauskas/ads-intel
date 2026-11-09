@@ -1,10 +1,10 @@
 {
   "query": "KFC",
   "country": "AE",
-  "checked_at": "2026-11-08T13:37:42",
+  "checked_at": "2026-11-09T11:53:34",
   "partial": false,
   "total": 17,
-  "new": 0,
+  "new": 17,
   "ended": 0,
   "changed": 0,
   "with_link": 16,

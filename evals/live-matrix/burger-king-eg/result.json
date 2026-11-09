@@ -3,7 +3,7 @@
   "country": "EG",
   "advertiser": "Burger King",
   "folder": "evals/live-matrix/burger-king-eg",
-  "data_dir": "/var/folders/zf/g9bpd9s55sv10tz2mnhqch800000gn/T/ads-intel-live-eval-loijggjy/tmpky41908k",
+  "data_dir": "/var/folders/zf/g9bpd9s55sv10tz2mnhqch800000gn/T/ads-intel-live-eval-a7rj07r3/tmp9jl0wtxz",
   "search_summary": {
     "count": 20,
     "complete": false,
@@ -11,37 +11,44 @@
     "country": "EG",
     "error": null,
     "page_names": [
-      "Shortdrama-zlin-06",
+      "Ns-zlin-0125",
       "BUFFALO BURGER",
       "Burger King Malaysia",
       "DoorDash",
-      "عيادة أ.د/ عبد السلام عيد لجراحات العظام وجراحات ومناظير الكتف واليد",
       "Cholesterol Relief Community",
       "BlazeReel Drama",
       "Tatiana Salazar",
       "Ns-YXB-ST2dd",
+      "Talabat",
       "Xc-twoseven-One",
       "NS-Zs-02",
-      "宵の語り",
-      "Ns-st-zsuse"
+      "Ns-st-zsuse",
+      "LumaWorld",
+      "비밀의 저택에서",
+      "Shortdrama-zlin-06",
+      "Burger King Arabia"
     ],
-    "seconds": 3.41
+    "seconds": 13.91
   },
   "advertiser_summary": {
-    "count": 1,
-    "complete": false,
-    "resolved": {
-      "page_name": "Burger King Malaysia",
-      "score": 0.8
-    },
-    "error": null,
-    "target": null,
-    "candidates": null,
-    "threshold": null,
-    "page_names": [
-      "Burger King Malaysia"
+    "count": null,
+    "complete": null,
+    "resolved": null,
+    "error": "name_not_matched",
+    "target": "Burger King",
+    "candidates": [
+      {
+        "page_name": "Burger King Malaysia",
+        "score": 0.8
+      },
+      {
+        "page_name": "Burger King Arabia",
+        "score": 0.8
+      }
     ],
-    "seconds": 0.02
+    "threshold": 0.8,
+    "page_names": [],
+    "seconds": 8.36
   },
   "watch_add": {
     "error": null,
@@ -58,59 +65,79 @@
     "query": "Burger King",
     "country": "EG",
     "advertiser": "Burger King",
-    "resolved": {
-      "page_name": "Burger King Malaysia",
-      "score": 0.8
-    },
-    "new_ads": 1,
-    "ended_ads": 0,
-    "changed_ads": 0,
     "partial": true,
-    "artifacts": {
-      "html": "artifacts/html.html",
-      "digest": "artifacts/digest.json"
-    },
-    "new_page_names": [
-      "Burger King Malaysia"
+    "error": "name_not_matched",
+    "target": "Burger King",
+    "candidates": [
+      {
+        "page_name": "Burger King Malaysia",
+        "score": 0.8
+      },
+      {
+        "page_name": "Burger King Arabia",
+        "score": 0.8
+      }
     ],
-    "seconds": 0.02
+    "threshold": 0.8,
+    "artifacts": {
+      "error": "name_not_matched"
+    },
+    "new_page_names": [],
+    "seconds": 19.92,
+    "artifact_problems": [
+      "artifacts_error: name_not_matched"
+    ]
   },
   "check2": {
     "query": "Burger King",
     "country": "EG",
     "advertiser": "Burger King",
-    "resolved": {
-      "page_name": "Burger King Malaysia",
-      "score": 0.8
-    },
-    "new_ads": 0,
-    "ended_ads": 0,
-    "changed_ads": 0,
     "partial": true,
+    "error": "name_not_matched",
+    "target": "Burger King",
+    "candidates": [
+      {
+        "page_name": "Burger King Malaysia",
+        "score": 0.8
+      },
+      {
+        "page_name": "Burger King Arabia",
+        "score": 0.8
+      }
+    ],
+    "threshold": 0.8,
     "artifacts": {
-      "html": "/var/folders/zf/g9bpd9s55sv10tz2mnhqch800000gn/T/ads-intel-live-eval-loijggjy/tmpky41908k/reports/39403d015c764b89.html",
-      "digest": "/var/folders/zf/g9bpd9s55sv10tz2mnhqch800000gn/T/ads-intel-live-eval-loijggjy/tmpky41908k/reports/39403d015c764b89.digest.json"
+      "error": "name_not_matched"
     },
     "new_page_names": [],
-    "seconds": 0.02
+    "seconds": 13.46,
+    "artifact_problems": [
+      "artifacts_error: name_not_matched"
+    ]
   },
-  "artifacts_ok": true,
+  "artifacts_ok": false,
+  "artifacts2_ok": false,
   "currency": {
     "expected": "EGP/جنيه",
     "found": [],
     "ok": false
   },
-  "status": "PASS",
-  "failures": [],
+  "status": "FAIL",
+  "failures": [
+    "check1_error: name_not_matched",
+    "check2_error: name_not_matched",
+    "artifacts_error: name_not_matched",
+    "artifacts2_error: name_not_matched"
+  ],
   "timings": {
-    "search": 3.41,
-    "advertiser_search": 0.02,
-    "check1": 0.02,
-    "check2": 0.02,
-    "total": 3.47
+    "search": 13.91,
+    "advertiser_search": 8.36,
+    "check1": 19.92,
+    "check2": 13.46,
+    "total": 55.65
   },
   "attempts": {
-    "total": 4,
+    "total": 12,
     "failed": 0
   }
 }

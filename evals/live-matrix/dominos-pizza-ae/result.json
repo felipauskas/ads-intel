@@ -3,7 +3,7 @@
   "country": "AE",
   "advertiser": "Domino's Pizza",
   "folder": "evals/live-matrix/dominos-pizza-ae",
-  "data_dir": "/var/folders/zf/g9bpd9s55sv10tz2mnhqch800000gn/T/ads-intel-live-eval-50w011gi/tmpp_jvt9qr",
+  "data_dir": "/var/folders/zf/g9bpd9s55sv10tz2mnhqch800000gn/T/ads-intel-live-eval-a5skrx5s/tmpts1ta7oj",
   "search_summary": {
     "count": 20,
     "complete": false,
@@ -11,22 +11,25 @@
     "country": "AE",
     "error": null,
     "page_names": [
-      "Quinns Gifts",
+      "Arclight Digital Solutions",
       "Domino's Pizza India",
       "Domino's Pizza",
       "Amorable Beauty Salon",
-      "BRAVA",
       "Careem",
       "DePaul Parties and Events",
-      "Empirio"
+      "Empirio",
+      "Aaliyah Anderson",
+      "Alibaba.com",
+      "Linguza: AI English Tutor",
+      "Tony’s Swedish Pizza And Kebab"
     ],
-    "seconds": 3.33
+    "seconds": 30.96
   },
   "advertiser_summary": {
-    "count": 1,
+    "count": 2,
     "complete": true,
     "resolved": {
-      "page_name": "Domino's Pizza India",
+      "page_name": "Domino's Pizza",
       "score": 0.8
     },
     "error": null,
@@ -34,9 +37,9 @@
     "candidates": null,
     "threshold": null,
     "page_names": [
-      "Domino's Pizza India"
+      "Domino's Pizza"
     ],
-    "seconds": 0.02
+    "seconds": 11.97
   },
   "watch_add": {
     "error": null,
@@ -54,10 +57,10 @@
     "country": "AE",
     "advertiser": "Domino's Pizza",
     "resolved": {
-      "page_name": "Domino's Pizza India",
+      "page_name": "Domino's Pizza",
       "score": 0.8
     },
-    "new_ads": 1,
+    "new_ads": 2,
     "ended_ads": 0,
     "changed_ads": 0,
     "partial": false,
@@ -66,16 +69,16 @@
       "digest": "artifacts/digest.json"
     },
     "new_page_names": [
-      "Domino's Pizza India"
+      "Domino's Pizza"
     ],
-    "seconds": 0.02
+    "seconds": 10.41
   },
   "check2": {
     "query": "Domino's Pizza",
     "country": "AE",
     "advertiser": "Domino's Pizza",
     "resolved": {
-      "page_name": "Domino's Pizza India",
+      "page_name": "Domino's Pizza",
       "score": 0.8
     },
     "new_ads": 0,
@@ -83,13 +86,14 @@
     "changed_ads": 0,
     "partial": false,
     "artifacts": {
-      "html": "/var/folders/zf/g9bpd9s55sv10tz2mnhqch800000gn/T/ads-intel-live-eval-50w011gi/tmpp_jvt9qr/reports/be4af8fe7da52b6b.html",
-      "digest": "/var/folders/zf/g9bpd9s55sv10tz2mnhqch800000gn/T/ads-intel-live-eval-50w011gi/tmpp_jvt9qr/reports/be4af8fe7da52b6b.digest.json"
+      "html": "artifacts/check2/html.html",
+      "digest": "artifacts/check2/digest.json"
     },
     "new_page_names": [],
-    "seconds": 0.02
+    "seconds": 10.0
   },
   "artifacts_ok": true,
+  "artifacts2_ok": true,
   "currency": {
     "expected": "AED",
     "found": [
@@ -100,14 +104,14 @@
   "status": "PASS",
   "failures": [],
   "timings": {
-    "search": 3.33,
-    "advertiser_search": 0.02,
-    "check1": 0.02,
-    "check2": 0.02,
-    "total": 3.39
+    "search": 30.96,
+    "advertiser_search": 11.97,
+    "check1": 10.41,
+    "check2": 10.0,
+    "total": 63.34
   },
   "attempts": {
-    "total": 4,
+    "total": 10,
     "failed": 0
   }
 }

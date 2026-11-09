@@ -5,18 +5,19 @@
 
 ## Keyword search (`active_status=active`, limit 20)
 - count: 20  complete: False  fetched: 20  error: None
-- page names: KFC, yummy.vzla, Capital One, Saucy by KFC, Carolina Sheds, Yaaas Automotive, Jessica Bennett, LBBonline - Little Black Book, Billet Labz, Shane Hummus
-- seconds: 5.46
+- page names: Hiring Now, yummy.vzla, Capital One, KFC, Saucy by KFC, Carolina Sheds, Yaaas Automotive, Jessica Bennett, LBBonline - Little Black Book, Billet Labz, Shane Hummus, Wolt Kosovo
+- seconds: 8.3
 
 ## Advertiser search
-- count: 11  resolved: {'page_name': 'KFC', 'score': 0.8}  error: None
+- count: 7  resolved: {'page_name': 'KFC', 'score': 0.8}  error: None
 - page names: KFC
-- seconds: 0.01
+- seconds: 0.02
 
 ## Watch checks
-- check1: new=11 ended=0 changed=0 partial=False error=None seconds=0.01
-- check2: new=0 ended=0 changed=0 partial=False error=None seconds=0.01
+- check1: new=7 ended=0 changed=0 partial=False error=None seconds=0.02
+- check2: new=0 ended=0 changed=0 partial=False error=None seconds=0.02
 - artifacts: {"html": "artifacts/html.html", "digest": "artifacts/digest.json"} (ok=True)
+- artifacts check2: {"html": "artifacts/check2/html.html", "digest": "artifacts/check2/digest.json"} (ok=True)
 
 ## Currency spot-check
 - expected: —  found: none  ok: None
