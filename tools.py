@@ -11,6 +11,7 @@ not bounded here: the HTML report keeps the full snapshot copy by design,
 while the JSON digest carries counts only.
 """
 
+import inspect
 import json
 import logging
 import re
@@ -132,6 +133,87 @@ def _requested_filter(args, key: str) -> str | None:
     return None
 
 
+def _requested_page_id(args) -> str | None:
+    """Meta Page ID from tool args: absent/null means "none", else digits only.
+
+    Returns ``""`` when the caller supplied no page (the keyword path stays
+    byte-identical), the ID as a string when it is a valid one, and ``None``
+    for anything else so the caller can answer ``invalid page_id``.
+
+    ASCII matter: ``str.isdigit`` alone accepts other scripts' digits
+    (``"١٢٣"`` is all digits), and those are not a Meta Page ID. A Page ID is
+    an ASCII decimal run, so both checks apply.
+    """
+    raw = args.get("page_id")
+    if raw is None:
+        return ""
+    text = str(raw).strip()
+    # Supplying the key at all means "search this page": an empty value is a
+    # caller error, not a silent fall back to keyword search.
+    if not (text.isascii() and text.isdigit()):
+        return None
+    return text
+
+
+def _page_axis(resolution: dict, ads: list, page_id: str) -> dict:
+    """Which axis a page-identity request stands or fails on.
+
+    Empty unless the caller supplied a ``page_id``, so every pre-existing row
+    keeps its exact shape and key set.
+
+    ``page_found`` is the *identity* axis: did an ad in the rendered listing
+    carry the requested Meta Page ID? ``country_filtered`` is the *delivery*
+    axis, meaningful only on a miss:
+
+    * listing had ads but none carried the ID -> identity miss
+      (``page_found: False, country_filtered: False``);
+    * listing for this market was empty -> the identity could not be observed
+      *here*, which is the country axis
+      (``page_found: False, country_filtered: True``). It does not prove the
+      page is missing: the same ID may deliver in another market.
+
+    On success both are stated explicitly so a caller never has to infer
+    "found" from the absence of a key.
+    """
+    if not page_id:
+        return {}
+    if "error" not in resolution:
+        return {"page_found": True, "country_filtered": False}
+    return {"page_found": False, "country_filtered": not ads}
+
+
+def _store_accepts(fn, name: str) -> bool:
+    """True when ``fn`` takes a ``name`` keyword (read-only capability probe)."""
+    try:
+        return name in inspect.signature(fn).parameters
+    except (TypeError, ValueError):  # pragma: no cover - defensive
+        return False
+
+
+def store_supports_page_id() -> bool:
+    """True when the persistence layer can store a ``page_id`` on an entry.
+
+    Read-only capability probe: the watch layer predates page identity, and a
+    watch that silently dropped the ID would be a plain keyword watch wearing a
+    page label. Reported instead of guessed when absent.
+    """
+    return _store_accepts(store.watch_add, "page_id")
+
+
+def _snapshot_page_kwargs(page_id: str) -> dict:
+    """`page_id` for snapshot/report calls, when persistence can key on it.
+
+    Page identity and delivery market are separate axes, so two watches on one
+    query in one market — a keyword watch and a page watch — must not share a
+    baseline or a report. A store that cannot key on the ID would merge them;
+    forwarding is gated on the capability so this layer never invents a
+    keyword the store would reject.
+    """
+    if page_id and _store_accepts(store.save_snapshot, "page_id"):
+        return {"page_id": page_id}
+    return {}
+
+
 def set_ctx(ctx) -> None:
     global _CTX
     _CTX = ctx
@@ -238,6 +320,11 @@ def ad_search(args, **kwargs):
     advertiser = str(args.get("advertiser") or "").strip()
     if store.has_nul(advertiser):
         return json.dumps({"error": "invalid advertiser"})
+    # Page identity is a separate axis from the market (`country`): a global
+    # page in GB and a UK page in GB are different watches.
+    page_id = _requested_page_id(args)
+    if page_id is None:
+        return json.dumps({"error": "invalid page_id"})
     country = _requested_country(args)
     if country is None:
         return json.dumps({"error": "invalid_country"})
@@ -261,6 +348,53 @@ def ad_search(args, **kwargs):
     if limit < 1:
         return json.dumps({"error": "invalid limit"})
     try:
+        if page_id:
+            # Page mode: the fetch is that page's own listing, so `query` only
+            # names the watch and is not sent to the library. The full render
+            # is fetched and `limit` applied after resolution, the same rule
+            # the advertiser path follows, so `complete` stays honest.
+            ads, meta = sources.fetch_ads_with_meta(
+                query,
+                limit=None,
+                dispatch=_dispatch,
+                country=country,
+                active_status=active_status,
+                media_type=media_type,
+                page_id=page_id,
+            )
+            # `advertiser` is ignored here: an explicit numeric ID is stronger
+            # evidence than a name, and resolving by ID never falls back to it.
+            resolution, kept = resolve.filter_ads(
+                ads, "", market=country, page_id=page_id
+            )
+            if "error" in resolution:
+                return json.dumps(
+                    {
+                        **resolution,
+                        "country": country,
+                        "query": query,
+                        "page_id": page_id,
+                        **_page_axis(resolution, ads, page_id),
+                    },
+                    ensure_ascii=False,
+                )
+            total = len(kept)
+            kept = kept[: max(limit, 0)]
+            complete = bool(meta.get("complete", False)) and total <= max(limit, 0)
+            return json.dumps(
+                {
+                    "count": len(kept),
+                    "complete": complete,
+                    **_fetch_meta_fields(meta),
+                    "fetched": len(kept),
+                    "country": country,
+                    "page_id": page_id,
+                    "resolved": resolution,
+                    **_page_axis(resolution, ads, page_id),
+                    "ads": [_bounded_ad(ad) for ad in kept],
+                },
+                ensure_ascii=False,
+            )
         if not advertiser:
             ads, meta = sources.fetch_ads_with_meta(
                 query,
@@ -357,12 +491,20 @@ def ad_watch(args, **kwargs):
             # alias another watch's snapshot/report key.
             if store.has_nul(advertiser):
                 return json.dumps({"error": "invalid advertiser"})
+            page_id = _requested_page_id(args)
+            if page_id is None:
+                return json.dumps({"error": "invalid page_id"})
+            if page_id and not store_supports_page_id():
+                # A watch that dropped the ID would be a keyword watch wearing
+                # a page label: refuse instead of storing the wrong watch.
+                return json.dumps({"error": "page_id watch unsupported"})
             items = store.watch_add(
                 query,
                 country=country,
                 advertiser=advertiser or None,
                 active_status=active_status,
                 media_type=media_type,
+                **({"page_id": page_id} if page_id else {}),
             )
         elif action == "remove":
             # Optional filters narrow the removal: without them every entry
@@ -386,12 +528,22 @@ def ad_watch(args, **kwargs):
                 remove_media = _requested_filter(args, "media_type")
                 if remove_media is None:
                     return json.dumps({"error": "invalid_media_type"})
+            # Absent means "not narrowed on page" (every page/keyword entry for
+            # `query` matching the other narrowers). Supplied means the removal
+            # names one page watch: validated like add, and never silently
+            # widened to the keyword watch beside it.
+            remove_page = None
+            if args.get("page_id") is not None:
+                remove_page = _requested_page_id(args)
+                if not remove_page:
+                    return json.dumps({"error": "invalid page_id"})
             items = store.watch_remove(
                 query,
                 advertiser=remove_advertiser or None,
                 country=remove_country,
                 active_status=remove_active,
                 media_type=remove_media,
+                page_id=remove_page,
             )
         elif action == "list":
             items = store.watch_list()
@@ -411,6 +563,7 @@ def _prior_ads(
     advertiser: str | None = None,
     active_status: str = store.DEFAULT_ACTIVE_STATUS,
     media_type: str = store.DEFAULT_MEDIA_TYPE,
+    page_id: str = "",
 ) -> dict:
     try:
         payload = store.load_snapshot(
@@ -419,6 +572,7 @@ def _prior_ads(
             advertiser=advertiser,
             active_status=active_status,
             media_type=media_type,
+            **_snapshot_page_kwargs(page_id),
         ) or {}
         ads = payload.get("ads") or {}
         # A corrupt snapshot can carry a list under `ads`; every caller treats
@@ -437,6 +591,21 @@ def ad_check(args, **kwargs):
         country = entry["country"]
         # Entries written before advertiser resolution existed have no target.
         advertiser = entry.get("advertiser") or ""
+        # Entries written before page identity existed have no page. A stored
+        # value that is not a Page ID can only come from a hand-edited file;
+        # report it rather than sending it to the library as a URL fragment.
+        page_id = _requested_page_id({"page_id": entry.get("page_id")})
+        if page_id is None:
+            results.append(
+                {
+                    "query": query,
+                    "country": country,
+                    "error": "invalid page_id",
+                    "partial": True,
+                    "artifacts": {"error": "invalid page_id"},
+                }
+            )
+            continue
         # Filters are absent on entries written before they existed.
         active_status = entry.get("active_status") or store.DEFAULT_ACTIVE_STATUS
         media_type = entry.get("media_type") or store.DEFAULT_MEDIA_TYPE
@@ -455,14 +624,18 @@ def ad_check(args, **kwargs):
             # watch resolves the page name first, so it fetches the FULL parse:
             # the brand's page can appear anywhere in the keyword hits, and a
             # slice taken before resolution hides both the page and its tail
-            # ads. No advertiser: the default 20-ad limit applies.
+            # ads. A page watch fetches in page mode (the listing *is* that
+            # page) and also takes the full parse, so `limit` cannot hide the
+            # page's own tail. No advertiser and no page: the default 20-ad
+            # limit applies.
             ads, meta = sources.fetch_ads_with_meta(
                 query,
-                limit=None if advertiser else 20,
+                limit=None if (advertiser or page_id) else 20,
                 dispatch=_dispatch,
                 country=country,
                 active_status=active_status,
                 media_type=media_type,
+                page_id=page_id or None,
             )
             # Fail safe: an unknown completeness is treated as partial.
             complete = bool(meta.get("complete", False))
@@ -485,7 +658,9 @@ def ad_check(args, **kwargs):
             continue
         except Exception as exc:
             logger.warning("ad_check fetch failed for %r: %s", query, exc)
-            if _prior_ads(query, country, advertiser, active_status, media_type):
+            if _prior_ads(
+                query, country, advertiser, active_status, media_type, page_id
+            ):
                 results.append(
                     {
                         "query": query,
@@ -511,14 +686,20 @@ def ad_check(args, **kwargs):
             continue
 
         if not ads and _prior_ads(
-            query, country, advertiser, active_status, media_type
+            query, country, advertiser, active_status, media_type, page_id
         ):
-            # A blank page must not be read as "every ad ended".
+            # A blank page must not be read as "every ad ended". A page watch
+            # still states both axes: the ID was resolved in an earlier check
+            # for this market (page_found), and this check's listing for the
+            # market came back empty (country_filtered). Without them a repeat
+            # check's row would lose the page identity the first run echoed.
             results.append(
                 {
                     "query": query,
                     "country": country,
                     **echo,
+                    **(dict(page_id=page_id, page_found=True, country_filtered=True)
+                       if page_id else {}),
                     "skipped": True,
                     "reason": "fetch_empty",
                     "partial": True,
@@ -528,21 +709,28 @@ def ad_check(args, **kwargs):
             continue
 
         resolution = None
-        if advertiser:
+        if advertiser or page_id:
             # Filter to the resolved page before diffing, so a keyword watch
-            # tracks the advertiser's ads only. No match: report it and leave
-            # the snapshot untouched.
-            resolution, ads = resolve.filter_ads(ads, advertiser, market=country)
+            # tracks the advertiser's ads only. A page watch resolves by its
+            # numeric ID (identity first, never a name fallback). No match:
+            # report it and leave the snapshot untouched.
+            fetched = ads
+            resolution, ads = resolve.filter_ads(
+                ads, advertiser, market=country, page_id=page_id or None
+            )
             if "error" in resolution:
                 logger.warning(
-                    "ad_check advertiser %r not matched for %r", advertiser, query
+                    "ad_check target %r not matched for %r",
+                    page_id or advertiser,
+                    query,
                 )
                 results.append(
                     {
                         "query": query,
                         "country": country,
                         **echo,
-                        "advertiser": advertiser,
+                        **({"page_id": page_id} if page_id else {}),
+                        **({"advertiser": advertiser} if advertiser else {}),
                         "error": "name_not_matched",
                         # A miss on a clipped render only means the page was
                         # not in what rendered: report the same completeness
@@ -561,12 +749,17 @@ def ad_check(args, **kwargs):
                             if resolution.get("ambiguous")
                             else {}
                         ),
+                        # Which axis failed: identity (listing came back
+                        # without this ID) or delivery market (this market's
+                        # listing was empty). Present only for a page watch.
+                        **_page_axis(resolution, fetched, page_id),
                         "artifacts": {"error": "name_not_matched"},
                     }
                 )
                 continue
 
         try:
+            snap_kw = _snapshot_page_kwargs(page_id)
             by_id = {ad["id"]: ad for ad in ads}
             # Load -> diff -> save is one critical section. The fetch already
             # happened above, so nothing slow runs inside it; without it, two
@@ -579,6 +772,7 @@ def ad_check(args, **kwargs):
                     advertiser=advertiser,
                     active_status=active_status,
                     media_type=media_type,
+                    **snap_kw,
                 )
                 if complete:
                     diff_old = prior
@@ -637,6 +831,7 @@ def ad_check(args, **kwargs):
                     advertiser=advertiser,
                     active_status=active_status,
                     media_type=media_type,
+                    **snap_kw,
                 )
             # A report failure must never fail the check itself.
             try:
@@ -649,6 +844,7 @@ def ad_check(args, **kwargs):
                     advertiser=advertiser,
                     active_status=active_status,
                     media_type=media_type,
+                    **snap_kw,
                 )
             except Exception as exc:
                 logger.warning("ad_check report failed for %r: %s", query, exc)
@@ -659,7 +855,18 @@ def ad_check(args, **kwargs):
                     "country": country,
                     **echo,
                     "partial": not complete,
-                    **({"advertiser": advertiser, "resolved": resolution} if resolution else {}),
+                    **({"page_id": page_id} if page_id else {}),
+                    # A page_id outranks the name in resolution, so the name
+                    # was not a filter and must not be echoed as one.
+                    **(
+                        {"advertiser": advertiser}
+                        if resolution and advertiser and not page_id
+                        else {}
+                    ),
+                    **({"resolved": resolution} if resolution else {}),
+                    # Success states both axes explicitly for a page watch;
+                    # empty (no keys) for every other watch.
+                    **_page_axis(resolution or {}, [], page_id),
                     "new_ads": len(diff["new"]),
                     "ended_ads": len(diff["ended"]),
                     "changed_ads": len(diff["changed"]),

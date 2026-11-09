@@ -947,6 +947,72 @@ def test_fetch_threads_filters_into_the_url():
     assert "media_type=video" in calls[0]["urls"][0]
 
 
+def test_build_url_page_mode_uses_page_search():
+    """A known Page ID bypasses keyword search entirely."""
+    url = sources.build_url("mcdonalds", country="GB", page_id="209644529058679")
+    assert "search_type=page" in url
+    assert "view_all_page_id=209644529058679" in url
+    assert "country=GB" in url
+    # Page mode carries no keyword: the listing is the page's own ads.
+    assert "q=" not in url
+    assert "search_type=keyword_unordered" not in url
+
+
+def test_build_url_keyword_mode_is_byte_identical():
+    """No page_id means exactly the URL the library has always used."""
+    assert sources.build_url("nike") == (
+        "https://www.facebook.com/ads/library/?active_status=all&ad_type=all"
+        "&country=US&q=nike&media_type=all&search_type=keyword_unordered"
+    )
+
+
+def test_build_url_page_mode_keeps_filters():
+    url = sources.build_url(
+        "mcdonalds",
+        country="AE",
+        active_status="active",
+        media_type="video",
+        page_id="209644529058679",
+    )
+    assert "active_status=active" in url
+    assert "media_type=video" in url
+    assert "country=AE" in url
+    assert "search_type=page" in url
+    assert "view_all_page_id=209644529058679" in url
+    assert "q=" not in url
+
+
+def test_build_url_page_id_is_passed_through_verbatim():
+    """sources does not validate the Page ID; the tools layer owns that.
+
+    Passing it through unchanged keeps the URL builder a pure formatter and
+    lets the tool return its own ``invalid page_id`` error token.
+    """
+    url = sources.build_url("nike", page_id=" 209 6445\n")
+    assert "view_all_page_id= 209 6445\n" in url
+
+
+def test_fetch_threads_page_id_into_the_url():
+    calls = []
+
+    def fake_dispatch(name, args):
+        calls.append(args)
+        return "no cards here. No ads match your search."
+
+    sources.fetch_ads("mcdonalds", country="GB", page_id="209644529058679",
+                      dispatch=fake_dispatch)
+    assert calls[0]["urls"] == [
+        sources.build_url("mcdonalds", country="GB", page_id="209644529058679")
+    ]
+    assert "search_type=page" in calls[0]["urls"][0]
+
+    calls.clear()
+    sources.fetch_ads_with_meta("mcdonalds", country="GB",
+                                page_id="209644529058679", dispatch=fake_dispatch)
+    assert "view_all_page_id=209644529058679" in calls[0]["urls"][0]
+    assert "q=" not in calls[0]["urls"][0]
+
+
 def test_fetch_rejects_invalid_filters():
     def fake_dispatch(name, args):
         return "no cards here. No ads match your search."

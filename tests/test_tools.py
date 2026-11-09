@@ -5,6 +5,7 @@ from pathlib import Path
 
 import pytest
 
+import schemas
 import tools
 
 FIXTURE = Path(__file__).parent / "fixtures" / "library_page.md"
@@ -1470,3 +1471,414 @@ def test_bounded_ad_non_string_creative_text_becomes_empty():
         assert bounded["creative_text"] == "", type(value)
     # A numeric `creative_text` in a summary is empty, not its repr.
     assert tools._summary({**AD, "creative_text": 123})["creative_text"] == ""
+
+
+# ---------------------------------------------------------------------------
+# Page identity (Task 2.3) + dual-axis failure reporting (Task 2.4).
+#
+# A Meta Page ID and the delivery `country` are separate axes: a global page
+# (``facebook.com/KFC``) searched with ``country=GB`` and a UK page
+# (``facebook.com/KFCUK``) searched with ``country=GB`` are different watches,
+# so the ID is never folded into the country or the advertiser.
+# ---------------------------------------------------------------------------
+
+PAGE_ID = "209644529058679"
+
+
+def _page_ad(**overrides):
+    """An ad carrying a numeric page identity (page mode's normal shape)."""
+    ad = {**AD, "page_name": "KFC UK", "page_id": PAGE_ID}
+    ad.update(overrides)
+    return ad
+
+
+def _ctx(monkeypatch):
+    """Give the tools layer a dispatch so the real fetch path can run."""
+
+    class _Ctx:
+        def dispatch_tool(self, name, args):
+            return None
+
+    monkeypatch.setattr(tools, "_CTX", _Ctx())
+
+
+def test_search_rejects_invalid_page_id(monkeypatch):
+    seen = []
+    monkeypatch.setattr(
+        tools.sources,
+        "fetch_ads_with_meta",
+        lambda *a, **kw: seen.append((a, kw)) or ([], {}),
+    )
+    for bad in ("12a", "-7", "1.5", "1 2", "١٢٣", " "):
+        payload = json.loads(tools.ad_search({"query": "kfc", "page_id": bad}))
+        assert payload == {"error": "invalid page_id"}, bad
+    assert seen == []
+
+
+def test_search_page_mode_uses_page_url_and_resolves_by_id(monkeypatch):
+    """`page_id` must switch the fetch to Page search — asserted on the URL."""
+    _ctx(monkeypatch)
+    urls = []
+
+    def fake_once(url, budget, lim, dispatch):
+        urls.append((url, lim))
+        return (
+            [_page_ad()],
+            {"complete": True, "total_returned": 1, "char_limit": 120000},
+        )
+
+    monkeypatch.setattr(tools.sources, "_fetch_once", fake_once)
+    payload = json.loads(
+        tools.ad_search({"query": "kfc", "page_id": PAGE_ID, "country": "GB"})
+    )
+
+    assert len(urls) == 1
+    url, lim = urls[0]
+    assert "search_type=page" in url
+    assert f"view_all_page_id={PAGE_ID}" in url
+    assert "country=GB" in url
+    # Page mode ignores the keyword: no `q=` and no keyword search type.
+    assert "q=" not in url
+    assert "keyword_unordered" not in url
+    # The full render is fetched (limit applied after resolution, as the
+    # advertiser path does), so `complete` stays honest.
+    assert lim is None
+
+    assert payload["page_id"] == PAGE_ID
+    assert payload["resolved"]["page_id"] == PAGE_ID
+    assert payload["resolved"]["page_name"] == "KFC UK"
+    assert payload["resolved"]["score"] == tools.resolve.PAGE_ID_SCORE
+    assert payload["page_found"] is True
+    assert payload["country_filtered"] is False
+    assert payload["count"] == 1
+
+
+def test_search_page_id_wins_over_advertiser(monkeypatch):
+    """Identity is stronger evidence than a name: ID wins when both are set."""
+    seen = {}
+
+    def fake_fetch(query, **kwargs):
+        seen.update(kwargs)
+        return [_page_ad()], {"complete": True, "fetched_chars": 10, "char_limit": 120000}
+
+    monkeypatch.setattr(tools.sources, "fetch_ads_with_meta", fake_fetch)
+    payload = json.loads(
+        tools.ad_search(
+            {"query": "kfc", "page_id": PAGE_ID, "advertiser": "Burger King"}
+        )
+    )
+    assert seen["page_id"] == PAGE_ID
+    assert payload["resolved"]["page_id"] == PAGE_ID
+    assert payload["page_found"] is True
+
+
+def test_search_page_id_identity_axis_miss(monkeypatch):
+    """Listing came back, but for another page: the identity axis failed."""
+    monkeypatch.setattr(
+        tools.sources,
+        "fetch_ads_with_meta",
+        lambda q, **kw: ([_page_ad(page_id="110110110")], {"complete": True}),
+    )
+    payload = json.loads(
+        tools.ad_search({"query": "kfc", "page_id": PAGE_ID, "country": "GB"})
+    )
+    assert payload["error"] == "name_not_matched"
+    assert payload["page_found"] is False
+    assert payload["country_filtered"] is False
+    assert payload["page_id"] == PAGE_ID
+    assert payload["country"] == "GB"
+    assert payload["query"] == "kfc"
+    assert "count" not in payload
+    assert "ads" not in payload
+
+
+def test_search_page_id_country_axis_miss(monkeypatch):
+    """Empty listing for this market: nothing for the ID *in this country*.
+
+    The identity cannot be observed in the delivered market, which is the
+    country axis — the page may exist elsewhere.
+    """
+    monkeypatch.setattr(
+        tools.sources, "fetch_ads_with_meta", lambda q, **kw: ([], {"complete": True})
+    )
+    payload = json.loads(
+        tools.ad_search({"query": "kfc", "page_id": PAGE_ID, "country": "GB"})
+    )
+    assert payload["error"] == "name_not_matched"
+    assert payload["page_found"] is False
+    assert payload["country_filtered"] is True
+    assert payload["page_id"] == PAGE_ID
+
+
+def test_search_without_page_id_carries_no_axis_fields(monkeypatch):
+    _patch_fetch(monkeypatch, lambda q, **kw: [AD])
+    payload = json.loads(tools.ad_search({"query": "nike"}))
+    assert "page_found" not in payload
+    assert "country_filtered" not in payload
+    assert "page_id" not in payload
+
+
+def test_ad_watch_add_rejects_invalid_page_id():
+    for bad in ("12a", "-7", "1.5", "١٢٣"):
+        payload = json.loads(
+            tools.ad_watch({"action": "add", "query": "kfc", "page_id": bad})
+        )
+        assert payload == {"error": "invalid page_id"}, bad
+    assert json.loads(tools.ad_watch({"action": "list"}))["watchlist"] == []
+
+
+def test_ad_watch_forwards_page_id_to_store(monkeypatch):
+    """Tools wiring: the ID must reach the persistence layer, not be dropped."""
+    seen = {}
+
+    def fake_add(query, **kwargs):
+        seen["query"] = query
+        seen.update(kwargs)
+        return [{"query": query, "country": kwargs.get("country", "US"), "page_id": kwargs["page_id"]}]
+
+    monkeypatch.setattr(tools.store, "watch_add", fake_add)
+    monkeypatch.setattr(tools, "store_supports_page_id", lambda: True)
+    payload = json.loads(
+        tools.ad_watch({"action": "add", "query": "kfc", "page_id": PAGE_ID})
+    )
+    assert seen["page_id"] == PAGE_ID
+    assert payload["watchlist"] == [{"query": "kfc", "country": "US", "page_id": PAGE_ID}]
+
+
+@pytest.mark.skipif(
+    not tools.store_supports_page_id(),
+    reason="store.py must persist page_id on a watch entry (out of tools.py scope)",
+)
+def test_ad_watch_page_id_roundtrip():
+    added = json.loads(
+        tools.ad_watch(
+            {"action": "add", "query": "kfc", "page_id": PAGE_ID, "country": "GB"}
+        )
+    )
+    assert added["watchlist"] == [
+        {"query": "kfc", "country": "GB", "page_id": PAGE_ID}
+    ]
+    # The listing a caller sees must carry the identity back.
+    assert json.loads(tools.ad_watch({"action": "list"}))["watchlist"] == added[
+        "watchlist"
+    ]
+
+
+def test_ad_watch_remove_page_id_spares_keyword_sibling():
+    """Remove must narrow on page identity, not drop the sibling keyword watch.
+
+    Both watches share query and market, so only the page identity separates
+    them: a remove that drops every matching entry loses the keyword watch.
+    """
+    tools.ad_watch({"action": "add", "query": "kfc"})
+    tools.ad_watch({"action": "add", "query": "kfc", "page_id": PAGE_ID})
+
+    payload = json.loads(
+        tools.ad_watch({"action": "remove", "query": "kfc", "page_id": PAGE_ID})
+    )
+
+    assert payload["watchlist"] == [{"query": "kfc", "country": "US"}]
+
+
+def test_ad_watch_remove_rejects_invalid_page_id():
+    tools.ad_watch({"action": "add", "query": "kfc"})
+    for bad in ("", "12a", "١٢٣"):
+        payload = json.loads(
+            tools.ad_watch({"action": "remove", "query": "kfc", "page_id": bad})
+        )
+        assert payload == {"error": "invalid page_id"}, bad
+    # A refused removal must not have widened into the keyword watch.
+    assert json.loads(tools.ad_watch({"action": "list"}))["watchlist"] == [
+        {"query": "kfc", "country": "US"}
+    ]
+
+
+def _page_watch(monkeypatch, **entry):
+    monkeypatch.setattr(
+        tools.store,
+        "watch_list",
+        lambda: [{"query": "kfc", "country": "GB", "page_id": PAGE_ID, **entry}],
+    )
+
+
+def test_check_page_watch_fetches_in_page_mode(monkeypatch):
+    _page_watch(monkeypatch)
+    seen = {}
+
+    def fake_fetch(query, **kwargs):
+        seen.update(kwargs)
+        return [_page_ad()], {"complete": True, "fetched_chars": 10, "char_limit": 120000}
+
+    monkeypatch.setattr(tools.sources, "fetch_ads_with_meta", fake_fetch)
+    row = json.loads(tools.ad_check({}))["results"][0]
+
+    assert seen["page_id"] == PAGE_ID
+    assert seen["country"] == "GB"
+    assert seen["limit"] is None
+    assert row["page_id"] == PAGE_ID
+    assert row["resolved"]["page_id"] == PAGE_ID
+    assert row["page_found"] is True
+    assert row["country_filtered"] is False
+    assert row["new_ads"] == 1
+    assert "advertiser" not in row
+
+
+def test_check_page_watch_identity_axis_miss(monkeypatch):
+    _page_watch(monkeypatch)
+    monkeypatch.setattr(
+        tools.sources,
+        "fetch_ads_with_meta",
+        lambda q, **kw: ([_page_ad(page_id="110110110")], {"complete": True}),
+    )
+    row = json.loads(tools.ad_check({}))["results"][0]
+
+    assert row["error"] == "name_not_matched"
+    assert row["page_found"] is False
+    assert row["country_filtered"] is False
+    assert row["page_id"] == PAGE_ID
+    assert row["partial"] is False
+    assert row["artifacts"] == {"error": "name_not_matched"}
+    assert "new_ads" not in row
+    # No advertiser name was given, so the row does not invent one.
+    assert "advertiser" not in row
+
+
+def test_check_page_watch_country_axis_miss(monkeypatch):
+    _page_watch(monkeypatch)
+    monkeypatch.setattr(
+        tools.sources, "fetch_ads_with_meta", lambda q, **kw: ([], {"complete": True})
+    )
+    row = json.loads(tools.ad_check({}))["results"][0]
+
+    assert row["error"] == "name_not_matched"
+    assert row["page_found"] is False
+    assert row["country_filtered"] is True
+    assert row["page_id"] == PAGE_ID
+
+
+def test_check_non_page_row_carries_no_axis_fields(monkeypatch):
+    tools.ad_watch({"action": "add", "query": "nike"})
+    monkeypatch.setattr(tools.sources, "fetch_ads_with_meta", _stub_fetch([AD]))
+    row = json.loads(tools.ad_check({}))["results"][0]
+    assert row["new_ads"] == 1
+    for key in ("page_id", "page_found", "country_filtered"):
+        assert key not in row
+
+
+def test_schemas_document_page_identity_and_its_axes():
+    """The model-facing surface must state that identity and market are separate."""
+    for schema in (schemas.AD_SEARCH, schemas.AD_WATCH, schemas.AD_CHECK):
+        description = schema["description"]
+        assert "page_id" in description
+        assert "separate axes" in description
+    for schema in (schemas.AD_SEARCH, schemas.AD_WATCH):
+        assert schema["properties"]["page_id"]["pattern"] == "^[0-9]+$"
+    # The dual-axis failure vocabulary is documented where it can appear.
+    for schema in (schemas.AD_SEARCH, schemas.AD_CHECK):
+        description = schema["description"]
+        assert "`page_found: false`" in description
+        assert "`country_filtered: true`" in description
+    # The reference URL shape names both axes concretely.
+    assert "facebook.com/KFCUK" in schemas.AD_SEARCH["description"]
+
+
+def test_check_page_watch_keys_snapshot_and_report_on_page_id(monkeypatch):
+    """Two axes, two baselines: the ID must reach the store when it can key on it.
+
+    Without this a page watch and a keyword watch on the same query+market
+    would share one snapshot and one report. The report call is the REAL
+    ``report.write_report``: faking it with a ``page_id`` keyword hid that the
+    production signature did not accept one, so the artifacts row came back
+    as an error.
+    """
+    _page_watch(monkeypatch)
+    seen: dict = {"loads": []}
+
+    # Explicit signatures mirror the store contract; a bare **kwargs fake
+    # would not advertise `page_id`.
+    def fake_save(query, snap, country="US", advertiser=None,
+                  active_status="all", media_type="all", page_id=None):
+        seen["save"] = {"page_id": page_id}
+
+    def fake_load(query, country="US", advertiser=None, active_status="all",
+                  media_type="all", page_id=None):
+        seen["loads"].append({"page_id": page_id})
+        return {"ads": {}}
+
+    monkeypatch.setattr(tools.store, "save_snapshot", fake_save)
+    monkeypatch.setattr(tools.store, "load_snapshot", fake_load)
+    monkeypatch.setattr(tools.sources, "fetch_ads_with_meta", _stub_fetch([_page_ad()]))
+
+    row = json.loads(tools.ad_check({}))["results"][0]
+    assert row["page_found"] is True
+    assert seen["save"]["page_id"] == PAGE_ID
+    assert seen["loads"][0]["page_id"] == PAGE_ID
+
+    artifacts = row["artifacts"]
+    page_paths = tools.store.report_paths("kfc", "GB", page_id=PAGE_ID)
+    assert artifacts["html"] == str(page_paths["html"])
+    assert artifacts["digest"] == str(page_paths["digest"])
+    assert Path(artifacts["html"]).is_file()
+    assert Path(artifacts["digest"]).is_file()
+    # Must not land on the keyword watch's artifacts for the same query+market.
+    assert artifacts["html"] != str(tools.store.report_paths("kfc", "GB")["html"])
+
+
+def test_check_page_watch_repeat_empty_listing_carries_axes(monkeypatch):
+    """A repeat check's blank page listing still says which axis it is on.
+
+    The first run sees the page and seeds a baseline. The next run's empty
+    listing is skipped (never "every ad ended"), but the row must stay
+    page-keyed and self-describing: the page was resolved before
+    (``page_found``), and this run's listing for this market came back empty
+    (``country_filtered``).
+    """
+    _page_watch(monkeypatch)
+    monkeypatch.setattr(tools.sources, "fetch_ads_with_meta", _stub_fetch([_page_ad()]))
+    first = json.loads(tools.ad_check({}))["results"][0]
+    assert first["new_ads"] == 1
+
+    monkeypatch.setattr(tools.sources, "fetch_ads_with_meta", _stub_fetch([]))
+    row = json.loads(tools.ad_check({}))["results"][0]
+
+    assert row["skipped"] is True
+    assert row["reason"] == "fetch_empty"
+    assert row["page_id"] == PAGE_ID
+    assert row["page_found"] is True
+    assert row["country_filtered"] is True
+    assert row["partial"] is True
+    assert row["artifacts"] == {"error": "fetch_empty"}
+    assert "new_ads" not in row
+    # The baseline is untouched by a blank render.
+    prior = tools.store.load_snapshot("kfc", country="GB", page_id=PAGE_ID)
+    assert prior["ads"][AD["id"]]["id"] == AD["id"]
+
+
+def test_check_page_watch_with_advertiser_echoes_only_page(monkeypatch):
+    """With both set, the ID decides resolution and the name is not echoed.
+
+    ``filter_ads`` ignores the advertiser when a ``page_id`` is present, so a
+    success row claiming an advertiser would describe a filter that never ran.
+    """
+    _page_watch(monkeypatch, advertiser="KFC")
+    monkeypatch.setattr(tools.sources, "fetch_ads_with_meta", _stub_fetch([_page_ad()]))
+
+    row = json.loads(tools.ad_check({}))["results"][0]
+    assert row["page_id"] == PAGE_ID
+    assert row["page_found"] is True
+    assert row["new_ads"] == 1
+    assert "advertiser" not in row
+
+
+def test_check_page_watch_rejects_stored_junk_page_id(monkeypatch):
+    """A hand-edited, non-numeric stored ID is reported, never sent as a URL."""
+    _page_watch(monkeypatch, page_id="12a")
+    called = []
+    monkeypatch.setattr(
+        tools.sources,
+        "fetch_ads_with_meta",
+        lambda *a, **kw: called.append(1) or ([], {"complete": True}),
+    )
+    row = json.loads(tools.ad_check({}))["results"][0]
+    assert row["error"] == "invalid page_id"
+    assert called == []

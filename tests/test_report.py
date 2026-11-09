@@ -211,6 +211,41 @@ def test_report_paths_differ_by_country(tmp_path, monkeypatch):
     assert us["html"].name == store._snapshot_path("KFC", "US").stem + ".html"
 
 
+def test_report_paths_differ_by_page_identity(tmp_path, monkeypatch):
+    """A page watch and a keyword watch must not share artifacts."""
+    monkeypatch.setattr(store, "_data_dir", lambda: tmp_path)
+
+    keyword = store.report_paths("KFC", "GB")
+    page = store.report_paths("KFC", "GB", page_id="209644529058679")
+
+    assert keyword["html"] != page["html"]
+    assert keyword["digest"] != page["digest"]
+
+
+def test_write_report_accepts_page_id_and_keys_its_artifacts(tmp_path, monkeypatch):
+    """`write_report` must accept what the check forwards, and honour it.
+
+    The page-watch branch forwards the watch's page_id; a signature without
+    that keyword turned every page-watch artifacts row into an error and
+    wrote no HTML or digest.
+    """
+    monkeypatch.setattr(store, "_data_dir", lambda: tmp_path)
+    ad = _ad(1)
+    diff = {"new": [ad], "ended": [], "changed": []}
+
+    keyword = report.write_report("kfc", diff, {"1": ad}, META, country="GB")
+    page = report.write_report(
+        "kfc", diff, {"1": ad}, META, country="GB", page_id="209644529058679"
+    )
+
+    assert page["html"] != keyword["html"]
+    expected = store.report_paths("kfc", "GB", page_id="209644529058679")
+    assert page["html"] == str(expected["html"])
+    assert page["digest"] == str(expected["digest"])
+    assert 'data-ad-id="1"' in Path(page["html"]).read_text()
+    assert json.loads(Path(page["digest"]).read_text())["total"] == 1
+
+
 def test_build_html_skips_non_dict_ads_by_id(tmp_path):
     """A junk value in ads_by_id must not crash the card renderer."""
     ads = {"1": _ad(1), "2": "not-an-ad", "3": None, "4": ["list"]}

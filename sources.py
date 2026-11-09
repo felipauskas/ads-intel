@@ -425,18 +425,38 @@ def build_url(
     country: str = "US",
     active_status: str = "all",
     media_type: str = "all",
+    page_id: str | None = None,
 ) -> str:
-    """Public ad-library search URL for ``query``.
+    """Public ad-library search URL for ``query`` or for a known Page.
 
     ``active_status`` (``all``/``active``/``inactive``) and ``media_type``
     (``all``/``image``/``video``) are the library's own free query parameters:
     no key, token or third-party service is involved. ``country`` must be a
     two-letter uppercase market code. Invalid values raise ``ValueError``.
+
+    ``page_id`` selects Meta's Page search (``search_type=page`` +
+    ``view_all_page_id``) instead of keyword search: the listing is that
+    page's own ads, so ``query`` is unused and no ``q=`` parameter is emitted.
+    Page identity and delivery ``country`` are separate axes — a
+    country-specific page still needs its market passed as ``country``.
+
+    The Page ID is interpolated **verbatim**: this layer is a URL formatter,
+    not a validator. The tools layer owns Page ID validation (all digits) and
+    its own ``invalid page_id`` error token; validating here too would give
+    callers a second, differently-worded failure mode. ``None`` (or any falsy
+    value, including ``""``) keeps the keyword URL byte-identical to before.
     """
     if not isinstance(country, str) or not _COUNTRY_RE.fullmatch(country):
         raise ValueError("invalid_country")
     active_status = _choice("active_status", active_status, ACTIVE_STATUSES)
     media_type = _choice("media_type", media_type, MEDIA_TYPES)
+    if page_id:
+        return (
+            f"{_LIBRARY_BASE}?active_status={active_status}&ad_type=all"
+            f"&country={country}&is_targeted_country=false"
+            f"&media_type={media_type}&search_type=page"
+            f"&view_all_page_id={page_id}"
+        )
     return (
         f"{_LIBRARY_BASE}?active_status={active_status}&ad_type=all"
         f"&country={country}&q={_quote_plus(query)}&media_type={media_type}"
@@ -1269,6 +1289,7 @@ def fetch_ads_with_meta(
     country: str = "US",
     active_status: str = "all",
     media_type: str = "all",
+    page_id: str | None = None,
 ) -> tuple[list[dict], dict]:
     """Fetch and parse ``query``, returning ``(ads, meta)``.
 
@@ -1332,6 +1353,11 @@ def fetch_ads_with_meta(
     ``active_status`` and ``media_type`` narrow the listing with the library's
     own free URL parameters (defaults ``all``); invalid values raise
     ``ValueError`` before any network call.
+
+    ``page_id`` switches the fetch from keyword search to Meta's Page search:
+    the listing is that page's ads, ``query`` only names the snapshot, and
+    ``country`` stays the delivery market. The ID is not validated here (see
+    :func:`build_url`).
     """
     budget = _CHAR_LIMIT if char_limit is None else max(int(char_limit), 0)
     lim = None if limit is None else max(int(limit), 0)
@@ -1360,6 +1386,7 @@ def fetch_ads_with_meta(
         country=country,
         active_status=active_status,
         media_type=media_type,
+        page_id=page_id,
     )
     known_dead = _wire_url in _dead_render_urls
     deadline = time.monotonic() + _FETCH_DEADLINE_S
@@ -1479,6 +1506,7 @@ def fetch_ads(
     country: str = "US",
     active_status: str = "all",
     media_type: str = "all",
+    page_id: str | None = None,
 ) -> list[dict]:
     """Fetch and parse the ad library for ``query`` via host ``web_extract``.
 
@@ -1491,6 +1519,9 @@ def fetch_ads(
 
     Ads only, for backwards compatibility. Callers that must distinguish a
     complete listing from a truncated one use :func:`fetch_ads_with_meta`.
+
+    ``page_id`` fetches that page's ads instead of keyword results (see
+    :func:`build_url`).
     """
     return fetch_ads_with_meta(
         query,
@@ -1499,4 +1530,5 @@ def fetch_ads(
         country=country,
         active_status=active_status,
         media_type=media_type,
+        page_id=page_id,
     )[0]

@@ -67,6 +67,20 @@ def _strict_country(country) -> str:
     return code
 
 
+def _strict_page_id(value) -> str:
+    """Validate a Meta Page ID: an ASCII decimal run, nothing else.
+
+    ``str.isdigit`` alone accepts other scripts' digits (``"١٢٣"`` is all
+    digits), and those are not Meta Page IDs, so both checks apply. Used both
+    for stored entries and for artifact-key components: an ID that cannot be
+    keyed unambiguously must never be treated as "no page".
+    """
+    text = str(value if value is not None else "").strip()
+    if not (text.isascii() and text.isdigit()):
+        raise ValueError(f"invalid page_id: {value!r}")
+    return text
+
+
 def _watch_path() -> Path:
     return _data_dir() / WATCH
 
@@ -174,12 +188,17 @@ def _norm_country(country) -> str:
 
 
 def _entry(item) -> dict | None:
-    """One watch entry as ``{query, country[, advertiser][, filters]}``.
+    """One watch entry as ``{query, country[, advertiser][, page_id][, filters]}``.
 
     Legacy strings migrate to US; entries written before advertiser
     resolution existed simply have no ``advertiser`` key. Filters are stored
     only when they differ from the default, so an unfiltered watch keeps the
     exact shape (and snapshot key) it had before filters existed.
+
+    ``page_id`` marks a page watch. An unusable ID drops the whole entry
+    rather than the field: an entry that silently lost its ID would be a
+    keyword watch wearing a page label, and would diff against the keyword
+    listing. An empty/absent ID means "no page" and stays out of the entry.
     """
     if isinstance(item, str):
         query = _norm(item)
@@ -198,6 +217,12 @@ def _entry(item) -> dict | None:
             return None
         if advertiser:
             entry["advertiser"] = advertiser
+        page_id = _norm(item.get("page_id"))
+        if page_id:
+            try:
+                entry["page_id"] = _strict_page_id(page_id)
+            except ValueError:
+                return None
         active_status = _norm_filter(
             item.get("active_status"), DEFAULT_ACTIVE_STATUS, _ACTIVE_STATUSES
         )
@@ -231,6 +256,7 @@ def watch_add(
     advertiser: str | None = None,
     active_status: str = DEFAULT_ACTIVE_STATUS,
     media_type: str = DEFAULT_MEDIA_TYPE,
+    page_id: str | None = None,
 ) -> list[dict]:
     entry = _entry(
         {
@@ -239,6 +265,7 @@ def watch_add(
             "advertiser": advertiser,
             "active_status": active_status,
             "media_type": media_type,
+            "page_id": page_id,
         }
     )
     if entry is None:
@@ -258,16 +285,19 @@ def watch_remove(
     country: str | None = None,
     active_status: str | None = None,
     media_type: str | None = None,
+    page_id: str | None = None,
 ) -> list[dict]:
     """Remove watch entries for ``query``.
 
     Without the narrowing keywords this drops every entry for ``query``,
-    regardless of country, advertiser or filters — the historical behaviour.
-    Passing any of them restricts the removal to entries that match: a watch
-    for the same query but another advertiser, market or filter survives, so
-    two brand watches on one keyword can be removed one at a time. An invalid
-    narrower raises ``ValueError`` rather than falling back to a default,
-    because widening a removal would delete an entry the caller did not name.
+    regardless of country, advertiser, page or filters — the historical
+    behaviour. Passing any of them restricts the removal to entries that
+    match: a watch for the same query but another advertiser, market, page or
+    filter survives, so two brand watches on one keyword can be removed one
+    at a time, and a page watch can be dropped without touching the keyword
+    watch beside it. An invalid narrower raises ``ValueError`` rather than
+    falling back to a default, because widening a removal would delete an
+    entry the caller did not name.
     """
     q = _norm(query)
     adv = _norm(advertiser)
@@ -284,6 +314,10 @@ def watch_remove(
         if media_type is not None
         else None
     )
+    # ``None`` means "not narrowed on page"; an empty or malformed string is a
+    # caller error, because treating it as absent would remove the keyword
+    # watch and every page watch with it.
+    pid = _strict_page_id(page_id) if page_id is not None else None
 
     def matches(entry: dict) -> bool:
         if entry["query"] != q:
@@ -291,6 +325,8 @@ def watch_remove(
         if adv and _norm(entry.get("advertiser")) != adv:
             return False
         if cc and entry["country"] != cc:
+            return False
+        if pid and _norm(entry.get("page_id")) != pid:
             return False
         if active is not None and (
             _norm_filter(
@@ -330,16 +366,19 @@ def _artifact_key(
     advertiser: str | None = None,
     active_status: str = DEFAULT_ACTIVE_STATUS,
     media_type: str = DEFAULT_MEDIA_TYPE,
+    page_id: str | None = None,
 ) -> str:
-    """Key for query + market (+ advertiser, + filters).
+    """Key for query + market (+ advertiser, + page, + filters).
 
-    Without an advertiser or non-default filters the key is the pre-existing
-    ``query\\x00country`` string, so every baseline written before
-    advertiser- or filter-keyed watches keeps its filename. Each narrowed
-    variant gets its own key: two watches for the same query, one filtered
-    and one not, must never share a snapshot or report. Sharing one would
-    make a filtered fetch look like the whole listing and report the ads it
-    excludes as ended.
+    Without an advertiser, page or non-default filters the key is the
+    pre-existing ``query\\x00country`` string, so every baseline written before
+    advertiser-, page- or filter-keyed watches keeps its filename. Each
+    narrowed variant gets its own key: two watches for the same query, one
+    filtered and one not, must never share a snapshot or report. Sharing one
+    would make a filtered fetch look like the whole listing and report the ads
+    it excludes as ended. The same holds for page identity, which is a
+    separate axis from the delivery market: a page watch and a keyword watch
+    on one query in one market are different listings.
     """
     base = f"{_norm(query)}\x00{_norm_country(country)}"
     adv = _norm(advertiser)
@@ -351,6 +390,11 @@ def _artifact_key(
         raise ValueError("NUL not allowed in snapshot-key components")
     if adv:
         base = f"{base}\x00{adv}"
+    # A malformed ID is refused outright: folding it into "no page" would let a
+    # page watch share the keyword watch's baseline.
+    pid = _strict_page_id(page_id) if _norm(page_id) else ""
+    if pid:
+        base = f"{base}\x00page_id={pid}"
     active_status = _norm_filter(
         active_status, DEFAULT_ACTIVE_STATUS, _ACTIVE_STATUSES
     )
@@ -368,12 +412,13 @@ def _snapshot_path(
     advertiser: str | None = None,
     active_status: str = DEFAULT_ACTIVE_STATUS,
     media_type: str = DEFAULT_MEDIA_TYPE,
+    page_id: str | None = None,
 ) -> Path:
     """Stable, collision-free, length-bounded filename for query + market."""
     digest = hashlib.sha1(
-        _artifact_key(query, country, advertiser, active_status, media_type).encode(
-            "utf-8"
-        )
+        _artifact_key(
+            query, country, advertiser, active_status, media_type, page_id
+        ).encode("utf-8")
     ).hexdigest()[:16]
     return _data_dir() / "snapshots" / f"{digest}.json"
 
@@ -405,17 +450,18 @@ def report_paths(
     advertiser: str | None = None,
     active_status: str = DEFAULT_ACTIVE_STATUS,
     media_type: str = DEFAULT_MEDIA_TYPE,
+    page_id: str | None = None,
 ) -> dict:
     """Where the HTML report and its digest live for query + market.
 
     The filename hashes the same key as the snapshot: the same query watched
-    in two markets, or once unfiltered and once for one advertiser, must never
-    share an artifact.
+    in two markets, once unfiltered and once for one advertiser, or once as a
+    keyword and once as a page, must never share an artifact.
     """
     digest = hashlib.sha1(
-        _artifact_key(query, country, advertiser, active_status, media_type).encode(
-            "utf-8"
-        )
+        _artifact_key(
+            query, country, advertiser, active_status, media_type, page_id
+        ).encode("utf-8")
     ).hexdigest()[:16]
     base = _data_dir() / "reports"
     return {
@@ -431,12 +477,18 @@ def save_snapshot(
     advertiser: str | None = None,
     active_status: str = DEFAULT_ACTIVE_STATUS,
     media_type: str = DEFAULT_MEDIA_TYPE,
+    page_id: str | None = None,
 ) -> None:
     payload = dict(snap or {})
     payload["query"] = _norm(query)
     # Stamped on every write: a file written by an unfiltered watch is marked
     # advertiser "", so a filtered watch cannot mistake it for its own baseline.
     payload["advertiser"] = _norm(advertiser)
+    # A page watch stamps its identity too: the file then says which listing it
+    # holds, and the snapshot key is not the only record of it.
+    pid = _strict_page_id(page_id) if _norm(page_id) else ""
+    if pid:
+        payload["page_id"] = pid
     # Filters are stamped only when non-default: an unfiltered payload keeps
     # the exact shape older versions wrote.
     active_status = _norm_filter(
@@ -450,7 +502,9 @@ def save_snapshot(
     payload.setdefault("ads", {})
     with data_lock():
         _write_json(
-            _snapshot_path(query, country, advertiser, active_status, media_type),
+            _snapshot_path(
+                query, country, advertiser, active_status, media_type, pid or None
+            ),
             payload,
         )
 
@@ -471,25 +525,29 @@ def _snapshot_candidates(
     advertiser: str | None,
     active_status: str = DEFAULT_ACTIVE_STATUS,
     media_type: str = DEFAULT_MEDIA_TYPE,
+    page_id: str | None = None,
 ) -> list[Path]:
     """Paths to try, most specific first.
 
-    * the advertiser-/filter-keyed file (when a target or filter is set)
+    * the advertiser-/page-/filter-keyed file (when a target, page or filter
+      is set)
     * the unfiltered ``query + country`` file, which is also the exact key for
-      entries without an advertiser or filter
+      entries without an advertiser, page or filter
     * the pre-country ``sha1(query)`` file, US only, and only for a watch with
-      neither an advertiser nor a filter
+      neither an advertiser, a page nor a filter
 
-    A watch with an advertiser, or with a non-default filter, never falls back
-    to the unfiltered file: that baseline holds ads the target/filter excludes,
-    so endings computed against it would be wrong (an advertiser watch would
-    report every other page's ads as ended). It starts from an empty baseline
-    instead. The same applies to the pre-country legacy file: it predates
-    metadata stamps, so the load guard cannot tell it apart from an unfiltered
-    baseline.
+    A watch with an advertiser, a page, or a non-default filter never falls
+    back to the unfiltered file: that baseline holds ads the target/page/filter
+    excludes, so endings computed against it would be wrong (a page watch
+    would report the whole keyword listing's ads as ended). It starts from an
+    empty baseline instead. The same applies to the pre-country legacy file:
+    it predates metadata stamps, so the load guard cannot tell it apart from
+    an unfiltered baseline.
     """
     paths = [
-        _snapshot_path(query, country, advertiser, active_status, media_type)
+        _snapshot_path(
+            query, country, advertiser, active_status, media_type, page_id
+        )
     ]
     filtered = (
         _norm_filter(active_status, DEFAULT_ACTIVE_STATUS, _ACTIVE_STATUSES)
@@ -497,7 +555,7 @@ def _snapshot_candidates(
         or _norm_filter(media_type, DEFAULT_MEDIA_TYPE, _MEDIA_TYPES)
         != DEFAULT_MEDIA_TYPE
     )
-    scoped = filtered or bool(_norm(advertiser))
+    scoped = filtered or bool(_norm(advertiser)) or bool(_norm(page_id))
     if not scoped:
         unfiltered = _snapshot_path(query, country)
         if unfiltered not in paths:
@@ -515,31 +573,34 @@ def load_snapshot(
     advertiser: str | None = None,
     active_status: str = DEFAULT_ACTIVE_STATUS,
     media_type: str = DEFAULT_MEDIA_TYPE,
+    page_id: str | None = None,
 ) -> dict:
-    """Load the snapshot for query + market (+ advertiser).
+    """Load the snapshot for query + market (+ advertiser, + page).
 
     Fallbacks keep old *unfiltered* baselines alive: pre-country snapshots
-    (hash of the query alone) are still read for US. An advertiser or filtered
-    watch never reads an unfiltered or unscoped file; its key is its own.
-    A fallback file is only accepted when it carries no ``advertiser`` stamp —
-    files written by this version under another key belong to another watch,
-    and adopting one would report its ads as ended.
+    (hash of the query alone) are still read for US. An advertiser, page or
+    filtered watch never reads an unfiltered or unscoped file; its key is its
+    own. A fallback file is only accepted when it carries no identity/filter
+    stamp — files written by this version under another key belong to another
+    watch, and adopting one would report its ads as ended.
     """
     for index, path in enumerate(
         _snapshot_candidates(
-            query, country, advertiser, active_status, media_type
+            query, country, advertiser, active_status, media_type, page_id
         )
     ):
         data = _read_snapshot_file(path)
         if data is None:
             continue
         if index and any(
-            key in data for key in ("advertiser", "active_status", "media_type")
+            key in data
+            for key in ("advertiser", "page_id", "active_status", "media_type")
         ):
             continue
-        # ``query``/``advertiser``/filters are file metadata; keep the public
-        # payload shape stable and tolerate payloads written before they existed.
-        for key in ("query", "advertiser", "active_status", "media_type"):
+        # ``query``/``advertiser``/``page_id``/filters are file metadata; keep
+        # the public payload shape stable and tolerate payloads written before
+        # they existed.
+        for key in ("query", "advertiser", "page_id", "active_status", "media_type"):
             data.pop(key, None)
         return data
     return {"ads": {}}

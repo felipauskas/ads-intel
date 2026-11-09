@@ -43,6 +43,22 @@ Italy``, ``Air New Zealand``, ``Bank of Georgia``) is exempt: when every
 qualifier the page names is one the target already carries, it is brand text,
 not a market claim, and the page stays eligible.
 
+Page identity sits *above* the name ladder (Task 2.2):
+
+* ``PAGE_ID_SCORE`` 1.0 — the caller supplies a numeric Meta Page ID and a
+  candidate ad carries the same ``page_id``. Exact identity: it wins outright,
+  ignores name score, market veto and slug veto, and a non-matching ID is a
+  truthful ``name_not_matched`` (never a silent name fallback).
+* ``PAGE_HANDLE_SCORE`` 0.90 — the caller supplies a vanity handle and a
+  candidate's ``page_url`` slug equals it (case-insensitive). A handle is a
+  strong hint rather than authoritative identity, so a miss falls back to the
+  name ladder.
+
+Precedence: page_id > page_handle > slug veto > name ladder. The slug veto is
+for pages picked *by name*; an explicit identity is stronger evidence than a
+URL slug, so it is not applied to an ID/handle match (a mismatch there means
+the recorded data contradicts itself, and the explicit identity wins).
+
 Pure stdlib, pure functions over dicts.
 """
 
@@ -50,6 +66,12 @@ import re
 import unicodedata
 
 MATCH_THRESHOLD = 0.80
+
+#: Exact numeric Meta Page ID: identity, above every name rung.
+PAGE_ID_SCORE = 1.0
+
+#: Vanity handle / ``page_url`` slug match: below a numeric ID, above names.
+PAGE_HANDLE_SCORE = 0.90
 
 _NON_ALNUM = re.compile(r"[^a-z0-9]")
 
@@ -945,7 +967,58 @@ def score_candidate(target, page_name) -> float:
     return 0.0
 
 
-def resolve_advertiser(target, page_names, market=None) -> dict:
+def _candidate_field(candidate, key) -> str:
+    """Read ``key`` from a candidate ad dict; plain strings carry no fields.
+
+    Candidates may be bare page names (the legacy contract) or ad dicts. Only
+    dicts can carry identity (``page_id``, ``page_url``), and a missing or
+    ``None`` field is ``""`` — a vanity handle's ``page_id`` is ``""`` and
+    must never satisfy a numeric ID.
+    """
+    if not isinstance(candidate, dict):
+        return ""
+    return str(candidate.get(key) or "").strip()
+
+
+def _resolve_by_page_id(target, candidates, page_id) -> dict:
+    """Exact numeric Page ID match, or a truthful mismatch (no name fallback)."""
+    for candidate in candidates or []:
+        if _candidate_field(candidate, "page_id") != page_id:
+            continue
+        name = _candidate_field(candidate, "page_name")
+        if not name:
+            continue
+        return {"page_name": name, "score": PAGE_ID_SCORE, "page_id": page_id}
+    return {
+        "error": "name_not_matched",
+        "target": target,
+        "candidates": [],
+        "threshold": MATCH_THRESHOLD,
+        "page_found": False,
+        "page_id": page_id,
+    }
+
+
+def _resolve_by_page_handle(candidates, handle) -> dict | None:
+    """Match a vanity handle against each candidate's ``page_url`` slug."""
+    for candidate in candidates or []:
+        slug = page_slug(_candidate_field(candidate, "page_url"))
+        if not slug or slug.casefold() != handle:
+            continue
+        name = _candidate_field(candidate, "page_name")
+        if not name:
+            continue
+        return {
+            "page_name": name,
+            "score": PAGE_HANDLE_SCORE,
+            "page_handle": handle,
+        }
+    return None
+
+
+def resolve_advertiser(
+    target, page_names, market=None, page_id=None, page_handle=None
+) -> dict:
     """Pick the winning page name, or report the mismatch.
 
     Returns ``{"page_name", "score"}`` on a match at or above
@@ -985,8 +1058,27 @@ def resolve_advertiser(target, page_names, market=None) -> dict:
 
     The ``name_not_matched`` code is kept (callers in ``tools.py`` branch on
     ``"error" in resolution``) rather than adding a new result kind.
+
+    ``page_id`` / ``page_handle`` add identity rungs before the name ladder
+    (see the module docstring for precedence). Candidates may be bare page
+    names or ad dicts; only dicts can carry identity. When ``page_id`` is
+    supplied, a page without that ID never resolves by name: the result is
+    ``name_not_matched`` with ``"page_found": False``. A ``page_handle`` miss
+    does fall back to names, because a vanity handle is a hint, not the
+    authoritative numeric identity.
     """
     target = str(target or "").strip()
+
+    wanted_id = str(page_id or "").strip()
+    if wanted_id:
+        return _resolve_by_page_id(target, page_names, wanted_id)
+
+    wanted_handle = str(page_handle or "").strip().lstrip("@").casefold()
+    if wanted_handle:
+        identity = _resolve_by_page_handle(page_names, wanted_handle)
+        if identity is not None:
+            return identity
+
     # A market-scoped query must not resolve to a page that explicitly names
     # a different market — a truthful FAIL beats a false PASS. This is a
     # *filter*, not a check on the winner: a wrong-market page that happens to
@@ -995,9 +1087,13 @@ def resolve_advertiser(target, page_names, market=None) -> dict:
     wanted = str(market or "").strip().upper()
     scored = []
     excluded = []
-    for name in page_names or []:
-        name = str(name or "")
-        if not name.strip():
+    for candidate in page_names or []:
+        name = (
+            _candidate_field(candidate, "page_name")
+            if isinstance(candidate, dict)
+            else str(candidate or "").strip()
+        )
+        if not name:
             continue
         score = score_candidate(target, name)
         if score <= 0:
@@ -1068,7 +1164,7 @@ def resolve_advertiser(target, page_names, market=None) -> dict:
     }
 
 
-def filter_ads(ads, target, market=None):
+def filter_ads(ads, target, market=None, page_id=None, page_handle=None):
     """Split ads by advertiser: ``(resolution, ads_on_winning_page)``.
 
     Ads are matched on the *normalized* page name, not the raw string: the
@@ -1086,8 +1182,43 @@ def filter_ads(ads, target, market=None):
     names a different market are dropped before resolution (see
     ``_slug_names_other_market``); a slug with no country token, or one that
     names the requested market, stays eligible.
+
+    ``page_id`` / ``page_handle`` are explicit identities and take precedence
+    over both claims (see the module docstring). When present, the slug veto
+    is skipped — an exact numeric ID beats a contradictory slug — and only ads
+    carrying that identity are kept. A non-matching ``page_id`` is a truthful
+    ``name_not_matched`` with ``"page_found": False`` and no name fallback; a
+    non-matching ``page_handle`` falls back to the name ladder, including the
+    slug veto, so the behaviour is identical to a handle-less call.
     """
     ads = list(ads or [])
+    wanted_id = str(page_id or "").strip()
+    if wanted_id:
+        resolution = resolve_advertiser(target, ads, market=market, page_id=wanted_id)
+        if "error" in resolution:
+            return resolution, []
+        kept = [
+            ad
+            for ad in ads
+            if _candidate_field(ad, "page_id") == wanted_id
+        ]
+        return resolution, kept
+
+    wanted_handle = str(page_handle or "").strip().lstrip("@").casefold()
+    if wanted_handle:
+        resolution = resolve_advertiser(
+            target, ads, market=market, page_handle=wanted_handle
+        )
+        if "error" not in resolution and resolution.get("page_handle"):
+            kept = [
+                ad
+                for ad in ads
+                if page_slug(_candidate_field(ad, "page_url")).casefold()
+                == wanted_handle
+            ]
+            return resolution, kept
+        # Handle missed: fall through to the ordinary name path below.
+
     if market:
         ads = [
             ad

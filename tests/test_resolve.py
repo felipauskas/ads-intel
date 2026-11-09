@@ -1145,3 +1145,156 @@ def test_slug_veto_is_inert_without_a_market():
     resolution, kept = resolve.filter_ads(ads, "KFC")
     assert resolution == {"page_name": "KFC", "score": 0.80}
     assert [ad["id"] for ad in kept] == ["mx"]
+
+
+# --- Page identity rung: page_id 1.0 > handle 0.90 > slug veto > name -------
+
+
+def test_page_id_match_beats_higher_name_score():
+    """An exact numeric Page ID is identity; the name ladder cannot outvote it."""
+    ads = [
+        {"id": "name", "page_name": "KFC", "page_id": "111"},
+        {"id": "id", "page_name": "KFCMexico", "page_id": "222"},
+    ]
+    assert resolve.score_candidate("KFC", "KFC") == 0.80
+    result = resolve.resolve_advertiser("KFC", ads, page_id="222")
+    assert result == {"page_name": "KFCMexico", "score": 1.0, "page_id": "222"}
+
+
+def test_page_id_match_ignores_market_and_slug_veto():
+    """ID beats the slug veto: a data inconsistency cannot outvote identity."""
+    ads = [
+        {
+            "page_name": "KFC Mexico",
+            "page_id": "222",
+            "page_url": FB.format(slug="KFCMexico"),
+        }
+    ]
+    result = resolve.resolve_advertiser("KFC", ads, market="US", page_id="222")
+    assert result == {"page_name": "KFC Mexico", "score": 1.0, "page_id": "222"}
+
+
+def test_mismatched_page_id_never_falls_back_to_name():
+    """An explicit page ID that is absent is a truthful miss, not a name guess."""
+    ads = [
+        {"page_name": "KFC", "page_id": "111"},
+        {"page_name": "KFC Egypt", "page_id": "222"},
+    ]
+    result = resolve.resolve_advertiser("KFC", ads, page_id="999")
+    assert result["error"] == "name_not_matched"
+    assert result["page_found"] is False
+    assert result["page_id"] == "999"
+    assert result["candidates"] == []
+
+
+def test_page_id_none_is_the_old_name_ladder():
+    ads = [{"page_name": "KFC", "page_id": "111"}]
+    assert resolve.resolve_advertiser("KFC", ads) == {
+        "page_name": "KFC",
+        "score": 0.80,
+    }
+
+
+def test_vanity_empty_page_id_never_matches():
+    """Vanity handles carry ``page_id: ""`` and must never satisfy a numeric ID."""
+    ads = [{"page_name": "KFC Arabia", "page_id": ""}]
+    result = resolve.resolve_advertiser("KFC", ads, page_id="222")
+    assert result["error"] == "name_not_matched"
+    assert result["page_found"] is False
+
+
+def test_page_id_matches_across_int_and_str():
+    ads = [{"page_name": "KFC", "page_id": 222}]
+    assert resolve.resolve_advertiser("KFC", ads, page_id="222")["score"] == 1.0
+
+
+def test_filter_ads_page_id_keeps_only_matching_ads():
+    ads = [
+        {
+            "id": "gb",
+            "page_name": "McDonald's",
+            "page_id": "209644529058679",
+            "page_url": FB.format(slug="McDonaldsUK"),
+        },
+        {
+            "id": "mx",
+            "page_name": "McDonald's",
+            "page_id": "777",
+            "page_url": FB.format(slug="McDonaldsMexico"),
+        },
+    ]
+    resolution, kept = resolve.filter_ads(
+        ads, "McDonald's", market="US", page_id="209644529058679"
+    )
+    assert resolution == {
+        "page_name": "McDonald's",
+        "score": 1.0,
+        "page_id": "209644529058679",
+    }
+    assert [ad["id"] for ad in kept] == ["gb"]
+
+
+def test_filter_ads_mismatched_page_id_is_truthful():
+    ads = [{"id": "mx", "page_name": "McDonald's", "page_id": "777"}]
+    resolution, kept = resolve.filter_ads(
+        ads, "McDonald's", page_id="209644529058679"
+    )
+    assert resolution["error"] == "name_not_matched"
+    assert resolution["page_found"] is False
+    assert kept == []
+
+
+def test_page_handle_rung_scores_point_nine():
+    """Handle identity (0.90) outranks every name rung but not a numeric ID."""
+    ads = [
+        {
+            "page_name": "KFC Arabia",
+            "page_id": "",
+            "page_url": FB.format(slug="kfcarabia"),
+        },
+        {"page_name": "KFC", "page_id": "1", "page_url": FB.format(slug="KFC")},
+    ]
+    result = resolve.resolve_advertiser("KFC", ads, page_handle="KFCArabia")
+    assert result == {
+        "page_name": "KFC Arabia",
+        "score": 0.90,
+        "page_handle": "kfcarabia",
+    }
+
+
+def test_page_handle_miss_falls_back_to_names():
+    """A handle is a strong hint, not an authoritative ID: names still apply."""
+    ads = [{"page_name": "KFC", "page_id": "1", "page_url": FB.format(slug="KFC")}]
+    result = resolve.resolve_advertiser("KFC", ads, page_handle="kfcarabia")
+    assert result == {"page_name": "KFC", "score": 0.80}
+
+
+def test_filter_ads_page_handle_keeps_matching_slug():
+    ads = [
+        {
+            "id": "ar",
+            "page_name": "KFC Arabia",
+            "page_url": FB.format(slug="KFCArabia"),
+        },
+        {"id": "uk", "page_name": "KFC Arabia", "page_url": FB.format(slug="KFCUK")},
+    ]
+    resolution, kept = resolve.filter_ads(
+        ads, "KFC", market="US", page_handle="kfcarabia"
+    )
+    assert resolution["score"] == 0.90
+    assert [ad["id"] for ad in kept] == ["ar"]
+
+
+def test_page_id_wins_over_page_handle():
+    ads = [
+        {
+            "page_name": "KFCMexico",
+            "page_id": "222",
+            "page_url": FB.format(slug="KFCMexico"),
+        },
+        {"page_name": "KFC", "page_id": "111", "page_url": FB.format(slug="KFCArabia")},
+    ]
+    result = resolve.resolve_advertiser(
+        "KFC", ads, page_id="111", page_handle="KFCMexico"
+    )
+    assert result == {"page_name": "KFC", "score": 1.0, "page_id": "111"}

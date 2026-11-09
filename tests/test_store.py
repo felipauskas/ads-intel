@@ -299,6 +299,154 @@ def test_watch_add_drops_nul_advertiser_entry():
     assert items == []
 
 
+# --- page identity: entry persistence, artifact keys, narrowed removal ------
+
+PAGE_ID = "15087023444"
+OTHER_PAGE_ID = "100064460930571"
+
+
+def test_page_watch_roundtrips_through_entry_and_watch_add():
+    """A page watch is a distinct entry, not a keyword watch with a label."""
+    page_entry = {"query": "kfc", "country": "GB", "page_id": PAGE_ID}
+    assert store.watch_add("kfc", country="GB", page_id=PAGE_ID) == [page_entry]
+    # Same page: deduped.
+    assert store.watch_add("kfc", country="GB", page_id=PAGE_ID) == [page_entry]
+
+    # The keyword watch on the same query/market keeps its legacy shape and
+    # sits beside the page watch instead of merging with it.
+    plain_entry = {"query": "kfc", "country": "GB"}
+    assert store.watch_add("kfc", country="GB") == [page_entry, plain_entry]
+    assert "page_id" not in plain_entry
+
+    # Two pages on one query are separate watches too.
+    assert store.watch_add("kfc", country="GB", page_id=OTHER_PAGE_ID) == [
+        page_entry,
+        plain_entry,
+        {"query": "kfc", "country": "GB", "page_id": OTHER_PAGE_ID},
+    ]
+    # The list view round-trips the stored identity.
+    assert store.watch_list() == [
+        page_entry,
+        plain_entry,
+        {"query": "kfc", "country": "GB", "page_id": OTHER_PAGE_ID},
+    ]
+
+
+def test_watch_add_treats_empty_page_id_as_no_page():
+    """Absent means "no page"; the entry must not grow an empty field."""
+    assert store.watch_add("kfc", page_id="") == [{"query": "kfc", "country": "US"}]
+    assert store.watch_add("kfc", page_id=None) == [
+        {"query": "kfc", "country": "US"}
+    ]
+
+
+@pytest.mark.parametrize(
+    "bad", ["abc", "12a", "-1", "12 3", "\u0661\u0662\u0663", "1\x002"]
+)
+def test_watch_add_drops_invalid_page_id(bad):
+    """An unusable ID is dropped with its entry, never downgraded to a keyword
+    watch: a page watch that silently lost its ID would report another page's
+    ads as its own."""
+    assert store.watch_add("kfc", page_id=bad) == []
+    assert store.watch_list() == []
+
+
+def test_watch_list_drops_entries_with_unusable_page_id(data_dir):
+    (data_dir / store.WATCH).write_text(
+        json.dumps(
+            [
+                {"query": "kfc", "country": "US", "page_id": "abc"},
+                {"query": "kfc", "country": "US", "page_id": PAGE_ID},
+            ]
+        )
+    )
+    assert store.watch_list() == [
+        {"query": "kfc", "country": "US", "page_id": PAGE_ID}
+    ]
+
+
+def test_snapshot_and_report_keys_differ_by_page_id():
+    """A page watch and a keyword watch on one query/market never share files."""
+    plain = store._snapshot_path("kfc", "GB")
+    page = store._snapshot_path("kfc", "GB", page_id=PAGE_ID)
+    other = store._snapshot_path("kfc", "GB", page_id=OTHER_PAGE_ID)
+    assert len({plain, page, other}) == 3
+    assert store._artifact_key("kfc", "GB", page_id=PAGE_ID) != store._artifact_key(
+        "kfc", "GB"
+    )
+    assert store.report_paths("kfc", "GB", page_id=PAGE_ID)["html"] != (
+        store.report_paths("kfc", "GB")["html"]
+    )
+    assert store.report_paths("kfc", "GB", page_id=PAGE_ID)["digest"] != (
+        store.report_paths("kfc", "GB")["digest"]
+    )
+    # Keys without a page are untouched, so existing baselines stay readable.
+    assert plain.name == (
+        hashlib.sha1("kfc\x00GB".encode("utf-8")).hexdigest()[:16] + ".json"
+    )
+
+
+def test_snapshot_path_rejects_non_numeric_page_id():
+    with pytest.raises(ValueError):
+        store._snapshot_path("kfc", "GB", page_id="abc")
+    with pytest.raises(ValueError):
+        store._artifact_key("kfc", "GB", page_id="1\x002")
+
+
+def test_watch_remove_can_target_one_page():
+    plain = {"query": "kfc", "country": "GB"}
+    page = {"query": "kfc", "country": "GB", "page_id": PAGE_ID}
+    other = {"query": "kfc", "country": "GB", "page_id": OTHER_PAGE_ID}
+    store.watch_add("kfc", country="GB")
+    store.watch_add("kfc", country="GB", page_id=PAGE_ID)
+    store.watch_add("kfc", country="GB", page_id=OTHER_PAGE_ID)
+
+    # Removing one page drops only that page watch; keyword and sibling page
+    # watches survive.
+    kept = store.watch_remove("kfc", page_id=PAGE_ID)
+    assert kept == [plain, other]
+    assert store.watch_list() == kept
+
+    # Omitting page_id keeps the historical remove-everything behaviour.
+    assert store.watch_remove("kfc") == []
+
+
+def test_watch_remove_rejects_invalid_page_id():
+    """An invalid narrower must refuse, never widen into a keyword removal."""
+    store.watch_add("kfc", country="GB")
+    store.watch_add("kfc", country="GB", page_id=PAGE_ID)
+    before = store.watch_list()
+
+    for bad in ("abc", "\u0661\u0662\u0663", ""):
+        with pytest.raises(ValueError):
+            store.watch_remove("kfc", page_id=bad)
+    assert store.watch_list() == before
+
+
+def test_page_watch_never_adopts_unscoped_baselines(data_dir):
+    """A page watch owns its baseline; keyword and legacy files are not it.
+
+    Adopting the keyword baseline would diff a page's ads against the whole
+    keyword listing and report every other page's ads as ended.
+    """
+    snap = {"ads": {"1": {"id": "1"}}}
+    store.save_snapshot("kfc", snap, "US")
+    digest = hashlib.sha1("kfc".encode("utf-8")).hexdigest()[:16]
+    legacy = data_dir / "snapshots" / f"{digest}.json"
+    legacy.parent.mkdir(parents=True, exist_ok=True)
+    legacy.write_text(json.dumps({"ads": {"9": {"id": "9"}}}))
+
+    assert store.load_snapshot("kfc", "US", page_id=PAGE_ID) == {"ads": {}}
+
+    # Its own baseline round-trips, with metadata kept out of the payload.
+    own = {"ads": {"2": {"id": "2"}}}
+    store.save_snapshot("kfc", own, "US", page_id=PAGE_ID)
+    assert store.load_snapshot("kfc", "US", page_id=PAGE_ID) == own
+
+    # The keyword watch still sees only its own baseline.
+    assert store.load_snapshot("kfc", "US") == snap
+
+
 # --- branch coverage: atomic-write cleanup and corrupt reads -----------------
 
 

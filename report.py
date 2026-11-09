@@ -332,13 +332,15 @@ def write_report(
     advertiser="",
     active_status="all",
     media_type="all",
+    page_id=None,
 ) -> dict:
     """Write one HTML report and its digest; return their paths as strings.
 
     ``out_dir`` defaults to the plugin's ``reports`` directory for query +
-    ``country`` (+ ``advertiser``, + filters); callers that let it default must
-    pass the watch entry's market, target and filters so two variants never
-    overwrite each other's artifacts.
+    ``country`` (+ ``advertiser``, + filters, + ``page_id``); callers that let
+    it default must pass the watch entry's market, target, filters and page
+    identity so two variants never overwrite each other's artifacts. A page
+    watch and a keyword watch on one query+market are separate artifacts.
     """
     meta = dict(meta or {})
     diff = diff or {}
@@ -346,7 +348,12 @@ def write_report(
 
     if out_dir is None:
         paths = store.report_paths(
-            query, country, advertiser, active_status, media_type
+            query,
+            country,
+            advertiser,
+            active_status,
+            media_type,
+            page_id=page_id,
         )
         html_path, digest_path = paths["html"], paths["digest"]
     else:
