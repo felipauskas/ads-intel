@@ -15,10 +15,23 @@
       "link_url": "http://play.google.com/store/apps/details?id=com.kfc.me",
       "link_title": "Big Crunch’n Deal 69 AE",
       "cta_text": "Order Now",
+      "link_caption": "",
       "images": [],
       "has_video": true,
       "same_creative_count": 0,
-      "multiple_versions": true
+      "multiple_versions": true,
+      "cta_type": "ORDER_NOW",
+      "display_format": "video",
+      "cards": [
+        {
+          "body": "Big Crunch’n Deal 🍗 10 PC chicken + 4 strips + fries + coleslaw. All for 69 AED. Only on KFC App! Order now",
+          "cta": "Order Now",
+          "image": null,
+          "link_url": "http://play.google.com/store/apps/details?id=com.kfc.me",
+          "title": "Big Crunch’n Deal 69 AE",
+          "video": null
+        }
+      ]
     },
     {
       "id": "946613708460302",
@@ -33,12 +46,25 @@
       "link_url": "https://deliveroo.ae/menu/dubai/al-barsha-3/kfc-al-barsha-emarat-12164-marketplace",
       "link_title": "Kfc Deliveroo",
       "cta_text": "Order Now",
+      "link_caption": "DELIVEROO.AE",
       "images": [
         "https://scontent-lax3-1.xx.fbcdn.net/v/t39.35426-6/844475070_1622374852954714_2247458520236057_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=102&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=8A6EXSkS-NEQ7kNvwHUgNhl&_nc_oc=Adq8fJHQHuf3IVtGE_XeVVqD27D1UWPyG631XAxv3-zUg5fzpQra4M4GZwUDORqQfBw&_nc_zt=14&_nc_ht=scontent-lax3-1.xx&_nc_gid=jWaicq0aKw5DPHA9ta162A&_nc_ss=7b289&oh=00_AQSmpan02vj2Lj3YUBMDyCgeySzfMQ9VqR9a8Z1SpAqYPw&oe=6AF73A27"
       ],
       "has_video": false,
       "same_creative_count": 2,
-      "multiple_versions": true
+      "multiple_versions": true,
+      "cta_type": "ORDER_NOW",
+      "display_format": "image",
+      "cards": [
+        {
+          "body": "Lunch just got 10x better 🍔 Download the app and get free delivery for 31 days.",
+          "cta": "Order Now",
+          "image": "https://scontent-lax3-1.xx.fbcdn.net/v/t39.35426-6/844475070_1622374852954714_2247458520236057_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=102&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=8A6EXSkS-NEQ7kNvwHUgNhl&_nc_oc=Adq8fJHQHuf3IVtGE_XeVVqD27D1UWPyG631XAxv3-zUg5fzpQra4M4GZwUDORqQfBw&_nc_zt=14&_nc_ht=scontent-lax3-1.xx&_nc_gid=jWaicq0aKw5DPHA9ta162A&_nc_ss=7b289&oh=00_AQSmpan02vj2Lj3YUBMDyCgeySzfMQ9VqR9a8Z1SpAqYPw&oe=6AF73A27",
+          "link_url": "https://deliveroo.ae/menu/dubai/al-barsha-3/kfc-al-barsha-emarat-12164-marketplace",
+          "title": "Kfc Deliveroo",
+          "video": null
+        }
+      ]
     },
     {
       "id": "1702589900861104",
@@ -53,12 +79,25 @@
       "link_url": "http://play.google.com/store/apps/details?id=com.kfc.me",
       "link_title": "Chicken Deal",
       "cta_text": "Order Now",
+      "link_caption": "",
       "images": [
         "https://scontent-lax3-1.xx.fbcdn.net/v/t39.35426-6/777800941_948071738320276_4487907682308537970_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=104&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=muDR1YC-_rIQ7kNvwFeVbsF&_nc_oc=AdruOeuE75fa8hWFOlcrYkCMqMh2ipA6QwGpS5onjAw7OrwglmsW3Tvof_7QyIlgS7A&_nc_zt=14&_nc_ht=scontent-lax3-1.xx&_nc_gid=jWaicq0aKw5DPHA9ta162A&_nc_ss=7b289&oh=00_AQSY1XFZsytirkbcqnCWlCbv2lhJQAwdLC6fA_GvyfVvdg&oe=6AF72C6A"
       ],
       "has_video": false,
       "same_creative_count": 0,
-      "multiple_versions": true
+      "multiple_versions": true,
+      "cta_type": "ORDER_NOW",
+      "display_format": "image",
+      "cards": [
+        {
+          "body": "Worth every bite. 🍗 Get the Chicken Deal with 2 Chicken Pieces, fries and a bun for just 12 AED",
+          "cta": "Order Now",
+          "image": "https://scontent-lax3-1.xx.fbcdn.net/v/t39.35426-6/777800941_948071738320276_4487907682308537970_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=104&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=muDR1YC-_rIQ7kNvwFeVbsF&_nc_oc=AdruOeuE75fa8hWFOlcrYkCMqMh2ipA6QwGpS5onjAw7OrwglmsW3Tvof_7QyIlgS7A&_nc_zt=14&_nc_ht=scontent-lax3-1.xx&_nc_gid=jWaicq0aKw5DPHA9ta162A&_nc_ss=7b289&oh=00_AQSY1XFZsytirkbcqnCWlCbv2lhJQAwdLC6fA_GvyfVvdg&oe=6AF72C6A",
+          "link_url": "http://play.google.com/store/apps/details?id=com.kfc.me",
+          "title": "Chicken Deal",
+          "video": null
+        }
+      ]
     },
     {
       "id": "1795700704978650",
@@ -73,12 +112,25 @@
       "link_url": "http://play.google.com/store/apps/details?id=com.kfc.me",
       "link_title": "Today’s meal from 19 AED",
       "cta_text": "Order Now",
+      "link_caption": "",
       "images": [
         "https://scontent-lax7-1.xx.fbcdn.net/v/t39.35426-6/686546633_1912628246053493_4235427390707907113_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=101&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=RcAZwksEamIQ7kNvwHUMaG-&_nc_oc=AdrL8CYYkHD7xFxTbJNT9WhpIQ0Bf-6OfU2gJRBSIL1-oAqzrWhiNGx2RPtdwtWn58w&_nc_zt=14&_nc_ht=scontent-lax7-1.xx&_nc_gid=jWaicq0aKw5DPHA9ta162A&_nc_ss=7b289&oh=00_AQRJJ7iZaZwYxV4bUcQo8i0JXa27pyJPmiqYj4YP_JtOrA&oe=6AF72360"
       ],
       "has_video": false,
       "same_creative_count": 0,
-      "multiple_versions": true
+      "multiple_versions": true,
+      "cta_type": "ORDER_NOW",
+      "display_format": "image",
+      "cards": [
+        {
+          "body": "Deal of the Day! Enjoy a full meal with bold crunch starting 19 AED today. 🍗😋",
+          "cta": "Order Now",
+          "image": "https://scontent-lax7-1.xx.fbcdn.net/v/t39.35426-6/686546633_1912628246053493_4235427390707907113_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=101&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=RcAZwksEamIQ7kNvwHUMaG-&_nc_oc=AdrL8CYYkHD7xFxTbJNT9WhpIQ0Bf-6OfU2gJRBSIL1-oAqzrWhiNGx2RPtdwtWn58w&_nc_zt=14&_nc_ht=scontent-lax7-1.xx&_nc_gid=jWaicq0aKw5DPHA9ta162A&_nc_ss=7b289&oh=00_AQRJJ7iZaZwYxV4bUcQo8i0JXa27pyJPmiqYj4YP_JtOrA&oe=6AF72360",
+          "link_url": "http://play.google.com/store/apps/details?id=com.kfc.me",
+          "title": "Today’s meal from 19 AED",
+          "video": null
+        }
+      ]
     },
     {
       "id": "2959626614398593",
@@ -93,10 +145,23 @@
       "link_url": "https://n8du.adj.st/home?&adj_t=uhuyr3d&adj_campaign=21134115-YUM-KFC-UAE-META-NA-AWAR-W9-Brand_Campaign-AUC-REA-CPM-BO#52920&adj_adgroup=Meta&adj_creative=Brand",
       "link_title": "A Taste of Whats Next",
       "cta_text": "Order Now",
+      "link_caption": "",
       "images": [],
       "has_video": true,
       "same_creative_count": 0,
-      "multiple_versions": true
+      "multiple_versions": true,
+      "cta_type": "ORDER_NOW",
+      "display_format": "video",
+      "cards": [
+        {
+          "body": "Tired of the same old, same old? So are we.\nGive'em a taste of what's next 🍗",
+          "cta": "Order Now",
+          "image": null,
+          "link_url": "https://n8du.adj.st/home?&adj_t=uhuyr3d&adj_campaign=21134115-YUM-KFC-UAE-META-NA-AWAR-W9-Brand_Campaign-AUC-REA-CPM-BO#52920&adj_adgroup=Meta&adj_creative=Brand",
+          "title": "A Taste of Whats Next",
+          "video": null
+        }
+      ]
     },
     {
       "id": "4207786219522020",
@@ -111,10 +176,23 @@
       "link_url": "https://n8du.adj.st/home?&adj_t=uhuyr3d&adj_campaign=21134115-YUM-KFC-UAE-META-NA-AWAR-W9-Brand_Campaign-AUC-REA-CPM-BO#52920&adj_adgroup=Meta&adj_creative=Brand",
       "link_title": "A Taste of Whats Next",
       "cta_text": "Order Now",
+      "link_caption": "",
       "images": [],
       "has_video": true,
       "same_creative_count": 0,
-      "multiple_versions": true
+      "multiple_versions": true,
+      "cta_type": "ORDER_NOW",
+      "display_format": "video",
+      "cards": [
+        {
+          "body": "Tired of the same old, same old? So are we.\nGive'em a taste of what's next 🍗",
+          "cta": "Order Now",
+          "image": null,
+          "link_url": "https://n8du.adj.st/home?&adj_t=uhuyr3d&adj_campaign=21134115-YUM-KFC-UAE-META-NA-AWAR-W9-Brand_Campaign-AUC-REA-CPM-BO#52920&adj_adgroup=Meta&adj_creative=Brand",
+          "title": "A Taste of Whats Next",
+          "video": null
+        }
+      ]
     },
     {
       "id": "1063334556702046",
@@ -129,10 +207,23 @@
       "link_url": "https://deliveroo.ae/menu/abu-dhabi/al-mafraq/joe-and-the-juice-madinati-mall-abu-dhabi",
       "link_title": "Joe & The Juice Deliveroo",
       "cta_text": "Order Now",
+      "link_caption": "DELIVEROO.AE",
       "images": [],
       "has_video": true,
       "same_creative_count": 0,
-      "multiple_versions": true
+      "multiple_versions": true,
+      "cta_type": "ORDER_NOW",
+      "display_format": "video",
+      "cards": [
+        {
+          "body": "You have exclusive tastes?\nDownload the app and get free delivery for 31 days.",
+          "cta": "Order Now",
+          "image": null,
+          "link_url": "https://deliveroo.ae/menu/abu-dhabi/al-mafraq/joe-and-the-juice-madinati-mall-abu-dhabi",
+          "title": "Joe & The Juice Deliveroo",
+          "video": null
+        }
+      ]
     },
     {
       "id": "1311931910756601",
@@ -147,10 +238,23 @@
       "link_url": "https://deliveroo.ae/menu/abu-dhabi/al-mafraq/joe-and-the-juice-madinati-mall-abu-dhabi",
       "link_title": "Joe & The Juice Deliveroo",
       "cta_text": "Order Now",
+      "link_caption": "DELIVEROO.AE",
       "images": [],
       "has_video": true,
       "same_creative_count": 2,
-      "multiple_versions": true
+      "multiple_versions": true,
+      "cta_type": "ORDER_NOW",
+      "display_format": "video",
+      "cards": [
+        {
+          "body": "Every craving delivered. Download the app and get free delivery for 31 days.",
+          "cta": "Order Now",
+          "image": null,
+          "link_url": "https://deliveroo.ae/menu/abu-dhabi/al-mafraq/joe-and-the-juice-madinati-mall-abu-dhabi",
+          "title": "Joe & The Juice Deliveroo",
+          "video": null
+        }
+      ]
     },
     {
       "id": "1758303935225405",
@@ -165,12 +269,25 @@
       "link_url": "http://play.google.com/store/apps/details?id=com.kfc.me",
       "link_title": "Deal of the Day 50% OFF",
       "cta_text": "Order Now",
+      "link_caption": "",
       "images": [
         "https://scontent-lax7-1.xx.fbcdn.net/v/t39.35426-6/687875064_2815245848825576_752101109477457084_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=105&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=9sQH3_l8IAMQ7kNvwF_rEjo&_nc_oc=AdoTsKvQDUpQcgG6Qm42uXjxU-8eD8fgf5mTChfDyMkMP3moQgJvpk0aPAfiLc0l47E&_nc_zt=14&_nc_ht=scontent-lax7-1.xx&_nc_gid=jWaicq0aKw5DPHA9ta162A&_nc_ss=7b289&oh=00_AQQb0Ug6RLszO_z-eu2MypsVkLs693yRTOCH2NUVk2L04Q&oe=6AF73A98"
       ],
       "has_video": false,
       "same_creative_count": 0,
-      "multiple_versions": true
+      "multiple_versions": true,
+      "cta_type": "ORDER_NOW",
+      "display_format": "image",
+      "cards": [
+        {
+          "body": "Today’s Deal of the Day: 50% OFF your favorite KFC meal. Half price, full crunch! 🍗😋",
+          "cta": "Order Now",
+          "image": "https://scontent-lax7-1.xx.fbcdn.net/v/t39.35426-6/687875064_2815245848825576_752101109477457084_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=105&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=9sQH3_l8IAMQ7kNvwF_rEjo&_nc_oc=AdoTsKvQDUpQcgG6Qm42uXjxU-8eD8fgf5mTChfDyMkMP3moQgJvpk0aPAfiLc0l47E&_nc_zt=14&_nc_ht=scontent-lax7-1.xx&_nc_gid=jWaicq0aKw5DPHA9ta162A&_nc_ss=7b289&oh=00_AQQb0Ug6RLszO_z-eu2MypsVkLs693yRTOCH2NUVk2L04Q&oe=6AF73A98",
+          "link_url": "http://play.google.com/store/apps/details?id=com.kfc.me",
+          "title": "Deal of the Day 50% OFF",
+          "video": null
+        }
+      ]
     },
     {
       "id": "1773030940643170",
@@ -185,10 +302,23 @@
       "link_url": "https://n8du.adj.st/home?&adj_t=uhuyr3d&adj_campaign=21134115-YUM-KFC-UAE-META-NA-AWAR-W9-Brand_Campaign-AUC-REA-CPM-BO#52920&adj_adgroup=Meta&adj_creative=Brand",
       "link_title": "A Taste of Whats Next",
       "cta_text": "Order Now",
+      "link_caption": "",
       "images": [],
       "has_video": true,
       "same_creative_count": 2,
-      "multiple_versions": false
+      "multiple_versions": false,
+      "cta_type": "ORDER_NOW",
+      "display_format": "video",
+      "cards": [
+        {
+          "body": "Tired of the same old, same old? So are we.\nGive'em a taste of what's next 🍗",
+          "cta": "Order Now",
+          "image": null,
+          "link_url": "https://n8du.adj.st/home?&adj_t=uhuyr3d&adj_campaign=21134115-YUM-KFC-UAE-META-NA-AWAR-W9-Brand_Campaign-AUC-REA-CPM-BO#52920&adj_adgroup=Meta&adj_creative=Brand",
+          "title": "A Taste of Whats Next",
+          "video": null
+        }
+      ]
     },
     {
       "id": "1101651329319105",
@@ -203,10 +333,23 @@
       "link_url": "",
       "link_title": "",
       "cta_text": "",
+      "link_caption": "",
       "images": [],
       "has_video": true,
       "same_creative_count": 0,
-      "multiple_versions": true
+      "multiple_versions": true,
+      "cta_type": "",
+      "display_format": "video",
+      "cards": [
+        {
+          "body": ".\nطفشت من القديم؟ حنا بعد.\n🍗ذوقهم اللي جاي\nTired of the same old, same old? So are we.\nGive ‘em a taste of what’s next 🍗",
+          "cta": "",
+          "image": null,
+          "link_url": "",
+          "title": "",
+          "video": null
+        }
+      ]
     },
     {
       "id": "1060709940355159",
@@ -221,10 +364,23 @@
       "link_url": "https://n8du.adj.st/home?&adj_t=uhuyr3d&adj_campaign=21134115-YUM-KFC-UAE-META-NA-AWAR-W9-Brand_Campaign-AUC-REA-CPM-BO#52920&adj_adgroup=Meta&adj_creative=Brand",
       "link_title": "ذوقهم اللي جاي",
       "cta_text": "Order Now",
+      "link_caption": "",
       "images": [],
       "has_video": true,
       "same_creative_count": 0,
-      "multiple_versions": true
+      "multiple_versions": true,
+      "cta_type": "ORDER_NOW",
+      "display_format": "video",
+      "cards": [
+        {
+          "body": "طفشت من القديم؟ حنا بعد.\nذوقهم اللي جاي 🍗",
+          "cta": "Order Now",
+          "image": null,
+          "link_url": "https://n8du.adj.st/home?&adj_t=uhuyr3d&adj_campaign=21134115-YUM-KFC-UAE-META-NA-AWAR-W9-Brand_Campaign-AUC-REA-CPM-BO#52920&adj_adgroup=Meta&adj_creative=Brand",
+          "title": "ذوقهم اللي جاي",
+          "video": null
+        }
+      ]
     },
     {
       "id": "4045603329067086",
@@ -239,12 +395,25 @@
       "link_url": "https://deliveroo.ae/menu/abu-dhabi/dalma-mall/halla-shawarma-dalma-mall-ad",
       "link_title": "Halla Shawarma Deliveroo",
       "cta_text": "Order Now",
+      "link_caption": "DELIVEROO.AE",
       "images": [
         "https://scontent-lax3-2.xx.fbcdn.net/v/t39.35426-6/844322055_1101604239529570_2224116270222016781_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=100&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=AI3yqoqTUMcQ7kNvwGU8Pu0&_nc_oc=AdrfKRQAeKB3k17hNVT5nLxyOZ7jPCp0JYK1bDNfMtDIS_gmN6na8dfgf6VFYqVJ3Tw&_nc_zt=14&_nc_ht=scontent-lax3-2.xx&_nc_gid=jWaicq0aKw5DPHA9ta162A&_nc_ss=7b289&oh=00_AQREl2LekL-mg7GyhYw9f_IOhUHz_VZU2Z-PC6VC_U1SoA&oe=6AF74F62"
       ],
       "has_video": false,
       "same_creative_count": 0,
-      "multiple_versions": true
+      "multiple_versions": true,
+      "cta_type": "ORDER_NOW",
+      "display_format": "image",
+      "cards": [
+        {
+          "body": "غداك صار أحلى 10 مرات 🍔 حمّل التطبيق واستمتع بتوصيل مجاني لمدة 31 يوم.",
+          "cta": "Order Now",
+          "image": "https://scontent-lax3-2.xx.fbcdn.net/v/t39.35426-6/844322055_1101604239529570_2224116270222016781_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=100&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=AI3yqoqTUMcQ7kNvwGU8Pu0&_nc_oc=AdrfKRQAeKB3k17hNVT5nLxyOZ7jPCp0JYK1bDNfMtDIS_gmN6na8dfgf6VFYqVJ3Tw&_nc_zt=14&_nc_ht=scontent-lax3-2.xx&_nc_gid=jWaicq0aKw5DPHA9ta162A&_nc_ss=7b289&oh=00_AQREl2LekL-mg7GyhYw9f_IOhUHz_VZU2Z-PC6VC_U1SoA&oe=6AF74F62",
+          "link_url": "https://deliveroo.ae/menu/abu-dhabi/dalma-mall/halla-shawarma-dalma-mall-ad",
+          "title": "Halla Shawarma Deliveroo",
+          "video": null
+        }
+      ]
     },
     {
       "id": "2590670391350116",
@@ -259,12 +428,25 @@
       "link_url": "http://itunes.apple.com/app/id1498929827",
       "link_title": "40% Off Pickup",
       "cta_text": "Install Now",
+      "link_caption": "",
       "images": [
         "https://scontent-lax3-2.xx.fbcdn.net/v/t39.35426-6/793212678_1039457562185686_8683521473677485907_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=106&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=XMSdlHAS4hMQ7kNvwGVndbJ&_nc_oc=AdqQbN28npaRtRjESxdHFUsdseNwJAGOk66WLPOC8UOSY7z_ZOFg3t-yRqTschvjBLs&_nc_zt=14&_nc_ht=scontent-lax3-2.xx&_nc_gid=jWaicq0aKw5DPHA9ta162A&_nc_ss=7b289&oh=00_AQSsgS9aX-kS2hYvEkDgY-oWTdHDCPwnc7d1-VNk8McSQA&oe=6AF74F9E"
       ],
       "has_video": false,
       "same_creative_count": 0,
-      "multiple_versions": true
+      "multiple_versions": true,
+      "cta_type": "INSTALL_MOBILE_APP",
+      "display_format": "image",
+      "cards": [
+        {
+          "body": "Download the KFC app and get 40% OFF your pickup order 🍗🔥 New users only",
+          "cta": "Install Now",
+          "image": "https://scontent-lax3-2.xx.fbcdn.net/v/t39.35426-6/793212678_1039457562185686_8683521473677485907_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=106&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=XMSdlHAS4hMQ7kNvwGVndbJ&_nc_oc=AdqQbN28npaRtRjESxdHFUsdseNwJAGOk66WLPOC8UOSY7z_ZOFg3t-yRqTschvjBLs&_nc_zt=14&_nc_ht=scontent-lax3-2.xx&_nc_gid=jWaicq0aKw5DPHA9ta162A&_nc_ss=7b289&oh=00_AQSsgS9aX-kS2hYvEkDgY-oWTdHDCPwnc7d1-VNk8McSQA&oe=6AF74F9E",
+          "link_url": "http://itunes.apple.com/app/id1498929827",
+          "title": "40% Off Pickup",
+          "video": null
+        }
+      ]
     },
     {
       "id": "1765031904822938",
@@ -279,12 +461,25 @@
       "link_url": "http://itunes.apple.com/app/id1498929827",
       "link_title": "Today’s meal from 19 AED",
       "cta_text": "Order Now",
+      "link_caption": "",
       "images": [
         "https://scontent-lax7-1.xx.fbcdn.net/v/t39.35426-6/662257412_4015853575213188_1639411346429252680_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=101&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=R6H7NhlHX3YQ7kNvwEo4uwl&_nc_oc=AdrknuplHlLUXmN8I0f-9evN8f8iGHIaVLQI0Aby4UnfgqAhr4iv0lD7UZ40U_f1lLg&_nc_zt=14&_nc_ht=scontent-lax7-1.xx&_nc_gid=jWaicq0aKw5DPHA9ta162A&_nc_ss=7b289&oh=00_AQSUljJ1taFLeKS2ZPhwmNdY5CtY7XhLwBVjCw_R8Zr5Xg&oe=6AF746D1"
       ],
       "has_video": false,
       "same_creative_count": 5,
-      "multiple_versions": true
+      "multiple_versions": true,
+      "cta_type": "ORDER_NOW",
+      "display_format": "image",
+      "cards": [
+        {
+          "body": "Don’t miss it — today’s comeback Deal of the Day is 50% OFF. Flavor worth every bite 🔥🍔",
+          "cta": "Order Now",
+          "image": "https://scontent-lax7-1.xx.fbcdn.net/v/t39.35426-6/662257412_4015853575213188_1639411346429252680_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=101&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=R6H7NhlHX3YQ7kNvwEo4uwl&_nc_oc=AdrknuplHlLUXmN8I0f-9evN8f8iGHIaVLQI0Aby4UnfgqAhr4iv0lD7UZ40U_f1lLg&_nc_zt=14&_nc_ht=scontent-lax7-1.xx&_nc_gid=jWaicq0aKw5DPHA9ta162A&_nc_ss=7b289&oh=00_AQSUljJ1taFLeKS2ZPhwmNdY5CtY7XhLwBVjCw_R8Zr5Xg&oe=6AF746D1",
+          "link_url": "http://itunes.apple.com/app/id1498929827",
+          "title": "Today’s meal from 19 AED",
+          "video": null
+        }
+      ]
     },
     {
       "id": "928203430304097",
@@ -299,12 +494,25 @@
       "link_url": "http://itunes.apple.com/app/id1498929827",
       "link_title": "40% OFF Starts Now",
       "cta_text": "Install Now",
+      "link_caption": "",
       "images": [
         "https://scontent-lax7-1.xx.fbcdn.net/v/t39.35426-6/797922145_1469912472015137_4302016274654212236_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=105&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=pwU4of7dSp8Q7kNvwGDXEsJ&_nc_oc=Adr-ed_g2em9BfddlTsDCiOPErCYvveqEUozs8N7Q2rTj8ktkcA756jjiEId5nqsSb4&_nc_zt=14&_nc_ht=scontent-lax7-1.xx&_nc_gid=jWaicq0aKw5DPHA9ta162A&_nc_ss=7b289&oh=00_AQR4k8azXqMwoEg0z7sa2qQwT7Hyn3KmNT7-mG4GO9gCvg&oe=6AF73C14"
       ],
       "has_video": false,
       "same_creative_count": 0,
-      "multiple_versions": true
+      "multiple_versions": true,
+      "cta_type": "INSTALL_MOBILE_APP",
+      "display_format": "image",
+      "cards": [
+        {
+          "body": "Start strong 🎁 Get 40% OFF your first 3 orders with 3NEW40. Ready when you are.",
+          "cta": "Install Now",
+          "image": "https://scontent-lax7-1.xx.fbcdn.net/v/t39.35426-6/797922145_1469912472015137_4302016274654212236_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=105&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=pwU4of7dSp8Q7kNvwGDXEsJ&_nc_oc=Adr-ed_g2em9BfddlTsDCiOPErCYvveqEUozs8N7Q2rTj8ktkcA756jjiEId5nqsSb4&_nc_zt=14&_nc_ht=scontent-lax7-1.xx&_nc_gid=jWaicq0aKw5DPHA9ta162A&_nc_ss=7b289&oh=00_AQR4k8azXqMwoEg0z7sa2qQwT7Hyn3KmNT7-mG4GO9gCvg&oe=6AF73C14",
+          "link_url": "http://itunes.apple.com/app/id1498929827",
+          "title": "40% OFF Starts Now",
+          "video": null
+        }
+      ]
     },
     {
       "id": "2868539850205802",
@@ -319,12 +527,25 @@
       "link_url": "http://play.google.com/store/apps/details?id=com.kfc.me",
       "link_title": "عرض مقرمش يبدا من 19 درهم",
       "cta_text": "Order Now",
+      "link_caption": "",
       "images": [
         "https://scontent-lax3-2.xx.fbcdn.net/v/t39.35426-6/690144420_941620218682885_1273927367350688441_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=106&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=lJOgGb_41oIQ7kNvwGfVF1V&_nc_oc=AdrOUeybBc2NpqloHgnuuHUjIAEJnwx86Kr1ICAakZBMWbhL-BAoQHIMjHqfQoFQ_XY&_nc_zt=14&_nc_ht=scontent-lax3-2.xx&_nc_gid=jWaicq0aKw5DPHA9ta162A&_nc_ss=7b289&oh=00_AQQHUOSxR3vHE6yS-b9yJYydqbD0FtGE0JkICl5-ziNpdA&oe=6AF727EA"
       ],
       "has_video": false,
       "same_creative_count": 0,
-      "multiple_versions": true
+      "multiple_versions": true,
+      "cta_type": "ORDER_NOW",
+      "display_format": "image",
+      "cards": [
+        {
+          "body": "عرض اليوم! استمتع بوجبة كاملة مع قرمشة ما في مثلها بداية من 19 درهم اليوم. 🍗😋",
+          "cta": "Order Now",
+          "image": "https://scontent-lax3-2.xx.fbcdn.net/v/t39.35426-6/690144420_941620218682885_1273927367350688441_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=106&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=lJOgGb_41oIQ7kNvwGfVF1V&_nc_oc=AdrOUeybBc2NpqloHgnuuHUjIAEJnwx86Kr1ICAakZBMWbhL-BAoQHIMjHqfQoFQ_XY&_nc_zt=14&_nc_ht=scontent-lax3-2.xx&_nc_gid=jWaicq0aKw5DPHA9ta162A&_nc_ss=7b289&oh=00_AQQHUOSxR3vHE6yS-b9yJYydqbD0FtGE0JkICl5-ziNpdA&oe=6AF727EA",
+          "link_url": "http://play.google.com/store/apps/details?id=com.kfc.me",
+          "title": "عرض مقرمش يبدا من 19 درهم",
+          "video": null
+        }
+      ]
     },
     {
       "id": "1126006843339426",
@@ -339,10 +560,23 @@
       "link_url": "https://n8du.adj.st/home?&adj_t=uhuyr3d&adj_campaign=21134115-YUM-KFC-UAE-META-NA-AWAR-W9-Brand_Campaign-AUC-REA-CPM-BO#52920&adj_adgroup=Meta&adj_creative=Brand",
       "link_title": "ذوقهم اللي جاي",
       "cta_text": "Order Now",
+      "link_caption": "",
       "images": [],
       "has_video": true,
       "same_creative_count": 0,
-      "multiple_versions": true
+      "multiple_versions": true,
+      "cta_type": "ORDER_NOW",
+      "display_format": "video",
+      "cards": [
+        {
+          "body": "طفشت من القديم؟ حنا بعد.\nذوقهم اللي جاي 🍗",
+          "cta": "Order Now",
+          "image": null,
+          "link_url": "https://n8du.adj.st/home?&adj_t=uhuyr3d&adj_campaign=21134115-YUM-KFC-UAE-META-NA-AWAR-W9-Brand_Campaign-AUC-REA-CPM-BO#52920&adj_adgroup=Meta&adj_creative=Brand",
+          "title": "ذوقهم اللي جاي",
+          "video": null
+        }
+      ]
     },
     {
       "id": "1133220306241696",
@@ -357,12 +591,25 @@
       "link_url": "https://deliveroo.ae/menu/dubai/al-barsha-3/kfc-al-barsha-emarat-12164-marketplace",
       "link_title": "Kfc Deliveroo",
       "cta_text": "Order Now",
+      "link_caption": "DELIVEROO.AE",
       "images": [
         "https://scontent-lax3-2.xx.fbcdn.net/v/t39.35426-6/845902719_944139195437282_5537872744083727009_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=100&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=fdOxWwoDZcYQ7kNvwHikCp8&_nc_oc=AdpDah6FWqf30DbglO-WVNHZt1QOryopKUdpm0x0rF9EojOi9l1yEliEXVdDpxSzYSs&_nc_zt=14&_nc_ht=scontent-lax3-2.xx&_nc_gid=jWaicq0aKw5DPHA9ta162A&_nc_ss=7b289&oh=00_AQTACv3TSi0PYpleTAjef9-rXaMY454qUcPso_eh9sie2A&oe=6AF75A1A"
       ],
       "has_video": false,
       "same_creative_count": 0,
-      "multiple_versions": true
+      "multiple_versions": true,
+      "cta_type": "ORDER_NOW",
+      "display_format": "image",
+      "cards": [
+        {
+          "body": "ذوقك يحب الحصري؟ حمّل التطبيق واستمتع بتوصيل مجاني لمدة 31 يوم.",
+          "cta": "Order Now",
+          "image": "https://scontent-lax3-2.xx.fbcdn.net/v/t39.35426-6/845902719_944139195437282_5537872744083727009_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=100&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=fdOxWwoDZcYQ7kNvwHikCp8&_nc_oc=AdpDah6FWqf30DbglO-WVNHZt1QOryopKUdpm0x0rF9EojOi9l1yEliEXVdDpxSzYSs&_nc_zt=14&_nc_ht=scontent-lax3-2.xx&_nc_gid=jWaicq0aKw5DPHA9ta162A&_nc_ss=7b289&oh=00_AQTACv3TSi0PYpleTAjef9-rXaMY454qUcPso_eh9sie2A&oe=6AF75A1A",
+          "link_url": "https://deliveroo.ae/menu/dubai/al-barsha-3/kfc-al-barsha-emarat-12164-marketplace",
+          "title": "Kfc Deliveroo",
+          "video": null
+        }
+      ]
     },
     {
       "id": "656182596875962",
@@ -377,10 +624,23 @@
       "link_url": "https://n8du.adj.st/submenu?submenuId=3172&adj_t=uhuyr3d&adj_campaign=11134116-AMC-KFC-UAE-META-NA-AWAR-W10-Mixed-AUC-REA-CPM-NA&adj_adgroup=Meta&adj_creative=Mixed",
       "link_title": "KFC MIX'D",
       "cta_text": "Order Now",
+      "link_caption": "",
       "images": [],
       "has_video": true,
       "same_creative_count": 0,
-      "multiple_versions": false
+      "multiple_versions": false,
+      "cta_type": "ORDER_NOW",
+      "display_format": "video",
+      "cards": [
+        {
+          "body": "Meet MIX’D. Endless mixes. Very strong opinions. The secret is in your MIX’D.",
+          "cta": "Order Now",
+          "image": null,
+          "link_url": "https://n8du.adj.st/submenu?submenuId=3172&adj_t=uhuyr3d&adj_campaign=11134116-AMC-KFC-UAE-META-NA-AWAR-W10-Mixed-AUC-REA-CPM-NA&adj_adgroup=Meta&adj_creative=Mixed",
+          "title": "KFC MIX'D",
+          "video": null
+        }
+      ]
     }
   ],
   "advertiser_search": [
@@ -397,10 +657,23 @@
       "link_url": "http://play.google.com/store/apps/details?id=com.kfc.me",
       "link_title": "Big Crunch’n Deal 69 AE",
       "cta_text": "Order Now",
+      "link_caption": "",
       "images": [],
       "has_video": true,
       "same_creative_count": 0,
-      "multiple_versions": true
+      "multiple_versions": true,
+      "cta_type": "ORDER_NOW",
+      "display_format": "video",
+      "cards": [
+        {
+          "body": "Big Crunch’n Deal 🍗 10 PC chicken + 4 strips + fries + coleslaw. All for 69 AED. Only on KFC App! Order now",
+          "cta": "Order Now",
+          "image": null,
+          "link_url": "http://play.google.com/store/apps/details?id=com.kfc.me",
+          "title": "Big Crunch’n Deal 69 AE",
+          "video": null
+        }
+      ]
     },
     {
       "id": "1702589900861104",
@@ -415,12 +688,25 @@
       "link_url": "http://play.google.com/store/apps/details?id=com.kfc.me",
       "link_title": "Chicken Deal",
       "cta_text": "Order Now",
+      "link_caption": "",
       "images": [
         "https://scontent-lax3-1.xx.fbcdn.net/v/t39.35426-6/777800941_948071738320276_4487907682308537970_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=104&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=muDR1YC-_rIQ7kNvwFeVbsF&_nc_oc=AdruOeuE75fa8hWFOlcrYkCMqMh2ipA6QwGpS5onjAw7OrwglmsW3Tvof_7QyIlgS7A&_nc_zt=14&_nc_ht=scontent-lax3-1.xx&_nc_gid=jWaicq0aKw5DPHA9ta162A&_nc_ss=7b289&oh=00_AQSY1XFZsytirkbcqnCWlCbv2lhJQAwdLC6fA_GvyfVvdg&oe=6AF72C6A"
       ],
       "has_video": false,
       "same_creative_count": 0,
-      "multiple_versions": true
+      "multiple_versions": true,
+      "cta_type": "ORDER_NOW",
+      "display_format": "image",
+      "cards": [
+        {
+          "body": "Worth every bite. 🍗 Get the Chicken Deal with 2 Chicken Pieces, fries and a bun for just 12 AED",
+          "cta": "Order Now",
+          "image": "https://scontent-lax3-1.xx.fbcdn.net/v/t39.35426-6/777800941_948071738320276_4487907682308537970_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=104&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=muDR1YC-_rIQ7kNvwFeVbsF&_nc_oc=AdruOeuE75fa8hWFOlcrYkCMqMh2ipA6QwGpS5onjAw7OrwglmsW3Tvof_7QyIlgS7A&_nc_zt=14&_nc_ht=scontent-lax3-1.xx&_nc_gid=jWaicq0aKw5DPHA9ta162A&_nc_ss=7b289&oh=00_AQSY1XFZsytirkbcqnCWlCbv2lhJQAwdLC6fA_GvyfVvdg&oe=6AF72C6A",
+          "link_url": "http://play.google.com/store/apps/details?id=com.kfc.me",
+          "title": "Chicken Deal",
+          "video": null
+        }
+      ]
     },
     {
       "id": "1795700704978650",
@@ -435,12 +721,25 @@
       "link_url": "http://play.google.com/store/apps/details?id=com.kfc.me",
       "link_title": "Today’s meal from 19 AED",
       "cta_text": "Order Now",
+      "link_caption": "",
       "images": [
         "https://scontent-lax7-1.xx.fbcdn.net/v/t39.35426-6/686546633_1912628246053493_4235427390707907113_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=101&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=RcAZwksEamIQ7kNvwHUMaG-&_nc_oc=AdrL8CYYkHD7xFxTbJNT9WhpIQ0Bf-6OfU2gJRBSIL1-oAqzrWhiNGx2RPtdwtWn58w&_nc_zt=14&_nc_ht=scontent-lax7-1.xx&_nc_gid=jWaicq0aKw5DPHA9ta162A&_nc_ss=7b289&oh=00_AQRJJ7iZaZwYxV4bUcQo8i0JXa27pyJPmiqYj4YP_JtOrA&oe=6AF72360"
       ],
       "has_video": false,
       "same_creative_count": 0,
-      "multiple_versions": true
+      "multiple_versions": true,
+      "cta_type": "ORDER_NOW",
+      "display_format": "image",
+      "cards": [
+        {
+          "body": "Deal of the Day! Enjoy a full meal with bold crunch starting 19 AED today. 🍗😋",
+          "cta": "Order Now",
+          "image": "https://scontent-lax7-1.xx.fbcdn.net/v/t39.35426-6/686546633_1912628246053493_4235427390707907113_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=101&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=RcAZwksEamIQ7kNvwHUMaG-&_nc_oc=AdrL8CYYkHD7xFxTbJNT9WhpIQ0Bf-6OfU2gJRBSIL1-oAqzrWhiNGx2RPtdwtWn58w&_nc_zt=14&_nc_ht=scontent-lax7-1.xx&_nc_gid=jWaicq0aKw5DPHA9ta162A&_nc_ss=7b289&oh=00_AQRJJ7iZaZwYxV4bUcQo8i0JXa27pyJPmiqYj4YP_JtOrA&oe=6AF72360",
+          "link_url": "http://play.google.com/store/apps/details?id=com.kfc.me",
+          "title": "Today’s meal from 19 AED",
+          "video": null
+        }
+      ]
     },
     {
       "id": "2959626614398593",
@@ -455,10 +754,23 @@
       "link_url": "https://n8du.adj.st/home?&adj_t=uhuyr3d&adj_campaign=21134115-YUM-KFC-UAE-META-NA-AWAR-W9-Brand_Campaign-AUC-REA-CPM-BO#52920&adj_adgroup=Meta&adj_creative=Brand",
       "link_title": "A Taste of Whats Next",
       "cta_text": "Order Now",
+      "link_caption": "",
       "images": [],
       "has_video": true,
       "same_creative_count": 0,
-      "multiple_versions": true
+      "multiple_versions": true,
+      "cta_type": "ORDER_NOW",
+      "display_format": "video",
+      "cards": [
+        {
+          "body": "Tired of the same old, same old? So are we.\nGive'em a taste of what's next 🍗",
+          "cta": "Order Now",
+          "image": null,
+          "link_url": "https://n8du.adj.st/home?&adj_t=uhuyr3d&adj_campaign=21134115-YUM-KFC-UAE-META-NA-AWAR-W9-Brand_Campaign-AUC-REA-CPM-BO#52920&adj_adgroup=Meta&adj_creative=Brand",
+          "title": "A Taste of Whats Next",
+          "video": null
+        }
+      ]
     },
     {
       "id": "4207786219522020",
@@ -473,10 +785,23 @@
       "link_url": "https://n8du.adj.st/home?&adj_t=uhuyr3d&adj_campaign=21134115-YUM-KFC-UAE-META-NA-AWAR-W9-Brand_Campaign-AUC-REA-CPM-BO#52920&adj_adgroup=Meta&adj_creative=Brand",
       "link_title": "A Taste of Whats Next",
       "cta_text": "Order Now",
+      "link_caption": "",
       "images": [],
       "has_video": true,
       "same_creative_count": 0,
-      "multiple_versions": true
+      "multiple_versions": true,
+      "cta_type": "ORDER_NOW",
+      "display_format": "video",
+      "cards": [
+        {
+          "body": "Tired of the same old, same old? So are we.\nGive'em a taste of what's next 🍗",
+          "cta": "Order Now",
+          "image": null,
+          "link_url": "https://n8du.adj.st/home?&adj_t=uhuyr3d&adj_campaign=21134115-YUM-KFC-UAE-META-NA-AWAR-W9-Brand_Campaign-AUC-REA-CPM-BO#52920&adj_adgroup=Meta&adj_creative=Brand",
+          "title": "A Taste of Whats Next",
+          "video": null
+        }
+      ]
     },
     {
       "id": "1758303935225405",
@@ -491,12 +816,25 @@
       "link_url": "http://play.google.com/store/apps/details?id=com.kfc.me",
       "link_title": "Deal of the Day 50% OFF",
       "cta_text": "Order Now",
+      "link_caption": "",
       "images": [
         "https://scontent-lax7-1.xx.fbcdn.net/v/t39.35426-6/687875064_2815245848825576_752101109477457084_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=105&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=9sQH3_l8IAMQ7kNvwF_rEjo&_nc_oc=AdoTsKvQDUpQcgG6Qm42uXjxU-8eD8fgf5mTChfDyMkMP3moQgJvpk0aPAfiLc0l47E&_nc_zt=14&_nc_ht=scontent-lax7-1.xx&_nc_gid=jWaicq0aKw5DPHA9ta162A&_nc_ss=7b289&oh=00_AQQb0Ug6RLszO_z-eu2MypsVkLs693yRTOCH2NUVk2L04Q&oe=6AF73A98"
       ],
       "has_video": false,
       "same_creative_count": 0,
-      "multiple_versions": true
+      "multiple_versions": true,
+      "cta_type": "ORDER_NOW",
+      "display_format": "image",
+      "cards": [
+        {
+          "body": "Today’s Deal of the Day: 50% OFF your favorite KFC meal. Half price, full crunch! 🍗😋",
+          "cta": "Order Now",
+          "image": "https://scontent-lax7-1.xx.fbcdn.net/v/t39.35426-6/687875064_2815245848825576_752101109477457084_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=105&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=9sQH3_l8IAMQ7kNvwF_rEjo&_nc_oc=AdoTsKvQDUpQcgG6Qm42uXjxU-8eD8fgf5mTChfDyMkMP3moQgJvpk0aPAfiLc0l47E&_nc_zt=14&_nc_ht=scontent-lax7-1.xx&_nc_gid=jWaicq0aKw5DPHA9ta162A&_nc_ss=7b289&oh=00_AQQb0Ug6RLszO_z-eu2MypsVkLs693yRTOCH2NUVk2L04Q&oe=6AF73A98",
+          "link_url": "http://play.google.com/store/apps/details?id=com.kfc.me",
+          "title": "Deal of the Day 50% OFF",
+          "video": null
+        }
+      ]
     },
     {
       "id": "1773030940643170",
@@ -511,10 +849,23 @@
       "link_url": "https://n8du.adj.st/home?&adj_t=uhuyr3d&adj_campaign=21134115-YUM-KFC-UAE-META-NA-AWAR-W9-Brand_Campaign-AUC-REA-CPM-BO#52920&adj_adgroup=Meta&adj_creative=Brand",
       "link_title": "A Taste of Whats Next",
       "cta_text": "Order Now",
+      "link_caption": "",
       "images": [],
       "has_video": true,
       "same_creative_count": 2,
-      "multiple_versions": false
+      "multiple_versions": false,
+      "cta_type": "ORDER_NOW",
+      "display_format": "video",
+      "cards": [
+        {
+          "body": "Tired of the same old, same old? So are we.\nGive'em a taste of what's next 🍗",
+          "cta": "Order Now",
+          "image": null,
+          "link_url": "https://n8du.adj.st/home?&adj_t=uhuyr3d&adj_campaign=21134115-YUM-KFC-UAE-META-NA-AWAR-W9-Brand_Campaign-AUC-REA-CPM-BO#52920&adj_adgroup=Meta&adj_creative=Brand",
+          "title": "A Taste of Whats Next",
+          "video": null
+        }
+      ]
     },
     {
       "id": "1101651329319105",
@@ -529,10 +880,23 @@
       "link_url": "",
       "link_title": "",
       "cta_text": "",
+      "link_caption": "",
       "images": [],
       "has_video": true,
       "same_creative_count": 0,
-      "multiple_versions": true
+      "multiple_versions": true,
+      "cta_type": "",
+      "display_format": "video",
+      "cards": [
+        {
+          "body": ".\nطفشت من القديم؟ حنا بعد.\n🍗ذوقهم اللي جاي\nTired of the same old, same old? So are we.\nGive ‘em a taste of what’s next 🍗",
+          "cta": "",
+          "image": null,
+          "link_url": "",
+          "title": "",
+          "video": null
+        }
+      ]
     },
     {
       "id": "1060709940355159",
@@ -547,10 +911,23 @@
       "link_url": "https://n8du.adj.st/home?&adj_t=uhuyr3d&adj_campaign=21134115-YUM-KFC-UAE-META-NA-AWAR-W9-Brand_Campaign-AUC-REA-CPM-BO#52920&adj_adgroup=Meta&adj_creative=Brand",
       "link_title": "ذوقهم اللي جاي",
       "cta_text": "Order Now",
+      "link_caption": "",
       "images": [],
       "has_video": true,
       "same_creative_count": 0,
-      "multiple_versions": true
+      "multiple_versions": true,
+      "cta_type": "ORDER_NOW",
+      "display_format": "video",
+      "cards": [
+        {
+          "body": "طفشت من القديم؟ حنا بعد.\nذوقهم اللي جاي 🍗",
+          "cta": "Order Now",
+          "image": null,
+          "link_url": "https://n8du.adj.st/home?&adj_t=uhuyr3d&adj_campaign=21134115-YUM-KFC-UAE-META-NA-AWAR-W9-Brand_Campaign-AUC-REA-CPM-BO#52920&adj_adgroup=Meta&adj_creative=Brand",
+          "title": "ذوقهم اللي جاي",
+          "video": null
+        }
+      ]
     },
     {
       "id": "2590670391350116",
@@ -565,12 +942,25 @@
       "link_url": "http://itunes.apple.com/app/id1498929827",
       "link_title": "40% Off Pickup",
       "cta_text": "Install Now",
+      "link_caption": "",
       "images": [
         "https://scontent-lax3-2.xx.fbcdn.net/v/t39.35426-6/793212678_1039457562185686_8683521473677485907_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=106&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=XMSdlHAS4hMQ7kNvwGVndbJ&_nc_oc=AdqQbN28npaRtRjESxdHFUsdseNwJAGOk66WLPOC8UOSY7z_ZOFg3t-yRqTschvjBLs&_nc_zt=14&_nc_ht=scontent-lax3-2.xx&_nc_gid=jWaicq0aKw5DPHA9ta162A&_nc_ss=7b289&oh=00_AQSsgS9aX-kS2hYvEkDgY-oWTdHDCPwnc7d1-VNk8McSQA&oe=6AF74F9E"
       ],
       "has_video": false,
       "same_creative_count": 0,
-      "multiple_versions": true
+      "multiple_versions": true,
+      "cta_type": "INSTALL_MOBILE_APP",
+      "display_format": "image",
+      "cards": [
+        {
+          "body": "Download the KFC app and get 40% OFF your pickup order 🍗🔥 New users only",
+          "cta": "Install Now",
+          "image": "https://scontent-lax3-2.xx.fbcdn.net/v/t39.35426-6/793212678_1039457562185686_8683521473677485907_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=106&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=XMSdlHAS4hMQ7kNvwGVndbJ&_nc_oc=AdqQbN28npaRtRjESxdHFUsdseNwJAGOk66WLPOC8UOSY7z_ZOFg3t-yRqTschvjBLs&_nc_zt=14&_nc_ht=scontent-lax3-2.xx&_nc_gid=jWaicq0aKw5DPHA9ta162A&_nc_ss=7b289&oh=00_AQSsgS9aX-kS2hYvEkDgY-oWTdHDCPwnc7d1-VNk8McSQA&oe=6AF74F9E",
+          "link_url": "http://itunes.apple.com/app/id1498929827",
+          "title": "40% Off Pickup",
+          "video": null
+        }
+      ]
     },
     {
       "id": "1765031904822938",
@@ -585,12 +975,25 @@
       "link_url": "http://itunes.apple.com/app/id1498929827",
       "link_title": "Today’s meal from 19 AED",
       "cta_text": "Order Now",
+      "link_caption": "",
       "images": [
         "https://scontent-lax7-1.xx.fbcdn.net/v/t39.35426-6/662257412_4015853575213188_1639411346429252680_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=101&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=R6H7NhlHX3YQ7kNvwEo4uwl&_nc_oc=AdrknuplHlLUXmN8I0f-9evN8f8iGHIaVLQI0Aby4UnfgqAhr4iv0lD7UZ40U_f1lLg&_nc_zt=14&_nc_ht=scontent-lax7-1.xx&_nc_gid=jWaicq0aKw5DPHA9ta162A&_nc_ss=7b289&oh=00_AQSUljJ1taFLeKS2ZPhwmNdY5CtY7XhLwBVjCw_R8Zr5Xg&oe=6AF746D1"
       ],
       "has_video": false,
       "same_creative_count": 5,
-      "multiple_versions": true
+      "multiple_versions": true,
+      "cta_type": "ORDER_NOW",
+      "display_format": "image",
+      "cards": [
+        {
+          "body": "Don’t miss it — today’s comeback Deal of the Day is 50% OFF. Flavor worth every bite 🔥🍔",
+          "cta": "Order Now",
+          "image": "https://scontent-lax7-1.xx.fbcdn.net/v/t39.35426-6/662257412_4015853575213188_1639411346429252680_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=101&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=R6H7NhlHX3YQ7kNvwEo4uwl&_nc_oc=AdrknuplHlLUXmN8I0f-9evN8f8iGHIaVLQI0Aby4UnfgqAhr4iv0lD7UZ40U_f1lLg&_nc_zt=14&_nc_ht=scontent-lax7-1.xx&_nc_gid=jWaicq0aKw5DPHA9ta162A&_nc_ss=7b289&oh=00_AQSUljJ1taFLeKS2ZPhwmNdY5CtY7XhLwBVjCw_R8Zr5Xg&oe=6AF746D1",
+          "link_url": "http://itunes.apple.com/app/id1498929827",
+          "title": "Today’s meal from 19 AED",
+          "video": null
+        }
+      ]
     },
     {
       "id": "928203430304097",
@@ -605,12 +1008,25 @@
       "link_url": "http://itunes.apple.com/app/id1498929827",
       "link_title": "40% OFF Starts Now",
       "cta_text": "Install Now",
+      "link_caption": "",
       "images": [
         "https://scontent-lax7-1.xx.fbcdn.net/v/t39.35426-6/797922145_1469912472015137_4302016274654212236_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=105&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=pwU4of7dSp8Q7kNvwGDXEsJ&_nc_oc=Adr-ed_g2em9BfddlTsDCiOPErCYvveqEUozs8N7Q2rTj8ktkcA756jjiEId5nqsSb4&_nc_zt=14&_nc_ht=scontent-lax7-1.xx&_nc_gid=jWaicq0aKw5DPHA9ta162A&_nc_ss=7b289&oh=00_AQR4k8azXqMwoEg0z7sa2qQwT7Hyn3KmNT7-mG4GO9gCvg&oe=6AF73C14"
       ],
       "has_video": false,
       "same_creative_count": 0,
-      "multiple_versions": true
+      "multiple_versions": true,
+      "cta_type": "INSTALL_MOBILE_APP",
+      "display_format": "image",
+      "cards": [
+        {
+          "body": "Start strong 🎁 Get 40% OFF your first 3 orders with 3NEW40. Ready when you are.",
+          "cta": "Install Now",
+          "image": "https://scontent-lax7-1.xx.fbcdn.net/v/t39.35426-6/797922145_1469912472015137_4302016274654212236_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=105&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=pwU4of7dSp8Q7kNvwGDXEsJ&_nc_oc=Adr-ed_g2em9BfddlTsDCiOPErCYvveqEUozs8N7Q2rTj8ktkcA756jjiEId5nqsSb4&_nc_zt=14&_nc_ht=scontent-lax7-1.xx&_nc_gid=jWaicq0aKw5DPHA9ta162A&_nc_ss=7b289&oh=00_AQR4k8azXqMwoEg0z7sa2qQwT7Hyn3KmNT7-mG4GO9gCvg&oe=6AF73C14",
+          "link_url": "http://itunes.apple.com/app/id1498929827",
+          "title": "40% OFF Starts Now",
+          "video": null
+        }
+      ]
     },
     {
       "id": "2868539850205802",
@@ -625,12 +1041,25 @@
       "link_url": "http://play.google.com/store/apps/details?id=com.kfc.me",
       "link_title": "عرض مقرمش يبدا من 19 درهم",
       "cta_text": "Order Now",
+      "link_caption": "",
       "images": [
         "https://scontent-lax3-2.xx.fbcdn.net/v/t39.35426-6/690144420_941620218682885_1273927367350688441_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=106&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=lJOgGb_41oIQ7kNvwGfVF1V&_nc_oc=AdrOUeybBc2NpqloHgnuuHUjIAEJnwx86Kr1ICAakZBMWbhL-BAoQHIMjHqfQoFQ_XY&_nc_zt=14&_nc_ht=scontent-lax3-2.xx&_nc_gid=jWaicq0aKw5DPHA9ta162A&_nc_ss=7b289&oh=00_AQQHUOSxR3vHE6yS-b9yJYydqbD0FtGE0JkICl5-ziNpdA&oe=6AF727EA"
       ],
       "has_video": false,
       "same_creative_count": 0,
-      "multiple_versions": true
+      "multiple_versions": true,
+      "cta_type": "ORDER_NOW",
+      "display_format": "image",
+      "cards": [
+        {
+          "body": "عرض اليوم! استمتع بوجبة كاملة مع قرمشة ما في مثلها بداية من 19 درهم اليوم. 🍗😋",
+          "cta": "Order Now",
+          "image": "https://scontent-lax3-2.xx.fbcdn.net/v/t39.35426-6/690144420_941620218682885_1273927367350688441_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=106&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=lJOgGb_41oIQ7kNvwGfVF1V&_nc_oc=AdrOUeybBc2NpqloHgnuuHUjIAEJnwx86Kr1ICAakZBMWbhL-BAoQHIMjHqfQoFQ_XY&_nc_zt=14&_nc_ht=scontent-lax3-2.xx&_nc_gid=jWaicq0aKw5DPHA9ta162A&_nc_ss=7b289&oh=00_AQQHUOSxR3vHE6yS-b9yJYydqbD0FtGE0JkICl5-ziNpdA&oe=6AF727EA",
+          "link_url": "http://play.google.com/store/apps/details?id=com.kfc.me",
+          "title": "عرض مقرمش يبدا من 19 درهم",
+          "video": null
+        }
+      ]
     },
     {
       "id": "1126006843339426",
@@ -645,10 +1074,23 @@
       "link_url": "https://n8du.adj.st/home?&adj_t=uhuyr3d&adj_campaign=21134115-YUM-KFC-UAE-META-NA-AWAR-W9-Brand_Campaign-AUC-REA-CPM-BO#52920&adj_adgroup=Meta&adj_creative=Brand",
       "link_title": "ذوقهم اللي جاي",
       "cta_text": "Order Now",
+      "link_caption": "",
       "images": [],
       "has_video": true,
       "same_creative_count": 0,
-      "multiple_versions": true
+      "multiple_versions": true,
+      "cta_type": "ORDER_NOW",
+      "display_format": "video",
+      "cards": [
+        {
+          "body": "طفشت من القديم؟ حنا بعد.\nذوقهم اللي جاي 🍗",
+          "cta": "Order Now",
+          "image": null,
+          "link_url": "https://n8du.adj.st/home?&adj_t=uhuyr3d&adj_campaign=21134115-YUM-KFC-UAE-META-NA-AWAR-W9-Brand_Campaign-AUC-REA-CPM-BO#52920&adj_adgroup=Meta&adj_creative=Brand",
+          "title": "ذوقهم اللي جاي",
+          "video": null
+        }
+      ]
     },
     {
       "id": "656182596875962",
@@ -663,10 +1105,23 @@
       "link_url": "https://n8du.adj.st/submenu?submenuId=3172&adj_t=uhuyr3d&adj_campaign=11134116-AMC-KFC-UAE-META-NA-AWAR-W10-Mixed-AUC-REA-CPM-NA&adj_adgroup=Meta&adj_creative=Mixed",
       "link_title": "KFC MIX'D",
       "cta_text": "Order Now",
+      "link_caption": "",
       "images": [],
       "has_video": true,
       "same_creative_count": 0,
-      "multiple_versions": false
+      "multiple_versions": false,
+      "cta_type": "ORDER_NOW",
+      "display_format": "video",
+      "cards": [
+        {
+          "body": "Meet MIX’D. Endless mixes. Very strong opinions. The secret is in your MIX’D.",
+          "cta": "Order Now",
+          "image": null,
+          "link_url": "https://n8du.adj.st/submenu?submenuId=3172&adj_t=uhuyr3d&adj_campaign=11134116-AMC-KFC-UAE-META-NA-AWAR-W10-Mixed-AUC-REA-CPM-NA&adj_adgroup=Meta&adj_creative=Mixed",
+          "title": "KFC MIX'D",
+          "video": null
+        }
+      ]
     },
     {
       "id": "1345658687090903",
@@ -681,10 +1136,23 @@
       "link_url": "https://n8du.adj.st/submenu?submenuId=3172&adj_t=uhuyr3d&adj_campaign=11134116-AMC-KFC-UAE-META-NA-AWAR-W10-Mixed-AUC-REA-CPM-NA&adj_adgroup=Meta&adj_creative=Mixed",
       "link_title": "KFC MIX'D",
       "cta_text": "Order Now",
+      "link_caption": "",
       "images": [],
       "has_video": true,
       "same_creative_count": 0,
-      "multiple_versions": true
+      "multiple_versions": true,
+      "cta_type": "ORDER_NOW",
+      "display_format": "video",
+      "cards": [
+        {
+          "body": "Meet MIX’D. Endless mixes. Very strong opinions. The secret is in your MIX’D.",
+          "cta": "Order Now",
+          "image": null,
+          "link_url": "https://n8du.adj.st/submenu?submenuId=3172&adj_t=uhuyr3d&adj_campaign=11134116-AMC-KFC-UAE-META-NA-AWAR-W10-Mixed-AUC-REA-CPM-NA&adj_adgroup=Meta&adj_creative=Mixed",
+          "title": "KFC MIX'D",
+          "video": null
+        }
+      ]
     },
     {
       "id": "869328802565917",
@@ -699,12 +1167,25 @@
       "link_url": "http://itunes.apple.com/app/id1498929827",
       "link_title": "وجبة اليوم بداية من 19 درهم",
       "cta_text": "Order Now",
+      "link_caption": "",
       "images": [
         "https://scontent-lax3-2.xx.fbcdn.net/v/t39.35426-6/665611580_1717501052954541_7112668457052350866_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=103&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=Xid54r8ga1MQ7kNvwG4HCeA&_nc_oc=AdqAXWatIHO5bjLgOIGdsAnueLibt7IWyCUjv3ck_yLqqViSbyodYPLlUBTLMYNN7WE&_nc_zt=14&_nc_ht=scontent-lax3-2.xx&_nc_gid=jWaicq0aKw5DPHA9ta162A&_nc_ss=7b289&oh=00_AQQFQuBRy_YsKA-BtjGxpPVyEn-MU0MNpLf4bFKmIZBt7A&oe=6AF746B6"
       ],
       "has_video": false,
       "same_creative_count": 2,
-      "multiple_versions": true
+      "multiple_versions": true,
+      "cta_type": "ORDER_NOW",
+      "display_format": "image",
+      "cards": [
+        {
+          "body": "لا تفوته ـــ عرض اليوم لرجوعك خصم 50٪. النكهة اللي تستاهل 🔥🍔",
+          "cta": "Order Now",
+          "image": "https://scontent-lax3-2.xx.fbcdn.net/v/t39.35426-6/665611580_1717501052954541_7112668457052350866_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=103&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=Xid54r8ga1MQ7kNvwG4HCeA&_nc_oc=AdqAXWatIHO5bjLgOIGdsAnueLibt7IWyCUjv3ck_yLqqViSbyodYPLlUBTLMYNN7WE&_nc_zt=14&_nc_ht=scontent-lax3-2.xx&_nc_gid=jWaicq0aKw5DPHA9ta162A&_nc_ss=7b289&oh=00_AQQFQuBRy_YsKA-BtjGxpPVyEn-MU0MNpLf4bFKmIZBt7A&oe=6AF746B6",
+          "link_url": "http://itunes.apple.com/app/id1498929827",
+          "title": "وجبة اليوم بداية من 19 درهم",
+          "video": null
+        }
+      ]
     }
   ]
 }

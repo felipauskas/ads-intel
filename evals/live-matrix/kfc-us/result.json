@@ -3,7 +3,7 @@
   "country": "US",
   "advertiser": "KFC",
   "folder": "evals/live-matrix/kfc-us",
-  "data_dir": "/var/folders/zf/g9bpd9s55sv10tz2mnhqch800000gn/T/ads-intel-live-eval-a5skrx5s/tmppw2n_guh",
+  "data_dir": "/var/folders/zf/g9bpd9s55sv10tz2mnhqch800000gn/T/ads-intel-live-eval-7v9t8l1b/tmpm6ayc3e6",
   "search_summary": {
     "count": 20,
     "complete": false,
@@ -24,7 +24,7 @@
       "Shane Hummus",
       "Wolt Kosovo"
     ],
-    "seconds": 8.3
+    "seconds": 3.1
   },
   "advertiser_summary": {
     "count": 7,
@@ -40,7 +40,7 @@
     "page_names": [
       "KFC"
     ],
-    "seconds": 0.02
+    "seconds": 0.01
   },
   "watch_add": {
     "error": null,
@@ -72,7 +72,7 @@
     "new_page_names": [
       "KFC"
     ],
-    "seconds": 0.02
+    "seconds": 0.01
   },
   "check2": {
     "query": "KFC",
@@ -91,7 +91,7 @@
       "digest": "artifacts/check2/digest.json"
     },
     "new_page_names": [],
-    "seconds": 0.02
+    "seconds": 0.01
   },
   "artifacts_ok": true,
   "artifacts2_ok": true,
@@ -103,14 +103,19 @@
   "status": "PASS",
   "failures": [],
   "timings": {
-    "search": 8.3,
-    "advertiser_search": 0.02,
-    "check1": 0.02,
-    "check2": 0.02,
-    "total": 8.36
+    "search": 3.1,
+    "advertiser_search": 0.01,
+    "check1": 0.01,
+    "check2": 0.01,
+    "total": 3.13
   },
   "attempts": {
     "total": 4,
-    "failed": 0
+    "failed": 0,
+    "transport_failed": 0,
+    "parse_failed": 0,
+    "shell": 0,
+    "blocked": 0,
+    "markup_changed": 0
   }
 }

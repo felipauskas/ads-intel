@@ -6,16 +6,16 @@
 ## Keyword search (`active_status=active`, limit 20)
 - count: 20  complete: False  fetched: 20  error: None
 - page names: Arclight Digital Solutions, Domino's Pizza India, Domino's Pizza, Amorable Beauty Salon, Careem, DePaul Parties and Events, Empirio, Aaliyah Anderson, Alibaba.com, Linguza: AI English Tutor, Tony’s Swedish Pizza And Kebab
-- seconds: 30.96
+- seconds: 13.12
 
 ## Advertiser search
 - count: 2  resolved: {'page_name': "Domino's Pizza", 'score': 0.8}  error: None
 - page names: Domino's Pizza
-- seconds: 11.97
+- seconds: 9.23
 
 ## Watch checks
-- check1: new=2 ended=0 changed=0 partial=False error=None seconds=10.41
-- check2: new=0 ended=0 changed=0 partial=False error=None seconds=10.0
+- check1: new=2 ended=0 changed=0 partial=True error=None seconds=9.59
+- check2: new=0 ended=0 changed=0 partial=True error=None seconds=8.74
 - artifacts: {"html": "artifacts/html.html", "digest": "artifacts/digest.json"} (ok=True)
 - artifacts check2: {"html": "artifacts/check2/html.html", "digest": "artifacts/check2/digest.json"} (ok=True)
 
@@ -23,7 +23,7 @@
 - expected: AED  found: AED  ok: True
 
 ## Hydration
-- attempts: 10  failed: 0
+- attempts: 5  failed: 1  transport: 0  dead render: 1 (shell 1, blocked 0, markup_changed 0)
 
 ## Failures
 - none

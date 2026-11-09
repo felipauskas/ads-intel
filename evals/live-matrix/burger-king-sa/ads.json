@@ -15,10 +15,23 @@
       "link_url": "https://www.facebook.com/language/",
       "link_title": "",
       "cta_text": "English (US)",
+      "link_caption": "",
       "images": [],
       "has_video": true,
       "same_creative_count": 0,
-      "multiple_versions": false
+      "multiple_versions": false,
+      "cta_type": "ENGLISH_US",
+      "display_format": "video",
+      "cards": [
+        {
+          "body": "🎬🔥 WATCH FREE!\n🍿 Every episode brings new drama, unexpected turns, and moments that will leave you wondering what happens next! ✨",
+          "cta": "English (US)",
+          "image": null,
+          "link_url": "https://www.facebook.com/language/",
+          "title": "",
+          "video": null
+        }
+      ]
     },
     {
       "id": "2343153736432945",
@@ -33,10 +46,23 @@
       "link_url": "https://www.dreamdubai.com/",
       "link_title": "Dream Dubai",
       "cta_text": "Shop now",
+      "link_caption": "WWW.DREAMDUBAI.COM",
       "images": [],
       "has_video": true,
       "same_creative_count": 2,
-      "multiple_versions": false
+      "multiple_versions": false,
+      "cta_type": "SHOP_NOW",
+      "display_format": "video",
+      "cards": [
+        {
+          "body": "Another millionaire made ✅ Congratulations to the winner of AED1,000,000 cash with Dream Dubai and @burgerkinguae 🏆\nTap link in bio & you could be next! 📲",
+          "cta": "Shop now",
+          "image": null,
+          "link_url": "https://www.dreamdubai.com/",
+          "title": "Dream Dubai",
+          "video": null
+        }
+      ]
     },
     {
       "id": "2148659702442969",
@@ -51,10 +77,23 @@
       "link_url": "",
       "link_title": "",
       "cta_text": "",
+      "link_caption": "",
       "images": [],
       "has_video": true,
       "same_creative_count": 0,
-      "multiple_versions": false
+      "multiple_versions": false,
+      "cta_type": "",
+      "display_format": "video",
+      "cards": [
+        {
+          "body": "إذا سمعت «بابا جوعانين» أكثر من مرة في الدقيقة… تعرف إن وقت العشا وصل 😂\nوالسؤال: مين عندكم دايم يقرر طلب العائلة؟ 👀🍔\nكنج بلس بـ٢٠ ريال، يشبع وزود 🔥👑\nجرّبه الحين من تطبيق برجر كنج 📱 أو من جميع مطاعمنا📍\n#برجر\\_كنج\n#كنج\\_بلس\n#على\\_مزاجك👑",
+          "cta": "",
+          "image": null,
+          "link_url": "",
+          "title": "",
+          "video": null
+        }
+      ]
     },
     {
       "id": "1847122059646005",
@@ -69,10 +108,23 @@
       "link_url": "https://www.burgerking.com.sa/ar/menu?utm_source=facebook&utm_medium=paid_social&utm_campaign=%7B%7Bcampaign.name%7D%7D&utm_id=%7B%7Bcampaign.id%7D%7D&utm_term=%7B%7Badset.id%7D%7D&utm_content=%7B%7Bad.id%7D%7D",
       "link_title": "Burger King Arabia",
       "cta_text": "See details",
+      "link_caption": "WWW.BURGERKING.COM.SA",
       "images": [],
       "has_video": true,
       "same_creative_count": 0,
-      "multiple_versions": false
+      "multiple_versions": false,
+      "cta_type": "SEE_DETAILS",
+      "display_format": "video",
+      "cards": [
+        {
+          "body": "⁨ ‏قالوا رجعوه... قلنا أبشر 🔥👑‏\n‏برجر البروتين رجع بخيارين:‏\n‏الفيلي ستيك لحم ٥٤غ 🥩‏\n‏والدجاج تركي ٦٢غ 🐔‏\n‏والفيلي ستيك؟ ‎ مشوي علي اللهب 🔥و‏لحم صافي ‎100%\n‏روتينك ببروتينك. احسبها صح.‏\nشوفوا الحلقة و جرّبه الحين من تطبيق برجر كنج 📱 أو من جميع فروعنا📍\n‏#برجر\\_كنج\n#برجر\\_البروتين\n#روتينك\\_ببروتينك\n#على\\_مزاجك👑‏⁩",
+          "cta": "See details",
+          "image": null,
+          "link_url": "https://www.burgerking.com.sa/ar/menu?utm_source=facebook&utm_medium=paid_social&utm_campaign=%7B%7Bcampaign.name%7D%7D&utm_id=%7B%7Bcampaign.id%7D%7D&utm_term=%7B%7Badset.id%7D%7D&utm_content=%7B%7Bad.id%7D%7D",
+          "title": "Burger King Arabia",
+          "video": null
+        }
+      ]
     },
     {
       "id": "977585395389678",
@@ -87,12 +139,25 @@
       "link_url": "https://www.burgerking.com.sa/ar/menu?utm_source=facebook&utm_medium=paid_social&utm_campaign=%7B%7Bcampaign.name%7D%7D&utm_id=%7B%7Bcampaign.id%7D%7D&utm_term=%7B%7Badset.id%7D%7D&utm_content=%7B%7Bad.id%7D%7D#section-a9b236a6-3898-4070-9c3b-d5396dd96590",
       "link_title": "Burger King Arabia",
       "cta_text": "Order now",
+      "link_caption": "BURGERKING.COM.SA",
       "images": [
         "https://scontent-lax3-1.xx.fbcdn.net/v/t39.35426-6/848497852_1108797058566644_6036874677091889198_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=108&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=ktpaApTl-UUQ7kNvwHRt4bU&_nc_oc=AdpQ7GfJc0HJaml-2Kp3bLkAzQCL4C2M29MAsONSPINB_IhuZzujT7wXZSq0IsWZNZA&_nc_zt=14&_nc_ht=scontent-lax3-1.xx&_nc_gid=JJh3xPalctk9IUR856g50A&_nc_ss=7b289&oh=00_AQQ4B54nkJ-3KUNOASmN8WrhvYg46-cge-7icUWHp7UsfA&oe=6AF73535"
       ],
       "has_video": false,
       "same_creative_count": 0,
-      "multiple_versions": false
+      "multiple_versions": false,
+      "cta_type": "ORDER_NOW",
+      "display_format": "image",
+      "cards": [
+        {
+          "body": "تريبل دجاج ولا تريبل لحم؟ 👀🍔\nأول ظهور لخيارات كنج بلس: برجرين بطبقات تشهي، وكل واحد له جوّه. أنت مع أي واحد؟\nالوجبة بـ٢٠ ريال… يشبع وزود 👑\nجرّبها من تطبيق برجر كنج 📱 أو من جميع فروعنا📍\n#برجر\\_كنج\n#كنج\\_بلس\n#على\\_مزاجك👑",
+          "cta": "Order now",
+          "image": "https://scontent-lax3-1.xx.fbcdn.net/v/t39.35426-6/848497852_1108797058566644_6036874677091889198_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=108&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=ktpaApTl-UUQ7kNvwHRt4bU&_nc_oc=AdpQ7GfJc0HJaml-2Kp3bLkAzQCL4C2M29MAsONSPINB_IhuZzujT7wXZSq0IsWZNZA&_nc_zt=14&_nc_ht=scontent-lax3-1.xx&_nc_gid=JJh3xPalctk9IUR856g50A&_nc_ss=7b289&oh=00_AQQ4B54nkJ-3KUNOASmN8WrhvYg46-cge-7icUWHp7UsfA&oe=6AF73535",
+          "link_url": "https://www.burgerking.com.sa/ar/menu?utm_source=facebook&utm_medium=paid_social&utm_campaign=%7B%7Bcampaign.name%7D%7D&utm_id=%7B%7Bcampaign.id%7D%7D&utm_term=%7B%7Badset.id%7D%7D&utm_content=%7B%7Bad.id%7D%7D#section-a9b236a6-3898-4070-9c3b-d5396dd96590",
+          "title": "Burger King Arabia",
+          "video": null
+        }
+      ]
     },
     {
       "id": "1880158576731108",
@@ -107,12 +172,25 @@
       "link_url": "https://www.burgerking.com.sa/ar/menu?utm_source=facebook&utm_medium=paid_social&utm_campaign=%7B%7Bcampaign.name%7D%7D&utm_id=%7B%7Bcampaign.id%7D%7D&utm_term=%7B%7Badset.id%7D%7D&utm_content=%7B%7Bad.id%7D%7D",
       "link_title": "Burger King Arabia",
       "cta_text": "See details",
+      "link_caption": "BURGERKING.COM.SA",
       "images": [
         "https://scontent-lax3-2.xx.fbcdn.net/v/t39.35426-6/868593688_4487653081490644_6959165940977564805_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=107&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=XX3OtH9sVCYQ7kNvwEheukm&_nc_oc=Adqf3WIKvVG9OjFcaq16tQyWOuqXemhhc1tvMGS0IFxBoteuBw2afP8wapfRoREXBNs&_nc_zt=14&_nc_ht=scontent-lax3-2.xx&_nc_gid=JJh3xPalctk9IUR856g50A&_nc_ss=7b289&oh=00_AQRiT3GgWhhlObLvFsZoFqPoPWcYph4bQiEEko6ze7_BAA&oe=6AF754C4"
       ],
       "has_video": false,
       "same_creative_count": 0,
-      "multiple_versions": false
+      "multiple_versions": false,
+      "cta_type": "SEE_DETAILS",
+      "display_format": "image",
+      "cards": [
+        {
+          "body": "بيج تركي جاب لكم الخيارين 👀🔥\n٥٤غ لحم أو ٦٢غ دجاج... أنت تبدأ بأي واحد؟ 🍔\nروتينك ببروتينك. احسبها صح.\nجرّبه الحين من تطبيق برجر كنج 📱 أو من جميع فروعنا📍\n#برجر\\_كنج\n#برجر\\_البروتين\n#روتينك\\_ببروتينك\n#على\\_مزاجك👑",
+          "cta": "See details",
+          "image": "https://scontent-lax3-2.xx.fbcdn.net/v/t39.35426-6/868593688_4487653081490644_6959165940977564805_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=107&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=XX3OtH9sVCYQ7kNvwEheukm&_nc_oc=Adqf3WIKvVG9OjFcaq16tQyWOuqXemhhc1tvMGS0IFxBoteuBw2afP8wapfRoREXBNs&_nc_zt=14&_nc_ht=scontent-lax3-2.xx&_nc_gid=JJh3xPalctk9IUR856g50A&_nc_ss=7b289&oh=00_AQRiT3GgWhhlObLvFsZoFqPoPWcYph4bQiEEko6ze7_BAA&oe=6AF754C4",
+          "link_url": "https://www.burgerking.com.sa/ar/menu?utm_source=facebook&utm_medium=paid_social&utm_campaign=%7B%7Bcampaign.name%7D%7D&utm_id=%7B%7Bcampaign.id%7D%7D&utm_term=%7B%7Badset.id%7D%7D&utm_content=%7B%7Bad.id%7D%7D",
+          "title": "Burger King Arabia",
+          "video": null
+        }
+      ]
     },
     {
       "id": "983338801488922",
@@ -127,12 +205,25 @@
       "link_url": "https://www.burgerking.com.sa/ar/menu?utm_source=facebook&utm_medium=paid_social&utm_campaign=%7B%7Bcampaign.name%7D%7D&utm_id=%7B%7Bcampaign.id%7D%7D&utm_term=%7B%7Badset.id%7D%7D&utm_content=%7B%7Bad.id%7D%7D",
       "link_title": "Burger King Arabia",
       "cta_text": "Order now",
+      "link_caption": "BURGERKING.COM.SA",
       "images": [
         "https://scontent-lax3-2.xx.fbcdn.net/v/t39.35426-6/879746385_1473525661295102_1142973442756452359_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=106&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=J8J_RKpJXDkQ7kNvwEOQ5Tr&_nc_oc=AdoqA9RFR4X_0QRg4mgvFBvHnWldSMmMh-WxUE1CJlG8b3G4krOrH89hf3tB7cFVByA&_nc_zt=14&_nc_ht=scontent-lax3-2.xx&_nc_gid=JJh3xPalctk9IUR856g50A&_nc_ss=7b289&oh=00_AQRlHyZEybLOhKvJbXSuEdFoZiyoY5yppB_7QYR_mgTvsQ&oe=6AF75F7E"
       ],
       "has_video": false,
       "same_creative_count": 0,
-      "multiple_versions": false
+      "multiple_versions": false,
+      "cta_type": "ORDER_NOW",
+      "display_format": "image",
+      "cards": [
+        {
+          "body": "‏اليوم السؤال بسيط 👀‏\n‏٥٤غ 🥩 ولا ٦٢غ 🐔؟‏\n‏على جوّك... أو لا تحتار وخذ الاثنين 🔥👑‏\n‏روتينك ببروتينك. احسبها صح.‏\n📍اطلبه الحين من تطبيق برجر كنج 📱 أو من جميع مطاعمنا\n#برجر\\_كنج #برجر\\_البروتين #روتينك\\_ببروتينك #على\\_مزاجك👑",
+          "cta": "Order now",
+          "image": "https://scontent-lax3-2.xx.fbcdn.net/v/t39.35426-6/879746385_1473525661295102_1142973442756452359_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=106&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=J8J_RKpJXDkQ7kNvwEOQ5Tr&_nc_oc=AdoqA9RFR4X_0QRg4mgvFBvHnWldSMmMh-WxUE1CJlG8b3G4krOrH89hf3tB7cFVByA&_nc_zt=14&_nc_ht=scontent-lax3-2.xx&_nc_gid=JJh3xPalctk9IUR856g50A&_nc_ss=7b289&oh=00_AQRlHyZEybLOhKvJbXSuEdFoZiyoY5yppB_7QYR_mgTvsQ&oe=6AF75F7E",
+          "link_url": "https://www.burgerking.com.sa/ar/menu?utm_source=facebook&utm_medium=paid_social&utm_campaign=%7B%7Bcampaign.name%7D%7D&utm_id=%7B%7Bcampaign.id%7D%7D&utm_term=%7B%7Badset.id%7D%7D&utm_content=%7B%7Bad.id%7D%7D",
+          "title": "Burger King Arabia",
+          "video": null
+        }
+      ]
     },
     {
       "id": "2384708118948075",
@@ -147,12 +238,25 @@
       "link_url": "https://shop.pipitea.com/oo/ppch/sp-nm",
       "link_title": "",
       "cta_text": "https://shop.pipitea.com/oo/ppch/sp-nm",
+      "link_caption": "",
       "images": [
         "https://scontent-lax3-1.xx.fbcdn.net/v/t39.35426-6/854318174_1370079318276477_827745880645678261_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=102&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=MieBCTeFJqcQ7kNvwFPhaRO&_nc_oc=AdqYJTgj6dOPTIcKvhKxxcH0kK25amOEb1tXMUBn8koV212Ix8tIXSn6OQOli1NByJk&_nc_zt=14&_nc_ht=scontent-lax3-1.xx&_nc_gid=JJh3xPalctk9IUR856g50A&_nc_ss=7b289&oh=00_AQS_weXJtrepzx325pxfex0qshpUSGas3894u_t088Erwg&oe=6AF75935"
       ],
       "has_video": false,
       "same_creative_count": 0,
-      "multiple_versions": false
+      "multiple_versions": false,
+      "cta_type": "HTTPS_SHOP_PIPITEA_COM_OO_PPCH_SP_NM",
+      "display_format": "image",
+      "cards": [
+        {
+          "body": "I found out I had a grandson when he texted me asking why I never came to his games.\nThe number wasn’t saved in my phone. Just ten digits, area code 610, same as mine. The message came through at 11:42 on a Tuesday night.\n“Hi. This is Ryan. Michael’s son. I play baseball at Riverside Park on Saturdays at 10. How come you never come?”\nI read it once.\nThen again.\nThen I set the phone on the kitchen table and stared at it as if the words might rearrange themselves into something I understood.\nMichael’s son.\nMichael had a son.\nMichael had a son named Ryan who played baseball at Riverside Park on Saturdays at ten, and I didn’t know any of it because I hadn’t spoken to Michael in twelve years. The last time I saw my son, he was twenty-eight years old. Thanksgiving 2014. He brought Julie home and told us they were getting married.\nI’d met Julie twice. Once at a barbecue. Once at Easter dinner. She was polite. Quiet. Worked as a dental hygienist. She brought flowers for Ellen both times and helped clear the plates without being asked. None of that was the problem.\nThe problem, as I saw it then, was that Michael was two semesters away from finishing his engineering degree at Penn State. He…",
+          "cta": "https://shop.pipitea.com/oo/ppch/sp-nm",
+          "image": "https://scontent-lax3-1.xx.fbcdn.net/v/t39.35426-6/854318174_1370079318276477_827745880645678261_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=102&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=MieBCTeFJqcQ7kNvwFPhaRO&_nc_oc=AdqYJTgj6dOPTIcKvhKxxcH0kK25amOEb1tXMUBn8koV212Ix8tIXSn6OQOli1NByJk&_nc_zt=14&_nc_ht=scontent-lax3-1.xx&_nc_gid=JJh3xPalctk9IUR856g50A&_nc_ss=7b289&oh=00_AQS_weXJtrepzx325pxfex0qshpUSGas3894u_t088Erwg&oe=6AF75935",
+          "link_url": "https://shop.pipitea.com/oo/ppch/sp-nm",
+          "title": "",
+          "video": null
+        }
+      ]
     },
     {
       "id": "1337732271633732",
@@ -167,10 +271,23 @@
       "link_url": "https://www.burgerking.com.sa/ar/menu?utm_source=facebook&utm_medium=paid_social&utm_campaign=%7B%7Bcampaign.name%7D%7D&utm_id=%7B%7Bcampaign.id%7D%7D&utm_term=%7B%7Badset.id%7D%7D&utm_content=%7B%7Bad.id%7D%7D",
       "link_title": "Burger King Arabia",
       "cta_text": "Order now",
+      "link_caption": "WWW.BURGERKING.COM.SA",
       "images": [],
       "has_video": true,
       "same_creative_count": 0,
-      "multiple_versions": false
+      "multiple_versions": false,
+      "cta_type": "ORDER_NOW",
+      "display_format": "video",
+      "cards": [
+        {
+          "body": "٥٤غ بروتين والرجعة قوية! 🔥🥩‏\n‏الفيلي ستيك لحم صافي ‎100%‎ ومشوي علي اللهب... والباقي تعرفه من أول لقمة 😏🍔‏\n‏روتينك ببروتينك. احسبها صح.‏\n‏جرّبه الحين من تطبيق برجر كنج📱أو من جميع فروعنا📍\n#برجر\\_كنج\n#برجر\\_البروتين\n#روتينك\\_ببروتينك\n#على\\_مزاجك👑",
+          "cta": "Order now",
+          "image": null,
+          "link_url": "https://www.burgerking.com.sa/ar/menu?utm_source=facebook&utm_medium=paid_social&utm_campaign=%7B%7Bcampaign.name%7D%7D&utm_id=%7B%7Bcampaign.id%7D%7D&utm_term=%7B%7Badset.id%7D%7D&utm_content=%7B%7Bad.id%7D%7D",
+          "title": "Burger King Arabia",
+          "video": null
+        }
+      ]
     },
     {
       "id": "1110161988446820",
@@ -183,14 +300,27 @@
       "page_url": "https://www.facebook.com/61585235895092/",
       "page_id": "61585235895092",
       "link_url": "https://shop.pipitea.com/oo/ppch/sp-nm",
-      "link_title": "... middle omitted — see footer ...] The first blood draw came during those weeks. I folded the page into my jacket pocket before Ellen could see how quickly I'd looked at it. That night she found me at the table with it open. I ran my finger across the line, then across the date at the top, as though I'd missed something. She sat down and asked if I wanted to talk. I said I wanted to keep going until the next draw. She looked at the tea packet, then back at the page. She let me have the next few weeks, but she put the follow-up date on the calendar herself. By then Ryan had learned to look for my car at the field. One Saturday I took the bleachers slowly, a hand on the rail, and made it to our usual spot. He waved from the dirt. I waved back. The cup had been easy to make that morning. The climb hadn't become easy just because I'd made it. I watched the whole game and drove home thinking about the difference. After the second blood draw, I brought the page home and left it face up on the kitchen table. Ellen took the first result from the folder and set them side by side. Neither page gave me a reason to keep buying that particular tea. The seven weeks had been real. So had the mornings, the purchases and the hope I'd carried to the bleachers. I wanted something to show for them on those pages, and it wasn't there. “Seven weeks, Jack. How long are you going to give tea while those numbers stay where they are?” “I don't know.” “Then don't call another bag a plan just because it says oolong.” I picked up the packet and turned it over again. I'd read its directions often enough to know them by heart. I still couldn't tell Ellen how much leaf had gone into a bag or what the brewed cup contained. That was the question the two pages had made sharper. If I was going to keep making tea, I wanted to know what I was making. I put the packet down and opened the laptop. I spent the next two weeks looking harder. I read medical pages. I read studies badly at first, then went back and learned enough to see where I’d misunderstood them. One night, I found a post from a man named Jack. He was sixty-two. High cholesterol. Could not tolerate statins. He wrote that after twelve weeks with a specific oolong routine, his LDL-C had gone from 184 to 132 and his oxidized LDL from 118 to 64. Same first name. Almost the same problem. I read his post three times. Then I looked for what might make the idea plausible. This is the part I had wrong at first. LDL itself wasn't some useless poison floating through my blood. LDL particles carry cholesterol and other fats the body uses. The trouble can begin when some of those particles enter and remain in the artery wall. Once LDL is caught in an artery wall, oxidation can change its fats and proteins. The changed particles can stir up inflammation. Immune cells called macrophages take them up; as they fill with fat, they can become foam cells, one feature of developing plaque. My regular LDL-C number still mattered. It told me how much cholesterol the LDL in my blood sample was carrying, though it didn’t count every LDL particle. It didn’t take a picture of my artery walls. And it didn’t tell me, by itself, how much LDL had been oxidatively modified inside those walls. The oolong idea focused on a different part of the chain. Tea leaves contain polyphenols. In laboratory settings, some of those compounds can oppose reactive chemistry. I found a 2003 paper by Kurihara and other researchers that tested oolong tea extract in two separate ways. In one test, the researchers looked at how the extract reacted with unstable molecules; the paper called that a radical-scavenging assay. In the other, they took human LDL out of the body, triggered oxidation in the lab, and measured how long the LDL resisted the change. At the three extract amounts they tested, the wait before oxidation began grew longer. At the highest amount, it reached 199.9% of the untreated comparison sample. Kurihara measured that nearly doubled delay in isolated LDL in the laboratory. It made me curious enough to ask what was in the tea I’d been drinking. So I went looking for a tea I’d actually drink every day. I showed Ellen the laboratory paper and the two pages from my grocery-store trial. She read the paper first, then turned the old tea tag over in her hand. “This tells you what they put beside LDL in a lab,” she said. “It doesn't tell you what was in your mug.” “No.” “Then I want to know what’s actually in the tea we make.” She’d been the one who made me stop treating the first packet like an answer. For the next few days, whenever I came up from the porch with a new page open on my phone, she asked the same question: what would I put in the mug tomorrow? She'd watched me sit with the old blood results. She'd also watched me make every one of those morning cups. She believed I'd keep a routine if I could choose one for a reason. A few days later, I came home to find her at the kitchen table with a black pouch and a mug. She’d bought it while I was still reading. Beside the mug lay the old grocery tag, a pencil and the shopping receipt. She'd made a cup for herself three mornings in a row before asking me to try it. On the first morning, she'd followed the page on her phone while the kettle heated. On the second, she made it before breakfast. On the third, she caught herself looking forward to it. “I was ready to say tea was a waste of another seven weeks,” she said. “This one, I would actually drink. And at least we can name what we're trying.” “What's it called?” “PiPi Oolong.” I sat down. “You bought it before I finished reading?” “You weren't the only one reading. I wanted to see if the cup was worth making again.” She pushed the mug toward me. “Taste it.” It was smoother than the packet I'd been brewing, with an earthy smell and a little sweetness at the end. Ellen watched me take another sip. “Taste isn't the part I'm asking about,” I said. “I know. Turn the pouch around.” The ingredient list was one line: whole-leaf oolong tea. The page said the leaf came from Pu'er, Yunnan. Each pouch held twenty bags, four grams in each one. Ellen opened a bag and let me see the leaves inside. She pointed to the preparation on the page: water between 185 and 200 degrees Fahrenheit, three to five minutes. One new bag tomorrow would give us the same starting portion as today. “Four grams,” I said. “That's the line the grocery packet didn't have.” “And this is the line that made me look twice.” She turned the phone toward me. The seller reported 340 milligrams of total polyphenols in the prepared cup, including 187 milligrams of EGCG. The seller attributed its cup testing to Light Labs. Ellen read the numbers aloud, then looked at the laboratory paper beside my two result pages. “The paper showed you what those researchers tested,” she said. “Now we know what goes into the cup we'd actually make.” “You remembered all that?” “I remembered you staring at two pieces of paper and a tea tag with nothing useful on it.” She'd been skeptical of the first purchase, and she'd had reason. Now she'd found a cup she liked, a portion we could name and published figures for the prepared drink. We sat there longer than we needed to, comparing the old tag with the PiPi page and the directions she'd followed for three mornings. Ellen asked whether I wanted to make that cup every day and keep reading the blood work with her. I ordered my own pouch so I could start with one new bag a day and keep a clean record. That night I set the order confirmation beside the calendar where Ellen had written the next check. Then I put the old tea packet away. When it arrived, I opened the pouch and smelled the leaves before I boiled any water. Earthy. Toasted. A little floral. I heated the water to 190 degrees Fahrenheit, put one new bag in my mug and let it steep for three minutes. The water turned amber. I took the mug to the porch. Fifteen minutes after that first cup, I felt clearer. Lighter. I noticed it. Ellen came outside and sat beside me. “This is the plan?” she asked. “This is part of the plan.” “And the doctor?” “I'm going back for the blood work.” “Good.” “You were the one who said not to call another bag a plan.” “I did. The seller told us what was in a brewed cup, and I liked making it for myself. Three mornings later, I still wanted it.” She looked at the mug in my hands. “But I want to see the next blood test, Jack.” That was fair. I drank one mug every morning, using one new bag a day. I boiled the water, waited for it to cool into the recommended 185-to-200-degree range, and steeped the tea for three to five minutes. Then I took it to the porch and drank it before the day could get away from me. I kept going. At week four, I had new blood work. My LDL-C had gone from 168 to 148. My oxidized LDL result had gone from 112 to 86. Dr. Martinez looked at the page, then looked at me. “What have you changed?” “I started drinking oolong tea every morning.” “Anything else?” “No.” He looked at the page again. “Well, whatever you're doing, keep doing it. And keep coming back for the checks.” I kept tracking it. At week eight, the LDL-C result was 138. The oxidized LDL result was 72. At week twelve, they were 132 and 64. I’d found a daily choice I could live with, and the pages were moving in the direction I wanted. And by then, baseball season had started again. I went to every game. I sat with Michael and Julie. I learned the names of the other kids. Tyler. Mason. Connor. I learned which father shouted at every umpire and which mother carried enough orange slices for both teams. After one game, Michael watched me fold the bleacher cushion and put it under my arm. “You look better,” he said. “I feel better.” “What changed?” “I stopped the statin after urgent care. Then I started drinking that oolong tea.” “Tea?” “One mug every morning.” He gave me the same look I’d given the story online. “And your numbers?” “LDL-C went from 168 to 132 in twelve weeks. Oxidized LDL went from 112 to 64.” “Dr. Martinez knows?” “He ordered the tests.” Michael nodded slowly. “I’m glad you’re feeling better. Ryan and I want you here.” Ryan came running over before I could answer. “Grandpa, did you see me steal second?” “I saw it.” “Coach says I got a good jump.” “Coach is right.” “Can you come Thursday? He said family can help at practice.” I looked at Michael. He nodded. “I'll be there,” I said. Thursday, I showed up. Michael brought the old glove I’d finally given him. That became our pattern. Games. Practices. Dinner every other Sunday. On Ryan's tenth birthday, about six months after I began the tea routine, I gave him a new glove. He tore off the paper and held it to his face to smell the leather. “Grandpa, this is awesome.” “Your other one is too small.” “Because I'm getting taller.” “That's the rumor.” He hugged me, then ran across the yard to show his friends. Michael walked over to the grill. “Nice glove,” he said. “He needed one.” “Dad.” I looked at him. “I'm glad you're here.” “Me too.” “I was angry a long time.” “You had a right to be.” “Maybe. Twelve years was still too long.” The grill hissed behind us. “I'm sorry,” I said. “For what I said. For missing everything.” “I know.” “I can't fix that.” “No.” He looked toward Ryan, who was working the new glove open with his fist. “But you're here now.” “I am.” “I forgive you.” I turned toward the grill so Michael wouldn’t see me cry. The smoke had nothing to do with it. Michael put a hand on my shoulder. “You're a good grandpa,” he said. “I'm trying.” “You keep showing up. That counts.” The next year, Ryan's team reached another championship. Same park. Same metal bleachers. This time I sat in the front row beside Michael and Julie. Ryan caught the final out in right field. His team won 7–5. He ran to us with his glove over his head. “Grandpa, we won!” I picked him up. “You were amazing.” Michael put his arm around my shoulder. “Good game, Dad.” “Good game.” When Ryan was eleven, Michael asked me to stay after a Saturday game. We sat alone in the bleachers. “Ryan has career day next month,” he said. “He wants you to come.” “Me?” “He wants you to talk about being a machinist.” “I've been retired ten years.” “He doesn't care. He's proud of you.” For career day, I brought old blueprints, photographs and a caliper. I showed the class how to read a drawing and how a thousandth of an inch could be the difference between a part that fit and one that didn't. Ryan sat in the first row grinning. Afterward, he hugged me in front of his friends. “That was so cool, Grandpa.” I’d spent years thinking respect was something a son owed his father. An eleven-year-old taught me it was something you earned by showing up with a box of old tools. When Ryan was twelve, he tried out for travel ball. Tuesday afternoon. Four o'clock. Ninety degrees in the shade. Michael and I stood behind the backstop while Ryan took ground balls, turned a double play and drove three pitches into left field. The coach read the names beside the dugout. Ryan's was first. He ran straight to us. “I made it!” Michael grabbed him around the shoulders. “I'm proud of you.” Ryan looked at me. “Did you see, Grandpa?” “I saw. You earned it.” At thirteen, after a night game, Michael asked me to stay in the empty bleachers. “Do you think about those twelve years?” he asked. “Every day.” “I do too.” I looked at him. “I should have called,” he said. “I should have come when Grandpa died. I should have let you meet Ryan when he was born.” “I should never have said you were throwing your life away.” “No.” “And I should have called the next day.” “We both waited for the other one.” “Too long.” “Twelve years too long.” We sat with that. Then Michael stood. “Come on,” he said. “Let's go home.” At fourteen, Ryan made varsity as a freshman. One Friday night, he hit a walk-off single in the bottom of the ninth. His teammates chased him into right field. He found me in the stands and pointed. I pointed back. Michael smiled. “He's something.” “He gets it from you.” “Maybe both of us.” That was the first time Michael spoke about the two of us as if we belonged on the same side of a sentence. At fifteen, Ryan asked me after a game how I’d handled my cholesterol numbers. “I tried the prescription,” I said. “My muscles couldn't tolerate it. Then I found the oolong tea.” “The stuff you drink on the porch?” “Every morning.” “And you still get checked?” “Every time I'm supposed to.” He nodded. “I’m glad the tea stuck with you.” “Me too.” I went to home games and away games. I sat through rain delays and extra innings. Ellen brought a blanket even in May because she never trusted the wind at Riverside Park. Ryan got taller than Michael. Then he got taller than me. Four months ago, Michael called. “Dad, my blood work came back.” “What did it say?” “LDL-C is 198. Oxidized LDL is 106.” “What does your doctor want you to do?” “Talk through medication and the rest of my risk. I'm going back next week.” I was quiet. “I remember what happened to you,” he said. “My experience doesn't tell you what yours will be.” “I know.” “Keep the appointment.” “I will. What tea do you drink?” I told him about PiPi Oolong. I told him exactly how I made it. One new four-gram bag each day. Water between 185 and 200 degrees. Three to five minutes. I told him to keep his doctor involved and keep checking. He ordered it. At twelve weeks, he called again. “Dad, it's moving.” “What is?” “LDL-C. One ninety-eight to 162. Oxidized LDL, 106 to 78.” But I could hear something in his voice I hadn’t heard on that first call. Relief. “Keep working with your doctor,” I said. “I am.” “And keep showing up.” He laughed. “I learned that from you.” Today, Ryan is sixteen. Junior year. Varsity baseball. Batting .340. College scouts have started appearing behind home plate with clipboards. I'm seventy-three. It's been seven years since the first text from a number I didn't recognize. It's been about six and a half years since I made that first amber mug of tea. My latest check still showed LDL-C at 132 and oxidized LDL at 64. This morning, Ryan had a game at ten. Riverside Park. Varsity field this time. Ellen sat beside Julie. Michael sat beside me. Bottom of the seventh. Tie game, 3–3. Two outs. Runner on second. Ryan took the first pitch for a ball. The second caught the outside corner. On the third pitch, he swung. Crack. The ball cleared the left-field fence. Ryan rounded first, then second, then third. His teammates waited at home plate. Before he reached them, he looked into the bleachers. He found me. He pointed. I pointed back. Michael put his arm around me. “Good game, Dad.” “Good game.” If you're reading this because a number on your lab sheet frightened you, I understand. If you want to make the tea Ellen found and I chose, the one I carried to the porch every morning, this is it. PiPi Oolong is whole-leaf oolong sourced from Pu'er, Yunnan. One pouch contains twenty individually portioned four-gram tea bags. I use one new bag each day. You can drink it hot or pour it over ice. For hot tea, use water between 185 and 200 degrees and steep it for three to five minutes. That's the whole routine. I noticed that clearer, lighter feeling after the first cup. I stayed with it because I liked the tea, could make it every morning, and could track what happened instead of guessing. I read the seller’s return policy before ordering extra pouches. It says you have ninety days from purchase to ask for return approval, and the goods must be unused, unopened, sealed and in condition to resell. Right now, the product page also shows a one-time Buy Two, Get One Free option. On that one-time offer, the three pouches are $22.21 each, $66.63 total, before shipping. Together they contain sixty daily servings if you use one new bag per day. Check the current page because offers can change. If you want to see the same PiPi Oolong I use, go here:",
+      "link_title": "... middle omitted — see footer ...] The first blood draw came during those weeks. I folded the page into my jacket pocket before Ellen could see how quickly I'd looked at it. That night she found me at the table with it open. I ran my finger across the line, then across the date at the top, as though I'd missed something. She sat down and asked if I wanted to talk. I said I wanted to keep going until the next draw. She looked at the tea packet, then back at the page. She let me have the next few weeks, but she put the follow-up date on the calendar herself. By then Ryan had learned to look for my car at the field. One Saturday I took the bleachers slowly, a hand on the rail, and made it to our usual spot. He waved from the dirt. I waved back. The cup had been easy to make that morning. The climb hadn't become easy just because I'd made it. I watched the whole game and drove home thinking about the difference. After the second blood draw, I brought the page home and left it face up on the kitchen table. Ellen took the first result from the folder and set them side by side. Neither page gave me a reason to keep buying that particular tea. The seven weeks had been real. So had the m…",
       "cta_text": "[https://shop.pipitea.com/oo/ppch/sp-nm",
+      "link_caption": "",
       "images": [
         "https://scontent-lax3-2.xx.fbcdn.net/v/t39.35426-6/854235996_1073470781985347_551919486766453618_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=107&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=BefFQ4Q36koQ7kNvwFofm7-&_nc_oc=AdpVFowL3bkU0VM96ASjiAZ34jzqNRj7ZiffBqSflW9e2Di2H3ffC3gV4vfw0tOmiSg&_nc_zt=14&_nc_ht=scontent-lax3-2.xx&_nc_gid=JJh3xPalctk9IUR856g50A&_nc_ss=7b289&oh=00_AQQ6LTyBuycuspVtA-Gv8dJa30LyO1u77HOUnboY93BlQQ&oe=6AF74CB0"
       ],
       "has_video": false,
       "same_creative_count": 0,
-      "multiple_versions": false
+      "multiple_versions": false,
+      "cta_type": "HTTPS_SHOP_PIPITEA_COM_OO_PPCH_SP_NM",
+      "display_format": "image",
+      "cards": [
+        {
+          "body": "I found out I had a grandson when he texted me asking why I never came to his games.\nThe number wasn’t saved in my phone. Just ten digits, area code 610, same as mine. The message came through at 11:42 on a Tuesday night.\n“Hi. This is Ryan. Michael’s son. I play baseball at Riverside Park on Saturdays at 10. How come you never come?”\nI read it once.\nThen again.\nThen I set the phone on the kitchen table and stared at it as if the words might rearrange themselves into something I understood.\nMichael’s son.\nMichael had a son.\nMichael had a son named Ryan who played baseball at Riverside Park on Saturdays at ten, and I didn’t know any of it because I hadn’t spoken to Michael in twelve years. The last time I saw my son, he was twenty-eight years old. Thanksgiving 2014. He brought Julie home and told us they were getting married.\nI’d met Julie twice. Once at a barbecue. Once at Easter dinner. She was polite. Quiet. Worked as a dental hygienist. She brought flowers for Ellen both times and helped clear the plates without being asked. None of that was the problem.\nThe problem, as I saw it then, was that Michael was two semesters away from finishing his engineering degree at Penn State. He…",
+          "cta": "[https://shop.pipitea.com/oo/ppch/sp-nm",
+          "image": "https://scontent-lax3-2.xx.fbcdn.net/v/t39.35426-6/854235996_1073470781985347_551919486766453618_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=107&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=BefFQ4Q36koQ7kNvwFofm7-&_nc_oc=AdpVFowL3bkU0VM96ASjiAZ34jzqNRj7ZiffBqSflW9e2Di2H3ffC3gV4vfw0tOmiSg&_nc_zt=14&_nc_ht=scontent-lax3-2.xx&_nc_gid=JJh3xPalctk9IUR856g50A&_nc_ss=7b289&oh=00_AQQ6LTyBuycuspVtA-Gv8dJa30LyO1u77HOUnboY93BlQQ&oe=6AF74CB0",
+          "link_url": "https://shop.pipitea.com/oo/ppch/sp-nm",
+          "title": "... middle omitted — see footer ...] The first blood draw came during those weeks. I folded the page into my jacket pocket before Ellen could see how quickly I'd looked at it. That night she found me at the table with it open. I ran my finger across the line, then across the date at the top, as though I'd missed something. She sat down and asked if I wanted to talk. I said I wanted to keep going until the next draw. She looked at the tea packet, then back at the page. She let me have the next few weeks, but she put the follow-up date on the calendar herself. By then Ryan had learned to look for my car at the field. One Saturday I took the bleachers slowly, a hand on the rail, and made it to our usual spot. He waved from the dirt. I waved back. The cup had been easy to make that morning. The climb hadn't become easy just because I'd made it. I watched the whole game and drove home thinking about the difference. After the second blood draw, I brought the page home and left it face up on the kitchen table. Ellen took the first result from the folder and set them side by side. Neither page gave me a reason to keep buying that particular tea. The seven weeks had been real. So had the m…",
+          "video": null
+        }
+      ]
     },
     {
       "id": "1842409163785577",
@@ -205,10 +335,23 @@
       "link_url": "https://www.burgerking.com.sa/ar/menu?utm_source=facebook&utm_medium=paid_social&utm_campaign=%7B%7Bcampaign.name%7D%7D&utm_id=%7B%7Bcampaign.id%7D%7D&utm_term=%7B%7Badset.id%7D%7D&utm_content=%7B%7Bad.id%7D%7D",
       "link_title": "Burger King Arabia",
       "cta_text": "See details",
+      "link_caption": "WWW.BURGERKING.COM.SA",
       "images": [],
       "has_video": true,
       "same_creative_count": 0,
-      "multiple_versions": false
+      "multiple_versions": false,
+      "cta_type": "SEE_DETAILS",
+      "display_format": "video",
+      "cards": [
+        {
+          "body": "خلنا نحسبها ✅👑\nتمرنت؟ خلصت شغلك؟ الحين باقي تكمل روتينك 😏\nوش صار مع بيج تركي؟ 🔥\nروتينك ببروتينك. احسبها صح.\nشوفوا الحلقة وجرّبه الحين من تطبيق برجر كنج 📱 أو من جميع فروعنا📍\n#برجر\\_كنج\n#برجر\\_البروتين\n#روتينك\\_ببروتينك\n#على\\_مزاجك👑",
+          "cta": "See details",
+          "image": null,
+          "link_url": "https://www.burgerking.com.sa/ar/menu?utm_source=facebook&utm_medium=paid_social&utm_campaign=%7B%7Bcampaign.name%7D%7D&utm_id=%7B%7Bcampaign.id%7D%7D&utm_term=%7B%7Badset.id%7D%7D&utm_content=%7B%7Bad.id%7D%7D",
+          "title": "Burger King Arabia",
+          "video": null
+        }
+      ]
     },
     {
       "id": "1956331635327765",
@@ -223,10 +366,23 @@
       "link_url": "https://bit.ly/ednashoplink",
       "link_title": "",
       "cta_text": "https://bit.ly/ednashoplink",
+      "link_caption": "",
       "images": [],
       "has_video": true,
       "same_creative_count": 0,
-      "multiple_versions": false
+      "multiple_versions": false,
+      "cta_type": "HTTPS_BIT_LY_EDNASHOPLINK",
+      "display_format": "video",
+      "cards": [
+        {
+          "body": "🔥 ₱17,888 LANG! May franchise business ka na! 💼🥟\nPerfect para sa gustong mag-negosyo sa Pilipinas! 🇵🇭\nOFW KA BA? NAGHAHANAP NG NEGOSYO SA PILIPINAS KAHIT NASA IBANG BANSA?\nDon't worry dahil may Dropshipping Franchise na! For only 17,888 may LIFETIME business ka na pwede mo pa IPAMANA!\n✅️No Renewal Fee\n✅️No Royalty Fee\n✅️No Sales Quota\n✅️No Income Limit\n✅ 1-on-1 Coaching\n✅ Free Marketing Materials\n✅ Free Seminars and Dropshipping Website\nAnd may Community Franchise pa na kasama! Kaya mag HOW ka na or message me to reserve your slot joining our Free Online Orientation via ZOOM.\n👉 \\*\\*SHOP LINK:\\*\\*\n📩 \\*\\*PM US “OFW”\\*\\* para sa franchise details!\n📞 \\*\\*+1 780-729-8559\\*\\*\n📧 \\\\*\\\\* edna\\_lopez71@yahoo.ca\n🌐 \\\\*\\\\* FB: [https://www.facebook.com/TaraBizPH](https://www.facebook.com/TaraBizPH)\n\\*\\*Huwag puro padala—magplano rin para sa sariling negosyo. ❤️🇵🇭\\*\\*\n#OFWBusinessOpportunity #OFW #BusinessOpportunity #SiomaiKing #Dropshipping #FranchiseBusiness #NegosyoSaPinas #TaraBizPH #PinoyEntrepreneurs\n💬 Tara, usap tayo!\n📩 MESSAGE ME FOR DETAILS!\nDropshipping by Edna Lopez\nFood & Drink, Health & wellness website\nSend message",
+          "cta": "https://bit.ly/ednashoplink",
+          "image": null,
+          "link_url": "https://bit.ly/ednashoplink",
+          "title": "",
+          "video": null
+        }
+      ]
     },
     {
       "id": "28260881983591669",
@@ -241,12 +397,25 @@
       "link_url": "",
       "link_title": "",
       "cta_text": "",
+      "link_caption": "",
       "images": [
         "https://scontent-lax3-1.xx.fbcdn.net/v/t39.35426-6/855331193_29143907295233905_428138519930597837_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=109&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=vzOF-G4u7REQ7kNvwHMG748&_nc_oc=Adp9Pm0fepJoRO6bUWRjZHChMVZUL1JkHZJtRGi7XPLBzOmznGIxuKzC9Tun_4AfgcM&_nc_zt=14&_nc_ht=scontent-lax3-1.xx&_nc_gid=JJh3xPalctk9IUR856g50A&_nc_ss=7b289&oh=00_AQS6BbD0Hpo9-_PA4ezlTAEvBGeaoXWLyO1-F5E1QdnJ6w&oe=6AF73CAA"
       ],
       "has_video": false,
       "same_creative_count": 0,
-      "multiple_versions": false
+      "multiple_versions": false,
+      "cta_type": "",
+      "display_format": "image",
+      "cards": [
+        {
+          "body": "قلتوا رجّعوه وقلنا أبشروا! 🔥\nطلباتكم أوامر 👑\nحصريًا على تطبيق برجر كنج 📱\nتوصيل أو استلام، ولفترة محدودة\nلا تقولون ما درينا.. وش بتطلبون؟ 👀\n#برجر\\_كنج\n#حصريًا\\_على\\_تطبيق\\_برجر\\_كنج\n#المزاج\\_مزاجنا👑\nBurger King Arabia\nUse app",
+          "cta": "",
+          "image": "https://scontent-lax3-1.xx.fbcdn.net/v/t39.35426-6/855331193_29143907295233905_428138519930597837_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=109&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=vzOF-G4u7REQ7kNvwHMG748&_nc_oc=Adp9Pm0fepJoRO6bUWRjZHChMVZUL1JkHZJtRGi7XPLBzOmznGIxuKzC9Tun_4AfgcM&_nc_zt=14&_nc_ht=scontent-lax3-1.xx&_nc_gid=JJh3xPalctk9IUR856g50A&_nc_ss=7b289&oh=00_AQS6BbD0Hpo9-_PA4ezlTAEvBGeaoXWLyO1-F5E1QdnJ6w&oe=6AF73CAA",
+          "link_url": "",
+          "title": "",
+          "video": null
+        }
+      ]
     },
     {
       "id": "1128724136231835",
@@ -261,10 +430,23 @@
       "link_url": "http://play.google.com/store/apps/details?id=com.blazereel.dramaepisodes.app",
       "link_title": "BlazeReel Drama",
       "cta_text": "Install now",
+      "link_caption": "PLAY.GOOGLE.COM",
       "images": [],
       "has_video": true,
       "same_creative_count": 0,
-      "multiple_versions": false
+      "multiple_versions": false,
+      "cta_type": "INSTALL_MOBILE_APP",
+      "display_format": "video",
+      "cards": [
+        {
+          "body": "Unduh aplikasi gratis untuk episode terbaru!",
+          "cta": "Install now",
+          "image": null,
+          "link_url": "http://play.google.com/store/apps/details?id=com.blazereel.dramaepisodes.app",
+          "title": "BlazeReel Drama",
+          "video": null
+        }
+      ]
     },
     {
       "id": "1111470848165223",
@@ -279,10 +461,23 @@
       "link_url": "https://www.tatasalazar.com/video1",
       "link_title": "Descubre cómo personas comunes comienzan👉🏻",
       "cta_text": "Watch more",
+      "link_caption": "WWW.TATASALAZAR.COM",
       "images": [],
       "has_video": true,
       "same_creative_count": 0,
-      "multiple_versions": true
+      "multiple_versions": true,
+      "cta_type": "WATCH_MORE",
+      "display_format": "video",
+      "cards": [
+        {
+          "body": "¿Y si en lugar de empezar desde cero, pudieras usar un sistema que ya está armado?\nLa mayoría abandona porque no sabe qué vender, cómo vender o por dónde empezar. Eso genera frustración y pérdida de tiempo.\nLa Franquicia IA te muestra un camino claro: producto, estrategia y soporte integrados en un solo lugar, diseñados para personas reales que quieren aprender y aplicar.\n👉 Da clic en “Ver más” para ver cómo funciona el sistema.",
+          "cta": "Watch more",
+          "image": null,
+          "link_url": "https://www.tatasalazar.com/video1",
+          "title": "Descubre cómo personas comunes comienzan👉🏻",
+          "video": null
+        }
+      ]
     },
     {
       "id": "2608609056328911",
@@ -297,10 +492,23 @@
       "link_url": "http://fb.me/",
       "link_title": "Lower Food Costs, Smarter Inventory",
       "cta_text": "Book Now",
+      "link_caption": "",
       "images": [],
       "has_video": true,
       "same_creative_count": 2,
-      "multiple_versions": false
+      "multiple_versions": false,
+      "cta_type": "BOOK_NOW",
+      "display_format": "video",
+      "cards": [
+        {
+          "body": "WARNING: Are food costs eating into your profits?\nSupy's restaurant inventory software can help! Cut waste, optimize orders and boost your bottom line. Try it now and start saving today!",
+          "cta": "Book Now",
+          "image": null,
+          "link_url": "http://fb.me/",
+          "title": "Lower Food Costs, Smarter Inventory",
+          "video": null
+        }
+      ]
     },
     {
       "id": "4462729627311963",
@@ -315,10 +523,23 @@
       "link_url": "",
       "link_title": "",
       "cta_text": "",
+      "link_caption": "",
       "images": [],
       "has_video": true,
       "same_creative_count": 2,
-      "multiple_versions": false
+      "multiple_versions": false,
+      "cta_type": "",
+      "display_format": "video",
+      "cards": [
+        {
+          "body": "الصغيرة وحديقتها العجيبة",
+          "cta": "",
+          "image": null,
+          "link_url": "",
+          "title": "",
+          "video": null
+        }
+      ]
     }
   ],
   "advertiser_search": [
@@ -335,10 +556,23 @@
       "link_url": "",
       "link_title": "",
       "cta_text": "",
+      "link_caption": "",
       "images": [],
       "has_video": true,
       "same_creative_count": 0,
-      "multiple_versions": false
+      "multiple_versions": false,
+      "cta_type": "",
+      "display_format": "video",
+      "cards": [
+        {
+          "body": "إذا سمعت «بابا جوعانين» أكثر من مرة في الدقيقة… تعرف إن وقت العشا وصل 😂\nوالسؤال: مين عندكم دايم يقرر طلب العائلة؟ 👀🍔\nكنج بلس بـ٢٠ ريال، يشبع وزود 🔥👑\nجرّبه الحين من تطبيق برجر كنج 📱 أو من جميع مطاعمنا📍\n#برجر\\_كنج\n#كنج\\_بلس\n#على\\_مزاجك👑",
+          "cta": "",
+          "image": null,
+          "link_url": "",
+          "title": "",
+          "video": null
+        }
+      ]
     },
     {
       "id": "1847122059646005",
@@ -353,10 +587,23 @@
       "link_url": "https://www.burgerking.com.sa/ar/menu?utm_source=facebook&utm_medium=paid_social&utm_campaign=%7B%7Bcampaign.name%7D%7D&utm_id=%7B%7Bcampaign.id%7D%7D&utm_term=%7B%7Badset.id%7D%7D&utm_content=%7B%7Bad.id%7D%7D",
       "link_title": "Burger King Arabia",
       "cta_text": "See details",
+      "link_caption": "WWW.BURGERKING.COM.SA",
       "images": [],
       "has_video": true,
       "same_creative_count": 0,
-      "multiple_versions": false
+      "multiple_versions": false,
+      "cta_type": "SEE_DETAILS",
+      "display_format": "video",
+      "cards": [
+        {
+          "body": "⁨ ‏قالوا رجعوه... قلنا أبشر 🔥👑‏\n‏برجر البروتين رجع بخيارين:‏\n‏الفيلي ستيك لحم ٥٤غ 🥩‏\n‏والدجاج تركي ٦٢غ 🐔‏\n‏والفيلي ستيك؟ ‎ مشوي علي اللهب 🔥و‏لحم صافي ‎100%\n‏روتينك ببروتينك. احسبها صح.‏\nشوفوا الحلقة و جرّبه الحين من تطبيق برجر كنج 📱 أو من جميع فروعنا📍\n‏#برجر\\_كنج\n#برجر\\_البروتين\n#روتينك\\_ببروتينك\n#على\\_مزاجك👑‏⁩",
+          "cta": "See details",
+          "image": null,
+          "link_url": "https://www.burgerking.com.sa/ar/menu?utm_source=facebook&utm_medium=paid_social&utm_campaign=%7B%7Bcampaign.name%7D%7D&utm_id=%7B%7Bcampaign.id%7D%7D&utm_term=%7B%7Badset.id%7D%7D&utm_content=%7B%7Bad.id%7D%7D",
+          "title": "Burger King Arabia",
+          "video": null
+        }
+      ]
     },
     {
       "id": "977585395389678",
@@ -371,12 +618,25 @@
       "link_url": "https://www.burgerking.com.sa/ar/menu?utm_source=facebook&utm_medium=paid_social&utm_campaign=%7B%7Bcampaign.name%7D%7D&utm_id=%7B%7Bcampaign.id%7D%7D&utm_term=%7B%7Badset.id%7D%7D&utm_content=%7B%7Bad.id%7D%7D#section-a9b236a6-3898-4070-9c3b-d5396dd96590",
       "link_title": "Burger King Arabia",
       "cta_text": "Order now",
+      "link_caption": "BURGERKING.COM.SA",
       "images": [
         "https://scontent-lax3-1.xx.fbcdn.net/v/t39.35426-6/848497852_1108797058566644_6036874677091889198_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=108&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=ktpaApTl-UUQ7kNvwHRt4bU&_nc_oc=AdpQ7GfJc0HJaml-2Kp3bLkAzQCL4C2M29MAsONSPINB_IhuZzujT7wXZSq0IsWZNZA&_nc_zt=14&_nc_ht=scontent-lax3-1.xx&_nc_gid=JJh3xPalctk9IUR856g50A&_nc_ss=7b289&oh=00_AQQ4B54nkJ-3KUNOASmN8WrhvYg46-cge-7icUWHp7UsfA&oe=6AF73535"
       ],
       "has_video": false,
       "same_creative_count": 0,
-      "multiple_versions": false
+      "multiple_versions": false,
+      "cta_type": "ORDER_NOW",
+      "display_format": "image",
+      "cards": [
+        {
+          "body": "تريبل دجاج ولا تريبل لحم؟ 👀🍔\nأول ظهور لخيارات كنج بلس: برجرين بطبقات تشهي، وكل واحد له جوّه. أنت مع أي واحد؟\nالوجبة بـ٢٠ ريال… يشبع وزود 👑\nجرّبها من تطبيق برجر كنج 📱 أو من جميع فروعنا📍\n#برجر\\_كنج\n#كنج\\_بلس\n#على\\_مزاجك👑",
+          "cta": "Order now",
+          "image": "https://scontent-lax3-1.xx.fbcdn.net/v/t39.35426-6/848497852_1108797058566644_6036874677091889198_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=108&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=ktpaApTl-UUQ7kNvwHRt4bU&_nc_oc=AdpQ7GfJc0HJaml-2Kp3bLkAzQCL4C2M29MAsONSPINB_IhuZzujT7wXZSq0IsWZNZA&_nc_zt=14&_nc_ht=scontent-lax3-1.xx&_nc_gid=JJh3xPalctk9IUR856g50A&_nc_ss=7b289&oh=00_AQQ4B54nkJ-3KUNOASmN8WrhvYg46-cge-7icUWHp7UsfA&oe=6AF73535",
+          "link_url": "https://www.burgerking.com.sa/ar/menu?utm_source=facebook&utm_medium=paid_social&utm_campaign=%7B%7Bcampaign.name%7D%7D&utm_id=%7B%7Bcampaign.id%7D%7D&utm_term=%7B%7Badset.id%7D%7D&utm_content=%7B%7Bad.id%7D%7D#section-a9b236a6-3898-4070-9c3b-d5396dd96590",
+          "title": "Burger King Arabia",
+          "video": null
+        }
+      ]
     },
     {
       "id": "1880158576731108",
@@ -391,12 +651,25 @@
       "link_url": "https://www.burgerking.com.sa/ar/menu?utm_source=facebook&utm_medium=paid_social&utm_campaign=%7B%7Bcampaign.name%7D%7D&utm_id=%7B%7Bcampaign.id%7D%7D&utm_term=%7B%7Badset.id%7D%7D&utm_content=%7B%7Bad.id%7D%7D",
       "link_title": "Burger King Arabia",
       "cta_text": "See details",
+      "link_caption": "BURGERKING.COM.SA",
       "images": [
         "https://scontent-lax3-2.xx.fbcdn.net/v/t39.35426-6/868593688_4487653081490644_6959165940977564805_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=107&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=XX3OtH9sVCYQ7kNvwEheukm&_nc_oc=Adqf3WIKvVG9OjFcaq16tQyWOuqXemhhc1tvMGS0IFxBoteuBw2afP8wapfRoREXBNs&_nc_zt=14&_nc_ht=scontent-lax3-2.xx&_nc_gid=JJh3xPalctk9IUR856g50A&_nc_ss=7b289&oh=00_AQRiT3GgWhhlObLvFsZoFqPoPWcYph4bQiEEko6ze7_BAA&oe=6AF754C4"
       ],
       "has_video": false,
       "same_creative_count": 0,
-      "multiple_versions": false
+      "multiple_versions": false,
+      "cta_type": "SEE_DETAILS",
+      "display_format": "image",
+      "cards": [
+        {
+          "body": "بيج تركي جاب لكم الخيارين 👀🔥\n٥٤غ لحم أو ٦٢غ دجاج... أنت تبدأ بأي واحد؟ 🍔\nروتينك ببروتينك. احسبها صح.\nجرّبه الحين من تطبيق برجر كنج 📱 أو من جميع فروعنا📍\n#برجر\\_كنج\n#برجر\\_البروتين\n#روتينك\\_ببروتينك\n#على\\_مزاجك👑",
+          "cta": "See details",
+          "image": "https://scontent-lax3-2.xx.fbcdn.net/v/t39.35426-6/868593688_4487653081490644_6959165940977564805_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=107&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=XX3OtH9sVCYQ7kNvwEheukm&_nc_oc=Adqf3WIKvVG9OjFcaq16tQyWOuqXemhhc1tvMGS0IFxBoteuBw2afP8wapfRoREXBNs&_nc_zt=14&_nc_ht=scontent-lax3-2.xx&_nc_gid=JJh3xPalctk9IUR856g50A&_nc_ss=7b289&oh=00_AQRiT3GgWhhlObLvFsZoFqPoPWcYph4bQiEEko6ze7_BAA&oe=6AF754C4",
+          "link_url": "https://www.burgerking.com.sa/ar/menu?utm_source=facebook&utm_medium=paid_social&utm_campaign=%7B%7Bcampaign.name%7D%7D&utm_id=%7B%7Bcampaign.id%7D%7D&utm_term=%7B%7Badset.id%7D%7D&utm_content=%7B%7Bad.id%7D%7D",
+          "title": "Burger King Arabia",
+          "video": null
+        }
+      ]
     },
     {
       "id": "983338801488922",
@@ -411,12 +684,25 @@
       "link_url": "https://www.burgerking.com.sa/ar/menu?utm_source=facebook&utm_medium=paid_social&utm_campaign=%7B%7Bcampaign.name%7D%7D&utm_id=%7B%7Bcampaign.id%7D%7D&utm_term=%7B%7Badset.id%7D%7D&utm_content=%7B%7Bad.id%7D%7D",
       "link_title": "Burger King Arabia",
       "cta_text": "Order now",
+      "link_caption": "BURGERKING.COM.SA",
       "images": [
         "https://scontent-lax3-2.xx.fbcdn.net/v/t39.35426-6/879746385_1473525661295102_1142973442756452359_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=106&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=J8J_RKpJXDkQ7kNvwEOQ5Tr&_nc_oc=AdoqA9RFR4X_0QRg4mgvFBvHnWldSMmMh-WxUE1CJlG8b3G4krOrH89hf3tB7cFVByA&_nc_zt=14&_nc_ht=scontent-lax3-2.xx&_nc_gid=JJh3xPalctk9IUR856g50A&_nc_ss=7b289&oh=00_AQRlHyZEybLOhKvJbXSuEdFoZiyoY5yppB_7QYR_mgTvsQ&oe=6AF75F7E"
       ],
       "has_video": false,
       "same_creative_count": 0,
-      "multiple_versions": false
+      "multiple_versions": false,
+      "cta_type": "ORDER_NOW",
+      "display_format": "image",
+      "cards": [
+        {
+          "body": "‏اليوم السؤال بسيط 👀‏\n‏٥٤غ 🥩 ولا ٦٢غ 🐔؟‏\n‏على جوّك... أو لا تحتار وخذ الاثنين 🔥👑‏\n‏روتينك ببروتينك. احسبها صح.‏\n📍اطلبه الحين من تطبيق برجر كنج 📱 أو من جميع مطاعمنا\n#برجر\\_كنج #برجر\\_البروتين #روتينك\\_ببروتينك #على\\_مزاجك👑",
+          "cta": "Order now",
+          "image": "https://scontent-lax3-2.xx.fbcdn.net/v/t39.35426-6/879746385_1473525661295102_1142973442756452359_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=106&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=J8J_RKpJXDkQ7kNvwEOQ5Tr&_nc_oc=AdoqA9RFR4X_0QRg4mgvFBvHnWldSMmMh-WxUE1CJlG8b3G4krOrH89hf3tB7cFVByA&_nc_zt=14&_nc_ht=scontent-lax3-2.xx&_nc_gid=JJh3xPalctk9IUR856g50A&_nc_ss=7b289&oh=00_AQRlHyZEybLOhKvJbXSuEdFoZiyoY5yppB_7QYR_mgTvsQ&oe=6AF75F7E",
+          "link_url": "https://www.burgerking.com.sa/ar/menu?utm_source=facebook&utm_medium=paid_social&utm_campaign=%7B%7Bcampaign.name%7D%7D&utm_id=%7B%7Bcampaign.id%7D%7D&utm_term=%7B%7Badset.id%7D%7D&utm_content=%7B%7Bad.id%7D%7D",
+          "title": "Burger King Arabia",
+          "video": null
+        }
+      ]
     },
     {
       "id": "1337732271633732",
@@ -431,10 +717,23 @@
       "link_url": "https://www.burgerking.com.sa/ar/menu?utm_source=facebook&utm_medium=paid_social&utm_campaign=%7B%7Bcampaign.name%7D%7D&utm_id=%7B%7Bcampaign.id%7D%7D&utm_term=%7B%7Badset.id%7D%7D&utm_content=%7B%7Bad.id%7D%7D",
       "link_title": "Burger King Arabia",
       "cta_text": "Order now",
+      "link_caption": "WWW.BURGERKING.COM.SA",
       "images": [],
       "has_video": true,
       "same_creative_count": 0,
-      "multiple_versions": false
+      "multiple_versions": false,
+      "cta_type": "ORDER_NOW",
+      "display_format": "video",
+      "cards": [
+        {
+          "body": "٥٤غ بروتين والرجعة قوية! 🔥🥩‏\n‏الفيلي ستيك لحم صافي ‎100%‎ ومشوي علي اللهب... والباقي تعرفه من أول لقمة 😏🍔‏\n‏روتينك ببروتينك. احسبها صح.‏\n‏جرّبه الحين من تطبيق برجر كنج📱أو من جميع فروعنا📍\n#برجر\\_كنج\n#برجر\\_البروتين\n#روتينك\\_ببروتينك\n#على\\_مزاجك👑",
+          "cta": "Order now",
+          "image": null,
+          "link_url": "https://www.burgerking.com.sa/ar/menu?utm_source=facebook&utm_medium=paid_social&utm_campaign=%7B%7Bcampaign.name%7D%7D&utm_id=%7B%7Bcampaign.id%7D%7D&utm_term=%7B%7Badset.id%7D%7D&utm_content=%7B%7Bad.id%7D%7D",
+          "title": "Burger King Arabia",
+          "video": null
+        }
+      ]
     },
     {
       "id": "1842409163785577",
@@ -449,10 +748,23 @@
       "link_url": "https://www.burgerking.com.sa/ar/menu?utm_source=facebook&utm_medium=paid_social&utm_campaign=%7B%7Bcampaign.name%7D%7D&utm_id=%7B%7Bcampaign.id%7D%7D&utm_term=%7B%7Badset.id%7D%7D&utm_content=%7B%7Bad.id%7D%7D",
       "link_title": "Burger King Arabia",
       "cta_text": "See details",
+      "link_caption": "WWW.BURGERKING.COM.SA",
       "images": [],
       "has_video": true,
       "same_creative_count": 0,
-      "multiple_versions": false
+      "multiple_versions": false,
+      "cta_type": "SEE_DETAILS",
+      "display_format": "video",
+      "cards": [
+        {
+          "body": "خلنا نحسبها ✅👑\nتمرنت؟ خلصت شغلك؟ الحين باقي تكمل روتينك 😏\nوش صار مع بيج تركي؟ 🔥\nروتينك ببروتينك. احسبها صح.\nشوفوا الحلقة وجرّبه الحين من تطبيق برجر كنج 📱 أو من جميع فروعنا📍\n#برجر\\_كنج\n#برجر\\_البروتين\n#روتينك\\_ببروتينك\n#على\\_مزاجك👑",
+          "cta": "See details",
+          "image": null,
+          "link_url": "https://www.burgerking.com.sa/ar/menu?utm_source=facebook&utm_medium=paid_social&utm_campaign=%7B%7Bcampaign.name%7D%7D&utm_id=%7B%7Bcampaign.id%7D%7D&utm_term=%7B%7Badset.id%7D%7D&utm_content=%7B%7Bad.id%7D%7D",
+          "title": "Burger King Arabia",
+          "video": null
+        }
+      ]
     },
     {
       "id": "28260881983591669",
@@ -467,12 +779,25 @@
       "link_url": "",
       "link_title": "",
       "cta_text": "",
+      "link_caption": "",
       "images": [
         "https://scontent-lax3-1.xx.fbcdn.net/v/t39.35426-6/855331193_29143907295233905_428138519930597837_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=109&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=vzOF-G4u7REQ7kNvwHMG748&_nc_oc=Adp9Pm0fepJoRO6bUWRjZHChMVZUL1JkHZJtRGi7XPLBzOmznGIxuKzC9Tun_4AfgcM&_nc_zt=14&_nc_ht=scontent-lax3-1.xx&_nc_gid=JJh3xPalctk9IUR856g50A&_nc_ss=7b289&oh=00_AQS6BbD0Hpo9-_PA4ezlTAEvBGeaoXWLyO1-F5E1QdnJ6w&oe=6AF73CAA"
       ],
       "has_video": false,
       "same_creative_count": 0,
-      "multiple_versions": false
+      "multiple_versions": false,
+      "cta_type": "",
+      "display_format": "image",
+      "cards": [
+        {
+          "body": "قلتوا رجّعوه وقلنا أبشروا! 🔥\nطلباتكم أوامر 👑\nحصريًا على تطبيق برجر كنج 📱\nتوصيل أو استلام، ولفترة محدودة\nلا تقولون ما درينا.. وش بتطلبون؟ 👀\n#برجر\\_كنج\n#حصريًا\\_على\\_تطبيق\\_برجر\\_كنج\n#المزاج\\_مزاجنا👑\nBurger King Arabia\nUse app",
+          "cta": "",
+          "image": "https://scontent-lax3-1.xx.fbcdn.net/v/t39.35426-6/855331193_29143907295233905_428138519930597837_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=109&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=vzOF-G4u7REQ7kNvwHMG748&_nc_oc=Adp9Pm0fepJoRO6bUWRjZHChMVZUL1JkHZJtRGi7XPLBzOmznGIxuKzC9Tun_4AfgcM&_nc_zt=14&_nc_ht=scontent-lax3-1.xx&_nc_gid=JJh3xPalctk9IUR856g50A&_nc_ss=7b289&oh=00_AQS6BbD0Hpo9-_PA4ezlTAEvBGeaoXWLyO1-F5E1QdnJ6w&oe=6AF73CAA",
+          "link_url": "",
+          "title": "",
+          "video": null
+        }
+      ]
     }
   ]
 }

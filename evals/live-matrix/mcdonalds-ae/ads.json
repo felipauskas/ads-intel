@@ -16,10 +16,23 @@
       "link_url": "",
       "link_title": "",
       "cta_text": "",
+      "link_caption": "",
       "images": [],
       "has_video": true,
       "same_creative_count": 0,
-      "multiple_versions": true
+      "multiple_versions": true,
+      "cta_type": "",
+      "display_format": "video",
+      "cards": [
+        {
+          "body": "Download the McDonald’s App\nOrder Ahead\nOrder Now",
+          "cta": "",
+          "image": null,
+          "link_url": "",
+          "title": "",
+          "video": null
+        }
+      ]
     },
     {
       "id": "1578040380229120",
@@ -34,12 +47,25 @@
       "link_url": "https://www.mcdonalds.com/us/en-us/download-app.html",
       "link_title": "it’s as simple as McDonald's Download",
       "cta_text": "Order Now",
+      "link_caption": "MCDONALDS.COM",
       "images": [
-        "https://scontent-lax7-1.xx.fbcdn.net/v/t39.35426-6/615487750_732136346636783_1395649993937322739_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=105&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=9xqGTsGS880Q7kNvwF2hj2p&_nc_oc=Adrf0WDRXj0hwbTCgIJAToHDGC29MXeZG_2mNcf9Sd-_Y9H_WziR81swCl5na1X3mvs&_nc_zt=14&_nc_ht=scontent-lax7-1.xx&_nc_gid=l85HxrYNsfXsIuTDetLYfQ&_nc_ss=7b289&oh=00_AQTl6D1B1pg3BNfsLeYGkQ4Yw5dSRv8UF3qPuzYb2Fdy1g&oe=6AF76250"
+        "https://scontent-lax7-1.xx.fbcdn.net/v/t39.35426-6/615487750_732136346636783_1395649993937322739_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=105&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=9xqGTsGS880Q7kNvwG1iGNL&_nc_oc=AdpbNnv5a0Dq-CotLsNE7LcfxexMY_R7R8u-rgdM6o8CwhKXSTXrT7L2wJthDnso4E8&_nc_zt=14&_nc_ht=scontent-lax7-1.xx&_nc_gid=CLEX7N-r4HcK2jJKNgbhjA&_nc_ss=7b289&oh=00_AQQpo-Z8j5IE-n1iK_Ds6DzpgJZsRuDKkB_Hj8kW_QpipA&oe=6AF76250"
       ],
       "has_video": false,
       "same_creative_count": 0,
-      "multiple_versions": false
+      "multiple_versions": false,
+      "cta_type": "ORDER_NOW",
+      "display_format": "image",
+      "cards": [
+        {
+          "body": "Get your hands on this great deal.",
+          "cta": "Order Now",
+          "image": "https://scontent-lax7-1.xx.fbcdn.net/v/t39.35426-6/615487750_732136346636783_1395649993937322739_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=105&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=9xqGTsGS880Q7kNvwG1iGNL&_nc_oc=AdpbNnv5a0Dq-CotLsNE7LcfxexMY_R7R8u-rgdM6o8CwhKXSTXrT7L2wJthDnso4E8&_nc_zt=14&_nc_ht=scontent-lax7-1.xx&_nc_gid=CLEX7N-r4HcK2jJKNgbhjA&_nc_ss=7b289&oh=00_AQQpo-Z8j5IE-n1iK_Ds6DzpgJZsRuDKkB_Hj8kW_QpipA&oe=6AF76250",
+          "link_url": "https://www.mcdonalds.com/us/en-us/download-app.html",
+          "title": "it’s as simple as McDonald's Download",
+          "video": null
+        }
+      ]
     },
     {
       "id": "1631477695266523",
@@ -54,12 +80,25 @@
       "link_url": "https://campaign.mcdonalds.com.hk/openapp",
       "link_title": "即開App用優惠券",
       "cta_text": "Order now",
+      "link_caption": "CAMPAIGN.MCDONALDS.COM.HK",
       "images": [
-        "https://scontent-lax3-2.xx.fbcdn.net/v/t39.35426-6/853368182_3627958494034714_5417328051720718896_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=106&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=foO2atug0GQQ7kNvwFDFEgJ&_nc_oc=AdprqCk4h_NzVbr1_zsMUuvaSApQrnm1eqPOQ40jefT0SQoZWIu7pfK2KC887slllGM&_nc_zt=14&_nc_ht=scontent-lax3-2.xx&_nc_gid=l85HxrYNsfXsIuTDetLYfQ&_nc_ss=7b289&oh=00_AQRuoRiQjQFTseoe9pc_bmTpYJSK3DBOPtkbhjUGEtcdnA&oe=6AF74410"
+        "https://scontent-lax3-2.xx.fbcdn.net/v/t39.35426-6/853368182_3627958494034714_5417328051720718896_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=106&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=foO2atug0GQQ7kNvwHAftdW&_nc_oc=AdoHY8taypl42rg1IqdWNsSkA7SUc6fCgS4DnEZorFGGZmF4eqKuRDwbSRExDdby7QQ&_nc_zt=14&_nc_ht=scontent-lax3-2.xx&_nc_gid=CLEX7N-r4HcK2jJKNgbhjA&_nc_ss=7b289&oh=00_AQTkIOlAICmex7mQr6CVJ9kEpGs6yVtfbSEQBbhEg_B_2w&oe=6AF77C50"
       ],
       "has_video": false,
       "same_creative_count": 0,
-      "multiple_versions": true
+      "multiple_versions": true,
+      "cta_type": "ORDER_NOW",
+      "display_format": "image",
+      "cards": [
+        {
+          "body": "【✨慳$3歎全新草莓芭菲配KITKAT®‼️】\n即開麥當勞App，用✨減$3優惠券✨歎到全新草莓芭菲配 KITKAT®🍨😋！\n香甜 KITKAT® 福岡草莓威化味新地配上經典日本直送KITKAT® 黑朱古力威化🍫➕煙韌迷你麻糬⚪➕香濃朱古力醬🤎，層層驚喜，每一啖都充滿幸福感🥰！\n📍麥當勞甜品站限時供應，即刻嚟歎返杯啦！🍓❤️\n#草莓芭菲配KITKAT #福岡草莓 #麥當勞 #imlovinit KitKat HK",
+          "cta": "Order now",
+          "image": "https://scontent-lax3-2.xx.fbcdn.net/v/t39.35426-6/853368182_3627958494034714_5417328051720718896_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=106&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=foO2atug0GQQ7kNvwHAftdW&_nc_oc=AdoHY8taypl42rg1IqdWNsSkA7SUc6fCgS4DnEZorFGGZmF4eqKuRDwbSRExDdby7QQ&_nc_zt=14&_nc_ht=scontent-lax3-2.xx&_nc_gid=CLEX7N-r4HcK2jJKNgbhjA&_nc_ss=7b289&oh=00_AQTkIOlAICmex7mQr6CVJ9kEpGs6yVtfbSEQBbhEg_B_2w&oe=6AF77C50",
+          "link_url": "https://campaign.mcdonalds.com.hk/openapp",
+          "title": "即開App用優惠券",
+          "video": null
+        }
+      ]
     },
     {
       "id": "2217250422356338",
@@ -74,12 +113,25 @@
       "link_url": "https://links.mcdonaldsapps.com/rODW",
       "link_title": "",
       "cta_text": "Order Now",
+      "link_caption": "",
       "images": [
-        "https://scontent-lax3-1.xx.fbcdn.net/v/t39.35426-6/841439166_1446665631852669_158025070375761025_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=104&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=_WyAES307SsQ7kNvwG06mdj&_nc_oc=AdrfkJOLEXr9mGthAzayOQ5uyDAzCk8kmhqML1dYjr2aNPNkpscGRe-cE_dW4PN9iz8&_nc_zt=14&_nc_ht=scontent-lax3-1.xx&_nc_gid=l85HxrYNsfXsIuTDetLYfQ&_nc_ss=7b289&oh=00_AQQY70ARPeTWYEbGdgPlT-AoKhY1K_DSE_YmPSW_Pk-WAg&oe=6AF76583"
+        "https://scontent-lax3-1.xx.fbcdn.net/v/t39.35426-6/841439166_1446665631852669_158025070375761025_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=104&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=_WyAES307SsQ7kNvwFDCzxR&_nc_oc=AdoTmydwVsEYYE6FZ6gqgCavb4XlrrGJcE5FdL8jf84A8-WUrBkSIiG-Q4vnCBWB7IU&_nc_zt=14&_nc_ht=scontent-lax3-1.xx&_nc_gid=CLEX7N-r4HcK2jJKNgbhjA&_nc_ss=7b289&oh=00_AQRuiSDwqkp47mh0-RjGWVMM7f_AjHNH0eYfjpGEwojwbg&oe=6AF76583"
       ],
       "has_video": false,
       "same_creative_count": 0,
-      "multiple_versions": true
+      "multiple_versions": true,
+      "cta_type": "ORDER_NOW",
+      "display_format": "image",
+      "cards": [
+        {
+          "body": "wrapped up in a Fish Tempura Wrap obsession",
+          "cta": "Order Now",
+          "image": "https://scontent-lax3-1.xx.fbcdn.net/v/t39.35426-6/841439166_1446665631852669_158025070375761025_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=104&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=_WyAES307SsQ7kNvwFDCzxR&_nc_oc=AdoTmydwVsEYYE6FZ6gqgCavb4XlrrGJcE5FdL8jf84A8-WUrBkSIiG-Q4vnCBWB7IU&_nc_zt=14&_nc_ht=scontent-lax3-1.xx&_nc_gid=CLEX7N-r4HcK2jJKNgbhjA&_nc_ss=7b289&oh=00_AQRuiSDwqkp47mh0-RjGWVMM7f_AjHNH0eYfjpGEwojwbg&oe=6AF76583",
+          "link_url": "https://links.mcdonaldsapps.com/rODW",
+          "title": "",
+          "video": null
+        }
+      ]
     },
     {
       "id": "1136991209019312",
@@ -94,10 +146,23 @@
       "link_url": "https://links.mcdonaldsapps.com/ri1c",
       "link_title": "اطلب مسبقاً قبل ما توصل",
       "cta_text": "Order Now",
+      "link_caption": "",
       "images": [],
       "has_video": true,
       "same_creative_count": 0,
-      "multiple_versions": true
+      "multiple_versions": true,
+      "cta_type": "ORDER_NOW",
+      "display_format": "video",
+      "cards": [
+        {
+          "body": "حمّل تطبيق ماكدونالدز",
+          "cta": "Order Now",
+          "image": null,
+          "link_url": "https://links.mcdonaldsapps.com/ri1c",
+          "title": "اطلب مسبقاً قبل ما توصل",
+          "video": null
+        }
+      ]
     },
     {
       "id": "655676137310302",
@@ -112,12 +177,25 @@
       "link_url": "https://links.mcdonaldsapps.com/rODW",
       "link_title": "",
       "cta_text": "Order Now",
+      "link_caption": "",
       "images": [
-        "https://scontent-lax3-1.xx.fbcdn.net/v/t39.35426-6/845880484_1144921407958288_1430501570200372572_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=109&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=qxYtHw2tLr0Q7kNvwFjkEMW&_nc_oc=AdoKrI50x_yrvtKpY17EncMTTsw5XJcqgab3HqDiiSzaV70pXFF-Tv4YNPOIVrJpYmY&_nc_zt=14&_nc_ht=scontent-lax3-1.xx&_nc_gid=l85HxrYNsfXsIuTDetLYfQ&_nc_ss=7b289&oh=00_AQT-h91kiPmgIT4XDfm9dtqC3wimr4EbpDS6UubYjd1geA&oe=6AF74A41"
+        "https://scontent-lax3-1.xx.fbcdn.net/v/t39.35426-6/845880484_1144921407958288_1430501570200372572_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=109&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=qxYtHw2tLr0Q7kNvwGN4oa1&_nc_oc=AdqWcw10w4q9blOhYMlCZcvSm0h9q2nfG4LB4bmBDNuMsH1W8hWMch1GQBOjQ4W36a8&_nc_zt=14&_nc_ht=scontent-lax3-1.xx&_nc_gid=CLEX7N-r4HcK2jJKNgbhjA&_nc_ss=7b289&oh=00_AQTGJ4_u1E3bcYw0c8-TuDRvJ9kmdZ0Uxs5aUcGrUt6kvg&oe=6AF78281"
       ],
       "has_video": false,
       "same_creative_count": 0,
-      "multiple_versions": false
+      "multiple_versions": false,
+      "cta_type": "ORDER_NOW",
+      "display_format": "image",
+      "cards": [
+        {
+          "body": "r u sea-ing what i’m sea-ing?\ngotta order Fish n Fries asap",
+          "cta": "Order Now",
+          "image": "https://scontent-lax3-1.xx.fbcdn.net/v/t39.35426-6/845880484_1144921407958288_1430501570200372572_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=109&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=qxYtHw2tLr0Q7kNvwGN4oa1&_nc_oc=AdqWcw10w4q9blOhYMlCZcvSm0h9q2nfG4LB4bmBDNuMsH1W8hWMch1GQBOjQ4W36a8&_nc_zt=14&_nc_ht=scontent-lax3-1.xx&_nc_gid=CLEX7N-r4HcK2jJKNgbhjA&_nc_ss=7b289&oh=00_AQTGJ4_u1E3bcYw0c8-TuDRvJ9kmdZ0Uxs5aUcGrUt6kvg&oe=6AF78281",
+          "link_url": "https://links.mcdonaldsapps.com/rODW",
+          "title": "",
+          "video": null
+        }
+      ]
     },
     {
       "id": "1572736164317928",
@@ -132,10 +210,23 @@
       "link_url": "https://links.mcdonaldsapps.com/rODW",
       "link_title": "",
       "cta_text": "Order Now",
+      "link_caption": "",
       "images": [],
       "has_video": true,
       "same_creative_count": 0,
-      "multiple_versions": true
+      "multiple_versions": true,
+      "cta_type": "ORDER_NOW",
+      "display_format": "video",
+      "cards": [
+        {
+          "body": "wrapped up in a Fish Tempura Wrap obsession",
+          "cta": "Order Now",
+          "image": null,
+          "link_url": "https://links.mcdonaldsapps.com/rODW",
+          "title": "",
+          "video": null
+        }
+      ]
     },
     {
       "id": "1089880343617663",
@@ -150,10 +241,23 @@
       "link_url": "https://links.mcdonaldsapps.com/CQenZ8?utm_source=fbig&utm_medium=cpm&utm_campaign=alwayson&utm_content=videoad&utm_term=en",
       "link_title": "Get Deals",
       "cta_text": "Order Now",
+      "link_caption": "",
       "images": [],
       "has_video": true,
       "same_creative_count": 0,
-      "multiple_versions": true
+      "multiple_versions": true,
+      "cta_type": "ORDER_NOW",
+      "display_format": "video",
+      "cards": [
+        {
+          "body": "Download the McDonald’s App",
+          "cta": "Order Now",
+          "image": null,
+          "link_url": "https://links.mcdonaldsapps.com/CQenZ8?utm_source=fbig&utm_medium=cpm&utm_campaign=alwayson&utm_content=videoad&utm_term=en",
+          "title": "Get Deals",
+          "video": null
+        }
+      ]
     },
     {
       "id": "1819457219255674",
@@ -168,10 +272,23 @@
       "link_url": "https://links.mcdonaldsapps.com/CQenZ8?utm_source=fbig&utm_medium=cpm&utm_campaign=alwayson&utm_content=videoad&utm_term=en",
       "link_title": "Fries",
       "cta_text": "Learn More",
+      "link_caption": "",
       "images": [],
       "has_video": true,
       "same_creative_count": 0,
-      "multiple_versions": true
+      "multiple_versions": true,
+      "cta_type": "LEARN_MORE",
+      "display_format": "video",
+      "cards": [
+        {
+          "body": "came for the free Fries, stayed for the ✨deals✨",
+          "cta": "Learn More",
+          "image": null,
+          "link_url": "https://links.mcdonaldsapps.com/CQenZ8?utm_source=fbig&utm_medium=cpm&utm_campaign=alwayson&utm_content=videoad&utm_term=en",
+          "title": "Fries",
+          "video": null
+        }
+      ]
     },
     {
       "id": "2224758108087815",
@@ -186,12 +303,25 @@
       "link_url": "https://links.mcdonaldsapps.com/rODW",
       "link_title": "",
       "cta_text": "Order Now",
+      "link_caption": "",
       "images": [
-        "https://scontent-lax3-2.xx.fbcdn.net/v/t39.35426-6/848572822_1127831519648819_5576102711453314270_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=103&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=2Mlug_M1pmcQ7kNvwEImvit&_nc_oc=AdphHUqDi06Jgujk5q5CpsZ_pv8MD2Lfilb4lJsQ9weZGco9xXMlcBBZOHwMH4YDSaA&_nc_zt=14&_nc_ht=scontent-lax3-2.xx&_nc_gid=l85HxrYNsfXsIuTDetLYfQ&_nc_ss=7b289&oh=00_AQSb0cJKerUqMs_Z_vAAGsyw02U804d5pbDDWuwgTTJIBw&oe=6AF74F48"
+        "https://scontent-lax3-2.xx.fbcdn.net/v/t39.35426-6/848572822_1127831519648819_5576102711453314270_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=103&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=2Mlug_M1pmcQ7kNvwF5Dupo&_nc_oc=AdrIfek5I2fsUF06AaKBKo0sYmwWXE8NgA-_1p8YBOnvybCPfN_mVrT6IaqG64mtpnI&_nc_zt=14&_nc_ht=scontent-lax3-2.xx&_nc_gid=CLEX7N-r4HcK2jJKNgbhjA&_nc_ss=7b289&oh=00_AQSQr7SnFrTM8nYorcGX9Eis_megUhvRQgxmuzHhxrC2Vg&oe=6AF78788"
       ],
       "has_video": false,
       "same_creative_count": 0,
-      "multiple_versions": true
+      "multiple_versions": true,
+      "cta_type": "ORDER_NOW",
+      "display_format": "image",
+      "cards": [
+        {
+          "body": "راب سمك تمبورا… راب يستاهل التجربة.",
+          "cta": "Order Now",
+          "image": "https://scontent-lax3-2.xx.fbcdn.net/v/t39.35426-6/848572822_1127831519648819_5576102711453314270_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=103&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=2Mlug_M1pmcQ7kNvwF5Dupo&_nc_oc=AdrIfek5I2fsUF06AaKBKo0sYmwWXE8NgA-_1p8YBOnvybCPfN_mVrT6IaqG64mtpnI&_nc_zt=14&_nc_ht=scontent-lax3-2.xx&_nc_gid=CLEX7N-r4HcK2jJKNgbhjA&_nc_ss=7b289&oh=00_AQSQr7SnFrTM8nYorcGX9Eis_megUhvRQgxmuzHhxrC2Vg&oe=6AF78788",
+          "link_url": "https://links.mcdonaldsapps.com/rODW",
+          "title": "",
+          "video": null
+        }
+      ]
     },
     {
       "id": "2398919370939300",
@@ -206,12 +336,25 @@
       "link_url": "https://links.mcdonaldsapps.com/rODW",
       "link_title": "",
       "cta_text": "Order Now",
+      "link_caption": "",
       "images": [
-        "https://scontent-lax3-2.xx.fbcdn.net/v/t39.35426-6/845731587_3009159059426927_867694809243682626_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=103&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=TgFyUtccbecQ7kNvwHAgdbV&_nc_oc=Adregv61F9ezsRbpXUVvv7uHQTEiALzB3q8raGzculFAjp9ZfSBVmwVhqZ7x6_d1EDE&_nc_zt=14&_nc_ht=scontent-lax3-2.xx&_nc_gid=l85HxrYNsfXsIuTDetLYfQ&_nc_ss=7b289&oh=00_AQSO7xh8q17lS5RGWUBwT1OGRxukTQexJj-nE3mREBhpqA&oe=6AF74B78"
+        "https://scontent-lax3-2.xx.fbcdn.net/v/t39.35426-6/845731587_3009159059426927_867694809243682626_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=103&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=TgFyUtccbecQ7kNvwGQRmAO&_nc_oc=AdpWfHQYqqgCTBUqgzagQ6uAS5is0Dn__Lobzc3ubREAMW-oSyFQiQ8_3h-dp0lAAOs&_nc_zt=14&_nc_ht=scontent-lax3-2.xx&_nc_gid=CLEX7N-r4HcK2jJKNgbhjA&_nc_ss=7b289&oh=00_AQQL1u0PyOHPWmRcNef1-uZ5E83cafk8PnF-C_HBHxtngQ&oe=6AF783B8"
       ],
       "has_video": false,
       "same_creative_count": 0,
-      "multiple_versions": true
+      "multiple_versions": true,
+      "cta_type": "ORDER_NOW",
+      "display_format": "image",
+      "cards": [
+        {
+          "body": "وجبة سمك وبطاطس… مزاج ما يتفوّت.",
+          "cta": "Order Now",
+          "image": "https://scontent-lax3-2.xx.fbcdn.net/v/t39.35426-6/845731587_3009159059426927_867694809243682626_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=103&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=TgFyUtccbecQ7kNvwGQRmAO&_nc_oc=AdpWfHQYqqgCTBUqgzagQ6uAS5is0Dn__Lobzc3ubREAMW-oSyFQiQ8_3h-dp0lAAOs&_nc_zt=14&_nc_ht=scontent-lax3-2.xx&_nc_gid=CLEX7N-r4HcK2jJKNgbhjA&_nc_ss=7b289&oh=00_AQQL1u0PyOHPWmRcNef1-uZ5E83cafk8PnF-C_HBHxtngQ&oe=6AF783B8",
+          "link_url": "https://links.mcdonaldsapps.com/rODW",
+          "title": "",
+          "video": null
+        }
+      ]
     },
     {
       "id": "1020384574229385",
@@ -226,10 +369,23 @@
       "link_url": "https://links.mcdonaldsapps.com/rODW",
       "link_title": "",
       "cta_text": "Order Now",
+      "link_caption": "",
       "images": [],
       "has_video": true,
       "same_creative_count": 0,
-      "multiple_versions": true
+      "multiple_versions": true,
+      "cta_type": "ORDER_NOW",
+      "display_format": "video",
+      "cards": [
+        {
+          "body": "r u sea-ing what i’m sea-ing?\ngotta order Fish n Fries asap",
+          "cta": "Order Now",
+          "image": null,
+          "link_url": "https://links.mcdonaldsapps.com/rODW",
+          "title": "",
+          "video": null
+        }
+      ]
     },
     {
       "id": "1576487090603914",
@@ -244,10 +400,23 @@
       "link_url": "https://links.mcdonaldsapps.com/CQenZ8?utm_source=fbig&utm_medium=cpm&utm_campaign=alwayson&utm_content=videoad&utm_term=ar",
       "link_title": "عروض جاهزة لك",
       "cta_text": "Order Now",
+      "link_caption": "",
       "images": [],
       "has_video": true,
       "same_creative_count": 0,
-      "multiple_versions": true
+      "multiple_versions": true,
+      "cta_type": "ORDER_NOW",
+      "display_format": "video",
+      "cards": [
+        {
+          "body": "حمّل تطبيق ماكدونالدز",
+          "cta": "Order Now",
+          "image": null,
+          "link_url": "https://links.mcdonaldsapps.com/CQenZ8?utm_source=fbig&utm_medium=cpm&utm_campaign=alwayson&utm_content=videoad&utm_term=ar",
+          "title": "عروض جاهزة لك",
+          "video": null
+        }
+      ]
     },
     {
       "id": "2108035006742155",
@@ -262,10 +431,23 @@
       "link_url": "http://play.google.com/store/apps/details?id=com.mcdonalds.mobileapp",
       "link_title": "Cheeseburger unlocked",
       "cta_text": "Install Now",
+      "link_caption": "",
       "images": [],
       "has_video": true,
       "same_creative_count": 0,
-      "multiple_versions": true
+      "multiple_versions": true,
+      "cta_type": "INSTALL_MOBILE_APP",
+      "display_format": "video",
+      "cards": [
+        {
+          "body": "Get the app, and this is on us.",
+          "cta": "Install Now",
+          "image": null,
+          "link_url": "http://play.google.com/store/apps/details?id=com.mcdonalds.mobileapp",
+          "title": "Cheeseburger unlocked",
+          "video": null
+        }
+      ]
     },
     {
       "id": "2007981856545470",
@@ -280,10 +462,23 @@
       "link_url": "https://links.mcdonaldsapps.com/CQenZ8",
       "link_title": "Cheeseburger",
       "cta_text": "Learn More",
+      "link_caption": "",
       "images": [],
       "has_video": true,
       "same_creative_count": 0,
-      "multiple_versions": true
+      "multiple_versions": true,
+      "cta_type": "LEARN_MORE",
+      "display_format": "video",
+      "cards": [
+        {
+          "body": "came for the free Cheeseburger, stayed for the ✨deals✨",
+          "cta": "Learn More",
+          "image": null,
+          "link_url": "https://links.mcdonaldsapps.com/CQenZ8",
+          "title": "Cheeseburger",
+          "video": null
+        }
+      ]
     },
     {
       "id": "982347964907948",
@@ -298,12 +493,25 @@
       "link_url": "https://links.mcdonaldsapps.com/rODW",
       "link_title": "",
       "cta_text": "Order Now",
+      "link_caption": "",
       "images": [
-        "https://scontent-lax3-1.xx.fbcdn.net/v/t39.35426-6/849908006_964737046701092_2509257761043421778_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=109&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=iWNErDcc2wUQ7kNvwHu-JiJ&_nc_oc=AdooP8kPs1J_iVsIx1qkgrCKGqfkd8tkEkNTqfOL9Ey5PKxZe5-vaTS5BkjhKatBQsw&_nc_zt=14&_nc_ht=scontent-lax3-1.xx&_nc_gid=l85HxrYNsfXsIuTDetLYfQ&_nc_ss=7b289&oh=00_AQRs6I6guHZZvQFG0m1aJ_ysSmvPiaL1INxijZuD4SvxCw&oe=6AF73575"
+        "https://scontent-lax3-1.xx.fbcdn.net/v/t39.35426-6/849908006_964737046701092_2509257761043421778_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=109&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=iWNErDcc2wUQ7kNvwERrZ0q&_nc_oc=Adq_YnOWu6V5tddlRoZ-QNdH1j7dQVTnvoqTq4x_DtCPd2Sn_BE0bU4NUMPcBMt0320&_nc_zt=14&_nc_ht=scontent-lax3-1.xx&_nc_gid=CLEX7N-r4HcK2jJKNgbhjA&_nc_ss=7b289&oh=00_AQRDpMGhs1GrxeswSFAUBR2dxNe2cr-7wB3YlET-IVRh5Q&oe=6AF76DB5"
       ],
       "has_video": false,
       "same_creative_count": 0,
-      "multiple_versions": true
+      "multiple_versions": true,
+      "cta_type": "ORDER_NOW",
+      "display_format": "image",
+      "cards": [
+        {
+          "body": "r u sea-ing what i’m sea-ing?\ngotta order Fish & Fries asap",
+          "cta": "Order Now",
+          "image": "https://scontent-lax3-1.xx.fbcdn.net/v/t39.35426-6/849908006_964737046701092_2509257761043421778_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=109&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=iWNErDcc2wUQ7kNvwERrZ0q&_nc_oc=Adq_YnOWu6V5tddlRoZ-QNdH1j7dQVTnvoqTq4x_DtCPd2Sn_BE0bU4NUMPcBMt0320&_nc_zt=14&_nc_ht=scontent-lax3-1.xx&_nc_gid=CLEX7N-r4HcK2jJKNgbhjA&_nc_ss=7b289&oh=00_AQRDpMGhs1GrxeswSFAUBR2dxNe2cr-7wB3YlET-IVRh5Q&oe=6AF76DB5",
+          "link_url": "https://links.mcdonaldsapps.com/rODW",
+          "title": "",
+          "video": null
+        }
+      ]
     },
     {
       "id": "2786712395026167",
@@ -318,10 +526,23 @@
       "link_url": "https://links.mcdonaldsapps.com/rODW",
       "link_title": "",
       "cta_text": "Order Now",
+      "link_caption": "",
       "images": [],
       "has_video": true,
       "same_creative_count": 0,
-      "multiple_versions": false
+      "multiple_versions": false,
+      "cta_type": "ORDER_NOW",
+      "display_format": "video",
+      "cards": [
+        {
+          "body": "wrapped up in a Fish Tempura Wrap obsession",
+          "cta": "Order Now",
+          "image": null,
+          "link_url": "https://links.mcdonaldsapps.com/rODW",
+          "title": "",
+          "video": null
+        }
+      ]
     },
     {
       "id": "1639226947769909",
@@ -336,12 +557,25 @@
       "link_url": "https://links.mcdonaldsapps.com/rODW",
       "link_title": "",
       "cta_text": "Order Now",
+      "link_caption": "",
       "images": [
-        "https://scontent-lax3-1.xx.fbcdn.net/v/t39.35426-6/862930574_1149837104053787_5660898887422171588_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=110&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=thHaBS1_UaIQ7kNvwHvOBNJ&_nc_oc=Adojfg_HUVepota8QJLYAFt1fs4sWHhkdb3w-DTz-sSDQFhymgbCRsjfYF7SmeK-eZc&_nc_zt=14&_nc_ht=scontent-lax3-1.xx&_nc_gid=l85HxrYNsfXsIuTDetLYfQ&_nc_ss=7b289&oh=00_AQRwf7VVSe5s336qWaeyGyWTiQsrEeUEXT209XYY1Zy4sg&oe=6AF7633A"
+        "https://scontent-lax3-1.xx.fbcdn.net/v/t39.35426-6/862930574_1149837104053787_5660898887422171588_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=110&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=thHaBS1_UaIQ7kNvwFKA-PZ&_nc_oc=AdrzwyrZM8dc1qbvyTtR-yqksVFjNhcAqOZ-5Nnzx_UoyjZVB-rQpBHPCQJnYH-EjTw&_nc_zt=14&_nc_ht=scontent-lax3-1.xx&_nc_gid=CLEX7N-r4HcK2jJKNgbhjA&_nc_ss=7b289&oh=00_AQQxVqBCKTqtKkvDeUnL4CHCFfD8OdfQiwcrY17x-nPDMQ&oe=6AF7633A"
       ],
       "has_video": false,
       "same_creative_count": 0,
-      "multiple_versions": true
+      "multiple_versions": true,
+      "cta_type": "ORDER_NOW",
+      "display_format": "image",
+      "cards": [
+        {
+          "body": "r u sea-ing what i’m sea-ing?\ngotta order Fish & Fries asap",
+          "cta": "Order Now",
+          "image": "https://scontent-lax3-1.xx.fbcdn.net/v/t39.35426-6/862930574_1149837104053787_5660898887422171588_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=110&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=thHaBS1_UaIQ7kNvwFKA-PZ&_nc_oc=AdrzwyrZM8dc1qbvyTtR-yqksVFjNhcAqOZ-5Nnzx_UoyjZVB-rQpBHPCQJnYH-EjTw&_nc_zt=14&_nc_ht=scontent-lax3-1.xx&_nc_gid=CLEX7N-r4HcK2jJKNgbhjA&_nc_ss=7b289&oh=00_AQQxVqBCKTqtKkvDeUnL4CHCFfD8OdfQiwcrY17x-nPDMQ&oe=6AF7633A",
+          "link_url": "https://links.mcdonaldsapps.com/rODW",
+          "title": "",
+          "video": null
+        }
+      ]
     },
     {
       "id": "1128967456504921",
@@ -356,10 +590,23 @@
       "link_url": "http://play.google.com/store/apps/details?id=com.mcdonalds.mobileapp",
       "link_title": "Chickenburger unlocked",
       "cta_text": "Install Now",
+      "link_caption": "",
       "images": [],
       "has_video": true,
       "same_creative_count": 0,
-      "multiple_versions": true
+      "multiple_versions": true,
+      "cta_type": "INSTALL_MOBILE_APP",
+      "display_format": "video",
+      "cards": [
+        {
+          "body": "Get the app, and this is on us.",
+          "cta": "Install Now",
+          "image": null,
+          "link_url": "http://play.google.com/store/apps/details?id=com.mcdonalds.mobileapp",
+          "title": "Chickenburger unlocked",
+          "video": null
+        }
+      ]
     },
     {
       "id": "1623425472661216",
@@ -374,12 +621,25 @@
       "link_url": "https://smart.link/mobp8o2gfdc83",
       "link_title": "Get the McValue Menu Today",
       "cta_text": "Order Now",
+      "link_caption": "",
       "images": [
-        "https://scontent-lax3-2.xx.fbcdn.net/v/t39.35426-6/863358668_2086512665353540_3284230926992189288_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=107&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=HdZZuv99ZhEQ7kNvwHGlByy&_nc_oc=AdoxrOand8jb18MdCI8VQTPYEttp581S3ZU82DMGYXWbn_n5VIzKcEhYlOsQ4PAUmuE&_nc_zt=14&_nc_ht=scontent-lax3-2.xx&_nc_gid=l85HxrYNsfXsIuTDetLYfQ&_nc_ss=7b289&oh=00_AQRrvlV9SHUe4i073aZs1Whth4qkQe1_X-vJJhRsPIzVnQ&oe=6AF75862"
+        "https://scontent-lax3-2.xx.fbcdn.net/v/t39.35426-6/863358668_2086512665353540_3284230926992189288_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=107&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=HdZZuv99ZhEQ7kNvwHWgytR&_nc_oc=Adr1E2LhF2wOMksYQxFGJO7hLt7LFpxI-qw0F0Z1HIyZxd0BCO-wTbEf_NmgQHBReHI&_nc_zt=14&_nc_ht=scontent-lax3-2.xx&_nc_gid=CLEX7N-r4HcK2jJKNgbhjA&_nc_ss=7b289&oh=00_AQSKWaqEQJAhrFZ5F-24C458PWf1cMdgg7cVYLS3Ok8n7g&oe=6AF75862"
       ],
       "has_video": false,
       "same_creative_count": 0,
-      "multiple_versions": true
+      "multiple_versions": true,
+      "cta_type": "ORDER_NOW",
+      "display_format": "image",
+      "cards": [
+        {
+          "body": "ok $3 bundle, name ur big three",
+          "cta": "Order Now",
+          "image": "https://scontent-lax3-2.xx.fbcdn.net/v/t39.35426-6/863358668_2086512665353540_3284230926992189288_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=107&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=HdZZuv99ZhEQ7kNvwHWgytR&_nc_oc=Adr1E2LhF2wOMksYQxFGJO7hLt7LFpxI-qw0F0Z1HIyZxd0BCO-wTbEf_NmgQHBReHI&_nc_zt=14&_nc_ht=scontent-lax3-2.xx&_nc_gid=CLEX7N-r4HcK2jJKNgbhjA&_nc_ss=7b289&oh=00_AQSKWaqEQJAhrFZ5F-24C458PWf1cMdgg7cVYLS3Ok8n7g&oe=6AF75862",
+          "link_url": "https://smart.link/mobp8o2gfdc83",
+          "title": "Get the McValue Menu Today",
+          "video": null
+        }
+      ]
     }
   ]
 }

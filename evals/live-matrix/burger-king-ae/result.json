@@ -3,15 +3,26 @@
   "country": "AE",
   "advertiser": "Burger King",
   "folder": "evals/live-matrix/burger-king-ae",
-  "data_dir": "/var/folders/zf/g9bpd9s55sv10tz2mnhqch800000gn/T/ads-intel-live-eval-_0102zja/tmproxjgyij",
+  "data_dir": "/var/folders/zf/g9bpd9s55sv10tz2mnhqch800000gn/T/ads-intel-live-eval-7v9t8l1b/tmpduxlf2eg",
   "search_summary": {
-    "count": null,
-    "complete": null,
-    "fetched": null,
-    "country": null,
-    "error": "parse_failed: render (5171 chars) with no card markers or empty-state text",
-    "page_names": [],
-    "seconds": 16.35
+    "count": 14,
+    "complete": false,
+    "fetched": 14,
+    "country": "AE",
+    "error": null,
+    "page_names": [
+      "Talabat",
+      "Dream Dubai",
+      "Burger King Arabia",
+      "Manila Polyclinic - Al Rigga Burger King",
+      "Café Belge, DIFC Dubai",
+      "Cholesterol Relief Community",
+      "Dropshipping by Edna Lopez",
+      "The Family Office Co",
+      "BlazeReel Drama",
+      "Tatiana Salazar"
+    ],
+    "seconds": 10.42
   },
   "advertiser_summary": {
     "count": 2,
@@ -27,7 +38,7 @@
     "page_names": [
       "Burger King Arabia"
     ],
-    "seconds": 14.51
+    "seconds": 7.99
   },
   "watch_add": {
     "error": null,
@@ -59,7 +70,7 @@
     "new_page_names": [
       "Burger King Arabia"
     ],
-    "seconds": 8.44
+    "seconds": 8.45
   },
   "check2": {
     "query": "Burger King",
@@ -78,28 +89,33 @@
       "digest": "artifacts/check2/digest.json"
     },
     "new_page_names": [],
-    "seconds": 18.79
+    "seconds": 7.69
   },
   "artifacts_ok": true,
   "artifacts2_ok": true,
   "currency": {
     "expected": "AED",
-    "found": [],
-    "ok": false
+    "found": [
+      "AED"
+    ],
+    "ok": true
   },
-  "status": "FAIL",
-  "failures": [
-    "search_error: parse_failed: render (5171 chars) with no card markers or empty-state text"
-  ],
+  "status": "PASS",
+  "failures": [],
   "timings": {
-    "search": 16.35,
-    "advertiser_search": 14.51,
-    "check1": 8.44,
-    "check2": 18.79,
-    "total": 58.09
+    "search": 10.42,
+    "advertiser_search": 7.99,
+    "check1": 8.45,
+    "check2": 7.69,
+    "total": 34.55
   },
   "attempts": {
-    "total": 13,
-    "failed": 0
+    "total": 5,
+    "failed": 1,
+    "transport_failed": 0,
+    "parse_failed": 1,
+    "shell": 1,
+    "blocked": 0,
+    "markup_changed": 0
   }
 }

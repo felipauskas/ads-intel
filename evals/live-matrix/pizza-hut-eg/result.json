@@ -3,7 +3,7 @@
   "country": "EG",
   "advertiser": "Pizza Hut",
   "folder": "evals/live-matrix/pizza-hut-eg",
-  "data_dir": "/var/folders/zf/g9bpd9s55sv10tz2mnhqch800000gn/T/ads-intel-live-eval-a5skrx5s/tmp06_ttbve",
+  "data_dir": "/var/folders/zf/g9bpd9s55sv10tz2mnhqch800000gn/T/ads-intel-live-eval-7v9t8l1b/tmpcj4mqp12",
   "search_summary": {
     "count": 11,
     "complete": true,
@@ -15,7 +15,7 @@
       "Pizza Hut",
       "Life Luxury"
     ],
-    "seconds": 6.14
+    "seconds": 2.44
   },
   "advertiser_summary": {
     "count": 9,
@@ -31,7 +31,7 @@
     "page_names": [
       "Pizza Hut"
     ],
-    "seconds": 0.02
+    "seconds": 0.01
   },
   "watch_add": {
     "error": null,
@@ -63,7 +63,7 @@
     "new_page_names": [
       "Pizza Hut"
     ],
-    "seconds": 0.01
+    "seconds": 0.03
   },
   "check2": {
     "query": "Pizza Hut",
@@ -82,7 +82,7 @@
       "digest": "artifacts/check2/digest.json"
     },
     "new_page_names": [],
-    "seconds": 0.01
+    "seconds": 0.03
   },
   "artifacts_ok": true,
   "artifacts2_ok": true,
@@ -96,14 +96,19 @@
   "status": "PASS",
   "failures": [],
   "timings": {
-    "search": 6.14,
-    "advertiser_search": 0.02,
-    "check1": 0.01,
-    "check2": 0.01,
-    "total": 6.18
+    "search": 2.44,
+    "advertiser_search": 0.01,
+    "check1": 0.03,
+    "check2": 0.03,
+    "total": 2.51
   },
   "attempts": {
     "total": 4,
-    "failed": 0
+    "failed": 0,
+    "transport_failed": 0,
+    "parse_failed": 0,
+    "shell": 0,
+    "blocked": 0,
+    "markup_changed": 0
   }
 }

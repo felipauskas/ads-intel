@@ -1,8 +1,38 @@
 {
   "brand": "Domino's Pizza",
   "country": "SA",
-  "search": [],
-  "advertiser_search": [
+  "search": [
+    {
+      "id": "2136099807310999",
+      "page_name": "Kırık Mührün Gizemi",
+      "status": "active",
+      "first_seen": "Sep 9, 2026",
+      "last_seen": "",
+      "creative_text": "Her gün güncellenen harika kısa dramalar. 💥Hemen uygulamayı indir!💥",
+      "library_url": "https://www.facebook.com/ads/library/?id=2136099807310999",
+      "page_url": "https://www.facebook.com/61595476543543/",
+      "page_id": "61595476543543",
+      "link_url": "https://play.google.com/store/apps/details?id=com.freereels.app&hl=en&gl=us",
+      "link_title": "GİZLİ EJDERHA KRALLA EVLİLİK",
+      "cta_text": "Install now",
+      "link_caption": "PLAY.GOOGLE.COM",
+      "images": [],
+      "has_video": true,
+      "same_creative_count": 0,
+      "multiple_versions": true,
+      "cta_type": "INSTALL_MOBILE_APP",
+      "display_format": "video",
+      "cards": [
+        {
+          "body": "Her gün güncellenen harika kısa dramalar. 💥Hemen uygulamayı indir!💥",
+          "cta": "Install now",
+          "image": null,
+          "link_url": "https://play.google.com/store/apps/details?id=com.freereels.app&hl=en&gl=us",
+          "title": "GİZLİ EJDERHA KRALLA EVLİLİK",
+          "video": null
+        }
+      ]
+    },
     {
       "id": "1487551922605973",
       "page_name": "Domino's Pizza",
@@ -16,12 +46,58 @@
       "link_url": "https://www.dominos.sa/ar/",
       "link_title": "اطلب والتوصيل بـ 9 ريال بس 🚗 اطلبها الحين",
       "cta_text": "Order Now",
+      "link_caption": "",
       "images": [
-        "https://scontent-lax3-1.xx.fbcdn.net/v/t39.35426-6/740779659_2114995379131189_532121214577279106_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=108&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=f53yANxLzCoQ7kNvwFsHlf5&_nc_oc=AdoJqFg1kyFQ5R-BPadRXge_I4KjODUL6tUyGse2tO3M-alRPGslufIovpCvi_uAsSA&_nc_zt=14&_nc_ht=scontent-lax3-1.xx&_nc_gid=AUBOM7DNm81hF4D3zdgS6w&_nc_ss=7b289&oh=00_AQT2sY-X4hpteq7q36ikukCdxRkSLJ8dBWUObu6C4x0qMQ&oe=6AF75730"
+        "https://scontent-lax3-1.xx.fbcdn.net/v/t39.35426-6/740779659_2114995379131189_532121214577279106_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=108&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=f53yANxLzCoQ7kNvwEOZAur&_nc_oc=Adp56o66DnBlFWLaGdAPyERgHXzf-8T1HUc0-nAQdNTGhEwz4ECuFfYkjh0vjisrEhA&_nc_zt=14&_nc_ht=scontent-lax3-1.xx&_nc_gid=HtN7tbfN0Hwhs2TUi3-xQQ&_nc_ss=7b289&oh=00_AQQxGJmo4OdxIzDP7zq-CZ23sXT6GqYxU9EzDCiYTrgJkg&oe=6AF75730"
       ],
       "has_video": false,
       "same_creative_count": 0,
-      "multiple_versions": true
+      "multiple_versions": true,
+      "cta_type": "ORDER_NOW",
+      "display_format": "image",
+      "cards": [
+        {
+          "body": "أطعم بيتزا تجيك حاارة وبـ 9 ريال بس للتوصيل 👌 اطلب أي 2 بيتزا كبيرة بـ 29 ريال للوحدة 🍕",
+          "cta": "Order Now",
+          "image": "https://scontent-lax3-1.xx.fbcdn.net/v/t39.35426-6/740779659_2114995379131189_532121214577279106_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=108&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=f53yANxLzCoQ7kNvwEOZAur&_nc_oc=Adp56o66DnBlFWLaGdAPyERgHXzf-8T1HUc0-nAQdNTGhEwz4ECuFfYkjh0vjisrEhA&_nc_zt=14&_nc_ht=scontent-lax3-1.xx&_nc_gid=HtN7tbfN0Hwhs2TUi3-xQQ&_nc_ss=7b289&oh=00_AQQxGJmo4OdxIzDP7zq-CZ23sXT6GqYxU9EzDCiYTrgJkg&oe=6AF75730",
+          "link_url": "https://www.dominos.sa/ar/",
+          "title": "اطلب والتوصيل بـ 9 ريال بس 🚗 اطلبها الحين",
+          "video": null
+        }
+      ]
+    },
+    {
+      "id": "1087003780875936",
+      "page_name": "Domino's Pizza India",
+      "status": "active",
+      "first_seen": "Nov 4, 2026",
+      "last_seen": "",
+      "creative_text": "𝐍𝐞𝐰 𝐋𝐚𝐮𝐧𝐜𝐡 \\|\\| 𝐂𝐡𝐢𝐜𝐤𝐞𝐧 𝐌𝐚𝐱𝐱𝐱\nChicken lovers unite! Enjoy New Chicken Maxxx with 3X chicken in every bite. Order now.",
+      "library_url": "https://www.facebook.com/ads/library/?id=1087003780875936",
+      "page_url": "https://www.facebook.com/dominospizzaindia/",
+      "page_id": "",
+      "link_url": "http://itunes.apple.com/app/id523106486",
+      "link_title": "New Launch: Chicken Maxxx",
+      "cta_text": "Order Now",
+      "link_caption": "",
+      "images": [
+        "https://scontent-lax3-2.xx.fbcdn.net/v/t39.35426-6/720057596_2025239231408295_7068275689751992611_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=103&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=LPJFClOiTfgQ7kNvwH1Esqi&_nc_oc=Adq0qUmCaNOLlT4AVo37KZzSByzvnR8700cLDEfMThTtZptR9iN8BtDkvskmKUgyAQg&_nc_zt=14&_nc_ht=scontent-lax3-2.xx&_nc_gid=HtN7tbfN0Hwhs2TUi3-xQQ&_nc_ss=7b289&oh=00_AQTrzgh28NTEsMoD1GDqovkWOjDKzPqw5FSJHJYBZcVT7Q&oe=6AF75AFB"
+      ],
+      "has_video": false,
+      "same_creative_count": 0,
+      "multiple_versions": false,
+      "cta_type": "ORDER_NOW",
+      "display_format": "image",
+      "cards": [
+        {
+          "body": "𝐍𝐞𝐰 𝐋𝐚𝐮𝐧𝐜𝐡 \\|\\| 𝐂𝐡𝐢𝐜𝐤𝐞𝐧 𝐌𝐚𝐱𝐱𝐱\nChicken lovers unite! Enjoy New Chicken Maxxx with 3X chicken in every bite. Order now.",
+          "cta": "Order Now",
+          "image": "https://scontent-lax3-2.xx.fbcdn.net/v/t39.35426-6/720057596_2025239231408295_7068275689751992611_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=103&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=LPJFClOiTfgQ7kNvwH1Esqi&_nc_oc=Adq0qUmCaNOLlT4AVo37KZzSByzvnR8700cLDEfMThTtZptR9iN8BtDkvskmKUgyAQg&_nc_zt=14&_nc_ht=scontent-lax3-2.xx&_nc_gid=HtN7tbfN0Hwhs2TUi3-xQQ&_nc_ss=7b289&oh=00_AQTrzgh28NTEsMoD1GDqovkWOjDKzPqw5FSJHJYBZcVT7Q&oe=6AF75AFB",
+          "link_url": "http://itunes.apple.com/app/id523106486",
+          "title": "New Launch: Chicken Maxxx",
+          "video": null
+        }
+      ]
     },
     {
       "id": "1310128874544601",
@@ -36,12 +112,25 @@
       "link_url": "https://www.dominos.sa/ar/",
       "link_title": "بيتزا مع توصيل بـ 9 ريال 😍 اطلب بوكس الجمعات أونلاين!",
       "cta_text": "Order now",
+      "link_caption": "DOMINOS.SA",
       "images": [
-        "https://scontent-lax7-1.xx.fbcdn.net/v/t39.35426-6/888089039_3377590655768004_6548120610802867031_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=105&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=OVyJGB0vSqcQ7kNvwHOaHei&_nc_oc=AdqFkcppndVJls9exYtgSxD_rHoWPQ-urQCT3hZaQLh1Q0fDxbKiKzuyhk2BA0NHEC0&_nc_zt=14&_nc_ht=scontent-lax7-1.xx&_nc_gid=AUBOM7DNm81hF4D3zdgS6w&_nc_ss=7b289&oh=00_AQRDKMd2GQZY5VILzIzZmCM5fU8wLHslozP-0vHQ8Mfudg&oe=6AF750F1"
+        "https://scontent-lax7-1.xx.fbcdn.net/v/t39.35426-6/888089039_3377590655768004_6548120610802867031_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=105&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=OVyJGB0vSqcQ7kNvwGb3edx&_nc_oc=AdojsXwL6zdu4ptdwHnfg4zidZK2QuYgggLBLPsEh8fETkORv4jQzP59lzAKNJ16f3M&_nc_zt=14&_nc_ht=scontent-lax7-1.xx&_nc_gid=HtN7tbfN0Hwhs2TUi3-xQQ&_nc_ss=7b289&oh=00_AQQ1YtyGsQLTSu__Apjdh-hJziy21V892P1GdOuyMTVO1g&oe=6AF78931"
       ],
       "has_video": false,
       "same_creative_count": 0,
-      "multiple_versions": true
+      "multiple_versions": true,
+      "cta_type": "ORDER_NOW",
+      "display_format": "image",
+      "cards": [
+        {
+          "body": "اطلب بوكس الجمعات واجمع الكل 😍 أي 3 بيتزا كبيرة مع 4 أصناف جانبية وبيبسي كبير بـ 129 ريال 🍕",
+          "cta": "Order now",
+          "image": "https://scontent-lax7-1.xx.fbcdn.net/v/t39.35426-6/888089039_3377590655768004_6548120610802867031_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=105&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=OVyJGB0vSqcQ7kNvwGb3edx&_nc_oc=AdojsXwL6zdu4ptdwHnfg4zidZK2QuYgggLBLPsEh8fETkORv4jQzP59lzAKNJ16f3M&_nc_zt=14&_nc_ht=scontent-lax7-1.xx&_nc_gid=HtN7tbfN0Hwhs2TUi3-xQQ&_nc_ss=7b289&oh=00_AQQ1YtyGsQLTSu__Apjdh-hJziy21V892P1GdOuyMTVO1g&oe=6AF78931",
+          "link_url": "https://www.dominos.sa/ar/",
+          "title": "بيتزا مع توصيل بـ 9 ريال 😍 اطلب بوكس الجمعات أونلاين!",
+          "video": null
+        }
+      ]
     },
     {
       "id": "1665902281803620",
@@ -56,12 +145,25 @@
       "link_url": "https://www.dominos.sa/ar/",
       "link_title": "اطلب والتوصيل بـ 9 ريال بس 🚗 اطلبها الحين",
       "cta_text": "Order Now",
+      "link_caption": "",
       "images": [
-        "https://scontent-lax3-1.xx.fbcdn.net/v/t39.35426-6/881748721_1105015218796321_1612514091354230664_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=109&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=OHX7YQVmhw0Q7kNvwFFf4U9&_nc_oc=AdqvD9IXwjmKAytEtNZD7ZMOzoRMJaDVP1YdpfyOP55F9CLAYe9SR3OmW83TcBx25vw&_nc_zt=14&_nc_ht=scontent-lax3-1.xx&_nc_gid=AUBOM7DNm81hF4D3zdgS6w&_nc_ss=7b289&oh=00_AQQkzuh4uiQTLUwSgFqbHwGXAtOUSQE72tGx7nXOB2wyDA&oe=6AF752E9"
+        "https://scontent-lax3-1.xx.fbcdn.net/v/t39.35426-6/881748721_1105015218796321_1612514091354230664_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=109&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=OHX7YQVmhw0Q7kNvwEthfo4&_nc_oc=AdpImLPzLlk462afVI23fflO1SdVOE8MjzNIJ2rJGwQu5pKkdmg_5kgOTC6CFnqnLXg&_nc_zt=14&_nc_ht=scontent-lax3-1.xx&_nc_gid=HtN7tbfN0Hwhs2TUi3-xQQ&_nc_ss=7b289&oh=00_AQQDTRASHGMhRrUYyhPhGSZzAD03OqeEof_nrRbUw-UkyA&oe=6AF78B29"
       ],
       "has_video": false,
       "same_creative_count": 0,
-      "multiple_versions": true
+      "multiple_versions": true,
+      "cta_type": "ORDER_NOW",
+      "display_format": "image",
+      "cards": [
+        {
+          "body": "أطعم بيتزا تجيك حاارة وبـ 9 ريال بس للتوصيل 👌 اطلب أي 2 بيتزا كبيرة بـ 29 ريال للوحدة 🍕",
+          "cta": "Order Now",
+          "image": "https://scontent-lax3-1.xx.fbcdn.net/v/t39.35426-6/881748721_1105015218796321_1612514091354230664_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=109&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=OHX7YQVmhw0Q7kNvwEthfo4&_nc_oc=AdpImLPzLlk462afVI23fflO1SdVOE8MjzNIJ2rJGwQu5pKkdmg_5kgOTC6CFnqnLXg&_nc_zt=14&_nc_ht=scontent-lax3-1.xx&_nc_gid=HtN7tbfN0Hwhs2TUi3-xQQ&_nc_ss=7b289&oh=00_AQQDTRASHGMhRrUYyhPhGSZzAD03OqeEof_nrRbUw-UkyA&oe=6AF78B29",
+          "link_url": "https://www.dominos.sa/ar/",
+          "title": "اطلب والتوصيل بـ 9 ريال بس 🚗 اطلبها الحين",
+          "video": null
+        }
+      ]
     },
     {
       "id": "991370083688471",
@@ -76,12 +178,89 @@
       "link_url": "https://www.dominos.sa/ar/",
       "link_title": "بوكس الجمعات من دومينوز 🍕 اطلب بوكس الجمعات أونلاين!",
       "cta_text": "Order Now",
+      "link_caption": "",
       "images": [
-        "https://scontent-lax3-1.xx.fbcdn.net/v/t39.35426-6/874336019_1112317938431897_5183829985328481091_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=102&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=Ozcou1UMnFsQ7kNvwGfWkO1&_nc_oc=AdqEZ87vL7i2Agf2qua_tzHq0AYi1WQu9dNMFEqbu7LLEVI5LuYXpufRoCwy2whT04o&_nc_zt=14&_nc_ht=scontent-lax3-1.xx&_nc_gid=AUBOM7DNm81hF4D3zdgS6w&_nc_ss=7b289&oh=00_AQT7DCetaNv6usCiuqWfXAY7xUgWL5SocogrCGtGIBLy3g&oe=6AF76035"
+        "https://scontent-lax3-1.xx.fbcdn.net/v/t39.35426-6/874336019_1112317938431897_5183829985328481091_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=102&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=Ozcou1UMnFsQ7kNvwGw4kpF&_nc_oc=AdpS8_E3R2Ts7PrmT3tzPEswf4sb-6h7CMhHYi5aPXQi3gYgDvk4JtcIRGw-XQCw6aM&_nc_zt=14&_nc_ht=scontent-lax3-1.xx&_nc_gid=HtN7tbfN0Hwhs2TUi3-xQQ&_nc_ss=7b289&oh=00_AQSR9e535NxurMaaQzLD2BKtmSiTGkQTwc4synJtxu_Hqg&oe=6AF76035"
       ],
       "has_video": false,
       "same_creative_count": 0,
-      "multiple_versions": false
+      "multiple_versions": false,
+      "cta_type": "ORDER_NOW",
+      "display_format": "image",
+      "cards": [
+        {
+          "body": "اطلب بوكس الجمعات 😍 أي 3 بيتزا كبيرة مع 4 أصناف جانبية وبيبسي كبير بـ 129 ريال🍕",
+          "cta": "Order Now",
+          "image": "https://scontent-lax3-1.xx.fbcdn.net/v/t39.35426-6/874336019_1112317938431897_5183829985328481091_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=102&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=Ozcou1UMnFsQ7kNvwGw4kpF&_nc_oc=AdpS8_E3R2Ts7PrmT3tzPEswf4sb-6h7CMhHYi5aPXQi3gYgDvk4JtcIRGw-XQCw6aM&_nc_zt=14&_nc_ht=scontent-lax3-1.xx&_nc_gid=HtN7tbfN0Hwhs2TUi3-xQQ&_nc_ss=7b289&oh=00_AQSR9e535NxurMaaQzLD2BKtmSiTGkQTwc4synJtxu_Hqg&oe=6AF76035",
+          "link_url": "https://www.dominos.sa/ar/",
+          "title": "بوكس الجمعات من دومينوز 🍕 اطلب بوكس الجمعات أونلاين!",
+          "video": null
+        }
+      ]
+    },
+    {
+      "id": "1419203033434861",
+      "page_name": "Domino's Pizza India",
+      "status": "active",
+      "first_seen": "Aug 21, 2026",
+      "last_seen": "",
+      "creative_text": "𝐍𝐞𝐰 𝐋𝐚𝐮𝐧𝐜𝐡 \\|\\| 𝐂𝐡𝐢𝐜𝐤𝐞𝐧 𝐌𝐚𝐱𝐱𝐱\nChicken lovers unite! Enjoy New Chicken Maxxx with 3X chicken in every bite. Order now.",
+      "library_url": "https://www.facebook.com/ads/library/?id=1419203033434861",
+      "page_url": "https://www.facebook.com/dominospizzaindia/",
+      "page_id": "",
+      "link_url": "http://play.google.com/store/apps/details?id=com.Dominos",
+      "link_title": "New Launch: Chicken Maxxx",
+      "cta_text": "Order now",
+      "link_caption": "PLAY.GOOGLE.COM",
+      "images": [],
+      "has_video": true,
+      "same_creative_count": 0,
+      "multiple_versions": true,
+      "cta_type": "ORDER_NOW",
+      "display_format": "video",
+      "cards": [
+        {
+          "body": "𝐍𝐞𝐰 𝐋𝐚𝐮𝐧𝐜𝐡 \\|\\| 𝐂𝐡𝐢𝐜𝐤𝐞𝐧 𝐌𝐚𝐱𝐱𝐱\nChicken lovers unite! Enjoy New Chicken Maxxx with 3X chicken in every bite. Order now.",
+          "cta": "Order now",
+          "image": null,
+          "link_url": "http://play.google.com/store/apps/details?id=com.Dominos",
+          "title": "New Launch: Chicken Maxxx",
+          "video": null
+        }
+      ]
+    },
+    {
+      "id": "1690207632832922",
+      "page_name": "Domino's Pizza España (Oficial)",
+      "status": "active",
+      "first_seen": "Nov 4, 2026",
+      "last_seen": "",
+      "creative_text": "Reminder: ir al Come y Bebe de Domino’s a por toda la pizza y bebida que quieras desde solo 7,99 €. De nada.",
+      "library_url": "https://www.facebook.com/ads/library/?id=1690207632832922",
+      "page_url": "https://www.facebook.com/dominospizza.es/",
+      "page_id": "",
+      "link_url": "https://comeybebe.dominospizza.es/?utm_source=meta&utm_medium=social-ads&utm_campaign=ES_ALSEA_DOMINOS_AWA_MULTI_NA_0826_211946_COMEYBEBE&utm_content=pros&utm_term=na",
+      "link_title": "Pizzas y bebidas ilimitadas en Domino’s En tienda desde 7,99 €",
+      "cta_text": "Learn More",
+      "link_caption": "",
+      "images": [
+        "https://scontent-lax3-2.xx.fbcdn.net/v/t39.35426-6/778874032_1574549380780150_2866603168412801641_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=103&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=uL_IY4tLYPwQ7kNvwHs9_YO&_nc_oc=Adq_HxL36xF5J2D47Dh6sf4rCBHYrT7yfndMFCi_xAIoOtu3yq7w9v9mI2rJYIsxvaw&_nc_zt=14&_nc_ht=scontent-lax3-2.xx&_nc_gid=HtN7tbfN0Hwhs2TUi3-xQQ&_nc_ss=7b289&oh=00_AQQbnCV7zuWhZGCdeljLfrJKMtV5YyZv5-WmU1ftxtmBMQ&oe=6AF776BF"
+      ],
+      "has_video": false,
+      "same_creative_count": 2,
+      "multiple_versions": false,
+      "cta_type": "LEARN_MORE",
+      "display_format": "image",
+      "cards": [
+        {
+          "body": "Reminder: ir al Come y Bebe de Domino’s a por toda la pizza y bebida que quieras desde solo 7,99 €. De nada.",
+          "cta": "Learn More",
+          "image": "https://scontent-lax3-2.xx.fbcdn.net/v/t39.35426-6/778874032_1574549380780150_2866603168412801641_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=103&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=uL_IY4tLYPwQ7kNvwHs9_YO&_nc_oc=Adq_HxL36xF5J2D47Dh6sf4rCBHYrT7yfndMFCi_xAIoOtu3yq7w9v9mI2rJYIsxvaw&_nc_zt=14&_nc_ht=scontent-lax3-2.xx&_nc_gid=HtN7tbfN0Hwhs2TUi3-xQQ&_nc_ss=7b289&oh=00_AQQbnCV7zuWhZGCdeljLfrJKMtV5YyZv5-WmU1ftxtmBMQ&oe=6AF776BF",
+          "link_url": "https://comeybebe.dominospizza.es/?utm_source=meta&utm_medium=social-ads&utm_campaign=ES_ALSEA_DOMINOS_AWA_MULTI_NA_0826_211946_COMEYBEBE&utm_content=pros&utm_term=na",
+          "title": "Pizzas y bebidas ilimitadas en Domino’s En tienda desde 7,99 €",
+          "video": null
+        }
+      ]
     },
     {
       "id": "1155065930552854",
@@ -96,12 +275,25 @@
       "link_url": "https://www.dominos.sa/ar/",
       "link_title": "",
       "cta_text": "",
+      "link_caption": "",
       "images": [
-        "https://scontent-lax3-2.xx.fbcdn.net/v/t39.35426-6/885149456_1134789502536008_140390894831582010_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=106&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=pEfVZnfifkkQ7kNvwHlaqov&_nc_oc=AdpKCCa-0I8HCl1QjDoXQc9sejwLgd55b5yAp0YulGbfp3PwlU4GiiJZ7nHwLq1ddEs&_nc_zt=14&_nc_ht=scontent-lax3-2.xx&_nc_gid=AUBOM7DNm81hF4D3zdgS6w&_nc_ss=7b289&oh=00_AQSb2Jr0CobdOulOvhSTZgyJ0NBISbjWeQJni_L3xAtmXA&oe=6AF76B36"
+        "https://scontent-lax3-2.xx.fbcdn.net/v/t39.35426-6/885149456_1134789502536008_140390894831582010_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=106&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=pEfVZnfifkkQ7kNvwEN66VX&_nc_oc=AdqWVGrkoYq26JAeOAUYcURGfgJPu2Qn8-FHG2ggtqaQKgAASBWnojNV1itpeJ7GASY&_nc_zt=14&_nc_ht=scontent-lax3-2.xx&_nc_gid=HtN7tbfN0Hwhs2TUi3-xQQ&_nc_ss=7b289&oh=00_AQQr2EXuKeLsHQp3v4cd615r-YxPOx9f498qcLtUJNfUPA&oe=6AF76B36"
       ],
       "has_video": false,
       "same_creative_count": 2,
-      "multiple_versions": false
+      "multiple_versions": false,
+      "cta_type": "",
+      "display_format": "image",
+      "cards": [
+        {
+          "body": "New! Domino's Solo Box comes with pizza, pasta, with more options and sides 👌🍕🍝",
+          "cta": "",
+          "image": "https://scontent-lax3-2.xx.fbcdn.net/v/t39.35426-6/885149456_1134789502536008_140390894831582010_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=106&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=pEfVZnfifkkQ7kNvwEN66VX&_nc_oc=AdqWVGrkoYq26JAeOAUYcURGfgJPu2Qn8-FHG2ggtqaQKgAASBWnojNV1itpeJ7GASY&_nc_zt=14&_nc_ht=scontent-lax3-2.xx&_nc_gid=HtN7tbfN0Hwhs2TUi3-xQQ&_nc_ss=7b289&oh=00_AQQr2EXuKeLsHQp3v4cd615r-YxPOx9f498qcLtUJNfUPA&oe=6AF76B36",
+          "link_url": "https://www.dominos.sa/ar/",
+          "title": "",
+          "video": null
+        }
+      ]
     },
     {
       "id": "28901602699504810",
@@ -116,18 +308,31 @@
       "link_url": "https://www.dominos.sa/ar/",
       "link_title": "",
       "cta_text": "",
+      "link_caption": "",
       "images": [
-        "https://scontent-lax3-2.xx.fbcdn.net/v/t39.35426-6/885818237_1694680275349434_4284431636424577131_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=103&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=xKPWd765nYIQ7kNvwHhUU81&_nc_oc=AdqCLjrK8XI2Zsw8jU7ooIP_oZQ6XVUWz3ddHfHKNxRrQ4Bc3WD4ycQmFlqG7A0t5Xs&_nc_zt=14&_nc_ht=scontent-lax3-2.xx&_nc_gid=AUBOM7DNm81hF4D3zdgS6w&_nc_ss=7b289&oh=00_AQQP80k2Q58d4PgXfEQMJmX67eFsKqQFfB6UWa9dTNuE_A&oe=6AF759E6"
+        "https://scontent-lax3-2.xx.fbcdn.net/v/t39.35426-6/885818237_1694680275349434_4284431636424577131_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=103&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=xKPWd765nYIQ7kNvwEB5Fvs&_nc_oc=AdrSdeZyRO0ByjrOHa9UbFMtZgaN8_FZCnp3fopokLcRJVaUeKaJHKf85FSgV-ykE-c&_nc_zt=14&_nc_ht=scontent-lax3-2.xx&_nc_gid=HtN7tbfN0Hwhs2TUi3-xQQ&_nc_ss=7b289&oh=00_AQSeNv-fdoXiUeLMvFJ29xKZTie_6OCj9_l5L_7txkW-_g&oe=6AF759E6"
       ],
       "has_video": false,
       "same_creative_count": 2,
-      "multiple_versions": false
+      "multiple_versions": false,
+      "cta_type": "",
+      "display_format": "image",
+      "cards": [
+        {
+          "body": "جديد! بوكس السولو من دومينوز يجي بوقته.. بيتزا أو باستا وغيرها مع أصناف جانبية ومشروب وصوص 👌🍕🍝",
+          "cta": "",
+          "image": "https://scontent-lax3-2.xx.fbcdn.net/v/t39.35426-6/885818237_1694680275349434_4284431636424577131_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=103&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=xKPWd765nYIQ7kNvwEB5Fvs&_nc_oc=AdrSdeZyRO0ByjrOHa9UbFMtZgaN8_FZCnp3fopokLcRJVaUeKaJHKf85FSgV-ykE-c&_nc_zt=14&_nc_ht=scontent-lax3-2.xx&_nc_gid=HtN7tbfN0Hwhs2TUi3-xQQ&_nc_ss=7b289&oh=00_AQSeNv-fdoXiUeLMvFJ29xKZTie_6OCj9_l5L_7txkW-_g&oe=6AF759E6",
+          "link_url": "https://www.dominos.sa/ar/",
+          "title": "",
+          "video": null
+        }
+      ]
     },
     {
       "id": "1460512279392735",
       "page_name": "Domino's Pizza",
       "status": "active",
-      "first_seen": "Nov 8, 2026 · Total active time 21 hrs",
+      "first_seen": "Nov 8, 2026",
       "last_seen": "",
       "creative_text": "جديد! بوكس السولو من دومينوز يجي بوقته.. بيتزا أو باستا وغيرها مع أصناف جانبية ومشروب وصوص 👌🍕🍝",
       "library_url": "https://www.facebook.com/ads/library/?id=1460512279392735",
@@ -136,10 +341,1341 @@
       "link_url": "",
       "link_title": "",
       "cta_text": "",
+      "link_caption": "",
       "images": [],
       "has_video": true,
       "same_creative_count": 0,
-      "multiple_versions": false
+      "multiple_versions": false,
+      "cta_type": "",
+      "display_format": "video",
+      "cards": [
+        {
+          "body": "جديد! بوكس السولو من دومينوز يجي بوقته.. بيتزا أو باستا وغيرها مع أصناف جانبية ومشروب وصوص 👌🍕🍝",
+          "cta": "",
+          "image": null,
+          "link_url": "",
+          "title": "",
+          "video": null
+        }
+      ]
+    },
+    {
+      "id": "1811945393264925",
+      "page_name": "Probashir Astha- প্রবাসীর আস্থা",
+      "status": "active",
+      "first_seen": "Nov 8, 2026",
+      "last_seen": "",
+      "creative_text": "🌐 আসসালামু-আলাইকুম। প্রিয় বিদেশ গমন ইচ্ছুক ভাইয়েরা। যারা সৌদি আরব যাওয়ার কথা ভাবছেন কিন্তু কোন্ কোম্পানিতে যাবেন ভেবে পাচ্ছেন না, তারা চাইলে নিম্নোক্ত কোম্পানিগুলোতে যেতে পারেন-\nনং কোম্পানির নাম এবং পদবী\n১ Al-Baik (আল-বাইক) -সার্ভিস ক্রু\n২ কে.এফ.সি (KFC) -রেস্টুরেন্ট ওয়ার্কার\n৩ Domino’s Pizza -টীম মেম্বার\n৪ Kitopi Restaurant -রেস্টুরেন্ট ওয়ার্কার\n৫ Anoosh -চকলেট ফ্যাক্টরী\n৬ আল-মাওয়ারিদ -ক্লিনার/লেবার\n৭ Hunger Station -কার ড্রাইভার\n৮ Keemart -সুপার মার্কেট ওয়ার্কার\n৯ Osama Faisal -ওয়্যারহাউজ ওয়ার্কার\n১০ Bin Dawood Market -মার্কেট ওয়ার্কার\n১১ Modern Oven Co. -বেকারী হেল্পার\n১২ Ajlan & Bross Co. -পোর্ট লেবার\n১৩ সামাসকো কোম্পানি -জেনারেল ওয়ার্কার\n১৪ মাহারা কোম্পানি -জেনারেল ওয়ার্কার\n১৫ জাহারান কোম্পানি -ক্লিনার\n১৬ Al Dress/Sasco/Liter -পেট্রোল পাম্প ওয়ার্কার\n১৭ মিনিস্ট্রি বলদিয়া -ক্লিনার\n১৮ সারাকো কোম্পানি -ক্লিনার\n১৯ SMS Company -ক্লিনার\n২০ ফ্রি ভিসা -৩ মাসের আকামা সহ\nএছাড়া আমরা কাতার, কুয়েত, ওমান, দুবাই, মালয়েশিয়া, মালদ্বীপ, ভিয়েতনাম সহ বিভিন্ন দেশের ভিসা প্রসেসিং কাজে সহযোগীতা করছি।\nবিস্তারিত জানতে যোগাযোগ করুনঃ\n📞 01351-339947 (কল/ইমু/হোয়াটস-অ্যাপ)\n🏢 অফিসের ঠিকানাঃ\nহাউজ-৮২, ডেঙ্গু মিয়া ম্যানসন (৪র্থ তলা), নিউ এয়ারপোর্ট রোড, সৈনিক ক্লাব মোড়, বনানী, ঢাকা-১২১৩।\nProbashir Astha- প্রবা…",
+      "library_url": "https://www.facebook.com/ads/library/?id=1811945393264925",
+      "page_url": "https://www.facebook.com/ProbashirAsthaOfficial/",
+      "page_id": "",
+      "link_url": "",
+      "link_title": "",
+      "cta_text": "",
+      "link_caption": "",
+      "images": [
+        "https://scontent-lax3-2.xx.fbcdn.net/v/t39.35426-6/894205822_29321047670861220_5446946575874155315_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=106&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=SvMxoa-ReqAQ7kNvwHuKbtI&_nc_oc=AdpAs1FomkgOtXZbB7VKvNOplb6AEmo-6c8YUby0Sk0TxJwph2zLXU9YkNfhdtnL_UM&_nc_zt=14&_nc_ht=scontent-lax3-2.xx&_nc_gid=HtN7tbfN0Hwhs2TUi3-xQQ&_nc_ss=7b289&oh=00_AQTNAe1Q6lCQVherXHPgwR8aLJu4Sv4Rpa7PvbfvMDOn4A&oe=6AF7777F"
+      ],
+      "has_video": false,
+      "same_creative_count": 0,
+      "multiple_versions": false,
+      "cta_type": "",
+      "display_format": "image",
+      "cards": [
+        {
+          "body": "🌐 আসসালামু-আলাইকুম। প্রিয় বিদেশ গমন ইচ্ছুক ভাইয়েরা। যারা সৌদি আরব যাওয়ার কথা ভাবছেন কিন্তু কোন্ কোম্পানিতে যাবেন ভেবে পাচ্ছেন না, তারা চাইলে নিম্নোক্ত কোম্পানিগুলোতে যেতে পারেন-\nনং কোম্পানির নাম এবং পদবী\n১ Al-Baik (আল-বাইক) -সার্ভিস ক্রু\n২ কে.এফ.সি (KFC) -রেস্টুরেন্ট ওয়ার্কার\n৩ Domino’s Pizza -টীম মেম্বার\n৪ Kitopi Restaurant -রেস্টুরেন্ট ওয়ার্কার\n৫ Anoosh -চকলেট ফ্যাক্টরী\n৬ আল-মাওয়ারিদ -ক্লিনার/লেবার\n৭ Hunger Station -কার ড্রাইভার\n৮ Keemart -সুপার মার্কেট ওয়ার্কার\n৯ Osama Faisal -ওয়্যারহাউজ ওয়ার্কার\n১০ Bin Dawood Market -মার্কেট ওয়ার্কার\n১১ Modern Oven Co. -বেকারী হেল্পার\n১২ Ajlan & Bross Co. -পোর্ট লেবার\n১৩ সামাসকো কোম্পানি -জেনারেল ওয়ার্কার\n১৪ মাহারা কোম্পানি -জেনারেল ওয়ার্কার\n১৫ জাহারান কোম্পানি -ক্লিনার\n১৬ Al Dress/Sasco/Liter -পেট্রোল পাম্প ওয়ার্কার\n১৭ মিনিস্ট্রি বলদিয়া -ক্লিনার\n১৮ সারাকো কোম্পানি -ক্লিনার\n১৯ SMS Company -ক্লিনার\n২০ ফ্রি ভিসা -৩ মাসের আকামা সহ\nএছাড়া আমরা কাতার, কুয়েত, ওমান, দুবাই, মালয়েশিয়া, মালদ্বীপ, ভিয়েতনাম সহ বিভিন্ন দেশের ভিসা প্রসেসিং কাজে সহযোগীতা করছি।\nবিস্তারিত জানতে যোগাযোগ করুনঃ\n📞 01351-339947 (কল/ইমু/হোয়াটস-অ্যাপ)\n🏢 অফিসের ঠিকানাঃ\nহাউজ-৮২, ডেঙ্গু মিয়া ম্যানসন (৪র্থ তলা), নিউ এয়ারপোর্ট রোড, সৈনিক ক্লাব মোড়, বনানী, ঢাকা-১২১৩।\nProbashir Astha- প্রবা…",
+          "cta": "",
+          "image": "https://scontent-lax3-2.xx.fbcdn.net/v/t39.35426-6/894205822_29321047670861220_5446946575874155315_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=106&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=SvMxoa-ReqAQ7kNvwHuKbtI&_nc_oc=AdpAs1FomkgOtXZbB7VKvNOplb6AEmo-6c8YUby0Sk0TxJwph2zLXU9YkNfhdtnL_UM&_nc_zt=14&_nc_ht=scontent-lax3-2.xx&_nc_gid=HtN7tbfN0Hwhs2TUi3-xQQ&_nc_ss=7b289&oh=00_AQTNAe1Q6lCQVherXHPgwR8aLJu4Sv4Rpa7PvbfvMDOn4A&oe=6AF7777F",
+          "link_url": "",
+          "title": "",
+          "video": null
+        }
+      ]
+    },
+    {
+      "id": "1493593229499587",
+      "page_name": "Probashir Astha- প্রবাসীর আস্থা",
+      "status": "active",
+      "first_seen": "Nov 7, 2026",
+      "last_seen": "",
+      "creative_text": "🔰 আসসালামু-আলাইকুম। প্রিয় বিদেশ গমন ইচ্ছুক ভাইয়েরা। যারা সৌদি আরব যাওয়ার কথা ভাবছেন কিন্তু কোন্ কোম্পানিতে যাবেন ভেবে পাচ্ছেন না, তারা চাইলে নিম্নোক্ত কোম্পানিগুলোতে যেতে পারেন-\nনং কোম্পানির নাম এবং পদবী\n১ Al-Baik (আল-বাইক) -সার্ভিস ক্রু\n২ কে.এফ.সি (KFC) -রেস্টুরেন্ট ওয়ার্কার\n৩ Domino’s Pizza -টীম মেম্বার\n৪ Kitopi Restaurant -রেস্টুরেন্ট ওয়ার্কার\n৫ Anoosh -চকলেট ফ্যাক্টরী\n৬ আল-মাওয়ারিদ -ক্লিনার/লেবার\n৭ Hunger Station -কার ড্রাইভার\n৮ Keemart -সুপার মার্কেট ওয়ার্কার\n৯ Osama Faisal -ওয়্যারহাউজ ওয়ার্কার\n১০ Bin Dawood Market -মার্কেট ওয়ার্কার\n১১ Modern Oven Co. -বেকারী হেল্পার\n১২ Ajlan & Bross Co. -পোর্ট লেবার\n১৩ সামাসকো কোম্পানি -জেনারেল ওয়ার্কার\n১৪ মাহারা কোম্পানি -জেনারেল ওয়ার্কার\n১৫ জাহারান কোম্পানি -ক্লিনার\n১৬ Al Dress/Sasco/Liter -পেট্রোল পাম্প ওয়ার্কার\n১৭ মিনিস্ট্রি বলদিয়া -ক্লিনার\n১৮ সারাকো কোম্পানি -ক্লিনার\n১৯ SMS Company -ক্লিনার\n২০ ফ্রি ভিসা -৩ মাসের আকামা সহ\nএছাড়া আমরা কাতার, কুয়েত, ওমান, দুবাই, মালয়েশিয়া, মালদ্বীপ, ভিয়েতনাম সহ বিভিন্ন দেশের ভিসা প্রসেসিং কাজে সহযোগীতা করছি।\nবিস্তারিত জানতে যোগাযোগ করুনঃ\n📞 01351-339948 (কল/ইমু/হোয়াটস-অ্যাপ)\n🏢 অফিসের ঠিকানাঃ\nহাউজ-৮২, ডেঙ্গু মিয়া ম্যানসন (৪র্থ তলা), নিউ এয়ারপোর্ট রোড, সৈনিক ক্লাব মোড়, বনানী, ঢাকা-১২১৩।\nProbashir Astha- প্রবা…",
+      "library_url": "https://www.facebook.com/ads/library/?id=1493593229499587",
+      "page_url": "https://www.facebook.com/ProbashirAsthaOfficial/",
+      "page_id": "",
+      "link_url": "",
+      "link_title": "",
+      "cta_text": "",
+      "link_caption": "",
+      "images": [
+        "https://scontent-lax3-1.xx.fbcdn.net/v/t39.35426-6/855213961_1069374689489870_4974363722136912103_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=102&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=m9kRVcZ9X-MQ7kNvwGcv-Ez&_nc_oc=Adpcrc8Er-iKo2SCsSPbmMOswVOUPjFi9ub6_UldMTwik-G9hDwKTEhJM3PZ9f6DJSo&_nc_zt=14&_nc_ht=scontent-lax3-1.xx&_nc_gid=HtN7tbfN0Hwhs2TUi3-xQQ&_nc_ss=7b289&oh=00_AQTatVkpm0DbeJglzE0OmCfhCYq4M5zHvu8QNwt9dz08NQ&oe=6AF76ED9"
+      ],
+      "has_video": false,
+      "same_creative_count": 0,
+      "multiple_versions": false,
+      "cta_type": "",
+      "display_format": "image",
+      "cards": [
+        {
+          "body": "🔰 আসসালামু-আলাইকুম। প্রিয় বিদেশ গমন ইচ্ছুক ভাইয়েরা। যারা সৌদি আরব যাওয়ার কথা ভাবছেন কিন্তু কোন্ কোম্পানিতে যাবেন ভেবে পাচ্ছেন না, তারা চাইলে নিম্নোক্ত কোম্পানিগুলোতে যেতে পারেন-\nনং কোম্পানির নাম এবং পদবী\n১ Al-Baik (আল-বাইক) -সার্ভিস ক্রু\n২ কে.এফ.সি (KFC) -রেস্টুরেন্ট ওয়ার্কার\n৩ Domino’s Pizza -টীম মেম্বার\n৪ Kitopi Restaurant -রেস্টুরেন্ট ওয়ার্কার\n৫ Anoosh -চকলেট ফ্যাক্টরী\n৬ আল-মাওয়ারিদ -ক্লিনার/লেবার\n৭ Hunger Station -কার ড্রাইভার\n৮ Keemart -সুপার মার্কেট ওয়ার্কার\n৯ Osama Faisal -ওয়্যারহাউজ ওয়ার্কার\n১০ Bin Dawood Market -মার্কেট ওয়ার্কার\n১১ Modern Oven Co. -বেকারী হেল্পার\n১২ Ajlan & Bross Co. -পোর্ট লেবার\n১৩ সামাসকো কোম্পানি -জেনারেল ওয়ার্কার\n১৪ মাহারা কোম্পানি -জেনারেল ওয়ার্কার\n১৫ জাহারান কোম্পানি -ক্লিনার\n১৬ Al Dress/Sasco/Liter -পেট্রোল পাম্প ওয়ার্কার\n১৭ মিনিস্ট্রি বলদিয়া -ক্লিনার\n১৮ সারাকো কোম্পানি -ক্লিনার\n১৯ SMS Company -ক্লিনার\n২০ ফ্রি ভিসা -৩ মাসের আকামা সহ\nএছাড়া আমরা কাতার, কুয়েত, ওমান, দুবাই, মালয়েশিয়া, মালদ্বীপ, ভিয়েতনাম সহ বিভিন্ন দেশের ভিসা প্রসেসিং কাজে সহযোগীতা করছি।\nবিস্তারিত জানতে যোগাযোগ করুনঃ\n📞 01351-339948 (কল/ইমু/হোয়াটস-অ্যাপ)\n🏢 অফিসের ঠিকানাঃ\nহাউজ-৮২, ডেঙ্গু মিয়া ম্যানসন (৪র্থ তলা), নিউ এয়ারপোর্ট রোড, সৈনিক ক্লাব মোড়, বনানী, ঢাকা-১২১৩।\nProbashir Astha- প্রবা…",
+          "cta": "",
+          "image": "https://scontent-lax3-1.xx.fbcdn.net/v/t39.35426-6/855213961_1069374689489870_4974363722136912103_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=102&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=m9kRVcZ9X-MQ7kNvwGcv-Ez&_nc_oc=Adpcrc8Er-iKo2SCsSPbmMOswVOUPjFi9ub6_UldMTwik-G9hDwKTEhJM3PZ9f6DJSo&_nc_zt=14&_nc_ht=scontent-lax3-1.xx&_nc_gid=HtN7tbfN0Hwhs2TUi3-xQQ&_nc_ss=7b289&oh=00_AQTatVkpm0DbeJglzE0OmCfhCYq4M5zHvu8QNwt9dz08NQ&oe=6AF76ED9",
+          "link_url": "",
+          "title": "",
+          "video": null
+        }
+      ]
+    },
+    {
+      "id": "1987275911861086",
+      "page_name": "Empirio",
+      "status": "active",
+      "first_seen": "Feb 27, 2026",
+      "last_seen": "",
+      "creative_text": "What if you could think like a CEO without spending years in business school? Empirio delivers the insights in 5 minutes a day. Interactive, eye-opening, addictive. Try it now. 📈",
+      "library_url": "https://www.facebook.com/ads/library/?id=1987275911861086",
+      "page_url": "https://www.facebook.com/61587899137825/",
+      "page_id": "61587899137825",
+      "link_url": "https://empirioapp.com/growth-plan",
+      "link_title": "MBA secrets in 5 minutes a day Financial education that feels like a game. Step into real business decisions, see actual outcomes, and discover how you think about money and strategy.",
+      "cta_text": "Learn more",
+      "link_caption": "EMPIRIOAPP.COM",
+      "images": [
+        "https://scontent-lax3-1.xx.fbcdn.net/v/t39.35426-6/893977818_1113635391405966_2878250109566260755_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=102&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=zZVb8PLmHs8Q7kNvwGSwp1k&_nc_oc=AdqdVO3z1WQsueIyLLKc-Ar8IuW1cv1qQGewz7_BVekVJMAKtxnBPtaq4RJD7JX6fjo&_nc_zt=14&_nc_ht=scontent-lax3-1.xx&_nc_gid=HtN7tbfN0Hwhs2TUi3-xQQ&_nc_ss=7b289&oh=00_AQRWDV6wDavdOK-LJKsGwn5kkw1pUW8HhXswgA2jtTqISQ&oe=6AF7744A"
+      ],
+      "has_video": false,
+      "same_creative_count": 0,
+      "multiple_versions": true,
+      "cta_type": "LEARN_MORE",
+      "display_format": "image",
+      "cards": [
+        {
+          "body": "What if you could think like a CEO without spending years in business school? Empirio delivers the insights in 5 minutes a day. Interactive, eye-opening, addictive. Try it now. 📈",
+          "cta": "Learn more",
+          "image": "https://scontent-lax3-1.xx.fbcdn.net/v/t39.35426-6/893977818_1113635391405966_2878250109566260755_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=102&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=zZVb8PLmHs8Q7kNvwGSwp1k&_nc_oc=AdqdVO3z1WQsueIyLLKc-Ar8IuW1cv1qQGewz7_BVekVJMAKtxnBPtaq4RJD7JX6fjo&_nc_zt=14&_nc_ht=scontent-lax3-1.xx&_nc_gid=HtN7tbfN0Hwhs2TUi3-xQQ&_nc_ss=7b289&oh=00_AQRWDV6wDavdOK-LJKsGwn5kkw1pUW8HhXswgA2jtTqISQ&oe=6AF7744A",
+          "link_url": "https://empirioapp.com/growth-plan",
+          "title": "MBA secrets in 5 minutes a day Financial education that feels like a game. Step into real business decisions, see actual outcomes, and discover how you think about money and strategy.",
+          "video": null
+        }
+      ]
+    },
+    {
+      "id": "3278027829163152",
+      "page_name": "Alibaba.com",
+      "status": "active",
+      "first_seen": "Jun 22, 2026",
+      "last_seen": "",
+      "creative_text": "Source Packaging & Printing on Alibaba.com. Alibaba.com-World's Leading B2B Marketplace.",
+      "library_url": "https://www.facebook.com/ads/library/?id=3278027829163152",
+      "page_url": "https://www.facebook.com/Alibaba.comGlobal/",
+      "page_id": "",
+      "link_url": "https://m.alibaba.com/lp/group?src=cpm_fb&sub_channel=dpa&biz=brand&group_id=52&link_type=feed&product_id=10000011944368&cid=201271492&field=BRAND_AD",
+      "link_title": "Design Your Own Paper Bag",
+      "cta_text": "Learn More",
+      "link_caption": "M.ALIBABA.COM",
+      "images": [
+        "https://scontent-lax3-1.xx.fbcdn.net/v/t39.35426-6/370844260_289441323710970_1508569239571625852_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=102&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=RxsoJ1Kd2EgQ7kNvwHlrlAi&_nc_oc=Ado9KtyAZbnikvQKiJDgFk7Gy1Necz_-QGRma7hcKt2uFfcKF1-NfOabGDumsXWW668&_nc_zt=14&_nc_ht=scontent-lax3-1.xx&_nc_gid=HtN7tbfN0Hwhs2TUi3-xQQ&_nc_ss=7b289&oh=00_AQTALHGaFde3Nn76KUWdC8r_kWIxm4_Lwezl3yAoceYBbA&oe=6AF769D7"
+      ],
+      "has_video": false,
+      "same_creative_count": 0,
+      "multiple_versions": true,
+      "cta_type": "LEARN_MORE",
+      "display_format": "image",
+      "cards": [
+        {
+          "body": "Source Packaging & Printing on Alibaba.com. Alibaba.com-World's Leading B2B Marketplace.",
+          "cta": "Learn More",
+          "image": "https://scontent-lax3-1.xx.fbcdn.net/v/t39.35426-6/370844260_289441323710970_1508569239571625852_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=102&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=RxsoJ1Kd2EgQ7kNvwHlrlAi&_nc_oc=Ado9KtyAZbnikvQKiJDgFk7Gy1Necz_-QGRma7hcKt2uFfcKF1-NfOabGDumsXWW668&_nc_zt=14&_nc_ht=scontent-lax3-1.xx&_nc_gid=HtN7tbfN0Hwhs2TUi3-xQQ&_nc_ss=7b289&oh=00_AQTALHGaFde3Nn76KUWdC8r_kWIxm4_Lwezl3yAoceYBbA&oe=6AF769D7",
+          "link_url": "https://m.alibaba.com/lp/group?src=cpm_fb&sub_channel=dpa&biz=brand&group_id=52&link_type=feed&product_id=10000011944368&cid=201271492&field=BRAND_AD",
+          "title": "Design Your Own Paper Bag",
+          "video": null
+        }
+      ]
+    },
+    {
+      "id": "1675078907568672",
+      "page_name": "Linguza: AI English Tutor",
+      "status": "active",
+      "first_seen": "Nov 4, 2026",
+      "last_seen": "",
+      "creative_text": "Apprenez n'importe quelle langue en tête-à-tête avec l'IA – Parlez couramment en 30 jours !",
+      "library_url": "https://www.facebook.com/ads/library/?id=1675078907568672",
+      "page_url": "https://www.facebook.com/61576796997762/",
+      "page_id": "61576796997762",
+      "link_url": "https://play.google.com/store/apps/details?id=com.nxl.aienglishtutor.ailearnlanguage.aichatbot&hl=vi",
+      "link_title": "Essayez gratuitement maintenant !",
+      "cta_text": "Download",
+      "link_caption": "",
+      "images": [],
+      "has_video": true,
+      "same_creative_count": 0,
+      "multiple_versions": false,
+      "cta_type": "DOWNLOAD",
+      "display_format": "video",
+      "cards": [
+        {
+          "body": "Apprenez n'importe quelle langue en tête-à-tête avec l'IA – Parlez couramment en 30 jours !",
+          "cta": "Download",
+          "image": null,
+          "link_url": "https://play.google.com/store/apps/details?id=com.nxl.aienglishtutor.ailearnlanguage.aichatbot&hl=vi",
+          "title": "Essayez gratuitement maintenant !",
+          "video": null
+        }
+      ]
+    },
+    {
+      "id": "2468812443608017",
+      "page_name": "Carrefour Saudi كارفور السعودية",
+      "status": "active",
+      "first_seen": "Oct 25, 2026",
+      "last_seen": "",
+      "creative_text": "🔥 عروض رهيبة وتوفير أكبر في كارفور!\n🛒 تصفّح عروضنا واختار اللي تحتاجه بأوفر الأسعار\n📅 ابتداءً من 4 نوفمبر 2026\n#كارفور\\_السعودية #أسعد\\_اللحظات #CarrefourSaudi #GreatMoments",
+      "library_url": "https://www.facebook.com/ads/library/?id=2468812443608017",
+      "page_url": "https://www.facebook.com/Carrefoursaudi/",
+      "page_id": "",
+      "link_url": "",
+      "link_title": "",
+      "cta_text": "",
+      "link_caption": "",
+      "images": [
+        "https://scontent-lax3-2.xx.fbcdn.net/v/t39.35426-6/886655181_2242517256317607_8856039758232218318_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=100&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=sPzAHT3Hy14Q7kNvwH-M5GM&_nc_oc=AdoDzd3Nxf_o66fRKe74JGkh6gmzDlmx_WY4kOaRv6_oZC6mbaKStdBwkPg5_sUMmNA&_nc_zt=14&_nc_ht=scontent-lax3-2.xx&_nc_gid=HtN7tbfN0Hwhs2TUi3-xQQ&_nc_ss=7b289&oh=00_AQTZNztMkqUdenVj-3gEGnxay_uhV9845K9iJNNq-dBsqg&oe=6AF7810C",
+        "https://scontent-lax7-1.xx.fbcdn.net/v/t39.35426-6/886769713_3628254474016132_4947086188089857965_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=105&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=3hDYiFTIxFMQ7kNvwF4NjtJ&_nc_oc=AdpbsSq-3zxXZSqpN98hZvYeDYsEh7otbUAuFh-EtCZaHDu9WfWDWeHKJvYjDbrTs4A&_nc_zt=14&_nc_ht=scontent-lax7-1.xx&_nc_gid=HtN7tbfN0Hwhs2TUi3-xQQ&_nc_ss=7b289&oh=00_AQQMFaY9TH3BsrjQJTAj65wXhKeLS89kV11tyhtTxyecRw&oe=6AF77734",
+        "https://scontent-lax3-1.xx.fbcdn.net/v/t39.35426-6/885919724_1566062408622352_976853592064153457_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=108&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=UzHWLPjrnzoQ7kNvwHuBLE0&_nc_oc=AdomzG0yPdvoOjqgbbltnqudslS78unR60jDrD08kme9UVu6PMGxwXmkUQHmJgTUw0g&_nc_zt=14&_nc_ht=scontent-lax3-1.xx&_nc_gid=HtN7tbfN0Hwhs2TUi3-xQQ&_nc_ss=7b289&oh=00_AQQS2qq3YwdC2ejqjz4NHcgI8n7iqXMKijyNkQ41axZR8w&oe=6AF76B20",
+        "https://scontent-lax3-2.xx.fbcdn.net/v/t39.35426-6/891289950_1505459394760113_5621970922751687980_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=103&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=YcqX0EJKG0sQ7kNvwEBUKxK&_nc_oc=AdppT1C2BnIVOHxNeLFHR89_yOXE5O1sgo_QikoxcszjmP_G59tzpPIjq23bJb4LeW0&_nc_zt=14&_nc_ht=scontent-lax3-2.xx&_nc_gid=HtN7tbfN0Hwhs2TUi3-xQQ&_nc_ss=7b289&oh=00_AQQ3XzSt6WN_hKwKxD_sHlfuC08XJou1DLXwmsysz8RiIg&oe=6AF78399",
+        "https://scontent-lax3-2.xx.fbcdn.net/v/t39.35426-6/886842679_2077729883614584_5044789466777571197_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=107&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=Ndd-F0nT9vMQ7kNvwFq40qD&_nc_oc=Adpg2c9bfP5C0K9ZGK6GqWt0vqof06IH8JTloqhaJHQSy11ilNEwESM_bv8H_tyyU4s&_nc_zt=14&_nc_ht=scontent-lax3-2.xx&_nc_gid=HtN7tbfN0Hwhs2TUi3-xQQ&_nc_ss=7b289&oh=00_AQRMSszYemV4IwAgOt0tLqOFnThHucAcjEGoMbiLmbx5Lw&oe=6AF76233",
+        "https://scontent-lax3-1.xx.fbcdn.net/v/t39.35426-6/887051526_1444572590378972_8767703592451598785_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=110&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=ozlfu0HRNL8Q7kNvwGkgYbu&_nc_oc=AdqeykiN7ShLcy3NvT8gCJ2LBEzcqHKgwDfENwYfQywqnEt6x2kj7YpqObTcc0Wv2jw&_nc_zt=14&_nc_ht=scontent-lax3-1.xx&_nc_gid=HtN7tbfN0Hwhs2TUi3-xQQ&_nc_ss=7b289&oh=00_AQQbdkw26Ya_pmScZHDFRx-x4dBMTnbGQiEBDllYEu6h-g&oe=6AF769BE",
+        "https://scontent-lax3-1.xx.fbcdn.net/v/t39.35426-6/889809991_1835341594584497_2688119626447921556_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=108&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=0sZ1rA48I7oQ7kNvwHa3nJN&_nc_oc=Ado6j0BdM6H-dXhgJQU7VUJ-NHrcazRF2zXxuZtyfJ0-wnQSHpBkvf_7gNBNecZRMlA&_nc_zt=14&_nc_ht=scontent-lax3-1.xx&_nc_gid=HtN7tbfN0Hwhs2TUi3-xQQ&_nc_ss=7b289&oh=00_AQThbP0kfCdVLm1RTBf6J0JjtX5EH_Pkxw6JywgixO_kwg&oe=6AF786CD",
+        "https://scontent-lax3-2.xx.fbcdn.net/v/t39.35426-6/889541951_2024296184904107_234081566488543584_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=103&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=hfYvsY1fsUYQ7kNvwFgTHh4&_nc_oc=AdoIWCkuwWduwno6KkfaLnmHOVkInH7nHd1YdMMQ9eJRjwRqUfjChKBKUgN6UX6UPe8&_nc_zt=14&_nc_ht=scontent-lax3-2.xx&_nc_gid=HtN7tbfN0Hwhs2TUi3-xQQ&_nc_ss=7b289&oh=00_AQTQty69nV4L3Mk0QQEPUq96Pkt3-98LbUGqDbxnsI1FhA&oe=6AF75FDE",
+        "https://scontent-lax7-1.xx.fbcdn.net/v/t39.35426-6/889809996_1493145929327881_200143763220685676_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=105&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=-wi_x9vnPpMQ7kNvwGAEq09&_nc_oc=AdoNGBo-zF5YwdQmXnNsJneAzFfPxZRbJhtvGTwVa077UXxcpl7iQoVqpzTVaHhZKD8&_nc_zt=14&_nc_ht=scontent-lax7-1.xx&_nc_gid=HtN7tbfN0Hwhs2TUi3-xQQ&_nc_ss=7b289&oh=00_AQQyzbLHAwp9OwHptH2BQRFHWTiIV-2aA6QhSR88-DXerA&oe=6AF77C09",
+        "https://scontent-lax7-1.xx.fbcdn.net/v/t39.35426-6/887011360_1695569085325545_2430189804593719713_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=105&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=_Ik_1Ey_2-4Q7kNvwH7T2dZ&_nc_oc=AdoTlklztd7kg6LrO4gAAhXeKvcL_x4lqHCjk36SeR3O_NNlR9oprAB37zCgi33-m3w&_nc_zt=14&_nc_ht=scontent-lax7-1.xx&_nc_gid=HtN7tbfN0Hwhs2TUi3-xQQ&_nc_ss=7b289&oh=00_AQTljqiedssIAYd4z2TkIRq8Hxhbkys8GidbPe_5qk4Gog&oe=6AF7693B",
+        "https://scontent-lax7-1.xx.fbcdn.net/v/t39.35426-6/886936805_1863310988268995_3537640172980561841_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=105&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=hoLAEck3CpkQ7kNvwE0qwKz&_nc_oc=AdprtVXDocz7U-KFkrsgfD55i-wyTLV_2N6CRXXsTZewygpanH1PvAXJx1-u5lh9Amw&_nc_zt=14&_nc_ht=scontent-lax7-1.xx&_nc_gid=HtN7tbfN0Hwhs2TUi3-xQQ&_nc_ss=7b289&oh=00_AQTsvoVzaM9FHNr_hWwIMW2Wz7pQPtluPJRQSrT2jADEnw&oe=6AF75BA5",
+        "https://scontent-lax3-2.xx.fbcdn.net/v/t39.35426-6/887643818_1519383023331294_3161233336166694455_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=106&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=o5FAhJr7O5wQ7kNvwHz0MJc&_nc_oc=AdoaXl32qculNR01U7GBneY7c3aPI259xG0YgIb-TiB5W2K91HCDhmCetABw7mL3xVg&_nc_zt=14&_nc_ht=scontent-lax3-2.xx&_nc_gid=HtN7tbfN0Hwhs2TUi3-xQQ&_nc_ss=7b289&oh=00_AQSwhSNr6wb5COahKNflIQ39Ugzl4_dKGjuSFBpZWQbqUQ&oe=6AF75660",
+        "https://scontent-lax3-1.xx.fbcdn.net/v/t39.35426-6/885919728_29381063034833771_8223770252158184249_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=109&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=BlrfLK-f5bEQ7kNvwF98Dis&_nc_oc=AdqfiXz-ApQ4MUtJQUF3agItcuJxW0KBPvFYZiLwvQGR2B_OZ_ze4p3hnvhMfZMqB9A&_nc_zt=14&_nc_ht=scontent-lax3-1.xx&_nc_gid=HtN7tbfN0Hwhs2TUi3-xQQ&_nc_ss=7b289&oh=00_AQTj8dRqww7S248ojEX3e2NrZQ1TUrZVjuaCBjcwiRh1aQ&oe=6AF76E74",
+        "https://scontent-lax3-1.xx.fbcdn.net/v/t39.35426-6/889088801_3182965878575255_3117878697482796777_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=110&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=fAomGKGd2MwQ7kNvwEdyGWf&_nc_oc=Adpgq4fpIVD43u8IblVCiaFJ4qB_n_bricd2S45hHdfFFkZ-eMgY8NNKCdr_BMn9yvI&_nc_zt=14&_nc_ht=scontent-lax3-1.xx&_nc_gid=HtN7tbfN0Hwhs2TUi3-xQQ&_nc_ss=7b289&oh=00_AQSnL57uSu6L1vmTpm0l6gZnyr9I7z4GGclzNY1Te7iYkg&oe=6AF77EF5",
+        "https://scontent-lax3-2.xx.fbcdn.net/v/t39.35426-6/887092921_1495534579151774_8058857790124664498_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=100&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=eBR61JHfo_sQ7kNvwF9ZjCQ&_nc_oc=AdoKseFYlrN4TtXuQiZTvbn_Q0pRHKnhGmMr0YU4uqdR6MgiYkalxIfG-Diz-cY7VkI&_nc_zt=14&_nc_ht=scontent-lax3-2.xx&_nc_gid=HtN7tbfN0Hwhs2TUi3-xQQ&_nc_ss=7b289&oh=00_AQTCgf7F7HzQXzTi4E0kNfCUjxzomGZuORq9v224SacCag&oe=6AF75759",
+        "https://scontent-lax3-1.xx.fbcdn.net/v/t39.35426-6/887032675_2300273924158426_7590004405124433567_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=109&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=i6wGUl9HHVMQ7kNvwHruTr-&_nc_oc=Adr04rHrhAg0L4pfh7m6_asBzTLz8YJxlSo7MmbMo5KBkY_PYs3MnigGHmlCtEzZdLY&_nc_zt=14&_nc_ht=scontent-lax3-1.xx&_nc_gid=HtN7tbfN0Hwhs2TUi3-xQQ&_nc_ss=7b289&oh=00_AQSUj2d4tut4aIQRTZ5RCRM0BHV549ASxWbeF9l5FMShjA&oe=6AF769B6",
+        "https://scontent-lax3-2.xx.fbcdn.net/v/t39.35426-6/886475771_1890337165748753_5308733914101887921_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=107&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=jznrLSW1iOQQ7kNvwEs0VPp&_nc_oc=AdqcnODa9QKw9He-0j6O2tGrmgkbv0zs_Ni9-I_ezhWSUTxOl3r0H6atmpOXdI9ZndY&_nc_zt=14&_nc_ht=scontent-lax3-2.xx&_nc_gid=HtN7tbfN0Hwhs2TUi3-xQQ&_nc_ss=7b289&oh=00_AQTZaxTnWtFpPQDmIUFujAJETKv_HdWUQjA89vl8x1IFeQ&oe=6AF75905",
+        "https://scontent-lax3-2.xx.fbcdn.net/v/t39.35426-6/888033051_2220704265464605_2302307999802421747_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=100&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=e2d9cWfiqWQQ7kNvwFGivJp&_nc_oc=Adqj9LZDvh8O9kjpp48ZqJ6E5yRSMvdtBlGc6qsbYIcxXtlhSF6XDNgiGk72e44yeSw&_nc_zt=14&_nc_ht=scontent-lax3-2.xx&_nc_gid=HtN7tbfN0Hwhs2TUi3-xQQ&_nc_ss=7b289&oh=00_AQQJXNb-QKGsxdy5sGgeXn_3ZK77rD6xh8ZkJAQ1oQCgbg&oe=6AF77A2F",
+        "https://scontent-lax3-2.xx.fbcdn.net/v/t39.35426-6/886705961_2247019402866350_6146681559089178417_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=111&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=IfKeOd-a0OwQ7kNvwGcgLB7&_nc_oc=AdpeeurRy6v-dIIGeBRlTF2Csb9OtIXjOXqF0tWS0Z772Uhr7QSFonoDCk2NiEaFQrk&_nc_zt=14&_nc_ht=scontent-lax3-2.xx&_nc_gid=HtN7tbfN0Hwhs2TUi3-xQQ&_nc_ss=7b289&oh=00_AQTbBolMjKgrq6c8aLCkfyPUs4JnJK5TExZt_aLKPzIKPA&oe=6AF76BF3",
+        "https://scontent-lax7-1.xx.fbcdn.net/v/t39.35426-6/887730707_2235007733724528_9127470924884566160_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=101&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=MQhoYWyynr4Q7kNvwGCN84B&_nc_oc=AdoGLiiuolwWlzbqN82RUJgNWU-uR4a-Qmri9bB5vySBaa-CsEpEanQ-8FcFZa6yyKo&_nc_zt=14&_nc_ht=scontent-lax7-1.xx&_nc_gid=HtN7tbfN0Hwhs2TUi3-xQQ&_nc_ss=7b289&oh=00_AQTBUtFNfzjGUOjwUyB7qmQrm0sFe8cCe82HTGvyh4KzUg&oe=6AF76BFA",
+        "https://scontent-lax3-1.xx.fbcdn.net/v/t39.35426-6/890281228_905596309213290_2735724252519153568_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=110&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=j_cEcNL_1KEQ7kNvwFro5GS&_nc_oc=AdrQMRidcinBAp6CovNBkgSTb-Q7883xrhdtkq-vduQz26z6VjaGEjS-aGjYE5ZNmQU&_nc_zt=14&_nc_ht=scontent-lax3-1.xx&_nc_gid=HtN7tbfN0Hwhs2TUi3-xQQ&_nc_ss=7b289&oh=00_AQReRjZeJnLTdwGEaBoW9Sh_6T9IBG-p7GOU-ZDOC3llWQ&oe=6AF78993",
+        "https://scontent-lax3-2.xx.fbcdn.net/v/t39.35426-6/885919718_28809443355373813_2882192314791000327_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=106&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=uHGEkiX1XvQQ7kNvwE2Qs6j&_nc_oc=Adp1CWQvbVT1ElJ5CwPPU7f5rTuEWYl59Ci3GqCX4k8SAIGKUfnWyvTFBf01SVjBWAo&_nc_zt=14&_nc_ht=scontent-lax3-2.xx&_nc_gid=HtN7tbfN0Hwhs2TUi3-xQQ&_nc_ss=7b289&oh=00_AQTPppSffXbfjONwlSfoKo8my5Xf7pg24QKiRPND7jEx7A&oe=6AF77695",
+        "https://scontent-lax3-2.xx.fbcdn.net/v/t39.35426-6/887160524_1060699537023153_7597815516424687160_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=103&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=q_qPg5tmKrgQ7kNvwEutv7e&_nc_oc=AdoO8sawhFJHXEIDPqeTjNoS_Wm3AnlOmI9F7pGjBptxYESkTRGhbdP3YA0WZUD6J9A&_nc_zt=14&_nc_ht=scontent-lax3-2.xx&_nc_gid=HtN7tbfN0Hwhs2TUi3-xQQ&_nc_ss=7b289&oh=00_AQQARkRwLQmCxuy1f1dR-TMcI918xfce8RnL6_aU41sZUw&oe=6AF766AC",
+        "https://scontent-lax7-1.xx.fbcdn.net/v/t39.35426-6/888575549_1055189220873951_66793076767389640_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=105&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=TamyYcKdkpYQ7kNvwEcVd9G&_nc_oc=AdpHveRPlsrOXl8lWKGHy0ltdD8byHQ_s0y4RnSiozlpziEH0uk6MWZZDIomPb3mJKI&_nc_zt=14&_nc_ht=scontent-lax7-1.xx&_nc_gid=HtN7tbfN0Hwhs2TUi3-xQQ&_nc_ss=7b289&oh=00_AQTgeAjlovX0BG9J6SRVwk-qoNd2361IkE_3NNAENNx6IQ&oe=6AF780AB",
+        "https://scontent-lax3-2.xx.fbcdn.net/v/t39.35426-6/889652660_1362145410323605_58859047330379167_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=103&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=A58HYK7ngnEQ7kNvwGoiCL6&_nc_oc=AdrlCzVwTdtMnyv9PI3AjdAQUd6W-R8YWer_ixPG_SoUoPwayqwQjId18h2WF0GYqC0&_nc_zt=14&_nc_ht=scontent-lax3-2.xx&_nc_gid=HtN7tbfN0Hwhs2TUi3-xQQ&_nc_ss=7b289&oh=00_AQQ0hrnkE14GzZIOEV9FbDtSeA7AkWrczM6FwXgWeYqbPQ&oe=6AF7712A",
+        "https://scontent-lax3-2.xx.fbcdn.net/v/t39.35426-6/890048723_3801645223324228_6851422136892472093_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=111&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=H0YIajbt3Y4Q7kNvwFlzU1K&_nc_oc=AdoiLsNnQhQPXiToy0-_hV7bYhQb8yxnAJFI40nP8OlxADzno3TILXib3EF6hNlSu9I&_nc_zt=14&_nc_ht=scontent-lax3-2.xx&_nc_gid=HtN7tbfN0Hwhs2TUi3-xQQ&_nc_ss=7b289&oh=00_AQSuSlIiogRUPjuk1qWhGtzlfoQbfCD5a0PrzrxdfEX39g&oe=6AF78651",
+        "https://scontent-lax3-2.xx.fbcdn.net/v/t39.35426-6/890846659_2197533687570954_6913876087622150648_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=107&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=vmy8fTE7QzMQ7kNvwHRhF7K&_nc_oc=AdpzDFVpZ6DpU1jTndPoDBVxPeajXGDFCQk4qdwMqR-_PuQAQvbdLxzbUZkZYtCHWpI&_nc_zt=14&_nc_ht=scontent-lax3-2.xx&_nc_gid=HtN7tbfN0Hwhs2TUi3-xQQ&_nc_ss=7b289&oh=00_AQRKUSpcxpoMNHM295MWLZnraBojMU8ZjmiY0yaLJKy-4Q&oe=6AF77EC4",
+        "https://scontent-lax3-1.xx.fbcdn.net/v/t39.35426-6/887968009_1126640250092460_2560711771271831209_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=104&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=-f8nk5FjFuYQ7kNvwGPQ-5u&_nc_oc=AdqyLJaRupv5z0UOCucdnpJDSVVVG6ci_EsQSZHJQ49mEVNkFy2TgptBIDeP2ikwwSA&_nc_zt=14&_nc_ht=scontent-lax3-1.xx&_nc_gid=HtN7tbfN0Hwhs2TUi3-xQQ&_nc_ss=7b289&oh=00_AQTPhmW7hzbiFr96lkbqbML5ZqL3Um9_vOvFqeSyKzpL8A&oe=6AF75BF5",
+        "https://scontent-lax3-2.xx.fbcdn.net/v/t39.35426-6/889652661_1920532682712100_4128591383920974494_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=111&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=AJKjNjYGwrYQ7kNvwGzGyTB&_nc_oc=AdrtHW04jhO8Mp0_LaOesUydim3y-reBzpISjgKNbAL289cIj3V0w8P2rrIss7g9Jzg&_nc_zt=14&_nc_ht=scontent-lax3-2.xx&_nc_gid=HtN7tbfN0Hwhs2TUi3-xQQ&_nc_ss=7b289&oh=00_AQSWB88p9TgBeY5BX5SATuLdIsY4W9o5zvhkmIV9_qiymg&oe=6AF77DF2",
+        "https://scontent-lax7-1.xx.fbcdn.net/v/t39.35426-6/886874477_1346216994151405_365545474115485329_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=101&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=p0BFsp4_uEoQ7kNvwHY_ML8&_nc_oc=Ado_ktnVYJSb37o52Fshil7rZVNTqEe-jW2AjiceU7aSvy1f9moXg1j5Eccb85eX7nQ&_nc_zt=14&_nc_ht=scontent-lax7-1.xx&_nc_gid=HtN7tbfN0Hwhs2TUi3-xQQ&_nc_ss=7b289&oh=00_AQQ2OTai-mExPkL-pINTcZ5p212nO8x6a0wPYQTFUTGraw&oe=6AF776F2",
+        "https://scontent-lax7-1.xx.fbcdn.net/v/t39.35426-6/889809989_1109980251820635_6165096903101986724_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=101&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=FmKrSL2BKKcQ7kNvwEMirzw&_nc_oc=AdpEbQWeX925SkJMV9gNhfln92WMwt0P0VRRJ9WuAQEu_YVLk5ia0YQaqtk67u_8aus&_nc_zt=14&_nc_ht=scontent-lax7-1.xx&_nc_gid=HtN7tbfN0Hwhs2TUi3-xQQ&_nc_ss=7b289&oh=00_AQROQaYxS8D7PdUIT_CHaMTENnWSeAAU4pqKasC6WJ6mUA&oe=6AF78AFC",
+        "https://scontent-lax3-2.xx.fbcdn.net/v/t39.35426-6/887092910_1656961736128862_4610262317101657787_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=106&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=wx4S_w-tqXcQ7kNvwEK_PiN&_nc_oc=AdrorF2YnFOaHdMsuvNF_SYzQqZNCO73WRZEhCh4yUSvHdKDq73y9nHx_iSywhRNoCY&_nc_zt=14&_nc_ht=scontent-lax3-2.xx&_nc_gid=HtN7tbfN0Hwhs2TUi3-xQQ&_nc_ss=7b289&oh=00_AQRWz8BwzpSP2x1otj924WWGUD3Ny_Sii3-bdPmto7fucw&oe=6AF7782E",
+        "https://scontent-lax3-1.xx.fbcdn.net/v/t39.35426-6/887686684_1721637259554159_5555745837206044060_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=104&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=u5Vr2ue9keoQ7kNvwEDR6ZO&_nc_oc=AdpQBJsXives_kV7gO--DjStTThvvRPx3pyealhEzbYCqli1BB23PAH_oKV_r3VG-Do&_nc_zt=14&_nc_ht=scontent-lax3-1.xx&_nc_gid=HtN7tbfN0Hwhs2TUi3-xQQ&_nc_ss=7b289&oh=00_AQSgJB4sx4uNiSIz7myCIcHnePfoTtEvjbSvSfFiscHRUw&oe=6AF78241",
+        "https://scontent-lax3-2.xx.fbcdn.net/v/t39.35426-6/886874509_2280222206089437_4808140060561431058_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=103&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=Euj7wNx07fYQ7kNvwGQyAdz&_nc_oc=AdrSj5pejZy3tnren7Z8bWQmTJtPEGVnH9gJM9curV7kIcYI2fV_zQ4hqcwjWwEy35A&_nc_zt=14&_nc_ht=scontent-lax3-2.xx&_nc_gid=HtN7tbfN0Hwhs2TUi3-xQQ&_nc_ss=7b289&oh=00_AQTred0U7Q5Eh5QELQidtd5Gg02YRsoly8OugrHVbtb0BA&oe=6AF76229",
+        "https://scontent-lax7-1.xx.fbcdn.net/v/t39.35426-6/888575543_1304257678496781_8484754236933677102_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=105&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=l6mG51F3WRcQ7kNvwEFSUah&_nc_oc=AdophscErs1giGn9MAiDt6kkdrbc0qdMJB4l3HVTnwH_cSI17K-OUQrMCBFz-F1cGU4&_nc_zt=14&_nc_ht=scontent-lax7-1.xx&_nc_gid=HtN7tbfN0Hwhs2TUi3-xQQ&_nc_ss=7b289&oh=00_AQS65yVowdCfid4TfNeC8bO51vwIN-13GChDQOSAiY3ZiQ&oe=6AF78A51",
+        "https://scontent-lax3-1.xx.fbcdn.net/v/t39.35426-6/885667342_1445072474422271_7361595576199998819_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=109&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=9xygW48D0YUQ7kNvwEnbB4x&_nc_oc=AdpKfkORg07pZAHmG3zgq0I_L1rAG4GYF6aAoU99bFyEWeMzE0hiivgtLV_6LXQp5PM&_nc_zt=14&_nc_ht=scontent-lax3-1.xx&_nc_gid=HtN7tbfN0Hwhs2TUi3-xQQ&_nc_ss=7b289&oh=00_AQTV397Ir8JvPsHbNMARRTTxDjHu-WAqi4-h4boor0ILhg&oe=6AF780D7",
+        "https://scontent-lax3-2.xx.fbcdn.net/v/t39.35426-6/886551761_2605513416581839_2116196882598238415_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=107&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=UBq5XJm7PAIQ7kNvwG2GChK&_nc_oc=Adqxrqg8gixoWlzTMRTcRHvZAQK7ZqBhz8zayg7-ZaNWWjivBAkIL6Cw6chrfcE-hjY&_nc_zt=14&_nc_ht=scontent-lax3-2.xx&_nc_gid=HtN7tbfN0Hwhs2TUi3-xQQ&_nc_ss=7b289&oh=00_AQRSn-QbJHBDIUP9BfgbX6FJ77YJGYxS4GmKvyH5u4Wy_A&oe=6AF75B88",
+        "https://scontent-lax3-2.xx.fbcdn.net/v/t39.35426-6/887061963_997134673435811_8608967131253328646_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=111&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=3Kgj_OFcZN4Q7kNvwHINmh1&_nc_oc=AdpUenlyeTE3TswE2vJq6fN8NZbCWMAYMmSoAZ2Y5DV5TxofTp2phelGSoxFNnkQ9Zo&_nc_zt=14&_nc_ht=scontent-lax3-2.xx&_nc_gid=HtN7tbfN0Hwhs2TUi3-xQQ&_nc_ss=7b289&oh=00_AQSXeheR_XxhO5gQJEA2GY92eT5Q_2Xsdf2zE1cFNyvHVg&oe=6AF7790B",
+        "https://scontent-lax3-1.xx.fbcdn.net/v/t39.35426-6/888832788_1806310940574074_5348782381347011632_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=102&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=hqy7Pd1vdbsQ7kNvwGHeL47&_nc_oc=AdqgfIHn9nvAZnzRzEJTBwd8LeYznj8AraQKM0CBjB0XsE8Rlf7ILf6_kaj9E1LXw_o&_nc_zt=14&_nc_ht=scontent-lax3-1.xx&_nc_gid=HtN7tbfN0Hwhs2TUi3-xQQ&_nc_ss=7b289&oh=00_AQQAz2bImgonsN9l2slaPfehhkvKY6OFyIaPAymd7vN_xQ&oe=6AF75F41",
+        "https://scontent-lax3-2.xx.fbcdn.net/v/t39.35426-6/888619611_1415419380315510_5481901798463862243_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=111&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=_GIPHCsY_JoQ7kNvwFI-cHy&_nc_oc=AdpUSuYNWXv1pdWcXtIJ5cCZsZLtYCJDFxgkpCC0WqL3USOUa_tVXG6-I68_TjTwiLo&_nc_zt=14&_nc_ht=scontent-lax3-2.xx&_nc_gid=HtN7tbfN0Hwhs2TUi3-xQQ&_nc_ss=7b289&oh=00_AQTNM_eXIfBOQpBPlPjiYo50F0JBt6TKqolV4lor5EIxVA&oe=6AF756C0",
+        "https://scontent-lax3-1.xx.fbcdn.net/v/t39.35426-6/890643156_1159774006993267_2786623637346293169_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=109&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=RVQtrGyNs2QQ7kNvwGMvd-I&_nc_oc=Ado--py5IlL2-INSF2NNLRlYK97qUks6Et4zXeFrj_lBtZuTecJbjCajZcF6OUuaKpg&_nc_zt=14&_nc_ht=scontent-lax3-1.xx&_nc_gid=HtN7tbfN0Hwhs2TUi3-xQQ&_nc_ss=7b289&oh=00_AQSxTLseyzJHZokCrNJkKDIcvOcFw7SsWMPOfO5_9SXbJw&oe=6AF770A0",
+        "https://scontent-lax3-1.xx.fbcdn.net/v/t39.35426-6/888792711_4560568630851892_131898850698792301_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=110&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=rwEQKfmLh-EQ7kNvwFu8SQw&_nc_oc=AdpURCdYNQaXKKib_7n7nddggSjV5pPXwpUhfG9JoqaGQlQ-aHTWBRY3cSNcZJ3XV70&_nc_zt=14&_nc_ht=scontent-lax3-1.xx&_nc_gid=HtN7tbfN0Hwhs2TUi3-xQQ&_nc_ss=7b289&oh=00_AQR9mHzbVKNMJ5SDqE2iiySMMEJR-OiG2LQA5OaugmapKw&oe=6AF7818A",
+        "https://scontent-lax3-1.xx.fbcdn.net/v/t39.35426-6/887198190_1614686287005298_8952026921772021355_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=108&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=phPll-BdWagQ7kNvwHOl6Hh&_nc_oc=AdoMeaBoru4vV-300rx3x3SFgzxApD34RHJ1FvOuBD6A3ttK1tDumzpBAlcnQpfO8CE&_nc_zt=14&_nc_ht=scontent-lax3-1.xx&_nc_gid=HtN7tbfN0Hwhs2TUi3-xQQ&_nc_ss=7b289&oh=00_AQRFax0UbJedh-PSJiZqnwKSaxDvTQ7u3Abu6KthbXNuzg&oe=6AF7835B",
+        "https://scontent-lax3-2.xx.fbcdn.net/v/t39.35426-6/890353684_1150195664198629_2300820710662663181_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=103&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=VGKM2n2nltAQ7kNvwHxBiTX&_nc_oc=AdqFWC8KKbBAJzobJYWv9T0JDgpHmi82itmNYGnYbke5WWsK1QBMICSJ9iw4rmgEjSA&_nc_zt=14&_nc_ht=scontent-lax3-2.xx&_nc_gid=HtN7tbfN0Hwhs2TUi3-xQQ&_nc_ss=7b289&oh=00_AQQ8ACGLMOCE2MO5u5U00PmTJVew3lKrt_diEM-xWesCtg&oe=6AF77518",
+        "https://scontent-lax3-2.xx.fbcdn.net/v/t39.35426-6/887556119_1800363321285952_4519150277883204069_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=103&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=RnahqkIRnpcQ7kNvwE25zIm&_nc_oc=AdqPweOEWBH1mq_woIwT-yFIH5y-QKaJJv48-NZC-VfGqDGNcFPqG1QL3BG71mDf14E&_nc_zt=14&_nc_ht=scontent-lax3-2.xx&_nc_gid=HtN7tbfN0Hwhs2TUi3-xQQ&_nc_ss=7b289&oh=00_AQQ5mONEtHv79xxFwjwJGfEwpkUyNJvHhg0wqH50papTnA&oe=6AF75FA4",
+        "https://scontent-lax3-1.xx.fbcdn.net/v/t39.35426-6/890281217_1830686334908624_6732341237514330731_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=102&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=lWiluQGya2kQ7kNvwFPkgwG&_nc_oc=Adq5nimimeWygT7t1RUHW4y2wMZ-1I3794On2O_wOKy1JViLvhYBnPELkoKAc2vgfYc&_nc_zt=14&_nc_ht=scontent-lax3-1.xx&_nc_gid=HtN7tbfN0Hwhs2TUi3-xQQ&_nc_ss=7b289&oh=00_AQSJe8K9Ugb2CW0CQ-gNxvaEGyUDC6GZTi9EHbE9rja78g&oe=6AF76C0A",
+        "https://scontent-lax3-2.xx.fbcdn.net/v/t39.35426-6/888381659_1650095053278706_5954793366503276568_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=106&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=L86AA-7aO_UQ7kNvwHtqemB&_nc_oc=AdqpBr-joMVROgNZ5Wg1kYMZptorO_F8aFRhfw2jP0k-4prz7fRrcwjCBHNNtNuasb4&_nc_zt=14&_nc_ht=scontent-lax3-2.xx&_nc_gid=HtN7tbfN0Hwhs2TUi3-xQQ&_nc_ss=7b289&oh=00_AQRwM8TwbhqzBsbUbqY1yqt9ddNul8yncRasZERACnkktA&oe=6AF78110",
+        "https://scontent-lax3-1.xx.fbcdn.net/v/t39.35426-6/887032679_1101597752868516_583646007875642892_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=109&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=SzhQvG9XBkAQ7kNvwEysK9-&_nc_oc=AdpneKdV3bKXOcbdjcKULt7cqv_O5_jJNcVl3rIFLZwUSHR-6cQUX9nDdmMDds7hSkM&_nc_zt=14&_nc_ht=scontent-lax3-1.xx&_nc_gid=HtN7tbfN0Hwhs2TUi3-xQQ&_nc_ss=7b289&oh=00_AQRL8cp-rY3QwFdM0bAHsJBvhkBYHB_VJgr0gSyTR-Y-jw&oe=6AF77568",
+        "https://scontent-lax7-1.xx.fbcdn.net/v/t39.35426-6/889612792_4436890406528813_7124988736081789673_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=101&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=MU2XFvIrM8YQ7kNvwGHf-vd&_nc_oc=AdqODtPcarCb0gebbwbvcOIq7T3nNB1X0thabzNlrw-SHDxsXqlCNX4L3Q-PU07JJ8g&_nc_zt=14&_nc_ht=scontent-lax7-1.xx&_nc_gid=HtN7tbfN0Hwhs2TUi3-xQQ&_nc_ss=7b289&oh=00_AQQg8IqTpO_sp8XJvD47CwWt58tqR6xKPVGHTJWTEG51Mg&oe=6AF75CC2",
+        "https://scontent-lax3-1.xx.fbcdn.net/v/t39.35426-6/887184062_2922180751492099_3580767043048591721_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=104&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=FEZjSlwGwJ4Q7kNvwHWXjcE&_nc_oc=AdqN3CvPQ3yRJFB5TIEnzp9DnVdAsqCwOtu35t-9Vu9zZCNbqBMJEpQ-WUhJ9q8yaiM&_nc_zt=14&_nc_ht=scontent-lax3-1.xx&_nc_gid=HtN7tbfN0Hwhs2TUi3-xQQ&_nc_ss=7b289&oh=00_AQT9vYjXO-alDh_yAArFteiGyXKJrLd2cTbBhFgjNPvhjg&oe=6AF77049",
+        "https://scontent-lax7-1.xx.fbcdn.net/v/t39.35426-6/886842683_1172719758624529_5781691900303179883_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=105&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=yJVEBpswAM0Q7kNvwFboIrM&_nc_oc=AdpN0Upfu1tsDXIOBz-CbvFUr6GxZ6HGuPW9c3uMI21dmlxiAmx-3ce50tgehpo52xA&_nc_zt=14&_nc_ht=scontent-lax7-1.xx&_nc_gid=HtN7tbfN0Hwhs2TUi3-xQQ&_nc_ss=7b289&oh=00_AQQOAtsNjaF9H5u0yJfuukE52HgAi6LSiseeeOf24UjBXA&oe=6AF77A2B",
+        "https://scontent-lax3-2.xx.fbcdn.net/v/t39.35426-6/890616898_1757896528804921_2837000952337807303_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=100&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=t9NfSPs8uF4Q7kNvwE4-ZVu&_nc_oc=Adqa1TNyL8c_lv_sdYmWKfZyrkDFTUjjss6I95Ne6YuGN7DdPfPFtRCpn1RvOzs8EIk&_nc_zt=14&_nc_ht=scontent-lax3-2.xx&_nc_gid=HtN7tbfN0Hwhs2TUi3-xQQ&_nc_ss=7b289&oh=00_AQSV1agGKGJkmUVDaAaJS37bq5-5vu9oHSY9rWtrVAEY6g&oe=6AF78A86",
+        "https://scontent-lax7-1.xx.fbcdn.net/v/t39.35426-6/887604376_2298916024243875_4735420763773079755_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=105&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=3EgRGUHzxBEQ7kNvwEQE006&_nc_oc=Adr2z9hE4nn7tij_okaJj4NUMH7ogDcECS_KEwPrGtj67xycJdcxDNerIYta33p3nWM&_nc_zt=14&_nc_ht=scontent-lax7-1.xx&_nc_gid=HtN7tbfN0Hwhs2TUi3-xQQ&_nc_ss=7b289&oh=00_AQSH_taFIvNteawjIdm2NDNhtRpYQ1bWjyf7AlTUDqWhfQ&oe=6AF78D6C",
+        "https://scontent-lax3-2.xx.fbcdn.net/v/t39.35426-6/886936792_1187412083863650_2979221783991196288_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=100&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=sNGrB6vst88Q7kNvwEfmKpq&_nc_oc=AdqiPy29MtVjMPi959-CRkkJkSiVt8Bag6QbtPeT4ilApk_YnMUDvPfMS8AIahZPBWM&_nc_zt=14&_nc_ht=scontent-lax3-2.xx&_nc_gid=HtN7tbfN0Hwhs2TUi3-xQQ&_nc_ss=7b289&oh=00_AQS-ePzOtIdHswoJG-sJHhWqM7UhWkValrJdnBnyv0smlQ&oe=6AF76CC8",
+        "https://scontent-lax3-1.xx.fbcdn.net/v/t39.35426-6/885919728_2352156782213610_2134198039954060070_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=109&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=2e72OXf_3LMQ7kNvwEZgIy4&_nc_oc=AdqyfALV6XqRzqnHsPMdac4hYxdoWnU2YDz5EWTcaoJZMY0NU7s_9-MyBlTFRHC5H5A&_nc_zt=14&_nc_ht=scontent-lax3-1.xx&_nc_gid=HtN7tbfN0Hwhs2TUi3-xQQ&_nc_ss=7b289&oh=00_AQQKjNrycCvRULOdlQBFTU9FnCX2ak5oTK_81KL54tnQgA&oe=6AF787EF",
+        "https://scontent-lax3-2.xx.fbcdn.net/v/t39.35426-6/886730302_2214230312843084_5782287138541263813_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=100&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=lmaPCdkuyT0Q7kNvwGiSQy0&_nc_oc=AdpmBNAGsWeukQsLrCF9EVHORRHoi3iQWWG8hBDGhot4SjVncvQKguNJTIfp1X3M2fg&_nc_zt=14&_nc_ht=scontent-lax3-2.xx&_nc_gid=HtN7tbfN0Hwhs2TUi3-xQQ&_nc_ss=7b289&oh=00_AQTNuWEWEDekP26zHmjtKsadGSS29ektKwZG97ZEcsKb8g&oe=6AF75CD2",
+        "https://scontent-lax3-2.xx.fbcdn.net/v/t39.35426-6/887367388_1909244227155192_8690218924904238055_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=100&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=wUiza8yQcIAQ7kNvwHfGaHP&_nc_oc=AdpMEVYUQlYFEEw9wGpbPMpqwlxzZx6zFXylzDbjlokwhSnN4IEbIGJQyeIOTUkOK04&_nc_zt=14&_nc_ht=scontent-lax3-2.xx&_nc_gid=HtN7tbfN0Hwhs2TUi3-xQQ&_nc_ss=7b289&oh=00_AQR3r40PKapjjytrgT1wDGm5uWGE0ffJc7Yu0ttPrvphVQ&oe=6AF759A0",
+        "https://scontent-lax3-2.xx.fbcdn.net/v/t39.35426-6/886936773_1637569001747549_3631408829870453230_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=103&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=tn9xxy8wTgsQ7kNvwH4XAR1&_nc_oc=Adp-vT_-m5RbxAt8bWhUlDTgStq9yKX6ATJko5dhDGnJygI5-o1KpgJSfgVwnwVU3as&_nc_zt=14&_nc_ht=scontent-lax3-2.xx&_nc_gid=HtN7tbfN0Hwhs2TUi3-xQQ&_nc_ss=7b289&oh=00_AQRPGS2UlD16fXgX9irvpxOZfzE53PjbGPQYGIj83c6wzQ&oe=6AF7616A",
+        "https://scontent-lax3-2.xx.fbcdn.net/v/t39.35426-6/886608454_2330094671071162_1199024029900545266_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=106&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=yPmhbhDJxqkQ7kNvwHvejo1&_nc_oc=AdqCDcAiIIZYvBRpgdWBhhIRj0AWlW0J4UW7q2lNdCfJ-3bXXA5qBBG237g3xkrL8zU&_nc_zt=14&_nc_ht=scontent-lax3-2.xx&_nc_gid=HtN7tbfN0Hwhs2TUi3-xQQ&_nc_ss=7b289&oh=00_AQTRbSt9CCQbq85laGB5bVDjGi00UJsn64FSs66dTn4rvA&oe=6AF77F14",
+        "https://scontent-lax3-1.xx.fbcdn.net/v/t39.35426-6/886633255_1862615291834782_4750425998056392785_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=104&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=JuhXtDDl7jUQ7kNvwFmicZn&_nc_oc=AdrshaTcQLq4yS4nGPjduGcKpp93lql4ytRWcvFBb6EHRULd3BD5v23V-WXJqyKe4AE&_nc_zt=14&_nc_ht=scontent-lax3-1.xx&_nc_gid=HtN7tbfN0Hwhs2TUi3-xQQ&_nc_ss=7b289&oh=00_AQQ9R4eAaVLdxvBOasgocqpcXpweYMEYAzYlYzdv-TWkmQ&oe=6AF76BDE",
+        "https://scontent-lax7-1.xx.fbcdn.net/v/t39.35426-6/888160057_1143582448320498_4461714736067820793_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=105&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=9kv6xT8Vev0Q7kNvwFp295X&_nc_oc=Adrsm72HIQq3rq_w04g1E0NPIBqPpqF8QrEvKvcGhBiTmhIAHg6F-L_VGDuXSR2KIo4&_nc_zt=14&_nc_ht=scontent-lax7-1.xx&_nc_gid=HtN7tbfN0Hwhs2TUi3-xQQ&_nc_ss=7b289&oh=00_AQSOeF36EMDKbuBzHKpMMpVuF8WSICZ9PUAUffSTFJOFiA&oe=6AF78E7F",
+        "https://scontent-lax3-2.xx.fbcdn.net/v/t39.35426-6/886608454_1625594532634688_4613191521192273410_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=111&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=ojNPfcK-QlkQ7kNvwGN1KD_&_nc_oc=AdrKzc9m3lgt86zqgm6UUWK1DTfYHqb2RAMmMkBDVIyRtYxAxEBJx9kF5LLdqH_8lB0&_nc_zt=14&_nc_ht=scontent-lax3-2.xx&_nc_gid=HtN7tbfN0Hwhs2TUi3-xQQ&_nc_ss=7b289&oh=00_AQStvZnysuEPXvk6yyG7Tn_XV02WM21e0MFbkuDlRR1P9Q&oe=6AF75CCE",
+        "https://scontent-lax3-1.xx.fbcdn.net/v/t39.35426-6/886769716_964967379629383_6481547449047411972_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=109&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=7zo3GEEkVREQ7kNvwHaRlCf&_nc_oc=Adoh-IOWhRVKaYdjmQfvT6U-OwXguZHsl7A6Bow8zUOmqof6eCixE4K6Mk6z9tWgvo4&_nc_zt=14&_nc_ht=scontent-lax3-1.xx&_nc_gid=HtN7tbfN0Hwhs2TUi3-xQQ&_nc_ss=7b289&oh=00_AQTYtmRXT6P4b2hziqaCs-Iq6mH5R0IZpay4bvgmxoGsCA&oe=6AF77D3F",
+        "https://scontent-lax3-1.xx.fbcdn.net/v/t39.35426-6/890281229_1599752774631140_5526729067316293233_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=104&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=_QPG2qx5vxEQ7kNvwHn5vhL&_nc_oc=AdqlDbWSvX44OSrpYkVKh9r_1Wa1D3IebMtks7d2_U8bkjixsumurWU6pzxeBmSP-SU&_nc_zt=14&_nc_ht=scontent-lax3-1.xx&_nc_gid=HtN7tbfN0Hwhs2TUi3-xQQ&_nc_ss=7b289&oh=00_AQQRmsYjGrhXMru3mLZrH8Qn5C4pMxCsByIPw17vt5lCXg&oe=6AF77AC0",
+        "https://scontent-lax3-2.xx.fbcdn.net/v/t39.35426-6/889144805_2140893439888797_1366910531159577158_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=107&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=a6681F7jPjoQ7kNvwE6Ufoo&_nc_oc=Ado4XvMUbF7EHVsUxEIz4aUIczndl50PrmKO3zBJoj-UH4SIYn3JPVwkpcFnFSpf-c0&_nc_zt=14&_nc_ht=scontent-lax3-2.xx&_nc_gid=HtN7tbfN0Hwhs2TUi3-xQQ&_nc_ss=7b289&oh=00_AQTlrSLwUloUbmBYlNAJf0FD5ikKMIfhgdixo4HNUBfYXA&oe=6AF77321",
+        "https://scontent-lax3-1.xx.fbcdn.net/v/t39.35426-6/887032668_2591140278026613_4274502490995856039_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=110&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=bvtVYU8OJvAQ7kNvwGUyvz_&_nc_oc=AdqrUcDCbwFssSfd8cJ1e9GwrANwSRWx9ld7X7NYfO7MSXuoOvCFdd8vftochYuc4vM&_nc_zt=14&_nc_ht=scontent-lax3-1.xx&_nc_gid=HtN7tbfN0Hwhs2TUi3-xQQ&_nc_ss=7b289&oh=00_AQRSqqdoHvfVPZAYVTnfRDxPuxx304CyCXLituUpCj8cIw&oe=6AF78056",
+        "https://scontent-lax3-1.xx.fbcdn.net/v/t39.35426-6/886730285_1129376769461305_2674090869469121165_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=109&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=fvftpHA4hT0Q7kNvwFR7YQa&_nc_oc=AdpVrlMO8DiLSrj9KUnrA7qy01AmoqVzwdEa0D-skWPoBzhMcuMTj_MkYrXW9I8whQw&_nc_zt=14&_nc_ht=scontent-lax3-1.xx&_nc_gid=HtN7tbfN0Hwhs2TUi3-xQQ&_nc_ss=7b289&oh=00_AQQcFQ5FvosR6wd1G4-0Kg0Lfh0wQYYvF3uJIPlfIoRXXw&oe=6AF7690A",
+        "https://scontent-lax3-2.xx.fbcdn.net/v/t39.35426-6/890344403_1681617359987172_423314007556572374_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=111&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=PPDmIfpZ9t8Q7kNvwESFVna&_nc_oc=AdroAhkPYW-ncBA5TmOVirCdELGV6izA2-_gE1qtZd9quMLOfTvRGC_blYvGm65prAw&_nc_zt=14&_nc_ht=scontent-lax3-2.xx&_nc_gid=HtN7tbfN0Hwhs2TUi3-xQQ&_nc_ss=7b289&oh=00_AQRzj7NfU04qhJQK3N2D1IXet9rb2t2--8NweEdUvk0Anw&oe=6AF7725A",
+        "https://scontent-lax3-2.xx.fbcdn.net/v/t39.35426-6/887399829_1476774677682026_5091228372696673967_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=100&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=XZT2H__-9N8Q7kNvwGltazW&_nc_oc=AdpVCvCeNKew9RMBJzJirY14_T2ncaUuv08d3E7cqFWmjooD8ZqAhPb6d3BgJfO-TDg&_nc_zt=14&_nc_ht=scontent-lax3-2.xx&_nc_gid=HtN7tbfN0Hwhs2TUi3-xQQ&_nc_ss=7b289&oh=00_AQQNV-dmJYMOPlmcz_ygTJ5DhumN6UsEp6v-C6rOad3Kjg&oe=6AF759ED"
+      ],
+      "has_video": false,
+      "same_creative_count": 0,
+      "multiple_versions": false,
+      "cta_type": "",
+      "display_format": "dco",
+      "cards": [
+        {
+          "body": "🔥 عروض رهيبة وتوفير أكبر في كارفور!\n🛒 تصفّح عروضنا واختار اللي تحتاجه بأوفر الأسعار\n📅 ابتداءً من 4 نوفمبر 2026\n#كارفور\\_السعودية #أسعد\\_اللحظات #CarrefourSaudi #GreatMoments",
+          "cta": "",
+          "image": "https://scontent-lax3-2.xx.fbcdn.net/v/t39.35426-6/886655181_2242517256317607_8856039758232218318_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=100&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=sPzAHT3Hy14Q7kNvwH-M5GM&_nc_oc=AdoDzd3Nxf_o66fRKe74JGkh6gmzDlmx_WY4kOaRv6_oZC6mbaKStdBwkPg5_sUMmNA&_nc_zt=14&_nc_ht=scontent-lax3-2.xx&_nc_gid=HtN7tbfN0Hwhs2TUi3-xQQ&_nc_ss=7b289&oh=00_AQTZNztMkqUdenVj-3gEGnxay_uhV9845K9iJNNq-dBsqg&oe=6AF7810C",
+          "link_url": "",
+          "title": "",
+          "video": null
+        },
+        {
+          "body": "🔥 عروض رهيبة وتوفير أكبر في كارفور!\n🛒 تصفّح عروضنا واختار اللي تحتاجه بأوفر الأسعار\n📅 ابتداءً من 4 نوفمبر 2026\n#كارفور\\_السعودية #أسعد\\_اللحظات #CarrefourSaudi #GreatMoments",
+          "cta": "",
+          "image": "https://scontent-lax7-1.xx.fbcdn.net/v/t39.35426-6/886769713_3628254474016132_4947086188089857965_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=105&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=3hDYiFTIxFMQ7kNvwF4NjtJ&_nc_oc=AdpbsSq-3zxXZSqpN98hZvYeDYsEh7otbUAuFh-EtCZaHDu9WfWDWeHKJvYjDbrTs4A&_nc_zt=14&_nc_ht=scontent-lax7-1.xx&_nc_gid=HtN7tbfN0Hwhs2TUi3-xQQ&_nc_ss=7b289&oh=00_AQQMFaY9TH3BsrjQJTAj65wXhKeLS89kV11tyhtTxyecRw&oe=6AF77734",
+          "link_url": "",
+          "title": "",
+          "video": null
+        },
+        {
+          "body": "🔥 عروض رهيبة وتوفير أكبر في كارفور!\n🛒 تصفّح عروضنا واختار اللي تحتاجه بأوفر الأسعار\n📅 ابتداءً من 4 نوفمبر 2026\n#كارفور\\_السعودية #أسعد\\_اللحظات #CarrefourSaudi #GreatMoments",
+          "cta": "",
+          "image": "https://scontent-lax3-1.xx.fbcdn.net/v/t39.35426-6/885919724_1566062408622352_976853592064153457_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=108&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=UzHWLPjrnzoQ7kNvwHuBLE0&_nc_oc=AdomzG0yPdvoOjqgbbltnqudslS78unR60jDrD08kme9UVu6PMGxwXmkUQHmJgTUw0g&_nc_zt=14&_nc_ht=scontent-lax3-1.xx&_nc_gid=HtN7tbfN0Hwhs2TUi3-xQQ&_nc_ss=7b289&oh=00_AQQS2qq3YwdC2ejqjz4NHcgI8n7iqXMKijyNkQ41axZR8w&oe=6AF76B20",
+          "link_url": "",
+          "title": "",
+          "video": null
+        },
+        {
+          "body": "🔥 عروض رهيبة وتوفير أكبر في كارفور!\n🛒 تصفّح عروضنا واختار اللي تحتاجه بأوفر الأسعار\n📅 ابتداءً من 4 نوفمبر 2026\n#كارفور\\_السعودية #أسعد\\_اللحظات #CarrefourSaudi #GreatMoments",
+          "cta": "",
+          "image": "https://scontent-lax3-2.xx.fbcdn.net/v/t39.35426-6/891289950_1505459394760113_5621970922751687980_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=103&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=YcqX0EJKG0sQ7kNvwEBUKxK&_nc_oc=AdppT1C2BnIVOHxNeLFHR89_yOXE5O1sgo_QikoxcszjmP_G59tzpPIjq23bJb4LeW0&_nc_zt=14&_nc_ht=scontent-lax3-2.xx&_nc_gid=HtN7tbfN0Hwhs2TUi3-xQQ&_nc_ss=7b289&oh=00_AQQ3XzSt6WN_hKwKxD_sHlfuC08XJou1DLXwmsysz8RiIg&oe=6AF78399",
+          "link_url": "",
+          "title": "",
+          "video": null
+        },
+        {
+          "body": "🔥 عروض رهيبة وتوفير أكبر في كارفور!\n🛒 تصفّح عروضنا واختار اللي تحتاجه بأوفر الأسعار\n📅 ابتداءً من 4 نوفمبر 2026\n#كارفور\\_السعودية #أسعد\\_اللحظات #CarrefourSaudi #GreatMoments",
+          "cta": "",
+          "image": "https://scontent-lax3-2.xx.fbcdn.net/v/t39.35426-6/886842679_2077729883614584_5044789466777571197_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=107&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=Ndd-F0nT9vMQ7kNvwFq40qD&_nc_oc=Adpg2c9bfP5C0K9ZGK6GqWt0vqof06IH8JTloqhaJHQSy11ilNEwESM_bv8H_tyyU4s&_nc_zt=14&_nc_ht=scontent-lax3-2.xx&_nc_gid=HtN7tbfN0Hwhs2TUi3-xQQ&_nc_ss=7b289&oh=00_AQRMSszYemV4IwAgOt0tLqOFnThHucAcjEGoMbiLmbx5Lw&oe=6AF76233",
+          "link_url": "",
+          "title": "",
+          "video": null
+        },
+        {
+          "body": "🔥 عروض رهيبة وتوفير أكبر في كارفور!\n🛒 تصفّح عروضنا واختار اللي تحتاجه بأوفر الأسعار\n📅 ابتداءً من 4 نوفمبر 2026\n#كارفور\\_السعودية #أسعد\\_اللحظات #CarrefourSaudi #GreatMoments",
+          "cta": "",
+          "image": "https://scontent-lax3-1.xx.fbcdn.net/v/t39.35426-6/887051526_1444572590378972_8767703592451598785_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=110&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=ozlfu0HRNL8Q7kNvwGkgYbu&_nc_oc=AdqeykiN7ShLcy3NvT8gCJ2LBEzcqHKgwDfENwYfQywqnEt6x2kj7YpqObTcc0Wv2jw&_nc_zt=14&_nc_ht=scontent-lax3-1.xx&_nc_gid=HtN7tbfN0Hwhs2TUi3-xQQ&_nc_ss=7b289&oh=00_AQQbdkw26Ya_pmScZHDFRx-x4dBMTnbGQiEBDllYEu6h-g&oe=6AF769BE",
+          "link_url": "",
+          "title": "",
+          "video": null
+        },
+        {
+          "body": "🔥 عروض رهيبة وتوفير أكبر في كارفور!\n🛒 تصفّح عروضنا واختار اللي تحتاجه بأوفر الأسعار\n📅 ابتداءً من 4 نوفمبر 2026\n#كارفور\\_السعودية #أسعد\\_اللحظات #CarrefourSaudi #GreatMoments",
+          "cta": "",
+          "image": "https://scontent-lax3-1.xx.fbcdn.net/v/t39.35426-6/889809991_1835341594584497_2688119626447921556_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=108&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=0sZ1rA48I7oQ7kNvwHa3nJN&_nc_oc=Ado6j0BdM6H-dXhgJQU7VUJ-NHrcazRF2zXxuZtyfJ0-wnQSHpBkvf_7gNBNecZRMlA&_nc_zt=14&_nc_ht=scontent-lax3-1.xx&_nc_gid=HtN7tbfN0Hwhs2TUi3-xQQ&_nc_ss=7b289&oh=00_AQThbP0kfCdVLm1RTBf6J0JjtX5EH_Pkxw6JywgixO_kwg&oe=6AF786CD",
+          "link_url": "",
+          "title": "",
+          "video": null
+        },
+        {
+          "body": "🔥 عروض رهيبة وتوفير أكبر في كارفور!\n🛒 تصفّح عروضنا واختار اللي تحتاجه بأوفر الأسعار\n📅 ابتداءً من 4 نوفمبر 2026\n#كارفور\\_السعودية #أسعد\\_اللحظات #CarrefourSaudi #GreatMoments",
+          "cta": "",
+          "image": "https://scontent-lax3-2.xx.fbcdn.net/v/t39.35426-6/889541951_2024296184904107_234081566488543584_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=103&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=hfYvsY1fsUYQ7kNvwFgTHh4&_nc_oc=AdoIWCkuwWduwno6KkfaLnmHOVkInH7nHd1YdMMQ9eJRjwRqUfjChKBKUgN6UX6UPe8&_nc_zt=14&_nc_ht=scontent-lax3-2.xx&_nc_gid=HtN7tbfN0Hwhs2TUi3-xQQ&_nc_ss=7b289&oh=00_AQTQty69nV4L3Mk0QQEPUq96Pkt3-98LbUGqDbxnsI1FhA&oe=6AF75FDE",
+          "link_url": "",
+          "title": "",
+          "video": null
+        },
+        {
+          "body": "🔥 عروض رهيبة وتوفير أكبر في كارفور!\n🛒 تصفّح عروضنا واختار اللي تحتاجه بأوفر الأسعار\n📅 ابتداءً من 4 نوفمبر 2026\n#كارفور\\_السعودية #أسعد\\_اللحظات #CarrefourSaudi #GreatMoments",
+          "cta": "",
+          "image": "https://scontent-lax7-1.xx.fbcdn.net/v/t39.35426-6/889809996_1493145929327881_200143763220685676_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=105&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=-wi_x9vnPpMQ7kNvwGAEq09&_nc_oc=AdoNGBo-zF5YwdQmXnNsJneAzFfPxZRbJhtvGTwVa077UXxcpl7iQoVqpzTVaHhZKD8&_nc_zt=14&_nc_ht=scontent-lax7-1.xx&_nc_gid=HtN7tbfN0Hwhs2TUi3-xQQ&_nc_ss=7b289&oh=00_AQQyzbLHAwp9OwHptH2BQRFHWTiIV-2aA6QhSR88-DXerA&oe=6AF77C09",
+          "link_url": "",
+          "title": "",
+          "video": null
+        },
+        {
+          "body": "🔥 عروض رهيبة وتوفير أكبر في كارفور!\n🛒 تصفّح عروضنا واختار اللي تحتاجه بأوفر الأسعار\n📅 ابتداءً من 4 نوفمبر 2026\n#كارفور\\_السعودية #أسعد\\_اللحظات #CarrefourSaudi #GreatMoments",
+          "cta": "",
+          "image": "https://scontent-lax7-1.xx.fbcdn.net/v/t39.35426-6/887011360_1695569085325545_2430189804593719713_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=105&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=_Ik_1Ey_2-4Q7kNvwH7T2dZ&_nc_oc=AdoTlklztd7kg6LrO4gAAhXeKvcL_x4lqHCjk36SeR3O_NNlR9oprAB37zCgi33-m3w&_nc_zt=14&_nc_ht=scontent-lax7-1.xx&_nc_gid=HtN7tbfN0Hwhs2TUi3-xQQ&_nc_ss=7b289&oh=00_AQTljqiedssIAYd4z2TkIRq8Hxhbkys8GidbPe_5qk4Gog&oe=6AF7693B",
+          "link_url": "",
+          "title": "",
+          "video": null
+        },
+        {
+          "body": "🔥 عروض رهيبة وتوفير أكبر في كارفور!\n🛒 تصفّح عروضنا واختار اللي تحتاجه بأوفر الأسعار\n📅 ابتداءً من 4 نوفمبر 2026\n#كارفور\\_السعودية #أسعد\\_اللحظات #CarrefourSaudi #GreatMoments",
+          "cta": "",
+          "image": "https://scontent-lax7-1.xx.fbcdn.net/v/t39.35426-6/886936805_1863310988268995_3537640172980561841_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=105&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=hoLAEck3CpkQ7kNvwE0qwKz&_nc_oc=AdprtVXDocz7U-KFkrsgfD55i-wyTLV_2N6CRXXsTZewygpanH1PvAXJx1-u5lh9Amw&_nc_zt=14&_nc_ht=scontent-lax7-1.xx&_nc_gid=HtN7tbfN0Hwhs2TUi3-xQQ&_nc_ss=7b289&oh=00_AQTsvoVzaM9FHNr_hWwIMW2Wz7pQPtluPJRQSrT2jADEnw&oe=6AF75BA5",
+          "link_url": "",
+          "title": "",
+          "video": null
+        },
+        {
+          "body": "🔥 عروض رهيبة وتوفير أكبر في كارفور!\n🛒 تصفّح عروضنا واختار اللي تحتاجه بأوفر الأسعار\n📅 ابتداءً من 4 نوفمبر 2026\n#كارفور\\_السعودية #أسعد\\_اللحظات #CarrefourSaudi #GreatMoments",
+          "cta": "",
+          "image": "https://scontent-lax3-2.xx.fbcdn.net/v/t39.35426-6/887643818_1519383023331294_3161233336166694455_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=106&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=o5FAhJr7O5wQ7kNvwHz0MJc&_nc_oc=AdoaXl32qculNR01U7GBneY7c3aPI259xG0YgIb-TiB5W2K91HCDhmCetABw7mL3xVg&_nc_zt=14&_nc_ht=scontent-lax3-2.xx&_nc_gid=HtN7tbfN0Hwhs2TUi3-xQQ&_nc_ss=7b289&oh=00_AQSwhSNr6wb5COahKNflIQ39Ugzl4_dKGjuSFBpZWQbqUQ&oe=6AF75660",
+          "link_url": "",
+          "title": "",
+          "video": null
+        },
+        {
+          "body": "🔥 عروض رهيبة وتوفير أكبر في كارفور!\n🛒 تصفّح عروضنا واختار اللي تحتاجه بأوفر الأسعار\n📅 ابتداءً من 4 نوفمبر 2026\n#كارفور\\_السعودية #أسعد\\_اللحظات #CarrefourSaudi #GreatMoments",
+          "cta": "",
+          "image": "https://scontent-lax3-1.xx.fbcdn.net/v/t39.35426-6/885919728_29381063034833771_8223770252158184249_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=109&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=BlrfLK-f5bEQ7kNvwF98Dis&_nc_oc=AdqfiXz-ApQ4MUtJQUF3agItcuJxW0KBPvFYZiLwvQGR2B_OZ_ze4p3hnvhMfZMqB9A&_nc_zt=14&_nc_ht=scontent-lax3-1.xx&_nc_gid=HtN7tbfN0Hwhs2TUi3-xQQ&_nc_ss=7b289&oh=00_AQTj8dRqww7S248ojEX3e2NrZQ1TUrZVjuaCBjcwiRh1aQ&oe=6AF76E74",
+          "link_url": "",
+          "title": "",
+          "video": null
+        },
+        {
+          "body": "🔥 عروض رهيبة وتوفير أكبر في كارفور!\n🛒 تصفّح عروضنا واختار اللي تحتاجه بأوفر الأسعار\n📅 ابتداءً من 4 نوفمبر 2026\n#كارفور\\_السعودية #أسعد\\_اللحظات #CarrefourSaudi #GreatMoments",
+          "cta": "",
+          "image": "https://scontent-lax3-1.xx.fbcdn.net/v/t39.35426-6/889088801_3182965878575255_3117878697482796777_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=110&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=fAomGKGd2MwQ7kNvwEdyGWf&_nc_oc=Adpgq4fpIVD43u8IblVCiaFJ4qB_n_bricd2S45hHdfFFkZ-eMgY8NNKCdr_BMn9yvI&_nc_zt=14&_nc_ht=scontent-lax3-1.xx&_nc_gid=HtN7tbfN0Hwhs2TUi3-xQQ&_nc_ss=7b289&oh=00_AQSnL57uSu6L1vmTpm0l6gZnyr9I7z4GGclzNY1Te7iYkg&oe=6AF77EF5",
+          "link_url": "",
+          "title": "",
+          "video": null
+        },
+        {
+          "body": "🔥 عروض رهيبة وتوفير أكبر في كارفور!\n🛒 تصفّح عروضنا واختار اللي تحتاجه بأوفر الأسعار\n📅 ابتداءً من 4 نوفمبر 2026\n#كارفور\\_السعودية #أسعد\\_اللحظات #CarrefourSaudi #GreatMoments",
+          "cta": "",
+          "image": "https://scontent-lax3-2.xx.fbcdn.net/v/t39.35426-6/887092921_1495534579151774_8058857790124664498_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=100&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=eBR61JHfo_sQ7kNvwF9ZjCQ&_nc_oc=AdoKseFYlrN4TtXuQiZTvbn_Q0pRHKnhGmMr0YU4uqdR6MgiYkalxIfG-Diz-cY7VkI&_nc_zt=14&_nc_ht=scontent-lax3-2.xx&_nc_gid=HtN7tbfN0Hwhs2TUi3-xQQ&_nc_ss=7b289&oh=00_AQTCgf7F7HzQXzTi4E0kNfCUjxzomGZuORq9v224SacCag&oe=6AF75759",
+          "link_url": "",
+          "title": "",
+          "video": null
+        },
+        {
+          "body": "🔥 عروض رهيبة وتوفير أكبر في كارفور!\n🛒 تصفّح عروضنا واختار اللي تحتاجه بأوفر الأسعار\n📅 ابتداءً من 4 نوفمبر 2026\n#كارفور\\_السعودية #أسعد\\_اللحظات #CarrefourSaudi #GreatMoments",
+          "cta": "",
+          "image": "https://scontent-lax3-1.xx.fbcdn.net/v/t39.35426-6/887032675_2300273924158426_7590004405124433567_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=109&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=i6wGUl9HHVMQ7kNvwHruTr-&_nc_oc=Adr04rHrhAg0L4pfh7m6_asBzTLz8YJxlSo7MmbMo5KBkY_PYs3MnigGHmlCtEzZdLY&_nc_zt=14&_nc_ht=scontent-lax3-1.xx&_nc_gid=HtN7tbfN0Hwhs2TUi3-xQQ&_nc_ss=7b289&oh=00_AQSUj2d4tut4aIQRTZ5RCRM0BHV549ASxWbeF9l5FMShjA&oe=6AF769B6",
+          "link_url": "",
+          "title": "",
+          "video": null
+        },
+        {
+          "body": "🔥 عروض رهيبة وتوفير أكبر في كارفور!\n🛒 تصفّح عروضنا واختار اللي تحتاجه بأوفر الأسعار\n📅 ابتداءً من 4 نوفمبر 2026\n#كارفور\\_السعودية #أسعد\\_اللحظات #CarrefourSaudi #GreatMoments",
+          "cta": "",
+          "image": "https://scontent-lax3-2.xx.fbcdn.net/v/t39.35426-6/886475771_1890337165748753_5308733914101887921_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=107&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=jznrLSW1iOQQ7kNvwEs0VPp&_nc_oc=AdqcnODa9QKw9He-0j6O2tGrmgkbv0zs_Ni9-I_ezhWSUTxOl3r0H6atmpOXdI9ZndY&_nc_zt=14&_nc_ht=scontent-lax3-2.xx&_nc_gid=HtN7tbfN0Hwhs2TUi3-xQQ&_nc_ss=7b289&oh=00_AQTZaxTnWtFpPQDmIUFujAJETKv_HdWUQjA89vl8x1IFeQ&oe=6AF75905",
+          "link_url": "",
+          "title": "",
+          "video": null
+        },
+        {
+          "body": "🔥 عروض رهيبة وتوفير أكبر في كارفور!\n🛒 تصفّح عروضنا واختار اللي تحتاجه بأوفر الأسعار\n📅 ابتداءً من 4 نوفمبر 2026\n#كارفور\\_السعودية #أسعد\\_اللحظات #CarrefourSaudi #GreatMoments",
+          "cta": "",
+          "image": "https://scontent-lax3-2.xx.fbcdn.net/v/t39.35426-6/888033051_2220704265464605_2302307999802421747_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=100&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=e2d9cWfiqWQQ7kNvwFGivJp&_nc_oc=Adqj9LZDvh8O9kjpp48ZqJ6E5yRSMvdtBlGc6qsbYIcxXtlhSF6XDNgiGk72e44yeSw&_nc_zt=14&_nc_ht=scontent-lax3-2.xx&_nc_gid=HtN7tbfN0Hwhs2TUi3-xQQ&_nc_ss=7b289&oh=00_AQQJXNb-QKGsxdy5sGgeXn_3ZK77rD6xh8ZkJAQ1oQCgbg&oe=6AF77A2F",
+          "link_url": "",
+          "title": "",
+          "video": null
+        },
+        {
+          "body": "🔥 عروض رهيبة وتوفير أكبر في كارفور!\n🛒 تصفّح عروضنا واختار اللي تحتاجه بأوفر الأسعار\n📅 ابتداءً من 4 نوفمبر 2026\n#كارفور\\_السعودية #أسعد\\_اللحظات #CarrefourSaudi #GreatMoments",
+          "cta": "",
+          "image": "https://scontent-lax3-2.xx.fbcdn.net/v/t39.35426-6/886705961_2247019402866350_6146681559089178417_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=111&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=IfKeOd-a0OwQ7kNvwGcgLB7&_nc_oc=AdpeeurRy6v-dIIGeBRlTF2Csb9OtIXjOXqF0tWS0Z772Uhr7QSFonoDCk2NiEaFQrk&_nc_zt=14&_nc_ht=scontent-lax3-2.xx&_nc_gid=HtN7tbfN0Hwhs2TUi3-xQQ&_nc_ss=7b289&oh=00_AQTbBolMjKgrq6c8aLCkfyPUs4JnJK5TExZt_aLKPzIKPA&oe=6AF76BF3",
+          "link_url": "",
+          "title": "",
+          "video": null
+        },
+        {
+          "body": "🔥 عروض رهيبة وتوفير أكبر في كارفور!\n🛒 تصفّح عروضنا واختار اللي تحتاجه بأوفر الأسعار\n📅 ابتداءً من 4 نوفمبر 2026\n#كارفور\\_السعودية #أسعد\\_اللحظات #CarrefourSaudi #GreatMoments",
+          "cta": "",
+          "image": "https://scontent-lax7-1.xx.fbcdn.net/v/t39.35426-6/887730707_2235007733724528_9127470924884566160_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=101&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=MQhoYWyynr4Q7kNvwGCN84B&_nc_oc=AdoGLiiuolwWlzbqN82RUJgNWU-uR4a-Qmri9bB5vySBaa-CsEpEanQ-8FcFZa6yyKo&_nc_zt=14&_nc_ht=scontent-lax7-1.xx&_nc_gid=HtN7tbfN0Hwhs2TUi3-xQQ&_nc_ss=7b289&oh=00_AQTBUtFNfzjGUOjwUyB7qmQrm0sFe8cCe82HTGvyh4KzUg&oe=6AF76BFA",
+          "link_url": "",
+          "title": "",
+          "video": null
+        },
+        {
+          "body": "🔥 عروض رهيبة وتوفير أكبر في كارفور!\n🛒 تصفّح عروضنا واختار اللي تحتاجه بأوفر الأسعار\n📅 ابتداءً من 4 نوفمبر 2026\n#كارفور\\_السعودية #أسعد\\_اللحظات #CarrefourSaudi #GreatMoments",
+          "cta": "",
+          "image": "https://scontent-lax3-1.xx.fbcdn.net/v/t39.35426-6/890281228_905596309213290_2735724252519153568_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=110&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=j_cEcNL_1KEQ7kNvwFro5GS&_nc_oc=AdrQMRidcinBAp6CovNBkgSTb-Q7883xrhdtkq-vduQz26z6VjaGEjS-aGjYE5ZNmQU&_nc_zt=14&_nc_ht=scontent-lax3-1.xx&_nc_gid=HtN7tbfN0Hwhs2TUi3-xQQ&_nc_ss=7b289&oh=00_AQReRjZeJnLTdwGEaBoW9Sh_6T9IBG-p7GOU-ZDOC3llWQ&oe=6AF78993",
+          "link_url": "",
+          "title": "",
+          "video": null
+        },
+        {
+          "body": "🔥 عروض رهيبة وتوفير أكبر في كارفور!\n🛒 تصفّح عروضنا واختار اللي تحتاجه بأوفر الأسعار\n📅 ابتداءً من 4 نوفمبر 2026\n#كارفور\\_السعودية #أسعد\\_اللحظات #CarrefourSaudi #GreatMoments",
+          "cta": "",
+          "image": "https://scontent-lax3-2.xx.fbcdn.net/v/t39.35426-6/885919718_28809443355373813_2882192314791000327_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=106&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=uHGEkiX1XvQQ7kNvwE2Qs6j&_nc_oc=Adp1CWQvbVT1ElJ5CwPPU7f5rTuEWYl59Ci3GqCX4k8SAIGKUfnWyvTFBf01SVjBWAo&_nc_zt=14&_nc_ht=scontent-lax3-2.xx&_nc_gid=HtN7tbfN0Hwhs2TUi3-xQQ&_nc_ss=7b289&oh=00_AQTPppSffXbfjONwlSfoKo8my5Xf7pg24QKiRPND7jEx7A&oe=6AF77695",
+          "link_url": "",
+          "title": "",
+          "video": null
+        },
+        {
+          "body": "🔥 عروض رهيبة وتوفير أكبر في كارفور!\n🛒 تصفّح عروضنا واختار اللي تحتاجه بأوفر الأسعار\n📅 ابتداءً من 4 نوفمبر 2026\n#كارفور\\_السعودية #أسعد\\_اللحظات #CarrefourSaudi #GreatMoments",
+          "cta": "",
+          "image": "https://scontent-lax3-2.xx.fbcdn.net/v/t39.35426-6/887160524_1060699537023153_7597815516424687160_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=103&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=q_qPg5tmKrgQ7kNvwEutv7e&_nc_oc=AdoO8sawhFJHXEIDPqeTjNoS_Wm3AnlOmI9F7pGjBptxYESkTRGhbdP3YA0WZUD6J9A&_nc_zt=14&_nc_ht=scontent-lax3-2.xx&_nc_gid=HtN7tbfN0Hwhs2TUi3-xQQ&_nc_ss=7b289&oh=00_AQQARkRwLQmCxuy1f1dR-TMcI918xfce8RnL6_aU41sZUw&oe=6AF766AC",
+          "link_url": "",
+          "title": "",
+          "video": null
+        },
+        {
+          "body": "🔥 عروض رهيبة وتوفير أكبر في كارفور!\n🛒 تصفّح عروضنا واختار اللي تحتاجه بأوفر الأسعار\n📅 ابتداءً من 4 نوفمبر 2026\n#كارفور\\_السعودية #أسعد\\_اللحظات #CarrefourSaudi #GreatMoments",
+          "cta": "",
+          "image": "https://scontent-lax7-1.xx.fbcdn.net/v/t39.35426-6/888575549_1055189220873951_66793076767389640_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=105&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=TamyYcKdkpYQ7kNvwEcVd9G&_nc_oc=AdpHveRPlsrOXl8lWKGHy0ltdD8byHQ_s0y4RnSiozlpziEH0uk6MWZZDIomPb3mJKI&_nc_zt=14&_nc_ht=scontent-lax7-1.xx&_nc_gid=HtN7tbfN0Hwhs2TUi3-xQQ&_nc_ss=7b289&oh=00_AQTgeAjlovX0BG9J6SRVwk-qoNd2361IkE_3NNAENNx6IQ&oe=6AF780AB",
+          "link_url": "",
+          "title": "",
+          "video": null
+        },
+        {
+          "body": "🔥 عروض رهيبة وتوفير أكبر في كارفور!\n🛒 تصفّح عروضنا واختار اللي تحتاجه بأوفر الأسعار\n📅 ابتداءً من 4 نوفمبر 2026\n#كارفور\\_السعودية #أسعد\\_اللحظات #CarrefourSaudi #GreatMoments",
+          "cta": "",
+          "image": "https://scontent-lax3-2.xx.fbcdn.net/v/t39.35426-6/889652660_1362145410323605_58859047330379167_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=103&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=A58HYK7ngnEQ7kNvwGoiCL6&_nc_oc=AdrlCzVwTdtMnyv9PI3AjdAQUd6W-R8YWer_ixPG_SoUoPwayqwQjId18h2WF0GYqC0&_nc_zt=14&_nc_ht=scontent-lax3-2.xx&_nc_gid=HtN7tbfN0Hwhs2TUi3-xQQ&_nc_ss=7b289&oh=00_AQQ0hrnkE14GzZIOEV9FbDtSeA7AkWrczM6FwXgWeYqbPQ&oe=6AF7712A",
+          "link_url": "",
+          "title": "",
+          "video": null
+        },
+        {
+          "body": "🔥 عروض رهيبة وتوفير أكبر في كارفور!\n🛒 تصفّح عروضنا واختار اللي تحتاجه بأوفر الأسعار\n📅 ابتداءً من 4 نوفمبر 2026\n#كارفور\\_السعودية #أسعد\\_اللحظات #CarrefourSaudi #GreatMoments",
+          "cta": "",
+          "image": "https://scontent-lax3-2.xx.fbcdn.net/v/t39.35426-6/890048723_3801645223324228_6851422136892472093_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=111&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=H0YIajbt3Y4Q7kNvwFlzU1K&_nc_oc=AdoiLsNnQhQPXiToy0-_hV7bYhQb8yxnAJFI40nP8OlxADzno3TILXib3EF6hNlSu9I&_nc_zt=14&_nc_ht=scontent-lax3-2.xx&_nc_gid=HtN7tbfN0Hwhs2TUi3-xQQ&_nc_ss=7b289&oh=00_AQSuSlIiogRUPjuk1qWhGtzlfoQbfCD5a0PrzrxdfEX39g&oe=6AF78651",
+          "link_url": "",
+          "title": "",
+          "video": null
+        },
+        {
+          "body": "🔥 عروض رهيبة وتوفير أكبر في كارفور!\n🛒 تصفّح عروضنا واختار اللي تحتاجه بأوفر الأسعار\n📅 ابتداءً من 4 نوفمبر 2026\n#كارفور\\_السعودية #أسعد\\_اللحظات #CarrefourSaudi #GreatMoments",
+          "cta": "",
+          "image": "https://scontent-lax3-2.xx.fbcdn.net/v/t39.35426-6/890846659_2197533687570954_6913876087622150648_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=107&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=vmy8fTE7QzMQ7kNvwHRhF7K&_nc_oc=AdpzDFVpZ6DpU1jTndPoDBVxPeajXGDFCQk4qdwMqR-_PuQAQvbdLxzbUZkZYtCHWpI&_nc_zt=14&_nc_ht=scontent-lax3-2.xx&_nc_gid=HtN7tbfN0Hwhs2TUi3-xQQ&_nc_ss=7b289&oh=00_AQRKUSpcxpoMNHM295MWLZnraBojMU8ZjmiY0yaLJKy-4Q&oe=6AF77EC4",
+          "link_url": "",
+          "title": "",
+          "video": null
+        },
+        {
+          "body": "🔥 عروض رهيبة وتوفير أكبر في كارفور!\n🛒 تصفّح عروضنا واختار اللي تحتاجه بأوفر الأسعار\n📅 ابتداءً من 4 نوفمبر 2026\n#كارفور\\_السعودية #أسعد\\_اللحظات #CarrefourSaudi #GreatMoments",
+          "cta": "",
+          "image": "https://scontent-lax3-1.xx.fbcdn.net/v/t39.35426-6/887968009_1126640250092460_2560711771271831209_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=104&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=-f8nk5FjFuYQ7kNvwGPQ-5u&_nc_oc=AdqyLJaRupv5z0UOCucdnpJDSVVVG6ci_EsQSZHJQ49mEVNkFy2TgptBIDeP2ikwwSA&_nc_zt=14&_nc_ht=scontent-lax3-1.xx&_nc_gid=HtN7tbfN0Hwhs2TUi3-xQQ&_nc_ss=7b289&oh=00_AQTPhmW7hzbiFr96lkbqbML5ZqL3Um9_vOvFqeSyKzpL8A&oe=6AF75BF5",
+          "link_url": "",
+          "title": "",
+          "video": null
+        },
+        {
+          "body": "🔥 عروض رهيبة وتوفير أكبر في كارفور!\n🛒 تصفّح عروضنا واختار اللي تحتاجه بأوفر الأسعار\n📅 ابتداءً من 4 نوفمبر 2026\n#كارفور\\_السعودية #أسعد\\_اللحظات #CarrefourSaudi #GreatMoments",
+          "cta": "",
+          "image": "https://scontent-lax3-2.xx.fbcdn.net/v/t39.35426-6/889652661_1920532682712100_4128591383920974494_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=111&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=AJKjNjYGwrYQ7kNvwGzGyTB&_nc_oc=AdrtHW04jhO8Mp0_LaOesUydim3y-reBzpISjgKNbAL289cIj3V0w8P2rrIss7g9Jzg&_nc_zt=14&_nc_ht=scontent-lax3-2.xx&_nc_gid=HtN7tbfN0Hwhs2TUi3-xQQ&_nc_ss=7b289&oh=00_AQSWB88p9TgBeY5BX5SATuLdIsY4W9o5zvhkmIV9_qiymg&oe=6AF77DF2",
+          "link_url": "",
+          "title": "",
+          "video": null
+        },
+        {
+          "body": "🔥 عروض رهيبة وتوفير أكبر في كارفور!\n🛒 تصفّح عروضنا واختار اللي تحتاجه بأوفر الأسعار\n📅 ابتداءً من 4 نوفمبر 2026\n#كارفور\\_السعودية #أسعد\\_اللحظات #CarrefourSaudi #GreatMoments",
+          "cta": "",
+          "image": "https://scontent-lax7-1.xx.fbcdn.net/v/t39.35426-6/886874477_1346216994151405_365545474115485329_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=101&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=p0BFsp4_uEoQ7kNvwHY_ML8&_nc_oc=Ado_ktnVYJSb37o52Fshil7rZVNTqEe-jW2AjiceU7aSvy1f9moXg1j5Eccb85eX7nQ&_nc_zt=14&_nc_ht=scontent-lax7-1.xx&_nc_gid=HtN7tbfN0Hwhs2TUi3-xQQ&_nc_ss=7b289&oh=00_AQQ2OTai-mExPkL-pINTcZ5p212nO8x6a0wPYQTFUTGraw&oe=6AF776F2",
+          "link_url": "",
+          "title": "",
+          "video": null
+        },
+        {
+          "body": "🔥 عروض رهيبة وتوفير أكبر في كارفور!\n🛒 تصفّح عروضنا واختار اللي تحتاجه بأوفر الأسعار\n📅 ابتداءً من 4 نوفمبر 2026\n#كارفور\\_السعودية #أسعد\\_اللحظات #CarrefourSaudi #GreatMoments",
+          "cta": "",
+          "image": "https://scontent-lax7-1.xx.fbcdn.net/v/t39.35426-6/889809989_1109980251820635_6165096903101986724_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=101&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=FmKrSL2BKKcQ7kNvwEMirzw&_nc_oc=AdpEbQWeX925SkJMV9gNhfln92WMwt0P0VRRJ9WuAQEu_YVLk5ia0YQaqtk67u_8aus&_nc_zt=14&_nc_ht=scontent-lax7-1.xx&_nc_gid=HtN7tbfN0Hwhs2TUi3-xQQ&_nc_ss=7b289&oh=00_AQROQaYxS8D7PdUIT_CHaMTENnWSeAAU4pqKasC6WJ6mUA&oe=6AF78AFC",
+          "link_url": "",
+          "title": "",
+          "video": null
+        },
+        {
+          "body": "🔥 عروض رهيبة وتوفير أكبر في كارفور!\n🛒 تصفّح عروضنا واختار اللي تحتاجه بأوفر الأسعار\n📅 ابتداءً من 4 نوفمبر 2026\n#كارفور\\_السعودية #أسعد\\_اللحظات #CarrefourSaudi #GreatMoments",
+          "cta": "",
+          "image": "https://scontent-lax3-2.xx.fbcdn.net/v/t39.35426-6/887092910_1656961736128862_4610262317101657787_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=106&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=wx4S_w-tqXcQ7kNvwEK_PiN&_nc_oc=AdrorF2YnFOaHdMsuvNF_SYzQqZNCO73WRZEhCh4yUSvHdKDq73y9nHx_iSywhRNoCY&_nc_zt=14&_nc_ht=scontent-lax3-2.xx&_nc_gid=HtN7tbfN0Hwhs2TUi3-xQQ&_nc_ss=7b289&oh=00_AQRWz8BwzpSP2x1otj924WWGUD3Ny_Sii3-bdPmto7fucw&oe=6AF7782E",
+          "link_url": "",
+          "title": "",
+          "video": null
+        },
+        {
+          "body": "🔥 عروض رهيبة وتوفير أكبر في كارفور!\n🛒 تصفّح عروضنا واختار اللي تحتاجه بأوفر الأسعار\n📅 ابتداءً من 4 نوفمبر 2026\n#كارفور\\_السعودية #أسعد\\_اللحظات #CarrefourSaudi #GreatMoments",
+          "cta": "",
+          "image": "https://scontent-lax3-1.xx.fbcdn.net/v/t39.35426-6/887686684_1721637259554159_5555745837206044060_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=104&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=u5Vr2ue9keoQ7kNvwEDR6ZO&_nc_oc=AdpQBJsXives_kV7gO--DjStTThvvRPx3pyealhEzbYCqli1BB23PAH_oKV_r3VG-Do&_nc_zt=14&_nc_ht=scontent-lax3-1.xx&_nc_gid=HtN7tbfN0Hwhs2TUi3-xQQ&_nc_ss=7b289&oh=00_AQSgJB4sx4uNiSIz7myCIcHnePfoTtEvjbSvSfFiscHRUw&oe=6AF78241",
+          "link_url": "",
+          "title": "",
+          "video": null
+        },
+        {
+          "body": "🔥 عروض رهيبة وتوفير أكبر في كارفور!\n🛒 تصفّح عروضنا واختار اللي تحتاجه بأوفر الأسعار\n📅 ابتداءً من 4 نوفمبر 2026\n#كارفور\\_السعودية #أسعد\\_اللحظات #CarrefourSaudi #GreatMoments",
+          "cta": "",
+          "image": "https://scontent-lax3-2.xx.fbcdn.net/v/t39.35426-6/886874509_2280222206089437_4808140060561431058_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=103&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=Euj7wNx07fYQ7kNvwGQyAdz&_nc_oc=AdrSj5pejZy3tnren7Z8bWQmTJtPEGVnH9gJM9curV7kIcYI2fV_zQ4hqcwjWwEy35A&_nc_zt=14&_nc_ht=scontent-lax3-2.xx&_nc_gid=HtN7tbfN0Hwhs2TUi3-xQQ&_nc_ss=7b289&oh=00_AQTred0U7Q5Eh5QELQidtd5Gg02YRsoly8OugrHVbtb0BA&oe=6AF76229",
+          "link_url": "",
+          "title": "",
+          "video": null
+        },
+        {
+          "body": "🔥 عروض رهيبة وتوفير أكبر في كارفور!\n🛒 تصفّح عروضنا واختار اللي تحتاجه بأوفر الأسعار\n📅 ابتداءً من 4 نوفمبر 2026\n#كارفور\\_السعودية #أسعد\\_اللحظات #CarrefourSaudi #GreatMoments",
+          "cta": "",
+          "image": "https://scontent-lax7-1.xx.fbcdn.net/v/t39.35426-6/888575543_1304257678496781_8484754236933677102_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=105&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=l6mG51F3WRcQ7kNvwEFSUah&_nc_oc=AdophscErs1giGn9MAiDt6kkdrbc0qdMJB4l3HVTnwH_cSI17K-OUQrMCBFz-F1cGU4&_nc_zt=14&_nc_ht=scontent-lax7-1.xx&_nc_gid=HtN7tbfN0Hwhs2TUi3-xQQ&_nc_ss=7b289&oh=00_AQS65yVowdCfid4TfNeC8bO51vwIN-13GChDQOSAiY3ZiQ&oe=6AF78A51",
+          "link_url": "",
+          "title": "",
+          "video": null
+        },
+        {
+          "body": "🔥 عروض رهيبة وتوفير أكبر في كارفور!\n🛒 تصفّح عروضنا واختار اللي تحتاجه بأوفر الأسعار\n📅 ابتداءً من 4 نوفمبر 2026\n#كارفور\\_السعودية #أسعد\\_اللحظات #CarrefourSaudi #GreatMoments",
+          "cta": "",
+          "image": "https://scontent-lax3-1.xx.fbcdn.net/v/t39.35426-6/885667342_1445072474422271_7361595576199998819_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=109&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=9xygW48D0YUQ7kNvwEnbB4x&_nc_oc=AdpKfkORg07pZAHmG3zgq0I_L1rAG4GYF6aAoU99bFyEWeMzE0hiivgtLV_6LXQp5PM&_nc_zt=14&_nc_ht=scontent-lax3-1.xx&_nc_gid=HtN7tbfN0Hwhs2TUi3-xQQ&_nc_ss=7b289&oh=00_AQTV397Ir8JvPsHbNMARRTTxDjHu-WAqi4-h4boor0ILhg&oe=6AF780D7",
+          "link_url": "",
+          "title": "",
+          "video": null
+        },
+        {
+          "body": "🔥 عروض رهيبة وتوفير أكبر في كارفور!\n🛒 تصفّح عروضنا واختار اللي تحتاجه بأوفر الأسعار\n📅 ابتداءً من 4 نوفمبر 2026\n#كارفور\\_السعودية #أسعد\\_اللحظات #CarrefourSaudi #GreatMoments",
+          "cta": "",
+          "image": "https://scontent-lax3-2.xx.fbcdn.net/v/t39.35426-6/886551761_2605513416581839_2116196882598238415_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=107&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=UBq5XJm7PAIQ7kNvwG2GChK&_nc_oc=Adqxrqg8gixoWlzTMRTcRHvZAQK7ZqBhz8zayg7-ZaNWWjivBAkIL6Cw6chrfcE-hjY&_nc_zt=14&_nc_ht=scontent-lax3-2.xx&_nc_gid=HtN7tbfN0Hwhs2TUi3-xQQ&_nc_ss=7b289&oh=00_AQRSn-QbJHBDIUP9BfgbX6FJ77YJGYxS4GmKvyH5u4Wy_A&oe=6AF75B88",
+          "link_url": "",
+          "title": "",
+          "video": null
+        },
+        {
+          "body": "🔥 عروض رهيبة وتوفير أكبر في كارفور!\n🛒 تصفّح عروضنا واختار اللي تحتاجه بأوفر الأسعار\n📅 ابتداءً من 4 نوفمبر 2026\n#كارفور\\_السعودية #أسعد\\_اللحظات #CarrefourSaudi #GreatMoments",
+          "cta": "",
+          "image": "https://scontent-lax3-2.xx.fbcdn.net/v/t39.35426-6/887061963_997134673435811_8608967131253328646_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=111&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=3Kgj_OFcZN4Q7kNvwHINmh1&_nc_oc=AdpUenlyeTE3TswE2vJq6fN8NZbCWMAYMmSoAZ2Y5DV5TxofTp2phelGSoxFNnkQ9Zo&_nc_zt=14&_nc_ht=scontent-lax3-2.xx&_nc_gid=HtN7tbfN0Hwhs2TUi3-xQQ&_nc_ss=7b289&oh=00_AQSXeheR_XxhO5gQJEA2GY92eT5Q_2Xsdf2zE1cFNyvHVg&oe=6AF7790B",
+          "link_url": "",
+          "title": "",
+          "video": null
+        },
+        {
+          "body": "🔥 عروض رهيبة وتوفير أكبر في كارفور!\n🛒 تصفّح عروضنا واختار اللي تحتاجه بأوفر الأسعار\n📅 ابتداءً من 4 نوفمبر 2026\n#كارفور\\_السعودية #أسعد\\_اللحظات #CarrefourSaudi #GreatMoments",
+          "cta": "",
+          "image": "https://scontent-lax3-1.xx.fbcdn.net/v/t39.35426-6/888832788_1806310940574074_5348782381347011632_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=102&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=hqy7Pd1vdbsQ7kNvwGHeL47&_nc_oc=AdqgfIHn9nvAZnzRzEJTBwd8LeYznj8AraQKM0CBjB0XsE8Rlf7ILf6_kaj9E1LXw_o&_nc_zt=14&_nc_ht=scontent-lax3-1.xx&_nc_gid=HtN7tbfN0Hwhs2TUi3-xQQ&_nc_ss=7b289&oh=00_AQQAz2bImgonsN9l2slaPfehhkvKY6OFyIaPAymd7vN_xQ&oe=6AF75F41",
+          "link_url": "",
+          "title": "",
+          "video": null
+        },
+        {
+          "body": "🔥 عروض رهيبة وتوفير أكبر في كارفور!\n🛒 تصفّح عروضنا واختار اللي تحتاجه بأوفر الأسعار\n📅 ابتداءً من 4 نوفمبر 2026\n#كارفور\\_السعودية #أسعد\\_اللحظات #CarrefourSaudi #GreatMoments",
+          "cta": "",
+          "image": "https://scontent-lax3-2.xx.fbcdn.net/v/t39.35426-6/888619611_1415419380315510_5481901798463862243_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=111&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=_GIPHCsY_JoQ7kNvwFI-cHy&_nc_oc=AdpUSuYNWXv1pdWcXtIJ5cCZsZLtYCJDFxgkpCC0WqL3USOUa_tVXG6-I68_TjTwiLo&_nc_zt=14&_nc_ht=scontent-lax3-2.xx&_nc_gid=HtN7tbfN0Hwhs2TUi3-xQQ&_nc_ss=7b289&oh=00_AQTNM_eXIfBOQpBPlPjiYo50F0JBt6TKqolV4lor5EIxVA&oe=6AF756C0",
+          "link_url": "",
+          "title": "",
+          "video": null
+        },
+        {
+          "body": "🔥 عروض رهيبة وتوفير أكبر في كارفور!\n🛒 تصفّح عروضنا واختار اللي تحتاجه بأوفر الأسعار\n📅 ابتداءً من 4 نوفمبر 2026\n#كارفور\\_السعودية #أسعد\\_اللحظات #CarrefourSaudi #GreatMoments",
+          "cta": "",
+          "image": "https://scontent-lax3-1.xx.fbcdn.net/v/t39.35426-6/890643156_1159774006993267_2786623637346293169_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=109&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=RVQtrGyNs2QQ7kNvwGMvd-I&_nc_oc=Ado--py5IlL2-INSF2NNLRlYK97qUks6Et4zXeFrj_lBtZuTecJbjCajZcF6OUuaKpg&_nc_zt=14&_nc_ht=scontent-lax3-1.xx&_nc_gid=HtN7tbfN0Hwhs2TUi3-xQQ&_nc_ss=7b289&oh=00_AQSxTLseyzJHZokCrNJkKDIcvOcFw7SsWMPOfO5_9SXbJw&oe=6AF770A0",
+          "link_url": "",
+          "title": "",
+          "video": null
+        },
+        {
+          "body": "🔥 عروض رهيبة وتوفير أكبر في كارفور!\n🛒 تصفّح عروضنا واختار اللي تحتاجه بأوفر الأسعار\n📅 ابتداءً من 4 نوفمبر 2026\n#كارفور\\_السعودية #أسعد\\_اللحظات #CarrefourSaudi #GreatMoments",
+          "cta": "",
+          "image": "https://scontent-lax3-1.xx.fbcdn.net/v/t39.35426-6/888792711_4560568630851892_131898850698792301_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=110&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=rwEQKfmLh-EQ7kNvwFu8SQw&_nc_oc=AdpURCdYNQaXKKib_7n7nddggSjV5pPXwpUhfG9JoqaGQlQ-aHTWBRY3cSNcZJ3XV70&_nc_zt=14&_nc_ht=scontent-lax3-1.xx&_nc_gid=HtN7tbfN0Hwhs2TUi3-xQQ&_nc_ss=7b289&oh=00_AQR9mHzbVKNMJ5SDqE2iiySMMEJR-OiG2LQA5OaugmapKw&oe=6AF7818A",
+          "link_url": "",
+          "title": "",
+          "video": null
+        },
+        {
+          "body": "🔥 عروض رهيبة وتوفير أكبر في كارفور!\n🛒 تصفّح عروضنا واختار اللي تحتاجه بأوفر الأسعار\n📅 ابتداءً من 4 نوفمبر 2026\n#كارفور\\_السعودية #أسعد\\_اللحظات #CarrefourSaudi #GreatMoments",
+          "cta": "",
+          "image": "https://scontent-lax3-1.xx.fbcdn.net/v/t39.35426-6/887198190_1614686287005298_8952026921772021355_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=108&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=phPll-BdWagQ7kNvwHOl6Hh&_nc_oc=AdoMeaBoru4vV-300rx3x3SFgzxApD34RHJ1FvOuBD6A3ttK1tDumzpBAlcnQpfO8CE&_nc_zt=14&_nc_ht=scontent-lax3-1.xx&_nc_gid=HtN7tbfN0Hwhs2TUi3-xQQ&_nc_ss=7b289&oh=00_AQRFax0UbJedh-PSJiZqnwKSaxDvTQ7u3Abu6KthbXNuzg&oe=6AF7835B",
+          "link_url": "",
+          "title": "",
+          "video": null
+        },
+        {
+          "body": "🔥 عروض رهيبة وتوفير أكبر في كارفور!\n🛒 تصفّح عروضنا واختار اللي تحتاجه بأوفر الأسعار\n📅 ابتداءً من 4 نوفمبر 2026\n#كارفور\\_السعودية #أسعد\\_اللحظات #CarrefourSaudi #GreatMoments",
+          "cta": "",
+          "image": "https://scontent-lax3-2.xx.fbcdn.net/v/t39.35426-6/890353684_1150195664198629_2300820710662663181_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=103&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=VGKM2n2nltAQ7kNvwHxBiTX&_nc_oc=AdqFWC8KKbBAJzobJYWv9T0JDgpHmi82itmNYGnYbke5WWsK1QBMICSJ9iw4rmgEjSA&_nc_zt=14&_nc_ht=scontent-lax3-2.xx&_nc_gid=HtN7tbfN0Hwhs2TUi3-xQQ&_nc_ss=7b289&oh=00_AQQ8ACGLMOCE2MO5u5U00PmTJVew3lKrt_diEM-xWesCtg&oe=6AF77518",
+          "link_url": "",
+          "title": "",
+          "video": null
+        },
+        {
+          "body": "🔥 عروض رهيبة وتوفير أكبر في كارفور!\n🛒 تصفّح عروضنا واختار اللي تحتاجه بأوفر الأسعار\n📅 ابتداءً من 4 نوفمبر 2026\n#كارفور\\_السعودية #أسعد\\_اللحظات #CarrefourSaudi #GreatMoments",
+          "cta": "",
+          "image": "https://scontent-lax3-2.xx.fbcdn.net/v/t39.35426-6/887556119_1800363321285952_4519150277883204069_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=103&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=RnahqkIRnpcQ7kNvwE25zIm&_nc_oc=AdqPweOEWBH1mq_woIwT-yFIH5y-QKaJJv48-NZC-VfGqDGNcFPqG1QL3BG71mDf14E&_nc_zt=14&_nc_ht=scontent-lax3-2.xx&_nc_gid=HtN7tbfN0Hwhs2TUi3-xQQ&_nc_ss=7b289&oh=00_AQQ5mONEtHv79xxFwjwJGfEwpkUyNJvHhg0wqH50papTnA&oe=6AF75FA4",
+          "link_url": "",
+          "title": "",
+          "video": null
+        },
+        {
+          "body": "🔥 عروض رهيبة وتوفير أكبر في كارفور!\n🛒 تصفّح عروضنا واختار اللي تحتاجه بأوفر الأسعار\n📅 ابتداءً من 4 نوفمبر 2026\n#كارفور\\_السعودية #أسعد\\_اللحظات #CarrefourSaudi #GreatMoments",
+          "cta": "",
+          "image": "https://scontent-lax3-1.xx.fbcdn.net/v/t39.35426-6/890281217_1830686334908624_6732341237514330731_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=102&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=lWiluQGya2kQ7kNvwFPkgwG&_nc_oc=Adq5nimimeWygT7t1RUHW4y2wMZ-1I3794On2O_wOKy1JViLvhYBnPELkoKAc2vgfYc&_nc_zt=14&_nc_ht=scontent-lax3-1.xx&_nc_gid=HtN7tbfN0Hwhs2TUi3-xQQ&_nc_ss=7b289&oh=00_AQSJe8K9Ugb2CW0CQ-gNxvaEGyUDC6GZTi9EHbE9rja78g&oe=6AF76C0A",
+          "link_url": "",
+          "title": "",
+          "video": null
+        },
+        {
+          "body": "🔥 عروض رهيبة وتوفير أكبر في كارفور!\n🛒 تصفّح عروضنا واختار اللي تحتاجه بأوفر الأسعار\n📅 ابتداءً من 4 نوفمبر 2026\n#كارفور\\_السعودية #أسعد\\_اللحظات #CarrefourSaudi #GreatMoments",
+          "cta": "",
+          "image": "https://scontent-lax3-2.xx.fbcdn.net/v/t39.35426-6/888381659_1650095053278706_5954793366503276568_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=106&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=L86AA-7aO_UQ7kNvwHtqemB&_nc_oc=AdqpBr-joMVROgNZ5Wg1kYMZptorO_F8aFRhfw2jP0k-4prz7fRrcwjCBHNNtNuasb4&_nc_zt=14&_nc_ht=scontent-lax3-2.xx&_nc_gid=HtN7tbfN0Hwhs2TUi3-xQQ&_nc_ss=7b289&oh=00_AQRwM8TwbhqzBsbUbqY1yqt9ddNul8yncRasZERACnkktA&oe=6AF78110",
+          "link_url": "",
+          "title": "",
+          "video": null
+        },
+        {
+          "body": "🔥 عروض رهيبة وتوفير أكبر في كارفور!\n🛒 تصفّح عروضنا واختار اللي تحتاجه بأوفر الأسعار\n📅 ابتداءً من 4 نوفمبر 2026\n#كارفور\\_السعودية #أسعد\\_اللحظات #CarrefourSaudi #GreatMoments",
+          "cta": "",
+          "image": "https://scontent-lax3-1.xx.fbcdn.net/v/t39.35426-6/887032679_1101597752868516_583646007875642892_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=109&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=SzhQvG9XBkAQ7kNvwEysK9-&_nc_oc=AdpneKdV3bKXOcbdjcKULt7cqv_O5_jJNcVl3rIFLZwUSHR-6cQUX9nDdmMDds7hSkM&_nc_zt=14&_nc_ht=scontent-lax3-1.xx&_nc_gid=HtN7tbfN0Hwhs2TUi3-xQQ&_nc_ss=7b289&oh=00_AQRL8cp-rY3QwFdM0bAHsJBvhkBYHB_VJgr0gSyTR-Y-jw&oe=6AF77568",
+          "link_url": "",
+          "title": "",
+          "video": null
+        },
+        {
+          "body": "🔥 عروض رهيبة وتوفير أكبر في كارفور!\n🛒 تصفّح عروضنا واختار اللي تحتاجه بأوفر الأسعار\n📅 ابتداءً من 4 نوفمبر 2026\n#كارفور\\_السعودية #أسعد\\_اللحظات #CarrefourSaudi #GreatMoments",
+          "cta": "",
+          "image": "https://scontent-lax7-1.xx.fbcdn.net/v/t39.35426-6/889612792_4436890406528813_7124988736081789673_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=101&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=MU2XFvIrM8YQ7kNvwGHf-vd&_nc_oc=AdqODtPcarCb0gebbwbvcOIq7T3nNB1X0thabzNlrw-SHDxsXqlCNX4L3Q-PU07JJ8g&_nc_zt=14&_nc_ht=scontent-lax7-1.xx&_nc_gid=HtN7tbfN0Hwhs2TUi3-xQQ&_nc_ss=7b289&oh=00_AQQg8IqTpO_sp8XJvD47CwWt58tqR6xKPVGHTJWTEG51Mg&oe=6AF75CC2",
+          "link_url": "",
+          "title": "",
+          "video": null
+        },
+        {
+          "body": "🔥 عروض رهيبة وتوفير أكبر في كارفور!\n🛒 تصفّح عروضنا واختار اللي تحتاجه بأوفر الأسعار\n📅 ابتداءً من 4 نوفمبر 2026\n#كارفور\\_السعودية #أسعد\\_اللحظات #CarrefourSaudi #GreatMoments",
+          "cta": "",
+          "image": "https://scontent-lax3-1.xx.fbcdn.net/v/t39.35426-6/887184062_2922180751492099_3580767043048591721_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=104&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=FEZjSlwGwJ4Q7kNvwHWXjcE&_nc_oc=AdqN3CvPQ3yRJFB5TIEnzp9DnVdAsqCwOtu35t-9Vu9zZCNbqBMJEpQ-WUhJ9q8yaiM&_nc_zt=14&_nc_ht=scontent-lax3-1.xx&_nc_gid=HtN7tbfN0Hwhs2TUi3-xQQ&_nc_ss=7b289&oh=00_AQT9vYjXO-alDh_yAArFteiGyXKJrLd2cTbBhFgjNPvhjg&oe=6AF77049",
+          "link_url": "",
+          "title": "",
+          "video": null
+        },
+        {
+          "body": "🔥 عروض رهيبة وتوفير أكبر في كارفور!\n🛒 تصفّح عروضنا واختار اللي تحتاجه بأوفر الأسعار\n📅 ابتداءً من 4 نوفمبر 2026\n#كارفور\\_السعودية #أسعد\\_اللحظات #CarrefourSaudi #GreatMoments",
+          "cta": "",
+          "image": "https://scontent-lax7-1.xx.fbcdn.net/v/t39.35426-6/886842683_1172719758624529_5781691900303179883_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=105&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=yJVEBpswAM0Q7kNvwFboIrM&_nc_oc=AdpN0Upfu1tsDXIOBz-CbvFUr6GxZ6HGuPW9c3uMI21dmlxiAmx-3ce50tgehpo52xA&_nc_zt=14&_nc_ht=scontent-lax7-1.xx&_nc_gid=HtN7tbfN0Hwhs2TUi3-xQQ&_nc_ss=7b289&oh=00_AQQOAtsNjaF9H5u0yJfuukE52HgAi6LSiseeeOf24UjBXA&oe=6AF77A2B",
+          "link_url": "",
+          "title": "",
+          "video": null
+        },
+        {
+          "body": "🔥 عروض رهيبة وتوفير أكبر في كارفور!\n🛒 تصفّح عروضنا واختار اللي تحتاجه بأوفر الأسعار\n📅 ابتداءً من 4 نوفمبر 2026\n#كارفور\\_السعودية #أسعد\\_اللحظات #CarrefourSaudi #GreatMoments",
+          "cta": "",
+          "image": "https://scontent-lax3-2.xx.fbcdn.net/v/t39.35426-6/890616898_1757896528804921_2837000952337807303_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=100&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=t9NfSPs8uF4Q7kNvwE4-ZVu&_nc_oc=Adqa1TNyL8c_lv_sdYmWKfZyrkDFTUjjss6I95Ne6YuGN7DdPfPFtRCpn1RvOzs8EIk&_nc_zt=14&_nc_ht=scontent-lax3-2.xx&_nc_gid=HtN7tbfN0Hwhs2TUi3-xQQ&_nc_ss=7b289&oh=00_AQSV1agGKGJkmUVDaAaJS37bq5-5vu9oHSY9rWtrVAEY6g&oe=6AF78A86",
+          "link_url": "",
+          "title": "",
+          "video": null
+        },
+        {
+          "body": "🔥 عروض رهيبة وتوفير أكبر في كارفور!\n🛒 تصفّح عروضنا واختار اللي تحتاجه بأوفر الأسعار\n📅 ابتداءً من 4 نوفمبر 2026\n#كارفور\\_السعودية #أسعد\\_اللحظات #CarrefourSaudi #GreatMoments",
+          "cta": "",
+          "image": "https://scontent-lax7-1.xx.fbcdn.net/v/t39.35426-6/887604376_2298916024243875_4735420763773079755_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=105&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=3EgRGUHzxBEQ7kNvwEQE006&_nc_oc=Adr2z9hE4nn7tij_okaJj4NUMH7ogDcECS_KEwPrGtj67xycJdcxDNerIYta33p3nWM&_nc_zt=14&_nc_ht=scontent-lax7-1.xx&_nc_gid=HtN7tbfN0Hwhs2TUi3-xQQ&_nc_ss=7b289&oh=00_AQSH_taFIvNteawjIdm2NDNhtRpYQ1bWjyf7AlTUDqWhfQ&oe=6AF78D6C",
+          "link_url": "",
+          "title": "",
+          "video": null
+        },
+        {
+          "body": "🔥 عروض رهيبة وتوفير أكبر في كارفور!\n🛒 تصفّح عروضنا واختار اللي تحتاجه بأوفر الأسعار\n📅 ابتداءً من 4 نوفمبر 2026\n#كارفور\\_السعودية #أسعد\\_اللحظات #CarrefourSaudi #GreatMoments",
+          "cta": "",
+          "image": "https://scontent-lax3-2.xx.fbcdn.net/v/t39.35426-6/886936792_1187412083863650_2979221783991196288_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=100&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=sNGrB6vst88Q7kNvwEfmKpq&_nc_oc=AdqiPy29MtVjMPi959-CRkkJkSiVt8Bag6QbtPeT4ilApk_YnMUDvPfMS8AIahZPBWM&_nc_zt=14&_nc_ht=scontent-lax3-2.xx&_nc_gid=HtN7tbfN0Hwhs2TUi3-xQQ&_nc_ss=7b289&oh=00_AQS-ePzOtIdHswoJG-sJHhWqM7UhWkValrJdnBnyv0smlQ&oe=6AF76CC8",
+          "link_url": "",
+          "title": "",
+          "video": null
+        },
+        {
+          "body": "🔥 عروض رهيبة وتوفير أكبر في كارفور!\n🛒 تصفّح عروضنا واختار اللي تحتاجه بأوفر الأسعار\n📅 ابتداءً من 4 نوفمبر 2026\n#كارفور\\_السعودية #أسعد\\_اللحظات #CarrefourSaudi #GreatMoments",
+          "cta": "",
+          "image": "https://scontent-lax3-1.xx.fbcdn.net/v/t39.35426-6/885919728_2352156782213610_2134198039954060070_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=109&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=2e72OXf_3LMQ7kNvwEZgIy4&_nc_oc=AdqyfALV6XqRzqnHsPMdac4hYxdoWnU2YDz5EWTcaoJZMY0NU7s_9-MyBlTFRHC5H5A&_nc_zt=14&_nc_ht=scontent-lax3-1.xx&_nc_gid=HtN7tbfN0Hwhs2TUi3-xQQ&_nc_ss=7b289&oh=00_AQQKjNrycCvRULOdlQBFTU9FnCX2ak5oTK_81KL54tnQgA&oe=6AF787EF",
+          "link_url": "",
+          "title": "",
+          "video": null
+        },
+        {
+          "body": "🔥 عروض رهيبة وتوفير أكبر في كارفور!\n🛒 تصفّح عروضنا واختار اللي تحتاجه بأوفر الأسعار\n📅 ابتداءً من 4 نوفمبر 2026\n#كارفور\\_السعودية #أسعد\\_اللحظات #CarrefourSaudi #GreatMoments",
+          "cta": "",
+          "image": "https://scontent-lax3-2.xx.fbcdn.net/v/t39.35426-6/886730302_2214230312843084_5782287138541263813_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=100&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=lmaPCdkuyT0Q7kNvwGiSQy0&_nc_oc=AdpmBNAGsWeukQsLrCF9EVHORRHoi3iQWWG8hBDGhot4SjVncvQKguNJTIfp1X3M2fg&_nc_zt=14&_nc_ht=scontent-lax3-2.xx&_nc_gid=HtN7tbfN0Hwhs2TUi3-xQQ&_nc_ss=7b289&oh=00_AQTNuWEWEDekP26zHmjtKsadGSS29ektKwZG97ZEcsKb8g&oe=6AF75CD2",
+          "link_url": "",
+          "title": "",
+          "video": null
+        },
+        {
+          "body": "🔥 عروض رهيبة وتوفير أكبر في كارفور!\n🛒 تصفّح عروضنا واختار اللي تحتاجه بأوفر الأسعار\n📅 ابتداءً من 4 نوفمبر 2026\n#كارفور\\_السعودية #أسعد\\_اللحظات #CarrefourSaudi #GreatMoments",
+          "cta": "",
+          "image": "https://scontent-lax3-2.xx.fbcdn.net/v/t39.35426-6/887367388_1909244227155192_8690218924904238055_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=100&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=wUiza8yQcIAQ7kNvwHfGaHP&_nc_oc=AdpMEVYUQlYFEEw9wGpbPMpqwlxzZx6zFXylzDbjlokwhSnN4IEbIGJQyeIOTUkOK04&_nc_zt=14&_nc_ht=scontent-lax3-2.xx&_nc_gid=HtN7tbfN0Hwhs2TUi3-xQQ&_nc_ss=7b289&oh=00_AQR3r40PKapjjytrgT1wDGm5uWGE0ffJc7Yu0ttPrvphVQ&oe=6AF759A0",
+          "link_url": "",
+          "title": "",
+          "video": null
+        },
+        {
+          "body": "🔥 عروض رهيبة وتوفير أكبر في كارفور!\n🛒 تصفّح عروضنا واختار اللي تحتاجه بأوفر الأسعار\n📅 ابتداءً من 4 نوفمبر 2026\n#كارفور\\_السعودية #أسعد\\_اللحظات #CarrefourSaudi #GreatMoments",
+          "cta": "",
+          "image": "https://scontent-lax3-2.xx.fbcdn.net/v/t39.35426-6/886936773_1637569001747549_3631408829870453230_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=103&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=tn9xxy8wTgsQ7kNvwH4XAR1&_nc_oc=Adp-vT_-m5RbxAt8bWhUlDTgStq9yKX6ATJko5dhDGnJygI5-o1KpgJSfgVwnwVU3as&_nc_zt=14&_nc_ht=scontent-lax3-2.xx&_nc_gid=HtN7tbfN0Hwhs2TUi3-xQQ&_nc_ss=7b289&oh=00_AQRPGS2UlD16fXgX9irvpxOZfzE53PjbGPQYGIj83c6wzQ&oe=6AF7616A",
+          "link_url": "",
+          "title": "",
+          "video": null
+        },
+        {
+          "body": "🔥 عروض رهيبة وتوفير أكبر في كارفور!\n🛒 تصفّح عروضنا واختار اللي تحتاجه بأوفر الأسعار\n📅 ابتداءً من 4 نوفمبر 2026\n#كارفور\\_السعودية #أسعد\\_اللحظات #CarrefourSaudi #GreatMoments",
+          "cta": "",
+          "image": "https://scontent-lax3-2.xx.fbcdn.net/v/t39.35426-6/886608454_2330094671071162_1199024029900545266_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=106&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=yPmhbhDJxqkQ7kNvwHvejo1&_nc_oc=AdqCDcAiIIZYvBRpgdWBhhIRj0AWlW0J4UW7q2lNdCfJ-3bXXA5qBBG237g3xkrL8zU&_nc_zt=14&_nc_ht=scontent-lax3-2.xx&_nc_gid=HtN7tbfN0Hwhs2TUi3-xQQ&_nc_ss=7b289&oh=00_AQTRbSt9CCQbq85laGB5bVDjGi00UJsn64FSs66dTn4rvA&oe=6AF77F14",
+          "link_url": "",
+          "title": "",
+          "video": null
+        },
+        {
+          "body": "🔥 عروض رهيبة وتوفير أكبر في كارفور!\n🛒 تصفّح عروضنا واختار اللي تحتاجه بأوفر الأسعار\n📅 ابتداءً من 4 نوفمبر 2026\n#كارفور\\_السعودية #أسعد\\_اللحظات #CarrefourSaudi #GreatMoments",
+          "cta": "",
+          "image": "https://scontent-lax3-1.xx.fbcdn.net/v/t39.35426-6/886633255_1862615291834782_4750425998056392785_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=104&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=JuhXtDDl7jUQ7kNvwFmicZn&_nc_oc=AdrshaTcQLq4yS4nGPjduGcKpp93lql4ytRWcvFBb6EHRULd3BD5v23V-WXJqyKe4AE&_nc_zt=14&_nc_ht=scontent-lax3-1.xx&_nc_gid=HtN7tbfN0Hwhs2TUi3-xQQ&_nc_ss=7b289&oh=00_AQQ9R4eAaVLdxvBOasgocqpcXpweYMEYAzYlYzdv-TWkmQ&oe=6AF76BDE",
+          "link_url": "",
+          "title": "",
+          "video": null
+        },
+        {
+          "body": "🔥 عروض رهيبة وتوفير أكبر في كارفور!\n🛒 تصفّح عروضنا واختار اللي تحتاجه بأوفر الأسعار\n📅 ابتداءً من 4 نوفمبر 2026\n#كارفور\\_السعودية #أسعد\\_اللحظات #CarrefourSaudi #GreatMoments",
+          "cta": "",
+          "image": "https://scontent-lax7-1.xx.fbcdn.net/v/t39.35426-6/888160057_1143582448320498_4461714736067820793_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=105&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=9kv6xT8Vev0Q7kNvwFp295X&_nc_oc=Adrsm72HIQq3rq_w04g1E0NPIBqPpqF8QrEvKvcGhBiTmhIAHg6F-L_VGDuXSR2KIo4&_nc_zt=14&_nc_ht=scontent-lax7-1.xx&_nc_gid=HtN7tbfN0Hwhs2TUi3-xQQ&_nc_ss=7b289&oh=00_AQSOeF36EMDKbuBzHKpMMpVuF8WSICZ9PUAUffSTFJOFiA&oe=6AF78E7F",
+          "link_url": "",
+          "title": "",
+          "video": null
+        },
+        {
+          "body": "🔥 عروض رهيبة وتوفير أكبر في كارفور!\n🛒 تصفّح عروضنا واختار اللي تحتاجه بأوفر الأسعار\n📅 ابتداءً من 4 نوفمبر 2026\n#كارفور\\_السعودية #أسعد\\_اللحظات #CarrefourSaudi #GreatMoments",
+          "cta": "",
+          "image": "https://scontent-lax3-2.xx.fbcdn.net/v/t39.35426-6/886608454_1625594532634688_4613191521192273410_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=111&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=ojNPfcK-QlkQ7kNvwGN1KD_&_nc_oc=AdrKzc9m3lgt86zqgm6UUWK1DTfYHqb2RAMmMkBDVIyRtYxAxEBJx9kF5LLdqH_8lB0&_nc_zt=14&_nc_ht=scontent-lax3-2.xx&_nc_gid=HtN7tbfN0Hwhs2TUi3-xQQ&_nc_ss=7b289&oh=00_AQStvZnysuEPXvk6yyG7Tn_XV02WM21e0MFbkuDlRR1P9Q&oe=6AF75CCE",
+          "link_url": "",
+          "title": "",
+          "video": null
+        },
+        {
+          "body": "🔥 عروض رهيبة وتوفير أكبر في كارفور!\n🛒 تصفّح عروضنا واختار اللي تحتاجه بأوفر الأسعار\n📅 ابتداءً من 4 نوفمبر 2026\n#كارفور\\_السعودية #أسعد\\_اللحظات #CarrefourSaudi #GreatMoments",
+          "cta": "",
+          "image": "https://scontent-lax3-1.xx.fbcdn.net/v/t39.35426-6/886769716_964967379629383_6481547449047411972_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=109&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=7zo3GEEkVREQ7kNvwHaRlCf&_nc_oc=Adoh-IOWhRVKaYdjmQfvT6U-OwXguZHsl7A6Bow8zUOmqof6eCixE4K6Mk6z9tWgvo4&_nc_zt=14&_nc_ht=scontent-lax3-1.xx&_nc_gid=HtN7tbfN0Hwhs2TUi3-xQQ&_nc_ss=7b289&oh=00_AQTYtmRXT6P4b2hziqaCs-Iq6mH5R0IZpay4bvgmxoGsCA&oe=6AF77D3F",
+          "link_url": "",
+          "title": "",
+          "video": null
+        },
+        {
+          "body": "🔥 عروض رهيبة وتوفير أكبر في كارفور!\n🛒 تصفّح عروضنا واختار اللي تحتاجه بأوفر الأسعار\n📅 ابتداءً من 4 نوفمبر 2026\n#كارفور\\_السعودية #أسعد\\_اللحظات #CarrefourSaudi #GreatMoments",
+          "cta": "",
+          "image": "https://scontent-lax3-1.xx.fbcdn.net/v/t39.35426-6/890281229_1599752774631140_5526729067316293233_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=104&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=_QPG2qx5vxEQ7kNvwHn5vhL&_nc_oc=AdqlDbWSvX44OSrpYkVKh9r_1Wa1D3IebMtks7d2_U8bkjixsumurWU6pzxeBmSP-SU&_nc_zt=14&_nc_ht=scontent-lax3-1.xx&_nc_gid=HtN7tbfN0Hwhs2TUi3-xQQ&_nc_ss=7b289&oh=00_AQQRmsYjGrhXMru3mLZrH8Qn5C4pMxCsByIPw17vt5lCXg&oe=6AF77AC0",
+          "link_url": "",
+          "title": "",
+          "video": null
+        },
+        {
+          "body": "🔥 عروض رهيبة وتوفير أكبر في كارفور!\n🛒 تصفّح عروضنا واختار اللي تحتاجه بأوفر الأسعار\n📅 ابتداءً من 4 نوفمبر 2026\n#كارفور\\_السعودية #أسعد\\_اللحظات #CarrefourSaudi #GreatMoments",
+          "cta": "",
+          "image": "https://scontent-lax3-2.xx.fbcdn.net/v/t39.35426-6/889144805_2140893439888797_1366910531159577158_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=107&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=a6681F7jPjoQ7kNvwE6Ufoo&_nc_oc=Ado4XvMUbF7EHVsUxEIz4aUIczndl50PrmKO3zBJoj-UH4SIYn3JPVwkpcFnFSpf-c0&_nc_zt=14&_nc_ht=scontent-lax3-2.xx&_nc_gid=HtN7tbfN0Hwhs2TUi3-xQQ&_nc_ss=7b289&oh=00_AQTlrSLwUloUbmBYlNAJf0FD5ikKMIfhgdixo4HNUBfYXA&oe=6AF77321",
+          "link_url": "",
+          "title": "",
+          "video": null
+        },
+        {
+          "body": "🔥 عروض رهيبة وتوفير أكبر في كارفور!\n🛒 تصفّح عروضنا واختار اللي تحتاجه بأوفر الأسعار\n📅 ابتداءً من 4 نوفمبر 2026\n#كارفور\\_السعودية #أسعد\\_اللحظات #CarrefourSaudi #GreatMoments",
+          "cta": "",
+          "image": "https://scontent-lax3-1.xx.fbcdn.net/v/t39.35426-6/887032668_2591140278026613_4274502490995856039_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=110&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=bvtVYU8OJvAQ7kNvwGUyvz_&_nc_oc=AdqrUcDCbwFssSfd8cJ1e9GwrANwSRWx9ld7X7NYfO7MSXuoOvCFdd8vftochYuc4vM&_nc_zt=14&_nc_ht=scontent-lax3-1.xx&_nc_gid=HtN7tbfN0Hwhs2TUi3-xQQ&_nc_ss=7b289&oh=00_AQRSqqdoHvfVPZAYVTnfRDxPuxx304CyCXLituUpCj8cIw&oe=6AF78056",
+          "link_url": "",
+          "title": "",
+          "video": null
+        },
+        {
+          "body": "🔥 عروض رهيبة وتوفير أكبر في كارفور!\n🛒 تصفّح عروضنا واختار اللي تحتاجه بأوفر الأسعار\n📅 ابتداءً من 4 نوفمبر 2026\n#كارفور\\_السعودية #أسعد\\_اللحظات #CarrefourSaudi #GreatMoments",
+          "cta": "",
+          "image": "https://scontent-lax3-1.xx.fbcdn.net/v/t39.35426-6/886730285_1129376769461305_2674090869469121165_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=109&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=fvftpHA4hT0Q7kNvwFR7YQa&_nc_oc=AdpVrlMO8DiLSrj9KUnrA7qy01AmoqVzwdEa0D-skWPoBzhMcuMTj_MkYrXW9I8whQw&_nc_zt=14&_nc_ht=scontent-lax3-1.xx&_nc_gid=HtN7tbfN0Hwhs2TUi3-xQQ&_nc_ss=7b289&oh=00_AQQcFQ5FvosR6wd1G4-0Kg0Lfh0wQYYvF3uJIPlfIoRXXw&oe=6AF7690A",
+          "link_url": "",
+          "title": "",
+          "video": null
+        },
+        {
+          "body": "🔥 عروض رهيبة وتوفير أكبر في كارفور!\n🛒 تصفّح عروضنا واختار اللي تحتاجه بأوفر الأسعار\n📅 ابتداءً من 4 نوفمبر 2026\n#كارفور\\_السعودية #أسعد\\_اللحظات #CarrefourSaudi #GreatMoments",
+          "cta": "",
+          "image": "https://scontent-lax3-2.xx.fbcdn.net/v/t39.35426-6/890344403_1681617359987172_423314007556572374_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=111&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=PPDmIfpZ9t8Q7kNvwESFVna&_nc_oc=AdroAhkPYW-ncBA5TmOVirCdELGV6izA2-_gE1qtZd9quMLOfTvRGC_blYvGm65prAw&_nc_zt=14&_nc_ht=scontent-lax3-2.xx&_nc_gid=HtN7tbfN0Hwhs2TUi3-xQQ&_nc_ss=7b289&oh=00_AQRzj7NfU04qhJQK3N2D1IXet9rb2t2--8NweEdUvk0Anw&oe=6AF7725A",
+          "link_url": "",
+          "title": "",
+          "video": null
+        },
+        {
+          "body": "🔥 عروض رهيبة وتوفير أكبر في كارفور!\n🛒 تصفّح عروضنا واختار اللي تحتاجه بأوفر الأسعار\n📅 ابتداءً من 4 نوفمبر 2026\n#كارفور\\_السعودية #أسعد\\_اللحظات #CarrefourSaudi #GreatMoments",
+          "cta": "",
+          "image": "https://scontent-lax3-2.xx.fbcdn.net/v/t39.35426-6/887399829_1476774677682026_5091228372696673967_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=100&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=XZT2H__-9N8Q7kNvwGltazW&_nc_oc=AdpVCvCeNKew9RMBJzJirY14_T2ncaUuv08d3E7cqFWmjooD8ZqAhPb6d3BgJfO-TDg&_nc_zt=14&_nc_ht=scontent-lax3-2.xx&_nc_gid=HtN7tbfN0Hwhs2TUi3-xQQ&_nc_ss=7b289&oh=00_AQQNV-dmJYMOPlmcz_ygTJ5DhumN6UsEp6v-C6rOad3Kjg&oe=6AF759ED",
+          "link_url": "",
+          "title": "",
+          "video": null
+        }
+      ]
+    },
+    {
+      "id": "647152393873864",
+      "page_name": "Crazy PizzaSaudi",
+      "status": "active",
+      "first_seen": "Sep 12, 2023",
+      "last_seen": "",
+      "creative_text": "New Terrace, New Obsession.\nYour new favorite spot is waiting at Crazy Pizza Tahlia. Don’t miss out!\nتراس جديد، وأجواء بتعجبكم من أول زيارة!\nمكانكم المفضل الجديد ينتظركم في Crazy Pizza Tahlia. لا يفوتكم!\n#crazypizzasaudi #terraceopening #crazypizza",
+      "library_url": "https://www.facebook.com/ads/library/?id=647152393873864",
+      "page_url": "https://www.facebook.com/61574287172277/",
+      "page_id": "61574287172277",
+      "link_url": "http://instagram.com/crazypizza.saudi",
+      "link_title": "",
+      "cta_text": "Visit Instagram Profile",
+      "link_caption": "INSTAGRAM.COM",
+      "images": [
+        "https://scontent-lax3-2.xx.fbcdn.net/v/t39.35426-6/864354277_1831746734498761_1148566839920413537_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=100&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=i2GGgSJpKtgQ7kNvwFWhdwp&_nc_oc=AdqYslb1YgnE_8j3UFzoENWYwcc-KjfGVkpXRYzEThPv6nD9DrbfXJQCxHOCqcIhkl0&_nc_zt=14&_nc_ht=scontent-lax3-2.xx&_nc_gid=HtN7tbfN0Hwhs2TUi3-xQQ&_nc_ss=7b289&oh=00_AQRl3vbQGtvK-P1lPFmJ7U5D3_WFCC23hPfvz3sLFpPcUA&oe=6AF78278",
+        "https://scontent-lax3-1.xx.fbcdn.net/v/t39.35426-6/859083890_2357920484967490_7690561559412063092_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=104&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=1knYdNrjVBgQ7kNvwEk_D4E&_nc_oc=Adoqljb4FCbLifoN2-jKUiBjaB0WFh1jZkKdiVCZTPH5FoVw0fgUGXidUHDzmNefqR8&_nc_zt=14&_nc_ht=scontent-lax3-1.xx&_nc_gid=HtN7tbfN0Hwhs2TUi3-xQQ&_nc_ss=7b289&oh=00_AQScAo8VztuxEgIYJu2KGwqQ9oq2mskR67h_8BJgRxJvkQ&oe=6AF77B58",
+        "https://scontent-lax3-2.xx.fbcdn.net/v/t39.35426-6/864528989_1432228395765130_6954601804145517702_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=103&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=-jtU4JijwqoQ7kNvwGl7L6T&_nc_oc=Adreq6Yvs9KEIorVjAYdApWAu4iV_p70Df8WSH58NBspH9d3ijFJSJEHMX_G1KOSpuY&_nc_zt=14&_nc_ht=scontent-lax3-2.xx&_nc_gid=HtN7tbfN0Hwhs2TUi3-xQQ&_nc_ss=7b289&oh=00_AQTBYsMgirNXYlwJgjbOW_pjuDLRVlvbOKle6WsmcsttHw&oe=6AF7770F",
+        "https://scontent-lax3-2.xx.fbcdn.net/v/t39.35426-6/858569588_1862591631404182_5595502155762588193_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=103&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=5Z_ZKQGDAZUQ7kNvwGdA5rE&_nc_oc=AdqIboOBB8Da6n46CYLyAR-tJDc-Lkd3lo0o18nnNEoQsyPM-3trQArVyEcpIsPXL5Y&_nc_zt=14&_nc_ht=scontent-lax3-2.xx&_nc_gid=HtN7tbfN0Hwhs2TUi3-xQQ&_nc_ss=7b289&oh=00_AQTI4Z-sLQBzvMK2OpIHjzDEh0ruU_iNv84wUXrB3-4QKw&oe=6AF78349"
+      ],
+      "has_video": false,
+      "same_creative_count": 0,
+      "multiple_versions": true,
+      "cta_type": "VISIT_INSTAGRAM_PROFILE",
+      "display_format": "dco",
+      "cards": [
+        {
+          "body": "New Terrace, New Obsession.\nYour new favorite spot is waiting at Crazy Pizza Tahlia. Don’t miss out!\nتراس جديد، وأجواء بتعجبكم من أول زيارة!\nمكانكم المفضل الجديد ينتظركم في Crazy Pizza Tahlia. لا يفوتكم!\n#crazypizzasaudi #terraceopening #crazypizza",
+          "cta": "Visit Instagram Profile",
+          "image": "https://scontent-lax3-2.xx.fbcdn.net/v/t39.35426-6/864354277_1831746734498761_1148566839920413537_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=100&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=i2GGgSJpKtgQ7kNvwFWhdwp&_nc_oc=AdqYslb1YgnE_8j3UFzoENWYwcc-KjfGVkpXRYzEThPv6nD9DrbfXJQCxHOCqcIhkl0&_nc_zt=14&_nc_ht=scontent-lax3-2.xx&_nc_gid=HtN7tbfN0Hwhs2TUi3-xQQ&_nc_ss=7b289&oh=00_AQRl3vbQGtvK-P1lPFmJ7U5D3_WFCC23hPfvz3sLFpPcUA&oe=6AF78278",
+          "link_url": "http://instagram.com/crazypizza.saudi",
+          "title": "",
+          "video": null
+        },
+        {
+          "body": "New Terrace, New Obsession.\nYour new favorite spot is waiting at Crazy Pizza Tahlia. Don’t miss out!\nتراس جديد، وأجواء بتعجبكم من أول زيارة!\nمكانكم المفضل الجديد ينتظركم في Crazy Pizza Tahlia. لا يفوتكم!\n#crazypizzasaudi #terraceopening #crazypizza",
+          "cta": "Visit Instagram Profile",
+          "image": "https://scontent-lax3-1.xx.fbcdn.net/v/t39.35426-6/859083890_2357920484967490_7690561559412063092_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=104&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=1knYdNrjVBgQ7kNvwEk_D4E&_nc_oc=Adoqljb4FCbLifoN2-jKUiBjaB0WFh1jZkKdiVCZTPH5FoVw0fgUGXidUHDzmNefqR8&_nc_zt=14&_nc_ht=scontent-lax3-1.xx&_nc_gid=HtN7tbfN0Hwhs2TUi3-xQQ&_nc_ss=7b289&oh=00_AQScAo8VztuxEgIYJu2KGwqQ9oq2mskR67h_8BJgRxJvkQ&oe=6AF77B58",
+          "link_url": "http://instagram.com/crazypizza.saudi",
+          "title": "",
+          "video": null
+        },
+        {
+          "body": "New Terrace, New Obsession.\nYour new favorite spot is waiting at Crazy Pizza Tahlia. Don’t miss out!\nتراس جديد، وأجواء بتعجبكم من أول زيارة!\nمكانكم المفضل الجديد ينتظركم في Crazy Pizza Tahlia. لا يفوتكم!\n#crazypizzasaudi #terraceopening #crazypizza",
+          "cta": "Visit Instagram Profile",
+          "image": "https://scontent-lax3-2.xx.fbcdn.net/v/t39.35426-6/864528989_1432228395765130_6954601804145517702_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=103&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=-jtU4JijwqoQ7kNvwGl7L6T&_nc_oc=Adreq6Yvs9KEIorVjAYdApWAu4iV_p70Df8WSH58NBspH9d3ijFJSJEHMX_G1KOSpuY&_nc_zt=14&_nc_ht=scontent-lax3-2.xx&_nc_gid=HtN7tbfN0Hwhs2TUi3-xQQ&_nc_ss=7b289&oh=00_AQTBYsMgirNXYlwJgjbOW_pjuDLRVlvbOKle6WsmcsttHw&oe=6AF7770F",
+          "link_url": "http://instagram.com/crazypizza.saudi",
+          "title": "",
+          "video": null
+        },
+        {
+          "body": "New Terrace, New Obsession.\nYour new favorite spot is waiting at Crazy Pizza Tahlia. Don’t miss out!\nتراس جديد، وأجواء بتعجبكم من أول زيارة!\nمكانكم المفضل الجديد ينتظركم في Crazy Pizza Tahlia. لا يفوتكم!\n#crazypizzasaudi #terraceopening #crazypizza",
+          "cta": "Visit Instagram Profile",
+          "image": "https://scontent-lax3-2.xx.fbcdn.net/v/t39.35426-6/858569588_1862591631404182_5595502155762588193_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=103&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=5Z_ZKQGDAZUQ7kNvwGdA5rE&_nc_oc=AdqIboOBB8Da6n46CYLyAR-tJDc-Lkd3lo0o18nnNEoQsyPM-3trQArVyEcpIsPXL5Y&_nc_zt=14&_nc_ht=scontent-lax3-2.xx&_nc_gid=HtN7tbfN0Hwhs2TUi3-xQQ&_nc_ss=7b289&oh=00_AQTI4Z-sLQBzvMK2OpIHjzDEh0ruU_iNv84wUXrB3-4QKw&oe=6AF78349",
+          "link_url": "http://instagram.com/crazypizza.saudi",
+          "title": "",
+          "video": null
+        }
+      ]
+    },
+    {
+      "id": "4219402374991712",
+      "page_name": "Your Money Magic",
+      "status": "active",
+      "first_seen": "Feb 21, 2026",
+      "last_seen": "",
+      "creative_text": "These parents need a reality check and some lessons in empathy 🤦♀️👇",
+      "library_url": "https://www.facebook.com/ads/library/?id=4219402374991712",
+      "page_url": "https://www.facebook.com/yourmoneymagic/",
+      "page_id": "",
+      "link_url": "https://www.yourmoneymagic.com/people-share-their-parents-toxic-behaviors-online/",
+      "link_title": "Unacceptable Behavior Of Parents Goes Public",
+      "cta_text": "Learn More",
+      "link_caption": "",
+      "images": [
+        "https://scontent-lax7-1.xx.fbcdn.net/v/t39.35426-6/378484017_981557426386203_6865358686927039956_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=105&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=pxHJoLwzxZsQ7kNvwHNrbra&_nc_oc=AdrPDdLOp5h78w-YfXVtQ1VuUkZtgkQNFIuEb88toVUZdcgL_9ls0hDEjCf8SSs5rT8&_nc_zt=14&_nc_ht=scontent-lax7-1.xx&_nc_gid=HtN7tbfN0Hwhs2TUi3-xQQ&_nc_ss=7b289&oh=00_AQSFSsgYcUBbZG8GxATWPgO3z_N2RoYFHh6YL7eZ-fudjA&oe=6AF76EC1"
+      ],
+      "has_video": false,
+      "same_creative_count": 0,
+      "multiple_versions": false,
+      "cta_type": "LEARN_MORE",
+      "display_format": "image",
+      "cards": [
+        {
+          "body": "These parents need a reality check and some lessons in empathy 🤦♀️👇",
+          "cta": "Learn More",
+          "image": "https://scontent-lax7-1.xx.fbcdn.net/v/t39.35426-6/378484017_981557426386203_6865358686927039956_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=105&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=pxHJoLwzxZsQ7kNvwHNrbra&_nc_oc=AdrPDdLOp5h78w-YfXVtQ1VuUkZtgkQNFIuEb88toVUZdcgL_9ls0hDEjCf8SSs5rT8&_nc_zt=14&_nc_ht=scontent-lax7-1.xx&_nc_gid=HtN7tbfN0Hwhs2TUi3-xQQ&_nc_ss=7b289&oh=00_AQSFSsgYcUBbZG8GxATWPgO3z_N2RoYFHh6YL7eZ-fudjA&oe=6AF76EC1",
+          "link_url": "https://www.yourmoneymagic.com/people-share-their-parents-toxic-behaviors-online/",
+          "title": "Unacceptable Behavior Of Parents Goes Public",
+          "video": null
+        }
+      ]
+    },
+    {
+      "id": "1021290117451162",
+      "page_name": "ABOT Surpresa",
+      "status": "active",
+      "first_seen": "Aug 5, 2026",
+      "last_seen": "",
+      "creative_text": "📩 Book your MOTORCYCLE SURPRISE package today!\nLet’s turn your love and effort into a moment worth remembering ❤️\nWe make every motorcycle surprise epic and unforgettable! 💫\n“Hindi lang basta motor — it’s a dream come true on two wheels! 🏍️💝\nIba ‘yung saya ‘pag nakita mong nagulat at napasigaw sa tuwa 😭✨\nFREE DELIVERY AROUND THE CITY📌\n#MotorSurprisePH #AbotSaya #PricelessReaction #RideOfJoy\n#AbotSaya #LuxurySurprise #PricelessReactions #DriveOfJoy\n#ABOTSURPRESA #ABOTPILIPINAS #Toservemillions\nABOT Surpresa\nEntrepreneur\nSend message",
+      "library_url": "https://www.facebook.com/ads/library/?id=1021290117451162",
+      "page_url": "https://www.facebook.com/abotsurpresa/",
+      "page_id": "",
+      "link_url": "",
+      "link_title": "",
+      "cta_text": "",
+      "link_caption": "",
+      "images": [
+        "https://scontent-lax3-2.xx.fbcdn.net/v/t39.35426-6/639972531_1243041994596955_4191596001090205161_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=111&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=Gbk8ccRS05kQ7kNvwHImBVC&_nc_oc=AdqnS1vkfAXU-1V4abe39QXmbDEwJJgC8Wc3ACc7O2YXhDCZT-H4jZH7EgMhXWv0Q2s&_nc_zt=14&_nc_ht=scontent-lax3-2.xx&_nc_gid=HtN7tbfN0Hwhs2TUi3-xQQ&_nc_ss=7b289&oh=00_AQT_06OULZeurSIiZBGBN2vi8GMlw_VRvSDgfm---0sNAA&oe=6AF75C2E",
+        "https://scontent-lax3-1.xx.fbcdn.net/v/t39.35426-6/640002551_960666766631207_5971308591244615614_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=110&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=H4lqIGx9CAMQ7kNvwG2_EKj&_nc_oc=AdpZfTPW5nnhUQo6vOHW0mgNm92cCUCbvKdaQaRu8MMXNcsaRa_bfDLlq9bCZBzerMM&_nc_zt=14&_nc_ht=scontent-lax3-1.xx&_nc_gid=HtN7tbfN0Hwhs2TUi3-xQQ&_nc_ss=7b289&oh=00_AQRrFwCuGS76S7JjgwPs5CBstiMwQ3HQUn-veoCWaDV3eQ&oe=6AF771A0",
+        "https://scontent-lax3-2.xx.fbcdn.net/v/t39.35426-6/639603727_2416934402095792_9086562665514166376_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=107&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=Me8bXYjlpSgQ7kNvwFeyJbt&_nc_oc=Adr2pJKR4G0m6mEvi5sl4pmIo0L_HguSp20A7BjGAV-UF6wM_dvD70_Yu_4QhA0WKxA&_nc_zt=14&_nc_ht=scontent-lax3-2.xx&_nc_gid=HtN7tbfN0Hwhs2TUi3-xQQ&_nc_ss=7b289&oh=00_AQQKXvb1uv0zBy5-5YNR_zLI_uxQF5fN7FDQiBNirideSA&oe=6AF7779B",
+        "https://scontent-lax3-1.xx.fbcdn.net/v/t39.35426-6/641049276_802880802834085_2396946322285863006_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=110&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=H1fTQV59djEQ7kNvwHhqxM6&_nc_oc=AdrWFQyVcDFs8zWUg41s8SYARkNlwBJPKUZ270kKzI7k1ZEf6OWQZ7-ofAq7gd6t41s&_nc_zt=14&_nc_ht=scontent-lax3-1.xx&_nc_gid=HtN7tbfN0Hwhs2TUi3-xQQ&_nc_ss=7b289&oh=00_AQRMVKulB_7N-GxyBk4U-eWmM07USb_9la7DE-AhLRyjig&oe=6AF78E0A",
+        "https://scontent-lax3-1.xx.fbcdn.net/v/t39.35426-6/640370036_1659795608796736_434563763388181044_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=104&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=5kFYfh2m64IQ7kNvwFxhYre&_nc_oc=AdoJ4UWkMR2eEtUVwQ4oeSE5maxC3svIvCw3rhDQFkcdU5IsQkleI7lExaq4Q3e7PuY&_nc_zt=14&_nc_ht=scontent-lax3-1.xx&_nc_gid=HtN7tbfN0Hwhs2TUi3-xQQ&_nc_ss=7b289&oh=00_AQQuWbq3PzlOF_Ax8ZlZjuAGYY497iC09IXuimC6j4yFRw&oe=6AF7630E",
+        "https://scontent-lax3-2.xx.fbcdn.net/v/t39.35426-6/641102488_1402621984679850_7138225903035601741_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=106&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=nySBlTgpy1QQ7kNvwFzWUeJ&_nc_oc=AdoUi9aXPv09hEiQSzGUzz-43JI4y1GuFHp2YIAuCwHaf6lSzF62HYXtqweGGJzBwiA&_nc_zt=14&_nc_ht=scontent-lax3-2.xx&_nc_gid=HtN7tbfN0Hwhs2TUi3-xQQ&_nc_ss=7b289&oh=00_AQRNFbWkuPNJ8fmekxMiOrixkaW0qVlywrcrjDSycyXctg&oe=6AF762E4",
+        "https://scontent-lax3-1.xx.fbcdn.net/v/t39.35426-6/637771997_1695300415213593_6372615073735701841_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=104&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=IcUoV9pQ_9IQ7kNvwHVv6im&_nc_oc=Adr_lk_xDFFsR-z9fiDUzgXLPQPceFLJKunW--1KA8YXMkasRBhZU3-QW-q0TLjMAk0&_nc_zt=14&_nc_ht=scontent-lax3-1.xx&_nc_gid=HtN7tbfN0Hwhs2TUi3-xQQ&_nc_ss=7b289&oh=00_AQSWQmT8UIoKk-AjEvDZ2mEpoIZC6BX3kAxBud_rjD_Gjw&oe=6AF76511",
+        "https://scontent-lax3-2.xx.fbcdn.net/v/t39.35426-6/641282732_765286823303924_7255998069785010231_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=111&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=VGz7b6Y8sVcQ7kNvwEVbdnh&_nc_oc=AdpwDrkXwjRt2mfe9BjXmoyO9oVpJPlGRasyvUQcCfuSJN-rIwP8lOTZgARDRYfNg2w&_nc_zt=14&_nc_ht=scontent-lax3-2.xx&_nc_gid=HtN7tbfN0Hwhs2TUi3-xQQ&_nc_ss=7b289&oh=00_AQSUig_fQyRtk_NUrUX3SFwY0iGxlglJMxeECwfdzYVkSQ&oe=6AF78E4B",
+        "https://scontent-lax3-1.xx.fbcdn.net/v/t39.35426-6/637714248_1153484026727049_3099246631756288890_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=108&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=fop8MvwWjRgQ7kNvwGY1-z_&_nc_oc=Adqo5gY6DxFOboAzlr1_InG6agVXLdWdmY-_J5IKgKj-U28Wy6WA_vLMmsp45qkqEvg&_nc_zt=14&_nc_ht=scontent-lax3-1.xx&_nc_gid=HtN7tbfN0Hwhs2TUi3-xQQ&_nc_ss=7b289&oh=00_AQRBgxbGFDoLawUNw4VAycG_g2JsebMfnFGG-OWRBQ3PBw&oe=6AF75BB4",
+        "https://scontent-lax3-2.xx.fbcdn.net/v/t39.35426-6/639209670_873480708847752_228064396721931028_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=100&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=LtxJisLpfwwQ7kNvwHbfc4o&_nc_oc=AdrV6vHBGcdkCCa4l_W-CvgfA_5kdNkcLrmn80REehu7YuxnObXMFUhlFH3EXY-8ruk&_nc_zt=14&_nc_ht=scontent-lax3-2.xx&_nc_gid=HtN7tbfN0Hwhs2TUi3-xQQ&_nc_ss=7b289&oh=00_AQSEwChWDSr_lfkwcoSp0P8rCmj5tyC6zjcn4KjWVg_afA&oe=6AF76699",
+        "https://scontent-lax3-2.xx.fbcdn.net/v/t39.35426-6/640282142_1299064688945496_2879194692802501815_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=107&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=XD5rAHnWP94Q7kNvwH5gzX-&_nc_oc=AdoHxB6QeVoM1zGRTAJ-hEGpCeCqwTV5pSTk2D7M8neWQiAIfKuRVzrj0v1D8wxSYqE&_nc_zt=14&_nc_ht=scontent-lax3-2.xx&_nc_gid=HtN7tbfN0Hwhs2TUi3-xQQ&_nc_ss=7b289&oh=00_AQRgZDbVgLmLILv3vJNwZo8k6vEfccoPLr16aafOHU_GBA&oe=6AF773FD",
+        "https://scontent-lax3-1.xx.fbcdn.net/v/t39.35426-6/628829728_1350437116847532_1564676481675467542_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=104&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=EeQnf-CIKZMQ7kNvwGde0aP&_nc_oc=Adqw1KHOWhesxlbbBGJqcaayaazX-ssCPlP5Ft2KZbL8UrwP9FJRFhDj7bwk7fz_8y8&_nc_zt=14&_nc_ht=scontent-lax3-1.xx&_nc_gid=HtN7tbfN0Hwhs2TUi3-xQQ&_nc_ss=7b289&oh=00_AQQmDkA6UYs1jG9Ag-3NHHFZgP3tJKGwynnMoyC1uUczjQ&oe=6AF772DD",
+        "https://scontent-lax7-1.xx.fbcdn.net/v/t39.35426-6/639691623_3954628888005305_3257387722962508248_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=101&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=239nnF02rVkQ7kNvwFR9UO5&_nc_oc=AdqnJCekfXggwUpJV0xSkD8Xt8rTObac1It8cO69PGf5ULJje_Jzs6crovJTac2YxhM&_nc_zt=14&_nc_ht=scontent-lax7-1.xx&_nc_gid=HtN7tbfN0Hwhs2TUi3-xQQ&_nc_ss=7b289&oh=00_AQRZVrnTeKBqt9MDk4VkZbxu47wfT2qDFdxUBsGlOS2EeQ&oe=6AF77B40",
+        "https://scontent-lax3-1.xx.fbcdn.net/v/t39.35426-6/641282724_906271102155999_3430407685893710345_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=110&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=iI6tllG4vy0Q7kNvwG9jdbd&_nc_oc=AdrD0V5PLdv02-2otlSIvkwQ4lLRG5x8h9jOLfHFnGRF2H4SOX6c4iqueY-JFTqi_7s&_nc_zt=14&_nc_ht=scontent-lax3-1.xx&_nc_gid=HtN7tbfN0Hwhs2TUi3-xQQ&_nc_ss=7b289&oh=00_AQQ0pj979xwGkHgA2HJ5DuikgHGlU94izMLVrX24h0kFRg&oe=6AF770AA",
+        "https://scontent-lax7-1.xx.fbcdn.net/v/t39.35426-6/638443209_671489966021823_2205906653431212754_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=101&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=xTQ_822LqwwQ7kNvwGUzHcy&_nc_oc=AdpIf5wTbfX1BWrx6l9T1CeUKCyyn9V5N32SGzQYdQoTv1QfbDSswdczk0lf2VuJoh8&_nc_zt=14&_nc_ht=scontent-lax7-1.xx&_nc_gid=HtN7tbfN0Hwhs2TUi3-xQQ&_nc_ss=7b289&oh=00_AQQXBdgkqV6JDhXhEzu_qp8fG1KalX0FneP0wAJlxzTBLw&oe=6AF76602",
+        "https://scontent-lax3-2.xx.fbcdn.net/v/t39.35426-6/639599825_929331776491393_6696515124134291036_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=107&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=RfLgM9OzVnEQ7kNvwGbv7rr&_nc_oc=Adp6FqJPkJtojkkO0es_-KyiAjFW7cfAxCCHJQHrXQmcrr9tNQocnmlK5bi2EeC7YMA&_nc_zt=14&_nc_ht=scontent-lax3-2.xx&_nc_gid=HtN7tbfN0Hwhs2TUi3-xQQ&_nc_ss=7b289&oh=00_AQSOVxozueWEsrBIdngMMTz5-I1IFQQehHz4D5cfrfLM5A&oe=6AF78E45",
+        "https://scontent-lax3-2.xx.fbcdn.net/v/t39.35426-6/641262242_946096054526627_4831423279751007873_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=103&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=ZgO-KmYoGAIQ7kNvwEDqTqS&_nc_oc=AdoRTY1SlT7U5n7-JTRVPESi4LfUQfu2sSq3Ee9JUi_fzyaXFVuN4bOYA3z8ulZXBVc&_nc_zt=14&_nc_ht=scontent-lax3-2.xx&_nc_gid=HtN7tbfN0Hwhs2TUi3-xQQ&_nc_ss=7b289&oh=00_AQRZBpiteMhWfM494Yx3-Z9K-CJORjXY3ByrsetFajNwrQ&oe=6AF77799",
+        "https://scontent-lax3-1.xx.fbcdn.net/v/t39.35426-6/641203299_2841486919529842_9048004575005017712_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=108&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=Agi_6fL1AswQ7kNvwFiet0F&_nc_oc=Adot_sO1o1NZPrNpC-M91dFkC6QM16rw_Qcr2sxX1uk3pknCyv-mi1MVNEkRVrbfCto&_nc_zt=14&_nc_ht=scontent-lax3-1.xx&_nc_gid=HtN7tbfN0Hwhs2TUi3-xQQ&_nc_ss=7b289&oh=00_AQT9nnGz6Cze8lJz6zPxDqTguzTaVD7yoYFLD_4Y1Js3Kw&oe=6AF76843"
+      ],
+      "has_video": false,
+      "same_creative_count": 0,
+      "multiple_versions": true,
+      "cta_type": "",
+      "display_format": "dco",
+      "cards": [
+        {
+          "body": "📩 Book your MOTORCYCLE SURPRISE package today!\nLet’s turn your love and effort into a moment worth remembering ❤️\nWe make every motorcycle surprise epic and unforgettable! 💫\n“Hindi lang basta motor — it’s a dream come true on two wheels! 🏍️💝\nIba ‘yung saya ‘pag nakita mong nagulat at napasigaw sa tuwa 😭✨\nFREE DELIVERY AROUND THE CITY📌\n#MotorSurprisePH #AbotSaya #PricelessReaction #RideOfJoy\n#AbotSaya #LuxurySurprise #PricelessReactions #DriveOfJoy\n#ABOTSURPRESA #ABOTPILIPINAS #Toservemillions\nABOT Surpresa\nEntrepreneur\nSend message",
+          "cta": "",
+          "image": "https://scontent-lax3-2.xx.fbcdn.net/v/t39.35426-6/639972531_1243041994596955_4191596001090205161_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=111&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=Gbk8ccRS05kQ7kNvwHImBVC&_nc_oc=AdqnS1vkfAXU-1V4abe39QXmbDEwJJgC8Wc3ACc7O2YXhDCZT-H4jZH7EgMhXWv0Q2s&_nc_zt=14&_nc_ht=scontent-lax3-2.xx&_nc_gid=HtN7tbfN0Hwhs2TUi3-xQQ&_nc_ss=7b289&oh=00_AQT_06OULZeurSIiZBGBN2vi8GMlw_VRvSDgfm---0sNAA&oe=6AF75C2E",
+          "link_url": "",
+          "title": "",
+          "video": null
+        },
+        {
+          "body": "📩 Book your MOTORCYCLE SURPRISE package today!\nLet’s turn your love and effort into a moment worth remembering ❤️\nWe make every motorcycle surprise epic and unforgettable! 💫\n“Hindi lang basta motor — it’s a dream come true on two wheels! 🏍️💝\nIba ‘yung saya ‘pag nakita mong nagulat at napasigaw sa tuwa 😭✨\nFREE DELIVERY AROUND THE CITY📌\n#MotorSurprisePH #AbotSaya #PricelessReaction #RideOfJoy\n#AbotSaya #LuxurySurprise #PricelessReactions #DriveOfJoy\n#ABOTSURPRESA #ABOTPILIPINAS #Toservemillions\nABOT Surpresa\nEntrepreneur\nSend message",
+          "cta": "",
+          "image": "https://scontent-lax3-1.xx.fbcdn.net/v/t39.35426-6/640002551_960666766631207_5971308591244615614_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=110&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=H4lqIGx9CAMQ7kNvwG2_EKj&_nc_oc=AdpZfTPW5nnhUQo6vOHW0mgNm92cCUCbvKdaQaRu8MMXNcsaRa_bfDLlq9bCZBzerMM&_nc_zt=14&_nc_ht=scontent-lax3-1.xx&_nc_gid=HtN7tbfN0Hwhs2TUi3-xQQ&_nc_ss=7b289&oh=00_AQRrFwCuGS76S7JjgwPs5CBstiMwQ3HQUn-veoCWaDV3eQ&oe=6AF771A0",
+          "link_url": "",
+          "title": "",
+          "video": null
+        },
+        {
+          "body": "📩 Book your MOTORCYCLE SURPRISE package today!\nLet’s turn your love and effort into a moment worth remembering ❤️\nWe make every motorcycle surprise epic and unforgettable! 💫\n“Hindi lang basta motor — it’s a dream come true on two wheels! 🏍️💝\nIba ‘yung saya ‘pag nakita mong nagulat at napasigaw sa tuwa 😭✨\nFREE DELIVERY AROUND THE CITY📌\n#MotorSurprisePH #AbotSaya #PricelessReaction #RideOfJoy\n#AbotSaya #LuxurySurprise #PricelessReactions #DriveOfJoy\n#ABOTSURPRESA #ABOTPILIPINAS #Toservemillions\nABOT Surpresa\nEntrepreneur\nSend message",
+          "cta": "",
+          "image": "https://scontent-lax3-2.xx.fbcdn.net/v/t39.35426-6/639603727_2416934402095792_9086562665514166376_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=107&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=Me8bXYjlpSgQ7kNvwFeyJbt&_nc_oc=Adr2pJKR4G0m6mEvi5sl4pmIo0L_HguSp20A7BjGAV-UF6wM_dvD70_Yu_4QhA0WKxA&_nc_zt=14&_nc_ht=scontent-lax3-2.xx&_nc_gid=HtN7tbfN0Hwhs2TUi3-xQQ&_nc_ss=7b289&oh=00_AQQKXvb1uv0zBy5-5YNR_zLI_uxQF5fN7FDQiBNirideSA&oe=6AF7779B",
+          "link_url": "",
+          "title": "",
+          "video": null
+        },
+        {
+          "body": "📩 Book your MOTORCYCLE SURPRISE package today!\nLet’s turn your love and effort into a moment worth remembering ❤️\nWe make every motorcycle surprise epic and unforgettable! 💫\n“Hindi lang basta motor — it’s a dream come true on two wheels! 🏍️💝\nIba ‘yung saya ‘pag nakita mong nagulat at napasigaw sa tuwa 😭✨\nFREE DELIVERY AROUND THE CITY📌\n#MotorSurprisePH #AbotSaya #PricelessReaction #RideOfJoy\n#AbotSaya #LuxurySurprise #PricelessReactions #DriveOfJoy\n#ABOTSURPRESA #ABOTPILIPINAS #Toservemillions\nABOT Surpresa\nEntrepreneur\nSend message",
+          "cta": "",
+          "image": "https://scontent-lax3-1.xx.fbcdn.net/v/t39.35426-6/641049276_802880802834085_2396946322285863006_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=110&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=H1fTQV59djEQ7kNvwHhqxM6&_nc_oc=AdrWFQyVcDFs8zWUg41s8SYARkNlwBJPKUZ270kKzI7k1ZEf6OWQZ7-ofAq7gd6t41s&_nc_zt=14&_nc_ht=scontent-lax3-1.xx&_nc_gid=HtN7tbfN0Hwhs2TUi3-xQQ&_nc_ss=7b289&oh=00_AQRMVKulB_7N-GxyBk4U-eWmM07USb_9la7DE-AhLRyjig&oe=6AF78E0A",
+          "link_url": "",
+          "title": "",
+          "video": null
+        },
+        {
+          "body": "📩 Book your MOTORCYCLE SURPRISE package today!\nLet’s turn your love and effort into a moment worth remembering ❤️\nWe make every motorcycle surprise epic and unforgettable! 💫\n“Hindi lang basta motor — it’s a dream come true on two wheels! 🏍️💝\nIba ‘yung saya ‘pag nakita mong nagulat at napasigaw sa tuwa 😭✨\nFREE DELIVERY AROUND THE CITY📌\n#MotorSurprisePH #AbotSaya #PricelessReaction #RideOfJoy\n#AbotSaya #LuxurySurprise #PricelessReactions #DriveOfJoy\n#ABOTSURPRESA #ABOTPILIPINAS #Toservemillions\nABOT Surpresa\nEntrepreneur\nSend message",
+          "cta": "",
+          "image": "https://scontent-lax3-1.xx.fbcdn.net/v/t39.35426-6/640370036_1659795608796736_434563763388181044_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=104&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=5kFYfh2m64IQ7kNvwFxhYre&_nc_oc=AdoJ4UWkMR2eEtUVwQ4oeSE5maxC3svIvCw3rhDQFkcdU5IsQkleI7lExaq4Q3e7PuY&_nc_zt=14&_nc_ht=scontent-lax3-1.xx&_nc_gid=HtN7tbfN0Hwhs2TUi3-xQQ&_nc_ss=7b289&oh=00_AQQuWbq3PzlOF_Ax8ZlZjuAGYY497iC09IXuimC6j4yFRw&oe=6AF7630E",
+          "link_url": "",
+          "title": "",
+          "video": null
+        },
+        {
+          "body": "📩 Book your MOTORCYCLE SURPRISE package today!\nLet’s turn your love and effort into a moment worth remembering ❤️\nWe make every motorcycle surprise epic and unforgettable! 💫\n“Hindi lang basta motor — it’s a dream come true on two wheels! 🏍️💝\nIba ‘yung saya ‘pag nakita mong nagulat at napasigaw sa tuwa 😭✨\nFREE DELIVERY AROUND THE CITY📌\n#MotorSurprisePH #AbotSaya #PricelessReaction #RideOfJoy\n#AbotSaya #LuxurySurprise #PricelessReactions #DriveOfJoy\n#ABOTSURPRESA #ABOTPILIPINAS #Toservemillions\nABOT Surpresa\nEntrepreneur\nSend message",
+          "cta": "",
+          "image": "https://scontent-lax3-2.xx.fbcdn.net/v/t39.35426-6/641102488_1402621984679850_7138225903035601741_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=106&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=nySBlTgpy1QQ7kNvwFzWUeJ&_nc_oc=AdoUi9aXPv09hEiQSzGUzz-43JI4y1GuFHp2YIAuCwHaf6lSzF62HYXtqweGGJzBwiA&_nc_zt=14&_nc_ht=scontent-lax3-2.xx&_nc_gid=HtN7tbfN0Hwhs2TUi3-xQQ&_nc_ss=7b289&oh=00_AQRNFbWkuPNJ8fmekxMiOrixkaW0qVlywrcrjDSycyXctg&oe=6AF762E4",
+          "link_url": "",
+          "title": "",
+          "video": null
+        },
+        {
+          "body": "📩 Book your MOTORCYCLE SURPRISE package today!\nLet’s turn your love and effort into a moment worth remembering ❤️\nWe make every motorcycle surprise epic and unforgettable! 💫\n“Hindi lang basta motor — it’s a dream come true on two wheels! 🏍️💝\nIba ‘yung saya ‘pag nakita mong nagulat at napasigaw sa tuwa 😭✨\nFREE DELIVERY AROUND THE CITY📌\n#MotorSurprisePH #AbotSaya #PricelessReaction #RideOfJoy\n#AbotSaya #LuxurySurprise #PricelessReactions #DriveOfJoy\n#ABOTSURPRESA #ABOTPILIPINAS #Toservemillions\nABOT Surpresa\nEntrepreneur\nSend message",
+          "cta": "",
+          "image": "https://scontent-lax3-1.xx.fbcdn.net/v/t39.35426-6/637771997_1695300415213593_6372615073735701841_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=104&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=IcUoV9pQ_9IQ7kNvwHVv6im&_nc_oc=Adr_lk_xDFFsR-z9fiDUzgXLPQPceFLJKunW--1KA8YXMkasRBhZU3-QW-q0TLjMAk0&_nc_zt=14&_nc_ht=scontent-lax3-1.xx&_nc_gid=HtN7tbfN0Hwhs2TUi3-xQQ&_nc_ss=7b289&oh=00_AQSWQmT8UIoKk-AjEvDZ2mEpoIZC6BX3kAxBud_rjD_Gjw&oe=6AF76511",
+          "link_url": "",
+          "title": "",
+          "video": null
+        },
+        {
+          "body": "📩 Book your MOTORCYCLE SURPRISE package today!\nLet’s turn your love and effort into a moment worth remembering ❤️\nWe make every motorcycle surprise epic and unforgettable! 💫\n“Hindi lang basta motor — it’s a dream come true on two wheels! 🏍️💝\nIba ‘yung saya ‘pag nakita mong nagulat at napasigaw sa tuwa 😭✨\nFREE DELIVERY AROUND THE CITY📌\n#MotorSurprisePH #AbotSaya #PricelessReaction #RideOfJoy\n#AbotSaya #LuxurySurprise #PricelessReactions #DriveOfJoy\n#ABOTSURPRESA #ABOTPILIPINAS #Toservemillions\nABOT Surpresa\nEntrepreneur\nSend message",
+          "cta": "",
+          "image": "https://scontent-lax3-2.xx.fbcdn.net/v/t39.35426-6/641282732_765286823303924_7255998069785010231_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=111&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=VGz7b6Y8sVcQ7kNvwEVbdnh&_nc_oc=AdpwDrkXwjRt2mfe9BjXmoyO9oVpJPlGRasyvUQcCfuSJN-rIwP8lOTZgARDRYfNg2w&_nc_zt=14&_nc_ht=scontent-lax3-2.xx&_nc_gid=HtN7tbfN0Hwhs2TUi3-xQQ&_nc_ss=7b289&oh=00_AQSUig_fQyRtk_NUrUX3SFwY0iGxlglJMxeECwfdzYVkSQ&oe=6AF78E4B",
+          "link_url": "",
+          "title": "",
+          "video": null
+        },
+        {
+          "body": "📩 Book your MOTORCYCLE SURPRISE package today!\nLet’s turn your love and effort into a moment worth remembering ❤️\nWe make every motorcycle surprise epic and unforgettable! 💫\n“Hindi lang basta motor — it’s a dream come true on two wheels! 🏍️💝\nIba ‘yung saya ‘pag nakita mong nagulat at napasigaw sa tuwa 😭✨\nFREE DELIVERY AROUND THE CITY📌\n#MotorSurprisePH #AbotSaya #PricelessReaction #RideOfJoy\n#AbotSaya #LuxurySurprise #PricelessReactions #DriveOfJoy\n#ABOTSURPRESA #ABOTPILIPINAS #Toservemillions\nABOT Surpresa\nEntrepreneur\nSend message",
+          "cta": "",
+          "image": "https://scontent-lax3-1.xx.fbcdn.net/v/t39.35426-6/637714248_1153484026727049_3099246631756288890_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=108&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=fop8MvwWjRgQ7kNvwGY1-z_&_nc_oc=Adqo5gY6DxFOboAzlr1_InG6agVXLdWdmY-_J5IKgKj-U28Wy6WA_vLMmsp45qkqEvg&_nc_zt=14&_nc_ht=scontent-lax3-1.xx&_nc_gid=HtN7tbfN0Hwhs2TUi3-xQQ&_nc_ss=7b289&oh=00_AQRBgxbGFDoLawUNw4VAycG_g2JsebMfnFGG-OWRBQ3PBw&oe=6AF75BB4",
+          "link_url": "",
+          "title": "",
+          "video": null
+        },
+        {
+          "body": "📩 Book your MOTORCYCLE SURPRISE package today!\nLet’s turn your love and effort into a moment worth remembering ❤️\nWe make every motorcycle surprise epic and unforgettable! 💫\n“Hindi lang basta motor — it’s a dream come true on two wheels! 🏍️💝\nIba ‘yung saya ‘pag nakita mong nagulat at napasigaw sa tuwa 😭✨\nFREE DELIVERY AROUND THE CITY📌\n#MotorSurprisePH #AbotSaya #PricelessReaction #RideOfJoy\n#AbotSaya #LuxurySurprise #PricelessReactions #DriveOfJoy\n#ABOTSURPRESA #ABOTPILIPINAS #Toservemillions\nABOT Surpresa\nEntrepreneur\nSend message",
+          "cta": "",
+          "image": "https://scontent-lax3-2.xx.fbcdn.net/v/t39.35426-6/639209670_873480708847752_228064396721931028_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=100&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=LtxJisLpfwwQ7kNvwHbfc4o&_nc_oc=AdrV6vHBGcdkCCa4l_W-CvgfA_5kdNkcLrmn80REehu7YuxnObXMFUhlFH3EXY-8ruk&_nc_zt=14&_nc_ht=scontent-lax3-2.xx&_nc_gid=HtN7tbfN0Hwhs2TUi3-xQQ&_nc_ss=7b289&oh=00_AQSEwChWDSr_lfkwcoSp0P8rCmj5tyC6zjcn4KjWVg_afA&oe=6AF76699",
+          "link_url": "",
+          "title": "",
+          "video": null
+        },
+        {
+          "body": "📩 Book your MOTORCYCLE SURPRISE package today!\nLet’s turn your love and effort into a moment worth remembering ❤️\nWe make every motorcycle surprise epic and unforgettable! 💫\n“Hindi lang basta motor — it’s a dream come true on two wheels! 🏍️💝\nIba ‘yung saya ‘pag nakita mong nagulat at napasigaw sa tuwa 😭✨\nFREE DELIVERY AROUND THE CITY📌\n#MotorSurprisePH #AbotSaya #PricelessReaction #RideOfJoy\n#AbotSaya #LuxurySurprise #PricelessReactions #DriveOfJoy\n#ABOTSURPRESA #ABOTPILIPINAS #Toservemillions\nABOT Surpresa\nEntrepreneur\nSend message",
+          "cta": "",
+          "image": "https://scontent-lax3-2.xx.fbcdn.net/v/t39.35426-6/640282142_1299064688945496_2879194692802501815_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=107&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=XD5rAHnWP94Q7kNvwH5gzX-&_nc_oc=AdoHxB6QeVoM1zGRTAJ-hEGpCeCqwTV5pSTk2D7M8neWQiAIfKuRVzrj0v1D8wxSYqE&_nc_zt=14&_nc_ht=scontent-lax3-2.xx&_nc_gid=HtN7tbfN0Hwhs2TUi3-xQQ&_nc_ss=7b289&oh=00_AQRgZDbVgLmLILv3vJNwZo8k6vEfccoPLr16aafOHU_GBA&oe=6AF773FD",
+          "link_url": "",
+          "title": "",
+          "video": null
+        },
+        {
+          "body": "📩 Book your MOTORCYCLE SURPRISE package today!\nLet’s turn your love and effort into a moment worth remembering ❤️\nWe make every motorcycle surprise epic and unforgettable! 💫\n“Hindi lang basta motor — it’s a dream come true on two wheels! 🏍️💝\nIba ‘yung saya ‘pag nakita mong nagulat at napasigaw sa tuwa 😭✨\nFREE DELIVERY AROUND THE CITY📌\n#MotorSurprisePH #AbotSaya #PricelessReaction #RideOfJoy\n#AbotSaya #LuxurySurprise #PricelessReactions #DriveOfJoy\n#ABOTSURPRESA #ABOTPILIPINAS #Toservemillions\nABOT Surpresa\nEntrepreneur\nSend message",
+          "cta": "",
+          "image": "https://scontent-lax3-1.xx.fbcdn.net/v/t39.35426-6/628829728_1350437116847532_1564676481675467542_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=104&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=EeQnf-CIKZMQ7kNvwGde0aP&_nc_oc=Adqw1KHOWhesxlbbBGJqcaayaazX-ssCPlP5Ft2KZbL8UrwP9FJRFhDj7bwk7fz_8y8&_nc_zt=14&_nc_ht=scontent-lax3-1.xx&_nc_gid=HtN7tbfN0Hwhs2TUi3-xQQ&_nc_ss=7b289&oh=00_AQQmDkA6UYs1jG9Ag-3NHHFZgP3tJKGwynnMoyC1uUczjQ&oe=6AF772DD",
+          "link_url": "",
+          "title": "",
+          "video": null
+        },
+        {
+          "body": "📩 Book your MOTORCYCLE SURPRISE package today!\nLet’s turn your love and effort into a moment worth remembering ❤️\nWe make every motorcycle surprise epic and unforgettable! 💫\n“Hindi lang basta motor — it’s a dream come true on two wheels! 🏍️💝\nIba ‘yung saya ‘pag nakita mong nagulat at napasigaw sa tuwa 😭✨\nFREE DELIVERY AROUND THE CITY📌\n#MotorSurprisePH #AbotSaya #PricelessReaction #RideOfJoy\n#AbotSaya #LuxurySurprise #PricelessReactions #DriveOfJoy\n#ABOTSURPRESA #ABOTPILIPINAS #Toservemillions\nABOT Surpresa\nEntrepreneur\nSend message",
+          "cta": "",
+          "image": "https://scontent-lax7-1.xx.fbcdn.net/v/t39.35426-6/639691623_3954628888005305_3257387722962508248_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=101&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=239nnF02rVkQ7kNvwFR9UO5&_nc_oc=AdqnJCekfXggwUpJV0xSkD8Xt8rTObac1It8cO69PGf5ULJje_Jzs6crovJTac2YxhM&_nc_zt=14&_nc_ht=scontent-lax7-1.xx&_nc_gid=HtN7tbfN0Hwhs2TUi3-xQQ&_nc_ss=7b289&oh=00_AQRZVrnTeKBqt9MDk4VkZbxu47wfT2qDFdxUBsGlOS2EeQ&oe=6AF77B40",
+          "link_url": "",
+          "title": "",
+          "video": null
+        },
+        {
+          "body": "📩 Book your MOTORCYCLE SURPRISE package today!\nLet’s turn your love and effort into a moment worth remembering ❤️\nWe make every motorcycle surprise epic and unforgettable! 💫\n“Hindi lang basta motor — it’s a dream come true on two wheels! 🏍️💝\nIba ‘yung saya ‘pag nakita mong nagulat at napasigaw sa tuwa 😭✨\nFREE DELIVERY AROUND THE CITY📌\n#MotorSurprisePH #AbotSaya #PricelessReaction #RideOfJoy\n#AbotSaya #LuxurySurprise #PricelessReactions #DriveOfJoy\n#ABOTSURPRESA #ABOTPILIPINAS #Toservemillions\nABOT Surpresa\nEntrepreneur\nSend message",
+          "cta": "",
+          "image": "https://scontent-lax3-1.xx.fbcdn.net/v/t39.35426-6/641282724_906271102155999_3430407685893710345_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=110&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=iI6tllG4vy0Q7kNvwG9jdbd&_nc_oc=AdrD0V5PLdv02-2otlSIvkwQ4lLRG5x8h9jOLfHFnGRF2H4SOX6c4iqueY-JFTqi_7s&_nc_zt=14&_nc_ht=scontent-lax3-1.xx&_nc_gid=HtN7tbfN0Hwhs2TUi3-xQQ&_nc_ss=7b289&oh=00_AQQ0pj979xwGkHgA2HJ5DuikgHGlU94izMLVrX24h0kFRg&oe=6AF770AA",
+          "link_url": "",
+          "title": "",
+          "video": null
+        },
+        {
+          "body": "📩 Book your MOTORCYCLE SURPRISE package today!\nLet’s turn your love and effort into a moment worth remembering ❤️\nWe make every motorcycle surprise epic and unforgettable! 💫\n“Hindi lang basta motor — it’s a dream come true on two wheels! 🏍️💝\nIba ‘yung saya ‘pag nakita mong nagulat at napasigaw sa tuwa 😭✨\nFREE DELIVERY AROUND THE CITY📌\n#MotorSurprisePH #AbotSaya #PricelessReaction #RideOfJoy\n#AbotSaya #LuxurySurprise #PricelessReactions #DriveOfJoy\n#ABOTSURPRESA #ABOTPILIPINAS #Toservemillions\nABOT Surpresa\nEntrepreneur\nSend message",
+          "cta": "",
+          "image": "https://scontent-lax7-1.xx.fbcdn.net/v/t39.35426-6/638443209_671489966021823_2205906653431212754_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=101&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=xTQ_822LqwwQ7kNvwGUzHcy&_nc_oc=AdpIf5wTbfX1BWrx6l9T1CeUKCyyn9V5N32SGzQYdQoTv1QfbDSswdczk0lf2VuJoh8&_nc_zt=14&_nc_ht=scontent-lax7-1.xx&_nc_gid=HtN7tbfN0Hwhs2TUi3-xQQ&_nc_ss=7b289&oh=00_AQQXBdgkqV6JDhXhEzu_qp8fG1KalX0FneP0wAJlxzTBLw&oe=6AF76602",
+          "link_url": "",
+          "title": "",
+          "video": null
+        },
+        {
+          "body": "📩 Book your MOTORCYCLE SURPRISE package today!\nLet’s turn your love and effort into a moment worth remembering ❤️\nWe make every motorcycle surprise epic and unforgettable! 💫\n“Hindi lang basta motor — it’s a dream come true on two wheels! 🏍️💝\nIba ‘yung saya ‘pag nakita mong nagulat at napasigaw sa tuwa 😭✨\nFREE DELIVERY AROUND THE CITY📌\n#MotorSurprisePH #AbotSaya #PricelessReaction #RideOfJoy\n#AbotSaya #LuxurySurprise #PricelessReactions #DriveOfJoy\n#ABOTSURPRESA #ABOTPILIPINAS #Toservemillions\nABOT Surpresa\nEntrepreneur\nSend message",
+          "cta": "",
+          "image": "https://scontent-lax3-2.xx.fbcdn.net/v/t39.35426-6/639599825_929331776491393_6696515124134291036_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=107&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=RfLgM9OzVnEQ7kNvwGbv7rr&_nc_oc=Adp6FqJPkJtojkkO0es_-KyiAjFW7cfAxCCHJQHrXQmcrr9tNQocnmlK5bi2EeC7YMA&_nc_zt=14&_nc_ht=scontent-lax3-2.xx&_nc_gid=HtN7tbfN0Hwhs2TUi3-xQQ&_nc_ss=7b289&oh=00_AQSOVxozueWEsrBIdngMMTz5-I1IFQQehHz4D5cfrfLM5A&oe=6AF78E45",
+          "link_url": "",
+          "title": "",
+          "video": null
+        },
+        {
+          "body": "📩 Book your MOTORCYCLE SURPRISE package today!\nLet’s turn your love and effort into a moment worth remembering ❤️\nWe make every motorcycle surprise epic and unforgettable! 💫\n“Hindi lang basta motor — it’s a dream come true on two wheels! 🏍️💝\nIba ‘yung saya ‘pag nakita mong nagulat at napasigaw sa tuwa 😭✨\nFREE DELIVERY AROUND THE CITY📌\n#MotorSurprisePH #AbotSaya #PricelessReaction #RideOfJoy\n#AbotSaya #LuxurySurprise #PricelessReactions #DriveOfJoy\n#ABOTSURPRESA #ABOTPILIPINAS #Toservemillions\nABOT Surpresa\nEntrepreneur\nSend message",
+          "cta": "",
+          "image": "https://scontent-lax3-2.xx.fbcdn.net/v/t39.35426-6/641262242_946096054526627_4831423279751007873_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=103&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=ZgO-KmYoGAIQ7kNvwEDqTqS&_nc_oc=AdoRTY1SlT7U5n7-JTRVPESi4LfUQfu2sSq3Ee9JUi_fzyaXFVuN4bOYA3z8ulZXBVc&_nc_zt=14&_nc_ht=scontent-lax3-2.xx&_nc_gid=HtN7tbfN0Hwhs2TUi3-xQQ&_nc_ss=7b289&oh=00_AQRZBpiteMhWfM494Yx3-Z9K-CJORjXY3ByrsetFajNwrQ&oe=6AF77799",
+          "link_url": "",
+          "title": "",
+          "video": null
+        },
+        {
+          "body": "📩 Book your MOTORCYCLE SURPRISE package today!\nLet’s turn your love and effort into a moment worth remembering ❤️\nWe make every motorcycle surprise epic and unforgettable! 💫\n“Hindi lang basta motor — it’s a dream come true on two wheels! 🏍️💝\nIba ‘yung saya ‘pag nakita mong nagulat at napasigaw sa tuwa 😭✨\nFREE DELIVERY AROUND THE CITY📌\n#MotorSurprisePH #AbotSaya #PricelessReaction #RideOfJoy\n#AbotSaya #LuxurySurprise #PricelessReactions #DriveOfJoy\n#ABOTSURPRESA #ABOTPILIPINAS #Toservemillions\nABOT Surpresa\nEntrepreneur\nSend message",
+          "cta": "",
+          "image": "https://scontent-lax3-1.xx.fbcdn.net/v/t39.35426-6/641203299_2841486919529842_9048004575005017712_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=108&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=Agi_6fL1AswQ7kNvwFiet0F&_nc_oc=Adot_sO1o1NZPrNpC-M91dFkC6QM16rw_Qcr2sxX1uk3pknCyv-mi1MVNEkRVrbfCto&_nc_zt=14&_nc_ht=scontent-lax3-1.xx&_nc_gid=HtN7tbfN0Hwhs2TUi3-xQQ&_nc_ss=7b289&oh=00_AQT9nnGz6Cze8lJz6zPxDqTguzTaVD7yoYFLD_4Y1Js3Kw&oe=6AF76843",
+          "link_url": "",
+          "title": "",
+          "video": null
+        }
+      ]
+    }
+  ],
+  "advertiser_search": [
+    {
+      "id": "1487551922605973",
+      "page_name": "Domino's Pizza",
+      "status": "active",
+      "first_seen": "Jun 10, 2026",
+      "last_seen": "",
+      "creative_text": "أطعم بيتزا تجيك حاارة وبـ 9 ريال بس للتوصيل 👌 اطلب أي 2 بيتزا كبيرة بـ 29 ريال للوحدة 🍕",
+      "library_url": "https://www.facebook.com/ads/library/?id=1487551922605973",
+      "page_url": "https://www.facebook.com/DominosKSA/",
+      "page_id": "",
+      "link_url": "https://www.dominos.sa/ar/",
+      "link_title": "اطلب والتوصيل بـ 9 ريال بس 🚗 اطلبها الحين",
+      "cta_text": "Order Now",
+      "link_caption": "",
+      "images": [
+        "https://scontent-lax3-1.xx.fbcdn.net/v/t39.35426-6/740779659_2114995379131189_532121214577279106_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=108&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=f53yANxLzCoQ7kNvwE02YG_&_nc_oc=AdrFy_kmwmc7NBLxQWfx3BbZfAkSwzExEQnFoBICRbC_eoeRJSjDlFwsc9NHGXVyFmI&_nc_zt=14&_nc_ht=scontent-lax3-1.xx&_nc_gid=3G6qZkvqgZR1pk8zuNKmUw&_nc_ss=7b289&oh=00_AQQd6EnIw7DE0_nqHSfCLk0LiyMsCeF_KyEXjPlpTgQUjQ&oe=6AF75730"
+      ],
+      "has_video": false,
+      "same_creative_count": 0,
+      "multiple_versions": true,
+      "cta_type": "ORDER_NOW",
+      "display_format": "image",
+      "cards": [
+        {
+          "body": "أطعم بيتزا تجيك حاارة وبـ 9 ريال بس للتوصيل 👌 اطلب أي 2 بيتزا كبيرة بـ 29 ريال للوحدة 🍕",
+          "cta": "Order Now",
+          "image": "https://scontent-lax3-1.xx.fbcdn.net/v/t39.35426-6/740779659_2114995379131189_532121214577279106_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=108&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=f53yANxLzCoQ7kNvwE02YG_&_nc_oc=AdrFy_kmwmc7NBLxQWfx3BbZfAkSwzExEQnFoBICRbC_eoeRJSjDlFwsc9NHGXVyFmI&_nc_zt=14&_nc_ht=scontent-lax3-1.xx&_nc_gid=3G6qZkvqgZR1pk8zuNKmUw&_nc_ss=7b289&oh=00_AQQd6EnIw7DE0_nqHSfCLk0LiyMsCeF_KyEXjPlpTgQUjQ&oe=6AF75730",
+          "link_url": "https://www.dominos.sa/ar/",
+          "title": "اطلب والتوصيل بـ 9 ريال بس 🚗 اطلبها الحين",
+          "video": null
+        }
+      ]
+    },
+    {
+      "id": "1310128874544601",
+      "page_name": "Domino's Pizza",
+      "status": "active",
+      "first_seen": "Nov 2, 2026",
+      "last_seen": "",
+      "creative_text": "اطلب بوكس الجمعات واجمع الكل 😍 أي 3 بيتزا كبيرة مع 4 أصناف جانبية وبيبسي كبير بـ 129 ريال 🍕",
+      "library_url": "https://www.facebook.com/ads/library/?id=1310128874544601",
+      "page_url": "https://www.facebook.com/DominosKSA/",
+      "page_id": "",
+      "link_url": "https://www.dominos.sa/ar/",
+      "link_title": "بيتزا مع توصيل بـ 9 ريال 😍 اطلب بوكس الجمعات أونلاين!",
+      "cta_text": "Order now",
+      "link_caption": "DOMINOS.SA",
+      "images": [
+        "https://scontent-lax7-1.xx.fbcdn.net/v/t39.35426-6/888089039_3377590655768004_6548120610802867031_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=105&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=OVyJGB0vSqcQ7kNvwFl1xTg&_nc_oc=Adp36F1lhqHXYN9dWYiESU6lXIbt1ltTVLKK44e385k0vuFO13ao2YmY5jRYM6hYrfU&_nc_zt=14&_nc_ht=scontent-lax7-1.xx&_nc_gid=3G6qZkvqgZR1pk8zuNKmUw&_nc_ss=7b289&oh=00_AQTyA2BGIO6dJGpJRkdiGn2XG92WoKOp8kXirKYwtAVr7A&oe=6AF78931"
+      ],
+      "has_video": false,
+      "same_creative_count": 0,
+      "multiple_versions": true,
+      "cta_type": "ORDER_NOW",
+      "display_format": "image",
+      "cards": [
+        {
+          "body": "اطلب بوكس الجمعات واجمع الكل 😍 أي 3 بيتزا كبيرة مع 4 أصناف جانبية وبيبسي كبير بـ 129 ريال 🍕",
+          "cta": "Order now",
+          "image": "https://scontent-lax7-1.xx.fbcdn.net/v/t39.35426-6/888089039_3377590655768004_6548120610802867031_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=105&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=OVyJGB0vSqcQ7kNvwFl1xTg&_nc_oc=Adp36F1lhqHXYN9dWYiESU6lXIbt1ltTVLKK44e385k0vuFO13ao2YmY5jRYM6hYrfU&_nc_zt=14&_nc_ht=scontent-lax7-1.xx&_nc_gid=3G6qZkvqgZR1pk8zuNKmUw&_nc_ss=7b289&oh=00_AQTyA2BGIO6dJGpJRkdiGn2XG92WoKOp8kXirKYwtAVr7A&oe=6AF78931",
+          "link_url": "https://www.dominos.sa/ar/",
+          "title": "بيتزا مع توصيل بـ 9 ريال 😍 اطلب بوكس الجمعات أونلاين!",
+          "video": null
+        }
+      ]
+    },
+    {
+      "id": "1665902281803620",
+      "page_name": "Domino's Pizza",
+      "status": "active",
+      "first_seen": "Nov 2, 2026",
+      "last_seen": "",
+      "creative_text": "أطعم بيتزا تجيك حاارة وبـ 9 ريال بس للتوصيل 👌 اطلب أي 2 بيتزا كبيرة بـ 29 ريال للوحدة 🍕",
+      "library_url": "https://www.facebook.com/ads/library/?id=1665902281803620",
+      "page_url": "https://www.facebook.com/DominosKSA/",
+      "page_id": "",
+      "link_url": "https://www.dominos.sa/ar/",
+      "link_title": "اطلب والتوصيل بـ 9 ريال بس 🚗 اطلبها الحين",
+      "cta_text": "Order Now",
+      "link_caption": "",
+      "images": [
+        "https://scontent-lax3-1.xx.fbcdn.net/v/t39.35426-6/881748721_1105015218796321_1612514091354230664_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=109&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=OHX7YQVmhw0Q7kNvwH4IN15&_nc_oc=AdqwkMzT7948-rsIbX7CwPD7oHE_QdaKcAJZN-OFbw7tZTQGZ2tboh45RqFyvO7eTnc&_nc_zt=14&_nc_ht=scontent-lax3-1.xx&_nc_gid=3G6qZkvqgZR1pk8zuNKmUw&_nc_ss=7b289&oh=00_AQQjwMa4_Rmxv9g7cRD2ld0py_5GAQ9izIOxRz9EPrkbSg&oe=6AF78B29"
+      ],
+      "has_video": false,
+      "same_creative_count": 0,
+      "multiple_versions": true,
+      "cta_type": "ORDER_NOW",
+      "display_format": "image",
+      "cards": [
+        {
+          "body": "أطعم بيتزا تجيك حاارة وبـ 9 ريال بس للتوصيل 👌 اطلب أي 2 بيتزا كبيرة بـ 29 ريال للوحدة 🍕",
+          "cta": "Order Now",
+          "image": "https://scontent-lax3-1.xx.fbcdn.net/v/t39.35426-6/881748721_1105015218796321_1612514091354230664_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=109&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=OHX7YQVmhw0Q7kNvwH4IN15&_nc_oc=AdqwkMzT7948-rsIbX7CwPD7oHE_QdaKcAJZN-OFbw7tZTQGZ2tboh45RqFyvO7eTnc&_nc_zt=14&_nc_ht=scontent-lax3-1.xx&_nc_gid=3G6qZkvqgZR1pk8zuNKmUw&_nc_ss=7b289&oh=00_AQQjwMa4_Rmxv9g7cRD2ld0py_5GAQ9izIOxRz9EPrkbSg&oe=6AF78B29",
+          "link_url": "https://www.dominos.sa/ar/",
+          "title": "اطلب والتوصيل بـ 9 ريال بس 🚗 اطلبها الحين",
+          "video": null
+        }
+      ]
+    },
+    {
+      "id": "991370083688471",
+      "page_name": "Domino's Pizza",
+      "status": "active",
+      "first_seen": "Jun 18, 2026",
+      "last_seen": "",
+      "creative_text": "اطلب بوكس الجمعات 😍 أي 3 بيتزا كبيرة مع 4 أصناف جانبية وبيبسي كبير بـ 129 ريال🍕",
+      "library_url": "https://www.facebook.com/ads/library/?id=991370083688471",
+      "page_url": "https://www.facebook.com/DominosKSA/",
+      "page_id": "",
+      "link_url": "https://www.dominos.sa/ar/",
+      "link_title": "بوكس الجمعات من دومينوز 🍕 اطلب بوكس الجمعات أونلاين!",
+      "cta_text": "Order Now",
+      "link_caption": "",
+      "images": [
+        "https://scontent-lax3-1.xx.fbcdn.net/v/t39.35426-6/874336019_1112317938431897_5183829985328481091_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=102&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=Ozcou1UMnFsQ7kNvwGw6PPw&_nc_oc=AdodTN3A83Ont-Defl1lVdPCNllOoPLnI3GPcVeWBkBurzURROp-siIWxOIPErnYWUM&_nc_zt=14&_nc_ht=scontent-lax3-1.xx&_nc_gid=3G6qZkvqgZR1pk8zuNKmUw&_nc_ss=7b289&oh=00_AQTQfTgyk9jvtdZDO4mSshP_zKnHmWTKydPiUgIKFkaUig&oe=6AF76035"
+      ],
+      "has_video": false,
+      "same_creative_count": 0,
+      "multiple_versions": false,
+      "cta_type": "ORDER_NOW",
+      "display_format": "image",
+      "cards": [
+        {
+          "body": "اطلب بوكس الجمعات 😍 أي 3 بيتزا كبيرة مع 4 أصناف جانبية وبيبسي كبير بـ 129 ريال🍕",
+          "cta": "Order Now",
+          "image": "https://scontent-lax3-1.xx.fbcdn.net/v/t39.35426-6/874336019_1112317938431897_5183829985328481091_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=102&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=Ozcou1UMnFsQ7kNvwGw6PPw&_nc_oc=AdodTN3A83Ont-Defl1lVdPCNllOoPLnI3GPcVeWBkBurzURROp-siIWxOIPErnYWUM&_nc_zt=14&_nc_ht=scontent-lax3-1.xx&_nc_gid=3G6qZkvqgZR1pk8zuNKmUw&_nc_ss=7b289&oh=00_AQTQfTgyk9jvtdZDO4mSshP_zKnHmWTKydPiUgIKFkaUig&oe=6AF76035",
+          "link_url": "https://www.dominos.sa/ar/",
+          "title": "بوكس الجمعات من دومينوز 🍕 اطلب بوكس الجمعات أونلاين!",
+          "video": null
+        }
+      ]
+    },
+    {
+      "id": "1155065930552854",
+      "page_name": "Domino's Pizza",
+      "status": "active",
+      "first_seen": "Nov 4, 2026",
+      "last_seen": "",
+      "creative_text": "New! Domino's Solo Box comes with pizza, pasta, with more options and sides 👌🍕🍝",
+      "library_url": "https://www.facebook.com/ads/library/?id=1155065930552854",
+      "page_url": "https://www.facebook.com/DominosKSA/",
+      "page_id": "",
+      "link_url": "https://www.dominos.sa/ar/",
+      "link_title": "",
+      "cta_text": "",
+      "link_caption": "",
+      "images": [
+        "https://scontent-lax3-2.xx.fbcdn.net/v/t39.35426-6/885149456_1134789502536008_140390894831582010_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=106&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=pEfVZnfifkkQ7kNvwHZuiIV&_nc_oc=Adq52lt84IJOunwFI4RRiFs5xlvlhl-m_nILFBZeyQ9-3pQreR1-nM5rijd0gCBkE8c&_nc_zt=14&_nc_ht=scontent-lax3-2.xx&_nc_gid=3G6qZkvqgZR1pk8zuNKmUw&_nc_ss=7b289&oh=00_AQQ7hzZ9RBE8dkpH72isyAyw8PVoUeJRWTYia1mlgebCQQ&oe=6AF76B36"
+      ],
+      "has_video": false,
+      "same_creative_count": 2,
+      "multiple_versions": false,
+      "cta_type": "",
+      "display_format": "image",
+      "cards": [
+        {
+          "body": "New! Domino's Solo Box comes with pizza, pasta, with more options and sides 👌🍕🍝",
+          "cta": "",
+          "image": "https://scontent-lax3-2.xx.fbcdn.net/v/t39.35426-6/885149456_1134789502536008_140390894831582010_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=106&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=pEfVZnfifkkQ7kNvwHZuiIV&_nc_oc=Adq52lt84IJOunwFI4RRiFs5xlvlhl-m_nILFBZeyQ9-3pQreR1-nM5rijd0gCBkE8c&_nc_zt=14&_nc_ht=scontent-lax3-2.xx&_nc_gid=3G6qZkvqgZR1pk8zuNKmUw&_nc_ss=7b289&oh=00_AQQ7hzZ9RBE8dkpH72isyAyw8PVoUeJRWTYia1mlgebCQQ&oe=6AF76B36",
+          "link_url": "https://www.dominos.sa/ar/",
+          "title": "",
+          "video": null
+        }
+      ]
+    },
+    {
+      "id": "28901602699504810",
+      "page_name": "Domino's Pizza",
+      "status": "active",
+      "first_seen": "Nov 4, 2026",
+      "last_seen": "",
+      "creative_text": "جديد! بوكس السولو من دومينوز يجي بوقته.. بيتزا أو باستا وغيرها مع أصناف جانبية ومشروب وصوص 👌🍕🍝",
+      "library_url": "https://www.facebook.com/ads/library/?id=28901602699504810",
+      "page_url": "https://www.facebook.com/DominosKSA/",
+      "page_id": "",
+      "link_url": "https://www.dominos.sa/ar/",
+      "link_title": "",
+      "cta_text": "",
+      "link_caption": "",
+      "images": [
+        "https://scontent-lax3-2.xx.fbcdn.net/v/t39.35426-6/885818237_1694680275349434_4284431636424577131_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=103&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=xKPWd765nYIQ7kNvwFI0Gih&_nc_oc=AdrKMSLxBrlOZ82EPow1fS3jUxfKEb92VIqjE9V9SQM4KM5xMpTfTuPxiZJGNYHGTNg&_nc_zt=14&_nc_ht=scontent-lax3-2.xx&_nc_gid=3G6qZkvqgZR1pk8zuNKmUw&_nc_ss=7b289&oh=00_AQTm1ZQWCkOn89mijLsZw7AAT_sNcT-o5eITEO9wSyVPcQ&oe=6AF759E6"
+      ],
+      "has_video": false,
+      "same_creative_count": 2,
+      "multiple_versions": false,
+      "cta_type": "",
+      "display_format": "image",
+      "cards": [
+        {
+          "body": "جديد! بوكس السولو من دومينوز يجي بوقته.. بيتزا أو باستا وغيرها مع أصناف جانبية ومشروب وصوص 👌🍕🍝",
+          "cta": "",
+          "image": "https://scontent-lax3-2.xx.fbcdn.net/v/t39.35426-6/885818237_1694680275349434_4284431636424577131_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=103&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=xKPWd765nYIQ7kNvwFI0Gih&_nc_oc=AdrKMSLxBrlOZ82EPow1fS3jUxfKEb92VIqjE9V9SQM4KM5xMpTfTuPxiZJGNYHGTNg&_nc_zt=14&_nc_ht=scontent-lax3-2.xx&_nc_gid=3G6qZkvqgZR1pk8zuNKmUw&_nc_ss=7b289&oh=00_AQTm1ZQWCkOn89mijLsZw7AAT_sNcT-o5eITEO9wSyVPcQ&oe=6AF759E6",
+          "link_url": "https://www.dominos.sa/ar/",
+          "title": "",
+          "video": null
+        }
+      ]
+    },
+    {
+      "id": "1460512279392735",
+      "page_name": "Domino's Pizza",
+      "status": "active",
+      "first_seen": "Nov 8, 2026",
+      "last_seen": "",
+      "creative_text": "جديد! بوكس السولو من دومينوز يجي بوقته.. بيتزا أو باستا وغيرها مع أصناف جانبية ومشروب وصوص 👌🍕🍝",
+      "library_url": "https://www.facebook.com/ads/library/?id=1460512279392735",
+      "page_url": "https://www.facebook.com/DominosKSA/",
+      "page_id": "",
+      "link_url": "",
+      "link_title": "",
+      "cta_text": "",
+      "link_caption": "",
+      "images": [],
+      "has_video": true,
+      "same_creative_count": 0,
+      "multiple_versions": false,
+      "cta_type": "",
+      "display_format": "video",
+      "cards": [
+        {
+          "body": "جديد! بوكس السولو من دومينوز يجي بوقته.. بيتزا أو باستا وغيرها مع أصناف جانبية ومشروب وصوص 👌🍕🍝",
+          "cta": "",
+          "image": null,
+          "link_url": "",
+          "title": "",
+          "video": null
+        }
+      ]
     }
   ]
 }

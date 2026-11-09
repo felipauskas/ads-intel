@@ -1,8 +1,8 @@
 {
   "query": "Pizza Hut",
   "country": "SA",
-  "checked_at": "2026-11-09T12:08:35",
-  "partial": false,
+  "checked_at": "2026-11-09T14:28:24",
+  "partial": true,
   "total": 4,
   "new": 4,
   "ended": 0,

@@ -3,15 +3,15 @@
   "country": "AE",
   "advertiser": "McDonald's",
   "folder": "evals/live-matrix/mcdonalds-ae",
-  "data_dir": "/var/folders/zf/g9bpd9s55sv10tz2mnhqch800000gn/T/ads-intel-live-eval-a5skrx5s/tmpxk2xerhp",
+  "data_dir": "/var/folders/zf/g9bpd9s55sv10tz2mnhqch800000gn/T/ads-intel-live-eval-7v9t8l1b/tmpk4bktont",
   "search_summary": {
     "count": null,
     "complete": null,
     "fetched": null,
     "country": null,
-    "error": "parse_failed: render (5169 chars) with no card markers or empty-state text",
+    "error": "parse_failed: dead_render: shell: render (5169 chars) with no card markers or empty-state text",
     "page_names": [],
-    "seconds": 23.7
+    "seconds": 27.93
   },
   "advertiser_summary": {
     "count": 20,
@@ -27,7 +27,7 @@
     "page_names": [
       "McDonald's"
     ],
-    "seconds": 19.96
+    "seconds": 21.97
   },
   "watch_add": {
     "error": null,
@@ -43,21 +43,6 @@
   "check1": {
     "query": "McDonald's",
     "country": "AE",
-    "partial": true,
-    "skipped": true,
-    "reason": "parse_failed",
-    "artifacts": {
-      "error": "parse_failed"
-    },
-    "new_page_names": [],
-    "seconds": 16.92,
-    "artifact_problems": [
-      "artifacts_error: parse_failed"
-    ]
-  },
-  "check2": {
-    "query": "McDonald's",
-    "country": "AE",
     "advertiser": "McDonald's",
     "resolved": {
       "page_name": "McDonald's",
@@ -68,15 +53,34 @@
     "changed_ads": 0,
     "partial": false,
     "artifacts": {
-      "html": "artifacts/check2/html.html",
-      "digest": "artifacts/check2/digest.json"
+      "html": "artifacts/html.html",
+      "digest": "artifacts/digest.json"
     },
     "new_page_names": [
       "McDonald's"
     ],
-    "seconds": 13.83
+    "seconds": 17.69
   },
-  "artifacts_ok": false,
+  "check2": {
+    "query": "McDonald's",
+    "country": "AE",
+    "advertiser": "McDonald's",
+    "resolved": {
+      "page_name": "McDonald's",
+      "score": 0.8
+    },
+    "new_ads": 0,
+    "ended_ads": 0,
+    "changed_ads": 0,
+    "partial": false,
+    "artifacts": {
+      "html": "artifacts/check2/html.html",
+      "digest": "artifacts/check2/digest.json"
+    },
+    "new_page_names": [],
+    "seconds": 34.79
+  },
+  "artifacts_ok": true,
   "artifacts2_ok": true,
   "currency": {
     "expected": "AED",
@@ -85,20 +89,22 @@
   },
   "status": "FAIL",
   "failures": [
-    "search_error: parse_failed: render (5169 chars) with no card markers or empty-state text",
-    "check1_no_new_ads: (None, None, None)",
-    "check2_not_settled: (27, 0, 0)",
-    "artifacts_error: parse_failed"
+    "search_error: parse_failed: dead_render: shell: render (5169 chars) with no card markers or empty-state text"
   ],
   "timings": {
-    "search": 23.7,
-    "advertiser_search": 19.96,
-    "check1": 16.92,
-    "check2": 13.83,
-    "total": 74.41
+    "search": 27.93,
+    "advertiser_search": 21.97,
+    "check1": 17.69,
+    "check2": 34.79,
+    "total": 102.38
   },
   "attempts": {
-    "total": 15,
-    "failed": 0
+    "total": 19,
+    "failed": 16,
+    "transport_failed": 0,
+    "parse_failed": 16,
+    "shell": 16,
+    "blocked": 0,
+    "markup_changed": 0
   }
 }

@@ -3,7 +3,7 @@
   "country": "EG",
   "advertiser": "Burger King",
   "folder": "evals/live-matrix/burger-king-eg",
-  "data_dir": "/var/folders/zf/g9bpd9s55sv10tz2mnhqch800000gn/T/ads-intel-live-eval-a7rj07r3/tmp9jl0wtxz",
+  "data_dir": "/var/folders/zf/g9bpd9s55sv10tz2mnhqch800000gn/T/ads-intel-live-eval-7v9t8l1b/tmp10x0xu6u",
   "search_summary": {
     "count": 20,
     "complete": false,
@@ -11,7 +11,7 @@
     "country": "EG",
     "error": null,
     "page_names": [
-      "Ns-zlin-0125",
+      "DramaPop zs1",
       "BUFFALO BURGER",
       "Burger King Malaysia",
       "DoorDash",
@@ -22,13 +22,14 @@
       "Talabat",
       "Xc-twoseven-One",
       "NS-Zs-02",
+      "GlowBinge: Love Drama TV",
       "Ns-st-zsuse",
       "LumaWorld",
+      "Alibaba.com",
       "비밀의 저택에서",
-      "Shortdrama-zlin-06",
-      "Burger King Arabia"
+      "Shortdrama-zlin-06"
     ],
-    "seconds": 13.91
+    "seconds": 15.22
   },
   "advertiser_summary": {
     "count": null,
@@ -48,7 +49,7 @@
     ],
     "threshold": 0.8,
     "page_names": [],
-    "seconds": 8.36
+    "seconds": 13.74
   },
   "watch_add": {
     "error": null,
@@ -83,7 +84,7 @@
       "error": "name_not_matched"
     },
     "new_page_names": [],
-    "seconds": 19.92,
+    "seconds": 14.46,
     "artifact_problems": [
       "artifacts_error: name_not_matched"
     ]
@@ -110,7 +111,7 @@
       "error": "name_not_matched"
     },
     "new_page_names": [],
-    "seconds": 13.46,
+    "seconds": 7.32,
     "artifact_problems": [
       "artifacts_error: name_not_matched"
     ]
@@ -130,14 +131,19 @@
     "artifacts2_error: name_not_matched"
   ],
   "timings": {
-    "search": 13.91,
-    "advertiser_search": 8.36,
-    "check1": 19.92,
-    "check2": 13.46,
-    "total": 55.65
+    "search": 15.22,
+    "advertiser_search": 13.74,
+    "check1": 14.46,
+    "check2": 7.32,
+    "total": 50.74
   },
   "attempts": {
-    "total": 12,
-    "failed": 0
+    "total": 8,
+    "failed": 4,
+    "transport_failed": 0,
+    "parse_failed": 4,
+    "shell": 4,
+    "blocked": 0,
+    "markup_changed": 0
   }
 }

@@ -15,6 +15,7 @@
       "link_url": "https://www.facebook.com/language/",
       "link_title": "",
       "cta_text": "English (US)",
+      "link_caption": "",
       "images": [
         "https://scontent-lax3-2.xx.fbcdn.net/v/t39.35426-6/790310336_1632202361858623_3981375611203847008_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=100&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=ZibiP7GHV4sQ7kNvwFc-HMB&_nc_oc=Adrgx1Rt-ZfMGvqX34SJ_dCU_oswrn0qdwtUvo7ZbKxy8xUb1GbSLwGvz_q-YVz4TEE&_nc_zt=14&_nc_ht=scontent-lax3-2.xx&_nc_gid=PIoXXbNu6DrpHjT4jN1Fxw&_nc_ss=7b289&oh=00_AQTJ_h__Bm9xRQx93UiTPhtox8gEc76H34_PYVMIMKByTA&oe=6AF74548",
         "https://scontent-lax3-1.xx.fbcdn.net/v/t39.35426-6/792110183_1742725126847923_2720410088047356943_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=109&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=LUmfhD35uk8Q7kNvwEm8L5u&_nc_oc=Adpnmj61FhPDRcVnjzTwkKlOlLmfNH10T356xLGSwR26q7yZIdenmUFboX_aPylJq98&_nc_zt=14&_nc_ht=scontent-lax3-1.xx&_nc_gid=PIoXXbNu6DrpHjT4jN1Fxw&_nc_ss=7b289&oh=00_AQS3XEO3tPB1RS_NkMZyY1JfWhvZ8DNfE7O4RrZlV_I5cw&oe=6AF741FB",
@@ -36,7 +37,147 @@
       ],
       "has_video": false,
       "same_creative_count": 0,
-      "multiple_versions": true
+      "multiple_versions": true,
+      "cta_type": "ENGLISH_US",
+      "display_format": "dco",
+      "cards": [
+        {
+          "body": "OFW ka ba? Gusto mong mapasaya ang pamilya mo sa Pinas kahit walang okasyon?\nIto na ang sagot — Fast-Foodala 💙💛\n✅ Jollibee, Greenwich, Mang Inasal, at iba pa\n✅ May Bilao at per item orders\n✅ Same-day delivery sa selected areas\n✅ Trusted ng OFWs simula 2021\n✅ Kahit malalayong probinsya, kayang i-Padalove!\n📲 Message us now — Padalove mo, ihahatid namin!\n#FastFoodala #OFWPadala #PadaloveMo #SameDayDelivery #PadalaSaProbinsya\nOFW Fast-Foodala To Philippines\nFood Service\nSend message",
+          "cta": "English (US)",
+          "image": "https://scontent-lax3-2.xx.fbcdn.net/v/t39.35426-6/790310336_1632202361858623_3981375611203847008_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=100&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=ZibiP7GHV4sQ7kNvwFc-HMB&_nc_oc=Adrgx1Rt-ZfMGvqX34SJ_dCU_oswrn0qdwtUvo7ZbKxy8xUb1GbSLwGvz_q-YVz4TEE&_nc_zt=14&_nc_ht=scontent-lax3-2.xx&_nc_gid=PIoXXbNu6DrpHjT4jN1Fxw&_nc_ss=7b289&oh=00_AQTJ_h__Bm9xRQx93UiTPhtox8gEc76H34_PYVMIMKByTA&oe=6AF74548",
+          "link_url": "https://www.facebook.com/language/",
+          "title": "",
+          "video": null
+        },
+        {
+          "body": "OFW ka ba? Gusto mong mapasaya ang pamilya mo sa Pinas kahit walang okasyon?\nIto na ang sagot — Fast-Foodala 💙💛\n✅ Jollibee, Greenwich, Mang Inasal, at iba pa\n✅ May Bilao at per item orders\n✅ Same-day delivery sa selected areas\n✅ Trusted ng OFWs simula 2021\n✅ Kahit malalayong probinsya, kayang i-Padalove!\n📲 Message us now — Padalove mo, ihahatid namin!\n#FastFoodala #OFWPadala #PadaloveMo #SameDayDelivery #PadalaSaProbinsya\nOFW Fast-Foodala To Philippines\nFood Service\nSend message",
+          "cta": "English (US)",
+          "image": "https://scontent-lax3-1.xx.fbcdn.net/v/t39.35426-6/792110183_1742725126847923_2720410088047356943_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=109&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=LUmfhD35uk8Q7kNvwEm8L5u&_nc_oc=Adpnmj61FhPDRcVnjzTwkKlOlLmfNH10T356xLGSwR26q7yZIdenmUFboX_aPylJq98&_nc_zt=14&_nc_ht=scontent-lax3-1.xx&_nc_gid=PIoXXbNu6DrpHjT4jN1Fxw&_nc_ss=7b289&oh=00_AQS3XEO3tPB1RS_NkMZyY1JfWhvZ8DNfE7O4RrZlV_I5cw&oe=6AF741FB",
+          "link_url": "https://www.facebook.com/language/",
+          "title": "",
+          "video": null
+        },
+        {
+          "body": "OFW ka ba? Gusto mong mapasaya ang pamilya mo sa Pinas kahit walang okasyon?\nIto na ang sagot — Fast-Foodala 💙💛\n✅ Jollibee, Greenwich, Mang Inasal, at iba pa\n✅ May Bilao at per item orders\n✅ Same-day delivery sa selected areas\n✅ Trusted ng OFWs simula 2021\n✅ Kahit malalayong probinsya, kayang i-Padalove!\n📲 Message us now — Padalove mo, ihahatid namin!\n#FastFoodala #OFWPadala #PadaloveMo #SameDayDelivery #PadalaSaProbinsya\nOFW Fast-Foodala To Philippines\nFood Service\nSend message",
+          "cta": "English (US)",
+          "image": "https://scontent-lax7-1.xx.fbcdn.net/v/t39.35426-6/791313899_1735190711051778_7246784614691235946_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=101&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=zsu_TGTN_JMQ7kNvwEs8DWY&_nc_oc=AdqdxcTubkFADtYfKbof3UOJ9m8VfIdFgwsbmAz5AP6S9o9Z6puK7p-jlp9bnmJv9Z4&_nc_zt=14&_nc_ht=scontent-lax7-1.xx&_nc_gid=PIoXXbNu6DrpHjT4jN1Fxw&_nc_ss=7b289&oh=00_AQSRCIa9jJXfNUucUU8caxv2aWedLpIzAntUYt8ESy6uow&oe=6AF7519C",
+          "link_url": "https://www.facebook.com/language/",
+          "title": "",
+          "video": null
+        },
+        {
+          "body": "OFW ka ba? Gusto mong mapasaya ang pamilya mo sa Pinas kahit walang okasyon?\nIto na ang sagot — Fast-Foodala 💙💛\n✅ Jollibee, Greenwich, Mang Inasal, at iba pa\n✅ May Bilao at per item orders\n✅ Same-day delivery sa selected areas\n✅ Trusted ng OFWs simula 2021\n✅ Kahit malalayong probinsya, kayang i-Padalove!\n📲 Message us now — Padalove mo, ihahatid namin!\n#FastFoodala #OFWPadala #PadaloveMo #SameDayDelivery #PadalaSaProbinsya\nOFW Fast-Foodala To Philippines\nFood Service\nSend message",
+          "cta": "English (US)",
+          "image": "https://scontent-lax3-2.xx.fbcdn.net/v/t39.35426-6/790551743_1071666845729556_7420100936370470695_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=100&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=95zsadeiAXIQ7kNvwHX_7JM&_nc_oc=AdovTJcps-uaNXX1SPwVShaW0N1TsIC8FVmInXozEKg-3s-ygOKoyw4BSyiVS9EKs9M&_nc_zt=14&_nc_ht=scontent-lax3-2.xx&_nc_gid=PIoXXbNu6DrpHjT4jN1Fxw&_nc_ss=7b289&oh=00_AQT-OaD9c1vwnfQ8XzcMPKR7P2v-_nIqgh_LVyZwHDcSng&oe=6AF765BE",
+          "link_url": "https://www.facebook.com/language/",
+          "title": "",
+          "video": null
+        },
+        {
+          "body": "OFW ka ba? Gusto mong mapasaya ang pamilya mo sa Pinas kahit walang okasyon?\nIto na ang sagot — Fast-Foodala 💙💛\n✅ Jollibee, Greenwich, Mang Inasal, at iba pa\n✅ May Bilao at per item orders\n✅ Same-day delivery sa selected areas\n✅ Trusted ng OFWs simula 2021\n✅ Kahit malalayong probinsya, kayang i-Padalove!\n📲 Message us now — Padalove mo, ihahatid namin!\n#FastFoodala #OFWPadala #PadaloveMo #SameDayDelivery #PadalaSaProbinsya\nOFW Fast-Foodala To Philippines\nFood Service\nSend message",
+          "cta": "English (US)",
+          "image": "https://scontent-lax3-2.xx.fbcdn.net/v/t39.35426-6/790283639_1087259324258627_1665115137592312192_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=111&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=B7tLhUzRFY0Q7kNvwG9Fgp3&_nc_oc=Adrw8S1iHXlHS1NHKSthnADUXOWotZmDd91i48prWthh66M672mDZucgWZYP6keY-pw&_nc_zt=14&_nc_ht=scontent-lax3-2.xx&_nc_gid=PIoXXbNu6DrpHjT4jN1Fxw&_nc_ss=7b289&oh=00_AQQvzYeJdwMKXgyKYYoAZPCD4vnBh1QtfdnqDplzuyvQLA&oe=6AF7389D",
+          "link_url": "https://www.facebook.com/language/",
+          "title": "",
+          "video": null
+        },
+        {
+          "body": "OFW ka ba? Gusto mong mapasaya ang pamilya mo sa Pinas kahit walang okasyon?\nIto na ang sagot — Fast-Foodala 💙💛\n✅ Jollibee, Greenwich, Mang Inasal, at iba pa\n✅ May Bilao at per item orders\n✅ Same-day delivery sa selected areas\n✅ Trusted ng OFWs simula 2021\n✅ Kahit malalayong probinsya, kayang i-Padalove!\n📲 Message us now — Padalove mo, ihahatid namin!\n#FastFoodala #OFWPadala #PadaloveMo #SameDayDelivery #PadalaSaProbinsya\nOFW Fast-Foodala To Philippines\nFood Service\nSend message",
+          "cta": "English (US)",
+          "image": "https://scontent-lax3-2.xx.fbcdn.net/v/t39.35426-6/790400580_1245578298647975_6401312152562569481_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=106&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=o3aaovZmTMMQ7kNvwGKht2X&_nc_oc=AdoBhY6-6tv-hm1GLaBdgF0fjMPYzM6_-VoAE8iWInN7pKuJ7lTWRewEm308_IDrigE&_nc_zt=14&_nc_ht=scontent-lax3-2.xx&_nc_gid=PIoXXbNu6DrpHjT4jN1Fxw&_nc_ss=7b289&oh=00_AQTZcGPRfzCz9RDgRnbP9UkRQUwXExe2Uiyovh1x1WY53w&oe=6AF762E3",
+          "link_url": "https://www.facebook.com/language/",
+          "title": "",
+          "video": null
+        },
+        {
+          "body": "OFW ka ba? Gusto mong mapasaya ang pamilya mo sa Pinas kahit walang okasyon?\nIto na ang sagot — Fast-Foodala 💙💛\n✅ Jollibee, Greenwich, Mang Inasal, at iba pa\n✅ May Bilao at per item orders\n✅ Same-day delivery sa selected areas\n✅ Trusted ng OFWs simula 2021\n✅ Kahit malalayong probinsya, kayang i-Padalove!\n📲 Message us now — Padalove mo, ihahatid namin!\n#FastFoodala #OFWPadala #PadaloveMo #SameDayDelivery #PadalaSaProbinsya\nOFW Fast-Foodala To Philippines\nFood Service\nSend message",
+          "cta": "English (US)",
+          "image": "https://scontent-lax3-1.xx.fbcdn.net/v/t39.35426-6/793075086_2296977607741064_6733193082809905542_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=104&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=nZ9-X_aqj4MQ7kNvwGUN5X3&_nc_oc=AdoZsFGTSWpZSUx__e2Bivof1QAS9_3cJZxgZbqvYtR3sUCo2RXuSyPjS_p7vDFDxb8&_nc_zt=14&_nc_ht=scontent-lax3-1.xx&_nc_gid=PIoXXbNu6DrpHjT4jN1Fxw&_nc_ss=7b289&oh=00_AQRcs7sHI4HwvWRMqCz1m2b_Jv5n5xPkZxSSwlYd_W5ntg&oe=6AF7526D",
+          "link_url": "https://www.facebook.com/language/",
+          "title": "",
+          "video": null
+        },
+        {
+          "body": "OFW ka ba? Gusto mong mapasaya ang pamilya mo sa Pinas kahit walang okasyon?\nIto na ang sagot — Fast-Foodala 💙💛\n✅ Jollibee, Greenwich, Mang Inasal, at iba pa\n✅ May Bilao at per item orders\n✅ Same-day delivery sa selected areas\n✅ Trusted ng OFWs simula 2021\n✅ Kahit malalayong probinsya, kayang i-Padalove!\n📲 Message us now — Padalove mo, ihahatid namin!\n#FastFoodala #OFWPadala #PadaloveMo #SameDayDelivery #PadalaSaProbinsya\nOFW Fast-Foodala To Philippines\nFood Service\nSend message",
+          "cta": "English (US)",
+          "image": "https://scontent-lax3-2.xx.fbcdn.net/v/t39.35426-6/789934534_1408723194506113_658437272728201242_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=107&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=3pufp2HboXcQ7kNvwHzXG5W&_nc_oc=AdqFTAvaBWRrDHJfrMkAX_B0g5sR3XAtDFL5TdqmhQ1KcflwsZ_q94ZoVW8W3lLuRDE&_nc_zt=14&_nc_ht=scontent-lax3-2.xx&_nc_gid=PIoXXbNu6DrpHjT4jN1Fxw&_nc_ss=7b289&oh=00_AQTxViZRkHp0AgIov7KwdHB9keqqT9RvGi4X737Hij3dSA&oe=6AF7383B",
+          "link_url": "https://www.facebook.com/language/",
+          "title": "",
+          "video": null
+        },
+        {
+          "body": "OFW ka ba? Gusto mong mapasaya ang pamilya mo sa Pinas kahit walang okasyon?\nIto na ang sagot — Fast-Foodala 💙💛\n✅ Jollibee, Greenwich, Mang Inasal, at iba pa\n✅ May Bilao at per item orders\n✅ Same-day delivery sa selected areas\n✅ Trusted ng OFWs simula 2021\n✅ Kahit malalayong probinsya, kayang i-Padalove!\n📲 Message us now — Padalove mo, ihahatid namin!\n#FastFoodala #OFWPadala #PadaloveMo #SameDayDelivery #PadalaSaProbinsya\nOFW Fast-Foodala To Philippines\nFood Service\nSend message",
+          "cta": "English (US)",
+          "image": "https://scontent-lax3-1.xx.fbcdn.net/v/t39.35426-6/790341039_2182756479288787_4878214986227025293_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=108&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=VcYhcfNQAmYQ7kNvwFLNs2x&_nc_oc=Adqy-UKsWAyGoMV9JqOUF-kNf-_MU58jQM1M1e9AeYKFUSMzeHqU7KtQnCV9u6QTX9g&_nc_zt=14&_nc_ht=scontent-lax3-1.xx&_nc_gid=PIoXXbNu6DrpHjT4jN1Fxw&_nc_ss=7b289&oh=00_AQSDs8kE1w-S9z0pK8DMXQmSbMNUPa46DmZHsqjqXMh9Hw&oe=6AF7393A",
+          "link_url": "https://www.facebook.com/language/",
+          "title": "",
+          "video": null
+        },
+        {
+          "body": "OFW ka ba? Gusto mong mapasaya ang pamilya mo sa Pinas kahit walang okasyon?\nIto na ang sagot — Fast-Foodala 💙💛\n✅ Jollibee, Greenwich, Mang Inasal, at iba pa\n✅ May Bilao at per item orders\n✅ Same-day delivery sa selected areas\n✅ Trusted ng OFWs simula 2021\n✅ Kahit malalayong probinsya, kayang i-Padalove!\n📲 Message us now — Padalove mo, ihahatid namin!\n#FastFoodala #OFWPadala #PadaloveMo #SameDayDelivery #PadalaSaProbinsya\nOFW Fast-Foodala To Philippines\nFood Service\nSend message",
+          "cta": "English (US)",
+          "image": "https://scontent-lax7-1.xx.fbcdn.net/v/t39.35426-6/790519958_1734313577783911_1697392899513808821_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=101&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=LdpWzJntcdAQ7kNvwG-Qrpf&_nc_oc=AdrmQbUVAoBZU--x2vazWM8g_5_ICo4Z5AqYyrSN_74SRJTCd85_OF3TqB-mBQbXwvg&_nc_zt=14&_nc_ht=scontent-lax7-1.xx&_nc_gid=PIoXXbNu6DrpHjT4jN1Fxw&_nc_ss=7b289&oh=00_AQT4YyL3uZxUDaPc8Pj19F5iht4Kuzh--AiZVigKmCAXtQ&oe=6AF74B65",
+          "link_url": "https://www.facebook.com/language/",
+          "title": "",
+          "video": null
+        },
+        {
+          "body": "OFW ka ba? Gusto mong mapasaya ang pamilya mo sa Pinas kahit walang okasyon?\nIto na ang sagot — Fast-Foodala 💙💛\n✅ Jollibee, Greenwich, Mang Inasal, at iba pa\n✅ May Bilao at per item orders\n✅ Same-day delivery sa selected areas\n✅ Trusted ng OFWs simula 2021\n✅ Kahit malalayong probinsya, kayang i-Padalove!\n📲 Message us now — Padalove mo, ihahatid namin!\n#FastFoodala #OFWPadala #PadaloveMo #SameDayDelivery #PadalaSaProbinsya\nOFW Fast-Foodala To Philippines\nFood Service\nSend message",
+          "cta": "English (US)",
+          "image": "https://scontent-lax3-1.xx.fbcdn.net/v/t39.35426-6/790434531_1847167413327433_6253344893169856083_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=110&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=mBx-HTolEwUQ7kNvwGi3zsX&_nc_oc=Adpu-1Hx0ukGTtUNaK1rB_WhfYh2gLaEGu7Jd8Eq9Yp2VmS_09prRnb2bCNT97xxa0M&_nc_zt=14&_nc_ht=scontent-lax3-1.xx&_nc_gid=PIoXXbNu6DrpHjT4jN1Fxw&_nc_ss=7b289&oh=00_AQQyPFIFt7pgeUllYk-8I6HymJmSpzjdAZJzePsosue_wA&oe=6AF745F1",
+          "link_url": "https://www.facebook.com/language/",
+          "title": "",
+          "video": null
+        },
+        {
+          "body": "OFW ka ba? Gusto mong mapasaya ang pamilya mo sa Pinas kahit walang okasyon?\nIto na ang sagot — Fast-Foodala 💙💛\n✅ Jollibee, Greenwich, Mang Inasal, at iba pa\n✅ May Bilao at per item orders\n✅ Same-day delivery sa selected areas\n✅ Trusted ng OFWs simula 2021\n✅ Kahit malalayong probinsya, kayang i-Padalove!\n📲 Message us now — Padalove mo, ihahatid namin!\n#FastFoodala #OFWPadala #PadaloveMo #SameDayDelivery #PadalaSaProbinsya\nOFW Fast-Foodala To Philippines\nFood Service\nSend message",
+          "cta": "English (US)",
+          "image": "https://scontent-lax7-1.xx.fbcdn.net/v/t39.35426-6/790283643_1107670845095308_8025091436416329054_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=105&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=0UqZdprbQfkQ7kNvwE6TNpU&_nc_oc=Adp13eS2bjiDSfkOivl71TCaN23Y3C_DrsEivAMXXeTX6czo5_INx7P1Rj9HbtNQXAM&_nc_zt=14&_nc_ht=scontent-lax7-1.xx&_nc_gid=PIoXXbNu6DrpHjT4jN1Fxw&_nc_ss=7b289&oh=00_AQQUweKeNWnnpTVZR5zYrsT1cDJ0Nu2TTX26rYKPtXSEYQ&oe=6AF75E5D",
+          "link_url": "https://www.facebook.com/language/",
+          "title": "",
+          "video": null
+        },
+        {
+          "body": "OFW ka ba? Gusto mong mapasaya ang pamilya mo sa Pinas kahit walang okasyon?\nIto na ang sagot — Fast-Foodala 💙💛\n✅ Jollibee, Greenwich, Mang Inasal, at iba pa\n✅ May Bilao at per item orders\n✅ Same-day delivery sa selected areas\n✅ Trusted ng OFWs simula 2021\n✅ Kahit malalayong probinsya, kayang i-Padalove!\n📲 Message us now — Padalove mo, ihahatid namin!\n#FastFoodala #OFWPadala #PadaloveMo #SameDayDelivery #PadalaSaProbinsya\nOFW Fast-Foodala To Philippines\nFood Service\nSend message",
+          "cta": "English (US)",
+          "image": "https://scontent-lax7-1.xx.fbcdn.net/v/t39.35426-6/790400576_1262994969229755_5992293282916818189_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=101&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=hiYBJPb3w6sQ7kNvwG9Ut0V&_nc_oc=AdqOqnnEU6EcvID-i6jbgRUc6iSpCyP4Ty4ZdnLY1FFLMTrYLzcsawHaY8K_xPcdDyk&_nc_zt=14&_nc_ht=scontent-lax7-1.xx&_nc_gid=PIoXXbNu6DrpHjT4jN1Fxw&_nc_ss=7b289&oh=00_AQR25FIw_V1x8CE2eOkjJq-ebXY3GAh0z8ygmbuN1uQj0w&oe=6AF7516F",
+          "link_url": "https://www.facebook.com/language/",
+          "title": "",
+          "video": null
+        },
+        {
+          "body": "OFW ka ba? Gusto mong mapasaya ang pamilya mo sa Pinas kahit walang okasyon?\nIto na ang sagot — Fast-Foodala 💙💛\n✅ Jollibee, Greenwich, Mang Inasal, at iba pa\n✅ May Bilao at per item orders\n✅ Same-day delivery sa selected areas\n✅ Trusted ng OFWs simula 2021\n✅ Kahit malalayong probinsya, kayang i-Padalove!\n📲 Message us now — Padalove mo, ihahatid namin!\n#FastFoodala #OFWPadala #PadaloveMo #SameDayDelivery #PadalaSaProbinsya\nOFW Fast-Foodala To Philippines\nFood Service\nSend message",
+          "cta": "English (US)",
+          "image": "https://scontent-lax3-2.xx.fbcdn.net/v/t39.35426-6/790071808_1761851644850771_2654822720632411684_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=111&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=2Ee6I2MkjogQ7kNvwG_9Xr5&_nc_oc=AdpMQ_YBauFbhX8ZUhBTRhzQI6wWz4bGxDyw7dFA6OC4QUo7awX0_N6909WmATYDY44&_nc_zt=14&_nc_ht=scontent-lax3-2.xx&_nc_gid=PIoXXbNu6DrpHjT4jN1Fxw&_nc_ss=7b289&oh=00_AQT1Y3jJZzIJuuFKqoZQj2lCa2nvytPc23FMHk2mFOEUaA&oe=6AF74D21",
+          "link_url": "https://www.facebook.com/language/",
+          "title": "",
+          "video": null
+        },
+        {
+          "body": "OFW ka ba? Gusto mong mapasaya ang pamilya mo sa Pinas kahit walang okasyon?\nIto na ang sagot — Fast-Foodala 💙💛\n✅ Jollibee, Greenwich, Mang Inasal, at iba pa\n✅ May Bilao at per item orders\n✅ Same-day delivery sa selected areas\n✅ Trusted ng OFWs simula 2021\n✅ Kahit malalayong probinsya, kayang i-Padalove!\n📲 Message us now — Padalove mo, ihahatid namin!\n#FastFoodala #OFWPadala #PadaloveMo #SameDayDelivery #PadalaSaProbinsya\nOFW Fast-Foodala To Philippines\nFood Service\nSend message",
+          "cta": "English (US)",
+          "image": "https://scontent-lax3-2.xx.fbcdn.net/v/t39.35426-6/790493714_2149067422683447_8319542958359576343_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=106&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=dXmJM5k-rsYQ7kNvwGO2fk8&_nc_oc=Adpm3IbFxIjXEzGkGXn2t5Au6qPd2IrttdnMPk-HTvURqOn7gQ3cYqD6H-6zPnPzaM4&_nc_zt=14&_nc_ht=scontent-lax3-2.xx&_nc_gid=PIoXXbNu6DrpHjT4jN1Fxw&_nc_ss=7b289&oh=00_AQQ-ADY2w8RFCmqBV3NDRKsow5pwZEb0tRAtf0jnMPIFJA&oe=6AF75DE2",
+          "link_url": "https://www.facebook.com/language/",
+          "title": "",
+          "video": null
+        },
+        {
+          "body": "OFW ka ba? Gusto mong mapasaya ang pamilya mo sa Pinas kahit walang okasyon?\nIto na ang sagot — Fast-Foodala 💙💛\n✅ Jollibee, Greenwich, Mang Inasal, at iba pa\n✅ May Bilao at per item orders\n✅ Same-day delivery sa selected areas\n✅ Trusted ng OFWs simula 2021\n✅ Kahit malalayong probinsya, kayang i-Padalove!\n📲 Message us now — Padalove mo, ihahatid namin!\n#FastFoodala #OFWPadala #PadaloveMo #SameDayDelivery #PadalaSaProbinsya\nOFW Fast-Foodala To Philippines\nFood Service\nSend message",
+          "cta": "English (US)",
+          "image": "https://scontent-lax3-2.xx.fbcdn.net/v/t39.35426-6/791254732_1081291997586862_7256183657159393856_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=100&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=RKgFfSAE1gUQ7kNvwGI1wLA&_nc_oc=Ado9xBqyYYKfBnlrdYDqvdwaYA6S9d8E1-TFxzHQrha1MnndVVHZiVJAXU3vav2OkJM&_nc_zt=14&_nc_ht=scontent-lax3-2.xx&_nc_gid=PIoXXbNu6DrpHjT4jN1Fxw&_nc_ss=7b289&oh=00_AQR4ugOGPsXeQuP7nD3N58lN_v9TolCKxZ284rmxpTK7yA&oe=6AF745E1",
+          "link_url": "https://www.facebook.com/language/",
+          "title": "",
+          "video": null
+        },
+        {
+          "body": "OFW ka ba? Gusto mong mapasaya ang pamilya mo sa Pinas kahit walang okasyon?\nIto na ang sagot — Fast-Foodala 💙💛\n✅ Jollibee, Greenwich, Mang Inasal, at iba pa\n✅ May Bilao at per item orders\n✅ Same-day delivery sa selected areas\n✅ Trusted ng OFWs simula 2021\n✅ Kahit malalayong probinsya, kayang i-Padalove!\n📲 Message us now — Padalove mo, ihahatid namin!\n#FastFoodala #OFWPadala #PadaloveMo #SameDayDelivery #PadalaSaProbinsya\nOFW Fast-Foodala To Philippines\nFood Service\nSend message",
+          "cta": "English (US)",
+          "image": "https://scontent-lax3-1.xx.fbcdn.net/v/t39.35426-6/790071807_1071317969198869_8508732094117320057_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=110&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=OLzseg_u95sQ7kNvwEWbSbT&_nc_oc=AdqWFYrmUqVY3gSyeP0j-XKuwizmzfIx52NihiuZBGrbEXmEhUhuELfC-omfXB0f1tI&_nc_zt=14&_nc_ht=scontent-lax3-1.xx&_nc_gid=PIoXXbNu6DrpHjT4jN1Fxw&_nc_ss=7b289&oh=00_AQRUEp-U6sehoI7iAiYi0CfTNJd3Kp6Kn6Huhl_hqesmQA&oe=6AF742C8",
+          "link_url": "https://www.facebook.com/language/",
+          "title": "",
+          "video": null
+        }
+      ]
     },
     {
       "id": "2071644903455484",
@@ -51,12 +192,25 @@
       "link_url": "http://itunes.apple.com/app/id421369701",
       "link_title": "Nováčci mají slevu 50 % Download foodora: Food & Groceries by OnlinePizza Norden AB on the App Store. See screenshots, ratings and reviews, user tips, and more apps like foodora: Food…",
       "cta_text": "Order Now",
+      "link_caption": "",
       "images": [
         "https://scontent-lax3-1.xx.fbcdn.net/v/t39.35426-6/764364520_1567928844686433_6286192440444906595_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=110&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=zvn5YyieX6wQ7kNvwEE7-M6&_nc_oc=AdrSvnXYWJB-P3TlbUTroTYtrupDPmMqgcpKBXnq5XEhPIZnxAGh-5OrZzEOTHK8GL0&_nc_zt=14&_nc_ht=scontent-lax3-1.xx&_nc_gid=PIoXXbNu6DrpHjT4jN1Fxw&_nc_ss=7b289&oh=00_AQRD_253LWQ8iLzmg02mWIF43k_Pkky8Nk2YD6gIYxGVog&oe=6AF75008"
       ],
       "has_video": false,
       "same_creative_count": 0,
-      "multiple_versions": false
+      "multiple_versions": false,
+      "cta_type": "ORDER_NOW",
+      "display_format": "image",
+      "cards": [
+        {
+          "body": "Jako nováček si s kódem SLEVA50 pochutnáte na své první objednávce s 50% slevou a za dopravu nic neplatíte! 🍽️🫰🏻",
+          "cta": "Order Now",
+          "image": "https://scontent-lax3-1.xx.fbcdn.net/v/t39.35426-6/764364520_1567928844686433_6286192440444906595_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=110&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=zvn5YyieX6wQ7kNvwEE7-M6&_nc_oc=AdrSvnXYWJB-P3TlbUTroTYtrupDPmMqgcpKBXnq5XEhPIZnxAGh-5OrZzEOTHK8GL0&_nc_zt=14&_nc_ht=scontent-lax3-1.xx&_nc_gid=PIoXXbNu6DrpHjT4jN1Fxw&_nc_ss=7b289&oh=00_AQRD_253LWQ8iLzmg02mWIF43k_Pkky8Nk2YD6gIYxGVog&oe=6AF75008",
+          "link_url": "http://itunes.apple.com/app/id421369701",
+          "title": "Nováčci mají slevu 50 % Download foodora: Food & Groceries by OnlinePizza Norden AB on the App Store. See screenshots, ratings and reviews, user tips, and more apps like foodora: Food…",
+          "video": null
+        }
+      ]
     },
     {
       "id": "949041634555533",
@@ -71,12 +225,25 @@
       "link_url": "https://familleperrin.co.uk/collections/la-vieille-ferme",
       "link_title": "LA VIEILLE FERME We’ve been crafting our delicious, no-nonsense La Vieille Ferme wines in the Rhône Valley for generations. Shop now at familleperrin.co.uk.",
       "cta_text": "Shop now",
+      "link_caption": "FAMILLEPERRIN.CO.UK",
       "images": [
         "https://scontent-lax3-2.xx.fbcdn.net/v/t39.35426-6/772647721_4406940082854113_8159431600505107088_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=100&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=eV73Go4naIcQ7kNvwGuz55O&_nc_oc=AdpHFbDKBy4BlQGYDv0z216x-GC6pRj9VeFWZolDR5O85nipVzj09A8Yk4CKBealLVE&_nc_zt=14&_nc_ht=scontent-lax3-2.xx&_nc_gid=PIoXXbNu6DrpHjT4jN1Fxw&_nc_ss=7b289&oh=00_AQRpEFJeuJ_xf14LGqdHsZYreeEiWit_xpNZY7m_oe6fEg&oe=6AF759B3"
       ],
       "has_video": false,
       "same_creative_count": 0,
-      "multiple_versions": true
+      "multiple_versions": true,
+      "cta_type": "SHOP_NOW",
+      "display_format": "image",
+      "cards": [
+        {
+          "body": "LA VIEILLE FERME X KFC\nComing soon at @kachetteshoreditch Annex in London, the \\[egg-citting\\] new @kfc Wine Bar 🤩🤩🤩\n#lavieilleferme #chickenwine #kfc #london #winebar",
+          "cta": "Shop now",
+          "image": "https://scontent-lax3-2.xx.fbcdn.net/v/t39.35426-6/772647721_4406940082854113_8159431600505107088_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=100&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=eV73Go4naIcQ7kNvwGuz55O&_nc_oc=AdpHFbDKBy4BlQGYDv0z216x-GC6pRj9VeFWZolDR5O85nipVzj09A8Yk4CKBealLVE&_nc_zt=14&_nc_ht=scontent-lax3-2.xx&_nc_gid=PIoXXbNu6DrpHjT4jN1Fxw&_nc_ss=7b289&oh=00_AQRpEFJeuJ_xf14LGqdHsZYreeEiWit_xpNZY7m_oe6fEg&oe=6AF759B3",
+          "link_url": "https://familleperrin.co.uk/collections/la-vieille-ferme",
+          "title": "LA VIEILLE FERME We’ve been crafting our delicious, no-nonsense La Vieille Ferme wines in the Rhône Valley for generations. Shop now at familleperrin.co.uk.",
+          "video": null
+        }
+      ]
     },
     {
       "id": "1454411503240364",
@@ -91,10 +258,23 @@
       "link_url": "https://kfcau.app.link/eAUCfy3mG6b",
       "link_title": "NEW BIGGER, JUICIER & SAUCIER TENDERS MORE TENDER THAN EVER",
       "cta_text": "Order Now",
+      "link_caption": "",
       "images": [],
       "has_video": true,
       "same_creative_count": 0,
-      "multiple_versions": false
+      "multiple_versions": false,
+      "cta_type": "ORDER_NOW",
+      "display_format": "video",
+      "cards": [
+        {
+          "body": "Boy Banded to perfection. Bigger, Crispier, Juicier & Saucier. With 11 sauces.",
+          "cta": "Order Now",
+          "image": null,
+          "link_url": "https://kfcau.app.link/eAUCfy3mG6b",
+          "title": "NEW BIGGER, JUICIER & SAUCIER TENDERS MORE TENDER THAN EVER",
+          "video": null
+        }
+      ]
     },
     {
       "id": "3184723071713262",
@@ -109,10 +289,23 @@
       "link_url": "",
       "link_title": "",
       "cta_text": "",
+      "link_caption": "",
       "images": [],
       "has_video": true,
       "same_creative_count": 0,
-      "multiple_versions": false
+      "multiple_versions": false,
+      "cta_type": "",
+      "display_format": "video",
+      "cards": [
+        {
+          "body": "Some things just go better together 🙌\nGood food 🤝 Pepsi MAX\n@kfc\\_uki",
+          "cta": "",
+          "image": null,
+          "link_url": "",
+          "title": "",
+          "video": null
+        }
+      ]
     },
     {
       "id": "4517670335170108",
@@ -127,12 +320,25 @@
       "link_url": "https://auniva.co/products/amla-11",
       "link_title": "Feel Like Yourself Again \"This actually worked, thank you so much.\" - Emily T.",
       "cta_text": "Learn more",
+      "link_caption": "AUNIVA.CO",
       "images": [
         "https://scontent-lax7-1.xx.fbcdn.net/v/t39.35426-6/842101551_1094978749819071_8453896770547438995_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=105&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=zDvl83rt16QQ7kNvwFBizNI&_nc_oc=AdodPEA7TsPoYmMSdJ-IcRE8Xc_-r_7ZL4OB7U1Yuo8MR0P5lAyd5dDFeWZjR1FNEHI&_nc_zt=14&_nc_ht=scontent-lax7-1.xx&_nc_gid=PIoXXbNu6DrpHjT4jN1Fxw&_nc_ss=7b289&oh=00_AQRRCfh6t23u7W1kbfu0au9l4eNuI_Z4HqLA8btLKTA9rQ&oe=6AF74E16"
       ],
       "has_video": false,
       "same_creative_count": 2,
-      "multiple_versions": false
+      "multiple_versions": false,
+      "cta_type": "LEARN_MORE",
+      "display_format": "image",
+      "cards": [
+        {
+          "body": "I sat down on my aunt Reba's attic floor last Saturday and I couldn't get back up.\nI don't mean I hurt myself. I didn't fall. I sat down criss cross like I was 8 years old to sort through a stack of shoeboxes, and 20 minutes later when I tried to stand my knees wouldn't lift me. My legs felt like wet cement. My arms had nothing in them. I ended up rolling onto my hip and using her old cedar chest to pull myself up, and I stood there breathing like I'd run to the mailbox and back.\nI'm 54 years old.\nMy aunt was still driving to the beauty shop at 74 to get her hair set. And here I am with cement legs on an attic floor because I sat down for 20 minutes.\nMy name is LaWanda. I live in Meridian, Mississippi, about 15 minutes from where I grew up in a house on 34th Avenue where my grandmother taught me to snap green beans on the front porch. I work as an aide at Poplar Springs Elementary and I have been there for 19 years. I know every kindergartener in that building by name. I have wiped more noses and tied more shoelaces than any woman my age should be legally required to.\nI am also tired all the time.\nNot sleepy tired. Not the kind of tired you fix with a nap. I'm the kind of tired wh…",
+          "cta": "Learn more",
+          "image": "https://scontent-lax7-1.xx.fbcdn.net/v/t39.35426-6/842101551_1094978749819071_8453896770547438995_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=105&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=zDvl83rt16QQ7kNvwFBizNI&_nc_oc=AdodPEA7TsPoYmMSdJ-IcRE8Xc_-r_7ZL4OB7U1Yuo8MR0P5lAyd5dDFeWZjR1FNEHI&_nc_zt=14&_nc_ht=scontent-lax7-1.xx&_nc_gid=PIoXXbNu6DrpHjT4jN1Fxw&_nc_ss=7b289&oh=00_AQRRCfh6t23u7W1kbfu0au9l4eNuI_Z4HqLA8btLKTA9rQ&oe=6AF74E16",
+          "link_url": "https://auniva.co/products/amla-11",
+          "title": "Feel Like Yourself Again \"This actually worked, thank you so much.\" - Emily T.",
+          "video": null
+        }
+      ]
     },
     {
       "id": "1460804845802557",
@@ -147,6 +353,7 @@
       "link_url": "https://lbbonline.com/",
       "link_title": "LBB - Little Black Book",
       "cta_text": "See Details",
+      "link_caption": "LBBONLINE.COM",
       "images": [
         "https://scontent-lax7-1.xx.fbcdn.net/v/t39.35426-6/847227594_1404733231772639_3218991022401824650_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=105&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=EzakS7JvMiEQ7kNvwFcOB2d&_nc_oc=Adpfyhey7Ve49pSkI0iBseLSDwYm0rsq8XTlkI4jcuE_nBgrGsGjtIISk_ccWEIDDn0&_nc_zt=14&_nc_ht=scontent-lax7-1.xx&_nc_gid=PIoXXbNu6DrpHjT4jN1Fxw&_nc_ss=7b289&oh=00_AQSMOSf_rND7oJ6oOlp1Gp-Yr94yaUUEjELPvY3JmOoVJg&oe=6AF7380F",
         "https://scontent-lax3-1.xx.fbcdn.net/v/t39.35426-6/848685623_1656985812450285_6346327764092379507_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=102&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=s7U_meF-7TkQ7kNvwEm2Wyw&_nc_oc=Adoa0Yhfz51WX2GKbtKPxfTY8gFRPvgscVeTBi6HnuWkkrc2jwcxyzltBxcPNqQlvng&_nc_zt=14&_nc_ht=scontent-lax3-1.xx&_nc_gid=PIoXXbNu6DrpHjT4jN1Fxw&_nc_ss=7b289&oh=00_AQTRps1XwX7hv9jThPYWEBpgmFDwXQxbUbXFwXaF797e-Q&oe=6AF75BE7",
@@ -156,7 +363,51 @@
       ],
       "has_video": false,
       "same_creative_count": 0,
-      "multiple_versions": false
+      "multiple_versions": false,
+      "cta_type": "SEE_DETAILS",
+      "display_format": "dco",
+      "cards": [
+        {
+          "body": "Creativity, Connected.\nWe’ve launched a completely redesigned LBB, built to make it easier for the creative industry to discover great work, find the people and companies behind it, and create new opportunities from those connections.\nFind more. See more. Do more.",
+          "cta": "See Details",
+          "image": "https://scontent-lax7-1.xx.fbcdn.net/v/t39.35426-6/847227594_1404733231772639_3218991022401824650_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=105&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=EzakS7JvMiEQ7kNvwFcOB2d&_nc_oc=Adpfyhey7Ve49pSkI0iBseLSDwYm0rsq8XTlkI4jcuE_nBgrGsGjtIISk_ccWEIDDn0&_nc_zt=14&_nc_ht=scontent-lax7-1.xx&_nc_gid=PIoXXbNu6DrpHjT4jN1Fxw&_nc_ss=7b289&oh=00_AQSMOSf_rND7oJ6oOlp1Gp-Yr94yaUUEjELPvY3JmOoVJg&oe=6AF7380F",
+          "link_url": "https://lbbonline.com/",
+          "title": "LBB - Little Black Book",
+          "video": null
+        },
+        {
+          "body": "Creativity, Connected.\nWe’ve launched a completely redesigned LBB, built to make it easier for the creative industry to discover great work, find the people and companies behind it, and create new opportunities from those connections.\nFind more. See more. Do more.",
+          "cta": "See Details",
+          "image": "https://scontent-lax3-1.xx.fbcdn.net/v/t39.35426-6/848685623_1656985812450285_6346327764092379507_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=102&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=s7U_meF-7TkQ7kNvwEm2Wyw&_nc_oc=Adoa0Yhfz51WX2GKbtKPxfTY8gFRPvgscVeTBi6HnuWkkrc2jwcxyzltBxcPNqQlvng&_nc_zt=14&_nc_ht=scontent-lax3-1.xx&_nc_gid=PIoXXbNu6DrpHjT4jN1Fxw&_nc_ss=7b289&oh=00_AQTRps1XwX7hv9jThPYWEBpgmFDwXQxbUbXFwXaF797e-Q&oe=6AF75BE7",
+          "link_url": "https://lbbonline.com/",
+          "title": "LBB - Little Black Book",
+          "video": null
+        },
+        {
+          "body": "Creativity, Connected.\nWe’ve launched a completely redesigned LBB, built to make it easier for the creative industry to discover great work, find the people and companies behind it, and create new opportunities from those connections.\nFind more. See more. Do more.",
+          "cta": "See Details",
+          "image": "https://scontent-lax3-1.xx.fbcdn.net/v/t39.35426-6/848044627_1395200192775616_898740053479215984_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=108&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=I-sKJjwof-oQ7kNvwF4Ag4P&_nc_oc=Adr8ffUGVGNfj6dQgxZYdz52D_BLjtUmvZjURb3ZGrNaLvynJlFDohIPj-b3OSJpw1Q&_nc_zt=14&_nc_ht=scontent-lax3-1.xx&_nc_gid=PIoXXbNu6DrpHjT4jN1Fxw&_nc_ss=7b289&oh=00_AQSEgmf0nLF9Q32r-JtzdRxE5qSEOXl1yMAt2toMIfwiBw&oe=6AF75448",
+          "link_url": "https://lbbonline.com/",
+          "title": "LBB - Little Black Book",
+          "video": null
+        },
+        {
+          "body": "Creativity, Connected.\nWe’ve launched a completely redesigned LBB, built to make it easier for the creative industry to discover great work, find the people and companies behind it, and create new opportunities from those connections.\nFind more. See more. Do more.",
+          "cta": "See Details",
+          "image": "https://scontent-lax3-2.xx.fbcdn.net/v/t39.35426-6/848599284_4386744798245368_8094806149968762118_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=106&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=l9-r7zlj-yMQ7kNvwGF3Ci2&_nc_oc=AdppG8Im3zIgoTRaeAOAPCPpkrQxxoqsR20K-CKBqJtl7eGgTHAc97VC_ZSrjwGl88A&_nc_zt=14&_nc_ht=scontent-lax3-2.xx&_nc_gid=PIoXXbNu6DrpHjT4jN1Fxw&_nc_ss=7b289&oh=00_AQSgvH3LUKII3NiqNrkyAUoHQPvg9i-BZYHsx-bGkVDuRQ&oe=6AF753C2",
+          "link_url": "https://lbbonline.com/",
+          "title": "LBB - Little Black Book",
+          "video": null
+        },
+        {
+          "body": "Creativity, Connected.\nWe’ve launched a completely redesigned LBB, built to make it easier for the creative industry to discover great work, find the people and companies behind it, and create new opportunities from those connections.\nFind more. See more. Do more.",
+          "cta": "See Details",
+          "image": "https://scontent-lax3-2.xx.fbcdn.net/v/t39.35426-6/847387082_2247549199509281_5451952597263123696_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=111&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=TZQp-wj2baoQ7kNvwGXP_Dk&_nc_oc=Ado1Pl9ODVuAvOsmNheQ_5bbyRrRiAEESnx3MnBmhAxgRqMJcmOUOMhLRXUIzQJIoVY&_nc_zt=14&_nc_ht=scontent-lax3-2.xx&_nc_gid=PIoXXbNu6DrpHjT4jN1Fxw&_nc_ss=7b289&oh=00_AQRMm_-p_MxPctXDpN35nASZT4ROoONX_oY1Z03DAqs2Dw&oe=6AF7593C",
+          "link_url": "https://lbbonline.com/",
+          "title": "LBB - Little Black Book",
+          "video": null
+        }
+      ]
     },
     {
       "id": "1098107363036064",
@@ -171,13 +422,34 @@
       "link_url": "http://instagram.com/fitatuglobal",
       "link_title": "",
       "cta_text": "Visit Instagram Profile",
+      "link_caption": "INSTAGRAM.COM",
       "images": [
         "https://scontent-lax3-2.xx.fbcdn.net/v/t39.35426-6/720721946_1360437869273151_3763082192338979586_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=100&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=ISWiX8yj7oAQ7kNvwHQwz_Q&_nc_oc=AdrveTT72apCIu3lNTzmrnGBRGOU0_2mLSTrmpkpOxRlSnglAGxlXMLRfpJFgvCIG1g&_nc_zt=14&_nc_ht=scontent-lax3-2.xx&_nc_gid=PIoXXbNu6DrpHjT4jN1Fxw&_nc_ss=7b289&oh=00_AQTuhFXkn_xjwJ_rJwDiW5KH1n-7gZSDjUYq8vFLIuoydw&oe=6AF758F2",
         "https://scontent-lax3-2.xx.fbcdn.net/v/t39.35426-6/723819913_980273101520492_6269496807539689641_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=111&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=5jWnHysTaokQ7kNvwFqFoHo&_nc_oc=AdpnRZTGNunGqmDvkxRW7ZhOAUJOwQqiA1CqqChA3VPnFWD1liDzH51PK-9zCMu51zE&_nc_zt=14&_nc_ht=scontent-lax3-2.xx&_nc_gid=PIoXXbNu6DrpHjT4jN1Fxw&_nc_ss=7b289&oh=00_AQQnnMW73Wl7x3qnj37B-2F_IuKCIk2MoqlcHDAjZkBCqA&oe=6AF74C62"
       ],
       "has_video": false,
       "same_creative_count": 0,
-      "multiple_versions": true
+      "multiple_versions": true,
+      "cta_type": "VISIT_INSTAGRAM_PROFILE",
+      "display_format": "dco",
+      "cards": [
+        {
+          "body": "Calories at Lidl Bakery 🥐 Which one is your favorite?\n—-\nThis post is for informational purposes only. It is not an advertisement or recommendation to purchase any of the mentioned products.\nWe are not affiliated with any of the manufacturers of the presented products and do not receive any financial benefits from their presentation. We encourage you to make your own dietary decisions based on your individual needs and preferences.",
+          "cta": "Visit Instagram Profile",
+          "image": "https://scontent-lax3-2.xx.fbcdn.net/v/t39.35426-6/720721946_1360437869273151_3763082192338979586_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=100&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=ISWiX8yj7oAQ7kNvwHQwz_Q&_nc_oc=AdrveTT72apCIu3lNTzmrnGBRGOU0_2mLSTrmpkpOxRlSnglAGxlXMLRfpJFgvCIG1g&_nc_zt=14&_nc_ht=scontent-lax3-2.xx&_nc_gid=PIoXXbNu6DrpHjT4jN1Fxw&_nc_ss=7b289&oh=00_AQTuhFXkn_xjwJ_rJwDiW5KH1n-7gZSDjUYq8vFLIuoydw&oe=6AF758F2",
+          "link_url": "http://instagram.com/fitatuglobal",
+          "title": "",
+          "video": null
+        },
+        {
+          "body": "Calories at Lidl Bakery 🥐 Which one is your favorite?\n—-\nThis post is for informational purposes only. It is not an advertisement or recommendation to purchase any of the mentioned products.\nWe are not affiliated with any of the manufacturers of the presented products and do not receive any financial benefits from their presentation. We encourage you to make your own dietary decisions based on your individual needs and preferences.",
+          "cta": "Visit Instagram Profile",
+          "image": "https://scontent-lax3-2.xx.fbcdn.net/v/t39.35426-6/723819913_980273101520492_6269496807539689641_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=111&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=5jWnHysTaokQ7kNvwFqFoHo&_nc_oc=AdpnRZTGNunGqmDvkxRW7ZhOAUJOwQqiA1CqqChA3VPnFWD1liDzH51PK-9zCMu51zE&_nc_zt=14&_nc_ht=scontent-lax3-2.xx&_nc_gid=PIoXXbNu6DrpHjT4jN1Fxw&_nc_ss=7b289&oh=00_AQQnnMW73Wl7x3qnj37B-2F_IuKCIk2MoqlcHDAjZkBCqA&oe=6AF74C62",
+          "link_url": "http://instagram.com/fitatuglobal",
+          "title": "",
+          "video": null
+        }
+      ]
     },
     {
       "id": "29096882526590322",
@@ -192,10 +464,54 @@
       "link_url": "",
       "link_title": "",
       "cta_text": "",
+      "link_caption": "",
       "images": [],
       "has_video": true,
       "same_creative_count": 0,
-      "multiple_versions": false
+      "multiple_versions": false,
+      "cta_type": "",
+      "display_format": "video",
+      "cards": [
+        {
+          "body": "ENGLAND'S TOP PAYING SCRAPYARD",
+          "cta": "",
+          "image": null,
+          "link_url": "",
+          "title": "",
+          "video": null
+        }
+      ]
+    },
+    {
+      "id": "1645224410453252",
+      "page_name": "coldestjoel",
+      "status": "active",
+      "first_seen": "Sep 5, 2026",
+      "last_seen": "",
+      "creative_text": "ad Are brands wasting millions on ads that aren’t driving growth? 💰\nLET’S DIG INTO THE DATA.\nKFC used @snapchatforbusiness and Smartly to get more bang for their buck(et of chicken).\nInstead of simply throwing more money into what they’ve always done before, they focused on putting their budget behind channels that were ACTUALLY delivering results..\nProof that it’s not always about spending MORE, but making your ad budget work SMARTER.",
+      "library_url": "https://www.facebook.com/ads/library/?id=1645224410453252",
+      "page_url": "https://www.instagram.com/_u/coldestjoel",
+      "page_id": "",
+      "link_url": "https://forbusiness.snapchat.com/?utm_source=Meta&utm_medium=PAIDSMC&utm_campaign=SMC_2026_Brand_US_Phase2&utm_term=JobTitles_US_Marketers&utm_content=Hijinks_JoelMarlinarson_CaseStudy_KFC",
+      "link_title": "coldestjoel",
+      "cta_text": "See details",
+      "link_caption": "FORBUSINESS.SNAPCHAT.COM",
+      "images": [],
+      "has_video": true,
+      "same_creative_count": 0,
+      "multiple_versions": false,
+      "cta_type": "SEE_DETAILS",
+      "display_format": "video",
+      "cards": [
+        {
+          "body": "ad Are brands wasting millions on ads that aren’t driving growth? 💰\nLET’S DIG INTO THE DATA.\nKFC used @snapchatforbusiness and Smartly to get more bang for their buck(et of chicken).\nInstead of simply throwing more money into what they’ve always done before, they focused on putting their budget behind channels that were ACTUALLY delivering results..\nProof that it’s not always about spending MORE, but making your ad budget work SMARTER.",
+          "cta": "See details",
+          "image": null,
+          "link_url": "https://forbusiness.snapchat.com/?utm_source=Meta&utm_medium=PAIDSMC&utm_campaign=SMC_2026_Brand_US_Phase2&utm_term=JobTitles_US_Marketers&utm_content=Hijinks_JoelMarlinarson_CaseStudy_KFC",
+          "title": "coldestjoel",
+          "video": null
+        }
+      ]
     },
     {
       "id": "1807672170668685",
@@ -210,6 +526,7 @@
       "link_url": "",
       "link_title": "",
       "cta_text": "",
+      "link_caption": "",
       "images": [
         "https://scontent-lax3-2.xx.fbcdn.net/v/t39.35426-6/795371300_2428878994584591_1025349650881086446_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=106&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=M154u7qQZC8Q7kNvwGlkWuU&_nc_oc=Adq7oHGW0l9lTAMmgmIRbG01iUeqsiWGR3MUZ0-dZQlKgbbbHMGMP_3ZE3Plv6bDnU8&_nc_zt=14&_nc_ht=scontent-lax3-2.xx&_nc_gid=PIoXXbNu6DrpHjT4jN1Fxw&_nc_ss=7b289&oh=00_AQRjTCJXinXTn_Ktta23aIKcOATH5Xbm-mi5jlK7eMl3Bw&oe=6AF73D4D",
         "https://scontent-lax3-1.xx.fbcdn.net/v/t39.35426-6/796324703_2233996994057013_7635686042973451060_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=102&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=O8AHaBcDy70Q7kNvwGUOphR&_nc_oc=Adog6-dGlW55h3tTqGTZ2wqLTyo3sc15SgAWMWkPJ5dRbMt2eQNRiVJwuPPIKPiTWgE&_nc_zt=14&_nc_ht=scontent-lax3-1.xx&_nc_gid=PIoXXbNu6DrpHjT4jN1Fxw&_nc_ss=7b289&oh=00_AQSVYS7CAAWJJqJTT5v6L2JXGfY_zY2BpB72O2Ei_jWclA&oe=6AF73E58",
@@ -264,7 +581,411 @@
       ],
       "has_video": false,
       "same_creative_count": 0,
-      "multiple_versions": false
+      "multiple_versions": false,
+      "cta_type": "",
+      "display_format": "dco",
+      "cards": [
+        {
+          "body": "📢 SEPTEMBER SALE – HUGE SAVINGS ACROSS OUR 3-FLOOR SHOWROOM! 🛋️💥\nWe’re making way for our beautiful new autumn collections – and passing massive savings straight to you! Explore 3 floors and 20,000 sq ft of unbeatable deals on hundreds of items. Stock is limited, so once it’s gone, it’s gone! 🚚✨\n📍 Find us here:\nYorkshire Home Interiors\n264-270 Queens Road, Sheffield S2 4DL\n(Opposite Asda • Next door to KFC)\n👉 Don’t wait – secure your September bargain today!\n#YorkshireHomeInteriors #SeptemberSale #SheffieldDeals #FurnitureSale #HomeStyle #SheffieldShopping #ClearanceEvent",
+          "cta": "",
+          "image": "https://scontent-lax3-2.xx.fbcdn.net/v/t39.35426-6/795371300_2428878994584591_1025349650881086446_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=106&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=M154u7qQZC8Q7kNvwGlkWuU&_nc_oc=Adq7oHGW0l9lTAMmgmIRbG01iUeqsiWGR3MUZ0-dZQlKgbbbHMGMP_3ZE3Plv6bDnU8&_nc_zt=14&_nc_ht=scontent-lax3-2.xx&_nc_gid=PIoXXbNu6DrpHjT4jN1Fxw&_nc_ss=7b289&oh=00_AQRjTCJXinXTn_Ktta23aIKcOATH5Xbm-mi5jlK7eMl3Bw&oe=6AF73D4D",
+          "link_url": "",
+          "title": "",
+          "video": null
+        },
+        {
+          "body": "📢 SEPTEMBER SALE – HUGE SAVINGS ACROSS OUR 3-FLOOR SHOWROOM! 🛋️💥\nWe’re making way for our beautiful new autumn collections – and passing massive savings straight to you! Explore 3 floors and 20,000 sq ft of unbeatable deals on hundreds of items. Stock is limited, so once it’s gone, it’s gone! 🚚✨\n📍 Find us here:\nYorkshire Home Interiors\n264-270 Queens Road, Sheffield S2 4DL\n(Opposite Asda • Next door to KFC)\n👉 Don’t wait – secure your September bargain today!\n#YorkshireHomeInteriors #SeptemberSale #SheffieldDeals #FurnitureSale #HomeStyle #SheffieldShopping #ClearanceEvent",
+          "cta": "",
+          "image": "https://scontent-lax3-1.xx.fbcdn.net/v/t39.35426-6/796324703_2233996994057013_7635686042973451060_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=102&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=O8AHaBcDy70Q7kNvwGUOphR&_nc_oc=Adog6-dGlW55h3tTqGTZ2wqLTyo3sc15SgAWMWkPJ5dRbMt2eQNRiVJwuPPIKPiTWgE&_nc_zt=14&_nc_ht=scontent-lax3-1.xx&_nc_gid=PIoXXbNu6DrpHjT4jN1Fxw&_nc_ss=7b289&oh=00_AQSVYS7CAAWJJqJTT5v6L2JXGfY_zY2BpB72O2Ei_jWclA&oe=6AF73E58",
+          "link_url": "",
+          "title": "",
+          "video": null
+        },
+        {
+          "body": "📢 SEPTEMBER SALE – HUGE SAVINGS ACROSS OUR 3-FLOOR SHOWROOM! 🛋️💥\nWe’re making way for our beautiful new autumn collections – and passing massive savings straight to you! Explore 3 floors and 20,000 sq ft of unbeatable deals on hundreds of items. Stock is limited, so once it’s gone, it’s gone! 🚚✨\n📍 Find us here:\nYorkshire Home Interiors\n264-270 Queens Road, Sheffield S2 4DL\n(Opposite Asda • Next door to KFC)\n👉 Don’t wait – secure your September bargain today!\n#YorkshireHomeInteriors #SeptemberSale #SheffieldDeals #FurnitureSale #HomeStyle #SheffieldShopping #ClearanceEvent",
+          "cta": "",
+          "image": "https://scontent-lax3-2.xx.fbcdn.net/v/t39.35426-6/797303043_1620765209703310_605934232482431138_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=106&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=fW3uIrFLaKEQ7kNvwE6n8JC&_nc_oc=AdqOroSsV1MPaeDSEYUUpt4XVZNYWstwFkgNBBTXJIIxkUY1-as6IG4IlCXZdN59coQ&_nc_zt=14&_nc_ht=scontent-lax3-2.xx&_nc_gid=PIoXXbNu6DrpHjT4jN1Fxw&_nc_ss=7b289&oh=00_AQQ9vedzeFsTiOvMtmMVaMrxI5Gj4DB_uBU1rcAsdXKPIg&oe=6AF75E9A",
+          "link_url": "",
+          "title": "",
+          "video": null
+        },
+        {
+          "body": "📢 SEPTEMBER SALE – HUGE SAVINGS ACROSS OUR 3-FLOOR SHOWROOM! 🛋️💥\nWe’re making way for our beautiful new autumn collections – and passing massive savings straight to you! Explore 3 floors and 20,000 sq ft of unbeatable deals on hundreds of items. Stock is limited, so once it’s gone, it’s gone! 🚚✨\n📍 Find us here:\nYorkshire Home Interiors\n264-270 Queens Road, Sheffield S2 4DL\n(Opposite Asda • Next door to KFC)\n👉 Don’t wait – secure your September bargain today!\n#YorkshireHomeInteriors #SeptemberSale #SheffieldDeals #FurnitureSale #HomeStyle #SheffieldShopping #ClearanceEvent",
+          "cta": "",
+          "image": "https://scontent-lax3-2.xx.fbcdn.net/v/t39.35426-6/795644144_2278379312915124_3256888209013136752_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=106&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=Y5UPRbNRFJcQ7kNvwHznoxn&_nc_oc=AdqUUURFpS9GYbv68VCS1LcjODArVs3PzrlDH9V5i6hNzuHlYhqUq7XaDXbsdP94QX4&_nc_zt=14&_nc_ht=scontent-lax3-2.xx&_nc_gid=PIoXXbNu6DrpHjT4jN1Fxw&_nc_ss=7b289&oh=00_AQSm8KPTn0NZqyqaJMxmEf4Ng9cHkjRvIEHF27r2qqDDag&oe=6AF737BC",
+          "link_url": "",
+          "title": "",
+          "video": null
+        },
+        {
+          "body": "📢 SEPTEMBER SALE – HUGE SAVINGS ACROSS OUR 3-FLOOR SHOWROOM! 🛋️💥\nWe’re making way for our beautiful new autumn collections – and passing massive savings straight to you! Explore 3 floors and 20,000 sq ft of unbeatable deals on hundreds of items. Stock is limited, so once it’s gone, it’s gone! 🚚✨\n📍 Find us here:\nYorkshire Home Interiors\n264-270 Queens Road, Sheffield S2 4DL\n(Opposite Asda • Next door to KFC)\n👉 Don’t wait – secure your September bargain today!\n#YorkshireHomeInteriors #SeptemberSale #SheffieldDeals #FurnitureSale #HomeStyle #SheffieldShopping #ClearanceEvent",
+          "cta": "",
+          "image": "https://scontent-lax7-1.xx.fbcdn.net/v/t39.35426-6/795582550_871864909212877_6435202304496401617_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=101&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=tkiBT8wgkqEQ7kNvwFPmfV4&_nc_oc=AdqF9U64094F8Lu-R2iUxC3woCB2q6eHoDY0rv_6BDWECIvk9tnAoIy9vFoBl8U1u_k&_nc_zt=14&_nc_ht=scontent-lax7-1.xx&_nc_gid=PIoXXbNu6DrpHjT4jN1Fxw&_nc_ss=7b289&oh=00_AQTLLPiWdEZbtKSSfA4wUD6wRC4m1iR51SUyQg4mRoBKyg&oe=6AF7593B",
+          "link_url": "",
+          "title": "",
+          "video": null
+        },
+        {
+          "body": "📢 SEPTEMBER SALE – HUGE SAVINGS ACROSS OUR 3-FLOOR SHOWROOM! 🛋️💥\nWe’re making way for our beautiful new autumn collections – and passing massive savings straight to you! Explore 3 floors and 20,000 sq ft of unbeatable deals on hundreds of items. Stock is limited, so once it’s gone, it’s gone! 🚚✨\n📍 Find us here:\nYorkshire Home Interiors\n264-270 Queens Road, Sheffield S2 4DL\n(Opposite Asda • Next door to KFC)\n👉 Don’t wait – secure your September bargain today!\n#YorkshireHomeInteriors #SeptemberSale #SheffieldDeals #FurnitureSale #HomeStyle #SheffieldShopping #ClearanceEvent",
+          "cta": "",
+          "image": "https://scontent-lax3-1.xx.fbcdn.net/v/t39.35426-6/797904785_1059645250107707_3964671412241137198_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=104&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=RT7-yctW_egQ7kNvwE6vjq3&_nc_oc=Adog_1DhI1DxdbFyoRqYLdpHLdWF3aFMBzdXmF0PRKs0s6shX5dJ5MXfiGpK6kLiTig&_nc_zt=14&_nc_ht=scontent-lax3-1.xx&_nc_gid=PIoXXbNu6DrpHjT4jN1Fxw&_nc_ss=7b289&oh=00_AQTP4t1xrnCJw1JzFC0tgmtXG7jBBzIvmVF40b6Sc4HvHg&oe=6AF7442C",
+          "link_url": "",
+          "title": "",
+          "video": null
+        },
+        {
+          "body": "📢 SEPTEMBER SALE – HUGE SAVINGS ACROSS OUR 3-FLOOR SHOWROOM! 🛋️💥\nWe’re making way for our beautiful new autumn collections – and passing massive savings straight to you! Explore 3 floors and 20,000 sq ft of unbeatable deals on hundreds of items. Stock is limited, so once it’s gone, it’s gone! 🚚✨\n📍 Find us here:\nYorkshire Home Interiors\n264-270 Queens Road, Sheffield S2 4DL\n(Opposite Asda • Next door to KFC)\n👉 Don’t wait – secure your September bargain today!\n#YorkshireHomeInteriors #SeptemberSale #SheffieldDeals #FurnitureSale #HomeStyle #SheffieldShopping #ClearanceEvent",
+          "cta": "",
+          "image": "https://scontent-lax7-1.xx.fbcdn.net/v/t39.35426-6/796940825_1442492181065389_1483708910669710030_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=101&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=ZaF-ppc1Rs0Q7kNvwExvota&_nc_oc=AdqrT0Wvq-SfX3Kny6uDTGpoTQun-4eElR3cSVE08BBtZNKr5_vPWMJ3l4oPFkvIFOM&_nc_zt=14&_nc_ht=scontent-lax7-1.xx&_nc_gid=PIoXXbNu6DrpHjT4jN1Fxw&_nc_ss=7b289&oh=00_AQRfWJccnuMvwNQh4prmcwjCXaiarQUHUfRjPtw0Sh2jeg&oe=6AF74FF6",
+          "link_url": "",
+          "title": "",
+          "video": null
+        },
+        {
+          "body": "📢 SEPTEMBER SALE – HUGE SAVINGS ACROSS OUR 3-FLOOR SHOWROOM! 🛋️💥\nWe’re making way for our beautiful new autumn collections – and passing massive savings straight to you! Explore 3 floors and 20,000 sq ft of unbeatable deals on hundreds of items. Stock is limited, so once it’s gone, it’s gone! 🚚✨\n📍 Find us here:\nYorkshire Home Interiors\n264-270 Queens Road, Sheffield S2 4DL\n(Opposite Asda • Next door to KFC)\n👉 Don’t wait – secure your September bargain today!\n#YorkshireHomeInteriors #SeptemberSale #SheffieldDeals #FurnitureSale #HomeStyle #SheffieldShopping #ClearanceEvent",
+          "cta": "",
+          "image": "https://scontent-lax3-1.xx.fbcdn.net/v/t39.35426-6/797744939_1803983550948162_1269869674248749450_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=102&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=ZgequMfnHqEQ7kNvwFY5fwJ&_nc_oc=AdqANvIGxWqNgmzxb7kgFgKVgrXtVM2IYzaP9HzRU6BctVA8uijv0jWA9yy0lGKvkUM&_nc_zt=14&_nc_ht=scontent-lax3-1.xx&_nc_gid=PIoXXbNu6DrpHjT4jN1Fxw&_nc_ss=7b289&oh=00_AQSXJCk9g0odq190RRAvghgbVXbM_ZEQUMbkCvznMqVqIA&oe=6AF76275",
+          "link_url": "",
+          "title": "",
+          "video": null
+        },
+        {
+          "body": "📢 SEPTEMBER SALE – HUGE SAVINGS ACROSS OUR 3-FLOOR SHOWROOM! 🛋️💥\nWe’re making way for our beautiful new autumn collections – and passing massive savings straight to you! Explore 3 floors and 20,000 sq ft of unbeatable deals on hundreds of items. Stock is limited, so once it’s gone, it’s gone! 🚚✨\n📍 Find us here:\nYorkshire Home Interiors\n264-270 Queens Road, Sheffield S2 4DL\n(Opposite Asda • Next door to KFC)\n👉 Don’t wait – secure your September bargain today!\n#YorkshireHomeInteriors #SeptemberSale #SheffieldDeals #FurnitureSale #HomeStyle #SheffieldShopping #ClearanceEvent",
+          "cta": "",
+          "image": "https://scontent-lax7-1.xx.fbcdn.net/v/t39.35426-6/795485509_2357182388431782_5578187031529991190_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=101&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=Yi6u_qquKMIQ7kNvwEQZD4P&_nc_oc=AdrfiDHfxPY8QtwsLCy9xy5Gf2hkRqngVbTXjt5ytKlTuwmxM8mhcmjwqirZf5ywpXw&_nc_zt=14&_nc_ht=scontent-lax7-1.xx&_nc_gid=PIoXXbNu6DrpHjT4jN1Fxw&_nc_ss=7b289&oh=00_AQQH2-H1W8veQ6DE24thXuZCcZ7jGq3DFJaUA3TR73D3pg&oe=6AF75750",
+          "link_url": "",
+          "title": "",
+          "video": null
+        },
+        {
+          "body": "📢 SEPTEMBER SALE – HUGE SAVINGS ACROSS OUR 3-FLOOR SHOWROOM! 🛋️💥\nWe’re making way for our beautiful new autumn collections – and passing massive savings straight to you! Explore 3 floors and 20,000 sq ft of unbeatable deals on hundreds of items. Stock is limited, so once it’s gone, it’s gone! 🚚✨\n📍 Find us here:\nYorkshire Home Interiors\n264-270 Queens Road, Sheffield S2 4DL\n(Opposite Asda • Next door to KFC)\n👉 Don’t wait – secure your September bargain today!\n#YorkshireHomeInteriors #SeptemberSale #SheffieldDeals #FurnitureSale #HomeStyle #SheffieldShopping #ClearanceEvent",
+          "cta": "",
+          "image": "https://scontent-lax3-2.xx.fbcdn.net/v/t39.35426-6/795753926_931517310009576_1863700191151469109_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=103&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=Wh-DEtOpIrgQ7kNvwF9YnOq&_nc_oc=AdpCxkK4-UAYk28gIKl3lwXLJiegujRu-L26EMyMdXLE-P3xb279hX11g4Iq4VJcWiM&_nc_zt=14&_nc_ht=scontent-lax3-2.xx&_nc_gid=PIoXXbNu6DrpHjT4jN1Fxw&_nc_ss=7b289&oh=00_AQRXn5kO1xDJ7TOonHAwSpO3A5zm_PBmLlMBdURpdPDpMg&oe=6AF73419",
+          "link_url": "",
+          "title": "",
+          "video": null
+        },
+        {
+          "body": "📢 SEPTEMBER SALE – HUGE SAVINGS ACROSS OUR 3-FLOOR SHOWROOM! 🛋️💥\nWe’re making way for our beautiful new autumn collections – and passing massive savings straight to you! Explore 3 floors and 20,000 sq ft of unbeatable deals on hundreds of items. Stock is limited, so once it’s gone, it’s gone! 🚚✨\n📍 Find us here:\nYorkshire Home Interiors\n264-270 Queens Road, Sheffield S2 4DL\n(Opposite Asda • Next door to KFC)\n👉 Don’t wait – secure your September bargain today!\n#YorkshireHomeInteriors #SeptemberSale #SheffieldDeals #FurnitureSale #HomeStyle #SheffieldShopping #ClearanceEvent",
+          "cta": "",
+          "image": "https://scontent-lax3-2.xx.fbcdn.net/v/t39.35426-6/796439381_1762395614776676_3120065356734826032_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=107&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=roURVwkt5SIQ7kNvwH6oog_&_nc_oc=AdqQZ0G3q5J5hCkfQSdj-So9GrpukBKyXX8d5mCVlvfJT7o_qGhK8mLYeqQUKU5FqlQ&_nc_zt=14&_nc_ht=scontent-lax3-2.xx&_nc_gid=PIoXXbNu6DrpHjT4jN1Fxw&_nc_ss=7b289&oh=00_AQQrS_nNMCorvVUbO93cbfKxh7iOUIbUCj1a5tFh1JnLug&oe=6AF7449A",
+          "link_url": "",
+          "title": "",
+          "video": null
+        },
+        {
+          "body": "📢 SEPTEMBER SALE – HUGE SAVINGS ACROSS OUR 3-FLOOR SHOWROOM! 🛋️💥\nWe’re making way for our beautiful new autumn collections – and passing massive savings straight to you! Explore 3 floors and 20,000 sq ft of unbeatable deals on hundreds of items. Stock is limited, so once it’s gone, it’s gone! 🚚✨\n📍 Find us here:\nYorkshire Home Interiors\n264-270 Queens Road, Sheffield S2 4DL\n(Opposite Asda • Next door to KFC)\n👉 Don’t wait – secure your September bargain today!\n#YorkshireHomeInteriors #SeptemberSale #SheffieldDeals #FurnitureSale #HomeStyle #SheffieldShopping #ClearanceEvent",
+          "cta": "",
+          "image": "https://scontent-lax7-1.xx.fbcdn.net/v/t39.35426-6/796940840_1624423235987480_625958082092492060_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=105&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=5AQw1igRQN8Q7kNvwHOBMNb&_nc_oc=AdoWIpwV38tFJ1NSvuKFS4AkgC9CQfkfJvpAbQO6bwLofOsTMGqCD7HtHuM7DpyY9ik&_nc_zt=14&_nc_ht=scontent-lax7-1.xx&_nc_gid=PIoXXbNu6DrpHjT4jN1Fxw&_nc_ss=7b289&oh=00_AQTl1qqQMBdeY2ZDESt4CQakjyQeT-sRv23JbRYlokdqIQ&oe=6AF7608C",
+          "link_url": "",
+          "title": "",
+          "video": null
+        },
+        {
+          "body": "📢 SEPTEMBER SALE – HUGE SAVINGS ACROSS OUR 3-FLOOR SHOWROOM! 🛋️💥\nWe’re making way for our beautiful new autumn collections – and passing massive savings straight to you! Explore 3 floors and 20,000 sq ft of unbeatable deals on hundreds of items. Stock is limited, so once it’s gone, it’s gone! 🚚✨\n📍 Find us here:\nYorkshire Home Interiors\n264-270 Queens Road, Sheffield S2 4DL\n(Opposite Asda • Next door to KFC)\n👉 Don’t wait – secure your September bargain today!\n#YorkshireHomeInteriors #SeptemberSale #SheffieldDeals #FurnitureSale #HomeStyle #SheffieldShopping #ClearanceEvent",
+          "cta": "",
+          "image": "https://scontent-lax3-1.xx.fbcdn.net/v/t39.35426-6/797956519_1057905583686450_3981755417149935279_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=102&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=ornxhJTzKu8Q7kNvwE9v9KW&_nc_oc=AdopLmLLRvp7SwPJ-zf4tX7aV4wBGX-e8bdKp044w2EbOLm5MvMMAh7LfnhOelJryFU&_nc_zt=14&_nc_ht=scontent-lax3-1.xx&_nc_gid=PIoXXbNu6DrpHjT4jN1Fxw&_nc_ss=7b289&oh=00_AQTSCiUSByFOpLeHXOpGRiyieMNZRtEGWGug2pl2w8_qLQ&oe=6AF7446A",
+          "link_url": "",
+          "title": "",
+          "video": null
+        },
+        {
+          "body": "📢 SEPTEMBER SALE – HUGE SAVINGS ACROSS OUR 3-FLOOR SHOWROOM! 🛋️💥\nWe’re making way for our beautiful new autumn collections – and passing massive savings straight to you! Explore 3 floors and 20,000 sq ft of unbeatable deals on hundreds of items. Stock is limited, so once it’s gone, it’s gone! 🚚✨\n📍 Find us here:\nYorkshire Home Interiors\n264-270 Queens Road, Sheffield S2 4DL\n(Opposite Asda • Next door to KFC)\n👉 Don’t wait – secure your September bargain today!\n#YorkshireHomeInteriors #SeptemberSale #SheffieldDeals #FurnitureSale #HomeStyle #SheffieldShopping #ClearanceEvent",
+          "cta": "",
+          "image": "https://scontent-lax3-1.xx.fbcdn.net/v/t39.35426-6/798094216_1626971179158429_2021818732627029515_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=108&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=R9WS-JGgOKgQ7kNvwE2NmMN&_nc_oc=AdqxE1zk2EmC2-_euda7DOHZ7FRUt_4_3XcxlaEEHnEToE7_mr_Aw3TnwTyJfyJYIvM&_nc_zt=14&_nc_ht=scontent-lax3-1.xx&_nc_gid=PIoXXbNu6DrpHjT4jN1Fxw&_nc_ss=7b289&oh=00_AQTEH7TqnQw540Umh-7vA7xwTwSC0W5IDBkmtOMAqbnmtg&oe=6AF73BC6",
+          "link_url": "",
+          "title": "",
+          "video": null
+        },
+        {
+          "body": "📢 SEPTEMBER SALE – HUGE SAVINGS ACROSS OUR 3-FLOOR SHOWROOM! 🛋️💥\nWe’re making way for our beautiful new autumn collections – and passing massive savings straight to you! Explore 3 floors and 20,000 sq ft of unbeatable deals on hundreds of items. Stock is limited, so once it’s gone, it’s gone! 🚚✨\n📍 Find us here:\nYorkshire Home Interiors\n264-270 Queens Road, Sheffield S2 4DL\n(Opposite Asda • Next door to KFC)\n👉 Don’t wait – secure your September bargain today!\n#YorkshireHomeInteriors #SeptemberSale #SheffieldDeals #FurnitureSale #HomeStyle #SheffieldShopping #ClearanceEvent",
+          "cta": "",
+          "image": "https://scontent-lax3-1.xx.fbcdn.net/v/t39.35426-6/797303043_3429266463919749_2924036757449747056_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=104&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=UGDD4h4ssykQ7kNvwHbQukc&_nc_oc=AdqB0oE61BOm9xLUj11snusETWd_HdLfiNArCVHRe6qXfs-A-6mXYCd2Z30cpfPSl7g&_nc_zt=14&_nc_ht=scontent-lax3-1.xx&_nc_gid=PIoXXbNu6DrpHjT4jN1Fxw&_nc_ss=7b289&oh=00_AQS2hPNXcOUQz5NDiSh7Bav-DZgX-uenIQfHcKMYRJVlOQ&oe=6AF759A1",
+          "link_url": "",
+          "title": "",
+          "video": null
+        },
+        {
+          "body": "📢 SEPTEMBER SALE – HUGE SAVINGS ACROSS OUR 3-FLOOR SHOWROOM! 🛋️💥\nWe’re making way for our beautiful new autumn collections – and passing massive savings straight to you! Explore 3 floors and 20,000 sq ft of unbeatable deals on hundreds of items. Stock is limited, so once it’s gone, it’s gone! 🚚✨\n📍 Find us here:\nYorkshire Home Interiors\n264-270 Queens Road, Sheffield S2 4DL\n(Opposite Asda • Next door to KFC)\n👉 Don’t wait – secure your September bargain today!\n#YorkshireHomeInteriors #SeptemberSale #SheffieldDeals #FurnitureSale #HomeStyle #SheffieldShopping #ClearanceEvent",
+          "cta": "",
+          "image": "https://scontent-lax3-1.xx.fbcdn.net/v/t39.35426-6/795247447_1563325998452799_8141374088282219663_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=102&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=3dQCtOz9IjoQ7kNvwE9E37M&_nc_oc=AdraTHVMwPNKnAY-NAmsqcCUxWv-Be2qHgO4PWqD3f0nJR9agFBlOLS5iTie6i65tDA&_nc_zt=14&_nc_ht=scontent-lax3-1.xx&_nc_gid=PIoXXbNu6DrpHjT4jN1Fxw&_nc_ss=7b289&oh=00_AQRgy9aGTDc31mzkU8hdh8OGxr9nzAShv08vPmlNL6Hb5w&oe=6AF7340C",
+          "link_url": "",
+          "title": "",
+          "video": null
+        },
+        {
+          "body": "📢 SEPTEMBER SALE – HUGE SAVINGS ACROSS OUR 3-FLOOR SHOWROOM! 🛋️💥\nWe’re making way for our beautiful new autumn collections – and passing massive savings straight to you! Explore 3 floors and 20,000 sq ft of unbeatable deals on hundreds of items. Stock is limited, so once it’s gone, it’s gone! 🚚✨\n📍 Find us here:\nYorkshire Home Interiors\n264-270 Queens Road, Sheffield S2 4DL\n(Opposite Asda • Next door to KFC)\n👉 Don’t wait – secure your September bargain today!\n#YorkshireHomeInteriors #SeptemberSale #SheffieldDeals #FurnitureSale #HomeStyle #SheffieldShopping #ClearanceEvent",
+          "cta": "",
+          "image": "https://scontent-lax7-1.xx.fbcdn.net/v/t39.35426-6/795644156_4374663409514403_6454230144885981271_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=105&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=vjuf-pPcrYsQ7kNvwE5ZDmR&_nc_oc=AdrVLhISRkY-MCexDDvxmelTfVt3tWHyoTh5YRL7AZHrwGtN_AqVRd86Z6KDTUcMzc8&_nc_zt=14&_nc_ht=scontent-lax7-1.xx&_nc_gid=PIoXXbNu6DrpHjT4jN1Fxw&_nc_ss=7b289&oh=00_AQRNja_TN-_CF4Q93gjJMt7KyfTa4PlyTYbyOA6bP84uNQ&oe=6AF75FC7",
+          "link_url": "",
+          "title": "",
+          "video": null
+        },
+        {
+          "body": "📢 SEPTEMBER SALE – HUGE SAVINGS ACROSS OUR 3-FLOOR SHOWROOM! 🛋️💥\nWe’re making way for our beautiful new autumn collections – and passing massive savings straight to you! Explore 3 floors and 20,000 sq ft of unbeatable deals on hundreds of items. Stock is limited, so once it’s gone, it’s gone! 🚚✨\n📍 Find us here:\nYorkshire Home Interiors\n264-270 Queens Road, Sheffield S2 4DL\n(Opposite Asda • Next door to KFC)\n👉 Don’t wait – secure your September bargain today!\n#YorkshireHomeInteriors #SeptemberSale #SheffieldDeals #FurnitureSale #HomeStyle #SheffieldShopping #ClearanceEvent",
+          "cta": "",
+          "image": "https://scontent-lax3-2.xx.fbcdn.net/v/t39.35426-6/797471459_4650142845257048_5856427888948021880_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=106&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=2UdBxrkrPFMQ7kNvwEe_8wl&_nc_oc=AdrQIn-lJzx_fdiNmTZDhBvsM4m0ajK3GC9LWY2F5O_QXvxSXmhq1YQR07-SNSIKRPE&_nc_zt=14&_nc_ht=scontent-lax3-2.xx&_nc_gid=PIoXXbNu6DrpHjT4jN1Fxw&_nc_ss=7b289&oh=00_AQQlwTtAsv6-iIaZrkqUZKtBWK-kbq-yUkH_igDomN_GMg&oe=6AF75057",
+          "link_url": "",
+          "title": "",
+          "video": null
+        },
+        {
+          "body": "📢 SEPTEMBER SALE – HUGE SAVINGS ACROSS OUR 3-FLOOR SHOWROOM! 🛋️💥\nWe’re making way for our beautiful new autumn collections – and passing massive savings straight to you! Explore 3 floors and 20,000 sq ft of unbeatable deals on hundreds of items. Stock is limited, so once it’s gone, it’s gone! 🚚✨\n📍 Find us here:\nYorkshire Home Interiors\n264-270 Queens Road, Sheffield S2 4DL\n(Opposite Asda • Next door to KFC)\n👉 Don’t wait – secure your September bargain today!\n#YorkshireHomeInteriors #SeptemberSale #SheffieldDeals #FurnitureSale #HomeStyle #SheffieldShopping #ClearanceEvent",
+          "cta": "",
+          "image": "https://scontent-lax3-1.xx.fbcdn.net/v/t39.35426-6/795582550_2276332513164896_1758226332500937610_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=104&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=3m152Nh5um0Q7kNvwH9oJVR&_nc_oc=Adob0IK4YRE5GibH7fQ9FY8UgCiR0CPZSRbREIE1FA-7RuyDQsHwq1-Yaf6I2adQgAM&_nc_zt=14&_nc_ht=scontent-lax3-1.xx&_nc_gid=PIoXXbNu6DrpHjT4jN1Fxw&_nc_ss=7b289&oh=00_AQQFH8x-7VqEWJcDTXAcj8gSP_TDZT6jf_Bh-tgrpKnBVw&oe=6AF75847",
+          "link_url": "",
+          "title": "",
+          "video": null
+        },
+        {
+          "body": "📢 SEPTEMBER SALE – HUGE SAVINGS ACROSS OUR 3-FLOOR SHOWROOM! 🛋️💥\nWe’re making way for our beautiful new autumn collections – and passing massive savings straight to you! Explore 3 floors and 20,000 sq ft of unbeatable deals on hundreds of items. Stock is limited, so once it’s gone, it’s gone! 🚚✨\n📍 Find us here:\nYorkshire Home Interiors\n264-270 Queens Road, Sheffield S2 4DL\n(Opposite Asda • Next door to KFC)\n👉 Don’t wait – secure your September bargain today!\n#YorkshireHomeInteriors #SeptemberSale #SheffieldDeals #FurnitureSale #HomeStyle #SheffieldShopping #ClearanceEvent",
+          "cta": "",
+          "image": "https://scontent-lax3-1.xx.fbcdn.net/v/t39.35426-6/796098170_1484076207078682_7128315147036665177_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=110&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=Zec_04puMGQQ7kNvwGGkFrC&_nc_oc=Adptl7udooTLZfy2mlTQkbSFsHoWMgWf1EL-jRf6YHfgwWqwobbNHhSN_HgrcsBOoAU&_nc_zt=14&_nc_ht=scontent-lax3-1.xx&_nc_gid=PIoXXbNu6DrpHjT4jN1Fxw&_nc_ss=7b289&oh=00_AQR7Ou1rloPQr57kM0WVO66YjJFFYCqgAoe7F8qbbc_ang&oe=6AF73864",
+          "link_url": "",
+          "title": "",
+          "video": null
+        },
+        {
+          "body": "📢 SEPTEMBER SALE – HUGE SAVINGS ACROSS OUR 3-FLOOR SHOWROOM! 🛋️💥\nWe’re making way for our beautiful new autumn collections – and passing massive savings straight to you! Explore 3 floors and 20,000 sq ft of unbeatable deals on hundreds of items. Stock is limited, so once it’s gone, it’s gone! 🚚✨\n📍 Find us here:\nYorkshire Home Interiors\n264-270 Queens Road, Sheffield S2 4DL\n(Opposite Asda • Next door to KFC)\n👉 Don’t wait – secure your September bargain today!\n#YorkshireHomeInteriors #SeptemberSale #SheffieldDeals #FurnitureSale #HomeStyle #SheffieldShopping #ClearanceEvent",
+          "cta": "",
+          "image": "https://scontent-lax3-2.xx.fbcdn.net/v/t39.35426-6/796940843_1817744059389280_6380145854171762502_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=107&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=FvmZb8G4NIkQ7kNvwHuuA8g&_nc_oc=AdpArIG4yoGw5qAFxC4VMX0BD9wi6PwvQaGHR_LTC0UVVHMlzJtG5iH24Q3Uvpx2b0U&_nc_zt=14&_nc_ht=scontent-lax3-2.xx&_nc_gid=PIoXXbNu6DrpHjT4jN1Fxw&_nc_ss=7b289&oh=00_AQSfUunSOncZnohGqrx1fHEqdCfmu4AoEQLS_hMVZSvBuQ&oe=6AF74C36",
+          "link_url": "",
+          "title": "",
+          "video": null
+        },
+        {
+          "body": "📢 SEPTEMBER SALE – HUGE SAVINGS ACROSS OUR 3-FLOOR SHOWROOM! 🛋️💥\nWe’re making way for our beautiful new autumn collections – and passing massive savings straight to you! Explore 3 floors and 20,000 sq ft of unbeatable deals on hundreds of items. Stock is limited, so once it’s gone, it’s gone! 🚚✨\n📍 Find us here:\nYorkshire Home Interiors\n264-270 Queens Road, Sheffield S2 4DL\n(Opposite Asda • Next door to KFC)\n👉 Don’t wait – secure your September bargain today!\n#YorkshireHomeInteriors #SeptemberSale #SheffieldDeals #FurnitureSale #HomeStyle #SheffieldShopping #ClearanceEvent",
+          "cta": "",
+          "image": "https://scontent-lax3-1.xx.fbcdn.net/v/t39.35426-6/797904768_982649484848374_2291903550924748496_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=110&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=GJCbHIWga8IQ7kNvwHILrwe&_nc_oc=Adqp7fvvsEKjP2ta5NIzD9G7WBnrZqgwLaAl1f5yjkKyHM4Tmmhq41ygSA20EVkzNNA&_nc_zt=14&_nc_ht=scontent-lax3-1.xx&_nc_gid=PIoXXbNu6DrpHjT4jN1Fxw&_nc_ss=7b289&oh=00_AQRwfJ4_53-uKtdAqv5EHDp-yhTvlH1K3TVHPOu5Q9hP_w&oe=6AF73693",
+          "link_url": "",
+          "title": "",
+          "video": null
+        },
+        {
+          "body": "📢 SEPTEMBER SALE – HUGE SAVINGS ACROSS OUR 3-FLOOR SHOWROOM! 🛋️💥\nWe’re making way for our beautiful new autumn collections – and passing massive savings straight to you! Explore 3 floors and 20,000 sq ft of unbeatable deals on hundreds of items. Stock is limited, so once it’s gone, it’s gone! 🚚✨\n📍 Find us here:\nYorkshire Home Interiors\n264-270 Queens Road, Sheffield S2 4DL\n(Opposite Asda • Next door to KFC)\n👉 Don’t wait – secure your September bargain today!\n#YorkshireHomeInteriors #SeptemberSale #SheffieldDeals #FurnitureSale #HomeStyle #SheffieldShopping #ClearanceEvent",
+          "cta": "",
+          "image": "https://scontent-lax3-1.xx.fbcdn.net/v/t39.35426-6/797841671_1993112804724536_7364782624103188076_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=109&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=cS5wzoJrOiAQ7kNvwF_uTPN&_nc_oc=AdpDtvwT7rc8TMtDZlLG2oxMUbS3FCMi-qrKOGXqfiAWOb-koMLX-9EuBr43kGz0lnI&_nc_zt=14&_nc_ht=scontent-lax3-1.xx&_nc_gid=PIoXXbNu6DrpHjT4jN1Fxw&_nc_ss=7b289&oh=00_AQSHgZAM2MfFpNtv6L9vMaeFIkvOYE4dJiuDVsWKUfLEwg&oe=6AF7487E",
+          "link_url": "",
+          "title": "",
+          "video": null
+        },
+        {
+          "body": "📢 SEPTEMBER SALE – HUGE SAVINGS ACROSS OUR 3-FLOOR SHOWROOM! 🛋️💥\nWe’re making way for our beautiful new autumn collections – and passing massive savings straight to you! Explore 3 floors and 20,000 sq ft of unbeatable deals on hundreds of items. Stock is limited, so once it’s gone, it’s gone! 🚚✨\n📍 Find us here:\nYorkshire Home Interiors\n264-270 Queens Road, Sheffield S2 4DL\n(Opposite Asda • Next door to KFC)\n👉 Don’t wait – secure your September bargain today!\n#YorkshireHomeInteriors #SeptemberSale #SheffieldDeals #FurnitureSale #HomeStyle #SheffieldShopping #ClearanceEvent",
+          "cta": "",
+          "image": "https://scontent-lax3-2.xx.fbcdn.net/v/t39.35426-6/798094192_3149922518552229_6687735821522529319_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=111&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=fwg4MS14rhIQ7kNvwHAYtXu&_nc_oc=AdpERS9pFenyXv_WQL28-YewSyeTddKheFmGEpwbgc9OLWLoAmItANAVV9KV1UNX_4Q&_nc_zt=14&_nc_ht=scontent-lax3-2.xx&_nc_gid=PIoXXbNu6DrpHjT4jN1Fxw&_nc_ss=7b289&oh=00_AQTZgvrzdYV_-uwX5XSYiR97JMJWh-ToE1HAwWLKCN2koA&oe=6AF7449F",
+          "link_url": "",
+          "title": "",
+          "video": null
+        },
+        {
+          "body": "📢 SEPTEMBER SALE – HUGE SAVINGS ACROSS OUR 3-FLOOR SHOWROOM! 🛋️💥\nWe’re making way for our beautiful new autumn collections – and passing massive savings straight to you! Explore 3 floors and 20,000 sq ft of unbeatable deals on hundreds of items. Stock is limited, so once it’s gone, it’s gone! 🚚✨\n📍 Find us here:\nYorkshire Home Interiors\n264-270 Queens Road, Sheffield S2 4DL\n(Opposite Asda • Next door to KFC)\n👉 Don’t wait – secure your September bargain today!\n#YorkshireHomeInteriors #SeptemberSale #SheffieldDeals #FurnitureSale #HomeStyle #SheffieldShopping #ClearanceEvent",
+          "cta": "",
+          "image": "https://scontent-lax3-1.xx.fbcdn.net/v/t39.35426-6/795946258_1763240918055600_8478069630544022945_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=108&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=5akNabrL8hMQ7kNvwGPkWxV&_nc_oc=AdpYE9awsowN23eRpf23kfTBTYA-K4O_BreRbTH8293E0yZtEh1pNqHNRMsoBwT1VWY&_nc_zt=14&_nc_ht=scontent-lax3-1.xx&_nc_gid=PIoXXbNu6DrpHjT4jN1Fxw&_nc_ss=7b289&oh=00_AQQ8XvwzPjnFAHKtY0Ufv4S6b9Zz9ACTzlJM3fmP9cuEkA&oe=6AF7601D",
+          "link_url": "",
+          "title": "",
+          "video": null
+        },
+        {
+          "body": "📢 SEPTEMBER SALE – HUGE SAVINGS ACROSS OUR 3-FLOOR SHOWROOM! 🛋️💥\nWe’re making way for our beautiful new autumn collections – and passing massive savings straight to you! Explore 3 floors and 20,000 sq ft of unbeatable deals on hundreds of items. Stock is limited, so once it’s gone, it’s gone! 🚚✨\n📍 Find us here:\nYorkshire Home Interiors\n264-270 Queens Road, Sheffield S2 4DL\n(Opposite Asda • Next door to KFC)\n👉 Don’t wait – secure your September bargain today!\n#YorkshireHomeInteriors #SeptemberSale #SheffieldDeals #FurnitureSale #HomeStyle #SheffieldShopping #ClearanceEvent",
+          "cta": "",
+          "image": "https://scontent-lax7-1.xx.fbcdn.net/v/t39.35426-6/797783803_1042941511890230_5592366004101241519_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=101&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=L4z1rLDYnEMQ7kNvwFcUh_H&_nc_oc=AdrYrGTzzVPker9EjRjL30_1df9qqh9cCy2DC9twpW_oDNw1ASrMUw5hduSdpD_MpQU&_nc_zt=14&_nc_ht=scontent-lax7-1.xx&_nc_gid=PIoXXbNu6DrpHjT4jN1Fxw&_nc_ss=7b289&oh=00_AQSLloIp2yDEzSj7iIhwrt7MBykvuoDYP7fZe5Uq_4FLjQ&oe=6AF75254",
+          "link_url": "",
+          "title": "",
+          "video": null
+        },
+        {
+          "body": "📢 SEPTEMBER SALE – HUGE SAVINGS ACROSS OUR 3-FLOOR SHOWROOM! 🛋️💥\nWe’re making way for our beautiful new autumn collections – and passing massive savings straight to you! Explore 3 floors and 20,000 sq ft of unbeatable deals on hundreds of items. Stock is limited, so once it’s gone, it’s gone! 🚚✨\n📍 Find us here:\nYorkshire Home Interiors\n264-270 Queens Road, Sheffield S2 4DL\n(Opposite Asda • Next door to KFC)\n👉 Don’t wait – secure your September bargain today!\n#YorkshireHomeInteriors #SeptemberSale #SheffieldDeals #FurnitureSale #HomeStyle #SheffieldShopping #ClearanceEvent",
+          "cta": "",
+          "image": "https://scontent-lax3-2.xx.fbcdn.net/v/t39.35426-6/797904789_1370357745181754_9197462142851060657_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=103&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=y8PB833dDrEQ7kNvwFgyzqu&_nc_oc=Adrg8xnXswqMX_b9YqDbmTB3RZAS3BsdE9ibRgU545X9A7QZTM8OmQKjPyUcaESX1qA&_nc_zt=14&_nc_ht=scontent-lax3-2.xx&_nc_gid=PIoXXbNu6DrpHjT4jN1Fxw&_nc_ss=7b289&oh=00_AQSnwpeV7t4sjcQnQ6aI1naYPySUaV7-szhGBupCJGQGKg&oe=6AF75730",
+          "link_url": "",
+          "title": "",
+          "video": null
+        },
+        {
+          "body": "📢 SEPTEMBER SALE – HUGE SAVINGS ACROSS OUR 3-FLOOR SHOWROOM! 🛋️💥\nWe’re making way for our beautiful new autumn collections – and passing massive savings straight to you! Explore 3 floors and 20,000 sq ft of unbeatable deals on hundreds of items. Stock is limited, so once it’s gone, it’s gone! 🚚✨\n📍 Find us here:\nYorkshire Home Interiors\n264-270 Queens Road, Sheffield S2 4DL\n(Opposite Asda • Next door to KFC)\n👉 Don’t wait – secure your September bargain today!\n#YorkshireHomeInteriors #SeptemberSale #SheffieldDeals #FurnitureSale #HomeStyle #SheffieldShopping #ClearanceEvent",
+          "cta": "",
+          "image": "https://scontent-lax7-1.xx.fbcdn.net/v/t39.35426-6/797857369_2662935517454647_2220542197225939649_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=105&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=W2MkG5I0wFMQ7kNvwEVgtEA&_nc_oc=Adpzj5lN2vZbQGXMP6AFxsc93WvDk8M49L1nuS7bVdniLvrmuwxO5qT3P1A3rqNxWNk&_nc_zt=14&_nc_ht=scontent-lax7-1.xx&_nc_gid=PIoXXbNu6DrpHjT4jN1Fxw&_nc_ss=7b289&oh=00_AQTKwgvzwx48I18L_IWqCmdizmM_Mh3OCNkIDwFwMF1dFg&oe=6AF73C4C",
+          "link_url": "",
+          "title": "",
+          "video": null
+        },
+        {
+          "body": "📢 SEPTEMBER SALE – HUGE SAVINGS ACROSS OUR 3-FLOOR SHOWROOM! 🛋️💥\nWe’re making way for our beautiful new autumn collections – and passing massive savings straight to you! Explore 3 floors and 20,000 sq ft of unbeatable deals on hundreds of items. Stock is limited, so once it’s gone, it’s gone! 🚚✨\n📍 Find us here:\nYorkshire Home Interiors\n264-270 Queens Road, Sheffield S2 4DL\n(Opposite Asda • Next door to KFC)\n👉 Don’t wait – secure your September bargain today!\n#YorkshireHomeInteriors #SeptemberSale #SheffieldDeals #FurnitureSale #HomeStyle #SheffieldShopping #ClearanceEvent",
+          "cta": "",
+          "image": "https://scontent-lax7-1.xx.fbcdn.net/v/t39.35426-6/798063961_1638686464528868_6939782656455050978_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=105&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=dl69oxZO2KsQ7kNvwGxuDjE&_nc_oc=AdqSuQddd65vuDWZkM6s_NxuDQ9jM1btQEPQhYwWTiaFquL6M-Vq1aj9-XaYUA1hxV8&_nc_zt=14&_nc_ht=scontent-lax7-1.xx&_nc_gid=PIoXXbNu6DrpHjT4jN1Fxw&_nc_ss=7b289&oh=00_AQQy16qRX94-SOQImWbl0ZjSGDD7PVwYX3HIlnUjIVftGA&oe=6AF73634",
+          "link_url": "",
+          "title": "",
+          "video": null
+        },
+        {
+          "body": "📢 SEPTEMBER SALE – HUGE SAVINGS ACROSS OUR 3-FLOOR SHOWROOM! 🛋️💥\nWe’re making way for our beautiful new autumn collections – and passing massive savings straight to you! Explore 3 floors and 20,000 sq ft of unbeatable deals on hundreds of items. Stock is limited, so once it’s gone, it’s gone! 🚚✨\n📍 Find us here:\nYorkshire Home Interiors\n264-270 Queens Road, Sheffield S2 4DL\n(Opposite Asda • Next door to KFC)\n👉 Don’t wait – secure your September bargain today!\n#YorkshireHomeInteriors #SeptemberSale #SheffieldDeals #FurnitureSale #HomeStyle #SheffieldShopping #ClearanceEvent",
+          "cta": "",
+          "image": "https://scontent-lax3-1.xx.fbcdn.net/v/t39.35426-6/796303081_1349493086952414_7359840419954663550_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=102&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=qiA0T5MyOgIQ7kNvwEpWUkD&_nc_oc=Ado5f9WdvFCEcLENocG3gDhWSJFUdOy0G-a4elqo31U1fubWuiF8idluVHFv21n0Dww&_nc_zt=14&_nc_ht=scontent-lax3-1.xx&_nc_gid=PIoXXbNu6DrpHjT4jN1Fxw&_nc_ss=7b289&oh=00_AQQlrrY6LGhZl6s_RtreuVCd7-s_rJZgFdsahlSVIdaNTg&oe=6AF751B5",
+          "link_url": "",
+          "title": "",
+          "video": null
+        },
+        {
+          "body": "📢 SEPTEMBER SALE – HUGE SAVINGS ACROSS OUR 3-FLOOR SHOWROOM! 🛋️💥\nWe’re making way for our beautiful new autumn collections – and passing massive savings straight to you! Explore 3 floors and 20,000 sq ft of unbeatable deals on hundreds of items. Stock is limited, so once it’s gone, it’s gone! 🚚✨\n📍 Find us here:\nYorkshire Home Interiors\n264-270 Queens Road, Sheffield S2 4DL\n(Opposite Asda • Next door to KFC)\n👉 Don’t wait – secure your September bargain today!\n#YorkshireHomeInteriors #SeptemberSale #SheffieldDeals #FurnitureSale #HomeStyle #SheffieldShopping #ClearanceEvent",
+          "cta": "",
+          "image": "https://scontent-lax3-2.xx.fbcdn.net/v/t39.35426-6/797744918_2211997876246112_8423154910387828439_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=103&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=YfSoDqQvcf4Q7kNvwFRUMI1&_nc_oc=AdpGzvL9NkuvJh9ahC52MilwPi6kLIQbQawJgBn4mN3BtwuRcL-V8Mtrtu-YSXvkcpE&_nc_zt=14&_nc_ht=scontent-lax3-2.xx&_nc_gid=PIoXXbNu6DrpHjT4jN1Fxw&_nc_ss=7b289&oh=00_AQRKufwKiphy0RJWc7jSMvzgn85kCscu3oIS67ZdCFJWgw&oe=6AF73527",
+          "link_url": "",
+          "title": "",
+          "video": null
+        },
+        {
+          "body": "📢 SEPTEMBER SALE – HUGE SAVINGS ACROSS OUR 3-FLOOR SHOWROOM! 🛋️💥\nWe’re making way for our beautiful new autumn collections – and passing massive savings straight to you! Explore 3 floors and 20,000 sq ft of unbeatable deals on hundreds of items. Stock is limited, so once it’s gone, it’s gone! 🚚✨\n📍 Find us here:\nYorkshire Home Interiors\n264-270 Queens Road, Sheffield S2 4DL\n(Opposite Asda • Next door to KFC)\n👉 Don’t wait – secure your September bargain today!\n#YorkshireHomeInteriors #SeptemberSale #SheffieldDeals #FurnitureSale #HomeStyle #SheffieldShopping #ClearanceEvent",
+          "cta": "",
+          "image": "https://scontent-lax3-2.xx.fbcdn.net/v/t39.35426-6/797101569_1714567736311404_6483775122178786407_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=100&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=HTeFTRggqGoQ7kNvwGwKEPN&_nc_oc=Adr2uRynVr5NrDtaR92uZhfD6i9rHKwJ03sJzL-Gfeo4lF9nAMgFTEW5YsRMsPuy1ec&_nc_zt=14&_nc_ht=scontent-lax3-2.xx&_nc_gid=PIoXXbNu6DrpHjT4jN1Fxw&_nc_ss=7b289&oh=00_AQRKzcABcFEi4Fse2vAj3JzzrnaIJR5oOHeboj0CVWNnXQ&oe=6AF76A3B",
+          "link_url": "",
+          "title": "",
+          "video": null
+        },
+        {
+          "body": "📢 SEPTEMBER SALE – HUGE SAVINGS ACROSS OUR 3-FLOOR SHOWROOM! 🛋️💥\nWe’re making way for our beautiful new autumn collections – and passing massive savings straight to you! Explore 3 floors and 20,000 sq ft of unbeatable deals on hundreds of items. Stock is limited, so once it’s gone, it’s gone! 🚚✨\n📍 Find us here:\nYorkshire Home Interiors\n264-270 Queens Road, Sheffield S2 4DL\n(Opposite Asda • Next door to KFC)\n👉 Don’t wait – secure your September bargain today!\n#YorkshireHomeInteriors #SeptemberSale #SheffieldDeals #FurnitureSale #HomeStyle #SheffieldShopping #ClearanceEvent",
+          "cta": "",
+          "image": "https://scontent-lax7-1.xx.fbcdn.net/v/t39.35426-6/797471488_2998977033769960_7102464803932240758_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=105&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=z1N-d1dZBCcQ7kNvwHCT0sT&_nc_oc=AdqJVqgnR65bGssCHHyhUPL7Zf0rTNfduWu7vNqr2TxyYam3X8MnAroIugqorGfu0bk&_nc_zt=14&_nc_ht=scontent-lax7-1.xx&_nc_gid=PIoXXbNu6DrpHjT4jN1Fxw&_nc_ss=7b289&oh=00_AQRgnz_Hm4txwgE0m_OQXX6v3b6i3R9iFeSm5Z8lu3Z3-Q&oe=6AF73AD8",
+          "link_url": "",
+          "title": "",
+          "video": null
+        },
+        {
+          "body": "📢 SEPTEMBER SALE – HUGE SAVINGS ACROSS OUR 3-FLOOR SHOWROOM! 🛋️💥\nWe’re making way for our beautiful new autumn collections – and passing massive savings straight to you! Explore 3 floors and 20,000 sq ft of unbeatable deals on hundreds of items. Stock is limited, so once it’s gone, it’s gone! 🚚✨\n📍 Find us here:\nYorkshire Home Interiors\n264-270 Queens Road, Sheffield S2 4DL\n(Opposite Asda • Next door to KFC)\n👉 Don’t wait – secure your September bargain today!\n#YorkshireHomeInteriors #SeptemberSale #SheffieldDeals #FurnitureSale #HomeStyle #SheffieldShopping #ClearanceEvent",
+          "cta": "",
+          "image": "https://scontent-lax7-1.xx.fbcdn.net/v/t39.35426-6/796324713_4297231620567587_8574301689403606192_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=101&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=KdhkGbG7eM8Q7kNvwE-RkxP&_nc_oc=AdorFfSkBl8-pLq8UZAQOXob6KXI9GLV1mv2XnPF8PzF9HHuUHmM4A9_xCu7o4LY_ko&_nc_zt=14&_nc_ht=scontent-lax7-1.xx&_nc_gid=PIoXXbNu6DrpHjT4jN1Fxw&_nc_ss=7b289&oh=00_AQTUYfvW2zBPK6OL5CHILOrE5w2odQoWX9-lMoPU7zkjcg&oe=6AF74C22",
+          "link_url": "",
+          "title": "",
+          "video": null
+        },
+        {
+          "body": "📢 SEPTEMBER SALE – HUGE SAVINGS ACROSS OUR 3-FLOOR SHOWROOM! 🛋️💥\nWe’re making way for our beautiful new autumn collections – and passing massive savings straight to you! Explore 3 floors and 20,000 sq ft of unbeatable deals on hundreds of items. Stock is limited, so once it’s gone, it’s gone! 🚚✨\n📍 Find us here:\nYorkshire Home Interiors\n264-270 Queens Road, Sheffield S2 4DL\n(Opposite Asda • Next door to KFC)\n👉 Don’t wait – secure your September bargain today!\n#YorkshireHomeInteriors #SeptemberSale #SheffieldDeals #FurnitureSale #HomeStyle #SheffieldShopping #ClearanceEvent",
+          "cta": "",
+          "image": "https://scontent-lax7-1.xx.fbcdn.net/v/t39.35426-6/796270072_1057294360487808_2257191399481235660_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=101&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=l_eO4evBJCwQ7kNvwHUT7de&_nc_oc=AdqqvF52MP42FIGecDvVKPGDEssJMm2RS-RPDzmBcD1sGohpCCvU55w2m_C2qKYa8Os&_nc_zt=14&_nc_ht=scontent-lax7-1.xx&_nc_gid=PIoXXbNu6DrpHjT4jN1Fxw&_nc_ss=7b289&oh=00_AQQRcDL0j5V765XDtmRrnNOVLl-lCI32E4gm9MBzNwG7dA&oe=6AF74C1F",
+          "link_url": "",
+          "title": "",
+          "video": null
+        },
+        {
+          "body": "📢 SEPTEMBER SALE – HUGE SAVINGS ACROSS OUR 3-FLOOR SHOWROOM! 🛋️💥\nWe’re making way for our beautiful new autumn collections – and passing massive savings straight to you! Explore 3 floors and 20,000 sq ft of unbeatable deals on hundreds of items. Stock is limited, so once it’s gone, it’s gone! 🚚✨\n📍 Find us here:\nYorkshire Home Interiors\n264-270 Queens Road, Sheffield S2 4DL\n(Opposite Asda • Next door to KFC)\n👉 Don’t wait – secure your September bargain today!\n#YorkshireHomeInteriors #SeptemberSale #SheffieldDeals #FurnitureSale #HomeStyle #SheffieldShopping #ClearanceEvent",
+          "cta": "",
+          "image": "https://scontent-lax3-2.xx.fbcdn.net/v/t39.35426-6/798094190_1809963140198025_5672965810147012364_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=100&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=95hZo5AprIYQ7kNvwE2QFFR&_nc_oc=Adq7gALuzhB5tvpgGc66giTt-A5xZ1VymvtPnQVg7ecwlE6PmGdfR1M-RvtqO-7F1YU&_nc_zt=14&_nc_ht=scontent-lax3-2.xx&_nc_gid=PIoXXbNu6DrpHjT4jN1Fxw&_nc_ss=7b289&oh=00_AQQfyK3scMEGCPIc0jfChglr_XzrWnzjsl_1-_qNs8UR4w&oe=6AF74323",
+          "link_url": "",
+          "title": "",
+          "video": null
+        },
+        {
+          "body": "📢 SEPTEMBER SALE – HUGE SAVINGS ACROSS OUR 3-FLOOR SHOWROOM! 🛋️💥\nWe’re making way for our beautiful new autumn collections – and passing massive savings straight to you! Explore 3 floors and 20,000 sq ft of unbeatable deals on hundreds of items. Stock is limited, so once it’s gone, it’s gone! 🚚✨\n📍 Find us here:\nYorkshire Home Interiors\n264-270 Queens Road, Sheffield S2 4DL\n(Opposite Asda • Next door to KFC)\n👉 Don’t wait – secure your September bargain today!\n#YorkshireHomeInteriors #SeptemberSale #SheffieldDeals #FurnitureSale #HomeStyle #SheffieldShopping #ClearanceEvent",
+          "cta": "",
+          "image": "https://scontent-lax7-1.xx.fbcdn.net/v/t39.35426-6/796236175_1314714394036019_1261385371863600478_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=105&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=mOJGwjLxVs8Q7kNvwHfIEHn&_nc_oc=Ado641BLl7o3WIpZwutpJ8vZZvdhDW2s6LP2tL6ni3N0ZXyE1pavY33BcS9NAf8l5t4&_nc_zt=14&_nc_ht=scontent-lax7-1.xx&_nc_gid=PIoXXbNu6DrpHjT4jN1Fxw&_nc_ss=7b289&oh=00_AQT2Bi6AQ3ZEf2FRfKTLKN8wDeXYpuVlFMDOTdBO_INsVA&oe=6AF75C42",
+          "link_url": "",
+          "title": "",
+          "video": null
+        },
+        {
+          "body": "📢 SEPTEMBER SALE – HUGE SAVINGS ACROSS OUR 3-FLOOR SHOWROOM! 🛋️💥\nWe’re making way for our beautiful new autumn collections – and passing massive savings straight to you! Explore 3 floors and 20,000 sq ft of unbeatable deals on hundreds of items. Stock is limited, so once it’s gone, it’s gone! 🚚✨\n📍 Find us here:\nYorkshire Home Interiors\n264-270 Queens Road, Sheffield S2 4DL\n(Opposite Asda • Next door to KFC)\n👉 Don’t wait – secure your September bargain today!\n#YorkshireHomeInteriors #SeptemberSale #SheffieldDeals #FurnitureSale #HomeStyle #SheffieldShopping #ClearanceEvent",
+          "cta": "",
+          "image": "https://scontent-lax7-1.xx.fbcdn.net/v/t39.35426-6/797783809_1546808763324582_3054069645887197119_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=105&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=SnKpxDkpsBUQ7kNvwHZc-Jr&_nc_oc=AdqxRDvB3GBRh6rbC0eE14E2Zb_o6HvrTqmizTlH-CHLImL7p5T8-a344rooE652zZ8&_nc_zt=14&_nc_ht=scontent-lax7-1.xx&_nc_gid=PIoXXbNu6DrpHjT4jN1Fxw&_nc_ss=7b289&oh=00_AQTFKLpAJXEI3418PrhIm9kSKT31Fyg-tIu7h13QFwO1vQ&oe=6AF76373",
+          "link_url": "",
+          "title": "",
+          "video": null
+        },
+        {
+          "body": "📢 SEPTEMBER SALE – HUGE SAVINGS ACROSS OUR 3-FLOOR SHOWROOM! 🛋️💥\nWe’re making way for our beautiful new autumn collections – and passing massive savings straight to you! Explore 3 floors and 20,000 sq ft of unbeatable deals on hundreds of items. Stock is limited, so once it’s gone, it’s gone! 🚚✨\n📍 Find us here:\nYorkshire Home Interiors\n264-270 Queens Road, Sheffield S2 4DL\n(Opposite Asda • Next door to KFC)\n👉 Don’t wait – secure your September bargain today!\n#YorkshireHomeInteriors #SeptemberSale #SheffieldDeals #FurnitureSale #HomeStyle #SheffieldShopping #ClearanceEvent",
+          "cta": "",
+          "image": "https://scontent-lax7-1.xx.fbcdn.net/v/t39.35426-6/796236175_997891933271709_2075804631796405694_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=101&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=oxXntV8h2xYQ7kNvwHqWksf&_nc_oc=Adq5RBq6QnMdhDA7jskPyr1tTCqd-0HydLIZJdKbRJOInzaINjvS7a2xGF-TLjWzZZU&_nc_zt=14&_nc_ht=scontent-lax7-1.xx&_nc_gid=PIoXXbNu6DrpHjT4jN1Fxw&_nc_ss=7b289&oh=00_AQQuWV9ZpFVwmIJM2sFRcmmWonn7jh09J9-xksd4Cg3OkQ&oe=6AF74C03",
+          "link_url": "",
+          "title": "",
+          "video": null
+        },
+        {
+          "body": "📢 SEPTEMBER SALE – HUGE SAVINGS ACROSS OUR 3-FLOOR SHOWROOM! 🛋️💥\nWe’re making way for our beautiful new autumn collections – and passing massive savings straight to you! Explore 3 floors and 20,000 sq ft of unbeatable deals on hundreds of items. Stock is limited, so once it’s gone, it’s gone! 🚚✨\n📍 Find us here:\nYorkshire Home Interiors\n264-270 Queens Road, Sheffield S2 4DL\n(Opposite Asda • Next door to KFC)\n👉 Don’t wait – secure your September bargain today!\n#YorkshireHomeInteriors #SeptemberSale #SheffieldDeals #FurnitureSale #HomeStyle #SheffieldShopping #ClearanceEvent",
+          "cta": "",
+          "image": "https://scontent-lax3-2.xx.fbcdn.net/v/t39.35426-6/794328290_820166424503776_7138663169368551275_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=100&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=jjZJgLfkVCUQ7kNvwFJ2ytD&_nc_oc=Adr45TeZwby-yQo_KaIKqDuSwavj7UKqtmVYpvZQLpLXbGb3x8hfihk6DVinOFScRjo&_nc_zt=14&_nc_ht=scontent-lax3-2.xx&_nc_gid=PIoXXbNu6DrpHjT4jN1Fxw&_nc_ss=7b289&oh=00_AQSrFPgxhFZEANeIWYAbUYMGMqfMP2KUdkhG1T0u1iFeiw&oe=6AF756DB",
+          "link_url": "",
+          "title": "",
+          "video": null
+        },
+        {
+          "body": "📢 SEPTEMBER SALE – HUGE SAVINGS ACROSS OUR 3-FLOOR SHOWROOM! 🛋️💥\nWe’re making way for our beautiful new autumn collections – and passing massive savings straight to you! Explore 3 floors and 20,000 sq ft of unbeatable deals on hundreds of items. Stock is limited, so once it’s gone, it’s gone! 🚚✨\n📍 Find us here:\nYorkshire Home Interiors\n264-270 Queens Road, Sheffield S2 4DL\n(Opposite Asda • Next door to KFC)\n👉 Don’t wait – secure your September bargain today!\n#YorkshireHomeInteriors #SeptemberSale #SheffieldDeals #FurnitureSale #HomeStyle #SheffieldShopping #ClearanceEvent",
+          "cta": "",
+          "image": "https://scontent-lax3-2.xx.fbcdn.net/v/t39.35426-6/795644144_2261499357966210_304761745551097775_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=106&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=Gpb4trr1eH0Q7kNvwHWOZ5_&_nc_oc=AdqJIr3aa4ZB8uMdqWTcXnRSqDZBau2SlzSkSwbTQR5n0cZlrAKy7oLBrvDqBKtOuyo&_nc_zt=14&_nc_ht=scontent-lax3-2.xx&_nc_gid=PIoXXbNu6DrpHjT4jN1Fxw&_nc_ss=7b289&oh=00_AQTR3EcmDFseTh6oI_lcushJAOPgVtCfwfpYcQD8W0-9mA&oe=6AF769F9",
+          "link_url": "",
+          "title": "",
+          "video": null
+        },
+        {
+          "body": "📢 SEPTEMBER SALE – HUGE SAVINGS ACROSS OUR 3-FLOOR SHOWROOM! 🛋️💥\nWe’re making way for our beautiful new autumn collections – and passing massive savings straight to you! Explore 3 floors and 20,000 sq ft of unbeatable deals on hundreds of items. Stock is limited, so once it’s gone, it’s gone! 🚚✨\n📍 Find us here:\nYorkshire Home Interiors\n264-270 Queens Road, Sheffield S2 4DL\n(Opposite Asda • Next door to KFC)\n👉 Don’t wait – secure your September bargain today!\n#YorkshireHomeInteriors #SeptemberSale #SheffieldDeals #FurnitureSale #HomeStyle #SheffieldShopping #ClearanceEvent",
+          "cta": "",
+          "image": "https://scontent-lax3-1.xx.fbcdn.net/v/t39.35426-6/795644150_1618125056578623_5680478194485715122_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=110&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=4BLWYZ6gbscQ7kNvwEOo0lt&_nc_oc=Adq7zKHWTHvdi2fUiBLZWdmc82MG-clnT-cJzVsqYSJinC553u-qt8U7lhNYWO_SJ7w&_nc_zt=14&_nc_ht=scontent-lax3-1.xx&_nc_gid=PIoXXbNu6DrpHjT4jN1Fxw&_nc_ss=7b289&oh=00_AQT8mT_-vYFJOty-B3phLaMY2xM4kevIP729-ps1dTeqOg&oe=6AF732DD",
+          "link_url": "",
+          "title": "",
+          "video": null
+        },
+        {
+          "body": "📢 SEPTEMBER SALE – HUGE SAVINGS ACROSS OUR 3-FLOOR SHOWROOM! 🛋️💥\nWe’re making way for our beautiful new autumn collections – and passing massive savings straight to you! Explore 3 floors and 20,000 sq ft of unbeatable deals on hundreds of items. Stock is limited, so once it’s gone, it’s gone! 🚚✨\n📍 Find us here:\nYorkshire Home Interiors\n264-270 Queens Road, Sheffield S2 4DL\n(Opposite Asda • Next door to KFC)\n👉 Don’t wait – secure your September bargain today!\n#YorkshireHomeInteriors #SeptemberSale #SheffieldDeals #FurnitureSale #HomeStyle #SheffieldShopping #ClearanceEvent",
+          "cta": "",
+          "image": "https://scontent-lax3-2.xx.fbcdn.net/v/t39.35426-6/796439387_1444305887540595_8471524399719317712_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=103&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=ugBcRXwudjwQ7kNvwH6Tsrv&_nc_oc=Adqg7ggNm-R6SkIsNMm88PwpyTWkCJOaKUIED-pJc7mzhlScs8XJU-mJ9ipsH6mXHHo&_nc_zt=14&_nc_ht=scontent-lax3-2.xx&_nc_gid=PIoXXbNu6DrpHjT4jN1Fxw&_nc_ss=7b289&oh=00_AQR37LhVcbFprsOQ9gtqfgPizjUYlabcoaWtTUw18s1T6w&oe=6AF74FD8",
+          "link_url": "",
+          "title": "",
+          "video": null
+        },
+        {
+          "body": "📢 SEPTEMBER SALE – HUGE SAVINGS ACROSS OUR 3-FLOOR SHOWROOM! 🛋️💥\nWe’re making way for our beautiful new autumn collections – and passing massive savings straight to you! Explore 3 floors and 20,000 sq ft of unbeatable deals on hundreds of items. Stock is limited, so once it’s gone, it’s gone! 🚚✨\n📍 Find us here:\nYorkshire Home Interiors\n264-270 Queens Road, Sheffield S2 4DL\n(Opposite Asda • Next door to KFC)\n👉 Don’t wait – secure your September bargain today!\n#YorkshireHomeInteriors #SeptemberSale #SheffieldDeals #FurnitureSale #HomeStyle #SheffieldShopping #ClearanceEvent",
+          "cta": "",
+          "image": "https://scontent-lax3-1.xx.fbcdn.net/v/t39.35426-6/795485485_2300668974037802_3584090465242073021_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=104&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=fZrzZZbvteAQ7kNvwED3sbT&_nc_oc=Adrh9bMvqNO1Fk_N9M4I2K1NjMWJbu8iWy5cXfrtR2YASoVtga-ylFxm8Kp5TRO9Q6c&_nc_zt=14&_nc_ht=scontent-lax3-1.xx&_nc_gid=PIoXXbNu6DrpHjT4jN1Fxw&_nc_ss=7b289&oh=00_AQSx7gJnmdwf89Kdsij0hoeaGvuTpWRgu5uZS9xAq0lsGA&oe=6AF76599",
+          "link_url": "",
+          "title": "",
+          "video": null
+        },
+        {
+          "body": "📢 SEPTEMBER SALE – HUGE SAVINGS ACROSS OUR 3-FLOOR SHOWROOM! 🛋️💥\nWe’re making way for our beautiful new autumn collections – and passing massive savings straight to you! Explore 3 floors and 20,000 sq ft of unbeatable deals on hundreds of items. Stock is limited, so once it’s gone, it’s gone! 🚚✨\n📍 Find us here:\nYorkshire Home Interiors\n264-270 Queens Road, Sheffield S2 4DL\n(Opposite Asda • Next door to KFC)\n👉 Don’t wait – secure your September bargain today!\n#YorkshireHomeInteriors #SeptemberSale #SheffieldDeals #FurnitureSale #HomeStyle #SheffieldShopping #ClearanceEvent",
+          "cta": "",
+          "image": "https://scontent-lax3-2.xx.fbcdn.net/v/t39.35426-6/797644948_28554750077477082_4879084560409007188_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=107&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=jUr-Z2p4IekQ7kNvwGk2EJo&_nc_oc=AdoDe2-NDBymlTHzUwgsaynVncgvFm1APnrd1mb2CLcSfJ8xkMMAspO5ZGmbAawI_lg&_nc_zt=14&_nc_ht=scontent-lax3-2.xx&_nc_gid=PIoXXbNu6DrpHjT4jN1Fxw&_nc_ss=7b289&oh=00_AQTg19F90YTr7igVGTlGMsHB0N7wJhh6rfOCoTNd9RCVig&oe=6AF75FB8",
+          "link_url": "",
+          "title": "",
+          "video": null
+        },
+        {
+          "body": "📢 SEPTEMBER SALE – HUGE SAVINGS ACROSS OUR 3-FLOOR SHOWROOM! 🛋️💥\nWe’re making way for our beautiful new autumn collections – and passing massive savings straight to you! Explore 3 floors and 20,000 sq ft of unbeatable deals on hundreds of items. Stock is limited, so once it’s gone, it’s gone! 🚚✨\n📍 Find us here:\nYorkshire Home Interiors\n264-270 Queens Road, Sheffield S2 4DL\n(Opposite Asda • Next door to KFC)\n👉 Don’t wait – secure your September bargain today!\n#YorkshireHomeInteriors #SeptemberSale #SheffieldDeals #FurnitureSale #HomeStyle #SheffieldShopping #ClearanceEvent",
+          "cta": "",
+          "image": "https://scontent-lax3-2.xx.fbcdn.net/v/t39.35426-6/797783803_1066426186254816_3889204116092353065_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=107&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=t4Ivh00eE1YQ7kNvwH7VrJR&_nc_oc=AdphX7X9RhYnc_KnuR9EGcKHLIc7GPHIpVKLPaXUYv-NArlSxhhkL8MLIFbrVfe03T8&_nc_zt=14&_nc_ht=scontent-lax3-2.xx&_nc_gid=PIoXXbNu6DrpHjT4jN1Fxw&_nc_ss=7b289&oh=00_AQTeLOkkgWu9323oL_lUHBE9YEMrCp713P44JVzDA_uwcQ&oe=6AF754B1",
+          "link_url": "",
+          "title": "",
+          "video": null
+        },
+        {
+          "body": "📢 SEPTEMBER SALE – HUGE SAVINGS ACROSS OUR 3-FLOOR SHOWROOM! 🛋️💥\nWe’re making way for our beautiful new autumn collections – and passing massive savings straight to you! Explore 3 floors and 20,000 sq ft of unbeatable deals on hundreds of items. Stock is limited, so once it’s gone, it’s gone! 🚚✨\n📍 Find us here:\nYorkshire Home Interiors\n264-270 Queens Road, Sheffield S2 4DL\n(Opposite Asda • Next door to KFC)\n👉 Don’t wait – secure your September bargain today!\n#YorkshireHomeInteriors #SeptemberSale #SheffieldDeals #FurnitureSale #HomeStyle #SheffieldShopping #ClearanceEvent",
+          "cta": "",
+          "image": "https://scontent-lax3-2.xx.fbcdn.net/v/t39.35426-6/795946258_1637479551250393_9042725738986098044_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=100&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=scWt5zdsui8Q7kNvwH7jyZO&_nc_oc=AdrEZiG2_XZyBwWXneuoxw5RV7OV-j6_a-TmxCwxRSbwKwpbf4nV6fj-L1p9lVI6wOg&_nc_zt=14&_nc_ht=scontent-lax3-2.xx&_nc_gid=PIoXXbNu6DrpHjT4jN1Fxw&_nc_ss=7b289&oh=00_AQQFNUduIP3w3D3pCo9SAcTfnutkt42qJqRecXDyrAkfXw&oe=6AF7473B",
+          "link_url": "",
+          "title": "",
+          "video": null
+        },
+        {
+          "body": "📢 SEPTEMBER SALE – HUGE SAVINGS ACROSS OUR 3-FLOOR SHOWROOM! 🛋️💥\nWe’re making way for our beautiful new autumn collections – and passing massive savings straight to you! Explore 3 floors and 20,000 sq ft of unbeatable deals on hundreds of items. Stock is limited, so once it’s gone, it’s gone! 🚚✨\n📍 Find us here:\nYorkshire Home Interiors\n264-270 Queens Road, Sheffield S2 4DL\n(Opposite Asda • Next door to KFC)\n👉 Don’t wait – secure your September bargain today!\n#YorkshireHomeInteriors #SeptemberSale #SheffieldDeals #FurnitureSale #HomeStyle #SheffieldShopping #ClearanceEvent",
+          "cta": "",
+          "image": "https://scontent-lax3-2.xx.fbcdn.net/v/t39.35426-6/797904768_1745865820000131_8445662945292923045_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=103&ccb=1-7&_nc_sid=c53f8f&_nc_aid=0&_nc_ohc=tJ6-WTZ_d6EQ7kNvwFrm9IT&_nc_oc=AdqcuGMpro10FG9aUjYchlVucLFl13XooWt_7AfbMC46k8TTEFCvEnYgI4JztmL2vxI&_nc_zt=14&_nc_ht=scontent-lax3-2.xx&_nc_gid=PIoXXbNu6DrpHjT4jN1Fxw&_nc_ss=7b289&oh=00_AQSh15sxs5xhe7e-E7LXvkt4T77F5H57wlnzUjTHdecBbQ&oe=6AF75C80",
+          "link_url": "",
+          "title": "",
+          "video": null
+        },
+        {
+          "body": "📢 SEPTEMBER SALE – HUGE SAVINGS ACROSS OUR 3-FLOOR SHOWROOM! 🛋️💥\nWe’re making way for our beautiful new autumn collections – and passing massive savings straight to you! Explore 3 floors and 20,000 sq ft of unbeatable deals on hundreds of items. Stock is limited, so once it’s gone, it’s gone! 🚚✨\n📍 Find us here:\nYorkshire Home Interiors\n264-270 Queens Road, Sheffield S2 4DL\n(Opposite Asda • Next door to KFC)\n👉 Don’t wait – secure your September bargain today!\n#YorkshireHomeInteriors #SeptemberSale #SheffieldDeals #FurnitureSale #HomeStyle #SheffieldShopping #ClearanceEvent",
+          "cta": "",
+          "image": "https://scontent-lax7-1.xx.fbcdn.net/v/t39.35426-6/798063981_1422079739831177_6787951210523660174_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=105&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=laRR0_OSGocQ7kNvwE1ShK5&_nc_oc=AdpyKDAAyh6r4u1bqesajFZ_cs8luxeQry27QntH2djF2DKDF-TPX2FrBrW6dAAN_zU&_nc_zt=14&_nc_ht=scontent-lax7-1.xx&_nc_gid=PIoXXbNu6DrpHjT4jN1Fxw&_nc_ss=7b289&oh=00_AQTrNOu1kSbCLPK1e02qnCcqsn9tEoA1U8DCG2XNSjGIFg&oe=6AF73F56",
+          "link_url": "",
+          "title": "",
+          "video": null
+        },
+        {
+          "body": "📢 SEPTEMBER SALE – HUGE SAVINGS ACROSS OUR 3-FLOOR SHOWROOM! 🛋️💥\nWe’re making way for our beautiful new autumn collections – and passing massive savings straight to you! Explore 3 floors and 20,000 sq ft of unbeatable deals on hundreds of items. Stock is limited, so once it’s gone, it’s gone! 🚚✨\n📍 Find us here:\nYorkshire Home Interiors\n264-270 Queens Road, Sheffield S2 4DL\n(Opposite Asda • Next door to KFC)\n👉 Don’t wait – secure your September bargain today!\n#YorkshireHomeInteriors #SeptemberSale #SheffieldDeals #FurnitureSale #HomeStyle #SheffieldShopping #ClearanceEvent",
+          "cta": "",
+          "image": "https://scontent-lax3-2.xx.fbcdn.net/v/t39.35426-6/798094195_1538956841320785_4943706762684910878_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=106&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=ikVBghNKNt8Q7kNvwFcG1_a&_nc_oc=Ado1dRNmgwIL70v8gN19m7TaAlC1jp0cOQyg_7nQUTBaCYb-2sQVfUi5WhUJAeUyHSI&_nc_zt=14&_nc_ht=scontent-lax3-2.xx&_nc_gid=PIoXXbNu6DrpHjT4jN1Fxw&_nc_ss=7b289&oh=00_AQStetdi8OHy6bu4LtmWvxmceXUBRtkjYEdjdF4OPEsesA&oe=6AF73E4B",
+          "link_url": "",
+          "title": "",
+          "video": null
+        }
+      ]
     },
     {
       "id": "3443315082513241",
@@ -279,10 +1000,23 @@
       "link_url": "https://gigahertzgiveaways.co.uk/",
       "link_title": "Gigahertz Giveaways UK",
       "cta_text": "Learn more",
+      "link_caption": "GIGAHERTZGIVEAWAYS.CO.UK",
       "images": [],
       "has_video": true,
       "same_creative_count": 0,
-      "multiple_versions": false
+      "multiple_versions": false,
+      "cta_type": "LEARN_MORE",
+      "display_format": "video",
+      "cards": [
+        {
+          "body": "The Mrs wanted the cash 😂 but let him have the PC in the end... love that! Great phone call with Michael winning the sentry PC. That's already with him 🙌🏼\nWild thing about this PC, it cost us £6500 to build but then the GPU prices when up even more - its now worth over £8000!\nINSANE. Be a winner just like Michael 👉 [https://gigahertzgiveaways.co.uk/](https://gigahertzgiveaways.co.uk/)",
+          "cta": "Learn more",
+          "image": null,
+          "link_url": "https://gigahertzgiveaways.co.uk/",
+          "title": "Gigahertz Giveaways UK",
+          "video": null
+        }
+      ]
     },
     {
       "id": "1308198847898331",
@@ -297,6 +1031,7 @@
       "link_url": "http://panaceapalm.com/pages/high-protein-recipes-that-taste-like-cheat-meals",
       "link_title": "The Cookbook Bundle (300+ Recipes) 🔥📕",
       "cta_text": "Shop Now",
+      "link_caption": "PANACEAPALM.COM",
       "images": [
         "https://scontent-lax3-1.xx.fbcdn.net/v/t39.35426-6/739470825_1220494726817309_1480836887212575958_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=102&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=r0ijRrp-u90Q7kNvwF3i2vK&_nc_oc=AdqUVCYCaFTnrRyxTjd74ynNHjInKX_Qd7TTO730yEw8jcIF24Z6GQKes585seCl11E&_nc_zt=14&_nc_ht=scontent-lax3-1.xx&_nc_gid=PIoXXbNu6DrpHjT4jN1Fxw&_nc_ss=7b289&oh=00_AQR_1HH9RdKGFEb4OJuhU4eOTUyi9YCkU6ZqkIQqUCRIhA&oe=6AF7507E",
         "https://scontent-lax3-1.xx.fbcdn.net/v/t39.35426-6/737588867_1056297720260159_1920703735407530433_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=102&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=HAiIAkJzm0sQ7kNvwGOxTIj&_nc_oc=AdpwHO3pgrSykqrqncjdVIrdcWcGyOrtQ5VfeqTm8n3Zdga62wEBbIZqKClW6uahe40&_nc_zt=14&_nc_ht=scontent-lax3-1.xx&_nc_gid=PIoXXbNu6DrpHjT4jN1Fxw&_nc_ss=7b289&oh=00_AQTJWjbSXkL72jB54D6R-UGTtGXim3z8wFer_9XIculAng&oe=6AF75E88",
@@ -310,7 +1045,83 @@
       ],
       "has_video": false,
       "same_creative_count": 0,
-      "multiple_versions": false
+      "multiple_versions": false,
+      "cta_type": "SHOP_NOW",
+      "display_format": "dco",
+      "cards": [
+        {
+          "body": "Lose Fat & Build Muscle with 7 High Protein Recipes That Taste like Cheat Meals & 300+ More Just Like It!🔥💪\n✔️ 300+ high-protein recipes that taste like cheat meals\n✔️ Full calories + macros on every recipe\n✔️ Scan the barcode → logged in seconds\n✔️ Grocery list + meal-prep done for you\n✔️ Pay once, no subscriptions, updated free for life\nTap Shop Now and start tonight 👇",
+          "cta": "Shop Now",
+          "image": "https://scontent-lax3-1.xx.fbcdn.net/v/t39.35426-6/739470825_1220494726817309_1480836887212575958_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=102&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=r0ijRrp-u90Q7kNvwF3i2vK&_nc_oc=AdqUVCYCaFTnrRyxTjd74ynNHjInKX_Qd7TTO730yEw8jcIF24Z6GQKes585seCl11E&_nc_zt=14&_nc_ht=scontent-lax3-1.xx&_nc_gid=PIoXXbNu6DrpHjT4jN1Fxw&_nc_ss=7b289&oh=00_AQR_1HH9RdKGFEb4OJuhU4eOTUyi9YCkU6ZqkIQqUCRIhA&oe=6AF7507E",
+          "link_url": "http://panaceapalm.com/pages/high-protein-recipes-that-taste-like-cheat-meals",
+          "title": "The Cookbook Bundle (300+ Recipes) 🔥📕",
+          "video": null
+        },
+        {
+          "body": "Lose Fat & Build Muscle with 7 High Protein Recipes That Taste like Cheat Meals & 300+ More Just Like It!🔥💪\n✔️ 300+ high-protein recipes that taste like cheat meals\n✔️ Full calories + macros on every recipe\n✔️ Scan the barcode → logged in seconds\n✔️ Grocery list + meal-prep done for you\n✔️ Pay once, no subscriptions, updated free for life\nTap Shop Now and start tonight 👇",
+          "cta": "Shop Now",
+          "image": "https://scontent-lax3-1.xx.fbcdn.net/v/t39.35426-6/737588867_1056297720260159_1920703735407530433_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=102&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=HAiIAkJzm0sQ7kNvwGOxTIj&_nc_oc=AdpwHO3pgrSykqrqncjdVIrdcWcGyOrtQ5VfeqTm8n3Zdga62wEBbIZqKClW6uahe40&_nc_zt=14&_nc_ht=scontent-lax3-1.xx&_nc_gid=PIoXXbNu6DrpHjT4jN1Fxw&_nc_ss=7b289&oh=00_AQTJWjbSXkL72jB54D6R-UGTtGXim3z8wFer_9XIculAng&oe=6AF75E88",
+          "link_url": "http://panaceapalm.com/pages/high-protein-recipes-that-taste-like-cheat-meals",
+          "title": "The Cookbook Bundle (300+ Recipes) 🔥📕",
+          "video": null
+        },
+        {
+          "body": "Lose Fat & Build Muscle with 7 High Protein Recipes That Taste like Cheat Meals & 300+ More Just Like It!🔥💪\n✔️ 300+ high-protein recipes that taste like cheat meals\n✔️ Full calories + macros on every recipe\n✔️ Scan the barcode → logged in seconds\n✔️ Grocery list + meal-prep done for you\n✔️ Pay once, no subscriptions, updated free for life\nTap Shop Now and start tonight 👇",
+          "cta": "Shop Now",
+          "image": "https://scontent-lax3-1.xx.fbcdn.net/v/t39.35426-6/736832746_2176365052939871_5081686562626279515_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=108&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=IeoDXHTW2c8Q7kNvwHh7iVF&_nc_oc=AdqwJtkRupIaFasXfyQ8fgIVkytsf8dfth5ZZ3jxyAC4kewJ7MNTJ6BWCQ0O9LG67Fc&_nc_zt=14&_nc_ht=scontent-lax3-1.xx&_nc_gid=PIoXXbNu6DrpHjT4jN1Fxw&_nc_ss=7b289&oh=00_AQTw8dYW34-PjE2D2-QD9DlcyvNDUOiD01njn66RyUiDdw&oe=6AF75C59",
+          "link_url": "http://panaceapalm.com/pages/high-protein-recipes-that-taste-like-cheat-meals",
+          "title": "The Cookbook Bundle (300+ Recipes) 🔥📕",
+          "video": null
+        },
+        {
+          "body": "Lose Fat & Build Muscle with 7 High Protein Recipes That Taste like Cheat Meals & 300+ More Just Like It!🔥💪\n✔️ 300+ high-protein recipes that taste like cheat meals\n✔️ Full calories + macros on every recipe\n✔️ Scan the barcode → logged in seconds\n✔️ Grocery list + meal-prep done for you\n✔️ Pay once, no subscriptions, updated free for life\nTap Shop Now and start tonight 👇",
+          "cta": "Shop Now",
+          "image": "https://scontent-lax3-1.xx.fbcdn.net/v/t39.35426-6/742173025_1342325850770460_4422823909522967275_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=108&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=1mu-zgzfPCsQ7kNvwEoKe-H&_nc_oc=AdoCzhqB0FhCElwJw3dq9971luQbfHKAZ0jm8gyQ9gDMsvXbgTIgyyzjazuZPmRccdQ&_nc_zt=14&_nc_ht=scontent-lax3-1.xx&_nc_gid=PIoXXbNu6DrpHjT4jN1Fxw&_nc_ss=7b289&oh=00_AQStHgqUtZHUHahYbsgj0p0gxAQBxORmrDbfZR3VRCEMZg&oe=6AF73EC9",
+          "link_url": "http://panaceapalm.com/pages/high-protein-recipes-that-taste-like-cheat-meals",
+          "title": "The Cookbook Bundle (300+ Recipes) 🔥📕",
+          "video": null
+        },
+        {
+          "body": "Lose Fat & Build Muscle with 7 High Protein Recipes That Taste like Cheat Meals & 300+ More Just Like It!🔥💪\n✔️ 300+ high-protein recipes that taste like cheat meals\n✔️ Full calories + macros on every recipe\n✔️ Scan the barcode → logged in seconds\n✔️ Grocery list + meal-prep done for you\n✔️ Pay once, no subscriptions, updated free for life\nTap Shop Now and start tonight 👇",
+          "cta": "Shop Now",
+          "image": "https://scontent-lax3-2.xx.fbcdn.net/v/t39.35426-6/740400630_27345144938512489_1166981207311791491_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=107&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=zEwo9iWIiWgQ7kNvwEOdppH&_nc_oc=AdrgHXj-uXyddMMpGeLpFckE0BCe_XbJuTQQYsQ7oRM2v28cD4xhkc9B672oN42inIs&_nc_zt=14&_nc_ht=scontent-lax3-2.xx&_nc_gid=PIoXXbNu6DrpHjT4jN1Fxw&_nc_ss=7b289&oh=00_AQQ0-qmFyYn-PuLYjNFXBZJ-BAT_mChg6n8lCrO57uUf6w&oe=6AF740CB",
+          "link_url": "http://panaceapalm.com/pages/high-protein-recipes-that-taste-like-cheat-meals",
+          "title": "The Cookbook Bundle (300+ Recipes) 🔥📕",
+          "video": null
+        },
+        {
+          "body": "Lose Fat & Build Muscle with 7 High Protein Recipes That Taste like Cheat Meals & 300+ More Just Like It!🔥💪\n✔️ 300+ high-protein recipes that taste like cheat meals\n✔️ Full calories + macros on every recipe\n✔️ Scan the barcode → logged in seconds\n✔️ Grocery list + meal-prep done for you\n✔️ Pay once, no subscriptions, updated free for life\nTap Shop Now and start tonight 👇",
+          "cta": "Shop Now",
+          "image": "https://scontent-lax3-2.xx.fbcdn.net/v/t39.35426-6/737721711_1378193840888151_4169850140599051918_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=100&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=au4TEjEV1jwQ7kNvwH5rp0Y&_nc_oc=Adps0t2wEbOVjBdSvwOKaVKUbbNGNbuKwLoHEadlmiXwjjdPOW_a0OtQqqG3l4zeDD4&_nc_zt=14&_nc_ht=scontent-lax3-2.xx&_nc_gid=PIoXXbNu6DrpHjT4jN1Fxw&_nc_ss=7b289&oh=00_AQQKLWb33V_wyUFZgE-lg843gxsGdLZgqRaDa66CLzjA4g&oe=6AF7514D",
+          "link_url": "http://panaceapalm.com/pages/high-protein-recipes-that-taste-like-cheat-meals",
+          "title": "The Cookbook Bundle (300+ Recipes) 🔥📕",
+          "video": null
+        },
+        {
+          "body": "Lose Fat & Build Muscle with 7 High Protein Recipes That Taste like Cheat Meals & 300+ More Just Like It!🔥💪\n✔️ 300+ high-protein recipes that taste like cheat meals\n✔️ Full calories + macros on every recipe\n✔️ Scan the barcode → logged in seconds\n✔️ Grocery list + meal-prep done for you\n✔️ Pay once, no subscriptions, updated free for life\nTap Shop Now and start tonight 👇",
+          "cta": "Shop Now",
+          "image": "https://scontent-lax7-1.xx.fbcdn.net/v/t39.35426-6/741416097_916625064804642_1955105278743598677_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=101&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=m7YtPAxcrRkQ7kNvwF97k8t&_nc_oc=AdrdA5C-twux-IkpNkcmulGpvUW9f3zvpHZes6de5kY6mOKqY1KxlBqSCMt-6Oe83Bk&_nc_zt=14&_nc_ht=scontent-lax7-1.xx&_nc_gid=PIoXXbNu6DrpHjT4jN1Fxw&_nc_ss=7b289&oh=00_AQT9TbHrIQhYVx1hxM_TZORd9QCfs0Ljx0LDKFaH5Om8VA&oe=6AF74C28",
+          "link_url": "http://panaceapalm.com/pages/high-protein-recipes-that-taste-like-cheat-meals",
+          "title": "The Cookbook Bundle (300+ Recipes) 🔥📕",
+          "video": null
+        },
+        {
+          "body": "Lose Fat & Build Muscle with 7 High Protein Recipes That Taste like Cheat Meals & 300+ More Just Like It!🔥💪\n✔️ 300+ high-protein recipes that taste like cheat meals\n✔️ Full calories + macros on every recipe\n✔️ Scan the barcode → logged in seconds\n✔️ Grocery list + meal-prep done for you\n✔️ Pay once, no subscriptions, updated free for life\nTap Shop Now and start tonight 👇",
+          "cta": "Shop Now",
+          "image": "https://scontent-lax3-2.xx.fbcdn.net/v/t39.35426-6/738745322_1375384987775699_4094158725907284267_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=107&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=kOdaJWJ67VkQ7kNvwG8KLc6&_nc_oc=AdqQ_AsbxKOjA7_u6a1Ke8bfF1r0f5ubN73AoDOYOv2jZKL9rHkt3jfWX8mv3fIxRiI&_nc_zt=14&_nc_ht=scontent-lax3-2.xx&_nc_gid=PIoXXbNu6DrpHjT4jN1Fxw&_nc_ss=7b289&oh=00_AQQrhFF8SFh1k4OlsozHS2N9RSTJDkUTIVX8xwatauFDdQ&oe=6AF73F39",
+          "link_url": "http://panaceapalm.com/pages/high-protein-recipes-that-taste-like-cheat-meals",
+          "title": "The Cookbook Bundle (300+ Recipes) 🔥📕",
+          "video": null
+        },
+        {
+          "body": "Lose Fat & Build Muscle with 7 High Protein Recipes That Taste like Cheat Meals & 300+ More Just Like It!🔥💪\n✔️ 300+ high-protein recipes that taste like cheat meals\n✔️ Full calories + macros on every recipe\n✔️ Scan the barcode → logged in seconds\n✔️ Grocery list + meal-prep done for you\n✔️ Pay once, no subscriptions, updated free for life\nTap Shop Now and start tonight 👇",
+          "cta": "Shop Now",
+          "image": "https://scontent-lax3-2.xx.fbcdn.net/v/t39.35426-6/739774022_1691432475240741_3220149190480136728_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=107&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=sm082s89bzIQ7kNvwE6dczC&_nc_oc=AdrlV-gVSjBzN_KSv0MQUiFwOY5RFrylKgbIOr4pJPCpPRa65T-2c70B2bVSAUvMQq8&_nc_zt=14&_nc_ht=scontent-lax3-2.xx&_nc_gid=PIoXXbNu6DrpHjT4jN1Fxw&_nc_ss=7b289&oh=00_AQSQW6WGsWkU5-CrFgB-kOtcup0XEO4CYm7fJkAGPbfDsg&oe=6AF7490D",
+          "link_url": "http://panaceapalm.com/pages/high-protein-recipes-that-taste-like-cheat-meals",
+          "title": "The Cookbook Bundle (300+ Recipes) 🔥📕",
+          "video": null
+        }
+      ]
     },
     {
       "id": "1627406805716248",
@@ -325,12 +1136,25 @@
       "link_url": "https://prel.applodo.com/blog/8lb34ry/confirm?utm_source=fba&utm_uid=88&arb_cpid=14855&arb_gid=14726&arb_aid=15522&lp_id=6956",
       "link_title": "Explore Cashier Jobs at KFC Learn what a KFC cashier position may involve, how a 9 AM–3 PM schedule could work, and what to verify about experience, pay, paid holidays, overtime, and benefits. Openings and employment terms vary by restaurant, location, and franchise operator.",
       "cta_text": "See details",
+      "link_caption": "SEARCH.COM",
       "images": [
         "https://scontent-lax3-1.xx.fbcdn.net/v/t39.35426-6/790208867_1596568801922743_6647397883264781737_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=102&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=uxgjxpwflnkQ7kNvwHv5Qi3&_nc_oc=AdqcP0X1KD_7cwAYrrCJ2dNAOa34LgiuGDds4g11T8ugJPtcLt6FeN-2oHrZ6FkmKN4&_nc_zt=14&_nc_ht=scontent-lax3-1.xx&_nc_gid=PIoXXbNu6DrpHjT4jN1Fxw&_nc_ss=7b289&oh=00_AQRzY22lWovJKGUHelpu9a_bLSLLyyC3VeDX0FECKie6yw&oe=6AF761B5"
       ],
       "has_video": false,
       "same_creative_count": 0,
-      "multiple_versions": true
+      "multiple_versions": true,
+      "cta_type": "SEE_DETAILS",
+      "display_format": "image",
+      "cards": [
+        {
+          "body": "Interested in a fast-food cashier position? Discover typical responsibilities, shift options, workplace expectations, and potential earnings at KFC.",
+          "cta": "See details",
+          "image": "https://scontent-lax3-1.xx.fbcdn.net/v/t39.35426-6/790208867_1596568801922743_6647397883264781737_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=102&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=uxgjxpwflnkQ7kNvwHv5Qi3&_nc_oc=AdqcP0X1KD_7cwAYrrCJ2dNAOa34LgiuGDds4g11T8ugJPtcLt6FeN-2oHrZ6FkmKN4&_nc_zt=14&_nc_ht=scontent-lax3-1.xx&_nc_gid=PIoXXbNu6DrpHjT4jN1Fxw&_nc_ss=7b289&oh=00_AQRzY22lWovJKGUHelpu9a_bLSLLyyC3VeDX0FECKie6yw&oe=6AF761B5",
+          "link_url": "https://prel.applodo.com/blog/8lb34ry/confirm?utm_source=fba&utm_uid=88&arb_cpid=14855&arb_gid=14726&arb_aid=15522&lp_id=6956",
+          "title": "Explore Cashier Jobs at KFC Learn what a KFC cashier position may involve, how a 9 AM–3 PM schedule could work, and what to verify about experience, pay, paid holidays, overtime, and benefits. Openings and employment terms vary by restaurant, location, and franchise operator.",
+          "video": null
+        }
+      ]
     },
     {
       "id": "1807853667305945",
@@ -345,10 +1169,23 @@
       "link_url": "https://urldefense.com/v3/__https://www.kfc.co.uk/__;!!MOA0!anZ0w2RvJrHwJd634GzDc_g1-ox0owqRvuC_tbVzLAoQoyDmQ0M3hglkY63_rAnzH7rLE887N4fjRpeAEX0vp49X_2Q1izMZnMnzu2h9coD1tSRgXACg$",
       "link_title": "KFC Waterlooville is now open",
       "cta_text": "Order Now",
+      "link_caption": "",
       "images": [],
       "has_video": true,
       "same_creative_count": 0,
-      "multiple_versions": false
+      "multiple_versions": false,
+      "cta_type": "ORDER_NOW",
+      "display_format": "video",
+      "cards": [
+        {
+          "body": "Your new KFC in Waterlooville awaits you. Find us on Elettra Avenue.",
+          "cta": "Order Now",
+          "image": null,
+          "link_url": "https://urldefense.com/v3/__https://www.kfc.co.uk/__;!!MOA0!anZ0w2RvJrHwJd634GzDc_g1-ox0owqRvuC_tbVzLAoQoyDmQ0M3hglkY63_rAnzH7rLE887N4fjRpeAEX0vp49X_2Q1izMZnMnzu2h9coD1tSRgXACg$",
+          "title": "KFC Waterlooville is now open",
+          "video": null
+        }
+      ]
     },
     {
       "id": "2149583255936267",
@@ -363,12 +1200,25 @@
       "link_url": "https://welcomebreak.co.uk/day-in-night-out/",
       "link_title": "Fuel up after hours Built for night shifts",
       "cta_text": "Learn more",
+      "link_caption": "WELCOMEBREAK.CO.UK",
       "images": [
         "https://scontent-lax3-2.xx.fbcdn.net/v/t39.35426-6/813546236_4746951342249342_4423574183126177614_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=103&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=3-FIT8mD56MQ7kNvwHo5oS3&_nc_oc=AdqfhfcPGVpRda3jZwomwIjM_W9ChIvanwOf2n3YngDxMcukuxZyp32jrfcR2e3H84o&_nc_zt=14&_nc_ht=scontent-lax3-2.xx&_nc_gid=PIoXXbNu6DrpHjT4jN1Fxw&_nc_ss=7b289&oh=00_AQSW2kfjHvTy7U-V9Ur_CsYC5bO7u-7Rf4K0Lw88pggqwA&oe=6AF737E9"
       ],
       "has_video": false,
       "same_creative_count": 0,
-      "multiple_versions": false
+      "multiple_versions": false,
+      "cta_type": "LEARN_MORE",
+      "display_format": "image",
+      "cards": [
+        {
+          "body": "Late shift? Long drive? Grab 24/7 coffee and burgers ‘til midnight (and beyond) at Welcome Break.",
+          "cta": "Learn more",
+          "image": "https://scontent-lax3-2.xx.fbcdn.net/v/t39.35426-6/813546236_4746951342249342_4423574183126177614_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=103&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=3-FIT8mD56MQ7kNvwHo5oS3&_nc_oc=AdqfhfcPGVpRda3jZwomwIjM_W9ChIvanwOf2n3YngDxMcukuxZyp32jrfcR2e3H84o&_nc_zt=14&_nc_ht=scontent-lax3-2.xx&_nc_gid=PIoXXbNu6DrpHjT4jN1Fxw&_nc_ss=7b289&oh=00_AQSW2kfjHvTy7U-V9Ur_CsYC5bO7u-7Rf4K0Lw88pggqwA&oe=6AF737E9",
+          "link_url": "https://welcomebreak.co.uk/day-in-night-out/",
+          "title": "Fuel up after hours Built for night shifts",
+          "video": null
+        }
+      ]
     },
     {
       "id": "951378444399756",
@@ -381,14 +1231,27 @@
       "page_url": "https://www.facebook.com/61586326307191/",
       "page_id": "61586326307191",
       "link_url": "http://auniva.co/amla/33",
-      "link_title": "... middle omitted — see footer ...] I kept reading. April 3, 1995. Couldn't finish reupholstering the ottoman today. Had to sit down every 20 minutes. Grace came by and finished it for me. She didn't say anything but I could tell she knew. April 22, 1995. Tired. Tired. Tired. Woke up tired. Went to bed tired. Napped in between and woke up tired again. What is this. May 11, 1995. Ezra Sr. brought me groceries because I couldn't get to the store. He is a good boy. I don't want to be the aunt who needs groceries brought. Ezra Sr. That was my husband's father, who used to drive Reba around when she wasn't feeling up to it. I forgot he did that for her. I sat in that attic and I read her journal from 30 years ago and I could have been reading my own diary if I kept one. The same tiredness. The same doctor's visits with the same nothing answer. The same slow shrinking of her life, one canceled plan at a time. I read 15 more pages of it and I felt like somebody had reached into my chest and squeezed. Then I turned the page and the entries stopped for a while. There was a gap of about 6 weeks with nothing written. And when the entries picked back up, the handwriting was different. Not shakier. Steadier. And the tone was completely different. October 4, 1995. I want to write this down because I know I'll forget how it started if I don't. Grace's daughter Mildred came by yesterday with a paper bag of what she said was medicine from her mother-in-law. Indian medicine, Mildred called it. From a fruit that grows over there. I said Mildred honey I am not putting whatever that is in my mouth without knowing what it does. Mildred said sit down aunt Reba and let me tell you what her mother-in-law told her. I stopped breathing for a second. I kept reading. Mildred told me it wasn't for the tiredness directly. She said it was for the cells. She said every cell in the body needs energy to work and that energy is made by these little factories inside the cell called mitochondria. Her mother-in-law called them the powerhouses. When they slow down, the whole cell slows down. And every part of you that depends on those cells starts to slow down too. Which is why you feel like you're running on empty even though everything looks fine on paper. I set the journal down. I got up off the attic floor, and this time I did get up, and I walked down those pull down stairs into the kitchen where Denise was wrapping juice glasses in newspaper. I said, Denise, do you remember anything about aunt Reba in the fall of 1995. Denise looked at me like I'd grown a second head. I said, I know that's a weird question. But there's a journal up there. Something happened to her in the fall of 1995 and I need to know if you remember it. Denise sat down. She said, LaWanda, that's the year she got herself back. I said, what do you mean got herself back. Denise said, I was 19 years old that year. I remember it because I moved in with her for a summer while I worked at the KFC on 22nd Avenue. She was so tired that year. I remember her sitting at the kitchen table with her head on her hands. She used to fall asleep in her chair after dinner and I'd cover her up with a blanket. She would go to bed for 14 hours and wake up worn out. She kept going. Then something turned around for her. I don't know exactly what it was. She started taking something Miss Grace's daughter brought her. And by Christmas she was standing at the stove making a full Christmas dinner and I hadn't seen her cook like that in over a year. I remember thinking, aunt Reba is back. Denise looked at me. Denise said, LaWanda you look like her that year. You know that right. I didn't say anything. I went back up to the attic. I read the rest of the journal. Reba had gone home and looked into what Mildred had told her. She wrote pages and pages of notes. She had a beautiful, careful mind, my aunt. She wrote down what she was learning and she made it make sense to herself in her own words. She wrote about how the doctor was checking the wrong thing. Not because he was a bad doctor. Because the tiredness she was feeling wasn't showing up on the blood panel. It wasn't a thyroid problem. It wasn't iron. It wasn't sleep. It was something deeper. Something upstream. It was that the little factories inside her cells were slowing down. She wrote about a pathway called AMPK. She circled the letters. She wrote next to it in her little cursive: this is the switch. Amla helps activate AMPK. When AMPK is active, the mitochondria start working better. When the mitochondria work better, the cells get more energy. When the cells get more energy, you stop feeling like you're dragging a chain. She wrote about the fruit itself. Amla. Sometimes called the Indian gooseberry. Traditional medicine in India calls it the nurse because of what it supports in the body. She wrote that it has one of the highest concentrations of antioxidants ever measured in a food. Which matters because oxidative stress is one of the things that wears down the mitochondria in the first place. So amla wasn't just supporting them. It was protecting them from the thing that broke them down. Her handwriting got excited. You could tell. She wrote, everybody else was trying to give me more sleep. Or more coffee. Or a walk. Or a vitamin. All of it was showing up at the front door of a house with no electricity. What good is a delivery if the power is out. First you turn the power back on. Then everything else can work. She wrote that at the top of one page. Underlined it twice. I sat there on the attic floor with tears coming down my face for the first time since Reba died. Not for her. For me. Because I could feel her writing to me across 30 years. Because she had been where I was and she had figured it out and here I was reading her figure it out in her own handwriting. I turned another page. November 18, 1995. Two months in. I want to be honest with myself. The first three weeks I felt nothing different. I kept taking the capsules because I told Mildred I would give it 90 days. Week 4 I noticed I made it through Sunday service without wanting to lay down on the pew. Week 6 I woke up before my alarm. That has not happened since I don't know when. I made coffee. I sat at this table and drank it and I looked at the sunrise through the kitchen window and I thought oh my Lord. I feel like a person. November 30, 1995. I finished a slip cover in one day. One day. Two months ago I could not have done that in a week. I don't want to write anything down that I might have to take back later. But something is happening. I feel like the light is coming back on inside me. December 22, 1995. Made Christmas dinner. Full spread. Turkey, dressing, greens, macaroni, sweet potatoes, cornbread, pound cake. Denise ate three plates. Ezra Sr. came by after work and ate with us. I stood at the stove for 4 hours and I did not have to sit down once. I want to remember this day for the rest of my life. This is the day I got myself back. I closed the journal. I sat there in that dusty attic and I put my hand flat on the cover and I stayed like that for a long time. Then I called my mother. I said mama, do you remember Miss Grace's daughter Mildred. My mother said, honey, Mildred passed 10 years ago. Why. I said, did Reba ever tell you about something Mildred brought her one time. Something she took. My mother was quiet for a moment. She said, LaWanda, your aunt Reba was tired for a long time. I remember. Then one Christmas she was different. I asked her what she'd been doing and she said she'd been taking something Mildred brought her. Some kind of berry from India. She said she took it every day. I asked her if it worked and she said, Betty Ann, it didn't work. I worked. It just let me. I sat there in that attic holding the phone. I said, mama, I've been that tired for 6 years. My mother said, honey I know. I said, why didn't you tell me. My mother said, because I didn't put it together until right now. Baby I forgot. It was 30 years ago. I forgot. I found the last journal entry that mentioned amla. Reba had written the brand name down. She had written down where Mildred said to get it. She had written down what the bottle looked like and she had written down what she paid for it. The brand was different back then. Companies come and go. But she had written down what to look for. Standardized amla extract. Full spectrum. Something you could trust to have the real thing in it and not just powder they scooped off a warehouse floor. I went home that Saturday night and I sat at my kitchen table and I looked online. I found a company called Auniva. They make an amla supplement that is standardized the way Reba had described. Extract, not just powder. Made in the USA. Sourced properly. I read every word on their site. I read the reviews. I read the ingredient panel like I was studying for a test. The one thing that decided it for me was the guarantee. 90 days. They said if it didn't work, send the bottles back and get every penny back. No questions. That felt fair to me. That felt like a company that had thought about it the way Reba would have. 90 days is enough time to know. And any doctor I ever paid never once offered me my money back when he told me I was fine and I wasn't fine. I ordered two bottles. They came in a small brown box that Tuesday. I opened it at the kitchen table with Ezra sitting across from me. I told him the whole story. About the attic. About the journal. About Reba's handwriting getting excited. About Mildred and the Indian medicine and my mother saying I worked. It just let me. Ezra listened to the whole thing without interrupting once. Then he said, baby, take the pills. The first two weeks I felt no different. I want to say that clearly because I don't want you thinking I'm selling you a miracle. Reba wrote in her journal that the first three weeks she felt nothing. Mine was a little shorter but not much. The first 14 days I took two capsules with my coffee and I went to work and I came home and I sat in the car in the driveway just like I always had, and I thought, maybe this isn't going to work for me. Around day 16 something small happened. I woke up at 5:52 in the morning, before my alarm went off at 6:15, and I laid there in the dark and I did not feel like I'd been hit by a truck. That was the whole thing. That was all it was. I just laid there and I felt normal. I didn't get out of bed excited. I didn't go running around the house. I just laid there and I thought, huh. Week 3, I climbed the stairs at Poplar Springs to bring a class of second graders back from the library, and I got to the top and I wasn't out of breath. Week 4, I stayed after school to help decorate a bulletin board for reading month and I got home at 6 and I made dinner and I sat down to eat with Ezra like a normal person instead of collapsing on the couch and asking him to bring me a bowl of cereal. Week 5, I gardened. I hadn't touched my flower beds in 3 years. Ezra had been keeping them alive for me. I went out on a Saturday morning and I pulled weeds for two hours and I planted some marigolds my neighbor had given me and I stood up when I was done and I walked into the house and I put on tea and I sat at the kitchen table and I felt like Reba writing in her journal in November of 1995. I felt like a person. Week 6 was when I called my mother. I said mama, I feel like myself again. She started crying. She said, LaWanda, I've been so worried. She said, I've been laying in bed at night thinking my baby is disappearing and I don't know what to do. I hadn't known that. I hadn't known she'd been laying in bed at night worrying about me. She hadn't wanted to add to what I was already carrying. I told her about the mornings. About the stairs. About the flower beds. About coming home from work and having something left in me for the person I'm supposed to be for my husband. She said, thank Reba. I said, mama, I have been thanking Reba every day. I still take Auniva's amla every morning. Two capsules with my coffee. Ezra started taking it about 4 weeks after me because he said if his wife is standing at the stove again he wanted to be sure he could keep up. He's noticed a difference too. I went back to Reba's house last month with my cousin Denise. We finished the attic. We finished the whole house. We split what we wanted to keep. Denise took the china and the wedding photos. I took the shoeboxes. All 40 years of them. They're in my hall closet now, stacked in order, and once a week I pull one down and I read through it. Reba wrote in one of them, near the end of 1996, this line that I keep coming back to. She wrote, the tiredness was never who I was. It was just what was happening to me. And once I understood that, everything was different. I understand it now too. If you're reading this and you've been tired for years and every doctor's visit ends with you being told you're fine when you know you're not, I don't want you to keep going through what I went through. I don't want you to keep telling yourself this is just aging. I don't want you to look up 6 years from now and realize you've handed away half a decade of your life to a tiredness nobody could explain to you. Auniva has that same 90 day guarantee I read about that night at my kitchen table. You order the bottles. You take them for 90 days. If nothing shifts for you, you send them back and they refund you every penny. That's fair. That's more than fair. That's the kind of guarantee a company offers when they know what their product actually does. You don't have to figure it out the way Reba had to. You don't have to be an executor rifling through a dead woman's shoeboxes to find out. Reba did that part for us. She wrote it all down. She left me a map. And I'm doing my best to pass it on.",
+      "link_title": "... middle omitted — see footer ...] I kept reading. April 3, 1995. Couldn't finish reupholstering the ottoman today. Had to sit down every 20 minutes. Grace came by and finished it for me. She didn't say anything but I could tell she knew. April 22, 1995. Tired. Tired. Tired. Woke up tired. Went to bed tired. Napped in between and woke up tired again. What is this. May 11, 1995. Ezra Sr. brought me groceries because I couldn't get to the store. He is a good boy. I don't want to be the aunt who needs groceries brought. Ezra Sr. That was my husband's father, who used to drive Reba around when she wasn't feeling up to it. I forgot he did that for her. I sat in that attic and I read her journal from 30 years ago and I could have been reading my own diary if I kept one. The same tiredness. The same doctor's visits with the same nothing answer. The same slow shrinking of her life, one canceled plan at a time. I read 15 more pages of it and I felt like somebody had reached into my chest and squeezed. Then I turned the page and the entries stopped for a while. There was a gap of about 6 weeks with nothing written. And when the entries picked back up, the handwriting was different. Not sh…",
       "cta_text": "👉 [auniva.co/amla/33",
+      "link_caption": "",
       "images": [
         "https://scontent-lax3-1.xx.fbcdn.net/v/t39.35426-6/841707586_1788554195617705_1555222958431684023_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=109&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=XDoSHYc8sXcQ7kNvwEVnqtQ&_nc_oc=AdpxGuEKe1L0eLZk6-8qOAYq4L8WgmuUZb4nwueiK_79WyZZEhJrIha2TLDgPSQzvxQ&_nc_zt=14&_nc_ht=scontent-lax3-1.xx&_nc_gid=PIoXXbNu6DrpHjT4jN1Fxw&_nc_ss=7b289&oh=00_AQS2L9saMZ6XchwepfgmyqCcEgu7qlztlCwIApSRAQBZ-A&oe=6AF751C2"
       ],
       "has_video": false,
       "same_creative_count": 0,
-      "multiple_versions": false
+      "multiple_versions": false,
+      "cta_type": "AUNIVA_CO_AMLA_33",
+      "display_format": "image",
+      "cards": [
+        {
+          "body": "I sat down on my aunt Reba's attic floor last Saturday and I couldn't get back up.\nI don't mean I hurt myself. I didn't fall. I sat down criss cross like I was 8 years old to sort through a stack of shoeboxes, and 20 minutes later when I tried to stand my knees wouldn't lift me. My legs felt like wet cement. My arms had nothing in them. I ended up rolling onto my hip and using her old cedar chest to pull myself up, and I stood there breathing like I'd run to the mailbox and back.\nI'm 54 years old.\nMy aunt was still driving to the beauty shop at 74 to get her hair set. And here I am with cement legs on an attic floor because I sat down for 20 minutes.\nMy name is LaWanda. I live in Meridian, Mississippi, about 15 minutes from where I grew up in a house on 34th Avenue where my grandmother taught me to snap green beans on the front porch. I work as an aide at Poplar Springs Elementary and I have been there for 19 years. I know every kindergartener in that building by name. I have wiped more noses and tied more shoelaces than any woman my age should be legally required to.\nI am also tired all the time.\nNot sleepy tired. Not the kind of tired you fix with a nap. I'm the kind of tired wh…",
+          "cta": "👉 [auniva.co/amla/33",
+          "image": "https://scontent-lax3-1.xx.fbcdn.net/v/t39.35426-6/841707586_1788554195617705_1555222958431684023_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=109&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=XDoSHYc8sXcQ7kNvwEVnqtQ&_nc_oc=AdpxGuEKe1L0eLZk6-8qOAYq4L8WgmuUZb4nwueiK_79WyZZEhJrIha2TLDgPSQzvxQ&_nc_zt=14&_nc_ht=scontent-lax3-1.xx&_nc_gid=PIoXXbNu6DrpHjT4jN1Fxw&_nc_ss=7b289&oh=00_AQS2L9saMZ6XchwepfgmyqCcEgu7qlztlCwIApSRAQBZ-A&oe=6AF751C2",
+          "link_url": "http://auniva.co/amla/33",
+          "title": "... middle omitted — see footer ...] I kept reading. April 3, 1995. Couldn't finish reupholstering the ottoman today. Had to sit down every 20 minutes. Grace came by and finished it for me. She didn't say anything but I could tell she knew. April 22, 1995. Tired. Tired. Tired. Woke up tired. Went to bed tired. Napped in between and woke up tired again. What is this. May 11, 1995. Ezra Sr. brought me groceries because I couldn't get to the store. He is a good boy. I don't want to be the aunt who needs groceries brought. Ezra Sr. That was my husband's father, who used to drive Reba around when she wasn't feeling up to it. I forgot he did that for her. I sat in that attic and I read her journal from 30 years ago and I could have been reading my own diary if I kept one. The same tiredness. The same doctor's visits with the same nothing answer. The same slow shrinking of her life, one canceled plan at a time. I read 15 more pages of it and I felt like somebody had reached into my chest and squeezed. Then I turned the page and the entries stopped for a while. There was a gap of about 6 weeks with nothing written. And when the entries picked back up, the handwriting was different. Not sh…",
+          "video": null
+        }
+      ]
     },
     {
       "id": "1640582247854311",
@@ -403,10 +1266,23 @@
       "link_url": "http://play.google.com/store/apps/details?id=com.quvideo.wisemeal",
       "link_title": "YaiToeii",
       "cta_text": "Install now",
+      "link_caption": "PLAY.GOOGLE.COM",
       "images": [],
       "has_video": true,
       "same_creative_count": 0,
-      "multiple_versions": false
+      "multiple_versions": false,
+      "cta_type": "INSTALL_MOBILE_APP",
+      "display_format": "video",
+      "cards": [
+        {
+          "body": "คำนวณมาอย่างดีไม่มีพลาด! #wisemealapp #wisemeal #ทำไอเอฟ #ดูแลรูปร่าง ทำif",
+          "cta": "Install now",
+          "image": null,
+          "link_url": "http://play.google.com/store/apps/details?id=com.quvideo.wisemeal",
+          "title": "YaiToeii",
+          "video": null
+        }
+      ]
     },
     {
       "id": "1009832418240514",
@@ -421,13 +1297,34 @@
       "link_url": "http://instagram.com/fitatuglobal",
       "link_title": "",
       "cta_text": "Visit Instagram Profile",
+      "link_caption": "INSTAGRAM.COM",
       "images": [
         "https://scontent-lax3-1.xx.fbcdn.net/v/t39.35426-6/856659919_4642148569444429_6223772421895056573_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=108&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=WRI5-JoW2OUQ7kNvwH-C7pr&_nc_oc=Adp3FJV4LgEEh1_XBzj08JZhiqBohcfdAyw-4wu4kadVOzSq_O9bO-Uc-745Uhef7ZE&_nc_zt=14&_nc_ht=scontent-lax3-1.xx&_nc_gid=PIoXXbNu6DrpHjT4jN1Fxw&_nc_ss=7b289&oh=00_AQRpMgSm_k6U8OEC9aOr9lXC_DG4NhMXQoaFALr5auP5Lg&oe=6AF73687",
         "https://scontent-lax3-2.xx.fbcdn.net/v/t39.35426-6/854670376_2001655140792829_2009836720562880192_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=107&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=ghHiDSI_SqcQ7kNvwGS8373&_nc_oc=AdrbZaeVwdQ8A9hW4bip-gNo7Wj9VQzy3r9RiFCqTOjLCoFowEUyjDOtOG02c6TZQTE&_nc_zt=14&_nc_ht=scontent-lax3-2.xx&_nc_gid=PIoXXbNu6DrpHjT4jN1Fxw&_nc_ss=7b289&oh=00_AQRIe5HwmBcl4sgIGuL0VOgcyK1MTHnWiPghtzrQGeSQRQ&oe=6AF74A4C"
       ],
       "has_video": false,
       "same_creative_count": 3,
-      "multiple_versions": true
+      "multiple_versions": true,
+      "cta_type": "VISIT_INSTAGRAM_PROFILE",
+      "display_format": "dco",
+      "cards": [
+        {
+          "body": "Which one is your favorite? 🥯\nComment this post if you want to see how many calories is in bread 🥖\n—\nThis post is for informational purposes only. It is not an advertisement or recommendation to purchase any of the mentioned products.\nWe are not affiliated with any of the manufacturers of the presented products and do not receive any financial benefits from their presentation. We encourage you to make your own dietary decisions based on your individual needs and preferences.",
+          "cta": "Visit Instagram Profile",
+          "image": "https://scontent-lax3-1.xx.fbcdn.net/v/t39.35426-6/856659919_4642148569444429_6223772421895056573_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=108&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=WRI5-JoW2OUQ7kNvwH-C7pr&_nc_oc=Adp3FJV4LgEEh1_XBzj08JZhiqBohcfdAyw-4wu4kadVOzSq_O9bO-Uc-745Uhef7ZE&_nc_zt=14&_nc_ht=scontent-lax3-1.xx&_nc_gid=PIoXXbNu6DrpHjT4jN1Fxw&_nc_ss=7b289&oh=00_AQRpMgSm_k6U8OEC9aOr9lXC_DG4NhMXQoaFALr5auP5Lg&oe=6AF73687",
+          "link_url": "http://instagram.com/fitatuglobal",
+          "title": "",
+          "video": null
+        },
+        {
+          "body": "Which one is your favorite? 🥯\nComment this post if you want to see how many calories is in bread 🥖\n—\nThis post is for informational purposes only. It is not an advertisement or recommendation to purchase any of the mentioned products.\nWe are not affiliated with any of the manufacturers of the presented products and do not receive any financial benefits from their presentation. We encourage you to make your own dietary decisions based on your individual needs and preferences.",
+          "cta": "Visit Instagram Profile",
+          "image": "https://scontent-lax3-2.xx.fbcdn.net/v/t39.35426-6/854670376_2001655140792829_2009836720562880192_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=107&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=ghHiDSI_SqcQ7kNvwGS8373&_nc_oc=AdrbZaeVwdQ8A9hW4bip-gNo7Wj9VQzy3r9RiFCqTOjLCoFowEUyjDOtOG02c6TZQTE&_nc_zt=14&_nc_ht=scontent-lax3-2.xx&_nc_gid=PIoXXbNu6DrpHjT4jN1Fxw&_nc_ss=7b289&oh=00_AQRIe5HwmBcl4sgIGuL0VOgcyK1MTHnWiPghtzrQGeSQRQ&oe=6AF74A4C",
+          "link_url": "http://instagram.com/fitatuglobal",
+          "title": "",
+          "video": null
+        }
+      ]
     },
     {
       "id": "2101426757414959",
@@ -442,12 +1339,25 @@
       "link_url": "https://www.sosweetshop.co.uk/collections/mystery-boxes",
       "link_title": "A BOX FULL OF WOW 🤩 SoSweet",
       "cta_text": "Shop Now",
+      "link_caption": "SOSWEETSHOP.CO.UK",
       "images": [
         "https://scontent-lax7-1.xx.fbcdn.net/v/t39.35426-6/616799706_1957023671860683_2694160211022439942_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=101&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=elZhncdoWHwQ7kNvwG12SRD&_nc_oc=AdoVlMnQvuBciNAwNmPnkaXrKKytPg7-HZuD-RL_aDy0GuGsVZugdjQi6ZKFopMK-Q0&_nc_zt=14&_nc_ht=scontent-lax7-1.xx&_nc_gid=PIoXXbNu6DrpHjT4jN1Fxw&_nc_ss=7b289&oh=00_AQQRjZtBwJg_3kzQv9c4irTXPH89CnDbpQX2-fv3Fc7PGQ&oe=6AF7545F"
       ],
       "has_video": false,
       "same_creative_count": 0,
-      "multiple_versions": false
+      "multiple_versions": false,
+      "cta_type": "SHOP_NOW",
+      "display_format": "image",
+      "cards": [
+        {
+          "body": "A mystery box filled with sweet surprises and UNBEATABLE value.\nNo spoilers. Just sweets 🍬",
+          "cta": "Shop Now",
+          "image": "https://scontent-lax7-1.xx.fbcdn.net/v/t39.35426-6/616799706_1957023671860683_2694160211022439942_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=101&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=elZhncdoWHwQ7kNvwG12SRD&_nc_oc=AdoVlMnQvuBciNAwNmPnkaXrKKytPg7-HZuD-RL_aDy0GuGsVZugdjQi6ZKFopMK-Q0&_nc_zt=14&_nc_ht=scontent-lax7-1.xx&_nc_gid=PIoXXbNu6DrpHjT4jN1Fxw&_nc_ss=7b289&oh=00_AQQRjZtBwJg_3kzQv9c4irTXPH89CnDbpQX2-fv3Fc7PGQ&oe=6AF7545F",
+          "link_url": "https://www.sosweetshop.co.uk/collections/mystery-boxes",
+          "title": "A BOX FULL OF WOW 🤩 SoSweet",
+          "video": null
+        }
+      ]
     }
   ],
   "advertiser_search": [
@@ -464,10 +1374,23 @@
       "link_url": "https://kfcau.app.link/eAUCfy3mG6b",
       "link_title": "NEW BIGGER, JUICIER & SAUCIER TENDERS MORE TENDER THAN EVER",
       "cta_text": "Order Now",
+      "link_caption": "",
       "images": [],
       "has_video": true,
       "same_creative_count": 0,
-      "multiple_versions": false
+      "multiple_versions": false,
+      "cta_type": "ORDER_NOW",
+      "display_format": "video",
+      "cards": [
+        {
+          "body": "Boy Banded to perfection. Bigger, Crispier, Juicier & Saucier. With 11 sauces.",
+          "cta": "Order Now",
+          "image": null,
+          "link_url": "https://kfcau.app.link/eAUCfy3mG6b",
+          "title": "NEW BIGGER, JUICIER & SAUCIER TENDERS MORE TENDER THAN EVER",
+          "video": null
+        }
+      ]
     },
     {
       "id": "1807853667305945",
@@ -482,10 +1405,23 @@
       "link_url": "https://urldefense.com/v3/__https://www.kfc.co.uk/__;!!MOA0!anZ0w2RvJrHwJd634GzDc_g1-ox0owqRvuC_tbVzLAoQoyDmQ0M3hglkY63_rAnzH7rLE887N4fjRpeAEX0vp49X_2Q1izMZnMnzu2h9coD1tSRgXACg$",
       "link_title": "KFC Waterlooville is now open",
       "cta_text": "Order Now",
+      "link_caption": "",
       "images": [],
       "has_video": true,
       "same_creative_count": 0,
-      "multiple_versions": false
+      "multiple_versions": false,
+      "cta_type": "ORDER_NOW",
+      "display_format": "video",
+      "cards": [
+        {
+          "body": "Your new KFC in Waterlooville awaits you. Find us on Elettra Avenue.",
+          "cta": "Order Now",
+          "image": null,
+          "link_url": "https://urldefense.com/v3/__https://www.kfc.co.uk/__;!!MOA0!anZ0w2RvJrHwJd634GzDc_g1-ox0owqRvuC_tbVzLAoQoyDmQ0M3hglkY63_rAnzH7rLE887N4fjRpeAEX0vp49X_2Q1izMZnMnzu2h9coD1tSRgXACg$",
+          "title": "KFC Waterlooville is now open",
+          "video": null
+        }
+      ]
     }
   ]
 }

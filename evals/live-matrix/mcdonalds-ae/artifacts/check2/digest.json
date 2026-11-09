@@ -1,10 +1,10 @@
 {
   "query": "McDonald's",
   "country": "AE",
-  "checked_at": "2026-11-09T11:55:03",
+  "checked_at": "2026-11-09T14:19:04",
   "partial": false,
   "total": 27,
-  "new": 27,
+  "new": 0,
   "ended": 0,
   "changed": 0,
   "with_link": 26,

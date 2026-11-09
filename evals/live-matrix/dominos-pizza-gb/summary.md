@@ -6,7 +6,7 @@
 ## Keyword search (`active_status=active`, limit 20)
 - count: 19  complete: True  fetched: 19  error: None
 - page names: Domino's Pizza, Alfre-dough Pizza & Kebab, Big Potato, giftitng, Carpe, Pizza Town Sudbury, Pizza Pizza
-- seconds: 7.78
+- seconds: 3.13
 
 ## Advertiser search
 - count: 13  resolved: {'page_name': "Domino's Pizza", 'score': 0.8}  error: None
@@ -23,7 +23,7 @@
 - expected: —  found: none  ok: None
 
 ## Hydration
-- attempts: 4  failed: 0
+- attempts: 4  failed: 0  transport: 0  dead render: 0 (shell 0, blocked 0, markup_changed 0)
 
 ## Failures
 - none

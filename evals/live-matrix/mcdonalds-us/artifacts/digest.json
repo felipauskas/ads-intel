@@ -1,16 +1,16 @@
 {
   "query": "McDonald's",
   "country": "US",
-  "checked_at": "2026-11-08T13:41:11",
+  "checked_at": "2026-11-09T14:21:41",
   "partial": false,
   "total": 19,
-  "new": 0,
+  "new": 19,
   "ended": 0,
   "changed": 0,
   "with_link": 18,
   "with_cta": 18,
   "with_images": 14,
-  "with_same_creative": 5,
+  "with_same_creative": 6,
   "with_multiple_versions": 19,
   "advertiser": "McDonald's"
 }

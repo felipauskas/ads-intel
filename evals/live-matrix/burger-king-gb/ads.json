@@ -2,5 +2,167 @@
   "brand": "Burger King",
   "country": "GB",
   "search": [],
-  "advertiser_search": []
+  "advertiser_search": [
+    {
+      "id": "1416612976733340",
+      "page_name": "Burger King UK",
+      "status": "active",
+      "first_seen": "Oct 12, 2026",
+      "last_seen": "",
+      "creative_text": "Game ON in the BK® App. Play for rewards, grab £3 Whopper® Wednesday, and win your next flame-grilled favourite. Tap in.",
+      "library_url": "https://www.facebook.com/ads/library/?id=1416612976733340",
+      "page_url": "https://www.facebook.com/burgerkinguk/",
+      "page_id": "",
+      "link_url": "http://play.google.com/store/apps/details?id=com.emn8.mobilem8.nativeapp.bkuk",
+      "link_title": "£3 Whopper® Wednesday. Game ON",
+      "cta_text": "Install Now",
+      "link_caption": "",
+      "images": [
+        "https://scontent-lax3-2.xx.fbcdn.net/v/t39.35426-6/825267453_2005610233604441_5252422826275868249_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=111&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=f_-rEw-tS_YQ7kNvwHqFryp&_nc_oc=AdryKmGuRfyehpgAa-miJmE2BJEJkdS1uXy3ZgWIclHtXsGGuJPDRhR6Jy5CYmu51yw&_nc_zt=14&_nc_ht=scontent-lax3-2.xx&_nc_gid=gf-MNRmWI_zVDwFnB80WzA&_nc_ss=7b289&oh=00_AQSuvnO3PadNky0SUJGwaGnNtlBUAXqo17H5JaTN1Og25A&oe=6AF7686E"
+      ],
+      "has_video": false,
+      "same_creative_count": 0,
+      "multiple_versions": true,
+      "cta_type": "INSTALL_MOBILE_APP",
+      "display_format": "image",
+      "cards": [
+        {
+          "body": "Game ON in the BK® App. Play for rewards, grab £3 Whopper® Wednesday, and win your next flame-grilled favourite. Tap in.",
+          "cta": "Install Now",
+          "image": "https://scontent-lax3-2.xx.fbcdn.net/v/t39.35426-6/825267453_2005610233604441_5252422826275868249_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=111&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=f_-rEw-tS_YQ7kNvwHqFryp&_nc_oc=AdryKmGuRfyehpgAa-miJmE2BJEJkdS1uXy3ZgWIclHtXsGGuJPDRhR6Jy5CYmu51yw&_nc_zt=14&_nc_ht=scontent-lax3-2.xx&_nc_gid=gf-MNRmWI_zVDwFnB80WzA&_nc_ss=7b289&oh=00_AQSuvnO3PadNky0SUJGwaGnNtlBUAXqo17H5JaTN1Og25A&oe=6AF7686E",
+          "link_url": "http://play.google.com/store/apps/details?id=com.emn8.mobilem8.nativeapp.bkuk",
+          "title": "£3 Whopper® Wednesday. Game ON",
+          "video": null
+        }
+      ]
+    },
+    {
+      "id": "1832342047767236",
+      "page_name": "Burger King UK",
+      "status": "active",
+      "first_seen": "Oct 12, 2026",
+      "last_seen": "",
+      "creative_text": "The Whopper, made with 100% British and Irish beef and flamed grilled to perfection. Order Now",
+      "library_url": "https://www.facebook.com/ads/library/?id=1832342047767236",
+      "page_url": "https://www.facebook.com/burgerkinguk/",
+      "page_id": "",
+      "link_url": "https://burgerkinguk.app.link/app-downloads?%243p=a_facebook&~ad_id=%7B%7Bad.id%7D%7D&~ad_name=%7B%7Bad.name%7D%7D&~ad_set_id=%7B%7Badset.id%7D%7D&~ad_set_name=%7B%7Badset.name%7D%7D&~campaign=%7B%7Bcampaign.name%7D%7D&~campaign_id=%7B%7Bcampaign.id%7D%7D",
+      "link_title": "The flame-grilled icon",
+      "cta_text": "Learn More",
+      "link_caption": "",
+      "images": [],
+      "has_video": true,
+      "same_creative_count": 0,
+      "multiple_versions": true,
+      "cta_type": "LEARN_MORE",
+      "display_format": "video",
+      "cards": [
+        {
+          "body": "The Whopper, made with 100% British and Irish beef and flamed grilled to perfection. Order Now",
+          "cta": "Learn More",
+          "image": null,
+          "link_url": "https://burgerkinguk.app.link/app-downloads?%243p=a_facebook&~ad_id=%7B%7Bad.id%7D%7D&~ad_name=%7B%7Bad.name%7D%7D&~ad_set_id=%7B%7Badset.id%7D%7D&~ad_set_name=%7B%7Badset.name%7D%7D&~campaign=%7B%7Bcampaign.name%7D%7D&~campaign_id=%7B%7Bcampaign.id%7D%7D",
+          "title": "The flame-grilled icon",
+          "video": null
+        }
+      ]
+    },
+    {
+      "id": "1751842596065886",
+      "page_name": "Burger King UK",
+      "status": "active",
+      "first_seen": "Oct 12, 2026",
+      "last_seen": "",
+      "creative_text": "Every home can be the home of the Whopper. Order now on delivery",
+      "library_url": "https://www.facebook.com/ads/library/?id=1751842596065886",
+      "page_url": "https://www.facebook.com/burgerkinguk/",
+      "page_id": "",
+      "link_url": "https://burgerkinguk.app.link/app-downloads?%243p=a_facebook&~ad_id=%7B%7Bad.id%7D%7D&~ad_name=%7B%7Bad.name%7D%7D&~ad_set_id=%7B%7Badset.id%7D%7D&~ad_set_name=%7B%7Badset.name%7D%7D&~campaign=%7B%7Bcampaign.name%7D%7D&~campaign_id=%7B%7Bcampaign.id%7D%7D",
+      "link_title": "",
+      "cta_text": "Learn More",
+      "link_caption": "",
+      "images": [
+        "https://scontent-lax3-2.xx.fbcdn.net/v/t39.35426-6/809544112_1949625933109424_1828060615044121496_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=107&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=PIliNtizDvcQ7kNvwE_Yuyu&_nc_oc=Adp8sPw4zxzAlfkxw_De3XECQC0CkG48lZcDwBbdbMo9UTmK-UUOiIeFmBsenVAxxSA&_nc_zt=14&_nc_ht=scontent-lax3-2.xx&_nc_gid=gf-MNRmWI_zVDwFnB80WzA&_nc_ss=7b289&oh=00_AQSXZUNGbFd_VlI-8HtRFMl5AugV5TcBPnTi9PQm6-YkwA&oe=6AF780AC"
+      ],
+      "has_video": false,
+      "same_creative_count": 0,
+      "multiple_versions": true,
+      "cta_type": "LEARN_MORE",
+      "display_format": "image",
+      "cards": [
+        {
+          "body": "Every home can be the home of the Whopper. Order now on delivery",
+          "cta": "Learn More",
+          "image": "https://scontent-lax3-2.xx.fbcdn.net/v/t39.35426-6/809544112_1949625933109424_1828060615044121496_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=107&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=PIliNtizDvcQ7kNvwE_Yuyu&_nc_oc=Adp8sPw4zxzAlfkxw_De3XECQC0CkG48lZcDwBbdbMo9UTmK-UUOiIeFmBsenVAxxSA&_nc_zt=14&_nc_ht=scontent-lax3-2.xx&_nc_gid=gf-MNRmWI_zVDwFnB80WzA&_nc_ss=7b289&oh=00_AQSXZUNGbFd_VlI-8HtRFMl5AugV5TcBPnTi9PQm6-YkwA&oe=6AF780AC",
+          "link_url": "https://burgerkinguk.app.link/app-downloads?%243p=a_facebook&~ad_id=%7B%7Bad.id%7D%7D&~ad_name=%7B%7Bad.name%7D%7D&~ad_set_id=%7B%7Badset.id%7D%7D&~ad_set_name=%7B%7Badset.name%7D%7D&~campaign=%7B%7Bcampaign.name%7D%7D&~campaign_id=%7B%7Bcampaign.id%7D%7D",
+          "title": "",
+          "video": null
+        }
+      ]
+    },
+    {
+      "id": "935431319288947",
+      "page_name": "Burger King UK",
+      "status": "active",
+      "first_seen": "Oct 12, 2026",
+      "last_seen": "",
+      "creative_text": "The Whopper, made with 100% British and Irish beef and flamed grilled to perfection. Order Now",
+      "library_url": "https://www.facebook.com/ads/library/?id=935431319288947",
+      "page_url": "https://www.facebook.com/burgerkinguk/",
+      "page_id": "",
+      "link_url": "https://burgerkinguk.app.link/app-downloads?%243p=a_facebook&~ad_id=%7B%7Bad.id%7D%7D&~ad_name=%7B%7Bad.name%7D%7D&~ad_set_id=%7B%7Badset.id%7D%7D&~ad_set_name=%7B%7Badset.name%7D%7D&~campaign=%7B%7Bcampaign.name%7D%7D&~campaign_id=%7B%7Bcampaign.id%7D%7D",
+      "link_title": "The flame-grilled icon",
+      "cta_text": "Learn More",
+      "link_caption": "",
+      "images": [],
+      "has_video": true,
+      "same_creative_count": 0,
+      "multiple_versions": true,
+      "cta_type": "LEARN_MORE",
+      "display_format": "video",
+      "cards": [
+        {
+          "body": "The Whopper, made with 100% British and Irish beef and flamed grilled to perfection. Order Now",
+          "cta": "Learn More",
+          "image": null,
+          "link_url": "https://burgerkinguk.app.link/app-downloads?%243p=a_facebook&~ad_id=%7B%7Bad.id%7D%7D&~ad_name=%7B%7Bad.name%7D%7D&~ad_set_id=%7B%7Badset.id%7D%7D&~ad_set_name=%7B%7Badset.name%7D%7D&~campaign=%7B%7Bcampaign.name%7D%7D&~campaign_id=%7B%7Bcampaign.id%7D%7D",
+          "title": "The flame-grilled icon",
+          "video": null
+        }
+      ]
+    },
+    {
+      "id": "2569404646841348",
+      "page_name": "Burger King UK",
+      "status": "active",
+      "first_seen": "Oct 2, 2026",
+      "last_seen": "",
+      "creative_text": "Game ON in the BK® App. Play for rewards, grab £3 Whopper® Wednesday, and win your next flame-grilled favourite. Tap in.",
+      "library_url": "https://www.facebook.com/ads/library/?id=2569404646841348",
+      "page_url": "https://www.facebook.com/burgerkinguk/",
+      "page_id": "",
+      "link_url": "http://itunes.apple.com/app/id1062524641",
+      "link_title": "£3 Whopper® Wednesday. Game ON",
+      "cta_text": "Install Now",
+      "link_caption": "",
+      "images": [
+        "https://scontent-lax3-2.xx.fbcdn.net/v/t39.35426-6/825271348_2034219753937603_5133710031583673702_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=100&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=gg7HHCuFk0AQ7kNvwGKo0Z3&_nc_oc=AdoX-kTVebqBMWcLSIk-VcfYz9gqQy8Va1D3obLL-6w5bHaFDjgY4dP4zn-0dhf0v6g&_nc_zt=14&_nc_ht=scontent-lax3-2.xx&_nc_gid=gf-MNRmWI_zVDwFnB80WzA&_nc_ss=7b289&oh=00_AQQwuP46vUKwesUx26w8jk-7zb_HiU2Idf95nVKT29obXg&oe=6AF78792"
+      ],
+      "has_video": false,
+      "same_creative_count": 0,
+      "multiple_versions": true,
+      "cta_type": "INSTALL_MOBILE_APP",
+      "display_format": "image",
+      "cards": [
+        {
+          "body": "Game ON in the BK® App. Play for rewards, grab £3 Whopper® Wednesday, and win your next flame-grilled favourite. Tap in.",
+          "cta": "Install Now",
+          "image": "https://scontent-lax3-2.xx.fbcdn.net/v/t39.35426-6/825271348_2034219753937603_5133710031583673702_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=100&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=gg7HHCuFk0AQ7kNvwGKo0Z3&_nc_oc=AdoX-kTVebqBMWcLSIk-VcfYz9gqQy8Va1D3obLL-6w5bHaFDjgY4dP4zn-0dhf0v6g&_nc_zt=14&_nc_ht=scontent-lax3-2.xx&_nc_gid=gf-MNRmWI_zVDwFnB80WzA&_nc_ss=7b289&oh=00_AQQwuP46vUKwesUx26w8jk-7zb_HiU2Idf95nVKT29obXg&oe=6AF78792",
+          "link_url": "http://itunes.apple.com/app/id1062524641",
+          "title": "£3 Whopper® Wednesday. Game ON",
+          "video": null
+        }
+      ]
+    }
+  ]
 }

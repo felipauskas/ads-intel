@@ -5,93 +5,47 @@
     {
       "phase": "search",
       "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=AE&q=Burger+King&media_type=all&search_type=keyword_unordered",
-      "seconds": 0.64,
+      "seconds": 2.17,
       "chars": 5171,
-      "failed": false
+      "failed": true,
+      "transport_failed": false,
+      "dead_render": "shell"
     },
     {
       "phase": "search",
-      "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=AE&q=Burger+King&media_type=all&search_type=keyword_unordered&cache_bust=a504ba1607b347eaab26deed71e9618f",
-      "seconds": 5.05,
-      "chars": 5171,
-      "failed": false
-    },
-    {
-      "phase": "search",
-      "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=AE&q=Burger+King&media_type=all&search_type=keyword_unordered&cache_bust=a304884ac32e4279afaef7162b5fcbaf",
-      "seconds": 4.67,
-      "chars": 5171,
-      "failed": false
-    },
-    {
-      "phase": "search",
-      "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=AE&q=Burger+King&media_type=all&search_type=keyword_unordered&cache_bust=696d7e0403cd40f4bfc41212b4c4b2a0",
-      "seconds": 5.99,
-      "chars": 5171,
-      "failed": false
-    },
-    {
-      "phase": "advertiser_search",
-      "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=AE&q=Burger+King&media_type=all&search_type=keyword_unordered",
-      "seconds": 0.01,
-      "chars": 5171,
-      "failed": false
-    },
-    {
-      "phase": "advertiser_search",
-      "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=AE&q=Burger+King&media_type=all&search_type=keyword_unordered&cache_bust=0bf8ee96c76c43e591409c8d2fc4ed32",
-      "seconds": 5.53,
-      "chars": 5171,
-      "failed": false
-    },
-    {
-      "phase": "advertiser_search",
-      "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=AE&q=Burger+King&media_type=all&search_type=keyword_unordered&cache_bust=74dcb0d32eef467ab73cc5b962776a7d",
-      "seconds": 8.96,
+      "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=AE&q=Burger+King&media_type=all&search_type=keyword_unordered&cache_bust=87156d8d862b4a3e98515aaad68c9062",
+      "seconds": 8.24,
       "chars": 120386,
-      "failed": false
+      "failed": false,
+      "transport_failed": false,
+      "dead_render": null
+    },
+    {
+      "phase": "advertiser_search",
+      "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=AE&q=Burger+King&media_type=all&search_type=keyword_unordered&cache_bust=e58cac8c22914ab489352061d6384d29",
+      "seconds": 7.98,
+      "chars": 120386,
+      "failed": false,
+      "transport_failed": false,
+      "dead_render": null
     },
     {
       "phase": "check1",
-      "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=AE&q=Burger+King&media_type=all&search_type=keyword_unordered",
-      "seconds": 0.01,
-      "chars": 5171,
-      "failed": false
-    },
-    {
-      "phase": "check1",
-      "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=AE&q=Burger+King&media_type=all&search_type=keyword_unordered&cache_bust=ac93cb30c8c146d198a377bb5bd2e2e6",
-      "seconds": 8.42,
+      "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=AE&q=Burger+King&media_type=all&search_type=keyword_unordered&cache_bust=475c1307d79c48c99edba3d4511c3eda",
+      "seconds": 8.44,
       "chars": 120386,
-      "failed": false
+      "failed": false,
+      "transport_failed": false,
+      "dead_render": null
     },
     {
       "phase": "check2",
-      "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=AE&q=Burger+King&media_type=all&search_type=keyword_unordered",
-      "seconds": 0.01,
-      "chars": 5171,
-      "failed": false
-    },
-    {
-      "phase": "check2",
-      "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=AE&q=Burger+King&media_type=all&search_type=keyword_unordered&cache_bust=3f0cb2dbbaa84357be52e3a95b872c77",
-      "seconds": 5.15,
-      "chars": 5171,
-      "failed": false
-    },
-    {
-      "phase": "check2",
-      "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=AE&q=Burger+King&media_type=all&search_type=keyword_unordered&cache_bust=1cc1e0bd38bc4975bbc42ec23473d288",
-      "seconds": 5.94,
-      "chars": 5171,
-      "failed": false
-    },
-    {
-      "phase": "check2",
-      "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=AE&q=Burger+King&media_type=all&search_type=keyword_unordered&cache_bust=7354e848b69541b99b390e71739888f2",
-      "seconds": 7.68,
+      "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=AE&q=Burger+King&media_type=all&search_type=keyword_unordered&cache_bust=1afe9ec383d44e3cb19c078aa51294b9",
+      "seconds": 7.67,
       "chars": 120386,
-      "failed": false
+      "failed": false,
+      "transport_failed": false,
+      "dead_render": null
     }
   ]
 }

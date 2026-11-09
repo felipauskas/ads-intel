@@ -3,26 +3,25 @@
   "country": "SA",
   "advertiser": "Pizza Hut",
   "folder": "evals/live-matrix/pizza-hut-sa",
-  "data_dir": "/var/folders/zf/g9bpd9s55sv10tz2mnhqch800000gn/T/ads-intel-live-eval-a5skrx5s/tmp7gsk11a2",
+  "data_dir": "/var/folders/zf/g9bpd9s55sv10tz2mnhqch800000gn/T/ads-intel-live-eval-7v9t8l1b/tmpl1lwu37o",
   "search_summary": {
-    "count": 15,
-    "complete": true,
-    "fetched": 15,
+    "count": 14,
+    "complete": false,
+    "fetched": 14,
     "country": "SA",
     "error": null,
     "page_names": [
-      "Past Insights",
+      "livelonger_livehealthier",
       "Pizza Hut KSA",
       "Giftops Delivery Services",
       "Pizza Hut ME",
-      "Frederick Wilson",
       "Igigrcia"
     ],
-    "seconds": 23.45
+    "seconds": 8.2
   },
   "advertiser_summary": {
     "count": 4,
-    "complete": true,
+    "complete": false,
     "resolved": {
       "page_name": "Pizza Hut KSA",
       "score": 0.8
@@ -34,7 +33,7 @@
     "page_names": [
       "Pizza Hut KSA"
     ],
-    "seconds": 6.69
+    "seconds": 6.03
   },
   "watch_add": {
     "error": null,
@@ -58,7 +57,7 @@
     "new_ads": 4,
     "ended_ads": 0,
     "changed_ads": 0,
-    "partial": false,
+    "partial": true,
     "artifacts": {
       "html": "artifacts/html.html",
       "digest": "artifacts/digest.json"
@@ -66,7 +65,7 @@
     "new_page_names": [
       "Pizza Hut KSA"
     ],
-    "seconds": 6.22
+    "seconds": 6.32
   },
   "check2": {
     "query": "Pizza Hut",
@@ -79,13 +78,13 @@
     "new_ads": 0,
     "ended_ads": 0,
     "changed_ads": 0,
-    "partial": false,
+    "partial": true,
     "artifacts": {
       "html": "artifacts/check2/html.html",
       "digest": "artifacts/check2/digest.json"
     },
     "new_page_names": [],
-    "seconds": 6.84
+    "seconds": 5.87
   },
   "artifacts_ok": true,
   "artifacts2_ok": true,
@@ -97,14 +96,19 @@
   "status": "PASS",
   "failures": [],
   "timings": {
-    "search": 23.45,
-    "advertiser_search": 6.69,
-    "check1": 6.22,
-    "check2": 6.84,
-    "total": 43.2
+    "search": 8.2,
+    "advertiser_search": 6.03,
+    "check1": 6.32,
+    "check2": 5.87,
+    "total": 26.42
   },
   "attempts": {
-    "total": 10,
-    "failed": 0
+    "total": 5,
+    "failed": 1,
+    "transport_failed": 0,
+    "parse_failed": 1,
+    "shell": 1,
+    "blocked": 0,
+    "markup_changed": 0
   }
 }

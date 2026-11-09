@@ -3,7 +3,7 @@
   "country": "GB",
   "advertiser": "Pizza Hut",
   "folder": "evals/live-matrix/pizza-hut-gb",
-  "data_dir": "/var/folders/zf/g9bpd9s55sv10tz2mnhqch800000gn/T/ads-intel-live-eval-a5skrx5s/tmpnenpa_f7",
+  "data_dir": "/var/folders/zf/g9bpd9s55sv10tz2mnhqch800000gn/T/ads-intel-live-eval-7v9t8l1b/tmparhph0ct",
   "search_summary": {
     "count": 20,
     "complete": false,
@@ -19,13 +19,12 @@
       "LauraJordan.com",
       "Christmas at Bute Park",
       "Natasha Brito",
-      "Frederick Wilson",
       "Source EV"
     ],
-    "seconds": 17.84
+    "seconds": 9.38
   },
   "advertiser_summary": {
-    "count": 19,
+    "count": 20,
     "complete": true,
     "resolved": {
       "page_name": "Pizza Hut",
@@ -38,7 +37,7 @@
     "page_names": [
       "Pizza Hut"
     ],
-    "seconds": 13.03
+    "seconds": 5.36
   },
   "watch_add": {
     "error": null,
@@ -59,7 +58,7 @@
       "page_name": "Pizza Hut",
       "score": 0.8
     },
-    "new_ads": 19,
+    "new_ads": 20,
     "ended_ads": 0,
     "changed_ads": 0,
     "partial": false,
@@ -70,7 +69,7 @@
     "new_page_names": [
       "Pizza Hut"
     ],
-    "seconds": 5.91
+    "seconds": 6.37
   },
   "check2": {
     "query": "Pizza Hut",
@@ -89,7 +88,7 @@
       "digest": "artifacts/check2/digest.json"
     },
     "new_page_names": [],
-    "seconds": 7.41
+    "seconds": 6.62
   },
   "artifacts_ok": true,
   "artifacts2_ok": true,
@@ -101,14 +100,19 @@
   "status": "PASS",
   "failures": [],
   "timings": {
-    "search": 17.84,
-    "advertiser_search": 13.03,
-    "check1": 5.91,
-    "check2": 7.41,
-    "total": 44.19
+    "search": 9.38,
+    "advertiser_search": 5.36,
+    "check1": 6.37,
+    "check2": 6.62,
+    "total": 27.73
   },
   "attempts": {
-    "total": 10,
-    "failed": 0
+    "total": 5,
+    "failed": 1,
+    "transport_failed": 0,
+    "parse_failed": 1,
+    "shell": 1,
+    "blocked": 0,
+    "markup_changed": 0
   }
 }

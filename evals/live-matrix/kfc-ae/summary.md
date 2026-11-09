@@ -6,7 +6,7 @@
 ## Keyword search (`active_status=active`, limit 20)
 - count: 20  complete: False  fetched: 20  error: None
 - page names: KFC, Deliveroo
-- seconds: 0.54
+- seconds: 3.76
 
 ## Advertiser search
 - count: 17  resolved: {'page_name': 'KFC', 'score': 0.8}  error: None
@@ -23,7 +23,7 @@
 - expected: AED  found: AED  ok: True
 
 ## Hydration
-- attempts: 4  failed: 0
+- attempts: 4  failed: 0  transport: 0  dead render: 0 (shell 0, blocked 0, markup_changed 0)
 
 ## Failures
 - none

@@ -4,9 +4,9 @@
 - advertiser filter: `KFC`
 
 ## Keyword search (`active_status=active`, limit 20)
-- count: 19  complete: False  fetched: 19  error: None
-- page names: OFW Fast-Foodala To Philippines, foodora Česko, La Vieille Ferme, KFC, Pepsi Max, Jessica Bennett, LBBonline - Little Black Book, Fitatu Global, ScrapCity, Yorkshire Home Interiors, Gigahertz Giveaways UK, Panacea Palm, Hiring Now, Welcome Break, YaiToeii, SoSweet
-- seconds: 8.18
+- count: 20  complete: False  fetched: 20  error: None
+- page names: OFW Fast-Foodala To Philippines, foodora Česko, La Vieille Ferme, KFC, Pepsi Max, Jessica Bennett, LBBonline - Little Black Book, Fitatu Global, ScrapCity, coldestjoel, Yorkshire Home Interiors, Gigahertz Giveaways UK, Panacea Palm, Hiring Now, Welcome Break, YaiToeii, SoSweet
+- seconds: 3.26
 
 ## Advertiser search
 - count: 2  resolved: {'page_name': 'KFC', 'score': 0.8}  error: None
@@ -23,7 +23,7 @@
 - expected: —  found: none  ok: None
 
 ## Hydration
-- attempts: 4  failed: 0
+- attempts: 4  failed: 0  transport: 0  dead render: 0 (shell 0, blocked 0, markup_changed 0)
 
 ## Failures
 - none

@@ -3,7 +3,7 @@
   "country": "SA",
   "advertiser": "McDonald's",
   "folder": "evals/live-matrix/mcdonalds-sa",
-  "data_dir": "/var/folders/zf/g9bpd9s55sv10tz2mnhqch800000gn/T/ads-intel-live-eval-a5skrx5s/tmpsdpra5xw",
+  "data_dir": "/var/folders/zf/g9bpd9s55sv10tz2mnhqch800000gn/T/ads-intel-live-eval-7v9t8l1b/tmpe5tlk5vo",
   "search_summary": {
     "count": 20,
     "complete": false,
@@ -11,6 +11,7 @@
     "country": "SA",
     "error": null,
     "page_names": [
+      "From the Bottom Real Estate",
       "McDonald's",
       "蝦皮購物 (Shopee)",
       "McDonaldsksa\\_ws",
@@ -19,9 +20,11 @@
       "Motive8 Auto detailing and auto accessories",
       "Franquicia IA",
       "Monopoly GO",
-      "Room for Rent para sa mga OFW'S"
+      "Room for Rent para sa mga OFW'S",
+      "BYT Vacuum Machine",
+      "Ryan Law Sophiet"
     ],
-    "seconds": 20.16
+    "seconds": 20.85
   },
   "advertiser_summary": {
     "count": 3,
@@ -37,7 +40,7 @@
     "page_names": [
       "McDonald's"
     ],
-    "seconds": 7.59
+    "seconds": 18.97
   },
   "watch_add": {
     "error": null,
@@ -53,56 +56,66 @@
   "check1": {
     "query": "McDonald's",
     "country": "SA",
-    "partial": true,
-    "skipped": true,
-    "reason": "parse_failed",
-    "artifacts": {
-      "error": "parse_failed"
+    "advertiser": "McDonald's",
+    "resolved": {
+      "page_name": "McDonald's",
+      "score": 0.8
     },
-    "new_page_names": [],
-    "seconds": 19.52,
-    "artifact_problems": [
-      "artifacts_error: parse_failed"
-    ]
+    "new_ads": 3,
+    "ended_ads": 0,
+    "changed_ads": 0,
+    "partial": false,
+    "artifacts": {
+      "html": "artifacts/html.html",
+      "digest": "artifacts/digest.json"
+    },
+    "new_page_names": [
+      "McDonald's"
+    ],
+    "seconds": 26.19
   },
   "check2": {
     "query": "McDonald's",
     "country": "SA",
-    "partial": true,
-    "skipped": true,
-    "reason": "parse_failed",
+    "advertiser": "McDonald's",
+    "resolved": {
+      "page_name": "McDonald's",
+      "score": 0.8
+    },
+    "new_ads": 0,
+    "ended_ads": 0,
+    "changed_ads": 0,
+    "partial": false,
     "artifacts": {
-      "error": "parse_failed"
+      "html": "artifacts/check2/html.html",
+      "digest": "artifacts/check2/digest.json"
     },
     "new_page_names": [],
-    "seconds": 17.93,
-    "artifact_problems": [
-      "artifacts_error: parse_failed"
-    ]
+    "seconds": 6.81
   },
-  "artifacts_ok": false,
-  "artifacts2_ok": false,
+  "artifacts_ok": true,
+  "artifacts2_ok": true,
   "currency": {
     "expected": null,
     "found": [],
     "ok": null
   },
-  "status": "FAIL",
-  "failures": [
-    "check1_no_new_ads: (None, None, None)",
-    "check2_not_settled: (None, None, None)",
-    "artifacts_error: parse_failed",
-    "artifacts2_error: parse_failed"
-  ],
+  "status": "PASS",
+  "failures": [],
   "timings": {
-    "search": 20.16,
-    "advertiser_search": 7.59,
-    "check1": 19.52,
-    "check2": 17.93,
-    "total": 65.2
+    "search": 20.85,
+    "advertiser_search": 18.97,
+    "check1": 26.19,
+    "check2": 6.81,
+    "total": 72.82
   },
   "attempts": {
-    "total": 13,
-    "failed": 0
+    "total": 12,
+    "failed": 8,
+    "transport_failed": 0,
+    "parse_failed": 8,
+    "shell": 8,
+    "blocked": 0,
+    "markup_changed": 0
   }
 }

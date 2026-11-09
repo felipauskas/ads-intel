@@ -15,12 +15,25 @@
       "link_url": "https://www.pizzahut.ca/",
       "link_title": "⚡Limited Time Only ⚡ For The Love of Pizza!",
       "cta_text": "Order now",
+      "link_caption": "PIZZAHUT.CA",
       "images": [
         "https://scontent-lax3-1.xx.fbcdn.net/v/t39.35426-6/762974435_1295097665958310_1567426570016915459_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=102&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=dp-T6sFZqe8Q7kNvwGnc2AD&_nc_oc=AdpXtex3rj1HL7f80EYvaH-kqGPO0ekQBSLj5ImseFRou4vsb5A6u6FVwDLfAhqxMjE&_nc_zt=14&_nc_ht=scontent-lax3-1.xx&_nc_gid=hPt9sgAJBvvspmIwUAJLoA&_nc_ss=7b289&oh=00_AQRPTHITlrnUBIYbMwj1uFNhKrXECu-anLeG3Ep2cZUM9g&oe=6AF74B68"
       ],
       "has_video": false,
       "same_creative_count": 0,
-      "multiple_versions": true
+      "multiple_versions": true,
+      "cta_type": "ORDER_NOW",
+      "display_format": "image",
+      "cards": [
+        {
+          "body": "🍕Enjoy the pizza vibes without having to order a whole pie. Order Pizza Hut Melts™ today!\n😋Cheesy, crispy, loaded with toppings\n😋Served with a perfectly paired dip\n😋Great for a quick savoury snack, lunch, or on-the-go dinner",
+          "cta": "Order now",
+          "image": "https://scontent-lax3-1.xx.fbcdn.net/v/t39.35426-6/762974435_1295097665958310_1567426570016915459_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=102&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=dp-T6sFZqe8Q7kNvwGnc2AD&_nc_oc=AdpXtex3rj1HL7f80EYvaH-kqGPO0ekQBSLj5ImseFRou4vsb5A6u6FVwDLfAhqxMjE&_nc_zt=14&_nc_ht=scontent-lax3-1.xx&_nc_gid=hPt9sgAJBvvspmIwUAJLoA&_nc_ss=7b289&oh=00_AQRPTHITlrnUBIYbMwj1uFNhKrXECu-anLeG3Ep2cZUM9g&oe=6AF74B68",
+          "link_url": "https://www.pizzahut.ca/",
+          "title": "⚡Limited Time Only ⚡ For The Love of Pizza!",
+          "video": null
+        }
+      ]
     },
     {
       "id": "39333951389552465",
@@ -35,12 +48,25 @@
       "link_url": "https://www.t-mobile.com/offers/t-mobile-tuesdays?cmpid=MGPO_SM_P_26PPTMTHUT_A122W8686644X74425125",
       "link_title": "Redeem today. Don't miss this perk!",
       "cta_text": "Learn More",
+      "link_caption": "T-MOBILE.COM",
       "images": [
         "https://scontent-lax3-2.xx.fbcdn.net/v/t39.35426-6/839883866_2356200518523705_8184239392485798454_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=107&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=1DwL0B6GPmoQ7kNvwE7huKv&_nc_oc=AdpkTi1K2CGesAZboeEavk9eoxyARuupBHZNhMiptuGverEMtJ7JdvYWNY_vpzH6lpE&_nc_zt=14&_nc_ht=scontent-lax3-2.xx&_nc_gid=hPt9sgAJBvvspmIwUAJLoA&_nc_ss=7b289&oh=00_AQTJ0BURHWOaHpqVxGnXfmUla6IW8sPF4-Cckb5BxWPb1w&oe=6AF76B60"
       ],
       "has_video": false,
       "same_creative_count": 0,
-      "multiple_versions": true
+      "multiple_versions": true,
+      "cta_type": "LEARN_MORE",
+      "display_format": "image",
+      "cards": [
+        {
+          "body": "Members get a free 20 oz Mountain Dew or other Pepsi Product with My Haunt Box purchase from Pizza Hut® in the T-Life app.",
+          "cta": "Learn More",
+          "image": "https://scontent-lax3-2.xx.fbcdn.net/v/t39.35426-6/839883866_2356200518523705_8184239392485798454_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=107&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=1DwL0B6GPmoQ7kNvwE7huKv&_nc_oc=AdpkTi1K2CGesAZboeEavk9eoxyARuupBHZNhMiptuGverEMtJ7JdvYWNY_vpzH6lpE&_nc_zt=14&_nc_ht=scontent-lax3-2.xx&_nc_gid=hPt9sgAJBvvspmIwUAJLoA&_nc_ss=7b289&oh=00_AQTJ0BURHWOaHpqVxGnXfmUla6IW8sPF4-Cckb5BxWPb1w&oe=6AF76B60",
+          "link_url": "https://www.t-mobile.com/offers/t-mobile-tuesdays?cmpid=MGPO_SM_P_26PPTMTHUT_A122W8686644X74425125",
+          "title": "Redeem today. Don't miss this perk!",
+          "video": null
+        }
+      ]
     },
     {
       "id": "1476919827321083",
@@ -55,10 +81,23 @@
       "link_url": "https://www.pizzahut.com/deals/MEAL505TT?utm_source=meta&utm_campaign=cns&utm_medium=partner&utm_co%E2%80%A6",
       "link_title": "Triple Treat Box With Pizza Hut!",
       "cta_text": "Learn More",
+      "link_caption": "PIZZAHUT.COM",
       "images": [],
       "has_video": false,
       "same_creative_count": 6,
-      "multiple_versions": true
+      "multiple_versions": true,
+      "cta_type": "LEARN_MORE",
+      "display_format": "",
+      "cards": [
+        {
+          "body": "#PizzaHut\\_Partner From plain grass to gameday! We surprised the local teams with a brand-new field for their season. Get ready for gameday with Pizza Hut's Triple Treat Box Gameday Edition and a Pepsi! @\\[6053772414:Pizza Hut\\] @\\[56381779049:Pepsi\\] #sbmowing\n0:00 / 0:00",
+          "cta": "Learn More",
+          "image": null,
+          "link_url": "https://www.pizzahut.com/deals/MEAL505TT?utm_source=meta&utm_campaign=cns&utm_medium=partner&utm_co%E2%80%A6",
+          "title": "Triple Treat Box With Pizza Hut!",
+          "video": null
+        }
+      ]
     },
     {
       "id": "2807585039637707",
@@ -73,10 +112,23 @@
       "link_url": "https://www.pizzahut.com/?utm_source=ignite&utm_medium=social&utm_campaign=celebration",
       "link_title": "Lucky 7 Feed Good Times",
       "cta_text": "Get Offer",
+      "link_caption": "PIZZAHUT.COM",
       "images": [],
       "has_video": false,
       "same_creative_count": 0,
-      "multiple_versions": true
+      "multiple_versions": true,
+      "cta_type": "GET_OFFER",
+      "display_format": "",
+      "cards": [
+        {
+          "body": "Lucky you - Pizza Hut's $7 Deal Lover's menu is here! Mix and match your faves when you buy 2 or more! Let's eat!\n0:00 / 0:00",
+          "cta": "Get Offer",
+          "image": null,
+          "link_url": "https://www.pizzahut.com/?utm_source=ignite&utm_medium=social&utm_campaign=celebration",
+          "title": "Lucky 7 Feed Good Times",
+          "video": null
+        }
+      ]
     },
     {
       "id": "2086262921993395",
@@ -91,12 +143,25 @@
       "link_url": "https://www.t-mobile.com/offers/t-mobile-tuesdays?cmpid=MGPO_SM_P_26PPTMTHUT_A122W8686644X74425125",
       "link_title": "Redeem today. Don't miss this perk!",
       "cta_text": "Learn More",
+      "link_caption": "T-MOBILE.COM",
       "images": [
         "https://scontent-lax3-1.xx.fbcdn.net/v/t39.35426-6/841645357_984799511307240_7335808471583981581_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=110&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=lcG25MJ4YskQ7kNvwE3JKrP&_nc_oc=AdqIRyOGX5UkIFT558RSSJYVfzbgxgWY-8njx4Ix0dn1-DDVLZjctz5AxaZVU8UAI9c&_nc_zt=14&_nc_ht=scontent-lax3-1.xx&_nc_gid=hPt9sgAJBvvspmIwUAJLoA&_nc_ss=7b289&oh=00_AQSRsZFiriKa59KuK1HYYKD-a5IApeHbD5O-0YDdv-hYDw&oe=6AF74F6D"
       ],
       "has_video": false,
       "same_creative_count": 3,
-      "multiple_versions": true
+      "multiple_versions": true,
+      "cta_type": "LEARN_MORE",
+      "display_format": "image",
+      "cards": [
+        {
+          "body": "Members get a free 20 oz Mountain Dew or other Pepsi Product with My Haunt Box purchase from Pizza Hut® in the T-Life app.",
+          "cta": "Learn More",
+          "image": "https://scontent-lax3-1.xx.fbcdn.net/v/t39.35426-6/841645357_984799511307240_7335808471583981581_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=110&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=lcG25MJ4YskQ7kNvwE3JKrP&_nc_oc=AdqIRyOGX5UkIFT558RSSJYVfzbgxgWY-8njx4Ix0dn1-DDVLZjctz5AxaZVU8UAI9c&_nc_zt=14&_nc_ht=scontent-lax3-1.xx&_nc_gid=hPt9sgAJBvvspmIwUAJLoA&_nc_ss=7b289&oh=00_AQSRsZFiriKa59KuK1HYYKD-a5IApeHbD5O-0YDdv-hYDw&oe=6AF74F6D",
+          "link_url": "https://www.t-mobile.com/offers/t-mobile-tuesdays?cmpid=MGPO_SM_P_26PPTMTHUT_A122W8686644X74425125",
+          "title": "Redeem today. Don't miss this perk!",
+          "video": null
+        }
+      ]
     },
     {
       "id": "1129856972886891",
@@ -111,10 +176,23 @@
       "link_url": "https://secure.t-mobile.com/DWyJ9ANyt7b?cmpid=BTS_SM_P_26PPTMTHUT_37D17E95271Q983188508",
       "link_title": "Halloween Perks Free Personal Pan Pizza®",
       "cta_text": "Learn More",
+      "link_caption": "T-MOBILE.COM",
       "images": [],
       "has_video": false,
       "same_creative_count": 0,
-      "multiple_versions": true
+      "multiple_versions": true,
+      "cta_type": "LEARN_MORE",
+      "display_format": "",
+      "cards": [
+        {
+          "body": "A new perk has risen! Members get a free Personal Pan Pizza® from Pizza Hut® with 20 oz Mountain Dew purchase in the T-Life app.\n0:00 / 0:00",
+          "cta": "Learn More",
+          "image": null,
+          "link_url": "https://secure.t-mobile.com/DWyJ9ANyt7b?cmpid=BTS_SM_P_26PPTMTHUT_37D17E95271Q983188508",
+          "title": "Halloween Perks Free Personal Pan Pizza®",
+          "video": null
+        }
+      ]
     },
     {
       "id": "1889663822399293",
@@ -129,12 +207,25 @@
       "link_url": "https://www.pizzahut.com/deals/MEAL591R3?utm_source=metaasc&utm_campaign=103tcap&utm_medium=paidsoc&utm_term=2001R2002R",
       "link_title": "Large ANY 3-Topping Pizza",
       "cta_text": "Order Now",
+      "link_caption": "PIZZAHUT.COM",
       "images": [
         "https://scontent-lax3-2.xx.fbcdn.net/v/t39.35426-6/851101854_1103513645732616_5010575795386352030_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=107&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=rAI_7fFEEpoQ7kNvwF2UWtd&_nc_oc=AdqH_XcjAHp_U-ntaFjaMZGB_qNOihsvNVl2UIt3l_DwChNWoSV-OR_hvh5p-_oKy0g&_nc_zt=14&_nc_ht=scontent-lax3-2.xx&_nc_gid=hPt9sgAJBvvspmIwUAJLoA&_nc_ss=7b289&oh=00_AQTuFIrmhiZoiO3fjjZ-TZZwF_ph9DGBY--_lVpPuV8FVg&oe=6AF74B3F"
       ],
       "has_video": false,
       "same_creative_count": 0,
-      "multiple_versions": true
+      "multiple_versions": true,
+      "cta_type": "ORDER_NOW",
+      "display_format": "image",
+      "cards": [
+        {
+          "body": "Everybody wins with the $10.99 Large ANY 3-Topping Pizza from Pizza Hut®. Pick 3 toppings and get your choice of Hut Crust™.",
+          "cta": "Order Now",
+          "image": "https://scontent-lax3-2.xx.fbcdn.net/v/t39.35426-6/851101854_1103513645732616_5010575795386352030_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=107&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=rAI_7fFEEpoQ7kNvwF2UWtd&_nc_oc=AdqH_XcjAHp_U-ntaFjaMZGB_qNOihsvNVl2UIt3l_DwChNWoSV-OR_hvh5p-_oKy0g&_nc_zt=14&_nc_ht=scontent-lax3-2.xx&_nc_gid=hPt9sgAJBvvspmIwUAJLoA&_nc_ss=7b289&oh=00_AQTuFIrmhiZoiO3fjjZ-TZZwF_ph9DGBY--_lVpPuV8FVg&oe=6AF74B3F",
+          "link_url": "https://www.pizzahut.com/deals/MEAL591R3?utm_source=metaasc&utm_campaign=103tcap&utm_medium=paidsoc&utm_term=2001R2002R",
+          "title": "Large ANY 3-Topping Pizza",
+          "video": null
+        }
+      ]
     },
     {
       "id": "1803216427686851",
@@ -149,12 +240,25 @@
       "link_url": "https://www.pizzahut.com/deals/MEAL505TT?utm_source=metaasc&utm_campaign=ttbcap&utm_medium=paidsoc&utm_term=40094010",
       "link_title": "Feed Your Whole Roster",
       "cta_text": "Order Now",
+      "link_caption": "PIZZAHUT.COM",
       "images": [
         "https://scontent-lax3-1.xx.fbcdn.net/v/t39.35426-6/820336333_1352465713358540_67093363525777895_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=104&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=AMT002Jw16kQ7kNvwGes9SA&_nc_oc=Ado-m4PjvnlJJ6vKIBb6ey6cRUXSwZnSeV3uDM4nKUtqy1WVmLsTtnyEcqZyjiQhxE4&_nc_zt=14&_nc_ht=scontent-lax3-1.xx&_nc_gid=hPt9sgAJBvvspmIwUAJLoA&_nc_ss=7b289&oh=00_AQQMxq3Ob8bjR7O-JfvERGZFZyIuBBmLbm9ZASQWIbRj4w&oe=6AF74A72"
       ],
       "has_video": false,
       "same_creative_count": 0,
-      "multiple_versions": true
+      "multiple_versions": true,
+      "cta_type": "ORDER_NOW",
+      "display_format": "image",
+      "cards": [
+        {
+          "body": "The best HUT you’ll call all season is the Triple Treat Box® Gameday Edition 🏈 Get 2 pizzas, breadsticks and dessert.",
+          "cta": "Order Now",
+          "image": "https://scontent-lax3-1.xx.fbcdn.net/v/t39.35426-6/820336333_1352465713358540_67093363525777895_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=104&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=AMT002Jw16kQ7kNvwGes9SA&_nc_oc=Ado-m4PjvnlJJ6vKIBb6ey6cRUXSwZnSeV3uDM4nKUtqy1WVmLsTtnyEcqZyjiQhxE4&_nc_zt=14&_nc_ht=scontent-lax3-1.xx&_nc_gid=hPt9sgAJBvvspmIwUAJLoA&_nc_ss=7b289&oh=00_AQQMxq3Ob8bjR7O-JfvERGZFZyIuBBmLbm9ZASQWIbRj4w&oe=6AF74A72",
+          "link_url": "https://www.pizzahut.com/deals/MEAL505TT?utm_source=metaasc&utm_campaign=ttbcap&utm_medium=paidsoc&utm_term=40094010",
+          "title": "Feed Your Whole Roster",
+          "video": null
+        }
+      ]
     },
     {
       "id": "2318980705558137",
@@ -169,10 +273,23 @@
       "link_url": "https://www.pizzahut.com/deals/MEAL505TT?utm_source=metaasc&utm_campaign=ttbcap&utm_medium=paidsoc&utm_term=40154016",
       "link_title": "Gameday starts with the HUT!",
       "cta_text": "Order Now",
+      "link_caption": "PIZZAHUT.COM",
       "images": [],
       "has_video": false,
       "same_creative_count": 0,
-      "multiple_versions": true
+      "multiple_versions": true,
+      "cta_type": "ORDER_NOW",
+      "display_format": "",
+      "cards": [
+        {
+          "body": "Josh Allen’s #1 rule: Gameday starts with the Hut! Feed your team with the Triple Treat Box® Gameday Edition for $21.99. \n0:00 / 0:00",
+          "cta": "Order Now",
+          "image": null,
+          "link_url": "https://www.pizzahut.com/deals/MEAL505TT?utm_source=metaasc&utm_campaign=ttbcap&utm_medium=paidsoc&utm_term=40154016",
+          "title": "Gameday starts with the HUT!",
+          "video": null
+        }
+      ]
     },
     {
       "id": "2227094194533197",
@@ -187,12 +304,25 @@
       "link_url": "https://www.pizzahut.com/deals/MEAL591R3?utm_source=metaasc&utm_campaign=103tcap&utm_medium=paidsoc&utm_term=2003R2004R",
       "link_title": "Get a Lrg ANY 3-Top",
       "cta_text": "Order Now",
+      "link_caption": "PIZZAHUT.COM",
       "images": [
         "https://scontent-lax7-1.xx.fbcdn.net/v/t39.35426-6/851722239_2869656893408432_6040652465501541658_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=105&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=AcDcpieKEM4Q7kNvwGZ9qVj&_nc_oc=AdqiR3QOC0iI2Frl0DIWf5IpPNEAs4eZET-3aYOBhyoCQA27wlLcm42SExa6hscPjvw&_nc_zt=14&_nc_ht=scontent-lax7-1.xx&_nc_gid=hPt9sgAJBvvspmIwUAJLoA&_nc_ss=7b289&oh=00_AQQiY7eWUKDWrKzrewYOFWWhU7YPU_4H9_PA0Km7_QYlWg&oe=6AF7571B"
       ],
       "has_video": false,
       "same_creative_count": 0,
-      "multiple_versions": true
+      "multiple_versions": true,
+      "cta_type": "ORDER_NOW",
+      "display_format": "image",
+      "cards": [
+        {
+          "body": "A dinner everyone can agree on: the $10.99 Large ANY 3-Topping Pizza with your choice of Hut Crust™ and 3 favorite toppings.",
+          "cta": "Order Now",
+          "image": "https://scontent-lax7-1.xx.fbcdn.net/v/t39.35426-6/851722239_2869656893408432_6040652465501541658_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=105&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=AcDcpieKEM4Q7kNvwGZ9qVj&_nc_oc=AdqiR3QOC0iI2Frl0DIWf5IpPNEAs4eZET-3aYOBhyoCQA27wlLcm42SExa6hscPjvw&_nc_zt=14&_nc_ht=scontent-lax7-1.xx&_nc_gid=hPt9sgAJBvvspmIwUAJLoA&_nc_ss=7b289&oh=00_AQQiY7eWUKDWrKzrewYOFWWhU7YPU_4H9_PA0Km7_QYlWg&oe=6AF7571B",
+          "link_url": "https://www.pizzahut.com/deals/MEAL591R3?utm_source=metaasc&utm_campaign=103tcap&utm_medium=paidsoc&utm_term=2003R2004R",
+          "title": "Get a Lrg ANY 3-Top",
+          "video": null
+        }
+      ]
     },
     {
       "id": "4543635325964297",
@@ -207,10 +337,23 @@
       "link_url": "https://www.pizzahut.com/deals/MEAL591R3?utm_source=metaasc&utm_campaign=103tcap&utm_medium=paidsoc&utm_term=2011R2012R",
       "link_title": "Choose Your $10.99 Lg 3 Top",
       "cta_text": "Order Now",
+      "link_caption": "PIZZAHUT.COM",
       "images": [],
       "has_video": false,
       "same_creative_count": 0,
-      "multiple_versions": true
+      "multiple_versions": true,
+      "cta_type": "ORDER_NOW",
+      "display_format": "",
+      "cards": [
+        {
+          "body": "Get the whole watch party fired up with their favorite 3 toppings and choice of large Hut Crust™ for $10.99. Only at the Hut®!\n0:00 / 0:00",
+          "cta": "Order Now",
+          "image": null,
+          "link_url": "https://www.pizzahut.com/deals/MEAL591R3?utm_source=metaasc&utm_campaign=103tcap&utm_medium=paidsoc&utm_term=2011R2012R",
+          "title": "Choose Your $10.99 Lg 3 Top",
+          "video": null
+        }
+      ]
     },
     {
       "id": "29284377127815326",
@@ -225,12 +368,25 @@
       "link_url": "https://www.pizzahut.com/deals/MEAL505TT?utm_source=metaasc&utm_campaign=ttbcap&utm_medium=paidsoc&utm_term=40114012",
       "link_title": "Gameday starts with HUT!",
       "cta_text": "Order Now",
+      "link_caption": "PIZZAHUT.COM",
       "images": [
         "https://scontent-lax3-2.xx.fbcdn.net/v/t39.35426-6/809586976_1188294800524560_2427865775856039197_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=106&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=iVCFqMz2NNMQ7kNvwEc3v5B&_nc_oc=AdoGUw_4-L3VqYn7ZERMs4GpilgRx8_SApg7iuV-jBDygFwsggN78-GIk27Ka6aH2zA&_nc_zt=14&_nc_ht=scontent-lax3-2.xx&_nc_gid=hPt9sgAJBvvspmIwUAJLoA&_nc_ss=7b289&oh=00_AQQdnrBwFPitel8gDoZChty7_74S3zoSGTCtYbnh8zzt4Q&oe=6AF76774"
       ],
       "has_video": false,
       "same_creative_count": 0,
-      "multiple_versions": false
+      "multiple_versions": false,
+      "cta_type": "ORDER_NOW",
+      "display_format": "image",
+      "cards": [
+        {
+          "body": "Josh Allen’s fave play call!🍕 Get 2 pizzas, breadsticks and dessert with the Triple Treat Box®. Upgrade with PEPSI.",
+          "cta": "Order Now",
+          "image": "https://scontent-lax3-2.xx.fbcdn.net/v/t39.35426-6/809586976_1188294800524560_2427865775856039197_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=106&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=iVCFqMz2NNMQ7kNvwEc3v5B&_nc_oc=AdoGUw_4-L3VqYn7ZERMs4GpilgRx8_SApg7iuV-jBDygFwsggN78-GIk27Ka6aH2zA&_nc_zt=14&_nc_ht=scontent-lax3-2.xx&_nc_gid=hPt9sgAJBvvspmIwUAJLoA&_nc_ss=7b289&oh=00_AQQdnrBwFPitel8gDoZChty7_74S3zoSGTCtYbnh8zzt4Q&oe=6AF76774",
+          "link_url": "https://www.pizzahut.com/deals/MEAL505TT?utm_source=metaasc&utm_campaign=ttbcap&utm_medium=paidsoc&utm_term=40114012",
+          "title": "Gameday starts with HUT!",
+          "video": null
+        }
+      ]
     },
     {
       "id": "1586021989328528",
@@ -245,10 +401,23 @@
       "link_url": "https://www.pizzahut.com/deals/MEAL505TT?utm_source=meta&utm_campaign=cns&utm_medium=partner&utm_co%E2%80%A6",
       "link_title": "Triple Treat Box With Pizza Hut!",
       "cta_text": "Learn more",
+      "link_caption": "PIZZAHUT.COM",
       "images": [],
       "has_video": false,
       "same_creative_count": 0,
-      "multiple_versions": true
+      "multiple_versions": true,
+      "cta_type": "LEARN_MORE",
+      "display_format": "",
+      "cards": [
+        {
+          "body": "#PizzaHut\\_Partner From plain grass to gameday! We surprised the local teams with a brand-new field for their season. Get ready for gameday with Pizza Hut's Triple Treat Box Gameday Edition and a Pepsi! @pizzahut @pepsi #sbmowing\n0:00 / 0:00",
+          "cta": "Learn more",
+          "image": null,
+          "link_url": "https://www.pizzahut.com/deals/MEAL505TT?utm_source=meta&utm_campaign=cns&utm_medium=partner&utm_co%E2%80%A6",
+          "title": "Triple Treat Box With Pizza Hut!",
+          "video": null
+        }
+      ]
     },
     {
       "id": "1391646059403817",
@@ -263,10 +432,23 @@
       "link_url": "https://www.pizzahut.com/?utm_source=ignite&utm_medium=social&utm_campaign=staab",
       "link_title": "Carryout 🍕 Special No One OutPizzas The Hut",
       "cta_text": "Get Offer",
+      "link_caption": "PIZZAHUT.COM",
       "images": [],
       "has_video": false,
       "same_creative_count": 0,
-      "multiple_versions": true
+      "multiple_versions": true,
+      "cta_type": "GET_OFFER",
+      "display_format": "",
+      "cards": [
+        {
+          "body": "Satisfy your cravings with our best deal - a large pizza for just $9.99!\n0:00 / 0:00",
+          "cta": "Get Offer",
+          "image": null,
+          "link_url": "https://www.pizzahut.com/?utm_source=ignite&utm_medium=social&utm_campaign=staab",
+          "title": "Carryout 🍕 Special No One OutPizzas The Hut",
+          "video": null
+        }
+      ]
     },
     {
       "id": "2151360849069103",
@@ -281,12 +463,25 @@
       "link_url": "https://www.pizzahut.com/deals/MEAL505TT?utm_source=metaasc&utm_campaign=ttbcap&utm_medium=paidsoc&utm_term=40134014",
       "link_title": "Ready to Win Gameday?",
       "cta_text": "Order Now",
+      "link_caption": "PIZZAHUT.COM",
       "images": [
         "https://scontent-lax3-2.xx.fbcdn.net/v/t39.35426-6/817519974_945092804786869_8937789318892054549_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=111&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=-kfRgmyH1zEQ7kNvwG37Med&_nc_oc=AdoMwGsgetlgaFtGOtFOuyeTOBFvGqOGrq0dXJY0dNQT0Q3N82awYZc-8tYeOrg6F-c&_nc_zt=14&_nc_ht=scontent-lax3-2.xx&_nc_gid=hPt9sgAJBvvspmIwUAJLoA&_nc_ss=7b289&oh=00_AQSNQSYWi19fKJodVzY9-kkNkpwyZ6WfWBYbR2pk2_xBjg&oe=6AF761BA"
       ],
       "has_video": false,
       "same_creative_count": 0,
-      "multiple_versions": false
+      "multiple_versions": false,
+      "cta_type": "ORDER_NOW",
+      "display_format": "image",
+      "cards": [
+        {
+          "body": "Feed your watch party like a pro: 2 pizzas, breadsticks + dessert with the Triple Treat Box®. Gameday starts with the HUT!",
+          "cta": "Order Now",
+          "image": "https://scontent-lax3-2.xx.fbcdn.net/v/t39.35426-6/817519974_945092804786869_8937789318892054549_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=111&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=-kfRgmyH1zEQ7kNvwG37Med&_nc_oc=AdoMwGsgetlgaFtGOtFOuyeTOBFvGqOGrq0dXJY0dNQT0Q3N82awYZc-8tYeOrg6F-c&_nc_zt=14&_nc_ht=scontent-lax3-2.xx&_nc_gid=hPt9sgAJBvvspmIwUAJLoA&_nc_ss=7b289&oh=00_AQSNQSYWi19fKJodVzY9-kkNkpwyZ6WfWBYbR2pk2_xBjg&oe=6AF761BA",
+          "link_url": "https://www.pizzahut.com/deals/MEAL505TT?utm_source=metaasc&utm_campaign=ttbcap&utm_medium=paidsoc&utm_term=40134014",
+          "title": "Ready to Win Gameday?",
+          "video": null
+        }
+      ]
     },
     {
       "id": "1312746507487028",
@@ -301,12 +496,25 @@
       "link_url": "https://auniva.co/products/amla-192011/",
       "link_title": "Feel Like Yourself Again \"This actually worked, thank you so much.\" - Emily T.",
       "cta_text": "Learn more",
+      "link_caption": "AUNIVA.CO",
       "images": [
         "https://scontent-lax3-2.xx.fbcdn.net/v/t39.35426-6/843300117_2264725811035928_7179850766497404886_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=100&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=HSi7q_6AV2AQ7kNvwFZVi1P&_nc_oc=AdpRkJRToOVyVT4Jd-DQc-B_9iG2ACcEhT-ZAQ6tsGwAeusX5i9y4NS2nuLlOM64Sq0&_nc_zt=14&_nc_ht=scontent-lax3-2.xx&_nc_gid=hPt9sgAJBvvspmIwUAJLoA&_nc_ss=7b289&oh=00_AQQ9YjWbW21KVPXDKU7WRN47trc--co6i__vl-caXYGYMA&oe=6AF75690"
       ],
       "has_video": false,
       "same_creative_count": 8,
-      "multiple_versions": true
+      "multiple_versions": true,
+      "cta_type": "LEARN_MORE",
+      "display_format": "image",
+      "cards": [
+        {
+          "body": "I almost didn't go to my granddaughter's piano recital.\nShe's 7 years old. Her name is Amaya. She has been practicing the same Beethoven piece for 4 months on the upright in her mother's living room, the one with the sticky middle C, and she was going to play it in front of 60 people in the auditorium at Springhill Elementary on a Thursday night in March, and her grandmother almost stayed home.\nI sat in my bedroom in my best blue dress with my purse on my lap and I told my husband Cornell to go on without me. He turned around in the doorway with his tie half knotted and he said, \"Loretta. What are you doing.\"\nI said, \"My pressure is up. I can feel it. I don't want to make a scene.\"\nHe looked at me for a long time. Then he said, \"Loretta. She's going to look for you in that crowd.\"\nAnd I sat on the edge of the bed and I cried.\nBecause I was 63 years old and I was scared to sit in an auditorium full of people for 90 minutes because I was afraid my body was going to embarrass me in front of my own grandbaby.\nMy name is Loretta. I live in Mobile, Alabama, off Spring Hill Avenue, in the same little brick house Cornell and I bought in 1991 when our oldest was 4. I worked 31 years as a k…",
+          "cta": "Learn more",
+          "image": "https://scontent-lax3-2.xx.fbcdn.net/v/t39.35426-6/843300117_2264725811035928_7179850766497404886_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=100&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=HSi7q_6AV2AQ7kNvwFZVi1P&_nc_oc=AdpRkJRToOVyVT4Jd-DQc-B_9iG2ACcEhT-ZAQ6tsGwAeusX5i9y4NS2nuLlOM64Sq0&_nc_zt=14&_nc_ht=scontent-lax3-2.xx&_nc_gid=hPt9sgAJBvvspmIwUAJLoA&_nc_ss=7b289&oh=00_AQQ9YjWbW21KVPXDKU7WRN47trc--co6i__vl-caXYGYMA&oe=6AF75690",
+          "link_url": "https://auniva.co/products/amla-192011/",
+          "title": "Feel Like Yourself Again \"This actually worked, thank you so much.\" - Emily T.",
+          "video": null
+        }
+      ]
     },
     {
       "id": "1075884852168395",
@@ -321,10 +529,23 @@
       "link_url": "https://www.pizzahut.com/?utm_source=ignite&utm_medium=social&utm_campaign=ph%20of%20america%20north%20carolina",
       "link_title": "New Wing Combos! Feed Good Times",
       "cta_text": "Get Offer",
+      "link_caption": "",
       "images": [],
       "has_video": false,
       "same_creative_count": 0,
-      "multiple_versions": true
+      "multiple_versions": true,
+      "cta_type": "GET_OFFER",
+      "display_format": "",
+      "cards": [
+        {
+          "body": "Mix, match, devour! 🍕 Get 6 wings, a 2-top personal pan pizza or melt + fries or more wings—starting at just $6.99. Who’s hungry? 😋\n0:00 / 0:00",
+          "cta": "Get Offer",
+          "image": null,
+          "link_url": "https://www.pizzahut.com/?utm_source=ignite&utm_medium=social&utm_campaign=ph%20of%20america%20north%20carolina",
+          "title": "New Wing Combos! Feed Good Times",
+          "video": null
+        }
+      ]
     },
     {
       "id": "1638768743803926",
@@ -339,10 +560,23 @@
       "link_url": "https://www.pizzahut.com/deals/MEAL505TT?utm_source=metaasc&utm_campaign=ttbcap&utm_medium=paidsoc&utm_term=40194020",
       "link_title": "Ultimate Gameday Spread",
       "cta_text": "Order Now",
+      "link_caption": "PIZZAHUT.COM",
       "images": [],
       "has_video": false,
       "same_creative_count": 6,
-      "multiple_versions": true
+      "multiple_versions": true,
+      "cta_type": "ORDER_NOW",
+      "display_format": "",
+      "cards": [
+        {
+          "body": "Josh Allen approved.🏈 Get 2 pizzas, breadsticks, dessert in the Triple Treat Box® + PEPSI! Gameday starts with HUT!\n0:00 / 0:00",
+          "cta": "Order Now",
+          "image": null,
+          "link_url": "https://www.pizzahut.com/deals/MEAL505TT?utm_source=metaasc&utm_campaign=ttbcap&utm_medium=paidsoc&utm_term=40194020",
+          "title": "Ultimate Gameday Spread",
+          "video": null
+        }
+      ]
     },
     {
       "id": "1011504988151853",
@@ -357,10 +591,23 @@
       "link_url": "https://www.pizzahut.com/?utm_source=ignite&utm_medium=social&utm_campaign=staab",
       "link_title": "All The Favorites Feed Good Times",
       "cta_text": "Get Offer",
+      "link_caption": "PIZZAHUT.COM",
       "images": [],
       "has_video": false,
       "same_creative_count": 2,
-      "multiple_versions": true
+      "multiple_versions": true,
+      "cta_type": "GET_OFFER",
+      "display_format": "",
+      "cards": [
+        {
+          "body": "🍕🍗 Big Dinner Box = Big Flavor! Get 2 medium 1-topping pizzas, 5 breadsticks and 8 boneless wings. Order now!\n0:00 / 0:00",
+          "cta": "Get Offer",
+          "image": null,
+          "link_url": "https://www.pizzahut.com/?utm_source=ignite&utm_medium=social&utm_campaign=staab",
+          "title": "All The Favorites Feed Good Times",
+          "video": null
+        }
+      ]
     },
     {
       "id": "1153363827373582",
@@ -375,12 +622,25 @@
       "link_url": "https://www.pizzahut.com/?utm_source=ignite&utm_medium=social&utm_campaign=ph%20of%20america%20north%20carolina",
       "link_title": "New Wing Combos! Feed Good Times",
       "cta_text": "Get Offer",
+      "link_caption": "",
       "images": [
         "https://scontent-lax3-1.xx.fbcdn.net/v/t39.35426-6/709410861_2055863675324248_8457122354397185696_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=104&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=7Vzz7z3CcQUQ7kNvwEZ7zm8&_nc_oc=Adpl5d-nkBPHPYM01OUGMC9kekhhKsmv85TbLHfMPum0Z7UumBPIy-M9muPUwuK_ks4&_nc_zt=14&_nc_ht=scontent-lax3-1.xx&_nc_gid=hPt9sgAJBvvspmIwUAJLoA&_nc_ss=7b289&oh=00_AQSwCJIOq09G_UHoGnYd7YDvcJ_0r0gvd5JSuXorx4jTmQ&oe=6AF7488C"
       ],
       "has_video": false,
       "same_creative_count": 0,
-      "multiple_versions": true
+      "multiple_versions": true,
+      "cta_type": "GET_OFFER",
+      "display_format": "image",
+      "cards": [
+        {
+          "body": "Mix, match, devour! 🍕 Get 6 wings, a 2-top personal pan pizza or melt + fries or more wings—starting at just $6.99. Who’s hungry? 😋",
+          "cta": "Get Offer",
+          "image": "https://scontent-lax3-1.xx.fbcdn.net/v/t39.35426-6/709410861_2055863675324248_8457122354397185696_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=104&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=7Vzz7z3CcQUQ7kNvwEZ7zm8&_nc_oc=Adpl5d-nkBPHPYM01OUGMC9kekhhKsmv85TbLHfMPum0Z7UumBPIy-M9muPUwuK_ks4&_nc_zt=14&_nc_ht=scontent-lax3-1.xx&_nc_gid=hPt9sgAJBvvspmIwUAJLoA&_nc_ss=7b289&oh=00_AQSwCJIOq09G_UHoGnYd7YDvcJ_0r0gvd5JSuXorx4jTmQ&oe=6AF7488C",
+          "link_url": "https://www.pizzahut.com/?utm_source=ignite&utm_medium=social&utm_campaign=ph%20of%20america%20north%20carolina",
+          "title": "New Wing Combos! Feed Good Times",
+          "video": null
+        }
+      ]
     }
   ],
   "advertiser_search": [
@@ -397,10 +657,23 @@
       "link_url": "https://www.pizzahut.com/?utm_source=ignite&utm_medium=social&utm_campaign=celebration",
       "link_title": "Lucky 7 Feed Good Times",
       "cta_text": "Get Offer",
+      "link_caption": "PIZZAHUT.COM",
       "images": [],
       "has_video": false,
       "same_creative_count": 0,
-      "multiple_versions": true
+      "multiple_versions": true,
+      "cta_type": "GET_OFFER",
+      "display_format": "",
+      "cards": [
+        {
+          "body": "Lucky you - Pizza Hut's $7 Deal Lover's menu is here! Mix and match your faves when you buy 2 or more! Let's eat!\n0:00 / 0:00",
+          "cta": "Get Offer",
+          "image": null,
+          "link_url": "https://www.pizzahut.com/?utm_source=ignite&utm_medium=social&utm_campaign=celebration",
+          "title": "Lucky 7 Feed Good Times",
+          "video": null
+        }
+      ]
     },
     {
       "id": "1889663822399293",
@@ -415,12 +688,25 @@
       "link_url": "https://www.pizzahut.com/deals/MEAL591R3?utm_source=metaasc&utm_campaign=103tcap&utm_medium=paidsoc&utm_term=2001R2002R",
       "link_title": "Large ANY 3-Topping Pizza",
       "cta_text": "Order Now",
+      "link_caption": "PIZZAHUT.COM",
       "images": [
         "https://scontent-lax3-2.xx.fbcdn.net/v/t39.35426-6/851101854_1103513645732616_5010575795386352030_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=107&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=rAI_7fFEEpoQ7kNvwF2UWtd&_nc_oc=AdqH_XcjAHp_U-ntaFjaMZGB_qNOihsvNVl2UIt3l_DwChNWoSV-OR_hvh5p-_oKy0g&_nc_zt=14&_nc_ht=scontent-lax3-2.xx&_nc_gid=hPt9sgAJBvvspmIwUAJLoA&_nc_ss=7b289&oh=00_AQTuFIrmhiZoiO3fjjZ-TZZwF_ph9DGBY--_lVpPuV8FVg&oe=6AF74B3F"
       ],
       "has_video": false,
       "same_creative_count": 0,
-      "multiple_versions": true
+      "multiple_versions": true,
+      "cta_type": "ORDER_NOW",
+      "display_format": "image",
+      "cards": [
+        {
+          "body": "Everybody wins with the $10.99 Large ANY 3-Topping Pizza from Pizza Hut®. Pick 3 toppings and get your choice of Hut Crust™.",
+          "cta": "Order Now",
+          "image": "https://scontent-lax3-2.xx.fbcdn.net/v/t39.35426-6/851101854_1103513645732616_5010575795386352030_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=107&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=rAI_7fFEEpoQ7kNvwF2UWtd&_nc_oc=AdqH_XcjAHp_U-ntaFjaMZGB_qNOihsvNVl2UIt3l_DwChNWoSV-OR_hvh5p-_oKy0g&_nc_zt=14&_nc_ht=scontent-lax3-2.xx&_nc_gid=hPt9sgAJBvvspmIwUAJLoA&_nc_ss=7b289&oh=00_AQTuFIrmhiZoiO3fjjZ-TZZwF_ph9DGBY--_lVpPuV8FVg&oe=6AF74B3F",
+          "link_url": "https://www.pizzahut.com/deals/MEAL591R3?utm_source=metaasc&utm_campaign=103tcap&utm_medium=paidsoc&utm_term=2001R2002R",
+          "title": "Large ANY 3-Topping Pizza",
+          "video": null
+        }
+      ]
     },
     {
       "id": "1803216427686851",
@@ -435,12 +721,25 @@
       "link_url": "https://www.pizzahut.com/deals/MEAL505TT?utm_source=metaasc&utm_campaign=ttbcap&utm_medium=paidsoc&utm_term=40094010",
       "link_title": "Feed Your Whole Roster",
       "cta_text": "Order Now",
+      "link_caption": "PIZZAHUT.COM",
       "images": [
         "https://scontent-lax3-1.xx.fbcdn.net/v/t39.35426-6/820336333_1352465713358540_67093363525777895_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=104&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=AMT002Jw16kQ7kNvwGes9SA&_nc_oc=Ado-m4PjvnlJJ6vKIBb6ey6cRUXSwZnSeV3uDM4nKUtqy1WVmLsTtnyEcqZyjiQhxE4&_nc_zt=14&_nc_ht=scontent-lax3-1.xx&_nc_gid=hPt9sgAJBvvspmIwUAJLoA&_nc_ss=7b289&oh=00_AQQMxq3Ob8bjR7O-JfvERGZFZyIuBBmLbm9ZASQWIbRj4w&oe=6AF74A72"
       ],
       "has_video": false,
       "same_creative_count": 0,
-      "multiple_versions": true
+      "multiple_versions": true,
+      "cta_type": "ORDER_NOW",
+      "display_format": "image",
+      "cards": [
+        {
+          "body": "The best HUT you’ll call all season is the Triple Treat Box® Gameday Edition 🏈 Get 2 pizzas, breadsticks and dessert.",
+          "cta": "Order Now",
+          "image": "https://scontent-lax3-1.xx.fbcdn.net/v/t39.35426-6/820336333_1352465713358540_67093363525777895_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=104&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=AMT002Jw16kQ7kNvwGes9SA&_nc_oc=Ado-m4PjvnlJJ6vKIBb6ey6cRUXSwZnSeV3uDM4nKUtqy1WVmLsTtnyEcqZyjiQhxE4&_nc_zt=14&_nc_ht=scontent-lax3-1.xx&_nc_gid=hPt9sgAJBvvspmIwUAJLoA&_nc_ss=7b289&oh=00_AQQMxq3Ob8bjR7O-JfvERGZFZyIuBBmLbm9ZASQWIbRj4w&oe=6AF74A72",
+          "link_url": "https://www.pizzahut.com/deals/MEAL505TT?utm_source=metaasc&utm_campaign=ttbcap&utm_medium=paidsoc&utm_term=40094010",
+          "title": "Feed Your Whole Roster",
+          "video": null
+        }
+      ]
     },
     {
       "id": "2318980705558137",
@@ -455,10 +754,23 @@
       "link_url": "https://www.pizzahut.com/deals/MEAL505TT?utm_source=metaasc&utm_campaign=ttbcap&utm_medium=paidsoc&utm_term=40154016",
       "link_title": "Gameday starts with the HUT!",
       "cta_text": "Order Now",
+      "link_caption": "PIZZAHUT.COM",
       "images": [],
       "has_video": false,
       "same_creative_count": 0,
-      "multiple_versions": true
+      "multiple_versions": true,
+      "cta_type": "ORDER_NOW",
+      "display_format": "",
+      "cards": [
+        {
+          "body": "Josh Allen’s #1 rule: Gameday starts with the Hut! Feed your team with the Triple Treat Box® Gameday Edition for $21.99. \n0:00 / 0:00",
+          "cta": "Order Now",
+          "image": null,
+          "link_url": "https://www.pizzahut.com/deals/MEAL505TT?utm_source=metaasc&utm_campaign=ttbcap&utm_medium=paidsoc&utm_term=40154016",
+          "title": "Gameday starts with the HUT!",
+          "video": null
+        }
+      ]
     },
     {
       "id": "2227094194533197",
@@ -473,12 +785,25 @@
       "link_url": "https://www.pizzahut.com/deals/MEAL591R3?utm_source=metaasc&utm_campaign=103tcap&utm_medium=paidsoc&utm_term=2003R2004R",
       "link_title": "Get a Lrg ANY 3-Top",
       "cta_text": "Order Now",
+      "link_caption": "PIZZAHUT.COM",
       "images": [
         "https://scontent-lax7-1.xx.fbcdn.net/v/t39.35426-6/851722239_2869656893408432_6040652465501541658_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=105&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=AcDcpieKEM4Q7kNvwGZ9qVj&_nc_oc=AdqiR3QOC0iI2Frl0DIWf5IpPNEAs4eZET-3aYOBhyoCQA27wlLcm42SExa6hscPjvw&_nc_zt=14&_nc_ht=scontent-lax7-1.xx&_nc_gid=hPt9sgAJBvvspmIwUAJLoA&_nc_ss=7b289&oh=00_AQQiY7eWUKDWrKzrewYOFWWhU7YPU_4H9_PA0Km7_QYlWg&oe=6AF7571B"
       ],
       "has_video": false,
       "same_creative_count": 0,
-      "multiple_versions": true
+      "multiple_versions": true,
+      "cta_type": "ORDER_NOW",
+      "display_format": "image",
+      "cards": [
+        {
+          "body": "A dinner everyone can agree on: the $10.99 Large ANY 3-Topping Pizza with your choice of Hut Crust™ and 3 favorite toppings.",
+          "cta": "Order Now",
+          "image": "https://scontent-lax7-1.xx.fbcdn.net/v/t39.35426-6/851722239_2869656893408432_6040652465501541658_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=105&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=AcDcpieKEM4Q7kNvwGZ9qVj&_nc_oc=AdqiR3QOC0iI2Frl0DIWf5IpPNEAs4eZET-3aYOBhyoCQA27wlLcm42SExa6hscPjvw&_nc_zt=14&_nc_ht=scontent-lax7-1.xx&_nc_gid=hPt9sgAJBvvspmIwUAJLoA&_nc_ss=7b289&oh=00_AQQiY7eWUKDWrKzrewYOFWWhU7YPU_4H9_PA0Km7_QYlWg&oe=6AF7571B",
+          "link_url": "https://www.pizzahut.com/deals/MEAL591R3?utm_source=metaasc&utm_campaign=103tcap&utm_medium=paidsoc&utm_term=2003R2004R",
+          "title": "Get a Lrg ANY 3-Top",
+          "video": null
+        }
+      ]
     },
     {
       "id": "4543635325964297",
@@ -493,10 +818,23 @@
       "link_url": "https://www.pizzahut.com/deals/MEAL591R3?utm_source=metaasc&utm_campaign=103tcap&utm_medium=paidsoc&utm_term=2011R2012R",
       "link_title": "Choose Your $10.99 Lg 3 Top",
       "cta_text": "Order Now",
+      "link_caption": "PIZZAHUT.COM",
       "images": [],
       "has_video": false,
       "same_creative_count": 0,
-      "multiple_versions": true
+      "multiple_versions": true,
+      "cta_type": "ORDER_NOW",
+      "display_format": "",
+      "cards": [
+        {
+          "body": "Get the whole watch party fired up with their favorite 3 toppings and choice of large Hut Crust™ for $10.99. Only at the Hut®!\n0:00 / 0:00",
+          "cta": "Order Now",
+          "image": null,
+          "link_url": "https://www.pizzahut.com/deals/MEAL591R3?utm_source=metaasc&utm_campaign=103tcap&utm_medium=paidsoc&utm_term=2011R2012R",
+          "title": "Choose Your $10.99 Lg 3 Top",
+          "video": null
+        }
+      ]
     },
     {
       "id": "29284377127815326",
@@ -511,12 +849,25 @@
       "link_url": "https://www.pizzahut.com/deals/MEAL505TT?utm_source=metaasc&utm_campaign=ttbcap&utm_medium=paidsoc&utm_term=40114012",
       "link_title": "Gameday starts with HUT!",
       "cta_text": "Order Now",
+      "link_caption": "PIZZAHUT.COM",
       "images": [
         "https://scontent-lax3-2.xx.fbcdn.net/v/t39.35426-6/809586976_1188294800524560_2427865775856039197_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=106&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=iVCFqMz2NNMQ7kNvwEc3v5B&_nc_oc=AdoGUw_4-L3VqYn7ZERMs4GpilgRx8_SApg7iuV-jBDygFwsggN78-GIk27Ka6aH2zA&_nc_zt=14&_nc_ht=scontent-lax3-2.xx&_nc_gid=hPt9sgAJBvvspmIwUAJLoA&_nc_ss=7b289&oh=00_AQQdnrBwFPitel8gDoZChty7_74S3zoSGTCtYbnh8zzt4Q&oe=6AF76774"
       ],
       "has_video": false,
       "same_creative_count": 0,
-      "multiple_versions": false
+      "multiple_versions": false,
+      "cta_type": "ORDER_NOW",
+      "display_format": "image",
+      "cards": [
+        {
+          "body": "Josh Allen’s fave play call!🍕 Get 2 pizzas, breadsticks and dessert with the Triple Treat Box®. Upgrade with PEPSI.",
+          "cta": "Order Now",
+          "image": "https://scontent-lax3-2.xx.fbcdn.net/v/t39.35426-6/809586976_1188294800524560_2427865775856039197_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=106&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=iVCFqMz2NNMQ7kNvwEc3v5B&_nc_oc=AdoGUw_4-L3VqYn7ZERMs4GpilgRx8_SApg7iuV-jBDygFwsggN78-GIk27Ka6aH2zA&_nc_zt=14&_nc_ht=scontent-lax3-2.xx&_nc_gid=hPt9sgAJBvvspmIwUAJLoA&_nc_ss=7b289&oh=00_AQQdnrBwFPitel8gDoZChty7_74S3zoSGTCtYbnh8zzt4Q&oe=6AF76774",
+          "link_url": "https://www.pizzahut.com/deals/MEAL505TT?utm_source=metaasc&utm_campaign=ttbcap&utm_medium=paidsoc&utm_term=40114012",
+          "title": "Gameday starts with HUT!",
+          "video": null
+        }
+      ]
     },
     {
       "id": "1391646059403817",
@@ -531,10 +882,23 @@
       "link_url": "https://www.pizzahut.com/?utm_source=ignite&utm_medium=social&utm_campaign=staab",
       "link_title": "Carryout 🍕 Special No One OutPizzas The Hut",
       "cta_text": "Get Offer",
+      "link_caption": "PIZZAHUT.COM",
       "images": [],
       "has_video": false,
       "same_creative_count": 0,
-      "multiple_versions": true
+      "multiple_versions": true,
+      "cta_type": "GET_OFFER",
+      "display_format": "",
+      "cards": [
+        {
+          "body": "Satisfy your cravings with our best deal - a large pizza for just $9.99!\n0:00 / 0:00",
+          "cta": "Get Offer",
+          "image": null,
+          "link_url": "https://www.pizzahut.com/?utm_source=ignite&utm_medium=social&utm_campaign=staab",
+          "title": "Carryout 🍕 Special No One OutPizzas The Hut",
+          "video": null
+        }
+      ]
     },
     {
       "id": "2151360849069103",
@@ -549,12 +913,25 @@
       "link_url": "https://www.pizzahut.com/deals/MEAL505TT?utm_source=metaasc&utm_campaign=ttbcap&utm_medium=paidsoc&utm_term=40134014",
       "link_title": "Ready to Win Gameday?",
       "cta_text": "Order Now",
+      "link_caption": "PIZZAHUT.COM",
       "images": [
         "https://scontent-lax3-2.xx.fbcdn.net/v/t39.35426-6/817519974_945092804786869_8937789318892054549_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=111&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=-kfRgmyH1zEQ7kNvwG37Med&_nc_oc=AdoMwGsgetlgaFtGOtFOuyeTOBFvGqOGrq0dXJY0dNQT0Q3N82awYZc-8tYeOrg6F-c&_nc_zt=14&_nc_ht=scontent-lax3-2.xx&_nc_gid=hPt9sgAJBvvspmIwUAJLoA&_nc_ss=7b289&oh=00_AQSNQSYWi19fKJodVzY9-kkNkpwyZ6WfWBYbR2pk2_xBjg&oe=6AF761BA"
       ],
       "has_video": false,
       "same_creative_count": 0,
-      "multiple_versions": false
+      "multiple_versions": false,
+      "cta_type": "ORDER_NOW",
+      "display_format": "image",
+      "cards": [
+        {
+          "body": "Feed your watch party like a pro: 2 pizzas, breadsticks + dessert with the Triple Treat Box®. Gameday starts with the HUT!",
+          "cta": "Order Now",
+          "image": "https://scontent-lax3-2.xx.fbcdn.net/v/t39.35426-6/817519974_945092804786869_8937789318892054549_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=111&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=-kfRgmyH1zEQ7kNvwG37Med&_nc_oc=AdoMwGsgetlgaFtGOtFOuyeTOBFvGqOGrq0dXJY0dNQT0Q3N82awYZc-8tYeOrg6F-c&_nc_zt=14&_nc_ht=scontent-lax3-2.xx&_nc_gid=hPt9sgAJBvvspmIwUAJLoA&_nc_ss=7b289&oh=00_AQSNQSYWi19fKJodVzY9-kkNkpwyZ6WfWBYbR2pk2_xBjg&oe=6AF761BA",
+          "link_url": "https://www.pizzahut.com/deals/MEAL505TT?utm_source=metaasc&utm_campaign=ttbcap&utm_medium=paidsoc&utm_term=40134014",
+          "title": "Ready to Win Gameday?",
+          "video": null
+        }
+      ]
     },
     {
       "id": "1075884852168395",
@@ -569,10 +946,23 @@
       "link_url": "https://www.pizzahut.com/?utm_source=ignite&utm_medium=social&utm_campaign=ph%20of%20america%20north%20carolina",
       "link_title": "New Wing Combos! Feed Good Times",
       "cta_text": "Get Offer",
+      "link_caption": "",
       "images": [],
       "has_video": false,
       "same_creative_count": 0,
-      "multiple_versions": true
+      "multiple_versions": true,
+      "cta_type": "GET_OFFER",
+      "display_format": "",
+      "cards": [
+        {
+          "body": "Mix, match, devour! 🍕 Get 6 wings, a 2-top personal pan pizza or melt + fries or more wings—starting at just $6.99. Who’s hungry? 😋\n0:00 / 0:00",
+          "cta": "Get Offer",
+          "image": null,
+          "link_url": "https://www.pizzahut.com/?utm_source=ignite&utm_medium=social&utm_campaign=ph%20of%20america%20north%20carolina",
+          "title": "New Wing Combos! Feed Good Times",
+          "video": null
+        }
+      ]
     },
     {
       "id": "1638768743803926",
@@ -587,10 +977,23 @@
       "link_url": "https://www.pizzahut.com/deals/MEAL505TT?utm_source=metaasc&utm_campaign=ttbcap&utm_medium=paidsoc&utm_term=40194020",
       "link_title": "Ultimate Gameday Spread",
       "cta_text": "Order Now",
+      "link_caption": "PIZZAHUT.COM",
       "images": [],
       "has_video": false,
       "same_creative_count": 6,
-      "multiple_versions": true
+      "multiple_versions": true,
+      "cta_type": "ORDER_NOW",
+      "display_format": "",
+      "cards": [
+        {
+          "body": "Josh Allen approved.🏈 Get 2 pizzas, breadsticks, dessert in the Triple Treat Box® + PEPSI! Gameday starts with HUT!\n0:00 / 0:00",
+          "cta": "Order Now",
+          "image": null,
+          "link_url": "https://www.pizzahut.com/deals/MEAL505TT?utm_source=metaasc&utm_campaign=ttbcap&utm_medium=paidsoc&utm_term=40194020",
+          "title": "Ultimate Gameday Spread",
+          "video": null
+        }
+      ]
     },
     {
       "id": "1011504988151853",
@@ -605,10 +1008,23 @@
       "link_url": "https://www.pizzahut.com/?utm_source=ignite&utm_medium=social&utm_campaign=staab",
       "link_title": "All The Favorites Feed Good Times",
       "cta_text": "Get Offer",
+      "link_caption": "PIZZAHUT.COM",
       "images": [],
       "has_video": false,
       "same_creative_count": 2,
-      "multiple_versions": true
+      "multiple_versions": true,
+      "cta_type": "GET_OFFER",
+      "display_format": "",
+      "cards": [
+        {
+          "body": "🍕🍗 Big Dinner Box = Big Flavor! Get 2 medium 1-topping pizzas, 5 breadsticks and 8 boneless wings. Order now!\n0:00 / 0:00",
+          "cta": "Get Offer",
+          "image": null,
+          "link_url": "https://www.pizzahut.com/?utm_source=ignite&utm_medium=social&utm_campaign=staab",
+          "title": "All The Favorites Feed Good Times",
+          "video": null
+        }
+      ]
     },
     {
       "id": "1153363827373582",
@@ -623,12 +1039,25 @@
       "link_url": "https://www.pizzahut.com/?utm_source=ignite&utm_medium=social&utm_campaign=ph%20of%20america%20north%20carolina",
       "link_title": "New Wing Combos! Feed Good Times",
       "cta_text": "Get Offer",
+      "link_caption": "",
       "images": [
         "https://scontent-lax3-1.xx.fbcdn.net/v/t39.35426-6/709410861_2055863675324248_8457122354397185696_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=104&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=7Vzz7z3CcQUQ7kNvwEZ7zm8&_nc_oc=Adpl5d-nkBPHPYM01OUGMC9kekhhKsmv85TbLHfMPum0Z7UumBPIy-M9muPUwuK_ks4&_nc_zt=14&_nc_ht=scontent-lax3-1.xx&_nc_gid=hPt9sgAJBvvspmIwUAJLoA&_nc_ss=7b289&oh=00_AQSwCJIOq09G_UHoGnYd7YDvcJ_0r0gvd5JSuXorx4jTmQ&oe=6AF7488C"
       ],
       "has_video": false,
       "same_creative_count": 0,
-      "multiple_versions": true
+      "multiple_versions": true,
+      "cta_type": "GET_OFFER",
+      "display_format": "image",
+      "cards": [
+        {
+          "body": "Mix, match, devour! 🍕 Get 6 wings, a 2-top personal pan pizza or melt + fries or more wings—starting at just $6.99. Who’s hungry? 😋",
+          "cta": "Get Offer",
+          "image": "https://scontent-lax3-1.xx.fbcdn.net/v/t39.35426-6/709410861_2055863675324248_8457122354397185696_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=104&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=7Vzz7z3CcQUQ7kNvwEZ7zm8&_nc_oc=Adpl5d-nkBPHPYM01OUGMC9kekhhKsmv85TbLHfMPum0Z7UumBPIy-M9muPUwuK_ks4&_nc_zt=14&_nc_ht=scontent-lax3-1.xx&_nc_gid=hPt9sgAJBvvspmIwUAJLoA&_nc_ss=7b289&oh=00_AQSwCJIOq09G_UHoGnYd7YDvcJ_0r0gvd5JSuXorx4jTmQ&oe=6AF7488C",
+          "link_url": "https://www.pizzahut.com/?utm_source=ignite&utm_medium=social&utm_campaign=ph%20of%20america%20north%20carolina",
+          "title": "New Wing Combos! Feed Good Times",
+          "video": null
+        }
+      ]
     },
     {
       "id": "1520796183191984",
@@ -643,12 +1072,25 @@
       "link_url": "https://www.pizzahut.com/deals/MEAL591R3?utm_source=metaasc&utm_campaign=103tcap&utm_medium=paidsoc&utm_term=2005R2006R",
       "link_title": "Large ANY 3-Top Pizza",
       "cta_text": "Order Now",
+      "link_caption": "PIZZAHUT.COM",
       "images": [
         "https://scontent-lax3-1.xx.fbcdn.net/v/t39.35426-6/849352982_4729727280582122_4438513689438837852_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=102&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=C8zYPFdP5B0Q7kNvwHIBy1x&_nc_oc=AdqbItNsaDQxzfPGY8ypn1wsGZDWs-P_Q9lW-C1kioIv1Zmnm-CByvOhR1b8sXHCGVI&_nc_zt=14&_nc_ht=scontent-lax3-1.xx&_nc_gid=hPt9sgAJBvvspmIwUAJLoA&_nc_ss=7b289&oh=00_AQRp-ZPOKkw71RZPNdoyZ3rmV_7QYoKekeDr9VCrcsSb-g&oe=6AF75FDE"
       ],
       "has_video": false,
       "same_creative_count": 0,
-      "multiple_versions": true
+      "multiple_versions": true,
+      "cta_type": "ORDER_NOW",
+      "display_format": "image",
+      "cards": [
+        {
+          "body": "Make the call on your top 3 toppings and choice of Hut Crust™ with a $10.99 Large ANY 3-Topping Pizza, only at Pizza Hut®.",
+          "cta": "Order Now",
+          "image": "https://scontent-lax3-1.xx.fbcdn.net/v/t39.35426-6/849352982_4729727280582122_4438513689438837852_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=102&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=C8zYPFdP5B0Q7kNvwHIBy1x&_nc_oc=AdqbItNsaDQxzfPGY8ypn1wsGZDWs-P_Q9lW-C1kioIv1Zmnm-CByvOhR1b8sXHCGVI&_nc_zt=14&_nc_ht=scontent-lax3-1.xx&_nc_gid=hPt9sgAJBvvspmIwUAJLoA&_nc_ss=7b289&oh=00_AQRp-ZPOKkw71RZPNdoyZ3rmV_7QYoKekeDr9VCrcsSb-g&oe=6AF75FDE",
+          "link_url": "https://www.pizzahut.com/deals/MEAL591R3?utm_source=metaasc&utm_campaign=103tcap&utm_medium=paidsoc&utm_term=2005R2006R",
+          "title": "Large ANY 3-Top Pizza",
+          "video": null
+        }
+      ]
     },
     {
       "id": "974653444522709",
@@ -663,10 +1105,23 @@
       "link_url": "https://www.pizzahut.com/deals/MEAL591R3?utm_source=metaasc&utm_campaign=103tcap&utm_medium=paidsoc&utm_term=2037R&2038R",
       "link_title": "Get a $10.99 Lg ANY 3-Top",
       "cta_text": "Order Now",
+      "link_caption": "PIZZAHUT.COM",
       "images": [],
       "has_video": false,
       "same_creative_count": 0,
-      "multiple_versions": false
+      "multiple_versions": false,
+      "cta_type": "ORDER_NOW",
+      "display_format": "",
+      "cards": [
+        {
+          "body": "The play call is up to you on your $10.99 Large ANY 3-Topping Pizza with choice of Hut Crust™, only at Pizza Hut®.\n0:00 / 0:00",
+          "cta": "Order Now",
+          "image": null,
+          "link_url": "https://www.pizzahut.com/deals/MEAL591R3?utm_source=metaasc&utm_campaign=103tcap&utm_medium=paidsoc&utm_term=2037R&2038R",
+          "title": "Get a $10.99 Lg ANY 3-Top",
+          "video": null
+        }
+      ]
     },
     {
       "id": "2094341334731150",
@@ -681,12 +1136,25 @@
       "link_url": "https://www.pizzahut.com/?utm_source=ignite&utm_medium=social&utm_campaign=celebration",
       "link_title": "Lucky 7 Feed Good Times",
       "cta_text": "Get Offer",
+      "link_caption": "PIZZAHUT.COM",
       "images": [
         "https://scontent-lax3-2.xx.fbcdn.net/v/t39.35426-6/661990530_1722032442500906_7904767005054671604_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=111&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=WKulvRrLtH4Q7kNvwHDQlMM&_nc_oc=Adr6W8yM6vMJO7Qhc5sn6bF0rT7RxpzSHHmE3tKTDky8A6XE8eaE70xHNkcLcz8zd0U&_nc_zt=14&_nc_ht=scontent-lax3-2.xx&_nc_gid=hPt9sgAJBvvspmIwUAJLoA&_nc_ss=7b289&oh=00_AQRTj4RqfEgfoWMxfZ1dgjtqLdb6b-mjQRWtdWYL-luDdQ&oe=6AF73D12"
       ],
       "has_video": false,
       "same_creative_count": 2,
-      "multiple_versions": true
+      "multiple_versions": true,
+      "cta_type": "GET_OFFER",
+      "display_format": "image",
+      "cards": [
+        {
+          "body": "Lucky you - Pizza Hut's $7 Deal Lover's menu is here! Mix and match your faves when you buy 2 or more! Let's eat!",
+          "cta": "Get Offer",
+          "image": "https://scontent-lax3-2.xx.fbcdn.net/v/t39.35426-6/661990530_1722032442500906_7904767005054671604_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=111&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=WKulvRrLtH4Q7kNvwHDQlMM&_nc_oc=Adr6W8yM6vMJO7Qhc5sn6bF0rT7RxpzSHHmE3tKTDky8A6XE8eaE70xHNkcLcz8zd0U&_nc_zt=14&_nc_ht=scontent-lax3-2.xx&_nc_gid=hPt9sgAJBvvspmIwUAJLoA&_nc_ss=7b289&oh=00_AQRTj4RqfEgfoWMxfZ1dgjtqLdb6b-mjQRWtdWYL-luDdQ&oe=6AF73D12",
+          "link_url": "https://www.pizzahut.com/?utm_source=ignite&utm_medium=social&utm_campaign=celebration",
+          "title": "Lucky 7 Feed Good Times",
+          "video": null
+        }
+      ]
     },
     {
       "id": "1007677331798337",
@@ -701,10 +1169,23 @@
       "link_url": "https://www.pizzahut.com/?utm_source=ignite&utm_medium=social&utm_campaign=staab",
       "link_title": "Lucky 7 No One OutPizzas The Hut",
       "cta_text": "Get Offer",
+      "link_caption": "",
       "images": [],
       "has_video": false,
       "same_creative_count": 0,
-      "multiple_versions": true
+      "multiple_versions": true,
+      "cta_type": "GET_OFFER",
+      "display_format": "",
+      "cards": [
+        {
+          "body": "Lucky you - Pizza Hut's $7 Deal Lover's menu is here! Starting at just $7, mix and match your faves when you buy two or more!\n0:00 / 0:00",
+          "cta": "Get Offer",
+          "image": null,
+          "link_url": "https://www.pizzahut.com/?utm_source=ignite&utm_medium=social&utm_campaign=staab",
+          "title": "Lucky 7 No One OutPizzas The Hut",
+          "video": null
+        }
+      ]
     },
     {
       "id": "1599527168191085",
@@ -719,10 +1200,23 @@
       "link_url": "https://pizzahut.com/?utm_source=ignite&utm_medium=social&utm_campaign=northwest",
       "link_title": "New Wing Combos! Feed Good Times",
       "cta_text": "Get Offer",
+      "link_caption": "PIZZAHUT.COM",
       "images": [],
       "has_video": false,
       "same_creative_count": 0,
-      "multiple_versions": false
+      "multiple_versions": false,
+      "cta_type": "GET_OFFER",
+      "display_format": "",
+      "cards": [
+        {
+          "body": "Mix, match, devour! 🍕 Get 6 wings, a 2-top personal pan pizza or melt + fries or more wings—starting at just $7.99. Who’s hungry? 😋\n0:00 / 0:00",
+          "cta": "Get Offer",
+          "image": null,
+          "link_url": "https://pizzahut.com/?utm_source=ignite&utm_medium=social&utm_campaign=northwest",
+          "title": "New Wing Combos! Feed Good Times",
+          "video": null
+        }
+      ]
     }
   ]
 }

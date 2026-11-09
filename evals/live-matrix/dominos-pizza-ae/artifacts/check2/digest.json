@@ -1,8 +1,8 @@
 {
   "query": "Domino's Pizza",
   "country": "AE",
-  "checked_at": "2026-11-09T12:05:49",
-  "partial": false,
+  "checked_at": "2026-11-09T14:26:16",
+  "partial": true,
   "total": 2,
   "new": 0,
   "ended": 0,

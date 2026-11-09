@@ -15,12 +15,25 @@
       "link_url": "https://www.pizzahut.co.uk/order/pizzas",
       "link_title": "Buy 1 Get 1 FREE on Pizza + Sides! T&Cs apply",
       "cta_text": "Order now",
+      "link_caption": "PIZZAHUT.CO.UK",
       "images": [
-        "https://scontent-lax3-1.xx.fbcdn.net/v/t39.35426-6/888575546_1818859982492631_2773011062991981542_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=102&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=88Cg5a4P2dwQ7kNvwEbuCMW&_nc_oc=AdqJG_BNn8oWwX-W8wFXyTOd8nQXqxYmeq1vewcr2DRcpknA9V1bKwrvTQuCULKFRJs&_nc_zt=14&_nc_ht=scontent-lax3-1.xx&_nc_gid=vRTxyFAp81rnNHnRAucfpA&_nc_ss=7b289&oh=00_AQT0pe_Rs_oSor1Go2dbF4A0WD0LnmbRRahdvelnmcxrNg&oe=6AF7412B"
+        "https://scontent-lax3-2.xx.fbcdn.net/v/t39.35426-6/886726639_40414762671448115_5068643264368200263_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=107&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=SnS3Yr4H-CMQ7kNvwErfIfB&_nc_oc=AdorH518qe_Npd_-I39Ovrn8MfjkM_DyMILHyLtieGEdmlh3HsGD5b1BLVgt_pEYTZQ&_nc_zt=14&_nc_ht=scontent-lax3-2.xx&_nc_gid=Im2AvLTdo2WHicuqD5JQpg&_nc_ss=7b289&oh=00_AQSqhH6pjwMYIMo24wwrX-oEMmcYCaek21IgbM6oJUNb-g&oe=6AF764DF"
       ],
       "has_video": false,
       "same_creative_count": 0,
-      "multiple_versions": false
+      "multiple_versions": false,
+      "cta_type": "ORDER_NOW",
+      "display_format": "image",
+      "cards": [
+        {
+          "body": "Spooky season is here!\n🎃 No tricks, just treats! Buy 1 Get 1 FREE on Pizza + Sides. Grab your Halloween feast at your local Hut! 👻 No code required!",
+          "cta": "Order now",
+          "image": "https://scontent-lax3-2.xx.fbcdn.net/v/t39.35426-6/886726639_40414762671448115_5068643264368200263_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=107&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=SnS3Yr4H-CMQ7kNvwErfIfB&_nc_oc=AdorH518qe_Npd_-I39Ovrn8MfjkM_DyMILHyLtieGEdmlh3HsGD5b1BLVgt_pEYTZQ&_nc_zt=14&_nc_ht=scontent-lax3-2.xx&_nc_gid=Im2AvLTdo2WHicuqD5JQpg&_nc_ss=7b289&oh=00_AQSqhH6pjwMYIMo24wwrX-oEMmcYCaek21IgbM6oJUNb-g&oe=6AF764DF",
+          "link_url": "https://www.pizzahut.co.uk/order/pizzas",
+          "title": "Buy 1 Get 1 FREE on Pizza + Sides! T&Cs apply",
+          "video": null
+        }
+      ]
     },
     {
       "id": "2151360849069103",
@@ -35,16 +48,61 @@
       "link_url": "http://www.guernseyglamping.com/",
       "link_title": "Panoramic sea views",
       "cta_text": "Learn More",
+      "link_caption": "GUERNSEYGLAMPING.COM",
       "images": [
-        "https://scontent-lax3-1.xx.fbcdn.net/v/t39.35426-6/504100061_1343211750074029_6964190814492457106_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=108&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=s2XB4qiK_FYQ7kNvwEX0Ewz&_nc_oc=AdoZ3tPyoLQ_ZuhrTEiZc-bzeCIW95f1BqA9APx1fYy3W_ajV97E9qxUlJZGngHxPPE&_nc_zt=14&_nc_ht=scontent-lax3-1.xx&_nc_gid=vRTxyFAp81rnNHnRAucfpA&_nc_ss=7b289&oh=00_AQRstiomeg2uYfgbtTd9vGKUGORKS3UOCTILGUPT6YuQbQ&oe=6AF73DC1",
-        "https://scontent-lax3-1.xx.fbcdn.net/v/t39.35426-6/504136153_3996112547310179_6411353949657892133_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=108&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=6Mo-s-d9gEQQ7kNvwEuGSgq&_nc_oc=AdqG0N57gkNiTvSAS88oXlhs-99fWkFP2xGf9xYpH9ZtbpzE5gQ_r2qW-Tytg4q2vJo&_nc_zt=14&_nc_ht=scontent-lax3-1.xx&_nc_gid=vRTxyFAp81rnNHnRAucfpA&_nc_ss=7b289&oh=00_AQTPbO0LhLImJ98xTRBWylVfHtpSbdLg_Meb7Lhaag_gqQ&oe=6AF74E1A",
-        "https://scontent-lax3-1.xx.fbcdn.net/v/t39.35426-6/504158552_1836342440244593_3237466969457071388_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=108&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=gFcJvbqlmwMQ7kNvwH9naKJ&_nc_oc=Ado628wupmrX_Tf-65A8r3dNy1mGayuDrCuKq9CQo4rFQOCFr7LT5_Hh3ICTnlwtDWA&_nc_zt=14&_nc_ht=scontent-lax3-1.xx&_nc_gid=vRTxyFAp81rnNHnRAucfpA&_nc_ss=7b289&oh=00_AQQViHd16pgXT-lbZkUko_nysJPIzaNuarnCNT6E8XKzVQ&oe=6AF73C31",
-        "https://scontent-lax3-2.xx.fbcdn.net/v/t39.35426-6/504716187_565742502998906_8554265659440844217_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=111&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=hUJdks_0xKkQ7kNvwGqezEl&_nc_oc=AdqQ8Y2jBO8oxcGIX-G1FX5cbLuckJhFdFTPFd0M9Mx0tR03Fy1S28a5iU1EbLQ1PyU&_nc_zt=14&_nc_ht=scontent-lax3-2.xx&_nc_gid=vRTxyFAp81rnNHnRAucfpA&_nc_ss=7b289&oh=00_AQQztK3-udDXPqwTvzKY8sq8tpopmbo9YuVjoThSlklhlQ&oe=6AF74C12",
-        "https://scontent-lax3-1.xx.fbcdn.net/v/t39.35426-6/504190469_732818495766802_6375724230417128795_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=102&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=R-K6RiyB1iwQ7kNvwGwxpsl&_nc_oc=AdrBoqUvxTF9eXheKd_7WoDwoaE1z_cJWsp-OjvwTkV42CadwUZi35BN2YmkxaM7ZT8&_nc_zt=14&_nc_ht=scontent-lax3-1.xx&_nc_gid=vRTxyFAp81rnNHnRAucfpA&_nc_ss=7b289&oh=00_AQRWmcsNik3KjxElHxwrszh6CcGQ6meT_x4USLqkUSw2Cg&oe=6AF75915"
+        "https://scontent-lax3-1.xx.fbcdn.net/v/t39.35426-6/504100061_1343211750074029_6964190814492457106_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=108&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=s2XB4qiK_FYQ7kNvwEkkNQL&_nc_oc=AdrWCneVa2d6WTBZmg3Tw4OflC3dNBkX1WDCnETWHDacjZXhrA-BRN3lJoP_Stlfw28&_nc_zt=14&_nc_ht=scontent-lax3-1.xx&_nc_gid=Im2AvLTdo2WHicuqD5JQpg&_nc_ss=7b289&oh=00_AQQ5dzxItuGSVBa9DNPtMxtAcVun0TB5RQjqlWUWT4A7Uw&oe=6AF77601",
+        "https://scontent-lax3-1.xx.fbcdn.net/v/t39.35426-6/504136153_3996112547310179_6411353949657892133_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=108&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=6Mo-s-d9gEQQ7kNvwHwu2gd&_nc_oc=AdokTtWzUiTzijauxG7uprNR4y3cpl5IFLS2qwz-0u5_D4m8Tje2JOOuHbSfRb51NRU&_nc_zt=14&_nc_ht=scontent-lax3-1.xx&_nc_gid=Im2AvLTdo2WHicuqD5JQpg&_nc_ss=7b289&oh=00_AQR1NY2j7y_catLuTd1FiqvkeIt1fk5SksmBBhz_wGObSQ&oe=6AF7865A",
+        "https://scontent-lax3-1.xx.fbcdn.net/v/t39.35426-6/504158552_1836342440244593_3237466969457071388_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=108&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=gFcJvbqlmwMQ7kNvwEbufny&_nc_oc=Adq5yyJwLqQf3BKfQ8xSUpqlwhG-ohewnFukBUlBNiAVjYPM1QZ0qmAJ32wdWghE12g&_nc_zt=14&_nc_ht=scontent-lax3-1.xx&_nc_gid=Im2AvLTdo2WHicuqD5JQpg&_nc_ss=7b289&oh=00_AQRlV0EXGID90h3FiJaid0IGU3ItU0hklzno2ffytXcHUw&oe=6AF77471",
+        "https://scontent-lax3-2.xx.fbcdn.net/v/t39.35426-6/504716187_565742502998906_8554265659440844217_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=111&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=hUJdks_0xKkQ7kNvwHU69KR&_nc_oc=AdpcQi6AZn82AontvMDuD6LjufT70vU1HQ1p1T4QXwW5I3MG4IkCTp3dALD2fv0iW7k&_nc_zt=14&_nc_ht=scontent-lax3-2.xx&_nc_gid=Im2AvLTdo2WHicuqD5JQpg&_nc_ss=7b289&oh=00_AQSfqLqckyOU-BrxNovV3SSI_d0-FDXydc_t0kATgNkPgA&oe=6AF78452",
+        "https://scontent-lax3-1.xx.fbcdn.net/v/t39.35426-6/504190469_732818495766802_6375724230417128795_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=102&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=R-K6RiyB1iwQ7kNvwHThcwa&_nc_oc=AdqnStRZmRnMcVf8fDb6qFKmgG_HWNRzHa35kzZUQjAOrz-7uyh--foXHuGwHQ04jaw&_nc_zt=14&_nc_ht=scontent-lax3-1.xx&_nc_gid=Im2AvLTdo2WHicuqD5JQpg&_nc_ss=7b289&oh=00_AQQUhkPgO3Kuz2nDw6LIz5dryvwbX1YHuksGK5gC5oDSDQ&oe=6AF75915"
       ],
       "has_video": false,
       "same_creative_count": 0,
-      "multiple_versions": false
+      "multiple_versions": false,
+      "cta_type": "LEARN_MORE",
+      "display_format": "dco",
+      "cards": [
+        {
+          "body": "Discover our luxurious Shepherd Huts on Guernsey's west coast. Perfect for couples and solo travellers. Each hut is completely private, comes fully equipped and has a private bathroom, cosy king bed and panoramic sea views.\nProud winners of the King's Award for Enterprise 2025 - Sustainability Category!\nBook your island escape today.",
+          "cta": "Learn More",
+          "image": "https://scontent-lax3-1.xx.fbcdn.net/v/t39.35426-6/504100061_1343211750074029_6964190814492457106_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=108&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=s2XB4qiK_FYQ7kNvwEkkNQL&_nc_oc=AdrWCneVa2d6WTBZmg3Tw4OflC3dNBkX1WDCnETWHDacjZXhrA-BRN3lJoP_Stlfw28&_nc_zt=14&_nc_ht=scontent-lax3-1.xx&_nc_gid=Im2AvLTdo2WHicuqD5JQpg&_nc_ss=7b289&oh=00_AQQ5dzxItuGSVBa9DNPtMxtAcVun0TB5RQjqlWUWT4A7Uw&oe=6AF77601",
+          "link_url": "http://www.guernseyglamping.com/",
+          "title": "Panoramic sea views",
+          "video": null
+        },
+        {
+          "body": "Discover our luxurious Shepherd Huts on Guernsey's west coast. Perfect for couples and solo travellers. Each hut is completely private, comes fully equipped and has a private bathroom, cosy king bed and panoramic sea views.\nProud winners of the King's Award for Enterprise 2025 - Sustainability Category!\nBook your island escape today.",
+          "cta": "Learn More",
+          "image": "https://scontent-lax3-1.xx.fbcdn.net/v/t39.35426-6/504136153_3996112547310179_6411353949657892133_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=108&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=6Mo-s-d9gEQQ7kNvwHwu2gd&_nc_oc=AdokTtWzUiTzijauxG7uprNR4y3cpl5IFLS2qwz-0u5_D4m8Tje2JOOuHbSfRb51NRU&_nc_zt=14&_nc_ht=scontent-lax3-1.xx&_nc_gid=Im2AvLTdo2WHicuqD5JQpg&_nc_ss=7b289&oh=00_AQR1NY2j7y_catLuTd1FiqvkeIt1fk5SksmBBhz_wGObSQ&oe=6AF7865A",
+          "link_url": "http://www.guernseyglamping.com/",
+          "title": "Panoramic sea views",
+          "video": null
+        },
+        {
+          "body": "Discover our luxurious Shepherd Huts on Guernsey's west coast. Perfect for couples and solo travellers. Each hut is completely private, comes fully equipped and has a private bathroom, cosy king bed and panoramic sea views.\nProud winners of the King's Award for Enterprise 2025 - Sustainability Category!\nBook your island escape today.",
+          "cta": "Learn More",
+          "image": "https://scontent-lax3-1.xx.fbcdn.net/v/t39.35426-6/504158552_1836342440244593_3237466969457071388_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=108&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=gFcJvbqlmwMQ7kNvwEbufny&_nc_oc=Adq5yyJwLqQf3BKfQ8xSUpqlwhG-ohewnFukBUlBNiAVjYPM1QZ0qmAJ32wdWghE12g&_nc_zt=14&_nc_ht=scontent-lax3-1.xx&_nc_gid=Im2AvLTdo2WHicuqD5JQpg&_nc_ss=7b289&oh=00_AQRlV0EXGID90h3FiJaid0IGU3ItU0hklzno2ffytXcHUw&oe=6AF77471",
+          "link_url": "http://www.guernseyglamping.com/",
+          "title": "Panoramic sea views",
+          "video": null
+        },
+        {
+          "body": "Discover our luxurious Shepherd Huts on Guernsey's west coast. Perfect for couples and solo travellers. Each hut is completely private, comes fully equipped and has a private bathroom, cosy king bed and panoramic sea views.\nProud winners of the King's Award for Enterprise 2025 - Sustainability Category!\nBook your island escape today.",
+          "cta": "Learn More",
+          "image": "https://scontent-lax3-2.xx.fbcdn.net/v/t39.35426-6/504716187_565742502998906_8554265659440844217_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=111&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=hUJdks_0xKkQ7kNvwHU69KR&_nc_oc=AdpcQi6AZn82AontvMDuD6LjufT70vU1HQ1p1T4QXwW5I3MG4IkCTp3dALD2fv0iW7k&_nc_zt=14&_nc_ht=scontent-lax3-2.xx&_nc_gid=Im2AvLTdo2WHicuqD5JQpg&_nc_ss=7b289&oh=00_AQSfqLqckyOU-BrxNovV3SSI_d0-FDXydc_t0kATgNkPgA&oe=6AF78452",
+          "link_url": "http://www.guernseyglamping.com/",
+          "title": "Panoramic sea views",
+          "video": null
+        },
+        {
+          "body": "Discover our luxurious Shepherd Huts on Guernsey's west coast. Perfect for couples and solo travellers. Each hut is completely private, comes fully equipped and has a private bathroom, cosy king bed and panoramic sea views.\nProud winners of the King's Award for Enterprise 2025 - Sustainability Category!\nBook your island escape today.",
+          "cta": "Learn More",
+          "image": "https://scontent-lax3-1.xx.fbcdn.net/v/t39.35426-6/504190469_732818495766802_6375724230417128795_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=102&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=R-K6RiyB1iwQ7kNvwHThcwa&_nc_oc=AdqnStRZmRnMcVf8fDb6qFKmgG_HWNRzHa35kzZUQjAOrz-7uyh--foXHuGwHQ04jaw&_nc_zt=14&_nc_ht=scontent-lax3-1.xx&_nc_gid=Im2AvLTdo2WHicuqD5JQpg&_nc_ss=7b289&oh=00_AQQUhkPgO3Kuz2nDw6LIz5dryvwbX1YHuksGK5gC5oDSDQ&oe=6AF75915",
+          "link_url": "http://www.guernseyglamping.com/",
+          "title": "Panoramic sea views",
+          "video": null
+        }
+      ]
     },
     {
       "id": "1670119121484484",
@@ -59,12 +117,25 @@
       "link_url": "https://auniva.co/products/amla-192011/",
       "link_title": "Feel Like Yourself Again \"This actually worked, thank you so much.\" - Emily T.",
       "cta_text": "Learn more",
+      "link_caption": "AUNIVA.CO",
       "images": [
-        "https://scontent-lax3-2.xx.fbcdn.net/v/t39.35426-6/843300117_2264725811035928_7179850766497404886_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=100&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=HSi7q_6AV2AQ7kNvwHhrR9k&_nc_oc=Adof_lH0Pfyg2dOhhAf_7xh6lnSgLoZRswo6p0jhOSS_-5Q1nKsPvhZCFVM1Pacu9fY&_nc_zt=14&_nc_ht=scontent-lax3-2.xx&_nc_gid=vRTxyFAp81rnNHnRAucfpA&_nc_ss=7b289&oh=00_AQR_74e7x3f-3nyrG6kYgnR3_jFR-2hiOJl1zsxPn1Adow&oe=6AF75690"
+        "https://scontent-lax3-2.xx.fbcdn.net/v/t39.35426-6/843300117_2264725811035928_7179850766497404886_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=100&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=HSi7q_6AV2AQ7kNvwFOyvvG&_nc_oc=AdoppLXQE5uy8sRPkIlqABb45MoVqg2XiKWmwM__xH85-bigcLE6nyBcF6IMU4rFCOA&_nc_zt=14&_nc_ht=scontent-lax3-2.xx&_nc_gid=Im2AvLTdo2WHicuqD5JQpg&_nc_ss=7b289&oh=00_AQRdFmo6N__2CRrouZsizA8dJkWvHFBjI8x7T2Aaepm7oA&oe=6AF78ED0"
       ],
       "has_video": false,
       "same_creative_count": 0,
-      "multiple_versions": false
+      "multiple_versions": false,
+      "cta_type": "LEARN_MORE",
+      "display_format": "image",
+      "cards": [
+        {
+          "body": "I almost didn't go to my granddaughter's piano recital.\nShe's 7 years old. Her name is Amaya. She has been practicing the same Beethoven piece for 4 months on the upright in her mother's living room, the one with the sticky middle C, and she was going to play it in front of 60 people in the auditorium at Springhill Elementary on a Thursday night in March, and her grandmother almost stayed home.\nI sat in my bedroom in my best blue dress with my purse on my lap and I told my husband Cornell to go on without me. He turned around in the doorway with his tie half knotted and he said, \"Loretta. What are you doing.\"\nI said, \"My pressure is up. I can feel it. I don't want to make a scene.\"\nHe looked at me for a long time. Then he said, \"Loretta. She's going to look for you in that crowd.\"\nAnd I sat on the edge of the bed and I cried.\nBecause I was 63 years old and I was scared to sit in an auditorium full of people for 90 minutes because I was afraid my body was going to embarrass me in front of my own grandbaby.\nMy name is Loretta. I live in Mobile, Alabama, off Spring Hill Avenue, in the same little brick house Cornell and I bought in 1991 when our oldest was 4. I worked 31 years as a k…",
+          "cta": "Learn more",
+          "image": "https://scontent-lax3-2.xx.fbcdn.net/v/t39.35426-6/843300117_2264725811035928_7179850766497404886_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=100&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=HSi7q_6AV2AQ7kNvwFOyvvG&_nc_oc=AdoppLXQE5uy8sRPkIlqABb45MoVqg2XiKWmwM__xH85-bigcLE6nyBcF6IMU4rFCOA&_nc_zt=14&_nc_ht=scontent-lax3-2.xx&_nc_gid=Im2AvLTdo2WHicuqD5JQpg&_nc_ss=7b289&oh=00_AQRdFmo6N__2CRrouZsizA8dJkWvHFBjI8x7T2Aaepm7oA&oe=6AF78ED0",
+          "link_url": "https://auniva.co/products/amla-192011/",
+          "title": "Feel Like Yourself Again \"This actually worked, thank you so much.\" - Emily T.",
+          "video": null
+        }
+      ]
     },
     {
       "id": "2641269929666081",
@@ -79,10 +150,23 @@
       "link_url": "https://www.carerscarduk.co.uk/homepage",
       "link_title": "Carers Card Membership: £10 for 2 Years Photo ID, discounts and support",
       "cta_text": "See details",
+      "link_caption": "CARERSCARDUK.CO.UK",
       "images": [],
       "has_video": true,
       "same_creative_count": 0,
-      "multiple_versions": true
+      "multiple_versions": true,
+      "cta_type": "SEE_DETAILS",
+      "display_format": "video",
+      "cards": [
+        {
+          "body": "Being a carer is a big part of your life. Your role deserves to be recognised 💜\nFor just £10 for two years, Carers Card UK gives people in caring roles - including professional carers -a photo ID card, member discounts, wellbeing support and a community that understands.\nJoin today and carry recognition for your caring role with you.",
+          "cta": "See details",
+          "image": null,
+          "link_url": "https://www.carerscarduk.co.uk/homepage",
+          "title": "Carers Card Membership: £10 for 2 Years Photo ID, discounts and support",
+          "video": null
+        }
+      ]
     },
     {
       "id": "29765162436419023",
@@ -97,12 +181,25 @@
       "link_url": "http://itunes.apple.com/app/id951812684",
       "link_title": "Com a Glovo recebes Pizza Hut Download Glovo: Food Delivery, Takeaway by Glovoapp 23 SL on the App Store. See screenshots, ratings and reviews, user tips, and more apps like Glovo: Food…",
       "cta_text": "Install Now",
+      "link_caption": "",
       "images": [
-        "https://scontent-lax3-1.xx.fbcdn.net/v/t39.35426-6/821523333_942612481729520_7984281321782835000_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=110&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=v1H-WBse-BQQ7kNvwHvKqe9&_nc_oc=Adoj_cEpOuXm0oRSDdSADWrQtD6wllCWIxJ4S7QuERKuNm7u1yoyIT-AzH6akHiETE8&_nc_zt=14&_nc_ht=scontent-lax3-1.xx&_nc_gid=vRTxyFAp81rnNHnRAucfpA&_nc_ss=7b289&oh=00_AQSMEptEZEb_Movd1_S-x7GinG5-Taj13mFtDm57nI_OoQ&oe=6AF7650B"
+        "https://scontent-lax3-1.xx.fbcdn.net/v/t39.35426-6/821523333_942612481729520_7984281321782835000_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=110&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=v1H-WBse-BQQ7kNvwHt3JXU&_nc_oc=AdpyCLntO5Hae2A90IcjqalO3BzI666u8r9Q-_zU4x3tEucrZ1jvlkXr6Ds6OJV01tk&_nc_zt=14&_nc_ht=scontent-lax3-1.xx&_nc_gid=Im2AvLTdo2WHicuqD5JQpg&_nc_ss=7b289&oh=00_AQTRCLZGBRHB6EkAprgI_Pm7faXSIsgMQ4d-y8UVgllwjQ&oe=6AF7650B"
       ],
       "has_video": false,
       "same_creative_count": 0,
-      "multiple_versions": true
+      "multiple_versions": true,
+      "cta_type": "INSTALL_MOBILE_APP",
+      "display_format": "image",
+      "cards": [
+        {
+          "body": "Pede o teu prato favorito do Pizza Hut e recebe em minutos. Descarrega a app.",
+          "cta": "Install Now",
+          "image": "https://scontent-lax3-1.xx.fbcdn.net/v/t39.35426-6/821523333_942612481729520_7984281321782835000_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=110&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=v1H-WBse-BQQ7kNvwHt3JXU&_nc_oc=AdpyCLntO5Hae2A90IcjqalO3BzI666u8r9Q-_zU4x3tEucrZ1jvlkXr6Ds6OJV01tk&_nc_zt=14&_nc_ht=scontent-lax3-1.xx&_nc_gid=Im2AvLTdo2WHicuqD5JQpg&_nc_ss=7b289&oh=00_AQTRCLZGBRHB6EkAprgI_Pm7faXSIsgMQ4d-y8UVgllwjQ&oe=6AF7650B",
+          "link_url": "http://itunes.apple.com/app/id951812684",
+          "title": "Com a Glovo recebes Pizza Hut Download Glovo: Food Delivery, Takeaway by Glovoapp 23 SL on the App Store. See screenshots, ratings and reviews, user tips, and more apps like Glovo: Food…",
+          "video": null
+        }
+      ]
     },
     {
       "id": "922412494081946",
@@ -117,10 +214,23 @@
       "link_url": "https://pizzahutuk.app.link/From999PizzaMeta?%243p=a_facebook&%24deeplink_no_attribution=true",
       "link_title": "Good Friends. Great Pizza",
       "cta_text": "Order Now",
+      "link_caption": "",
       "images": [],
       "has_video": true,
       "same_creative_count": 0,
-      "multiple_versions": false
+      "multiple_versions": false,
+      "cta_type": "ORDER_NOW",
+      "display_format": "video",
+      "cards": [
+        {
+          "body": "Pizza, friends, good times 🍕 Enjoy Pizza Hut favourites from £9.99. Download the app! Order now, T&Cs apply.",
+          "cta": "Order Now",
+          "image": null,
+          "link_url": "https://pizzahutuk.app.link/From999PizzaMeta?%243p=a_facebook&%24deeplink_no_attribution=true",
+          "title": "Good Friends. Great Pizza",
+          "video": null
+        }
+      ]
     },
     {
       "id": "1641320877572962",
@@ -135,21 +245,106 @@
       "link_url": "https://www.laurajordan.com/featured-artworks",
       "link_title": "",
       "cta_text": "",
+      "link_caption": "",
       "images": [
-        "https://scontent-lax7-1.xx.fbcdn.net/v/t39.35426-6/844630110_1120646267087131_3843397149771124602_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=101&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=uJ6_ZuwKlj0Q7kNvwHUP8TO&_nc_oc=AdroUmrhTyFX9rv4MnbEYm_i7OaMwhishRJenpQYRSSYw-qxhjn7qWnSCnPNOKLdOw8&_nc_zt=14&_nc_ht=scontent-lax7-1.xx&_nc_gid=vRTxyFAp81rnNHnRAucfpA&_nc_ss=7b289&oh=00_AQRQ9Uf0bRX93N2qw5V-P1_VpjlCbzbTdjNu5FKJ9XAxiA&oe=6AF762CC",
-        "https://scontent-lax7-1.xx.fbcdn.net/v/t39.35426-6/843548480_2154039248830464_1767686383622627719_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=101&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=CBtykEXrJasQ7kNvwEv87Cb&_nc_oc=AdqjD6GF9PvXnMKtruQVjL2aUcnCVUxesHenwzYMZFLHw71lgZxzyZYmN0S3rFaLj7w&_nc_zt=14&_nc_ht=scontent-lax7-1.xx&_nc_gid=vRTxyFAp81rnNHnRAucfpA&_nc_ss=7b289&oh=00_AQQPu_Jsqg6Zl4U30K-Y8Rl9V-3czypDA5SVQyWvTVHexQ&oe=6AF75ECE",
-        "https://scontent-lax3-1.xx.fbcdn.net/v/t39.35426-6/843324446_1035323479527227_8137386810493941045_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=108&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=9CAhtNTpjNwQ7kNvwEC7Iue&_nc_oc=AdojHhD36kroZ2K1ZVzgUf3JIjsVmpt9e8NKuyy3JScQNFwNRPVb7fsCljHWAoNbK3A&_nc_zt=14&_nc_ht=scontent-lax3-1.xx&_nc_gid=vRTxyFAp81rnNHnRAucfpA&_nc_ss=7b289&oh=00_AQTiHwUMcpqPXHFhKHJn59E3dhEM9Zumv-9PEOEq9l4U1Q&oe=6AF736CB",
-        "https://scontent-lax7-1.xx.fbcdn.net/v/t39.35426-6/843023120_3535454033277490_9153218697733452357_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=101&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=3X-9AJiR1NwQ7kNvwFi8ivS&_nc_oc=Adqc0wYZsfX70MXh1Xug73x_Z9TnjiE7rgideA7GY39RzCNF1YnOrCkPGVd4sfeAXzs&_nc_zt=14&_nc_ht=scontent-lax7-1.xx&_nc_gid=vRTxyFAp81rnNHnRAucfpA&_nc_ss=7b289&oh=00_AQTmgyFFTiL14cTXWswE43jiTGEIvzS9DgnWcxjEOCuPnw&oe=6AF75E9F",
-        "https://scontent-lax3-2.xx.fbcdn.net/v/t39.35426-6/844359481_1132274175983047_5692737348795338371_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=103&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=cbBz7m7KjAQQ7kNvwGUzwyH&_nc_oc=Adoqmc7bwZPBUNaqIhfKFOFezO2eVIBTVDMGPR5RBcCNUcHw8Sx2dx41GsGyDXEC7CQ&_nc_zt=14&_nc_ht=scontent-lax3-2.xx&_nc_gid=vRTxyFAp81rnNHnRAucfpA&_nc_ss=7b289&oh=00_AQS6teGX618ZB56Yr18QivytWrvdKk9yJl0W3uMaFWamgA&oe=6AF73F88",
-        "https://scontent-lax3-2.xx.fbcdn.net/v/t39.35426-6/843591964_1311988300953545_1088741519930687802_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=106&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=nSlFltEYtEkQ7kNvwGnwEwG&_nc_oc=AdqiB5OVVVIbHn8AFQV2mvsxogdBW23FOtC91K_SgeQ66s2aF-odF2oLKnVU3q8C6JQ&_nc_zt=14&_nc_ht=scontent-lax3-2.xx&_nc_gid=vRTxyFAp81rnNHnRAucfpA&_nc_ss=7b289&oh=00_AQRiAwuP3obwdyFVopKJssnDykdn5efHWqhVxOUEsPYk9A&oe=6AF749E1",
-        "https://scontent-lax3-2.xx.fbcdn.net/v/t39.35426-6/842901002_941255525334312_6326935612380737035_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=100&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=nYA9fsvTtYIQ7kNvwFT5Y-T&_nc_oc=AdpP-n6cbbz6qFLoM6WSZh9gGVHAucqtklq77kDgzCtfyXr6QiXC2P9zcvQgl32SPJQ&_nc_zt=14&_nc_ht=scontent-lax3-2.xx&_nc_gid=vRTxyFAp81rnNHnRAucfpA&_nc_ss=7b289&oh=00_AQTLDw18n6D6EDOJnbvOWIGuGou71r88CkCmzP_TZi39Uw&oe=6AF76E31",
-        "https://scontent-lax7-1.xx.fbcdn.net/v/t39.35426-6/842492087_2931474537210076_970947148053698316_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=101&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=RcQNUoiDS2UQ7kNvwHJi7IM&_nc_oc=AdoXZleDljM8WUBpdRnwDuRJ0S14mZjCN54cpm1gWQE9g35A0bgQyvjexGUudtRo2bo&_nc_zt=14&_nc_ht=scontent-lax7-1.xx&_nc_gid=vRTxyFAp81rnNHnRAucfpA&_nc_ss=7b289&oh=00_AQRdnUkr5uF2NUUDR8vPipUSxaeC0pAglqEDd05JVMeJZA&oe=6AF742D5",
-        "https://scontent-lax3-2.xx.fbcdn.net/v/t39.35426-6/843533452_966491903167897_554901601431549956_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=100&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=5-5zZSmpnikQ7kNvwGHezCE&_nc_oc=AdpP4z0EAoQbvdZyGSCrFngiD16cw71vudeNG0wzkoZL6RlbuvB-vx5jjtrktq2ov54&_nc_zt=14&_nc_ht=scontent-lax3-2.xx&_nc_gid=vRTxyFAp81rnNHnRAucfpA&_nc_ss=7b289&oh=00_AQRil4eF1cFs3x29jDTfLgL5AeFT6-8_fw4P0dSF0_c3lw&oe=6AF762FA",
-        "https://scontent-lax3-1.xx.fbcdn.net/v/t39.35426-6/842821335_29207569968827436_221278088733688035_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=108&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=43gy9_2buHgQ7kNvwFOVKqk&_nc_oc=AdroD5hVtQrzrhwQf83GMuloIOqHKhGN5BU4rh9HXOZe_tu1M39UgudlCPiBRu_mazQ&_nc_zt=14&_nc_ht=scontent-lax3-1.xx&_nc_gid=vRTxyFAp81rnNHnRAucfpA&_nc_ss=7b289&oh=00_AQR6hgtcCgiw2DY3Voz-zhgpZtGvmQhEKJ7ajcNMSZn-sw&oe=6AF73EA1"
+        "https://scontent-lax7-1.xx.fbcdn.net/v/t39.35426-6/844630110_1120646267087131_3843397149771124602_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=101&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=uJ6_ZuwKlj0Q7kNvwHD1W5i&_nc_oc=Adostl2lwVcdTKqF43Fz7hJjt4fBrBR51WPDSvtUsfKFEEuDGdOREahWfIQj2hS9Jtw&_nc_zt=14&_nc_ht=scontent-lax7-1.xx&_nc_gid=Im2AvLTdo2WHicuqD5JQpg&_nc_ss=7b289&oh=00_AQTVw-YNvyVC8wmZm_QEBk-47fJN654FMQLF-886eJWrNw&oe=6AF762CC",
+        "https://scontent-lax7-1.xx.fbcdn.net/v/t39.35426-6/843548480_2154039248830464_1767686383622627719_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=101&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=CBtykEXrJasQ7kNvwF2BfRn&_nc_oc=Ado6Iz7wX1WsNN7F4h9vMLcGKUwrszO6xtWfYmRgsj4Nx86vbLi1Fr4zT3haDHCeN3Y&_nc_zt=14&_nc_ht=scontent-lax7-1.xx&_nc_gid=Im2AvLTdo2WHicuqD5JQpg&_nc_ss=7b289&oh=00_AQTyRa8eT5KUwF6BCMLTz95bl4uqvCa7A3OLNevc19oNKw&oe=6AF75ECE",
+        "https://scontent-lax3-1.xx.fbcdn.net/v/t39.35426-6/843324446_1035323479527227_8137386810493941045_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=108&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=9CAhtNTpjNwQ7kNvwGtc7rm&_nc_oc=Ado-UYPg5NNNDU0XrmapMVqnai8ddAa9pbuydv8pPGmwOqVs5YbJbTHlcmDQRcT29RU&_nc_zt=14&_nc_ht=scontent-lax3-1.xx&_nc_gid=Im2AvLTdo2WHicuqD5JQpg&_nc_ss=7b289&oh=00_AQSOV9jqm8VFM0LdxmXKAF8nvIvRR2vXbSPAgYFe2ABuiQ&oe=6AF76F0B",
+        "https://scontent-lax7-1.xx.fbcdn.net/v/t39.35426-6/843023120_3535454033277490_9153218697733452357_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=101&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=3X-9AJiR1NwQ7kNvwHxRmF_&_nc_oc=AdqYN4P8bV6zMjATZRhwyVWNEQfezwvBpY2QhHHbdUyT6bxEGODLGUxabTUumGHef8w&_nc_zt=14&_nc_ht=scontent-lax7-1.xx&_nc_gid=Im2AvLTdo2WHicuqD5JQpg&_nc_ss=7b289&oh=00_AQQo3S5mMAgQQm0uwvvvF-S1Aop6TQDp1pk_lRHVQn8SzA&oe=6AF75E9F",
+        "https://scontent-lax3-2.xx.fbcdn.net/v/t39.35426-6/844359481_1132274175983047_5692737348795338371_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=103&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=cbBz7m7KjAQQ7kNvwFyDEZ2&_nc_oc=AdrRVBW0QelDtS568lFl504qj3SjyB0EOGbMyKZAj5YMa_NZ4SI_9O_7ZNrEPxk7Kwk&_nc_zt=14&_nc_ht=scontent-lax3-2.xx&_nc_gid=Im2AvLTdo2WHicuqD5JQpg&_nc_ss=7b289&oh=00_AQTiZT2tqMj-lB5yrWNSwJVjK01ZFkpIGGTBsLk0ML5T1Q&oe=6AF777C8",
+        "https://scontent-lax3-2.xx.fbcdn.net/v/t39.35426-6/843591964_1311988300953545_1088741519930687802_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=106&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=nSlFltEYtEkQ7kNvwG3p6u-&_nc_oc=AdrKHIbOKQsf3W5fTdu2X5qO-TRmZUgMk1vza-sf9gzVFASFunsKHh0eBjfZD_ncopc&_nc_zt=14&_nc_ht=scontent-lax3-2.xx&_nc_gid=Im2AvLTdo2WHicuqD5JQpg&_nc_ss=7b289&oh=00_AQSSEsc_1Ls278lCOiyF1D8_0L1r5HFjPb7WyOesmkqsPQ&oe=6AF78221",
+        "https://scontent-lax3-2.xx.fbcdn.net/v/t39.35426-6/842901002_941255525334312_6326935612380737035_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=100&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=nYA9fsvTtYIQ7kNvwFz0vey&_nc_oc=Adq_DzpA5FPZWaa3JoS3XWd_5QAsSq3c-Z3yAUYnN7NvcdyAvvAwmN0morZnO7NcOh8&_nc_zt=14&_nc_ht=scontent-lax3-2.xx&_nc_gid=Im2AvLTdo2WHicuqD5JQpg&_nc_ss=7b289&oh=00_AQSDxS7nlbEGt_JsFjLA3zpKLvhamCBJnAM3HttVCnKqNw&oe=6AF76E31",
+        "https://scontent-lax7-1.xx.fbcdn.net/v/t39.35426-6/842492087_2931474537210076_970947148053698316_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=101&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=RcQNUoiDS2UQ7kNvwHsEMH7&_nc_oc=Adq4Bwwm6qTODn1jCUNYhM0ir6TOHDTxCfAB5ObUe4XUDbX1vafsvYv1twYNputE4SQ&_nc_zt=14&_nc_ht=scontent-lax7-1.xx&_nc_gid=Im2AvLTdo2WHicuqD5JQpg&_nc_ss=7b289&oh=00_AQQL9Pj1FeMC_V8odWK9HeSN5ZyC4ZnvIk_nuJTbIeV7sw&oe=6AF77B15",
+        "https://scontent-lax3-2.xx.fbcdn.net/v/t39.35426-6/843533452_966491903167897_554901601431549956_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=100&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=5-5zZSmpnikQ7kNvwEW9X2j&_nc_oc=AdoJqBoDw04H9wW1D3MMTkKO-luB43GvRZM8jCf69VARPlubUJbcyO7LpiJnAar6jn0&_nc_zt=14&_nc_ht=scontent-lax3-2.xx&_nc_gid=Im2AvLTdo2WHicuqD5JQpg&_nc_ss=7b289&oh=00_AQTpvPLG8fOoC2PdVesysJk2FHO5OWT2VreQSsjWOItpgg&oe=6AF762FA",
+        "https://scontent-lax3-1.xx.fbcdn.net/v/t39.35426-6/842821335_29207569968827436_221278088733688035_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=108&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=43gy9_2buHgQ7kNvwFQBT0k&_nc_oc=AdrNxSUuBXOVmNoZWz_Yb5_UHmP-xhzka7-THO9xgGRYiW3GQ7Ga92RZrvbCaUQNPhI&_nc_zt=14&_nc_ht=scontent-lax3-1.xx&_nc_gid=Im2AvLTdo2WHicuqD5JQpg&_nc_ss=7b289&oh=00_AQRTazYtGkOHuWzkSxBZkAv1ZOtBWjLnet2AIngpCVopKQ&oe=6AF776E1"
       ],
       "has_video": false,
       "same_creative_count": 0,
-      "multiple_versions": true
+      "multiple_versions": true,
+      "cta_type": "",
+      "display_format": "dco",
+      "cards": [
+        {
+          "body": "This is Planet Earth 🌎\nDetails as you rotate around the planet…\n· Laika the first dog in space\n· The reentry capsule of an Apollo mission coming down to Earth\n· Pizza Hut delivery to the international space station\n· Area 51 more than just Aliens\n· All 12 zodiac constellations drawn in the skies\n· Thelma and Louise finally make it across the border\n· Wicked Witch and her flying monkeys\n· ET and Elliot taking to the skies\n· Santa and his sleigh\n· Zoltar Machine in use on beach\n· Northern lights, Mary Poppins, Peter Pan, Aladdin\n· Berlin Wall, Scottish bag piper, Vikings, Austrian Lederhosens\n· Famous Cuban lady Smokin’ Graciela\nAvailable in two sized editions\n70 × 70cm unframed / 80 × 80cm with frame Edition of 30\n110 × 110cm unframed / 120 × 120cm with frame Edition of 20",
+          "cta": "",
+          "image": "https://scontent-lax7-1.xx.fbcdn.net/v/t39.35426-6/844630110_1120646267087131_3843397149771124602_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=101&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=uJ6_ZuwKlj0Q7kNvwHD1W5i&_nc_oc=Adostl2lwVcdTKqF43Fz7hJjt4fBrBR51WPDSvtUsfKFEEuDGdOREahWfIQj2hS9Jtw&_nc_zt=14&_nc_ht=scontent-lax7-1.xx&_nc_gid=Im2AvLTdo2WHicuqD5JQpg&_nc_ss=7b289&oh=00_AQTVw-YNvyVC8wmZm_QEBk-47fJN654FMQLF-886eJWrNw&oe=6AF762CC",
+          "link_url": "https://www.laurajordan.com/featured-artworks",
+          "title": "",
+          "video": null
+        },
+        {
+          "body": "This is Planet Earth 🌎\nDetails as you rotate around the planet…\n· Laika the first dog in space\n· The reentry capsule of an Apollo mission coming down to Earth\n· Pizza Hut delivery to the international space station\n· Area 51 more than just Aliens\n· All 12 zodiac constellations drawn in the skies\n· Thelma and Louise finally make it across the border\n· Wicked Witch and her flying monkeys\n· ET and Elliot taking to the skies\n· Santa and his sleigh\n· Zoltar Machine in use on beach\n· Northern lights, Mary Poppins, Peter Pan, Aladdin\n· Berlin Wall, Scottish bag piper, Vikings, Austrian Lederhosens\n· Famous Cuban lady Smokin’ Graciela\nAvailable in two sized editions\n70 × 70cm unframed / 80 × 80cm with frame Edition of 30\n110 × 110cm unframed / 120 × 120cm with frame Edition of 20",
+          "cta": "",
+          "image": "https://scontent-lax7-1.xx.fbcdn.net/v/t39.35426-6/843548480_2154039248830464_1767686383622627719_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=101&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=CBtykEXrJasQ7kNvwF2BfRn&_nc_oc=Ado6Iz7wX1WsNN7F4h9vMLcGKUwrszO6xtWfYmRgsj4Nx86vbLi1Fr4zT3haDHCeN3Y&_nc_zt=14&_nc_ht=scontent-lax7-1.xx&_nc_gid=Im2AvLTdo2WHicuqD5JQpg&_nc_ss=7b289&oh=00_AQTyRa8eT5KUwF6BCMLTz95bl4uqvCa7A3OLNevc19oNKw&oe=6AF75ECE",
+          "link_url": "https://www.laurajordan.com/featured-artworks",
+          "title": "",
+          "video": null
+        },
+        {
+          "body": "This is Planet Earth 🌎\nDetails as you rotate around the planet…\n· Laika the first dog in space\n· The reentry capsule of an Apollo mission coming down to Earth\n· Pizza Hut delivery to the international space station\n· Area 51 more than just Aliens\n· All 12 zodiac constellations drawn in the skies\n· Thelma and Louise finally make it across the border\n· Wicked Witch and her flying monkeys\n· ET and Elliot taking to the skies\n· Santa and his sleigh\n· Zoltar Machine in use on beach\n· Northern lights, Mary Poppins, Peter Pan, Aladdin\n· Berlin Wall, Scottish bag piper, Vikings, Austrian Lederhosens\n· Famous Cuban lady Smokin’ Graciela\nAvailable in two sized editions\n70 × 70cm unframed / 80 × 80cm with frame Edition of 30\n110 × 110cm unframed / 120 × 120cm with frame Edition of 20",
+          "cta": "",
+          "image": "https://scontent-lax3-1.xx.fbcdn.net/v/t39.35426-6/843324446_1035323479527227_8137386810493941045_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=108&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=9CAhtNTpjNwQ7kNvwGtc7rm&_nc_oc=Ado-UYPg5NNNDU0XrmapMVqnai8ddAa9pbuydv8pPGmwOqVs5YbJbTHlcmDQRcT29RU&_nc_zt=14&_nc_ht=scontent-lax3-1.xx&_nc_gid=Im2AvLTdo2WHicuqD5JQpg&_nc_ss=7b289&oh=00_AQSOV9jqm8VFM0LdxmXKAF8nvIvRR2vXbSPAgYFe2ABuiQ&oe=6AF76F0B",
+          "link_url": "https://www.laurajordan.com/featured-artworks",
+          "title": "",
+          "video": null
+        },
+        {
+          "body": "This is Planet Earth 🌎\nDetails as you rotate around the planet…\n· Laika the first dog in space\n· The reentry capsule of an Apollo mission coming down to Earth\n· Pizza Hut delivery to the international space station\n· Area 51 more than just Aliens\n· All 12 zodiac constellations drawn in the skies\n· Thelma and Louise finally make it across the border\n· Wicked Witch and her flying monkeys\n· ET and Elliot taking to the skies\n· Santa and his sleigh\n· Zoltar Machine in use on beach\n· Northern lights, Mary Poppins, Peter Pan, Aladdin\n· Berlin Wall, Scottish bag piper, Vikings, Austrian Lederhosens\n· Famous Cuban lady Smokin’ Graciela\nAvailable in two sized editions\n70 × 70cm unframed / 80 × 80cm with frame Edition of 30\n110 × 110cm unframed / 120 × 120cm with frame Edition of 20",
+          "cta": "",
+          "image": "https://scontent-lax7-1.xx.fbcdn.net/v/t39.35426-6/843023120_3535454033277490_9153218697733452357_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=101&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=3X-9AJiR1NwQ7kNvwHxRmF_&_nc_oc=AdqYN4P8bV6zMjATZRhwyVWNEQfezwvBpY2QhHHbdUyT6bxEGODLGUxabTUumGHef8w&_nc_zt=14&_nc_ht=scontent-lax7-1.xx&_nc_gid=Im2AvLTdo2WHicuqD5JQpg&_nc_ss=7b289&oh=00_AQQo3S5mMAgQQm0uwvvvF-S1Aop6TQDp1pk_lRHVQn8SzA&oe=6AF75E9F",
+          "link_url": "https://www.laurajordan.com/featured-artworks",
+          "title": "",
+          "video": null
+        },
+        {
+          "body": "This is Planet Earth 🌎\nDetails as you rotate around the planet…\n· Laika the first dog in space\n· The reentry capsule of an Apollo mission coming down to Earth\n· Pizza Hut delivery to the international space station\n· Area 51 more than just Aliens\n· All 12 zodiac constellations drawn in the skies\n· Thelma and Louise finally make it across the border\n· Wicked Witch and her flying monkeys\n· ET and Elliot taking to the skies\n· Santa and his sleigh\n· Zoltar Machine in use on beach\n· Northern lights, Mary Poppins, Peter Pan, Aladdin\n· Berlin Wall, Scottish bag piper, Vikings, Austrian Lederhosens\n· Famous Cuban lady Smokin’ Graciela\nAvailable in two sized editions\n70 × 70cm unframed / 80 × 80cm with frame Edition of 30\n110 × 110cm unframed / 120 × 120cm with frame Edition of 20",
+          "cta": "",
+          "image": "https://scontent-lax3-2.xx.fbcdn.net/v/t39.35426-6/844359481_1132274175983047_5692737348795338371_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=103&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=cbBz7m7KjAQQ7kNvwFyDEZ2&_nc_oc=AdrRVBW0QelDtS568lFl504qj3SjyB0EOGbMyKZAj5YMa_NZ4SI_9O_7ZNrEPxk7Kwk&_nc_zt=14&_nc_ht=scontent-lax3-2.xx&_nc_gid=Im2AvLTdo2WHicuqD5JQpg&_nc_ss=7b289&oh=00_AQTiZT2tqMj-lB5yrWNSwJVjK01ZFkpIGGTBsLk0ML5T1Q&oe=6AF777C8",
+          "link_url": "https://www.laurajordan.com/featured-artworks",
+          "title": "",
+          "video": null
+        },
+        {
+          "body": "This is Planet Earth 🌎\nDetails as you rotate around the planet…\n· Laika the first dog in space\n· The reentry capsule of an Apollo mission coming down to Earth\n· Pizza Hut delivery to the international space station\n· Area 51 more than just Aliens\n· All 12 zodiac constellations drawn in the skies\n· Thelma and Louise finally make it across the border\n· Wicked Witch and her flying monkeys\n· ET and Elliot taking to the skies\n· Santa and his sleigh\n· Zoltar Machine in use on beach\n· Northern lights, Mary Poppins, Peter Pan, Aladdin\n· Berlin Wall, Scottish bag piper, Vikings, Austrian Lederhosens\n· Famous Cuban lady Smokin’ Graciela\nAvailable in two sized editions\n70 × 70cm unframed / 80 × 80cm with frame Edition of 30\n110 × 110cm unframed / 120 × 120cm with frame Edition of 20",
+          "cta": "",
+          "image": "https://scontent-lax3-2.xx.fbcdn.net/v/t39.35426-6/843591964_1311988300953545_1088741519930687802_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=106&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=nSlFltEYtEkQ7kNvwG3p6u-&_nc_oc=AdrKHIbOKQsf3W5fTdu2X5qO-TRmZUgMk1vza-sf9gzVFASFunsKHh0eBjfZD_ncopc&_nc_zt=14&_nc_ht=scontent-lax3-2.xx&_nc_gid=Im2AvLTdo2WHicuqD5JQpg&_nc_ss=7b289&oh=00_AQSSEsc_1Ls278lCOiyF1D8_0L1r5HFjPb7WyOesmkqsPQ&oe=6AF78221",
+          "link_url": "https://www.laurajordan.com/featured-artworks",
+          "title": "",
+          "video": null
+        },
+        {
+          "body": "This is Planet Earth 🌎\nDetails as you rotate around the planet…\n· Laika the first dog in space\n· The reentry capsule of an Apollo mission coming down to Earth\n· Pizza Hut delivery to the international space station\n· Area 51 more than just Aliens\n· All 12 zodiac constellations drawn in the skies\n· Thelma and Louise finally make it across the border\n· Wicked Witch and her flying monkeys\n· ET and Elliot taking to the skies\n· Santa and his sleigh\n· Zoltar Machine in use on beach\n· Northern lights, Mary Poppins, Peter Pan, Aladdin\n· Berlin Wall, Scottish bag piper, Vikings, Austrian Lederhosens\n· Famous Cuban lady Smokin’ Graciela\nAvailable in two sized editions\n70 × 70cm unframed / 80 × 80cm with frame Edition of 30\n110 × 110cm unframed / 120 × 120cm with frame Edition of 20",
+          "cta": "",
+          "image": "https://scontent-lax3-2.xx.fbcdn.net/v/t39.35426-6/842901002_941255525334312_6326935612380737035_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=100&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=nYA9fsvTtYIQ7kNvwFz0vey&_nc_oc=Adq_DzpA5FPZWaa3JoS3XWd_5QAsSq3c-Z3yAUYnN7NvcdyAvvAwmN0morZnO7NcOh8&_nc_zt=14&_nc_ht=scontent-lax3-2.xx&_nc_gid=Im2AvLTdo2WHicuqD5JQpg&_nc_ss=7b289&oh=00_AQSDxS7nlbEGt_JsFjLA3zpKLvhamCBJnAM3HttVCnKqNw&oe=6AF76E31",
+          "link_url": "https://www.laurajordan.com/featured-artworks",
+          "title": "",
+          "video": null
+        },
+        {
+          "body": "This is Planet Earth 🌎\nDetails as you rotate around the planet…\n· Laika the first dog in space\n· The reentry capsule of an Apollo mission coming down to Earth\n· Pizza Hut delivery to the international space station\n· Area 51 more than just Aliens\n· All 12 zodiac constellations drawn in the skies\n· Thelma and Louise finally make it across the border\n· Wicked Witch and her flying monkeys\n· ET and Elliot taking to the skies\n· Santa and his sleigh\n· Zoltar Machine in use on beach\n· Northern lights, Mary Poppins, Peter Pan, Aladdin\n· Berlin Wall, Scottish bag piper, Vikings, Austrian Lederhosens\n· Famous Cuban lady Smokin’ Graciela\nAvailable in two sized editions\n70 × 70cm unframed / 80 × 80cm with frame Edition of 30\n110 × 110cm unframed / 120 × 120cm with frame Edition of 20",
+          "cta": "",
+          "image": "https://scontent-lax7-1.xx.fbcdn.net/v/t39.35426-6/842492087_2931474537210076_970947148053698316_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=101&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=RcQNUoiDS2UQ7kNvwHsEMH7&_nc_oc=Adq4Bwwm6qTODn1jCUNYhM0ir6TOHDTxCfAB5ObUe4XUDbX1vafsvYv1twYNputE4SQ&_nc_zt=14&_nc_ht=scontent-lax7-1.xx&_nc_gid=Im2AvLTdo2WHicuqD5JQpg&_nc_ss=7b289&oh=00_AQQL9Pj1FeMC_V8odWK9HeSN5ZyC4ZnvIk_nuJTbIeV7sw&oe=6AF77B15",
+          "link_url": "https://www.laurajordan.com/featured-artworks",
+          "title": "",
+          "video": null
+        },
+        {
+          "body": "This is Planet Earth 🌎\nDetails as you rotate around the planet…\n· Laika the first dog in space\n· The reentry capsule of an Apollo mission coming down to Earth\n· Pizza Hut delivery to the international space station\n· Area 51 more than just Aliens\n· All 12 zodiac constellations drawn in the skies\n· Thelma and Louise finally make it across the border\n· Wicked Witch and her flying monkeys\n· ET and Elliot taking to the skies\n· Santa and his sleigh\n· Zoltar Machine in use on beach\n· Northern lights, Mary Poppins, Peter Pan, Aladdin\n· Berlin Wall, Scottish bag piper, Vikings, Austrian Lederhosens\n· Famous Cuban lady Smokin’ Graciela\nAvailable in two sized editions\n70 × 70cm unframed / 80 × 80cm with frame Edition of 30\n110 × 110cm unframed / 120 × 120cm with frame Edition of 20",
+          "cta": "",
+          "image": "https://scontent-lax3-2.xx.fbcdn.net/v/t39.35426-6/843533452_966491903167897_554901601431549956_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=100&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=5-5zZSmpnikQ7kNvwEW9X2j&_nc_oc=AdoJqBoDw04H9wW1D3MMTkKO-luB43GvRZM8jCf69VARPlubUJbcyO7LpiJnAar6jn0&_nc_zt=14&_nc_ht=scontent-lax3-2.xx&_nc_gid=Im2AvLTdo2WHicuqD5JQpg&_nc_ss=7b289&oh=00_AQTpvPLG8fOoC2PdVesysJk2FHO5OWT2VreQSsjWOItpgg&oe=6AF762FA",
+          "link_url": "https://www.laurajordan.com/featured-artworks",
+          "title": "",
+          "video": null
+        },
+        {
+          "body": "This is Planet Earth 🌎\nDetails as you rotate around the planet…\n· Laika the first dog in space\n· The reentry capsule of an Apollo mission coming down to Earth\n· Pizza Hut delivery to the international space station\n· Area 51 more than just Aliens\n· All 12 zodiac constellations drawn in the skies\n· Thelma and Louise finally make it across the border\n· Wicked Witch and her flying monkeys\n· ET and Elliot taking to the skies\n· Santa and his sleigh\n· Zoltar Machine in use on beach\n· Northern lights, Mary Poppins, Peter Pan, Aladdin\n· Berlin Wall, Scottish bag piper, Vikings, Austrian Lederhosens\n· Famous Cuban lady Smokin’ Graciela\nAvailable in two sized editions\n70 × 70cm unframed / 80 × 80cm with frame Edition of 30\n110 × 110cm unframed / 120 × 120cm with frame Edition of 20",
+          "cta": "",
+          "image": "https://scontent-lax3-1.xx.fbcdn.net/v/t39.35426-6/842821335_29207569968827436_221278088733688035_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=108&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=43gy9_2buHgQ7kNvwFQBT0k&_nc_oc=AdrNxSUuBXOVmNoZWz_Yb5_UHmP-xhzka7-THO9xgGRYiW3GQ7Ga92RZrvbCaUQNPhI&_nc_zt=14&_nc_ht=scontent-lax3-1.xx&_nc_gid=Im2AvLTdo2WHicuqD5JQpg&_nc_ss=7b289&oh=00_AQRTazYtGkOHuWzkSxBZkAv1ZOtBWjLnet2AIngpCVopKQ&oe=6AF776E1",
+          "link_url": "https://www.laurajordan.com/featured-artworks",
+          "title": "",
+          "video": null
+        }
+      ]
     },
     {
       "id": "972146922147876",
@@ -164,10 +359,23 @@
       "link_url": "https://pizzahutuk.app.link/MetaFrom899Pizza?%243p=a_facebook&%24deeplink_no_attribution=true",
       "link_title": "Good Friends. Great Pizza",
       "cta_text": "Order Now",
+      "link_caption": "",
       "images": [],
       "has_video": true,
       "same_creative_count": 0,
-      "multiple_versions": true
+      "multiple_versions": true,
+      "cta_type": "ORDER_NOW",
+      "display_format": "video",
+      "cards": [
+        {
+          "body": "Pizza, friends, good times 🍕 Enjoy Pizza Hut favourites from £8.99. Download the app! Order now, T&Cs apply.",
+          "cta": "Order Now",
+          "image": null,
+          "link_url": "https://pizzahutuk.app.link/MetaFrom899Pizza?%243p=a_facebook&%24deeplink_no_attribution=true",
+          "title": "Good Friends. Great Pizza",
+          "video": null
+        }
+      ]
     },
     {
       "id": "4734664513429584",
@@ -182,10 +390,23 @@
       "link_url": "https://pizzahutuk.app.link/From999PizzaMeta?%243p=a_facebook&%24deeplink_no_attribution=true",
       "link_title": "Good Friends. Great Pizza",
       "cta_text": "Order Now",
+      "link_caption": "",
       "images": [],
       "has_video": true,
       "same_creative_count": 0,
-      "multiple_versions": false
+      "multiple_versions": false,
+      "cta_type": "ORDER_NOW",
+      "display_format": "video",
+      "cards": [
+        {
+          "body": "Pizza, friends, good times 🍕 Enjoy Pizza Hut favourites from £9.99. Download the app! Order now, T&Cs apply.",
+          "cta": "Order Now",
+          "image": null,
+          "link_url": "https://pizzahutuk.app.link/From999PizzaMeta?%243p=a_facebook&%24deeplink_no_attribution=true",
+          "title": "Good Friends. Great Pizza",
+          "video": null
+        }
+      ]
     },
     {
       "id": "1813019743373928",
@@ -200,10 +421,23 @@
       "link_url": "https://instagram.com/xmasatbutepark",
       "link_title": "Christmas at Bute Park",
       "cta_text": "Visit Instagram profile",
+      "link_caption": "INSTAGRAM.COM",
       "images": [],
       "has_video": true,
       "same_creative_count": 2,
-      "multiple_versions": true
+      "multiple_versions": true,
+      "cta_type": "VISIT_INSTAGRAM_PROFILE",
+      "display_format": "video",
+      "cards": [
+        {
+          "body": "Hungry yet? 🤤 Because we’re about to make it worse 😉\nBurgers, loaded fries, pizza, Yorkshire pudding wraps, mac and cheese, cookie dough, crumble pots and so much more, all ready to be devoured in the Christmas Village 🍔🍕🧀🍪🥧\nAdd in Bute Park Tavern, coffee stalls, festive bars serving mulled wine and a cosy Marshmallow Toasting area, and you’ve got the ultimate Christmas night out 🍻☕️🔥\nCome hungry, bring your friends and family and dig in 😋\nThis year's foodie lineup:\n🍔 Cattle Co. Burgers\n🥔 Hash & Dash\n🐓 Chicken Hut\n🍕 Frico Pizza & Loaded Fries\n🌭 Yorkshire Pudding Wraps & Hot Dogs\n🧀 Mac & Cheese\n🍪 Cookie Dough & Pancakes\n🥧 Crumble Pots",
+          "cta": "Visit Instagram profile",
+          "image": null,
+          "link_url": "https://instagram.com/xmasatbutepark",
+          "title": "Christmas at Bute Park",
+          "video": null
+        }
+      ]
     },
     {
       "id": "4837544703145527",
@@ -218,46 +452,54 @@
       "link_url": "https://begin.byaustere.com/iconic",
       "link_title": "How Artists Can Go Viral & Generate Income Without A Record Label or Big Investment ⭐️⭐️⭐️⭐️⭐️ Rated | 1.3k+ Reviews",
       "cta_text": "Learn More",
+      "link_caption": "",
       "images": [],
       "has_video": true,
       "same_creative_count": 0,
-      "multiple_versions": true
+      "multiple_versions": true,
+      "cta_type": "LEARN_MORE",
+      "display_format": "video",
+      "cards": [
+        {
+          "body": "How 'Up-and-Coming' Music Artists & 'Indie' Artists Can Go Viral & Generate Income Without A Record Label or Big Investment 🎶\nIntroducing the “Iconic Artist Blueprint” our proven program to go viral and create a successful, sustainable career as an artist without relying on a record label or big investment. With over 1300 artists helped, this comprehensive training program teaches you how to properly monetize your fans, create captivating music that builds an engaged fanbase, and connect with industry experts to further your growth.\nIconic Artist is the “missing link” that will help take your music and career from barely making a living off a couple of fans while making just a few bucks every month to a thriving Iconic Artist with tons of raving fans who buy every single thing you release, including albums and merch!\nTake a look at the life-changing results of many of our clients since joining the Iconic Artist Blueprint:\n📈 Elizabeth Wyld went from 2k IG followers to over 13,000 followers\n📈 Vin Clancy had a 27,000 subscriber growth on Youtube in just 6 weeks\n📈 Prez Harris grew from 4000 followers to 10,000 followers on Instagram\n📈 Bohardt started with just 500 followers and now ha…",
+          "cta": "Learn More",
+          "image": null,
+          "link_url": "https://begin.byaustere.com/iconic",
+          "title": "How Artists Can Go Viral & Generate Income Without A Record Label or Big Investment ⭐️⭐️⭐️⭐️⭐️ Rated | 1.3k+ Reviews",
+          "video": null
+        }
+      ]
     },
     {
-      "id": "28950664457909392",
+      "id": "1075890385436574",
       "page_name": "Pizza Hut",
       "status": "active",
-      "first_seen": "Nov 4, 2026",
+      "first_seen": "Oct 23, 2026",
       "last_seen": "",
       "creative_text": "Pizza, friends, good times 🍕 Enjoy Pizza Hut favourites from £8.99. Download the app! Order now, T&Cs apply.",
-      "library_url": "https://www.facebook.com/ads/library/?id=28950664457909392",
+      "library_url": "https://www.facebook.com/ads/library/?id=1075890385436574",
       "page_url": "https://www.facebook.com/pizzahutuk/",
       "page_id": "",
       "link_url": "https://pizzahutuk.app.link/MetaFrom899Pizza?%243p=a_facebook&%24deeplink_no_attribution=true",
       "link_title": "Good Friends. Great Pizza",
       "cta_text": "Order Now",
+      "link_caption": "",
       "images": [],
       "has_video": true,
       "same_creative_count": 0,
-      "multiple_versions": false
-    },
-    {
-      "id": "1075890385436574",
-      "page_name": "Frederick Wilson",
-      "status": "active",
-      "first_seen": "Oct 23, 2026",
-      "last_seen": "",
-      "creative_text": "Jason xuyên không đến Sparta, trở thành tầng lớp thấp nhất và bị ép chọn ba cô gái bị ruồng bỏ. Nhờ hệ thống tăng thiện cảm đổi lấy vũ khí hiện đại, anh cùng họ dùng AK, Gatling và RPG khiến 300 chiến binh Sparta phải thay đổi cách nhìn.",
-      "library_url": "https://www.facebook.com/ads/library/?id=1075890385436574",
-      "page_url": "https://www.facebook.com/61595548103157/",
-      "page_id": "61595548103157",
-      "link_url": "https://m.mydramawave.com/land/?pixel_id=1400971300908882&c=%7B%7Bcampaign.name%7D%7D&af_c_id=%7B%7Bcampaign.id%7D%7D&af_adset=%7B%7Badset.name%7D%7D&af_adset_id=%7B%7Badset.id%7D%7D&af_ad=%7B%7Bad.name%7D%7D&af_ad_id=%7B%7Bad.id%7D%7D&af_channel=%7B%7Bplacement%7D%7D&content_id=LmqlqtXSvn&media_source=facebook",
-      "link_title": "Tôi Có Ba Bạn Gái Nhờ Hệ Thống(Phiên bản lồng tiếng)",
-      "cta_text": "Watch more",
-      "images": [],
-      "has_video": true,
-      "same_creative_count": 0,
-      "multiple_versions": false
+      "multiple_versions": false,
+      "cta_type": "ORDER_NOW",
+      "display_format": "video",
+      "cards": [
+        {
+          "body": "Pizza, friends, good times 🍕 Enjoy Pizza Hut favourites from £8.99. Download the app! Order now, T&Cs apply.",
+          "cta": "Order Now",
+          "image": null,
+          "link_url": "https://pizzahutuk.app.link/MetaFrom899Pizza?%243p=a_facebook&%24deeplink_no_attribution=true",
+          "title": "Good Friends. Great Pizza",
+          "video": null
+        }
+      ]
     },
     {
       "id": "1065123379480983",
@@ -272,12 +514,25 @@
       "link_url": "https://pizzahutuk.app.link/frCiL1mGsOb?%243p=a_facebook&~ad_id=%7B%7Bad.id%7D%7D&~ad_name=%7B%7Bad.name%7D%7D&~ad_set_id=%7B%7Badset.id%7D%7D&~ad_set_name=%7B%7Badset.name%7D%7D&~campaign=%7B%7Bcampaign.name%7D%7D&~campaign_id=%7B%7Bcampaign.id%7D%7D",
       "link_title": "Pizza from £8.99 collection or £9.99 delivery T&Cs apply",
       "cta_text": "Order now",
+      "link_caption": "PIZZAHUT.CO.UK",
       "images": [
-        "https://scontent-lax7-1.xx.fbcdn.net/v/t39.35426-6/862384763_29733718192882708_1112496476733840_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=105&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=DNcwxM-G-x8Q7kNvwE9cAqO&_nc_oc=Adpq8jD5F62TZRBC2Houi930k6NVmbs7tnWG8i3VXY75vmuY7KwE7OyoppDspV_71SM&_nc_zt=14&_nc_ht=scontent-lax7-1.xx&_nc_gid=vRTxyFAp81rnNHnRAucfpA&_nc_ss=7b289&oh=00_AQQMdEmN9szbA5wW3oOoOaGl_Ut53PKWxVigWR8lhuU0eQ&oe=6AF76B24"
+        "https://scontent-lax7-1.xx.fbcdn.net/v/t39.35426-6/862384763_29733718192882708_1112496476733840_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=105&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=ciV0sslwJSMQ7kNvwG2ghFz&_nc_oc=Adobb5ldX78596nvARkwk0dHJ6bynhZaEZcCvE048zaCWyjwpeVYQVq9DH4N-r91JKg&_nc_zt=14&_nc_ht=scontent-lax7-1.xx&_nc_gid=Im2AvLTdo2WHicuqD5JQpg&_nc_ss=7b289&oh=00_AQRK1JFACXT3XzrauyoL6QEowOJezX4uchCZ-wwQ-qlF_A&oe=6AF76B24"
       ],
       "has_video": false,
       "same_creative_count": 0,
-      "multiple_versions": false
+      "multiple_versions": false,
+      "cta_type": "ORDER_NOW",
+      "display_format": "image",
+      "cards": [
+        {
+          "body": "Any Large Pizza from £8.99 collection or £9.99 delivery. Great pizza, even better value. Order now! T&Cs apply\\*",
+          "cta": "Order now",
+          "image": "https://scontent-lax7-1.xx.fbcdn.net/v/t39.35426-6/862384763_29733718192882708_1112496476733840_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=105&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=ciV0sslwJSMQ7kNvwG2ghFz&_nc_oc=Adobb5ldX78596nvARkwk0dHJ6bynhZaEZcCvE048zaCWyjwpeVYQVq9DH4N-r91JKg&_nc_zt=14&_nc_ht=scontent-lax7-1.xx&_nc_gid=Im2AvLTdo2WHicuqD5JQpg&_nc_ss=7b289&oh=00_AQRK1JFACXT3XzrauyoL6QEowOJezX4uchCZ-wwQ-qlF_A&oe=6AF76B24",
+          "link_url": "https://pizzahutuk.app.link/frCiL1mGsOb?%243p=a_facebook&~ad_id=%7B%7Bad.id%7D%7D&~ad_name=%7B%7Bad.name%7D%7D&~ad_set_id=%7B%7Badset.id%7D%7D&~ad_set_name=%7B%7Badset.name%7D%7D&~campaign=%7B%7Bcampaign.name%7D%7D&~campaign_id=%7B%7Bcampaign.id%7D%7D",
+          "title": "Pizza from £8.99 collection or £9.99 delivery T&Cs apply",
+          "video": null
+        }
+      ]
     },
     {
       "id": "1131700169193382",
@@ -292,12 +547,25 @@
       "link_url": "https://pizzahutuk.app.link/frCiL1mGsOb?%243p=a_facebook&~ad_id=%7B%7Bad.id%7D%7D&~ad_name=%7B%7Bad.name%7D%7D&~ad_set_id=%7B%7Badset.id%7D%7D&~ad_set_name=%7B%7Badset.name%7D%7D&~campaign=%7B%7Bcampaign.name%7D%7D&~campaign_id=%7B%7Bcampaign.id%7D%7D",
       "link_title": "Mega Feast for just £31.99! T&C's apply",
       "cta_text": "Order now",
+      "link_caption": "PIZZAHUTUK.APP.LINK",
       "images": [
-        "https://scontent-lax3-2.xx.fbcdn.net/v/t39.35426-6/829793220_1120173790378416_7933231108057628049_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=107&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=DGzInAu3Jq8Q7kNvwHuF2ZX&_nc_oc=AdoW4KvL8XFPwy0nX5VsCx4DX6ZpniFONyCAVc9GQh_n8aeR-q1ly1bqooeJCDtpySQ&_nc_zt=14&_nc_ht=scontent-lax3-2.xx&_nc_gid=vRTxyFAp81rnNHnRAucfpA&_nc_ss=7b289&oh=00_AQSzkyG2C3G3O-bfSn5QolSprols16pNLFKEnvf61So8FQ&oe=6AF73BA0"
+        "https://scontent-lax3-2.xx.fbcdn.net/v/t39.35426-6/829793220_1120173790378416_7933231108057628049_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=107&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=DGzInAu3Jq8Q7kNvwGcCJ9d&_nc_oc=AdpYx4Rtl5BCIFg87s8qFTaXBzBL9G3dGbQJ9O4xJpyh2hRqzsuCi4bIGp_SB4kKh9U&_nc_zt=14&_nc_ht=scontent-lax3-2.xx&_nc_gid=Im2AvLTdo2WHicuqD5JQpg&_nc_ss=7b289&oh=00_AQQ6dNs4Z9vIl81hX-kftAlALji4LBtIWB9VE1nxUd4BaQ&oe=6AF773E0"
       ],
       "has_video": false,
       "same_creative_count": 2,
-      "multiple_versions": false
+      "multiple_versions": false,
+      "cta_type": "ORDER_NOW",
+      "display_format": "image",
+      "cards": [
+        {
+          "body": "THE Mega Feast - 2 Large Pizzas, 1 Classic Side and a 1.5L Bottle of Drink 🍕",
+          "cta": "Order now",
+          "image": "https://scontent-lax3-2.xx.fbcdn.net/v/t39.35426-6/829793220_1120173790378416_7933231108057628049_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=107&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=DGzInAu3Jq8Q7kNvwGcCJ9d&_nc_oc=AdpYx4Rtl5BCIFg87s8qFTaXBzBL9G3dGbQJ9O4xJpyh2hRqzsuCi4bIGp_SB4kKh9U&_nc_zt=14&_nc_ht=scontent-lax3-2.xx&_nc_gid=Im2AvLTdo2WHicuqD5JQpg&_nc_ss=7b289&oh=00_AQQ6dNs4Z9vIl81hX-kftAlALji4LBtIWB9VE1nxUd4BaQ&oe=6AF773E0",
+          "link_url": "https://pizzahutuk.app.link/frCiL1mGsOb?%243p=a_facebook&~ad_id=%7B%7Bad.id%7D%7D&~ad_name=%7B%7Bad.name%7D%7D&~ad_set_id=%7B%7Badset.id%7D%7D&~ad_set_name=%7B%7Badset.name%7D%7D&~campaign=%7B%7Bcampaign.name%7D%7D&~campaign_id=%7B%7Bcampaign.id%7D%7D",
+          "title": "Mega Feast for just £31.99! T&C's apply",
+          "video": null
+        }
+      ]
     },
     {
       "id": "3084334485236170",
@@ -312,12 +580,25 @@
       "link_url": "https://source-ev.com/locations/lowestoft-tower-retail-park-ev-charging?app_downloads=true&utm_source=meta&utm_medium=paid_social&utm_campaign=live_hubs&utm_content=lowestoft_tower_retail",
       "link_title": "",
       "cta_text": "",
+      "link_caption": "",
       "images": [
-        "https://scontent-lax3-1.xx.fbcdn.net/v/t39.35426-6/831455662_1000944326390026_748685926912083267_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=110&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=fZRKsSl1xoMQ7kNvwH1n0-7&_nc_oc=Adp_n-Pj_zXgsbMMiNItfEc9P7aND8zL0B_EAdLSTN_mKaYNF9oc3fKzbyl4T6nq_NE&_nc_zt=14&_nc_ht=scontent-lax3-1.xx&_nc_gid=vRTxyFAp81rnNHnRAucfpA&_nc_ss=7b289&oh=00_AQSJfevEz2TdykaxZcQU-RMtljlw-Noy8aK9aS3p1Ki9cQ&oe=6AF749CA"
+        "https://scontent-lax3-1.xx.fbcdn.net/v/t39.35426-6/831455662_1000944326390026_748685926912083267_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=110&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=fZRKsSl1xoMQ7kNvwEd50In&_nc_oc=AdokmyveE_ePb5WEMV5v8AG2zNSW9VKCo9qPTgRPw8La4smN33lLfPP20oQkR5BzY2U&_nc_zt=14&_nc_ht=scontent-lax3-1.xx&_nc_gid=Im2AvLTdo2WHicuqD5JQpg&_nc_ss=7b289&oh=00_AQQUysDn88owx-jDXiOQ5_McL3WUIaDAXaiZffR38G1sRA&oe=6AF7820A"
       ],
       "has_video": false,
       "same_creative_count": 0,
-      "multiple_versions": false
+      "multiple_versions": false,
+      "cta_type": "",
+      "display_format": "image",
+      "cards": [
+        {
+          "body": "Whether you're shopping, commuting or passing through Lowestoft, Source at Tower Retail Park provides fast, convenient EV charging when you need it.\nFeaturing ten bays and five ultra-rapid 150kW chargers, the hub serves drivers across the area, including Pakefield and Carlton Colville.\nWith Morrisons, Pizza Hut and Sainsbury's just moments away, you can make the most of your stop whilst your vehicle charges.\nDownload the Source app to view live bay availability and transparent pricing for a seamless charging experience.",
+          "cta": "",
+          "image": "https://scontent-lax3-1.xx.fbcdn.net/v/t39.35426-6/831455662_1000944326390026_748685926912083267_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=110&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=fZRKsSl1xoMQ7kNvwEd50In&_nc_oc=AdokmyveE_ePb5WEMV5v8AG2zNSW9VKCo9qPTgRPw8La4smN33lLfPP20oQkR5BzY2U&_nc_zt=14&_nc_ht=scontent-lax3-1.xx&_nc_gid=Im2AvLTdo2WHicuqD5JQpg&_nc_ss=7b289&oh=00_AQQUysDn88owx-jDXiOQ5_McL3WUIaDAXaiZffR38G1sRA&oe=6AF7820A",
+          "link_url": "https://source-ev.com/locations/lowestoft-tower-retail-park-ev-charging?app_downloads=true&utm_source=meta&utm_medium=paid_social&utm_campaign=live_hubs&utm_content=lowestoft_tower_retail",
+          "title": "",
+          "video": null
+        }
+      ]
     },
     {
       "id": "1480026373984072",
@@ -332,12 +613,25 @@
       "link_url": "https://www.pizzahut.co.uk/order/pizzas",
       "link_title": "Buy 1 Get 1 FREE on Pizza + Sides! T&Cs apply",
       "cta_text": "Order now",
+      "link_caption": "PIZZAHUT.CO.UK",
       "images": [
-        "https://scontent-lax3-2.xx.fbcdn.net/v/t39.35426-6/888139386_1469032791997160_9186934222158295231_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=100&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=gOgzEGcB85kQ7kNvwGl4bWG&_nc_oc=AdrDE8NJddArTRhDIxEd-_K8tZl-bg0klz6jk7I9aEbikVK5Mi42SYFcN0ZO2HXGyCc&_nc_zt=14&_nc_ht=scontent-lax3-2.xx&_nc_gid=vRTxyFAp81rnNHnRAucfpA&_nc_ss=7b289&oh=00_AQTrx_t1joL0mHkjK48rYvBwTMkd1tGTtQEvEobJCtdQyw&oe=6AF760CF"
+        "https://scontent-lax3-2.xx.fbcdn.net/v/t39.35426-6/888139386_1469032791997160_9186934222158295231_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=100&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=gOgzEGcB85kQ7kNvwGlSSk9&_nc_oc=Adoy-sIo26gdWmr-KBw3Nw-RqkrFKjTTpKSznH-bOz-hK2090n2bwLrc6B8rUr8aN90&_nc_zt=14&_nc_ht=scontent-lax3-2.xx&_nc_gid=Im2AvLTdo2WHicuqD5JQpg&_nc_ss=7b289&oh=00_AQSMng9OXRF8SiYHO033h6slt6qvifpUtVWDKqVbP0CTYg&oe=6AF760CF"
       ],
       "has_video": false,
       "same_creative_count": 0,
-      "multiple_versions": false
+      "multiple_versions": false,
+      "cta_type": "ORDER_NOW",
+      "display_format": "image",
+      "cards": [
+        {
+          "body": "Spooky season is here!\n🎃 No tricks, just treats! Buy 1 Get 1 FREE on Pizza + Sides. Grab your Halloween feast at your local Hut! 👻 No code required!",
+          "cta": "Order now",
+          "image": "https://scontent-lax3-2.xx.fbcdn.net/v/t39.35426-6/888139386_1469032791997160_9186934222158295231_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=100&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=gOgzEGcB85kQ7kNvwGlSSk9&_nc_oc=Adoy-sIo26gdWmr-KBw3Nw-RqkrFKjTTpKSznH-bOz-hK2090n2bwLrc6B8rUr8aN90&_nc_zt=14&_nc_ht=scontent-lax3-2.xx&_nc_gid=Im2AvLTdo2WHicuqD5JQpg&_nc_ss=7b289&oh=00_AQSMng9OXRF8SiYHO033h6slt6qvifpUtVWDKqVbP0CTYg&oe=6AF760CF",
+          "link_url": "https://www.pizzahut.co.uk/order/pizzas",
+          "title": "Buy 1 Get 1 FREE on Pizza + Sides! T&Cs apply",
+          "video": null
+        }
+      ]
     },
     {
       "id": "1282387504064963",
@@ -352,12 +646,25 @@
       "link_url": "https://www.pizzahut.co.uk/order/pizzas",
       "link_title": "Buy 1 Get 1 FREE on Pizza + Sides! T&Cs apply",
       "cta_text": "Order now",
+      "link_caption": "PIZZAHUT.CO.UK",
       "images": [
-        "https://scontent-lax3-1.xx.fbcdn.net/v/t39.35426-6/891645431_1145746697958690_108329635159042162_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=102&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=hV6Vhlh40A8Q7kNvwGubp8Z&_nc_oc=AdoRfv6QyRxO2ib5hyey6bn7EUjqu-ptA0c0UW9_43dNrCet30nPnAtaqLfRd_lSqIQ&_nc_zt=14&_nc_ht=scontent-lax3-1.xx&_nc_gid=vRTxyFAp81rnNHnRAucfpA&_nc_ss=7b289&oh=00_AQSaeRaqnuOsmt5wqf9XZqlV9Ps95GeknJWyYFwFRsYAGg&oe=6AF76CF7"
+        "https://scontent-lax3-1.xx.fbcdn.net/v/t39.35426-6/891645431_1145746697958690_108329635159042162_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=102&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=hV6Vhlh40A8Q7kNvwGN5-35&_nc_oc=Ado3qgMrzQbsa7f4yHxnjfN0H09OV4nVNHXNb7lPlVPamd_0eYYLRRMuYQYtPZUGl5U&_nc_zt=14&_nc_ht=scontent-lax3-1.xx&_nc_gid=Im2AvLTdo2WHicuqD5JQpg&_nc_ss=7b289&oh=00_AQQw_5XEanC0blOjSohMNHkmWSdJXMk0EJ_cOQTaomT80g&oe=6AF76CF7"
       ],
       "has_video": false,
       "same_creative_count": 0,
-      "multiple_versions": false
+      "multiple_versions": false,
+      "cta_type": "ORDER_NOW",
+      "display_format": "image",
+      "cards": [
+        {
+          "body": "Spooky season is here!\n🎃 No tricks, just treats! Buy 1 Get 1 FREE on Pizza + Sides. Grab your Halloween feast at your local Hut! 👻 No code required!",
+          "cta": "Order now",
+          "image": "https://scontent-lax3-1.xx.fbcdn.net/v/t39.35426-6/891645431_1145746697958690_108329635159042162_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=102&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=hV6Vhlh40A8Q7kNvwGN5-35&_nc_oc=Ado3qgMrzQbsa7f4yHxnjfN0H09OV4nVNHXNb7lPlVPamd_0eYYLRRMuYQYtPZUGl5U&_nc_zt=14&_nc_ht=scontent-lax3-1.xx&_nc_gid=Im2AvLTdo2WHicuqD5JQpg&_nc_ss=7b289&oh=00_AQQw_5XEanC0blOjSohMNHkmWSdJXMk0EJ_cOQTaomT80g&oe=6AF76CF7",
+          "link_url": "https://www.pizzahut.co.uk/order/pizzas",
+          "title": "Buy 1 Get 1 FREE on Pizza + Sides! T&Cs apply",
+          "video": null
+        }
+      ]
     },
     {
       "id": "2584563518722139",
@@ -372,12 +679,25 @@
       "link_url": "https://www.pizzahut.co.uk/order/pizzas",
       "link_title": "Buy 1 Get 1 FREE on Pizza + Sides! T&Cs apply",
       "cta_text": "Order now",
+      "link_caption": "PIZZAHUT.CO.UK",
       "images": [
-        "https://scontent-lax3-1.xx.fbcdn.net/v/t39.35426-6/887213365_2051488918882073_259762047129822755_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=108&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=y6AtvWLZfPEQ7kNvwEn4Vhl&_nc_oc=Adr3smGWZaLa-5_kpj-uHmbj4iUMhALZbNLPpOV9SSFrY5mE-MCdGJuwCitmjvEEExI&_nc_zt=14&_nc_ht=scontent-lax3-1.xx&_nc_gid=vRTxyFAp81rnNHnRAucfpA&_nc_ss=7b289&oh=00_AQR6wVC_QEM91I_PoHeOYHALEYWRpVknu6sqcVDxDuJfog&oe=6AF76E1A"
+        "https://scontent-lax3-1.xx.fbcdn.net/v/t39.35426-6/887213365_2051488918882073_259762047129822755_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=108&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=y6AtvWLZfPEQ7kNvwF7Q6PM&_nc_oc=AdpmY5DbO2r_dwKCCWldsxwbHCeUhV6TLr7QZgCINaRyeqEHfbJTT0fBoePOWFiGa8o&_nc_zt=14&_nc_ht=scontent-lax3-1.xx&_nc_gid=Im2AvLTdo2WHicuqD5JQpg&_nc_ss=7b289&oh=00_AQSbpJbWPfpCMFtLhSAUgXvgxlonGa03hZqSYHlgkzQnGw&oe=6AF76E1A"
       ],
       "has_video": false,
       "same_creative_count": 0,
-      "multiple_versions": false
+      "multiple_versions": false,
+      "cta_type": "ORDER_NOW",
+      "display_format": "image",
+      "cards": [
+        {
+          "body": "Spooky season is here!\n🎃 No tricks, just treats! Buy 1 Get 1 FREE on Pizza + Sides. Grab your Halloween feast at your local Hut! 👻 No code required!",
+          "cta": "Order now",
+          "image": "https://scontent-lax3-1.xx.fbcdn.net/v/t39.35426-6/887213365_2051488918882073_259762047129822755_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=108&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=y6AtvWLZfPEQ7kNvwF7Q6PM&_nc_oc=AdpmY5DbO2r_dwKCCWldsxwbHCeUhV6TLr7QZgCINaRyeqEHfbJTT0fBoePOWFiGa8o&_nc_zt=14&_nc_ht=scontent-lax3-1.xx&_nc_gid=Im2AvLTdo2WHicuqD5JQpg&_nc_ss=7b289&oh=00_AQSbpJbWPfpCMFtLhSAUgXvgxlonGa03hZqSYHlgkzQnGw&oe=6AF76E1A",
+          "link_url": "https://www.pizzahut.co.uk/order/pizzas",
+          "title": "Buy 1 Get 1 FREE on Pizza + Sides! T&Cs apply",
+          "video": null
+        }
+      ]
     },
     {
       "id": "1119370470728828",
@@ -392,12 +712,58 @@
       "link_url": "https://www.pizzahut.co.uk/order/pizzas",
       "link_title": "Buy 1 Get 1 FREE on Pizza + Sides! T&Cs apply",
       "cta_text": "Order now",
+      "link_caption": "PIZZAHUT.CO.UK",
       "images": [
-        "https://scontent-lax3-1.xx.fbcdn.net/v/t39.35426-6/887213365_2051488918882073_259762047129822755_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=108&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=y6AtvWLZfPEQ7kNvwEn4Vhl&_nc_oc=Adr3smGWZaLa-5_kpj-uHmbj4iUMhALZbNLPpOV9SSFrY5mE-MCdGJuwCitmjvEEExI&_nc_zt=14&_nc_ht=scontent-lax3-1.xx&_nc_gid=vRTxyFAp81rnNHnRAucfpA&_nc_ss=7b289&oh=00_AQR6wVC_QEM91I_PoHeOYHALEYWRpVknu6sqcVDxDuJfog&oe=6AF76E1A"
+        "https://scontent-lax3-1.xx.fbcdn.net/v/t39.35426-6/887213365_2051488918882073_259762047129822755_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=108&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=y6AtvWLZfPEQ7kNvwF7Q6PM&_nc_oc=AdpmY5DbO2r_dwKCCWldsxwbHCeUhV6TLr7QZgCINaRyeqEHfbJTT0fBoePOWFiGa8o&_nc_zt=14&_nc_ht=scontent-lax3-1.xx&_nc_gid=Im2AvLTdo2WHicuqD5JQpg&_nc_ss=7b289&oh=00_AQSbpJbWPfpCMFtLhSAUgXvgxlonGa03hZqSYHlgkzQnGw&oe=6AF76E1A"
       ],
       "has_video": false,
       "same_creative_count": 0,
-      "multiple_versions": false
+      "multiple_versions": false,
+      "cta_type": "ORDER_NOW",
+      "display_format": "image",
+      "cards": [
+        {
+          "body": "Spooky season is here!\n🎃 No tricks, just treats! Buy 1 Get 1 FREE on Pizza + Sides. Grab your Halloween feast at your local Hut! 👻 No code required!",
+          "cta": "Order now",
+          "image": "https://scontent-lax3-1.xx.fbcdn.net/v/t39.35426-6/887213365_2051488918882073_259762047129822755_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=108&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=y6AtvWLZfPEQ7kNvwF7Q6PM&_nc_oc=AdpmY5DbO2r_dwKCCWldsxwbHCeUhV6TLr7QZgCINaRyeqEHfbJTT0fBoePOWFiGa8o&_nc_zt=14&_nc_ht=scontent-lax3-1.xx&_nc_gid=Im2AvLTdo2WHicuqD5JQpg&_nc_ss=7b289&oh=00_AQSbpJbWPfpCMFtLhSAUgXvgxlonGa03hZqSYHlgkzQnGw&oe=6AF76E1A",
+          "link_url": "https://www.pizzahut.co.uk/order/pizzas",
+          "title": "Buy 1 Get 1 FREE on Pizza + Sides! T&Cs apply",
+          "video": null
+        }
+      ]
+    },
+    {
+      "id": "2995460197453612",
+      "page_name": "Pizza Hut",
+      "status": "active",
+      "first_seen": "Nov 5, 2026",
+      "last_seen": "",
+      "creative_text": "Spooky season is here!\n🎃 No tricks, just treats! Buy 1 Get 1 FREE on Pizza + Sides. Grab your Halloween feast at your local Hut! 👻 No code required!",
+      "library_url": "https://www.facebook.com/ads/library/?id=2995460197453612",
+      "page_url": "https://www.facebook.com/pizzahutuk/",
+      "page_id": "",
+      "link_url": "https://www.pizzahut.co.uk/order/pizzas",
+      "link_title": "Buy 1 Get 1 FREE on Pizza + Sides T&Cs apply",
+      "cta_text": "Order now",
+      "link_caption": "PIZZAHUT.CO.UK",
+      "images": [
+        "https://scontent-lax3-2.xx.fbcdn.net/v/t39.35426-6/886633612_2578951949560267_7327530084470282035_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=111&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=kGEr0_k2pUQQ7kNvwEuJAMk&_nc_oc=AdqLmL4cGMrKztxA8RVZZhIEUSHAHlHsUhBVD1boxTLfoAEQZtl5rJCNXpuxFVG30Ow&_nc_zt=14&_nc_ht=scontent-lax3-2.xx&_nc_gid=Im2AvLTdo2WHicuqD5JQpg&_nc_ss=7b289&oh=00_AQRMkvoI74qb23W_xXXjCXVt5DJgPuhAZ_kYn3Up26dJ6w&oe=6AF77F31"
+      ],
+      "has_video": false,
+      "same_creative_count": 0,
+      "multiple_versions": false,
+      "cta_type": "ORDER_NOW",
+      "display_format": "image",
+      "cards": [
+        {
+          "body": "Spooky season is here!\n🎃 No tricks, just treats! Buy 1 Get 1 FREE on Pizza + Sides. Grab your Halloween feast at your local Hut! 👻 No code required!",
+          "cta": "Order now",
+          "image": "https://scontent-lax3-2.xx.fbcdn.net/v/t39.35426-6/886633612_2578951949560267_7327530084470282035_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=111&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=kGEr0_k2pUQQ7kNvwEuJAMk&_nc_oc=AdqLmL4cGMrKztxA8RVZZhIEUSHAHlHsUhBVD1boxTLfoAEQZtl5rJCNXpuxFVG30Ow&_nc_zt=14&_nc_ht=scontent-lax3-2.xx&_nc_gid=Im2AvLTdo2WHicuqD5JQpg&_nc_ss=7b289&oh=00_AQRMkvoI74qb23W_xXXjCXVt5DJgPuhAZ_kYn3Up26dJ6w&oe=6AF77F31",
+          "link_url": "https://www.pizzahut.co.uk/order/pizzas",
+          "title": "Buy 1 Get 1 FREE on Pizza + Sides T&Cs apply",
+          "video": null
+        }
+      ]
     }
   ],
   "advertiser_search": [
@@ -414,12 +780,25 @@
       "link_url": "https://www.pizzahut.co.uk/order/pizzas",
       "link_title": "Buy 1 Get 1 FREE on Pizza + Sides! T&Cs apply",
       "cta_text": "Order now",
+      "link_caption": "PIZZAHUT.CO.UK",
       "images": [
-        "https://scontent-lax3-1.xx.fbcdn.net/v/t39.35426-6/888575546_1818859982492631_2773011062991981542_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=102&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=88Cg5a4P2dwQ7kNvwHPeJsH&_nc_oc=AdrKAnP94RY7PhaVmw1THbdAJ8mCDLfKA81Mt4dASqD44TDupwpa6HehfzpcGNX5OII&_nc_zt=14&_nc_ht=scontent-lax3-1.xx&_nc_gid=zSvZsveXu3nGfcyZp2FUQA&_nc_ss=7b289&oh=00_AQT4zkNfZ6u5ci3Y4jkwb_AxqI5A3MQQhxCp_RdoEpgpIw&oe=6AF7412B"
+        "https://scontent-lax3-2.xx.fbcdn.net/v/t39.35426-6/886726639_40414762671448115_5068643264368200263_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=107&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=SnS3Yr4H-CMQ7kNvwFjae23&_nc_oc=AdoqS_tTINsYP9wWmJeVv4ZOXle6HHSRwDyLZWRTP8TrkV7KYILm-Qq-jnaAaS6ODLQ&_nc_zt=14&_nc_ht=scontent-lax3-2.xx&_nc_gid=9gquQ4_ISuYvBTWLCLnFwQ&_nc_ss=7b289&oh=00_AQQLI_-3fD_QyC_G1GSbLJKaCJfTPebf3MuVSV_KPtqjKg&oe=6AF764DF"
       ],
       "has_video": false,
       "same_creative_count": 0,
-      "multiple_versions": false
+      "multiple_versions": false,
+      "cta_type": "ORDER_NOW",
+      "display_format": "image",
+      "cards": [
+        {
+          "body": "Spooky season is here!\n🎃 No tricks, just treats! Buy 1 Get 1 FREE on Pizza + Sides. Grab your Halloween feast at your local Hut! 👻 No code required!",
+          "cta": "Order now",
+          "image": "https://scontent-lax3-2.xx.fbcdn.net/v/t39.35426-6/886726639_40414762671448115_5068643264368200263_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=107&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=SnS3Yr4H-CMQ7kNvwFjae23&_nc_oc=AdoqS_tTINsYP9wWmJeVv4ZOXle6HHSRwDyLZWRTP8TrkV7KYILm-Qq-jnaAaS6ODLQ&_nc_zt=14&_nc_ht=scontent-lax3-2.xx&_nc_gid=9gquQ4_ISuYvBTWLCLnFwQ&_nc_ss=7b289&oh=00_AQQLI_-3fD_QyC_G1GSbLJKaCJfTPebf3MuVSV_KPtqjKg&oe=6AF764DF",
+          "link_url": "https://www.pizzahut.co.uk/order/pizzas",
+          "title": "Buy 1 Get 1 FREE on Pizza + Sides! T&Cs apply",
+          "video": null
+        }
+      ]
     },
     {
       "id": "922412494081946",
@@ -434,10 +813,23 @@
       "link_url": "https://pizzahutuk.app.link/From999PizzaMeta?%243p=a_facebook&%24deeplink_no_attribution=true",
       "link_title": "Good Friends. Great Pizza",
       "cta_text": "Order Now",
+      "link_caption": "",
       "images": [],
       "has_video": true,
       "same_creative_count": 0,
-      "multiple_versions": false
+      "multiple_versions": false,
+      "cta_type": "ORDER_NOW",
+      "display_format": "video",
+      "cards": [
+        {
+          "body": "Pizza, friends, good times 🍕 Enjoy Pizza Hut favourites from £9.99. Download the app! Order now, T&Cs apply.",
+          "cta": "Order Now",
+          "image": null,
+          "link_url": "https://pizzahutuk.app.link/From999PizzaMeta?%243p=a_facebook&%24deeplink_no_attribution=true",
+          "title": "Good Friends. Great Pizza",
+          "video": null
+        }
+      ]
     },
     {
       "id": "972146922147876",
@@ -452,10 +844,23 @@
       "link_url": "https://pizzahutuk.app.link/MetaFrom899Pizza?%243p=a_facebook&%24deeplink_no_attribution=true",
       "link_title": "Good Friends. Great Pizza",
       "cta_text": "Order Now",
+      "link_caption": "",
       "images": [],
       "has_video": true,
       "same_creative_count": 0,
-      "multiple_versions": true
+      "multiple_versions": true,
+      "cta_type": "ORDER_NOW",
+      "display_format": "video",
+      "cards": [
+        {
+          "body": "Pizza, friends, good times 🍕 Enjoy Pizza Hut favourites from £8.99. Download the app! Order now, T&Cs apply.",
+          "cta": "Order Now",
+          "image": null,
+          "link_url": "https://pizzahutuk.app.link/MetaFrom899Pizza?%243p=a_facebook&%24deeplink_no_attribution=true",
+          "title": "Good Friends. Great Pizza",
+          "video": null
+        }
+      ]
     },
     {
       "id": "4734664513429584",
@@ -470,28 +875,54 @@
       "link_url": "https://pizzahutuk.app.link/From999PizzaMeta?%243p=a_facebook&%24deeplink_no_attribution=true",
       "link_title": "Good Friends. Great Pizza",
       "cta_text": "Order Now",
+      "link_caption": "",
       "images": [],
       "has_video": true,
       "same_creative_count": 0,
-      "multiple_versions": false
+      "multiple_versions": false,
+      "cta_type": "ORDER_NOW",
+      "display_format": "video",
+      "cards": [
+        {
+          "body": "Pizza, friends, good times 🍕 Enjoy Pizza Hut favourites from £9.99. Download the app! Order now, T&Cs apply.",
+          "cta": "Order Now",
+          "image": null,
+          "link_url": "https://pizzahutuk.app.link/From999PizzaMeta?%243p=a_facebook&%24deeplink_no_attribution=true",
+          "title": "Good Friends. Great Pizza",
+          "video": null
+        }
+      ]
     },
     {
-      "id": "28950664457909392",
+      "id": "1075890385436574",
       "page_name": "Pizza Hut",
       "status": "active",
-      "first_seen": "Nov 4, 2026",
+      "first_seen": "Oct 23, 2026",
       "last_seen": "",
       "creative_text": "Pizza, friends, good times 🍕 Enjoy Pizza Hut favourites from £8.99. Download the app! Order now, T&Cs apply.",
-      "library_url": "https://www.facebook.com/ads/library/?id=28950664457909392",
+      "library_url": "https://www.facebook.com/ads/library/?id=1075890385436574",
       "page_url": "https://www.facebook.com/pizzahutuk/",
       "page_id": "",
       "link_url": "https://pizzahutuk.app.link/MetaFrom899Pizza?%243p=a_facebook&%24deeplink_no_attribution=true",
       "link_title": "Good Friends. Great Pizza",
       "cta_text": "Order Now",
+      "link_caption": "",
       "images": [],
       "has_video": true,
       "same_creative_count": 0,
-      "multiple_versions": false
+      "multiple_versions": false,
+      "cta_type": "ORDER_NOW",
+      "display_format": "video",
+      "cards": [
+        {
+          "body": "Pizza, friends, good times 🍕 Enjoy Pizza Hut favourites from £8.99. Download the app! Order now, T&Cs apply.",
+          "cta": "Order Now",
+          "image": null,
+          "link_url": "https://pizzahutuk.app.link/MetaFrom899Pizza?%243p=a_facebook&%24deeplink_no_attribution=true",
+          "title": "Good Friends. Great Pizza",
+          "video": null
+        }
+      ]
     },
     {
       "id": "1065123379480983",
@@ -506,12 +937,25 @@
       "link_url": "https://pizzahutuk.app.link/frCiL1mGsOb?%243p=a_facebook&~ad_id=%7B%7Bad.id%7D%7D&~ad_name=%7B%7Bad.name%7D%7D&~ad_set_id=%7B%7Badset.id%7D%7D&~ad_set_name=%7B%7Badset.name%7D%7D&~campaign=%7B%7Bcampaign.name%7D%7D&~campaign_id=%7B%7Bcampaign.id%7D%7D",
       "link_title": "Pizza from £8.99 collection or £9.99 delivery T&Cs apply",
       "cta_text": "Order now",
+      "link_caption": "PIZZAHUT.CO.UK",
       "images": [
-        "https://scontent-lax7-1.xx.fbcdn.net/v/t39.35426-6/862384763_29733718192882708_1112496476733840_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=105&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=DNcwxM-G-x8Q7kNvwF8jxEG&_nc_oc=Adqzu52i7o66Qp4W9Vf9uCEfqsBOsniN1GWc9LuSET23BaOSXYRuR9hcbatx2tFw4iA&_nc_zt=14&_nc_ht=scontent-lax7-1.xx&_nc_gid=zSvZsveXu3nGfcyZp2FUQA&_nc_ss=7b289&oh=00_AQRPDJ5rm28TGf3qP5MtvD1W6w2jdb9Tibolrg-6YoMsXw&oe=6AF76B24"
+        "https://scontent-lax7-1.xx.fbcdn.net/v/t39.35426-6/862384763_29733718192882708_1112496476733840_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=105&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=ciV0sslwJSMQ7kNvwH9OukD&_nc_oc=AdrTqMzBYEVqnHoLiZE0rONrCvAZ--ASj4rzXoFO3aYqmEMU0o27E9Ez772EP3Mdr9g&_nc_zt=14&_nc_ht=scontent-lax7-1.xx&_nc_gid=9gquQ4_ISuYvBTWLCLnFwQ&_nc_ss=7b289&oh=00_AQTeibnipFFZobdrdZC7uRCFPS0T6fjd_iWUMiqZu2qmaQ&oe=6AF76B24"
       ],
       "has_video": false,
       "same_creative_count": 0,
-      "multiple_versions": false
+      "multiple_versions": false,
+      "cta_type": "ORDER_NOW",
+      "display_format": "image",
+      "cards": [
+        {
+          "body": "Any Large Pizza from £8.99 collection or £9.99 delivery. Great pizza, even better value. Order now! T&Cs apply\\*",
+          "cta": "Order now",
+          "image": "https://scontent-lax7-1.xx.fbcdn.net/v/t39.35426-6/862384763_29733718192882708_1112496476733840_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=105&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=ciV0sslwJSMQ7kNvwH9OukD&_nc_oc=AdrTqMzBYEVqnHoLiZE0rONrCvAZ--ASj4rzXoFO3aYqmEMU0o27E9Ez772EP3Mdr9g&_nc_zt=14&_nc_ht=scontent-lax7-1.xx&_nc_gid=9gquQ4_ISuYvBTWLCLnFwQ&_nc_ss=7b289&oh=00_AQTeibnipFFZobdrdZC7uRCFPS0T6fjd_iWUMiqZu2qmaQ&oe=6AF76B24",
+          "link_url": "https://pizzahutuk.app.link/frCiL1mGsOb?%243p=a_facebook&~ad_id=%7B%7Bad.id%7D%7D&~ad_name=%7B%7Bad.name%7D%7D&~ad_set_id=%7B%7Badset.id%7D%7D&~ad_set_name=%7B%7Badset.name%7D%7D&~campaign=%7B%7Bcampaign.name%7D%7D&~campaign_id=%7B%7Bcampaign.id%7D%7D",
+          "title": "Pizza from £8.99 collection or £9.99 delivery T&Cs apply",
+          "video": null
+        }
+      ]
     },
     {
       "id": "1131700169193382",
@@ -526,12 +970,25 @@
       "link_url": "https://pizzahutuk.app.link/frCiL1mGsOb?%243p=a_facebook&~ad_id=%7B%7Bad.id%7D%7D&~ad_name=%7B%7Bad.name%7D%7D&~ad_set_id=%7B%7Badset.id%7D%7D&~ad_set_name=%7B%7Badset.name%7D%7D&~campaign=%7B%7Bcampaign.name%7D%7D&~campaign_id=%7B%7Bcampaign.id%7D%7D",
       "link_title": "Mega Feast for just £31.99! T&C's apply",
       "cta_text": "Order now",
+      "link_caption": "PIZZAHUTUK.APP.LINK",
       "images": [
-        "https://scontent-lax3-2.xx.fbcdn.net/v/t39.35426-6/829793220_1120173790378416_7933231108057628049_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=107&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=DGzInAu3Jq8Q7kNvwEGuUr1&_nc_oc=AdruP0djpTS6R224nvSRSGkF84jxZtonOtHgIxKO-uR7ax9jndeVNVU8Uh-LKlojZlo&_nc_zt=14&_nc_ht=scontent-lax3-2.xx&_nc_gid=zSvZsveXu3nGfcyZp2FUQA&_nc_ss=7b289&oh=00_AQSTHL-pXvepjmDuBo3rGU_NTI7kh8lrJB-FRqPONU--UQ&oe=6AF73BA0"
+        "https://scontent-lax3-2.xx.fbcdn.net/v/t39.35426-6/829793220_1120173790378416_7933231108057628049_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=107&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=DGzInAu3Jq8Q7kNvwGkudAE&_nc_oc=AdpOU4MRDCKB9NlA4Xnp49F_iAiCpkjDBKSHx14L8bEDoJz-fhRvCH8Whol_gloTyIE&_nc_zt=14&_nc_ht=scontent-lax3-2.xx&_nc_gid=9gquQ4_ISuYvBTWLCLnFwQ&_nc_ss=7b289&oh=00_AQSAC-XiyIwBEdpKuqWwrSqqUYjEHGgDhdkLy8-FGR4AZg&oe=6AF773E0"
       ],
       "has_video": false,
       "same_creative_count": 2,
-      "multiple_versions": false
+      "multiple_versions": false,
+      "cta_type": "ORDER_NOW",
+      "display_format": "image",
+      "cards": [
+        {
+          "body": "THE Mega Feast - 2 Large Pizzas, 1 Classic Side and a 1.5L Bottle of Drink 🍕",
+          "cta": "Order now",
+          "image": "https://scontent-lax3-2.xx.fbcdn.net/v/t39.35426-6/829793220_1120173790378416_7933231108057628049_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=107&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=DGzInAu3Jq8Q7kNvwGkudAE&_nc_oc=AdpOU4MRDCKB9NlA4Xnp49F_iAiCpkjDBKSHx14L8bEDoJz-fhRvCH8Whol_gloTyIE&_nc_zt=14&_nc_ht=scontent-lax3-2.xx&_nc_gid=9gquQ4_ISuYvBTWLCLnFwQ&_nc_ss=7b289&oh=00_AQSAC-XiyIwBEdpKuqWwrSqqUYjEHGgDhdkLy8-FGR4AZg&oe=6AF773E0",
+          "link_url": "https://pizzahutuk.app.link/frCiL1mGsOb?%243p=a_facebook&~ad_id=%7B%7Bad.id%7D%7D&~ad_name=%7B%7Bad.name%7D%7D&~ad_set_id=%7B%7Badset.id%7D%7D&~ad_set_name=%7B%7Badset.name%7D%7D&~campaign=%7B%7Bcampaign.name%7D%7D&~campaign_id=%7B%7Bcampaign.id%7D%7D",
+          "title": "Mega Feast for just £31.99! T&C's apply",
+          "video": null
+        }
+      ]
     },
     {
       "id": "1480026373984072",
@@ -546,12 +1003,25 @@
       "link_url": "https://www.pizzahut.co.uk/order/pizzas",
       "link_title": "Buy 1 Get 1 FREE on Pizza + Sides! T&Cs apply",
       "cta_text": "Order now",
+      "link_caption": "PIZZAHUT.CO.UK",
       "images": [
-        "https://scontent-lax3-2.xx.fbcdn.net/v/t39.35426-6/888139386_1469032791997160_9186934222158295231_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=100&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=gOgzEGcB85kQ7kNvwGTCPki&_nc_oc=AdpEWN9i7YuOKRA8pwI-TnRcUq7GcdQ3Ct3_lYLLwQb4yCrE1tdSW74bnHfi6liVAFM&_nc_zt=14&_nc_ht=scontent-lax3-2.xx&_nc_gid=zSvZsveXu3nGfcyZp2FUQA&_nc_ss=7b289&oh=00_AQTthH890OUEKXme5eQCx3_GBbLe2YcmQ-6_lsyH2cGkjw&oe=6AF760CF"
+        "https://scontent-lax3-2.xx.fbcdn.net/v/t39.35426-6/888139386_1469032791997160_9186934222158295231_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=100&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=gOgzEGcB85kQ7kNvwGU7nJP&_nc_oc=AdruZwhDJPYhrZ2MyKlkM2t_njhipEAT2-ydwR4WT0dzj9tkA8d7y37HGw3FQUhyB0w&_nc_zt=14&_nc_ht=scontent-lax3-2.xx&_nc_gid=9gquQ4_ISuYvBTWLCLnFwQ&_nc_ss=7b289&oh=00_AQTgT0fGwnTwXjBkHwkK6ZFbrXTND1dYHEUQk0acssr5lQ&oe=6AF760CF"
       ],
       "has_video": false,
       "same_creative_count": 0,
-      "multiple_versions": false
+      "multiple_versions": false,
+      "cta_type": "ORDER_NOW",
+      "display_format": "image",
+      "cards": [
+        {
+          "body": "Spooky season is here!\n🎃 No tricks, just treats! Buy 1 Get 1 FREE on Pizza + Sides. Grab your Halloween feast at your local Hut! 👻 No code required!",
+          "cta": "Order now",
+          "image": "https://scontent-lax3-2.xx.fbcdn.net/v/t39.35426-6/888139386_1469032791997160_9186934222158295231_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=100&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=gOgzEGcB85kQ7kNvwGU7nJP&_nc_oc=AdruZwhDJPYhrZ2MyKlkM2t_njhipEAT2-ydwR4WT0dzj9tkA8d7y37HGw3FQUhyB0w&_nc_zt=14&_nc_ht=scontent-lax3-2.xx&_nc_gid=9gquQ4_ISuYvBTWLCLnFwQ&_nc_ss=7b289&oh=00_AQTgT0fGwnTwXjBkHwkK6ZFbrXTND1dYHEUQk0acssr5lQ&oe=6AF760CF",
+          "link_url": "https://www.pizzahut.co.uk/order/pizzas",
+          "title": "Buy 1 Get 1 FREE on Pizza + Sides! T&Cs apply",
+          "video": null
+        }
+      ]
     },
     {
       "id": "1282387504064963",
@@ -566,12 +1036,25 @@
       "link_url": "https://www.pizzahut.co.uk/order/pizzas",
       "link_title": "Buy 1 Get 1 FREE on Pizza + Sides! T&Cs apply",
       "cta_text": "Order now",
+      "link_caption": "PIZZAHUT.CO.UK",
       "images": [
-        "https://scontent-lax3-1.xx.fbcdn.net/v/t39.35426-6/891645431_1145746697958690_108329635159042162_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=102&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=hV6Vhlh40A8Q7kNvwFhogzn&_nc_oc=AdrKiS2dHRlIwj_08ulyo6zfDExoO55ocyIeLkuYUZcLRqe5cPVhKEo8o20ZyFLWfuE&_nc_zt=14&_nc_ht=scontent-lax3-1.xx&_nc_gid=zSvZsveXu3nGfcyZp2FUQA&_nc_ss=7b289&oh=00_AQR4C14lf10vTFy7Lxg3gPllHA2I0k2y6YonujhGYVBXvA&oe=6AF76CF7"
+        "https://scontent-lax3-1.xx.fbcdn.net/v/t39.35426-6/891645431_1145746697958690_108329635159042162_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=102&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=hV6Vhlh40A8Q7kNvwF9GOPv&_nc_oc=AdpNiBNwWsTgVj3-FYTmyt97VKHT_we8YoLZXDeH3hJ26suWXcp4j3imZRP47gcs6us&_nc_zt=14&_nc_ht=scontent-lax3-1.xx&_nc_gid=9gquQ4_ISuYvBTWLCLnFwQ&_nc_ss=7b289&oh=00_AQShYlHNfrKH3koSUHDf_zNt1F9Ut1SQKm4AJMKYGVuNpQ&oe=6AF76CF7"
       ],
       "has_video": false,
       "same_creative_count": 0,
-      "multiple_versions": false
+      "multiple_versions": false,
+      "cta_type": "ORDER_NOW",
+      "display_format": "image",
+      "cards": [
+        {
+          "body": "Spooky season is here!\n🎃 No tricks, just treats! Buy 1 Get 1 FREE on Pizza + Sides. Grab your Halloween feast at your local Hut! 👻 No code required!",
+          "cta": "Order now",
+          "image": "https://scontent-lax3-1.xx.fbcdn.net/v/t39.35426-6/891645431_1145746697958690_108329635159042162_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=102&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=hV6Vhlh40A8Q7kNvwF9GOPv&_nc_oc=AdpNiBNwWsTgVj3-FYTmyt97VKHT_we8YoLZXDeH3hJ26suWXcp4j3imZRP47gcs6us&_nc_zt=14&_nc_ht=scontent-lax3-1.xx&_nc_gid=9gquQ4_ISuYvBTWLCLnFwQ&_nc_ss=7b289&oh=00_AQShYlHNfrKH3koSUHDf_zNt1F9Ut1SQKm4AJMKYGVuNpQ&oe=6AF76CF7",
+          "link_url": "https://www.pizzahut.co.uk/order/pizzas",
+          "title": "Buy 1 Get 1 FREE on Pizza + Sides! T&Cs apply",
+          "video": null
+        }
+      ]
     },
     {
       "id": "2584563518722139",
@@ -586,12 +1069,25 @@
       "link_url": "https://www.pizzahut.co.uk/order/pizzas",
       "link_title": "Buy 1 Get 1 FREE on Pizza + Sides! T&Cs apply",
       "cta_text": "Order now",
+      "link_caption": "PIZZAHUT.CO.UK",
       "images": [
-        "https://scontent-lax3-1.xx.fbcdn.net/v/t39.35426-6/887213365_2051488918882073_259762047129822755_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=108&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=y6AtvWLZfPEQ7kNvwEEE9PP&_nc_oc=AdpQvLzIKqULafbM96C6gdtzQTk9LNcF3FifnjjzxLOVfRnK8Dhr-WZDWOwOPm10b0o&_nc_zt=14&_nc_ht=scontent-lax3-1.xx&_nc_gid=zSvZsveXu3nGfcyZp2FUQA&_nc_ss=7b289&oh=00_AQT-0L0R5y4zbbG0LB_6Hn07kC5E8fySwqVkP6D_Sg5IUg&oe=6AF76E1A"
+        "https://scontent-lax3-1.xx.fbcdn.net/v/t39.35426-6/887213365_2051488918882073_259762047129822755_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=108&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=y6AtvWLZfPEQ7kNvwECY63P&_nc_oc=Adp_vxIeC4hIqtI6Bx78ZPEotCR9vCUDZASNo1jK2SsqahDoe3hDBMGXmiKiHia6A-U&_nc_zt=14&_nc_ht=scontent-lax3-1.xx&_nc_gid=9gquQ4_ISuYvBTWLCLnFwQ&_nc_ss=7b289&oh=00_AQSiQFfUpRAiKR3rYJrrXaD3Ni9Gm-tYLusl9UG5qw4f9A&oe=6AF76E1A"
       ],
       "has_video": false,
       "same_creative_count": 0,
-      "multiple_versions": false
+      "multiple_versions": false,
+      "cta_type": "ORDER_NOW",
+      "display_format": "image",
+      "cards": [
+        {
+          "body": "Spooky season is here!\n🎃 No tricks, just treats! Buy 1 Get 1 FREE on Pizza + Sides. Grab your Halloween feast at your local Hut! 👻 No code required!",
+          "cta": "Order now",
+          "image": "https://scontent-lax3-1.xx.fbcdn.net/v/t39.35426-6/887213365_2051488918882073_259762047129822755_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=108&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=y6AtvWLZfPEQ7kNvwECY63P&_nc_oc=Adp_vxIeC4hIqtI6Bx78ZPEotCR9vCUDZASNo1jK2SsqahDoe3hDBMGXmiKiHia6A-U&_nc_zt=14&_nc_ht=scontent-lax3-1.xx&_nc_gid=9gquQ4_ISuYvBTWLCLnFwQ&_nc_ss=7b289&oh=00_AQSiQFfUpRAiKR3rYJrrXaD3Ni9Gm-tYLusl9UG5qw4f9A&oe=6AF76E1A",
+          "link_url": "https://www.pizzahut.co.uk/order/pizzas",
+          "title": "Buy 1 Get 1 FREE on Pizza + Sides! T&Cs apply",
+          "video": null
+        }
+      ]
     },
     {
       "id": "1119370470728828",
@@ -606,12 +1102,25 @@
       "link_url": "https://www.pizzahut.co.uk/order/pizzas",
       "link_title": "Buy 1 Get 1 FREE on Pizza + Sides! T&Cs apply",
       "cta_text": "Order now",
+      "link_caption": "PIZZAHUT.CO.UK",
       "images": [
-        "https://scontent-lax3-1.xx.fbcdn.net/v/t39.35426-6/887213365_2051488918882073_259762047129822755_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=108&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=y6AtvWLZfPEQ7kNvwEEE9PP&_nc_oc=AdpQvLzIKqULafbM96C6gdtzQTk9LNcF3FifnjjzxLOVfRnK8Dhr-WZDWOwOPm10b0o&_nc_zt=14&_nc_ht=scontent-lax3-1.xx&_nc_gid=zSvZsveXu3nGfcyZp2FUQA&_nc_ss=7b289&oh=00_AQT-0L0R5y4zbbG0LB_6Hn07kC5E8fySwqVkP6D_Sg5IUg&oe=6AF76E1A"
+        "https://scontent-lax3-1.xx.fbcdn.net/v/t39.35426-6/887213365_2051488918882073_259762047129822755_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=108&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=y6AtvWLZfPEQ7kNvwECY63P&_nc_oc=Adp_vxIeC4hIqtI6Bx78ZPEotCR9vCUDZASNo1jK2SsqahDoe3hDBMGXmiKiHia6A-U&_nc_zt=14&_nc_ht=scontent-lax3-1.xx&_nc_gid=9gquQ4_ISuYvBTWLCLnFwQ&_nc_ss=7b289&oh=00_AQSiQFfUpRAiKR3rYJrrXaD3Ni9Gm-tYLusl9UG5qw4f9A&oe=6AF76E1A"
       ],
       "has_video": false,
       "same_creative_count": 0,
-      "multiple_versions": false
+      "multiple_versions": false,
+      "cta_type": "ORDER_NOW",
+      "display_format": "image",
+      "cards": [
+        {
+          "body": "Spooky season is here!\n🎃 No tricks, just treats! Buy 1 Get 1 FREE on Pizza + Sides. Grab your Halloween feast at your local Hut! 👻 No code required!",
+          "cta": "Order now",
+          "image": "https://scontent-lax3-1.xx.fbcdn.net/v/t39.35426-6/887213365_2051488918882073_259762047129822755_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=108&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=y6AtvWLZfPEQ7kNvwECY63P&_nc_oc=Adp_vxIeC4hIqtI6Bx78ZPEotCR9vCUDZASNo1jK2SsqahDoe3hDBMGXmiKiHia6A-U&_nc_zt=14&_nc_ht=scontent-lax3-1.xx&_nc_gid=9gquQ4_ISuYvBTWLCLnFwQ&_nc_ss=7b289&oh=00_AQSiQFfUpRAiKR3rYJrrXaD3Ni9Gm-tYLusl9UG5qw4f9A&oe=6AF76E1A",
+          "link_url": "https://www.pizzahut.co.uk/order/pizzas",
+          "title": "Buy 1 Get 1 FREE on Pizza + Sides! T&Cs apply",
+          "video": null
+        }
+      ]
     },
     {
       "id": "2995460197453612",
@@ -626,12 +1135,25 @@
       "link_url": "https://www.pizzahut.co.uk/order/pizzas",
       "link_title": "Buy 1 Get 1 FREE on Pizza + Sides T&Cs apply",
       "cta_text": "Order now",
+      "link_caption": "PIZZAHUT.CO.UK",
       "images": [
-        "https://scontent-lax3-2.xx.fbcdn.net/v/t39.35426-6/886633612_2578951949560267_7327530084470282035_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=111&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=kGEr0_k2pUQQ7kNvwEiER1G&_nc_oc=AdpuWWD1Qm4Pl2vc8BerWmQq_5UsV6X5kcFv6rQYGKjIamPX7QW0jGjq1iFt85A--i4&_nc_zt=14&_nc_ht=scontent-lax3-2.xx&_nc_gid=zSvZsveXu3nGfcyZp2FUQA&_nc_ss=7b289&oh=00_AQSd2Gjvc8L06Vsb9KzUZSlAMRozKy6mOJ5B36GMt_nk2A&oe=6AF746F1"
+        "https://scontent-lax3-2.xx.fbcdn.net/v/t39.35426-6/886633612_2578951949560267_7327530084470282035_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=111&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=kGEr0_k2pUQQ7kNvwHSH62G&_nc_oc=AdorMmG3CnSX5TbZ2SnjqoP2JpY_rZ2rh_iAObR0FCgotGB8TzSs4FyX73qX_qgkzsI&_nc_zt=14&_nc_ht=scontent-lax3-2.xx&_nc_gid=9gquQ4_ISuYvBTWLCLnFwQ&_nc_ss=7b289&oh=00_AQTWYQ2KZnrmdRavRMBp22mtFiCj-C9hWIp3s2MxJXA3Fw&oe=6AF77F31"
       ],
       "has_video": false,
       "same_creative_count": 0,
-      "multiple_versions": false
+      "multiple_versions": false,
+      "cta_type": "ORDER_NOW",
+      "display_format": "image",
+      "cards": [
+        {
+          "body": "Spooky season is here!\n🎃 No tricks, just treats! Buy 1 Get 1 FREE on Pizza + Sides. Grab your Halloween feast at your local Hut! 👻 No code required!",
+          "cta": "Order now",
+          "image": "https://scontent-lax3-2.xx.fbcdn.net/v/t39.35426-6/886633612_2578951949560267_7327530084470282035_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=111&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=kGEr0_k2pUQQ7kNvwHSH62G&_nc_oc=AdorMmG3CnSX5TbZ2SnjqoP2JpY_rZ2rh_iAObR0FCgotGB8TzSs4FyX73qX_qgkzsI&_nc_zt=14&_nc_ht=scontent-lax3-2.xx&_nc_gid=9gquQ4_ISuYvBTWLCLnFwQ&_nc_ss=7b289&oh=00_AQTWYQ2KZnrmdRavRMBp22mtFiCj-C9hWIp3s2MxJXA3Fw&oe=6AF77F31",
+          "link_url": "https://www.pizzahut.co.uk/order/pizzas",
+          "title": "Buy 1 Get 1 FREE on Pizza + Sides T&Cs apply",
+          "video": null
+        }
+      ]
     },
     {
       "id": "1163559596115956",
@@ -646,12 +1168,25 @@
       "link_url": "https://www.pizzahut.co.uk/order/pizzas",
       "link_title": "Buy 1 Get 1 FREE on Pizza + Sides! T&Cs apply",
       "cta_text": "Order now",
+      "link_caption": "PIZZAHUT.CO.UK",
       "images": [
-        "https://scontent-lax3-1.xx.fbcdn.net/v/t39.35426-6/887213365_2051488918882073_259762047129822755_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=108&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=y6AtvWLZfPEQ7kNvwEEE9PP&_nc_oc=AdpQvLzIKqULafbM96C6gdtzQTk9LNcF3FifnjjzxLOVfRnK8Dhr-WZDWOwOPm10b0o&_nc_zt=14&_nc_ht=scontent-lax3-1.xx&_nc_gid=zSvZsveXu3nGfcyZp2FUQA&_nc_ss=7b289&oh=00_AQT-0L0R5y4zbbG0LB_6Hn07kC5E8fySwqVkP6D_Sg5IUg&oe=6AF76E1A"
+        "https://scontent-lax3-1.xx.fbcdn.net/v/t39.35426-6/887213365_2051488918882073_259762047129822755_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=108&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=y6AtvWLZfPEQ7kNvwECY63P&_nc_oc=Adp_vxIeC4hIqtI6Bx78ZPEotCR9vCUDZASNo1jK2SsqahDoe3hDBMGXmiKiHia6A-U&_nc_zt=14&_nc_ht=scontent-lax3-1.xx&_nc_gid=9gquQ4_ISuYvBTWLCLnFwQ&_nc_ss=7b289&oh=00_AQSiQFfUpRAiKR3rYJrrXaD3Ni9Gm-tYLusl9UG5qw4f9A&oe=6AF76E1A"
       ],
       "has_video": false,
       "same_creative_count": 0,
-      "multiple_versions": false
+      "multiple_versions": false,
+      "cta_type": "ORDER_NOW",
+      "display_format": "image",
+      "cards": [
+        {
+          "body": "Spooky season is here!\n🎃 No tricks, just treats! Buy 1 Get 1 FREE on Pizza + Sides. Grab your Halloween feast at your local Hut! 👻 No code required!",
+          "cta": "Order now",
+          "image": "https://scontent-lax3-1.xx.fbcdn.net/v/t39.35426-6/887213365_2051488918882073_259762047129822755_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=108&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=y6AtvWLZfPEQ7kNvwECY63P&_nc_oc=Adp_vxIeC4hIqtI6Bx78ZPEotCR9vCUDZASNo1jK2SsqahDoe3hDBMGXmiKiHia6A-U&_nc_zt=14&_nc_ht=scontent-lax3-1.xx&_nc_gid=9gquQ4_ISuYvBTWLCLnFwQ&_nc_ss=7b289&oh=00_AQSiQFfUpRAiKR3rYJrrXaD3Ni9Gm-tYLusl9UG5qw4f9A&oe=6AF76E1A",
+          "link_url": "https://www.pizzahut.co.uk/order/pizzas",
+          "title": "Buy 1 Get 1 FREE on Pizza + Sides! T&Cs apply",
+          "video": null
+        }
+      ]
     },
     {
       "id": "2567094903757743",
@@ -666,12 +1201,25 @@
       "link_url": "https://www.pizzahut.co.uk/order/pizzas",
       "link_title": "Buy 1 Get 1 FREE on Pizza + Sides! T&Cs apply",
       "cta_text": "Order now",
+      "link_caption": "PIZZAHUT.CO.UK",
       "images": [
-        "https://scontent-lax3-2.xx.fbcdn.net/v/t39.35426-6/888139386_1469032791997160_9186934222158295231_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=100&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=gOgzEGcB85kQ7kNvwGTCPki&_nc_oc=AdpEWN9i7YuOKRA8pwI-TnRcUq7GcdQ3Ct3_lYLLwQb4yCrE1tdSW74bnHfi6liVAFM&_nc_zt=14&_nc_ht=scontent-lax3-2.xx&_nc_gid=zSvZsveXu3nGfcyZp2FUQA&_nc_ss=7b289&oh=00_AQTthH890OUEKXme5eQCx3_GBbLe2YcmQ-6_lsyH2cGkjw&oe=6AF760CF"
+        "https://scontent-lax3-2.xx.fbcdn.net/v/t39.35426-6/888139386_1469032791997160_9186934222158295231_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=100&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=gOgzEGcB85kQ7kNvwGU7nJP&_nc_oc=AdruZwhDJPYhrZ2MyKlkM2t_njhipEAT2-ydwR4WT0dzj9tkA8d7y37HGw3FQUhyB0w&_nc_zt=14&_nc_ht=scontent-lax3-2.xx&_nc_gid=9gquQ4_ISuYvBTWLCLnFwQ&_nc_ss=7b289&oh=00_AQTgT0fGwnTwXjBkHwkK6ZFbrXTND1dYHEUQk0acssr5lQ&oe=6AF760CF"
       ],
       "has_video": false,
       "same_creative_count": 0,
-      "multiple_versions": false
+      "multiple_versions": false,
+      "cta_type": "ORDER_NOW",
+      "display_format": "image",
+      "cards": [
+        {
+          "body": "Spooky season is here!\n🎃 No tricks, just treats! Buy 1 Get 1 FREE on Pizza + Sides. Grab your Halloween feast at your local Hut! 👻 No code required!",
+          "cta": "Order now",
+          "image": "https://scontent-lax3-2.xx.fbcdn.net/v/t39.35426-6/888139386_1469032791997160_9186934222158295231_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=100&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=gOgzEGcB85kQ7kNvwGU7nJP&_nc_oc=AdruZwhDJPYhrZ2MyKlkM2t_njhipEAT2-ydwR4WT0dzj9tkA8d7y37HGw3FQUhyB0w&_nc_zt=14&_nc_ht=scontent-lax3-2.xx&_nc_gid=9gquQ4_ISuYvBTWLCLnFwQ&_nc_ss=7b289&oh=00_AQTgT0fGwnTwXjBkHwkK6ZFbrXTND1dYHEUQk0acssr5lQ&oe=6AF760CF",
+          "link_url": "https://www.pizzahut.co.uk/order/pizzas",
+          "title": "Buy 1 Get 1 FREE on Pizza + Sides! T&Cs apply",
+          "video": null
+        }
+      ]
     },
     {
       "id": "1474983357871504",
@@ -686,12 +1234,25 @@
       "link_url": "https://www.pizzahut.co.uk/order/pizzas",
       "link_title": "Buy 1 Get 1 FREE on Pizza + Sides T&Cs apply",
       "cta_text": "Order now",
+      "link_caption": "PIZZAHUT.CO.UK",
       "images": [
-        "https://scontent-lax3-2.xx.fbcdn.net/v/t39.35426-6/886633612_2578951949560267_7327530084470282035_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=111&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=kGEr0_k2pUQQ7kNvwEiER1G&_nc_oc=AdpuWWD1Qm4Pl2vc8BerWmQq_5UsV6X5kcFv6rQYGKjIamPX7QW0jGjq1iFt85A--i4&_nc_zt=14&_nc_ht=scontent-lax3-2.xx&_nc_gid=zSvZsveXu3nGfcyZp2FUQA&_nc_ss=7b289&oh=00_AQSd2Gjvc8L06Vsb9KzUZSlAMRozKy6mOJ5B36GMt_nk2A&oe=6AF746F1"
+        "https://scontent-lax3-2.xx.fbcdn.net/v/t39.35426-6/886633612_2578951949560267_7327530084470282035_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=111&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=kGEr0_k2pUQQ7kNvwHSH62G&_nc_oc=AdorMmG3CnSX5TbZ2SnjqoP2JpY_rZ2rh_iAObR0FCgotGB8TzSs4FyX73qX_qgkzsI&_nc_zt=14&_nc_ht=scontent-lax3-2.xx&_nc_gid=9gquQ4_ISuYvBTWLCLnFwQ&_nc_ss=7b289&oh=00_AQTWYQ2KZnrmdRavRMBp22mtFiCj-C9hWIp3s2MxJXA3Fw&oe=6AF77F31"
       ],
       "has_video": false,
       "same_creative_count": 0,
-      "multiple_versions": false
+      "multiple_versions": false,
+      "cta_type": "ORDER_NOW",
+      "display_format": "image",
+      "cards": [
+        {
+          "body": "Spooky season is here!\n🎃 No tricks, just treats! Buy 1 Get 1 FREE on Pizza + Sides. Grab your Halloween feast at your local Hut! 👻 No code required!",
+          "cta": "Order now",
+          "image": "https://scontent-lax3-2.xx.fbcdn.net/v/t39.35426-6/886633612_2578951949560267_7327530084470282035_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=111&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=kGEr0_k2pUQQ7kNvwHSH62G&_nc_oc=AdorMmG3CnSX5TbZ2SnjqoP2JpY_rZ2rh_iAObR0FCgotGB8TzSs4FyX73qX_qgkzsI&_nc_zt=14&_nc_ht=scontent-lax3-2.xx&_nc_gid=9gquQ4_ISuYvBTWLCLnFwQ&_nc_ss=7b289&oh=00_AQTWYQ2KZnrmdRavRMBp22mtFiCj-C9hWIp3s2MxJXA3Fw&oe=6AF77F31",
+          "link_url": "https://www.pizzahut.co.uk/order/pizzas",
+          "title": "Buy 1 Get 1 FREE on Pizza + Sides T&Cs apply",
+          "video": null
+        }
+      ]
     },
     {
       "id": "2085718198798462",
@@ -706,12 +1267,25 @@
       "link_url": "https://www.pizzahut.co.uk/order/pizzas",
       "link_title": "Buy 1 Get 1 FREE on Pizza + Sides! T&Cs apply",
       "cta_text": "Order now",
+      "link_caption": "PIZZAHUT.CO.UK",
       "images": [
-        "https://scontent-lax3-1.xx.fbcdn.net/v/t39.35426-6/887213365_2051488918882073_259762047129822755_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=108&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=y6AtvWLZfPEQ7kNvwEEE9PP&_nc_oc=AdpQvLzIKqULafbM96C6gdtzQTk9LNcF3FifnjjzxLOVfRnK8Dhr-WZDWOwOPm10b0o&_nc_zt=14&_nc_ht=scontent-lax3-1.xx&_nc_gid=zSvZsveXu3nGfcyZp2FUQA&_nc_ss=7b289&oh=00_AQT-0L0R5y4zbbG0LB_6Hn07kC5E8fySwqVkP6D_Sg5IUg&oe=6AF76E1A"
+        "https://scontent-lax3-1.xx.fbcdn.net/v/t39.35426-6/887213365_2051488918882073_259762047129822755_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=108&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=y6AtvWLZfPEQ7kNvwECY63P&_nc_oc=Adp_vxIeC4hIqtI6Bx78ZPEotCR9vCUDZASNo1jK2SsqahDoe3hDBMGXmiKiHia6A-U&_nc_zt=14&_nc_ht=scontent-lax3-1.xx&_nc_gid=9gquQ4_ISuYvBTWLCLnFwQ&_nc_ss=7b289&oh=00_AQSiQFfUpRAiKR3rYJrrXaD3Ni9Gm-tYLusl9UG5qw4f9A&oe=6AF76E1A"
       ],
       "has_video": false,
       "same_creative_count": 0,
-      "multiple_versions": false
+      "multiple_versions": false,
+      "cta_type": "ORDER_NOW",
+      "display_format": "image",
+      "cards": [
+        {
+          "body": "Spooky season is here!\n🎃 No tricks, just treats! Buy 1 Get 1 FREE on Pizza + Sides. Grab your Halloween feast at your local Hut! 👻 No code required!",
+          "cta": "Order now",
+          "image": "https://scontent-lax3-1.xx.fbcdn.net/v/t39.35426-6/887213365_2051488918882073_259762047129822755_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=108&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=y6AtvWLZfPEQ7kNvwECY63P&_nc_oc=Adp_vxIeC4hIqtI6Bx78ZPEotCR9vCUDZASNo1jK2SsqahDoe3hDBMGXmiKiHia6A-U&_nc_zt=14&_nc_ht=scontent-lax3-1.xx&_nc_gid=9gquQ4_ISuYvBTWLCLnFwQ&_nc_ss=7b289&oh=00_AQSiQFfUpRAiKR3rYJrrXaD3Ni9Gm-tYLusl9UG5qw4f9A&oe=6AF76E1A",
+          "link_url": "https://www.pizzahut.co.uk/order/pizzas",
+          "title": "Buy 1 Get 1 FREE on Pizza + Sides! T&Cs apply",
+          "video": null
+        }
+      ]
     },
     {
       "id": "1144658641581303",
@@ -726,12 +1300,25 @@
       "link_url": "https://www.pizzahut.co.uk/order/pizzas",
       "link_title": "Buy 1 Get 1 FREE on Pizza + Sides T&Cs apply",
       "cta_text": "Order now",
+      "link_caption": "PIZZAHUT.CO.UK",
       "images": [
-        "https://scontent-lax3-2.xx.fbcdn.net/v/t39.35426-6/886633612_2578951949560267_7327530084470282035_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=111&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=kGEr0_k2pUQQ7kNvwEiER1G&_nc_oc=AdpuWWD1Qm4Pl2vc8BerWmQq_5UsV6X5kcFv6rQYGKjIamPX7QW0jGjq1iFt85A--i4&_nc_zt=14&_nc_ht=scontent-lax3-2.xx&_nc_gid=zSvZsveXu3nGfcyZp2FUQA&_nc_ss=7b289&oh=00_AQSd2Gjvc8L06Vsb9KzUZSlAMRozKy6mOJ5B36GMt_nk2A&oe=6AF746F1"
+        "https://scontent-lax3-2.xx.fbcdn.net/v/t39.35426-6/886633612_2578951949560267_7327530084470282035_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=111&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=kGEr0_k2pUQQ7kNvwHSH62G&_nc_oc=AdorMmG3CnSX5TbZ2SnjqoP2JpY_rZ2rh_iAObR0FCgotGB8TzSs4FyX73qX_qgkzsI&_nc_zt=14&_nc_ht=scontent-lax3-2.xx&_nc_gid=9gquQ4_ISuYvBTWLCLnFwQ&_nc_ss=7b289&oh=00_AQTWYQ2KZnrmdRavRMBp22mtFiCj-C9hWIp3s2MxJXA3Fw&oe=6AF77F31"
       ],
       "has_video": false,
       "same_creative_count": 0,
-      "multiple_versions": false
+      "multiple_versions": false,
+      "cta_type": "ORDER_NOW",
+      "display_format": "image",
+      "cards": [
+        {
+          "body": "Spooky season is here!\n🎃 No tricks, just treats! Buy 1 Get 1 FREE on Pizza + Sides. Grab your Halloween feast at your local Hut! 👻 No code required!",
+          "cta": "Order now",
+          "image": "https://scontent-lax3-2.xx.fbcdn.net/v/t39.35426-6/886633612_2578951949560267_7327530084470282035_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=111&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=kGEr0_k2pUQQ7kNvwHSH62G&_nc_oc=AdorMmG3CnSX5TbZ2SnjqoP2JpY_rZ2rh_iAObR0FCgotGB8TzSs4FyX73qX_qgkzsI&_nc_zt=14&_nc_ht=scontent-lax3-2.xx&_nc_gid=9gquQ4_ISuYvBTWLCLnFwQ&_nc_ss=7b289&oh=00_AQTWYQ2KZnrmdRavRMBp22mtFiCj-C9hWIp3s2MxJXA3Fw&oe=6AF77F31",
+          "link_url": "https://www.pizzahut.co.uk/order/pizzas",
+          "title": "Buy 1 Get 1 FREE on Pizza + Sides T&Cs apply",
+          "video": null
+        }
+      ]
     },
     {
       "id": "1567352195427072",
@@ -746,12 +1333,25 @@
       "link_url": "https://www.pizzahut.co.uk/order/pizzas",
       "link_title": "Buy 1 Get 1 FREE on Pizza + Sides! T&Cs apply",
       "cta_text": "Order now",
+      "link_caption": "PIZZAHUT.CO.UK",
       "images": [
-        "https://scontent-lax3-2.xx.fbcdn.net/v/t39.35426-6/886726639_40414762671448115_5068643264368200263_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=107&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=SnS3Yr4H-CMQ7kNvwGVNWfc&_nc_oc=AdobUHDe3Sr74mv6PYfLN6bLYahjFSLYaRpematShPGM2xSpHpyiDOtwfHACtvTsnDI&_nc_zt=14&_nc_ht=scontent-lax3-2.xx&_nc_gid=zSvZsveXu3nGfcyZp2FUQA&_nc_ss=7b289&oh=00_AQSayJ4JQal7bBW94-NoMiK-OmAe7OevNdjMn2v83dHr_A&oe=6AF764DF"
+        "https://scontent-lax3-2.xx.fbcdn.net/v/t39.35426-6/886726639_40414762671448115_5068643264368200263_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=107&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=SnS3Yr4H-CMQ7kNvwFjae23&_nc_oc=AdoqS_tTINsYP9wWmJeVv4ZOXle6HHSRwDyLZWRTP8TrkV7KYILm-Qq-jnaAaS6ODLQ&_nc_zt=14&_nc_ht=scontent-lax3-2.xx&_nc_gid=9gquQ4_ISuYvBTWLCLnFwQ&_nc_ss=7b289&oh=00_AQQLI_-3fD_QyC_G1GSbLJKaCJfTPebf3MuVSV_KPtqjKg&oe=6AF764DF"
       ],
       "has_video": false,
       "same_creative_count": 0,
-      "multiple_versions": false
+      "multiple_versions": false,
+      "cta_type": "ORDER_NOW",
+      "display_format": "image",
+      "cards": [
+        {
+          "body": "Spooky season is here!\n🎃 No tricks, just treats! Buy 1 Get 1 FREE on Pizza + Sides. Grab your Halloween feast at your local Hut! 👻 No code required!",
+          "cta": "Order now",
+          "image": "https://scontent-lax3-2.xx.fbcdn.net/v/t39.35426-6/886726639_40414762671448115_5068643264368200263_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=107&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=SnS3Yr4H-CMQ7kNvwFjae23&_nc_oc=AdoqS_tTINsYP9wWmJeVv4ZOXle6HHSRwDyLZWRTP8TrkV7KYILm-Qq-jnaAaS6ODLQ&_nc_zt=14&_nc_ht=scontent-lax3-2.xx&_nc_gid=9gquQ4_ISuYvBTWLCLnFwQ&_nc_ss=7b289&oh=00_AQQLI_-3fD_QyC_G1GSbLJKaCJfTPebf3MuVSV_KPtqjKg&oe=6AF764DF",
+          "link_url": "https://www.pizzahut.co.uk/order/pizzas",
+          "title": "Buy 1 Get 1 FREE on Pizza + Sides! T&Cs apply",
+          "video": null
+        }
+      ]
     },
     {
       "id": "1851004292997166",
@@ -766,12 +1366,58 @@
       "link_url": "https://www.pizzahut.co.uk/order/pizzas",
       "link_title": "Buy 1 Get 1 FREE on Pizza + Sides! T&Cs apply",
       "cta_text": "Order now",
+      "link_caption": "PIZZAHUT.CO.UK",
       "images": [
-        "https://scontent-lax3-1.xx.fbcdn.net/v/t39.35426-6/891645431_1145746697958690_108329635159042162_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=102&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=hV6Vhlh40A8Q7kNvwFhogzn&_nc_oc=AdrKiS2dHRlIwj_08ulyo6zfDExoO55ocyIeLkuYUZcLRqe5cPVhKEo8o20ZyFLWfuE&_nc_zt=14&_nc_ht=scontent-lax3-1.xx&_nc_gid=zSvZsveXu3nGfcyZp2FUQA&_nc_ss=7b289&oh=00_AQR4C14lf10vTFy7Lxg3gPllHA2I0k2y6YonujhGYVBXvA&oe=6AF76CF7"
+        "https://scontent-lax3-1.xx.fbcdn.net/v/t39.35426-6/891645431_1145746697958690_108329635159042162_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=102&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=hV6Vhlh40A8Q7kNvwF9GOPv&_nc_oc=AdpNiBNwWsTgVj3-FYTmyt97VKHT_we8YoLZXDeH3hJ26suWXcp4j3imZRP47gcs6us&_nc_zt=14&_nc_ht=scontent-lax3-1.xx&_nc_gid=9gquQ4_ISuYvBTWLCLnFwQ&_nc_ss=7b289&oh=00_AQShYlHNfrKH3koSUHDf_zNt1F9Ut1SQKm4AJMKYGVuNpQ&oe=6AF76CF7"
       ],
       "has_video": false,
       "same_creative_count": 0,
-      "multiple_versions": false
+      "multiple_versions": false,
+      "cta_type": "ORDER_NOW",
+      "display_format": "image",
+      "cards": [
+        {
+          "body": "Spooky season is here!\n🎃 No tricks, just treats! Buy 1 Get 1 FREE on Pizza + Sides. Grab your Halloween feast at your local Hut! 👻 No code required!",
+          "cta": "Order now",
+          "image": "https://scontent-lax3-1.xx.fbcdn.net/v/t39.35426-6/891645431_1145746697958690_108329635159042162_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=102&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=hV6Vhlh40A8Q7kNvwF9GOPv&_nc_oc=AdpNiBNwWsTgVj3-FYTmyt97VKHT_we8YoLZXDeH3hJ26suWXcp4j3imZRP47gcs6us&_nc_zt=14&_nc_ht=scontent-lax3-1.xx&_nc_gid=9gquQ4_ISuYvBTWLCLnFwQ&_nc_ss=7b289&oh=00_AQShYlHNfrKH3koSUHDf_zNt1F9Ut1SQKm4AJMKYGVuNpQ&oe=6AF76CF7",
+          "link_url": "https://www.pizzahut.co.uk/order/pizzas",
+          "title": "Buy 1 Get 1 FREE on Pizza + Sides! T&Cs apply",
+          "video": null
+        }
+      ]
+    },
+    {
+      "id": "1902730087382903",
+      "page_name": "Pizza Hut",
+      "status": "active",
+      "first_seen": "Nov 5, 2026",
+      "last_seen": "",
+      "creative_text": "Spooky season is here!\n🎃 No tricks, just treats! Buy 1 Get 1 FREE on Pizza + Sides. Grab your Halloween feast at your local Hut! 👻 No code required!",
+      "library_url": "https://www.facebook.com/ads/library/?id=1902730087382903",
+      "page_url": "https://www.facebook.com/pizzahutuk/",
+      "page_id": "",
+      "link_url": "https://www.pizzahut.co.uk/order/pizzas",
+      "link_title": "Buy 1 Get 1 FREE on Pizza + Sides! T&Cs apply",
+      "cta_text": "Order now",
+      "link_caption": "PIZZAHUT.CO.UK",
+      "images": [
+        "https://scontent-lax3-1.xx.fbcdn.net/v/t39.35426-6/888575546_1818859982492631_2773011062991981542_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=102&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=88Cg5a4P2dwQ7kNvwEcfaVD&_nc_oc=AdphApqvliE-Fb3XiedDe9zS543hvrg73Z3NJOcvXBFv86NzNZaxFCMh4qVRQxEnhVE&_nc_zt=14&_nc_ht=scontent-lax3-1.xx&_nc_gid=9gquQ4_ISuYvBTWLCLnFwQ&_nc_ss=7b289&oh=00_AQRLa_RMU8oBCExJQWM1gTLBJBW1wOQHJdiXIsHXipSqmw&oe=6AF7796B"
+      ],
+      "has_video": false,
+      "same_creative_count": 0,
+      "multiple_versions": false,
+      "cta_type": "ORDER_NOW",
+      "display_format": "image",
+      "cards": [
+        {
+          "body": "Spooky season is here!\n🎃 No tricks, just treats! Buy 1 Get 1 FREE on Pizza + Sides. Grab your Halloween feast at your local Hut! 👻 No code required!",
+          "cta": "Order now",
+          "image": "https://scontent-lax3-1.xx.fbcdn.net/v/t39.35426-6/888575546_1818859982492631_2773011062991981542_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=102&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=88Cg5a4P2dwQ7kNvwEcfaVD&_nc_oc=AdphApqvliE-Fb3XiedDe9zS543hvrg73Z3NJOcvXBFv86NzNZaxFCMh4qVRQxEnhVE&_nc_zt=14&_nc_ht=scontent-lax3-1.xx&_nc_gid=9gquQ4_ISuYvBTWLCLnFwQ&_nc_ss=7b289&oh=00_AQRLa_RMU8oBCExJQWM1gTLBJBW1wOQHJdiXIsHXipSqmw&oe=6AF7796B",
+          "link_url": "https://www.pizzahut.co.uk/order/pizzas",
+          "title": "Buy 1 Get 1 FREE on Pizza + Sides! T&Cs apply",
+          "video": null
+        }
+      ]
     }
   ]
 }

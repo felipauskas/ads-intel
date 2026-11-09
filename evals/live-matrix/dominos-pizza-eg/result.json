@@ -3,7 +3,7 @@
   "country": "EG",
   "advertiser": "Domino's Pizza",
   "folder": "evals/live-matrix/dominos-pizza-eg",
-  "data_dir": "/var/folders/zf/g9bpd9s55sv10tz2mnhqch800000gn/T/ads-intel-live-eval-a5skrx5s/tmpljtt3l_x",
+  "data_dir": "/var/folders/zf/g9bpd9s55sv10tz2mnhqch800000gn/T/ads-intel-live-eval-7v9t8l1b/tmph4z554b1",
   "search_summary": {
     "count": 20,
     "complete": false,
@@ -13,6 +13,7 @@
     "page_names": [
       "Mini Drama",
       "Domino's Pizza",
+      "dominos_pizzaa1",
       "Empirio",
       "Alibaba.com",
       "Linguza: AI English Tutor",
@@ -22,10 +23,9 @@
       "ROMA Pizza to Go",
       "Speak Language with AI",
       "التميز ستور",
-      "Bengrugrocan Kojimplang",
-      "Alfredo Cooking Class"
+      "Bengrugrocan Kojimplang"
     ],
-    "seconds": 8.81
+    "seconds": 2.85
   },
   "advertiser_summary": {
     "count": 4,
@@ -41,7 +41,7 @@
     "page_names": [
       "Domino's Pizza"
     ],
-    "seconds": 0.02
+    "seconds": 0.01
   },
   "watch_add": {
     "error": null,
@@ -73,7 +73,7 @@
     "new_page_names": [
       "Domino's Pizza"
     ],
-    "seconds": 0.02
+    "seconds": 0.01
   },
   "check2": {
     "query": "Domino's Pizza",
@@ -104,14 +104,19 @@
   "status": "PASS",
   "failures": [],
   "timings": {
-    "search": 8.81,
-    "advertiser_search": 0.02,
-    "check1": 0.02,
+    "search": 2.85,
+    "advertiser_search": 0.01,
+    "check1": 0.01,
     "check2": 0.01,
-    "total": 8.86
+    "total": 2.88
   },
   "attempts": {
     "total": 4,
-    "failed": 0
+    "failed": 0,
+    "transport_failed": 0,
+    "parse_failed": 0,
+    "shell": 0,
+    "blocked": 0,
+    "markup_changed": 0
   }
 }

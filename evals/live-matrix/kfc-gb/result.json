@@ -3,11 +3,11 @@
   "country": "GB",
   "advertiser": "KFC",
   "folder": "evals/live-matrix/kfc-gb",
-  "data_dir": "/var/folders/zf/g9bpd9s55sv10tz2mnhqch800000gn/T/ads-intel-live-eval-a5skrx5s/tmpzqk_48u8",
+  "data_dir": "/var/folders/zf/g9bpd9s55sv10tz2mnhqch800000gn/T/ads-intel-live-eval-7v9t8l1b/tmpx19hy4bd",
   "search_summary": {
-    "count": 19,
+    "count": 20,
     "complete": false,
-    "fetched": 19,
+    "fetched": 20,
     "country": "GB",
     "error": null,
     "page_names": [
@@ -20,6 +20,7 @@
       "LBBonline - Little Black Book",
       "Fitatu Global",
       "ScrapCity",
+      "coldestjoel",
       "Yorkshire Home Interiors",
       "Gigahertz Giveaways UK",
       "Panacea Palm",
@@ -28,7 +29,7 @@
       "YaiToeii",
       "SoSweet"
     ],
-    "seconds": 8.18
+    "seconds": 3.26
   },
   "advertiser_summary": {
     "count": 2,
@@ -107,14 +108,19 @@
   "status": "PASS",
   "failures": [],
   "timings": {
-    "search": 8.18,
+    "search": 3.26,
     "advertiser_search": 0.02,
     "check1": 0.02,
     "check2": 0.02,
-    "total": 8.24
+    "total": 3.32
   },
   "attempts": {
     "total": 4,
-    "failed": 0
+    "failed": 0,
+    "transport_failed": 0,
+    "parse_failed": 0,
+    "shell": 0,
+    "blocked": 0,
+    "markup_changed": 0
   }
 }

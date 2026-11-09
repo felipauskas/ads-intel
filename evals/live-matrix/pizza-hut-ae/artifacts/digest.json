@@ -1,16 +1,16 @@
 {
   "query": "Pizza Hut",
   "country": "AE",
-  "checked_at": "2026-11-09T12:07:53",
+  "checked_at": "2026-11-09T14:28:00",
   "partial": false,
-  "total": 10,
-  "new": 10,
+  "total": 11,
+  "new": 11,
   "ended": 0,
   "changed": 0,
-  "with_link": 10,
-  "with_cta": 10,
+  "with_link": 11,
+  "with_cta": 11,
   "with_images": 6,
-  "with_same_creative": 7,
-  "with_multiple_versions": 5,
+  "with_same_creative": 8,
+  "with_multiple_versions": 9,
   "advertiser": "Pizza Hut"
 }

@@ -15,12 +15,25 @@
       "link_url": "https://prel.applodo.com/blog/8lb34ry/confirm?utm_source=fba&utm_uid=88&arb_cpid=14855&arb_gid=14726&arb_aid=15522&lp_id=6956",
       "link_title": "Explore Cashier Jobs at KFC Learn what a KFC cashier position may involve, how a 9 AM–3 PM schedule could work, and what to verify about experience, pay, paid holidays, overtime, and benefits. Openings and employment terms vary by restaurant, location, and franchise operator.",
       "cta_text": "See details",
+      "link_caption": "SEARCH.COM",
       "images": [
         "https://scontent-lax3-1.xx.fbcdn.net/v/t39.35426-6/790208867_1596568801922743_6647397883264781737_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=102&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=uxgjxpwflnkQ7kNvwEmb_2z&_nc_oc=AdpjUi2no4ouCBo9hljruym7H4bGeYOOsk9egx1Bem4xoLdS2d-NPlyb2yFZ3JWZxE4&_nc_zt=14&_nc_ht=scontent-lax3-1.xx&_nc_gid=NYtwh0DeOFKcpobsNZN2pQ&_nc_ss=7b289&oh=00_AQRyvK0gjBhJNejd9-6tptqiWWIFDlz-A9dZT0m8iGoX6w&oe=6AF761B5"
       ],
       "has_video": false,
       "same_creative_count": 0,
-      "multiple_versions": true
+      "multiple_versions": true,
+      "cta_type": "SEE_DETAILS",
+      "display_format": "image",
+      "cards": [
+        {
+          "body": "Interested in a fast-food cashier position? Discover typical responsibilities, shift options, workplace expectations, and potential earnings at KFC.",
+          "cta": "See details",
+          "image": "https://scontent-lax3-1.xx.fbcdn.net/v/t39.35426-6/790208867_1596568801922743_6647397883264781737_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=102&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=uxgjxpwflnkQ7kNvwEmb_2z&_nc_oc=AdpjUi2no4ouCBo9hljruym7H4bGeYOOsk9egx1Bem4xoLdS2d-NPlyb2yFZ3JWZxE4&_nc_zt=14&_nc_ht=scontent-lax3-1.xx&_nc_gid=NYtwh0DeOFKcpobsNZN2pQ&_nc_ss=7b289&oh=00_AQRyvK0gjBhJNejd9-6tptqiWWIFDlz-A9dZT0m8iGoX6w&oe=6AF761B5",
+          "link_url": "https://prel.applodo.com/blog/8lb34ry/confirm?utm_source=fba&utm_uid=88&arb_cpid=14855&arb_gid=14726&arb_aid=15522&lp_id=6956",
+          "title": "Explore Cashier Jobs at KFC Learn what a KFC cashier position may involve, how a 9 AM–3 PM schedule could work, and what to verify about experience, pay, paid holidays, overtime, and benefits. Openings and employment terms vary by restaurant, location, and franchise operator.",
+          "video": null
+        }
+      ]
     },
     {
       "id": "1009945831843213",
@@ -35,12 +48,25 @@
       "link_url": "http://itunes.apple.com/app/id1506748350",
       "link_title": "Tienes 20% de descuento",
       "cta_text": "Install Now",
+      "link_caption": "",
       "images": [
         "https://scontent-lax7-1.xx.fbcdn.net/v/t39.35426-6/475073881_989158339770037_511417879539592514_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=105&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=u1cFdzcn8QAQ7kNvwH_MFcU&_nc_oc=Adr-Ysvu63mJ2eBOKgQ27G29xziclf6c-eahDWzU0DUC5_XU0pv8960xs2bGEmt3zw8&_nc_zt=14&_nc_ht=scontent-lax7-1.xx&_nc_gid=NYtwh0DeOFKcpobsNZN2pQ&_nc_ss=7b289&oh=00_AQQHIw4bJDgeCE4TEtvCk_DHaqWsTPT4ZkM1wCdhTONUsQ&oe=6AF74315"
       ],
       "has_video": false,
       "same_creative_count": 0,
-      "multiple_versions": true
+      "multiple_versions": true,
+      "cta_type": "INSTALL_MOBILE_APP",
+      "display_format": "image",
+      "cards": [
+        {
+          "body": "La dieta se empieza el Lunes 🛵",
+          "cta": "Install Now",
+          "image": "https://scontent-lax7-1.xx.fbcdn.net/v/t39.35426-6/475073881_989158339770037_511417879539592514_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=105&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=u1cFdzcn8QAQ7kNvwH_MFcU&_nc_oc=Adr-Ysvu63mJ2eBOKgQ27G29xziclf6c-eahDWzU0DUC5_XU0pv8960xs2bGEmt3zw8&_nc_zt=14&_nc_ht=scontent-lax7-1.xx&_nc_gid=NYtwh0DeOFKcpobsNZN2pQ&_nc_ss=7b289&oh=00_AQQHIw4bJDgeCE4TEtvCk_DHaqWsTPT4ZkM1wCdhTONUsQ&oe=6AF74315",
+          "link_url": "http://itunes.apple.com/app/id1506748350",
+          "title": "Tienes 20% de descuento",
+          "video": null
+        }
+      ]
     },
     {
       "id": "1762050741783200",
@@ -55,12 +81,25 @@
       "link_url": "http://itunes.apple.com/app/id1506748350",
       "link_title": "Delivery hecho a tu medida",
       "cta_text": "Install Now",
+      "link_caption": "",
       "images": [
         "https://scontent-lax3-1.xx.fbcdn.net/v/t39.35426-6/473811173_2853130084850561_753409848755361789_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=102&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=YjI0AsourEcQ7kNvwE90yzA&_nc_oc=AdpR5KZM17upjBYrrLQaKQ0Va2_mShqSaNbWJDIALfDIBO6y_6U-Uuy_hOlM-fJ3kn0&_nc_zt=14&_nc_ht=scontent-lax3-1.xx&_nc_gid=NYtwh0DeOFKcpobsNZN2pQ&_nc_ss=7b289&oh=00_AQTd5kk0JGQ8KK7JT_y7RHz-nYQPYlKFfoNLXDSX4Z8Rag&oe=6AF75E0D"
       ],
       "has_video": false,
       "same_creative_count": 2,
-      "multiple_versions": true
+      "multiple_versions": true,
+      "cta_type": "INSTALL_MOBILE_APP",
+      "display_format": "image",
+      "cards": [
+        {
+          "body": "20% de descuento en tus primeras tres ordenes",
+          "cta": "Install Now",
+          "image": "https://scontent-lax3-1.xx.fbcdn.net/v/t39.35426-6/473811173_2853130084850561_753409848755361789_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=102&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=YjI0AsourEcQ7kNvwE90yzA&_nc_oc=AdpR5KZM17upjBYrrLQaKQ0Va2_mShqSaNbWJDIALfDIBO6y_6U-Uuy_hOlM-fJ3kn0&_nc_zt=14&_nc_ht=scontent-lax3-1.xx&_nc_gid=NYtwh0DeOFKcpobsNZN2pQ&_nc_ss=7b289&oh=00_AQTd5kk0JGQ8KK7JT_y7RHz-nYQPYlKFfoNLXDSX4Z8Rag&oe=6AF75E0D",
+          "link_url": "http://itunes.apple.com/app/id1506748350",
+          "title": "Delivery hecho a tu medida",
+          "video": null
+        }
+      ]
     },
     {
       "id": "1090068523868415",
@@ -75,12 +114,25 @@
       "link_url": "https://www.capitalone.com/bank/student250/?&utm_source=Meta&utm_medium=paid_social&utm_campaign=Bank_ECH_CON%7CIGTest-IGOnly_PF_BL_CHK%7CYC_Q3-26_Meta&utm_content=Bank_ECH_CON%7CIGTest-IGOnly_PF_BL_CHK%7CYC_Q3-26_META_BAU_CPA_AB_SOC_US_HEC_IGTest_IGOnly_BTH_CBO_Earn250ProductLearn_GEO_National_CLK_SIT_Static_EN_V1_2913281_1x1&utm_term=ES_06288&placement=%7B%7Bplacement%7D%7D",
       "link_title": "",
       "cta_text": "Learn More",
+      "link_caption": "CAPITALONE.COM",
       "images": [
         "https://scontent-lax3-1.xx.fbcdn.net/v/t39.35426-6/811303802_1750678056144189_4141950906994241839_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=102&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=pwAXmkJS5Q0Q7kNvwHx1ksV&_nc_oc=Adr8PL7drBk96YSM2Imcr4oxhFpHmTMjpblwK3yU9RhZusqxGD_crsg8hrz6GlQTZvY&_nc_zt=14&_nc_ht=scontent-lax3-1.xx&_nc_gid=NYtwh0DeOFKcpobsNZN2pQ&_nc_ss=7b289&oh=00_AQQ0grzP6FD1rIsSfcsry4rfBiGmxbG7KoSujQsMw1xItA&oe=6AF7492D"
       ],
       "has_video": false,
       "same_creative_count": 0,
-      "multiple_versions": true
+      "multiple_versions": true,
+      "cta_type": "LEARN_MORE",
+      "display_format": "image",
+      "cards": [
+        {
+          "body": "",
+          "cta": "Learn More",
+          "image": "https://scontent-lax3-1.xx.fbcdn.net/v/t39.35426-6/811303802_1750678056144189_4141950906994241839_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=102&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=pwAXmkJS5Q0Q7kNvwHx1ksV&_nc_oc=Adr8PL7drBk96YSM2Imcr4oxhFpHmTMjpblwK3yU9RhZusqxGD_crsg8hrz6GlQTZvY&_nc_zt=14&_nc_ht=scontent-lax3-1.xx&_nc_gid=NYtwh0DeOFKcpobsNZN2pQ&_nc_ss=7b289&oh=00_AQQ0grzP6FD1rIsSfcsry4rfBiGmxbG7KoSujQsMw1xItA&oe=6AF7492D",
+          "link_url": "https://www.capitalone.com/bank/student250/?&utm_source=Meta&utm_medium=paid_social&utm_campaign=Bank_ECH_CON%7CIGTest-IGOnly_PF_BL_CHK%7CYC_Q3-26_Meta&utm_content=Bank_ECH_CON%7CIGTest-IGOnly_PF_BL_CHK%7CYC_Q3-26_META_BAU_CPA_AB_SOC_US_HEC_IGTest_IGOnly_BTH_CBO_Earn250ProductLearn_GEO_National_CLK_SIT_Static_EN_V1_2913281_1x1&utm_term=ES_06288&placement=%7B%7Bplacement%7D%7D",
+          "title": "",
+          "video": null
+        }
+      ]
     },
     {
       "id": "3457665514395370",
@@ -95,12 +147,25 @@
       "link_url": "http://play.google.com/store/apps/details?id=com.kfc.mexico",
       "link_title": "Instala la APP KFC y Realiza tu Pedido🍗😋",
       "cta_text": "Install Now",
+      "link_caption": "",
       "images": [
         "https://scontent-lax3-1.xx.fbcdn.net/v/t39.35426-6/842018667_1182903797454659_4294976154799553878_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=104&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=C3_ym22fE3IQ7kNvwHNjczQ&_nc_oc=AdpKkQErK2pOhPxVYGPadktgnnp4FVk0eU7NCRPolrwmBxGfvAM05cMiGl5VgCXHSyU&_nc_zt=14&_nc_ht=scontent-lax3-1.xx&_nc_gid=NYtwh0DeOFKcpobsNZN2pQ&_nc_ss=7b289&oh=00_AQQEcLFicEXa0hsdW-0LNA2ouJgnw9NHQvvQNnQHIDYC2Q&oe=6AF73E75"
       ],
       "has_video": false,
       "same_creative_count": 4,
-      "multiple_versions": false
+      "multiple_versions": false,
+      "cta_type": "INSTALL_MOBILE_APP",
+      "display_format": "image",
+      "cards": [
+        {
+          "body": "Aprovecha el 30% Off 🔥 en tu Primer Pedido 🍗 Usando el Cupón 30KFC",
+          "cta": "Install Now",
+          "image": "https://scontent-lax3-1.xx.fbcdn.net/v/t39.35426-6/842018667_1182903797454659_4294976154799553878_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=104&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=C3_ym22fE3IQ7kNvwHNjczQ&_nc_oc=AdpKkQErK2pOhPxVYGPadktgnnp4FVk0eU7NCRPolrwmBxGfvAM05cMiGl5VgCXHSyU&_nc_zt=14&_nc_ht=scontent-lax3-1.xx&_nc_gid=NYtwh0DeOFKcpobsNZN2pQ&_nc_ss=7b289&oh=00_AQQEcLFicEXa0hsdW-0LNA2ouJgnw9NHQvvQNnQHIDYC2Q&oe=6AF73E75",
+          "link_url": "http://play.google.com/store/apps/details?id=com.kfc.mexico",
+          "title": "Instala la APP KFC y Realiza tu Pedido🍗😋",
+          "video": null
+        }
+      ]
     },
     {
       "id": "1120774239201191",
@@ -115,12 +180,25 @@
       "link_url": "https://fb.com/messenger_doc/",
       "link_title": "",
       "cta_text": "",
+      "link_caption": "",
       "images": [
         "https://scontent-lax3-1.xx.fbcdn.net/v/t39.35426-6/786870960_1026295420244902_7038620364770744715_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=108&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=PzMwLByd7AYQ7kNvwH0nW-P&_nc_oc=AdpoBepPR_p3-tJR4PirifRDLhYyx4gImWDO3rC8rB758kl-52lz5IHeA7xt4Y33o-8&_nc_zt=14&_nc_ht=scontent-lax3-1.xx&_nc_gid=NYtwh0DeOFKcpobsNZN2pQ&_nc_ss=7b289&oh=00_AQTAWjMm27uI410dBBMeqFow0Pp4pxNnEw-KyyC1Xqk-PQ&oe=6AF75615"
       ],
       "has_video": false,
       "same_creative_count": 0,
-      "multiple_versions": false
+      "multiple_versions": false,
+      "cta_type": "",
+      "display_format": "image",
+      "cards": [
+        {
+          "body": "See what all the heat’s about for just $2.99. Yeah. We double checked. Two dollars. Ninety-nine cents. 🔥",
+          "cta": "",
+          "image": "https://scontent-lax3-1.xx.fbcdn.net/v/t39.35426-6/786870960_1026295420244902_7038620364770744715_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=108&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=PzMwLByd7AYQ7kNvwH0nW-P&_nc_oc=AdpoBepPR_p3-tJR4PirifRDLhYyx4gImWDO3rC8rB758kl-52lz5IHeA7xt4Y33o-8&_nc_zt=14&_nc_ht=scontent-lax3-1.xx&_nc_gid=NYtwh0DeOFKcpobsNZN2pQ&_nc_ss=7b289&oh=00_AQTAWjMm27uI410dBBMeqFow0Pp4pxNnEw-KyyC1Xqk-PQ&oe=6AF75615",
+          "link_url": "https://fb.com/messenger_doc/",
+          "title": "",
+          "video": null
+        }
+      ]
     },
     {
       "id": "700261789028761",
@@ -135,12 +213,25 @@
       "link_url": "",
       "link_title": "",
       "cta_text": "",
+      "link_caption": "",
       "images": [
         "https://scontent-lax3-1.xx.fbcdn.net/v/t39.35426-6/438789655_465997735850204_2134650913060567633_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=109&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=bKxX_Gnx9qEQ7kNvwEAjBQg&_nc_oc=AdrpHmt_IMcoNdqvfyh1gzrh0QgCe1h3hMPuAClG26DG6QH-gX3DAHXhyVf3sigtZx8&_nc_zt=14&_nc_ht=scontent-lax3-1.xx&_nc_gid=NYtwh0DeOFKcpobsNZN2pQ&_nc_ss=7b289&oh=00_AQTYhkBJOapAvG3XTnAW0R8vxIOlWBmi81DSTknbkA6oJQ&oe=6AF73895"
       ],
       "has_video": false,
       "same_creative_count": 0,
-      "multiple_versions": true
+      "multiple_versions": true,
+      "cta_type": "",
+      "display_format": "image",
+      "cards": [
+        {
+          "body": "We offer Amish Built Sheds, Buildings, Garages and Carports by TNT that are built on-Site. Call 336-623-7433 for information.\nCome see us at 131 N Van Buren Rd Eden NC\nLocated across from the Eden Flea Market and next to KFC in Eden.\nWe are Guaranteed lowest price & best quality!\nCarolina Sheds\nWe have Amish Built Sheds,Metal Garages & Carports by local companies and guaranteed lowest prices!\nSend message",
+          "cta": "",
+          "image": "https://scontent-lax3-1.xx.fbcdn.net/v/t39.35426-6/438789655_465997735850204_2134650913060567633_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=109&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=bKxX_Gnx9qEQ7kNvwEAjBQg&_nc_oc=AdrpHmt_IMcoNdqvfyh1gzrh0QgCe1h3hMPuAClG26DG6QH-gX3DAHXhyVf3sigtZx8&_nc_zt=14&_nc_ht=scontent-lax3-1.xx&_nc_gid=NYtwh0DeOFKcpobsNZN2pQ&_nc_ss=7b289&oh=00_AQTYhkBJOapAvG3XTnAW0R8vxIOlWBmi81DSTknbkA6oJQ&oe=6AF73895",
+          "link_url": "",
+          "title": "",
+          "video": null
+        }
+      ]
     },
     {
       "id": "1703218785177421",
@@ -155,12 +246,25 @@
       "link_url": "http://fb.me/",
       "link_title": "YAAAS, Get Approved Fast – Bad Credit? No Worries!",
       "cta_text": "Apply Now",
+      "link_caption": "",
       "images": [
         "https://scontent-lax3-2.xx.fbcdn.net/v/t39.35426-6/556872477_4181151918798247_1190236796257762317_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=100&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=0GIK-F70HmEQ7kNvwFiy0Wh&_nc_oc=Adr4sdygeJmVupaG3o0drxfMT91MDsmyVXopaxcHxtEMWoQmIuTYI2kkLJTB-q5hsRs&_nc_zt=14&_nc_ht=scontent-lax3-2.xx&_nc_gid=NYtwh0DeOFKcpobsNZN2pQ&_nc_ss=7b289&oh=00_AQR7XAxOjW9OdxEOE9_DPmywc2cdUELSJ00kEDg81Q_0sg&oe=6AF745AB"
       ],
       "has_video": false,
       "same_creative_count": 2,
-      "multiple_versions": true
+      "multiple_versions": true,
+      "cta_type": "APPLY_NOW",
+      "display_format": "image",
+      "cards": [
+        {
+          "body": "Bad credit? YAAAS, no problem! Get approved in minutes and drive away in the car you deserve. Quick approvals and flexible options – it’s simple, fast, and stress-free. Apply now and hit the road with confidence!",
+          "cta": "Apply Now",
+          "image": "https://scontent-lax3-2.xx.fbcdn.net/v/t39.35426-6/556872477_4181151918798247_1190236796257762317_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=100&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=0GIK-F70HmEQ7kNvwFiy0Wh&_nc_oc=Adr4sdygeJmVupaG3o0drxfMT91MDsmyVXopaxcHxtEMWoQmIuTYI2kkLJTB-q5hsRs&_nc_zt=14&_nc_ht=scontent-lax3-2.xx&_nc_gid=NYtwh0DeOFKcpobsNZN2pQ&_nc_ss=7b289&oh=00_AQR7XAxOjW9OdxEOE9_DPmywc2cdUELSJ00kEDg81Q_0sg&oe=6AF745AB",
+          "link_url": "http://fb.me/",
+          "title": "YAAAS, Get Approved Fast – Bad Credit? No Worries!",
+          "video": null
+        }
+      ]
     },
     {
       "id": "3184723071713262",
@@ -175,10 +279,23 @@
       "link_url": "http://play.google.com/store/apps/details?id=com.kfc.mexico",
       "link_title": "Ordena Desde la App 📲",
       "cta_text": "Shop Now",
+      "link_caption": "",
       "images": [],
       "has_video": true,
       "same_creative_count": 0,
-      "multiple_versions": false
+      "multiple_versions": false,
+      "cta_type": "SHOP_NOW",
+      "display_format": "video",
+      "cards": [
+        {
+          "body": "No Dejes Pasar la Promo ⏳ y Libera tu Krunch 🍗 con tus Ke-Tiras.",
+          "cta": "Shop Now",
+          "image": null,
+          "link_url": "http://play.google.com/store/apps/details?id=com.kfc.mexico",
+          "title": "Ordena Desde la App 📲",
+          "video": null
+        }
+      ]
     },
     {
       "id": "4517670335170108",
@@ -193,12 +310,25 @@
       "link_url": "https://auniva.co/products/amla-11",
       "link_title": "Feel Like Yourself Again \"This actually worked, thank you so much.\" - Emily T.",
       "cta_text": "Learn more",
+      "link_caption": "AUNIVA.CO",
       "images": [
         "https://scontent-lax7-1.xx.fbcdn.net/v/t39.35426-6/842101551_1094978749819071_8453896770547438995_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=105&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=zDvl83rt16QQ7kNvwFn_awd&_nc_oc=Adpi_eC19j98Vc9ImLlluMwhnBW0cFNr_seerAaCxsQahyZLSWW3aM2jrFbQ8CD4wVU&_nc_zt=14&_nc_ht=scontent-lax7-1.xx&_nc_gid=NYtwh0DeOFKcpobsNZN2pQ&_nc_ss=7b289&oh=00_AQRscKiHSohmC17Xy-NCwF8pvgrEwKs0y61PTkNsPTdp4Q&oe=6AF74E16"
       ],
       "has_video": false,
       "same_creative_count": 2,
-      "multiple_versions": false
+      "multiple_versions": false,
+      "cta_type": "LEARN_MORE",
+      "display_format": "image",
+      "cards": [
+        {
+          "body": "I sat down on my aunt Reba's attic floor last Saturday and I couldn't get back up.\nI don't mean I hurt myself. I didn't fall. I sat down criss cross like I was 8 years old to sort through a stack of shoeboxes, and 20 minutes later when I tried to stand my knees wouldn't lift me. My legs felt like wet cement. My arms had nothing in them. I ended up rolling onto my hip and using her old cedar chest to pull myself up, and I stood there breathing like I'd run to the mailbox and back.\nI'm 54 years old.\nMy aunt was still driving to the beauty shop at 74 to get her hair set. And here I am with cement legs on an attic floor because I sat down for 20 minutes.\nMy name is LaWanda. I live in Meridian, Mississippi, about 15 minutes from where I grew up in a house on 34th Avenue where my grandmother taught me to snap green beans on the front porch. I work as an aide at Poplar Springs Elementary and I have been there for 19 years. I know every kindergartener in that building by name. I have wiped more noses and tied more shoelaces than any woman my age should be legally required to.\nI am also tired all the time.\nNot sleepy tired. Not the kind of tired you fix with a nap. I'm the kind of tired wh…",
+          "cta": "Learn more",
+          "image": "https://scontent-lax7-1.xx.fbcdn.net/v/t39.35426-6/842101551_1094978749819071_8453896770547438995_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=105&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=zDvl83rt16QQ7kNvwFn_awd&_nc_oc=Adpi_eC19j98Vc9ImLlluMwhnBW0cFNr_seerAaCxsQahyZLSWW3aM2jrFbQ8CD4wVU&_nc_zt=14&_nc_ht=scontent-lax7-1.xx&_nc_gid=NYtwh0DeOFKcpobsNZN2pQ&_nc_ss=7b289&oh=00_AQRscKiHSohmC17Xy-NCwF8pvgrEwKs0y61PTkNsPTdp4Q&oe=6AF74E16",
+          "link_url": "https://auniva.co/products/amla-11",
+          "title": "Feel Like Yourself Again \"This actually worked, thank you so much.\" - Emily T.",
+          "video": null
+        }
+      ]
     },
     {
       "id": "2029341874421739",
@@ -213,6 +343,7 @@
       "link_url": "https://lbbonline.com/",
       "link_title": "LBB - Little Black Book",
       "cta_text": "See Details",
+      "link_caption": "LBBONLINE.COM",
       "images": [
         "https://scontent-lax7-1.xx.fbcdn.net/v/t39.35426-6/847227594_1404733231772639_3218991022401824650_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=105&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=EzakS7JvMiEQ7kNvwH3mN_Z&_nc_oc=AdprfFazSBIuDI8x7rxmIo1osoqaCJGbcC1kG7ZKkww0qr24gTjVfe0CQY2lWpUypfQ&_nc_zt=14&_nc_ht=scontent-lax7-1.xx&_nc_gid=NYtwh0DeOFKcpobsNZN2pQ&_nc_ss=7b289&oh=00_AQShguKeUaIDbd_LRgyG8rEJrUhkipJAKrccJ0OtfiFYJQ&oe=6AF7380F",
         "https://scontent-lax3-1.xx.fbcdn.net/v/t39.35426-6/848685623_1656985812450285_6346327764092379507_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=102&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=s7U_meF-7TkQ7kNvwGmoJfq&_nc_oc=Adr6yPUX_ErT1Sd0ClZiP9m_H_dfBCjkAN4lSwZc3ELGZP-fe08tmD7yDqUYTcE1-hE&_nc_zt=14&_nc_ht=scontent-lax3-1.xx&_nc_gid=NYtwh0DeOFKcpobsNZN2pQ&_nc_ss=7b289&oh=00_AQTIfGZOlLbkKfFYIaWcHr3frv_Ys67Luvk9JkzXbU6fUA&oe=6AF75BE7",
@@ -222,7 +353,51 @@
       ],
       "has_video": false,
       "same_creative_count": 0,
-      "multiple_versions": true
+      "multiple_versions": true,
+      "cta_type": "SEE_DETAILS",
+      "display_format": "dco",
+      "cards": [
+        {
+          "body": "Creativity, Connected.\nWe’ve launched a completely redesigned LBB, built to make it easier for the creative industry to discover great work, find the people and companies behind it, and create new opportunities from those connections.\nFind more. See more. Do more.",
+          "cta": "See Details",
+          "image": "https://scontent-lax7-1.xx.fbcdn.net/v/t39.35426-6/847227594_1404733231772639_3218991022401824650_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=105&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=EzakS7JvMiEQ7kNvwH3mN_Z&_nc_oc=AdprfFazSBIuDI8x7rxmIo1osoqaCJGbcC1kG7ZKkww0qr24gTjVfe0CQY2lWpUypfQ&_nc_zt=14&_nc_ht=scontent-lax7-1.xx&_nc_gid=NYtwh0DeOFKcpobsNZN2pQ&_nc_ss=7b289&oh=00_AQShguKeUaIDbd_LRgyG8rEJrUhkipJAKrccJ0OtfiFYJQ&oe=6AF7380F",
+          "link_url": "https://lbbonline.com/",
+          "title": "LBB - Little Black Book",
+          "video": null
+        },
+        {
+          "body": "Creativity, Connected.\nWe’ve launched a completely redesigned LBB, built to make it easier for the creative industry to discover great work, find the people and companies behind it, and create new opportunities from those connections.\nFind more. See more. Do more.",
+          "cta": "See Details",
+          "image": "https://scontent-lax3-1.xx.fbcdn.net/v/t39.35426-6/848685623_1656985812450285_6346327764092379507_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=102&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=s7U_meF-7TkQ7kNvwGmoJfq&_nc_oc=Adr6yPUX_ErT1Sd0ClZiP9m_H_dfBCjkAN4lSwZc3ELGZP-fe08tmD7yDqUYTcE1-hE&_nc_zt=14&_nc_ht=scontent-lax3-1.xx&_nc_gid=NYtwh0DeOFKcpobsNZN2pQ&_nc_ss=7b289&oh=00_AQTIfGZOlLbkKfFYIaWcHr3frv_Ys67Luvk9JkzXbU6fUA&oe=6AF75BE7",
+          "link_url": "https://lbbonline.com/",
+          "title": "LBB - Little Black Book",
+          "video": null
+        },
+        {
+          "body": "Creativity, Connected.\nWe’ve launched a completely redesigned LBB, built to make it easier for the creative industry to discover great work, find the people and companies behind it, and create new opportunities from those connections.\nFind more. See more. Do more.",
+          "cta": "See Details",
+          "image": "https://scontent-lax3-1.xx.fbcdn.net/v/t39.35426-6/848044627_1395200192775616_898740053479215984_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=108&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=I-sKJjwof-oQ7kNvwHC8U40&_nc_oc=AdpAqsl0sV38duvLX7coFwLVhMF-HFpHX1ZvXtk6T2KHglDMJGwhfAyD9NzjujeDH3Q&_nc_zt=14&_nc_ht=scontent-lax3-1.xx&_nc_gid=NYtwh0DeOFKcpobsNZN2pQ&_nc_ss=7b289&oh=00_AQTV8WGr0Cv5Cj56jo5_gWrheeJds-ouUAutiDXM4a8HoA&oe=6AF75448",
+          "link_url": "https://lbbonline.com/",
+          "title": "LBB - Little Black Book",
+          "video": null
+        },
+        {
+          "body": "Creativity, Connected.\nWe’ve launched a completely redesigned LBB, built to make it easier for the creative industry to discover great work, find the people and companies behind it, and create new opportunities from those connections.\nFind more. See more. Do more.",
+          "cta": "See Details",
+          "image": "https://scontent-lax3-2.xx.fbcdn.net/v/t39.35426-6/848599284_4386744798245368_8094806149968762118_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=106&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=l9-r7zlj-yMQ7kNvwFvOu8F&_nc_oc=AdqWGCsnV9oZtnjNlFyXU5x8qk8q-Vl6xndqSB7IPgc1xorUOAlq64nq3hN0oBsOmk4&_nc_zt=14&_nc_ht=scontent-lax3-2.xx&_nc_gid=NYtwh0DeOFKcpobsNZN2pQ&_nc_ss=7b289&oh=00_AQRbv8hk0fxl6PIan12qu62jv9kFm1xf3skza7S4v3pX-A&oe=6AF753C2",
+          "link_url": "https://lbbonline.com/",
+          "title": "LBB - Little Black Book",
+          "video": null
+        },
+        {
+          "body": "Creativity, Connected.\nWe’ve launched a completely redesigned LBB, built to make it easier for the creative industry to discover great work, find the people and companies behind it, and create new opportunities from those connections.\nFind more. See more. Do more.",
+          "cta": "See Details",
+          "image": "https://scontent-lax3-2.xx.fbcdn.net/v/t39.35426-6/847387082_2247549199509281_5451952597263123696_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=111&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=TZQp-wj2baoQ7kNvwGJ7G0p&_nc_oc=AdqUzO7Btna-jM6VUQteG--N4xmZVDrMuzRjSCrDCA16NyGAfR7sXB2ObQYI2szA3Gk&_nc_zt=14&_nc_ht=scontent-lax3-2.xx&_nc_gid=NYtwh0DeOFKcpobsNZN2pQ&_nc_ss=7b289&oh=00_AQSSW7_Es2bEahhXbIQSV-J1-AiBIFYIiom-3LH9oyPbVw&oe=6AF7593C",
+          "link_url": "https://lbbonline.com/",
+          "title": "LBB - Little Black Book",
+          "video": null
+        }
+      ]
     },
     {
       "id": "1085200567239343",
@@ -237,10 +412,23 @@
       "link_url": "https://kfc.com.mx/?utm_source=meta&utm_medium=paid&utm_campaign=%7B%7Bcampaign.name%7D%7D&utm_id=%7B%7Bcampaign.id%7D%7D&utm_term=%7B%7Badset.name%7D%7D~%7B%7Badset.id%7D%7D&utm_content=5X95_WEB&ot=delivery-class&img=https%3A%2F%2Fcdn.tictuk.com%2F85dbbc22-c4be-8b7b-d5fd-2dfdb9930e1e%2Fd130812a-4b87-e9c5-5ece-219e145b8b40.jpeg%3Fa%3D536fcb6e-97e8-660c-6b74-047396066f41&ref=EC_r_d130812a-4b87-e9c5-5ece-219e145b8b40_es_7646423017805410_n_n_n#item_5KT428%C2%A7%C2%A7d",
       "link_title": "KFC Jugoso y Crujiente 🍗 ¡Ordena KFC por WEB o APP! 🛵🍗",
       "cta_text": "Shop Now",
+      "link_caption": "KFC.COM.MX",
       "images": [],
       "has_video": true,
       "same_creative_count": 0,
-      "multiple_versions": true
+      "multiple_versions": true,
+      "cta_type": "SHOP_NOW",
+      "display_format": "video",
+      "cards": [
+        {
+          "body": "¡Hoy se Disfruta el Krunch! 🍗🤤 Ordena tu Combo 3 piezas Cruji + Puré + Bisquet por solo $134.",
+          "cta": "Shop Now",
+          "image": null,
+          "link_url": "https://kfc.com.mx/?utm_source=meta&utm_medium=paid&utm_campaign=%7B%7Bcampaign.name%7D%7D&utm_id=%7B%7Bcampaign.id%7D%7D&utm_term=%7B%7Badset.name%7D%7D~%7B%7Badset.id%7D%7D&utm_content=5X95_WEB&ot=delivery-class&img=https%3A%2F%2Fcdn.tictuk.com%2F85dbbc22-c4be-8b7b-d5fd-2dfdb9930e1e%2Fd130812a-4b87-e9c5-5ece-219e145b8b40.jpeg%3Fa%3D536fcb6e-97e8-660c-6b74-047396066f41&ref=EC_r_d130812a-4b87-e9c5-5ece-219e145b8b40_es_7646423017805410_n_n_n#item_5KT428%C2%A7%C2%A7d",
+          "title": "KFC Jugoso y Crujiente 🍗 ¡Ordena KFC por WEB o APP! 🛵🍗",
+          "video": null
+        }
+      ]
     },
     {
       "id": "1097225656330954",
@@ -255,12 +443,25 @@
       "link_url": "https://billetlabz.com/products/420-caps?utm_content=Facebook_UA&utm_source=facebook&variant=43904827392034",
       "link_title": "420 Valve Caps Shop custom aluminum tire valve caps. Unique styles that stand out. Fast Shipping worldwide from Billet Labz.",
       "cta_text": "Shop Now",
+      "link_caption": "BILLETLABZ.COM",
       "images": [
         "https://scontent-lax3-2.xx.fbcdn.net/v/t39.35426-6/802964765_911390318389585_5770552714645915361_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=106&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=FiWOElpOn0YQ7kNvwFjgwyd&_nc_oc=AdqiSD9xXpAHzlaPTvpvdqCWgXYHR9C8aFtuadHhojyvGQ6rvJ9YfpSdLBtxeqMhaG8&_nc_zt=14&_nc_ht=scontent-lax3-2.xx&_nc_gid=NYtwh0DeOFKcpobsNZN2pQ&_nc_ss=7b289&oh=00_AQR8FqzJLGA9iLtH4jOykgJBj8F54ALLsX0ingrMk2O9lg&oe=6AF7420B"
       ],
       "has_video": false,
       "same_creative_count": 0,
-      "multiple_versions": false
+      "multiple_versions": false,
+      "cta_type": "SHOP_NOW",
+      "display_format": "image",
+      "cards": [
+        {
+          "body": "Custom valve caps 🔥 Hundreds of designs. One finishing touch that’s all you. Fast shipping + a 30-day guarantee. Shop now.",
+          "cta": "Shop Now",
+          "image": "https://scontent-lax3-2.xx.fbcdn.net/v/t39.35426-6/802964765_911390318389585_5770552714645915361_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=106&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=FiWOElpOn0YQ7kNvwFjgwyd&_nc_oc=AdqiSD9xXpAHzlaPTvpvdqCWgXYHR9C8aFtuadHhojyvGQ6rvJ9YfpSdLBtxeqMhaG8&_nc_zt=14&_nc_ht=scontent-lax3-2.xx&_nc_gid=NYtwh0DeOFKcpobsNZN2pQ&_nc_ss=7b289&oh=00_AQR8FqzJLGA9iLtH4jOykgJBj8F54ALLsX0ingrMk2O9lg&oe=6AF7420B",
+          "link_url": "https://billetlabz.com/products/420-caps?utm_content=Facebook_UA&utm_source=facebook&variant=43904827392034",
+          "title": "420 Valve Caps Shop custom aluminum tire valve caps. Unique styles that stand out. Fast Shipping worldwide from Billet Labz.",
+          "video": null
+        }
+      ]
     },
     {
       "id": "959188983419366",
@@ -275,10 +476,23 @@
       "link_url": "https://go.thecontentgrowthengine.com/Meta",
       "link_title": "Master Youtube From A Guy With 1.71M Subscribers",
       "cta_text": "Learn more",
+      "link_caption": "GO.THECONTENTGROWTHENGINE.COM",
       "images": [],
       "has_video": true,
       "same_creative_count": 3,
-      "multiple_versions": false
+      "multiple_versions": false,
+      "cta_type": "LEARN_MORE",
+      "display_format": "video",
+      "cards": [
+        {
+          "body": "Transform your passion into a thriving YouTube channel! 🚀\nWe'll show you how to grow your own channel & succeed like your favorite creators.",
+          "cta": "Learn more",
+          "image": null,
+          "link_url": "https://go.thecontentgrowthengine.com/Meta",
+          "title": "Master Youtube From A Guy With 1.71M Subscribers",
+          "video": null
+        }
+      ]
     },
     {
       "id": "29459405900395166",
@@ -293,10 +507,23 @@
       "link_url": "",
       "link_title": "",
       "cta_text": "",
+      "link_caption": "",
       "images": [],
       "has_video": true,
       "same_creative_count": 0,
-      "multiple_versions": false
+      "multiple_versions": false,
+      "cta_type": "",
+      "display_format": "video",
+      "cards": [
+        {
+          "body": "Heard you were chasing the bag? Go in on this Featured Remix for just $5.99!",
+          "cta": "",
+          "image": null,
+          "link_url": "",
+          "title": "",
+          "video": null
+        }
+      ]
     },
     {
       "id": "3340123292838640",
@@ -311,10 +538,23 @@
       "link_url": "https://go.thecontentgrowthengine.com/Meta",
       "link_title": "Master Youtube From A Guy With 1.6M Subscribers",
       "cta_text": "Learn more",
+      "link_caption": "GO.THECONTENTGROWTHENGINE.COM",
       "images": [],
       "has_video": true,
       "same_creative_count": 5,
-      "multiple_versions": true
+      "multiple_versions": true,
+      "cta_type": "LEARN_MORE",
+      "display_format": "video",
+      "cards": [
+        {
+          "body": "Transform your passion into a thriving YouTube channel! 🚀\nWe'll show you how to grow your own channel & succeed like your favorite creators.",
+          "cta": "Learn more",
+          "image": null,
+          "link_url": "https://go.thecontentgrowthengine.com/Meta",
+          "title": "Master Youtube From A Guy With 1.6M Subscribers",
+          "video": null
+        }
+      ]
     },
     {
       "id": "1140298548447435",
@@ -329,12 +569,25 @@
       "link_url": "https://kfc.com.mx/tt-links/2263ffc2-a1c4-4b8a-991e-cd15ac09eeef?utm_source=meta&utm_medium=paid&utm_campaign=%7B%7Bcampaign.name%7D%7D&utm_id=%7B%7Bcampaign.id%7D%7D&utm_term=%7B%7Badset.name%7D%7D~%7B%7Badset.id%7D%7D&utm_content=KTBURGERX2_WEB",
       "link_title": "KFC Jugoso y Crujiente 😋🍗 ¡Ordena KFC por App o WEB! 🛵🍗",
       "cta_text": "Shop Now",
+      "link_caption": "KFC.COM.MX",
       "images": [
         "https://scontent-lax3-2.xx.fbcdn.net/v/t39.35426-6/863541645_1069729809400005_6264062611228782469_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=103&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=GP1UN7AHQj8Q7kNvwF0H2y5&_nc_oc=AdpJQxN_ykPG54zvScE0NVncJZ1wum0lsFHa_uX1Pb8nMprDJ9EMR9oeLa7o0EZUALY&_nc_zt=14&_nc_ht=scontent-lax3-2.xx&_nc_gid=NYtwh0DeOFKcpobsNZN2pQ&_nc_ss=7b289&oh=00_AQQmBtX1W0lLPzbj7JALTT-GAgPOR2WlHYv-HC-b3u4FXA&oe=6AF763C4"
       ],
       "has_video": false,
       "same_creative_count": 2,
-      "multiple_versions": true
+      "multiple_versions": true,
+      "cta_type": "SHOP_NOW",
+      "display_format": "image",
+      "cards": [
+        {
+          "body": "Disfruta 2 Ke-Tiras Burger + 2 Papas Medianas 🍔🍗 por solo $189 MXN. ¡Ordena Ahora!",
+          "cta": "Shop Now",
+          "image": "https://scontent-lax3-2.xx.fbcdn.net/v/t39.35426-6/863541645_1069729809400005_6264062611228782469_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=103&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=GP1UN7AHQj8Q7kNvwF0H2y5&_nc_oc=AdpJQxN_ykPG54zvScE0NVncJZ1wum0lsFHa_uX1Pb8nMprDJ9EMR9oeLa7o0EZUALY&_nc_zt=14&_nc_ht=scontent-lax3-2.xx&_nc_gid=NYtwh0DeOFKcpobsNZN2pQ&_nc_ss=7b289&oh=00_AQQmBtX1W0lLPzbj7JALTT-GAgPOR2WlHYv-HC-b3u4FXA&oe=6AF763C4",
+          "link_url": "https://kfc.com.mx/tt-links/2263ffc2-a1c4-4b8a-991e-cd15ac09eeef?utm_source=meta&utm_medium=paid&utm_campaign=%7B%7Bcampaign.name%7D%7D&utm_id=%7B%7Bcampaign.id%7D%7D&utm_term=%7B%7Badset.name%7D%7D~%7B%7Badset.id%7D%7D&utm_content=KTBURGERX2_WEB",
+          "title": "KFC Jugoso y Crujiente 😋🍗 ¡Ordena KFC por App o WEB! 🛵🍗",
+          "video": null
+        }
+      ]
     },
     {
       "id": "1112372087956199",
@@ -349,12 +602,25 @@
       "link_url": "https://kfc.com.mx/?utm_source=meta&utm_medium=cpc&utm_campaign=%7B%7Bcampaign.name%7D%7D&utm_id=%7B%7Bcampaign.id%7D%7D&utm_term=hambre_de_promos&utm_content=BC12P30OFF_WEB&ot=delivery-class&img=https%3A%2F%2Fcdn.tictuk.com%2F85dbbc22-c4be-8b7b-d5fd-2dfdb9930e1e%2F6e650fec-b75c-fb8c-bded-664980ecdcdc.jpeg%3Fa%3Dcc0bb3ed-74f7-40fa-0ae2-3442e9f62d1c&ref=EC_r_6e650fec-b75c-fb8c-bded-664980ecdcdc_es_7646423017805410_n_n_n#item_30KM510%C2%A7%C2%A7d",
       "link_title": "KFC Jugoso y Crujiente 😋🍗",
       "cta_text": "Order Now",
+      "link_caption": "KFC.COM.MX",
       "images": [
         "https://scontent-lax7-1.xx.fbcdn.net/v/t39.35426-6/848633058_1460188322785285_2269489891665915015_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=101&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=yMU2l4Hozb4Q7kNvwF1HSJn&_nc_oc=AdqBw0_gfjV4ZgbmWYPpte8Ivfyd1J4tjoNBdeX0ROm1xqNFbOqnYhurl5z59lxoZDk&_nc_zt=14&_nc_ht=scontent-lax7-1.xx&_nc_gid=NYtwh0DeOFKcpobsNZN2pQ&_nc_ss=7b289&oh=00_AQTxnP4_Cq23S3M6eRrBWxVh_GC4RPnX0fAmsmqBGHyIYA&oe=6AF75F2B"
       ],
       "has_video": false,
       "same_creative_count": 5,
-      "multiple_versions": true
+      "multiple_versions": true,
+      "cta_type": "ORDER_NOW",
+      "display_format": "image",
+      "cards": [
+        {
+          "body": "Aprovecha 30% de Descuento en el Bucket Clásico de 12 piezas 🍗 Incluye 2 Complementos Familiares y 4 Bisquets. ¡Ordénalo Ahora! 🛵📲",
+          "cta": "Order Now",
+          "image": "https://scontent-lax7-1.xx.fbcdn.net/v/t39.35426-6/848633058_1460188322785285_2269489891665915015_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=101&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=yMU2l4Hozb4Q7kNvwF1HSJn&_nc_oc=AdqBw0_gfjV4ZgbmWYPpte8Ivfyd1J4tjoNBdeX0ROm1xqNFbOqnYhurl5z59lxoZDk&_nc_zt=14&_nc_ht=scontent-lax7-1.xx&_nc_gid=NYtwh0DeOFKcpobsNZN2pQ&_nc_ss=7b289&oh=00_AQTxnP4_Cq23S3M6eRrBWxVh_GC4RPnX0fAmsmqBGHyIYA&oe=6AF75F2B",
+          "link_url": "https://kfc.com.mx/?utm_source=meta&utm_medium=cpc&utm_campaign=%7B%7Bcampaign.name%7D%7D&utm_id=%7B%7Bcampaign.id%7D%7D&utm_term=hambre_de_promos&utm_content=BC12P30OFF_WEB&ot=delivery-class&img=https%3A%2F%2Fcdn.tictuk.com%2F85dbbc22-c4be-8b7b-d5fd-2dfdb9930e1e%2F6e650fec-b75c-fb8c-bded-664980ecdcdc.jpeg%3Fa%3Dcc0bb3ed-74f7-40fa-0ae2-3442e9f62d1c&ref=EC_r_6e650fec-b75c-fb8c-bded-664980ecdcdc_es_7646423017805410_n_n_n#item_30KM510%C2%A7%C2%A7d",
+          "title": "KFC Jugoso y Crujiente 😋🍗",
+          "video": null
+        }
+      ]
     },
     {
       "id": "1073207821905281",
@@ -369,12 +635,25 @@
       "link_url": "https://kfc.com.mx/tt-links/174869d1-1f13-4337-b809-1a113bce6ba5?utm_source=meta&utm_medium=cpc&utm_campaign=%7B%7Bcampaign.name%7D%7D&utm_id=%7B%7Bcampaign.id%7D%7D&utm_term=cupones&utm_content=KRUNCHVIP_WEB",
       "link_title": "KFC Jugoso y Crujiente 😋🍗 ¡Ordena KFC por App o WEB! 🛵🍗",
       "cta_text": "Shop Now",
+      "link_caption": "KFC.COM.MX",
       "images": [
         "https://scontent-lax3-2.xx.fbcdn.net/v/t39.35426-6/839883761_1757281615556548_5781004878441533006_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=100&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=G4JPV2WMZdEQ7kNvwG4PRnk&_nc_oc=AdpzbYUfye01fiWQ2_1qvk9DTuRdM_A7oEK4uCfd74SfPa6D2eAxkZH7B8-4v9kvAQc&_nc_zt=14&_nc_ht=scontent-lax3-2.xx&_nc_gid=NYtwh0DeOFKcpobsNZN2pQ&_nc_ss=7b289&oh=00_AQS8LJYdv2HVuQmxQ0Kkxy08WNmtghfvUIZ_tsSQ9qP6iw&oe=6AF7662F"
       ],
       "has_video": false,
       "same_creative_count": 0,
-      "multiple_versions": true
+      "multiple_versions": true,
+      "cta_type": "SHOP_NOW",
+      "display_format": "image",
+      "cards": [
+        {
+          "body": "Usa tu Cupón KRUNCHVIP 🎟️🔥 y Disfruta el Verdadero Sabor de KFC en tu Pedido 🍗",
+          "cta": "Shop Now",
+          "image": "https://scontent-lax3-2.xx.fbcdn.net/v/t39.35426-6/839883761_1757281615556548_5781004878441533006_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=100&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=G4JPV2WMZdEQ7kNvwG4PRnk&_nc_oc=AdpzbYUfye01fiWQ2_1qvk9DTuRdM_A7oEK4uCfd74SfPa6D2eAxkZH7B8-4v9kvAQc&_nc_zt=14&_nc_ht=scontent-lax3-2.xx&_nc_gid=NYtwh0DeOFKcpobsNZN2pQ&_nc_ss=7b289&oh=00_AQS8LJYdv2HVuQmxQ0Kkxy08WNmtghfvUIZ_tsSQ9qP6iw&oe=6AF7662F",
+          "link_url": "https://kfc.com.mx/tt-links/174869d1-1f13-4337-b809-1a113bce6ba5?utm_source=meta&utm_medium=cpc&utm_campaign=%7B%7Bcampaign.name%7D%7D&utm_id=%7B%7Bcampaign.id%7D%7D&utm_term=cupones&utm_content=KRUNCHVIP_WEB",
+          "title": "KFC Jugoso y Crujiente 😋🍗 ¡Ordena KFC por App o WEB! 🛵🍗",
+          "video": null
+        }
+      ]
     },
     {
       "id": "909656234472699",
@@ -389,12 +668,25 @@
       "link_url": "http://itunes.apple.com/app/id943905271",
       "link_title": "Porositë e tua të para, më zgjuara. 🎉",
       "cta_text": "Order Now",
+      "link_caption": "",
       "images": [
         "https://scontent-lax3-1.xx.fbcdn.net/v/t39.35426-6/772204634_1948107305894429_1864182691599297438_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=102&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=CF9Xavig4tgQ7kNvwF9uX5V&_nc_oc=AdppgrX8vghfbWFIekWN67CPhQOvbf8FsxIcRJs5NfzkGfuRGLc5IZJBghKaVTY364c&_nc_zt=14&_nc_ht=scontent-lax3-1.xx&_nc_gid=NYtwh0DeOFKcpobsNZN2pQ&_nc_ss=7b289&oh=00_AQQAispPMy31ONUawyEeDSlP5IhoVyetwWuZN0UDevFM0g&oe=6AF76A9D"
       ],
       "has_video": false,
       "same_creative_count": 0,
-      "multiple_versions": true
+      "multiple_versions": true,
+      "cta_type": "ORDER_NOW",
+      "display_format": "image",
+      "cards": [
+        {
+          "body": "Bashkohu me Wolt dhe shijo 14 ditë pa tarifë dorëzimi dhe dy herë 30% zbritje. 💙",
+          "cta": "Order Now",
+          "image": "https://scontent-lax3-1.xx.fbcdn.net/v/t39.35426-6/772204634_1948107305894429_1864182691599297438_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=102&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=CF9Xavig4tgQ7kNvwF9uX5V&_nc_oc=AdppgrX8vghfbWFIekWN67CPhQOvbf8FsxIcRJs5NfzkGfuRGLc5IZJBghKaVTY364c&_nc_zt=14&_nc_ht=scontent-lax3-1.xx&_nc_gid=NYtwh0DeOFKcpobsNZN2pQ&_nc_ss=7b289&oh=00_AQQAispPMy31ONUawyEeDSlP5IhoVyetwWuZN0UDevFM0g&oe=6AF76A9D",
+          "link_url": "http://itunes.apple.com/app/id943905271",
+          "title": "Porositë e tua të para, më zgjuara. 🎉",
+          "video": null
+        }
+      ]
     }
   ],
   "advertiser_search": [
@@ -411,12 +703,25 @@
       "link_url": "http://play.google.com/store/apps/details?id=com.kfc.mexico",
       "link_title": "Instala la APP KFC y Realiza tu Pedido🍗😋",
       "cta_text": "Install Now",
+      "link_caption": "",
       "images": [
         "https://scontent-lax3-1.xx.fbcdn.net/v/t39.35426-6/842018667_1182903797454659_4294976154799553878_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=104&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=C3_ym22fE3IQ7kNvwHNjczQ&_nc_oc=AdpKkQErK2pOhPxVYGPadktgnnp4FVk0eU7NCRPolrwmBxGfvAM05cMiGl5VgCXHSyU&_nc_zt=14&_nc_ht=scontent-lax3-1.xx&_nc_gid=NYtwh0DeOFKcpobsNZN2pQ&_nc_ss=7b289&oh=00_AQQEcLFicEXa0hsdW-0LNA2ouJgnw9NHQvvQNnQHIDYC2Q&oe=6AF73E75"
       ],
       "has_video": false,
       "same_creative_count": 4,
-      "multiple_versions": false
+      "multiple_versions": false,
+      "cta_type": "INSTALL_MOBILE_APP",
+      "display_format": "image",
+      "cards": [
+        {
+          "body": "Aprovecha el 30% Off 🔥 en tu Primer Pedido 🍗 Usando el Cupón 30KFC",
+          "cta": "Install Now",
+          "image": "https://scontent-lax3-1.xx.fbcdn.net/v/t39.35426-6/842018667_1182903797454659_4294976154799553878_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=104&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=C3_ym22fE3IQ7kNvwHNjczQ&_nc_oc=AdpKkQErK2pOhPxVYGPadktgnnp4FVk0eU7NCRPolrwmBxGfvAM05cMiGl5VgCXHSyU&_nc_zt=14&_nc_ht=scontent-lax3-1.xx&_nc_gid=NYtwh0DeOFKcpobsNZN2pQ&_nc_ss=7b289&oh=00_AQQEcLFicEXa0hsdW-0LNA2ouJgnw9NHQvvQNnQHIDYC2Q&oe=6AF73E75",
+          "link_url": "http://play.google.com/store/apps/details?id=com.kfc.mexico",
+          "title": "Instala la APP KFC y Realiza tu Pedido🍗😋",
+          "video": null
+        }
+      ]
     },
     {
       "id": "3184723071713262",
@@ -431,10 +736,23 @@
       "link_url": "http://play.google.com/store/apps/details?id=com.kfc.mexico",
       "link_title": "Ordena Desde la App 📲",
       "cta_text": "Shop Now",
+      "link_caption": "",
       "images": [],
       "has_video": true,
       "same_creative_count": 0,
-      "multiple_versions": false
+      "multiple_versions": false,
+      "cta_type": "SHOP_NOW",
+      "display_format": "video",
+      "cards": [
+        {
+          "body": "No Dejes Pasar la Promo ⏳ y Libera tu Krunch 🍗 con tus Ke-Tiras.",
+          "cta": "Shop Now",
+          "image": null,
+          "link_url": "http://play.google.com/store/apps/details?id=com.kfc.mexico",
+          "title": "Ordena Desde la App 📲",
+          "video": null
+        }
+      ]
     },
     {
       "id": "1085200567239343",
@@ -449,10 +767,23 @@
       "link_url": "https://kfc.com.mx/?utm_source=meta&utm_medium=paid&utm_campaign=%7B%7Bcampaign.name%7D%7D&utm_id=%7B%7Bcampaign.id%7D%7D&utm_term=%7B%7Badset.name%7D%7D~%7B%7Badset.id%7D%7D&utm_content=5X95_WEB&ot=delivery-class&img=https%3A%2F%2Fcdn.tictuk.com%2F85dbbc22-c4be-8b7b-d5fd-2dfdb9930e1e%2Fd130812a-4b87-e9c5-5ece-219e145b8b40.jpeg%3Fa%3D536fcb6e-97e8-660c-6b74-047396066f41&ref=EC_r_d130812a-4b87-e9c5-5ece-219e145b8b40_es_7646423017805410_n_n_n#item_5KT428%C2%A7%C2%A7d",
       "link_title": "KFC Jugoso y Crujiente 🍗 ¡Ordena KFC por WEB o APP! 🛵🍗",
       "cta_text": "Shop Now",
+      "link_caption": "KFC.COM.MX",
       "images": [],
       "has_video": true,
       "same_creative_count": 0,
-      "multiple_versions": true
+      "multiple_versions": true,
+      "cta_type": "SHOP_NOW",
+      "display_format": "video",
+      "cards": [
+        {
+          "body": "¡Hoy se Disfruta el Krunch! 🍗🤤 Ordena tu Combo 3 piezas Cruji + Puré + Bisquet por solo $134.",
+          "cta": "Shop Now",
+          "image": null,
+          "link_url": "https://kfc.com.mx/?utm_source=meta&utm_medium=paid&utm_campaign=%7B%7Bcampaign.name%7D%7D&utm_id=%7B%7Bcampaign.id%7D%7D&utm_term=%7B%7Badset.name%7D%7D~%7B%7Badset.id%7D%7D&utm_content=5X95_WEB&ot=delivery-class&img=https%3A%2F%2Fcdn.tictuk.com%2F85dbbc22-c4be-8b7b-d5fd-2dfdb9930e1e%2Fd130812a-4b87-e9c5-5ece-219e145b8b40.jpeg%3Fa%3D536fcb6e-97e8-660c-6b74-047396066f41&ref=EC_r_d130812a-4b87-e9c5-5ece-219e145b8b40_es_7646423017805410_n_n_n#item_5KT428%C2%A7%C2%A7d",
+          "title": "KFC Jugoso y Crujiente 🍗 ¡Ordena KFC por WEB o APP! 🛵🍗",
+          "video": null
+        }
+      ]
     },
     {
       "id": "1140298548447435",
@@ -467,12 +798,25 @@
       "link_url": "https://kfc.com.mx/tt-links/2263ffc2-a1c4-4b8a-991e-cd15ac09eeef?utm_source=meta&utm_medium=paid&utm_campaign=%7B%7Bcampaign.name%7D%7D&utm_id=%7B%7Bcampaign.id%7D%7D&utm_term=%7B%7Badset.name%7D%7D~%7B%7Badset.id%7D%7D&utm_content=KTBURGERX2_WEB",
       "link_title": "KFC Jugoso y Crujiente 😋🍗 ¡Ordena KFC por App o WEB! 🛵🍗",
       "cta_text": "Shop Now",
+      "link_caption": "KFC.COM.MX",
       "images": [
         "https://scontent-lax3-2.xx.fbcdn.net/v/t39.35426-6/863541645_1069729809400005_6264062611228782469_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=103&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=GP1UN7AHQj8Q7kNvwF0H2y5&_nc_oc=AdpJQxN_ykPG54zvScE0NVncJZ1wum0lsFHa_uX1Pb8nMprDJ9EMR9oeLa7o0EZUALY&_nc_zt=14&_nc_ht=scontent-lax3-2.xx&_nc_gid=NYtwh0DeOFKcpobsNZN2pQ&_nc_ss=7b289&oh=00_AQQmBtX1W0lLPzbj7JALTT-GAgPOR2WlHYv-HC-b3u4FXA&oe=6AF763C4"
       ],
       "has_video": false,
       "same_creative_count": 2,
-      "multiple_versions": true
+      "multiple_versions": true,
+      "cta_type": "SHOP_NOW",
+      "display_format": "image",
+      "cards": [
+        {
+          "body": "Disfruta 2 Ke-Tiras Burger + 2 Papas Medianas 🍔🍗 por solo $189 MXN. ¡Ordena Ahora!",
+          "cta": "Shop Now",
+          "image": "https://scontent-lax3-2.xx.fbcdn.net/v/t39.35426-6/863541645_1069729809400005_6264062611228782469_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=103&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=GP1UN7AHQj8Q7kNvwF0H2y5&_nc_oc=AdpJQxN_ykPG54zvScE0NVncJZ1wum0lsFHa_uX1Pb8nMprDJ9EMR9oeLa7o0EZUALY&_nc_zt=14&_nc_ht=scontent-lax3-2.xx&_nc_gid=NYtwh0DeOFKcpobsNZN2pQ&_nc_ss=7b289&oh=00_AQQmBtX1W0lLPzbj7JALTT-GAgPOR2WlHYv-HC-b3u4FXA&oe=6AF763C4",
+          "link_url": "https://kfc.com.mx/tt-links/2263ffc2-a1c4-4b8a-991e-cd15ac09eeef?utm_source=meta&utm_medium=paid&utm_campaign=%7B%7Bcampaign.name%7D%7D&utm_id=%7B%7Bcampaign.id%7D%7D&utm_term=%7B%7Badset.name%7D%7D~%7B%7Badset.id%7D%7D&utm_content=KTBURGERX2_WEB",
+          "title": "KFC Jugoso y Crujiente 😋🍗 ¡Ordena KFC por App o WEB! 🛵🍗",
+          "video": null
+        }
+      ]
     },
     {
       "id": "1112372087956199",
@@ -487,12 +831,25 @@
       "link_url": "https://kfc.com.mx/?utm_source=meta&utm_medium=cpc&utm_campaign=%7B%7Bcampaign.name%7D%7D&utm_id=%7B%7Bcampaign.id%7D%7D&utm_term=hambre_de_promos&utm_content=BC12P30OFF_WEB&ot=delivery-class&img=https%3A%2F%2Fcdn.tictuk.com%2F85dbbc22-c4be-8b7b-d5fd-2dfdb9930e1e%2F6e650fec-b75c-fb8c-bded-664980ecdcdc.jpeg%3Fa%3Dcc0bb3ed-74f7-40fa-0ae2-3442e9f62d1c&ref=EC_r_6e650fec-b75c-fb8c-bded-664980ecdcdc_es_7646423017805410_n_n_n#item_30KM510%C2%A7%C2%A7d",
       "link_title": "KFC Jugoso y Crujiente 😋🍗",
       "cta_text": "Order Now",
+      "link_caption": "KFC.COM.MX",
       "images": [
         "https://scontent-lax7-1.xx.fbcdn.net/v/t39.35426-6/848633058_1460188322785285_2269489891665915015_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=101&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=yMU2l4Hozb4Q7kNvwF1HSJn&_nc_oc=AdqBw0_gfjV4ZgbmWYPpte8Ivfyd1J4tjoNBdeX0ROm1xqNFbOqnYhurl5z59lxoZDk&_nc_zt=14&_nc_ht=scontent-lax7-1.xx&_nc_gid=NYtwh0DeOFKcpobsNZN2pQ&_nc_ss=7b289&oh=00_AQTxnP4_Cq23S3M6eRrBWxVh_GC4RPnX0fAmsmqBGHyIYA&oe=6AF75F2B"
       ],
       "has_video": false,
       "same_creative_count": 5,
-      "multiple_versions": true
+      "multiple_versions": true,
+      "cta_type": "ORDER_NOW",
+      "display_format": "image",
+      "cards": [
+        {
+          "body": "Aprovecha 30% de Descuento en el Bucket Clásico de 12 piezas 🍗 Incluye 2 Complementos Familiares y 4 Bisquets. ¡Ordénalo Ahora! 🛵📲",
+          "cta": "Order Now",
+          "image": "https://scontent-lax7-1.xx.fbcdn.net/v/t39.35426-6/848633058_1460188322785285_2269489891665915015_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=101&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=yMU2l4Hozb4Q7kNvwF1HSJn&_nc_oc=AdqBw0_gfjV4ZgbmWYPpte8Ivfyd1J4tjoNBdeX0ROm1xqNFbOqnYhurl5z59lxoZDk&_nc_zt=14&_nc_ht=scontent-lax7-1.xx&_nc_gid=NYtwh0DeOFKcpobsNZN2pQ&_nc_ss=7b289&oh=00_AQTxnP4_Cq23S3M6eRrBWxVh_GC4RPnX0fAmsmqBGHyIYA&oe=6AF75F2B",
+          "link_url": "https://kfc.com.mx/?utm_source=meta&utm_medium=cpc&utm_campaign=%7B%7Bcampaign.name%7D%7D&utm_id=%7B%7Bcampaign.id%7D%7D&utm_term=hambre_de_promos&utm_content=BC12P30OFF_WEB&ot=delivery-class&img=https%3A%2F%2Fcdn.tictuk.com%2F85dbbc22-c4be-8b7b-d5fd-2dfdb9930e1e%2F6e650fec-b75c-fb8c-bded-664980ecdcdc.jpeg%3Fa%3Dcc0bb3ed-74f7-40fa-0ae2-3442e9f62d1c&ref=EC_r_6e650fec-b75c-fb8c-bded-664980ecdcdc_es_7646423017805410_n_n_n#item_30KM510%C2%A7%C2%A7d",
+          "title": "KFC Jugoso y Crujiente 😋🍗",
+          "video": null
+        }
+      ]
     },
     {
       "id": "1073207821905281",
@@ -507,12 +864,25 @@
       "link_url": "https://kfc.com.mx/tt-links/174869d1-1f13-4337-b809-1a113bce6ba5?utm_source=meta&utm_medium=cpc&utm_campaign=%7B%7Bcampaign.name%7D%7D&utm_id=%7B%7Bcampaign.id%7D%7D&utm_term=cupones&utm_content=KRUNCHVIP_WEB",
       "link_title": "KFC Jugoso y Crujiente 😋🍗 ¡Ordena KFC por App o WEB! 🛵🍗",
       "cta_text": "Shop Now",
+      "link_caption": "KFC.COM.MX",
       "images": [
         "https://scontent-lax3-2.xx.fbcdn.net/v/t39.35426-6/839883761_1757281615556548_5781004878441533006_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=100&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=G4JPV2WMZdEQ7kNvwG4PRnk&_nc_oc=AdpzbYUfye01fiWQ2_1qvk9DTuRdM_A7oEK4uCfd74SfPa6D2eAxkZH7B8-4v9kvAQc&_nc_zt=14&_nc_ht=scontent-lax3-2.xx&_nc_gid=NYtwh0DeOFKcpobsNZN2pQ&_nc_ss=7b289&oh=00_AQS8LJYdv2HVuQmxQ0Kkxy08WNmtghfvUIZ_tsSQ9qP6iw&oe=6AF7662F"
       ],
       "has_video": false,
       "same_creative_count": 0,
-      "multiple_versions": true
+      "multiple_versions": true,
+      "cta_type": "SHOP_NOW",
+      "display_format": "image",
+      "cards": [
+        {
+          "body": "Usa tu Cupón KRUNCHVIP 🎟️🔥 y Disfruta el Verdadero Sabor de KFC en tu Pedido 🍗",
+          "cta": "Shop Now",
+          "image": "https://scontent-lax3-2.xx.fbcdn.net/v/t39.35426-6/839883761_1757281615556548_5781004878441533006_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=100&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=G4JPV2WMZdEQ7kNvwG4PRnk&_nc_oc=AdpzbYUfye01fiWQ2_1qvk9DTuRdM_A7oEK4uCfd74SfPa6D2eAxkZH7B8-4v9kvAQc&_nc_zt=14&_nc_ht=scontent-lax3-2.xx&_nc_gid=NYtwh0DeOFKcpobsNZN2pQ&_nc_ss=7b289&oh=00_AQS8LJYdv2HVuQmxQ0Kkxy08WNmtghfvUIZ_tsSQ9qP6iw&oe=6AF7662F",
+          "link_url": "https://kfc.com.mx/tt-links/174869d1-1f13-4337-b809-1a113bce6ba5?utm_source=meta&utm_medium=cpc&utm_campaign=%7B%7Bcampaign.name%7D%7D&utm_id=%7B%7Bcampaign.id%7D%7D&utm_term=cupones&utm_content=KRUNCHVIP_WEB",
+          "title": "KFC Jugoso y Crujiente 😋🍗 ¡Ordena KFC por App o WEB! 🛵🍗",
+          "video": null
+        }
+      ]
     },
     {
       "id": "1565377375390608",
@@ -527,12 +897,25 @@
       "link_url": "https://kfc.com.mx/?utm_source=meta&utm_medium=cpc&utm_campaign=%7B%7Bcampaign.name%7D%7D&utm_id=%7B%7Bcampaign.id%7D%7D&utm_term=hambre_de_promos&utm_content=BC12P30OFF_WEB&ot=delivery-class&img=https%3A%2F%2Fcdn.tictuk.com%2F85dbbc22-c4be-8b7b-d5fd-2dfdb9930e1e%2F6e650fec-b75c-fb8c-bded-664980ecdcdc.jpeg%3Fa%3Dcc0bb3ed-74f7-40fa-0ae2-3442e9f62d1c&ref=EC_r_6e650fec-b75c-fb8c-bded-664980ecdcdc_es_7646423017805410_n_n_n#item_30KM510%C2%A7%C2%A7d",
       "link_title": "KFC Jugoso y Crujiente 😋🍗 ¡Ordena KFC por App o WEB! 🛵🍗",
       "cta_text": "Shop Now",
+      "link_caption": "KFC.COM.MX",
       "images": [
         "https://scontent-lax3-2.xx.fbcdn.net/v/t39.35426-6/825327775_1451154833578194_3390467616544012275_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=100&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=FNRPio8jwT0Q7kNvwGRGyGT&_nc_oc=Adrn4IQXsg5D-TCX0rswkIy6ZyqgYLQbZSO7LZ89rYHMvmehWF0XsdLHLDk3GPzoAyM&_nc_zt=14&_nc_ht=scontent-lax3-2.xx&_nc_gid=NYtwh0DeOFKcpobsNZN2pQ&_nc_ss=7b289&oh=00_AQSGUcj_5mlsGL5Fiorq5mKf0h4Bxcc4pmGSKvwWwbHIGg&oe=6AF73A93"
       ],
       "has_video": false,
       "same_creative_count": 0,
-      "multiple_versions": true
+      "multiple_versions": true,
+      "cta_type": "SHOP_NOW",
+      "display_format": "image",
+      "cards": [
+        {
+          "body": "Disfruta un Bucket Clásico de 12 Piezas con un Increíble Precio 🔥🍗 Ideal para Compartir con Familia o Amigos.",
+          "cta": "Shop Now",
+          "image": "https://scontent-lax3-2.xx.fbcdn.net/v/t39.35426-6/825327775_1451154833578194_3390467616544012275_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=100&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=FNRPio8jwT0Q7kNvwGRGyGT&_nc_oc=Adrn4IQXsg5D-TCX0rswkIy6ZyqgYLQbZSO7LZ89rYHMvmehWF0XsdLHLDk3GPzoAyM&_nc_zt=14&_nc_ht=scontent-lax3-2.xx&_nc_gid=NYtwh0DeOFKcpobsNZN2pQ&_nc_ss=7b289&oh=00_AQSGUcj_5mlsGL5Fiorq5mKf0h4Bxcc4pmGSKvwWwbHIGg&oe=6AF73A93",
+          "link_url": "https://kfc.com.mx/?utm_source=meta&utm_medium=cpc&utm_campaign=%7B%7Bcampaign.name%7D%7D&utm_id=%7B%7Bcampaign.id%7D%7D&utm_term=hambre_de_promos&utm_content=BC12P30OFF_WEB&ot=delivery-class&img=https%3A%2F%2Fcdn.tictuk.com%2F85dbbc22-c4be-8b7b-d5fd-2dfdb9930e1e%2F6e650fec-b75c-fb8c-bded-664980ecdcdc.jpeg%3Fa%3Dcc0bb3ed-74f7-40fa-0ae2-3442e9f62d1c&ref=EC_r_6e650fec-b75c-fb8c-bded-664980ecdcdc_es_7646423017805410_n_n_n#item_30KM510%C2%A7%C2%A7d",
+          "title": "KFC Jugoso y Crujiente 😋🍗 ¡Ordena KFC por App o WEB! 🛵🍗",
+          "video": null
+        }
+      ]
     }
   ]
 }

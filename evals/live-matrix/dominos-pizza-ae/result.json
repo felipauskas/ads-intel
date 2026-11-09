@@ -3,7 +3,7 @@
   "country": "AE",
   "advertiser": "Domino's Pizza",
   "folder": "evals/live-matrix/dominos-pizza-ae",
-  "data_dir": "/var/folders/zf/g9bpd9s55sv10tz2mnhqch800000gn/T/ads-intel-live-eval-a5skrx5s/tmpts1ta7oj",
+  "data_dir": "/var/folders/zf/g9bpd9s55sv10tz2mnhqch800000gn/T/ads-intel-live-eval-7v9t8l1b/tmp2el_l_j8",
   "search_summary": {
     "count": 20,
     "complete": false,
@@ -23,11 +23,11 @@
       "Linguza: AI English Tutor",
       "Tony’s Swedish Pizza And Kebab"
     ],
-    "seconds": 30.96
+    "seconds": 13.12
   },
   "advertiser_summary": {
     "count": 2,
-    "complete": true,
+    "complete": false,
     "resolved": {
       "page_name": "Domino's Pizza",
       "score": 0.8
@@ -39,7 +39,7 @@
     "page_names": [
       "Domino's Pizza"
     ],
-    "seconds": 11.97
+    "seconds": 9.23
   },
   "watch_add": {
     "error": null,
@@ -63,7 +63,7 @@
     "new_ads": 2,
     "ended_ads": 0,
     "changed_ads": 0,
-    "partial": false,
+    "partial": true,
     "artifacts": {
       "html": "artifacts/html.html",
       "digest": "artifacts/digest.json"
@@ -71,7 +71,7 @@
     "new_page_names": [
       "Domino's Pizza"
     ],
-    "seconds": 10.41
+    "seconds": 9.59
   },
   "check2": {
     "query": "Domino's Pizza",
@@ -84,13 +84,13 @@
     "new_ads": 0,
     "ended_ads": 0,
     "changed_ads": 0,
-    "partial": false,
+    "partial": true,
     "artifacts": {
       "html": "artifacts/check2/html.html",
       "digest": "artifacts/check2/digest.json"
     },
     "new_page_names": [],
-    "seconds": 10.0
+    "seconds": 8.74
   },
   "artifacts_ok": true,
   "artifacts2_ok": true,
@@ -104,14 +104,19 @@
   "status": "PASS",
   "failures": [],
   "timings": {
-    "search": 30.96,
-    "advertiser_search": 11.97,
-    "check1": 10.41,
-    "check2": 10.0,
-    "total": 63.34
+    "search": 13.12,
+    "advertiser_search": 9.23,
+    "check1": 9.59,
+    "check2": 8.74,
+    "total": 40.68
   },
   "attempts": {
-    "total": 10,
-    "failed": 0
+    "total": 5,
+    "failed": 1,
+    "transport_failed": 0,
+    "parse_failed": 1,
+    "shell": 1,
+    "blocked": 0,
+    "markup_changed": 0
   }
 }

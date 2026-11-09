@@ -15,10 +15,23 @@
       "link_url": "http://play.google.com/store/apps/details?id=com.dramavo.dramahub.app",
       "link_title": "Mini Drama",
       "cta_text": "Watch more",
+      "link_caption": "PLAY.GOOGLE.COM",
       "images": [],
       "has_video": true,
       "same_creative_count": 3,
-      "multiple_versions": false
+      "multiple_versions": false,
+      "cta_type": "WATCH_MORE",
+      "display_format": "video",
+      "cards": [
+        {
+          "body": "Commencez à Regarder Gratuitement🎬",
+          "cta": "Watch more",
+          "image": null,
+          "link_url": "http://play.google.com/store/apps/details?id=com.dramavo.dramahub.app",
+          "title": "Mini Drama",
+          "video": null
+        }
+      ]
     },
     {
       "id": "1119255620460810",
@@ -33,12 +46,56 @@
       "link_url": "https://www.dominos.com.eg/en/",
       "link_title": "",
       "cta_text": "",
+      "link_caption": "",
       "images": [
         "https://scontent-lax3-1.xx.fbcdn.net/v/t39.35426-6/886261955_27968008172875494_5633749431614298874_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=109&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=bE-7-OGyzF4Q7kNvwFo4n0S&_nc_oc=Adpcy4fhFx2uCQy_AfE7tHJTMErN6zuENsgHXOYX6bIr9utU2kBbwSDAVQ5WBO0qktA&_nc_zt=14&_nc_ht=scontent-lax3-1.xx&_nc_gid=Eu0OT1WgbrPyGXfAiptrxA&_nc_ss=7b289&oh=00_AQShzOhobGm-jyo_8FTEN0did280idPLN0j6g8Eu1BdWfQ&oe=6AF768D0"
       ],
       "has_video": false,
       "same_creative_count": 2,
-      "multiple_versions": false
+      "multiple_versions": false,
+      "cta_type": "",
+      "display_format": "image",
+      "cards": [
+        {
+          "body": "حاجتين بتحبهم في عرض واحد.👀❤️\nالبيتزا والسوبر توفير اطلب دلوقتي 2 بيتزا ميديم بـ 395ج.\nاطلب من Dominos.com، أو تطبيق Domino’s pizza أو من خلال رقمنا 19223\nTerms and conditions apply.\nTax Registration Number: 382- 107- 586",
+          "cta": "",
+          "image": "https://scontent-lax3-1.xx.fbcdn.net/v/t39.35426-6/886261955_27968008172875494_5633749431614298874_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=109&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=bE-7-OGyzF4Q7kNvwFo4n0S&_nc_oc=Adpcy4fhFx2uCQy_AfE7tHJTMErN6zuENsgHXOYX6bIr9utU2kBbwSDAVQ5WBO0qktA&_nc_zt=14&_nc_ht=scontent-lax3-1.xx&_nc_gid=Eu0OT1WgbrPyGXfAiptrxA&_nc_ss=7b289&oh=00_AQShzOhobGm-jyo_8FTEN0did280idPLN0j6g8Eu1BdWfQ&oe=6AF768D0",
+          "link_url": "https://www.dominos.com.eg/en/",
+          "title": "",
+          "video": null
+        }
+      ]
+    },
+    {
+      "id": "1770048867402527",
+      "page_name": "dominos_pizzaa1",
+      "status": "active",
+      "first_seen": "Nov 8, 2026 · Total active time 19 hrs",
+      "last_seen": "",
+      "creative_text": "Pizza mood: on 🍕🔥",
+      "library_url": "https://www.facebook.com/ads/library/?id=1770048867402527",
+      "page_url": "https://www.instagram.com/_u/dominos_pizzaa1",
+      "page_id": "",
+      "link_url": "",
+      "link_title": "",
+      "cta_text": "",
+      "link_caption": "",
+      "images": [],
+      "has_video": true,
+      "same_creative_count": 3,
+      "multiple_versions": false,
+      "cta_type": "",
+      "display_format": "video",
+      "cards": [
+        {
+          "body": "Pizza mood: on 🍕🔥",
+          "cta": "",
+          "image": null,
+          "link_url": "",
+          "title": "",
+          "video": null
+        }
+      ]
     },
     {
       "id": "1108799028440590",
@@ -53,12 +110,25 @@
       "link_url": "https://www.dominos.com.eg/",
       "link_title": "",
       "cta_text": "",
+      "link_caption": "",
       "images": [
         "https://scontent-lax3-2.xx.fbcdn.net/v/t39.35426-6/855448992_1130987596141618_6229450396284727008_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=107&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=U8rFLux-W9QQ7kNvwFwpS2g&_nc_oc=AdqH7m1-UOh0nixE2qgIHd-gRI-yDu4XFSfYhNRihk3F6N_v7wZnJWSYeMZ0SC-A3uY&_nc_zt=14&_nc_ht=scontent-lax3-2.xx&_nc_gid=Eu0OT1WgbrPyGXfAiptrxA&_nc_ss=7b289&oh=00_AQT2DBFOkE2MHPBNkT2-WoHj6i6SPeCg0NVuVOBpbwYbAA&oe=6AF743A6"
       ],
       "has_video": false,
       "same_creative_count": 0,
-      "multiple_versions": false
+      "multiple_versions": false,
+      "cta_type": "",
+      "display_format": "image",
+      "cards": [
+        {
+          "body": "في بيتزا من كتر حبك فيها لازم تطلبهاLarge\nاطلب 2 بيتزا لارج بـ 595ج في عرض سوبر توفير - كبير!\nاطلب من Dominos.com، أو تطبيق Domino’s pizza أو من خلال رقمنا 19223\nTerms and conditions apply.\nTax Registration Number: 382- 107- 586",
+          "cta": "",
+          "image": "https://scontent-lax3-2.xx.fbcdn.net/v/t39.35426-6/855448992_1130987596141618_6229450396284727008_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=107&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=U8rFLux-W9QQ7kNvwFwpS2g&_nc_oc=AdqH7m1-UOh0nixE2qgIHd-gRI-yDu4XFSfYhNRihk3F6N_v7wZnJWSYeMZ0SC-A3uY&_nc_zt=14&_nc_ht=scontent-lax3-2.xx&_nc_gid=Eu0OT1WgbrPyGXfAiptrxA&_nc_ss=7b289&oh=00_AQT2DBFOkE2MHPBNkT2-WoHj6i6SPeCg0NVuVOBpbwYbAA&oe=6AF743A6",
+          "link_url": "https://www.dominos.com.eg/",
+          "title": "",
+          "video": null
+        }
+      ]
     },
     {
       "id": "1493593229499587",
@@ -73,10 +143,23 @@
       "link_url": "https://empirioapp.com/growth-plan",
       "link_title": "MBA secrets in 5 minutes a day",
       "cta_text": "Learn more",
+      "link_caption": "EMPIRIOAPP.COM",
       "images": [],
       "has_video": true,
       "same_creative_count": 0,
-      "multiple_versions": false
+      "multiple_versions": false,
+      "cta_type": "LEARN_MORE",
+      "display_format": "video",
+      "cards": [
+        {
+          "body": "What if you could think like a CEO without spending years in business school? Empirio delivers the insights in 5 minutes a day. Interactive, eye-opening, addictive. Try it now. 📈",
+          "cta": "Learn more",
+          "image": null,
+          "link_url": "https://empirioapp.com/growth-plan",
+          "title": "MBA secrets in 5 minutes a day",
+          "video": null
+        }
+      ]
     },
     {
       "id": "4521643418107675",
@@ -91,12 +174,25 @@
       "link_url": "https://empirioapp.com/growth-plan",
       "link_title": "MBA secrets in 5 minutes a day Financial education that feels like a game. Step into real business decisions, see actual outcomes, and discover how you think about money and strategy.",
       "cta_text": "Learn more",
+      "link_caption": "EMPIRIOAPP.COM",
       "images": [
         "https://scontent-lax3-1.xx.fbcdn.net/v/t39.35426-6/893977818_1113635391405966_2878250109566260755_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=102&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=zZVb8PLmHs8Q7kNvwGRCp_Y&_nc_oc=AdrIvK7ja2vO0mM2uLRTHPVJWAtuYyzgK4J6OpNMJLnBZ_-ZfQSulTsXrqMRfaigNUg&_nc_zt=14&_nc_ht=scontent-lax3-1.xx&_nc_gid=Eu0OT1WgbrPyGXfAiptrxA&_nc_ss=7b289&oh=00_AQRXnlEVlU5otKQ4wPyqg91R5W1QuzokNArowxab9t8AJw&oe=6AF73C0A"
       ],
       "has_video": false,
       "same_creative_count": 0,
-      "multiple_versions": false
+      "multiple_versions": false,
+      "cta_type": "LEARN_MORE",
+      "display_format": "image",
+      "cards": [
+        {
+          "body": "What if you could think like a CEO without spending years in business school? Empirio delivers the insights in 5 minutes a day. Interactive, eye-opening, addictive. Try it now. 📈",
+          "cta": "Learn more",
+          "image": "https://scontent-lax3-1.xx.fbcdn.net/v/t39.35426-6/893977818_1113635391405966_2878250109566260755_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=102&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=zZVb8PLmHs8Q7kNvwGRCp_Y&_nc_oc=AdrIvK7ja2vO0mM2uLRTHPVJWAtuYyzgK4J6OpNMJLnBZ_-ZfQSulTsXrqMRfaigNUg&_nc_zt=14&_nc_ht=scontent-lax3-1.xx&_nc_gid=Eu0OT1WgbrPyGXfAiptrxA&_nc_ss=7b289&oh=00_AQRXnlEVlU5otKQ4wPyqg91R5W1QuzokNArowxab9t8AJw&oe=6AF73C0A",
+          "link_url": "https://empirioapp.com/growth-plan",
+          "title": "MBA secrets in 5 minutes a day Financial education that feels like a game. Step into real business decisions, see actual outcomes, and discover how you think about money and strategy.",
+          "video": null
+        }
+      ]
     },
     {
       "id": "4710848209133972",
@@ -111,12 +207,25 @@
       "link_url": "http://dominos.com.eg/",
       "link_title": "Domino's Pizza",
       "cta_text": "Learn more",
+      "link_caption": "DOMINOS.COM.EG",
       "images": [
         "https://scontent-lax7-1.xx.fbcdn.net/v/t39.35426-6/896978614_1016266134861169_5394652435009726931_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=101&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=KGvrJXnch1AQ7kNvwG_nzvr&_nc_oc=Adq1XUcQePC_d1V3cY5O1f38HN7zXxOz1mgCHUTJzJpRaT7xcAJuERO8mRnTgqThBB4&_nc_zt=14&_nc_ht=scontent-lax7-1.xx&_nc_gid=Eu0OT1WgbrPyGXfAiptrxA&_nc_ss=7b289&oh=00_AQTFr6rTw62c6mePnI_ilDcPi2wUOcLCk3Z_VsmUPmGYGg&oe=6AF74203"
       ],
       "has_video": false,
       "same_creative_count": 0,
-      "multiple_versions": false
+      "multiple_versions": false,
+      "cta_type": "LEARN_MORE",
+      "display_format": "image",
+      "cards": [
+        {
+          "body": "في بيتزا من كتر حبك فيها لازم تطلبهاLarge\nاطلب 2 بيتزا لارج بـ 595ج في عرض سوبر توفير - كبير!\nاطلب من Dominos.com، أو تطبيق Domino’s pizza أو من خلال رقمنا 19223\nTerms and conditions apply.\nTax Registration Number: 382- 107- 586",
+          "cta": "Learn more",
+          "image": "https://scontent-lax7-1.xx.fbcdn.net/v/t39.35426-6/896978614_1016266134861169_5394652435009726931_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=101&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=KGvrJXnch1AQ7kNvwG_nzvr&_nc_oc=Adq1XUcQePC_d1V3cY5O1f38HN7zXxOz1mgCHUTJzJpRaT7xcAJuERO8mRnTgqThBB4&_nc_zt=14&_nc_ht=scontent-lax7-1.xx&_nc_gid=Eu0OT1WgbrPyGXfAiptrxA&_nc_ss=7b289&oh=00_AQTFr6rTw62c6mePnI_ilDcPi2wUOcLCk3Z_VsmUPmGYGg&oe=6AF74203",
+          "link_url": "http://dominos.com.eg/",
+          "title": "Domino's Pizza",
+          "video": null
+        }
+      ]
     },
     {
       "id": "1987275911861086",
@@ -131,12 +240,25 @@
       "link_url": "http://dominos.com.eg/",
       "link_title": "Domino's Pizza",
       "cta_text": "Learn more",
+      "link_caption": "DOMINOS.COM.EG",
       "images": [
         "https://scontent-lax3-1.xx.fbcdn.net/v/t39.35426-6/896785757_1417892280512261_8145407849846577313_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=110&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=wINHcCisEQIQ7kNvwHGm0ts&_nc_oc=AdqRB0lcgFWr3_DCOZXIv7lUL053bH0A2g8QugM6v8kfmAzb6yC0G2U0KM6t4oJvZZE&_nc_zt=14&_nc_ht=scontent-lax3-1.xx&_nc_gid=Eu0OT1WgbrPyGXfAiptrxA&_nc_ss=7b289&oh=00_AQT1l536vPn8dEqDSLx9QUow1Ar5rfIbKVtQZrKV3vQVxw&oe=6AF74CCA"
       ],
       "has_video": false,
       "same_creative_count": 0,
-      "multiple_versions": true
+      "multiple_versions": true,
+      "cta_type": "LEARN_MORE",
+      "display_format": "image",
+      "cards": [
+        {
+          "body": "حاجتين بتحبهم في عرض واحد.👀❤️\nالبيتزا والسوبر توفير اطلب دلوقتي 2 بيتزا ميديم بـ 395ج.\nاطلب من Dominos.com، أو تطبيق Domino’s pizza أو من خلال رقمنا 19223\nTerms and conditions apply.\nTax Registration Number: 382- 107- 586",
+          "cta": "Learn more",
+          "image": "https://scontent-lax3-1.xx.fbcdn.net/v/t39.35426-6/896785757_1417892280512261_8145407849846577313_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=110&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=wINHcCisEQIQ7kNvwHGm0ts&_nc_oc=AdqRB0lcgFWr3_DCOZXIv7lUL053bH0A2g8QugM6v8kfmAzb6yC0G2U0KM6t4oJvZZE&_nc_zt=14&_nc_ht=scontent-lax3-1.xx&_nc_gid=Eu0OT1WgbrPyGXfAiptrxA&_nc_ss=7b289&oh=00_AQT1l536vPn8dEqDSLx9QUow1Ar5rfIbKVtQZrKV3vQVxw&oe=6AF74CCA",
+          "link_url": "http://dominos.com.eg/",
+          "title": "Domino's Pizza",
+          "video": null
+        }
+      ]
     },
     {
       "id": "3278027829163152",
@@ -151,12 +273,25 @@
       "link_url": "https://m.alibaba.com/lp/group?src=cpm_fb&sub_channel=dpa&biz=brand&group_id=52&link_type=feed&product_id=10000011944368&cid=201271492&field=BRAND_AD",
       "link_title": "Design Your Own Paper Bag",
       "cta_text": "Learn More",
+      "link_caption": "M.ALIBABA.COM",
       "images": [
         "https://scontent-lax3-1.xx.fbcdn.net/v/t39.35426-6/370844260_289441323710970_1508569239571625852_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=102&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=RxsoJ1Kd2EgQ7kNvwEVGZ6X&_nc_oc=AdqkbyoadPClkNE0GseUWzqLNH0aMjBGy-yepqIu_3TvpHg-MToABPDyw-mohF0tPOY&_nc_zt=14&_nc_ht=scontent-lax3-1.xx&_nc_gid=Eu0OT1WgbrPyGXfAiptrxA&_nc_ss=7b289&oh=00_AQSyXqFM_5W4AtOaf61zfMuu7lRrTXotNGoW3xOZk9Se5Q&oe=6AF769D7"
       ],
       "has_video": false,
       "same_creative_count": 0,
-      "multiple_versions": true
+      "multiple_versions": true,
+      "cta_type": "LEARN_MORE",
+      "display_format": "image",
+      "cards": [
+        {
+          "body": "Source Packaging & Printing on Alibaba.com. Alibaba.com-World's Leading B2B Marketplace.",
+          "cta": "Learn More",
+          "image": "https://scontent-lax3-1.xx.fbcdn.net/v/t39.35426-6/370844260_289441323710970_1508569239571625852_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=102&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=RxsoJ1Kd2EgQ7kNvwEVGZ6X&_nc_oc=AdqkbyoadPClkNE0GseUWzqLNH0aMjBGy-yepqIu_3TvpHg-MToABPDyw-mohF0tPOY&_nc_zt=14&_nc_ht=scontent-lax3-1.xx&_nc_gid=Eu0OT1WgbrPyGXfAiptrxA&_nc_ss=7b289&oh=00_AQSyXqFM_5W4AtOaf61zfMuu7lRrTXotNGoW3xOZk9Se5Q&oe=6AF769D7",
+          "link_url": "https://m.alibaba.com/lp/group?src=cpm_fb&sub_channel=dpa&biz=brand&group_id=52&link_type=feed&product_id=10000011944368&cid=201271492&field=BRAND_AD",
+          "title": "Design Your Own Paper Bag",
+          "video": null
+        }
+      ]
     },
     {
       "id": "28439204642349664",
@@ -171,10 +306,23 @@
       "link_url": "https://play.google.com/store/apps/details?id=com.nxl.aienglishtutor.ailearnlanguage.aichatbot&hl=vi",
       "link_title": "Essayez gratuitement maintenant !",
       "cta_text": "Download",
+      "link_caption": "",
       "images": [],
       "has_video": true,
       "same_creative_count": 0,
-      "multiple_versions": true
+      "multiple_versions": true,
+      "cta_type": "DOWNLOAD",
+      "display_format": "video",
+      "cards": [
+        {
+          "body": "Apprenez n'importe quelle langue en tête-à-tête avec l'IA – Parlez couramment en 30 jours !",
+          "cta": "Download",
+          "image": null,
+          "link_url": "https://play.google.com/store/apps/details?id=com.nxl.aienglishtutor.ailearnlanguage.aichatbot&hl=vi",
+          "title": "Essayez gratuitement maintenant !",
+          "video": null
+        }
+      ]
     },
     {
       "id": "1682163900277520",
@@ -189,12 +337,25 @@
       "link_url": "http://play.google.com/store/apps/details?id=com.global.foodpanda.android",
       "link_title": "50% Off + Free Delivery A gift for our foodies.",
       "cta_text": "Order Now",
+      "link_caption": "",
       "images": [
         "https://scontent-lax3-1.xx.fbcdn.net/v/t39.35426-6/725147525_1682424176293989_3574755498106023617_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=108&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=H2L82H_uA0MQ7kNvwHjyJWB&_nc_oc=Adr9IzQgM8-oB1jZU49Mrl6NV9Uz9Iv4Xlf3mKwY9u10--LESe1KaKNH4GebXAxzEv0&_nc_zt=14&_nc_ht=scontent-lax3-1.xx&_nc_gid=Eu0OT1WgbrPyGXfAiptrxA&_nc_ss=7b289&oh=00_AQS9b8QRoVliKTINF3REdWozLaXR4Ey5FCW1Z9HwqfvN_w&oe=6AF74271"
       ],
       "has_video": false,
       "same_creative_count": 0,
-      "multiple_versions": false
+      "multiple_versions": false,
+      "cta_type": "ORDER_NOW",
+      "display_format": "image",
+      "cards": [
+        {
+          "body": "Here's 50% off your order + free delivery. Welcome to a world of yummy eats and savings on cravings.",
+          "cta": "Order Now",
+          "image": "https://scontent-lax3-1.xx.fbcdn.net/v/t39.35426-6/725147525_1682424176293989_3574755498106023617_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=108&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=H2L82H_uA0MQ7kNvwHjyJWB&_nc_oc=Adr9IzQgM8-oB1jZU49Mrl6NV9Uz9Iv4Xlf3mKwY9u10--LESe1KaKNH4GebXAxzEv0&_nc_zt=14&_nc_ht=scontent-lax3-1.xx&_nc_gid=Eu0OT1WgbrPyGXfAiptrxA&_nc_ss=7b289&oh=00_AQS9b8QRoVliKTINF3REdWozLaXR4Ey5FCW1Z9HwqfvN_w&oe=6AF74271",
+          "link_url": "http://play.google.com/store/apps/details?id=com.global.foodpanda.android",
+          "title": "50% Off + Free Delivery A gift for our foodies.",
+          "video": null
+        }
+      ]
     },
     {
       "id": "4219402374991712",
@@ -209,6 +370,7 @@
       "link_url": "http://instagram.com/socialclicks_network",
       "link_title": "",
       "cta_text": "Visit Instagram Profile",
+      "link_caption": "INSTAGRAM.COM",
       "images": [
         "https://scontent-lax3-1.xx.fbcdn.net/v/t39.35426-6/758671902_1570302181107312_8731109648480165322_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=110&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=BaZhIpf2GjMQ7kNvwGhfz3s&_nc_oc=Adqfd9oRiqn_AUNNvPRsXDz4K6lmXr9KxlT7pUTgiDWyDA9nh6pVpandzvhTSTHwaak&_nc_zt=14&_nc_ht=scontent-lax3-1.xx&_nc_gid=Eu0OT1WgbrPyGXfAiptrxA&_nc_ss=7b289&oh=00_AQR-s4VDvlmrk4Jsj43AMxrLzfOtK7bHYXHVhaCPWstzow&oe=6AF75DCA",
         "https://scontent-lax3-2.xx.fbcdn.net/v/t39.35426-6/757798208_1028965293445116_8772894325233944525_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=103&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=EfJcMpQ1KNoQ7kNvwHrvQsA&_nc_oc=Adp3o9UrdeS1W1O6bWtJlu3mmoqBZhq2JMZY1DGjIhVWmQNO8LRwfJL9H3ixVCDt9lE&_nc_zt=14&_nc_ht=scontent-lax3-2.xx&_nc_gid=Eu0OT1WgbrPyGXfAiptrxA&_nc_ss=7b289&oh=00_AQQerTxbXoXkYI4gdKMl6-VGVrSqRm-zzr9UdBft9FcldQ&oe=6AF73F12",
@@ -223,7 +385,91 @@
       ],
       "has_video": false,
       "same_creative_count": 0,
-      "multiple_versions": false
+      "multiple_versions": false,
+      "cta_type": "VISIT_INSTAGRAM_PROFILE",
+      "display_format": "dco",
+      "cards": [
+        {
+          "body": "We don’t chase trends. We create impact.\nFrom strategy to content to performance marketing—everything your brand needs under one roof.\nSocial Clicks Network. The Power Behind Great Brands.",
+          "cta": "Visit Instagram Profile",
+          "image": "https://scontent-lax3-1.xx.fbcdn.net/v/t39.35426-6/758671902_1570302181107312_8731109648480165322_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=110&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=BaZhIpf2GjMQ7kNvwGhfz3s&_nc_oc=Adqfd9oRiqn_AUNNvPRsXDz4K6lmXr9KxlT7pUTgiDWyDA9nh6pVpandzvhTSTHwaak&_nc_zt=14&_nc_ht=scontent-lax3-1.xx&_nc_gid=Eu0OT1WgbrPyGXfAiptrxA&_nc_ss=7b289&oh=00_AQR-s4VDvlmrk4Jsj43AMxrLzfOtK7bHYXHVhaCPWstzow&oe=6AF75DCA",
+          "link_url": "http://instagram.com/socialclicks_network",
+          "title": "",
+          "video": null
+        },
+        {
+          "body": "We don’t chase trends. We create impact.\nFrom strategy to content to performance marketing—everything your brand needs under one roof.\nSocial Clicks Network. The Power Behind Great Brands.",
+          "cta": "Visit Instagram Profile",
+          "image": "https://scontent-lax3-2.xx.fbcdn.net/v/t39.35426-6/757798208_1028965293445116_8772894325233944525_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=103&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=EfJcMpQ1KNoQ7kNvwHrvQsA&_nc_oc=Adp3o9UrdeS1W1O6bWtJlu3mmoqBZhq2JMZY1DGjIhVWmQNO8LRwfJL9H3ixVCDt9lE&_nc_zt=14&_nc_ht=scontent-lax3-2.xx&_nc_gid=Eu0OT1WgbrPyGXfAiptrxA&_nc_ss=7b289&oh=00_AQQerTxbXoXkYI4gdKMl6-VGVrSqRm-zzr9UdBft9FcldQ&oe=6AF73F12",
+          "link_url": "http://instagram.com/socialclicks_network",
+          "title": "",
+          "video": null
+        },
+        {
+          "body": "We don’t chase trends. We create impact.\nFrom strategy to content to performance marketing—everything your brand needs under one roof.\nSocial Clicks Network. The Power Behind Great Brands.",
+          "cta": "Visit Instagram Profile",
+          "image": "https://scontent-lax7-1.xx.fbcdn.net/v/t39.35426-6/757374404_1050101464573093_5635333020194377475_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=101&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=Oh5P3Gh0c9kQ7kNvwFP7Wrl&_nc_oc=AdpuUX8KZyt_btL6b3EbHaq-5uAgEfqWE8gJ7ODvWWWc4u8bAE2tGuLsYXbz5mPNQNI&_nc_zt=14&_nc_ht=scontent-lax7-1.xx&_nc_gid=Eu0OT1WgbrPyGXfAiptrxA&_nc_ss=7b289&oh=00_AQSyqB6oK8hu2NUMwktUKCX8nimoOD1JENo4aL2tRTeZkQ&oe=6AF73604",
+          "link_url": "http://instagram.com/socialclicks_network",
+          "title": "",
+          "video": null
+        },
+        {
+          "body": "We don’t chase trends. We create impact.\nFrom strategy to content to performance marketing—everything your brand needs under one roof.\nSocial Clicks Network. The Power Behind Great Brands.",
+          "cta": "Visit Instagram Profile",
+          "image": "https://scontent-lax3-1.xx.fbcdn.net/v/t39.35426-6/759698390_1437337414871475_67671011761971429_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=102&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=0EdLoNxha90Q7kNvwHAZrf4&_nc_oc=AdrHXQKzMMLDcbKG_SPIroXUOcaYtXVkuf1dgKiziQgqDvD0OZf_i7kFlU2ghgQyBjQ&_nc_zt=14&_nc_ht=scontent-lax3-1.xx&_nc_gid=Eu0OT1WgbrPyGXfAiptrxA&_nc_ss=7b289&oh=00_AQSCIrJh8u2yyZ5NL22ZiCTlP5qGyhwjW7IFOprFANLG1Q&oe=6AF748D0",
+          "link_url": "http://instagram.com/socialclicks_network",
+          "title": "",
+          "video": null
+        },
+        {
+          "body": "We don’t chase trends. We create impact.\nFrom strategy to content to performance marketing—everything your brand needs under one roof.\nSocial Clicks Network. The Power Behind Great Brands.",
+          "cta": "Visit Instagram Profile",
+          "image": "https://scontent-lax3-1.xx.fbcdn.net/v/t39.35426-6/758554232_911928375297778_472245479654850530_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=104&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=Cbd2EaqVIRIQ7kNvwGRXHGa&_nc_oc=AdrGEEDFXJDCdRSM2APrJ12WzlMSA8LML18wvu-Y_Eogi3rZXlw5pDOxxZMBgVlYX0I&_nc_zt=14&_nc_ht=scontent-lax3-1.xx&_nc_gid=Eu0OT1WgbrPyGXfAiptrxA&_nc_ss=7b289&oh=00_AQTHOTc-Q1JuWvEP80SlRpqhOzvZIA4H5Qm8_r2fT-2_ow&oe=6AF764DD",
+          "link_url": "http://instagram.com/socialclicks_network",
+          "title": "",
+          "video": null
+        },
+        {
+          "body": "We don’t chase trends. We create impact.\nFrom strategy to content to performance marketing—everything your brand needs under one roof.\nSocial Clicks Network. The Power Behind Great Brands.",
+          "cta": "Visit Instagram Profile",
+          "image": "https://scontent-lax7-1.xx.fbcdn.net/v/t39.35426-6/758350388_2149467658942608_9105856454460709213_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=105&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=5tT6-9rRGlQQ7kNvwFxny0i&_nc_oc=AdqcEAvkArGDYZv8C8T0Cctlw1qOMQCleJykwhFtjY8NV3Z-yR7Xjo4DySbAbQFu62M&_nc_zt=14&_nc_ht=scontent-lax7-1.xx&_nc_gid=Eu0OT1WgbrPyGXfAiptrxA&_nc_ss=7b289&oh=00_AQTFG8hYwULgBm8-xDAQEB2pUIOV5WmBJ_A55WVaZzWAUw&oe=6AF769CB",
+          "link_url": "http://instagram.com/socialclicks_network",
+          "title": "",
+          "video": null
+        },
+        {
+          "body": "We don’t chase trends. We create impact.\nFrom strategy to content to performance marketing—everything your brand needs under one roof.\nSocial Clicks Network. The Power Behind Great Brands.",
+          "cta": "Visit Instagram Profile",
+          "image": "https://scontent-lax7-1.xx.fbcdn.net/v/t39.35426-6/760454543_1068223028875583_3455628572769218400_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=105&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=RA1wpfoFegEQ7kNvwFUqh1n&_nc_oc=AdqNfBjFzJIF-RFIaHly_Rp32hCbQ9f49jMVnoKlLp1-bNesXx8Z_EQoFAH3fi4D56g&_nc_zt=14&_nc_ht=scontent-lax7-1.xx&_nc_gid=Eu0OT1WgbrPyGXfAiptrxA&_nc_ss=7b289&oh=00_AQRU961UG4zNohltYZHfIJ7sx3tVSIeRUDpWHAupHj8POg&oe=6AF75D4E",
+          "link_url": "http://instagram.com/socialclicks_network",
+          "title": "",
+          "video": null
+        },
+        {
+          "body": "We don’t chase trends. We create impact.\nFrom strategy to content to performance marketing—everything your brand needs under one roof.\nSocial Clicks Network. The Power Behind Great Brands.",
+          "cta": "Visit Instagram Profile",
+          "image": "https://scontent-lax7-1.xx.fbcdn.net/v/t39.35426-6/758167602_1348307577281310_6488676153985324344_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=101&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=FY26MrXcd5sQ7kNvwEQ5CBC&_nc_oc=AdpnmysZhzoRvOEeeZmqBOQiVY2WT2w-xPQnC0tbbMp6DcJPXBQRV6qmtqSzGJO86YA&_nc_zt=14&_nc_ht=scontent-lax7-1.xx&_nc_gid=Eu0OT1WgbrPyGXfAiptrxA&_nc_ss=7b289&oh=00_AQRj1FXdPhwRccjQ7iKiuUMSm29IErEX-_rgYymNpqYVuw&oe=6AF74256",
+          "link_url": "http://instagram.com/socialclicks_network",
+          "title": "",
+          "video": null
+        },
+        {
+          "body": "We don’t chase trends. We create impact.\nFrom strategy to content to performance marketing—everything your brand needs under one roof.\nSocial Clicks Network. The Power Behind Great Brands.",
+          "cta": "Visit Instagram Profile",
+          "image": "https://scontent-lax3-1.xx.fbcdn.net/v/t39.35426-6/757331158_2395868621149005_56492521622653611_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=102&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=W-BUjaVAmVwQ7kNvwGvXfNw&_nc_oc=AdqLJAT6urYawC8Y0toMH_3lUrEzrsbpp94v6VzCz17wdXEi-MZppjA78R-eJcS2OyY&_nc_zt=14&_nc_ht=scontent-lax3-1.xx&_nc_gid=Eu0OT1WgbrPyGXfAiptrxA&_nc_ss=7b289&oh=00_AQRsROWwVPJ3T-4xwGhU3-Ja7FYqv2loWqdMhlTc5P1zAA&oe=6AF76D0B",
+          "link_url": "http://instagram.com/socialclicks_network",
+          "title": "",
+          "video": null
+        },
+        {
+          "body": "We don’t chase trends. We create impact.\nFrom strategy to content to performance marketing—everything your brand needs under one roof.\nSocial Clicks Network. The Power Behind Great Brands.",
+          "cta": "Visit Instagram Profile",
+          "image": "https://scontent-lax7-1.xx.fbcdn.net/v/t39.35426-6/758677234_2279402876216224_3026993949652477422_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=105&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=6SRqRBqqH1YQ7kNvwFowwHH&_nc_oc=AdoaXNoUX1O0tkd5i-qYthH1XZnAIE369Ph8zebhDgcBkW1pME0FQiy9plsAuVi56sg&_nc_zt=14&_nc_ht=scontent-lax7-1.xx&_nc_gid=Eu0OT1WgbrPyGXfAiptrxA&_nc_ss=7b289&oh=00_AQSiI5g_2EBYAPBe8-f5Q9KruISav4QCmFWURmf3ly6VRg&oe=6AF73DD2",
+          "link_url": "http://instagram.com/socialclicks_network",
+          "title": "",
+          "video": null
+        }
+      ]
     },
     {
       "id": "985158971014917",
@@ -238,6 +484,7 @@
       "link_url": "",
       "link_title": "",
       "cta_text": "",
+      "link_caption": "",
       "images": [
         "https://scontent-lax3-2.xx.fbcdn.net/v/t39.35426-6/639972531_1243041994596955_4191596001090205161_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=111&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=AQW-Bp03gtAQ7kNvwEt2Ry9&_nc_oc=AdpdOeRoTV2xLO4i4EZTHT_WnBGlVHkIqqm-pH6mkb-g3SfrtrJKBWy18SMfVVa80EE&_nc_zt=14&_nc_ht=scontent-lax3-2.xx&_nc_gid=Eu0OT1WgbrPyGXfAiptrxA&_nc_ss=7b289&oh=00_AQTVedlp38pW9SSf46AIOM1q1_lDr6P5siaJ_Es9BWOMfA&oe=6AF75C2E",
         "https://scontent-lax3-1.xx.fbcdn.net/v/t39.35426-6/640002551_960666766631207_5971308591244615614_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=110&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=H4lqIGx9CAMQ7kNvwHamjaC&_nc_oc=AdrlmgMPAn1Y90UkAAlFc9Ekxn5qwOvvUty1Fa3Wu7PGCUgZm0Ov-8HQqRuWAfkoUjo&_nc_zt=14&_nc_ht=scontent-lax3-1.xx&_nc_gid=Eu0OT1WgbrPyGXfAiptrxA&_nc_ss=7b289&oh=00_AQRmdnOQPsk5-JLiGuUJLRA8PY3Hae8LFRtT3yeMLdPFVQ&oe=6AF73960",
@@ -260,7 +507,155 @@
       ],
       "has_video": false,
       "same_creative_count": 2,
-      "multiple_versions": false
+      "multiple_versions": false,
+      "cta_type": "",
+      "display_format": "dco",
+      "cards": [
+        {
+          "body": "📩 Book your MOTORCYCLE SURPRISE package today!\nLet’s turn your love and effort into a moment worth remembering ❤️\nWe make every motorcycle surprise epic and unforgettable! 💫\n“Hindi lang basta motor — it’s a dream come true on two wheels! 🏍️💝\nIba ‘yung saya ‘pag nakita mong nagulat at napasigaw sa tuwa 😭✨\nFREE DELIVERY AROUND THE CITY📌\n#MotorSurprisePH #AbotSaya #PricelessReaction #RideOfJoy\n#AbotSaya #LuxurySurprise #PricelessReactions #DriveOfJoy\n#ABOTSURPRESA #ABOTPILIPINAS #Toservemillions\nABOT Surpresa\nEntrepreneur\nSend message",
+          "cta": "",
+          "image": "https://scontent-lax3-2.xx.fbcdn.net/v/t39.35426-6/639972531_1243041994596955_4191596001090205161_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=111&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=AQW-Bp03gtAQ7kNvwEt2Ry9&_nc_oc=AdpdOeRoTV2xLO4i4EZTHT_WnBGlVHkIqqm-pH6mkb-g3SfrtrJKBWy18SMfVVa80EE&_nc_zt=14&_nc_ht=scontent-lax3-2.xx&_nc_gid=Eu0OT1WgbrPyGXfAiptrxA&_nc_ss=7b289&oh=00_AQTVedlp38pW9SSf46AIOM1q1_lDr6P5siaJ_Es9BWOMfA&oe=6AF75C2E",
+          "link_url": "",
+          "title": "",
+          "video": null
+        },
+        {
+          "body": "📩 Book your MOTORCYCLE SURPRISE package today!\nLet’s turn your love and effort into a moment worth remembering ❤️\nWe make every motorcycle surprise epic and unforgettable! 💫\n“Hindi lang basta motor — it’s a dream come true on two wheels! 🏍️💝\nIba ‘yung saya ‘pag nakita mong nagulat at napasigaw sa tuwa 😭✨\nFREE DELIVERY AROUND THE CITY📌\n#MotorSurprisePH #AbotSaya #PricelessReaction #RideOfJoy\n#AbotSaya #LuxurySurprise #PricelessReactions #DriveOfJoy\n#ABOTSURPRESA #ABOTPILIPINAS #Toservemillions\nABOT Surpresa\nEntrepreneur\nSend message",
+          "cta": "",
+          "image": "https://scontent-lax3-1.xx.fbcdn.net/v/t39.35426-6/640002551_960666766631207_5971308591244615614_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=110&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=H4lqIGx9CAMQ7kNvwHamjaC&_nc_oc=AdrlmgMPAn1Y90UkAAlFc9Ekxn5qwOvvUty1Fa3Wu7PGCUgZm0Ov-8HQqRuWAfkoUjo&_nc_zt=14&_nc_ht=scontent-lax3-1.xx&_nc_gid=Eu0OT1WgbrPyGXfAiptrxA&_nc_ss=7b289&oh=00_AQRmdnOQPsk5-JLiGuUJLRA8PY3Hae8LFRtT3yeMLdPFVQ&oe=6AF73960",
+          "link_url": "",
+          "title": "",
+          "video": null
+        },
+        {
+          "body": "📩 Book your MOTORCYCLE SURPRISE package today!\nLet’s turn your love and effort into a moment worth remembering ❤️\nWe make every motorcycle surprise epic and unforgettable! 💫\n“Hindi lang basta motor — it’s a dream come true on two wheels! 🏍️💝\nIba ‘yung saya ‘pag nakita mong nagulat at napasigaw sa tuwa 😭✨\nFREE DELIVERY AROUND THE CITY📌\n#MotorSurprisePH #AbotSaya #PricelessReaction #RideOfJoy\n#AbotSaya #LuxurySurprise #PricelessReactions #DriveOfJoy\n#ABOTSURPRESA #ABOTPILIPINAS #Toservemillions\nABOT Surpresa\nEntrepreneur\nSend message",
+          "cta": "",
+          "image": "https://scontent-lax3-2.xx.fbcdn.net/v/t39.35426-6/639603727_2416934402095792_9086562665514166376_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=107&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=Me8bXYjlpSgQ7kNvwEWNQaT&_nc_oc=AdqdSQxkshvb2oh6vmOQjCPWDGsJewo_cyHHS6HdKIpBoshM9pcqvBe-HBXsy6BhDEs&_nc_zt=14&_nc_ht=scontent-lax3-2.xx&_nc_gid=Eu0OT1WgbrPyGXfAiptrxA&_nc_ss=7b289&oh=00_AQQxa_9stR_oLryW2FLGfDvgrhEJgNcyEdFlKUT4iBFN7A&oe=6AF73F5B",
+          "link_url": "",
+          "title": "",
+          "video": null
+        },
+        {
+          "body": "📩 Book your MOTORCYCLE SURPRISE package today!\nLet’s turn your love and effort into a moment worth remembering ❤️\nWe make every motorcycle surprise epic and unforgettable! 💫\n“Hindi lang basta motor — it’s a dream come true on two wheels! 🏍️💝\nIba ‘yung saya ‘pag nakita mong nagulat at napasigaw sa tuwa 😭✨\nFREE DELIVERY AROUND THE CITY📌\n#MotorSurprisePH #AbotSaya #PricelessReaction #RideOfJoy\n#AbotSaya #LuxurySurprise #PricelessReactions #DriveOfJoy\n#ABOTSURPRESA #ABOTPILIPINAS #Toservemillions\nABOT Surpresa\nEntrepreneur\nSend message",
+          "cta": "",
+          "image": "https://scontent-lax3-1.xx.fbcdn.net/v/t39.35426-6/641049276_802880802834085_2396946322285863006_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=110&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=H1fTQV59djEQ7kNvwE9JZoz&_nc_oc=Ado9ICoCA7YpUJvFad5BE1z4cTbnfKiYyTlADrtEJDO-Remn2Iafspwb5G8POzEJOdA&_nc_zt=14&_nc_ht=scontent-lax3-1.xx&_nc_gid=Eu0OT1WgbrPyGXfAiptrxA&_nc_ss=7b289&oh=00_AQQ2zOsjXNz7_AHvgMLfbMcemIYh1o59n5eNE3Zq1gQe0Q&oe=6AF755CA",
+          "link_url": "",
+          "title": "",
+          "video": null
+        },
+        {
+          "body": "📩 Book your MOTORCYCLE SURPRISE package today!\nLet’s turn your love and effort into a moment worth remembering ❤️\nWe make every motorcycle surprise epic and unforgettable! 💫\n“Hindi lang basta motor — it’s a dream come true on two wheels! 🏍️💝\nIba ‘yung saya ‘pag nakita mong nagulat at napasigaw sa tuwa 😭✨\nFREE DELIVERY AROUND THE CITY📌\n#MotorSurprisePH #AbotSaya #PricelessReaction #RideOfJoy\n#AbotSaya #LuxurySurprise #PricelessReactions #DriveOfJoy\n#ABOTSURPRESA #ABOTPILIPINAS #Toservemillions\nABOT Surpresa\nEntrepreneur\nSend message",
+          "cta": "",
+          "image": "https://scontent-lax3-1.xx.fbcdn.net/v/t39.35426-6/640370036_1659795608796736_434563763388181044_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=104&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=5kFYfh2m64IQ7kNvwGTeKZz&_nc_oc=AdrGR_z3EYQ6wlyEzBFZoOwq4rVOip3BEQ9TBAH0SrZKhyX5vy2zOFHozCy0Qcd7G5c&_nc_zt=14&_nc_ht=scontent-lax3-1.xx&_nc_gid=Eu0OT1WgbrPyGXfAiptrxA&_nc_ss=7b289&oh=00_AQRrgg5yHhnUIZu2TgLMApsdk5yTJ9ttNgQqnvt7xrHoCQ&oe=6AF7630E",
+          "link_url": "",
+          "title": "",
+          "video": null
+        },
+        {
+          "body": "📩 Book your MOTORCYCLE SURPRISE package today!\nLet’s turn your love and effort into a moment worth remembering ❤️\nWe make every motorcycle surprise epic and unforgettable! 💫\n“Hindi lang basta motor — it’s a dream come true on two wheels! 🏍️💝\nIba ‘yung saya ‘pag nakita mong nagulat at napasigaw sa tuwa 😭✨\nFREE DELIVERY AROUND THE CITY📌\n#MotorSurprisePH #AbotSaya #PricelessReaction #RideOfJoy\n#AbotSaya #LuxurySurprise #PricelessReactions #DriveOfJoy\n#ABOTSURPRESA #ABOTPILIPINAS #Toservemillions\nABOT Surpresa\nEntrepreneur\nSend message",
+          "cta": "",
+          "image": "https://scontent-lax3-2.xx.fbcdn.net/v/t39.35426-6/641102488_1402621984679850_7138225903035601741_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=106&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=nySBlTgpy1QQ7kNvwHxORkX&_nc_oc=AdoNMhmPv8ufdw8T9gx04SWWdQw2DPN4oL0eA4hbi5IfGHzgiO-88WH9drKWZCpG6b4&_nc_zt=14&_nc_ht=scontent-lax3-2.xx&_nc_gid=Eu0OT1WgbrPyGXfAiptrxA&_nc_ss=7b289&oh=00_AQRUKyQ8-YJHJRKSdoLY0bk0TvZEWTvIlN7lgJG4uGnF5g&oe=6AF762E4",
+          "link_url": "",
+          "title": "",
+          "video": null
+        },
+        {
+          "body": "📩 Book your MOTORCYCLE SURPRISE package today!\nLet’s turn your love and effort into a moment worth remembering ❤️\nWe make every motorcycle surprise epic and unforgettable! 💫\n“Hindi lang basta motor — it’s a dream come true on two wheels! 🏍️💝\nIba ‘yung saya ‘pag nakita mong nagulat at napasigaw sa tuwa 😭✨\nFREE DELIVERY AROUND THE CITY📌\n#MotorSurprisePH #AbotSaya #PricelessReaction #RideOfJoy\n#AbotSaya #LuxurySurprise #PricelessReactions #DriveOfJoy\n#ABOTSURPRESA #ABOTPILIPINAS #Toservemillions\nABOT Surpresa\nEntrepreneur\nSend message",
+          "cta": "",
+          "image": "https://scontent-lax3-1.xx.fbcdn.net/v/t39.35426-6/637771997_1695300415213593_6372615073735701841_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=104&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=IcUoV9pQ_9IQ7kNvwHOlL9M&_nc_oc=AdqVuJ8K0b213juUuhO8Kb-bE1HO3HJK7xxrRTrhyGInhXKMzLN6q1YHsIcoscmRgEg&_nc_zt=14&_nc_ht=scontent-lax3-1.xx&_nc_gid=Eu0OT1WgbrPyGXfAiptrxA&_nc_ss=7b289&oh=00_AQTFAICrrn9oDGthkCFkca7E4lp9aLqTTUHyvNW4dlvn5w&oe=6AF76511",
+          "link_url": "",
+          "title": "",
+          "video": null
+        },
+        {
+          "body": "📩 Book your MOTORCYCLE SURPRISE package today!\nLet’s turn your love and effort into a moment worth remembering ❤️\nWe make every motorcycle surprise epic and unforgettable! 💫\n“Hindi lang basta motor — it’s a dream come true on two wheels! 🏍️💝\nIba ‘yung saya ‘pag nakita mong nagulat at napasigaw sa tuwa 😭✨\nFREE DELIVERY AROUND THE CITY📌\n#MotorSurprisePH #AbotSaya #PricelessReaction #RideOfJoy\n#AbotSaya #LuxurySurprise #PricelessReactions #DriveOfJoy\n#ABOTSURPRESA #ABOTPILIPINAS #Toservemillions\nABOT Surpresa\nEntrepreneur\nSend message",
+          "cta": "",
+          "image": "https://scontent-lax3-2.xx.fbcdn.net/v/t39.35426-6/641282732_765286823303924_7255998069785010231_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=111&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=VGz7b6Y8sVcQ7kNvwFvHTem&_nc_oc=AdrrDkKU4QDs0zblEez0Ts3k6r6Y7Wq6yjkCt4jIcK9TZlIMWLWcz4zYVCHONn7kPkg&_nc_zt=14&_nc_ht=scontent-lax3-2.xx&_nc_gid=Eu0OT1WgbrPyGXfAiptrxA&_nc_ss=7b289&oh=00_AQSiXGbAsKAB2byTrfIj2c0aNwHPbguaUQ-DDSg0SSOzlw&oe=6AF7560B",
+          "link_url": "",
+          "title": "",
+          "video": null
+        },
+        {
+          "body": "📩 Book your MOTORCYCLE SURPRISE package today!\nLet’s turn your love and effort into a moment worth remembering ❤️\nWe make every motorcycle surprise epic and unforgettable! 💫\n“Hindi lang basta motor — it’s a dream come true on two wheels! 🏍️💝\nIba ‘yung saya ‘pag nakita mong nagulat at napasigaw sa tuwa 😭✨\nFREE DELIVERY AROUND THE CITY📌\n#MotorSurprisePH #AbotSaya #PricelessReaction #RideOfJoy\n#AbotSaya #LuxurySurprise #PricelessReactions #DriveOfJoy\n#ABOTSURPRESA #ABOTPILIPINAS #Toservemillions\nABOT Surpresa\nEntrepreneur\nSend message",
+          "cta": "",
+          "image": "https://scontent-lax3-1.xx.fbcdn.net/v/t39.35426-6/637714248_1153484026727049_3099246631756288890_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=108&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=fop8MvwWjRgQ7kNvwFQhATw&_nc_oc=AdrCf1IutQkEZsQYZNE09682kgbpGFNPJA4zmMXzexzByFslY-VKTHlRKFmJMAiBZ1U&_nc_zt=14&_nc_ht=scontent-lax3-1.xx&_nc_gid=Eu0OT1WgbrPyGXfAiptrxA&_nc_ss=7b289&oh=00_AQQi9IGWaCU9sguclBCBdzEevBdAWtdupLfS9PC76RN9dQ&oe=6AF75BB4",
+          "link_url": "",
+          "title": "",
+          "video": null
+        },
+        {
+          "body": "📩 Book your MOTORCYCLE SURPRISE package today!\nLet’s turn your love and effort into a moment worth remembering ❤️\nWe make every motorcycle surprise epic and unforgettable! 💫\n“Hindi lang basta motor — it’s a dream come true on two wheels! 🏍️💝\nIba ‘yung saya ‘pag nakita mong nagulat at napasigaw sa tuwa 😭✨\nFREE DELIVERY AROUND THE CITY📌\n#MotorSurprisePH #AbotSaya #PricelessReaction #RideOfJoy\n#AbotSaya #LuxurySurprise #PricelessReactions #DriveOfJoy\n#ABOTSURPRESA #ABOTPILIPINAS #Toservemillions\nABOT Surpresa\nEntrepreneur\nSend message",
+          "cta": "",
+          "image": "https://scontent-lax3-2.xx.fbcdn.net/v/t39.35426-6/639209670_873480708847752_228064396721931028_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=100&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=LtxJisLpfwwQ7kNvwGxdPNi&_nc_oc=Adq_BNTYTYg00_0ZFjItAToqjr6kkpRYh2CkZQJDa4EmgTaiyxFllsW1SxEr7Lnuz1w&_nc_zt=14&_nc_ht=scontent-lax3-2.xx&_nc_gid=Eu0OT1WgbrPyGXfAiptrxA&_nc_ss=7b289&oh=00_AQRdZz-UIhJeuRS0HAxL039TdlCh7GeGBi3_D0p47s7HjA&oe=6AF76699",
+          "link_url": "",
+          "title": "",
+          "video": null
+        },
+        {
+          "body": "📩 Book your MOTORCYCLE SURPRISE package today!\nLet’s turn your love and effort into a moment worth remembering ❤️\nWe make every motorcycle surprise epic and unforgettable! 💫\n“Hindi lang basta motor — it’s a dream come true on two wheels! 🏍️💝\nIba ‘yung saya ‘pag nakita mong nagulat at napasigaw sa tuwa 😭✨\nFREE DELIVERY AROUND THE CITY📌\n#MotorSurprisePH #AbotSaya #PricelessReaction #RideOfJoy\n#AbotSaya #LuxurySurprise #PricelessReactions #DriveOfJoy\n#ABOTSURPRESA #ABOTPILIPINAS #Toservemillions\nABOT Surpresa\nEntrepreneur\nSend message",
+          "cta": "",
+          "image": "https://scontent-lax3-2.xx.fbcdn.net/v/t39.35426-6/640282142_1299064688945496_2879194692802501815_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=107&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=XD5rAHnWP94Q7kNvwE2KpGt&_nc_oc=Adq0kZ_Pqe9JXvwIVpZaG2qZn8Oc6_tjFvKfBbOJAlp56m25AZZ7fr334aFhQHu2ETs&_nc_zt=14&_nc_ht=scontent-lax3-2.xx&_nc_gid=Eu0OT1WgbrPyGXfAiptrxA&_nc_ss=7b289&oh=00_AQQFddEoOJQUukej9MiS2dQ0orPUqQ41bXl-nQJHxZyG_Q&oe=6AF73BBD",
+          "link_url": "",
+          "title": "",
+          "video": null
+        },
+        {
+          "body": "📩 Book your MOTORCYCLE SURPRISE package today!\nLet’s turn your love and effort into a moment worth remembering ❤️\nWe make every motorcycle surprise epic and unforgettable! 💫\n“Hindi lang basta motor — it’s a dream come true on two wheels! 🏍️💝\nIba ‘yung saya ‘pag nakita mong nagulat at napasigaw sa tuwa 😭✨\nFREE DELIVERY AROUND THE CITY📌\n#MotorSurprisePH #AbotSaya #PricelessReaction #RideOfJoy\n#AbotSaya #LuxurySurprise #PricelessReactions #DriveOfJoy\n#ABOTSURPRESA #ABOTPILIPINAS #Toservemillions\nABOT Surpresa\nEntrepreneur\nSend message",
+          "cta": "",
+          "image": "https://scontent-lax3-1.xx.fbcdn.net/v/t39.35426-6/628829728_1350437116847532_1564676481675467542_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=104&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=EeQnf-CIKZMQ7kNvwHNJjTO&_nc_oc=Adpy_eBw9HIye_bzKyfBiZpAfmGGcAJDC9A1zWqf4lxRWDt8Lowf0CDBcLcPYwtYvJM&_nc_zt=14&_nc_ht=scontent-lax3-1.xx&_nc_gid=Eu0OT1WgbrPyGXfAiptrxA&_nc_ss=7b289&oh=00_AQQyD5WeElw65T6i4r7xQ69270vKuRM-tn0dC4Pw1KimxQ&oe=6AF73A9D",
+          "link_url": "",
+          "title": "",
+          "video": null
+        },
+        {
+          "body": "📩 Book your MOTORCYCLE SURPRISE package today!\nLet’s turn your love and effort into a moment worth remembering ❤️\nWe make every motorcycle surprise epic and unforgettable! 💫\n“Hindi lang basta motor — it’s a dream come true on two wheels! 🏍️💝\nIba ‘yung saya ‘pag nakita mong nagulat at napasigaw sa tuwa 😭✨\nFREE DELIVERY AROUND THE CITY📌\n#MotorSurprisePH #AbotSaya #PricelessReaction #RideOfJoy\n#AbotSaya #LuxurySurprise #PricelessReactions #DriveOfJoy\n#ABOTSURPRESA #ABOTPILIPINAS #Toservemillions\nABOT Surpresa\nEntrepreneur\nSend message",
+          "cta": "",
+          "image": "https://scontent-lax7-1.xx.fbcdn.net/v/t39.35426-6/639691623_3954628888005305_3257387722962508248_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=101&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=239nnF02rVkQ7kNvwGipP-F&_nc_oc=Adq1oxPJrJQxwfcvRrUHCOOU_e75prZhTRAOXhS9MVaODIL-wkQ3DoEyPchjHw1Fml0&_nc_zt=14&_nc_ht=scontent-lax7-1.xx&_nc_gid=Eu0OT1WgbrPyGXfAiptrxA&_nc_ss=7b289&oh=00_AQTeDBseR8jBU3UuvKrr_O4DPX66zpt9l-bxgFGoiHfvpA&oe=6AF74300",
+          "link_url": "",
+          "title": "",
+          "video": null
+        },
+        {
+          "body": "📩 Book your MOTORCYCLE SURPRISE package today!\nLet’s turn your love and effort into a moment worth remembering ❤️\nWe make every motorcycle surprise epic and unforgettable! 💫\n“Hindi lang basta motor — it’s a dream come true on two wheels! 🏍️💝\nIba ‘yung saya ‘pag nakita mong nagulat at napasigaw sa tuwa 😭✨\nFREE DELIVERY AROUND THE CITY📌\n#MotorSurprisePH #AbotSaya #PricelessReaction #RideOfJoy\n#AbotSaya #LuxurySurprise #PricelessReactions #DriveOfJoy\n#ABOTSURPRESA #ABOTPILIPINAS #Toservemillions\nABOT Surpresa\nEntrepreneur\nSend message",
+          "cta": "",
+          "image": "https://scontent-lax3-1.xx.fbcdn.net/v/t39.35426-6/641282724_906271102155999_3430407685893710345_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=110&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=iI6tllG4vy0Q7kNvwFPxJ8y&_nc_oc=Adoivt1mn5t3vzl7E2xQn8nr7OIRrMRmh8MxPC2On2sNUhT8ew7ZZZ-bvVdk7dxHxCY&_nc_zt=14&_nc_ht=scontent-lax3-1.xx&_nc_gid=Eu0OT1WgbrPyGXfAiptrxA&_nc_ss=7b289&oh=00_AQS77RjhBwafYtGyQ6d7uOndIbOP4ZNl5YCirAqEGcSldw&oe=6AF7386A",
+          "link_url": "",
+          "title": "",
+          "video": null
+        },
+        {
+          "body": "📩 Book your MOTORCYCLE SURPRISE package today!\nLet’s turn your love and effort into a moment worth remembering ❤️\nWe make every motorcycle surprise epic and unforgettable! 💫\n“Hindi lang basta motor — it’s a dream come true on two wheels! 🏍️💝\nIba ‘yung saya ‘pag nakita mong nagulat at napasigaw sa tuwa 😭✨\nFREE DELIVERY AROUND THE CITY📌\n#MotorSurprisePH #AbotSaya #PricelessReaction #RideOfJoy\n#AbotSaya #LuxurySurprise #PricelessReactions #DriveOfJoy\n#ABOTSURPRESA #ABOTPILIPINAS #Toservemillions\nABOT Surpresa\nEntrepreneur\nSend message",
+          "cta": "",
+          "image": "https://scontent-lax7-1.xx.fbcdn.net/v/t39.35426-6/638443209_671489966021823_2205906653431212754_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=101&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=xTQ_822LqwwQ7kNvwG19Ljo&_nc_oc=Adr3QZa8QVxkwUGtj6ZxTukBIrweY02D4IltRdglHZHVLpCdFE-TB5eZ4aKfQYi4vSI&_nc_zt=14&_nc_ht=scontent-lax7-1.xx&_nc_gid=Eu0OT1WgbrPyGXfAiptrxA&_nc_ss=7b289&oh=00_AQTx2ZKMip-NdKVI25HA8xdwsB9SXvCQ9RzMUl0bybk7Eg&oe=6AF76602",
+          "link_url": "",
+          "title": "",
+          "video": null
+        },
+        {
+          "body": "📩 Book your MOTORCYCLE SURPRISE package today!\nLet’s turn your love and effort into a moment worth remembering ❤️\nWe make every motorcycle surprise epic and unforgettable! 💫\n“Hindi lang basta motor — it’s a dream come true on two wheels! 🏍️💝\nIba ‘yung saya ‘pag nakita mong nagulat at napasigaw sa tuwa 😭✨\nFREE DELIVERY AROUND THE CITY📌\n#MotorSurprisePH #AbotSaya #PricelessReaction #RideOfJoy\n#AbotSaya #LuxurySurprise #PricelessReactions #DriveOfJoy\n#ABOTSURPRESA #ABOTPILIPINAS #Toservemillions\nABOT Surpresa\nEntrepreneur\nSend message",
+          "cta": "",
+          "image": "https://scontent-lax3-2.xx.fbcdn.net/v/t39.35426-6/639599825_929331776491393_6696515124134291036_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=107&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=RfLgM9OzVnEQ7kNvwGt12j3&_nc_oc=AdpxSQW5w4lBSnyOiooGlDy-CE0rANAylUwcigzCVzftwMHZ1UriZxkYaj9mZjDecAE&_nc_zt=14&_nc_ht=scontent-lax3-2.xx&_nc_gid=Eu0OT1WgbrPyGXfAiptrxA&_nc_ss=7b289&oh=00_AQRNeTktnzW1hpsgjSRftmvQhdzh21mMf4RLN_vRL_yU4Q&oe=6AF75605",
+          "link_url": "",
+          "title": "",
+          "video": null
+        },
+        {
+          "body": "📩 Book your MOTORCYCLE SURPRISE package today!\nLet’s turn your love and effort into a moment worth remembering ❤️\nWe make every motorcycle surprise epic and unforgettable! 💫\n“Hindi lang basta motor — it’s a dream come true on two wheels! 🏍️💝\nIba ‘yung saya ‘pag nakita mong nagulat at napasigaw sa tuwa 😭✨\nFREE DELIVERY AROUND THE CITY📌\n#MotorSurprisePH #AbotSaya #PricelessReaction #RideOfJoy\n#AbotSaya #LuxurySurprise #PricelessReactions #DriveOfJoy\n#ABOTSURPRESA #ABOTPILIPINAS #Toservemillions\nABOT Surpresa\nEntrepreneur\nSend message",
+          "cta": "",
+          "image": "https://scontent-lax3-2.xx.fbcdn.net/v/t39.35426-6/641262242_946096054526627_4831423279751007873_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=103&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=ZgO-KmYoGAIQ7kNvwHL0GFy&_nc_oc=Adr2vm10Mm_UGSAj9cNWIzBFo7u1fM0bB5ZyO6n8OmZr5RiGP-y1GvUy3d_fKodbn-s&_nc_zt=14&_nc_ht=scontent-lax3-2.xx&_nc_gid=Eu0OT1WgbrPyGXfAiptrxA&_nc_ss=7b289&oh=00_AQRoyrfGSKtLupgNubMtFb69dFx0mJm8pByW5OjNan_bWw&oe=6AF73F59",
+          "link_url": "",
+          "title": "",
+          "video": null
+        },
+        {
+          "body": "📩 Book your MOTORCYCLE SURPRISE package today!\nLet’s turn your love and effort into a moment worth remembering ❤️\nWe make every motorcycle surprise epic and unforgettable! 💫\n“Hindi lang basta motor — it’s a dream come true on two wheels! 🏍️💝\nIba ‘yung saya ‘pag nakita mong nagulat at napasigaw sa tuwa 😭✨\nFREE DELIVERY AROUND THE CITY📌\n#MotorSurprisePH #AbotSaya #PricelessReaction #RideOfJoy\n#AbotSaya #LuxurySurprise #PricelessReactions #DriveOfJoy\n#ABOTSURPRESA #ABOTPILIPINAS #Toservemillions\nABOT Surpresa\nEntrepreneur\nSend message",
+          "cta": "",
+          "image": "https://scontent-lax3-1.xx.fbcdn.net/v/t39.35426-6/641203299_2841486919529842_9048004575005017712_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=108&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=Agi_6fL1AswQ7kNvwGYbODh&_nc_oc=AdqFe4EBnOKvQrW-sd_8XX9PT4tPxNJxBGyAg9bLfcEESqevbyjtn7o5OsgXV4bWVXg&_nc_zt=14&_nc_ht=scontent-lax3-1.xx&_nc_gid=Eu0OT1WgbrPyGXfAiptrxA&_nc_ss=7b289&oh=00_AQTgBkFi1TasSgrO-6Susu1WvYXu2Nrqc5fGC5R7fwGuVA&oe=6AF76843",
+          "link_url": "",
+          "title": "",
+          "video": null
+        }
+      ]
     },
     {
       "id": "1066118493128788",
@@ -275,12 +670,25 @@
       "link_url": "https://order.roma2go.com/offer/connect-4-offer",
       "link_title": "",
       "cta_text": "",
+      "link_caption": "",
       "images": [
         "https://scontent-lax3-2.xx.fbcdn.net/v/t39.35426-6/736055323_1027902086357308_3093019753089983228_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=111&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=soTHi4gztgcQ7kNvwFWCrD2&_nc_oc=AdpOZEFoyRRVaZHQBIa7qeT_EC6sOFe7aeS8KGj5Xc6MxvBsy3lf6HeahkvFIdH0toY&_nc_zt=14&_nc_ht=scontent-lax3-2.xx&_nc_gid=Eu0OT1WgbrPyGXfAiptrxA&_nc_ss=7b289&oh=00_AQSEU1mwzQJLVilR8gWOIOZOGn2jFRflWUiCILIOdMfM7A&oe=6AF7365D"
       ],
       "has_video": false,
       "same_creative_count": 0,
-      "multiple_versions": true
+      "multiple_versions": true,
+      "cta_type": "",
+      "display_format": "image",
+      "cards": [
+        {
+          "body": "خلي الويك إند ده على روما بيتزا و جمّع صحابك على بيتزا Concet 4، الطعم اللي مفيش عليه اختلاف🍕❤️\n🌐حمّل الأبلكيشن أو زور موقعنا roma2go.com\nأو كلمنا على الهوت لاين: 📞15667\nMake this weekend all about Roma Pizza. Bring the squad together for the Concet 4 A flavor that speaks for itself. 🍕❤️\n📞15667\n🌐DOWNLOAD our app or ORDER from roma2go.com\n#RomaPizza",
+          "cta": "",
+          "image": "https://scontent-lax3-2.xx.fbcdn.net/v/t39.35426-6/736055323_1027902086357308_3093019753089983228_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=111&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=soTHi4gztgcQ7kNvwFWCrD2&_nc_oc=AdpOZEFoyRRVaZHQBIa7qeT_EC6sOFe7aeS8KGj5Xc6MxvBsy3lf6HeahkvFIdH0toY&_nc_zt=14&_nc_ht=scontent-lax3-2.xx&_nc_gid=Eu0OT1WgbrPyGXfAiptrxA&_nc_ss=7b289&oh=00_AQSEU1mwzQJLVilR8gWOIOZOGn2jFRflWUiCILIOdMfM7A&oe=6AF7365D",
+          "link_url": "https://order.roma2go.com/offer/connect-4-offer",
+          "title": "",
+          "video": null
+        }
+      ]
     },
     {
       "id": "2702126130203368",
@@ -295,10 +703,23 @@
       "link_url": "https://play.google.com/store/apps/details?id=com.english.learninglanguage",
       "link_title": "COMMENCEZ À APPRENDRE 👉",
       "cta_text": "Download",
+      "link_caption": "",
       "images": [],
       "has_video": true,
       "same_creative_count": 0,
-      "multiple_versions": false
+      "multiple_versions": false,
+      "cta_type": "DOWNLOAD",
+      "display_format": "video",
+      "cards": [
+        {
+          "body": "Apprenez une langue étrangère grâce à l'IA – Parlez couramment en seulement 30 jours !",
+          "cta": "Download",
+          "image": null,
+          "link_url": "https://play.google.com/store/apps/details?id=com.english.learninglanguage",
+          "title": "COMMENCEZ À APPRENDRE 👉",
+          "video": null
+        }
+      ]
     },
     {
       "id": "1621331839346428",
@@ -313,6 +734,7 @@
       "link_url": "",
       "link_title": "",
       "cta_text": "",
+      "link_caption": "",
       "images": [
         "https://scontent-lax7-1.xx.fbcdn.net/v/t39.35426-6/859082553_958894403502247_7744758587256101776_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=101&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=7HfbkTRrQPkQ7kNvwFE64IU&_nc_oc=AdqS7OILWZ8QFksw9fGyvuSEv9Zu03bbYKWQ9z6jEtogOJS2-SZ_1uuWLVDUkbo6HoU&_nc_zt=14&_nc_ht=scontent-lax7-1.xx&_nc_gid=Eu0OT1WgbrPyGXfAiptrxA&_nc_ss=7b289&oh=00_AQTCAv8nNJJGkR6nFaw5D3P-7mtzfgMV0YiawBN92hB8Tg&oe=6AF73E81",
         "https://scontent-lax3-2.xx.fbcdn.net/v/t39.35426-6/857888673_990951884053745_3169443693720754949_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=107&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=TJpx7Ch5JngQ7kNvwEIiw5Y&_nc_oc=AdqksJNLnn-Ok_3BWFcm_8mkEriJ8himRKrrP7vKrepx31Sy89vnFP0oHYWt7EboNe0&_nc_zt=14&_nc_ht=scontent-lax3-2.xx&_nc_gid=Eu0OT1WgbrPyGXfAiptrxA&_nc_ss=7b289&oh=00_AQRCqXinZWrQvWncTEMQRT9qbrjQ0j4wr5MV8G4PZyxykg&oe=6AF74591",
@@ -327,7 +749,91 @@
       ],
       "has_video": false,
       "same_creative_count": 0,
-      "multiple_versions": false
+      "multiple_versions": false,
+      "cta_type": "",
+      "display_format": "dco",
+      "cards": [
+        {
+          "body": "لوحدك أو مع صحابك ؟ 🍕\nفي روما بيتزا تو جو، دايمًا هتلاقي العرض اللي يناسبك !\nبنقدملك عروض مختلفة تجمع بين الطعم اللي بتحبه والتوفير اللي بتدور عليه\nكلمونا على\n☎️ 15667\nواختاروا من العروض الموجودة دلوقتي 👇",
+          "cta": "",
+          "image": "https://scontent-lax7-1.xx.fbcdn.net/v/t39.35426-6/859082553_958894403502247_7744758587256101776_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=101&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=7HfbkTRrQPkQ7kNvwFE64IU&_nc_oc=AdqS7OILWZ8QFksw9fGyvuSEv9Zu03bbYKWQ9z6jEtogOJS2-SZ_1uuWLVDUkbo6HoU&_nc_zt=14&_nc_ht=scontent-lax7-1.xx&_nc_gid=Eu0OT1WgbrPyGXfAiptrxA&_nc_ss=7b289&oh=00_AQTCAv8nNJJGkR6nFaw5D3P-7mtzfgMV0YiawBN92hB8Tg&oe=6AF73E81",
+          "link_url": "",
+          "title": "",
+          "video": null
+        },
+        {
+          "body": "لوحدك أو مع صحابك ؟ 🍕\nفي روما بيتزا تو جو، دايمًا هتلاقي العرض اللي يناسبك !\nبنقدملك عروض مختلفة تجمع بين الطعم اللي بتحبه والتوفير اللي بتدور عليه\nكلمونا على\n☎️ 15667\nواختاروا من العروض الموجودة دلوقتي 👇",
+          "cta": "",
+          "image": "https://scontent-lax3-2.xx.fbcdn.net/v/t39.35426-6/857888673_990951884053745_3169443693720754949_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=107&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=TJpx7Ch5JngQ7kNvwEIiw5Y&_nc_oc=AdqksJNLnn-Ok_3BWFcm_8mkEriJ8himRKrrP7vKrepx31Sy89vnFP0oHYWt7EboNe0&_nc_zt=14&_nc_ht=scontent-lax3-2.xx&_nc_gid=Eu0OT1WgbrPyGXfAiptrxA&_nc_ss=7b289&oh=00_AQRCqXinZWrQvWncTEMQRT9qbrjQ0j4wr5MV8G4PZyxykg&oe=6AF74591",
+          "link_url": "",
+          "title": "",
+          "video": null
+        },
+        {
+          "body": "لوحدك أو مع صحابك ؟ 🍕\nفي روما بيتزا تو جو، دايمًا هتلاقي العرض اللي يناسبك !\nبنقدملك عروض مختلفة تجمع بين الطعم اللي بتحبه والتوفير اللي بتدور عليه\nكلمونا على\n☎️ 15667\nواختاروا من العروض الموجودة دلوقتي 👇",
+          "cta": "",
+          "image": "https://scontent-lax7-1.xx.fbcdn.net/v/t39.35426-6/857674872_2036838824210702_4588237533672153873_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=105&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=8FcTHgCK-gEQ7kNvwFvkbX_&_nc_oc=AdpeVt3tpyK3_eKyVM2KqZQoA23qI_xQ98p1KgcCiBzMVxnn1jyERShNKn-0xD4CBVE&_nc_zt=14&_nc_ht=scontent-lax7-1.xx&_nc_gid=Eu0OT1WgbrPyGXfAiptrxA&_nc_ss=7b289&oh=00_AQRXEygHhHPXNq0K5MPp9w4NP8eB72qVtQ0bV8edO736cA&oe=6AF73C17",
+          "link_url": "",
+          "title": "",
+          "video": null
+        },
+        {
+          "body": "لوحدك أو مع صحابك ؟ 🍕\nفي روما بيتزا تو جو، دايمًا هتلاقي العرض اللي يناسبك !\nبنقدملك عروض مختلفة تجمع بين الطعم اللي بتحبه والتوفير اللي بتدور عليه\nكلمونا على\n☎️ 15667\nواختاروا من العروض الموجودة دلوقتي 👇",
+          "cta": "",
+          "image": "https://scontent-lax7-1.xx.fbcdn.net/v/t39.35426-6/857011245_1108955265200893_5206296187858896023_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=105&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=WRYohLP3DtMQ7kNvwEWFXS-&_nc_oc=Adp2jN5Aq1msRTuQCE7Acxbw79d_6oE9DtBWoCIBc_SdfxOVIqTsruZ2KwMomwsgsHo&_nc_zt=14&_nc_ht=scontent-lax7-1.xx&_nc_gid=Eu0OT1WgbrPyGXfAiptrxA&_nc_ss=7b289&oh=00_AQS3iEGHs39DdMDTdjUyTRhJv4GkSzSJG6HAodJCqpw3BA&oe=6AF7699F",
+          "link_url": "",
+          "title": "",
+          "video": null
+        },
+        {
+          "body": "لوحدك أو مع صحابك ؟ 🍕\nفي روما بيتزا تو جو، دايمًا هتلاقي العرض اللي يناسبك !\nبنقدملك عروض مختلفة تجمع بين الطعم اللي بتحبه والتوفير اللي بتدور عليه\nكلمونا على\n☎️ 15667\nواختاروا من العروض الموجودة دلوقتي 👇",
+          "cta": "",
+          "image": "https://scontent-lax3-1.xx.fbcdn.net/v/t39.35426-6/857341200_2678512875945063_3651062634720299110_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=108&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=8XEOMr5Yr9IQ7kNvwFqmSHO&_nc_oc=Ado79JnL2DbsplWbmsI-hiMGo_hQjb9oZ-JD85TZUR_Q_1iy0KiYvZjAY6Ek10N4qlk&_nc_zt=14&_nc_ht=scontent-lax3-1.xx&_nc_gid=Eu0OT1WgbrPyGXfAiptrxA&_nc_ss=7b289&oh=00_AQQTSvDKBOcMe_xjMbijWXIZrCRdw62SkIGi-c1eLuujoQ&oe=6AF74306",
+          "link_url": "",
+          "title": "",
+          "video": null
+        },
+        {
+          "body": "لوحدك أو مع صحابك ؟ 🍕\nفي روما بيتزا تو جو، دايمًا هتلاقي العرض اللي يناسبك !\nبنقدملك عروض مختلفة تجمع بين الطعم اللي بتحبه والتوفير اللي بتدور عليه\nكلمونا على\n☎️ 15667\nواختاروا من العروض الموجودة دلوقتي 👇",
+          "cta": "",
+          "image": "https://scontent-lax3-2.xx.fbcdn.net/v/t39.35426-6/858868676_1404950428449735_140144338355611041_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=106&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=FlFqaCfES24Q7kNvwHpQc_G&_nc_oc=AdqJCHnUE7_i4ojmVddYjMGjGZfjiW7pVmLvIpFiZKGt_TmheUHanZjwZWQMR4Tj0E0&_nc_zt=14&_nc_ht=scontent-lax3-2.xx&_nc_gid=Eu0OT1WgbrPyGXfAiptrxA&_nc_ss=7b289&oh=00_AQTFzma_zSVAePLIh6j0A0_n1Dwl02Kx5g7fpraZclIQ4A&oe=6AF7537E",
+          "link_url": "",
+          "title": "",
+          "video": null
+        },
+        {
+          "body": "لوحدك أو مع صحابك ؟ 🍕\nفي روما بيتزا تو جو، دايمًا هتلاقي العرض اللي يناسبك !\nبنقدملك عروض مختلفة تجمع بين الطعم اللي بتحبه والتوفير اللي بتدور عليه\nكلمونا على\n☎️ 15667\nواختاروا من العروض الموجودة دلوقتي 👇",
+          "cta": "",
+          "image": "https://scontent-lax7-1.xx.fbcdn.net/v/t39.35426-6/858868665_2097261324484043_973822344428383721_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=105&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=1SRX1uSXi7wQ7kNvwH4-OhH&_nc_oc=AdrM14-4a3VFklo-ORouSzbeTf7oGV0UQ6Nxier9mSCiQhCOjZOuvzqXTUjnduHkIAk&_nc_zt=14&_nc_ht=scontent-lax7-1.xx&_nc_gid=Eu0OT1WgbrPyGXfAiptrxA&_nc_ss=7b289&oh=00_AQTEEaVqjbOIYccXmMfUqkzkv2ZSkFQ1Hq1cFAhh8RVv2Q&oe=6AF74A01",
+          "link_url": "",
+          "title": "",
+          "video": null
+        },
+        {
+          "body": "لوحدك أو مع صحابك ؟ 🍕\nفي روما بيتزا تو جو، دايمًا هتلاقي العرض اللي يناسبك !\nبنقدملك عروض مختلفة تجمع بين الطعم اللي بتحبه والتوفير اللي بتدور عليه\nكلمونا على\n☎️ 15667\nواختاروا من العروض الموجودة دلوقتي 👇",
+          "cta": "",
+          "image": "https://scontent-lax3-2.xx.fbcdn.net/v/t39.35426-6/857045131_1150142714625782_3776781243772312525_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=107&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=Yazd-ZZ7uc4Q7kNvwFG5Pga&_nc_oc=Adoe6FsVeQaHjJ9RKsavdb_6XCXV3OigO_gbHp8Tj-IZPy-0oM-UevJADxn2FtG7S_I&_nc_zt=14&_nc_ht=scontent-lax3-2.xx&_nc_gid=Eu0OT1WgbrPyGXfAiptrxA&_nc_ss=7b289&oh=00_AQSbpTtDvO5vS6IIlvK6t97F0Y4upOzFJXpnxOu3oAAk8g&oe=6AF76B8A",
+          "link_url": "",
+          "title": "",
+          "video": null
+        },
+        {
+          "body": "لوحدك أو مع صحابك ؟ 🍕\nفي روما بيتزا تو جو، دايمًا هتلاقي العرض اللي يناسبك !\nبنقدملك عروض مختلفة تجمع بين الطعم اللي بتحبه والتوفير اللي بتدور عليه\nكلمونا على\n☎️ 15667\nواختاروا من العروض الموجودة دلوقتي 👇",
+          "cta": "",
+          "image": "https://scontent-lax3-2.xx.fbcdn.net/v/t39.35426-6/858922372_4278902229068176_2617775369654042991_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=106&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=JgnP-UquQocQ7kNvwFCHhVP&_nc_oc=AdrqslbFNaHXrEO0coGj9L9r43iNYiQ5ZMXXYC3RJ8Sn-58oWmc5DuxtyTXSox5XL_E&_nc_zt=14&_nc_ht=scontent-lax3-2.xx&_nc_gid=Eu0OT1WgbrPyGXfAiptrxA&_nc_ss=7b289&oh=00_AQTxndElpPgLnyDE44If77PthWXb68Y0tFpuPwNMKlyyjQ&oe=6AF76B87",
+          "link_url": "",
+          "title": "",
+          "video": null
+        },
+        {
+          "body": "لوحدك أو مع صحابك ؟ 🍕\nفي روما بيتزا تو جو، دايمًا هتلاقي العرض اللي يناسبك !\nبنقدملك عروض مختلفة تجمع بين الطعم اللي بتحبه والتوفير اللي بتدور عليه\nكلمونا على\n☎️ 15667\nواختاروا من العروض الموجودة دلوقتي 👇",
+          "cta": "",
+          "image": "https://scontent-lax3-2.xx.fbcdn.net/v/t39.35426-6/859669620_1103150195974953_1991924698575453406_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=100&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=ti5oeNBCyeIQ7kNvwHsquSC&_nc_oc=Adrg46mc3WkzSldy_-LbQ9J3uvlX_-1_f8huezr4qKkRdxuVGvm6pk53kBIlMv2KcAM&_nc_zt=14&_nc_ht=scontent-lax3-2.xx&_nc_gid=Eu0OT1WgbrPyGXfAiptrxA&_nc_ss=7b289&oh=00_AQTOFWZwCe88fKOCawWbQM-HwxCQKqzoXDYHf1eDlON3XQ&oe=6AF75FB1",
+          "link_url": "",
+          "title": "",
+          "video": null
+        }
+      ]
     },
     {
       "id": "1681558153320429",
@@ -342,6 +848,7 @@
       "link_url": "",
       "link_title": "",
       "cta_text": "",
+      "link_caption": "",
       "images": [
         "https://scontent-lax3-2.xx.fbcdn.net/v/t39.35426-6/709709573_1545104817214045_7002360915259940820_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=106&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=DIwd6fzqfMAQ7kNvwGrKak3&_nc_oc=AdoAraLldxvl3kv_uglnxWXc-JpiaBe62Pp45AG0wRCp3Vi1Sio-l5Fyr2x0l_rU6nM&_nc_zt=14&_nc_ht=scontent-lax3-2.xx&_nc_gid=Eu0OT1WgbrPyGXfAiptrxA&_nc_ss=7b289&oh=00_AQSDO-Ho1g16kUezSAHGSDzRN-06SjlvsaMneJkpFz10gQ&oe=6AF75CA1",
         "https://scontent-lax3-2.xx.fbcdn.net/v/t39.35426-6/708512178_996962042775335_3825329689063466248_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=100&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=BXYWTNWQkmwQ7kNvwHatiop&_nc_oc=Adpqsf0M4jgPPOAZk5_TahcqMsO70DZYffN_hbkpRjzhEFMkszSCILvdYDvCLxpkcuU&_nc_zt=14&_nc_ht=scontent-lax3-2.xx&_nc_gid=Eu0OT1WgbrPyGXfAiptrxA&_nc_ss=7b289&oh=00_AQQ7_qTGtwXUNe9WIb0paqoRSjGmT3jnHk3K_MqkEFGekA&oe=6AF75777",
@@ -413,7 +920,547 @@
       ],
       "has_video": false,
       "same_creative_count": 2,
-      "multiple_versions": false
+      "multiple_versions": false,
+      "cta_type": "",
+      "display_format": "dco",
+      "cards": [
+        {
+          "body": "كنتى ام لكام طفل لما عرفتي ان الالعاب التعليمية اهم وسيلة لدعم التحصيل الدراسي للطفل 🥹👋\nوانها مش مجرد تسليه وترفيه دي مهمة حتى وقت الدراسة لان بتساعدهم على\n🔹 تعزيز التركيز والانتباه وسرعة الادراك أثناء المذاكرة\n🔹تنمية مهارات التفكير النقدي وحل المشكلات 🧩\n🔹 تحويل المعلومات الصعبة لتجارب عملية تثبت بالذهن ويفتكروها بسهولة 🎯\n🔹 تحفيز روح التعاون والتواصل مع الآخرين\nفي التميز ستور وفرنالك العاب تعليمية مصممة بعناية لتواكب احتياجات طفلك الدراسية\nوتجمع بين المتعة والفائدة في وقت واحد لأن اللعب الذكي هو أقصر طريق للتفوق 😍💪\nاستثمري في مستقبل طفلك.. واختاري الالعاب المناسبة لعمره او ابعتلنا عمره واحنا نساعدك\nالشحن متاح لكل المحافظات 🚚\n#tamayoz\\_store #التميز\\_ستور #school #العاب\\_اطفال #تنمية\\_مهارات #montessori\nالتميز ستور\nToys\nSend message",
+          "cta": "",
+          "image": "https://scontent-lax3-2.xx.fbcdn.net/v/t39.35426-6/709709573_1545104817214045_7002360915259940820_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=106&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=DIwd6fzqfMAQ7kNvwGrKak3&_nc_oc=AdoAraLldxvl3kv_uglnxWXc-JpiaBe62Pp45AG0wRCp3Vi1Sio-l5Fyr2x0l_rU6nM&_nc_zt=14&_nc_ht=scontent-lax3-2.xx&_nc_gid=Eu0OT1WgbrPyGXfAiptrxA&_nc_ss=7b289&oh=00_AQSDO-Ho1g16kUezSAHGSDzRN-06SjlvsaMneJkpFz10gQ&oe=6AF75CA1",
+          "link_url": "",
+          "title": "",
+          "video": null
+        },
+        {
+          "body": "كنتى ام لكام طفل لما عرفتي ان الالعاب التعليمية اهم وسيلة لدعم التحصيل الدراسي للطفل 🥹👋\nوانها مش مجرد تسليه وترفيه دي مهمة حتى وقت الدراسة لان بتساعدهم على\n🔹 تعزيز التركيز والانتباه وسرعة الادراك أثناء المذاكرة\n🔹تنمية مهارات التفكير النقدي وحل المشكلات 🧩\n🔹 تحويل المعلومات الصعبة لتجارب عملية تثبت بالذهن ويفتكروها بسهولة 🎯\n🔹 تحفيز روح التعاون والتواصل مع الآخرين\nفي التميز ستور وفرنالك العاب تعليمية مصممة بعناية لتواكب احتياجات طفلك الدراسية\nوتجمع بين المتعة والفائدة في وقت واحد لأن اللعب الذكي هو أقصر طريق للتفوق 😍💪\nاستثمري في مستقبل طفلك.. واختاري الالعاب المناسبة لعمره او ابعتلنا عمره واحنا نساعدك\nالشحن متاح لكل المحافظات 🚚\n#tamayoz\\_store #التميز\\_ستور #school #العاب\\_اطفال #تنمية\\_مهارات #montessori\nالتميز ستور\nToys\nSend message",
+          "cta": "",
+          "image": "https://scontent-lax3-2.xx.fbcdn.net/v/t39.35426-6/708512178_996962042775335_3825329689063466248_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=100&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=BXYWTNWQkmwQ7kNvwHatiop&_nc_oc=Adpqsf0M4jgPPOAZk5_TahcqMsO70DZYffN_hbkpRjzhEFMkszSCILvdYDvCLxpkcuU&_nc_zt=14&_nc_ht=scontent-lax3-2.xx&_nc_gid=Eu0OT1WgbrPyGXfAiptrxA&_nc_ss=7b289&oh=00_AQQ7_qTGtwXUNe9WIb0paqoRSjGmT3jnHk3K_MqkEFGekA&oe=6AF75777",
+          "link_url": "",
+          "title": "",
+          "video": null
+        },
+        {
+          "body": "كنتى ام لكام طفل لما عرفتي ان الالعاب التعليمية اهم وسيلة لدعم التحصيل الدراسي للطفل 🥹👋\nوانها مش مجرد تسليه وترفيه دي مهمة حتى وقت الدراسة لان بتساعدهم على\n🔹 تعزيز التركيز والانتباه وسرعة الادراك أثناء المذاكرة\n🔹تنمية مهارات التفكير النقدي وحل المشكلات 🧩\n🔹 تحويل المعلومات الصعبة لتجارب عملية تثبت بالذهن ويفتكروها بسهولة 🎯\n🔹 تحفيز روح التعاون والتواصل مع الآخرين\nفي التميز ستور وفرنالك العاب تعليمية مصممة بعناية لتواكب احتياجات طفلك الدراسية\nوتجمع بين المتعة والفائدة في وقت واحد لأن اللعب الذكي هو أقصر طريق للتفوق 😍💪\nاستثمري في مستقبل طفلك.. واختاري الالعاب المناسبة لعمره او ابعتلنا عمره واحنا نساعدك\nالشحن متاح لكل المحافظات 🚚\n#tamayoz\\_store #التميز\\_ستور #school #العاب\\_اطفال #تنمية\\_مهارات #montessori\nالتميز ستور\nToys\nSend message",
+          "cta": "",
+          "image": "https://scontent-lax3-1.xx.fbcdn.net/v/t39.35426-6/708345366_2841424039545473_7513770183472770882_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=102&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=Ae-9Ybm-xpkQ7kNvwHFLzCf&_nc_oc=AdprgDLjEFycNiAOrgONIJFulXAzw9flbUXFaXs1tSo4wE-K4HsmYMpIHTgREQlR2QE&_nc_zt=14&_nc_ht=scontent-lax3-1.xx&_nc_gid=Eu0OT1WgbrPyGXfAiptrxA&_nc_ss=7b289&oh=00_AQTVMWMdLOwVC6wPGQUf4YKB2q1Ml32G0sARy7gUmuMLqw&oe=6AF76A73",
+          "link_url": "",
+          "title": "",
+          "video": null
+        },
+        {
+          "body": "كنتى ام لكام طفل لما عرفتي ان الالعاب التعليمية اهم وسيلة لدعم التحصيل الدراسي للطفل 🥹👋\nوانها مش مجرد تسليه وترفيه دي مهمة حتى وقت الدراسة لان بتساعدهم على\n🔹 تعزيز التركيز والانتباه وسرعة الادراك أثناء المذاكرة\n🔹تنمية مهارات التفكير النقدي وحل المشكلات 🧩\n🔹 تحويل المعلومات الصعبة لتجارب عملية تثبت بالذهن ويفتكروها بسهولة 🎯\n🔹 تحفيز روح التعاون والتواصل مع الآخرين\nفي التميز ستور وفرنالك العاب تعليمية مصممة بعناية لتواكب احتياجات طفلك الدراسية\nوتجمع بين المتعة والفائدة في وقت واحد لأن اللعب الذكي هو أقصر طريق للتفوق 😍💪\nاستثمري في مستقبل طفلك.. واختاري الالعاب المناسبة لعمره او ابعتلنا عمره واحنا نساعدك\nالشحن متاح لكل المحافظات 🚚\n#tamayoz\\_store #التميز\\_ستور #school #العاب\\_اطفال #تنمية\\_مهارات #montessori\nالتميز ستور\nToys\nSend message",
+          "cta": "",
+          "image": "https://scontent-lax3-1.xx.fbcdn.net/v/t39.35426-6/709940916_1318552540419154_3929776991222482126_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=109&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=Kr4hMUWtsbUQ7kNvwEIlWbm&_nc_oc=AdrUSOipM7jbQJdMglSJkWkIFnPTG5oycm3BKgLlEDEu__uF5FVsSh-CeSsfq_KWWCM&_nc_zt=14&_nc_ht=scontent-lax3-1.xx&_nc_gid=Eu0OT1WgbrPyGXfAiptrxA&_nc_ss=7b289&oh=00_AQSxjKO0fk-2ihY-K_FW48vpnnwLH-aAVH0f_pnVxyav5Q&oe=6AF75970",
+          "link_url": "",
+          "title": "",
+          "video": null
+        },
+        {
+          "body": "كنتى ام لكام طفل لما عرفتي ان الالعاب التعليمية اهم وسيلة لدعم التحصيل الدراسي للطفل 🥹👋\nوانها مش مجرد تسليه وترفيه دي مهمة حتى وقت الدراسة لان بتساعدهم على\n🔹 تعزيز التركيز والانتباه وسرعة الادراك أثناء المذاكرة\n🔹تنمية مهارات التفكير النقدي وحل المشكلات 🧩\n🔹 تحويل المعلومات الصعبة لتجارب عملية تثبت بالذهن ويفتكروها بسهولة 🎯\n🔹 تحفيز روح التعاون والتواصل مع الآخرين\nفي التميز ستور وفرنالك العاب تعليمية مصممة بعناية لتواكب احتياجات طفلك الدراسية\nوتجمع بين المتعة والفائدة في وقت واحد لأن اللعب الذكي هو أقصر طريق للتفوق 😍💪\nاستثمري في مستقبل طفلك.. واختاري الالعاب المناسبة لعمره او ابعتلنا عمره واحنا نساعدك\nالشحن متاح لكل المحافظات 🚚\n#tamayoz\\_store #التميز\\_ستور #school #العاب\\_اطفال #تنمية\\_مهارات #montessori\nالتميز ستور\nToys\nSend message",
+          "cta": "",
+          "image": "https://scontent-lax3-1.xx.fbcdn.net/v/t39.35426-6/708333364_1465551618654838_2752209491404101064_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=104&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=whkGFreJ0vgQ7kNvwEGkNP-&_nc_oc=AdrAwtC54kq7M6yAQBlozYmmPrLd6zSUx_pZ_vhEGB0Z4BWHAt83r8T4IgOf6dZlxTM&_nc_zt=14&_nc_ht=scontent-lax3-1.xx&_nc_gid=Eu0OT1WgbrPyGXfAiptrxA&_nc_ss=7b289&oh=00_AQR9QEghwFSE2YQPc0cj2LEw2AOpKK1kWcnaxjREH_QIwA&oe=6AF74A81",
+          "link_url": "",
+          "title": "",
+          "video": null
+        },
+        {
+          "body": "كنتى ام لكام طفل لما عرفتي ان الالعاب التعليمية اهم وسيلة لدعم التحصيل الدراسي للطفل 🥹👋\nوانها مش مجرد تسليه وترفيه دي مهمة حتى وقت الدراسة لان بتساعدهم على\n🔹 تعزيز التركيز والانتباه وسرعة الادراك أثناء المذاكرة\n🔹تنمية مهارات التفكير النقدي وحل المشكلات 🧩\n🔹 تحويل المعلومات الصعبة لتجارب عملية تثبت بالذهن ويفتكروها بسهولة 🎯\n🔹 تحفيز روح التعاون والتواصل مع الآخرين\nفي التميز ستور وفرنالك العاب تعليمية مصممة بعناية لتواكب احتياجات طفلك الدراسية\nوتجمع بين المتعة والفائدة في وقت واحد لأن اللعب الذكي هو أقصر طريق للتفوق 😍💪\nاستثمري في مستقبل طفلك.. واختاري الالعاب المناسبة لعمره او ابعتلنا عمره واحنا نساعدك\nالشحن متاح لكل المحافظات 🚚\n#tamayoz\\_store #التميز\\_ستور #school #العاب\\_اطفال #تنمية\\_مهارات #montessori\nالتميز ستور\nToys\nSend message",
+          "cta": "",
+          "image": "https://scontent-lax3-1.xx.fbcdn.net/v/t39.35426-6/709490221_1498911805023458_6718882525607458631_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=108&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=R9L7Crrx7D8Q7kNvwGhRmMr&_nc_oc=Adpl4eOV3AV_ds70JF4tZ29XfjojsRmfce5bhH0SAHnHOVDTY6DiGHIV_Yqs5GwCVUc&_nc_zt=14&_nc_ht=scontent-lax3-1.xx&_nc_gid=Eu0OT1WgbrPyGXfAiptrxA&_nc_ss=7b289&oh=00_AQSLoCijpvQBbNnyslEzNrMfOdrYiHKEFh1U_23e10ITew&oe=6AF74320",
+          "link_url": "",
+          "title": "",
+          "video": null
+        },
+        {
+          "body": "كنتى ام لكام طفل لما عرفتي ان الالعاب التعليمية اهم وسيلة لدعم التحصيل الدراسي للطفل 🥹👋\nوانها مش مجرد تسليه وترفيه دي مهمة حتى وقت الدراسة لان بتساعدهم على\n🔹 تعزيز التركيز والانتباه وسرعة الادراك أثناء المذاكرة\n🔹تنمية مهارات التفكير النقدي وحل المشكلات 🧩\n🔹 تحويل المعلومات الصعبة لتجارب عملية تثبت بالذهن ويفتكروها بسهولة 🎯\n🔹 تحفيز روح التعاون والتواصل مع الآخرين\nفي التميز ستور وفرنالك العاب تعليمية مصممة بعناية لتواكب احتياجات طفلك الدراسية\nوتجمع بين المتعة والفائدة في وقت واحد لأن اللعب الذكي هو أقصر طريق للتفوق 😍💪\nاستثمري في مستقبل طفلك.. واختاري الالعاب المناسبة لعمره او ابعتلنا عمره واحنا نساعدك\nالشحن متاح لكل المحافظات 🚚\n#tamayoz\\_store #التميز\\_ستور #school #العاب\\_اطفال #تنمية\\_مهارات #montessori\nالتميز ستور\nToys\nSend message",
+          "cta": "",
+          "image": "https://scontent-lax3-2.xx.fbcdn.net/v/t39.35426-6/708376985_1497725585127225_3328129666891202616_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=103&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=8FpxzbQMp_sQ7kNvwEDooX0&_nc_oc=AdoIu03AXaDqLxjuHBlIT2gPwoyIrCG_5bkC1FacCEXokxU3v_hJzHJogesIjFS19c0&_nc_zt=14&_nc_ht=scontent-lax3-2.xx&_nc_gid=Eu0OT1WgbrPyGXfAiptrxA&_nc_ss=7b289&oh=00_AQQp7rJIoXxlitlZHamJzAp4xavAfT8IykOwhIKneboRXw&oe=6AF76213",
+          "link_url": "",
+          "title": "",
+          "video": null
+        },
+        {
+          "body": "كنتى ام لكام طفل لما عرفتي ان الالعاب التعليمية اهم وسيلة لدعم التحصيل الدراسي للطفل 🥹👋\nوانها مش مجرد تسليه وترفيه دي مهمة حتى وقت الدراسة لان بتساعدهم على\n🔹 تعزيز التركيز والانتباه وسرعة الادراك أثناء المذاكرة\n🔹تنمية مهارات التفكير النقدي وحل المشكلات 🧩\n🔹 تحويل المعلومات الصعبة لتجارب عملية تثبت بالذهن ويفتكروها بسهولة 🎯\n🔹 تحفيز روح التعاون والتواصل مع الآخرين\nفي التميز ستور وفرنالك العاب تعليمية مصممة بعناية لتواكب احتياجات طفلك الدراسية\nوتجمع بين المتعة والفائدة في وقت واحد لأن اللعب الذكي هو أقصر طريق للتفوق 😍💪\nاستثمري في مستقبل طفلك.. واختاري الالعاب المناسبة لعمره او ابعتلنا عمره واحنا نساعدك\nالشحن متاح لكل المحافظات 🚚\n#tamayoz\\_store #التميز\\_ستور #school #العاب\\_اطفال #تنمية\\_مهارات #montessori\nالتميز ستور\nToys\nSend message",
+          "cta": "",
+          "image": "https://scontent-lax3-1.xx.fbcdn.net/v/t39.35426-6/708363720_2218603805582922_6373701710256021406_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=102&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=EkXjgPD0YF0Q7kNvwGLbHi2&_nc_oc=AdqzZi5oNf7K-eWl5IiGz-UOPWjCNfCLu_LSpyD86T-X5UPZyNCNzER99G-Bdq8d3A0&_nc_zt=14&_nc_ht=scontent-lax3-1.xx&_nc_gid=Eu0OT1WgbrPyGXfAiptrxA&_nc_ss=7b289&oh=00_AQSrYDbwj72ylk7aJ79j0LNF1t5krGPq5B-3ENdh6LW3DA&oe=6AF7628E",
+          "link_url": "",
+          "title": "",
+          "video": null
+        },
+        {
+          "body": "كنتى ام لكام طفل لما عرفتي ان الالعاب التعليمية اهم وسيلة لدعم التحصيل الدراسي للطفل 🥹👋\nوانها مش مجرد تسليه وترفيه دي مهمة حتى وقت الدراسة لان بتساعدهم على\n🔹 تعزيز التركيز والانتباه وسرعة الادراك أثناء المذاكرة\n🔹تنمية مهارات التفكير النقدي وحل المشكلات 🧩\n🔹 تحويل المعلومات الصعبة لتجارب عملية تثبت بالذهن ويفتكروها بسهولة 🎯\n🔹 تحفيز روح التعاون والتواصل مع الآخرين\nفي التميز ستور وفرنالك العاب تعليمية مصممة بعناية لتواكب احتياجات طفلك الدراسية\nوتجمع بين المتعة والفائدة في وقت واحد لأن اللعب الذكي هو أقصر طريق للتفوق 😍💪\nاستثمري في مستقبل طفلك.. واختاري الالعاب المناسبة لعمره او ابعتلنا عمره واحنا نساعدك\nالشحن متاح لكل المحافظات 🚚\n#tamayoz\\_store #التميز\\_ستور #school #العاب\\_اطفال #تنمية\\_مهارات #montessori\nالتميز ستور\nToys\nSend message",
+          "cta": "",
+          "image": "https://scontent-lax7-1.xx.fbcdn.net/v/t39.35426-6/708376648_926002590459090_6920890442230028820_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=105&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=HQNaCckH3JEQ7kNvwGDSP9L&_nc_oc=AdrJsOQ-DDpn4k9nw_TaSgl65eX_nqTuYIiZHga3rHMbqBgK0kPrBEX8LNav-zBQrgw&_nc_zt=14&_nc_ht=scontent-lax7-1.xx&_nc_gid=Eu0OT1WgbrPyGXfAiptrxA&_nc_ss=7b289&oh=00_AQT5lPJ8WU_LiODd4e1i8TYbs1_nurbpjo69K6WE2066JA&oe=6AF744B6",
+          "link_url": "",
+          "title": "",
+          "video": null
+        },
+        {
+          "body": "كنتى ام لكام طفل لما عرفتي ان الالعاب التعليمية اهم وسيلة لدعم التحصيل الدراسي للطفل 🥹👋\nوانها مش مجرد تسليه وترفيه دي مهمة حتى وقت الدراسة لان بتساعدهم على\n🔹 تعزيز التركيز والانتباه وسرعة الادراك أثناء المذاكرة\n🔹تنمية مهارات التفكير النقدي وحل المشكلات 🧩\n🔹 تحويل المعلومات الصعبة لتجارب عملية تثبت بالذهن ويفتكروها بسهولة 🎯\n🔹 تحفيز روح التعاون والتواصل مع الآخرين\nفي التميز ستور وفرنالك العاب تعليمية مصممة بعناية لتواكب احتياجات طفلك الدراسية\nوتجمع بين المتعة والفائدة في وقت واحد لأن اللعب الذكي هو أقصر طريق للتفوق 😍💪\nاستثمري في مستقبل طفلك.. واختاري الالعاب المناسبة لعمره او ابعتلنا عمره واحنا نساعدك\nالشحن متاح لكل المحافظات 🚚\n#tamayoz\\_store #التميز\\_ستور #school #العاب\\_اطفال #تنمية\\_مهارات #montessori\nالتميز ستور\nToys\nSend message",
+          "cta": "",
+          "image": "https://scontent-lax3-2.xx.fbcdn.net/v/t39.35426-6/708394409_940535745634789_4323670718519516218_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=111&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=l6PxHbqwYZoQ7kNvwGCsrWm&_nc_oc=AdrkYEMte5nTGnvSeGiVYxYLa5n39-gF2G4jStwU3RjgtpromtY7rFBbZFF-ErPXzW8&_nc_zt=14&_nc_ht=scontent-lax3-2.xx&_nc_gid=Eu0OT1WgbrPyGXfAiptrxA&_nc_ss=7b289&oh=00_AQRtE60eojo4LrOyU1hhs0Nq2SiEkvSmwJWYC3Df7XJaMA&oe=6AF74556",
+          "link_url": "",
+          "title": "",
+          "video": null
+        },
+        {
+          "body": "كنتى ام لكام طفل لما عرفتي ان الالعاب التعليمية اهم وسيلة لدعم التحصيل الدراسي للطفل 🥹👋\nوانها مش مجرد تسليه وترفيه دي مهمة حتى وقت الدراسة لان بتساعدهم على\n🔹 تعزيز التركيز والانتباه وسرعة الادراك أثناء المذاكرة\n🔹تنمية مهارات التفكير النقدي وحل المشكلات 🧩\n🔹 تحويل المعلومات الصعبة لتجارب عملية تثبت بالذهن ويفتكروها بسهولة 🎯\n🔹 تحفيز روح التعاون والتواصل مع الآخرين\nفي التميز ستور وفرنالك العاب تعليمية مصممة بعناية لتواكب احتياجات طفلك الدراسية\nوتجمع بين المتعة والفائدة في وقت واحد لأن اللعب الذكي هو أقصر طريق للتفوق 😍💪\nاستثمري في مستقبل طفلك.. واختاري الالعاب المناسبة لعمره او ابعتلنا عمره واحنا نساعدك\nالشحن متاح لكل المحافظات 🚚\n#tamayoz\\_store #التميز\\_ستور #school #العاب\\_اطفال #تنمية\\_مهارات #montessori\nالتميز ستور\nToys\nSend message",
+          "cta": "",
+          "image": "https://scontent-lax3-2.xx.fbcdn.net/v/t39.35426-6/708376752_985438197176032_6687688136671567041_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=111&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=l3-8wpJ66kQQ7kNvwE1oipJ&_nc_oc=AdrYi5hh2Un_cTypymaxvqCT7Yvi5p4Z62B_RGpobZABSCF64NgVwmWtyoPigeuDQRo&_nc_zt=14&_nc_ht=scontent-lax3-2.xx&_nc_gid=Eu0OT1WgbrPyGXfAiptrxA&_nc_ss=7b289&oh=00_AQTq_Ns6PHPi4jJ0vCExB-VLMAD_Uuf7aB9UDnqL6ty1Lw&oe=6AF75835",
+          "link_url": "",
+          "title": "",
+          "video": null
+        },
+        {
+          "body": "كنتى ام لكام طفل لما عرفتي ان الالعاب التعليمية اهم وسيلة لدعم التحصيل الدراسي للطفل 🥹👋\nوانها مش مجرد تسليه وترفيه دي مهمة حتى وقت الدراسة لان بتساعدهم على\n🔹 تعزيز التركيز والانتباه وسرعة الادراك أثناء المذاكرة\n🔹تنمية مهارات التفكير النقدي وحل المشكلات 🧩\n🔹 تحويل المعلومات الصعبة لتجارب عملية تثبت بالذهن ويفتكروها بسهولة 🎯\n🔹 تحفيز روح التعاون والتواصل مع الآخرين\nفي التميز ستور وفرنالك العاب تعليمية مصممة بعناية لتواكب احتياجات طفلك الدراسية\nوتجمع بين المتعة والفائدة في وقت واحد لأن اللعب الذكي هو أقصر طريق للتفوق 😍💪\nاستثمري في مستقبل طفلك.. واختاري الالعاب المناسبة لعمره او ابعتلنا عمره واحنا نساعدك\nالشحن متاح لكل المحافظات 🚚\n#tamayoz\\_store #التميز\\_ستور #school #العاب\\_اطفال #تنمية\\_مهارات #montessori\nالتميز ستور\nToys\nSend message",
+          "cta": "",
+          "image": "https://scontent-lax3-1.xx.fbcdn.net/v/t39.35426-6/709506848_1477594233676123_7682054986976704911_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=104&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=2ZV47KoYAJEQ7kNvwEB2IZ3&_nc_oc=AdpmYY5XlQSCRC8a-Zo4At2AJpRT5RIc6McOv1DoReAT4hQ7yVtO4Oek66sgR0OBzqk&_nc_zt=14&_nc_ht=scontent-lax3-1.xx&_nc_gid=Eu0OT1WgbrPyGXfAiptrxA&_nc_ss=7b289&oh=00_AQTiB0rqtoQ2eiVdE9gqSiy9j14_O6IZQhEyFh1PHyZI7g&oe=6AF737E4",
+          "link_url": "",
+          "title": "",
+          "video": null
+        },
+        {
+          "body": "كنتى ام لكام طفل لما عرفتي ان الالعاب التعليمية اهم وسيلة لدعم التحصيل الدراسي للطفل 🥹👋\nوانها مش مجرد تسليه وترفيه دي مهمة حتى وقت الدراسة لان بتساعدهم على\n🔹 تعزيز التركيز والانتباه وسرعة الادراك أثناء المذاكرة\n🔹تنمية مهارات التفكير النقدي وحل المشكلات 🧩\n🔹 تحويل المعلومات الصعبة لتجارب عملية تثبت بالذهن ويفتكروها بسهولة 🎯\n🔹 تحفيز روح التعاون والتواصل مع الآخرين\nفي التميز ستور وفرنالك العاب تعليمية مصممة بعناية لتواكب احتياجات طفلك الدراسية\nوتجمع بين المتعة والفائدة في وقت واحد لأن اللعب الذكي هو أقصر طريق للتفوق 😍💪\nاستثمري في مستقبل طفلك.. واختاري الالعاب المناسبة لعمره او ابعتلنا عمره واحنا نساعدك\nالشحن متاح لكل المحافظات 🚚\n#tamayoz\\_store #التميز\\_ستور #school #العاب\\_اطفال #تنمية\\_مهارات #montessori\nالتميز ستور\nToys\nSend message",
+          "cta": "",
+          "image": "https://scontent-lax3-2.xx.fbcdn.net/v/t39.35426-6/709680334_1677013340014242_2106472656279125941_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=107&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=LILIyTgio34Q7kNvwH7e_zg&_nc_oc=AdrUedDJnSgaPX0jbAi6TpRAI1KIvHw4uO14Vzy21zZHIPy7ji09yAAs_wmvO74UoRk&_nc_zt=14&_nc_ht=scontent-lax3-2.xx&_nc_gid=Eu0OT1WgbrPyGXfAiptrxA&_nc_ss=7b289&oh=00_AQRmufHf-jSEfyHdX-W0ToY5wFmBRmr3rwhjOnSDgnVTbw&oe=6AF760FC",
+          "link_url": "",
+          "title": "",
+          "video": null
+        },
+        {
+          "body": "كنتى ام لكام طفل لما عرفتي ان الالعاب التعليمية اهم وسيلة لدعم التحصيل الدراسي للطفل 🥹👋\nوانها مش مجرد تسليه وترفيه دي مهمة حتى وقت الدراسة لان بتساعدهم على\n🔹 تعزيز التركيز والانتباه وسرعة الادراك أثناء المذاكرة\n🔹تنمية مهارات التفكير النقدي وحل المشكلات 🧩\n🔹 تحويل المعلومات الصعبة لتجارب عملية تثبت بالذهن ويفتكروها بسهولة 🎯\n🔹 تحفيز روح التعاون والتواصل مع الآخرين\nفي التميز ستور وفرنالك العاب تعليمية مصممة بعناية لتواكب احتياجات طفلك الدراسية\nوتجمع بين المتعة والفائدة في وقت واحد لأن اللعب الذكي هو أقصر طريق للتفوق 😍💪\nاستثمري في مستقبل طفلك.. واختاري الالعاب المناسبة لعمره او ابعتلنا عمره واحنا نساعدك\nالشحن متاح لكل المحافظات 🚚\n#tamayoz\\_store #التميز\\_ستور #school #العاب\\_اطفال #تنمية\\_مهارات #montessori\nالتميز ستور\nToys\nSend message",
+          "cta": "",
+          "image": "https://scontent-lax3-2.xx.fbcdn.net/v/t39.35426-6/709636446_1017286110987041_2510102166873795113_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=106&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=dUX8LjU0p2gQ7kNvwEJlhuT&_nc_oc=Adpig925CvOj-lP3WYlVyfFVPgk8AhpRN8HxbuUThflbbdgVmwDDsZrvbXpKyZpRUDs&_nc_zt=14&_nc_ht=scontent-lax3-2.xx&_nc_gid=Eu0OT1WgbrPyGXfAiptrxA&_nc_ss=7b289&oh=00_AQQGExEz1Y1Dw11nf28Lw9rIuoVXTBVDWfh8SPVBXMxBGw&oe=6AF759A0",
+          "link_url": "",
+          "title": "",
+          "video": null
+        },
+        {
+          "body": "كنتى ام لكام طفل لما عرفتي ان الالعاب التعليمية اهم وسيلة لدعم التحصيل الدراسي للطفل 🥹👋\nوانها مش مجرد تسليه وترفيه دي مهمة حتى وقت الدراسة لان بتساعدهم على\n🔹 تعزيز التركيز والانتباه وسرعة الادراك أثناء المذاكرة\n🔹تنمية مهارات التفكير النقدي وحل المشكلات 🧩\n🔹 تحويل المعلومات الصعبة لتجارب عملية تثبت بالذهن ويفتكروها بسهولة 🎯\n🔹 تحفيز روح التعاون والتواصل مع الآخرين\nفي التميز ستور وفرنالك العاب تعليمية مصممة بعناية لتواكب احتياجات طفلك الدراسية\nوتجمع بين المتعة والفائدة في وقت واحد لأن اللعب الذكي هو أقصر طريق للتفوق 😍💪\nاستثمري في مستقبل طفلك.. واختاري الالعاب المناسبة لعمره او ابعتلنا عمره واحنا نساعدك\nالشحن متاح لكل المحافظات 🚚\n#tamayoz\\_store #التميز\\_ستور #school #العاب\\_اطفال #تنمية\\_مهارات #montessori\nالتميز ستور\nToys\nSend message",
+          "cta": "",
+          "image": "https://scontent-lax7-1.xx.fbcdn.net/v/t39.35426-6/709770824_2192011748303691_1250876999969400138_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=105&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=unYcfMY1a9wQ7kNvwF2Um0n&_nc_oc=AdpOWVPHUXiMGA47sP4OclkvYwh8r1FIzvFr17VURQ1a5e3_5kP00fQZ-yRR2MiwAxA&_nc_zt=14&_nc_ht=scontent-lax7-1.xx&_nc_gid=Eu0OT1WgbrPyGXfAiptrxA&_nc_ss=7b289&oh=00_AQRYNH95y-OqeXtRwzWR5a-afF2_uY6iGXALyekbY1h50w&oe=6AF75B41",
+          "link_url": "",
+          "title": "",
+          "video": null
+        },
+        {
+          "body": "كنتى ام لكام طفل لما عرفتي ان الالعاب التعليمية اهم وسيلة لدعم التحصيل الدراسي للطفل 🥹👋\nوانها مش مجرد تسليه وترفيه دي مهمة حتى وقت الدراسة لان بتساعدهم على\n🔹 تعزيز التركيز والانتباه وسرعة الادراك أثناء المذاكرة\n🔹تنمية مهارات التفكير النقدي وحل المشكلات 🧩\n🔹 تحويل المعلومات الصعبة لتجارب عملية تثبت بالذهن ويفتكروها بسهولة 🎯\n🔹 تحفيز روح التعاون والتواصل مع الآخرين\nفي التميز ستور وفرنالك العاب تعليمية مصممة بعناية لتواكب احتياجات طفلك الدراسية\nوتجمع بين المتعة والفائدة في وقت واحد لأن اللعب الذكي هو أقصر طريق للتفوق 😍💪\nاستثمري في مستقبل طفلك.. واختاري الالعاب المناسبة لعمره او ابعتلنا عمره واحنا نساعدك\nالشحن متاح لكل المحافظات 🚚\n#tamayoz\\_store #التميز\\_ستور #school #العاب\\_اطفال #تنمية\\_مهارات #montessori\nالتميز ستور\nToys\nSend message",
+          "cta": "",
+          "image": "https://scontent-lax3-2.xx.fbcdn.net/v/t39.35426-6/708398244_1682264499571515_1877909578592915332_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=100&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=lo7wq2rbSN0Q7kNvwGrNsaB&_nc_oc=Adpi4LpBKcTckLzIGmtJV-0enm5krJRDPSgAaXksxDgKe3H8Yzv2GzNL11Ph7E0zIbo&_nc_zt=14&_nc_ht=scontent-lax3-2.xx&_nc_gid=Eu0OT1WgbrPyGXfAiptrxA&_nc_ss=7b289&oh=00_AQRFArTjVZtYn-UjDsqx2hfP8rpHJPxAK0Q0dOsKo6S3pQ&oe=6AF74ACB",
+          "link_url": "",
+          "title": "",
+          "video": null
+        },
+        {
+          "body": "كنتى ام لكام طفل لما عرفتي ان الالعاب التعليمية اهم وسيلة لدعم التحصيل الدراسي للطفل 🥹👋\nوانها مش مجرد تسليه وترفيه دي مهمة حتى وقت الدراسة لان بتساعدهم على\n🔹 تعزيز التركيز والانتباه وسرعة الادراك أثناء المذاكرة\n🔹تنمية مهارات التفكير النقدي وحل المشكلات 🧩\n🔹 تحويل المعلومات الصعبة لتجارب عملية تثبت بالذهن ويفتكروها بسهولة 🎯\n🔹 تحفيز روح التعاون والتواصل مع الآخرين\nفي التميز ستور وفرنالك العاب تعليمية مصممة بعناية لتواكب احتياجات طفلك الدراسية\nوتجمع بين المتعة والفائدة في وقت واحد لأن اللعب الذكي هو أقصر طريق للتفوق 😍💪\nاستثمري في مستقبل طفلك.. واختاري الالعاب المناسبة لعمره او ابعتلنا عمره واحنا نساعدك\nالشحن متاح لكل المحافظات 🚚\n#tamayoz\\_store #التميز\\_ستور #school #العاب\\_اطفال #تنمية\\_مهارات #montessori\nالتميز ستور\nToys\nSend message",
+          "cta": "",
+          "image": "https://scontent-lax3-2.xx.fbcdn.net/v/t39.35426-6/708345456_27245907881711215_408079699620653272_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=107&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=DZ_IURvOby8Q7kNvwFwxD2x&_nc_oc=AdryVLDlvHwYx9ov3uck69LK0SzBa8A8fAUrRnuIx8ulsHXjNM7Q0rLMbe7cXe5ZGVs&_nc_zt=14&_nc_ht=scontent-lax3-2.xx&_nc_gid=Eu0OT1WgbrPyGXfAiptrxA&_nc_ss=7b289&oh=00_AQRhfE55VIi8eXPCXmf-uIDHZxJh2107CZ7CwEDegSmDBg&oe=6AF73883",
+          "link_url": "",
+          "title": "",
+          "video": null
+        },
+        {
+          "body": "كنتى ام لكام طفل لما عرفتي ان الالعاب التعليمية اهم وسيلة لدعم التحصيل الدراسي للطفل 🥹👋\nوانها مش مجرد تسليه وترفيه دي مهمة حتى وقت الدراسة لان بتساعدهم على\n🔹 تعزيز التركيز والانتباه وسرعة الادراك أثناء المذاكرة\n🔹تنمية مهارات التفكير النقدي وحل المشكلات 🧩\n🔹 تحويل المعلومات الصعبة لتجارب عملية تثبت بالذهن ويفتكروها بسهولة 🎯\n🔹 تحفيز روح التعاون والتواصل مع الآخرين\nفي التميز ستور وفرنالك العاب تعليمية مصممة بعناية لتواكب احتياجات طفلك الدراسية\nوتجمع بين المتعة والفائدة في وقت واحد لأن اللعب الذكي هو أقصر طريق للتفوق 😍💪\nاستثمري في مستقبل طفلك.. واختاري الالعاب المناسبة لعمره او ابعتلنا عمره واحنا نساعدك\nالشحن متاح لكل المحافظات 🚚\n#tamayoz\\_store #التميز\\_ستور #school #العاب\\_اطفال #تنمية\\_مهارات #montessori\nالتميز ستور\nToys\nSend message",
+          "cta": "",
+          "image": "https://scontent-lax3-1.xx.fbcdn.net/v/t39.35426-6/709486373_1515702537004805_870051489566738643_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=102&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=p5t1VUtuXxUQ7kNvwFbuHtQ&_nc_oc=Adpj7o7A3iYZyPU9nWpyCf-KFYJ_xk0skJdIlo7c9kERmsxRBoYogmKxKmbfh4LtlmI&_nc_zt=14&_nc_ht=scontent-lax3-1.xx&_nc_gid=Eu0OT1WgbrPyGXfAiptrxA&_nc_ss=7b289&oh=00_AQRZqV0AENPlU35D7PXe9qpMVad9-8CHgHN7NhMuWRadog&oe=6AF75EE5",
+          "link_url": "",
+          "title": "",
+          "video": null
+        },
+        {
+          "body": "كنتى ام لكام طفل لما عرفتي ان الالعاب التعليمية اهم وسيلة لدعم التحصيل الدراسي للطفل 🥹👋\nوانها مش مجرد تسليه وترفيه دي مهمة حتى وقت الدراسة لان بتساعدهم على\n🔹 تعزيز التركيز والانتباه وسرعة الادراك أثناء المذاكرة\n🔹تنمية مهارات التفكير النقدي وحل المشكلات 🧩\n🔹 تحويل المعلومات الصعبة لتجارب عملية تثبت بالذهن ويفتكروها بسهولة 🎯\n🔹 تحفيز روح التعاون والتواصل مع الآخرين\nفي التميز ستور وفرنالك العاب تعليمية مصممة بعناية لتواكب احتياجات طفلك الدراسية\nوتجمع بين المتعة والفائدة في وقت واحد لأن اللعب الذكي هو أقصر طريق للتفوق 😍💪\nاستثمري في مستقبل طفلك.. واختاري الالعاب المناسبة لعمره او ابعتلنا عمره واحنا نساعدك\nالشحن متاح لكل المحافظات 🚚\n#tamayoz\\_store #التميز\\_ستور #school #العاب\\_اطفال #تنمية\\_مهارات #montessori\nالتميز ستور\nToys\nSend message",
+          "cta": "",
+          "image": "https://scontent-lax3-1.xx.fbcdn.net/v/t39.35426-6/709646570_817004414597834_4540837695011541750_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=108&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=ijfoQSTXf_oQ7kNvwEivx9s&_nc_oc=AdrS92QeprPIWxL9aaypM9Xp9q9eBLRH69KSBEXh5HyKNLWLjdtHZBE-arncSFz7-pQ&_nc_zt=14&_nc_ht=scontent-lax3-1.xx&_nc_gid=Eu0OT1WgbrPyGXfAiptrxA&_nc_ss=7b289&oh=00_AQTyaii5MjN9mt_bHtgzyLpaO58jjHbn0Tb-w_3YXccxdw&oe=6AF7471A",
+          "link_url": "",
+          "title": "",
+          "video": null
+        },
+        {
+          "body": "كنتى ام لكام طفل لما عرفتي ان الالعاب التعليمية اهم وسيلة لدعم التحصيل الدراسي للطفل 🥹👋\nوانها مش مجرد تسليه وترفيه دي مهمة حتى وقت الدراسة لان بتساعدهم على\n🔹 تعزيز التركيز والانتباه وسرعة الادراك أثناء المذاكرة\n🔹تنمية مهارات التفكير النقدي وحل المشكلات 🧩\n🔹 تحويل المعلومات الصعبة لتجارب عملية تثبت بالذهن ويفتكروها بسهولة 🎯\n🔹 تحفيز روح التعاون والتواصل مع الآخرين\nفي التميز ستور وفرنالك العاب تعليمية مصممة بعناية لتواكب احتياجات طفلك الدراسية\nوتجمع بين المتعة والفائدة في وقت واحد لأن اللعب الذكي هو أقصر طريق للتفوق 😍💪\nاستثمري في مستقبل طفلك.. واختاري الالعاب المناسبة لعمره او ابعتلنا عمره واحنا نساعدك\nالشحن متاح لكل المحافظات 🚚\n#tamayoz\\_store #التميز\\_ستور #school #العاب\\_اطفال #تنمية\\_مهارات #montessori\nالتميز ستور\nToys\nSend message",
+          "cta": "",
+          "image": "https://scontent-lax3-1.xx.fbcdn.net/v/t39.35426-6/708376668_1037287435622944_4081348697814960088_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=102&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=zroFyyq2I_QQ7kNvwHKclDV&_nc_oc=Ado1Khg7RVr6PcaO7L4iBEI4Jv9JhiylsZA1edtB7pN3O_EkKL9nilxKB4I7bTOWS1s&_nc_zt=14&_nc_ht=scontent-lax3-1.xx&_nc_gid=Eu0OT1WgbrPyGXfAiptrxA&_nc_ss=7b289&oh=00_AQT1vKUhH3vbUJ58BiBIUddDpo1o4kxBXlNzZFry0lnw6w&oe=6AF7413F",
+          "link_url": "",
+          "title": "",
+          "video": null
+        },
+        {
+          "body": "كنتى ام لكام طفل لما عرفتي ان الالعاب التعليمية اهم وسيلة لدعم التحصيل الدراسي للطفل 🥹👋\nوانها مش مجرد تسليه وترفيه دي مهمة حتى وقت الدراسة لان بتساعدهم على\n🔹 تعزيز التركيز والانتباه وسرعة الادراك أثناء المذاكرة\n🔹تنمية مهارات التفكير النقدي وحل المشكلات 🧩\n🔹 تحويل المعلومات الصعبة لتجارب عملية تثبت بالذهن ويفتكروها بسهولة 🎯\n🔹 تحفيز روح التعاون والتواصل مع الآخرين\nفي التميز ستور وفرنالك العاب تعليمية مصممة بعناية لتواكب احتياجات طفلك الدراسية\nوتجمع بين المتعة والفائدة في وقت واحد لأن اللعب الذكي هو أقصر طريق للتفوق 😍💪\nاستثمري في مستقبل طفلك.. واختاري الالعاب المناسبة لعمره او ابعتلنا عمره واحنا نساعدك\nالشحن متاح لكل المحافظات 🚚\n#tamayoz\\_store #التميز\\_ستور #school #العاب\\_اطفال #تنمية\\_مهارات #montessori\nالتميز ستور\nToys\nSend message",
+          "cta": "",
+          "image": "https://scontent-lax3-1.xx.fbcdn.net/v/t39.35426-6/708398244_933803129660927_2994462225519606379_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=108&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=2kuR3juZGJoQ7kNvwFuru9K&_nc_oc=AdqTR1EVJ_904mwBZ3Bwu3M4LnAEkyQDPjP6_0405L14mo7DwMfWo9b_QptHOXfAGAs&_nc_zt=14&_nc_ht=scontent-lax3-1.xx&_nc_gid=Eu0OT1WgbrPyGXfAiptrxA&_nc_ss=7b289&oh=00_AQTTblirPSYO2x2DADJBoMWq4lbIButwBWtODzuY-gxP4w&oe=6AF75E9E",
+          "link_url": "",
+          "title": "",
+          "video": null
+        },
+        {
+          "body": "كنتى ام لكام طفل لما عرفتي ان الالعاب التعليمية اهم وسيلة لدعم التحصيل الدراسي للطفل 🥹👋\nوانها مش مجرد تسليه وترفيه دي مهمة حتى وقت الدراسة لان بتساعدهم على\n🔹 تعزيز التركيز والانتباه وسرعة الادراك أثناء المذاكرة\n🔹تنمية مهارات التفكير النقدي وحل المشكلات 🧩\n🔹 تحويل المعلومات الصعبة لتجارب عملية تثبت بالذهن ويفتكروها بسهولة 🎯\n🔹 تحفيز روح التعاون والتواصل مع الآخرين\nفي التميز ستور وفرنالك العاب تعليمية مصممة بعناية لتواكب احتياجات طفلك الدراسية\nوتجمع بين المتعة والفائدة في وقت واحد لأن اللعب الذكي هو أقصر طريق للتفوق 😍💪\nاستثمري في مستقبل طفلك.. واختاري الالعاب المناسبة لعمره او ابعتلنا عمره واحنا نساعدك\nالشحن متاح لكل المحافظات 🚚\n#tamayoz\\_store #التميز\\_ستور #school #العاب\\_اطفال #تنمية\\_مهارات #montessori\nالتميز ستور\nToys\nSend message",
+          "cta": "",
+          "image": "https://scontent-lax3-2.xx.fbcdn.net/v/t39.35426-6/709609639_2188286665253505_7877884997263884399_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=111&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=W-Ld-wzqLlEQ7kNvwFVipFv&_nc_oc=Ado1JhTG4poDbop-4xBZ2NVceqdPyCqUAagLRvwNVb-GV_xPzqu8ZCFsBc5rRRrvXFw&_nc_zt=14&_nc_ht=scontent-lax3-2.xx&_nc_gid=Eu0OT1WgbrPyGXfAiptrxA&_nc_ss=7b289&oh=00_AQS04HAgSAfYfJ6MAXyUQwwE3z1w0uFPnf4N6TgvBtCx_g&oe=6AF741E6",
+          "link_url": "",
+          "title": "",
+          "video": null
+        },
+        {
+          "body": "كنتى ام لكام طفل لما عرفتي ان الالعاب التعليمية اهم وسيلة لدعم التحصيل الدراسي للطفل 🥹👋\nوانها مش مجرد تسليه وترفيه دي مهمة حتى وقت الدراسة لان بتساعدهم على\n🔹 تعزيز التركيز والانتباه وسرعة الادراك أثناء المذاكرة\n🔹تنمية مهارات التفكير النقدي وحل المشكلات 🧩\n🔹 تحويل المعلومات الصعبة لتجارب عملية تثبت بالذهن ويفتكروها بسهولة 🎯\n🔹 تحفيز روح التعاون والتواصل مع الآخرين\nفي التميز ستور وفرنالك العاب تعليمية مصممة بعناية لتواكب احتياجات طفلك الدراسية\nوتجمع بين المتعة والفائدة في وقت واحد لأن اللعب الذكي هو أقصر طريق للتفوق 😍💪\nاستثمري في مستقبل طفلك.. واختاري الالعاب المناسبة لعمره او ابعتلنا عمره واحنا نساعدك\nالشحن متاح لكل المحافظات 🚚\n#tamayoz\\_store #التميز\\_ستور #school #العاب\\_اطفال #تنمية\\_مهارات #montessori\nالتميز ستور\nToys\nSend message",
+          "cta": "",
+          "image": "https://scontent-lax3-2.xx.fbcdn.net/v/t39.35426-6/708376752_1336097228482213_6558018506536048084_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=107&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=HwvAc5tVqf4Q7kNvwEYHi32&_nc_oc=Ado8R3TeI8YxggYRigbIRquSymW20OEhNDgTkN1sd_pd8HWxAnPzXy9dBuFzWyNeNTM&_nc_zt=14&_nc_ht=scontent-lax3-2.xx&_nc_gid=Eu0OT1WgbrPyGXfAiptrxA&_nc_ss=7b289&oh=00_AQThdL0y2A5sBPUtRpSt88bF7ANCgATticmURs-98IAilg&oe=6AF75F6E",
+          "link_url": "",
+          "title": "",
+          "video": null
+        },
+        {
+          "body": "كنتى ام لكام طفل لما عرفتي ان الالعاب التعليمية اهم وسيلة لدعم التحصيل الدراسي للطفل 🥹👋\nوانها مش مجرد تسليه وترفيه دي مهمة حتى وقت الدراسة لان بتساعدهم على\n🔹 تعزيز التركيز والانتباه وسرعة الادراك أثناء المذاكرة\n🔹تنمية مهارات التفكير النقدي وحل المشكلات 🧩\n🔹 تحويل المعلومات الصعبة لتجارب عملية تثبت بالذهن ويفتكروها بسهولة 🎯\n🔹 تحفيز روح التعاون والتواصل مع الآخرين\nفي التميز ستور وفرنالك العاب تعليمية مصممة بعناية لتواكب احتياجات طفلك الدراسية\nوتجمع بين المتعة والفائدة في وقت واحد لأن اللعب الذكي هو أقصر طريق للتفوق 😍💪\nاستثمري في مستقبل طفلك.. واختاري الالعاب المناسبة لعمره او ابعتلنا عمره واحنا نساعدك\nالشحن متاح لكل المحافظات 🚚\n#tamayoz\\_store #التميز\\_ستور #school #العاب\\_اطفال #تنمية\\_مهارات #montessori\nالتميز ستور\nToys\nSend message",
+          "cta": "",
+          "image": "https://scontent-lax3-1.xx.fbcdn.net/v/t39.35426-6/709590478_2156724534866331_7077085839540612517_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=109&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=QEUb8WdxodwQ7kNvwEMCzsN&_nc_oc=Adq2k367oy2q02YInBW6sCLdLpdTCb5SMiMKd_z1A2ZmSGXiy2WDBU8qiCYJws9XEOE&_nc_zt=14&_nc_ht=scontent-lax3-1.xx&_nc_gid=Eu0OT1WgbrPyGXfAiptrxA&_nc_ss=7b289&oh=00_AQRn6hRALIDVcNTBZYAvHWt3QlNpwm7C6Wi0NGwmCNUWcg&oe=6AF762EE",
+          "link_url": "",
+          "title": "",
+          "video": null
+        },
+        {
+          "body": "كنتى ام لكام طفل لما عرفتي ان الالعاب التعليمية اهم وسيلة لدعم التحصيل الدراسي للطفل 🥹👋\nوانها مش مجرد تسليه وترفيه دي مهمة حتى وقت الدراسة لان بتساعدهم على\n🔹 تعزيز التركيز والانتباه وسرعة الادراك أثناء المذاكرة\n🔹تنمية مهارات التفكير النقدي وحل المشكلات 🧩\n🔹 تحويل المعلومات الصعبة لتجارب عملية تثبت بالذهن ويفتكروها بسهولة 🎯\n🔹 تحفيز روح التعاون والتواصل مع الآخرين\nفي التميز ستور وفرنالك العاب تعليمية مصممة بعناية لتواكب احتياجات طفلك الدراسية\nوتجمع بين المتعة والفائدة في وقت واحد لأن اللعب الذكي هو أقصر طريق للتفوق 😍💪\nاستثمري في مستقبل طفلك.. واختاري الالعاب المناسبة لعمره او ابعتلنا عمره واحنا نساعدك\nالشحن متاح لكل المحافظات 🚚\n#tamayoz\\_store #التميز\\_ستور #school #العاب\\_اطفال #تنمية\\_مهارات #montessori\nالتميز ستور\nToys\nSend message",
+          "cta": "",
+          "image": "https://scontent-lax3-1.xx.fbcdn.net/v/t39.35426-6/708376934_1823072395745453_6101245047830346103_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=102&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=bRFyIiGMcGcQ7kNvwFC1Qe9&_nc_oc=Adqaj5teVhZmTduobqgLdYQsEuSebbvxQbhK1erBqX1sxYRXd0hbGQ-1R8iBzGU7i9Q&_nc_zt=14&_nc_ht=scontent-lax3-1.xx&_nc_gid=Eu0OT1WgbrPyGXfAiptrxA&_nc_ss=7b289&oh=00_AQRH0Ej-L30D2Nq-DoWnL0HcPJeKkCFPHfzu1WtqcBaCUg&oe=6AF75997",
+          "link_url": "",
+          "title": "",
+          "video": null
+        },
+        {
+          "body": "كنتى ام لكام طفل لما عرفتي ان الالعاب التعليمية اهم وسيلة لدعم التحصيل الدراسي للطفل 🥹👋\nوانها مش مجرد تسليه وترفيه دي مهمة حتى وقت الدراسة لان بتساعدهم على\n🔹 تعزيز التركيز والانتباه وسرعة الادراك أثناء المذاكرة\n🔹تنمية مهارات التفكير النقدي وحل المشكلات 🧩\n🔹 تحويل المعلومات الصعبة لتجارب عملية تثبت بالذهن ويفتكروها بسهولة 🎯\n🔹 تحفيز روح التعاون والتواصل مع الآخرين\nفي التميز ستور وفرنالك العاب تعليمية مصممة بعناية لتواكب احتياجات طفلك الدراسية\nوتجمع بين المتعة والفائدة في وقت واحد لأن اللعب الذكي هو أقصر طريق للتفوق 😍💪\nاستثمري في مستقبل طفلك.. واختاري الالعاب المناسبة لعمره او ابعتلنا عمره واحنا نساعدك\nالشحن متاح لكل المحافظات 🚚\n#tamayoz\\_store #التميز\\_ستور #school #العاب\\_اطفال #تنمية\\_مهارات #montessori\nالتميز ستور\nToys\nSend message",
+          "cta": "",
+          "image": "https://scontent-lax3-2.xx.fbcdn.net/v/t39.35426-6/708415177_24882192281478379_23084555638279778_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=100&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=yTmLXz9iRoUQ7kNvwFb64au&_nc_oc=AdqYCTIleGhXlA1xSstzT9p_ucKRfLANxF3etguwL_EPtKQOXRtbkizBa0-RxBGlDII&_nc_zt=14&_nc_ht=scontent-lax3-2.xx&_nc_gid=Eu0OT1WgbrPyGXfAiptrxA&_nc_ss=7b289&oh=00_AQQenxfVHVKOHpEABt2YF72a44mVn1wfvQMYswX8fWXNMQ&oe=6AF7672C",
+          "link_url": "",
+          "title": "",
+          "video": null
+        },
+        {
+          "body": "كنتى ام لكام طفل لما عرفتي ان الالعاب التعليمية اهم وسيلة لدعم التحصيل الدراسي للطفل 🥹👋\nوانها مش مجرد تسليه وترفيه دي مهمة حتى وقت الدراسة لان بتساعدهم على\n🔹 تعزيز التركيز والانتباه وسرعة الادراك أثناء المذاكرة\n🔹تنمية مهارات التفكير النقدي وحل المشكلات 🧩\n🔹 تحويل المعلومات الصعبة لتجارب عملية تثبت بالذهن ويفتكروها بسهولة 🎯\n🔹 تحفيز روح التعاون والتواصل مع الآخرين\nفي التميز ستور وفرنالك العاب تعليمية مصممة بعناية لتواكب احتياجات طفلك الدراسية\nوتجمع بين المتعة والفائدة في وقت واحد لأن اللعب الذكي هو أقصر طريق للتفوق 😍💪\nاستثمري في مستقبل طفلك.. واختاري الالعاب المناسبة لعمره او ابعتلنا عمره واحنا نساعدك\nالشحن متاح لكل المحافظات 🚚\n#tamayoz\\_store #التميز\\_ستور #school #العاب\\_اطفال #تنمية\\_مهارات #montessori\nالتميز ستور\nToys\nSend message",
+          "cta": "",
+          "image": "https://scontent-lax3-2.xx.fbcdn.net/v/t39.35426-6/708345456_1706800420744657_3809676735058524443_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=107&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=dysx3Db3_EcQ7kNvwGFwLdP&_nc_oc=AdoAtdEAcJ6jNMbVtc77kXX_8a0TKWP456vkFClXzHGA4Z9PWBy7tGh7ZpsW9FZ86r0&_nc_zt=14&_nc_ht=scontent-lax3-2.xx&_nc_gid=Eu0OT1WgbrPyGXfAiptrxA&_nc_ss=7b289&oh=00_AQRO22LVkPlsldik7HeoXb_8E_lMyKMvB0ZscWc3QTqwhw&oe=6AF75B1C",
+          "link_url": "",
+          "title": "",
+          "video": null
+        },
+        {
+          "body": "كنتى ام لكام طفل لما عرفتي ان الالعاب التعليمية اهم وسيلة لدعم التحصيل الدراسي للطفل 🥹👋\nوانها مش مجرد تسليه وترفيه دي مهمة حتى وقت الدراسة لان بتساعدهم على\n🔹 تعزيز التركيز والانتباه وسرعة الادراك أثناء المذاكرة\n🔹تنمية مهارات التفكير النقدي وحل المشكلات 🧩\n🔹 تحويل المعلومات الصعبة لتجارب عملية تثبت بالذهن ويفتكروها بسهولة 🎯\n🔹 تحفيز روح التعاون والتواصل مع الآخرين\nفي التميز ستور وفرنالك العاب تعليمية مصممة بعناية لتواكب احتياجات طفلك الدراسية\nوتجمع بين المتعة والفائدة في وقت واحد لأن اللعب الذكي هو أقصر طريق للتفوق 😍💪\nاستثمري في مستقبل طفلك.. واختاري الالعاب المناسبة لعمره او ابعتلنا عمره واحنا نساعدك\nالشحن متاح لكل المحافظات 🚚\n#tamayoz\\_store #التميز\\_ستور #school #العاب\\_اطفال #تنمية\\_مهارات #montessori\nالتميز ستور\nToys\nSend message",
+          "cta": "",
+          "image": "https://scontent-lax3-1.xx.fbcdn.net/v/t39.35426-6/708518130_861342193676302_7807274739248638899_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=110&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=MAxfIUkmXe0Q7kNvwF3crOj&_nc_oc=Adrz_fuzVVnn4bEfu5Uccgp7QO2ahEKELV9ePh7ccZP_BmOQHaBEEbGkVMNBXD8PwLQ&_nc_zt=14&_nc_ht=scontent-lax3-1.xx&_nc_gid=Eu0OT1WgbrPyGXfAiptrxA&_nc_ss=7b289&oh=00_AQT1wFIK8kvp0jk0JbaKYUor8t-33NrTCH8rvY7hYy_iCA&oe=6AF73889",
+          "link_url": "",
+          "title": "",
+          "video": null
+        },
+        {
+          "body": "كنتى ام لكام طفل لما عرفتي ان الالعاب التعليمية اهم وسيلة لدعم التحصيل الدراسي للطفل 🥹👋\nوانها مش مجرد تسليه وترفيه دي مهمة حتى وقت الدراسة لان بتساعدهم على\n🔹 تعزيز التركيز والانتباه وسرعة الادراك أثناء المذاكرة\n🔹تنمية مهارات التفكير النقدي وحل المشكلات 🧩\n🔹 تحويل المعلومات الصعبة لتجارب عملية تثبت بالذهن ويفتكروها بسهولة 🎯\n🔹 تحفيز روح التعاون والتواصل مع الآخرين\nفي التميز ستور وفرنالك العاب تعليمية مصممة بعناية لتواكب احتياجات طفلك الدراسية\nوتجمع بين المتعة والفائدة في وقت واحد لأن اللعب الذكي هو أقصر طريق للتفوق 😍💪\nاستثمري في مستقبل طفلك.. واختاري الالعاب المناسبة لعمره او ابعتلنا عمره واحنا نساعدك\nالشحن متاح لكل المحافظات 🚚\n#tamayoz\\_store #التميز\\_ستور #school #العاب\\_اطفال #تنمية\\_مهارات #montessori\nالتميز ستور\nToys\nSend message",
+          "cta": "",
+          "image": "https://scontent-lax7-1.xx.fbcdn.net/v/t39.35426-6/709680475_1608369217960654_4098722578022877013_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=105&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=OAgyitwgPOkQ7kNvwHFbFbw&_nc_oc=Adqetw02R550w9OhxIuMqMIvdISUKQRek9wTXwewE55o1QIizJDDfW7hoLP889PfF8k&_nc_zt=14&_nc_ht=scontent-lax7-1.xx&_nc_gid=Eu0OT1WgbrPyGXfAiptrxA&_nc_ss=7b289&oh=00_AQQYRAlbGe7NKHf3bGodtk4q0HMfZZIx23t7y-Na8d-T5w&oe=6AF76397",
+          "link_url": "",
+          "title": "",
+          "video": null
+        },
+        {
+          "body": "كنتى ام لكام طفل لما عرفتي ان الالعاب التعليمية اهم وسيلة لدعم التحصيل الدراسي للطفل 🥹👋\nوانها مش مجرد تسليه وترفيه دي مهمة حتى وقت الدراسة لان بتساعدهم على\n🔹 تعزيز التركيز والانتباه وسرعة الادراك أثناء المذاكرة\n🔹تنمية مهارات التفكير النقدي وحل المشكلات 🧩\n🔹 تحويل المعلومات الصعبة لتجارب عملية تثبت بالذهن ويفتكروها بسهولة 🎯\n🔹 تحفيز روح التعاون والتواصل مع الآخرين\nفي التميز ستور وفرنالك العاب تعليمية مصممة بعناية لتواكب احتياجات طفلك الدراسية\nوتجمع بين المتعة والفائدة في وقت واحد لأن اللعب الذكي هو أقصر طريق للتفوق 😍💪\nاستثمري في مستقبل طفلك.. واختاري الالعاب المناسبة لعمره او ابعتلنا عمره واحنا نساعدك\nالشحن متاح لكل المحافظات 🚚\n#tamayoz\\_store #التميز\\_ستور #school #العاب\\_اطفال #تنمية\\_مهارات #montessori\nالتميز ستور\nToys\nSend message",
+          "cta": "",
+          "image": "https://scontent-lax3-1.xx.fbcdn.net/v/t39.35426-6/709723282_997272762777492_2111661068708561421_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=102&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=KEYXPMjTUCwQ7kNvwEG62q-&_nc_oc=AdozKxtuxUCS5F25lRqE9jOuhxogUDnSBu1JTWxC4uKRSXo68D40qn1ndszLTSktE0Y&_nc_zt=14&_nc_ht=scontent-lax3-1.xx&_nc_gid=Eu0OT1WgbrPyGXfAiptrxA&_nc_ss=7b289&oh=00_AQRTsIllwd6Or5g7rLW4RGun9wVbiJBV67CSoHRC9N3rnw&oe=6AF74A5A",
+          "link_url": "",
+          "title": "",
+          "video": null
+        },
+        {
+          "body": "كنتى ام لكام طفل لما عرفتي ان الالعاب التعليمية اهم وسيلة لدعم التحصيل الدراسي للطفل 🥹👋\nوانها مش مجرد تسليه وترفيه دي مهمة حتى وقت الدراسة لان بتساعدهم على\n🔹 تعزيز التركيز والانتباه وسرعة الادراك أثناء المذاكرة\n🔹تنمية مهارات التفكير النقدي وحل المشكلات 🧩\n🔹 تحويل المعلومات الصعبة لتجارب عملية تثبت بالذهن ويفتكروها بسهولة 🎯\n🔹 تحفيز روح التعاون والتواصل مع الآخرين\nفي التميز ستور وفرنالك العاب تعليمية مصممة بعناية لتواكب احتياجات طفلك الدراسية\nوتجمع بين المتعة والفائدة في وقت واحد لأن اللعب الذكي هو أقصر طريق للتفوق 😍💪\nاستثمري في مستقبل طفلك.. واختاري الالعاب المناسبة لعمره او ابعتلنا عمره واحنا نساعدك\nالشحن متاح لكل المحافظات 🚚\n#tamayoz\\_store #التميز\\_ستور #school #العاب\\_اطفال #تنمية\\_مهارات #montessori\nالتميز ستور\nToys\nSend message",
+          "cta": "",
+          "image": "https://scontent-lax3-1.xx.fbcdn.net/v/t39.35426-6/708312267_964610836574717_8256936087234868574_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=109&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=Sxe5YBOPhZkQ7kNvwH7EpB-&_nc_oc=AdpancCn4F0MoT3xhWo2opxISRqLqHOqpJUCGAh_Xq21tYK6lSqH5ZJJKnbk1muKPec&_nc_zt=14&_nc_ht=scontent-lax3-1.xx&_nc_gid=Eu0OT1WgbrPyGXfAiptrxA&_nc_ss=7b289&oh=00_AQRKa1JTjiOFKscmmG_9ljEvHSfhGW7v9MR37QP3Qbk62g&oe=6AF755E8",
+          "link_url": "",
+          "title": "",
+          "video": null
+        },
+        {
+          "body": "كنتى ام لكام طفل لما عرفتي ان الالعاب التعليمية اهم وسيلة لدعم التحصيل الدراسي للطفل 🥹👋\nوانها مش مجرد تسليه وترفيه دي مهمة حتى وقت الدراسة لان بتساعدهم على\n🔹 تعزيز التركيز والانتباه وسرعة الادراك أثناء المذاكرة\n🔹تنمية مهارات التفكير النقدي وحل المشكلات 🧩\n🔹 تحويل المعلومات الصعبة لتجارب عملية تثبت بالذهن ويفتكروها بسهولة 🎯\n🔹 تحفيز روح التعاون والتواصل مع الآخرين\nفي التميز ستور وفرنالك العاب تعليمية مصممة بعناية لتواكب احتياجات طفلك الدراسية\nوتجمع بين المتعة والفائدة في وقت واحد لأن اللعب الذكي هو أقصر طريق للتفوق 😍💪\nاستثمري في مستقبل طفلك.. واختاري الالعاب المناسبة لعمره او ابعتلنا عمره واحنا نساعدك\nالشحن متاح لكل المحافظات 🚚\n#tamayoz\\_store #التميز\\_ستور #school #العاب\\_اطفال #تنمية\\_مهارات #montessori\nالتميز ستور\nToys\nSend message",
+          "cta": "",
+          "image": "https://scontent-lax3-1.xx.fbcdn.net/v/t39.35426-6/708363539_1725245365318301_6023401605831218766_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=110&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=Zw41d3rV_9AQ7kNvwGc6Lwj&_nc_oc=Adr4RlBMS-XWsVUMZ0PZpodxZ6FqIQpRWLLcj7vur78V8kQomrgyxafgH7WIweKkgRs&_nc_zt=14&_nc_ht=scontent-lax3-1.xx&_nc_gid=Eu0OT1WgbrPyGXfAiptrxA&_nc_ss=7b289&oh=00_AQQP6FjF-cKgI4pYKgbiemj4QHqf592eS72Ca1jxuqJO7Q&oe=6AF762DE",
+          "link_url": "",
+          "title": "",
+          "video": null
+        },
+        {
+          "body": "كنتى ام لكام طفل لما عرفتي ان الالعاب التعليمية اهم وسيلة لدعم التحصيل الدراسي للطفل 🥹👋\nوانها مش مجرد تسليه وترفيه دي مهمة حتى وقت الدراسة لان بتساعدهم على\n🔹 تعزيز التركيز والانتباه وسرعة الادراك أثناء المذاكرة\n🔹تنمية مهارات التفكير النقدي وحل المشكلات 🧩\n🔹 تحويل المعلومات الصعبة لتجارب عملية تثبت بالذهن ويفتكروها بسهولة 🎯\n🔹 تحفيز روح التعاون والتواصل مع الآخرين\nفي التميز ستور وفرنالك العاب تعليمية مصممة بعناية لتواكب احتياجات طفلك الدراسية\nوتجمع بين المتعة والفائدة في وقت واحد لأن اللعب الذكي هو أقصر طريق للتفوق 😍💪\nاستثمري في مستقبل طفلك.. واختاري الالعاب المناسبة لعمره او ابعتلنا عمره واحنا نساعدك\nالشحن متاح لكل المحافظات 🚚\n#tamayoz\\_store #التميز\\_ستور #school #العاب\\_اطفال #تنمية\\_مهارات #montessori\nالتميز ستور\nToys\nSend message",
+          "cta": "",
+          "image": "https://scontent-lax7-1.xx.fbcdn.net/v/t39.35426-6/708414361_918517757915795_822000304284697936_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=101&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=48f-k1_HxEUQ7kNvwHPnDB2&_nc_oc=Adr-eNtpaB9AS1_fv9O4JafGwiiDG8lysGQ0fmbjGKHlQPWuGnO-UmT984lnP2EGctA&_nc_zt=14&_nc_ht=scontent-lax7-1.xx&_nc_gid=Eu0OT1WgbrPyGXfAiptrxA&_nc_ss=7b289&oh=00_AQRgOh3DS08-te6GPv_KG67RWknJGer1MBglthZPAvMfIQ&oe=6AF74504",
+          "link_url": "",
+          "title": "",
+          "video": null
+        },
+        {
+          "body": "كنتى ام لكام طفل لما عرفتي ان الالعاب التعليمية اهم وسيلة لدعم التحصيل الدراسي للطفل 🥹👋\nوانها مش مجرد تسليه وترفيه دي مهمة حتى وقت الدراسة لان بتساعدهم على\n🔹 تعزيز التركيز والانتباه وسرعة الادراك أثناء المذاكرة\n🔹تنمية مهارات التفكير النقدي وحل المشكلات 🧩\n🔹 تحويل المعلومات الصعبة لتجارب عملية تثبت بالذهن ويفتكروها بسهولة 🎯\n🔹 تحفيز روح التعاون والتواصل مع الآخرين\nفي التميز ستور وفرنالك العاب تعليمية مصممة بعناية لتواكب احتياجات طفلك الدراسية\nوتجمع بين المتعة والفائدة في وقت واحد لأن اللعب الذكي هو أقصر طريق للتفوق 😍💪\nاستثمري في مستقبل طفلك.. واختاري الالعاب المناسبة لعمره او ابعتلنا عمره واحنا نساعدك\nالشحن متاح لكل المحافظات 🚚\n#tamayoz\\_store #التميز\\_ستور #school #العاب\\_اطفال #تنمية\\_مهارات #montessori\nالتميز ستور\nToys\nSend message",
+          "cta": "",
+          "image": "https://scontent-lax7-1.xx.fbcdn.net/v/t39.35426-6/708376646_26515644344804106_5774017851829634603_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=105&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=_G2Y0tCwiTYQ7kNvwGO6_ZO&_nc_oc=AdqS1nlHeq3RaL0S2TGecr0u19xfr1iH0mpAkWavZVJpVBR2troeVGmGjJjqA-gJG9Q&_nc_zt=14&_nc_ht=scontent-lax7-1.xx&_nc_gid=Eu0OT1WgbrPyGXfAiptrxA&_nc_ss=7b289&oh=00_AQRcaNsGdmO7wByHzC-ave0n7IuXixgW6b7p-yJ7egoTkw&oe=6AF7581B",
+          "link_url": "",
+          "title": "",
+          "video": null
+        },
+        {
+          "body": "كنتى ام لكام طفل لما عرفتي ان الالعاب التعليمية اهم وسيلة لدعم التحصيل الدراسي للطفل 🥹👋\nوانها مش مجرد تسليه وترفيه دي مهمة حتى وقت الدراسة لان بتساعدهم على\n🔹 تعزيز التركيز والانتباه وسرعة الادراك أثناء المذاكرة\n🔹تنمية مهارات التفكير النقدي وحل المشكلات 🧩\n🔹 تحويل المعلومات الصعبة لتجارب عملية تثبت بالذهن ويفتكروها بسهولة 🎯\n🔹 تحفيز روح التعاون والتواصل مع الآخرين\nفي التميز ستور وفرنالك العاب تعليمية مصممة بعناية لتواكب احتياجات طفلك الدراسية\nوتجمع بين المتعة والفائدة في وقت واحد لأن اللعب الذكي هو أقصر طريق للتفوق 😍💪\nاستثمري في مستقبل طفلك.. واختاري الالعاب المناسبة لعمره او ابعتلنا عمره واحنا نساعدك\nالشحن متاح لكل المحافظات 🚚\n#tamayoz\\_store #التميز\\_ستور #school #العاب\\_اطفال #تنمية\\_مهارات #montessori\nالتميز ستور\nToys\nSend message",
+          "cta": "",
+          "image": "https://scontent-lax3-2.xx.fbcdn.net/v/t39.35426-6/708312266_1327898195891173_3220999590778406772_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=100&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=Y4iyoZZDGPsQ7kNvwEi03aR&_nc_oc=AdpyWNO87xh-XSQa3vk5SzV5yfg33O8C4dm1WlDmAHk2ZYHUb_dNGi_xqlUmHZPWlNM&_nc_zt=14&_nc_ht=scontent-lax3-2.xx&_nc_gid=Eu0OT1WgbrPyGXfAiptrxA&_nc_ss=7b289&oh=00_AQS-ahEzi6tOLpvHyv54V2LjkHhLYy2H8vAYA2pJhk4QvA&oe=6AF745F2",
+          "link_url": "",
+          "title": "",
+          "video": null
+        },
+        {
+          "body": "كنتى ام لكام طفل لما عرفتي ان الالعاب التعليمية اهم وسيلة لدعم التحصيل الدراسي للطفل 🥹👋\nوانها مش مجرد تسليه وترفيه دي مهمة حتى وقت الدراسة لان بتساعدهم على\n🔹 تعزيز التركيز والانتباه وسرعة الادراك أثناء المذاكرة\n🔹تنمية مهارات التفكير النقدي وحل المشكلات 🧩\n🔹 تحويل المعلومات الصعبة لتجارب عملية تثبت بالذهن ويفتكروها بسهولة 🎯\n🔹 تحفيز روح التعاون والتواصل مع الآخرين\nفي التميز ستور وفرنالك العاب تعليمية مصممة بعناية لتواكب احتياجات طفلك الدراسية\nوتجمع بين المتعة والفائدة في وقت واحد لأن اللعب الذكي هو أقصر طريق للتفوق 😍💪\nاستثمري في مستقبل طفلك.. واختاري الالعاب المناسبة لعمره او ابعتلنا عمره واحنا نساعدك\nالشحن متاح لكل المحافظات 🚚\n#tamayoz\\_store #التميز\\_ستور #school #العاب\\_اطفال #تنمية\\_مهارات #montessori\nالتميز ستور\nToys\nSend message",
+          "cta": "",
+          "image": "https://scontent-lax3-1.xx.fbcdn.net/v/t39.35426-6/708337554_2255676308535249_6011478002156011560_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=108&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=5sk9nbZjP4IQ7kNvwGBvzbg&_nc_oc=AdrFgm4mMdc3_ZWv5NwfoLHslkXfbtJSlfNhnEnc69wt6_d2-SnCaYosamltloAGcS0&_nc_zt=14&_nc_ht=scontent-lax3-1.xx&_nc_gid=Eu0OT1WgbrPyGXfAiptrxA&_nc_ss=7b289&oh=00_AQSisOhcgzfpTd_e9QonmhJm2rqjkKxncFRPy6aBeUfm0g&oe=6AF766B5",
+          "link_url": "",
+          "title": "",
+          "video": null
+        },
+        {
+          "body": "كنتى ام لكام طفل لما عرفتي ان الالعاب التعليمية اهم وسيلة لدعم التحصيل الدراسي للطفل 🥹👋\nوانها مش مجرد تسليه وترفيه دي مهمة حتى وقت الدراسة لان بتساعدهم على\n🔹 تعزيز التركيز والانتباه وسرعة الادراك أثناء المذاكرة\n🔹تنمية مهارات التفكير النقدي وحل المشكلات 🧩\n🔹 تحويل المعلومات الصعبة لتجارب عملية تثبت بالذهن ويفتكروها بسهولة 🎯\n🔹 تحفيز روح التعاون والتواصل مع الآخرين\nفي التميز ستور وفرنالك العاب تعليمية مصممة بعناية لتواكب احتياجات طفلك الدراسية\nوتجمع بين المتعة والفائدة في وقت واحد لأن اللعب الذكي هو أقصر طريق للتفوق 😍💪\nاستثمري في مستقبل طفلك.. واختاري الالعاب المناسبة لعمره او ابعتلنا عمره واحنا نساعدك\nالشحن متاح لكل المحافظات 🚚\n#tamayoz\\_store #التميز\\_ستور #school #العاب\\_اطفال #تنمية\\_مهارات #montessori\nالتميز ستور\nToys\nSend message",
+          "cta": "",
+          "image": "https://scontent-lax3-1.xx.fbcdn.net/v/t39.35426-6/708501250_3384998084995868_8142380042656559248_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=108&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=i8FYVCKzbj8Q7kNvwFBVAyO&_nc_oc=Ado8qOG5_cGAM4xdhEwXpSX--MP4lKXLSHWkUBeN_DZ7BvbE_7hTtIxJV-UQ2PWwe4Q&_nc_zt=14&_nc_ht=scontent-lax3-1.xx&_nc_gid=Eu0OT1WgbrPyGXfAiptrxA&_nc_ss=7b289&oh=00_AQQ8cALpCGaEa0Ibah48Ucrmz0AkBKhnETOKx9-ZTuidow&oe=6AF74116",
+          "link_url": "",
+          "title": "",
+          "video": null
+        },
+        {
+          "body": "كنتى ام لكام طفل لما عرفتي ان الالعاب التعليمية اهم وسيلة لدعم التحصيل الدراسي للطفل 🥹👋\nوانها مش مجرد تسليه وترفيه دي مهمة حتى وقت الدراسة لان بتساعدهم على\n🔹 تعزيز التركيز والانتباه وسرعة الادراك أثناء المذاكرة\n🔹تنمية مهارات التفكير النقدي وحل المشكلات 🧩\n🔹 تحويل المعلومات الصعبة لتجارب عملية تثبت بالذهن ويفتكروها بسهولة 🎯\n🔹 تحفيز روح التعاون والتواصل مع الآخرين\nفي التميز ستور وفرنالك العاب تعليمية مصممة بعناية لتواكب احتياجات طفلك الدراسية\nوتجمع بين المتعة والفائدة في وقت واحد لأن اللعب الذكي هو أقصر طريق للتفوق 😍💪\nاستثمري في مستقبل طفلك.. واختاري الالعاب المناسبة لعمره او ابعتلنا عمره واحنا نساعدك\nالشحن متاح لكل المحافظات 🚚\n#tamayoz\\_store #التميز\\_ستور #school #العاب\\_اطفال #تنمية\\_مهارات #montessori\nالتميز ستور\nToys\nSend message",
+          "cta": "",
+          "image": "https://scontent-lax7-1.xx.fbcdn.net/v/t39.35426-6/709701038_1422306029663221_9088617628223881423_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=101&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=y0OFVlhQbKUQ7kNvwGy1j6v&_nc_oc=AdpvFd_wqNyLuCKR-ACQESHuIscIlGV9GPTA03rkJJbtByqovFWIw8SR6Jd3KuBH5U4&_nc_zt=14&_nc_ht=scontent-lax7-1.xx&_nc_gid=Eu0OT1WgbrPyGXfAiptrxA&_nc_ss=7b289&oh=00_AQQvGyP7S5I5zDP6_zuYGiIaa7YZ8jkZLHACkH_dCziBWQ&oe=6AF7459E",
+          "link_url": "",
+          "title": "",
+          "video": null
+        },
+        {
+          "body": "كنتى ام لكام طفل لما عرفتي ان الالعاب التعليمية اهم وسيلة لدعم التحصيل الدراسي للطفل 🥹👋\nوانها مش مجرد تسليه وترفيه دي مهمة حتى وقت الدراسة لان بتساعدهم على\n🔹 تعزيز التركيز والانتباه وسرعة الادراك أثناء المذاكرة\n🔹تنمية مهارات التفكير النقدي وحل المشكلات 🧩\n🔹 تحويل المعلومات الصعبة لتجارب عملية تثبت بالذهن ويفتكروها بسهولة 🎯\n🔹 تحفيز روح التعاون والتواصل مع الآخرين\nفي التميز ستور وفرنالك العاب تعليمية مصممة بعناية لتواكب احتياجات طفلك الدراسية\nوتجمع بين المتعة والفائدة في وقت واحد لأن اللعب الذكي هو أقصر طريق للتفوق 😍💪\nاستثمري في مستقبل طفلك.. واختاري الالعاب المناسبة لعمره او ابعتلنا عمره واحنا نساعدك\nالشحن متاح لكل المحافظات 🚚\n#tamayoz\\_store #التميز\\_ستور #school #العاب\\_اطفال #تنمية\\_مهارات #montessori\nالتميز ستور\nToys\nSend message",
+          "cta": "",
+          "image": "https://scontent-lax3-1.xx.fbcdn.net/v/t39.35426-6/709655472_1181032807449435_2609962592197656036_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=102&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=Y5SQiJ5b79UQ7kNvwEMHBST&_nc_oc=AdrHc88pXAD6uloo-xIj0tiMH-z14yKyMom2zQbPJzZUk2YNyP15X0Lq5bqaQgxEtwY&_nc_zt=14&_nc_ht=scontent-lax3-1.xx&_nc_gid=Eu0OT1WgbrPyGXfAiptrxA&_nc_ss=7b289&oh=00_AQRfl6373Rk75SXdEd_XT5hzokVOWivfHvRyd0AC7aEGgQ&oe=6AF74B4C",
+          "link_url": "",
+          "title": "",
+          "video": null
+        },
+        {
+          "body": "كنتى ام لكام طفل لما عرفتي ان الالعاب التعليمية اهم وسيلة لدعم التحصيل الدراسي للطفل 🥹👋\nوانها مش مجرد تسليه وترفيه دي مهمة حتى وقت الدراسة لان بتساعدهم على\n🔹 تعزيز التركيز والانتباه وسرعة الادراك أثناء المذاكرة\n🔹تنمية مهارات التفكير النقدي وحل المشكلات 🧩\n🔹 تحويل المعلومات الصعبة لتجارب عملية تثبت بالذهن ويفتكروها بسهولة 🎯\n🔹 تحفيز روح التعاون والتواصل مع الآخرين\nفي التميز ستور وفرنالك العاب تعليمية مصممة بعناية لتواكب احتياجات طفلك الدراسية\nوتجمع بين المتعة والفائدة في وقت واحد لأن اللعب الذكي هو أقصر طريق للتفوق 😍💪\nاستثمري في مستقبل طفلك.. واختاري الالعاب المناسبة لعمره او ابعتلنا عمره واحنا نساعدك\nالشحن متاح لكل المحافظات 🚚\n#tamayoz\\_store #التميز\\_ستور #school #العاب\\_اطفال #تنمية\\_مهارات #montessori\nالتميز ستور\nToys\nSend message",
+          "cta": "",
+          "image": "https://scontent-lax3-2.xx.fbcdn.net/v/t39.35426-6/709680329_994591183063748_5667136135044010206_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=103&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=RKORprmOFmEQ7kNvwGqJv4f&_nc_oc=AdoiG00SSfBENfvh28D4KBRuypQ14GT86HCB2tnMd4CjEtmqXlRc5MXxu2ybIbY0Z9A&_nc_zt=14&_nc_ht=scontent-lax3-2.xx&_nc_gid=Eu0OT1WgbrPyGXfAiptrxA&_nc_ss=7b289&oh=00_AQS39X05YuW6TxSowEnoalWgjWBTmOwuXXiLH0LOL0NXTA&oe=6AF75D2C",
+          "link_url": "",
+          "title": "",
+          "video": null
+        },
+        {
+          "body": "كنتى ام لكام طفل لما عرفتي ان الالعاب التعليمية اهم وسيلة لدعم التحصيل الدراسي للطفل 🥹👋\nوانها مش مجرد تسليه وترفيه دي مهمة حتى وقت الدراسة لان بتساعدهم على\n🔹 تعزيز التركيز والانتباه وسرعة الادراك أثناء المذاكرة\n🔹تنمية مهارات التفكير النقدي وحل المشكلات 🧩\n🔹 تحويل المعلومات الصعبة لتجارب عملية تثبت بالذهن ويفتكروها بسهولة 🎯\n🔹 تحفيز روح التعاون والتواصل مع الآخرين\nفي التميز ستور وفرنالك العاب تعليمية مصممة بعناية لتواكب احتياجات طفلك الدراسية\nوتجمع بين المتعة والفائدة في وقت واحد لأن اللعب الذكي هو أقصر طريق للتفوق 😍💪\nاستثمري في مستقبل طفلك.. واختاري الالعاب المناسبة لعمره او ابعتلنا عمره واحنا نساعدك\nالشحن متاح لكل المحافظات 🚚\n#tamayoz\\_store #التميز\\_ستور #school #العاب\\_اطفال #تنمية\\_مهارات #montessori\nالتميز ستور\nToys\nSend message",
+          "cta": "",
+          "image": "https://scontent-lax3-1.xx.fbcdn.net/v/t39.35426-6/708333460_1672193167258800_7037087984624077113_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=104&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=IfKyA64nSccQ7kNvwEBCKam&_nc_oc=AdooPnCDHiLNClLBIXAoDiF7L7H5zZXarlNUsG3NrizQMXtuuDcFHW5Je7Lkm2DhrNw&_nc_zt=14&_nc_ht=scontent-lax3-1.xx&_nc_gid=Eu0OT1WgbrPyGXfAiptrxA&_nc_ss=7b289&oh=00_AQSKQHJbsWBb_XnQY-HIl_1JMj6e5LemQI_ua1syiBNTmA&oe=6AF739C9",
+          "link_url": "",
+          "title": "",
+          "video": null
+        },
+        {
+          "body": "كنتى ام لكام طفل لما عرفتي ان الالعاب التعليمية اهم وسيلة لدعم التحصيل الدراسي للطفل 🥹👋\nوانها مش مجرد تسليه وترفيه دي مهمة حتى وقت الدراسة لان بتساعدهم على\n🔹 تعزيز التركيز والانتباه وسرعة الادراك أثناء المذاكرة\n🔹تنمية مهارات التفكير النقدي وحل المشكلات 🧩\n🔹 تحويل المعلومات الصعبة لتجارب عملية تثبت بالذهن ويفتكروها بسهولة 🎯\n🔹 تحفيز روح التعاون والتواصل مع الآخرين\nفي التميز ستور وفرنالك العاب تعليمية مصممة بعناية لتواكب احتياجات طفلك الدراسية\nوتجمع بين المتعة والفائدة في وقت واحد لأن اللعب الذكي هو أقصر طريق للتفوق 😍💪\nاستثمري في مستقبل طفلك.. واختاري الالعاب المناسبة لعمره او ابعتلنا عمره واحنا نساعدك\nالشحن متاح لكل المحافظات 🚚\n#tamayoz\\_store #التميز\\_ستور #school #العاب\\_اطفال #تنمية\\_مهارات #montessori\nالتميز ستور\nToys\nSend message",
+          "cta": "",
+          "image": "https://scontent-lax3-1.xx.fbcdn.net/v/t39.35426-6/709636564_1854308765955559_1365320150415410961_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=108&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=w4JALoBogJYQ7kNvwFiFnTs&_nc_oc=Adr4hsrUpUWG8bFtOONl--0Wiqq25gIe3XCDi8yb7N2OW33lYO4LlBBaTXtUXBD2sd0&_nc_zt=14&_nc_ht=scontent-lax3-1.xx&_nc_gid=Eu0OT1WgbrPyGXfAiptrxA&_nc_ss=7b289&oh=00_AQSuOGkO2k0S5_r8EgcHll_WcATZZQTL3IQ6Hr2z5kPy1g&oe=6AF7384E",
+          "link_url": "",
+          "title": "",
+          "video": null
+        },
+        {
+          "body": "كنتى ام لكام طفل لما عرفتي ان الالعاب التعليمية اهم وسيلة لدعم التحصيل الدراسي للطفل 🥹👋\nوانها مش مجرد تسليه وترفيه دي مهمة حتى وقت الدراسة لان بتساعدهم على\n🔹 تعزيز التركيز والانتباه وسرعة الادراك أثناء المذاكرة\n🔹تنمية مهارات التفكير النقدي وحل المشكلات 🧩\n🔹 تحويل المعلومات الصعبة لتجارب عملية تثبت بالذهن ويفتكروها بسهولة 🎯\n🔹 تحفيز روح التعاون والتواصل مع الآخرين\nفي التميز ستور وفرنالك العاب تعليمية مصممة بعناية لتواكب احتياجات طفلك الدراسية\nوتجمع بين المتعة والفائدة في وقت واحد لأن اللعب الذكي هو أقصر طريق للتفوق 😍💪\nاستثمري في مستقبل طفلك.. واختاري الالعاب المناسبة لعمره او ابعتلنا عمره واحنا نساعدك\nالشحن متاح لكل المحافظات 🚚\n#tamayoz\\_store #التميز\\_ستور #school #العاب\\_اطفال #تنمية\\_مهارات #montessori\nالتميز ستور\nToys\nSend message",
+          "cta": "",
+          "image": "https://scontent-lax3-1.xx.fbcdn.net/v/t39.35426-6/708337554_1672514470538390_3472685696936617209_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=102&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=XMk8zByFxGQQ7kNvwHgHjXu&_nc_oc=AdpoB960mzrl4PqSqIodOoHWVPFvYk38D--bFnTol12oH3Cwpoe4mD8AO4VD079FkCw&_nc_zt=14&_nc_ht=scontent-lax3-1.xx&_nc_gid=Eu0OT1WgbrPyGXfAiptrxA&_nc_ss=7b289&oh=00_AQQuSvKQpfab77OcvgaOum8zkp3AMmxzj4sKgfRCIrj03g&oe=6AF761DD",
+          "link_url": "",
+          "title": "",
+          "video": null
+        },
+        {
+          "body": "كنتى ام لكام طفل لما عرفتي ان الالعاب التعليمية اهم وسيلة لدعم التحصيل الدراسي للطفل 🥹👋\nوانها مش مجرد تسليه وترفيه دي مهمة حتى وقت الدراسة لان بتساعدهم على\n🔹 تعزيز التركيز والانتباه وسرعة الادراك أثناء المذاكرة\n🔹تنمية مهارات التفكير النقدي وحل المشكلات 🧩\n🔹 تحويل المعلومات الصعبة لتجارب عملية تثبت بالذهن ويفتكروها بسهولة 🎯\n🔹 تحفيز روح التعاون والتواصل مع الآخرين\nفي التميز ستور وفرنالك العاب تعليمية مصممة بعناية لتواكب احتياجات طفلك الدراسية\nوتجمع بين المتعة والفائدة في وقت واحد لأن اللعب الذكي هو أقصر طريق للتفوق 😍💪\nاستثمري في مستقبل طفلك.. واختاري الالعاب المناسبة لعمره او ابعتلنا عمره واحنا نساعدك\nالشحن متاح لكل المحافظات 🚚\n#tamayoz\\_store #التميز\\_ستور #school #العاب\\_اطفال #تنمية\\_مهارات #montessori\nالتميز ستور\nToys\nSend message",
+          "cta": "",
+          "image": "https://scontent-lax3-1.xx.fbcdn.net/v/t39.35426-6/708345518_1268267438414219_2636750673687537583_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=109&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=bHnA524HA70Q7kNvwE-dCPI&_nc_oc=Adp16V7chIl5tbnrC11hz_vn25NYcmzJOuvm2Kvxw2Rvlm60dSmfHtqykZkP35VJqZE&_nc_zt=14&_nc_ht=scontent-lax3-1.xx&_nc_gid=Eu0OT1WgbrPyGXfAiptrxA&_nc_ss=7b289&oh=00_AQRbXRUo_iMeVVsZhPs2fXLeU52Hl97urRiE1ce_Ob3U2g&oe=6AF76480",
+          "link_url": "",
+          "title": "",
+          "video": null
+        },
+        {
+          "body": "كنتى ام لكام طفل لما عرفتي ان الالعاب التعليمية اهم وسيلة لدعم التحصيل الدراسي للطفل 🥹👋\nوانها مش مجرد تسليه وترفيه دي مهمة حتى وقت الدراسة لان بتساعدهم على\n🔹 تعزيز التركيز والانتباه وسرعة الادراك أثناء المذاكرة\n🔹تنمية مهارات التفكير النقدي وحل المشكلات 🧩\n🔹 تحويل المعلومات الصعبة لتجارب عملية تثبت بالذهن ويفتكروها بسهولة 🎯\n🔹 تحفيز روح التعاون والتواصل مع الآخرين\nفي التميز ستور وفرنالك العاب تعليمية مصممة بعناية لتواكب احتياجات طفلك الدراسية\nوتجمع بين المتعة والفائدة في وقت واحد لأن اللعب الذكي هو أقصر طريق للتفوق 😍💪\nاستثمري في مستقبل طفلك.. واختاري الالعاب المناسبة لعمره او ابعتلنا عمره واحنا نساعدك\nالشحن متاح لكل المحافظات 🚚\n#tamayoz\\_store #التميز\\_ستور #school #العاب\\_اطفال #تنمية\\_مهارات #montessori\nالتميز ستور\nToys\nSend message",
+          "cta": "",
+          "image": "https://scontent-lax7-1.xx.fbcdn.net/v/t39.35426-6/708363675_855372437065696_6275571330932129619_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=105&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=Jv06wWz5d58Q7kNvwEG4kT7&_nc_oc=Ado3avY8S-ZH51y_KTH_arOUTgA-ewK8ZgiGQw6cu5w4MOf-B9LY6SWVql17GP3BJXM&_nc_zt=14&_nc_ht=scontent-lax7-1.xx&_nc_gid=Eu0OT1WgbrPyGXfAiptrxA&_nc_ss=7b289&oh=00_AQSuitNocVzTCtdFZpl-rsNnG-OV7lNLZl8LOO7EfLiOPw&oe=6AF75B0E",
+          "link_url": "",
+          "title": "",
+          "video": null
+        },
+        {
+          "body": "كنتى ام لكام طفل لما عرفتي ان الالعاب التعليمية اهم وسيلة لدعم التحصيل الدراسي للطفل 🥹👋\nوانها مش مجرد تسليه وترفيه دي مهمة حتى وقت الدراسة لان بتساعدهم على\n🔹 تعزيز التركيز والانتباه وسرعة الادراك أثناء المذاكرة\n🔹تنمية مهارات التفكير النقدي وحل المشكلات 🧩\n🔹 تحويل المعلومات الصعبة لتجارب عملية تثبت بالذهن ويفتكروها بسهولة 🎯\n🔹 تحفيز روح التعاون والتواصل مع الآخرين\nفي التميز ستور وفرنالك العاب تعليمية مصممة بعناية لتواكب احتياجات طفلك الدراسية\nوتجمع بين المتعة والفائدة في وقت واحد لأن اللعب الذكي هو أقصر طريق للتفوق 😍💪\nاستثمري في مستقبل طفلك.. واختاري الالعاب المناسبة لعمره او ابعتلنا عمره واحنا نساعدك\nالشحن متاح لكل المحافظات 🚚\n#tamayoz\\_store #التميز\\_ستور #school #العاب\\_اطفال #تنمية\\_مهارات #montessori\nالتميز ستور\nToys\nSend message",
+          "cta": "",
+          "image": "https://scontent-lax3-2.xx.fbcdn.net/v/t39.35426-6/708517157_1519291576271064_1952766787978848372_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=100&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=BSeGw6sgVngQ7kNvwF5UTnw&_nc_oc=AdpIG5rPqDRTg2gM_RGFWMrtczmzNgggszLZ1hOvoziRUIuwjAZC9n5gvwbZTAV6wT0&_nc_zt=14&_nc_ht=scontent-lax3-2.xx&_nc_gid=Eu0OT1WgbrPyGXfAiptrxA&_nc_ss=7b289&oh=00_AQQaBNDupIoa8AG2HsorT6MiL_5qQNrqrJ6ZA6tS-VKACg&oe=6AF75DD7",
+          "link_url": "",
+          "title": "",
+          "video": null
+        },
+        {
+          "body": "كنتى ام لكام طفل لما عرفتي ان الالعاب التعليمية اهم وسيلة لدعم التحصيل الدراسي للطفل 🥹👋\nوانها مش مجرد تسليه وترفيه دي مهمة حتى وقت الدراسة لان بتساعدهم على\n🔹 تعزيز التركيز والانتباه وسرعة الادراك أثناء المذاكرة\n🔹تنمية مهارات التفكير النقدي وحل المشكلات 🧩\n🔹 تحويل المعلومات الصعبة لتجارب عملية تثبت بالذهن ويفتكروها بسهولة 🎯\n🔹 تحفيز روح التعاون والتواصل مع الآخرين\nفي التميز ستور وفرنالك العاب تعليمية مصممة بعناية لتواكب احتياجات طفلك الدراسية\nوتجمع بين المتعة والفائدة في وقت واحد لأن اللعب الذكي هو أقصر طريق للتفوق 😍💪\nاستثمري في مستقبل طفلك.. واختاري الالعاب المناسبة لعمره او ابعتلنا عمره واحنا نساعدك\nالشحن متاح لكل المحافظات 🚚\n#tamayoz\\_store #التميز\\_ستور #school #العاب\\_اطفال #تنمية\\_مهارات #montessori\nالتميز ستور\nToys\nSend message",
+          "cta": "",
+          "image": "https://scontent-lax3-1.xx.fbcdn.net/v/t39.35426-6/708376971_816983347932973_17039927582132086_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=104&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=5tLEV7jzlYkQ7kNvwFuBke1&_nc_oc=Adrz7VguCiCJIh0xiZtNbbexnvx7y0pdnKDxgKTq5u2kcM64NuLGG551b36slmkQ7do&_nc_zt=14&_nc_ht=scontent-lax3-1.xx&_nc_gid=Eu0OT1WgbrPyGXfAiptrxA&_nc_ss=7b289&oh=00_AQRsgGVa58Bi6EccLk32HN8WvNOp1OkDUTqb_o9dYA9eHg&oe=6AF74131",
+          "link_url": "",
+          "title": "",
+          "video": null
+        },
+        {
+          "body": "كنتى ام لكام طفل لما عرفتي ان الالعاب التعليمية اهم وسيلة لدعم التحصيل الدراسي للطفل 🥹👋\nوانها مش مجرد تسليه وترفيه دي مهمة حتى وقت الدراسة لان بتساعدهم على\n🔹 تعزيز التركيز والانتباه وسرعة الادراك أثناء المذاكرة\n🔹تنمية مهارات التفكير النقدي وحل المشكلات 🧩\n🔹 تحويل المعلومات الصعبة لتجارب عملية تثبت بالذهن ويفتكروها بسهولة 🎯\n🔹 تحفيز روح التعاون والتواصل مع الآخرين\nفي التميز ستور وفرنالك العاب تعليمية مصممة بعناية لتواكب احتياجات طفلك الدراسية\nوتجمع بين المتعة والفائدة في وقت واحد لأن اللعب الذكي هو أقصر طريق للتفوق 😍💪\nاستثمري في مستقبل طفلك.. واختاري الالعاب المناسبة لعمره او ابعتلنا عمره واحنا نساعدك\nالشحن متاح لكل المحافظات 🚚\n#tamayoz\\_store #التميز\\_ستور #school #العاب\\_اطفال #تنمية\\_مهارات #montessori\nالتميز ستور\nToys\nSend message",
+          "cta": "",
+          "image": "https://scontent-lax3-1.xx.fbcdn.net/v/t39.35426-6/709566830_1002183512271340_8567683038008278394_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=109&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=PrVslrghLckQ7kNvwGFSaVV&_nc_oc=AdqPQMI-vE0Y1eXkB89jk2BxO-G_0AdQjyHjrtY88J_xZg99K9bYyy1osNpTjXMMbpo&_nc_zt=14&_nc_ht=scontent-lax3-1.xx&_nc_gid=Eu0OT1WgbrPyGXfAiptrxA&_nc_ss=7b289&oh=00_AQRFaZ45eIK6oL845RC7c3I2c0f7Lre2JsTRk-RKdS5mfg&oe=6AF74797",
+          "link_url": "",
+          "title": "",
+          "video": null
+        },
+        {
+          "body": "كنتى ام لكام طفل لما عرفتي ان الالعاب التعليمية اهم وسيلة لدعم التحصيل الدراسي للطفل 🥹👋\nوانها مش مجرد تسليه وترفيه دي مهمة حتى وقت الدراسة لان بتساعدهم على\n🔹 تعزيز التركيز والانتباه وسرعة الادراك أثناء المذاكرة\n🔹تنمية مهارات التفكير النقدي وحل المشكلات 🧩\n🔹 تحويل المعلومات الصعبة لتجارب عملية تثبت بالذهن ويفتكروها بسهولة 🎯\n🔹 تحفيز روح التعاون والتواصل مع الآخرين\nفي التميز ستور وفرنالك العاب تعليمية مصممة بعناية لتواكب احتياجات طفلك الدراسية\nوتجمع بين المتعة والفائدة في وقت واحد لأن اللعب الذكي هو أقصر طريق للتفوق 😍💪\nاستثمري في مستقبل طفلك.. واختاري الالعاب المناسبة لعمره او ابعتلنا عمره واحنا نساعدك\nالشحن متاح لكل المحافظات 🚚\n#tamayoz\\_store #التميز\\_ستور #school #العاب\\_اطفال #تنمية\\_مهارات #montessori\nالتميز ستور\nToys\nSend message",
+          "cta": "",
+          "image": "https://scontent-lax3-1.xx.fbcdn.net/v/t39.35426-6/708414789_1504436221146212_4034990462175251192_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=108&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=qzZAUg_29zIQ7kNvwE4uhRd&_nc_oc=AdqrJcYuI--3aJK0s3caYFxaJidOC3-zBGbio8JrBizYqs45rHiJ0PEXX6753vEKpg8&_nc_zt=14&_nc_ht=scontent-lax3-1.xx&_nc_gid=Eu0OT1WgbrPyGXfAiptrxA&_nc_ss=7b289&oh=00_AQRrFqACCFxd6f6f89nKPYcIvPIBc-LL1JQw7Fe7rvHfZA&oe=6AF74097",
+          "link_url": "",
+          "title": "",
+          "video": null
+        },
+        {
+          "body": "كنتى ام لكام طفل لما عرفتي ان الالعاب التعليمية اهم وسيلة لدعم التحصيل الدراسي للطفل 🥹👋\nوانها مش مجرد تسليه وترفيه دي مهمة حتى وقت الدراسة لان بتساعدهم على\n🔹 تعزيز التركيز والانتباه وسرعة الادراك أثناء المذاكرة\n🔹تنمية مهارات التفكير النقدي وحل المشكلات 🧩\n🔹 تحويل المعلومات الصعبة لتجارب عملية تثبت بالذهن ويفتكروها بسهولة 🎯\n🔹 تحفيز روح التعاون والتواصل مع الآخرين\nفي التميز ستور وفرنالك العاب تعليمية مصممة بعناية لتواكب احتياجات طفلك الدراسية\nوتجمع بين المتعة والفائدة في وقت واحد لأن اللعب الذكي هو أقصر طريق للتفوق 😍💪\nاستثمري في مستقبل طفلك.. واختاري الالعاب المناسبة لعمره او ابعتلنا عمره واحنا نساعدك\nالشحن متاح لكل المحافظات 🚚\n#tamayoz\\_store #التميز\\_ستور #school #العاب\\_اطفال #تنمية\\_مهارات #montessori\nالتميز ستور\nToys\nSend message",
+          "cta": "",
+          "image": "https://scontent-lax3-1.xx.fbcdn.net/v/t39.35426-6/708320188_1028915473335665_1610672712594781647_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=102&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=M5a2OVF5fiQQ7kNvwHgrUKc&_nc_oc=Adp_ZeA2hhQWJOl2Uyz8bTErouDjM53XstF2nQ1vMH42yRQVj6GDzjoqlkGLSTdl7pU&_nc_zt=14&_nc_ht=scontent-lax3-1.xx&_nc_gid=Eu0OT1WgbrPyGXfAiptrxA&_nc_ss=7b289&oh=00_AQRvAk9n7jC5Psy0rKzPhzvDhUa0_SzY0jExxDMJW8lMkQ&oe=6AF76DBC",
+          "link_url": "",
+          "title": "",
+          "video": null
+        },
+        {
+          "body": "كنتى ام لكام طفل لما عرفتي ان الالعاب التعليمية اهم وسيلة لدعم التحصيل الدراسي للطفل 🥹👋\nوانها مش مجرد تسليه وترفيه دي مهمة حتى وقت الدراسة لان بتساعدهم على\n🔹 تعزيز التركيز والانتباه وسرعة الادراك أثناء المذاكرة\n🔹تنمية مهارات التفكير النقدي وحل المشكلات 🧩\n🔹 تحويل المعلومات الصعبة لتجارب عملية تثبت بالذهن ويفتكروها بسهولة 🎯\n🔹 تحفيز روح التعاون والتواصل مع الآخرين\nفي التميز ستور وفرنالك العاب تعليمية مصممة بعناية لتواكب احتياجات طفلك الدراسية\nوتجمع بين المتعة والفائدة في وقت واحد لأن اللعب الذكي هو أقصر طريق للتفوق 😍💪\nاستثمري في مستقبل طفلك.. واختاري الالعاب المناسبة لعمره او ابعتلنا عمره واحنا نساعدك\nالشحن متاح لكل المحافظات 🚚\n#tamayoz\\_store #التميز\\_ستور #school #العاب\\_اطفال #تنمية\\_مهارات #montessori\nالتميز ستور\nToys\nSend message",
+          "cta": "",
+          "image": "https://scontent-lax3-1.xx.fbcdn.net/v/t39.35426-6/709468059_1396913172195782_5527233502946051317_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=102&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=cJsFrF82t_EQ7kNvwHZt7Kx&_nc_oc=Adq2bn0RbWmJaR2o1g-f8Kpr638HyemAS0vWArW92xefZQp-XGNPGhrc9BKgwaEzJiU&_nc_zt=14&_nc_ht=scontent-lax3-1.xx&_nc_gid=Eu0OT1WgbrPyGXfAiptrxA&_nc_ss=7b289&oh=00_AQSxYsQQli66mj6aF8yFyxPdKN0j92SFem6w5WQA9R0Glw&oe=6AF766B7",
+          "link_url": "",
+          "title": "",
+          "video": null
+        },
+        {
+          "body": "كنتى ام لكام طفل لما عرفتي ان الالعاب التعليمية اهم وسيلة لدعم التحصيل الدراسي للطفل 🥹👋\nوانها مش مجرد تسليه وترفيه دي مهمة حتى وقت الدراسة لان بتساعدهم على\n🔹 تعزيز التركيز والانتباه وسرعة الادراك أثناء المذاكرة\n🔹تنمية مهارات التفكير النقدي وحل المشكلات 🧩\n🔹 تحويل المعلومات الصعبة لتجارب عملية تثبت بالذهن ويفتكروها بسهولة 🎯\n🔹 تحفيز روح التعاون والتواصل مع الآخرين\nفي التميز ستور وفرنالك العاب تعليمية مصممة بعناية لتواكب احتياجات طفلك الدراسية\nوتجمع بين المتعة والفائدة في وقت واحد لأن اللعب الذكي هو أقصر طريق للتفوق 😍💪\nاستثمري في مستقبل طفلك.. واختاري الالعاب المناسبة لعمره او ابعتلنا عمره واحنا نساعدك\nالشحن متاح لكل المحافظات 🚚\n#tamayoz\\_store #التميز\\_ستور #school #العاب\\_اطفال #تنمية\\_مهارات #montessori\nالتميز ستور\nToys\nSend message",
+          "cta": "",
+          "image": "https://scontent-lax3-1.xx.fbcdn.net/v/t39.35426-6/708363596_986308217592762_4314162452607859266_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=110&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=kdsF41GMbDcQ7kNvwHjQ2OT&_nc_oc=Adpjt3J0e1By2zzkcuh2nFJG88fEu-n-H_uuazdjt9AkptKvNeA9wkmrool4VjdRtKM&_nc_zt=14&_nc_ht=scontent-lax3-1.xx&_nc_gid=Eu0OT1WgbrPyGXfAiptrxA&_nc_ss=7b289&oh=00_AQQB7ASplB2Xytlkjs7NLhDE3yoam2y48jQvNKTjk65gDw&oe=6AF7460E",
+          "link_url": "",
+          "title": "",
+          "video": null
+        },
+        {
+          "body": "كنتى ام لكام طفل لما عرفتي ان الالعاب التعليمية اهم وسيلة لدعم التحصيل الدراسي للطفل 🥹👋\nوانها مش مجرد تسليه وترفيه دي مهمة حتى وقت الدراسة لان بتساعدهم على\n🔹 تعزيز التركيز والانتباه وسرعة الادراك أثناء المذاكرة\n🔹تنمية مهارات التفكير النقدي وحل المشكلات 🧩\n🔹 تحويل المعلومات الصعبة لتجارب عملية تثبت بالذهن ويفتكروها بسهولة 🎯\n🔹 تحفيز روح التعاون والتواصل مع الآخرين\nفي التميز ستور وفرنالك العاب تعليمية مصممة بعناية لتواكب احتياجات طفلك الدراسية\nوتجمع بين المتعة والفائدة في وقت واحد لأن اللعب الذكي هو أقصر طريق للتفوق 😍💪\nاستثمري في مستقبل طفلك.. واختاري الالعاب المناسبة لعمره او ابعتلنا عمره واحنا نساعدك\nالشحن متاح لكل المحافظات 🚚\n#tamayoz\\_store #التميز\\_ستور #school #العاب\\_اطفال #تنمية\\_مهارات #montessori\nالتميز ستور\nToys\nSend message",
+          "cta": "",
+          "image": "https://scontent-lax3-2.xx.fbcdn.net/v/t39.35426-6/708518126_1013215454503505_11359837829193121_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=100&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=kOoAOw-cc9UQ7kNvwEcJRpC&_nc_oc=Adq5rm6Dqeo5fPEU--RWNM9fJp83MimH9kZTxUuNzXsUuXC8gNDfdUqxJ0W0WkpKfIk&_nc_zt=14&_nc_ht=scontent-lax3-2.xx&_nc_gid=Eu0OT1WgbrPyGXfAiptrxA&_nc_ss=7b289&oh=00_AQQ3eES2FL_hB7bn9oiNC_LW5BIhmPelaeIAvpw8645odg&oe=6AF75272",
+          "link_url": "",
+          "title": "",
+          "video": null
+        },
+        {
+          "body": "كنتى ام لكام طفل لما عرفتي ان الالعاب التعليمية اهم وسيلة لدعم التحصيل الدراسي للطفل 🥹👋\nوانها مش مجرد تسليه وترفيه دي مهمة حتى وقت الدراسة لان بتساعدهم على\n🔹 تعزيز التركيز والانتباه وسرعة الادراك أثناء المذاكرة\n🔹تنمية مهارات التفكير النقدي وحل المشكلات 🧩\n🔹 تحويل المعلومات الصعبة لتجارب عملية تثبت بالذهن ويفتكروها بسهولة 🎯\n🔹 تحفيز روح التعاون والتواصل مع الآخرين\nفي التميز ستور وفرنالك العاب تعليمية مصممة بعناية لتواكب احتياجات طفلك الدراسية\nوتجمع بين المتعة والفائدة في وقت واحد لأن اللعب الذكي هو أقصر طريق للتفوق 😍💪\nاستثمري في مستقبل طفلك.. واختاري الالعاب المناسبة لعمره او ابعتلنا عمره واحنا نساعدك\nالشحن متاح لكل المحافظات 🚚\n#tamayoz\\_store #التميز\\_ستور #school #العاب\\_اطفال #تنمية\\_مهارات #montessori\nالتميز ستور\nToys\nSend message",
+          "cta": "",
+          "image": "https://scontent-lax3-2.xx.fbcdn.net/v/t39.35426-6/709730086_2032752750669463_4590949500134046448_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=103&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=q4PcDZGrcUEQ7kNvwHxhubF&_nc_oc=Adql-XNYuw-Vh-An2HmjkxsiXYpfKS8S8pYQwCYiQZfeFDfP-AJ5Mtg1Xy9R0yk1PLs&_nc_zt=14&_nc_ht=scontent-lax3-2.xx&_nc_gid=Eu0OT1WgbrPyGXfAiptrxA&_nc_ss=7b289&oh=00_AQQgeTWcScVVIWV0VTdBrzgCyzpCHLZt_2pPOmpA6lJELw&oe=6AF7371A",
+          "link_url": "",
+          "title": "",
+          "video": null
+        },
+        {
+          "body": "كنتى ام لكام طفل لما عرفتي ان الالعاب التعليمية اهم وسيلة لدعم التحصيل الدراسي للطفل 🥹👋\nوانها مش مجرد تسليه وترفيه دي مهمة حتى وقت الدراسة لان بتساعدهم على\n🔹 تعزيز التركيز والانتباه وسرعة الادراك أثناء المذاكرة\n🔹تنمية مهارات التفكير النقدي وحل المشكلات 🧩\n🔹 تحويل المعلومات الصعبة لتجارب عملية تثبت بالذهن ويفتكروها بسهولة 🎯\n🔹 تحفيز روح التعاون والتواصل مع الآخرين\nفي التميز ستور وفرنالك العاب تعليمية مصممة بعناية لتواكب احتياجات طفلك الدراسية\nوتجمع بين المتعة والفائدة في وقت واحد لأن اللعب الذكي هو أقصر طريق للتفوق 😍💪\nاستثمري في مستقبل طفلك.. واختاري الالعاب المناسبة لعمره او ابعتلنا عمره واحنا نساعدك\nالشحن متاح لكل المحافظات 🚚\n#tamayoz\\_store #التميز\\_ستور #school #العاب\\_اطفال #تنمية\\_مهارات #montessori\nالتميز ستور\nToys\nSend message",
+          "cta": "",
+          "image": "https://scontent-lax3-2.xx.fbcdn.net/v/t39.35426-6/708414651_1487814423070825_1556394187574956484_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=103&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=XmXJRIrqXDQQ7kNvwGooZEN&_nc_oc=Adr70gFf5u4fzqbfGuy4SFasfZZqlihi4oAMBig0HrdGjolOdN47X4dYPkEKVcLZf58&_nc_zt=14&_nc_ht=scontent-lax3-2.xx&_nc_gid=Eu0OT1WgbrPyGXfAiptrxA&_nc_ss=7b289&oh=00_AQQlpl7kS47uBmaMphJvPfcq_4poDIcV-IvxD4YPW5oJ7g&oe=6AF73E95",
+          "link_url": "",
+          "title": "",
+          "video": null
+        },
+        {
+          "body": "كنتى ام لكام طفل لما عرفتي ان الالعاب التعليمية اهم وسيلة لدعم التحصيل الدراسي للطفل 🥹👋\nوانها مش مجرد تسليه وترفيه دي مهمة حتى وقت الدراسة لان بتساعدهم على\n🔹 تعزيز التركيز والانتباه وسرعة الادراك أثناء المذاكرة\n🔹تنمية مهارات التفكير النقدي وحل المشكلات 🧩\n🔹 تحويل المعلومات الصعبة لتجارب عملية تثبت بالذهن ويفتكروها بسهولة 🎯\n🔹 تحفيز روح التعاون والتواصل مع الآخرين\nفي التميز ستور وفرنالك العاب تعليمية مصممة بعناية لتواكب احتياجات طفلك الدراسية\nوتجمع بين المتعة والفائدة في وقت واحد لأن اللعب الذكي هو أقصر طريق للتفوق 😍💪\nاستثمري في مستقبل طفلك.. واختاري الالعاب المناسبة لعمره او ابعتلنا عمره واحنا نساعدك\nالشحن متاح لكل المحافظات 🚚\n#tamayoz\\_store #التميز\\_ستور #school #العاب\\_اطفال #تنمية\\_مهارات #montessori\nالتميز ستور\nToys\nSend message",
+          "cta": "",
+          "image": "https://scontent-lax3-2.xx.fbcdn.net/v/t39.35426-6/708362880_965155766318631_8376820377246257441_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=111&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=Jd9dOZoagv4Q7kNvwEZqWWo&_nc_oc=AdrXaDmNAohzrhTRkNer2Yfq2Adb1Oy-rsGJv7LcPoRYpRons7WhUy2htcbjPTR1pQM&_nc_zt=14&_nc_ht=scontent-lax3-2.xx&_nc_gid=Eu0OT1WgbrPyGXfAiptrxA&_nc_ss=7b289&oh=00_AQTuPXReGjOc9Ea3cQSILkW1oFK9OzvBB-tokMIVenNb7g&oe=6AF74AC5",
+          "link_url": "",
+          "title": "",
+          "video": null
+        },
+        {
+          "body": "كنتى ام لكام طفل لما عرفتي ان الالعاب التعليمية اهم وسيلة لدعم التحصيل الدراسي للطفل 🥹👋\nوانها مش مجرد تسليه وترفيه دي مهمة حتى وقت الدراسة لان بتساعدهم على\n🔹 تعزيز التركيز والانتباه وسرعة الادراك أثناء المذاكرة\n🔹تنمية مهارات التفكير النقدي وحل المشكلات 🧩\n🔹 تحويل المعلومات الصعبة لتجارب عملية تثبت بالذهن ويفتكروها بسهولة 🎯\n🔹 تحفيز روح التعاون والتواصل مع الآخرين\nفي التميز ستور وفرنالك العاب تعليمية مصممة بعناية لتواكب احتياجات طفلك الدراسية\nوتجمع بين المتعة والفائدة في وقت واحد لأن اللعب الذكي هو أقصر طريق للتفوق 😍💪\nاستثمري في مستقبل طفلك.. واختاري الالعاب المناسبة لعمره او ابعتلنا عمره واحنا نساعدك\nالشحن متاح لكل المحافظات 🚚\n#tamayoz\\_store #التميز\\_ستور #school #العاب\\_اطفال #تنمية\\_مهارات #montessori\nالتميز ستور\nToys\nSend message",
+          "cta": "",
+          "image": "https://scontent-lax3-1.xx.fbcdn.net/v/t39.35426-6/709609211_1537158058007699_189119981821835238_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=102&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=e4JxU8eQ4lcQ7kNvwHe5Uy9&_nc_oc=Adpa-U32q6Bexd8bD4wexHyHcVvGa9DMZjBvqF_Gs8SP5mvSA-_OBOJGp7qkm3xQNt4&_nc_zt=14&_nc_ht=scontent-lax3-1.xx&_nc_gid=Eu0OT1WgbrPyGXfAiptrxA&_nc_ss=7b289&oh=00_AQS-yRq2bi1RoXCmhxk6wZEs1GTKYidGRjCqLYyn1zKEbw&oe=6AF752D4",
+          "link_url": "",
+          "title": "",
+          "video": null
+        },
+        {
+          "body": "كنتى ام لكام طفل لما عرفتي ان الالعاب التعليمية اهم وسيلة لدعم التحصيل الدراسي للطفل 🥹👋\nوانها مش مجرد تسليه وترفيه دي مهمة حتى وقت الدراسة لان بتساعدهم على\n🔹 تعزيز التركيز والانتباه وسرعة الادراك أثناء المذاكرة\n🔹تنمية مهارات التفكير النقدي وحل المشكلات 🧩\n🔹 تحويل المعلومات الصعبة لتجارب عملية تثبت بالذهن ويفتكروها بسهولة 🎯\n🔹 تحفيز روح التعاون والتواصل مع الآخرين\nفي التميز ستور وفرنالك العاب تعليمية مصممة بعناية لتواكب احتياجات طفلك الدراسية\nوتجمع بين المتعة والفائدة في وقت واحد لأن اللعب الذكي هو أقصر طريق للتفوق 😍💪\nاستثمري في مستقبل طفلك.. واختاري الالعاب المناسبة لعمره او ابعتلنا عمره واحنا نساعدك\nالشحن متاح لكل المحافظات 🚚\n#tamayoz\\_store #التميز\\_ستور #school #العاب\\_اطفال #تنمية\\_مهارات #montessori\nالتميز ستور\nToys\nSend message",
+          "cta": "",
+          "image": "https://scontent-lax3-1.xx.fbcdn.net/v/t39.35426-6/709567976_1025036173384478_7893291724959678103_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=110&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=NVHEEQ9tzcsQ7kNvwGtLpV6&_nc_oc=Adp5c5BXC6RP1n8IZGO4mvz1fgZxF12s__Vf-MJbMMtWsx0fGLozoNzBQVCebXeBc8Q&_nc_zt=14&_nc_ht=scontent-lax3-1.xx&_nc_gid=Eu0OT1WgbrPyGXfAiptrxA&_nc_ss=7b289&oh=00_AQTsuMeRRFBH9ytLmpX1g-utSnV5f5hU-A93TayMmesBOQ&oe=6AF76592",
+          "link_url": "",
+          "title": "",
+          "video": null
+        },
+        {
+          "body": "كنتى ام لكام طفل لما عرفتي ان الالعاب التعليمية اهم وسيلة لدعم التحصيل الدراسي للطفل 🥹👋\nوانها مش مجرد تسليه وترفيه دي مهمة حتى وقت الدراسة لان بتساعدهم على\n🔹 تعزيز التركيز والانتباه وسرعة الادراك أثناء المذاكرة\n🔹تنمية مهارات التفكير النقدي وحل المشكلات 🧩\n🔹 تحويل المعلومات الصعبة لتجارب عملية تثبت بالذهن ويفتكروها بسهولة 🎯\n🔹 تحفيز روح التعاون والتواصل مع الآخرين\nفي التميز ستور وفرنالك العاب تعليمية مصممة بعناية لتواكب احتياجات طفلك الدراسية\nوتجمع بين المتعة والفائدة في وقت واحد لأن اللعب الذكي هو أقصر طريق للتفوق 😍💪\nاستثمري في مستقبل طفلك.. واختاري الالعاب المناسبة لعمره او ابعتلنا عمره واحنا نساعدك\nالشحن متاح لكل المحافظات 🚚\n#tamayoz\\_store #التميز\\_ستور #school #العاب\\_اطفال #تنمية\\_مهارات #montessori\nالتميز ستور\nToys\nSend message",
+          "cta": "",
+          "image": "https://scontent-lax3-2.xx.fbcdn.net/v/t39.35426-6/708345723_929116743498876_450334341372790337_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=107&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=yMQ6vCfUgVMQ7kNvwGSe1y1&_nc_oc=AdqZFQIlppIRN2e-YiDVSF5skLbuFASoDsGjucxtyyHPeTy9_rzy1YSC69A7z4dE-uk&_nc_zt=14&_nc_ht=scontent-lax3-2.xx&_nc_gid=Eu0OT1WgbrPyGXfAiptrxA&_nc_ss=7b289&oh=00_AQS-xk16rRTiQHy9FysUvFQpJs-vmyvYi0FOB2SzOKiUhw&oe=6AF76644",
+          "link_url": "",
+          "title": "",
+          "video": null
+        },
+        {
+          "body": "كنتى ام لكام طفل لما عرفتي ان الالعاب التعليمية اهم وسيلة لدعم التحصيل الدراسي للطفل 🥹👋\nوانها مش مجرد تسليه وترفيه دي مهمة حتى وقت الدراسة لان بتساعدهم على\n🔹 تعزيز التركيز والانتباه وسرعة الادراك أثناء المذاكرة\n🔹تنمية مهارات التفكير النقدي وحل المشكلات 🧩\n🔹 تحويل المعلومات الصعبة لتجارب عملية تثبت بالذهن ويفتكروها بسهولة 🎯\n🔹 تحفيز روح التعاون والتواصل مع الآخرين\nفي التميز ستور وفرنالك العاب تعليمية مصممة بعناية لتواكب احتياجات طفلك الدراسية\nوتجمع بين المتعة والفائدة في وقت واحد لأن اللعب الذكي هو أقصر طريق للتفوق 😍💪\nاستثمري في مستقبل طفلك.. واختاري الالعاب المناسبة لعمره او ابعتلنا عمره واحنا نساعدك\nالشحن متاح لكل المحافظات 🚚\n#tamayoz\\_store #التميز\\_ستور #school #العاب\\_اطفال #تنمية\\_مهارات #montessori\nالتميز ستور\nToys\nSend message",
+          "cta": "",
+          "image": "https://scontent-lax7-1.xx.fbcdn.net/v/t39.35426-6/708333395_1256051209685151_5824429149476127104_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=105&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=uOCYrQvDYD0Q7kNvwEJkdk2&_nc_oc=AdoIWHORGVFaG6ripduJm6OkWTmHf2LmS4CJfz2doPWp2JoL5TC_Y-ilrUlNW5cH8cc&_nc_zt=14&_nc_ht=scontent-lax7-1.xx&_nc_gid=Eu0OT1WgbrPyGXfAiptrxA&_nc_ss=7b289&oh=00_AQQfDl5lzsOBdCBn4ytHISGhgVig5IlO6HVBXw3G3BQm7Q&oe=6AF76BFC",
+          "link_url": "",
+          "title": "",
+          "video": null
+        },
+        {
+          "body": "كنتى ام لكام طفل لما عرفتي ان الالعاب التعليمية اهم وسيلة لدعم التحصيل الدراسي للطفل 🥹👋\nوانها مش مجرد تسليه وترفيه دي مهمة حتى وقت الدراسة لان بتساعدهم على\n🔹 تعزيز التركيز والانتباه وسرعة الادراك أثناء المذاكرة\n🔹تنمية مهارات التفكير النقدي وحل المشكلات 🧩\n🔹 تحويل المعلومات الصعبة لتجارب عملية تثبت بالذهن ويفتكروها بسهولة 🎯\n🔹 تحفيز روح التعاون والتواصل مع الآخرين\nفي التميز ستور وفرنالك العاب تعليمية مصممة بعناية لتواكب احتياجات طفلك الدراسية\nوتجمع بين المتعة والفائدة في وقت واحد لأن اللعب الذكي هو أقصر طريق للتفوق 😍💪\nاستثمري في مستقبل طفلك.. واختاري الالعاب المناسبة لعمره او ابعتلنا عمره واحنا نساعدك\nالشحن متاح لكل المحافظات 🚚\n#tamayoz\\_store #التميز\\_ستور #school #العاب\\_اطفال #تنمية\\_مهارات #montessori\nالتميز ستور\nToys\nSend message",
+          "cta": "",
+          "image": "https://scontent-lax3-2.xx.fbcdn.net/v/t39.35426-6/709767486_2142358289888223_6001608131365981610_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=103&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=THb00NsaWDQQ7kNvwHsZf16&_nc_oc=AdquTDYCYxZ_i2goaJnkp3Aq7x8ENxU0_03lE0-pivCqHdXJt-3T9ReV3cgu8cLqD9Y&_nc_zt=14&_nc_ht=scontent-lax3-2.xx&_nc_gid=Eu0OT1WgbrPyGXfAiptrxA&_nc_ss=7b289&oh=00_AQTqoVI6pwvtXqzaJmj-wWfodEmVXY9qKhV-mEcSaYVTOQ&oe=6AF756BE",
+          "link_url": "",
+          "title": "",
+          "video": null
+        },
+        {
+          "body": "كنتى ام لكام طفل لما عرفتي ان الالعاب التعليمية اهم وسيلة لدعم التحصيل الدراسي للطفل 🥹👋\nوانها مش مجرد تسليه وترفيه دي مهمة حتى وقت الدراسة لان بتساعدهم على\n🔹 تعزيز التركيز والانتباه وسرعة الادراك أثناء المذاكرة\n🔹تنمية مهارات التفكير النقدي وحل المشكلات 🧩\n🔹 تحويل المعلومات الصعبة لتجارب عملية تثبت بالذهن ويفتكروها بسهولة 🎯\n🔹 تحفيز روح التعاون والتواصل مع الآخرين\nفي التميز ستور وفرنالك العاب تعليمية مصممة بعناية لتواكب احتياجات طفلك الدراسية\nوتجمع بين المتعة والفائدة في وقت واحد لأن اللعب الذكي هو أقصر طريق للتفوق 😍💪\nاستثمري في مستقبل طفلك.. واختاري الالعاب المناسبة لعمره او ابعتلنا عمره واحنا نساعدك\nالشحن متاح لكل المحافظات 🚚\n#tamayoz\\_store #التميز\\_ستور #school #العاب\\_اطفال #تنمية\\_مهارات #montessori\nالتميز ستور\nToys\nSend message",
+          "cta": "",
+          "image": "https://scontent-lax3-2.xx.fbcdn.net/v/t39.35426-6/709883025_1680140719856725_8441307310360394524_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=103&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=Rg4lwHL5-LUQ7kNvwHwX2jV&_nc_oc=AdrbyTmSO46t3tzR8aONaSiA9Tx8M52aC8UrELkCpeda7hsGqI3CZxigL9iO8HuxY98&_nc_zt=14&_nc_ht=scontent-lax3-2.xx&_nc_gid=Eu0OT1WgbrPyGXfAiptrxA&_nc_ss=7b289&oh=00_AQRDSY4rMW4UTYpIIZcfXTjrh1uKE-oj_2oIS1XQpkZSuQ&oe=6AF73F34",
+          "link_url": "",
+          "title": "",
+          "video": null
+        },
+        {
+          "body": "كنتى ام لكام طفل لما عرفتي ان الالعاب التعليمية اهم وسيلة لدعم التحصيل الدراسي للطفل 🥹👋\nوانها مش مجرد تسليه وترفيه دي مهمة حتى وقت الدراسة لان بتساعدهم على\n🔹 تعزيز التركيز والانتباه وسرعة الادراك أثناء المذاكرة\n🔹تنمية مهارات التفكير النقدي وحل المشكلات 🧩\n🔹 تحويل المعلومات الصعبة لتجارب عملية تثبت بالذهن ويفتكروها بسهولة 🎯\n🔹 تحفيز روح التعاون والتواصل مع الآخرين\nفي التميز ستور وفرنالك العاب تعليمية مصممة بعناية لتواكب احتياجات طفلك الدراسية\nوتجمع بين المتعة والفائدة في وقت واحد لأن اللعب الذكي هو أقصر طريق للتفوق 😍💪\nاستثمري في مستقبل طفلك.. واختاري الالعاب المناسبة لعمره او ابعتلنا عمره واحنا نساعدك\nالشحن متاح لكل المحافظات 🚚\n#tamayoz\\_store #التميز\\_ستور #school #العاب\\_اطفال #تنمية\\_مهارات #montessori\nالتميز ستور\nToys\nSend message",
+          "cta": "",
+          "image": "https://scontent-lax3-1.xx.fbcdn.net/v/t39.35426-6/709680333_1306480011593075_8876764735624667033_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=102&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=jsjdqsM7VhQQ7kNvwExV_b9&_nc_oc=Ado9MXD6rVIb5K3OEs-LHmkrF22CXME7HCHPzIk2letiQpzPzhyl-fZvWK-EMpDs1wA&_nc_zt=14&_nc_ht=scontent-lax3-1.xx&_nc_gid=Eu0OT1WgbrPyGXfAiptrxA&_nc_ss=7b289&oh=00_AQR6R9_p98-h5Uzd6yZnzo9ju3UlTzCY-D0PYQOI-W9LCQ&oe=6AF76A9F",
+          "link_url": "",
+          "title": "",
+          "video": null
+        },
+        {
+          "body": "كنتى ام لكام طفل لما عرفتي ان الالعاب التعليمية اهم وسيلة لدعم التحصيل الدراسي للطفل 🥹👋\nوانها مش مجرد تسليه وترفيه دي مهمة حتى وقت الدراسة لان بتساعدهم على\n🔹 تعزيز التركيز والانتباه وسرعة الادراك أثناء المذاكرة\n🔹تنمية مهارات التفكير النقدي وحل المشكلات 🧩\n🔹 تحويل المعلومات الصعبة لتجارب عملية تثبت بالذهن ويفتكروها بسهولة 🎯\n🔹 تحفيز روح التعاون والتواصل مع الآخرين\nفي التميز ستور وفرنالك العاب تعليمية مصممة بعناية لتواكب احتياجات طفلك الدراسية\nوتجمع بين المتعة والفائدة في وقت واحد لأن اللعب الذكي هو أقصر طريق للتفوق 😍💪\nاستثمري في مستقبل طفلك.. واختاري الالعاب المناسبة لعمره او ابعتلنا عمره واحنا نساعدك\nالشحن متاح لكل المحافظات 🚚\n#tamayoz\\_store #التميز\\_ستور #school #العاب\\_اطفال #تنمية\\_مهارات #montessori\nالتميز ستور\nToys\nSend message",
+          "cta": "",
+          "image": "https://scontent-lax7-1.xx.fbcdn.net/v/t39.35426-6/709980851_1334233221975809_6715731726843578440_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=101&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=U7wxSIhT7o0Q7kNvwGIxf0Y&_nc_oc=Ado9XUBIaSdk6qyFhZYXZ-xnu_resTM73vu_6gKEaIsbVdkPEsJBm8YLSopN_f4UaXU&_nc_zt=14&_nc_ht=scontent-lax7-1.xx&_nc_gid=Eu0OT1WgbrPyGXfAiptrxA&_nc_ss=7b289&oh=00_AQTucr-DvMu5Rm2So9vyufWkpyaD9Y-HAxEatInUtHa3Mw&oe=6AF75784",
+          "link_url": "",
+          "title": "",
+          "video": null
+        },
+        {
+          "body": "كنتى ام لكام طفل لما عرفتي ان الالعاب التعليمية اهم وسيلة لدعم التحصيل الدراسي للطفل 🥹👋\nوانها مش مجرد تسليه وترفيه دي مهمة حتى وقت الدراسة لان بتساعدهم على\n🔹 تعزيز التركيز والانتباه وسرعة الادراك أثناء المذاكرة\n🔹تنمية مهارات التفكير النقدي وحل المشكلات 🧩\n🔹 تحويل المعلومات الصعبة لتجارب عملية تثبت بالذهن ويفتكروها بسهولة 🎯\n🔹 تحفيز روح التعاون والتواصل مع الآخرين\nفي التميز ستور وفرنالك العاب تعليمية مصممة بعناية لتواكب احتياجات طفلك الدراسية\nوتجمع بين المتعة والفائدة في وقت واحد لأن اللعب الذكي هو أقصر طريق للتفوق 😍💪\nاستثمري في مستقبل طفلك.. واختاري الالعاب المناسبة لعمره او ابعتلنا عمره واحنا نساعدك\nالشحن متاح لكل المحافظات 🚚\n#tamayoz\\_store #التميز\\_ستور #school #العاب\\_اطفال #تنمية\\_مهارات #montessori\nالتميز ستور\nToys\nSend message",
+          "cta": "",
+          "image": "https://scontent-lax3-1.xx.fbcdn.net/v/t39.35426-6/708363678_1535998148188348_6021482492616813729_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=108&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=xrt2VRu6VYsQ7kNvwE9Qebv&_nc_oc=AdpOxiF8bHkCYDxBou9EUW_igBXSN2MCEwq23wsAhDPw_t-yinasM6WQ2ae83CsyUVI&_nc_zt=14&_nc_ht=scontent-lax3-1.xx&_nc_gid=Eu0OT1WgbrPyGXfAiptrxA&_nc_ss=7b289&oh=00_AQQCZH8ZkbEwhhpKPcC72vhs-mcGjoQr69j45QFjfAktnQ&oe=6AF739E4",
+          "link_url": "",
+          "title": "",
+          "video": null
+        },
+        {
+          "body": "كنتى ام لكام طفل لما عرفتي ان الالعاب التعليمية اهم وسيلة لدعم التحصيل الدراسي للطفل 🥹👋\nوانها مش مجرد تسليه وترفيه دي مهمة حتى وقت الدراسة لان بتساعدهم على\n🔹 تعزيز التركيز والانتباه وسرعة الادراك أثناء المذاكرة\n🔹تنمية مهارات التفكير النقدي وحل المشكلات 🧩\n🔹 تحويل المعلومات الصعبة لتجارب عملية تثبت بالذهن ويفتكروها بسهولة 🎯\n🔹 تحفيز روح التعاون والتواصل مع الآخرين\nفي التميز ستور وفرنالك العاب تعليمية مصممة بعناية لتواكب احتياجات طفلك الدراسية\nوتجمع بين المتعة والفائدة في وقت واحد لأن اللعب الذكي هو أقصر طريق للتفوق 😍💪\nاستثمري في مستقبل طفلك.. واختاري الالعاب المناسبة لعمره او ابعتلنا عمره واحنا نساعدك\nالشحن متاح لكل المحافظات 🚚\n#tamayoz\\_store #التميز\\_ستور #school #العاب\\_اطفال #تنمية\\_مهارات #montessori\nالتميز ستور\nToys\nSend message",
+          "cta": "",
+          "image": "https://scontent-lax3-1.xx.fbcdn.net/v/t39.35426-6/708376979_999355199696073_7440546815455287544_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=104&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=TJZKh-GOAlcQ7kNvwG7VoQ0&_nc_oc=Adp7e5gHQjumUUz4g9s6BPBhNAZcwNaQU0cmeDkGeuEdGqNMSXC-yAD8SWI0V9TmUKc&_nc_zt=14&_nc_ht=scontent-lax3-1.xx&_nc_gid=Eu0OT1WgbrPyGXfAiptrxA&_nc_ss=7b289&oh=00_AQRELXanwknpo9xlej5IiMOLWY4DamWtnS5Vo7pFrGM_Qw&oe=6AF74387",
+          "link_url": "",
+          "title": "",
+          "video": null
+        },
+        {
+          "body": "كنتى ام لكام طفل لما عرفتي ان الالعاب التعليمية اهم وسيلة لدعم التحصيل الدراسي للطفل 🥹👋\nوانها مش مجرد تسليه وترفيه دي مهمة حتى وقت الدراسة لان بتساعدهم على\n🔹 تعزيز التركيز والانتباه وسرعة الادراك أثناء المذاكرة\n🔹تنمية مهارات التفكير النقدي وحل المشكلات 🧩\n🔹 تحويل المعلومات الصعبة لتجارب عملية تثبت بالذهن ويفتكروها بسهولة 🎯\n🔹 تحفيز روح التعاون والتواصل مع الآخرين\nفي التميز ستور وفرنالك العاب تعليمية مصممة بعناية لتواكب احتياجات طفلك الدراسية\nوتجمع بين المتعة والفائدة في وقت واحد لأن اللعب الذكي هو أقصر طريق للتفوق 😍💪\nاستثمري في مستقبل طفلك.. واختاري الالعاب المناسبة لعمره او ابعتلنا عمره واحنا نساعدك\nالشحن متاح لكل المحافظات 🚚\n#tamayoz\\_store #التميز\\_ستور #school #العاب\\_اطفال #تنمية\\_مهارات #montessori\nالتميز ستور\nToys\nSend message",
+          "cta": "",
+          "image": "https://scontent-lax3-2.xx.fbcdn.net/v/t39.35426-6/709980850_1925645038143350_4529755033880783586_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=106&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=BllMnrG8fSUQ7kNvwGA4GSV&_nc_oc=AdpkNupPSvvNyYt9gjyRKB1hG7hhk_Ix5xD7KbSaH1UAh13ldPRrz0C-jtv8oKTU5O8&_nc_zt=14&_nc_ht=scontent-lax3-2.xx&_nc_gid=Eu0OT1WgbrPyGXfAiptrxA&_nc_ss=7b289&oh=00_AQT-HliZGzMlcd_JW1iq1k6VyqHHYWteQ4pbkgMXbLfvMw&oe=6AF73DCD",
+          "link_url": "",
+          "title": "",
+          "video": null
+        }
+      ]
     },
     {
       "id": "2429963320788445",
@@ -428,6 +1475,7 @@
       "link_url": "https://bit.ly/RomaSpecialOne",
       "link_title": "",
       "cta_text": "https://bit.ly/RomaSpecialOne",
+      "link_caption": "",
       "images": [
         "https://scontent-lax7-1.xx.fbcdn.net/v/t39.35426-6/862272443_2091326398163199_6676946858768770163_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=101&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=NlwKW6nW78UQ7kNvwEIlREn&_nc_oc=Adq9Tb1YkSzvM0B1Mag0MngC34SexT2hdP0W3mWoEDSL1A4TFpLJ5yCRMnVlucXRTlQ&_nc_zt=14&_nc_ht=scontent-lax7-1.xx&_nc_gid=Eu0OT1WgbrPyGXfAiptrxA&_nc_ss=7b289&oh=00_AQTvpfzQSIA4cUYc1zRRLoWVvdBs0Z7FZN8H3bVzN4oHkQ&oe=6AF74004",
         "https://scontent-lax3-2.xx.fbcdn.net/v/t39.35426-6/859396189_1775201560380360_8935017300079260669_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=106&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=ohEXL1vLVO0Q7kNvwFaQ5ea&_nc_oc=AdrIYav6EQySB7Ms83M2EeOcniAKwbdG09Wdt91HObxZ48Z8C0YcUgX4bC32jz-u6BM&_nc_zt=14&_nc_ht=scontent-lax3-2.xx&_nc_gid=Eu0OT1WgbrPyGXfAiptrxA&_nc_ss=7b289&oh=00_AQSF9nJDoSIgqi2LeEMSgml2idmpWvilNmx46VexuTs1bg&oe=6AF73EC8",
@@ -440,7 +1488,75 @@
       ],
       "has_video": false,
       "same_creative_count": 5,
-      "multiple_versions": false
+      "multiple_versions": false,
+      "cta_type": "HTTPS_BIT_LY_ROMASPECIALONE",
+      "display_format": "dco",
+      "cards": [
+        {
+          "body": "لوحدك أو مع صحابك؟ 🍕\nفي روما بيتزا تو جو، دايمًا هتلاقي العرض اللي يناسبك!\nبنقدملك عروض مختلفة تجمع بين الطعم اللي بتحبه والتوفير اللي بتدور عليه\nعرض Special One\nبيتزا حجم وسط من اختيارك\nعرض Special One Plus\nبيتزا حجم وسط من اختيارك مع مشروب وكول سلو أو ابل باي\nعرض Double Deal Small\nاختار 2 بيتزا حجم صغير و 2 مشروب\nعرض Double Deal Medium\nاختار 2 بيتزا حجم وسط و 2 مشروب\nعرض Double Deal Large\nاختار 2 بيتزا حجم لارج مع 2 كول سلو و 2 مشروب\nعرض Roma Box\nبيتزا حجم وسط مع حلقات بصل وكرانشي فرايز ومشروب\nعرض The Triple Box\nاختار 2 بيتزا حجم وسط مع باربيكيو تشيكن وينجز وفرايز ومعاهم 2 أبل باي\nعرض Buy two get one\nاشتري 2 بيتزا حجم وسط واحصل علي الثالثة مجانا\nاطلب دلوقتي واختار العرض اللي يناسبك 🙌\nالهوت لاين: 15667 ☎️\nالويب سايت: 🌐\nالموبايل أبلكيشن 📱",
+          "cta": "https://bit.ly/RomaSpecialOne",
+          "image": "https://scontent-lax7-1.xx.fbcdn.net/v/t39.35426-6/862272443_2091326398163199_6676946858768770163_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=101&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=NlwKW6nW78UQ7kNvwEIlREn&_nc_oc=Adq9Tb1YkSzvM0B1Mag0MngC34SexT2hdP0W3mWoEDSL1A4TFpLJ5yCRMnVlucXRTlQ&_nc_zt=14&_nc_ht=scontent-lax7-1.xx&_nc_gid=Eu0OT1WgbrPyGXfAiptrxA&_nc_ss=7b289&oh=00_AQTvpfzQSIA4cUYc1zRRLoWVvdBs0Z7FZN8H3bVzN4oHkQ&oe=6AF74004",
+          "link_url": "https://bit.ly/RomaSpecialOne",
+          "title": "",
+          "video": null
+        },
+        {
+          "body": "لوحدك أو مع صحابك؟ 🍕\nفي روما بيتزا تو جو، دايمًا هتلاقي العرض اللي يناسبك!\nبنقدملك عروض مختلفة تجمع بين الطعم اللي بتحبه والتوفير اللي بتدور عليه\nعرض Special One\nبيتزا حجم وسط من اختيارك\nعرض Special One Plus\nبيتزا حجم وسط من اختيارك مع مشروب وكول سلو أو ابل باي\nعرض Double Deal Small\nاختار 2 بيتزا حجم صغير و 2 مشروب\nعرض Double Deal Medium\nاختار 2 بيتزا حجم وسط و 2 مشروب\nعرض Double Deal Large\nاختار 2 بيتزا حجم لارج مع 2 كول سلو و 2 مشروب\nعرض Roma Box\nبيتزا حجم وسط مع حلقات بصل وكرانشي فرايز ومشروب\nعرض The Triple Box\nاختار 2 بيتزا حجم وسط مع باربيكيو تشيكن وينجز وفرايز ومعاهم 2 أبل باي\nعرض Buy two get one\nاشتري 2 بيتزا حجم وسط واحصل علي الثالثة مجانا\nاطلب دلوقتي واختار العرض اللي يناسبك 🙌\nالهوت لاين: 15667 ☎️\nالويب سايت: 🌐\nالموبايل أبلكيشن 📱",
+          "cta": "https://bit.ly/RomaSpecialOne",
+          "image": "https://scontent-lax3-2.xx.fbcdn.net/v/t39.35426-6/859396189_1775201560380360_8935017300079260669_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=106&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=ohEXL1vLVO0Q7kNvwFaQ5ea&_nc_oc=AdrIYav6EQySB7Ms83M2EeOcniAKwbdG09Wdt91HObxZ48Z8C0YcUgX4bC32jz-u6BM&_nc_zt=14&_nc_ht=scontent-lax3-2.xx&_nc_gid=Eu0OT1WgbrPyGXfAiptrxA&_nc_ss=7b289&oh=00_AQSF9nJDoSIgqi2LeEMSgml2idmpWvilNmx46VexuTs1bg&oe=6AF73EC8",
+          "link_url": "https://bit.ly/RomaSpecialOne",
+          "title": "",
+          "video": null
+        },
+        {
+          "body": "لوحدك أو مع صحابك؟ 🍕\nفي روما بيتزا تو جو، دايمًا هتلاقي العرض اللي يناسبك!\nبنقدملك عروض مختلفة تجمع بين الطعم اللي بتحبه والتوفير اللي بتدور عليه\nعرض Special One\nبيتزا حجم وسط من اختيارك\nعرض Special One Plus\nبيتزا حجم وسط من اختيارك مع مشروب وكول سلو أو ابل باي\nعرض Double Deal Small\nاختار 2 بيتزا حجم صغير و 2 مشروب\nعرض Double Deal Medium\nاختار 2 بيتزا حجم وسط و 2 مشروب\nعرض Double Deal Large\nاختار 2 بيتزا حجم لارج مع 2 كول سلو و 2 مشروب\nعرض Roma Box\nبيتزا حجم وسط مع حلقات بصل وكرانشي فرايز ومشروب\nعرض The Triple Box\nاختار 2 بيتزا حجم وسط مع باربيكيو تشيكن وينجز وفرايز ومعاهم 2 أبل باي\nعرض Buy two get one\nاشتري 2 بيتزا حجم وسط واحصل علي الثالثة مجانا\nاطلب دلوقتي واختار العرض اللي يناسبك 🙌\nالهوت لاين: 15667 ☎️\nالويب سايت: 🌐\nالموبايل أبلكيشن 📱",
+          "cta": "https://bit.ly/RomaSpecialOne",
+          "image": "https://scontent-lax3-1.xx.fbcdn.net/v/t39.35426-6/858245686_4722602711354891_4098881715422766012_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=110&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=eC6sD5j7q2MQ7kNvwFWSjzU&_nc_oc=AdpsgQJzvYRsh9XvRI0r9wFwUNmp3-x4XkWNFJd5JTobhZssN-0Yst-ThlSrlNZJcLw&_nc_zt=14&_nc_ht=scontent-lax3-1.xx&_nc_gid=Eu0OT1WgbrPyGXfAiptrxA&_nc_ss=7b289&oh=00_AQSfvChu-LF-164jM6DFn8MWSYQ5n9f0_ZitrgWphVvhFg&oe=6AF767C5",
+          "link_url": "https://bit.ly/RomaSpecialOne",
+          "title": "",
+          "video": null
+        },
+        {
+          "body": "لوحدك أو مع صحابك؟ 🍕\nفي روما بيتزا تو جو، دايمًا هتلاقي العرض اللي يناسبك!\nبنقدملك عروض مختلفة تجمع بين الطعم اللي بتحبه والتوفير اللي بتدور عليه\nعرض Special One\nبيتزا حجم وسط من اختيارك\nعرض Special One Plus\nبيتزا حجم وسط من اختيارك مع مشروب وكول سلو أو ابل باي\nعرض Double Deal Small\nاختار 2 بيتزا حجم صغير و 2 مشروب\nعرض Double Deal Medium\nاختار 2 بيتزا حجم وسط و 2 مشروب\nعرض Double Deal Large\nاختار 2 بيتزا حجم لارج مع 2 كول سلو و 2 مشروب\nعرض Roma Box\nبيتزا حجم وسط مع حلقات بصل وكرانشي فرايز ومشروب\nعرض The Triple Box\nاختار 2 بيتزا حجم وسط مع باربيكيو تشيكن وينجز وفرايز ومعاهم 2 أبل باي\nعرض Buy two get one\nاشتري 2 بيتزا حجم وسط واحصل علي الثالثة مجانا\nاطلب دلوقتي واختار العرض اللي يناسبك 🙌\nالهوت لاين: 15667 ☎️\nالويب سايت: 🌐\nالموبايل أبلكيشن 📱",
+          "cta": "https://bit.ly/RomaSpecialOne",
+          "image": "https://scontent-lax3-1.xx.fbcdn.net/v/t39.35426-6/859014895_1731652857899064_707323381954969763_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=108&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=uN_p7VyI61gQ7kNvwGakZn7&_nc_oc=AdpylzILp5MfrHZQTkyZLvORPTjsDSZhosIt6vMbUR0wyHeUtAyNqFObfg-PZYUSLso&_nc_zt=14&_nc_ht=scontent-lax3-1.xx&_nc_gid=Eu0OT1WgbrPyGXfAiptrxA&_nc_ss=7b289&oh=00_AQQZ4k78YyDyxvvZOtmASw9evVG7HpqPziHGFaGKOznBiQ&oe=6AF752EE",
+          "link_url": "https://bit.ly/RomaSpecialOne",
+          "title": "",
+          "video": null
+        },
+        {
+          "body": "لوحدك أو مع صحابك؟ 🍕\nفي روما بيتزا تو جو، دايمًا هتلاقي العرض اللي يناسبك!\nبنقدملك عروض مختلفة تجمع بين الطعم اللي بتحبه والتوفير اللي بتدور عليه\nعرض Special One\nبيتزا حجم وسط من اختيارك\nعرض Special One Plus\nبيتزا حجم وسط من اختيارك مع مشروب وكول سلو أو ابل باي\nعرض Double Deal Small\nاختار 2 بيتزا حجم صغير و 2 مشروب\nعرض Double Deal Medium\nاختار 2 بيتزا حجم وسط و 2 مشروب\nعرض Double Deal Large\nاختار 2 بيتزا حجم لارج مع 2 كول سلو و 2 مشروب\nعرض Roma Box\nبيتزا حجم وسط مع حلقات بصل وكرانشي فرايز ومشروب\nعرض The Triple Box\nاختار 2 بيتزا حجم وسط مع باربيكيو تشيكن وينجز وفرايز ومعاهم 2 أبل باي\nعرض Buy two get one\nاشتري 2 بيتزا حجم وسط واحصل علي الثالثة مجانا\nاطلب دلوقتي واختار العرض اللي يناسبك 🙌\nالهوت لاين: 15667 ☎️\nالويب سايت: 🌐\nالموبايل أبلكيشن 📱",
+          "cta": "https://bit.ly/RomaSpecialOne",
+          "image": "https://scontent-lax7-1.xx.fbcdn.net/v/t39.35426-6/858462527_4598813550334467_4928146532274718016_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=101&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=ZKjRDzrIgIoQ7kNvwH5QPFV&_nc_oc=Adq7PCCHgz77sDYZ7w8D5A5pPprKqK8o1AUquPQQQA2sm6BbykYpXhVMhP_e5WLOpF8&_nc_zt=14&_nc_ht=scontent-lax7-1.xx&_nc_gid=Eu0OT1WgbrPyGXfAiptrxA&_nc_ss=7b289&oh=00_AQRpu3QqD7Lx3xK4uThlBNiaW6qziXvjwT_gEV4uBnAoeQ&oe=6AF73672",
+          "link_url": "https://bit.ly/RomaSpecialOne",
+          "title": "",
+          "video": null
+        },
+        {
+          "body": "لوحدك أو مع صحابك؟ 🍕\nفي روما بيتزا تو جو، دايمًا هتلاقي العرض اللي يناسبك!\nبنقدملك عروض مختلفة تجمع بين الطعم اللي بتحبه والتوفير اللي بتدور عليه\nعرض Special One\nبيتزا حجم وسط من اختيارك\nعرض Special One Plus\nبيتزا حجم وسط من اختيارك مع مشروب وكول سلو أو ابل باي\nعرض Double Deal Small\nاختار 2 بيتزا حجم صغير و 2 مشروب\nعرض Double Deal Medium\nاختار 2 بيتزا حجم وسط و 2 مشروب\nعرض Double Deal Large\nاختار 2 بيتزا حجم لارج مع 2 كول سلو و 2 مشروب\nعرض Roma Box\nبيتزا حجم وسط مع حلقات بصل وكرانشي فرايز ومشروب\nعرض The Triple Box\nاختار 2 بيتزا حجم وسط مع باربيكيو تشيكن وينجز وفرايز ومعاهم 2 أبل باي\nعرض Buy two get one\nاشتري 2 بيتزا حجم وسط واحصل علي الثالثة مجانا\nاطلب دلوقتي واختار العرض اللي يناسبك 🙌\nالهوت لاين: 15667 ☎️\nالويب سايت: 🌐\nالموبايل أبلكيشن 📱",
+          "cta": "https://bit.ly/RomaSpecialOne",
+          "image": "https://scontent-lax3-1.xx.fbcdn.net/v/t39.35426-6/862466668_1096744522993772_3209136699263035847_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=104&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=YMHDwRV_mGIQ7kNvwHezZUG&_nc_oc=Adog_vm2F-4gyJYor0qo_pWRaXVyAOJ6lzx1aJh8gB85UbR56t-F6m7ytCT8CuDXO4U&_nc_zt=14&_nc_ht=scontent-lax3-1.xx&_nc_gid=Eu0OT1WgbrPyGXfAiptrxA&_nc_ss=7b289&oh=00_AQRVtoZWXzONTVoLFbCoVxpX4D1MrBYiEH42NnF9Ls3K3Q&oe=6AF75162",
+          "link_url": "https://bit.ly/RomaSpecialOne",
+          "title": "",
+          "video": null
+        },
+        {
+          "body": "لوحدك أو مع صحابك؟ 🍕\nفي روما بيتزا تو جو، دايمًا هتلاقي العرض اللي يناسبك!\nبنقدملك عروض مختلفة تجمع بين الطعم اللي بتحبه والتوفير اللي بتدور عليه\nعرض Special One\nبيتزا حجم وسط من اختيارك\nعرض Special One Plus\nبيتزا حجم وسط من اختيارك مع مشروب وكول سلو أو ابل باي\nعرض Double Deal Small\nاختار 2 بيتزا حجم صغير و 2 مشروب\nعرض Double Deal Medium\nاختار 2 بيتزا حجم وسط و 2 مشروب\nعرض Double Deal Large\nاختار 2 بيتزا حجم لارج مع 2 كول سلو و 2 مشروب\nعرض Roma Box\nبيتزا حجم وسط مع حلقات بصل وكرانشي فرايز ومشروب\nعرض The Triple Box\nاختار 2 بيتزا حجم وسط مع باربيكيو تشيكن وينجز وفرايز ومعاهم 2 أبل باي\nعرض Buy two get one\nاشتري 2 بيتزا حجم وسط واحصل علي الثالثة مجانا\nاطلب دلوقتي واختار العرض اللي يناسبك 🙌\nالهوت لاين: 15667 ☎️\nالويب سايت: 🌐\nالموبايل أبلكيشن 📱",
+          "cta": "https://bit.ly/RomaSpecialOne",
+          "image": "https://scontent-lax3-1.xx.fbcdn.net/v/t39.35426-6/857207725_931107853216390_2123925170248176150_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=104&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=ByaAXWXFZTgQ7kNvwF4XFya&_nc_oc=AdrVcp4F-WztsH8H9flt_tUIoHA-fyr0EcFguGdehhdo9L2GoCVtr2gYipDLSCx8foc&_nc_zt=14&_nc_ht=scontent-lax3-1.xx&_nc_gid=Eu0OT1WgbrPyGXfAiptrxA&_nc_ss=7b289&oh=00_AQR6AKAg63OdZpMALh79kaaQ2jqpqDf6RwZwPw7GlKC6zA&oe=6AF75556",
+          "link_url": "https://bit.ly/RomaSpecialOne",
+          "title": "",
+          "video": null
+        },
+        {
+          "body": "لوحدك أو مع صحابك؟ 🍕\nفي روما بيتزا تو جو، دايمًا هتلاقي العرض اللي يناسبك!\nبنقدملك عروض مختلفة تجمع بين الطعم اللي بتحبه والتوفير اللي بتدور عليه\nعرض Special One\nبيتزا حجم وسط من اختيارك\nعرض Special One Plus\nبيتزا حجم وسط من اختيارك مع مشروب وكول سلو أو ابل باي\nعرض Double Deal Small\nاختار 2 بيتزا حجم صغير و 2 مشروب\nعرض Double Deal Medium\nاختار 2 بيتزا حجم وسط و 2 مشروب\nعرض Double Deal Large\nاختار 2 بيتزا حجم لارج مع 2 كول سلو و 2 مشروب\nعرض Roma Box\nبيتزا حجم وسط مع حلقات بصل وكرانشي فرايز ومشروب\nعرض The Triple Box\nاختار 2 بيتزا حجم وسط مع باربيكيو تشيكن وينجز وفرايز ومعاهم 2 أبل باي\nعرض Buy two get one\nاشتري 2 بيتزا حجم وسط واحصل علي الثالثة مجانا\nاطلب دلوقتي واختار العرض اللي يناسبك 🙌\nالهوت لاين: 15667 ☎️\nالويب سايت: 🌐\nالموبايل أبلكيشن 📱",
+          "cta": "https://bit.ly/RomaSpecialOne",
+          "image": "https://scontent-lax3-1.xx.fbcdn.net/v/t39.35426-6/861409329_1814387522935510_109328072559023509_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=104&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=cK-81irib4MQ7kNvwHpr4fb&_nc_oc=Adr54XcponrEY7TNCBC_29ZG10GYDnSWe_DI-DNP9Y6sXAnRWktJStERN_L2YxQpVLI&_nc_zt=14&_nc_ht=scontent-lax3-1.xx&_nc_gid=Eu0OT1WgbrPyGXfAiptrxA&_nc_ss=7b289&oh=00_AQTTEwlaQyM0v6pdzzNqT_doomV4xvQWf2TuRSTR_qK58A&oe=6AF75B45",
+          "link_url": "https://bit.ly/RomaSpecialOne",
+          "title": "",
+          "video": null
+        }
+      ]
     },
     {
       "id": "999923515764477",
@@ -455,6 +1571,7 @@
       "link_url": "https://bit.ly/RomaSpecialOne",
       "link_title": "",
       "cta_text": "https://bit.ly/RomaSpecialOne",
+      "link_caption": "",
       "images": [
         "https://scontent-lax3-1.xx.fbcdn.net/v/t39.35426-6/660621502_942286581623367_753250519358808916_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=109&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=NHiWOCWAQU8Q7kNvwG22o2Q&_nc_oc=AdqZXUcmeBJOpqevr_uqhhHHjKy69AkW3wqsZrLyOK6ZAjbMAWqvh4_M7hQrDScmRfY&_nc_zt=14&_nc_ht=scontent-lax3-1.xx&_nc_gid=Eu0OT1WgbrPyGXfAiptrxA&_nc_ss=7b289&oh=00_AQTpEQr4f0GQNQDZ3pzDaGrFlikyrB2voEVji3xCrfZaig&oe=6AF74B0A",
         "https://scontent-lax3-2.xx.fbcdn.net/v/t39.35426-6/658147728_4225517660993263_8593665105242937030_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=111&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=Nk9CgszOTnwQ7kNvwFapV87&_nc_oc=AdpxKgoo2x-NMXjZGkSJThKaelaTv7wCjPUxQjSJ8aKFgSLHqoS_ZmuQTmGDUkWjetw&_nc_zt=14&_nc_ht=scontent-lax3-2.xx&_nc_gid=Eu0OT1WgbrPyGXfAiptrxA&_nc_ss=7b289&oh=00_AQT2m7a_jbvJOXhSb_YkxN__Dd8AJnkQG5DaH93UnJg7Cg&oe=6AF764E7",
@@ -464,7 +1581,51 @@
       ],
       "has_video": false,
       "same_creative_count": 0,
-      "multiple_versions": true
+      "multiple_versions": true,
+      "cta_type": "HTTPS_BIT_LY_ROMASPECIALONE",
+      "display_format": "dco",
+      "cards": [
+        {
+          "body": "في روما بيتزا تو جو، اختياراتك دايمًا على مزاجك، جمعنالك 5 عروض مميزة تجمع بين الطعم المميز والتوفير\nعرض Special One\nبيتزا وسط من اختيارك\nعرض Special One Plus\nبيتزا وسط \\+ مشروب \\+ كلو سلو أو أبل باي\nعرض Double Deal Medium\n2 بيتزا وسط + 2 مشروب\nعرض Roma Box\nبيتزا حجم وسط \\+ اونيون رينجز \\+ كرانشي فرايز \\+ مشروب\nعرض The Triple Box\n2 بيتزا وسط + تشيكن وينجز + فرايز + 2 أبل باي",
+          "cta": "https://bit.ly/RomaSpecialOne",
+          "image": "https://scontent-lax3-1.xx.fbcdn.net/v/t39.35426-6/660621502_942286581623367_753250519358808916_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=109&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=NHiWOCWAQU8Q7kNvwG22o2Q&_nc_oc=AdqZXUcmeBJOpqevr_uqhhHHjKy69AkW3wqsZrLyOK6ZAjbMAWqvh4_M7hQrDScmRfY&_nc_zt=14&_nc_ht=scontent-lax3-1.xx&_nc_gid=Eu0OT1WgbrPyGXfAiptrxA&_nc_ss=7b289&oh=00_AQTpEQr4f0GQNQDZ3pzDaGrFlikyrB2voEVji3xCrfZaig&oe=6AF74B0A",
+          "link_url": "https://bit.ly/RomaSpecialOne",
+          "title": "",
+          "video": null
+        },
+        {
+          "body": "في روما بيتزا تو جو، اختياراتك دايمًا على مزاجك، جمعنالك 5 عروض مميزة تجمع بين الطعم المميز والتوفير\nعرض Special One\nبيتزا وسط من اختيارك\nعرض Special One Plus\nبيتزا وسط \\+ مشروب \\+ كلو سلو أو أبل باي\nعرض Double Deal Medium\n2 بيتزا وسط + 2 مشروب\nعرض Roma Box\nبيتزا حجم وسط \\+ اونيون رينجز \\+ كرانشي فرايز \\+ مشروب\nعرض The Triple Box\n2 بيتزا وسط + تشيكن وينجز + فرايز + 2 أبل باي",
+          "cta": "https://bit.ly/RomaSpecialOne",
+          "image": "https://scontent-lax3-2.xx.fbcdn.net/v/t39.35426-6/658147728_4225517660993263_8593665105242937030_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=111&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=Nk9CgszOTnwQ7kNvwFapV87&_nc_oc=AdpxKgoo2x-NMXjZGkSJThKaelaTv7wCjPUxQjSJ8aKFgSLHqoS_ZmuQTmGDUkWjetw&_nc_zt=14&_nc_ht=scontent-lax3-2.xx&_nc_gid=Eu0OT1WgbrPyGXfAiptrxA&_nc_ss=7b289&oh=00_AQT2m7a_jbvJOXhSb_YkxN__Dd8AJnkQG5DaH93UnJg7Cg&oe=6AF764E7",
+          "link_url": "https://bit.ly/RomaSpecialOne",
+          "title": "",
+          "video": null
+        },
+        {
+          "body": "في روما بيتزا تو جو، اختياراتك دايمًا على مزاجك، جمعنالك 5 عروض مميزة تجمع بين الطعم المميز والتوفير\nعرض Special One\nبيتزا وسط من اختيارك\nعرض Special One Plus\nبيتزا وسط \\+ مشروب \\+ كلو سلو أو أبل باي\nعرض Double Deal Medium\n2 بيتزا وسط + 2 مشروب\nعرض Roma Box\nبيتزا حجم وسط \\+ اونيون رينجز \\+ كرانشي فرايز \\+ مشروب\nعرض The Triple Box\n2 بيتزا وسط + تشيكن وينجز + فرايز + 2 أبل باي",
+          "cta": "https://bit.ly/RomaSpecialOne",
+          "image": "https://scontent-lax3-2.xx.fbcdn.net/v/t39.35426-6/658100869_26561675523426906_2892396829708133420_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=100&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=OYLLsDYfNUMQ7kNvwE-1Qga&_nc_oc=Adr5LKifPg2kXe2myUVLSB69TB62-VEBb8o_btbjD6npxig9wmPBa5UqoXsWIh7yx8c&_nc_zt=14&_nc_ht=scontent-lax3-2.xx&_nc_gid=Eu0OT1WgbrPyGXfAiptrxA&_nc_ss=7b289&oh=00_AQRmYWvR3xiivoik-LJ2EGmWDp5QlZR6RbLl-MM8M_qu7A&oe=6AF74344",
+          "link_url": "https://bit.ly/RomaSpecialOne",
+          "title": "",
+          "video": null
+        },
+        {
+          "body": "في روما بيتزا تو جو، اختياراتك دايمًا على مزاجك، جمعنالك 5 عروض مميزة تجمع بين الطعم المميز والتوفير\nعرض Special One\nبيتزا وسط من اختيارك\nعرض Special One Plus\nبيتزا وسط \\+ مشروب \\+ كلو سلو أو أبل باي\nعرض Double Deal Medium\n2 بيتزا وسط + 2 مشروب\nعرض Roma Box\nبيتزا حجم وسط \\+ اونيون رينجز \\+ كرانشي فرايز \\+ مشروب\nعرض The Triple Box\n2 بيتزا وسط + تشيكن وينجز + فرايز + 2 أبل باي",
+          "cta": "https://bit.ly/RomaSpecialOne",
+          "image": "https://scontent-lax3-2.xx.fbcdn.net/v/t39.35426-6/658833515_800475109796916_1689836568901785296_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=106&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=_P5xAXjrGH8Q7kNvwEuBy83&_nc_oc=AdqVn--Sk04LwRk0H_Dfhejg9HxxpMBxhn3Sk_bnJdEwu2j5Yo4KnLVaPwC2tc-0eLE&_nc_zt=14&_nc_ht=scontent-lax3-2.xx&_nc_gid=Eu0OT1WgbrPyGXfAiptrxA&_nc_ss=7b289&oh=00_AQRrKVwDQg804HoDxSPHfoPz0hsFxTsK58kzEnsESldUKQ&oe=6AF74985",
+          "link_url": "https://bit.ly/RomaSpecialOne",
+          "title": "",
+          "video": null
+        },
+        {
+          "body": "في روما بيتزا تو جو، اختياراتك دايمًا على مزاجك، جمعنالك 5 عروض مميزة تجمع بين الطعم المميز والتوفير\nعرض Special One\nبيتزا وسط من اختيارك\nعرض Special One Plus\nبيتزا وسط \\+ مشروب \\+ كلو سلو أو أبل باي\nعرض Double Deal Medium\n2 بيتزا وسط + 2 مشروب\nعرض Roma Box\nبيتزا حجم وسط \\+ اونيون رينجز \\+ كرانشي فرايز \\+ مشروب\nعرض The Triple Box\n2 بيتزا وسط + تشيكن وينجز + فرايز + 2 أبل باي",
+          "cta": "https://bit.ly/RomaSpecialOne",
+          "image": "https://scontent-lax3-1.xx.fbcdn.net/v/t39.35426-6/660478987_957188863343977_6096913207276208456_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=102&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=UiF4Cx1gxoAQ7kNvwGALh_K&_nc_oc=AdqsQaO1QnsmXoVBd6WfLj-usHuPaAhz83EuKYhW4h7glLVqKc30IBG4VcbEYrt0xyk&_nc_zt=14&_nc_ht=scontent-lax3-1.xx&_nc_gid=Eu0OT1WgbrPyGXfAiptrxA&_nc_ss=7b289&oh=00_AQSa-tPGV2ERX-pJmemRKYSdnqS-cQLolVhU-ywki79lUw&oe=6AF73D34",
+          "link_url": "https://bit.ly/RomaSpecialOne",
+          "title": "",
+          "video": null
+        }
+      ]
     },
     {
       "id": "1757363995474732",
@@ -479,40 +1640,25 @@
       "link_url": "https://www.walmart.com/ip/Totino-s-Pizza-Rolls-Pepperoni-Flavored-Frozen-Snacks-130-Rolls-63-5-oz/465060858?athAsset=eyJhdGhjcGlkIjoiNDY1MDYwODU4IiwiYXRoc3RpZCI6IkNTMDIwIiwiYXRoYW5jaWQiOiJQcmlzbUhlcm9DYXJvdXNlbCIsImF0aHJrIjowLjB9&athena=true&athbdg=L1300",
       "link_title": "Walmart | Save Money. Live better. Shop Walmart.com today for Every Day Low Prices. Join Walmart+ for unlimited free delivery from your store & free shipping with no order minimum. Start your free 30-day trial now!",
       "cta_text": "Download",
+      "link_caption": "WALMART.COM",
       "images": [
         "https://scontent-lax3-2.xx.fbcdn.net/v/t39.35426-6/885716116_2716180622156167_859440404198648100_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=111&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=nLcTv0xSMScQ7kNvwHyYDOY&_nc_oc=Adpz9fIqyiX3zyYXJbPdE1Qaz75T32aOUprBVp_9ad0OwaydSZ09UspkuxcKGftF_wg&_nc_zt=14&_nc_ht=scontent-lax3-2.xx&_nc_gid=Eu0OT1WgbrPyGXfAiptrxA&_nc_ss=7b289&oh=00_AQTVdSGPcZVXNMSt9miCqJi67IoNtAj1qlCllZ5dyAd1Jw&oe=6AF756E9"
       ],
       "has_video": false,
       "same_creative_count": 0,
-      "multiple_versions": false
-    },
-    {
-      "id": "2552360308618243",
-      "page_name": "Alfredo Cooking Class",
-      "status": "active",
-      "first_seen": "Oct 31, 2026",
-      "last_seen": "",
-      "creative_text": "Experience Florence with your hands in the dough!\nLearn how to make fresh pasta with our chefs, enjoy the dishes you have prepared and toast with unlimited Tuscan wine.\nAn authentic, fun experience suitable even for beginners, in the heart of Florence just a few minutes from the Duomo.\nBook Alfredo Cooking Class now and take home much more than a recipe.\nKnead, roll and create two types of pasta with the guidance of our Italian chefs.\nKnead, roll and create two types of pasta with the guidance of our Italian chefs.\nKnead, roll and create two types of pasta with the guidance of our Italian chefs.\nKnead, roll and create two types of pasta with the guidance of our Italian chefs.\nKnead, roll and create two types of pasta with the guidance of our Italian chefs.\nKnead, roll and create two types of pasta with the guidance of our Italian chefs.\nKnead, roll and create two types of pasta with the guidance of our Italian chefs.\nKnead, roll and create two types of pasta with the guidance of our Italian chefs.\nKnead, roll and create two types of pasta with the guidance of our Italian chefs.",
-      "library_url": "https://www.facebook.com/ads/library/?id=2552360308618243",
-      "page_url": "https://www.facebook.com/alfredocookingclassflorence/",
-      "page_id": "",
-      "link_url": "https://www.alfredocookingclass.com/en/courses",
-      "link_title": "Make fresh pasta! Knead, roll and create two types of pasta with the guidance of our Italian chefs.",
-      "cta_text": "Book Now",
-      "images": [
-        "https://scontent-lax7-1.xx.fbcdn.net/v/t39.35426-6/810962278_1053088604304642_3838118396020239922_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=105&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=1TLjdgBaUYAQ7kNvwGUvIlP&_nc_oc=AdpAuQY8WZdan9r9-LW3nxizfgwFPC4MDHK8Yz1xfRQE4NbFcw3eiTy9I03rmL0tsac&_nc_zt=14&_nc_ht=scontent-lax7-1.xx&_nc_gid=Eu0OT1WgbrPyGXfAiptrxA&_nc_ss=7b289&oh=00_AQSuOsFG357TaPcNbWZhrQ1dT0Xzf8GbyZz3YuYtX2nuCQ&oe=6AF73ED8",
-        "https://scontent-lax3-1.xx.fbcdn.net/v/t39.35426-6/811340360_1380742137463411_6187877991018248114_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=102&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=cQWA-_8Y33cQ7kNvwHoouYo&_nc_oc=Adpoyavcr0K0x44uPU1SDdTRz4_H5N04L89lt4X-0cLu_FaLZpsvvtuHc9_wbzfVNEg&_nc_zt=14&_nc_ht=scontent-lax3-1.xx&_nc_gid=Eu0OT1WgbrPyGXfAiptrxA&_nc_ss=7b289&oh=00_AQRoGn1oNOk1Lz5QeSHvGZrgMIPBAmHIrpOcNcedewW73A&oe=6AF7579D",
-        "https://scontent-lax7-1.xx.fbcdn.net/v/t39.35426-6/813212399_1747703639798035_8975725843971160062_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=105&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=cy4ZJRxDRwoQ7kNvwGYT2lQ&_nc_oc=AdrJxGRNkNgTLd_A5FPPX0DRw0ECpGMHNMBukXCEsc6aYtgwfGHAEIDK-PMvRp0RX90&_nc_zt=14&_nc_ht=scontent-lax7-1.xx&_nc_gid=Eu0OT1WgbrPyGXfAiptrxA&_nc_ss=7b289&oh=00_AQSqXAsjVhWzZ_4hUbmScfy_c7bkF_mdn-iZHOAojI8hog&oe=6AF73977",
-        "https://scontent-lax3-1.xx.fbcdn.net/v/t39.35426-6/812781712_1098086126279276_1344193544690447278_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=109&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=ecDLnBAsTf8Q7kNvwFpbNwf&_nc_oc=AdplqKgICq3aJJeQoxyt2MMALEUcv-HA5rB_pAtMIhGPJND62NED7z64WdxWb88ieOU&_nc_zt=14&_nc_ht=scontent-lax3-1.xx&_nc_gid=Eu0OT1WgbrPyGXfAiptrxA&_nc_ss=7b289&oh=00_AQRGVWVxhepPFciQeScTHfhwd0aNcvgLXaQipC23tkjqwQ&oe=6AF738A7",
-        "https://scontent-lax3-2.xx.fbcdn.net/v/t39.35426-6/811534028_1772510603964649_4544659916570902272_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=111&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=nONqcEsILGoQ7kNvwGR_tAH&_nc_oc=AdpKUhN1qkqHVG8RCPP4srxY5LecUPOXDzy6h7jlV4XMytQXvfIEaa9mKgHaXc6NqkY&_nc_zt=14&_nc_ht=scontent-lax3-2.xx&_nc_gid=Eu0OT1WgbrPyGXfAiptrxA&_nc_ss=7b289&oh=00_AQRO0qh6i--Rh5z_amU9dQUkiWE2zZSOmzMvSLDIJfK6jg&oe=6AF75722",
-        "https://scontent-lax3-1.xx.fbcdn.net/v/t39.35426-6/811102673_1165781725771615_8463194114321698614_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=108&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=BaccIHkEVz0Q7kNvwHUyWch&_nc_oc=AdqRNnrAGqWf03KooLPIPlpozz9bpl_PfA4TPnUn5M741MBNcbMxKkowKS-MmY9CTD0&_nc_zt=14&_nc_ht=scontent-lax3-1.xx&_nc_gid=Eu0OT1WgbrPyGXfAiptrxA&_nc_ss=7b289&oh=00_AQQBQ9W_wkyWUowmOCI72im8ArBCte1hJ_0RBMNItTwPkA&oe=6AF757D7",
-        "https://scontent-lax3-2.xx.fbcdn.net/v/t39.35426-6/811340367_1237671005212122_2122304699795906044_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=106&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=5yYXt4rZUkQQ7kNvwGeGbNa&_nc_oc=AdrGfBZ4W-k68he3eZhEdV5pM0Jix1n4y92NjNrOvRNWC9gJqyrj08-vTicQpNw2oWs&_nc_zt=14&_nc_ht=scontent-lax3-2.xx&_nc_gid=Eu0OT1WgbrPyGXfAiptrxA&_nc_ss=7b289&oh=00_AQQG68cWIpSl6kdMtIU7hJ8PbcbEIZ1ABeyOKf6JLuFTlw&oe=6AF73B16",
-        "https://scontent-lax3-1.xx.fbcdn.net/v/t39.35426-6/812427180_1760310435292822_3959612326484058125_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=104&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=gF_izidHEcwQ7kNvwGobkfO&_nc_oc=AdrtGX8_CyOc8rWeaQ3EbdOjL8nElywUYHBM1LivMTVvrQLeKCOvWBLnlBJ6dxvKDVc&_nc_zt=14&_nc_ht=scontent-lax3-1.xx&_nc_gid=Eu0OT1WgbrPyGXfAiptrxA&_nc_ss=7b289&oh=00_AQTYcRm70DIG8Yc0VX9G3JoeVsWJzaHMnI6xx7vD6nK-bg&oe=6AF749D4",
-        "https://scontent-lax3-2.xx.fbcdn.net/v/t39.35426-6/811405325_1874926313672507_7016248240843280206_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=106&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=b6tDv0JPBjYQ7kNvwGS92wh&_nc_oc=AdoAaJdiFlZxMKZqKrMFCBhmHIbeM0sk7Je6CAqSr4k1fRnBMoXrrh7YF4WdMcC-fLM&_nc_zt=14&_nc_ht=scontent-lax3-2.xx&_nc_gid=Eu0OT1WgbrPyGXfAiptrxA&_nc_ss=7b289&oh=00_AQRJsprkzHt45Z89Hai1OX75pt2aWUdl9NT8ZWfnCehSMw&oe=6AF75B21"
-      ],
-      "has_video": false,
-      "same_creative_count": 0,
-      "multiple_versions": false
+      "multiple_versions": false,
+      "cta_type": "DOWNLOAD",
+      "display_format": "image",
+      "cards": [
+        {
+          "body": "",
+          "cta": "Download",
+          "image": "https://scontent-lax3-2.xx.fbcdn.net/v/t39.35426-6/885716116_2716180622156167_859440404198648100_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=111&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=nLcTv0xSMScQ7kNvwHyYDOY&_nc_oc=Adpz9fIqyiX3zyYXJbPdE1Qaz75T32aOUprBVp_9ad0OwaydSZ09UspkuxcKGftF_wg&_nc_zt=14&_nc_ht=scontent-lax3-2.xx&_nc_gid=Eu0OT1WgbrPyGXfAiptrxA&_nc_ss=7b289&oh=00_AQTVdSGPcZVXNMSt9miCqJi67IoNtAj1qlCllZ5dyAd1Jw&oe=6AF756E9",
+          "link_url": "https://www.walmart.com/ip/Totino-s-Pizza-Rolls-Pepperoni-Flavored-Frozen-Snacks-130-Rolls-63-5-oz/465060858?athAsset=eyJhdGhjcGlkIjoiNDY1MDYwODU4IiwiYXRoc3RpZCI6IkNTMDIwIiwiYXRoYW5jaWQiOiJQcmlzbUhlcm9DYXJvdXNlbCIsImF0aHJrIjowLjB9&athena=true&athbdg=L1300",
+          "title": "Walmart | Save Money. Live better. Shop Walmart.com today for Every Day Low Prices. Join Walmart+ for unlimited free delivery from your store & free shipping with no order minimum. Start your free 30-day trial now!",
+          "video": null
+        }
+      ]
     }
   ],
   "advertiser_search": [
@@ -529,12 +1675,25 @@
       "link_url": "https://www.dominos.com.eg/en/",
       "link_title": "",
       "cta_text": "",
+      "link_caption": "",
       "images": [
         "https://scontent-lax3-1.xx.fbcdn.net/v/t39.35426-6/886261955_27968008172875494_5633749431614298874_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=109&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=bE-7-OGyzF4Q7kNvwFo4n0S&_nc_oc=Adpcy4fhFx2uCQy_AfE7tHJTMErN6zuENsgHXOYX6bIr9utU2kBbwSDAVQ5WBO0qktA&_nc_zt=14&_nc_ht=scontent-lax3-1.xx&_nc_gid=Eu0OT1WgbrPyGXfAiptrxA&_nc_ss=7b289&oh=00_AQShzOhobGm-jyo_8FTEN0did280idPLN0j6g8Eu1BdWfQ&oe=6AF768D0"
       ],
       "has_video": false,
       "same_creative_count": 2,
-      "multiple_versions": false
+      "multiple_versions": false,
+      "cta_type": "",
+      "display_format": "image",
+      "cards": [
+        {
+          "body": "حاجتين بتحبهم في عرض واحد.👀❤️\nالبيتزا والسوبر توفير اطلب دلوقتي 2 بيتزا ميديم بـ 395ج.\nاطلب من Dominos.com، أو تطبيق Domino’s pizza أو من خلال رقمنا 19223\nTerms and conditions apply.\nTax Registration Number: 382- 107- 586",
+          "cta": "",
+          "image": "https://scontent-lax3-1.xx.fbcdn.net/v/t39.35426-6/886261955_27968008172875494_5633749431614298874_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=109&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=bE-7-OGyzF4Q7kNvwFo4n0S&_nc_oc=Adpcy4fhFx2uCQy_AfE7tHJTMErN6zuENsgHXOYX6bIr9utU2kBbwSDAVQ5WBO0qktA&_nc_zt=14&_nc_ht=scontent-lax3-1.xx&_nc_gid=Eu0OT1WgbrPyGXfAiptrxA&_nc_ss=7b289&oh=00_AQShzOhobGm-jyo_8FTEN0did280idPLN0j6g8Eu1BdWfQ&oe=6AF768D0",
+          "link_url": "https://www.dominos.com.eg/en/",
+          "title": "",
+          "video": null
+        }
+      ]
     },
     {
       "id": "1108799028440590",
@@ -549,12 +1708,25 @@
       "link_url": "https://www.dominos.com.eg/",
       "link_title": "",
       "cta_text": "",
+      "link_caption": "",
       "images": [
         "https://scontent-lax3-2.xx.fbcdn.net/v/t39.35426-6/855448992_1130987596141618_6229450396284727008_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=107&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=U8rFLux-W9QQ7kNvwFwpS2g&_nc_oc=AdqH7m1-UOh0nixE2qgIHd-gRI-yDu4XFSfYhNRihk3F6N_v7wZnJWSYeMZ0SC-A3uY&_nc_zt=14&_nc_ht=scontent-lax3-2.xx&_nc_gid=Eu0OT1WgbrPyGXfAiptrxA&_nc_ss=7b289&oh=00_AQT2DBFOkE2MHPBNkT2-WoHj6i6SPeCg0NVuVOBpbwYbAA&oe=6AF743A6"
       ],
       "has_video": false,
       "same_creative_count": 0,
-      "multiple_versions": false
+      "multiple_versions": false,
+      "cta_type": "",
+      "display_format": "image",
+      "cards": [
+        {
+          "body": "في بيتزا من كتر حبك فيها لازم تطلبهاLarge\nاطلب 2 بيتزا لارج بـ 595ج في عرض سوبر توفير - كبير!\nاطلب من Dominos.com، أو تطبيق Domino’s pizza أو من خلال رقمنا 19223\nTerms and conditions apply.\nTax Registration Number: 382- 107- 586",
+          "cta": "",
+          "image": "https://scontent-lax3-2.xx.fbcdn.net/v/t39.35426-6/855448992_1130987596141618_6229450396284727008_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=107&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=U8rFLux-W9QQ7kNvwFwpS2g&_nc_oc=AdqH7m1-UOh0nixE2qgIHd-gRI-yDu4XFSfYhNRihk3F6N_v7wZnJWSYeMZ0SC-A3uY&_nc_zt=14&_nc_ht=scontent-lax3-2.xx&_nc_gid=Eu0OT1WgbrPyGXfAiptrxA&_nc_ss=7b289&oh=00_AQT2DBFOkE2MHPBNkT2-WoHj6i6SPeCg0NVuVOBpbwYbAA&oe=6AF743A6",
+          "link_url": "https://www.dominos.com.eg/",
+          "title": "",
+          "video": null
+        }
+      ]
     },
     {
       "id": "4710848209133972",
@@ -569,12 +1741,25 @@
       "link_url": "http://dominos.com.eg/",
       "link_title": "Domino's Pizza",
       "cta_text": "Learn more",
+      "link_caption": "DOMINOS.COM.EG",
       "images": [
         "https://scontent-lax7-1.xx.fbcdn.net/v/t39.35426-6/896978614_1016266134861169_5394652435009726931_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=101&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=KGvrJXnch1AQ7kNvwG_nzvr&_nc_oc=Adq1XUcQePC_d1V3cY5O1f38HN7zXxOz1mgCHUTJzJpRaT7xcAJuERO8mRnTgqThBB4&_nc_zt=14&_nc_ht=scontent-lax7-1.xx&_nc_gid=Eu0OT1WgbrPyGXfAiptrxA&_nc_ss=7b289&oh=00_AQTFr6rTw62c6mePnI_ilDcPi2wUOcLCk3Z_VsmUPmGYGg&oe=6AF74203"
       ],
       "has_video": false,
       "same_creative_count": 0,
-      "multiple_versions": false
+      "multiple_versions": false,
+      "cta_type": "LEARN_MORE",
+      "display_format": "image",
+      "cards": [
+        {
+          "body": "في بيتزا من كتر حبك فيها لازم تطلبهاLarge\nاطلب 2 بيتزا لارج بـ 595ج في عرض سوبر توفير - كبير!\nاطلب من Dominos.com، أو تطبيق Domino’s pizza أو من خلال رقمنا 19223\nTerms and conditions apply.\nTax Registration Number: 382- 107- 586",
+          "cta": "Learn more",
+          "image": "https://scontent-lax7-1.xx.fbcdn.net/v/t39.35426-6/896978614_1016266134861169_5394652435009726931_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=101&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=KGvrJXnch1AQ7kNvwG_nzvr&_nc_oc=Adq1XUcQePC_d1V3cY5O1f38HN7zXxOz1mgCHUTJzJpRaT7xcAJuERO8mRnTgqThBB4&_nc_zt=14&_nc_ht=scontent-lax7-1.xx&_nc_gid=Eu0OT1WgbrPyGXfAiptrxA&_nc_ss=7b289&oh=00_AQTFr6rTw62c6mePnI_ilDcPi2wUOcLCk3Z_VsmUPmGYGg&oe=6AF74203",
+          "link_url": "http://dominos.com.eg/",
+          "title": "Domino's Pizza",
+          "video": null
+        }
+      ]
     },
     {
       "id": "1987275911861086",
@@ -589,12 +1774,25 @@
       "link_url": "http://dominos.com.eg/",
       "link_title": "Domino's Pizza",
       "cta_text": "Learn more",
+      "link_caption": "DOMINOS.COM.EG",
       "images": [
         "https://scontent-lax3-1.xx.fbcdn.net/v/t39.35426-6/896785757_1417892280512261_8145407849846577313_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=110&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=wINHcCisEQIQ7kNvwHGm0ts&_nc_oc=AdqRB0lcgFWr3_DCOZXIv7lUL053bH0A2g8QugM6v8kfmAzb6yC0G2U0KM6t4oJvZZE&_nc_zt=14&_nc_ht=scontent-lax3-1.xx&_nc_gid=Eu0OT1WgbrPyGXfAiptrxA&_nc_ss=7b289&oh=00_AQT1l536vPn8dEqDSLx9QUow1Ar5rfIbKVtQZrKV3vQVxw&oe=6AF74CCA"
       ],
       "has_video": false,
       "same_creative_count": 0,
-      "multiple_versions": true
+      "multiple_versions": true,
+      "cta_type": "LEARN_MORE",
+      "display_format": "image",
+      "cards": [
+        {
+          "body": "حاجتين بتحبهم في عرض واحد.👀❤️\nالبيتزا والسوبر توفير اطلب دلوقتي 2 بيتزا ميديم بـ 395ج.\nاطلب من Dominos.com، أو تطبيق Domino’s pizza أو من خلال رقمنا 19223\nTerms and conditions apply.\nTax Registration Number: 382- 107- 586",
+          "cta": "Learn more",
+          "image": "https://scontent-lax3-1.xx.fbcdn.net/v/t39.35426-6/896785757_1417892280512261_8145407849846577313_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=110&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=wINHcCisEQIQ7kNvwHGm0ts&_nc_oc=AdqRB0lcgFWr3_DCOZXIv7lUL053bH0A2g8QugM6v8kfmAzb6yC0G2U0KM6t4oJvZZE&_nc_zt=14&_nc_ht=scontent-lax3-1.xx&_nc_gid=Eu0OT1WgbrPyGXfAiptrxA&_nc_ss=7b289&oh=00_AQT1l536vPn8dEqDSLx9QUow1Ar5rfIbKVtQZrKV3vQVxw&oe=6AF74CCA",
+          "link_url": "http://dominos.com.eg/",
+          "title": "Domino's Pizza",
+          "video": null
+        }
+      ]
     }
   ]
 }

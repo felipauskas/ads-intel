@@ -1,34 +1,29 @@
-# McDonald's × EG — FAIL
+# McDonald's × EG — PASS
 
 - folder: `evals/live-matrix/mcdonalds-eg`
 - advertiser filter: `McDonald's`
 
 ## Keyword search (`active_status=active`, limit 20)
-- count: None  complete: None  fetched: None  error: parse_failed: render (5154 chars) with no card markers or empty-state text
-- page names: —
-- seconds: 25.54
+- count: 20  complete: False  fetched: 20  error: None
+- page names: McDonald's, Mega Technology, اسلامي نبض حياتي, Franquicia IA, Ligue 1 McDonald's, Monopoly GO, BYT Vacuum Machine
+- seconds: 9.88
 
 ## Advertiser search
-- count: None  resolved: None  error: parse_failed: render (5154 chars) with no card markers or empty-state text
-- page names: —
-- seconds: 19.85
+- count: 15  resolved: {'page_name': "McDonald's", 'score': 0.8}  error: None
+- page names: McDonald's
+- seconds: 6.38
 
 ## Watch checks
-- check1: new=None ended=None changed=None partial=True error=None seconds=17.58
-- check2: new=None ended=None changed=None partial=True error=None seconds=20.38
-- artifacts: {"error": "parse_failed"} (ok=False)
-- artifacts check2: {"error": "parse_failed"} (ok=False)
+- check1: new=15 ended=0 changed=0 partial=False error=None seconds=7.64
+- check2: new=0 ended=0 changed=0 partial=False error=None seconds=6.53
+- artifacts: {"html": "artifacts/html.html", "digest": "artifacts/digest.json"} (ok=True)
+- artifacts check2: {"html": "artifacts/check2/html.html", "digest": "artifacts/check2/digest.json"} (ok=True)
 
 ## Currency spot-check
-- expected: EGP/جنيه  found: none  ok: False
+- expected: EGP/جنيه  found: جنيه  ok: True
 
 ## Hydration
-- attempts: 16  failed: 0
+- attempts: 5  failed: 1  transport: 0  dead render: 1 (shell 1, blocked 0, markup_changed 0)
 
 ## Failures
-- search_error: parse_failed: render (5154 chars) with no card markers or empty-state text
-- advertiser_error: parse_failed: render (5154 chars) with no card markers or empty-state text
-- check1_no_new_ads: (None, None, None)
-- check2_not_settled: (None, None, None)
-- artifacts_error: parse_failed
-- artifacts2_error: parse_failed
+- none
