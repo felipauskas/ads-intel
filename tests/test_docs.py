@@ -44,15 +44,18 @@ def test_readme_discloses_network_filesystem_and_credentials():
     assert "country" in lowered, "README must document the country parameter"
     assert "0.85" in text, "README must state the advertiser-resolution score ceiling"
 
-    # Rule 5: the repo is not published yet, so no install-from-GitHub line.
-    assert "felipauskas/ads-intel" not in text, (
-        "README must not point at a GitHub slug: the repo is not published"
+    # Rule 5 satisfied: the repo is public and the README points at it, while
+    # still saying the catalog entry has not landed (so install is by repo id).
+    assert "https://github.com/felipauskas/ads-intel" in text, (
+        "README must link the published repo"
     )
-    assert "local" in lowered, "README must describe the local install path"
+    assert "not yet in the Hermes catalog" in text, (
+        "README must state the catalog status plainly"
+    )
 
     # The caution verdict blocks a non-interactive install, so the documented
     # command must carry --force and say why — a warning-only claim is false.
-    assert 'hermes plugins install "file://$PWD" --force' in text, (
+    assert "hermes plugins install felipauskas/ads-intel --force" in text, (
         "README install command must work non-interactively"
     )
     assert "Blocked" in text, "README must say the non-interactive install blocks"

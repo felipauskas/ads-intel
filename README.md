@@ -5,48 +5,55 @@ Free, local, zero-API-key ad-library intelligence for Hermes. `ads-intel` search
 ## Requirements
 
 - **Python 3.10+.** The source uses PEP 604 annotations (`str | None`, `dict | None`); 3.9 fails at import. The plugin runs inside Hermes's own Python, but a local checkout's test suite needs a 3.10+ interpreter.
-- **git.** Hermes installs a local checkout from a `file://` URL by cloning it, so the directory must be a git repository.
+- **git.** Hermes installs a plugin by cloning its repository, so the source must be a git repo — the published GitHub repo is, and a local `file://` checkout must be too.
 - **Hermes CLI with plugin support**, `>= 0.21.5` (the `requires_hermes` floor in `plugin.yaml`), including the `hermes plugins` subcommands.
 
-## Install (local checkout only)
+## Install
 
-This plugin is **not published yet** — there is no published catalog entry and no public repo. Install it from the local checkout (it must be a git repo, since Hermes installs from a `file://` URL):
+`ads-intel` is published at **https://github.com/felipauskas/ads-intel** (public).
+It is **not yet in the Hermes catalog**: the catalog entry is drafted in
+`plugin-catalog/ads-intel.yaml` and lands as a PR against
+`NousResearch/hermes-agent`, so install it from the repo:
 
 ```bash
-cd /path/to/ads-intel          # the checkout that contains plugin.yaml
-hermes plugins validate .      # manifest + tool schema check, installs nothing
-hermes plugins install "file://$PWD" --force
+hermes plugins install felipauskas/ads-intel --force
 hermes plugins enable ads-intel
 ```
 
-**`--force` is required in non-interactive use.** This checkout carries a
-`caution` security verdict (see below), and a `file://` source is unreviewed:
+**`--force` is required in non-interactive use.** This plugin carries a
+`caution` security verdict (see below) and it is not a catalog-reviewed source:
 a non-interactive install — an agent, CI or a scripted shell — treats that
-combination as **Blocked** and exits 1 rather than asking. In a real terminal
-the same install blocks only until you answer the `[y/N] "install anyway?"`
-prompt; `--force` answers it up front. The force is accepting the scan's
-caution verdict, not silencing it: install still prints `Warning: custom
-(unreviewed) source` and `Warning: Using insecure/local URL scheme`. The
-caution is not a code finding — it is bidirectional marks in committed eval
-evidence (Arabic ad copy under `evals/live-matrix/*/ads.json` and the rendered
-HTML next to it). If you would rather install without `--force`, the only way
-to clear the verdict is to stop shipping `evals/` (it is also imported by the
-tests and `scripts/stress_e2e.py`, so those fixtures and imports must move
-first). Neither path gives a warning-free install.
+combination as **Blocked** and exits 1 rather than asking. The current block
+reads `Decision: BLOCKED — Blocked (community source + caution verdict, 78
+findings). Use --force to override.` In a real terminal the same install blocks
+only until you answer the `[y/N] "install anyway?"` prompt; `--force` answers it
+up front. The force is accepting the scan's caution verdict, not silencing it:
+install still prints `Warning: custom (unreviewed) source — not from the Hermes
+catalog.` A `file://` checkout install additionally prints `Warning: Using
+insecure/local URL scheme`. Neither route gives a warning-free install.
 
-Verify the install and the checkout's scan:
+The caution is not a finding in plugin runtime code: it is committed eval
+evidence (Arabic ad copy with invisible directional marks under `evals/`), plus
+lower-severity heuristics on the eval JSON, the tests, `scripts/stress_e2e.py`
+and CI. The install-time scan and `hermes plugins validate .` count differently —
+see the two notes below. To drop the verdict you would have to stop shipping
+`evals/`; it is also imported by the tests and `scripts/stress_e2e.py`, so those
+fixtures and imports would have to move first. There is no warning-free path
+today.
+
+Verify the install and the scan:
 
 ```bash
 hermes plugins list            # ads-intel should be listed as enabled
-hermes plugins validate .      # all checks pass; see the two notes below
+hermes plugins validate .      # from a checkout; ends in "Validation passed."
 ```
 
 `hermes plugins validate .` ends in `Validation passed.` Every check passes, but it is **not a silent clean scan**:
 
-- **Security scan caution — `invisible_unicode`.** 12 findings at the last check, all in committed eval evidence, not plugin code: bidirectional marks in the Arabic ad copy recorded under `evals/live-matrix/*/ads.json` and the rendered `evals/live-matrix/**/artifacts/**/html.html` (both artifact depths: `artifacts/html.html` and `artifacts/check2/html.html`). The scanner has no ignore-file mechanism (only fixed dir exclusions such as `.git` and `__pycache__`), and deleting `evals/` alone would not produce a clean scan: `tests/test_sources.py` reads `evals/raw/web_extract-KFC-AE.md`, `tests/test_resolve.py` reads `evals/live-matrix/*/ads.json`, `tests/test_live_eval.py` imports `evals/live_eval.py`, and `scripts/stress_e2e.py` imports from `evals.live_eval`, so those fixtures and imports would have to be relocated first. The decision — ship `evals/` and accept the caution, or relocate them — is still open; until then the caution is expected, the plugin still passes admission, and the install needs `--force` as shown above.
+- **Security scan caution — `invisible_unicode`.** 29 findings at the last check (`hermes plugins validate .`, Hermes v0.23.0), all in committed eval evidence, none in plugin code: 18 in `evals/live-matrix/dominos-pizza-us/ads.json` (invisible directional marks in the Arabic ad copy), 5 in `evals/live-matrix/dominos-pizza-us/artifacts/html.html`, 2 in `evals/page-mode-verify/rerun-burger-king-us.json` and 4 in `evals/page-mode-verify/rerun-mcdonalds-eg.json`. `validate` prints basenames only, so its `ads.json` / `html.html` entries are the dominos-pizza-us pair; the `rerun-*.json` entries were not previously listed here. The install-time scan is broader and reports **78 findings** for the same tree (36 HIGH `injection` for those characters, 34 MEDIUM `obfuscation`, 4 MEDIUM `execution`, 2 MEDIUM `supply_chain`, 1 MEDIUM `injection`, 1 LOW `persistence`) across 22 files under `evals/`, `tests/`, `scripts/`, `.github/`, `README.md` and `docs/plans/` — again none in the modules Hermes loads (`sources.py`, `tools.py`, `store.py`, `report.py`, `resolve.py`, `diffing.py`, `schemas.py`, `__init__.py`, `plugin.yaml`). The scanner has no ignore-file mechanism (only fixed dir exclusions such as `.git` and `__pycache__`), and deleting `evals/` alone would not produce a clean scan: `tests/test_sources.py` reads `evals/raw/web_extract-KFC-AE.md`, `tests/test_resolve.py` reads `evals/live-matrix/*/ads.json`, `tests/test_live_eval.py` imports `evals/live_eval.py`, and `scripts/stress_e2e.py` imports from `evals.live_eval`, so those fixtures and imports would have to be relocated first. The decision — ship `evals/` and accept the caution, or relocate them — is still open; until then the caution is expected, the plugin still passes admission, and the install needs `--force` as shown above.
 - **Isolation note (informational).** `evals/live_eval.py` and `scripts/stress_e2e.py` patch `tools.store._data_dir` to run offline against a temp directory. Hermes reports this as "in-process only" and does not treat it as a failure.
 
-If `hermes plugins list` does not show it, re-run the install block from the same checkout; the `file://` path must point at the directory that contains `plugin.yaml`.
+If `hermes plugins list` does not show it, re-run the install line; if you are installing from a local checkout instead, the `file://` path must point at the directory that contains `plugin.yaml` (`hermes plugins install "file://$PWD" --force`).
 
 ## Uninstall
 
@@ -60,7 +67,7 @@ hermes plugins uninstall ads-intel   # remove the installed copy
 ## Try it in 60 seconds
 
 ```bash
-hermes plugins validate .      # manifest, declarations and security scan
+hermes plugins doctor ads-intel   # runtime discovery, manifest, registration
 ```
 
 Then, in a Hermes chat:

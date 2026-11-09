@@ -8,7 +8,11 @@ import json, time, sys, os, tempfile, re
 from html.parser import HTMLParser
 from urllib.parse import urlsplit, parse_qs
 
-sys.path.insert(0, "/Users/felipevleon/coding-projects/ads-intel")
+# Resolve the checkout from this file, not from the machine it was written on:
+# evals/adversarial_probe.py lives one level under the repo root, so the probe
+# runs from any clone.
+REPO_ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+sys.path.insert(0, REPO_ROOT)
 import report, sources, tools, store, diffing
 
 RESULTS = []
@@ -423,9 +427,16 @@ except Exception as e:
            f"{type(e).__name__}: {str(e)[:80]}")
 
 passed = sum(1 for r in RESULTS if r["pass"])
+# Results land in the host scratch dir when one is exported (Hermes sets
+# HERMES_SCRATCH_DIR for its subprocesses), else in the platform temp dir, so
+# the probe never writes into a path from the machine it was written on.
+_scratch = os.environ.get("HERMES_SCRATCH_DIR") or tempfile.gettempdir()
+os.makedirs(_scratch, exist_ok=True)
+_out_path = os.path.join(_scratch, "adv_out.json")
 json.dump({"total": len(RESULTS), "passed": passed,
            "failed": [r for r in RESULTS if not r["pass"]], "all": RESULTS},
-          open("/Users/felipevleon/.hermes/profiles/partner/cache/scratch/adv_out.json", "w"), indent=1)
+          open(_out_path, "w"), indent=1)
+print("wrote", _out_path)
 print("total", len(RESULTS), "passed", passed, "failed", len(RESULTS) - passed)
 for r in RESULTS:
     if not r["pass"]:

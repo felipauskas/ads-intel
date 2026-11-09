@@ -31,9 +31,9 @@ Per iteration: parse fixture → `ad_search` → `ad_watch add` → `ad_check`
 verify artifacts and digest counts.
 
 ```
-workdir: /var/folders/zf/…/T/ads-intel-stress-_21219b6
-repo:    /Users/felipevleon/coding-projects/ads-intel
-python:  3.14.10 (/Users/felipevleon/coding-projects/ads-intel/.venv/bin/python)
+workdir: <tmpdir>/ads-intel-stress-_21219b6   (per-run temp dir; host path elided)
+repo:    <repo>
+python:  3.14.10 (<repo>/.venv/bin/python)
 
 == offline iterations: 50 ==
 iter 001 PASS    15.0ms baseline=20 settle=0/0/0 changed=1

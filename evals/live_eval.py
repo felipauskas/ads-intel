@@ -513,7 +513,8 @@ def run_pair(
     # would otherwise sit beside a result.json that carries no counts. Clear
     # before running, not after: the copies are written as each check runs.
     shutil.rmtree(target_dir / "artifacts", ignore_errors=True)
-    data_dir = _fresh_data_dir(work_parent)
+    # Binds tools.store._data_dir to a fresh per-pair temp dir.
+    _fresh_data_dir(work_parent)
     phase = {"name": "setup"}
     dispatches: list[dict] = []
     failures: list[str] = []
@@ -522,7 +523,10 @@ def run_pair(
         "country": country,
         "advertiser": advertiser,
         "folder": str(target_dir.relative_to(ROOT)),
-        "data_dir": str(data_dir),
+        # The run writes to a per-pair temp dir. Record the logical location, not
+        # the host's absolute path: result.json is committed evidence that must
+        # be readable on any machine.
+        "data_dir": "<plugin_data_dir>",
     }
 
     def dispatch(name: str, args: dict) -> Any:

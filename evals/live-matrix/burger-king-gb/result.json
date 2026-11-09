@@ -3,7 +3,7 @@
   "country": "GB",
   "advertiser": "Burger King",
   "folder": "evals/live-matrix/burger-king-gb",
-  "data_dir": "/var/folders/zf/g9bpd9s55sv10tz2mnhqch800000gn/T/ads-intel-live-eval-h12a1oo8/tmpz5zpi0jt",
+  "data_dir": "<plugin_data_dir>",
   "search_summary": {
     "count": 20,
     "complete": false,

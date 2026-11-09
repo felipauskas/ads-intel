@@ -1,5 +1,15 @@
 # EVAL A — fresh install (new user, README only)
 
+> **SUPERSEDED (2026-11-09).** This is a historical eval log, kept as recorded and
+> not rewritten. Its "PASS — security scan `safe`, no warnings" verdicts (both
+> re-runs below) no longer describe the tree: committed eval evidence now carries
+> bidirectional/invisible characters, so the current `hermes plugins validate .`
+> ends `Validation passed.` with a **security scan `caution`** — 29
+> `invisible_unicode` findings, all in `evals/`, none in plugin code — and a
+> non-interactive `hermes plugins install` is **Blocked** without `--force`.
+> For the current, authoritative statement see the README's "Install" section and
+> its security-scan caution bullet.
+
 - **Date:** 2026-11-06 18:05–18:15 (+04)
 - **Repo:** `ads-intel` @ `96c0b3d` (`feat/free-treg-fields`)
 - **Environment:** macOS 27.2, Hermes Agent v0.23.0 (2026.9.24), Python 3.14.9
