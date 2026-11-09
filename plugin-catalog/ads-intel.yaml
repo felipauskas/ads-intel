@@ -1,23 +1,16 @@
-# LOCAL PREPARATION ONLY - repo not yet published (rule 5 pending). Do NOT open PR until pushed.
-#
 # Schema: NousResearch/hermes-agent plugin-catalog entry
 #   keys      -> scripts/validate_plugin_catalog.py (KNOWN_KEYS / REQUIRED_KEYS)
 #   semantics -> hermes_cli/plugin_catalog.py (PluginCatalogEntry) + plugin-catalog/README.md
-# Notes for publication day:
-#   * sha is the current HEAD of the working tree at the docs-truth pass:
-#     66799914c816a360f5777f12bffda251d57c5a82 (short 6679991). The final publish
-#     commit is NOT known yet — the tree is still uncommitted, so committing moves
-#     HEAD. TODO(publish): re-pin sha to the final published commit in the same batch
-#     as the version bump (rules 2 and 4), then re-run `hermes plugins validate .`
-#     on that exact tree. Do not ship this placeholder pin.
-#   * repo is the intended public slug and must be confirmed live before the PR (rule 5:
-#     owner submission from felipauskas' own account).
+# Published 2026-11-09 at https://github.com/felipauskas/ads-intel (public,
+# cloneable, owner felipauskas). sha pins the published commit below; bump
+# sha + version together on each release, then re-run
+# `hermes plugins validate .` on that exact tree.
 #   * there is deliberately no license field: the loader has none and would warn on an
 #     unknown top-level key. License lives in plugin.yaml (MIT).
 name: ads-intel
 title: Ads Intel
 repo: https://github.com/felipauskas/ads-intel
-sha: 66799914c816a360f5777f12bffda251d57c5a82
+sha: 5bf27353e013cac15e17d38d141016298d759beb
 version: "0.2.0"
 description: "Search the public Meta Ad Library by keyword or by numeric Meta Page ID (page_id → search_type=page&view_all_page_id=, with country as a separate delivery axis) and watch competitor pages for new, ended and changed ads through three tools (ad_search, ad_watch, ad_check), with local snapshot diffing and HTML/JSON reports. Stdlib Python only, zero API keys, no accounts, no credentials. Disclosure - network: one read-only GET per query to https://www.facebook.com/ads/library/ performed by Hermes' built-in web_extract in the normal case (up to 6 attempts only when a render fails to parse, each retry cache-busted, inside a 60-second wall-clock cap), no other hosts, no idle traffic, no pagination; filesystem: writes only inside plugin_data_dir('ads-intel') (watchlist.json, snapshots/, reports/) and reads nothing outside it; no shell commands, no background processes, no stored secrets or environment variables. Meta's terms do not authorise automated collection and this plugin does not claim that authorisation: it is a low-rate read-only client intended for personal, small-scale research, and the user is responsible for their own use."
 maintainer: felipauskas
