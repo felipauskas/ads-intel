@@ -5,16 +5,7 @@
     {
       "phase": "search",
       "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=AE&q=Pizza+Hut&media_type=all&search_type=keyword_unordered",
-      "seconds": 2.26,
-      "chars": 5167,
-      "failed": true,
-      "transport_failed": false,
-      "dead_render": "shell"
-    },
-    {
-      "phase": "search",
-      "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=AE&q=Pizza+Hut&media_type=all&search_type=keyword_unordered&cache_bust=de1d6a3c25124f0eb4cff96ce7ab7fad",
-      "seconds": 5.91,
+      "seconds": 5.54,
       "chars": 18861,
       "failed": false,
       "transport_failed": false,
@@ -22,8 +13,8 @@
     },
     {
       "phase": "advertiser_search",
-      "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=AE&q=Pizza+Hut&media_type=all&search_type=keyword_unordered&cache_bust=13520298b00f4490988aed109c79c249",
-      "seconds": 5.71,
+      "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=AE&q=Pizza+Hut&media_type=all&search_type=keyword_unordered",
+      "seconds": 0.01,
       "chars": 18861,
       "failed": false,
       "transport_failed": false,
@@ -31,8 +22,8 @@
     },
     {
       "phase": "check1",
-      "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=AE&q=Pizza+Hut&media_type=all&search_type=keyword_unordered&cache_bust=e7dd52d335e84a4c899c6244f35b4607",
-      "seconds": 4.97,
+      "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=AE&q=Pizza+Hut&media_type=all&search_type=keyword_unordered",
+      "seconds": 0.01,
       "chars": 18861,
       "failed": false,
       "transport_failed": false,
@@ -40,8 +31,8 @@
     },
     {
       "phase": "check2",
-      "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=AE&q=Pizza+Hut&media_type=all&search_type=keyword_unordered&cache_bust=327f0352ff394847aa511bf0df68c5e0",
-      "seconds": 5.11,
+      "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=AE&q=Pizza+Hut&media_type=all&search_type=keyword_unordered",
+      "seconds": 0.01,
       "chars": 18861,
       "failed": false,
       "transport_failed": false,

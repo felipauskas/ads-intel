@@ -3,7 +3,7 @@
   "country": "AE",
   "advertiser": "Burger King",
   "folder": "evals/live-matrix/burger-king-ae",
-  "data_dir": "/var/folders/zf/g9bpd9s55sv10tz2mnhqch800000gn/T/ads-intel-live-eval-7v9t8l1b/tmpduxlf2eg",
+  "data_dir": "/var/folders/zf/g9bpd9s55sv10tz2mnhqch800000gn/T/ads-intel-live-eval-h12a1oo8/tmp5sma45r7",
   "search_summary": {
     "count": 14,
     "complete": false,
@@ -22,7 +22,7 @@
       "BlazeReel Drama",
       "Tatiana Salazar"
     ],
-    "seconds": 10.42
+    "seconds": 19.1
   },
   "advertiser_summary": {
     "count": 2,
@@ -38,7 +38,7 @@
     "page_names": [
       "Burger King Arabia"
     ],
-    "seconds": 7.99
+    "seconds": 13.79
   },
   "watch_add": {
     "error": null,
@@ -70,7 +70,7 @@
     "new_page_names": [
       "Burger King Arabia"
     ],
-    "seconds": 8.45
+    "seconds": 27.16
   },
   "check2": {
     "query": "Burger King",
@@ -89,32 +89,34 @@
       "digest": "artifacts/check2/digest.json"
     },
     "new_page_names": [],
-    "seconds": 7.69
+    "seconds": 7.82
   },
   "artifacts_ok": true,
   "artifacts2_ok": true,
   "currency": {
     "expected": "AED",
     "found": [
-      "AED"
+      "AED",
+      "درهم"
     ],
-    "ok": true
+    "ok": true,
+    "caveat": null
   },
   "status": "PASS",
   "failures": [],
   "timings": {
-    "search": 10.42,
-    "advertiser_search": 7.99,
-    "check1": 8.45,
-    "check2": 7.69,
-    "total": 34.55
+    "search": 19.1,
+    "advertiser_search": 13.79,
+    "check1": 27.16,
+    "check2": 7.82,
+    "total": 67.87
   },
   "attempts": {
-    "total": 5,
-    "failed": 1,
+    "total": 11,
+    "failed": 7,
     "transport_failed": 0,
-    "parse_failed": 1,
-    "shell": 1,
+    "parse_failed": 7,
+    "shell": 7,
     "blocked": 0,
     "markup_changed": 0
   }

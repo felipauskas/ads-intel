@@ -3,7 +3,7 @@
   "country": "GB",
   "advertiser": "Domino's Pizza",
   "folder": "evals/live-matrix/dominos-pizza-gb",
-  "data_dir": "/var/folders/zf/g9bpd9s55sv10tz2mnhqch800000gn/T/ads-intel-live-eval-7v9t8l1b/tmpefjoamo1",
+  "data_dir": "/var/folders/zf/g9bpd9s55sv10tz2mnhqch800000gn/T/ads-intel-live-eval-h12a1oo8/tmpqk0dumm7",
   "search_summary": {
     "count": 19,
     "complete": true,
@@ -19,7 +19,7 @@
       "Pizza Town Sudbury",
       "Pizza Pizza"
     ],
-    "seconds": 3.13
+    "seconds": 7.83
   },
   "advertiser_summary": {
     "count": 13,
@@ -35,7 +35,7 @@
     "page_names": [
       "Domino's Pizza"
     ],
-    "seconds": 0.01
+    "seconds": 0.02
   },
   "watch_add": {
     "error": null,
@@ -67,7 +67,7 @@
     "new_page_names": [
       "Domino's Pizza"
     ],
-    "seconds": 0.01
+    "seconds": 0.02
   },
   "check2": {
     "query": "Domino's Pizza",
@@ -86,23 +86,24 @@
       "digest": "artifacts/check2/digest.json"
     },
     "new_page_names": [],
-    "seconds": 0.01
+    "seconds": 0.02
   },
   "artifacts_ok": true,
   "artifacts2_ok": true,
   "currency": {
     "expected": null,
     "found": [],
-    "ok": null
+    "ok": null,
+    "caveat": null
   },
   "status": "PASS",
   "failures": [],
   "timings": {
-    "search": 3.13,
-    "advertiser_search": 0.01,
-    "check1": 0.01,
-    "check2": 0.01,
-    "total": 3.16
+    "search": 7.83,
+    "advertiser_search": 0.02,
+    "check1": 0.02,
+    "check2": 0.02,
+    "total": 7.89
   },
   "attempts": {
     "total": 4,

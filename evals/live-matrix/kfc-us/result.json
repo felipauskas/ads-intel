@@ -3,7 +3,7 @@
   "country": "US",
   "advertiser": "KFC",
   "folder": "evals/live-matrix/kfc-us",
-  "data_dir": "/var/folders/zf/g9bpd9s55sv10tz2mnhqch800000gn/T/ads-intel-live-eval-7v9t8l1b/tmpm6ayc3e6",
+  "data_dir": "/var/folders/zf/g9bpd9s55sv10tz2mnhqch800000gn/T/ads-intel-live-eval-h12a1oo8/tmpw_u9i7ek",
   "search_summary": {
     "count": 20,
     "complete": false,
@@ -24,23 +24,23 @@
       "Shane Hummus",
       "Wolt Kosovo"
     ],
-    "seconds": 3.1
+    "seconds": 6.34
   },
   "advertiser_summary": {
-    "count": 7,
-    "complete": true,
-    "resolved": {
-      "page_name": "KFC",
-      "score": 0.8
-    },
-    "error": null,
-    "target": null,
-    "candidates": null,
-    "threshold": null,
-    "page_names": [
-      "KFC"
+    "count": null,
+    "complete": null,
+    "resolved": null,
+    "error": "name_not_matched",
+    "target": "KFC",
+    "candidates": [
+      {
+        "page_name": "Saucy by KFC",
+        "score": 0.6
+      }
     ],
-    "seconds": 0.01
+    "threshold": 0.8,
+    "page_names": [],
+    "seconds": 0.02
   },
   "watch_add": {
     "error": null,
@@ -57,57 +57,69 @@
     "query": "KFC",
     "country": "US",
     "advertiser": "KFC",
-    "resolved": {
-      "page_name": "KFC",
-      "score": 0.8
-    },
-    "new_ads": 7,
-    "ended_ads": 0,
-    "changed_ads": 0,
     "partial": false,
-    "artifacts": {
-      "html": "artifacts/html.html",
-      "digest": "artifacts/digest.json"
-    },
-    "new_page_names": [
-      "KFC"
+    "error": "name_not_matched",
+    "target": "KFC",
+    "candidates": [
+      {
+        "page_name": "Saucy by KFC",
+        "score": 0.6
+      }
     ],
-    "seconds": 0.01
+    "threshold": 0.8,
+    "artifacts": {
+      "error": "name_not_matched"
+    },
+    "new_page_names": [],
+    "seconds": 0.01,
+    "artifact_problems": [
+      "artifacts_error: name_not_matched"
+    ]
   },
   "check2": {
     "query": "KFC",
     "country": "US",
     "advertiser": "KFC",
-    "resolved": {
-      "page_name": "KFC",
-      "score": 0.8
-    },
-    "new_ads": 0,
-    "ended_ads": 0,
-    "changed_ads": 0,
     "partial": false,
+    "error": "name_not_matched",
+    "target": "KFC",
+    "candidates": [
+      {
+        "page_name": "Saucy by KFC",
+        "score": 0.6
+      }
+    ],
+    "threshold": 0.8,
     "artifacts": {
-      "html": "artifacts/check2/html.html",
-      "digest": "artifacts/check2/digest.json"
+      "error": "name_not_matched"
     },
     "new_page_names": [],
-    "seconds": 0.01
+    "seconds": 0.01,
+    "artifact_problems": [
+      "artifacts_error: name_not_matched"
+    ]
   },
-  "artifacts_ok": true,
-  "artifacts2_ok": true,
+  "artifacts_ok": false,
+  "artifacts2_ok": false,
   "currency": {
     "expected": null,
     "found": [],
-    "ok": null
+    "ok": null,
+    "caveat": null
   },
-  "status": "PASS",
-  "failures": [],
+  "status": "FAIL",
+  "failures": [
+    "check1_error: name_not_matched",
+    "check2_error: name_not_matched",
+    "artifacts_error: name_not_matched",
+    "artifacts2_error: name_not_matched"
+  ],
   "timings": {
-    "search": 3.1,
-    "advertiser_search": 0.01,
+    "search": 6.34,
+    "advertiser_search": 0.02,
     "check1": 0.01,
     "check2": 0.01,
-    "total": 3.13
+    "total": 6.38
   },
   "attempts": {
     "total": 4,

@@ -3,7 +3,7 @@
   "country": "AE",
   "advertiser": "Domino's Pizza",
   "folder": "evals/live-matrix/dominos-pizza-ae",
-  "data_dir": "/var/folders/zf/g9bpd9s55sv10tz2mnhqch800000gn/T/ads-intel-live-eval-7v9t8l1b/tmp2el_l_j8",
+  "data_dir": "/var/folders/zf/g9bpd9s55sv10tz2mnhqch800000gn/T/ads-intel-live-eval-h12a1oo8/tmp498ow42z",
   "search_summary": {
     "count": 20,
     "complete": false,
@@ -23,7 +23,7 @@
       "Linguza: AI English Tutor",
       "Tony’s Swedish Pizza And Kebab"
     ],
-    "seconds": 13.12
+    "seconds": 11.44
   },
   "advertiser_summary": {
     "count": 2,
@@ -39,7 +39,7 @@
     "page_names": [
       "Domino's Pizza"
     ],
-    "seconds": 9.23
+    "seconds": 0.02
   },
   "watch_add": {
     "error": null,
@@ -71,7 +71,7 @@
     "new_page_names": [
       "Domino's Pizza"
     ],
-    "seconds": 9.59
+    "seconds": 0.01
   },
   "check2": {
     "query": "Domino's Pizza",
@@ -90,7 +90,7 @@
       "digest": "artifacts/check2/digest.json"
     },
     "new_page_names": [],
-    "seconds": 8.74
+    "seconds": 0.01
   },
   "artifacts_ok": true,
   "artifacts2_ok": true,
@@ -99,23 +99,24 @@
     "found": [
       "AED"
     ],
-    "ok": true
+    "ok": true,
+    "caveat": null
   },
   "status": "PASS",
   "failures": [],
   "timings": {
-    "search": 13.12,
-    "advertiser_search": 9.23,
-    "check1": 9.59,
-    "check2": 8.74,
-    "total": 40.68
+    "search": 11.44,
+    "advertiser_search": 0.02,
+    "check1": 0.01,
+    "check2": 0.01,
+    "total": 11.48
   },
   "attempts": {
-    "total": 5,
-    "failed": 1,
+    "total": 4,
+    "failed": 0,
     "transport_failed": 0,
-    "parse_failed": 1,
-    "shell": 1,
+    "parse_failed": 0,
+    "shell": 0,
     "blocked": 0,
     "markup_changed": 0
   }

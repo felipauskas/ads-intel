@@ -3,7 +3,7 @@
   "country": "EG",
   "advertiser": "KFC",
   "folder": "evals/live-matrix/kfc-eg",
-  "data_dir": "/var/folders/zf/g9bpd9s55sv10tz2mnhqch800000gn/T/ads-intel-live-eval-7v9t8l1b/tmpvuahvvcn",
+  "data_dir": "/var/folders/zf/g9bpd9s55sv10tz2mnhqch800000gn/T/ads-intel-live-eval-h12a1oo8/tmpe6x6cn7r",
   "search_summary": {
     "count": 19,
     "complete": true,
@@ -16,7 +16,7 @@
       "KFC",
       "Porto Sokhna"
     ],
-    "seconds": 3.25
+    "seconds": 6.31
   },
   "advertiser_summary": {
     "count": 14,
@@ -32,7 +32,7 @@
     "page_names": [
       "KFC Masr"
     ],
-    "seconds": 0.01
+    "seconds": 0.02
   },
   "watch_add": {
     "error": null,
@@ -64,7 +64,7 @@
     "new_page_names": [
       "KFC Masr"
     ],
-    "seconds": 0.01
+    "seconds": 0.02
   },
   "check2": {
     "query": "KFC",
@@ -93,16 +93,17 @@
       "EGP",
       "جنيه"
     ],
-    "ok": true
+    "ok": true,
+    "caveat": null
   },
   "status": "PASS",
   "failures": [],
   "timings": {
-    "search": 3.25,
-    "advertiser_search": 0.01,
-    "check1": 0.01,
+    "search": 6.31,
+    "advertiser_search": 0.02,
+    "check1": 0.02,
     "check2": 0.01,
-    "total": 3.28
+    "total": 6.36
   },
   "attempts": {
     "total": 4,

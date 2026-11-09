@@ -3,26 +3,18 @@
   "country": "EG",
   "advertiser": "McDonald's",
   "folder": "evals/live-matrix/mcdonalds-eg",
-  "data_dir": "/var/folders/zf/g9bpd9s55sv10tz2mnhqch800000gn/T/ads-intel-live-eval-7v9t8l1b/tmp6hyrp90z",
+  "data_dir": "/var/folders/zf/g9bpd9s55sv10tz2mnhqch800000gn/T/ads-intel-live-eval-h12a1oo8/tmpnrentvyb",
   "search_summary": {
-    "count": 20,
-    "complete": false,
-    "fetched": 20,
-    "country": "EG",
-    "error": null,
-    "page_names": [
-      "McDonald's",
-      "Mega Technology",
-      "اسلامي نبض حياتي",
-      "Franquicia IA",
-      "Ligue 1 McDonald's",
-      "Monopoly GO",
-      "BYT Vacuum Machine"
-    ],
-    "seconds": 9.88
+    "count": null,
+    "complete": null,
+    "fetched": null,
+    "country": null,
+    "error": "parse_failed: dead_render: shell: render (5154 chars) with no card markers or empty-state text",
+    "page_names": [],
+    "seconds": 32.25
   },
   "advertiser_summary": {
-    "count": 15,
+    "count": 13,
     "complete": true,
     "resolved": {
       "page_name": "McDonald's",
@@ -35,7 +27,7 @@
     "page_names": [
       "McDonald's"
     ],
-    "seconds": 6.38
+    "seconds": 23.47
   },
   "watch_add": {
     "error": null,
@@ -56,7 +48,7 @@
       "page_name": "McDonald's",
       "score": 0.8
     },
-    "new_ads": 15,
+    "new_ads": 13,
     "ended_ads": 0,
     "changed_ads": 0,
     "partial": false,
@@ -67,7 +59,7 @@
     "new_page_names": [
       "McDonald's"
     ],
-    "seconds": 7.64
+    "seconds": 23.5
   },
   "check2": {
     "query": "McDonald's",
@@ -86,7 +78,7 @@
       "digest": "artifacts/check2/digest.json"
     },
     "new_page_names": [],
-    "seconds": 6.53
+    "seconds": 17.95
   },
   "artifacts_ok": true,
   "artifacts2_ok": true,
@@ -95,23 +87,26 @@
     "found": [
       "جنيه"
     ],
-    "ok": true
+    "ok": true,
+    "caveat": null
   },
-  "status": "PASS",
-  "failures": [],
+  "status": "FAIL",
+  "failures": [
+    "search_error: parse_failed: dead_render: shell: render (5154 chars) with no card markers or empty-state text"
+  ],
   "timings": {
-    "search": 9.88,
-    "advertiser_search": 6.38,
-    "check1": 7.64,
-    "check2": 6.53,
-    "total": 30.43
+    "search": 32.25,
+    "advertiser_search": 23.47,
+    "check1": 23.5,
+    "check2": 17.95,
+    "total": 97.17
   },
   "attempts": {
-    "total": 5,
-    "failed": 1,
+    "total": 17,
+    "failed": 14,
     "transport_failed": 0,
-    "parse_failed": 1,
-    "shell": 1,
+    "parse_failed": 14,
+    "shell": 14,
     "blocked": 0,
     "markup_changed": 0
   }

@@ -5,35 +5,134 @@
     {
       "phase": "search",
       "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=GB&q=McDonald%27s&media_type=all&search_type=keyword_unordered",
-      "seconds": 3.06,
-      "chars": 67674,
-      "failed": false,
+      "seconds": 6.06,
+      "chars": 5217,
+      "failed": true,
       "transport_failed": false,
-      "dead_render": null
+      "dead_render": "shell"
+    },
+    {
+      "phase": "search",
+      "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=GB&q=McDonald%27s&media_type=all&search_type=keyword_unordered&cache_bust=e947c00bcd554ca2a26065fae431fa4b",
+      "seconds": 5.44,
+      "chars": 5217,
+      "failed": true,
+      "transport_failed": false,
+      "dead_render": "shell"
+    },
+    {
+      "phase": "search",
+      "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=GB&q=McDonald%27s&media_type=all&search_type=keyword_unordered&cache_bust=3d6b95ff852b41ad97703d380ed13dd7",
+      "seconds": 5.67,
+      "chars": 5217,
+      "failed": true,
+      "transport_failed": false,
+      "dead_render": "shell"
+    },
+    {
+      "phase": "search",
+      "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=GB&q=McDonald%27s&media_type=all&search_type=keyword_unordered&cache_bust=98098386706a4caead2c1d362179204f",
+      "seconds": 5.25,
+      "chars": 5217,
+      "failed": true,
+      "transport_failed": false,
+      "dead_render": "shell"
+    },
+    {
+      "phase": "search",
+      "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=GB&q=McDonald%27s&media_type=all&search_type=keyword_unordered&cache_bust=4c5328f38010425696fdb4801e91aa1f",
+      "seconds": 5.54,
+      "chars": 5217,
+      "failed": true,
+      "transport_failed": false,
+      "dead_render": "shell"
+    },
+    {
+      "phase": "search",
+      "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=GB&q=McDonald%27s&media_type=all&search_type=keyword_unordered&cache_bust=40894b18c97248478367a7331a7e503f",
+      "seconds": 5.07,
+      "chars": 5217,
+      "failed": true,
+      "transport_failed": false,
+      "dead_render": "shell"
     },
     {
       "phase": "advertiser_search",
-      "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=GB&q=McDonald%27s&media_type=all&search_type=keyword_unordered",
-      "seconds": 0.01,
-      "chars": 67674,
+      "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=GB&q=McDonald%27s&media_type=all&search_type=keyword_unordered&cache_bust=66361265627f4e199b6ef830d0d04d90",
+      "seconds": 6.96,
+      "chars": 68075,
       "failed": false,
       "transport_failed": false,
       "dead_render": null
     },
     {
       "phase": "check1",
-      "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=GB&q=McDonald%27s&media_type=all&search_type=keyword_unordered",
-      "seconds": 0.01,
-      "chars": 67674,
+      "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=GB&q=McDonald%27s&media_type=all&search_type=keyword_unordered&cache_bust=2cdcd937b5a5447ebf78d9e3fbd11ae5",
+      "seconds": 5.64,
+      "chars": 5217,
+      "failed": true,
+      "transport_failed": false,
+      "dead_render": "shell"
+    },
+    {
+      "phase": "check1",
+      "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=GB&q=McDonald%27s&media_type=all&search_type=keyword_unordered&cache_bust=e75871e45b3b4df8b9384fb937fad67a",
+      "seconds": 5.23,
+      "chars": 5217,
+      "failed": true,
+      "transport_failed": false,
+      "dead_render": "shell"
+    },
+    {
+      "phase": "check1",
+      "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=GB&q=McDonald%27s&media_type=all&search_type=keyword_unordered&cache_bust=7c22b1c485c8454a922965d685d4c2d1",
+      "seconds": 6.32,
+      "chars": 5217,
+      "failed": true,
+      "transport_failed": false,
+      "dead_render": "shell"
+    },
+    {
+      "phase": "check1",
+      "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=GB&q=McDonald%27s&media_type=all&search_type=keyword_unordered&cache_bust=03d982bc441e4f2fb3d3ee26aef3d7b5",
+      "seconds": 6.02,
+      "chars": 5217,
+      "failed": true,
+      "transport_failed": false,
+      "dead_render": "shell"
+    },
+    {
+      "phase": "check1",
+      "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=GB&q=McDonald%27s&media_type=all&search_type=keyword_unordered&cache_bust=4480a1f8196f4bc79f5a6b948e6da968",
+      "seconds": 7.17,
+      "chars": 68075,
       "failed": false,
       "transport_failed": false,
       "dead_render": null
     },
     {
       "phase": "check2",
-      "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=GB&q=McDonald%27s&media_type=all&search_type=keyword_unordered",
-      "seconds": 0.01,
-      "chars": 67674,
+      "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=GB&q=McDonald%27s&media_type=all&search_type=keyword_unordered&cache_bust=2ccf16c318394fbb9f84899296f44bf4",
+      "seconds": 6.46,
+      "chars": 5217,
+      "failed": true,
+      "transport_failed": false,
+      "dead_render": "shell"
+    },
+    {
+      "phase": "check2",
+      "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=GB&q=McDonald%27s&media_type=all&search_type=keyword_unordered&cache_bust=e71db435cfc34ef09f67bad7ea7b9e6b",
+      "seconds": 5.75,
+      "chars": 5217,
+      "failed": true,
+      "transport_failed": false,
+      "dead_render": "shell"
+    },
+    {
+      "phase": "check2",
+      "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=GB&q=McDonald%27s&media_type=all&search_type=keyword_unordered&cache_bust=af2b501f62b0480ea8f46664d645aaa8",
+      "seconds": 7.48,
+      "chars": 68084,
       "failed": false,
       "transport_failed": false,
       "dead_render": null

@@ -3,7 +3,7 @@
   "country": "US",
   "advertiser": "Domino's Pizza",
   "folder": "evals/live-matrix/dominos-pizza-us",
-  "data_dir": "/var/folders/zf/g9bpd9s55sv10tz2mnhqch800000gn/T/ads-intel-live-eval-7v9t8l1b/tmp8a_ffn34",
+  "data_dir": "/var/folders/zf/g9bpd9s55sv10tz2mnhqch800000gn/T/ads-intel-live-eval-h12a1oo8/tmpgdsjcbiw",
   "search_summary": {
     "count": 20,
     "complete": false,
@@ -16,7 +16,7 @@
       "Jas and Kam The Foodies",
       "CERRAJERÍA BY FABBRO"
     ],
-    "seconds": 3.12
+    "seconds": 6.76
   },
   "advertiser_summary": {
     "count": 18,
@@ -32,7 +32,7 @@
     "page_names": [
       "Domino's Pizza"
     ],
-    "seconds": 0.01
+    "seconds": 0.02
   },
   "watch_add": {
     "error": null,
@@ -64,7 +64,7 @@
     "new_page_names": [
       "Domino's Pizza"
     ],
-    "seconds": 0.01
+    "seconds": 0.02
   },
   "check2": {
     "query": "Domino's Pizza",
@@ -83,23 +83,24 @@
       "digest": "artifacts/check2/digest.json"
     },
     "new_page_names": [],
-    "seconds": 0.01
+    "seconds": 0.02
   },
   "artifacts_ok": true,
   "artifacts2_ok": true,
   "currency": {
     "expected": null,
     "found": [],
-    "ok": null
+    "ok": null,
+    "caveat": null
   },
   "status": "PASS",
   "failures": [],
   "timings": {
-    "search": 3.12,
-    "advertiser_search": 0.01,
-    "check1": 0.01,
-    "check2": 0.01,
-    "total": 3.15
+    "search": 6.76,
+    "advertiser_search": 0.02,
+    "check1": 0.02,
+    "check2": 0.02,
+    "total": 6.82
   },
   "attempts": {
     "total": 4,

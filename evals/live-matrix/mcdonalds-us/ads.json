@@ -1,656 +1,7 @@
 {
   "brand": "McDonald's",
   "country": "US",
-  "search": [
-    {
-      "id": "28659683950337871",
-      "page_name": "McDonald's",
-      "status": "active",
-      "first_seen": "Oct 6, 2026",
-      "last_seen": "",
-      "creative_text": "now i want fries",
-      "library_url": "https://www.facebook.com/ads/library/?id=28659683950337871",
-      "page_url": "https://www.facebook.com/McDonalds/",
-      "page_id": "",
-      "link_url": "https://smart.link/u1ebvgjbzod25",
-      "link_title": "behind the fries",
-      "cta_text": "Order Now",
-      "link_caption": "",
-      "images": [
-        "https://scontent-lax3-1.xx.fbcdn.net/v/t39.35426-6/871123052_1112953308173071_5520600123373905145_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=108&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=k-UUfiZa2jAQ7kNvwG2wpve&_nc_oc=AdoZHSEOKX03kiUHrWj1YxinpIBSR3sGWBx17yboJ5_bep41plqDKSySQYG_Q_YBlII&_nc_zt=14&_nc_ht=scontent-lax3-1.xx&_nc_gid=WZoSN3shk5OeUO-RMEcJSw&_nc_ss=7b289&oh=00_AQQCpww42LyfJPiiuCl80E4NdvqCRscGh_R459mmo0miZw&oe=6AF760F2"
-      ],
-      "has_video": false,
-      "same_creative_count": 3,
-      "multiple_versions": true,
-      "cta_type": "ORDER_NOW",
-      "display_format": "image",
-      "cards": [
-        {
-          "body": "now i want fries",
-          "cta": "Order Now",
-          "image": "https://scontent-lax3-1.xx.fbcdn.net/v/t39.35426-6/871123052_1112953308173071_5520600123373905145_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=108&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=k-UUfiZa2jAQ7kNvwG2wpve&_nc_oc=AdoZHSEOKX03kiUHrWj1YxinpIBSR3sGWBx17yboJ5_bep41plqDKSySQYG_Q_YBlII&_nc_zt=14&_nc_ht=scontent-lax3-1.xx&_nc_gid=WZoSN3shk5OeUO-RMEcJSw&_nc_ss=7b289&oh=00_AQQCpww42LyfJPiiuCl80E4NdvqCRscGh_R459mmo0miZw&oe=6AF760F2",
-          "link_url": "https://smart.link/u1ebvgjbzod25",
-          "title": "behind the fries",
-          "video": null
-        }
-      ]
-    },
-    {
-      "id": "1422042946271089",
-      "page_name": "Monopoly GO",
-      "status": "active",
-      "first_seen": "Mar 31, 2026",
-      "last_seen": "",
-      "creative_text": "Celebrate Monopoly at McDonald’s with Special In-Game Rewards!",
-      "library_url": "https://www.facebook.com/ads/library/?id=1422042946271089",
-      "page_url": "https://www.facebook.com/MonopolyGO/",
-      "page_id": "",
-      "link_url": "http://play.google.com/store/apps/details?id=com.scopely.monopolygo",
-      "link_title": "Monopoly at McDonald’s!",
-      "cta_text": "Install Now",
-      "link_caption": "PLAY.GOOGLE.COM",
-      "images": [
-        "https://scontent-lax3-2.xx.fbcdn.net/v/t39.35426-6/836407427_2835507256823596_435401566681218898_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=103&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=kA1LdSe8UsEQ7kNvwFY6uwc&_nc_oc=Adro2wnKlcwG5jYQgPjNmJh9mnP_QC-r2pjzPQTMt2b90McqRwuqVSUA59UOD8zVjwM&_nc_zt=14&_nc_ht=scontent-lax3-2.xx&_nc_gid=WZoSN3shk5OeUO-RMEcJSw&_nc_ss=7b289&oh=00_AQQQ-q-V-5Bs9pWg7xLe8ayeXzBhkcK35-PbyVGEVqy82w&oe=6AF75A2A"
-      ],
-      "has_video": false,
-      "same_creative_count": 0,
-      "multiple_versions": true,
-      "cta_type": "INSTALL_MOBILE_APP",
-      "display_format": "image",
-      "cards": [
-        {
-          "body": "Celebrate Monopoly at McDonald’s with Special In-Game Rewards!",
-          "cta": "Install Now",
-          "image": "https://scontent-lax3-2.xx.fbcdn.net/v/t39.35426-6/836407427_2835507256823596_435401566681218898_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=103&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=kA1LdSe8UsEQ7kNvwFY6uwc&_nc_oc=Adro2wnKlcwG5jYQgPjNmJh9mnP_QC-r2pjzPQTMt2b90McqRwuqVSUA59UOD8zVjwM&_nc_zt=14&_nc_ht=scontent-lax3-2.xx&_nc_gid=WZoSN3shk5OeUO-RMEcJSw&_nc_ss=7b289&oh=00_AQQQ-q-V-5Bs9pWg7xLe8ayeXzBhkcK35-PbyVGEVqy82w&oe=6AF75A2A",
-          "link_url": "http://play.google.com/store/apps/details?id=com.scopely.monopolygo",
-          "title": "Monopoly at McDonald’s!",
-          "video": null
-        }
-      ]
-    },
-    {
-      "id": "915272287995291",
-      "page_name": "Whatnot",
-      "status": "active",
-      "first_seen": "Apr 13, 2026",
-      "last_seen": "",
-      "creative_text": "Score deals on collectibles - from LEGO, Funko Pops, Labubus + more!",
-      "library_url": "https://www.facebook.com/ads/library/?id=915272287995291",
-      "page_url": "https://www.facebook.com/RealWhatnot/",
-      "page_id": "",
-      "link_url": "https://www.whatnot.com/listing/TGlzdGluZ05vZGU6MTAwNTI3NTc0MQ==",
-      "link_title": "Whatnot The Live Shopping Marketplace",
-      "cta_text": "Install Now",
-      "link_caption": "PLAY.GOOGLE.COM",
-      "images": [
-        "https://scontent-lax7-1.xx.fbcdn.net/v/t39.35426-6/658321014_1088045111050850_3293585400729666916_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=105&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=PR4NNrEP2nYQ7kNvwGI8c70&_nc_oc=Ado-3bHjQ0nY5olpiWtx53LkD3y--7LTLsK-eWuKCVD_SCM3L5mG7bx3EWTVkSEGYO0&_nc_zt=14&_nc_ht=scontent-lax7-1.xx&_nc_gid=WZoSN3shk5OeUO-RMEcJSw&_nc_ss=7b289&oh=00_AQRvS93GrBDjGFxd7UislBtH_VnetLF5pNd3V6uZQA8TAg&oe=6AF75CE7"
-      ],
-      "has_video": false,
-      "same_creative_count": 6,
-      "multiple_versions": true,
-      "cta_type": "INSTALL_MOBILE_APP",
-      "display_format": "image",
-      "cards": [
-        {
-          "body": "Score deals on collectibles - from LEGO, Funko Pops, Labubus + more!",
-          "cta": "Install Now",
-          "image": "https://scontent-lax7-1.xx.fbcdn.net/v/t39.35426-6/658321014_1088045111050850_3293585400729666916_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=105&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=PR4NNrEP2nYQ7kNvwGI8c70&_nc_oc=Ado-3bHjQ0nY5olpiWtx53LkD3y--7LTLsK-eWuKCVD_SCM3L5mG7bx3EWTVkSEGYO0&_nc_zt=14&_nc_ht=scontent-lax7-1.xx&_nc_gid=WZoSN3shk5OeUO-RMEcJSw&_nc_ss=7b289&oh=00_AQRvS93GrBDjGFxd7UislBtH_VnetLF5pNd3V6uZQA8TAg&oe=6AF75CE7",
-          "link_url": "https://www.whatnot.com/listing/TGlzdGluZ05vZGU6MTAwNTI3NTc0MQ==",
-          "title": "Whatnot The Live Shopping Marketplace",
-          "video": null
-        }
-      ]
-    },
-    {
-      "id": "3768421023298843",
-      "page_name": "McDonald's",
-      "status": "active",
-      "first_seen": "Sep 29, 2026",
-      "last_seen": "",
-      "creative_text": "Get your hands on this great deal.",
-      "library_url": "https://www.facebook.com/ads/library/?id=3768421023298843",
-      "page_url": "https://www.facebook.com/McDonalds/",
-      "page_id": "",
-      "link_url": "https://www.mcdonalds.com/us/en-us/download-app.html",
-      "link_title": "it’s as simple as McDonald's Download",
-      "cta_text": "Order Now",
-      "link_caption": "MCDONALDS.COM",
-      "images": [
-        "https://scontent-lax7-1.xx.fbcdn.net/v/t39.35426-6/615487750_732136346636783_1395649993937322739_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=105&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=9xqGTsGS880Q7kNvwG5lNBc&_nc_oc=AdoPcjBJHbpvgJDHXTuLUHgN8gEgw9jNEdwzHfsUsUrVc3bhnmNduUr0Iqe4LP8QDtA&_nc_zt=14&_nc_ht=scontent-lax7-1.xx&_nc_gid=WZoSN3shk5OeUO-RMEcJSw&_nc_ss=7b289&oh=00_AQQvtIO9CeYLE70n0ucFFIWbtaSRXHlPSZxFtMQfv7A3XQ&oe=6AF76250"
-      ],
-      "has_video": false,
-      "same_creative_count": 2,
-      "multiple_versions": true,
-      "cta_type": "ORDER_NOW",
-      "display_format": "image",
-      "cards": [
-        {
-          "body": "Get your hands on this great deal.",
-          "cta": "Order Now",
-          "image": "https://scontent-lax7-1.xx.fbcdn.net/v/t39.35426-6/615487750_732136346636783_1395649993937322739_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=105&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=9xqGTsGS880Q7kNvwG5lNBc&_nc_oc=AdoPcjBJHbpvgJDHXTuLUHgN8gEgw9jNEdwzHfsUsUrVc3bhnmNduUr0Iqe4LP8QDtA&_nc_zt=14&_nc_ht=scontent-lax7-1.xx&_nc_gid=WZoSN3shk5OeUO-RMEcJSw&_nc_ss=7b289&oh=00_AQQvtIO9CeYLE70n0ucFFIWbtaSRXHlPSZxFtMQfv7A3XQ&oe=6AF76250",
-          "link_url": "https://www.mcdonalds.com/us/en-us/download-app.html",
-          "title": "it’s as simple as McDonald's Download",
-          "video": null
-        }
-      ]
-    },
-    {
-      "id": "1751256285966562",
-      "page_name": "McDonald's",
-      "status": "active",
-      "first_seen": "Oct 7, 2026",
-      "last_seen": "",
-      "creative_text": "Go ahead and size up. Any size soft drinks are just $1.50. Available all day.",
-      "library_url": "https://www.facebook.com/ads/library/?id=1751256285966562",
-      "page_url": "https://www.facebook.com/McDonalds/",
-      "page_id": "",
-      "link_url": "https://smart.link/r659bpauuyofd",
-      "link_title": "Any size. Any sip. Any Size Soft Drink Price and participation may vary. Cannot be combined with any other offer or combo meal. ©2026 The Coca-Cola Company. “Coca-Cola,” “Sprite,” “Hi-C” and “Orange Lavaburst” are registered trademarks of The Coca-Cola Company. ©2026 McDonald’s",
-      "cta_text": "Download",
-      "link_caption": "MCDONALDS.COM",
-      "images": [
-        "https://scontent-lax3-1.xx.fbcdn.net/v/t39.35426-6/825340576_1645223437349475_6599127268229407743_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=110&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=3xe1cKayO4gQ7kNvwGwpvLe&_nc_oc=Adqcrg2jsn6CCTXsK9F4efPGYwyJKKd-rdcPP8IgAreMNoqbUA_mliA6WNEZX9PcWoI&_nc_zt=14&_nc_ht=scontent-lax3-1.xx&_nc_gid=WZoSN3shk5OeUO-RMEcJSw&_nc_ss=7b289&oh=00_AQRN3C1ZxYRsbIebhTgPSO45_cUz-Xk7p-7uPMrte7qhNQ&oe=6AF757AE"
-      ],
-      "has_video": false,
-      "same_creative_count": 0,
-      "multiple_versions": true,
-      "cta_type": "DOWNLOAD",
-      "display_format": "image",
-      "cards": [
-        {
-          "body": "Go ahead and size up. Any size soft drinks are just $1.50. Available all day.",
-          "cta": "Download",
-          "image": "https://scontent-lax3-1.xx.fbcdn.net/v/t39.35426-6/825340576_1645223437349475_6599127268229407743_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=110&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=3xe1cKayO4gQ7kNvwGwpvLe&_nc_oc=Adqcrg2jsn6CCTXsK9F4efPGYwyJKKd-rdcPP8IgAreMNoqbUA_mliA6WNEZX9PcWoI&_nc_zt=14&_nc_ht=scontent-lax3-1.xx&_nc_gid=WZoSN3shk5OeUO-RMEcJSw&_nc_ss=7b289&oh=00_AQRN3C1ZxYRsbIebhTgPSO45_cUz-Xk7p-7uPMrte7qhNQ&oe=6AF757AE",
-          "link_url": "https://smart.link/r659bpauuyofd",
-          "title": "Any size. Any sip. Any Size Soft Drink Price and participation may vary. Cannot be combined with any other offer or combo meal. ©2026 The Coca-Cola Company. “Coca-Cola,” “Sprite,” “Hi-C” and “Orange Lavaburst” are registered trademarks of The Coca-Cola Company. ©2026 McDonald’s",
-          "video": null
-        }
-      ]
-    },
-    {
-      "id": "655676137310302",
-      "page_name": "Whatnot",
-      "status": "active",
-      "first_seen": "May 14, 2025",
-      "last_seen": "",
-      "creative_text": "Score deals on collectibles - from LEGO, Funko Pops, Labubus + more!",
-      "library_url": "https://www.facebook.com/ads/library/?id=655676137310302",
-      "page_url": "https://www.facebook.com/RealWhatnot/",
-      "page_id": "",
-      "link_url": "https://www.whatnot.com/listing/TGlzdGluZ05vZGU6MTAwMTUyODEzOQ==",
-      "link_title": "Whatnot Download Whatnot: Shop, Sell, Connect by Whatnot Inc. on the App Store. See screenshots, ratings and reviews, user tips, and more apps like Whatnot: Shop, Sell,…",
-      "cta_text": "Install Now",
-      "link_caption": "ITUNES.APPLE.COM",
-      "images": [
-        "https://scontent-lax7-1.xx.fbcdn.net/v/t39.35426-6/661483352_1490489052470355_6728823028005168105_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=105&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=JT-RuT0oyQ4Q7kNvwEIH-D5&_nc_oc=AdrUr1vczGqKodlV96x0VMZRO9-juhN4i1VZY2o-EK9v_aEOnZMUz2M4zg0iLSMabGE&_nc_zt=14&_nc_ht=scontent-lax7-1.xx&_nc_gid=WZoSN3shk5OeUO-RMEcJSw&_nc_ss=7b289&oh=00_AQQ2cb5DZZ1IraoedhwukzbQUaW0wAz6rQk6Xv6DqVca3w&oe=6AF7747D"
-      ],
-      "has_video": false,
-      "same_creative_count": 0,
-      "multiple_versions": false,
-      "cta_type": "INSTALL_MOBILE_APP",
-      "display_format": "image",
-      "cards": [
-        {
-          "body": "Score deals on collectibles - from LEGO, Funko Pops, Labubus + more!",
-          "cta": "Install Now",
-          "image": "https://scontent-lax7-1.xx.fbcdn.net/v/t39.35426-6/661483352_1490489052470355_6728823028005168105_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=105&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=JT-RuT0oyQ4Q7kNvwEIH-D5&_nc_oc=AdrUr1vczGqKodlV96x0VMZRO9-juhN4i1VZY2o-EK9v_aEOnZMUz2M4zg0iLSMabGE&_nc_zt=14&_nc_ht=scontent-lax7-1.xx&_nc_gid=WZoSN3shk5OeUO-RMEcJSw&_nc_ss=7b289&oh=00_AQQ2cb5DZZ1IraoedhwukzbQUaW0wAz6rQk6Xv6DqVca3w&oe=6AF7747D",
-          "link_url": "https://www.whatnot.com/listing/TGlzdGluZ05vZGU6MTAwMTUyODEzOQ==",
-          "title": "Whatnot Download Whatnot: Shop, Sell, Connect by Whatnot Inc. on the App Store. See screenshots, ratings and reviews, user tips, and more apps like Whatnot: Shop, Sell,…",
-          "video": null
-        }
-      ]
-    },
-    {
-      "id": "1023855824003632",
-      "page_name": "Dan Lok",
-      "status": "active",
-      "first_seen": "Oct 4, 2026",
-      "last_seen": "",
-      "creative_text": "See what your business needs so it can scale in this live recording from 9-figure CEO Dan Lok.",
-      "library_url": "https://www.facebook.com/ads/library/?id=1023855824003632",
-      "page_url": "https://www.facebook.com/DanLokOfficial/",
-      "page_id": "",
-      "link_url": "",
-      "link_title": "",
-      "cta_text": "",
-      "link_caption": "",
-      "images": [],
-      "has_video": true,
-      "same_creative_count": 0,
-      "multiple_versions": true,
-      "cta_type": "",
-      "display_format": "video",
-      "cards": [
-        {
-          "body": "See what your business needs so it can scale in this live recording from 9-figure CEO Dan Lok.",
-          "cta": "",
-          "image": null,
-          "link_url": "",
-          "title": "",
-          "video": null
-        }
-      ]
-    },
-    {
-      "id": "1068261046071380",
-      "page_name": "McDonald's",
-      "status": "active",
-      "first_seen": "Sep 13, 2026",
-      "last_seen": "",
-      "creative_text": "Get going already!",
-      "library_url": "https://www.facebook.com/ads/library/?id=1068261046071380",
-      "page_url": "https://www.facebook.com/McDonalds/",
-      "page_id": "",
-      "link_url": "https://www.mcdonalds.com/us/en-us/download-app.html",
-      "link_title": "McDonald's Download",
-      "cta_text": "Order Now",
-      "link_caption": "MCDONALDS.COM",
-      "images": [
-        "https://scontent-lax3-1.xx.fbcdn.net/v/t39.35426-6/825328580_1623840469278386_6351036132876773363_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=104&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=aM2Ti1oCJYYQ7kNvwFSpy98&_nc_oc=AdpjmCudiRAvICYyJwxZcgb4Ai-h6lcCOhU-FT6D5SAQlV55hSScZD6WxSAs3o8bem8&_nc_zt=14&_nc_ht=scontent-lax3-1.xx&_nc_gid=WZoSN3shk5OeUO-RMEcJSw&_nc_ss=7b289&oh=00_AQS06C6MU_oDsakiWas4ho2GCXigK16Yw2_GB2xKxa-tNQ&oe=6AF77E51"
-      ],
-      "has_video": false,
-      "same_creative_count": 0,
-      "multiple_versions": true,
-      "cta_type": "ORDER_NOW",
-      "display_format": "image",
-      "cards": [
-        {
-          "body": "Get going already!",
-          "cta": "Order Now",
-          "image": "https://scontent-lax3-1.xx.fbcdn.net/v/t39.35426-6/825328580_1623840469278386_6351036132876773363_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=104&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=aM2Ti1oCJYYQ7kNvwFSpy98&_nc_oc=AdpjmCudiRAvICYyJwxZcgb4Ai-h6lcCOhU-FT6D5SAQlV55hSScZD6WxSAs3o8bem8&_nc_zt=14&_nc_ht=scontent-lax3-1.xx&_nc_gid=WZoSN3shk5OeUO-RMEcJSw&_nc_ss=7b289&oh=00_AQS06C6MU_oDsakiWas4ho2GCXigK16Yw2_GB2xKxa-tNQ&oe=6AF77E51",
-          "link_url": "https://www.mcdonalds.com/us/en-us/download-app.html",
-          "title": "McDonald's Download",
-          "video": null
-        }
-      ]
-    },
-    {
-      "id": "2306767143507401",
-      "page_name": "McDonald's",
-      "status": "active",
-      "first_seen": "Sep 13, 2026",
-      "last_seen": "",
-      "creative_text": "Lions get a sack. You get a snack. Score $1 10 pc Chicken McNuggets when the Lions get a sack during a home game. Only in the app.",
-      "library_url": "https://www.facebook.com/ads/library/?id=2306767143507401",
-      "page_url": "https://www.facebook.com/McDonalds/",
-      "page_id": "",
-      "link_url": "https://smart.link/r659bpauuyofd",
-      "link_title": "Only in the app Offer valid day after Lions home game activation for 24 hours at participating McDonald’s. Valid 1x/day. Excludes tax. Must opt into rewards. Visit McD app for details. ©2026 McDonald’s",
-      "cta_text": "Download",
-      "link_caption": "MCDONALDS.COM",
-      "images": [
-        "https://scontent-lax3-1.xx.fbcdn.net/v/t39.35426-6/802966354_1395058445409116_53966166871378585_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=110&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=tyu3FXt-68IQ7kNvwFragbC&_nc_oc=AdqSnj8BwFWm3V0jVacUMR-2jORKr1SJVt-29Gn15ZiV1ZT8Tyu4xA8JSiQW1JpTwjc&_nc_zt=14&_nc_ht=scontent-lax3-1.xx&_nc_gid=WZoSN3shk5OeUO-RMEcJSw&_nc_ss=7b289&oh=00_AQR4WhamCtuk_2yUUpqR5-M5KdKFVnHT5LvdU9ftcd73Fw&oe=6AF77D8F"
-      ],
-      "has_video": false,
-      "same_creative_count": 0,
-      "multiple_versions": true,
-      "cta_type": "DOWNLOAD",
-      "display_format": "image",
-      "cards": [
-        {
-          "body": "Lions get a sack. You get a snack. Score $1 10 pc Chicken McNuggets when the Lions get a sack during a home game. Only in the app.",
-          "cta": "Download",
-          "image": "https://scontent-lax3-1.xx.fbcdn.net/v/t39.35426-6/802966354_1395058445409116_53966166871378585_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=110&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=tyu3FXt-68IQ7kNvwFragbC&_nc_oc=AdqSnj8BwFWm3V0jVacUMR-2jORKr1SJVt-29Gn15ZiV1ZT8Tyu4xA8JSiQW1JpTwjc&_nc_zt=14&_nc_ht=scontent-lax3-1.xx&_nc_gid=WZoSN3shk5OeUO-RMEcJSw&_nc_ss=7b289&oh=00_AQR4WhamCtuk_2yUUpqR5-M5KdKFVnHT5LvdU9ftcd73Fw&oe=6AF77D8F",
-          "link_url": "https://smart.link/r659bpauuyofd",
-          "title": "Only in the app Offer valid day after Lions home game activation for 24 hours at participating McDonald’s. Valid 1x/day. Excludes tax. Must opt into rewards. Visit McD app for details. ©2026 McDonald’s",
-          "video": null
-        }
-      ]
-    },
-    {
-      "id": "1684222896558351",
-      "page_name": "McDonald's",
-      "status": "active",
-      "first_seen": "Nov 2, 2026",
-      "last_seen": "",
-      "creative_text": "Lions get a sack. You get a snack. Score $1 10 pc Chicken McNuggets when the Lions get a sack during a home game. Only in the app.",
-      "library_url": "https://www.facebook.com/ads/library/?id=1684222896558351",
-      "page_url": "https://www.facebook.com/McDonalds/",
-      "page_id": "",
-      "link_url": "https://smart.link/r659bpauuyofd",
-      "link_title": "Only in the app Offer valid day after Lions home game activation for 24 hours at participating McDonald’s. Valid 1x/day. Excludes tax. Must opt into rewards. Visit McD app for details. ©2026 McDonald’s",
-      "cta_text": "Download",
-      "link_caption": "MCDONALDS.COM",
-      "images": [
-        "https://scontent-lax3-1.xx.fbcdn.net/v/t39.35426-6/797956435_4096281750669555_5249117706914565852_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=110&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=v5luFbEAHRcQ7kNvwGypXHv&_nc_oc=AdqBeKe-lQGjbVA-ZKqrMBWoA8c14TBFmyXNfQ4I6ilv-TWBmq55BzFbLJPWAEdPwH0&_nc_zt=14&_nc_ht=scontent-lax3-1.xx&_nc_gid=WZoSN3shk5OeUO-RMEcJSw&_nc_ss=7b289&oh=00_AQRa7vOkxAMuBLgiMLOtmaiTqvf5b0vWtn5vfVMl1sMY0w&oe=6AF75A88"
-      ],
-      "has_video": false,
-      "same_creative_count": 0,
-      "multiple_versions": true,
-      "cta_type": "DOWNLOAD",
-      "display_format": "image",
-      "cards": [
-        {
-          "body": "Lions get a sack. You get a snack. Score $1 10 pc Chicken McNuggets when the Lions get a sack during a home game. Only in the app.",
-          "cta": "Download",
-          "image": "https://scontent-lax3-1.xx.fbcdn.net/v/t39.35426-6/797956435_4096281750669555_5249117706914565852_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=110&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=v5luFbEAHRcQ7kNvwGypXHv&_nc_oc=AdqBeKe-lQGjbVA-ZKqrMBWoA8c14TBFmyXNfQ4I6ilv-TWBmq55BzFbLJPWAEdPwH0&_nc_zt=14&_nc_ht=scontent-lax3-1.xx&_nc_gid=WZoSN3shk5OeUO-RMEcJSw&_nc_ss=7b289&oh=00_AQRa7vOkxAMuBLgiMLOtmaiTqvf5b0vWtn5vfVMl1sMY0w&oe=6AF75A88",
-          "link_url": "https://smart.link/r659bpauuyofd",
-          "title": "Only in the app Offer valid day after Lions home game activation for 24 hours at participating McDonald’s. Valid 1x/day. Excludes tax. Must opt into rewards. Visit McD app for details. ©2026 McDonald’s",
-          "video": null
-        }
-      ]
-    },
-    {
-      "id": "2204440663472838",
-      "page_name": "McDonald's",
-      "status": "active",
-      "first_seen": "Nov 2, 2026",
-      "last_seen": "",
-      "creative_text": "",
-      "library_url": "https://www.facebook.com/ads/library/?id=2204440663472838",
-      "page_url": "https://www.facebook.com/McDonalds/",
-      "page_id": "",
-      "link_url": "https://smart.link/ydu05ahrf6z05",
-      "link_title": "",
-      "cta_text": "Order Now",
-      "link_caption": "",
-      "images": [],
-      "has_video": true,
-      "same_creative_count": 0,
-      "multiple_versions": true,
-      "cta_type": "ORDER_NOW",
-      "display_format": "video",
-      "cards": [
-        {
-          "body": "",
-          "cta": "Order Now",
-          "image": null,
-          "link_url": "https://smart.link/ydu05ahrf6z05",
-          "title": "",
-          "video": null
-        }
-      ]
-    },
-    {
-      "id": "1344777394282045",
-      "page_name": "McDonald's",
-      "status": "active",
-      "first_seen": "Nov 2, 2026",
-      "last_seen": "",
-      "creative_text": "There are plenty of combinations…\nMcDonald's\nClick here\nOrder Now",
-      "library_url": "https://www.facebook.com/ads/library/?id=1344777394282045",
-      "page_url": "https://www.facebook.com/McDonalds/",
-      "page_id": "",
-      "link_url": "",
-      "link_title": "",
-      "cta_text": "",
-      "link_caption": "",
-      "images": [
-        "https://scontent-lax3-2.xx.fbcdn.net/v/t39.35426-6/860844182_1784732299487373_6402561379262573373_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=100&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=KWXPafcSqI4Q7kNvwFOgk5g&_nc_oc=AdolWsQcCy8hMqhPXvjvmEO7daDkVePaxCP-xnUcaYfpM3tZc9uf_pAAtmR8sc8UNu8&_nc_zt=14&_nc_ht=scontent-lax3-2.xx&_nc_gid=WZoSN3shk5OeUO-RMEcJSw&_nc_ss=7b289&oh=00_AQRCD5GAXNvfRMzMircjKcsZe7iCX8j4EfWMzRcMTkPGHQ&oe=6AF7703D"
-      ],
-      "has_video": false,
-      "same_creative_count": 0,
-      "multiple_versions": true,
-      "cta_type": "",
-      "display_format": "image",
-      "cards": [
-        {
-          "body": "There are plenty of combinations…\nMcDonald's\nClick here\nOrder Now",
-          "cta": "",
-          "image": "https://scontent-lax3-2.xx.fbcdn.net/v/t39.35426-6/860844182_1784732299487373_6402561379262573373_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=100&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=KWXPafcSqI4Q7kNvwFOgk5g&_nc_oc=AdolWsQcCy8hMqhPXvjvmEO7daDkVePaxCP-xnUcaYfpM3tZc9uf_pAAtmR8sc8UNu8&_nc_zt=14&_nc_ht=scontent-lax3-2.xx&_nc_gid=WZoSN3shk5OeUO-RMEcJSw&_nc_ss=7b289&oh=00_AQRCD5GAXNvfRMzMircjKcsZe7iCX8j4EfWMzRcMTkPGHQ&oe=6AF7703D",
-          "link_url": "",
-          "title": "",
-          "video": null
-        }
-      ]
-    },
-    {
-      "id": "2318448335586817",
-      "page_name": "McDonald's",
-      "status": "active",
-      "first_seen": "Nov 2, 2026",
-      "last_seen": "",
-      "creative_text": "can we have a moment for the 100% fresh beef?",
-      "library_url": "https://www.facebook.com/ads/library/?id=2318448335586817",
-      "page_url": "https://www.facebook.com/McDonalds/",
-      "page_id": "",
-      "link_url": "https://smart.link/8u7tdsoej5yfo",
-      "link_title": "inside the QPC",
-      "cta_text": "Order Now",
-      "link_caption": "",
-      "images": [
-        "https://scontent-lax3-2.xx.fbcdn.net/v/t39.35426-6/870487513_1399784345473828_1199338062959253536_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=103&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=2BE0-LlbOYQQ7kNvwHCgYWE&_nc_oc=AdqbCRPR4NJhTjxLQyag8q--YMZADRNbrrtMyrEeT54ILbrY8Vx8mjhg3C6YJw7JGO4&_nc_zt=14&_nc_ht=scontent-lax3-2.xx&_nc_gid=WZoSN3shk5OeUO-RMEcJSw&_nc_ss=7b289&oh=00_AQTW3_fecGH3m0QMPDN6uBxVBELRkxAiVG7ltMlVf9PwTw&oe=6AF76877"
-      ],
-      "has_video": false,
-      "same_creative_count": 3,
-      "multiple_versions": true,
-      "cta_type": "ORDER_NOW",
-      "display_format": "image",
-      "cards": [
-        {
-          "body": "can we have a moment for the 100% fresh beef?",
-          "cta": "Order Now",
-          "image": "https://scontent-lax3-2.xx.fbcdn.net/v/t39.35426-6/870487513_1399784345473828_1199338062959253536_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=103&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=2BE0-LlbOYQQ7kNvwHCgYWE&_nc_oc=AdqbCRPR4NJhTjxLQyag8q--YMZADRNbrrtMyrEeT54ILbrY8Vx8mjhg3C6YJw7JGO4&_nc_zt=14&_nc_ht=scontent-lax3-2.xx&_nc_gid=WZoSN3shk5OeUO-RMEcJSw&_nc_ss=7b289&oh=00_AQTW3_fecGH3m0QMPDN6uBxVBELRkxAiVG7ltMlVf9PwTw&oe=6AF76877",
-          "link_url": "https://smart.link/8u7tdsoej5yfo",
-          "title": "inside the QPC",
-          "video": null
-        }
-      ]
-    },
-    {
-      "id": "1857594215432426",
-      "page_name": "McDonald's",
-      "status": "active",
-      "first_seen": "Oct 6, 2026",
-      "last_seen": "",
-      "creative_text": "can we have a moment for the 100% fresh beef?",
-      "library_url": "https://www.facebook.com/ads/library/?id=1857594215432426",
-      "page_url": "https://www.facebook.com/McDonalds/",
-      "page_id": "",
-      "link_url": "https://smart.link/u1ebvgjbzod25",
-      "link_title": "inside the QPC",
-      "cta_text": "Order Now",
-      "link_caption": "",
-      "images": [
-        "https://scontent-lax3-2.xx.fbcdn.net/v/t39.35426-6/877879767_1176910758242851_1650817434583894447_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=106&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=k1ZhvZvHYNQQ7kNvwE1HkQA&_nc_oc=Adpn0I1eeP80xokVaK9nJrxywvOwqPA03GIRMjl7UK-BmmPDmwvkvi_5R6UeelTvRpQ&_nc_zt=14&_nc_ht=scontent-lax3-2.xx&_nc_gid=WZoSN3shk5OeUO-RMEcJSw&_nc_ss=7b289&oh=00_AQQIveoSV8CDKHvDTrD6LVms3V7pANAQJkmripbuegOCBg&oe=6AF77D11"
-      ],
-      "has_video": false,
-      "same_creative_count": 3,
-      "multiple_versions": true,
-      "cta_type": "ORDER_NOW",
-      "display_format": "image",
-      "cards": [
-        {
-          "body": "can we have a moment for the 100% fresh beef?",
-          "cta": "Order Now",
-          "image": "https://scontent-lax3-2.xx.fbcdn.net/v/t39.35426-6/877879767_1176910758242851_1650817434583894447_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=106&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=k1ZhvZvHYNQQ7kNvwE1HkQA&_nc_oc=Adpn0I1eeP80xokVaK9nJrxywvOwqPA03GIRMjl7UK-BmmPDmwvkvi_5R6UeelTvRpQ&_nc_zt=14&_nc_ht=scontent-lax3-2.xx&_nc_gid=WZoSN3shk5OeUO-RMEcJSw&_nc_ss=7b289&oh=00_AQQIveoSV8CDKHvDTrD6LVms3V7pANAQJkmripbuegOCBg&oe=6AF77D11",
-          "link_url": "https://smart.link/u1ebvgjbzod25",
-          "title": "inside the QPC",
-          "video": null
-        }
-      ]
-    },
-    {
-      "id": "28210495418644520",
-      "page_name": "Monopoly GO",
-      "status": "active",
-      "first_seen": "Sep 16, 2026",
-      "last_seen": "",
-      "creative_text": "Celebrate Monopoly at McDonald’s with Special In-Game Rewards!",
-      "library_url": "https://www.facebook.com/ads/library/?id=28210495418644520",
-      "page_url": "https://www.facebook.com/MonopolyGO/",
-      "page_id": "",
-      "link_url": "http://play.google.com/store/apps/details?id=com.scopely.monopolygo",
-      "link_title": "Monopoly at McDonald’s!",
-      "cta_text": "Install Now",
-      "link_caption": "PLAY.GOOGLE.COM",
-      "images": [],
-      "has_video": true,
-      "same_creative_count": 0,
-      "multiple_versions": true,
-      "cta_type": "INSTALL_MOBILE_APP",
-      "display_format": "video",
-      "cards": [
-        {
-          "body": "Celebrate Monopoly at McDonald’s with Special In-Game Rewards!",
-          "cta": "Install Now",
-          "image": null,
-          "link_url": "http://play.google.com/store/apps/details?id=com.scopely.monopolygo",
-          "title": "Monopoly at McDonald’s!",
-          "video": null
-        }
-      ]
-    },
-    {
-      "id": "1658611452558167",
-      "page_name": "Uber Eats",
-      "status": "active",
-      "first_seen": "Oct 6, 2026",
-      "last_seen": "",
-      "creative_text": "Game on? Order In!\n✅ $15 off your first order of $20 or more. Use code: us36j5h. Terms & fees apply.🔥",
-      "library_url": "https://www.facebook.com/ads/library/?id=1658611452558167",
-      "page_url": "https://www.facebook.com/UberEats/",
-      "page_id": "",
-      "link_url": "https://www.ubereats.com/store/five-guys-1520-hwy-70-se-nc-1201/pvrVLp1kQJSKhVmsv9r4SA",
-      "link_title": "$15 off your first order Five Guys",
-      "cta_text": "Order Now",
-      "link_caption": "UBEREATS.COM",
-      "images": [
-        "https://scontent-lax3-2.xx.fbcdn.net/v/t39.35426-6/813748335_1031690563175962_7960754691834773599_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=100&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=1D7vFMcRXxEQ7kNvwERls90&_nc_oc=Adr_1bSV_t0i03gBTKTYc9NX3bKu6_GydeWjaVJzLvKevwG0MEkhjAxFTL0-Wo5_aV0&_nc_zt=14&_nc_ht=scontent-lax3-2.xx&_nc_gid=WZoSN3shk5OeUO-RMEcJSw&_nc_ss=7b289&oh=00_AQT_zj_0apzawScIqLACSKv0mBqfOapeTM3PJs9yC7AEfg&oe=6AF76804"
-      ],
-      "has_video": false,
-      "same_creative_count": 3,
-      "multiple_versions": true,
-      "cta_type": "ORDER_NOW",
-      "display_format": "image",
-      "cards": [
-        {
-          "body": "Game on? Order In!\n✅ $15 off your first order of $20 or more. Use code: us36j5h. Terms & fees apply.🔥",
-          "cta": "Order Now",
-          "image": "https://scontent-lax3-2.xx.fbcdn.net/v/t39.35426-6/813748335_1031690563175962_7960754691834773599_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=100&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=1D7vFMcRXxEQ7kNvwERls90&_nc_oc=Adr_1bSV_t0i03gBTKTYc9NX3bKu6_GydeWjaVJzLvKevwG0MEkhjAxFTL0-Wo5_aV0&_nc_zt=14&_nc_ht=scontent-lax3-2.xx&_nc_gid=WZoSN3shk5OeUO-RMEcJSw&_nc_ss=7b289&oh=00_AQT_zj_0apzawScIqLACSKv0mBqfOapeTM3PJs9yC7AEfg&oe=6AF76804",
-          "link_url": "https://www.ubereats.com/store/five-guys-1520-hwy-70-se-nc-1201/pvrVLp1kQJSKhVmsv9r4SA",
-          "title": "$15 off your first order Five Guys",
-          "video": null
-        }
-      ]
-    },
-    {
-      "id": "1755530892230263",
-      "page_name": "Monopoly GO",
-      "status": "active",
-      "first_seen": "Oct 26, 2026",
-      "last_seen": "",
-      "creative_text": "Celebrate Monopoly at McDonald’s with Special In-Game Rewards!",
-      "library_url": "https://www.facebook.com/ads/library/?id=1755530892230263",
-      "page_url": "https://www.facebook.com/MonopolyGO/",
-      "page_id": "",
-      "link_url": "http://play.google.com/store/apps/details?id=com.scopely.monopolygo",
-      "link_title": "Monopoly at McDonald’s!",
-      "cta_text": "Install Now",
-      "link_caption": "PLAY.GOOGLE.COM",
-      "images": [],
-      "has_video": true,
-      "same_creative_count": 0,
-      "multiple_versions": true,
-      "cta_type": "INSTALL_MOBILE_APP",
-      "display_format": "video",
-      "cards": [
-        {
-          "body": "Celebrate Monopoly at McDonald’s with Special In-Game Rewards!",
-          "cta": "Install Now",
-          "image": null,
-          "link_url": "http://play.google.com/store/apps/details?id=com.scopely.monopolygo",
-          "title": "Monopoly at McDonald’s!",
-          "video": null
-        }
-      ]
-    },
-    {
-      "id": "1598320218359776",
-      "page_name": "McDonald's",
-      "status": "active",
-      "first_seen": "Sep 17, 2026",
-      "last_seen": "",
-      "creative_text": "",
-      "library_url": "https://www.facebook.com/ads/library/?id=1598320218359776",
-      "page_url": "https://www.facebook.com/McDonalds/",
-      "page_id": "",
-      "link_url": "https://www.mcdonalds.com/us/en-us/black-and-positively-golden/education.html",
-      "link_title": "",
-      "cta_text": "Learn More",
-      "link_caption": "",
-      "images": [],
-      "has_video": true,
-      "same_creative_count": 0,
-      "multiple_versions": true,
-      "cta_type": "LEARN_MORE",
-      "display_format": "video",
-      "cards": [
-        {
-          "body": "",
-          "cta": "Learn More",
-          "image": null,
-          "link_url": "https://www.mcdonalds.com/us/en-us/black-and-positively-golden/education.html",
-          "title": "",
-          "video": null
-        }
-      ]
-    },
-    {
-      "id": "2188182451795857",
-      "page_name": "Uber Eats",
-      "status": "active",
-      "first_seen": "Oct 26, 2026",
-      "last_seen": "",
-      "creative_text": "Game on? Order In!\n✅ $15 off your first order of $20 or more. Use code: us36j5h. Terms & fees apply.🔥",
-      "library_url": "https://www.facebook.com/ads/library/?id=2188182451795857",
-      "page_url": "https://www.facebook.com/UberEats/",
-      "page_id": "",
-      "link_url": "https://www.ubereats.com/store/mcdonalds-baldwin-pk-i-10/2QU-jwziS42bducnOkwm5Q",
-      "link_title": "$15 off your first order McDonald's®",
-      "cta_text": "Order Now",
-      "link_caption": "PLAY.GOOGLE.COM",
-      "images": [
-        "https://scontent-lax7-1.xx.fbcdn.net/v/t39.35426-6/813323131_1092571053634497_7317837386393917556_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=101&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=Tub6JP4dlhkQ7kNvwEbe_PV&_nc_oc=AdodjiKGIWfNr8lCFPJrbWuhomA9XaKyLWARbW4ew0F4TLtsPZfgIZWQXau69H_lJOI&_nc_zt=14&_nc_ht=scontent-lax7-1.xx&_nc_gid=WZoSN3shk5OeUO-RMEcJSw&_nc_ss=7b289&oh=00_AQSgcrfbpDCIrWj36GLdmF03e1TFkPS7Pfi2VEaGCeU9ug&oe=6AF7698A"
-      ],
-      "has_video": false,
-      "same_creative_count": 0,
-      "multiple_versions": true,
-      "cta_type": "ORDER_NOW",
-      "display_format": "image",
-      "cards": [
-        {
-          "body": "Game on? Order In!\n✅ $15 off your first order of $20 or more. Use code: us36j5h. Terms & fees apply.🔥",
-          "cta": "Order Now",
-          "image": "https://scontent-lax7-1.xx.fbcdn.net/v/t39.35426-6/813323131_1092571053634497_7317837386393917556_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=101&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=Tub6JP4dlhkQ7kNvwEbe_PV&_nc_oc=AdodjiKGIWfNr8lCFPJrbWuhomA9XaKyLWARbW4ew0F4TLtsPZfgIZWQXau69H_lJOI&_nc_zt=14&_nc_ht=scontent-lax7-1.xx&_nc_gid=WZoSN3shk5OeUO-RMEcJSw&_nc_ss=7b289&oh=00_AQSgcrfbpDCIrWj36GLdmF03e1TFkPS7Pfi2VEaGCeU9ug&oe=6AF7698A",
-          "link_url": "https://www.ubereats.com/store/mcdonalds-baldwin-pk-i-10/2QU-jwziS42bducnOkwm5Q",
-          "title": "$15 off your first order McDonald's®",
-          "video": null
-        }
-      ]
-    },
-    {
-      "id": "1098402929298323",
-      "page_name": "McDonald's",
-      "status": "active",
-      "first_seen": "Sep 16, 2026",
-      "last_seen": "",
-      "creative_text": "",
-      "library_url": "https://www.facebook.com/ads/library/?id=1098402929298323",
-      "page_url": "https://www.facebook.com/McDonalds/",
-      "page_id": "",
-      "link_url": "https://www.mcdonalds.com/us/en-us/black-and-positively-golden/education.html",
-      "link_title": "",
-      "cta_text": "Learn More",
-      "link_caption": "",
-      "images": [],
-      "has_video": true,
-      "same_creative_count": 0,
-      "multiple_versions": true,
-      "cta_type": "LEARN_MORE",
-      "display_format": "video",
-      "cards": [
-        {
-          "body": "",
-          "cta": "Learn More",
-          "image": null,
-          "link_url": "https://www.mcdonalds.com/us/en-us/black-and-positively-golden/education.html",
-          "title": "",
-          "video": null
-        }
-      ]
-    }
-  ],
+  "search": [],
   "advertiser_search": [
     {
       "id": "28659683950337871",
@@ -667,7 +18,7 @@
       "cta_text": "Order Now",
       "link_caption": "",
       "images": [
-        "https://scontent-lax3-1.xx.fbcdn.net/v/t39.35426-6/871123052_1112953308173071_5520600123373905145_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=108&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=k-UUfiZa2jAQ7kNvwEpk5jo&_nc_oc=AdosLo3MljHx_N5E92Lz9sYT8l5sIyrgHPpIpsmnv_lwcK-9d9hQF8NwZhzo-fCC8Fc&_nc_zt=14&_nc_ht=scontent-lax3-1.xx&_nc_gid=dSl7n4ZDfJ8-Hq2yvq5f3A&_nc_ss=7b289&oh=00_AQRWBLQoZRJ4UD2k6qL9rsAxBk5PzfW2Pn8vavnZK27yxw&oe=6AF760F2"
+        "https://scontent-lax3-1.xx.fbcdn.net/v/t39.35426-6/871123052_1112953308173071_5520600123373905145_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=108&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=k-UUfiZa2jAQ7kNvwHdqQoo&_nc_oc=AdpmITGK82cLsPxFmfcN4R_64heaScDi_FTY68yDHhKsZdYBucRjIPwsdWaRModIQqQ&_nc_zt=14&_nc_ht=scontent-lax3-1.xx&_nc_gid=pO67Ydgxpsmui5t5wzBmTQ&_nc_ss=7b289&oh=00_AQQ8RsXn8jlsaPvLraxTEP4tNKxq29TGFJnHMEONxtoK_A&oe=6AF79932"
       ],
       "has_video": false,
       "same_creative_count": 3,
@@ -678,7 +29,7 @@
         {
           "body": "now i want fries",
           "cta": "Order Now",
-          "image": "https://scontent-lax3-1.xx.fbcdn.net/v/t39.35426-6/871123052_1112953308173071_5520600123373905145_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=108&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=k-UUfiZa2jAQ7kNvwEpk5jo&_nc_oc=AdosLo3MljHx_N5E92Lz9sYT8l5sIyrgHPpIpsmnv_lwcK-9d9hQF8NwZhzo-fCC8Fc&_nc_zt=14&_nc_ht=scontent-lax3-1.xx&_nc_gid=dSl7n4ZDfJ8-Hq2yvq5f3A&_nc_ss=7b289&oh=00_AQRWBLQoZRJ4UD2k6qL9rsAxBk5PzfW2Pn8vavnZK27yxw&oe=6AF760F2",
+          "image": "https://scontent-lax3-1.xx.fbcdn.net/v/t39.35426-6/871123052_1112953308173071_5520600123373905145_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=108&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=k-UUfiZa2jAQ7kNvwHdqQoo&_nc_oc=AdpmITGK82cLsPxFmfcN4R_64heaScDi_FTY68yDHhKsZdYBucRjIPwsdWaRModIQqQ&_nc_zt=14&_nc_ht=scontent-lax3-1.xx&_nc_gid=pO67Ydgxpsmui5t5wzBmTQ&_nc_ss=7b289&oh=00_AQQ8RsXn8jlsaPvLraxTEP4tNKxq29TGFJnHMEONxtoK_A&oe=6AF79932",
           "link_url": "https://smart.link/u1ebvgjbzod25",
           "title": "behind the fries",
           "video": null
@@ -700,7 +51,7 @@
       "cta_text": "Order Now",
       "link_caption": "MCDONALDS.COM",
       "images": [
-        "https://scontent-lax7-1.xx.fbcdn.net/v/t39.35426-6/615487750_732136346636783_1395649993937322739_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=105&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=9xqGTsGS880Q7kNvwGbAmut&_nc_oc=AdpGkZkaRGdutec6PoBQ-ZqbVj8pcxQOKUnr9QBdLEa2Hj8gyxSnYVPgOYa2MOt9D0Y&_nc_zt=14&_nc_ht=scontent-lax7-1.xx&_nc_gid=dSl7n4ZDfJ8-Hq2yvq5f3A&_nc_ss=7b289&oh=00_AQTxe70RDsPmcRqjhJkr-rQwcSoRebK7qzoso0gn71SX0Q&oe=6AF76250"
+        "https://scontent-lax7-1.xx.fbcdn.net/v/t39.35426-6/615487750_732136346636783_1395649993937322739_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=105&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=9xqGTsGS880Q7kNvwFylQSr&_nc_oc=AdpsVq0NqTZCANp9Zz3M_KjKIynxcEI62koEzz515hl7LRaFmnTRIm1vYo5E8lGLrT8&_nc_zt=14&_nc_ht=scontent-lax7-1.xx&_nc_gid=pO67Ydgxpsmui5t5wzBmTQ&_nc_ss=7b289&oh=00_AQQWlwpL9QnfSF33DHuXZbOFxx3MOuhFkG-SjmbgvHYqhw&oe=6AF79A90"
       ],
       "has_video": false,
       "same_creative_count": 2,
@@ -711,7 +62,7 @@
         {
           "body": "Get your hands on this great deal.",
           "cta": "Order Now",
-          "image": "https://scontent-lax7-1.xx.fbcdn.net/v/t39.35426-6/615487750_732136346636783_1395649993937322739_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=105&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=9xqGTsGS880Q7kNvwGbAmut&_nc_oc=AdpGkZkaRGdutec6PoBQ-ZqbVj8pcxQOKUnr9QBdLEa2Hj8gyxSnYVPgOYa2MOt9D0Y&_nc_zt=14&_nc_ht=scontent-lax7-1.xx&_nc_gid=dSl7n4ZDfJ8-Hq2yvq5f3A&_nc_ss=7b289&oh=00_AQTxe70RDsPmcRqjhJkr-rQwcSoRebK7qzoso0gn71SX0Q&oe=6AF76250",
+          "image": "https://scontent-lax7-1.xx.fbcdn.net/v/t39.35426-6/615487750_732136346636783_1395649993937322739_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=105&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=9xqGTsGS880Q7kNvwFylQSr&_nc_oc=AdpsVq0NqTZCANp9Zz3M_KjKIynxcEI62koEzz515hl7LRaFmnTRIm1vYo5E8lGLrT8&_nc_zt=14&_nc_ht=scontent-lax7-1.xx&_nc_gid=pO67Ydgxpsmui5t5wzBmTQ&_nc_ss=7b289&oh=00_AQQWlwpL9QnfSF33DHuXZbOFxx3MOuhFkG-SjmbgvHYqhw&oe=6AF79A90",
           "link_url": "https://www.mcdonalds.com/us/en-us/download-app.html",
           "title": "it’s as simple as McDonald's Download",
           "video": null
@@ -733,7 +84,7 @@
       "cta_text": "Download",
       "link_caption": "MCDONALDS.COM",
       "images": [
-        "https://scontent-lax3-1.xx.fbcdn.net/v/t39.35426-6/825340576_1645223437349475_6599127268229407743_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=110&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=3xe1cKayO4gQ7kNvwER9Wop&_nc_oc=AdqwWpZaqaTWluPxctTGZumWMMHXG2vfjwF-xfL0AHvEZJsbYLNC-aE-hz6g3sJCqx4&_nc_zt=14&_nc_ht=scontent-lax3-1.xx&_nc_gid=dSl7n4ZDfJ8-Hq2yvq5f3A&_nc_ss=7b289&oh=00_AQRqUTnkuz8vxuz1lKjNWSUkuIovM9LO-Smwq7Z-O9d6jg&oe=6AF757AE"
+        "https://scontent-lax3-1.xx.fbcdn.net/v/t39.35426-6/825340576_1645223437349475_6599127268229407743_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=110&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=3xe1cKayO4gQ7kNvwH351UU&_nc_oc=AdoF7QP_UeYr6wgcTj09B1yjx9l6cm5YojP9MsVkzNpYSxM1J2UiQNWF0QcgT7a6JME&_nc_zt=14&_nc_ht=scontent-lax3-1.xx&_nc_gid=pO67Ydgxpsmui5t5wzBmTQ&_nc_ss=7b289&oh=00_AQSmyYHUGnc5T9dh_Ow7cw5GAZCH4a224dxwmWe6jxc7MA&oe=6AF78FEE"
       ],
       "has_video": false,
       "same_creative_count": 0,
@@ -744,7 +95,7 @@
         {
           "body": "Go ahead and size up. Any size soft drinks are just $1.50. Available all day.",
           "cta": "Download",
-          "image": "https://scontent-lax3-1.xx.fbcdn.net/v/t39.35426-6/825340576_1645223437349475_6599127268229407743_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=110&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=3xe1cKayO4gQ7kNvwER9Wop&_nc_oc=AdqwWpZaqaTWluPxctTGZumWMMHXG2vfjwF-xfL0AHvEZJsbYLNC-aE-hz6g3sJCqx4&_nc_zt=14&_nc_ht=scontent-lax3-1.xx&_nc_gid=dSl7n4ZDfJ8-Hq2yvq5f3A&_nc_ss=7b289&oh=00_AQRqUTnkuz8vxuz1lKjNWSUkuIovM9LO-Smwq7Z-O9d6jg&oe=6AF757AE",
+          "image": "https://scontent-lax3-1.xx.fbcdn.net/v/t39.35426-6/825340576_1645223437349475_6599127268229407743_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=110&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=3xe1cKayO4gQ7kNvwH351UU&_nc_oc=AdoF7QP_UeYr6wgcTj09B1yjx9l6cm5YojP9MsVkzNpYSxM1J2UiQNWF0QcgT7a6JME&_nc_zt=14&_nc_ht=scontent-lax3-1.xx&_nc_gid=pO67Ydgxpsmui5t5wzBmTQ&_nc_ss=7b289&oh=00_AQSmyYHUGnc5T9dh_Ow7cw5GAZCH4a224dxwmWe6jxc7MA&oe=6AF78FEE",
           "link_url": "https://smart.link/r659bpauuyofd",
           "title": "Any size. Any sip. Any Size Soft Drink Price and participation may vary. Cannot be combined with any other offer or combo meal. ©2026 The Coca-Cola Company. “Coca-Cola,” “Sprite,” “Hi-C” and “Orange Lavaburst” are registered trademarks of The Coca-Cola Company. ©2026 McDonald’s",
           "video": null
@@ -766,7 +117,7 @@
       "cta_text": "Order Now",
       "link_caption": "MCDONALDS.COM",
       "images": [
-        "https://scontent-lax3-1.xx.fbcdn.net/v/t39.35426-6/825328580_1623840469278386_6351036132876773363_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=104&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=aM2Ti1oCJYYQ7kNvwHOM8X0&_nc_oc=Adp3rf5A28fF02t12YGHD1JToUlahFNd4JEyYQMmnsI2la8Bis9p9GfVOkuM1HXIePg&_nc_zt=14&_nc_ht=scontent-lax3-1.xx&_nc_gid=dSl7n4ZDfJ8-Hq2yvq5f3A&_nc_ss=7b289&oh=00_AQTuQ7HNCL33vYy5apZWVuHQAffh6kRPXSEk9tsyYIc70Q&oe=6AF77E51"
+        "https://scontent-lax3-1.xx.fbcdn.net/v/t39.35426-6/825328580_1623840469278386_6351036132876773363_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=104&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=aM2Ti1oCJYYQ7kNvwEKI5jf&_nc_oc=AdpAkVJdKDmUathmIXo4heRPs4mpB-FFx6UVCED_JDuOp5SVzZVGLBBdzxMAWoX1nIs&_nc_zt=14&_nc_ht=scontent-lax3-1.xx&_nc_gid=pO67Ydgxpsmui5t5wzBmTQ&_nc_ss=7b289&oh=00_AQQyLvJ3BAo7Qc0lZTetaxA57EdHOyLp7zlXFx_TKtP0NQ&oe=6AF77E51"
       ],
       "has_video": false,
       "same_creative_count": 0,
@@ -777,7 +128,7 @@
         {
           "body": "Get going already!",
           "cta": "Order Now",
-          "image": "https://scontent-lax3-1.xx.fbcdn.net/v/t39.35426-6/825328580_1623840469278386_6351036132876773363_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=104&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=aM2Ti1oCJYYQ7kNvwHOM8X0&_nc_oc=Adp3rf5A28fF02t12YGHD1JToUlahFNd4JEyYQMmnsI2la8Bis9p9GfVOkuM1HXIePg&_nc_zt=14&_nc_ht=scontent-lax3-1.xx&_nc_gid=dSl7n4ZDfJ8-Hq2yvq5f3A&_nc_ss=7b289&oh=00_AQTuQ7HNCL33vYy5apZWVuHQAffh6kRPXSEk9tsyYIc70Q&oe=6AF77E51",
+          "image": "https://scontent-lax3-1.xx.fbcdn.net/v/t39.35426-6/825328580_1623840469278386_6351036132876773363_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=104&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=aM2Ti1oCJYYQ7kNvwEKI5jf&_nc_oc=AdpAkVJdKDmUathmIXo4heRPs4mpB-FFx6UVCED_JDuOp5SVzZVGLBBdzxMAWoX1nIs&_nc_zt=14&_nc_ht=scontent-lax3-1.xx&_nc_gid=pO67Ydgxpsmui5t5wzBmTQ&_nc_ss=7b289&oh=00_AQQyLvJ3BAo7Qc0lZTetaxA57EdHOyLp7zlXFx_TKtP0NQ&oe=6AF77E51",
           "link_url": "https://www.mcdonalds.com/us/en-us/download-app.html",
           "title": "McDonald's Download",
           "video": null
@@ -799,7 +150,7 @@
       "cta_text": "Download",
       "link_caption": "MCDONALDS.COM",
       "images": [
-        "https://scontent-lax3-1.xx.fbcdn.net/v/t39.35426-6/802966354_1395058445409116_53966166871378585_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=110&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=tyu3FXt-68IQ7kNvwGLzGcL&_nc_oc=AdqEMb_Tqo4e0PhuegkBiGQZmRu6rB30542aJ4hNev5fg-KMt_IBz1R4MDSw3fIUE0s&_nc_zt=14&_nc_ht=scontent-lax3-1.xx&_nc_gid=dSl7n4ZDfJ8-Hq2yvq5f3A&_nc_ss=7b289&oh=00_AQR9IyrQzdSsd5WG9aIsf54D2Ig9qVAGOWOaiPYiBmxa3Q&oe=6AF77D8F"
+        "https://scontent-lax3-1.xx.fbcdn.net/v/t39.35426-6/802966354_1395058445409116_53966166871378585_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=110&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=tyu3FXt-68IQ7kNvwHvP39I&_nc_oc=Adpjlx5E-eO95G4nWkSNs1hwswdD966UIZsiIFZGI279ny-y4AIgmIJzEaghneVhAik&_nc_zt=14&_nc_ht=scontent-lax3-1.xx&_nc_gid=pO67Ydgxpsmui5t5wzBmTQ&_nc_ss=7b289&oh=00_AQTHuOMank2G_pKXtTlCPN7A7D-WAWFl-XcT4tQmPO8DGw&oe=6AF77D8F"
       ],
       "has_video": false,
       "same_creative_count": 0,
@@ -810,7 +161,7 @@
         {
           "body": "Lions get a sack. You get a snack. Score $1 10 pc Chicken McNuggets when the Lions get a sack during a home game. Only in the app.",
           "cta": "Download",
-          "image": "https://scontent-lax3-1.xx.fbcdn.net/v/t39.35426-6/802966354_1395058445409116_53966166871378585_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=110&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=tyu3FXt-68IQ7kNvwGLzGcL&_nc_oc=AdqEMb_Tqo4e0PhuegkBiGQZmRu6rB30542aJ4hNev5fg-KMt_IBz1R4MDSw3fIUE0s&_nc_zt=14&_nc_ht=scontent-lax3-1.xx&_nc_gid=dSl7n4ZDfJ8-Hq2yvq5f3A&_nc_ss=7b289&oh=00_AQR9IyrQzdSsd5WG9aIsf54D2Ig9qVAGOWOaiPYiBmxa3Q&oe=6AF77D8F",
+          "image": "https://scontent-lax3-1.xx.fbcdn.net/v/t39.35426-6/802966354_1395058445409116_53966166871378585_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=110&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=tyu3FXt-68IQ7kNvwHvP39I&_nc_oc=Adpjlx5E-eO95G4nWkSNs1hwswdD966UIZsiIFZGI279ny-y4AIgmIJzEaghneVhAik&_nc_zt=14&_nc_ht=scontent-lax3-1.xx&_nc_gid=pO67Ydgxpsmui5t5wzBmTQ&_nc_ss=7b289&oh=00_AQTHuOMank2G_pKXtTlCPN7A7D-WAWFl-XcT4tQmPO8DGw&oe=6AF77D8F",
           "link_url": "https://smart.link/r659bpauuyofd",
           "title": "Only in the app Offer valid day after Lions home game activation for 24 hours at participating McDonald’s. Valid 1x/day. Excludes tax. Must opt into rewards. Visit McD app for details. ©2026 McDonald’s",
           "video": null
@@ -832,7 +183,7 @@
       "cta_text": "Download",
       "link_caption": "MCDONALDS.COM",
       "images": [
-        "https://scontent-lax3-1.xx.fbcdn.net/v/t39.35426-6/797956435_4096281750669555_5249117706914565852_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=110&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=v5luFbEAHRcQ7kNvwHuFpS6&_nc_oc=AdqjS6XcjLoZohg-fvSy07kG1KXIfGAtFoL_FsPP6NfInCMco3l7dvFw19vCalPMUh4&_nc_zt=14&_nc_ht=scontent-lax3-1.xx&_nc_gid=dSl7n4ZDfJ8-Hq2yvq5f3A&_nc_ss=7b289&oh=00_AQS15pigcZdHdNbhb8MlZ2QFbAMIm9O5PLv6LejLoQMvIA&oe=6AF75A88"
+        "https://scontent-lax3-1.xx.fbcdn.net/v/t39.35426-6/797956435_4096281750669555_5249117706914565852_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=110&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=v5luFbEAHRcQ7kNvwEfDwlM&_nc_oc=AdqUAYOHLIdpdVoYsXWOaQJCwRnUItyVfSwi4IM_Df4sJmZMd0gCS89PGO13UC68zfE&_nc_zt=14&_nc_ht=scontent-lax3-1.xx&_nc_gid=pO67Ydgxpsmui5t5wzBmTQ&_nc_ss=7b289&oh=00_AQQVt9p2zgFz9Rgcu7ix7UqActZXIAxGXqnP1tq0kumQug&oe=6AF792C8"
       ],
       "has_video": false,
       "same_creative_count": 0,
@@ -843,7 +194,7 @@
         {
           "body": "Lions get a sack. You get a snack. Score $1 10 pc Chicken McNuggets when the Lions get a sack during a home game. Only in the app.",
           "cta": "Download",
-          "image": "https://scontent-lax3-1.xx.fbcdn.net/v/t39.35426-6/797956435_4096281750669555_5249117706914565852_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=110&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=v5luFbEAHRcQ7kNvwHuFpS6&_nc_oc=AdqjS6XcjLoZohg-fvSy07kG1KXIfGAtFoL_FsPP6NfInCMco3l7dvFw19vCalPMUh4&_nc_zt=14&_nc_ht=scontent-lax3-1.xx&_nc_gid=dSl7n4ZDfJ8-Hq2yvq5f3A&_nc_ss=7b289&oh=00_AQS15pigcZdHdNbhb8MlZ2QFbAMIm9O5PLv6LejLoQMvIA&oe=6AF75A88",
+          "image": "https://scontent-lax3-1.xx.fbcdn.net/v/t39.35426-6/797956435_4096281750669555_5249117706914565852_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=110&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=v5luFbEAHRcQ7kNvwEfDwlM&_nc_oc=AdqUAYOHLIdpdVoYsXWOaQJCwRnUItyVfSwi4IM_Df4sJmZMd0gCS89PGO13UC68zfE&_nc_zt=14&_nc_ht=scontent-lax3-1.xx&_nc_gid=pO67Ydgxpsmui5t5wzBmTQ&_nc_ss=7b289&oh=00_AQQVt9p2zgFz9Rgcu7ix7UqActZXIAxGXqnP1tq0kumQug&oe=6AF792C8",
           "link_url": "https://smart.link/r659bpauuyofd",
           "title": "Only in the app Offer valid day after Lions home game activation for 24 hours at participating McDonald’s. Valid 1x/day. Excludes tax. Must opt into rewards. Visit McD app for details. ©2026 McDonald’s",
           "video": null
@@ -896,7 +247,7 @@
       "cta_text": "",
       "link_caption": "",
       "images": [
-        "https://scontent-lax3-2.xx.fbcdn.net/v/t39.35426-6/860844182_1784732299487373_6402561379262573373_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=100&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=KWXPafcSqI4Q7kNvwFSjTxz&_nc_oc=Adp47QQaZGf01PBOZYi57Q1m9Nia3OS9M7O7Rdr0iyz1Ggn4eAwYsqZcKZ3Fwv2EUtM&_nc_zt=14&_nc_ht=scontent-lax3-2.xx&_nc_gid=dSl7n4ZDfJ8-Hq2yvq5f3A&_nc_ss=7b289&oh=00_AQTBI4V2snf0bDkcuHnmkw5PVdSqn2AaSmevf1gSndx5Pg&oe=6AF7703D"
+        "https://scontent-lax3-2.xx.fbcdn.net/v/t39.35426-6/860844182_1784732299487373_6402561379262573373_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=100&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=KWXPafcSqI4Q7kNvwGRRvvy&_nc_oc=Ado3J--sHgbt0atdUhQa7cp4sa-F1Bt7TX2D47_yhbTor7FUV_P8DzVd-kibeZCSR2o&_nc_zt=14&_nc_ht=scontent-lax3-2.xx&_nc_gid=pO67Ydgxpsmui5t5wzBmTQ&_nc_ss=7b289&oh=00_AQTOWjVmLjoZpkM6Su2N8Ogds_lss13-6wCtJJ6NLgXV9g&oe=6AF7A87D"
       ],
       "has_video": false,
       "same_creative_count": 0,
@@ -907,42 +258,9 @@
         {
           "body": "There are plenty of combinations…\nMcDonald's\nClick here\nOrder Now",
           "cta": "",
-          "image": "https://scontent-lax3-2.xx.fbcdn.net/v/t39.35426-6/860844182_1784732299487373_6402561379262573373_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=100&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=KWXPafcSqI4Q7kNvwFSjTxz&_nc_oc=Adp47QQaZGf01PBOZYi57Q1m9Nia3OS9M7O7Rdr0iyz1Ggn4eAwYsqZcKZ3Fwv2EUtM&_nc_zt=14&_nc_ht=scontent-lax3-2.xx&_nc_gid=dSl7n4ZDfJ8-Hq2yvq5f3A&_nc_ss=7b289&oh=00_AQTBI4V2snf0bDkcuHnmkw5PVdSqn2AaSmevf1gSndx5Pg&oe=6AF7703D",
+          "image": "https://scontent-lax3-2.xx.fbcdn.net/v/t39.35426-6/860844182_1784732299487373_6402561379262573373_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=100&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=KWXPafcSqI4Q7kNvwGRRvvy&_nc_oc=Ado3J--sHgbt0atdUhQa7cp4sa-F1Bt7TX2D47_yhbTor7FUV_P8DzVd-kibeZCSR2o&_nc_zt=14&_nc_ht=scontent-lax3-2.xx&_nc_gid=pO67Ydgxpsmui5t5wzBmTQ&_nc_ss=7b289&oh=00_AQTOWjVmLjoZpkM6Su2N8Ogds_lss13-6wCtJJ6NLgXV9g&oe=6AF7A87D",
           "link_url": "",
           "title": "",
-          "video": null
-        }
-      ]
-    },
-    {
-      "id": "2318448335586817",
-      "page_name": "McDonald's",
-      "status": "active",
-      "first_seen": "Nov 2, 2026",
-      "last_seen": "",
-      "creative_text": "can we have a moment for the 100% fresh beef?",
-      "library_url": "https://www.facebook.com/ads/library/?id=2318448335586817",
-      "page_url": "https://www.facebook.com/McDonalds/",
-      "page_id": "",
-      "link_url": "https://smart.link/8u7tdsoej5yfo",
-      "link_title": "inside the QPC",
-      "cta_text": "Order Now",
-      "link_caption": "",
-      "images": [
-        "https://scontent-lax3-2.xx.fbcdn.net/v/t39.35426-6/870487513_1399784345473828_1199338062959253536_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=103&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=2BE0-LlbOYQQ7kNvwGsgYkO&_nc_oc=AdqBCMotp6c0AoMNbYz0exjN4rqk__IT-r7m7ACBGO2fuEmFAfNRPwJ2pRDvGDX9fdQ&_nc_zt=14&_nc_ht=scontent-lax3-2.xx&_nc_gid=dSl7n4ZDfJ8-Hq2yvq5f3A&_nc_ss=7b289&oh=00_AQQ8XXpVnVf79reYGo5isUL65xbD84g_fNscUGVNJa2XYQ&oe=6AF76877"
-      ],
-      "has_video": false,
-      "same_creative_count": 3,
-      "multiple_versions": true,
-      "cta_type": "ORDER_NOW",
-      "display_format": "image",
-      "cards": [
-        {
-          "body": "can we have a moment for the 100% fresh beef?",
-          "cta": "Order Now",
-          "image": "https://scontent-lax3-2.xx.fbcdn.net/v/t39.35426-6/870487513_1399784345473828_1199338062959253536_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=103&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=2BE0-LlbOYQQ7kNvwGsgYkO&_nc_oc=AdqBCMotp6c0AoMNbYz0exjN4rqk__IT-r7m7ACBGO2fuEmFAfNRPwJ2pRDvGDX9fdQ&_nc_zt=14&_nc_ht=scontent-lax3-2.xx&_nc_gid=dSl7n4ZDfJ8-Hq2yvq5f3A&_nc_ss=7b289&oh=00_AQQ8XXpVnVf79reYGo5isUL65xbD84g_fNscUGVNJa2XYQ&oe=6AF76877",
-          "link_url": "https://smart.link/8u7tdsoej5yfo",
-          "title": "inside the QPC",
           "video": null
         }
       ]
@@ -957,12 +275,12 @@
       "library_url": "https://www.facebook.com/ads/library/?id=1857594215432426",
       "page_url": "https://www.facebook.com/McDonalds/",
       "page_id": "",
-      "link_url": "https://smart.link/u1ebvgjbzod25",
+      "link_url": "https://smart.link/8u7tdsoej5yfo",
       "link_title": "inside the QPC",
       "cta_text": "Order Now",
       "link_caption": "",
       "images": [
-        "https://scontent-lax3-2.xx.fbcdn.net/v/t39.35426-6/877879767_1176910758242851_1650817434583894447_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=106&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=k1ZhvZvHYNQQ7kNvwG-ibzA&_nc_oc=Ado14TYSNvU-SVhAHrmsvEtN_xeEpFMqdbDBlpAVF6FqixZ4WGOzK-7jLv7gdCY19aw&_nc_zt=14&_nc_ht=scontent-lax3-2.xx&_nc_gid=dSl7n4ZDfJ8-Hq2yvq5f3A&_nc_ss=7b289&oh=00_AQQsl8SGWHZ5lJfFSkwRytrS9fyQkvYggxZxmvDIN48ldQ&oe=6AF77D11"
+        "https://scontent-lax3-2.xx.fbcdn.net/v/t39.35426-6/870487513_1399784345473828_1199338062959253536_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=103&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=2BE0-LlbOYQQ7kNvwG9E4Q3&_nc_oc=AdoZQlgNdeQB3b4J8QrL9NkHdlSPCj5x-XCFWiOTxN4k_rAIXVqdcNqG8WLTMvxZIYA&_nc_zt=14&_nc_ht=scontent-lax3-2.xx&_nc_gid=pO67Ydgxpsmui5t5wzBmTQ&_nc_ss=7b289&oh=00_AQQChS16TUMssh9me9P6-NZJQQqGrPgaHdu48lN_jLBhLg&oe=6AF7A0B7"
       ],
       "has_video": false,
       "same_creative_count": 3,
@@ -973,7 +291,40 @@
         {
           "body": "can we have a moment for the 100% fresh beef?",
           "cta": "Order Now",
-          "image": "https://scontent-lax3-2.xx.fbcdn.net/v/t39.35426-6/877879767_1176910758242851_1650817434583894447_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=106&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=k1ZhvZvHYNQQ7kNvwG-ibzA&_nc_oc=Ado14TYSNvU-SVhAHrmsvEtN_xeEpFMqdbDBlpAVF6FqixZ4WGOzK-7jLv7gdCY19aw&_nc_zt=14&_nc_ht=scontent-lax3-2.xx&_nc_gid=dSl7n4ZDfJ8-Hq2yvq5f3A&_nc_ss=7b289&oh=00_AQQsl8SGWHZ5lJfFSkwRytrS9fyQkvYggxZxmvDIN48ldQ&oe=6AF77D11",
+          "image": "https://scontent-lax3-2.xx.fbcdn.net/v/t39.35426-6/870487513_1399784345473828_1199338062959253536_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=103&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=2BE0-LlbOYQQ7kNvwG9E4Q3&_nc_oc=AdoZQlgNdeQB3b4J8QrL9NkHdlSPCj5x-XCFWiOTxN4k_rAIXVqdcNqG8WLTMvxZIYA&_nc_zt=14&_nc_ht=scontent-lax3-2.xx&_nc_gid=pO67Ydgxpsmui5t5wzBmTQ&_nc_ss=7b289&oh=00_AQQChS16TUMssh9me9P6-NZJQQqGrPgaHdu48lN_jLBhLg&oe=6AF7A0B7",
+          "link_url": "https://smart.link/8u7tdsoej5yfo",
+          "title": "inside the QPC",
+          "video": null
+        }
+      ]
+    },
+    {
+      "id": "28210495418644520",
+      "page_name": "McDonald's",
+      "status": "active",
+      "first_seen": "Sep 16, 2026",
+      "last_seen": "",
+      "creative_text": "can we have a moment for the 100% fresh beef?",
+      "library_url": "https://www.facebook.com/ads/library/?id=28210495418644520",
+      "page_url": "https://www.facebook.com/McDonalds/",
+      "page_id": "",
+      "link_url": "https://smart.link/u1ebvgjbzod25",
+      "link_title": "inside the QPC",
+      "cta_text": "Order Now",
+      "link_caption": "",
+      "images": [
+        "https://scontent-lax3-2.xx.fbcdn.net/v/t39.35426-6/877879767_1176910758242851_1650817434583894447_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=106&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=k1ZhvZvHYNQQ7kNvwHQjAkM&_nc_oc=AdpXIYe_HcCAU5FdxIpXSkpOIpK9qZKyqKEEwEApljjAr_15eUFSXazuoicCLWy8pc8&_nc_zt=14&_nc_ht=scontent-lax3-2.xx&_nc_gid=pO67Ydgxpsmui5t5wzBmTQ&_nc_ss=7b289&oh=00_AQQ1jsbJjgFmRzWe02nyJSW-lr4Za8KEXLgyPiAlf8pJJA&oe=6AF77D11"
+      ],
+      "has_video": false,
+      "same_creative_count": 0,
+      "multiple_versions": true,
+      "cta_type": "ORDER_NOW",
+      "display_format": "image",
+      "cards": [
+        {
+          "body": "can we have a moment for the 100% fresh beef?",
+          "cta": "Order Now",
+          "image": "https://scontent-lax3-2.xx.fbcdn.net/v/t39.35426-6/877879767_1176910758242851_1650817434583894447_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=106&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=k1ZhvZvHYNQQ7kNvwHQjAkM&_nc_oc=AdpXIYe_HcCAU5FdxIpXSkpOIpK9qZKyqKEEwEApljjAr_15eUFSXazuoicCLWy8pc8&_nc_zt=14&_nc_ht=scontent-lax3-2.xx&_nc_gid=pO67Ydgxpsmui5t5wzBmTQ&_nc_ss=7b289&oh=00_AQQ1jsbJjgFmRzWe02nyJSW-lr4Za8KEXLgyPiAlf8pJJA&oe=6AF77D11",
           "link_url": "https://smart.link/u1ebvgjbzod25",
           "title": "inside the QPC",
           "video": null
@@ -1088,7 +439,7 @@
       "cta_text": "Order Now",
       "link_caption": "",
       "images": [
-        "https://scontent-lax3-1.xx.fbcdn.net/v/t39.35426-6/876600196_29126085863698083_7507423921673820328_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=110&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=s4V4zV8oWCEQ7kNvwF3KKbC&_nc_oc=AdrixQbE4BHA0JgKXGfKsLWZwM6T5kHfQUkZBeWlHkY6OoYVXl_GxmNYtMiVv6362zc&_nc_zt=14&_nc_ht=scontent-lax3-1.xx&_nc_gid=dSl7n4ZDfJ8-Hq2yvq5f3A&_nc_ss=7b289&oh=00_AQR1sWVn0rl8JHCTiBr7jZGS8sQsq6AmHVqKTWtI_FT0OA&oe=6AF78B4F"
+        "https://scontent-lax3-1.xx.fbcdn.net/v/t39.35426-6/876600196_29126085863698083_7507423921673820328_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=110&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=s4V4zV8oWCEQ7kNvwGt4IIZ&_nc_oc=Adr0WFBLMcLnnvBBjcQ4NYoS7S1KEiQoQ1dJvBy_cqDdmjZ_1tkv9hDfNgnIMCs5alo&_nc_zt=14&_nc_ht=scontent-lax3-1.xx&_nc_gid=pO67Ydgxpsmui5t5wzBmTQ&_nc_ss=7b289&oh=00_AQT97qNUq2au7d3JBPO2OzfS7e2bxwFHaFUJOSsMZZohCw&oe=6AF78B4F"
       ],
       "has_video": false,
       "same_creative_count": 0,
@@ -1099,7 +450,7 @@
         {
           "body": "",
           "cta": "Order Now",
-          "image": "https://scontent-lax3-1.xx.fbcdn.net/v/t39.35426-6/876600196_29126085863698083_7507423921673820328_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=110&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=s4V4zV8oWCEQ7kNvwF3KKbC&_nc_oc=AdrixQbE4BHA0JgKXGfKsLWZwM6T5kHfQUkZBeWlHkY6OoYVXl_GxmNYtMiVv6362zc&_nc_zt=14&_nc_ht=scontent-lax3-1.xx&_nc_gid=dSl7n4ZDfJ8-Hq2yvq5f3A&_nc_ss=7b289&oh=00_AQR1sWVn0rl8JHCTiBr7jZGS8sQsq6AmHVqKTWtI_FT0OA&oe=6AF78B4F",
+          "image": "https://scontent-lax3-1.xx.fbcdn.net/v/t39.35426-6/876600196_29126085863698083_7507423921673820328_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=110&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=s4V4zV8oWCEQ7kNvwGt4IIZ&_nc_oc=Adr0WFBLMcLnnvBBjcQ4NYoS7S1KEiQoQ1dJvBy_cqDdmjZ_1tkv9hDfNgnIMCs5alo&_nc_zt=14&_nc_ht=scontent-lax3-1.xx&_nc_gid=pO67Ydgxpsmui5t5wzBmTQ&_nc_ss=7b289&oh=00_AQT97qNUq2au7d3JBPO2OzfS7e2bxwFHaFUJOSsMZZohCw&oe=6AF78B4F",
           "link_url": "https://smart.link/sdvg5qrt4e9e5",
           "title": "",
           "video": null
@@ -1152,7 +503,7 @@
       "cta_text": "Order Now",
       "link_caption": "",
       "images": [
-        "https://scontent-lax3-1.xx.fbcdn.net/v/t39.35426-6/861827005_2186549245607499_6554486998504930137_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=102&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=rkSm7ec-zFwQ7kNvwFcamNJ&_nc_oc=AdoOw__pkOfAhmJ6eX9phr1NhfmNKQs3_A5K7IEs6BNWtSBebDB24Ir9g8VhRwrTsEs&_nc_zt=14&_nc_ht=scontent-lax3-1.xx&_nc_gid=dSl7n4ZDfJ8-Hq2yvq5f3A&_nc_ss=7b289&oh=00_AQRWKhMvVztZ4Kthq3rgEGsQGb2XBAht6ODSdpz92eBGMg&oe=6AF756DF"
+        "https://scontent-lax3-1.xx.fbcdn.net/v/t39.35426-6/861827005_2186549245607499_6554486998504930137_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=102&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=rkSm7ec-zFwQ7kNvwHfRxFK&_nc_oc=AdrEVSmeAZRhftTz-EFZaFC3ZLzebq7yhrwazvUAPqQd3IlFcq3DB_nnZLmUsqhy9NA&_nc_zt=14&_nc_ht=scontent-lax3-1.xx&_nc_gid=pO67Ydgxpsmui5t5wzBmTQ&_nc_ss=7b289&oh=00_AQTZuWzRmnLy60RFOhrKCsMHcqtfXhdBeQeSIkecoQCvsQ&oe=6AF78F1F"
       ],
       "has_video": false,
       "same_creative_count": 0,
@@ -1163,7 +514,7 @@
         {
           "body": "",
           "cta": "Order Now",
-          "image": "https://scontent-lax3-1.xx.fbcdn.net/v/t39.35426-6/861827005_2186549245607499_6554486998504930137_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=102&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=rkSm7ec-zFwQ7kNvwFcamNJ&_nc_oc=AdoOw__pkOfAhmJ6eX9phr1NhfmNKQs3_A5K7IEs6BNWtSBebDB24Ir9g8VhRwrTsEs&_nc_zt=14&_nc_ht=scontent-lax3-1.xx&_nc_gid=dSl7n4ZDfJ8-Hq2yvq5f3A&_nc_ss=7b289&oh=00_AQRWKhMvVztZ4Kthq3rgEGsQGb2XBAht6ODSdpz92eBGMg&oe=6AF756DF",
+          "image": "https://scontent-lax3-1.xx.fbcdn.net/v/t39.35426-6/861827005_2186549245607499_6554486998504930137_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=102&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=rkSm7ec-zFwQ7kNvwHfRxFK&_nc_oc=AdrEVSmeAZRhftTz-EFZaFC3ZLzebq7yhrwazvUAPqQd3IlFcq3DB_nnZLmUsqhy9NA&_nc_zt=14&_nc_ht=scontent-lax3-1.xx&_nc_gid=pO67Ydgxpsmui5t5wzBmTQ&_nc_ss=7b289&oh=00_AQTZuWzRmnLy60RFOhrKCsMHcqtfXhdBeQeSIkecoQCvsQ&oe=6AF78F1F",
           "link_url": "https://smart.link/ydu05ahrf6z05",
           "title": "",
           "video": null
@@ -1185,7 +536,7 @@
       "cta_text": "Order Now",
       "link_caption": "MCDONALDS.COM",
       "images": [
-        "https://scontent-lax3-2.xx.fbcdn.net/v/t39.35426-6/829710944_885862687825181_7353807676329916795_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=106&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=H9dTQcWnpv4Q7kNvwFalQ2s&_nc_oc=Adoh22KMktqkOLcXVpTI9S3vnnPCfDK2dUKHPeyAsM6cwGboeZsUT6Zw-u3KEYjo498&_nc_zt=14&_nc_ht=scontent-lax3-2.xx&_nc_gid=dSl7n4ZDfJ8-Hq2yvq5f3A&_nc_ss=7b289&oh=00_AQR3pR8igBOyppk4fZf4p0LH24VKVzx5jAuL1-Hwab6FLQ&oe=6AF76DD1"
+        "https://scontent-lax3-2.xx.fbcdn.net/v/t39.35426-6/829710944_885862687825181_7353807676329916795_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=106&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=H9dTQcWnpv4Q7kNvwFc25Wv&_nc_oc=AdpMxvzQykDETY4x_x46uzolslSwV9aMJRUuV4ZqAfAR2frQ_Hn_f6jr6SqPZ8LKZY0&_nc_zt=14&_nc_ht=scontent-lax3-2.xx&_nc_gid=pO67Ydgxpsmui5t5wzBmTQ&_nc_ss=7b289&oh=00_AQT39K_ycKrMuJ7yEtLoibq610NWyhnkajAwnP26mK8hpA&oe=6AF7A611"
       ],
       "has_video": false,
       "same_creative_count": 3,
@@ -1196,7 +547,7 @@
         {
           "body": "Get going already!",
           "cta": "Order Now",
-          "image": "https://scontent-lax3-2.xx.fbcdn.net/v/t39.35426-6/829710944_885862687825181_7353807676329916795_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=106&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=H9dTQcWnpv4Q7kNvwFalQ2s&_nc_oc=Adoh22KMktqkOLcXVpTI9S3vnnPCfDK2dUKHPeyAsM6cwGboeZsUT6Zw-u3KEYjo498&_nc_zt=14&_nc_ht=scontent-lax3-2.xx&_nc_gid=dSl7n4ZDfJ8-Hq2yvq5f3A&_nc_ss=7b289&oh=00_AQR3pR8igBOyppk4fZf4p0LH24VKVzx5jAuL1-Hwab6FLQ&oe=6AF76DD1",
+          "image": "https://scontent-lax3-2.xx.fbcdn.net/v/t39.35426-6/829710944_885862687825181_7353807676329916795_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=106&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=H9dTQcWnpv4Q7kNvwFc25Wv&_nc_oc=AdpMxvzQykDETY4x_x46uzolslSwV9aMJRUuV4ZqAfAR2frQ_Hn_f6jr6SqPZ8LKZY0&_nc_zt=14&_nc_ht=scontent-lax3-2.xx&_nc_gid=pO67Ydgxpsmui5t5wzBmTQ&_nc_ss=7b289&oh=00_AQT39K_ycKrMuJ7yEtLoibq610NWyhnkajAwnP26mK8hpA&oe=6AF7A611",
           "link_url": "https://www.mcdonalds.com/us/en-us/download-app.html",
           "title": "McDonald's Download",
           "video": null
@@ -1218,7 +569,7 @@
       "cta_text": "Order Now",
       "link_caption": "",
       "images": [
-        "https://scontent-lax3-1.xx.fbcdn.net/v/t39.35426-6/860224078_1143257744942755_1360195640099586578_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=104&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=CjH1ZZ-03M8Q7kNvwFqT4wW&_nc_oc=Adr_ZpB3qCT0X-JC36_I_9GjG5_7mpTjUUHVAoh-Jm5Vu-bzqM6zS-l19ZsAaBJIwDA&_nc_zt=14&_nc_ht=scontent-lax3-1.xx&_nc_gid=dSl7n4ZDfJ8-Hq2yvq5f3A&_nc_ss=7b289&oh=00_AQQNgNYquOKANcY5w8Xoa3fj2HkvLs4jDZDHTt7Bjkixcg&oe=6AF76F84"
+        "https://scontent-lax3-1.xx.fbcdn.net/v/t39.35426-6/860224078_1143257744942755_1360195640099586578_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=104&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=CjH1ZZ-03M8Q7kNvwEmuI-n&_nc_oc=AdoahmsYKzbq7kcxZxdG197D9lj-tL6au5raQw1STpiN7j8Aj1blppwWRlVLcM7aPPE&_nc_zt=14&_nc_ht=scontent-lax3-1.xx&_nc_gid=pO67Ydgxpsmui5t5wzBmTQ&_nc_ss=7b289&oh=00_AQQgvKkR8hNgUDv69MzbUOEt7u0Z12Od6gdSUhkB4fvZng&oe=6AF7A7C4"
       ],
       "has_video": false,
       "same_creative_count": 0,
@@ -1229,7 +580,7 @@
         {
           "body": "pick 2 for $3.50 from mcvalue is here and suddenly i’m a morning person",
           "cta": "Order Now",
-          "image": "https://scontent-lax3-1.xx.fbcdn.net/v/t39.35426-6/860224078_1143257744942755_1360195640099586578_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=104&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=CjH1ZZ-03M8Q7kNvwFqT4wW&_nc_oc=Adr_ZpB3qCT0X-JC36_I_9GjG5_7mpTjUUHVAoh-Jm5Vu-bzqM6zS-l19ZsAaBJIwDA&_nc_zt=14&_nc_ht=scontent-lax3-1.xx&_nc_gid=dSl7n4ZDfJ8-Hq2yvq5f3A&_nc_ss=7b289&oh=00_AQQNgNYquOKANcY5w8Xoa3fj2HkvLs4jDZDHTt7Bjkixcg&oe=6AF76F84",
+          "image": "https://scontent-lax3-1.xx.fbcdn.net/v/t39.35426-6/860224078_1143257744942755_1360195640099586578_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=104&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=CjH1ZZ-03M8Q7kNvwEmuI-n&_nc_oc=AdoahmsYKzbq7kcxZxdG197D9lj-tL6au5raQw1STpiN7j8Aj1blppwWRlVLcM7aPPE&_nc_zt=14&_nc_ht=scontent-lax3-1.xx&_nc_gid=pO67Ydgxpsmui5t5wzBmTQ&_nc_ss=7b289&oh=00_AQQgvKkR8hNgUDv69MzbUOEt7u0Z12Od6gdSUhkB4fvZng&oe=6AF7A7C4",
           "link_url": "https://smart.link/mobp8o2gfdc83",
           "title": "Get the McValue Menu Today",
           "video": null
@@ -1251,7 +602,7 @@
       "cta_text": "Download",
       "link_caption": "MCDONALDS.COM",
       "images": [
-        "https://scontent-lax7-1.xx.fbcdn.net/v/t39.35426-6/798116053_1706283603763355_3457873008283487942_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=105&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=CtL4A92CTc4Q7kNvwFVp7vr&_nc_oc=AdrzH5WuqZjDgKnaq19Ge5U2DzCfSOC4zjtX-jjYKYRetaOwrbgiTezlNGWvso9sLic&_nc_zt=14&_nc_ht=scontent-lax7-1.xx&_nc_gid=dSl7n4ZDfJ8-Hq2yvq5f3A&_nc_ss=7b289&oh=00_AQT_gOdxrys0zET8m2U4UfcZyNZwxP_Te9QJDfXaQLP5IQ&oe=6AF786F8"
+        "https://scontent-lax7-1.xx.fbcdn.net/v/t39.35426-6/798116053_1706283603763355_3457873008283487942_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=105&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=CtL4A92CTc4Q7kNvwEWzpPe&_nc_oc=Adrj_QQbuu7mkigX0zxcJoE-V2ziR-xdJ0hU8LtgIn4yjSOIRlcJGeUmjzqpeow9a0g&_nc_zt=14&_nc_ht=scontent-lax7-1.xx&_nc_gid=pO67Ydgxpsmui5t5wzBmTQ&_nc_ss=7b289&oh=00_AQTqEL4cL4dTgEPrxxNd5aTrV-mnXB-9_EVQv-dfz5FYcg&oe=6AF786F8"
       ],
       "has_video": false,
       "same_creative_count": 2,
@@ -1262,7 +613,7 @@
         {
           "body": "Lions get a sack. You get a snack. Score $1 10 pc Chicken McNuggets when the Lions get a sack during a home game. Only in the app.",
           "cta": "Download",
-          "image": "https://scontent-lax7-1.xx.fbcdn.net/v/t39.35426-6/798116053_1706283603763355_3457873008283487942_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=105&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=CtL4A92CTc4Q7kNvwFVp7vr&_nc_oc=AdrzH5WuqZjDgKnaq19Ge5U2DzCfSOC4zjtX-jjYKYRetaOwrbgiTezlNGWvso9sLic&_nc_zt=14&_nc_ht=scontent-lax7-1.xx&_nc_gid=dSl7n4ZDfJ8-Hq2yvq5f3A&_nc_ss=7b289&oh=00_AQT_gOdxrys0zET8m2U4UfcZyNZwxP_Te9QJDfXaQLP5IQ&oe=6AF786F8",
+          "image": "https://scontent-lax7-1.xx.fbcdn.net/v/t39.35426-6/798116053_1706283603763355_3457873008283487942_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=105&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=CtL4A92CTc4Q7kNvwEWzpPe&_nc_oc=Adrj_QQbuu7mkigX0zxcJoE-V2ziR-xdJ0hU8LtgIn4yjSOIRlcJGeUmjzqpeow9a0g&_nc_zt=14&_nc_ht=scontent-lax7-1.xx&_nc_gid=pO67Ydgxpsmui5t5wzBmTQ&_nc_ss=7b289&oh=00_AQTqEL4cL4dTgEPrxxNd5aTrV-mnXB-9_EVQv-dfz5FYcg&oe=6AF786F8",
           "link_url": "https://smart.link/r659bpauuyofd",
           "title": "Only in the app Offer valid day after Lions home game activation for 24 hours at participating McDonald’s. Valid 1x/day. Excludes tax. Must opt into rewards. Visit McD app for details. ©2026 McDonald’s",
           "video": null

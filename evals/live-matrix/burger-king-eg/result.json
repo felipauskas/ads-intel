@@ -3,7 +3,7 @@
   "country": "EG",
   "advertiser": "Burger King",
   "folder": "evals/live-matrix/burger-king-eg",
-  "data_dir": "/var/folders/zf/g9bpd9s55sv10tz2mnhqch800000gn/T/ads-intel-live-eval-7v9t8l1b/tmp10x0xu6u",
+  "data_dir": "/var/folders/zf/g9bpd9s55sv10tz2mnhqch800000gn/T/ads-intel-live-eval-h12a1oo8/tmp6isd_ux9",
   "search_summary": {
     "count": 20,
     "complete": false,
@@ -29,7 +29,7 @@
       "비밀의 저택에서",
       "Shortdrama-zlin-06"
     ],
-    "seconds": 15.22
+    "seconds": 8.57
   },
   "advertiser_summary": {
     "count": null,
@@ -49,7 +49,7 @@
     ],
     "threshold": 0.8,
     "page_names": [],
-    "seconds": 13.74
+    "seconds": 0.02
   },
   "watch_add": {
     "error": null,
@@ -84,7 +84,7 @@
       "error": "name_not_matched"
     },
     "new_page_names": [],
-    "seconds": 14.46,
+    "seconds": 0.02,
     "artifact_problems": [
       "artifacts_error: name_not_matched"
     ]
@@ -111,7 +111,7 @@
       "error": "name_not_matched"
     },
     "new_page_names": [],
-    "seconds": 7.32,
+    "seconds": 0.02,
     "artifact_problems": [
       "artifacts_error: name_not_matched"
     ]
@@ -121,7 +121,8 @@
   "currency": {
     "expected": "EGP/جنيه",
     "found": [],
-    "ok": false
+    "ok": false,
+    "caveat": null
   },
   "status": "FAIL",
   "failures": [
@@ -131,18 +132,18 @@
     "artifacts2_error: name_not_matched"
   ],
   "timings": {
-    "search": 15.22,
-    "advertiser_search": 13.74,
-    "check1": 14.46,
-    "check2": 7.32,
-    "total": 50.74
+    "search": 8.57,
+    "advertiser_search": 0.02,
+    "check1": 0.02,
+    "check2": 0.02,
+    "total": 8.63
   },
   "attempts": {
-    "total": 8,
-    "failed": 4,
+    "total": 4,
+    "failed": 0,
     "transport_failed": 0,
-    "parse_failed": 4,
-    "shell": 4,
+    "parse_failed": 0,
+    "shell": 0,
     "blocked": 0,
     "markup_changed": 0
   }

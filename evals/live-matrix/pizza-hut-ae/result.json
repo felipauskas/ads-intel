@@ -3,7 +3,7 @@
   "country": "AE",
   "advertiser": "Pizza Hut",
   "folder": "evals/live-matrix/pizza-hut-ae",
-  "data_dir": "/var/folders/zf/g9bpd9s55sv10tz2mnhqch800000gn/T/ads-intel-live-eval-7v9t8l1b/tmp4wzed0q8",
+  "data_dir": "/var/folders/zf/g9bpd9s55sv10tz2mnhqch800000gn/T/ads-intel-live-eval-h12a1oo8/tmpacd2bxn8",
   "search_summary": {
     "count": 11,
     "complete": true,
@@ -13,10 +13,10 @@
     "page_names": [
       "Pizza Hut"
     ],
-    "seconds": 8.17
+    "seconds": 5.54
   },
   "advertiser_summary": {
-    "count": 11,
+    "count": 8,
     "complete": true,
     "resolved": {
       "page_name": "Pizza Hut",
@@ -29,7 +29,7 @@
     "page_names": [
       "Pizza Hut"
     ],
-    "seconds": 5.71
+    "seconds": 0.01
   },
   "watch_add": {
     "error": null,
@@ -50,7 +50,7 @@
       "page_name": "Pizza Hut",
       "score": 0.8
     },
-    "new_ads": 11,
+    "new_ads": 8,
     "ended_ads": 0,
     "changed_ads": 0,
     "partial": false,
@@ -61,7 +61,7 @@
     "new_page_names": [
       "Pizza Hut"
     ],
-    "seconds": 4.97
+    "seconds": 0.01
   },
   "check2": {
     "query": "Pizza Hut",
@@ -80,32 +80,33 @@
       "digest": "artifacts/check2/digest.json"
     },
     "new_page_names": [],
-    "seconds": 5.12
+    "seconds": 0.01
   },
   "artifacts_ok": true,
   "artifacts2_ok": true,
   "currency": {
     "expected": "AED",
-    "found": [],
-    "ok": false
+    "found": [
+      "OMR"
+    ],
+    "ok": false,
+    "caveat": "non_aed: OMR"
   },
-  "status": "FAIL",
-  "failures": [
-    "currency_missing: AED absent from AE ad text"
-  ],
+  "status": "PASS",
+  "failures": [],
   "timings": {
-    "search": 8.17,
-    "advertiser_search": 5.71,
-    "check1": 4.97,
-    "check2": 5.12,
-    "total": 23.97
+    "search": 5.54,
+    "advertiser_search": 0.01,
+    "check1": 0.01,
+    "check2": 0.01,
+    "total": 5.57
   },
   "attempts": {
-    "total": 5,
-    "failed": 1,
+    "total": 4,
+    "failed": 0,
     "transport_failed": 0,
-    "parse_failed": 1,
-    "shell": 1,
+    "parse_failed": 0,
+    "shell": 0,
     "blocked": 0,
     "markup_changed": 0
   }

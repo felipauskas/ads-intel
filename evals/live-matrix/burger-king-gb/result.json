@@ -3,15 +3,22 @@
   "country": "GB",
   "advertiser": "Burger King",
   "folder": "evals/live-matrix/burger-king-gb",
-  "data_dir": "/var/folders/zf/g9bpd9s55sv10tz2mnhqch800000gn/T/ads-intel-live-eval-7v9t8l1b/tmpb71rnybq",
+  "data_dir": "/var/folders/zf/g9bpd9s55sv10tz2mnhqch800000gn/T/ads-intel-live-eval-h12a1oo8/tmpz5zpi0jt",
   "search_summary": {
-    "count": null,
-    "complete": null,
-    "fetched": null,
-    "country": null,
-    "error": "parse_failed: dead_render: shell: render (5219 chars) with no card markers or empty-state text",
-    "page_names": [],
-    "seconds": 30.53
+    "count": 20,
+    "complete": false,
+    "fetched": 20,
+    "country": "GB",
+    "error": null,
+    "page_names": [
+      "Burger King UK",
+      "Deliveroo",
+      "37GS Residences",
+      "Wolt",
+      "DoorDash",
+      "The Sparrow Hotel, Bar & Restaurant"
+    ],
+    "seconds": 9.54
   },
   "advertiser_summary": {
     "count": 5,
@@ -27,7 +34,7 @@
     "page_names": [
       "Burger King UK"
     ],
-    "seconds": 6.87
+    "seconds": 0.02
   },
   "watch_add": {
     "error": null,
@@ -59,7 +66,7 @@
     "new_page_names": [
       "Burger King UK"
     ],
-    "seconds": 35.74
+    "seconds": 0.02
   },
   "check2": {
     "query": "Burger King",
@@ -71,40 +78,38 @@
     },
     "new_ads": 0,
     "ended_ads": 0,
-    "changed_ads": 2,
+    "changed_ads": 0,
     "partial": true,
     "artifacts": {
       "html": "artifacts/check2/html.html",
       "digest": "artifacts/check2/digest.json"
     },
     "new_page_names": [],
-    "seconds": 13.03
+    "seconds": 0.02
   },
   "artifacts_ok": true,
   "artifacts2_ok": true,
   "currency": {
     "expected": null,
     "found": [],
-    "ok": null
+    "ok": null,
+    "caveat": null
   },
-  "status": "FAIL",
-  "failures": [
-    "search_error: parse_failed: dead_render: shell: render (5219 chars) with no card markers or empty-state text",
-    "check2_not_settled: (0, 0, 2)"
-  ],
+  "status": "PASS",
+  "failures": [],
   "timings": {
-    "search": 30.53,
-    "advertiser_search": 6.87,
-    "check1": 35.74,
-    "check2": 13.03,
-    "total": 86.17
+    "search": 9.54,
+    "advertiser_search": 0.02,
+    "check1": 0.02,
+    "check2": 0.02,
+    "total": 9.6
   },
   "attempts": {
-    "total": 15,
-    "failed": 12,
+    "total": 4,
+    "failed": 0,
     "transport_failed": 0,
-    "parse_failed": 12,
-    "shell": 12,
+    "parse_failed": 0,
+    "shell": 0,
     "blocked": 0,
     "markup_changed": 0
   }

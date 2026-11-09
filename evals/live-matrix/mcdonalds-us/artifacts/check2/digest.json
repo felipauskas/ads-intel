@@ -1,7 +1,7 @@
 {
   "query": "McDonald's",
   "country": "US",
-  "checked_at": "2026-11-09T14:21:48",
+  "checked_at": "2026-11-09T16:18:09",
   "partial": false,
   "total": 19,
   "new": 0,
@@ -10,7 +10,7 @@
   "with_link": 18,
   "with_cta": 18,
   "with_images": 14,
-  "with_same_creative": 6,
+  "with_same_creative": 5,
   "with_multiple_versions": 19,
   "advertiser": "McDonald's"
 }

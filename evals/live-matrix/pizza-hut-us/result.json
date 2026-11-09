@@ -3,7 +3,7 @@
   "country": "US",
   "advertiser": "Pizza Hut",
   "folder": "evals/live-matrix/pizza-hut-us",
-  "data_dir": "/var/folders/zf/g9bpd9s55sv10tz2mnhqch800000gn/T/ads-intel-live-eval-7v9t8l1b/tmpna8gdc6d",
+  "data_dir": "/var/folders/zf/g9bpd9s55sv10tz2mnhqch800000gn/T/ads-intel-live-eval-h12a1oo8/tmptdteg4di",
   "search_summary": {
     "count": 20,
     "complete": false,
@@ -17,7 +17,7 @@
       "Pizza Hut",
       "The Blood Pressure Journal"
     ],
-    "seconds": 2.8
+    "seconds": 17.85
   },
   "advertiser_summary": {
     "count": 18,
@@ -33,7 +33,7 @@
     "page_names": [
       "Pizza Hut"
     ],
-    "seconds": 0.01
+    "seconds": 6.22
   },
   "watch_add": {
     "error": null,
@@ -65,7 +65,7 @@
     "new_page_names": [
       "Pizza Hut"
     ],
-    "seconds": 0.01
+    "seconds": 25.88
   },
   "check2": {
     "query": "Pizza Hut",
@@ -84,30 +84,31 @@
       "digest": "artifacts/check2/digest.json"
     },
     "new_page_names": [],
-    "seconds": 0.01
+    "seconds": 5.91
   },
   "artifacts_ok": true,
   "artifacts2_ok": true,
   "currency": {
     "expected": null,
     "found": [],
-    "ok": null
+    "ok": null,
+    "caveat": null
   },
   "status": "PASS",
   "failures": [],
   "timings": {
-    "search": 2.8,
-    "advertiser_search": 0.01,
-    "check1": 0.01,
-    "check2": 0.01,
-    "total": 2.83
+    "search": 17.85,
+    "advertiser_search": 6.22,
+    "check1": 25.88,
+    "check2": 5.91,
+    "total": 55.86
   },
   "attempts": {
-    "total": 4,
-    "failed": 0,
+    "total": 9,
+    "failed": 5,
     "transport_failed": 0,
-    "parse_failed": 0,
-    "shell": 0,
+    "parse_failed": 5,
+    "shell": 5,
     "blocked": 0,
     "markup_changed": 0
   }

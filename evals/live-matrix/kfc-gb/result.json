@@ -3,7 +3,7 @@
   "country": "GB",
   "advertiser": "KFC",
   "folder": "evals/live-matrix/kfc-gb",
-  "data_dir": "/var/folders/zf/g9bpd9s55sv10tz2mnhqch800000gn/T/ads-intel-live-eval-7v9t8l1b/tmpx19hy4bd",
+  "data_dir": "/var/folders/zf/g9bpd9s55sv10tz2mnhqch800000gn/T/ads-intel-live-eval-h12a1oo8/tmpnw0w50b2",
   "search_summary": {
     "count": 20,
     "complete": false,
@@ -29,10 +29,10 @@
       "YaiToeii",
       "SoSweet"
     ],
-    "seconds": 3.26
+    "seconds": 7.78
   },
   "advertiser_summary": {
-    "count": 2,
+    "count": 1,
     "complete": false,
     "resolved": {
       "page_name": "KFC",
@@ -66,7 +66,7 @@
       "page_name": "KFC",
       "score": 0.8
     },
-    "new_ads": 2,
+    "new_ads": 1,
     "ended_ads": 0,
     "changed_ads": 0,
     "partial": true,
@@ -103,16 +103,17 @@
   "currency": {
     "expected": null,
     "found": [],
-    "ok": null
+    "ok": null,
+    "caveat": null
   },
   "status": "PASS",
   "failures": [],
   "timings": {
-    "search": 3.26,
+    "search": 7.78,
     "advertiser_search": 0.02,
     "check1": 0.02,
     "check2": 0.02,
-    "total": 3.32
+    "total": 7.84
   },
   "attempts": {
     "total": 4,

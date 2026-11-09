@@ -3,7 +3,7 @@
   "country": "EG",
   "advertiser": "Domino's Pizza",
   "folder": "evals/live-matrix/dominos-pizza-eg",
-  "data_dir": "/var/folders/zf/g9bpd9s55sv10tz2mnhqch800000gn/T/ads-intel-live-eval-7v9t8l1b/tmph4z554b1",
+  "data_dir": "/var/folders/zf/g9bpd9s55sv10tz2mnhqch800000gn/T/ads-intel-live-eval-h12a1oo8/tmpxrwxcb4n",
   "search_summary": {
     "count": 20,
     "complete": false,
@@ -19,13 +19,13 @@
       "Linguza: AI English Tutor",
       "foodpanda",
       "Sc Network",
-      "ABOT Surpresa",
       "ROMA Pizza to Go",
       "Speak Language with AI",
       "التميز ستور",
-      "Bengrugrocan Kojimplang"
+      "Alfredo Cooking Class",
+      "مطعم أوريجانو \\- Oregano Restaurant"
     ],
-    "seconds": 2.85
+    "seconds": 9.54
   },
   "advertiser_summary": {
     "count": 4,
@@ -41,7 +41,7 @@
     "page_names": [
       "Domino's Pizza"
     ],
-    "seconds": 0.01
+    "seconds": 0.02
   },
   "watch_add": {
     "error": null,
@@ -73,7 +73,7 @@
     "new_page_names": [
       "Domino's Pizza"
     ],
-    "seconds": 0.01
+    "seconds": 0.02
   },
   "check2": {
     "query": "Domino's Pizza",
@@ -92,23 +92,24 @@
       "digest": "artifacts/check2/digest.json"
     },
     "new_page_names": [],
-    "seconds": 0.01
+    "seconds": 0.02
   },
   "artifacts_ok": true,
   "artifacts2_ok": true,
   "currency": {
     "expected": "EGP/جنيه",
     "found": [],
-    "ok": false
+    "ok": false,
+    "caveat": null
   },
   "status": "PASS",
   "failures": [],
   "timings": {
-    "search": 2.85,
-    "advertiser_search": 0.01,
-    "check1": 0.01,
-    "check2": 0.01,
-    "total": 2.88
+    "search": 9.54,
+    "advertiser_search": 0.02,
+    "check1": 0.02,
+    "check2": 0.02,
+    "total": 9.6
   },
   "attempts": {
     "total": 4,

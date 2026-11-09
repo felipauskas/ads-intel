@@ -3,7 +3,7 @@
   "country": "SA",
   "advertiser": "Domino's Pizza",
   "folder": "evals/live-matrix/dominos-pizza-sa",
-  "data_dir": "/var/folders/zf/g9bpd9s55sv10tz2mnhqch800000gn/T/ads-intel-live-eval-7v9t8l1b/tmpgmbotywp",
+  "data_dir": "/var/folders/zf/g9bpd9s55sv10tz2mnhqch800000gn/T/ads-intel-live-eval-h12a1oo8/tmpjrllg6hz",
   "search_summary": {
     "count": 20,
     "complete": false,
@@ -22,13 +22,13 @@
       "Carrefour Saudi كارفور السعودية",
       "Crazy PizzaSaudi",
       "Your Money Magic",
-      "ABOT Surpresa"
+      "Top Dramas"
     ],
-    "seconds": 12.59
+    "seconds": 9.89
   },
   "advertiser_summary": {
     "count": 7,
-    "complete": false,
+    "complete": true,
     "resolved": {
       "page_name": "Domino's Pizza",
       "score": 0.8
@@ -40,7 +40,7 @@
     "page_names": [
       "Domino's Pizza"
     ],
-    "seconds": 10.06
+    "seconds": 0.02
   },
   "watch_add": {
     "error": null,
@@ -56,17 +56,23 @@
   "check1": {
     "query": "Domino's Pizza",
     "country": "SA",
-    "partial": true,
-    "skipped": true,
-    "reason": "parse_failed",
-    "artifacts": {
-      "error": "parse_failed"
+    "advertiser": "Domino's Pizza",
+    "resolved": {
+      "page_name": "Domino's Pizza",
+      "score": 0.8
     },
-    "new_page_names": [],
-    "seconds": 33.78,
-    "artifact_problems": [
-      "artifacts_error: parse_failed"
-    ]
+    "new_ads": 7,
+    "ended_ads": 0,
+    "changed_ads": 0,
+    "partial": false,
+    "artifacts": {
+      "html": "artifacts/html.html",
+      "digest": "artifacts/digest.json"
+    },
+    "new_page_names": [
+      "Domino's Pizza"
+    ],
+    "seconds": 0.02
   },
   "check2": {
     "query": "Domino's Pizza",
@@ -76,45 +82,40 @@
       "page_name": "Domino's Pizza",
       "score": 0.8
     },
-    "new_ads": 7,
+    "new_ads": 0,
     "ended_ads": 0,
     "changed_ads": 0,
-    "partial": true,
+    "partial": false,
     "artifacts": {
       "html": "artifacts/check2/html.html",
       "digest": "artifacts/check2/digest.json"
     },
-    "new_page_names": [
-      "Domino's Pizza"
-    ],
-    "seconds": 15.97
+    "new_page_names": [],
+    "seconds": 0.02
   },
-  "artifacts_ok": false,
+  "artifacts_ok": true,
   "artifacts2_ok": true,
   "currency": {
     "expected": null,
     "found": [],
-    "ok": null
+    "ok": null,
+    "caveat": null
   },
-  "status": "FAIL",
-  "failures": [
-    "check1_no_new_ads: (None, None, None)",
-    "check2_not_settled: (7, 0, 0)",
-    "artifacts_error: parse_failed"
-  ],
+  "status": "PASS",
+  "failures": [],
   "timings": {
-    "search": 12.59,
-    "advertiser_search": 10.06,
-    "check1": 33.78,
-    "check2": 15.97,
-    "total": 72.4
+    "search": 9.89,
+    "advertiser_search": 0.02,
+    "check1": 0.02,
+    "check2": 0.02,
+    "total": 9.95
   },
   "attempts": {
-    "total": 11,
-    "failed": 8,
+    "total": 4,
+    "failed": 0,
     "transport_failed": 0,
-    "parse_failed": 8,
-    "shell": 8,
+    "parse_failed": 0,
+    "shell": 0,
     "blocked": 0,
     "markup_changed": 0
   }

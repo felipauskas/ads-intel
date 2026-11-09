@@ -3,7 +3,7 @@
   "country": "US",
   "advertiser": "Burger King",
   "folder": "evals/live-matrix/burger-king-us",
-  "data_dir": "/var/folders/zf/g9bpd9s55sv10tz2mnhqch800000gn/T/ads-intel-live-eval-7v9t8l1b/tmpogv7tuym",
+  "data_dir": "/var/folders/zf/g9bpd9s55sv10tz2mnhqch800000gn/T/ads-intel-live-eval-h12a1oo8/tmp787cx6ep",
   "search_summary": {
     "count": 20,
     "complete": false,
@@ -18,7 +18,7 @@
       "Wolt",
       "Extra News"
     ],
-    "seconds": 19.38
+    "seconds": 9.28
   },
   "advertiser_summary": {
     "count": 10,
@@ -34,7 +34,7 @@
     "page_names": [
       "Burger King"
     ],
-    "seconds": 11.92
+    "seconds": 8.04
   },
   "watch_add": {
     "error": null,
@@ -55,7 +55,7 @@
       "page_name": "Burger King",
       "score": 0.8
     },
-    "new_ads": 10,
+    "new_ads": 9,
     "ended_ads": 0,
     "changed_ads": 0,
     "partial": false,
@@ -66,7 +66,7 @@
     "new_page_names": [
       "Burger King"
     ],
-    "seconds": 6.9
+    "seconds": 7.29
   },
   "check2": {
     "query": "Burger King",
@@ -76,39 +76,44 @@
       "page_name": "Burger King",
       "score": 0.8
     },
-    "new_ads": 0,
-    "ended_ads": 0,
+    "new_ads": 6,
+    "ended_ads": 5,
     "changed_ads": 0,
     "partial": false,
     "artifacts": {
       "html": "artifacts/check2/html.html",
       "digest": "artifacts/check2/digest.json"
     },
-    "new_page_names": [],
-    "seconds": 12.0
+    "new_page_names": [
+      "Burger King"
+    ],
+    "seconds": 7.01
   },
   "artifacts_ok": true,
   "artifacts2_ok": true,
   "currency": {
     "expected": null,
     "found": [],
-    "ok": null
+    "ok": null,
+    "caveat": null
   },
-  "status": "PASS",
-  "failures": [],
+  "status": "FAIL",
+  "failures": [
+    "check2_not_settled: (6, 5, 0)"
+  ],
   "timings": {
-    "search": 19.38,
-    "advertiser_search": 11.92,
-    "check1": 6.9,
-    "check2": 12.0,
-    "total": 50.2
+    "search": 9.28,
+    "advertiser_search": 8.04,
+    "check1": 7.29,
+    "check2": 7.01,
+    "total": 31.62
   },
   "attempts": {
-    "total": 8,
-    "failed": 4,
+    "total": 5,
+    "failed": 1,
     "transport_failed": 0,
-    "parse_failed": 4,
-    "shell": 4,
+    "parse_failed": 1,
+    "shell": 1,
     "blocked": 0,
     "markup_changed": 0
   }

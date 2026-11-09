@@ -5,8 +5,8 @@
     {
       "phase": "search",
       "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=US&q=KFC&media_type=all&search_type=keyword_unordered",
-      "seconds": 3.1,
-      "chars": 66875,
+      "seconds": 6.34,
+      "chars": 66906,
       "failed": false,
       "transport_failed": false,
       "dead_render": null
@@ -15,7 +15,7 @@
       "phase": "advertiser_search",
       "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=US&q=KFC&media_type=all&search_type=keyword_unordered",
       "seconds": 0.01,
-      "chars": 66875,
+      "chars": 66906,
       "failed": false,
       "transport_failed": false,
       "dead_render": null
@@ -24,7 +24,7 @@
       "phase": "check1",
       "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=US&q=KFC&media_type=all&search_type=keyword_unordered",
       "seconds": 0.01,
-      "chars": 66875,
+      "chars": 66906,
       "failed": false,
       "transport_failed": false,
       "dead_render": null
@@ -33,7 +33,7 @@
       "phase": "check2",
       "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=US&q=KFC&media_type=all&search_type=keyword_unordered",
       "seconds": 0.01,
-      "chars": 66875,
+      "chars": 66906,
       "failed": false,
       "transport_failed": false,
       "dead_render": null

@@ -3,31 +3,18 @@
   "country": "SA",
   "advertiser": "McDonald's",
   "folder": "evals/live-matrix/mcdonalds-sa",
-  "data_dir": "/var/folders/zf/g9bpd9s55sv10tz2mnhqch800000gn/T/ads-intel-live-eval-7v9t8l1b/tmpe5tlk5vo",
+  "data_dir": "/var/folders/zf/g9bpd9s55sv10tz2mnhqch800000gn/T/ads-intel-live-eval-h12a1oo8/tmpqk_n7e20",
   "search_summary": {
-    "count": 20,
-    "complete": false,
-    "fetched": 20,
-    "country": "SA",
-    "error": null,
-    "page_names": [
-      "From the Bottom Real Estate",
-      "McDonald's",
-      "蝦皮購物 (Shopee)",
-      "McDonaldsksa\\_ws",
-      "اسلامي نبض حياتي",
-      "DoubleData",
-      "Motive8 Auto detailing and auto accessories",
-      "Franquicia IA",
-      "Monopoly GO",
-      "Room for Rent para sa mga OFW'S",
-      "BYT Vacuum Machine",
-      "Ryan Law Sophiet"
-    ],
-    "seconds": 20.85
+    "count": null,
+    "complete": null,
+    "fetched": null,
+    "country": null,
+    "error": "parse_failed: dead_render: shell: render (5161 chars) with no card markers or empty-state text",
+    "page_names": [],
+    "seconds": 34.95
   },
   "advertiser_summary": {
-    "count": 3,
+    "count": 1,
     "complete": true,
     "resolved": {
       "page_name": "McDonald's",
@@ -40,7 +27,7 @@
     "page_names": [
       "McDonald's"
     ],
-    "seconds": 18.97
+    "seconds": 18.51
   },
   "watch_add": {
     "error": null,
@@ -61,7 +48,7 @@
       "page_name": "McDonald's",
       "score": 0.8
     },
-    "new_ads": 3,
+    "new_ads": 1,
     "ended_ads": 0,
     "changed_ads": 0,
     "partial": false,
@@ -72,49 +59,50 @@
     "new_page_names": [
       "McDonald's"
     ],
-    "seconds": 26.19
+    "seconds": 12.44
   },
   "check2": {
     "query": "McDonald's",
     "country": "SA",
-    "advertiser": "McDonald's",
-    "resolved": {
-      "page_name": "McDonald's",
-      "score": 0.8
-    },
-    "new_ads": 0,
-    "ended_ads": 0,
-    "changed_ads": 0,
-    "partial": false,
+    "partial": true,
+    "skipped": true,
+    "reason": "parse_failed",
     "artifacts": {
-      "html": "artifacts/check2/html.html",
-      "digest": "artifacts/check2/digest.json"
+      "error": "parse_failed"
     },
     "new_page_names": [],
-    "seconds": 6.81
+    "seconds": 35.52,
+    "artifact_problems": [
+      "artifacts_error: parse_failed"
+    ]
   },
   "artifacts_ok": true,
-  "artifacts2_ok": true,
+  "artifacts2_ok": false,
   "currency": {
     "expected": null,
     "found": [],
-    "ok": null
+    "ok": null,
+    "caveat": null
   },
-  "status": "PASS",
-  "failures": [],
+  "status": "FAIL",
+  "failures": [
+    "search_error: parse_failed: dead_render: shell: render (5161 chars) with no card markers or empty-state text",
+    "check2_not_settled: (None, None, None)",
+    "artifacts2_error: parse_failed"
+  ],
   "timings": {
-    "search": 20.85,
-    "advertiser_search": 18.97,
-    "check1": 26.19,
-    "check2": 6.81,
-    "total": 72.82
+    "search": 34.95,
+    "advertiser_search": 18.51,
+    "check1": 12.44,
+    "check2": 35.52,
+    "total": 101.42
   },
   "attempts": {
-    "total": 12,
-    "failed": 8,
+    "total": 17,
+    "failed": 15,
     "transport_failed": 0,
-    "parse_failed": 8,
-    "shell": 8,
+    "parse_failed": 15,
+    "shell": 15,
     "blocked": 0,
     "markup_changed": 0
   }

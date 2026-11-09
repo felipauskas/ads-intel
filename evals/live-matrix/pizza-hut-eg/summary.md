@@ -6,7 +6,7 @@
 ## Keyword search (`active_status=active`, limit 20)
 - count: 11  complete: True  fetched: 11  error: None
 - page names: Igigrcia, Pizza Hut, Life Luxury
-- seconds: 2.44
+- seconds: 5.89
 
 ## Advertiser search
 - count: 9  resolved: {'page_name': 'Pizza Hut', 'score': 0.8}  error: None
@@ -14,13 +14,13 @@
 - seconds: 0.01
 
 ## Watch checks
-- check1: new=9 ended=0 changed=0 partial=False error=None seconds=0.03
-- check2: new=0 ended=0 changed=0 partial=False error=None seconds=0.03
+- check1: new=9 ended=0 changed=0 partial=False error=None seconds=0.01
+- check2: new=0 ended=0 changed=0 partial=False error=None seconds=0.01
 - artifacts: {"html": "artifacts/html.html", "digest": "artifacts/digest.json"} (ok=True)
 - artifacts check2: {"html": "artifacts/check2/html.html", "digest": "artifacts/check2/digest.json"} (ok=True)
 
 ## Currency spot-check
-- expected: EGP/جنيه  found: جنيه  ok: True
+- expected: EGP/جنيه  found: جنيه  ok: True  caveat: —
 
 ## Hydration
 - attempts: 4  failed: 0  transport: 0  dead render: 0 (shell 0, blocked 0, markup_changed 0)

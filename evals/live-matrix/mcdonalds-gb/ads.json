@@ -1,636 +1,7 @@
 {
   "brand": "McDonald's",
   "country": "GB",
-  "search": [
-    {
-      "id": "915272287995291",
-      "page_name": "McDonald's",
-      "status": "active",
-      "first_seen": "Apr 13, 2026",
-      "last_seen": "",
-      "creative_text": "McDonald’s have been at it again 👀🍑🥤 Loot from the second World Menu Heist arrives October 20th, and Peach x Sprite®️ Zero from Singapore sounds SO up my street. What do you hope is on the menu?",
-      "library_url": "https://www.facebook.com/ads/library/?id=915272287995291",
-      "page_url": "https://www.facebook.com/McDonaldsUK/",
-      "page_id": "",
-      "link_url": "https://smart.link/h1spg3qhkb9uf",
-      "link_title": "",
-      "cta_text": "Order Now",
-      "link_caption": "",
-      "images": [],
-      "has_video": true,
-      "same_creative_count": 0,
-      "multiple_versions": true,
-      "cta_type": "ORDER_NOW",
-      "display_format": "video",
-      "cards": [
-        {
-          "body": "McDonald’s have been at it again 👀🍑🥤 Loot from the second World Menu Heist arrives October 20th, and Peach x Sprite®️ Zero from Singapore sounds SO up my street. What do you hope is on the menu?",
-          "cta": "Order Now",
-          "image": null,
-          "link_url": "https://smart.link/h1spg3qhkb9uf",
-          "title": "",
-          "video": null
-        }
-      ]
-    },
-    {
-      "id": "1889219425381037",
-      "page_name": "McDonald's",
-      "status": "active",
-      "first_seen": "Oct 21, 2026",
-      "last_seen": "",
-      "creative_text": "Get your hands on this great deal.",
-      "library_url": "https://www.facebook.com/ads/library/?id=1889219425381037",
-      "page_url": "https://www.facebook.com/McDonalds/",
-      "page_id": "",
-      "link_url": "https://www.mcdonalds.com/us/en-us/download-app.html",
-      "link_title": "it’s as simple as McDonald's Download",
-      "cta_text": "Order Now",
-      "link_caption": "MCDONALDS.COM",
-      "images": [
-        "https://scontent-lax7-1.xx.fbcdn.net/v/t39.35426-6/615487750_732136346636783_1395649993937322739_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=105&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=9xqGTsGS880Q7kNvwEEi4Er&_nc_oc=AdpEhaWdX_6wPyp7uz_i4lgMIPZfX8Lxi0bDDztdskF3jA_Wy9zx8hn7jvNXGooZ-gY&_nc_zt=14&_nc_ht=scontent-lax7-1.xx&_nc_gid=DI60lNGOVPp8nFwv5EsTAw&_nc_ss=7b289&oh=00_AQQIIN9FJa7y11q_cPyiSr5L7eTHZbc2GjnF2lvcXHv8eQ&oe=6AF76250"
-      ],
-      "has_video": false,
-      "same_creative_count": 4,
-      "multiple_versions": true,
-      "cta_type": "ORDER_NOW",
-      "display_format": "image",
-      "cards": [
-        {
-          "body": "Get your hands on this great deal.",
-          "cta": "Order Now",
-          "image": "https://scontent-lax7-1.xx.fbcdn.net/v/t39.35426-6/615487750_732136346636783_1395649993937322739_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=105&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=9xqGTsGS880Q7kNvwEEi4Er&_nc_oc=AdpEhaWdX_6wPyp7uz_i4lgMIPZfX8Lxi0bDDztdskF3jA_Wy9zx8hn7jvNXGooZ-gY&_nc_zt=14&_nc_ht=scontent-lax7-1.xx&_nc_gid=DI60lNGOVPp8nFwv5EsTAw&_nc_ss=7b289&oh=00_AQQIIN9FJa7y11q_cPyiSr5L7eTHZbc2GjnF2lvcXHv8eQ&oe=6AF76250",
-          "link_url": "https://www.mcdonalds.com/us/en-us/download-app.html",
-          "title": "it’s as simple as McDonald's Download",
-          "video": null
-        }
-      ]
-    },
-    {
-      "id": "655676137310302",
-      "page_name": "McDonald's",
-      "status": "active",
-      "first_seen": "May 14, 2025",
-      "last_seen": "",
-      "creative_text": "Ditch the sad-wich and give it a glow up with the Snack Wrap.",
-      "library_url": "https://www.facebook.com/ads/library/?id=655676137310302",
-      "page_url": "https://www.facebook.com/McDonaldsUK/",
-      "page_id": "",
-      "link_url": "https://smart.link/d32gf22qjd7wm",
-      "link_title": "The Snack wrap is back Only £1.99.",
-      "cta_text": "Order Now",
-      "link_caption": "",
-      "images": [],
-      "has_video": true,
-      "same_creative_count": 0,
-      "multiple_versions": false,
-      "cta_type": "ORDER_NOW",
-      "display_format": "video",
-      "cards": [
-        {
-          "body": "Ditch the sad-wich and give it a glow up with the Snack Wrap.",
-          "cta": "Order Now",
-          "image": null,
-          "link_url": "https://smart.link/d32gf22qjd7wm",
-          "title": "The Snack wrap is back Only £1.99.",
-          "video": null
-        }
-      ]
-    },
-    {
-      "id": "1078808217772823",
-      "page_name": "Dan Lok",
-      "status": "active",
-      "first_seen": "Mar 10, 2026",
-      "last_seen": "",
-      "creative_text": "See what your business needs so it can scale in this live recording from 9-figure CEO Dan Lok.",
-      "library_url": "https://www.facebook.com/ads/library/?id=1078808217772823",
-      "page_url": "https://www.facebook.com/DanLokOfficial/",
-      "page_id": "",
-      "link_url": "",
-      "link_title": "",
-      "cta_text": "",
-      "link_caption": "",
-      "images": [],
-      "has_video": true,
-      "same_creative_count": 0,
-      "multiple_versions": false,
-      "cta_type": "",
-      "display_format": "video",
-      "cards": [
-        {
-          "body": "See what your business needs so it can scale in this live recording from 9-figure CEO Dan Lok.",
-          "cta": "",
-          "image": null,
-          "link_url": "",
-          "title": "",
-          "video": null
-        }
-      ]
-    },
-    {
-      "id": "1633230615116022",
-      "page_name": "Dollyholly86",
-      "status": "active",
-      "first_seen": "Oct 21, 2026",
-      "last_seen": "",
-      "creative_text": "MD milkshake is hard to replicate if you ask me and they have this spot on 😍😍 @protein.uk",
-      "library_url": "https://www.facebook.com/ads/library/?id=1633230615116022",
-      "page_url": "https://www.facebook.com/dollyholly86/",
-      "page_id": "",
-      "link_url": "https://uk.protein.com/products/slim-meal-replacement-for-34-servings",
-      "link_title": "Dollyholly86",
-      "cta_text": "Shop now",
-      "link_caption": "UK.PROTEIN.COM",
-      "images": [],
-      "has_video": true,
-      "same_creative_count": 4,
-      "multiple_versions": true,
-      "cta_type": "SHOP_NOW",
-      "display_format": "video",
-      "cards": [
-        {
-          "body": "MD milkshake is hard to replicate if you ask me and they have this spot on 😍😍 @protein.uk",
-          "cta": "Shop now",
-          "image": null,
-          "link_url": "https://uk.protein.com/products/slim-meal-replacement-for-34-servings",
-          "title": "Dollyholly86",
-          "video": null
-        }
-      ]
-    },
-    {
-      "id": "1922662932043043",
-      "page_name": "McDonald's",
-      "status": "active",
-      "first_seen": "Oct 5, 2026",
-      "last_seen": "",
-      "creative_text": "Ditch the sad-wich and give it a glow up with the Snack Wrap.",
-      "library_url": "https://www.facebook.com/ads/library/?id=1922662932043043",
-      "page_url": "https://www.facebook.com/McDonaldsUK/",
-      "page_id": "",
-      "link_url": "https://smart.link/d32gf22qjd7wm",
-      "link_title": "The Snack wrap is back Only £1.99.",
-      "cta_text": "Order Now",
-      "link_caption": "",
-      "images": [],
-      "has_video": true,
-      "same_creative_count": 0,
-      "multiple_versions": true,
-      "cta_type": "ORDER_NOW",
-      "display_format": "video",
-      "cards": [
-        {
-          "body": "Ditch the sad-wich and give it a glow up with the Snack Wrap.",
-          "cta": "Order Now",
-          "image": null,
-          "link_url": "https://smart.link/d32gf22qjd7wm",
-          "title": "The Snack wrap is back Only £1.99.",
-          "video": null
-        }
-      ]
-    },
-    {
-      "id": "1830447741442577",
-      "page_name": "McDonald's",
-      "status": "active",
-      "first_seen": "Oct 28, 2026",
-      "last_seen": "",
-      "creative_text": "Any wrap, only £2.49. All week. All yours in the McDonald’s App.",
-      "library_url": "https://www.facebook.com/ads/library/?id=1830447741442577",
-      "page_url": "https://www.facebook.com/McDonaldsUK/",
-      "page_id": "",
-      "link_url": "http://play.google.com/store/apps/details?id=com.mcdonalds.app.uk",
-      "link_title": "App exclusive Wrap it for £2.49",
-      "cta_text": "Download",
-      "link_caption": "",
-      "images": [
-        "https://scontent-lax3-2.xx.fbcdn.net/v/t39.35426-6/829603714_1413998586805708_1120944505655035610_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=107&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=ccxvYXET2gIQ7kNvwFupadf&_nc_oc=AdoHoJFzZEvvMFG821EJaETNw8y8KYf3Z0OE7AC97kLiYaCiRVuSzmBKhq_lYT2gIe0&_nc_zt=14&_nc_ht=scontent-lax3-2.xx&_nc_gid=DI60lNGOVPp8nFwv5EsTAw&_nc_ss=7b289&oh=00_AQQoMs_r6ezStJ7AsuHDvU7woXxvjjUce3kddUgvxjG0Gw&oe=6AF766E2"
-      ],
-      "has_video": false,
-      "same_creative_count": 0,
-      "multiple_versions": true,
-      "cta_type": "DOWNLOAD",
-      "display_format": "image",
-      "cards": [
-        {
-          "body": "Any wrap, only £2.49. All week. All yours in the McDonald’s App.",
-          "cta": "Download",
-          "image": "https://scontent-lax3-2.xx.fbcdn.net/v/t39.35426-6/829603714_1413998586805708_1120944505655035610_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=107&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=ccxvYXET2gIQ7kNvwFupadf&_nc_oc=AdoHoJFzZEvvMFG821EJaETNw8y8KYf3Z0OE7AC97kLiYaCiRVuSzmBKhq_lYT2gIe0&_nc_zt=14&_nc_ht=scontent-lax3-2.xx&_nc_gid=DI60lNGOVPp8nFwv5EsTAw&_nc_ss=7b289&oh=00_AQQoMs_r6ezStJ7AsuHDvU7woXxvjjUce3kddUgvxjG0Gw&oe=6AF766E2",
-          "link_url": "http://play.google.com/store/apps/details?id=com.mcdonalds.app.uk",
-          "title": "App exclusive Wrap it for £2.49",
-          "video": null
-        }
-      ]
-    },
-    {
-      "id": "1442013381458012",
-      "page_name": "McDonald's",
-      "status": "active",
-      "first_seen": "Oct 28, 2026",
-      "last_seen": "",
-      "creative_text": "Hol dir die Hits der 2000er zu dir nach Hause! Mit 1 von 5 ikonischen Radios in deinem Radio Bundle.\nIn allen teilnehmenden Restaurants vom 28.10. – 24.11.2026. 1 von 5 Radios zu jedem Radio Bundle, 1955 Radio Bundle oder 1955 Radio Sharing Bundle. Solange der Vorrat reicht. Die Lieferzeiten sind auf den jeweiligen Restaurantseiten einsehbar. Alle Informationen zum Lieferservice und Liefergebiet unter [www.mcdelivery.de](http://www.mcdelivery.de/). Bitte Mindestbestellwert beachten. © 2026 McDonald’s",
-      "library_url": "https://www.facebook.com/ads/library/?id=1442013381458012",
-      "page_url": "https://www.facebook.com/mcd/",
-      "page_id": "",
-      "link_url": "https://mcdelivery.de/",
-      "link_title": "Endlich wieder bei Mecces Die Kult-Radios sind zurück",
-      "cta_text": "Learn More",
-      "link_caption": "MCDELIVERY.DE",
-      "images": [],
-      "has_video": true,
-      "same_creative_count": 0,
-      "multiple_versions": true,
-      "cta_type": "LEARN_MORE",
-      "display_format": "video",
-      "cards": [
-        {
-          "body": "Hol dir die Hits der 2000er zu dir nach Hause! Mit 1 von 5 ikonischen Radios in deinem Radio Bundle.\nIn allen teilnehmenden Restaurants vom 28.10. – 24.11.2026. 1 von 5 Radios zu jedem Radio Bundle, 1955 Radio Bundle oder 1955 Radio Sharing Bundle. Solange der Vorrat reicht. Die Lieferzeiten sind auf den jeweiligen Restaurantseiten einsehbar. Alle Informationen zum Lieferservice und Liefergebiet unter [www.mcdelivery.de](http://www.mcdelivery.de/). Bitte Mindestbestellwert beachten. © 2026 McDonald’s",
-          "cta": "Learn More",
-          "image": null,
-          "link_url": "https://mcdelivery.de/",
-          "title": "Endlich wieder bei Mecces Die Kult-Radios sind zurück",
-          "video": null
-        }
-      ]
-    },
-    {
-      "id": "2154428108800573",
-      "page_name": "McDonald's",
-      "status": "active",
-      "first_seen": "Oct 20, 2026",
-      "last_seen": "",
-      "creative_text": "Hol dir die Hits der 2000er zu dir nach Hause! Mit 1 von 5 ikonischen Radios in deinem Radio Bundle.\nIn allen teilnehmenden Restaurants vom 28.10. – 24.11.2026. 1 von 5 Radios zu jedem Radio Bundle, 1955 Radio Bundle oder 1955 Radio Sharing Bundle. Solange der Vorrat reicht. Die Lieferzeiten sind auf den jeweiligen Restaurantseiten einsehbar. Alle Informationen zum Lieferservice und Liefergebiet unter [www.mcdelivery.de](http://www.mcdelivery.de/). Bitte Mindestbestellwert beachten. © 2026 McDonald’s",
-      "library_url": "https://www.facebook.com/ads/library/?id=2154428108800573",
-      "page_url": "https://www.facebook.com/mcd/",
-      "page_id": "",
-      "link_url": "https://mcdelivery.de/",
-      "link_title": "Endlich wieder bei Mecces Die Kult-Radios sind zurück",
-      "cta_text": "Learn More",
-      "link_caption": "MCDELIVERY.DE",
-      "images": [],
-      "has_video": true,
-      "same_creative_count": 0,
-      "multiple_versions": true,
-      "cta_type": "LEARN_MORE",
-      "display_format": "video",
-      "cards": [
-        {
-          "body": "Hol dir die Hits der 2000er zu dir nach Hause! Mit 1 von 5 ikonischen Radios in deinem Radio Bundle.\nIn allen teilnehmenden Restaurants vom 28.10. – 24.11.2026. 1 von 5 Radios zu jedem Radio Bundle, 1955 Radio Bundle oder 1955 Radio Sharing Bundle. Solange der Vorrat reicht. Die Lieferzeiten sind auf den jeweiligen Restaurantseiten einsehbar. Alle Informationen zum Lieferservice und Liefergebiet unter [www.mcdelivery.de](http://www.mcdelivery.de/). Bitte Mindestbestellwert beachten. © 2026 McDonald’s",
-          "cta": "Learn More",
-          "image": null,
-          "link_url": "https://mcdelivery.de/",
-          "title": "Endlich wieder bei Mecces Die Kult-Radios sind zurück",
-          "video": null
-        }
-      ]
-    },
-    {
-      "id": "1627305935441155",
-      "page_name": "McDonald's",
-      "status": "active",
-      "first_seen": "Oct 19, 2026",
-      "last_seen": "",
-      "creative_text": "got a taste for heisting now",
-      "library_url": "https://www.facebook.com/ads/library/?id=1627305935441155",
-      "page_url": "https://www.facebook.com/McDonaldsUK/",
-      "page_id": "",
-      "link_url": "https://smart.link/h1spg3qhkb9uf",
-      "link_title": "new loot too irresistible can’t stop won’t stop",
-      "cta_text": "Order Now",
-      "link_caption": "",
-      "images": [],
-      "has_video": true,
-      "same_creative_count": 0,
-      "multiple_versions": false,
-      "cta_type": "ORDER_NOW",
-      "display_format": "video",
-      "cards": [
-        {
-          "body": "got a taste for heisting now",
-          "cta": "Order Now",
-          "image": null,
-          "link_url": "https://smart.link/h1spg3qhkb9uf",
-          "title": "new loot too irresistible can’t stop won’t stop",
-          "video": null
-        }
-      ]
-    },
-    {
-      "id": "1847205929926581",
-      "page_name": "Barbygant",
-      "status": "active",
-      "first_seen": "Nov 2, 2026",
-      "last_seen": "",
-      "creative_text": "This is how a friendship between Spain & Austria began 🇪🇸🤝🇦🇹 Who knew McDonald’s would bring us together? 🍟\nIn this mini-series with @mcdonalds\\_es we’ll discover the different local products and flavours you can find from country to country\n2 countries, 2 cultures and a lot of food to try… Ready for the adventure? ❤️\n#foodie #mcdonalds",
-      "library_url": "https://www.facebook.com/ads/library/?id=1847205929926581",
-      "page_url": "https://www.facebook.com/61551349716226/",
-      "page_id": "61551349716226",
-      "link_url": "",
-      "link_title": "",
-      "cta_text": "",
-      "link_caption": "",
-      "images": [],
-      "has_video": true,
-      "same_creative_count": 0,
-      "multiple_versions": true,
-      "cta_type": "",
-      "display_format": "video",
-      "cards": [
-        {
-          "body": "This is how a friendship between Spain & Austria began 🇪🇸🤝🇦🇹 Who knew McDonald’s would bring us together? 🍟\nIn this mini-series with @mcdonalds\\_es we’ll discover the different local products and flavours you can find from country to country\n2 countries, 2 cultures and a lot of food to try… Ready for the adventure? ❤️\n#foodie #mcdonalds",
-          "cta": "",
-          "image": null,
-          "link_url": "",
-          "title": "",
-          "video": null
-        }
-      ]
-    },
-    {
-      "id": "2046707875908628",
-      "page_name": "McDonald's",
-      "status": "active",
-      "first_seen": "May 23, 2026",
-      "last_seen": "",
-      "creative_text": "McDonald’s have been at it again 👀🍑🥤 Loot from the second World Menu Heist arrives October 20th, and Peach x Sprite®️ Zero from Singapore sounds SO up my street. What do you hope is on the menu?\nOrder Now",
-      "library_url": "https://www.facebook.com/ads/library/?id=2046707875908628",
-      "page_url": "https://www.facebook.com/McDonaldsUK/",
-      "page_id": "",
-      "link_url": "",
-      "link_title": "",
-      "cta_text": "",
-      "link_caption": "",
-      "images": [],
-      "has_video": true,
-      "same_creative_count": 0,
-      "multiple_versions": true,
-      "cta_type": "",
-      "display_format": "video",
-      "cards": [
-        {
-          "body": "McDonald’s have been at it again 👀🍑🥤 Loot from the second World Menu Heist arrives October 20th, and Peach x Sprite®️ Zero from Singapore sounds SO up my street. What do you hope is on the menu?\nOrder Now",
-          "cta": "",
-          "image": null,
-          "link_url": "",
-          "title": "",
-          "video": null
-        }
-      ]
-    },
-    {
-      "id": "1766551667958763",
-      "page_name": "The Dutch Tile Project",
-      "status": "active",
-      "first_seen": "Oct 20, 2026",
-      "last_seen": "",
-      "creative_text": "Boost your home interior with Dutch Blue Tiles 💙",
-      "library_url": "https://www.facebook.com/ads/library/?id=1766551667958763",
-      "page_url": "https://www.facebook.com/TheDutchTileProject/",
-      "page_id": "",
-      "link_url": "https://thedutchtileproject.com/nl-nl/products/darth-vader-star-wars-369559127?utm_content=Facebook_UA&utm_source=facebook&variant=49212745122118",
-      "link_title": "Darth Vader Wij maken Delfts Blauwe tegels geïnspireerd op de Nederlandse geschiedenis en het klassieke ontwerp. Met een moderne twist creëren we unieke tegels voor ieder interieur.",
-      "cta_text": "Shop Now",
-      "link_caption": "THEDUTCHTILEPROJECT.COM",
-      "images": [
-        "https://scontent-lax3-1.xx.fbcdn.net/v/t39.35426-6/706584588_2057952251456014_9158884721953369117_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=104&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=2z2651QgBB8Q7kNvwGFnI79&_nc_oc=AdpesMDNRn3vqVbNi2knQfhqYd9AVRJfZ-3LVYdo6N7iRYQoJop-uM1waNiz6vr7PWE&_nc_zt=14&_nc_ht=scontent-lax3-1.xx&_nc_gid=DI60lNGOVPp8nFwv5EsTAw&_nc_ss=7b289&oh=00_AQRue8rl-rj_voDSFDazn72PI6mUwXpah01s9ybHntzRfA&oe=6AF73D51"
-      ],
-      "has_video": false,
-      "same_creative_count": 0,
-      "multiple_versions": true,
-      "cta_type": "SHOP_NOW",
-      "display_format": "image",
-      "cards": [
-        {
-          "body": "Boost your home interior with Dutch Blue Tiles 💙",
-          "cta": "Shop Now",
-          "image": "https://scontent-lax3-1.xx.fbcdn.net/v/t39.35426-6/706584588_2057952251456014_9158884721953369117_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=104&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=2z2651QgBB8Q7kNvwGFnI79&_nc_oc=AdpesMDNRn3vqVbNi2knQfhqYd9AVRJfZ-3LVYdo6N7iRYQoJop-uM1waNiz6vr7PWE&_nc_zt=14&_nc_ht=scontent-lax3-1.xx&_nc_gid=DI60lNGOVPp8nFwv5EsTAw&_nc_ss=7b289&oh=00_AQRue8rl-rj_voDSFDazn72PI6mUwXpah01s9ybHntzRfA&oe=6AF73D51",
-          "link_url": "https://thedutchtileproject.com/nl-nl/products/darth-vader-star-wars-369559127?utm_content=Facebook_UA&utm_source=facebook&variant=49212745122118",
-          "title": "Darth Vader Wij maken Delfts Blauwe tegels geïnspireerd op de Nederlandse geschiedenis en het klassieke ontwerp. Met een moderne twist creëren we unieke tegels voor ieder interieur.",
-          "video": null
-        }
-      ]
-    },
-    {
-      "id": "913765531519215",
-      "page_name": "McDonald's",
-      "status": "active",
-      "first_seen": "Mar 13, 2026",
-      "last_seen": "",
-      "creative_text": "Sheila loves the tea, especially when it’s this piping hot. NEW McDonald’s World Menu Heist loot dropping soon",
-      "library_url": "https://www.facebook.com/ads/library/?id=913765531519215",
-      "page_url": "https://www.facebook.com/McDonaldsUK/",
-      "page_id": "",
-      "link_url": "https://smart.link/h1spg3qhkb9uf",
-      "link_title": "",
-      "cta_text": "Order Now",
-      "link_caption": "",
-      "images": [],
-      "has_video": true,
-      "same_creative_count": 0,
-      "multiple_versions": true,
-      "cta_type": "ORDER_NOW",
-      "display_format": "video",
-      "cards": [
-        {
-          "body": "Sheila loves the tea, especially when it’s this piping hot. NEW McDonald’s World Menu Heist loot dropping soon",
-          "cta": "Order Now",
-          "image": null,
-          "link_url": "https://smart.link/h1spg3qhkb9uf",
-          "title": "",
-          "video": null
-        }
-      ]
-    },
-    {
-      "id": "2786712395026167",
-      "page_name": "Gold Arthur",
-      "status": "active",
-      "first_seen": "May 29, 2026",
-      "last_seen": "",
-      "creative_text": "Gold Arthur is arriving at McDonald's, Beeston!\nThe gold price is at a record high right now, but it won’t stay that way forever. Come and get your gold valued for free when Gold Arthur stops near your neighbourhood!\nThe following time slot is available at this stop:\n• Wednesday 18 March, 09:00–09:45\n• Wednesday 18 March, 09:00–09:45\nYou’ll always receive reliable and professional service from us:\n⭐ Private valuation in our camper — no waiting lines\n⭐ No commitments and no pressure to sell\n⭐ Current gold price — the best value for your items\nBook a private appointment for a free gold valuation at the nearest stop.",
-      "library_url": "https://www.facebook.com/ads/library/?id=2786712395026167",
-      "page_url": "https://www.facebook.com/61585084946775/",
-      "page_id": "61585084946775",
-      "link_url": "https://goldarthur.co.uk/#search-results-LS118BU",
-      "link_title": "I Want to Buy Your Gold | Gold Arthur Take advantage of today’s historically high gold prices on the global market. Book your appointment with the Gold Arthur now.",
-      "cta_text": "Book Now",
-      "link_caption": "GOLDARTHUR.CO.UK",
-      "images": [
-        "https://scontent-lax7-1.xx.fbcdn.net/v/t39.35426-6/651209076_1448429766977790_7262787440431591577_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=101&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=x82xVYRVjjsQ7kNvwEzVLJ5&_nc_oc=Adorn7Mh4Ak7BnuFn1wxDaRORA_XcCT4L1gb5kafuwEq4Tq0dsYggBdA6zeI8Ed5HfA&_nc_zt=14&_nc_ht=scontent-lax7-1.xx&_nc_gid=DI60lNGOVPp8nFwv5EsTAw&_nc_ss=7b289&oh=00_AQSxrAuvnlihTfqqSQelqnjS6zN90vq2anTrzB-99FYtdw&oe=6AF74158"
-      ],
-      "has_video": false,
-      "same_creative_count": 0,
-      "multiple_versions": false,
-      "cta_type": "BOOK_NOW",
-      "display_format": "image",
-      "cards": [
-        {
-          "body": "Gold Arthur is arriving at McDonald's, Beeston!\nThe gold price is at a record high right now, but it won’t stay that way forever. Come and get your gold valued for free when Gold Arthur stops near your neighbourhood!\nThe following time slot is available at this stop:\n• Wednesday 18 March, 09:00–09:45\n• Wednesday 18 March, 09:00–09:45\nYou’ll always receive reliable and professional service from us:\n⭐ Private valuation in our camper — no waiting lines\n⭐ No commitments and no pressure to sell\n⭐ Current gold price — the best value for your items\nBook a private appointment for a free gold valuation at the nearest stop.",
-          "cta": "Book Now",
-          "image": "https://scontent-lax7-1.xx.fbcdn.net/v/t39.35426-6/651209076_1448429766977790_7262787440431591577_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=101&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=x82xVYRVjjsQ7kNvwEzVLJ5&_nc_oc=Adorn7Mh4Ak7BnuFn1wxDaRORA_XcCT4L1gb5kafuwEq4Tq0dsYggBdA6zeI8Ed5HfA&_nc_zt=14&_nc_ht=scontent-lax7-1.xx&_nc_gid=DI60lNGOVPp8nFwv5EsTAw&_nc_ss=7b289&oh=00_AQSxrAuvnlihTfqqSQelqnjS6zN90vq2anTrzB-99FYtdw&oe=6AF74158",
-          "link_url": "https://goldarthur.co.uk/#search-results-LS118BU",
-          "title": "I Want to Buy Your Gold | Gold Arthur Take advantage of today’s historically high gold prices on the global market. Book your appointment with the Gold Arthur now.",
-          "video": null
-        }
-      ]
-    },
-    {
-      "id": "909489022060630",
-      "page_name": "Dan Lok",
-      "status": "active",
-      "first_seen": "Mar 5, 2026",
-      "last_seen": "",
-      "creative_text": "Are you running a business?\nOr do you have an expensive job you can't quit?\nMost business owners think they're running a business, but they're not.\nIf they can't take a 2-week vacation without everything falling apart...\nIf every decision has to go through them...\nIf their business stops making money the moment they stop working...\nThen they don't own a business.\nThey own a job. A very demanding, stressful job that they can never leave.\nHere's the brutal truth most business owners don't want to hear...\nThey're not actually business owners at all.\nThey're just technicians who had what Michael Gerber calls an \"entrepreneurial seizure.\"\nYou know the story...\nThey're good at what they do. Really good.\nOne day they think: \"I could do this better than my boss. I should start my own business.\"\nSo they do.\nBut here's the problem...\nBeing good at the technical work and knowing how to\nBUILD a business are two completely different skill sets.\nIt's like knowing how to drive a car vs. knowing how to build one.\nJust because they can do the job doesn't mean they know how to create a business that works WITHOUT them.\nSo how do you fix this?\nHow do you build a business that actually works without …",
-      "library_url": "https://www.facebook.com/ads/library/?id=909489022060630",
-      "page_url": "https://www.facebook.com/DanLokOfficial/",
-      "page_id": "",
-      "link_url": "https://unlockyourdreamteam.com/unlock-dream-team",
-      "link_title": "Powerful lessons E-myth",
-      "cta_text": "See details",
-      "link_caption": "UNLOCKYOURDREAMTEAM.COM",
-      "images": [],
-      "has_video": true,
-      "same_creative_count": 0,
-      "multiple_versions": false,
-      "cta_type": "SEE_DETAILS",
-      "display_format": "video",
-      "cards": [
-        {
-          "body": "Are you running a business?\nOr do you have an expensive job you can't quit?\nMost business owners think they're running a business, but they're not.\nIf they can't take a 2-week vacation without everything falling apart...\nIf every decision has to go through them...\nIf their business stops making money the moment they stop working...\nThen they don't own a business.\nThey own a job. A very demanding, stressful job that they can never leave.\nHere's the brutal truth most business owners don't want to hear...\nThey're not actually business owners at all.\nThey're just technicians who had what Michael Gerber calls an \"entrepreneurial seizure.\"\nYou know the story...\nThey're good at what they do. Really good.\nOne day they think: \"I could do this better than my boss. I should start my own business.\"\nSo they do.\nBut here's the problem...\nBeing good at the technical work and knowing how to\nBUILD a business are two completely different skill sets.\nIt's like knowing how to drive a car vs. knowing how to build one.\nJust because they can do the job doesn't mean they know how to create a business that works WITHOUT them.\nSo how do you fix this?\nHow do you build a business that actually works without …",
-          "cta": "See details",
-          "image": null,
-          "link_url": "https://unlockyourdreamteam.com/unlock-dream-team",
-          "title": "Powerful lessons E-myth",
-          "video": null
-        }
-      ]
-    },
-    {
-      "id": "933505802630742",
-      "page_name": "Protein.com",
-      "status": "active",
-      "first_seen": "Mar 21, 2026",
-      "last_seen": "",
-      "creative_text": "'The banana is absolutely lush thick & creamy so much better than a McDonald's one & better for you definitely gets a 👍 from me' - Kerry, verified customer",
-      "library_url": "https://www.facebook.com/ads/library/?id=933505802630742",
-      "page_url": "https://www.facebook.com/ProteinDotCom/",
-      "page_id": "",
-      "link_url": "https://uk.protein.com/collections/all/products/slim-meal-replacement-for-34-servings?variant=44286577410247",
-      "link_title": "SLIM Meal Replacement Banana FREE Next day delivery",
-      "cta_text": "Shop now",
-      "link_caption": "PROTEIN.COM",
-      "images": [],
-      "has_video": true,
-      "same_creative_count": 2,
-      "multiple_versions": false,
-      "cta_type": "SHOP_NOW",
-      "display_format": "video",
-      "cards": [
-        {
-          "body": "'The banana is absolutely lush thick & creamy so much better than a McDonald's one & better for you definitely gets a 👍 from me' - Kerry, verified customer",
-          "cta": "Shop now",
-          "image": null,
-          "link_url": "https://uk.protein.com/collections/all/products/slim-meal-replacement-for-34-servings?variant=44286577410247",
-          "title": "SLIM Meal Replacement Banana FREE Next day delivery",
-          "video": null
-        }
-      ]
-    },
-    {
-      "id": "4576085325870112",
-      "page_name": "Dollyholly86",
-      "status": "active",
-      "first_seen": "Sep 23, 2026",
-      "last_seen": "",
-      "creative_text": "if your looking to start your healthy journey, why not start here. What’s your go to flavour? #fyp @protein.uk #protein #proteinshakes",
-      "library_url": "https://www.facebook.com/ads/library/?id=4576085325870112",
-      "page_url": "https://www.facebook.com/dollyholly86/",
-      "page_id": "",
-      "link_url": "",
-      "link_title": "",
-      "cta_text": "",
-      "link_caption": "",
-      "images": [],
-      "has_video": true,
-      "same_creative_count": 0,
-      "multiple_versions": false,
-      "cta_type": "",
-      "display_format": "video",
-      "cards": [
-        {
-          "body": "if your looking to start your healthy journey, why not start here. What’s your go to flavour? #fyp @protein.uk #protein #proteinshakes",
-          "cta": "",
-          "image": null,
-          "link_url": "",
-          "title": "",
-          "video": null
-        }
-      ]
-    },
-    {
-      "id": "4332779670298115",
-      "page_name": "Osprey Charging Network",
-      "status": "active",
-      "first_seen": "Jan 20, 2026",
-      "last_seen": "",
-      "creative_text": "Now open at McDonald's! £10 of free charging is waiting for you at Sandbrook Park.\nDownload the Osprey app, pop the code SAND10 into the promotions tab, and start your charge through the app. That's it. The credit lands on your account, ready to use.\n\\*Code use limited to first 100 codes",
-      "library_url": "https://www.facebook.com/ads/library/?id=4332779670298115",
-      "page_url": "https://www.facebook.com/OspreyChargingNetwork/",
-      "page_id": "",
-      "link_url": "https://www.ospreycharging.co.uk/easy-enjoyable-charging",
-      "link_title": "Use code SAND10",
-      "cta_text": "Learn more",
-      "link_caption": "WWW.OSPREYCHARGING.CO.UK",
-      "images": [],
-      "has_video": true,
-      "same_creative_count": 0,
-      "multiple_versions": false,
-      "cta_type": "LEARN_MORE",
-      "display_format": "video",
-      "cards": [
-        {
-          "body": "Now open at McDonald's! £10 of free charging is waiting for you at Sandbrook Park.\nDownload the Osprey app, pop the code SAND10 into the promotions tab, and start your charge through the app. That's it. The credit lands on your account, ready to use.\n\\*Code use limited to first 100 codes",
-          "cta": "Learn more",
-          "image": null,
-          "link_url": "https://www.ospreycharging.co.uk/easy-enjoyable-charging",
-          "title": "Use code SAND10",
-          "video": null
-        }
-      ]
-    },
-    {
-      "id": "1779229360010110",
-      "page_name": "Protein.com UK",
-      "status": "active",
-      "first_seen": "Oct 20, 2026",
-      "last_seen": "",
-      "creative_text": "Do you want a tastier and smoother weight loss in 2026?\n😊 Stay full for hours\n😋 Wonderful taste\n💪 20g protein + plenty of fibers\n🍋 22 vitamins and minerals\nAll for just 80p per meal. Of course, you should try it!",
-      "library_url": "https://www.facebook.com/ads/library/?id=1779229360010110",
-      "page_url": "https://www.facebook.com/protein.uk/",
-      "page_id": "",
-      "link_url": "https://uk.protein.com/products/slim-meal-replacement-for-34-servings",
-      "link_title": "Losing weight has never tasted better😍 FREE Next day delivery",
-      "cta_text": "Shop now",
-      "link_caption": "PROTEIN.COM",
-      "images": [],
-      "has_video": true,
-      "same_creative_count": 0,
-      "multiple_versions": true,
-      "cta_type": "SHOP_NOW",
-      "display_format": "video",
-      "cards": [
-        {
-          "body": "Do you want a tastier and smoother weight loss in 2026?\n😊 Stay full for hours\n😋 Wonderful taste\n💪 20g protein + plenty of fibers\n🍋 22 vitamins and minerals\nAll for just 80p per meal. Of course, you should try it!",
-          "cta": "Shop now",
-          "image": null,
-          "link_url": "https://uk.protein.com/products/slim-meal-replacement-for-34-servings",
-          "title": "Losing weight has never tasted better😍 FREE Next day delivery",
-          "video": null
-        }
-      ]
-    }
-  ],
+  "search": [],
   "advertiser_search": [
     {
       "id": "915272287995291",
@@ -638,27 +9,29 @@
       "status": "active",
       "first_seen": "Apr 13, 2026",
       "last_seen": "",
-      "creative_text": "McDonald’s have been at it again 👀🍑🥤 Loot from the second World Menu Heist arrives October 20th, and Peach x Sprite®️ Zero from Singapore sounds SO up my street. What do you hope is on the menu?",
+      "creative_text": "Any wrap, only £2.49. All week. All yours in the McDonald’s App.",
       "library_url": "https://www.facebook.com/ads/library/?id=915272287995291",
       "page_url": "https://www.facebook.com/McDonaldsUK/",
       "page_id": "",
-      "link_url": "https://smart.link/h1spg3qhkb9uf",
-      "link_title": "",
-      "cta_text": "Order Now",
+      "link_url": "http://play.google.com/store/apps/details?id=com.mcdonalds.app.uk",
+      "link_title": "App exclusive. Wrap it for £2.49",
+      "cta_text": "Download",
       "link_caption": "",
-      "images": [],
-      "has_video": true,
+      "images": [
+        "https://scontent-lax7-1.xx.fbcdn.net/v/t39.35426-6/871683249_865813406588532_3755090827240898384_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=101&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=aMVB1klBbc4Q7kNvwGLWAA9&_nc_oc=AdqVVdHXf67GcP9Tpg8al4UneET1uUL0GFxVpJYwzCWcVujd-wPv_lguD60AkAKW_7Q&_nc_zt=14&_nc_ht=scontent-lax7-1.xx&_nc_gid=-XcS9kQhkRnmEkNoNoPLZQ&_nc_ss=7b289&oh=00_AQSL54AbW_-MWnm74-VJU0mUfMktyC8Hhjql8ObBHElv1g&oe=6AF77A2E"
+      ],
+      "has_video": false,
       "same_creative_count": 0,
       "multiple_versions": true,
-      "cta_type": "ORDER_NOW",
-      "display_format": "video",
+      "cta_type": "DOWNLOAD",
+      "display_format": "image",
       "cards": [
         {
-          "body": "McDonald’s have been at it again 👀🍑🥤 Loot from the second World Menu Heist arrives October 20th, and Peach x Sprite®️ Zero from Singapore sounds SO up my street. What do you hope is on the menu?",
-          "cta": "Order Now",
-          "image": null,
-          "link_url": "https://smart.link/h1spg3qhkb9uf",
-          "title": "",
+          "body": "Any wrap, only £2.49. All week. All yours in the McDonald’s App.",
+          "cta": "Download",
+          "image": "https://scontent-lax7-1.xx.fbcdn.net/v/t39.35426-6/871683249_865813406588532_3755090827240898384_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=101&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=aMVB1klBbc4Q7kNvwGLWAA9&_nc_oc=AdqVVdHXf67GcP9Tpg8al4UneET1uUL0GFxVpJYwzCWcVujd-wPv_lguD60AkAKW_7Q&_nc_zt=14&_nc_ht=scontent-lax7-1.xx&_nc_gid=-XcS9kQhkRnmEkNoNoPLZQ&_nc_ss=7b289&oh=00_AQSL54AbW_-MWnm74-VJU0mUfMktyC8Hhjql8ObBHElv1g&oe=6AF77A2E",
+          "link_url": "http://play.google.com/store/apps/details?id=com.mcdonalds.app.uk",
+          "title": "App exclusive. Wrap it for £2.49",
           "video": null
         }
       ]
@@ -678,7 +51,7 @@
       "cta_text": "Order Now",
       "link_caption": "MCDONALDS.COM",
       "images": [
-        "https://scontent-lax7-1.xx.fbcdn.net/v/t39.35426-6/615487750_732136346636783_1395649993937322739_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=105&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=9xqGTsGS880Q7kNvwEEi4Er&_nc_oc=AdpEhaWdX_6wPyp7uz_i4lgMIPZfX8Lxi0bDDztdskF3jA_Wy9zx8hn7jvNXGooZ-gY&_nc_zt=14&_nc_ht=scontent-lax7-1.xx&_nc_gid=DI60lNGOVPp8nFwv5EsTAw&_nc_ss=7b289&oh=00_AQQIIN9FJa7y11q_cPyiSr5L7eTHZbc2GjnF2lvcXHv8eQ&oe=6AF76250"
+        "https://scontent-lax7-1.xx.fbcdn.net/v/t39.35426-6/615487750_732136346636783_1395649993937322739_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=105&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=9xqGTsGS880Q7kNvwEnPI46&_nc_oc=Ado3bhJ0jL18SdSqHjp7FQJ3vaVmogEQNScQpG9fPXKH7YI_OLhAJpMxNaC2SyZM0Hk&_nc_zt=14&_nc_ht=scontent-lax7-1.xx&_nc_gid=-XcS9kQhkRnmEkNoNoPLZQ&_nc_ss=7b289&oh=00_AQQAx3SAumZqhdz2oVU0J3NatsAobMIftBcojjduxZwPrA&oe=6AF79A90"
       ],
       "has_video": false,
       "same_creative_count": 4,
@@ -689,7 +62,7 @@
         {
           "body": "Get your hands on this great deal.",
           "cta": "Order Now",
-          "image": "https://scontent-lax7-1.xx.fbcdn.net/v/t39.35426-6/615487750_732136346636783_1395649993937322739_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=105&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=9xqGTsGS880Q7kNvwEEi4Er&_nc_oc=AdpEhaWdX_6wPyp7uz_i4lgMIPZfX8Lxi0bDDztdskF3jA_Wy9zx8hn7jvNXGooZ-gY&_nc_zt=14&_nc_ht=scontent-lax7-1.xx&_nc_gid=DI60lNGOVPp8nFwv5EsTAw&_nc_ss=7b289&oh=00_AQQIIN9FJa7y11q_cPyiSr5L7eTHZbc2GjnF2lvcXHv8eQ&oe=6AF76250",
+          "image": "https://scontent-lax7-1.xx.fbcdn.net/v/t39.35426-6/615487750_732136346636783_1395649993937322739_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=105&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=9xqGTsGS880Q7kNvwEnPI46&_nc_oc=Ado3bhJ0jL18SdSqHjp7FQJ3vaVmogEQNScQpG9fPXKH7YI_OLhAJpMxNaC2SyZM0Hk&_nc_zt=14&_nc_ht=scontent-lax7-1.xx&_nc_gid=-XcS9kQhkRnmEkNoNoPLZQ&_nc_ss=7b289&oh=00_AQQAx3SAumZqhdz2oVU0J3NatsAobMIftBcojjduxZwPrA&oe=6AF79A90",
           "link_url": "https://www.mcdonalds.com/us/en-us/download-app.html",
           "title": "it’s as simple as McDonald's Download",
           "video": null
@@ -773,7 +146,7 @@
       "cta_text": "Download",
       "link_caption": "",
       "images": [
-        "https://scontent-lax3-2.xx.fbcdn.net/v/t39.35426-6/829603714_1413998586805708_1120944505655035610_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=107&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=ccxvYXET2gIQ7kNvwFupadf&_nc_oc=AdoHoJFzZEvvMFG821EJaETNw8y8KYf3Z0OE7AC97kLiYaCiRVuSzmBKhq_lYT2gIe0&_nc_zt=14&_nc_ht=scontent-lax3-2.xx&_nc_gid=DI60lNGOVPp8nFwv5EsTAw&_nc_ss=7b289&oh=00_AQQoMs_r6ezStJ7AsuHDvU7woXxvjjUce3kddUgvxjG0Gw&oe=6AF766E2"
+        "https://scontent-lax3-2.xx.fbcdn.net/v/t39.35426-6/829603714_1413998586805708_1120944505655035610_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=107&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=ccxvYXET2gIQ7kNvwGcFVVX&_nc_oc=AdoitiMJxxG-u3Qjfw_NldCO0q8lBc2NIdkXOoN_n_jd8M7ihhJqs9XW-WHexnraTiU&_nc_zt=14&_nc_ht=scontent-lax3-2.xx&_nc_gid=-XcS9kQhkRnmEkNoNoPLZQ&_nc_ss=7b289&oh=00_AQTmNTx-2DkcG5NxpOzZ-o8WM46KFtzhcBjJtu5H-w-JFg&oe=6AF79F22"
       ],
       "has_video": false,
       "same_creative_count": 0,
@@ -784,7 +157,7 @@
         {
           "body": "Any wrap, only £2.49. All week. All yours in the McDonald’s App.",
           "cta": "Download",
-          "image": "https://scontent-lax3-2.xx.fbcdn.net/v/t39.35426-6/829603714_1413998586805708_1120944505655035610_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=107&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=ccxvYXET2gIQ7kNvwFupadf&_nc_oc=AdoHoJFzZEvvMFG821EJaETNw8y8KYf3Z0OE7AC97kLiYaCiRVuSzmBKhq_lYT2gIe0&_nc_zt=14&_nc_ht=scontent-lax3-2.xx&_nc_gid=DI60lNGOVPp8nFwv5EsTAw&_nc_ss=7b289&oh=00_AQQoMs_r6ezStJ7AsuHDvU7woXxvjjUce3kddUgvxjG0Gw&oe=6AF766E2",
+          "image": "https://scontent-lax3-2.xx.fbcdn.net/v/t39.35426-6/829603714_1413998586805708_1120944505655035610_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=107&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=ccxvYXET2gIQ7kNvwGcFVVX&_nc_oc=AdoitiMJxxG-u3Qjfw_NldCO0q8lBc2NIdkXOoN_n_jd8M7ihhJqs9XW-WHexnraTiU&_nc_zt=14&_nc_ht=scontent-lax3-2.xx&_nc_gid=-XcS9kQhkRnmEkNoNoPLZQ&_nc_ss=7b289&oh=00_AQTmNTx-2DkcG5NxpOzZ-o8WM46KFtzhcBjJtu5H-w-JFg&oe=6AF79F22",
           "link_url": "http://play.google.com/store/apps/details?id=com.mcdonalds.app.uk",
           "title": "App exclusive Wrap it for £2.49",
           "video": null
@@ -1000,6 +373,37 @@
       "cards": [
         {
           "body": "@mcdonaldsuk have pulled off another World Menu Heist, bringing iconic menu items from around the world to the UK. And it got us thinking…would me and @abiluffman make a great heisting team? 🥷\nThere’s more - on October 20th, even more stolen goods are coming 🤩",
+          "cta": "Order Now",
+          "image": null,
+          "link_url": "https://smart.link/h1spg3qhkb9uf",
+          "title": "",
+          "video": null
+        }
+      ]
+    },
+    {
+      "id": "1328561675920944",
+      "page_name": "McDonald's",
+      "status": "active",
+      "first_seen": "Oct 19, 2026",
+      "last_seen": "",
+      "creative_text": "McDonald’s have been at it again 👀🍑🥤 Loot from the second World Menu Heist arrives October 20th, and Peach x Sprite®️ Zero from Singapore sounds SO up my street. What do you hope is on the menu?",
+      "library_url": "https://www.facebook.com/ads/library/?id=1328561675920944",
+      "page_url": "https://www.facebook.com/McDonaldsUK/",
+      "page_id": "",
+      "link_url": "https://smart.link/h1spg3qhkb9uf",
+      "link_title": "",
+      "cta_text": "Order Now",
+      "link_caption": "",
+      "images": [],
+      "has_video": true,
+      "same_creative_count": 0,
+      "multiple_versions": false,
+      "cta_type": "ORDER_NOW",
+      "display_format": "video",
+      "cards": [
+        {
+          "body": "McDonald’s have been at it again 👀🍑🥤 Loot from the second World Menu Heist arrives October 20th, and Peach x Sprite®️ Zero from Singapore sounds SO up my street. What do you hope is on the menu?",
           "cta": "Order Now",
           "image": null,
           "link_url": "https://smart.link/h1spg3qhkb9uf",

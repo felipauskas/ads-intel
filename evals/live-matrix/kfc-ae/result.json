@@ -3,7 +3,7 @@
   "country": "AE",
   "advertiser": "KFC",
   "folder": "evals/live-matrix/kfc-ae",
-  "data_dir": "/var/folders/zf/g9bpd9s55sv10tz2mnhqch800000gn/T/ads-intel-live-eval-7v9t8l1b/tmpp6ugpnoc",
+  "data_dir": "/var/folders/zf/g9bpd9s55sv10tz2mnhqch800000gn/T/ads-intel-live-eval-h12a1oo8/tmp883qesv4",
   "search_summary": {
     "count": 20,
     "complete": false,
@@ -11,10 +11,12 @@
     "country": "AE",
     "error": null,
     "page_names": [
+      "Middle East Fast-Foodala To Philippines",
+      "Deliveroo",
       "KFC",
-      "Deliveroo"
+      "Shield Medical Center LLC, UAE"
     ],
-    "seconds": 3.76
+    "seconds": 7.4
   },
   "advertiser_summary": {
     "count": 17,
@@ -30,7 +32,7 @@
     "page_names": [
       "KFC"
     ],
-    "seconds": 0.01
+    "seconds": 0.02
   },
   "watch_add": {
     "error": null,
@@ -88,18 +90,20 @@
   "currency": {
     "expected": "AED",
     "found": [
-      "AED"
+      "AED",
+      "درهم"
     ],
-    "ok": true
+    "ok": true,
+    "caveat": null
   },
   "status": "PASS",
   "failures": [],
   "timings": {
-    "search": 3.76,
-    "advertiser_search": 0.01,
+    "search": 7.4,
+    "advertiser_search": 0.02,
     "check1": 0.01,
     "check2": 0.01,
-    "total": 3.79
+    "total": 7.44
   },
   "attempts": {
     "total": 4,

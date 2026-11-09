@@ -1,7 +1,7 @@
 {
   "query": "KFC",
   "country": "AE",
-  "checked_at": "2026-11-09T14:17:44",
+  "checked_at": "2026-11-09T16:11:46",
   "partial": false,
   "total": 17,
   "new": 0,
@@ -9,8 +9,8 @@
   "changed": 0,
   "with_link": 16,
   "with_cta": 16,
-  "with_images": 8,
+  "with_images": 6,
   "with_same_creative": 3,
-  "with_multiple_versions": 15,
+  "with_multiple_versions": 14,
   "advertiser": "KFC"
 }

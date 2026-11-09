@@ -1,29 +1,29 @@
-# McDonald's × GB — PASS
+# McDonald's × GB — FAIL
 
 - folder: `evals/live-matrix/mcdonalds-gb`
 - advertiser filter: `McDonald's`
 
 ## Keyword search (`active_status=active`, limit 20)
-- count: 20  complete: False  fetched: 20  error: None
-- page names: McDonald's, Dan Lok, Dollyholly86, Barbygant, The Dutch Tile Project, Gold Arthur, Protein.com, Osprey Charging Network, Protein.com UK
-- seconds: 3.07
+- count: None  complete: None  fetched: None  error: parse_failed: dead_render: shell: render (5217 chars) with no card markers or empty-state text
+- page names: —
+- seconds: 33.04
 
 ## Advertiser search
-- count: 12  resolved: {'page_name': "McDonald's", 'score': 0.8}  error: None
+- count: 13  resolved: {'page_name': "McDonald's", 'score': 0.8}  error: None
 - page names: McDonald's
-- seconds: 0.01
+- seconds: 6.97
 
 ## Watch checks
-- check1: new=12 ended=0 changed=0 partial=False error=None seconds=0.01
-- check2: new=0 ended=0 changed=0 partial=False error=None seconds=0.01
+- check1: new=13 ended=0 changed=0 partial=False error=None seconds=30.39
+- check2: new=0 ended=0 changed=0 partial=False error=None seconds=19.71
 - artifacts: {"html": "artifacts/html.html", "digest": "artifacts/digest.json"} (ok=True)
 - artifacts check2: {"html": "artifacts/check2/html.html", "digest": "artifacts/check2/digest.json"} (ok=True)
 
 ## Currency spot-check
-- expected: —  found: none  ok: None
+- expected: —  found: none  ok: None  caveat: —
 
 ## Hydration
-- attempts: 4  failed: 0  transport: 0  dead render: 0 (shell 0, blocked 0, markup_changed 0)
+- attempts: 15  failed: 12  transport: 0  dead render: 12 (shell 12, blocked 0, markup_changed 0)
 
 ## Failures
-- none
+- search_error: parse_failed: dead_render: shell: render (5217 chars) with no card markers or empty-state text
