@@ -50,6 +50,14 @@ def test_readme_discloses_network_filesystem_and_credentials():
     )
     assert "local" in lowered, "README must describe the local install path"
 
+    # The caution verdict blocks a non-interactive install, so the documented
+    # command must carry --force and say why — a warning-only claim is false.
+    assert 'hermes plugins install "file://$PWD" --force' in text, (
+        "README install command must work non-interactively"
+    )
+    assert "Blocked" in text, "README must say the non-interactive install blocks"
+    assert "warning-free" in lowered, "README must not imply a warning-free install"
+
     _assert_readme_numbers_match_the_code()
 
 

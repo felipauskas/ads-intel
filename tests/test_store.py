@@ -32,6 +32,58 @@ def test_watchlist_roundtrip():
     assert store.watch_list() == [{"query": "allbirds", "country": "US"}]
 
 
+def test_watch_remove_can_target_one_advertiser():
+    """Same query, two brands: removing one entry must not drop the other."""
+    store.watch_add("kfc", advertiser="KFC")
+    store.watch_add("kfc", advertiser="KFC Masr")
+
+    kept = store.watch_remove("kfc", advertiser="KFC")
+    assert kept == [{"query": "kfc", "country": "US", "advertiser": "KFC Masr"}]
+    assert store.watch_list() == kept
+
+    # No advertiser: the historical "remove everything for this query" path.
+    assert store.watch_remove("kfc") == []
+
+
+def test_watch_remove_can_target_country_and_filters():
+    store.watch_add("kfc", country="US")
+    store.watch_add("kfc", country="AE")
+    store.watch_add("kfc", country="AE", active_status="active")
+    store.watch_add("kfc", country="AE", media_type="video")
+
+    kept = store.watch_remove("kfc", country="AE", active_status="active")
+    assert {"query": "kfc", "country": "US"} in kept
+    assert {"query": "kfc", "country": "AE"} in kept
+    assert {"query": "kfc", "country": "AE", "media_type": "video"} in kept
+    assert {"query": "kfc", "country": "AE", "active_status": "active"} not in kept
+    assert len(kept) == 3
+
+
+def test_watch_remove_with_no_match_leaves_list_alone():
+    store.watch_add("kfc", advertiser="KFC")
+    assert store.watch_remove("kfc", advertiser="Another Brand") == [
+        {"query": "kfc", "country": "US", "advertiser": "KFC"}
+    ]
+
+
+def test_watch_remove_rejects_invalid_narrowers():
+    """An invalid narrower must never fall back to a default and delete a
+    different watch: 'AEX' is not a market code, and 'paused'/'audio' are not
+    filter values, so each call is refused and the list is left untouched."""
+    store.watch_add("kfc", country="US")
+    store.watch_add("kfc", country="AE")
+    before = store.watch_list()
+
+    for kwargs in (
+        {"country": "AEX"},
+        {"active_status": "paused"},
+        {"media_type": "audio"},
+    ):
+        with pytest.raises(ValueError):
+            store.watch_remove("kfc", **kwargs)
+        assert store.watch_list() == before, kwargs
+
+
 def test_watchlist_is_file_backed(data_dir):
     store.watch_add("nike")
     on_disk = json.loads((data_dir / store.WATCH).read_text())

@@ -81,11 +81,26 @@ This is disclosed in the README under "Terms of service posture" as well.
 The repo is **not published**; install from a local checkout.
 
 ```bash
-cd /path/to/ads-intel
-hermes plugins validate .
-hermes plugins install "file://$PWD"    # local checkout; must be a git repo
+cd /path/to/ads-intel          # the checkout that contains plugin.yaml
+hermes plugins validate .      # manifest + tool schema check, installs nothing
+hermes plugins install "file://$PWD" --force
 hermes plugins enable ads-intel
 ```
+
+**`--force` is required in non-interactive use.** This checkout carries a
+`caution` security verdict (see below), and a `file://` source is unreviewed:
+a non-interactive install — an agent, CI or a scripted shell — treats that
+combination as **Blocked** and exits 1 rather than asking. In a real terminal
+the same install blocks only until you answer the `[y/N] "install anyway?"`
+prompt; `--force` answers it up front. The force is accepting the scan's
+caution verdict, not silencing it: install still prints `Warning: custom
+(unreviewed) source` and `Warning: Using insecure/local URL scheme`. The
+caution is not a code finding — it is bidirectional marks in committed eval
+evidence (Arabic ad copy under `evals/live-matrix/*/ads.json` and the rendered
+HTML next to it). If you would rather install without `--force`, the only way
+to clear the verdict is to stop shipping `evals/` (it is also imported by the
+tests and `scripts/stress_e2e.py`, so those fixtures and imports must move
+first). Neither path gives a warning-free install.
 
 Validation on this tree (`hermes plugins validate .`, Hermes v0.23.0): every check
 passes and the command ends in `Validation passed.` Two non-failing notices are
@@ -93,12 +108,12 @@ expected and should be quoted to reviewers rather than hidden:
 
 ```text
 ✓ security scan — caution
-⚠ security scan caution: invisible_unicode (ads.json:139), invisible_unicode (ads.json:323), invisible_unicode (ads.json:349), invisible_unicode (ads.json:361), invisible_unicode (ads.json:406), invisible_unicode (ads.json:424), invisible_unicode (ads.json:51), invisible_unicode (ads.json:65), invisible_unicode (ads.json:657), invisible_unicode (ads.json:69), invisible_unicode (ads.json:695), invisible_unicode (html.html:56), invisible_unicode (html.html:57), invisible_unicode (html.html:58), invisible_unicode (html.html:62), invisible_unicode (html.html:63), invisible_unicode (html.html:72)
+⚠ security scan caution: invisible_unicode (ads.json:139), invisible_unicode (ads.json:323), invisible_unicode (ads.json:349), invisible_unicode (ads.json:361), invisible_unicode (ads.json:65), invisible_unicode (ads.json:657), invisible_unicode (ads.json:695), invisible_unicode (html.html:56), invisible_unicode (html.html:57), invisible_unicode (html.html:58), invisible_unicode (html.html:62), invisible_unicode (html.html:72)
 ◇ Isolation — in-process only: evals/live_eval.py:202 patches tools.store._data_dir (a Hermes module attribute; the host's copy is not the one Hermes runs); scripts/stress_e2e.py:242 patches tools.store._data_dir (a Hermes module attribute; the host's copy is not the one Hermes runs)
 Validation passed.
 ```
 
-All 17 `invisible_unicode` findings are in committed eval evidence — Arabic ad copy
+All 12 `invisible_unicode` findings are in committed eval evidence — Arabic ad copy
 with bidirectional marks under `evals/live-matrix/*/ads.json` and
 `evals/live-matrix/*/artifacts/html.html` — not in plugin code. The plugin scanner
 has no ignore-file mechanism (only fixed directory exclusions), and excluding

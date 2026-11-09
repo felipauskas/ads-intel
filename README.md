@@ -15,11 +15,24 @@ This plugin is **not published yet** — there is no published catalog entry and
 ```bash
 cd /path/to/ads-intel          # the checkout that contains plugin.yaml
 hermes plugins validate .      # manifest + tool schema check, installs nothing
-hermes plugins install "file://$PWD"
+hermes plugins install "file://$PWD" --force
 hermes plugins enable ads-intel
 ```
 
-`file://` installs prompt with an "insecure source" warning: the path is local, unsigned and has no catalog entry. That warning is expected here; the source is the checkout you just validated.
+**`--force` is required in non-interactive use.** This checkout carries a
+`caution` security verdict (see below), and a `file://` source is unreviewed:
+a non-interactive install — an agent, CI or a scripted shell — treats that
+combination as **Blocked** and exits 1 rather than asking. In a real terminal
+the same install blocks only until you answer the `[y/N] "install anyway?"`
+prompt; `--force` answers it up front. The force is accepting the scan's
+caution verdict, not silencing it: install still prints `Warning: custom
+(unreviewed) source` and `Warning: Using insecure/local URL scheme`. The
+caution is not a code finding — it is bidirectional marks in committed eval
+evidence (Arabic ad copy under `evals/live-matrix/*/ads.json` and the rendered
+HTML next to it). If you would rather install without `--force`, the only way
+to clear the verdict is to stop shipping `evals/` (it is also imported by the
+tests and `scripts/stress_e2e.py`, so those fixtures and imports must move
+first). Neither path gives a warning-free install.
 
 Verify the install and the checkout's scan:
 
@@ -30,7 +43,7 @@ hermes plugins validate .      # all checks pass; see the two notes below
 
 `hermes plugins validate .` ends in `Validation passed.` Every check passes, but it is **not a silent clean scan**:
 
-- **Security scan caution — `invisible_unicode`.** 17 findings, all in committed eval evidence, not plugin code: bidirectional marks in the Arabic ad copy recorded under `evals/live-matrix/*/ads.json` and the rendered `evals/live-matrix/*/artifacts/html.html`. The scanner has no ignore-file mechanism (only fixed dir exclusions such as `.git` and `__pycache__`), and deleting `evals/` alone would not produce a clean scan: `tests/test_sources.py` reads `evals/raw/web_extract-KFC-AE.md`, `tests/test_resolve.py` reads `evals/live-matrix/*/ads.json`, `tests/test_live_eval.py` imports `evals/live_eval.py`, and `scripts/stress_e2e.py` imports from `evals.live_eval`, so those fixtures and imports would have to be relocated first. The decision — ship `evals/` and accept the caution, or relocate them — is still open; until then the caution is expected and the plugin still passes admission.
+- **Security scan caution — `invisible_unicode`.** 12 findings at the last check, all in committed eval evidence, not plugin code: bidirectional marks in the Arabic ad copy recorded under `evals/live-matrix/*/ads.json` and the rendered `evals/live-matrix/**/artifacts/**/html.html` (both artifact depths: `artifacts/html.html` and `artifacts/check2/html.html`). The scanner has no ignore-file mechanism (only fixed dir exclusions such as `.git` and `__pycache__`), and deleting `evals/` alone would not produce a clean scan: `tests/test_sources.py` reads `evals/raw/web_extract-KFC-AE.md`, `tests/test_resolve.py` reads `evals/live-matrix/*/ads.json`, `tests/test_live_eval.py` imports `evals/live_eval.py`, and `scripts/stress_e2e.py` imports from `evals.live_eval`, so those fixtures and imports would have to be relocated first. The decision — ship `evals/` and accept the caution, or relocate them — is still open; until then the caution is expected, the plugin still passes admission, and the install needs `--force` as shown above.
 - **Isolation note (informational).** `evals/live_eval.py` and `scripts/stress_e2e.py` patch `tools.store._data_dir` to run offline against a temp directory. Hermes reports this as "in-process only" and does not treat it as a failure.
 
 If `hermes plugins list` does not show it, re-run the install block from the same checkout; the `file://` path must point at the directory that contains `plugin.yaml`.
@@ -76,7 +89,7 @@ Pass `advertiser` to keep only ads whose **page name** matches — this is a loc
 > "What ads is KFC running in the UAE?"
 > "Show me Burger King's ads but only from Burger King's own page."
 
-Returns `{count, complete, fetched, country, ads}` (plus `advertiser` and `resolved` when filtering). `count` is the number of ads actually returned in `ads` — after `limit` and after any `advertiser` filter — not the number matched on the page; `complete` is the signal that the rendered page came back *unclipped* — `limit` and the fetch char budget did not slice it. It does not mean Meta's full result set was retrieved (there is no pagination; see "No pagination" under Limitations), and `fetched` is the number fetched into this response. Each ad carries:
+Returns `{count, complete, complete_scope, total_returned, char_limit, fetched, country, ads}` (plus `advertiser` and `resolved` when filtering). `count` is the number of ads actually returned in `ads` — after `limit` and after any `advertiser` filter — not the number matched on the page; `complete` is the signal that the rendered page came back *unclipped* — `limit` and the fetch char budget did not slice it. `complete_scope` is always `rendered_window`, the machine-readable reminder that `complete` never means Meta's full result set was retrieved (there is no pagination; see "No pagination" under Limitations). `total_returned` is how many ads the render held before `limit` sliced it, `char_limit` the fetch budget in characters, and `fetched` the number fetched into this response. Each ad carries:
 
 | Field | Meaning | Source |
 | --- | --- | --- |
@@ -98,7 +111,7 @@ Missing values are always `""` / `[]` / `0` / `false`, never absent keys, so old
 
 ### `ad_watch(action, query, country, advertiser, active_status, media_type)`
 
-Manage the local watchlist: `add` a query, `remove` a query, or `list` saved queries. `query` is required for `add`; `country`, `advertiser`, `active_status` and `media_type` apply to `add` (defaults `US`, none, `all`, `all`). The watchlist stores `{query, country}` entries, plus `advertiser` and any non-default filter; `remove` drops every entry for that query regardless of market or filters. Filters are stored only when they differ from `all`, so an unfiltered watch keeps exactly the entry shape and snapshot filename it had before filters existed. A filtered watch has its own snapshot and report, and never falls back to the unfiltered baseline — the excluded ads would otherwise be reported as `ended`.
+Manage the local watchlist: `add` a query, `remove` a query, or `list` saved queries. `query` is required for `add`; `country`, `advertiser`, `active_status` and `media_type` apply to `add` (defaults `US`, none, `all`, `all`). The watchlist stores `{query, country}` entries, plus `advertiser` and any non-default filter. `remove` drops every entry for that query regardless of market or filters — unless you pass `advertiser`, `country`, `active_status` or `media_type`, which narrows the removal to matching entries: two brand watches on one keyword (`advertiser: "KFC"` and `advertiser: "KFC Masr"`) can be removed one at a time. Filters are stored only when they differ from `all`, so an unfiltered watch keeps exactly the entry shape and snapshot filename it had before filters existed. A filtered watch has its own snapshot and report, and never falls back to the unfiltered baseline — the excluded ads would otherwise be reported as `ended`.
 
 > "Add 'KFC' to my ad watchlist, country AE, advertiser KFC."
 > "Add a US keyword watch too, e.g. 'nike'."
@@ -143,7 +156,7 @@ Response shape — one row per watchlist entry, in watchlist order:
 }
 ```
 
-There is no top-level count — sum the rows if you need one. A processed row always carries `query`, `country`, `partial`, the three integer counts (`new_ads`, `ended_ads`, `changed_ads`) and the three matching arrays (`new`, `ended`, `changed`). Each bucket entry is an ad summary with the same 20 keys as an `ad_search` ad (`id`, `page_name`, `status`, `first_seen`, `last_seen`, `creative_text`, `library_url`, `page_url`, `page_id`, `link_url`, `link_title`, `cta_text`, `link_caption`, `cta_type`, `display_format`, `cards`, `images`, `has_video`, `same_creative_count`, `multiple_versions`), defaulted to `""` / `[]` / `0` / `false`. Per-ad `creative_text` is truncated at 1200 characters (the ellipsis marker counts against the cap); non-string copy becomes `""`. An advertiser watch adds `advertiser` and `resolved`; a non-default filter adds `active_status` / `media_type`.
+There is no top-level count — sum the rows if you need one. A processed row always carries `query`, `country`, `partial`, the three integer counts (`new_ads`, `ended_ads`, `changed_ads`) and the three matching arrays (`new`, `ended`, `changed`). Each bucket entry is an ad summary with the same 20 keys as an `ad_search` ad (`id`, `page_name`, `status`, `first_seen`, `last_seen`, `creative_text`, `library_url`, `page_url`, `page_id`, `link_url`, `link_title`, `cta_text`, `link_caption`, `cta_type`, `display_format`, `cards`, `images`, `has_video`, `same_creative_count`, `multiple_versions`), defaulted to `""` / `[]` / `0` / `false`. Per-ad free-text fields in the tool output (`creative_text`, `page_name`, `link_title`, and each card's `title` / `body`) are truncated at 1200 characters (the ellipsis marker counts against the cap); non-string copy becomes `""`. The HTML report is not truncated: it keeps the full snapshot copy by design, so a report can show copy longer than the tool response did; the JSON digest carries counts only. An advertiser watch adds `advertiser` and `resolved`; a non-default filter adds `active_status` / `media_type`.
 
 Rows that did not diff carry the same `query`, `country` and `artifacts: {error}`, and one of:
 

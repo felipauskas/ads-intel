@@ -212,6 +212,68 @@ def test_run_pair_preserves_check1_artifacts_when_check2_shares_paths(
     assert row["status"] == "PASS", row["failures"]
 
 
+def test_run_pair_clears_stale_artifacts_when_check_fails(tmp_path, monkeypatch):
+    """A failed rerun must not leave the previous run's digest behind.
+
+    ``copy_artifacts`` writes nothing when the check has no artifacts, so
+    without an explicit clear the pair folder keeps a digest.json from the
+    earlier run while result.json reports no counts — evidence that contradicts
+    itself.
+    """
+    pair = tmp_path / "out" / "kfc-ae"
+    (pair / "artifacts" / "check2").mkdir(parents=True)
+    (pair / "artifacts" / "digest.json").write_text('{"new": 9}', encoding="utf-8")
+    (pair / "artifacts" / "check2" / "digest.json").write_text(
+        '{"new": 9}', encoding="utf-8"
+    )
+
+    def fake_search(args):
+        return json.dumps(
+            {
+                "ads": [_ad()],
+                "count": 1,
+                "complete": True,
+                "fetched": 1,
+                "country": "AE",
+                "resolved": {"page_name": "KFC", "score": 1.0},
+            }
+        )
+
+    def fake_watch(_args):
+        return json.dumps({"watchlist": [{"query": "KFC", "country": "AE"}]})
+
+    def fake_check(_args):
+        return json.dumps(
+            {
+                "results": [
+                    {
+                        "query": "KFC",
+                        "country": "AE",
+                        "error": "fetch_failed",
+                        "partial": True,
+                        "artifacts": {"error": "fetch_failed"},
+                    }
+                ]
+            }
+        )
+
+    monkeypatch.setattr(tools, "ad_search", fake_search)
+    monkeypatch.setattr(tools, "ad_watch", fake_watch)
+    monkeypatch.setattr(tools, "ad_check", fake_check)
+    monkeypatch.setattr(live_eval, "ROOT", tmp_path)
+
+    work = tmp_path / "work"
+    work.mkdir()
+    row = live_eval.run_pair("KFC", "KFC", "AE", object(), work, pair.parent)
+
+    assert row["status"] == "FAIL"
+    assert row["check1"]["artifacts"] == {"error": "fetch_failed"}
+    assert not (pair / "artifacts" / "digest.json").exists(), "stale digest survived"
+    assert not (pair / "artifacts" / "check2").exists(), "stale check2 copy survived"
+    on_disk = json.loads((pair / "result.json").read_text(encoding="utf-8"))
+    assert on_disk["status"] == "FAIL"
+
+
 def test_attempt_counts_separates_transport_from_dead_renders():
     """A 200 shell is a failure, not a success: 210 attempts / 0 failed hid 10."""
     dispatches = [

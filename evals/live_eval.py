@@ -451,6 +451,11 @@ def run_pair(
 ) -> dict:
     target_dir = pair_dir(brand, country, out_root)
     target_dir.mkdir(parents=True, exist_ok=True)
+    # A rerun into the same out root must not inherit the previous run's
+    # artifact copies. A failed check writes no copies, so a stale digest.json
+    # would otherwise sit beside a result.json that carries no counts. Clear
+    # before running, not after: the copies are written as each check runs.
+    shutil.rmtree(target_dir / "artifacts", ignore_errors=True)
     data_dir = _fresh_data_dir(work_parent)
     phase = {"name": "setup"}
     dispatches: list[dict] = []

@@ -58,6 +58,77 @@ def test_ad_search_returns_count_and_ads(monkeypatch):
     assert payload["ads"][0]["id"] == "1"
 
 
+def test_ad_search_surfaces_completeness_meta(monkeypatch):
+    """`complete` alone is not enough: the numbers behind it must travel too."""
+    meta = {
+        "complete": False,
+        "complete_scope": tools.sources.COMPLETENESS_SCOPE,
+        "total_returned": 47,
+        "char_limit": 120000,
+    }
+    monkeypatch.setattr(
+        tools.sources,
+        "fetch_ads_with_meta",
+        lambda q, **kw: ([AD], dict(meta)),
+    )
+    payload = json.loads(tools.ad_search({"query": "nike"}))
+
+    assert payload["complete"] is False
+    assert payload["complete_scope"] == "rendered_window"
+    assert payload["total_returned"] == 47
+    assert payload["char_limit"] == 120000
+
+
+def test_ad_search_surfaces_completeness_meta_with_advertiser(monkeypatch):
+    meta = {
+        "complete": True,
+        "complete_scope": tools.sources.COMPLETENESS_SCOPE,
+        "total_returned": 3,
+        "char_limit": 120000,
+    }
+    ads = [{**AD, "page_name": "Nike"}, {**AD, "id": "2", "page_name": "Acme"}]
+    monkeypatch.setattr(
+        tools.sources, "fetch_ads_with_meta", lambda q, **kw: (ads, dict(meta))
+    )
+    payload = json.loads(tools.ad_search({"query": "nike", "advertiser": "Nike"}))
+
+    assert payload["resolved"]["page_name"] == "Nike"
+    assert payload["complete_scope"] == "rendered_window"
+    assert payload["total_returned"] == 3
+    assert payload["char_limit"] == 120000
+
+
+def test_ad_search_complete_scope_falls_back_when_meta_omits_it(monkeypatch):
+    """A meta dict written before complete_scope existed still answers honestly."""
+    _patch_fetch(monkeypatch, lambda q, **kw: [AD])
+    payload = json.loads(tools.ad_search({"query": "nike"}))
+    assert payload["complete_scope"] == tools.sources.COMPLETENESS_SCOPE
+
+
+def test_ad_search_bounds_page_name_and_link_title(monkeypatch):
+    cap = tools.MAX_CREATIVE_TEXT_CHARS
+    ad = {
+        **AD,
+        "page_name": "P" * (cap + 25),
+        "link_title": "T" * (cap + 25),
+        "creative_text": "C" * (cap + 25),
+    }
+    _patch_fetch(monkeypatch, lambda q, **kw: [ad])
+    returned = json.loads(tools.ad_search({"query": "nike"}))["ads"][0]
+
+    for key in ("page_name", "link_title", "creative_text"):
+        assert len(returned[key]) == cap, key
+        assert returned[key].endswith("\u2026"), key
+    # The fetched record itself is untouched: the cap is output-only.
+    assert len(ad["page_name"]) == cap + 25
+
+
+def test_ad_search_leaves_short_page_name_intact(monkeypatch):
+    _patch_fetch(monkeypatch, lambda q, **kw: [AD])
+    returned = json.loads(tools.ad_search({"query": "nike"}))["ads"][0]
+    assert returned["page_name"] == "Nike"
+
+
 def test_ad_search_fetch_failure(monkeypatch):
     def boom(query, **kwargs):
         raise RuntimeError("network down")
@@ -115,6 +186,51 @@ def test_ad_watch_roundtrip():
     assert json.loads(tools.ad_watch({"action": "remove", "query": "nike"}))[
         "watchlist"
     ] == []
+
+
+def test_ad_watch_remove_narrows_to_one_advertiser():
+    """Two brand watches on one query: removing one must leave the other."""
+    tools.ad_watch({"action": "add", "query": "kfc", "advertiser": "KFC"})
+    tools.ad_watch({"action": "add", "query": "kfc", "advertiser": "KFC Masr"})
+
+    payload = json.loads(
+        tools.ad_watch({"action": "remove", "query": "kfc", "advertiser": "KFC"})
+    )
+    assert payload["watchlist"] == [
+        {"query": "kfc", "country": "US", "advertiser": "KFC Masr"}
+    ]
+
+    # Omitting the narrowers still drops every entry for the query.
+    payload = json.loads(tools.ad_watch({"action": "remove", "query": "kfc"}))
+    assert payload["watchlist"] == []
+
+
+def test_ad_watch_remove_narrows_by_country():
+    tools.ad_watch({"action": "add", "query": "kfc", "country": "US"})
+    tools.ad_watch({"action": "add", "query": "kfc", "country": "AE"})
+
+    payload = json.loads(
+        tools.ad_watch({"action": "remove", "query": "kfc", "country": "AE"})
+    )
+    assert payload["watchlist"] == [{"query": "kfc", "country": "US"}]
+
+
+def test_ad_watch_remove_rejects_invalid_narrowers():
+    tools.ad_watch({"action": "add", "query": "kfc"})
+    for args, error in (
+        ({"country": "AEX"}, "invalid_country"),
+        ({"active_status": "paused"}, "invalid_active_status"),
+        ({"media_type": "audio"}, "invalid_media_type"),
+        ({"advertiser": "K\x00FC"}, "invalid advertiser"),
+    ):
+        payload = json.loads(
+            tools.ad_watch({"action": "remove", "query": "kfc", **args})
+        )
+        assert payload == {"error": error}, args
+    # Nothing was removed by a rejected request.
+    assert json.loads(tools.ad_watch({"action": "list"}))["watchlist"] == [
+        {"query": "kfc", "country": "US"}
+    ]
 
 
 def test_ad_watch_add_requires_query():
@@ -370,6 +486,50 @@ def test_truncated_fetch_reports_no_ended_ads(monkeypatch):
     assert len(snap) == 30
     assert "1" in snap and "99" in snap
     assert all(str(i) in snap for i in range(1, 30))
+
+
+def test_corrupt_snapshot_ads_list_degrades_to_no_prior(monkeypatch):
+    """A snapshot whose `ads` is a list must not crash the partial path.
+
+    The contract for an unreadable baseline is "no ads": the run seeds a
+    clean one instead of failing the whole check on `.items()`.
+    """
+    tools.ad_watch({"action": "add", "query": "nike"})
+    tools.store.save_snapshot("nike", {"ads": [1, 2]})
+    monkeypatch.setattr(
+        tools.sources, "fetch_ads_with_meta", _stub_fetch([AD], complete=False)
+    )
+
+    row = json.loads(tools.ad_check({}))["results"][0]
+    assert "error" not in row, row
+    assert row["partial"] is True
+    assert row["new_ads"] == 1
+    assert [ad["id"] for ad in row["new"]] == ["1"]
+    assert row["ended_ads"] == 0
+
+    snap = tools.store.load_snapshot("nike")["ads"]
+    assert isinstance(snap, dict)
+    assert "1" in snap
+
+
+def test_ad_check_bounds_page_name_and_link_title(monkeypatch):
+    """ad_check bucket summaries carry the same 1200-char cap as ad_search."""
+    cap = tools.MAX_CREATIVE_TEXT_CHARS
+    ad = {
+        **AD,
+        "page_name": "P" * (cap + 25),
+        "link_title": "T" * (cap + 25),
+    }
+    tools.ad_watch({"action": "add", "query": "nike"})
+    monkeypatch.setattr(tools.sources, "fetch_ads_with_meta", _stub_fetch([ad]))
+
+    row = json.loads(tools.ad_check({}))["results"][0]
+    summary = row["new"][0]
+    for key in ("page_name", "link_title"):
+        assert len(summary[key]) == cap, key
+        assert summary[key].endswith("\u2026"), key
+    # A short field is untouched.
+    assert summary["creative_text"] == "v1"
 
 
 def test_partial_status_flip_is_reported_once(monkeypatch):
@@ -1213,6 +1373,41 @@ def test_check_summary_truncates_untrusted_creative_text(monkeypatch):
     assert len(item["creative_text"]) == tools.MAX_CREATIVE_TEXT_CHARS
     assert item["creative_text"].endswith(tools._TRUNCATION_MARKER)
     assert set(item) == set(tools._SUMMARY_KEYS)
+
+
+def test_search_and_summary_bound_card_free_text():
+    """cards[].title/body are page copy too, so the same 1200-char cap applies."""
+    long_copy = "CARD COPY " * 500
+    ad = {
+        **AD,
+        "cards": [
+            {
+                "title": long_copy,
+                "body": long_copy,
+                "cta": "Shop now",
+                "image": "https://example.com/i.jpg",
+                "link_url": "https://example.com",
+                "video": None,
+            },
+            {"title": "short", "body": "short"},
+        ],
+    }
+
+    bounded = tools._bounded_ad(ad)
+    for card in bounded["cards"][:1]:
+        for key in ("title", "body"):
+            assert len(card[key]) == tools.MAX_CREATIVE_TEXT_CHARS
+            assert card[key].endswith(tools._TRUNCATION_MARKER)
+    # Non-text card fields and short copy are untouched; structure survives.
+    assert bounded["cards"][0]["cta"] == "Shop now"
+    assert bounded["cards"][0]["video"] is None
+    assert bounded["cards"][1] == {"title": "short", "body": "short"}
+    assert len(bounded["cards"]) == 2
+
+    summary = tools._summary(ad)
+    assert len(summary["cards"][0]["title"]) == tools.MAX_CREATIVE_TEXT_CHARS
+    assert len(summary["cards"][0]["body"]) == tools.MAX_CREATIVE_TEXT_CHARS
+    assert summary["cards"][1]["title"] == "short"
 
 
 # --- branch coverage: ad_watch country, dispatch and prior-snapshot seams ---

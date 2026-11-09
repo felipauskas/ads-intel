@@ -46,6 +46,27 @@ def _norm_filter(value, default: str, allowed: tuple[str, ...]) -> str:
     return text if text in allowed else default
 
 
+def _strict_filter(value, name: str, allowed: tuple[str, ...]) -> str:
+    """Validate a caller-supplied filter for a destructive narrowing.
+
+    Unlike :func:`_norm_filter`, an unusable value is refused instead of
+    silently falling back to the default: widening a removal would delete an
+    entry the caller did not name.
+    """
+    text = str(value or "").strip()
+    if text not in allowed:
+        raise ValueError(f"invalid {name}: {value!r}")
+    return text
+
+
+def _strict_country(country) -> str:
+    """Validate a caller-supplied market code for a destructive narrowing."""
+    code = str(country or "").strip().upper()
+    if not _COUNTRY_RE.match(code):
+        raise ValueError(f"invalid country: {country!r}")
+    return code
+
+
 def _watch_path() -> Path:
     return _data_dir() / WATCH
 
@@ -230,12 +251,68 @@ def watch_add(
     return items
 
 
-def watch_remove(query: str) -> list[dict]:
-    """Remove every entry for ``query``, regardless of country or filters."""
+def watch_remove(
+    query: str,
+    *,
+    advertiser: str | None = None,
+    country: str | None = None,
+    active_status: str | None = None,
+    media_type: str | None = None,
+) -> list[dict]:
+    """Remove watch entries for ``query``.
+
+    Without the narrowing keywords this drops every entry for ``query``,
+    regardless of country, advertiser or filters — the historical behaviour.
+    Passing any of them restricts the removal to entries that match: a watch
+    for the same query but another advertiser, market or filter survives, so
+    two brand watches on one keyword can be removed one at a time. An invalid
+    narrower raises ``ValueError`` rather than falling back to a default,
+    because widening a removal would delete an entry the caller did not name.
+    """
     q = _norm(query)
+    adv = _norm(advertiser)
+    # A narrower is a filter, not a fallback: an invalid value must refuse the
+    # removal, never widen it to a different market or filter.
+    cc = _strict_country(country) if country else None
+    active = (
+        _strict_filter(active_status, "active_status", _ACTIVE_STATUSES)
+        if active_status is not None
+        else None
+    )
+    media = (
+        _strict_filter(media_type, "media_type", _MEDIA_TYPES)
+        if media_type is not None
+        else None
+    )
+
+    def matches(entry: dict) -> bool:
+        if entry["query"] != q:
+            return False
+        if adv and _norm(entry.get("advertiser")) != adv:
+            return False
+        if cc and entry["country"] != cc:
+            return False
+        if active is not None and (
+            _norm_filter(
+                entry.get("active_status"),
+                DEFAULT_ACTIVE_STATUS,
+                _ACTIVE_STATUSES,
+            )
+            != active
+        ):
+            return False
+        if media is not None and (
+            _norm_filter(
+                entry.get("media_type"), DEFAULT_MEDIA_TYPE, _MEDIA_TYPES
+            )
+            != media
+        ):
+            return False
+        return True
+
     with data_lock():
         items = watch_list()
-        kept = [x for x in items if x["query"] != q]
+        kept = [x for x in items if not matches(x)]
         if kept != items:
             _write_json(_watch_path(), kept)
     return kept
