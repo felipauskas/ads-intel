@@ -460,20 +460,35 @@ def test_ambiguous_candidate_list_is_capped():
 #: The 25 live-matrix pairs recorded at commit 233b266 (5 brands x AE/SA/EG/
 #: US/GB), with the resolution each produced *before* the ISO table was added.
 #: This is the regression pin for the task: widening the country table must
-#: not change which pairs resolve. Page names come from ``search`` then
-#: ``advertiser_search``, first occurrence winning, exactly as the replay
-#: below reads them.
+#: not change which pairs resolve. Page names and URLs come from ``search``
+#: then ``advertiser_search``, in that order, exactly as the replay below
+#: reads them; ads are replayed through ``filter_ads`` so the URL slug counts.
 #:
 #: One entry moved by design, not by accident: ``kfc-eg`` still resolves at
 #: 0.80, but the winner is now ``KFC Masr`` (the Egyptian page) instead of the
 #: bare ``KFC`` page, because ``masr`` is a requested alias and therefore
 #: ranks as a market match. Same PASS, more specific page.
+#:
+#: Four verdicts differ from the listing pinned at 233b266. Three are input
+#: drift (the 3c4acfc recording holds pages that listing did not) and one is
+#: the slug veto:
+#:
+#: * ``kfc-us`` now ``name_not_matched`` — the only ``KFC``-named page is
+#:   ``facebook.com/KFCMexico/``; the slug names MX, so the ad is vetoed. This
+#:   is the wrong-page PASS the slug veto exists to remove.
+#: * ``burger-king-us`` now ``Burger King`` — the current listing contains the
+#:   global ``facebook.com/burgerking/`` page, which 233b266 did not have.
+#: * ``burger-king-gb`` now ``Burger King UK`` — the current listing contains
+#:   ``facebook.com/burgerkinguk/`` (GB), absent at 233b266.
+#: * ``mcdonalds-eg`` now ``McDonald's`` — the current listing contains
+#:   ``facebook.com/McDonaldsEgypt/`` (EG); the Omani ``McDonaldsOM`` ads that
+#:   used to dominate it are vetoed.
 MATRIX_25_GOLDEN = {
     "burger-king-ae": ("Burger King Arabia", 0.80),
     "burger-king-eg": "name_not_matched",
-    "burger-king-gb": "name_not_matched",
+    "burger-king-gb": ("Burger King UK", 0.80),
     "burger-king-sa": ("Burger King Arabia", 0.80),
-    "burger-king-us": "name_not_matched",
+    "burger-king-us": ("Burger King", 0.80),
     "dominos-pizza-ae": ("Domino's Pizza", 0.80),
     "dominos-pizza-eg": ("Domino's Pizza", 0.80),
     "dominos-pizza-gb": ("Domino's Pizza", 0.80),
@@ -483,9 +498,9 @@ MATRIX_25_GOLDEN = {
     "kfc-eg": ("KFC Masr", 0.80),
     "kfc-gb": ("KFC", 0.80),
     "kfc-sa": ("KFC", 0.80),
-    "kfc-us": ("KFC", 0.80),
+    "kfc-us": "name_not_matched",
     "mcdonalds-ae": ("McDonald's", 0.80),
-    "mcdonalds-eg": "name_not_matched",
+    "mcdonalds-eg": ("McDonald's", 0.80),
     "mcdonalds-gb": ("McDonald's", 0.80),
     "mcdonalds-sa": ("McDonald's", 0.80),
     "mcdonalds-us": ("McDonald's", 0.80),
@@ -498,7 +513,7 @@ MATRIX_25_GOLDEN = {
 
 
 def _matrix_pairs():
-    """(folder, brand, country, page_names) for every recorded 25-pair folder."""
+    """(folder, brand, country, ads) for every recorded 25-pair folder."""
     if not LIVE_MATRIX.is_dir():
         pytest.skip(f"live-matrix missing: {LIVE_MATRIX}")
     pairs = []
@@ -507,25 +522,29 @@ def _matrix_pairs():
         if not path.is_file():
             pytest.skip(f"live-matrix recording missing: {path}")
         data = json.loads(path.read_text())
-        names = []
+        ads = []
         for field in ("search", "advertiser_search"):
             for ad in data.get(field) or []:
-                page = ad.get("page_name") if isinstance(ad, dict) else None
-                if page and page not in names:
-                    names.append(page)
-        pairs.append((folder, data["brand"], data["country"], names))
+                if isinstance(ad, dict) and ad.get("page_name"):
+                    ads.append(ad)
+        pairs.append((folder, data["brand"], data["country"], ads))
     return pairs
 
 
 def test_matrix_25_replay_is_unchanged():
-    """Replay every recorded pair; the 25-pair verdicts must not drift."""
+    """Replay every recorded pair; the 25-pair verdicts must not drift.
+
+    The replay goes through ``filter_ads``, not ``resolve_advertiser``: the
+    verdict now depends on ``page_url`` as well as ``page_name``, because a
+    same-named page's slug is the only thing that says which market it serves.
+    """
     pairs = _matrix_pairs()
     assert len(pairs) == 25
     assert set(MATRIX_25_GOLDEN) == {folder for folder, *_ in pairs}
 
     actual = {}
-    for folder, brand, country, names in pairs:
-        result = resolve.resolve_advertiser(brand, names, market=country)
+    for folder, brand, country, ads in pairs:
+        result, _ = resolve.filter_ads(ads, brand, market=country)
         if "error" in result:
             actual[folder] = "name_not_matched"
         else:
@@ -535,13 +554,19 @@ def test_matrix_25_replay_is_unchanged():
 
 
 def test_matrix_25_never_resolves_a_conflicting_market():
-    """Every resolved page is eligible for the market it was searched in."""
-    for folder, brand, country, names in _matrix_pairs():
-        result = resolve.resolve_advertiser(brand, names, market=country)
+    """Every resolved ad is eligible by both name and URL slug."""
+    for folder, brand, country, ads in _matrix_pairs():
+        result, kept = resolve.filter_ads(ads, brand, market=country)
         if "error" in result:
             continue
         markets = resolve._trailing_markets(result["page_name"])
         assert not markets or country in markets, f"{folder}: {result}"
+        for ad in kept:
+            slug_markets = resolve._slug_markets(ad.get("page_url"), brand)
+            assert not slug_markets or country in slug_markets, (
+                f"{folder}: kept {ad.get('page_url')} naming {slug_markets} "
+                f"for {country}"
+            )
 
 
 def test_iso_table_covers_all_249_countries():
@@ -976,3 +1001,147 @@ def test_uppercase_me_is_montenegro():
     # Lowercase prose is not a market claim at all (fails the score rung, not
     # the market veto).
     assert resolve._names_other_market("Burger King me", "ME") is False
+
+
+# ---------------------------------------------------------------------------
+# Slug veto: page_url says which market a same-named page actually serves.
+# ---------------------------------------------------------------------------
+
+FB = "https://www.facebook.com/{slug}/"
+
+
+@pytest.mark.parametrize(
+    "slug, market, target",
+    [
+        ("KFCMexico", {"MX"}, "KFC"),
+        ("McDonaldsOM", {"OM"}, "McDonald's"),
+        ("McDonaldsUAE", {"AE"}, "McDonald's"),
+        ("McDonaldsUK", {"GB"}, "McDonald's"),
+        ("Pizzahutuae", {"AE"}, "Pizza Hut"),
+        ("pizzahutoman", {"OM"}, "Pizza Hut"),
+        ("pizzahutksaofficial", {"SA"}, "Pizza Hut"),
+        ("PizzaHutSingapore", {"SG"}, "Pizza Hut"),
+        ("mcdonaldshongkong", {"HK"}, "McDonald's"),
+        ("mcdonaldsegypt", {"EG"}, "McDonald's"),
+        ("KFCAustralia", {"AU"}, "KFC"),
+        ("KFC.uk", {"GB"}, "KFC"),
+        ("DominosUAE", {"AE"}, "Domino's Pizza"),
+        ("dominospizzaindia", {"IN"}, "Domino's Pizza"),
+        ("dominospizza.es", {"ES"}, "Domino's Pizza"),
+        ("burgerkingksa", {"SA"}, "Burger King"),
+        ("burgerkinguk", {"GB"}, "Burger King"),
+    ],
+)
+def test_slug_markets_reads_camelcase_and_lowercase_handles(slug, market, target):
+    assert resolve._slug_markets(FB.format(slug=slug), target) == frozenset(market)
+
+
+def test_slug_arabia_is_regional_gcc():
+    markets = resolve._slug_markets(FB.format(slug="kfcarabia"), "KFC")
+    assert markets == resolve._REGIONAL_MARKET_TOKENS["arabia"]
+
+
+@pytest.mark.parametrize(
+    "slug, target",
+    [
+        ("McDonalds", "McDonald's"),
+        ("mcd", "McDonald's"),
+        ("capitalone", "Capital One"),
+        ("ShaneHummus", "Shane Hummus"),
+        ("61585938917376", "Burger King"),  # numeric page id
+    ],
+)
+def test_slug_without_country_token_names_no_market(slug, target):
+    assert resolve._slug_markets(FB.format(slug=slug), target) == frozenset()
+    assert resolve._slug_names_other_market(FB.format(slug=slug), "US", target) is False
+
+
+def test_slug_brand_country_word_is_not_a_market_claim():
+    """``airnewzealand`` is the brand, not a New Zealand page for a US query."""
+    url = FB.format(slug="airnewzealand")
+    # The handle is the brand itself: no separate market claim, so it stays
+    # eligible for every market. An added qualifier would still be a claim.
+    assert resolve._slug_markets(url, "Air New Zealand") == frozenset()
+    assert resolve._slug_names_other_market(url, "US", "Air New Zealand") is False
+    added = FB.format(slug="airnewzealandaustralia")
+    assert resolve._slug_markets(added, "Air New Zealand") == {"AU"}
+    assert resolve._slug_names_other_market(added, "US", "Air New Zealand") is True
+
+
+def test_slug_veto_flips_the_committed_kfc_us_rows():
+    """``kfc-us`` kept ``facebook.com/KFCMexico/``; every KFC page is named KFC."""
+    ads = [
+        {"id": "1", "page_name": "KFC", "page_url": FB.format(slug="KFCMexico")},
+        {"id": "2", "page_name": "KFC", "page_url": FB.format(slug="KFCMexico")},
+    ]
+    resolution, kept = resolve.filter_ads(ads, "KFC", market="US")
+    assert resolution["error"] == "name_not_matched"
+    assert kept == []
+
+
+def test_slug_veto_drops_oman_for_saudi_but_keeps_global_and_numeric():
+    ads = [
+        {"id": "om", "page_name": "McDonald's", "page_url": FB.format(slug="McDonaldsOM")},
+        {"id": "global", "page_name": "McDonald's", "page_url": FB.format(slug="McDonalds")},
+        {"id": "numeric", "page_name": "McDonaldsksa_ws", "page_url": FB.format(slug="100070164136481")},
+    ]
+    resolution, kept = resolve.filter_ads(ads, "McDonald's", market="SA")
+    assert resolution["page_name"] == "McDonald's"
+    assert [ad["id"] for ad in kept] == ["global"]
+
+
+def test_slug_veto_drops_oman_and_singapore_for_ae():
+    ads = [
+        {"id": "ae", "page_name": "Pizza Hut", "page_url": FB.format(slug="Pizzahutuae")},
+        {"id": "om", "page_name": "Pizza Hut", "page_url": FB.format(slug="pizzahutoman")},
+        {"id": "sg", "page_name": "Pizza Hut", "page_url": FB.format(slug="PizzaHutSingapore")},
+    ]
+    resolution, kept = resolve.filter_ads(ads, "Pizza Hut", market="AE")
+    assert resolution["page_name"] == "Pizza Hut"
+    assert [ad["id"] for ad in kept] == ["ae"]
+
+
+def test_slug_veto_keeps_the_right_page_and_drops_the_wrong_one():
+    ads = [
+        {"id": "eg", "page_name": "McDonald's", "page_url": FB.format(slug="McDonaldsEgypt")},
+        {"id": "om", "page_name": "McDonald's", "page_url": FB.format(slug="McDonaldsOM")},
+    ]
+    resolution, kept = resolve.filter_ads(ads, "McDonald's", market="EG")
+    assert resolution["page_name"] == "McDonald's"
+    assert [ad["id"] for ad in kept] == ["eg"]
+
+    ads = [
+        {"id": "gb", "page_name": "McDonald's", "page_url": FB.format(slug="McDonaldsUK")},
+        {"id": "hk", "page_name": "McDonald's", "page_url": FB.format(slug="mcdonaldshongkong")},
+    ]
+    resolution, kept = resolve.filter_ads(ads, "McDonald's", market="GB")
+    assert resolution["page_name"] == "McDonald's"
+    assert [ad["id"] for ad in kept] == ["gb"]
+
+    ads = [
+        {"id": "au", "page_name": "KFC", "page_url": FB.format(slug="KFCAustralia")},
+        {"id": "gb", "page_name": "KFC", "page_url": FB.format(slug="KFC.uk")},
+    ]
+    resolution, kept = resolve.filter_ads(ads, "KFC", market="GB")
+    assert resolution["page_name"] == "KFC"
+    assert [ad["id"] for ad in kept] == ["gb"]
+
+
+def test_slug_veto_does_not_break_dominos_ae():
+    """The name veto already drops India; the slug veto must keep UAE."""
+    ads = [
+        {"id": "ae", "page_name": "Domino's Pizza", "page_url": FB.format(slug="DominosUAE")},
+        {"id": "in", "page_name": "Domino's Pizza India", "page_url": FB.format(slug="dominospizzaindia")},
+    ]
+    resolution, kept = resolve.filter_ads(ads, "Domino's Pizza", market="AE")
+    assert resolution["page_name"] == "Domino's Pizza"
+    assert [ad["id"] for ad in kept] == ["ae"]
+
+
+def test_slug_veto_is_inert_without_a_market():
+    ads = [
+        {"id": "mx", "page_name": "KFC", "page_url": FB.format(slug="KFCMexico")},
+    ]
+    resolution, kept = resolve.filter_ads(ads, "KFC")
+    assert resolution == {"page_name": "KFC", "score": 0.80}
+    assert [ad["id"] for ad in kept] == ["mx"]

@@ -347,3 +347,59 @@ def test_aggregate_reports_dead_renders_as_failures(tmp_path):
     assert "transport 1, dead render 3 (shell 3, blocked 0, markup_changed 0)" in summary
     assert "## Dead renders" in summary
     assert "KFC AE: 3 / 4 attempts (shell 3" in summary
+
+
+# ---------------------------------------------------------------------------
+# Currency spot-check: only a present non-AED token is a caveat, never a FAIL.
+# ---------------------------------------------------------------------------
+
+
+def test_currency_aed_present_is_a_clean_pass():
+    currency = live_eval.currency_check("AE", "KFC AED 5 meal")
+    assert currency["ok"] is True
+    assert currency["found"] == ["AED"]
+    assert currency["caveat"] is None
+
+
+def test_currency_no_price_token_is_unknown_not_missing():
+    """McDonald's AE carries 0 price tokens; that is not a product failure."""
+    currency = live_eval.currency_check("AE", "McDonald's\nOrder now")
+    assert currency["ok"] is None
+    assert currency["found"] == []
+    assert currency["caveat"].startswith("unknown:")
+
+
+def test_currency_neighbour_gcc_token_is_a_caveat_not_a_failure():
+    """Pizza Hut AE shipped an OMR creative: record it, do not fail the pair."""
+    currency = live_eval.currency_check("AE", "Pizza Hut OMR 3.500")
+    assert currency["found"] == ["OMR"]
+    assert currency["ok"] is False
+    assert currency["caveat"] == "non_aed: OMR"
+
+
+def test_currency_aed_wins_over_a_stray_other_token():
+    currency = live_eval.currency_check("AE", "AED 20 / OMR 2")
+    assert currency["ok"] is True
+
+
+def test_currency_ascii_marker_needs_a_word_boundary():
+    """``SAR`` inside a name is not a Saudi riyal."""
+    currency = live_eval.currency_check("AE", "Sarah's Salon\nOrder now")
+    assert currency["found"] == []
+    assert currency["caveat"].startswith("unknown:")
+
+
+def test_currency_eg_is_record_only():
+    currency = live_eval.currency_check("EG", "KFC EGP 120")
+    assert currency["expected"] == "EGP/جنيه"
+    assert currency["ok"] is True
+    assert currency["caveat"] is None
+
+
+def test_currency_check_never_produces_a_failure_label():
+    """The pair-level oracle has no currency failure path left."""
+    import inspect
+
+    source = inspect.getsource(live_eval.currency_check)
+    assert "currency_missing" not in source
+    assert "failures.append" not in source

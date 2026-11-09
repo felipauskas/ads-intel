@@ -43,7 +43,7 @@ Answered, unusually well. A dedicated `## Limitations` section covers:
 
 - **Markup fragility** — parser is one file (`sources.py`); total parse failure returns `parse_failed` and never writes an empty snapshot.
 - **Truncation** — `char_limit=120000`; a full-budget render or a head+tail footer marks the read partial, merges ads, suppresses endings.
-- **The 20-ad ceiling** — stated bluntly in bold: an unfiltered watch with 20+ live ads reports `partial: true`, endings are suppressed, `new`/`changed` stay accurate. The doc even gives the workaround (keep keyword watches narrow) and the exemption (`advertiser` watches fetch the full listing).
+- **The 20-ad ceiling** — stated bluntly in bold: an unfiltered watch with 20+ live ads reports `partial: true`, endings are suppressed, `new`/`changed` stay accurate. The doc even gives the workaround (keep keyword watches narrow). An `advertiser` watch is **not** exempt: it filters the same rendered window (one page per query, `char_limit=120000`), so it is subject to the same 20-ad ceiling and `partial` flag rather than fetching the full listing.
 - **No pagination in v1** — one page per query, surfaced via `complete` and `fetched` rather than failing silently.
 - **Fields not available** — `platforms`, `page_likes`, `spend`, `impressions`, video file URLs; explicitly "reported as absent, not guessed".
 - **Keyword vs. brand semantics** — a whole section on why `KFC` also matches `KFC UAE` mentions, and that `advertiser` is the fix.

@@ -1,5 +1,12 @@
 # Treg output vs ads-intel extraction — field-level cross-check
 
+> **Historical (2026-11-09).** This cross-check records the parser as it stood
+> when it was written. Its "dropped" verdicts for `link_caption`, `cta_type`,
+> `display_format` and `cards` are superseded: all four are implemented now
+> (`sources.py`, surfaced by `tools.py`). The rest of the document is kept
+> unchanged as the historical record; do not read the table below as current
+> field coverage.
+
 Source data: `treg-xcheck/{burger-king,dominos-pizza,kfc,mcdonalds,pizza-hut}.json`,
 20 ads each (100 total), served by `crawl4ai.meta-ads.library.advertiser`,
 $0.00165/call, captured 2026-11-09. ads-intel side: `sources.py` (parser),

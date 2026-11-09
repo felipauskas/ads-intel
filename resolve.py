@@ -606,6 +606,222 @@ def _names_other_market(page_name, market, target=None) -> bool:
     return not _is_brand_qualifier(page_name, target)
 
 
+# ---------------------------------------------------------------------------
+# Slug veto: the page URL often names the market when the display name does not.
+#
+# Every KFC page is named ``KFC``; only ``facebook.com/KFCMexico/`` says which
+# market it actually serves. Name matching alone therefore kept a Mexican page
+# for a US query (``kfc-us``), an Omani page for a Saudi query, and so on. The
+# slug is a second, independent market claim: if it names a market other than
+# the requested one, the ad is dropped before resolution.
+#
+# Tokenization (published so behaviour is auditable):
+#
+# * the slug is the last non-empty path segment of ``page_url``; query strings,
+#   fragments and a trailing slash are ignored (``facebook.com/KFCMexico/`` ->
+#   ``KFCMexico``, ``instagram.com/_u/dominos_pizzaa1`` -> ``dominos_pizzaa1``)
+# * the segment is split on non-alphanumerics, on camelCase transitions
+#   (``KFCMexico`` -> ``KFC``, ``Mexico``) and on letter/digit transitions
+# * each token is compared against the country tables with spaces removed
+#   (``hong kong`` -> ``hongkong``), so lowercase vanity handles work
+#   (``mcdonaldshongkong`` -> ``HK``)
+# * a token also matches a country *suffix* (``pizzahutoman`` -> ``OM``),
+#   but only for keys of three or more characters: two-letter suffix matching
+#   would turn ordinary words into markets (``random`` -> ``OM``)
+# * when a token starts with the requested brand (``pizzahut``), the remainder
+#   is matched too, prefix included (``pizzahutksaofficial`` -> ``SA``)
+# * a two-letter token that is also an English word (``me``, ``in``, ``us``)
+#   only counts when printed in capitals, the same guard name peeling uses
+#
+# A slug with no country token (``kfcarabia`` resolves through ``arabia``;
+# ``McDonalds``, ``mcd``, numeric ids) names no market and stays eligible.
+# ``arabia`` is regional: it spans the GCC set in ``_REGIONAL_MARKET_TOKENS``,
+# so ``kfcarabia`` stays eligible for any GCC request.
+# ---------------------------------------------------------------------------
+
+def _slug_key(phrase: str) -> str:
+    return phrase.replace(" ", "")
+
+
+def _build_slug_market_table() -> dict[str, frozenset[str]]:
+    """Country keys with spaces removed, for matching concatenated slugs."""
+    table: dict[str, set[str]] = {}
+    for phrase, code in _MARKET_BY_PHRASE.items():
+        table.setdefault(_slug_key(phrase), set()).add(code)
+    for phrase, codes in _REGIONAL_MARKET_TOKENS.items():
+        table.setdefault(_slug_key(phrase), set()).update(codes)
+    return {key: frozenset(codes) for key, codes in table.items()}
+
+
+_SLUG_MARKET_BY_KEY = _build_slug_market_table()
+
+#: Longest first, so ``ksaofficial`` peels ``ksa`` rather than a shorter,
+#: accidental prefix. Two-letter keys are excluded from substring matching;
+#: they still match as whole tokens or whole remainders.
+_SLUG_SUFFIX_KEYS = tuple(
+    sorted(
+        (key for key in _SLUG_MARKET_BY_KEY if len(key) >= 3),
+        key=len,
+        reverse=True,
+    )
+)
+
+_SLUG_CHUNK = re.compile(r"[^A-Za-z0-9]+")
+_CAMEL_BOUNDARY = re.compile(r"(?<=[a-z0-9])(?=[A-Z])|(?<=[A-Z])(?=[A-Z][a-z])")
+_ALPHA_RUN = re.compile(r"[A-Za-z]+")
+
+
+def page_slug(page_url) -> str:
+    """Last non-empty path segment of ``page_url``, or ``""``.
+
+    ``https://www.facebook.com/KFCMexico/`` -> ``"KFCMexico"``;
+    ``https://www.instagram.com/_u/dominos_pizzaa1`` -> ``"dominos_pizzaa1"``;
+    ``https://www.facebook.com/profile.php?id=123`` -> ``"profile.php"`` (no
+    country token, so it stays eligible). A bare numeric id peels to no tokens.
+    """
+    text = str(page_url or "").strip()
+    if not text:
+        return ""
+    if "://" not in text:
+        text = "https://" + text
+    try:
+        from urllib.parse import urlsplit
+
+        path = urlsplit(text).path
+    except ValueError:
+        path = text
+    parts = [part for part in path.split("/") if part]
+    return parts[-1] if parts else ""
+
+
+def _slug_tokens(slug: str) -> list[tuple[str, bool]]:
+    """Split a slug into ``(token, standalone)`` pairs.
+
+    ``standalone`` marks a token that was its own punctuation-delimited chunk
+    (``dominospizza.es`` -> ``es``), as opposed to a camelCase fragment of a
+    longer word (``McDonaldsOM`` -> ``Mc``, ``Donalds``, ``OM``). It lets a
+    lowercase two-letter country code count when the handle itself prints it
+    as a segment, while a fragment like ``Mc`` (Monaco's code) does not.
+    """
+    tokens: list[tuple[str, bool]] = []
+    for chunk in _SLUG_CHUNK.split(slug):
+        if not chunk:
+            continue
+        for segment in _CAMEL_BOUNDARY.split(chunk):
+            for match in _ALPHA_RUN.finditer(segment):
+                token = match.group(0)
+                tokens.append((token, chunk == token))
+    return tokens
+
+
+def _slug_variants(segment: str, target) -> list[tuple[str, str, bool]]:
+    """``(lowercase, original_case, is_remainder)`` variants of one token.
+
+    The second variant, when present, is the token with a leading requested
+    brand stripped: ``pizzahutksaofficial`` for target ``Pizza Hut`` ->
+    ``ksaofficial``. Only that remainder may match a market by prefix/suffix,
+    which is too loose for an arbitrary token but safe right after a brand.
+    """
+    variants = [(segment.lower(), segment, False)]
+    brand = normalize(target)
+    low = segment.lower()
+    if brand and low.startswith(brand) and len(low) > len(brand):
+        remainder = low[len(brand):]
+        variants.append((remainder, segment[len(brand):], True))
+    return variants
+
+
+def _looks_like_market_token(
+    value: str, original: str, brand_remainder: bool, standalone: bool
+) -> bool:
+    """Gate two-letter codes: position and case, not just letters.
+
+    ``Burger King me`` is prose, not Montenegro; the same uppercase guard name
+    peeling uses. A brand-stripped remainder (``mcdonaldsus``) is positional
+    and may be lowercase, and so is a standalone handle segment for a code
+    outside ``_AMBIGUOUS_TWO_LETTER_CODES`` (``dominospizza.es``). An ambiguous
+    code is capitals-only even when it stands alone -- ``pizzahut.in``,
+    ``burgerking.us`` and ``kfc.eg`` name no market -- and a camelCase fragment
+    is never taken: ``Mc`` in ``McDonalds`` is not Monaco.
+    """
+    if brand_remainder:
+        return True
+    if len(value) <= 2:
+        if value in _AMBIGUOUS_TWO_LETTER_CODES:
+            return original.isupper()
+        return original.isupper() or standalone
+    return True
+
+
+def _slug_markets(page_url, target=None) -> frozenset[str]:
+    """Markets named by the page URL's slug, or the empty set.
+
+    ``KFCMexico`` -> ``{"MX"}``; ``McDonaldsOM`` -> ``{"OM"}``;
+    ``mcdonaldshongkong`` -> ``{"HK"}``; ``pizzahutksaofficial`` -> ``{"SA"}``;
+    ``kfcarabia`` -> the GCC set ``arabia`` regionalises to. A slug with no
+    country token returns the empty set and never vetoes anything.
+    """
+    tokens = _slug_tokens(page_slug(page_url))
+    if not tokens:
+        return frozenset()
+    specific: set[str] = set()
+    regional: set[str] = set()
+
+    def _add_key(key: str) -> None:
+        markets = _SLUG_MARKET_BY_KEY[key]
+        if key in _REGIONAL_MARKET_TOKENS:
+            regional.update(markets)
+        else:
+            specific.update(markets)
+
+    def _record(
+        value: str, original: str, brand_remainder: bool, standalone: bool
+    ) -> bool:
+        if value in _SLUG_MARKET_BY_KEY and _looks_like_market_token(
+            value, original, brand_remainder, standalone
+        ):
+            _add_key(value)
+            return True
+        if not brand_remainder:
+            # A bare token only matches whole. Substring matching on arbitrary
+            # slugs turns ordinary words into markets (``orchard`` -> TD,
+            # ``random`` -> OM), which is the false veto this veto must avoid.
+            return False
+        for key in _SLUG_SUFFIX_KEYS:
+            if len(value) > len(key) and (
+                value.startswith(key) or value.endswith(key)
+            ):
+                _add_key(key)
+                return True
+        return False
+
+    for token, standalone in tokens:
+        for value, original, brand_remainder in _slug_variants(token, target):
+            if _record(value, original, brand_remainder, standalone):
+                break
+    return frozenset(specific or regional)
+
+
+
+def _slug_names_other_market(page_url, market, target=None) -> bool:
+    """True when the URL slug explicitly names a market other than ``market``.
+
+    Mirrors ``_names_other_market``: no token means no claim, the requested
+    market (or a regional set containing it) stays eligible, and a token that
+    is part of the brand (``airnewzealand`` for target ``Air New Zealand``) is
+    brand text rather than a market claim.
+    """
+    wanted = str(market or "").strip().upper()
+    if not wanted:
+        return False
+    markets = _slug_markets(page_url, target)
+    if not markets or wanted in markets:
+        return False
+    target_markets = _trailing_markets(target)
+    return not (target_markets and markets <= target_markets)
+
+
+
 
 def _dedupe_by_page(candidates):
     """Keep the first (best) candidate per normalized page name."""
@@ -863,8 +1079,21 @@ def filter_ads(ads, target, market=None):
     page country-qualified for that market outranks one qualified for another,
     and a page that explicitly names a different market is vetoed outright
     (never traded off against a higher score).
+
+    The ad's ``page_url`` slug is a second, independent market claim and is
+    checked first: every KFC page is named ``KFC``, so a US query kept
+    ``facebook.com/KFCMexico/`` until the slug said otherwise. Ads whose slug
+    names a different market are dropped before resolution (see
+    ``_slug_names_other_market``); a slug with no country token, or one that
+    names the requested market, stays eligible.
     """
     ads = list(ads or [])
+    if market:
+        ads = [
+            ad
+            for ad in ads
+            if not _slug_names_other_market(ad.get("page_url"), market, target)
+        ]
     resolution = resolve_advertiser(
         target, [ad.get("page_name") for ad in ads], market=market
     )
