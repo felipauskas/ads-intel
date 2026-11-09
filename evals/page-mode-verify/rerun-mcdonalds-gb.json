@@ -1,0 +1,702 @@
+{
+  "pair": "mcdonalds-gb",
+  "brand": "McDonald's",
+  "country": "GB",
+  "requested_page_id": "209644529058679",
+  "seconds": 8.59,
+  "count": 20,
+  "fetched": 20,
+  "complete": true,
+  "total_returned": 20,
+  "resolved": {
+    "page_name": "McDonald's",
+    "score": 1.0,
+    "page_id": "209644529058679",
+    "page_handle": "mcdonaldsuk",
+    "page_found": true
+  },
+  "page_found": true,
+  "country_filtered": false,
+  "error": null,
+  "candidates": [],
+  "page_names": [
+    "McDonald's"
+  ],
+  "page_urls": [
+    "https://www.facebook.com/McDonaldsUK/"
+  ],
+  "page_ids_seen": [],
+  "attempts": [
+    {
+      "phase": "page_search",
+      "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=GB&is_targeted_country=false&media_type=all&search_type=page&view_all_page_id=209644529058679",
+      "seconds": 0.01,
+      "chars": 5698,
+      "transport_failed": false,
+      "dead_render": "shell"
+    },
+    {
+      "phase": "page_search",
+      "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=GB&is_targeted_country=false&media_type=all&search_type=page&view_all_page_id=209644529058679&cache_bust=697f869636e741f6a77a24feaa2b7183",
+      "seconds": 8.58,
+      "chars": 60700,
+      "transport_failed": false,
+      "dead_render": null
+    }
+  ],
+  "raw": {
+    "count": 20,
+    "complete": true,
+    "complete_scope": "rendered_window",
+    "total_returned": 20,
+    "char_limit": 120000,
+    "fetched": 20,
+    "country": "GB",
+    "page_id": "209644529058679",
+    "resolved": {
+      "page_name": "McDonald's",
+      "score": 1.0,
+      "page_id": "209644529058679",
+      "page_handle": "mcdonaldsuk",
+      "page_found": true
+    },
+    "page_found": true,
+    "country_filtered": false,
+    "ads": [
+      {
+        "id": "1889219425381037",
+        "page_name": "McDonald's",
+        "status": "active",
+        "first_seen": "Oct 21, 2026",
+        "last_seen": "",
+        "creative_text": "Your McCafe iced drinks just doubled.\nGet two iced drinks for the price of one - only on the app",
+        "library_url": "https://www.facebook.com/ads/library/?id=1889219425381037",
+        "page_url": "https://www.facebook.com/McDonaldsUK/",
+        "page_id": "",
+        "link_url": "http://itunes.apple.com/app/id1082476620",
+        "link_title": "Download the app now App exclusive",
+        "cta_text": "Download",
+        "link_caption": "",
+        "images": [
+          "https://scontent-lax3-1.xx.fbcdn.net/v/t39.35426-6/855174818_1812046666706797_2363295696794839257_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=108&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=5RlMVUyduaoQ7kNvwHwuipY&_nc_oc=AdqWhj2Y7SWDJgvzcDrSPmKoDfsLWBXyhiXscv4OY1H9qKSuF9PQz24QbwBji8a-UHY&_nc_zt=14&_nc_ht=scontent-lax3-1.xx&_nc_gid=viUE7j-7cIEzC1nxqwmUpw&_nc_ss=7b289&oh=00_AQRjGVxMCQp_II2UlmKLJtVEBh9vkzW2pvkZPfTOX4GNig&oe=6AF7CF72"
+        ],
+        "has_video": false,
+        "same_creative_count": 4,
+        "multiple_versions": true,
+        "cta_type": "DOWNLOAD",
+        "display_format": "image",
+        "cards": [
+          {
+            "body": "Your McCafe iced drinks just doubled.\nGet two iced drinks for the price of one - only on the app",
+            "cta": "Download",
+            "image": "https://scontent-lax3-1.xx.fbcdn.net/v/t39.35426-6/855174818_1812046666706797_2363295696794839257_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=108&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=5RlMVUyduaoQ7kNvwHwuipY&_nc_oc=AdqWhj2Y7SWDJgvzcDrSPmKoDfsLWBXyhiXscv4OY1H9qKSuF9PQz24QbwBji8a-UHY&_nc_zt=14&_nc_ht=scontent-lax3-1.xx&_nc_gid=viUE7j-7cIEzC1nxqwmUpw&_nc_ss=7b289&oh=00_AQRjGVxMCQp_II2UlmKLJtVEBh9vkzW2pvkZPfTOX4GNig&oe=6AF7CF72",
+            "link_url": "http://itunes.apple.com/app/id1082476620",
+            "title": "Download the app now App exclusive",
+            "video": null
+          }
+        ]
+      },
+      {
+        "id": "1633230615116022",
+        "page_name": "McDonald's",
+        "status": "active",
+        "first_seen": "Oct 21, 2026",
+        "last_seen": "",
+        "creative_text": "Ditch the sad-wich and give it a glow up with the Snack Wrap.",
+        "library_url": "https://www.facebook.com/ads/library/?id=1633230615116022",
+        "page_url": "https://www.facebook.com/McDonaldsUK/",
+        "page_id": "",
+        "link_url": "https://smart.link/d32gf22qjd7wm",
+        "link_title": "The Snack wrap is back Only £1.99.",
+        "cta_text": "Order Now",
+        "link_caption": "",
+        "images": [],
+        "has_video": true,
+        "same_creative_count": 4,
+        "multiple_versions": true,
+        "cta_type": "ORDER_NOW",
+        "display_format": "video",
+        "cards": [
+          {
+            "body": "Ditch the sad-wich and give it a glow up with the Snack Wrap.",
+            "cta": "Order Now",
+            "image": null,
+            "link_url": "https://smart.link/d32gf22qjd7wm",
+            "title": "The Snack wrap is back Only £1.99.",
+            "video": null
+          }
+        ]
+      },
+      {
+        "id": "1922662932043043",
+        "page_name": "McDonald's",
+        "status": "active",
+        "first_seen": "Oct 5, 2026",
+        "last_seen": "",
+        "creative_text": "Ditch the sad-wich and give it a glow up with the Snack Wrap.",
+        "library_url": "https://www.facebook.com/ads/library/?id=1922662932043043",
+        "page_url": "https://www.facebook.com/McDonaldsUK/",
+        "page_id": "",
+        "link_url": "https://smart.link/d32gf22qjd7wm",
+        "link_title": "The Snack wrap is back Only £1.99.",
+        "cta_text": "Order Now",
+        "link_caption": "",
+        "images": [],
+        "has_video": true,
+        "same_creative_count": 0,
+        "multiple_versions": true,
+        "cta_type": "ORDER_NOW",
+        "display_format": "video",
+        "cards": [
+          {
+            "body": "Ditch the sad-wich and give it a glow up with the Snack Wrap.",
+            "cta": "Order Now",
+            "image": null,
+            "link_url": "https://smart.link/d32gf22qjd7wm",
+            "title": "The Snack wrap is back Only £1.99.",
+            "video": null
+          }
+        ]
+      },
+      {
+        "id": "2154428108800573",
+        "page_name": "McDonald's",
+        "status": "active",
+        "first_seen": "Oct 20, 2026",
+        "last_seen": "",
+        "creative_text": "Any wrap, only £2.49. All week. All yours in the McDonald’s App.",
+        "library_url": "https://www.facebook.com/ads/library/?id=2154428108800573",
+        "page_url": "https://www.facebook.com/McDonaldsUK/",
+        "page_id": "",
+        "link_url": "http://play.google.com/store/apps/details?id=com.mcdonalds.app.uk",
+        "link_title": "App exclusive Wrap it for £2.49",
+        "cta_text": "Download",
+        "link_caption": "",
+        "images": [
+          "https://scontent-lax3-2.xx.fbcdn.net/v/t39.35426-6/829603714_1413998586805708_1120944505655035610_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=107&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=ccxvYXET2gIQ7kNvwFE0r6C&_nc_oc=AdrhzUQRhXT27kGv7XJBvORLJGu1vN7_BFHIVxBMPNwRfW4EvB_bwFfWDXeotfUjcjA&_nc_zt=14&_nc_ht=scontent-lax3-2.xx&_nc_gid=viUE7j-7cIEzC1nxqwmUpw&_nc_ss=7b289&oh=00_AQQm8R-ikDQBowfd-pSXgDJZ7K6rKyQpp_9iMxiLfQEHMg&oe=6AF7D762"
+        ],
+        "has_video": false,
+        "same_creative_count": 0,
+        "multiple_versions": true,
+        "cta_type": "DOWNLOAD",
+        "display_format": "image",
+        "cards": [
+          {
+            "body": "Any wrap, only £2.49. All week. All yours in the McDonald’s App.",
+            "cta": "Download",
+            "image": "https://scontent-lax3-2.xx.fbcdn.net/v/t39.35426-6/829603714_1413998586805708_1120944505655035610_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=107&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=ccxvYXET2gIQ7kNvwFE0r6C&_nc_oc=AdrhzUQRhXT27kGv7XJBvORLJGu1vN7_BFHIVxBMPNwRfW4EvB_bwFfWDXeotfUjcjA&_nc_zt=14&_nc_ht=scontent-lax3-2.xx&_nc_gid=viUE7j-7cIEzC1nxqwmUpw&_nc_ss=7b289&oh=00_AQQm8R-ikDQBowfd-pSXgDJZ7K6rKyQpp_9iMxiLfQEHMg&oe=6AF7D762",
+            "link_url": "http://play.google.com/store/apps/details?id=com.mcdonalds.app.uk",
+            "title": "App exclusive Wrap it for £2.49",
+            "video": null
+          }
+        ]
+      },
+      {
+        "id": "1847205929926581",
+        "page_name": "McDonald's",
+        "status": "active",
+        "first_seen": "Nov 2, 2026",
+        "last_seen": "",
+        "creative_text": "got a taste for heisting now",
+        "library_url": "https://www.facebook.com/ads/library/?id=1847205929926581",
+        "page_url": "https://www.facebook.com/McDonaldsUK/",
+        "page_id": "",
+        "link_url": "https://smart.link/h1spg3qhkb9uf",
+        "link_title": "new loot too irresistible can’t stop won’t stop",
+        "cta_text": "Order Now",
+        "link_caption": "",
+        "images": [],
+        "has_video": true,
+        "same_creative_count": 0,
+        "multiple_versions": true,
+        "cta_type": "ORDER_NOW",
+        "display_format": "video",
+        "cards": [
+          {
+            "body": "got a taste for heisting now",
+            "cta": "Order Now",
+            "image": null,
+            "link_url": "https://smart.link/h1spg3qhkb9uf",
+            "title": "new loot too irresistible can’t stop won’t stop",
+            "video": null
+          }
+        ]
+      },
+      {
+        "id": "1766551667958763",
+        "page_name": "McDonald's",
+        "status": "active",
+        "first_seen": "Oct 20, 2026",
+        "last_seen": "",
+        "creative_text": "McDonald’s have been at it again 👀🍑🥤 Loot from the second World Menu Heist arrives October 20th, and Peach x Sprite®️ Zero from Singapore sounds SO up my street. What do you hope is on the menu?\nOrder Now",
+        "library_url": "https://www.facebook.com/ads/library/?id=1766551667958763",
+        "page_url": "https://www.facebook.com/McDonaldsUK/",
+        "page_id": "",
+        "link_url": "",
+        "link_title": "",
+        "cta_text": "",
+        "link_caption": "",
+        "images": [],
+        "has_video": true,
+        "same_creative_count": 0,
+        "multiple_versions": true,
+        "cta_type": "",
+        "display_format": "video",
+        "cards": [
+          {
+            "body": "McDonald’s have been at it again 👀🍑🥤 Loot from the second World Menu Heist arrives October 20th, and Peach x Sprite®️ Zero from Singapore sounds SO up my street. What do you hope is on the menu?\nOrder Now",
+            "cta": "",
+            "image": null,
+            "link_url": "",
+            "title": "",
+            "video": null
+          }
+        ]
+      },
+      {
+        "id": "1779229360010110",
+        "page_name": "McDonald's",
+        "status": "active",
+        "first_seen": "Oct 20, 2026",
+        "last_seen": "",
+        "creative_text": "Sheila loves the tea, especially when it’s this piping hot. NEW McDonald’s World Menu Heist loot dropping soon",
+        "library_url": "https://www.facebook.com/ads/library/?id=1779229360010110",
+        "page_url": "https://www.facebook.com/McDonaldsUK/",
+        "page_id": "",
+        "link_url": "https://smart.link/h1spg3qhkb9uf",
+        "link_title": "",
+        "cta_text": "Order Now",
+        "link_caption": "",
+        "images": [],
+        "has_video": true,
+        "same_creative_count": 0,
+        "multiple_versions": true,
+        "cta_type": "ORDER_NOW",
+        "display_format": "video",
+        "cards": [
+          {
+            "body": "Sheila loves the tea, especially when it’s this piping hot. NEW McDonald’s World Menu Heist loot dropping soon",
+            "cta": "Order Now",
+            "image": null,
+            "link_url": "https://smart.link/h1spg3qhkb9uf",
+            "title": "",
+            "video": null
+          }
+        ]
+      },
+      {
+        "id": "923166914067845",
+        "page_name": "McDonald's",
+        "status": "active",
+        "first_seen": "Nov 2, 2026",
+        "last_seen": "",
+        "creative_text": "Sheila loves the tea, especially when it’s this piping hot. NEW McDonald’s World Menu Heist loot dropping soon",
+        "library_url": "https://www.facebook.com/ads/library/?id=923166914067845",
+        "page_url": "https://www.facebook.com/McDonaldsUK/",
+        "page_id": "",
+        "link_url": "https://smart.link/h1spg3qhkb9uf",
+        "link_title": "",
+        "cta_text": "Order Now",
+        "link_caption": "",
+        "images": [],
+        "has_video": true,
+        "same_creative_count": 2,
+        "multiple_versions": true,
+        "cta_type": "ORDER_NOW",
+        "display_format": "video",
+        "cards": [
+          {
+            "body": "Sheila loves the tea, especially when it’s this piping hot. NEW McDonald’s World Menu Heist loot dropping soon",
+            "cta": "Order Now",
+            "image": null,
+            "link_url": "https://smart.link/h1spg3qhkb9uf",
+            "title": "",
+            "video": null
+          }
+        ]
+      },
+      {
+        "id": "1126172613281562",
+        "page_name": "McDonald's",
+        "status": "active",
+        "first_seen": "Oct 20, 2026",
+        "last_seen": "",
+        "creative_text": "Any wrap, only £2.49. All week. All yours in the McDonald’s App.",
+        "library_url": "https://www.facebook.com/ads/library/?id=1126172613281562",
+        "page_url": "https://www.facebook.com/McDonaldsUK/",
+        "page_id": "",
+        "link_url": "http://play.google.com/store/apps/details?id=com.mcdonalds.app.uk",
+        "link_title": "App exclusive. Wrap it for £2.49",
+        "cta_text": "Download",
+        "link_caption": "",
+        "images": [
+          "https://scontent-lax7-1.xx.fbcdn.net/v/t39.35426-6/871683249_865813406588532_3755090827240898384_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=101&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=aMVB1klBbc4Q7kNvwG3xsmT&_nc_oc=Adqi9e37T8elyp5VWhgDIRNcaMghr2mEPqGZokYPXcgpcfODh67_mWYuofLkE4b9jqE&_nc_zt=14&_nc_ht=scontent-lax7-1.xx&_nc_gid=viUE7j-7cIEzC1nxqwmUpw&_nc_ss=7b289&oh=00_AQQpwSkAJyUhEpy7_O7hGCsNzIoy93hr-zmKi909SRPXiQ&oe=6AF7EAAE"
+        ],
+        "has_video": false,
+        "same_creative_count": 0,
+        "multiple_versions": true,
+        "cta_type": "DOWNLOAD",
+        "display_format": "image",
+        "cards": [
+          {
+            "body": "Any wrap, only £2.49. All week. All yours in the McDonald’s App.",
+            "cta": "Download",
+            "image": "https://scontent-lax7-1.xx.fbcdn.net/v/t39.35426-6/871683249_865813406588532_3755090827240898384_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=101&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=aMVB1klBbc4Q7kNvwG3xsmT&_nc_oc=Adqi9e37T8elyp5VWhgDIRNcaMghr2mEPqGZokYPXcgpcfODh67_mWYuofLkE4b9jqE&_nc_zt=14&_nc_ht=scontent-lax7-1.xx&_nc_gid=viUE7j-7cIEzC1nxqwmUpw&_nc_ss=7b289&oh=00_AQQpwSkAJyUhEpy7_O7hGCsNzIoy93hr-zmKi909SRPXiQ&oe=6AF7EAAE",
+            "link_url": "http://play.google.com/store/apps/details?id=com.mcdonalds.app.uk",
+            "title": "App exclusive. Wrap it for £2.49",
+            "video": null
+          }
+        ]
+      },
+      {
+        "id": "1087860900535124",
+        "page_name": "McDonald's",
+        "status": "active",
+        "first_seen": "Oct 20, 2026",
+        "last_seen": "",
+        "creative_text": "@mcdonaldsuk have pulled off another World Menu Heist, bringing iconic menu items from around the world to the UK. And it got us thinking…would me and @abiluffman make a great heisting team? 🥷\nThere’s more - on October 20th, even more stolen goods are coming 🤩",
+        "library_url": "https://www.facebook.com/ads/library/?id=1087860900535124",
+        "page_url": "https://www.facebook.com/McDonaldsUK/",
+        "page_id": "",
+        "link_url": "https://smart.link/h1spg3qhkb9uf",
+        "link_title": "",
+        "cta_text": "Order Now",
+        "link_caption": "",
+        "images": [],
+        "has_video": true,
+        "same_creative_count": 0,
+        "multiple_versions": true,
+        "cta_type": "ORDER_NOW",
+        "display_format": "video",
+        "cards": [
+          {
+            "body": "@mcdonaldsuk have pulled off another World Menu Heist, bringing iconic menu items from around the world to the UK. And it got us thinking…would me and @abiluffman make a great heisting team? 🥷\nThere’s more - on October 20th, even more stolen goods are coming 🤩",
+            "cta": "Order Now",
+            "image": null,
+            "link_url": "https://smart.link/h1spg3qhkb9uf",
+            "title": "",
+            "video": null
+          }
+        ]
+      },
+      {
+        "id": "3233052273751799",
+        "page_name": "McDonald's",
+        "status": "active",
+        "first_seen": "Oct 22, 2026",
+        "last_seen": "",
+        "creative_text": "McDonald’s have been at it again 👀🍑🥤 Loot from the second World Menu Heist arrives October 20th, and Peach x Sprite®️ Zero from Singapore sounds SO up my street. What do you hope is on the menu?",
+        "library_url": "https://www.facebook.com/ads/library/?id=3233052273751799",
+        "page_url": "https://www.facebook.com/McDonaldsUK/",
+        "page_id": "",
+        "link_url": "https://smart.link/h1spg3qhkb9uf",
+        "link_title": "",
+        "cta_text": "Order Now",
+        "link_caption": "",
+        "images": [],
+        "has_video": true,
+        "same_creative_count": 0,
+        "multiple_versions": true,
+        "cta_type": "ORDER_NOW",
+        "display_format": "video",
+        "cards": [
+          {
+            "body": "McDonald’s have been at it again 👀🍑🥤 Loot from the second World Menu Heist arrives October 20th, and Peach x Sprite®️ Zero from Singapore sounds SO up my street. What do you hope is on the menu?",
+            "cta": "Order Now",
+            "image": null,
+            "link_url": "https://smart.link/h1spg3qhkb9uf",
+            "title": "",
+            "video": null
+          }
+        ]
+      },
+      {
+        "id": "4630245353861228",
+        "page_name": "McDonald's",
+        "status": "active",
+        "first_seen": "Oct 21, 2026",
+        "last_seen": "",
+        "creative_text": "The world’s most wanted menu items. Get them before we have to give them back.",
+        "library_url": "https://www.facebook.com/ads/library/?id=4630245353861228",
+        "page_url": "https://www.facebook.com/McDonaldsUK/",
+        "page_id": "",
+        "link_url": "http://play.google.com/store/apps/details?id=com.mcdonalds.app.uk",
+        "link_title": "Now on the McDonald's App",
+        "cta_text": "Download",
+        "link_caption": "",
+        "images": [
+          "https://scontent-lax3-1.xx.fbcdn.net/v/t39.35426-6/855225753_1825626972903232_4466925076057559038_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=102&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=A7hzjCT_hAwQ7kNvwGxRg3E&_nc_oc=AdoYyR-MZSjk3UYfwKS4zR8ubk946kNv4eNpmWF_WJPmgIRZJE3gvYBxg_Ior0FUs6w&_nc_zt=14&_nc_ht=scontent-lax3-1.xx&_nc_gid=viUE7j-7cIEzC1nxqwmUpw&_nc_ss=7b289&oh=00_AQQ5tm4dHVjZadFmClmBlOQrAmpDYn5Yb9fFi1U7bnCRsw&oe=6AF7BD46"
+        ],
+        "has_video": false,
+        "same_creative_count": 4,
+        "multiple_versions": true,
+        "cta_type": "DOWNLOAD",
+        "display_format": "image",
+        "cards": [
+          {
+            "body": "The world’s most wanted menu items. Get them before we have to give them back.",
+            "cta": "Download",
+            "image": "https://scontent-lax3-1.xx.fbcdn.net/v/t39.35426-6/855225753_1825626972903232_4466925076057559038_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=102&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=A7hzjCT_hAwQ7kNvwGxRg3E&_nc_oc=AdoYyR-MZSjk3UYfwKS4zR8ubk946kNv4eNpmWF_WJPmgIRZJE3gvYBxg_Ior0FUs6w&_nc_zt=14&_nc_ht=scontent-lax3-1.xx&_nc_gid=viUE7j-7cIEzC1nxqwmUpw&_nc_ss=7b289&oh=00_AQQ5tm4dHVjZadFmClmBlOQrAmpDYn5Yb9fFi1U7bnCRsw&oe=6AF7BD46",
+            "link_url": "http://play.google.com/store/apps/details?id=com.mcdonalds.app.uk",
+            "title": "Now on the McDonald's App",
+            "video": null
+          }
+        ]
+      },
+      {
+        "id": "1098948456083794",
+        "page_name": "McDonald's",
+        "status": "active",
+        "first_seen": "Oct 19, 2026",
+        "last_seen": "",
+        "creative_text": "What your Meal Deal Plus side says about you…",
+        "library_url": "https://www.facebook.com/ads/library/?id=1098948456083794",
+        "page_url": "https://www.facebook.com/McDonaldsUK/",
+        "page_id": "",
+        "link_url": "https://smart.link/d32gf22qjd7wm",
+        "link_title": "Did we get it right? 👀 Just call us mystic Maccies",
+        "cta_text": "Order Now",
+        "link_caption": "",
+        "images": [],
+        "has_video": true,
+        "same_creative_count": 0,
+        "multiple_versions": true,
+        "cta_type": "ORDER_NOW",
+        "display_format": "video",
+        "cards": [
+          {
+            "body": "What your Meal Deal Plus side says about you…",
+            "cta": "Order Now",
+            "image": null,
+            "link_url": "https://smart.link/d32gf22qjd7wm",
+            "title": "Did we get it right? 👀 Just call us mystic Maccies",
+            "video": null
+          }
+        ]
+      },
+      {
+        "id": "1994045331289394",
+        "page_name": "McDonald's",
+        "status": "active",
+        "first_seen": "Oct 22, 2026",
+        "last_seen": "",
+        "creative_text": "Bag bonus points with your next heist",
+        "library_url": "https://www.facebook.com/ads/library/?id=1994045331289394",
+        "page_url": "https://www.facebook.com/McDonaldsUK/",
+        "page_id": "",
+        "link_url": "http://play.google.com/store/apps/details?id=com.mcdonalds.app.uk",
+        "link_title": "Only on the McDonald’s app",
+        "cta_text": "Download",
+        "link_caption": "",
+        "images": [
+          "https://scontent-lax3-1.xx.fbcdn.net/v/t39.35426-6/856065893_1832198858216139_3848074002763043975_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=109&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=bOntpSEQt58Q7kNvwEL14K_&_nc_oc=AdquIIlL1F4FTJ1F8V68OyT07GpxHjRNuMYh5iCgUxV3p-ztQy_1Fa25ImnblnZC3Q4&_nc_zt=14&_nc_ht=scontent-lax3-1.xx&_nc_gid=viUE7j-7cIEzC1nxqwmUpw&_nc_ss=7b289&oh=00_AQTU_tHKJoQVs_AMPJJWq1CMXF-5fplgznTV3f8XkkXuWw&oe=6AF7E790"
+        ],
+        "has_video": false,
+        "same_creative_count": 4,
+        "multiple_versions": true,
+        "cta_type": "DOWNLOAD",
+        "display_format": "image",
+        "cards": [
+          {
+            "body": "Bag bonus points with your next heist",
+            "cta": "Download",
+            "image": "https://scontent-lax3-1.xx.fbcdn.net/v/t39.35426-6/856065893_1832198858216139_3848074002763043975_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=109&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=bOntpSEQt58Q7kNvwEL14K_&_nc_oc=AdquIIlL1F4FTJ1F8V68OyT07GpxHjRNuMYh5iCgUxV3p-ztQy_1Fa25ImnblnZC3Q4&_nc_zt=14&_nc_ht=scontent-lax3-1.xx&_nc_gid=viUE7j-7cIEzC1nxqwmUpw&_nc_ss=7b289&oh=00_AQTU_tHKJoQVs_AMPJJWq1CMXF-5fplgznTV3f8XkkXuWw&oe=6AF7E790",
+            "link_url": "http://play.google.com/store/apps/details?id=com.mcdonalds.app.uk",
+            "title": "Only on the McDonald’s app",
+            "video": null
+          }
+        ]
+      },
+      {
+        "id": "870402102765449",
+        "page_name": "McDonald's",
+        "status": "active",
+        "first_seen": "Oct 21, 2026",
+        "last_seen": "",
+        "creative_text": "What’s your girl math? McDonald’s Edition.",
+        "library_url": "https://www.facebook.com/ads/library/?id=870402102765449",
+        "page_url": "https://www.facebook.com/McDonaldsUK/",
+        "page_id": "",
+        "link_url": "https://smart.link/d32gf22qjd7wm",
+        "link_title": "New girl math unlocked 🔒 When the maths be mathsing",
+        "cta_text": "Order Now",
+        "link_caption": "",
+        "images": [],
+        "has_video": true,
+        "same_creative_count": 0,
+        "multiple_versions": true,
+        "cta_type": "ORDER_NOW",
+        "display_format": "video",
+        "cards": [
+          {
+            "body": "What’s your girl math? McDonald’s Edition.",
+            "cta": "Order Now",
+            "image": null,
+            "link_url": "https://smart.link/d32gf22qjd7wm",
+            "title": "New girl math unlocked 🔒 When the maths be mathsing",
+            "video": null
+          }
+        ]
+      },
+      {
+        "id": "1822524072231039",
+        "page_name": "McDonald's",
+        "status": "active",
+        "first_seen": "Oct 19, 2026",
+        "last_seen": "",
+        "creative_text": "Pulling out all the stops here..",
+        "library_url": "https://www.facebook.com/ads/library/?id=1822524072231039",
+        "page_url": "https://www.facebook.com/McDonaldsUK/",
+        "page_id": "",
+        "link_url": "https://smart.link/h1spg3qhkb9uf",
+        "link_title": "",
+        "cta_text": "Order Now",
+        "link_caption": "",
+        "images": [],
+        "has_video": true,
+        "same_creative_count": 0,
+        "multiple_versions": true,
+        "cta_type": "ORDER_NOW",
+        "display_format": "video",
+        "cards": [
+          {
+            "body": "Pulling out all the stops here..",
+            "cta": "Order Now",
+            "image": null,
+            "link_url": "https://smart.link/h1spg3qhkb9uf",
+            "title": "",
+            "video": null
+          }
+        ]
+      },
+      {
+        "id": "1119174397265649",
+        "page_name": "McDonald's",
+        "status": "active",
+        "first_seen": "Oct 5, 2026",
+        "last_seen": "",
+        "creative_text": "Get 3 months of Super Duolingo, redeem with 2000 points on the MyMcDonald’s Rewards",
+        "library_url": "https://www.facebook.com/ads/library/?id=1119174397265649",
+        "page_url": "https://www.facebook.com/McDonaldsUK/",
+        "page_id": "",
+        "link_url": "http://play.google.com/store/apps/details?id=com.mcdonalds.app.uk",
+        "link_title": "Download now",
+        "cta_text": "Download",
+        "link_caption": "",
+        "images": [
+          "https://scontent-lax3-1.xx.fbcdn.net/v/t39.35426-6/855371664_1567202731828018_826254230389752016_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=102&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=KKSry15XfH8Q7kNvwHDWkgD&_nc_oc=AdoJFhoXf_TTaLSqLrbcvFr8HbKfStvdDIKBOauvWlvzbAFBVb3Fv_bpwtWAvSNkf4Q&_nc_zt=14&_nc_ht=scontent-lax3-1.xx&_nc_gid=viUE7j-7cIEzC1nxqwmUpw&_nc_ss=7b289&oh=00_AQTf-E6FXQ4a5X-xstrahR9HsVlZfO9jGeZug72ztelDzA&oe=6AF7DAC0"
+        ],
+        "has_video": false,
+        "same_creative_count": 0,
+        "multiple_versions": true,
+        "cta_type": "DOWNLOAD",
+        "display_format": "image",
+        "cards": [
+          {
+            "body": "Get 3 months of Super Duolingo, redeem with 2000 points on the MyMcDonald’s Rewards",
+            "cta": "Download",
+            "image": "https://scontent-lax3-1.xx.fbcdn.net/v/t39.35426-6/855371664_1567202731828018_826254230389752016_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=102&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=KKSry15XfH8Q7kNvwHDWkgD&_nc_oc=AdoJFhoXf_TTaLSqLrbcvFr8HbKfStvdDIKBOauvWlvzbAFBVb3Fv_bpwtWAvSNkf4Q&_nc_zt=14&_nc_ht=scontent-lax3-1.xx&_nc_gid=viUE7j-7cIEzC1nxqwmUpw&_nc_ss=7b289&oh=00_AQTf-E6FXQ4a5X-xstrahR9HsVlZfO9jGeZug72ztelDzA&oe=6AF7DAC0",
+            "link_url": "http://play.google.com/store/apps/details?id=com.mcdonalds.app.uk",
+            "title": "Download now",
+            "video": null
+          }
+        ]
+      },
+      {
+        "id": "1146191267920683",
+        "page_name": "McDonald's",
+        "status": "active",
+        "first_seen": "Oct 21, 2026",
+        "last_seen": "",
+        "creative_text": "The world’s most wanted menu items. Get them before we have to give them back.",
+        "library_url": "https://www.facebook.com/ads/library/?id=1146191267920683",
+        "page_url": "https://www.facebook.com/McDonaldsUK/",
+        "page_id": "",
+        "link_url": "http://play.google.com/store/apps/details?id=com.mcdonalds.app.uk",
+        "link_title": "Now on the McDonald's App",
+        "cta_text": "Download",
+        "link_caption": "",
+        "images": [],
+        "has_video": true,
+        "same_creative_count": 4,
+        "multiple_versions": true,
+        "cta_type": "DOWNLOAD",
+        "display_format": "video",
+        "cards": [
+          {
+            "body": "The world’s most wanted menu items. Get them before we have to give them back.",
+            "cta": "Download",
+            "image": null,
+            "link_url": "http://play.google.com/store/apps/details?id=com.mcdonalds.app.uk",
+            "title": "Now on the McDonald's App",
+            "video": null
+          }
+        ]
+      },
+      {
+        "id": "1405100665137138",
+        "page_name": "McDonald's",
+        "status": "active",
+        "first_seen": "Oct 26, 2026",
+        "last_seen": "",
+        "creative_text": "Who’s ready to meet our little Snack Wrap®?",
+        "library_url": "https://www.facebook.com/ads/library/?id=1405100665137138",
+        "page_url": "https://www.facebook.com/McDonaldsUK/",
+        "page_id": "",
+        "link_url": "https://smart.link/d32gf22qjd7wm",
+        "link_title": "Welcome to the world We’ve got NEWS 🫶",
+        "cta_text": "Order Now",
+        "link_caption": "",
+        "images": [],
+        "has_video": true,
+        "same_creative_count": 0,
+        "multiple_versions": true,
+        "cta_type": "ORDER_NOW",
+        "display_format": "video",
+        "cards": [
+          {
+            "body": "Who’s ready to meet our little Snack Wrap®?",
+            "cta": "Order Now",
+            "image": null,
+            "link_url": "https://smart.link/d32gf22qjd7wm",
+            "title": "Welcome to the world We’ve got NEWS 🫶",
+            "video": null
+          }
+        ]
+      },
+      {
+        "id": "1673076407508753",
+        "page_name": "McDonald's",
+        "status": "active",
+        "first_seen": "Oct 26, 2026",
+        "last_seen": "",
+        "creative_text": "Apple or peach? Why not get both?\nBuy 1 iced McCafe® x Sprite Zero® drinks, and get 1 FREE.\nOnly on the My McDonalds App",
+        "library_url": "https://www.facebook.com/ads/library/?id=1673076407508753",
+        "page_url": "https://www.facebook.com/McDonaldsUK/",
+        "page_id": "",
+        "link_url": "http://itunes.apple.com/app/id1082476620",
+        "link_title": "Download the app now App exclusive",
+        "cta_text": "Download",
+        "link_caption": "",
+        "images": [
+          "https://scontent-lax3-2.xx.fbcdn.net/v/t39.35426-6/856367826_1461978719330632_8198811643185934139_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=111&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=dRB8R8Gdek0Q7kNvwFRTYTv&_nc_oc=AdrlcGbFfgKo_cD5--iEywdC9grmDCD2EjwFmYCN3MWP5Vm6FB0M9rrUOrZBxtN3VvI&_nc_zt=14&_nc_ht=scontent-lax3-2.xx&_nc_gid=viUE7j-7cIEzC1nxqwmUpw&_nc_ss=7b289&oh=00_AQTFmGV3lHi3ayVKcbZuNyvDYAiOYLFLbdj15Z6devC1iQ&oe=6AF7C53E"
+        ],
+        "has_video": false,
+        "same_creative_count": 0,
+        "multiple_versions": true,
+        "cta_type": "DOWNLOAD",
+        "display_format": "image",
+        "cards": [
+          {
+            "body": "Apple or peach? Why not get both?\nBuy 1 iced McCafe® x Sprite Zero® drinks, and get 1 FREE.\nOnly on the My McDonalds App",
+            "cta": "Download",
+            "image": "https://scontent-lax3-2.xx.fbcdn.net/v/t39.35426-6/856367826_1461978719330632_8198811643185934139_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=111&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=dRB8R8Gdek0Q7kNvwFRTYTv&_nc_oc=AdrlcGbFfgKo_cD5--iEywdC9grmDCD2EjwFmYCN3MWP5Vm6FB0M9rrUOrZBxtN3VvI&_nc_zt=14&_nc_ht=scontent-lax3-2.xx&_nc_gid=viUE7j-7cIEzC1nxqwmUpw&_nc_ss=7b289&oh=00_AQTFmGV3lHi3ayVKcbZuNyvDYAiOYLFLbdj15Z6devC1iQ&oe=6AF7C53E",
+            "link_url": "http://itunes.apple.com/app/id1082476620",
+            "title": "Download the app now App exclusive",
+            "video": null
+          }
+        ]
+      }
+    ]
+  }
+}

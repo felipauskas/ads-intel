@@ -1,0 +1,625 @@
+{
+  "pair": "mcdonalds-eg",
+  "brand": "McDonald's",
+  "country": "EG",
+  "requested_page_id": "280155560076",
+  "seconds": 0.01,
+  "count": 15,
+  "fetched": 15,
+  "complete": true,
+  "total_returned": 15,
+  "resolved": {
+    "page_name": "McDonald's",
+    "score": 1.0,
+    "page_id": "280155560076",
+    "page_handle": "mcdonaldsegypt",
+    "page_found": true
+  },
+  "page_found": true,
+  "country_filtered": false,
+  "error": null,
+  "candidates": [],
+  "page_names": [
+    "McDonald's"
+  ],
+  "page_urls": [
+    "https://www.facebook.com/McDonaldsEgypt/"
+  ],
+  "page_ids_seen": [],
+  "attempts": [
+    {
+      "phase": "page_search",
+      "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=EG&is_targeted_country=false&media_type=all&search_type=page&view_all_page_id=280155560076",
+      "seconds": 0.01,
+      "chars": 59220,
+      "transport_failed": false,
+      "dead_render": null
+    }
+  ],
+  "raw": {
+    "count": 15,
+    "complete": true,
+    "complete_scope": "rendered_window",
+    "total_returned": 15,
+    "char_limit": 120000,
+    "fetched": 15,
+    "country": "EG",
+    "page_id": "280155560076",
+    "resolved": {
+      "page_name": "McDonald's",
+      "score": 1.0,
+      "page_id": "280155560076",
+      "page_handle": "mcdonaldsegypt",
+      "page_found": true
+    },
+    "page_found": true,
+    "country_filtered": false,
+    "ads": [
+      {
+        "id": "2950086998710617",
+        "page_name": "McDonald's",
+        "status": "active",
+        "first_seen": "Nov 1, 2026",
+        "last_seen": "",
+        "creative_text": "المكس 2 ميل بقت بـ149 جنيه بس! اطلب دلوقتي واستمتع بوجبتك المفضلة.",
+        "library_url": "https://www.facebook.com/ads/library/?id=2950086998710617",
+        "page_url": "https://www.facebook.com/McDonaldsEgypt/",
+        "page_id": "",
+        "link_url": "http://play.google.com/store/apps/details?id=com.mcdonalds.mobileapp",
+        "link_title": "McDonald's",
+        "cta_text": "Order now",
+        "link_caption": "PLAY.GOOGLE.COM",
+        "images": [
+          "https://scontent-lax3-2.xx.fbcdn.net/v/t39.35426-6/899197446_28872666519093057_1366554515694915723_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=107&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=u2N8NWSBGe0Q7kNvwF3C5Gd&_nc_oc=AdqqXt1kWURVtHiA09JEDd6f8xgxsfIjXS8IuuAYkGDIxujRJsHEGWaEf0QMwq3zX-s&_nc_zt=14&_nc_ht=scontent-lax3-2.xx&_nc_gid=6G_F9mbtmXACTNYSkgfC7g&_nc_ss=7b289&oh=00_AQRjwh30pSbrZh3LOx_YNYC_Htx5-AFLTbQLsYmwShw8-A&oe=6AF7D2D4"
+        ],
+        "has_video": false,
+        "same_creative_count": 0,
+        "multiple_versions": false,
+        "cta_type": "ORDER_NOW",
+        "display_format": "image",
+        "cards": [
+          {
+            "body": "المكس 2 ميل بقت بـ149 جنيه بس! اطلب دلوقتي واستمتع بوجبتك المفضلة.",
+            "cta": "Order now",
+            "image": "https://scontent-lax3-2.xx.fbcdn.net/v/t39.35426-6/899197446_28872666519093057_1366554515694915723_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=107&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=u2N8NWSBGe0Q7kNvwF3C5Gd&_nc_oc=AdqqXt1kWURVtHiA09JEDd6f8xgxsfIjXS8IuuAYkGDIxujRJsHEGWaEf0QMwq3zX-s&_nc_zt=14&_nc_ht=scontent-lax3-2.xx&_nc_gid=6G_F9mbtmXACTNYSkgfC7g&_nc_ss=7b289&oh=00_AQRjwh30pSbrZh3LOx_YNYC_Htx5-AFLTbQLsYmwShw8-A&oe=6AF7D2D4",
+            "link_url": "http://play.google.com/store/apps/details?id=com.mcdonalds.mobileapp",
+            "title": "McDonald's",
+            "video": null
+          }
+        ]
+      },
+      {
+        "id": "4129084580730286",
+        "page_name": "McDonald's",
+        "status": "active",
+        "first_seen": "Nov 1, 2026",
+        "last_seen": "",
+        "creative_text": "⁨ ما يجيبها الا الشاطر🙂‍↕️\nالمكس 2 ميل بقت ب149 جنيه!⁩",
+        "library_url": "https://www.facebook.com/ads/library/?id=4129084580730286",
+        "page_url": "https://www.facebook.com/McDonaldsEgypt/",
+        "page_id": "",
+        "link_url": "https://smart.link/3tte91zbw8n50",
+        "link_title": "McDonald's",
+        "cta_text": "Order now",
+        "link_caption": "SMART.LINK",
+        "images": [],
+        "has_video": true,
+        "same_creative_count": 0,
+        "multiple_versions": false,
+        "cta_type": "ORDER_NOW",
+        "display_format": "video",
+        "cards": [
+          {
+            "body": "⁨ ما يجيبها الا الشاطر🙂‍↕️\nالمكس 2 ميل بقت ب149 جنيه!⁩",
+            "cta": "Order now",
+            "image": null,
+            "link_url": "https://smart.link/3tte91zbw8n50",
+            "title": "McDonald's",
+            "video": null
+          }
+        ]
+      },
+      {
+        "id": "28684729074487232",
+        "page_name": "McDonald's",
+        "status": "active",
+        "first_seen": "Oct 12, 2026",
+        "last_seen": "",
+        "creative_text": "M2M bts 🍟⭐🏅",
+        "library_url": "https://www.facebook.com/ads/library/?id=28684729074487232",
+        "page_url": "https://www.facebook.com/McDonaldsEgypt/",
+        "page_id": "",
+        "link_url": "https://smart.link/3tte91zbw8n50",
+        "link_title": "مكس 2 ميل",
+        "cta_text": "Order Now",
+        "link_caption": "SMART.LINK",
+        "images": [
+          "https://scontent-lax3-1.xx.fbcdn.net/v/t39.35426-6/871795392_1862484961862631_223802997614406054_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=104&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=icCUgacyZoEQ7kNvwHIhzwi&_nc_oc=AdoEFbRXo2VVR2YLoLxXjF8XzrbGAQTCMJggeSKKq67nXL7ahcbKTS8EyWaDFLaeTXI&_nc_zt=14&_nc_ht=scontent-lax3-1.xx&_nc_gid=6G_F9mbtmXACTNYSkgfC7g&_nc_ss=7b289&oh=00_AQTrDrs_49kuif50kc0xxBDlrp2Q5jIUPnR7UnWrRbITGQ&oe=6AF7B9DF",
+          "https://scontent-lax3-1.xx.fbcdn.net/v/t39.35426-6/864171195_1605043121104219_1440610886558762677_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=108&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=JQ3_DvOcAAkQ7kNvwHnhTLE&_nc_oc=Ado2uQlwQZ3MOrBmOtPjSK1DJnikFOyI3AHNWgcbaVJydpIxqpQuRHIiQQTxz1-5zZY&_nc_zt=14&_nc_ht=scontent-lax3-1.xx&_nc_gid=6G_F9mbtmXACTNYSkgfC7g&_nc_ss=7b289&oh=00_AQTF-SzZhF-ufZ5kL_k2xMFRDLMnkr0S_fODSuvjuIYrGQ&oe=6AF7D101",
+          "https://scontent-lax3-2.xx.fbcdn.net/v/t39.35426-6/882313086_1134158172322688_1280185791592097111_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=103&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=LSW3iRzcrrcQ7kNvwGPqXlh&_nc_oc=AdpRGzBLNepI7wH2Z7mIeBjP6L1RdF5s5I5_QimJ4WYVm88FwOc5jcf9swdELufgllQ&_nc_zt=14&_nc_ht=scontent-lax3-2.xx&_nc_gid=6G_F9mbtmXACTNYSkgfC7g&_nc_ss=7b289&oh=00_AQQ7Q-3Z-hbGyQT27WCtDDewGwOKV_eOf5ubr5c4eZeXjw&oe=6AF7B9A3",
+          "https://scontent-lax3-2.xx.fbcdn.net/v/t39.35426-6/867177169_4528194190749290_6227176403732763775_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=106&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=hE1hgML8uNMQ7kNvwFNPB1j&_nc_oc=Adr75HGyEDXSmNlEKMp0OapNCcDsK7e31nxH_aMzeR1Qu6lnpL3Avp22OXWXyUgvJWE&_nc_zt=14&_nc_ht=scontent-lax3-2.xx&_nc_gid=6G_F9mbtmXACTNYSkgfC7g&_nc_ss=7b289&oh=00_AQSB68Nm_6fHwqCN8DY1IC9jhGpXf6ZO7vmzXyyposSg1w&oe=6AF7C5DE",
+          "https://scontent-lax7-1.xx.fbcdn.net/v/t39.35426-6/877738572_1657253612612704_6519085159764205358_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=105&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=fYR-3mflxvsQ7kNvwG7IGE_&_nc_oc=AdoWIQoNyQg5PWxaMm0nVMNta99Sq_-OKsCDZoUKySAExYlSugCHZEO6B10tLSqU_aQ&_nc_zt=14&_nc_ht=scontent-lax7-1.xx&_nc_gid=6G_F9mbtmXACTNYSkgfC7g&_nc_ss=7b289&oh=00_AQSWbAPW0Hp2VFaD3DCr7ZZ6Ilx34YV4p3E7039ZrX93aw&oe=6AF7D48C",
+          "https://scontent-lax3-1.xx.fbcdn.net/v/t39.35426-6/885831224_1432601528983480_1183152732699965751_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=109&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=-1kPCxfj600Q7kNvwGkoteL&_nc_oc=AdoM7nVN_vZy9cYpfTtU2E9LQ1KxFz7tbXSytuXLK5toKZo9a6yW1pB0Zsq0PEj8h4Y&_nc_zt=14&_nc_ht=scontent-lax3-1.xx&_nc_gid=6G_F9mbtmXACTNYSkgfC7g&_nc_ss=7b289&oh=00_AQQ5XfWvtnoBnCQFS05b9WgZKW8sGZvOD0ITbYjduoPp-g&oe=6AF7BC24"
+        ],
+        "has_video": false,
+        "same_creative_count": 0,
+        "multiple_versions": false,
+        "cta_type": "ORDER_NOW",
+        "display_format": "dco",
+        "cards": [
+          {
+            "body": "M2M bts 🍟⭐🏅",
+            "cta": "Order Now",
+            "image": "https://scontent-lax3-1.xx.fbcdn.net/v/t39.35426-6/871795392_1862484961862631_223802997614406054_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=104&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=icCUgacyZoEQ7kNvwHIhzwi&_nc_oc=AdoEFbRXo2VVR2YLoLxXjF8XzrbGAQTCMJggeSKKq67nXL7ahcbKTS8EyWaDFLaeTXI&_nc_zt=14&_nc_ht=scontent-lax3-1.xx&_nc_gid=6G_F9mbtmXACTNYSkgfC7g&_nc_ss=7b289&oh=00_AQTrDrs_49kuif50kc0xxBDlrp2Q5jIUPnR7UnWrRbITGQ&oe=6AF7B9DF",
+            "link_url": "https://smart.link/3tte91zbw8n50",
+            "title": "مكس 2 ميل",
+            "video": null
+          },
+          {
+            "body": "M2M bts 🍟⭐🏅",
+            "cta": "Order Now",
+            "image": "https://scontent-lax3-1.xx.fbcdn.net/v/t39.35426-6/864171195_1605043121104219_1440610886558762677_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=108&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=JQ3_DvOcAAkQ7kNvwHnhTLE&_nc_oc=Ado2uQlwQZ3MOrBmOtPjSK1DJnikFOyI3AHNWgcbaVJydpIxqpQuRHIiQQTxz1-5zZY&_nc_zt=14&_nc_ht=scontent-lax3-1.xx&_nc_gid=6G_F9mbtmXACTNYSkgfC7g&_nc_ss=7b289&oh=00_AQTF-SzZhF-ufZ5kL_k2xMFRDLMnkr0S_fODSuvjuIYrGQ&oe=6AF7D101",
+            "link_url": "https://smart.link/3tte91zbw8n50",
+            "title": "مكس 2 ميل",
+            "video": null
+          },
+          {
+            "body": "M2M bts 🍟⭐🏅",
+            "cta": "Order Now",
+            "image": "https://scontent-lax3-2.xx.fbcdn.net/v/t39.35426-6/882313086_1134158172322688_1280185791592097111_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=103&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=LSW3iRzcrrcQ7kNvwGPqXlh&_nc_oc=AdpRGzBLNepI7wH2Z7mIeBjP6L1RdF5s5I5_QimJ4WYVm88FwOc5jcf9swdELufgllQ&_nc_zt=14&_nc_ht=scontent-lax3-2.xx&_nc_gid=6G_F9mbtmXACTNYSkgfC7g&_nc_ss=7b289&oh=00_AQQ7Q-3Z-hbGyQT27WCtDDewGwOKV_eOf5ubr5c4eZeXjw&oe=6AF7B9A3",
+            "link_url": "https://smart.link/3tte91zbw8n50",
+            "title": "مكس 2 ميل",
+            "video": null
+          },
+          {
+            "body": "M2M bts 🍟⭐🏅",
+            "cta": "Order Now",
+            "image": "https://scontent-lax3-2.xx.fbcdn.net/v/t39.35426-6/867177169_4528194190749290_6227176403732763775_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=106&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=hE1hgML8uNMQ7kNvwFNPB1j&_nc_oc=Adr75HGyEDXSmNlEKMp0OapNCcDsK7e31nxH_aMzeR1Qu6lnpL3Avp22OXWXyUgvJWE&_nc_zt=14&_nc_ht=scontent-lax3-2.xx&_nc_gid=6G_F9mbtmXACTNYSkgfC7g&_nc_ss=7b289&oh=00_AQSB68Nm_6fHwqCN8DY1IC9jhGpXf6ZO7vmzXyyposSg1w&oe=6AF7C5DE",
+            "link_url": "https://smart.link/3tte91zbw8n50",
+            "title": "مكس 2 ميل",
+            "video": null
+          },
+          {
+            "body": "M2M bts 🍟⭐🏅",
+            "cta": "Order Now",
+            "image": "https://scontent-lax7-1.xx.fbcdn.net/v/t39.35426-6/877738572_1657253612612704_6519085159764205358_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=105&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=fYR-3mflxvsQ7kNvwG7IGE_&_nc_oc=AdoWIQoNyQg5PWxaMm0nVMNta99Sq_-OKsCDZoUKySAExYlSugCHZEO6B10tLSqU_aQ&_nc_zt=14&_nc_ht=scontent-lax7-1.xx&_nc_gid=6G_F9mbtmXACTNYSkgfC7g&_nc_ss=7b289&oh=00_AQSWbAPW0Hp2VFaD3DCr7ZZ6Ilx34YV4p3E7039ZrX93aw&oe=6AF7D48C",
+            "link_url": "https://smart.link/3tte91zbw8n50",
+            "title": "مكس 2 ميل",
+            "video": null
+          },
+          {
+            "body": "M2M bts 🍟⭐🏅",
+            "cta": "Order Now",
+            "image": "https://scontent-lax3-1.xx.fbcdn.net/v/t39.35426-6/885831224_1432601528983480_1183152732699965751_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=109&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=-1kPCxfj600Q7kNvwGkoteL&_nc_oc=AdoM7nVN_vZy9cYpfTtU2E9LQ1KxFz7tbXSytuXLK5toKZo9a6yW1pB0Zsq0PEj8h4Y&_nc_zt=14&_nc_ht=scontent-lax3-1.xx&_nc_gid=6G_F9mbtmXACTNYSkgfC7g&_nc_ss=7b289&oh=00_AQQ5XfWvtnoBnCQFS05b9WgZKW8sGZvOD0ITbYjduoPp-g&oe=6AF7BC24",
+            "link_url": "https://smart.link/3tte91zbw8n50",
+            "title": "مكس 2 ميل",
+            "video": null
+          }
+        ]
+      },
+      {
+        "id": "1352221371314783",
+        "page_name": "McDonald's",
+        "status": "active",
+        "first_seen": "Oct 19, 2026",
+        "last_seen": "",
+        "creative_text": "⁨ ما يجيبها الا الشاطر🙂‍↕️\nالمكس 2 ميل بقت ب149 جنيه!⁩",
+        "library_url": "https://www.facebook.com/ads/library/?id=1352221371314783",
+        "page_url": "https://www.facebook.com/McDonaldsEgypt/",
+        "page_id": "",
+        "link_url": "",
+        "link_title": "",
+        "cta_text": "",
+        "link_caption": "",
+        "images": [],
+        "has_video": true,
+        "same_creative_count": 2,
+        "multiple_versions": false,
+        "cta_type": "",
+        "display_format": "video",
+        "cards": [
+          {
+            "body": "⁨ ما يجيبها الا الشاطر🙂‍↕️\nالمكس 2 ميل بقت ب149 جنيه!⁩",
+            "cta": "",
+            "image": null,
+            "link_url": "",
+            "title": "",
+            "video": null
+          }
+        ]
+      },
+      {
+        "id": "989629370870093",
+        "page_name": "McDonald's",
+        "status": "active",
+        "first_seen": "Nov 2, 2026",
+        "last_seen": "",
+        "creative_text": "ممكن إنتوا كمان تشوفوا بنفسكم لما تحجزوا\nجولة الباب مفتوح🚪🫢",
+        "library_url": "https://www.facebook.com/ads/library/?id=989629370870093",
+        "page_url": "https://www.facebook.com/McDonaldsEgypt/",
+        "page_id": "",
+        "link_url": "",
+        "link_title": "",
+        "cta_text": "",
+        "link_caption": "",
+        "images": [],
+        "has_video": true,
+        "same_creative_count": 0,
+        "multiple_versions": false,
+        "cta_type": "",
+        "display_format": "video",
+        "cards": [
+          {
+            "body": "ممكن إنتوا كمان تشوفوا بنفسكم لما تحجزوا\nجولة الباب مفتوح🚪🫢",
+            "cta": "",
+            "image": null,
+            "link_url": "",
+            "title": "",
+            "video": null
+          }
+        ]
+      },
+      {
+        "id": "2009037793119495",
+        "page_name": "McDonald's",
+        "status": "active",
+        "first_seen": "Oct 15, 2026",
+        "last_seen": "",
+        "creative_text": "M2M bts: Pt. 2 🍟⭐🏅\nبلاش نقولكم كام تيك اتعاد علشان البطاطس كانت بتخلص😳\nفولنهاله قبل ما نرجعها متقلقوش⛽\nمجهود ناس كتيرة ❤️\nاعملوا منشن لو عارفينه\nالمكس 2 ميل: ما يجيبها إلا الشاطر🍔🎬",
+        "library_url": "https://www.facebook.com/ads/library/?id=2009037793119495",
+        "page_url": "https://www.facebook.com/McDonaldsEgypt/",
+        "page_id": "",
+        "link_url": "https://smart.link/3tte91zbw8n50",
+        "link_title": "مكس 2 ميل",
+        "cta_text": "Order Now",
+        "link_caption": "SMART.LINK",
+        "images": [
+          "https://scontent-lax7-1.xx.fbcdn.net/v/t39.35426-6/886417389_1783930532717189_5104790075879208634_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=105&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=Yd-yC8iR3uAQ7kNvwGl9gc2&_nc_oc=AdrdO6aw5rbemkAuzbjdAszh38xffpcziJvOeAIY6ygffCFh9hdr5pCEszq4V7es48w&_nc_zt=14&_nc_ht=scontent-lax7-1.xx&_nc_gid=6G_F9mbtmXACTNYSkgfC7g&_nc_ss=7b289&oh=00_AQS6jTXdxdJEqzJ5MEaPghB7CY6TqXM8Az-zL7cTbaZmRA&oe=6AF7CF34",
+          "https://scontent-lax3-1.xx.fbcdn.net/v/t39.35426-6/878259540_2483037105552726_8780771981213753831_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=104&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=uabOqFzYUGAQ7kNvwFv8PnU&_nc_oc=AdqTkVxdxl-haoomUq6eWbTBUAfhJCPAvIsF0SL8JQ0Ml1yp_qNdWaVnRYTQLYLJkDM&_nc_zt=14&_nc_ht=scontent-lax3-1.xx&_nc_gid=6G_F9mbtmXACTNYSkgfC7g&_nc_ss=7b289&oh=00_AQRd3_rmgNyELqgaSSiT8N0bd6M0x-FB42oP57kD6c7ZSg&oe=6AF7CE2F",
+          "https://scontent-lax3-2.xx.fbcdn.net/v/t39.35426-6/883034629_1151683624229349_874416526783790414_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=106&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=nQ4OB0mwVkUQ7kNvwFLQGzj&_nc_oc=Adqz978CZuvCM5oItF_O4k1RUxDq1cocfQMbkR10HcmLOyVaQ4V1-9nUHH9ab1IyYQ0&_nc_zt=14&_nc_ht=scontent-lax3-2.xx&_nc_gid=6G_F9mbtmXACTNYSkgfC7g&_nc_ss=7b289&oh=00_AQR76fMcDstw_U0PhhFJn0q0Jif2-2tU-2tLTILejdj0ug&oe=6AF7BABA",
+          "https://scontent-lax3-1.xx.fbcdn.net/v/t39.35426-6/884187586_1483041523727500_6947807014915345883_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=102&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=-coUlhBWAEcQ7kNvwH91qC9&_nc_oc=Adrzp10lLDi1KZo92-YSwuoftmrP9-AEl59G2RWtBJ5qoys9KR7iFu4TqIfCcSf7GPc&_nc_zt=14&_nc_ht=scontent-lax3-1.xx&_nc_gid=6G_F9mbtmXACTNYSkgfC7g&_nc_ss=7b289&oh=00_AQQhSEbfyObiU7VNmQkDgizyxSR84hi7qDiRfvz0k9z0lQ&oe=6AF7DD7A",
+          "https://scontent-lax3-1.xx.fbcdn.net/v/t39.35426-6/885658838_2381832295961648_999935684419548444_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=108&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=Y1E2d_J68U0Q7kNvwHfzsNq&_nc_oc=AdqUoWVo2fEV_1DvPyRUeA9W0LyiKF5iQ19FJAQ_tXiYtdv_q2jWxU6HyEUqvqOvEag&_nc_zt=14&_nc_ht=scontent-lax3-1.xx&_nc_gid=6G_F9mbtmXACTNYSkgfC7g&_nc_ss=7b289&oh=00_AQTRq-gL2RnwUqJysg-4qH1aIZT4Atpnq9SHIE2cHRcxOw&oe=6AF7E0B3",
+          "https://scontent-lax3-1.xx.fbcdn.net/v/t39.35426-6/882011746_2513864025746477_6130711903637227915_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=102&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=amfAnGdTHzQQ7kNvwFTJh1K&_nc_oc=AdpCc4LLXxoQZdFl-ogf1R3nHU32GENJrLcke2DXx_l_rcVpWnNYOtvbCGOHlQSFMsk&_nc_zt=14&_nc_ht=scontent-lax3-1.xx&_nc_gid=6G_F9mbtmXACTNYSkgfC7g&_nc_ss=7b289&oh=00_AQREAWRxzKFBzyoNVg-7eUtp6d5zbZWYqEF4J6G6OfmYCw&oe=6AF7DE49"
+        ],
+        "has_video": false,
+        "same_creative_count": 3,
+        "multiple_versions": false,
+        "cta_type": "ORDER_NOW",
+        "display_format": "dco",
+        "cards": [
+          {
+            "body": "M2M bts: Pt. 2 🍟⭐🏅\nبلاش نقولكم كام تيك اتعاد علشان البطاطس كانت بتخلص😳\nفولنهاله قبل ما نرجعها متقلقوش⛽\nمجهود ناس كتيرة ❤️\nاعملوا منشن لو عارفينه\nالمكس 2 ميل: ما يجيبها إلا الشاطر🍔🎬",
+            "cta": "Order Now",
+            "image": "https://scontent-lax7-1.xx.fbcdn.net/v/t39.35426-6/886417389_1783930532717189_5104790075879208634_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=105&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=Yd-yC8iR3uAQ7kNvwGl9gc2&_nc_oc=AdrdO6aw5rbemkAuzbjdAszh38xffpcziJvOeAIY6ygffCFh9hdr5pCEszq4V7es48w&_nc_zt=14&_nc_ht=scontent-lax7-1.xx&_nc_gid=6G_F9mbtmXACTNYSkgfC7g&_nc_ss=7b289&oh=00_AQS6jTXdxdJEqzJ5MEaPghB7CY6TqXM8Az-zL7cTbaZmRA&oe=6AF7CF34",
+            "link_url": "https://smart.link/3tte91zbw8n50",
+            "title": "مكس 2 ميل",
+            "video": null
+          },
+          {
+            "body": "M2M bts: Pt. 2 🍟⭐🏅\nبلاش نقولكم كام تيك اتعاد علشان البطاطس كانت بتخلص😳\nفولنهاله قبل ما نرجعها متقلقوش⛽\nمجهود ناس كتيرة ❤️\nاعملوا منشن لو عارفينه\nالمكس 2 ميل: ما يجيبها إلا الشاطر🍔🎬",
+            "cta": "Order Now",
+            "image": "https://scontent-lax3-1.xx.fbcdn.net/v/t39.35426-6/878259540_2483037105552726_8780771981213753831_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=104&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=uabOqFzYUGAQ7kNvwFv8PnU&_nc_oc=AdqTkVxdxl-haoomUq6eWbTBUAfhJCPAvIsF0SL8JQ0Ml1yp_qNdWaVnRYTQLYLJkDM&_nc_zt=14&_nc_ht=scontent-lax3-1.xx&_nc_gid=6G_F9mbtmXACTNYSkgfC7g&_nc_ss=7b289&oh=00_AQRd3_rmgNyELqgaSSiT8N0bd6M0x-FB42oP57kD6c7ZSg&oe=6AF7CE2F",
+            "link_url": "https://smart.link/3tte91zbw8n50",
+            "title": "مكس 2 ميل",
+            "video": null
+          },
+          {
+            "body": "M2M bts: Pt. 2 🍟⭐🏅\nبلاش نقولكم كام تيك اتعاد علشان البطاطس كانت بتخلص😳\nفولنهاله قبل ما نرجعها متقلقوش⛽\nمجهود ناس كتيرة ❤️\nاعملوا منشن لو عارفينه\nالمكس 2 ميل: ما يجيبها إلا الشاطر🍔🎬",
+            "cta": "Order Now",
+            "image": "https://scontent-lax3-2.xx.fbcdn.net/v/t39.35426-6/883034629_1151683624229349_874416526783790414_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=106&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=nQ4OB0mwVkUQ7kNvwFLQGzj&_nc_oc=Adqz978CZuvCM5oItF_O4k1RUxDq1cocfQMbkR10HcmLOyVaQ4V1-9nUHH9ab1IyYQ0&_nc_zt=14&_nc_ht=scontent-lax3-2.xx&_nc_gid=6G_F9mbtmXACTNYSkgfC7g&_nc_ss=7b289&oh=00_AQR76fMcDstw_U0PhhFJn0q0Jif2-2tU-2tLTILejdj0ug&oe=6AF7BABA",
+            "link_url": "https://smart.link/3tte91zbw8n50",
+            "title": "مكس 2 ميل",
+            "video": null
+          },
+          {
+            "body": "M2M bts: Pt. 2 🍟⭐🏅\nبلاش نقولكم كام تيك اتعاد علشان البطاطس كانت بتخلص😳\nفولنهاله قبل ما نرجعها متقلقوش⛽\nمجهود ناس كتيرة ❤️\nاعملوا منشن لو عارفينه\nالمكس 2 ميل: ما يجيبها إلا الشاطر🍔🎬",
+            "cta": "Order Now",
+            "image": "https://scontent-lax3-1.xx.fbcdn.net/v/t39.35426-6/884187586_1483041523727500_6947807014915345883_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=102&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=-coUlhBWAEcQ7kNvwH91qC9&_nc_oc=Adrzp10lLDi1KZo92-YSwuoftmrP9-AEl59G2RWtBJ5qoys9KR7iFu4TqIfCcSf7GPc&_nc_zt=14&_nc_ht=scontent-lax3-1.xx&_nc_gid=6G_F9mbtmXACTNYSkgfC7g&_nc_ss=7b289&oh=00_AQQhSEbfyObiU7VNmQkDgizyxSR84hi7qDiRfvz0k9z0lQ&oe=6AF7DD7A",
+            "link_url": "https://smart.link/3tte91zbw8n50",
+            "title": "مكس 2 ميل",
+            "video": null
+          },
+          {
+            "body": "M2M bts: Pt. 2 🍟⭐🏅\nبلاش نقولكم كام تيك اتعاد علشان البطاطس كانت بتخلص😳\nفولنهاله قبل ما نرجعها متقلقوش⛽\nمجهود ناس كتيرة ❤️\nاعملوا منشن لو عارفينه\nالمكس 2 ميل: ما يجيبها إلا الشاطر🍔🎬",
+            "cta": "Order Now",
+            "image": "https://scontent-lax3-1.xx.fbcdn.net/v/t39.35426-6/885658838_2381832295961648_999935684419548444_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=108&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=Y1E2d_J68U0Q7kNvwHfzsNq&_nc_oc=AdqUoWVo2fEV_1DvPyRUeA9W0LyiKF5iQ19FJAQ_tXiYtdv_q2jWxU6HyEUqvqOvEag&_nc_zt=14&_nc_ht=scontent-lax3-1.xx&_nc_gid=6G_F9mbtmXACTNYSkgfC7g&_nc_ss=7b289&oh=00_AQTRq-gL2RnwUqJysg-4qH1aIZT4Atpnq9SHIE2cHRcxOw&oe=6AF7E0B3",
+            "link_url": "https://smart.link/3tte91zbw8n50",
+            "title": "مكس 2 ميل",
+            "video": null
+          },
+          {
+            "body": "M2M bts: Pt. 2 🍟⭐🏅\nبلاش نقولكم كام تيك اتعاد علشان البطاطس كانت بتخلص😳\nفولنهاله قبل ما نرجعها متقلقوش⛽\nمجهود ناس كتيرة ❤️\nاعملوا منشن لو عارفينه\nالمكس 2 ميل: ما يجيبها إلا الشاطر🍔🎬",
+            "cta": "Order Now",
+            "image": "https://scontent-lax3-1.xx.fbcdn.net/v/t39.35426-6/882011746_2513864025746477_6130711903637227915_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=102&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=amfAnGdTHzQQ7kNvwFTJh1K&_nc_oc=AdpCc4LLXxoQZdFl-ogf1R3nHU32GENJrLcke2DXx_l_rcVpWnNYOtvbCGOHlQSFMsk&_nc_zt=14&_nc_ht=scontent-lax3-1.xx&_nc_gid=6G_F9mbtmXACTNYSkgfC7g&_nc_ss=7b289&oh=00_AQREAWRxzKFBzyoNVg-7eUtp6d5zbZWYqEF4J6G6OfmYCw&oe=6AF7DE49",
+            "link_url": "https://smart.link/3tte91zbw8n50",
+            "title": "مكس 2 ميل",
+            "video": null
+          }
+        ]
+      },
+      {
+        "id": "29157601750596752",
+        "page_name": "McDonald's",
+        "status": "active",
+        "first_seen": "Oct 19, 2026",
+        "last_seen": "",
+        "creative_text": "نفسك تشوف وتعيش تجربة مطبخ ماكدونالدز من جوه؟\nقدّم على جولة «الباب مفتوح» من خلال الموقع ! 🚪✨",
+        "library_url": "https://www.facebook.com/ads/library/?id=29157601750596752",
+        "page_url": "https://www.facebook.com/McDonaldsEgypt/",
+        "page_id": "",
+        "link_url": "",
+        "link_title": "",
+        "cta_text": "",
+        "link_caption": "",
+        "images": [],
+        "has_video": true,
+        "same_creative_count": 2,
+        "multiple_versions": false,
+        "cta_type": "",
+        "display_format": "video",
+        "cards": [
+          {
+            "body": "نفسك تشوف وتعيش تجربة مطبخ ماكدونالدز من جوه؟\nقدّم على جولة «الباب مفتوح» من خلال الموقع ! 🚪✨",
+            "cta": "",
+            "image": null,
+            "link_url": "",
+            "title": "",
+            "video": null
+          }
+        ]
+      },
+      {
+        "id": "1077353028398647",
+        "page_name": "McDonald's",
+        "status": "active",
+        "first_seen": "Oct 14, 2026",
+        "last_seen": "",
+        "creative_text": "هما قالوا رأيهم… وإنتوا رأيكم إيه؟ 👀\nلو عايزين تيجوا، استنوا الفيديو الجاي وهتعرفوا إزاي تقدموا على جولة الباب مفتوح!🚪",
+        "library_url": "https://www.facebook.com/ads/library/?id=1077353028398647",
+        "page_url": "https://www.facebook.com/McDonaldsEgypt/",
+        "page_id": "",
+        "link_url": "",
+        "link_title": "",
+        "cta_text": "",
+        "link_caption": "",
+        "images": [],
+        "has_video": true,
+        "same_creative_count": 3,
+        "multiple_versions": false,
+        "cta_type": "",
+        "display_format": "video",
+        "cards": [
+          {
+            "body": "هما قالوا رأيهم… وإنتوا رأيكم إيه؟ 👀\nلو عايزين تيجوا، استنوا الفيديو الجاي وهتعرفوا إزاي تقدموا على جولة الباب مفتوح!🚪",
+            "cta": "",
+            "image": null,
+            "link_url": "",
+            "title": "",
+            "video": null
+          }
+        ]
+      },
+      {
+        "id": "1450552170339491",
+        "page_name": "McDonald's",
+        "status": "active",
+        "first_seen": "Oct 19, 2026",
+        "last_seen": "",
+        "creative_text": "بطاطس ماكدونالدز بتتعمل إزاي؟ 👀🍟\nطب والبيج ماك؟ 🍔\nوإيه كمان بيحصل جوّه فروعنا؟\nاستنونا كام يوم كمان… وهتعرفوا إزاي تيجوا تزورونا وتشوفوا كل حاجة بنفسكم!",
+        "library_url": "https://www.facebook.com/ads/library/?id=1450552170339491",
+        "page_url": "https://www.facebook.com/McDonaldsEgypt/",
+        "page_id": "",
+        "link_url": "",
+        "link_title": "",
+        "cta_text": "",
+        "link_caption": "",
+        "images": [],
+        "has_video": true,
+        "same_creative_count": 3,
+        "multiple_versions": false,
+        "cta_type": "",
+        "display_format": "video",
+        "cards": [
+          {
+            "body": "بطاطس ماكدونالدز بتتعمل إزاي؟ 👀🍟\nطب والبيج ماك؟ 🍔\nوإيه كمان بيحصل جوّه فروعنا؟\nاستنونا كام يوم كمان… وهتعرفوا إزاي تيجوا تزورونا وتشوفوا كل حاجة بنفسكم!",
+            "cta": "",
+            "image": null,
+            "link_url": "",
+            "title": "",
+            "video": null
+          }
+        ]
+      },
+      {
+        "id": "1686221863102446",
+        "page_name": "McDonald's",
+        "status": "active",
+        "first_seen": "Nov 5, 2026",
+        "last_seen": "",
+        "creative_text": "ممكن إنتوا كمان تشوفوا بنفسكم لما تحجزوا\nجولة الباب مفتوح🚪🫢",
+        "library_url": "https://www.facebook.com/ads/library/?id=1686221863102446",
+        "page_url": "https://www.facebook.com/McDonaldsEgypt/",
+        "page_id": "",
+        "link_url": "",
+        "link_title": "",
+        "cta_text": "",
+        "link_caption": "",
+        "images": [],
+        "has_video": true,
+        "same_creative_count": 2,
+        "multiple_versions": true,
+        "cta_type": "",
+        "display_format": "video",
+        "cards": [
+          {
+            "body": "ممكن إنتوا كمان تشوفوا بنفسكم لما تحجزوا\nجولة الباب مفتوح🚪🫢",
+            "cta": "",
+            "image": null,
+            "link_url": "",
+            "title": "",
+            "video": null
+          }
+        ]
+      },
+      {
+        "id": "1591360035534532",
+        "page_name": "McDonald's",
+        "status": "active",
+        "first_seen": "Oct 19, 2026",
+        "last_seen": "",
+        "creative_text": "المكس 2 ميل بقت بـ149 جنيه بس! اطلب دلوقتي واستمتع بوجبتك المفضلة.",
+        "library_url": "https://www.facebook.com/ads/library/?id=1591360035534532",
+        "page_url": "https://www.facebook.com/McDonaldsEgypt/",
+        "page_id": "",
+        "link_url": "http://play.google.com/store/apps/details?id=com.mcdonalds.mobileapp",
+        "link_title": "اطلب مكس 2 ميل دلوقتي!",
+        "cta_text": "Order Now",
+        "link_caption": "",
+        "images": [
+          "https://scontent-lax7-1.xx.fbcdn.net/v/t39.35426-6/888138729_1155759317019651_7734226137402480138_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=101&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=TrRTtgaPJ3kQ7kNvwEiA7F8&_nc_oc=Adr1T6218_vdmFRaZDoHMAlfvx1sGhw6y1YHialcKSM7ulpdVlY5QHQnUve4beZIBS4&_nc_zt=14&_nc_ht=scontent-lax7-1.xx&_nc_gid=6G_F9mbtmXACTNYSkgfC7g&_nc_ss=7b289&oh=00_AQRHf00ghM6mVfe0S7IjRkYZfs21S8wXvX8rzqtL8YfhgQ&oe=6AF7C983"
+        ],
+        "has_video": false,
+        "same_creative_count": 3,
+        "multiple_versions": false,
+        "cta_type": "ORDER_NOW",
+        "display_format": "image",
+        "cards": [
+          {
+            "body": "المكس 2 ميل بقت بـ149 جنيه بس! اطلب دلوقتي واستمتع بوجبتك المفضلة.",
+            "cta": "Order Now",
+            "image": "https://scontent-lax7-1.xx.fbcdn.net/v/t39.35426-6/888138729_1155759317019651_7734226137402480138_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=101&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=TrRTtgaPJ3kQ7kNvwEiA7F8&_nc_oc=Adr1T6218_vdmFRaZDoHMAlfvx1sGhw6y1YHialcKSM7ulpdVlY5QHQnUve4beZIBS4&_nc_zt=14&_nc_ht=scontent-lax7-1.xx&_nc_gid=6G_F9mbtmXACTNYSkgfC7g&_nc_ss=7b289&oh=00_AQRHf00ghM6mVfe0S7IjRkYZfs21S8wXvX8rzqtL8YfhgQ&oe=6AF7C983",
+            "link_url": "http://play.google.com/store/apps/details?id=com.mcdonalds.mobileapp",
+            "title": "اطلب مكس 2 ميل دلوقتي!",
+            "video": null
+          }
+        ]
+      },
+      {
+        "id": "1300254282234299",
+        "page_name": "McDonald's",
+        "status": "active",
+        "first_seen": "Nov 5, 2026",
+        "last_seen": "",
+        "creative_text": "هما قالوا رأيهم… وإنتوا رأيكم إيه؟ 👀\nلو عايزين تيجوا، استنوا الفيديو الجاي وهتعرفوا إزاي تقدموا على جولة الباب مفتوح!🚪",
+        "library_url": "https://www.facebook.com/ads/library/?id=1300254282234299",
+        "page_url": "https://www.facebook.com/McDonaldsEgypt/",
+        "page_id": "",
+        "link_url": "",
+        "link_title": "",
+        "cta_text": "",
+        "link_caption": "",
+        "images": [],
+        "has_video": true,
+        "same_creative_count": 0,
+        "multiple_versions": false,
+        "cta_type": "",
+        "display_format": "video",
+        "cards": [
+          {
+            "body": "هما قالوا رأيهم… وإنتوا رأيكم إيه؟ 👀\nلو عايزين تيجوا، استنوا الفيديو الجاي وهتعرفوا إزاي تقدموا على جولة الباب مفتوح!🚪",
+            "cta": "",
+            "image": null,
+            "link_url": "",
+            "title": "",
+            "video": null
+          }
+        ]
+      },
+      {
+        "id": "1027813090329731",
+        "page_name": "McDonald's",
+        "status": "active",
+        "first_seen": "Oct 19, 2026",
+        "last_seen": "",
+        "creative_text": "المكس 2 ميل بقت بـ149 جنيه بس! اطلب دلوقتي واستمتع بوجبتك المفضلة.",
+        "library_url": "https://www.facebook.com/ads/library/?id=1027813090329731",
+        "page_url": "https://www.facebook.com/McDonaldsEgypt/",
+        "page_id": "",
+        "link_url": "http://play.google.com/store/apps/details?id=com.mcdonalds.mobileapp",
+        "link_title": "McDonald's",
+        "cta_text": "Order now",
+        "link_caption": "PLAY.GOOGLE.COM",
+        "images": [
+          "https://scontent-lax3-2.xx.fbcdn.net/v/t39.35426-6/872134961_1834385944257185_9067592938064671813_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=106&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=5otPIM5XTu4Q7kNvwGNJE4b&_nc_oc=AdpZbREPoS6M65LT55KhFFBxitgvT4aGfOsJ5Bng6jJbfq3f8ks-YMe1aQr9tCvP0q4&_nc_zt=14&_nc_ht=scontent-lax3-2.xx&_nc_gid=6G_F9mbtmXACTNYSkgfC7g&_nc_ss=7b289&oh=00_AQR8RvpOAPDNLT4u37Ra4eU0LUq0-uwy7yRACGfd5vtvZQ&oe=6AF7DB4D"
+        ],
+        "has_video": false,
+        "same_creative_count": 2,
+        "multiple_versions": false,
+        "cta_type": "ORDER_NOW",
+        "display_format": "image",
+        "cards": [
+          {
+            "body": "المكس 2 ميل بقت بـ149 جنيه بس! اطلب دلوقتي واستمتع بوجبتك المفضلة.",
+            "cta": "Order now",
+            "image": "https://scontent-lax3-2.xx.fbcdn.net/v/t39.35426-6/872134961_1834385944257185_9067592938064671813_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=106&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=5otPIM5XTu4Q7kNvwGNJE4b&_nc_oc=AdpZbREPoS6M65LT55KhFFBxitgvT4aGfOsJ5Bng6jJbfq3f8ks-YMe1aQr9tCvP0q4&_nc_zt=14&_nc_ht=scontent-lax3-2.xx&_nc_gid=6G_F9mbtmXACTNYSkgfC7g&_nc_ss=7b289&oh=00_AQR8RvpOAPDNLT4u37Ra4eU0LUq0-uwy7yRACGfd5vtvZQ&oe=6AF7DB4D",
+            "link_url": "http://play.google.com/store/apps/details?id=com.mcdonalds.mobileapp",
+            "title": "McDonald's",
+            "video": null
+          }
+        ]
+      },
+      {
+        "id": "2151366522160605",
+        "page_name": "McDonald's",
+        "status": "active",
+        "first_seen": "Oct 19, 2026",
+        "last_seen": "",
+        "creative_text": "نفسك تشوف وتعيش تجربة مطبخ ماكدونالدز من جوه؟\nقدّم على جولة «الباب مفتوح» من خلال الموقع ! 🚪✨",
+        "library_url": "https://www.facebook.com/ads/library/?id=2151366522160605",
+        "page_url": "https://www.facebook.com/McDonaldsEgypt/",
+        "page_id": "",
+        "link_url": "",
+        "link_title": "",
+        "cta_text": "",
+        "link_caption": "",
+        "images": [],
+        "has_video": true,
+        "same_creative_count": 2,
+        "multiple_versions": false,
+        "cta_type": "",
+        "display_format": "video",
+        "cards": [
+          {
+            "body": "نفسك تشوف وتعيش تجربة مطبخ ماكدونالدز من جوه؟\nقدّم على جولة «الباب مفتوح» من خلال الموقع ! 🚪✨",
+            "cta": "",
+            "image": null,
+            "link_url": "",
+            "title": "",
+            "video": null
+          }
+        ]
+      },
+      {
+        "id": "3572569269559742",
+        "page_name": "McDonald's",
+        "status": "active",
+        "first_seen": "Nov 9, 2026 · Total active time 1 hr",
+        "last_seen": "",
+        "creative_text": "بطاطس ماكدونالدز بتتعمل إزاي؟ 👀🍟\nطب والبيج ماك؟ 🍔\nوإيه كمان بيحصل جوّه فروعنا؟\nاستنونا كام يوم كمان… وهتعرفوا إزاي تيجوا تزورونا وتشوفوا كل حاجة بنفسكم!",
+        "library_url": "https://www.facebook.com/ads/library/?id=3572569269559742",
+        "page_url": "https://www.facebook.com/McDonaldsEgypt/",
+        "page_id": "",
+        "link_url": "",
+        "link_title": "",
+        "cta_text": "",
+        "link_caption": "",
+        "images": [],
+        "has_video": true,
+        "same_creative_count": 0,
+        "multiple_versions": false,
+        "cta_type": "",
+        "display_format": "video",
+        "cards": [
+          {
+            "body": "بطاطس ماكدونالدز بتتعمل إزاي؟ 👀🍟\nطب والبيج ماك؟ 🍔\nوإيه كمان بيحصل جوّه فروعنا؟\nاستنونا كام يوم كمان… وهتعرفوا إزاي تيجوا تزورونا وتشوفوا كل حاجة بنفسكم!",
+            "cta": "",
+            "image": null,
+            "link_url": "",
+            "title": "",
+            "video": null
+          }
+        ]
+      }
+    ]
+  }
+}

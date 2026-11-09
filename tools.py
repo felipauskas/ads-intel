@@ -161,11 +161,16 @@ def _page_axis(resolution: dict, ads: list, page_id: str) -> dict:
     Empty unless the caller supplied a ``page_id``, so every pre-existing row
     keeps its exact shape and key set.
 
-    ``page_found`` is the *identity* axis: did an ad in the rendered listing
-    carry the requested Meta Page ID? ``country_filtered`` is the *delivery*
-    axis, meaningful only on a miss:
+    ``page_found`` is the *identity* axis: did this page-mode listing resolve
+    to the requested Meta Page ID? Page mode is fetched from
+    ``view_all_page_id=<id>``, so the listing itself is the identity: an ad
+    carrying the ID proves it, and so does a listing whose cards all share one
+    ``page_url`` slug (single-slug vanity Page — the cards do not repeat the
+    numeric ID). ``country_filtered`` is the *delivery* axis, meaningful only
+    on a miss:
 
-    * listing had ads but none carried the ID -> identity miss
+    * listing had ads but none carried the ID and the cards named no single
+      listing identity -> identity miss
       (``page_found: False, country_filtered: False``);
     * listing for this market was empty -> the identity could not be observed
       *here*, which is the country axis

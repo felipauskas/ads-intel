@@ -139,3 +139,107 @@ KFC Malaysia `82034284246` is known but irrelevant to any failed pair (no US val
 - Auto-discovering a page ID from a `facebook_url` or brand name (YAGNI).
 - Changing `active_status` semantics to match the reference's `active` vs `all` split
   beyond what page mode needs.
+
+---
+
+## 4. Page-mode verification (Task 2.5, live)
+
+Run on 2026-11-09 against the implemented page mode at `aed7e62`, through the real
+Hermes `web_extract` bridge (`evals/live_eval.py` `_LiveBridge`), calling
+`tools.ad_search({query, country, page_id, limit: 20, active_status: "active"})`.
+Raw per-pair JSON, including every dispatch attempt and the re-parsed render, is in
+[`evals/page-mode-verify/`](page-mode-verify/). No matrix artifact was overwritten.
+
+URL form used (all eight pairs, asserted from `attempts[].url`):
+
+```
+https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=<CC>
+  &is_targeted_country=false&media_type=all&search_type=page&view_all_page_id=<ID>
+```
+
+### 4.1 Results
+
+| Pair | `page_id` | Render | Ads parsed | `page_url` on every ad | `ad_search` result | Axes |
+|---|---|---|---|---|---|---|
+| `kfc-us` | `7144906559` | 85,292 chars, 1 attempt | **27** | `facebook.com/KFC/` | `name_not_matched`, `count: null` | `page_found: false`, `country_filtered: false` |
+| `burger-king-eg` | `134615383218473` | 6,202 chars, 1 attempt | **0** (empty EG listing) | — | `name_not_matched` | `page_found: false`, `country_filtered: **true**` |
+| `burger-king-us` | `134615383218473` | 31,535 chars, 1 attempt | **22** | `facebook.com/burgerking/` | `name_not_matched` | `false` / `false` |
+| `mcdonalds-gb` | `209644529058679` | shell (5,698) then 60,702 chars | **20** | `facebook.com/McDonaldsUK/` | `name_not_matched` | `false` / `false` |
+| `mcdonalds-ae` | `1491689481076497` | shell (2,558) then 68,112 chars | **30** | `facebook.com/McDonaldsUAE/` | `name_not_matched` | `false` / `false` |
+| `mcdonalds-eg` | `280155560076` | 59,220 chars, 1 attempt | **15** | `facebook.com/McDonaldsEgypt/` | `name_not_matched` | `false` / `false` |
+| `mcdonalds-us` | `50245567013` | 68,828 chars, 1 attempt | **28** | `facebook.com/McDonalds/` | `name_not_matched` | `false` / `false` |
+| `mcdonalds-sa` | `50245567013` | 40,836 chars, 1 attempt | **1** | `facebook.com/McDonalds/` | `name_not_matched` | `false` / `false` |
+
+End-to-end watch path on the primary pair (`ad_watch add page_id=7144906559` then
+`ad_check`) is in `page-mode-verify/kfc-us-watch.json`: `check1` is
+`error: name_not_matched`, `page_found: false`, `new_ads: null`.
+
+### 4.2 What this proves
+
+- **The page-mode fetch is correct on every pair.** Each render is the requested
+  page's own listing: the URL carried `search_type=page&view_all_page_id=<id>`, the
+  render parsed cleanly, and every ad on it belongs to exactly one page whose slug
+  matches the requested identity (KFC, Burger King, McDonaldsUK, McDonaldsUAE,
+  McDonaldsEgypt, McDonalds). `mcdonalds-sa` returns exactly 1 ad, matching the
+  reference run's 1 (`§3.1`).
+- **Page-ID resolution does not work for these pages.** `resolve.filter_ads(page_id=…)`
+  keeps only ads whose `page_id` field equals the requested ID, and `page_id` is
+  derived from a *numeric* `page_url` (`resolve.py:_resolve_by_page_id`,
+  `sources.py:_numeric_page_id`). All six pages render a vanity `page_url`
+  (`facebook.com/KFC/`, `…/McDonaldsUK/`, …), so every card's `page_id` is `""` and
+  no candidate can ever match. The result is `name_not_matched` on a listing that
+  *is* the requested page — the one outcome the design says must not happen
+  (a known page ID reported as a miss).
+- **`burger-king-eg` is honest.** The EG page-mode listing is genuinely empty
+  (6,202-char "no ads" render, 0 cards), so `page_found: false` with
+  `country_filtered: true` says exactly the right thing: the identity could not be
+  observed in EG. This pair is not evidence of the resolver defect, only of the
+  country axis.
+- **Shells are unchanged by page mode, as predicted.** `mcdonalds-gb` and
+  `mcdonalds-ae` each hit exactly one pre-hydration shell and then a clean retry
+  (p(success) per attempt is unchanged); page mode neither causes nor fixes them.
+
+### 4.3 Acceptance criteria status
+
+| Criterion (§3.2) | Result |
+|---|---|
+| 1. `kfc-us` resolves via `page_id`, ≥ 1 ad, no `name_not_matched` | **FAILED** — fetch is right (27 ads, `/KFC/`), resolution returns `name_not_matched` |
+| 2. McD shells unchanged by design; no claim page mode fixes timing | **Held** — one shell then clean retry on GB and AE; all other McD pairs parsed first attempt |
+| 3. No wrong-page PASS; BK-EG reports page-found + zero-country-ads | **Held trivially** — nothing resolved anywhere; BK-EG is `page_found: false, country_filtered: true`, not a wrong-page PASS |
+| 4. Keyword mode byte-identical | **Held** — suite green (560 passed); keyword replay path untouched |
+| 5. IDs caller-supplied and exact | **Held** — every URL carries the supplied ID verbatim; invalid-ID rejection covered by tests |
+| 6. Dual axes documented | **Held** — `page_found` / `country_filtered` present on every page-mode row |
+
+**Disposition:** page mode is *not* shippable as a successful path yet. The defect
+is in resolution, not in `build_url` or the parser: a page-mode listing must treat
+the requested ID as the identity (the render came from that page's URL, and every
+card on it is one page), instead of requiring a numeric `page_url` on the cards.
+That is product code (`resolve.py` / a page-mode branch in `tools.py`) owned by the
+implementation lane — this task did not modify it. Primary acceptance pair
+`kfc-us` remains FAIL pending that fix; the docs below state the limitation
+truthfully.
+
+> **Historical record.** §4.3 above is the state at the time of that run and is
+> deliberately not rewritten. See §5 for the later fix.
+
+### 5. Listing-identity fix shipped (2026-11-09)
+
+- **What changed.** `resolve.py` now treats a page-mode listing as the identity:
+  when the cards on the `view_all_page_id=<id>` listing share one `page_url` slug,
+  that slug resolves the requested numeric ID at score `1.0` even though no card
+  carries the numeric `page_id`. `filter_ads` keeps the ads on that slug, and also
+  keeps cards with no usable `page_url` (same pinned listing, so they share the
+  identity by construction; their `page_name` may be `""`). A listing whose cards
+  name more than one slug still reports `name_not_matched` rather than guessing.
+- **Rerun evidence.** `evals/page-mode-verify/rerun-*.json`, produced with the
+  same page-mode URL as §4.
+  - `rerun-kfc-us.json` — the criterion-1 pair from §4.3 now resolves:
+    `page_found: true`, `score: 1.0`, `page_name: "KFC"`, 27 ads on the listing
+    (`total_returned: 27`; 20 returned under the default `limit`).
+  - `rerun-burger-king-eg.json` — unchanged and still honest:
+    `page_found: false`, `country_filtered: true`, `error: name_not_matched` on a
+    6,202-character empty EG render. This is the country axis, not a resolver miss.
+- **Docs.** README "Resolved, not open" and Limitations, and
+  `docs/catalog-pr-body.md` §"Page mode" / 2026-11-09 addendum now state the fix
+  and the mixed-slug residual.
+

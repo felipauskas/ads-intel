@@ -1298,3 +1298,210 @@ def test_page_id_wins_over_page_handle():
         "KFC", ads, page_id="111", page_handle="KFCMexico"
     )
     assert result == {"page_name": "KFC", "score": 1.0, "page_id": "111"}
+
+
+# ---------------------------------------------------------------------------
+# Page-mode listing identity: rendered page-mode cards print the page's vanity
+# `page_url` and carry `page_id: ""`. The numeric ID identifies the *listing*,
+# not any card, so resolution must fall back to the single slug a listing
+# names — otherwise every page-mode request is a name_not_matched.
+# ---------------------------------------------------------------------------
+
+PM_FB = "https://www.facebook.com/{slug}/"
+
+
+def _listing_ad(page_name, slug, ad_id="1", page_id=""):
+    return {
+        "id": ad_id,
+        "page_name": page_name,
+        "page_id": page_id,
+        "page_url": PM_FB.format(slug=slug) if slug is not None else "",
+    }
+
+
+def test_page_id_resolves_through_single_vanity_slug():
+    """KFC-US shape: 27 ads, one vanity slug, no card carries the ID."""
+    ads = [_listing_ad("KFC", "KFC", str(i)) for i in range(27)]
+    result = resolve.resolve_advertiser("", ads, market="US", page_id="7144906559")
+    assert result["page_name"] == "KFC"
+    assert result["score"] == 1.0
+    assert result["page_id"] == "7144906559"
+    assert result["page_found"] is True
+
+
+def test_page_id_fallback_resolves_a_single_ad_listing():
+    """McDonalds-SA shape: one ad is still a listing identity."""
+    ads = [_listing_ad("McDonald's", "McDonalds")]
+    result = resolve.resolve_advertiser(
+        "", ads, market="SA", page_id="209644529058679"
+    )
+    assert result["score"] == 1.0
+    assert result["page_name"] == "McDonald's"
+    assert result["page_found"] is True
+
+
+def test_page_id_fallback_resolves_a_numeric_profile_url_listing():
+    """A numeric-only listing resolves by ID when the slug *is* the number."""
+    ads = [_listing_ad("KFC", "7144906559")]
+    result = resolve.resolve_advertiser("", ads, page_id="7144906559")
+    assert result["score"] == 1.0
+    assert result["page_found"] is True
+
+
+def test_numeric_id_still_wins_when_a_card_carries_it():
+    """The fallback never outranks an exact numeric match."""
+    ads = [
+        _listing_ad("KFC", "KFCMexico", page_id="111"),
+        _listing_ad("KFC", "KFC", page_id="222"),
+    ]
+    result = resolve.resolve_advertiser("KFC", ads, page_id="222")
+    assert result == {"page_name": "KFC", "score": 1.0, "page_id": "222"}
+
+
+def test_page_id_fallback_mixed_slugs_do_not_guess():
+    """Two different vanity slugs in one listing = no single identity."""
+    ads = [
+        _listing_ad("KFC", "KFC", "1"),
+        _listing_ad("KFC", "KFCMexico", "2"),
+    ]
+    result = resolve.resolve_advertiser("", ads, page_id="7144906559")
+    assert result["error"] == "name_not_matched"
+    assert result["page_found"] is False
+    assert "page_name" not in result
+
+
+def test_page_id_fallback_empty_listing_is_a_truthful_miss():
+    result = resolve.resolve_advertiser("", [], page_id="7144906559")
+    assert result["error"] == "name_not_matched"
+    assert result["page_found"] is False
+    assert result["page_id"] == "7144906559"
+
+
+def test_page_id_fallback_slug_without_url_is_a_miss():
+    """Cards with neither an ID nor a page_url give no listing identity."""
+    ads = [{"page_name": "KFC", "page_id": ""}]
+    result = resolve.resolve_advertiser("KFC", ads, page_id="7144906559")
+    assert result["error"] == "name_not_matched"
+    assert result["page_found"] is False
+
+
+def test_page_id_fallback_takes_the_first_name_for_one_slug():
+    """One slug may render as several spellings; the name is the page's."""
+    ads = [
+        _listing_ad("KFC", "KFC", "1"),
+        _listing_ad("K.F.C.", "KFC", "2"),
+    ]
+    result = resolve.resolve_advertiser("", ads, page_id="7144906559")
+    assert result["page_name"] == "KFC"
+    assert result["page_found"] is True
+
+
+def test_filter_ads_page_id_keeps_vanity_listing_ads():
+    """Page mode: kept ads are the ones on the listing's slug, not ID==ID."""
+    ads = [_listing_ad("KFC", "KFC", str(i)) for i in range(3)]
+    resolution, kept = resolve.filter_ads(
+        ads, "", market="US", page_id="7144906559"
+    )
+    assert "error" not in resolution
+    assert resolution["page_found"] is True
+    assert [ad["id"] for ad in kept] == ["0", "1", "2"]
+
+
+def test_filter_ads_page_id_fallback_drops_cards_from_another_slug():
+    """Defensive: a stray card on a different page is not part of the listing."""
+    ads = [
+        _listing_ad("KFC", "KFC", "1"),
+        _listing_ad("KFC", "KFCMexico", "2"),
+        {"id": "3", "page_name": "KFC", "page_id": "", "page_url": ""},
+    ]
+    resolution, kept = resolve.filter_ads(
+        ads, "", market="US", page_id="7144906559"
+    )
+    # Mixed slugs cannot be identity-checked, so nothing is guessed.
+    assert resolution["error"] == "name_not_matched"
+    assert kept == []
+
+
+# ---------------------------------------------------------------------------
+# Guard: the listing identity must never come from a host-only URL, and a
+# profile.php URL's identity is its numeric `id` query value only — otherwise
+# a root URL would PASS for any requested ID and one profile.php Page could
+# resolve for another.
+# ---------------------------------------------------------------------------
+
+
+def test_listing_identity_rejects_root_and_host_only_urls():
+    assert resolve._listing_identity("https://www.facebook.com") == ""
+    assert resolve._listing_identity("https://www.facebook.com/") == ""
+    assert resolve._listing_identity("www.facebook.com") == ""
+    ads = [{"page_name": "KFC", "page_id": "", "page_url": "https://www.facebook.com/"}]
+    result = resolve.resolve_advertiser("", ads, page_id="7144906559")
+    assert result["error"] == "name_not_matched"
+    assert result["page_found"] is False
+
+
+def test_listing_identity_profile_php_uses_numeric_query_id_only():
+    assert (
+        resolve._listing_identity("https://www.facebook.com/profile.php?id=123")
+        == "123"
+    )
+    assert (
+        resolve._listing_identity(
+            "https://www.facebook.com/profile.php?locale=es_LA&id=123"
+        )
+        == "123"
+    )
+    # No numeric id in the query: no identity, never the whole URL.
+    assert resolve._listing_identity("https://www.facebook.com/profile.php") == ""
+    assert (
+        resolve._listing_identity("https://www.facebook.com/profile.php?id=abc")
+        == ""
+    )
+
+
+def test_profile_php_mismatched_id_does_not_resolve():
+    ads = [
+        {
+            "page_name": "KFC",
+            "page_id": "",
+            "page_url": "https://www.facebook.com/profile.php?id=999",
+        }
+    ]
+    result = resolve.resolve_advertiser("", ads, page_id="123")
+    assert result["error"] == "name_not_matched"
+    assert result["page_found"] is False
+
+
+def test_profile_php_matching_id_resolves_as_listing_identity():
+    ads = [
+        {
+            "page_name": "KFC",
+            "page_id": "",
+            "page_url": "https://www.facebook.com/profile.php?id=123",
+        }
+    ]
+    result = resolve.resolve_advertiser("", ads, page_id="123")
+    assert result["score"] == 1.0
+    assert result["page_found"] is True
+
+
+def test_filter_ads_page_id_keeps_url_less_cards_from_the_listing():
+    """A card with no page_url came from the pinned listing — keep it.
+
+    It has no page name either; ``filter_ads`` must return it unchanged rather
+    than silently dropping an ad (``page_name`` stays ``""``).
+    """
+    ads = [
+        _listing_ad("KFC", "KFC", "1"),
+        {"id": "2", "page_name": "", "page_id": "", "page_url": ""},
+        {"id": "3", "page_name": "", "page_id": "",
+         "page_url": "https://www.facebook.com/"},
+    ]
+    resolution, kept = resolve.filter_ads(
+        ads, "", market="US", page_id="7144906559"
+    )
+    assert "error" not in resolution
+    assert resolution["page_found"] is True
+    assert [ad["id"] for ad in kept] == ["1", "2", "3"]
+    assert kept[1]["page_name"] == ""
+    assert kept[2]["page_name"] == ""

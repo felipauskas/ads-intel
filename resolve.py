@@ -49,6 +49,17 @@ Page identity sits *above* the name ladder (Task 2.2):
   candidate ad carries the same ``page_id``. Exact identity: it wins outright,
   ignores name score, market veto and slug veto, and a non-matching ID is a
   truthful ``name_not_matched`` (never a silent name fallback).
+
+  Page mode needs one qualification (Task 2.5): a rendered page-mode listing's
+  cards print the page's *vanity* ``page_url`` and carry ``page_id: ""``, so
+  the requested ID identifies the *listing*, appearing on no card at all. When
+  no candidate carries the numeric ID, listing identity is the single distinct
+  ``page_url`` slug the cards share (``page_slug``, numeric slugs included):
+  the page is found, scores 1.0, takes its name from the cards, and the caller
+  keeps the ads on that slug. A listing whose cards name more than one page is
+  *not* guessed — it is a truthful ``name_not_matched``. No cards with a
+  ``page_url`` at all (including an empty listing) is still ``page_found:
+  False``: nothing was observed, so nothing may be claimed.
 * ``PAGE_HANDLE_SCORE`` 0.90 — the caller supplies a vanity handle and a
   candidate's ``page_url`` slug equals it (case-insensitive). A handle is a
   strong hint rather than authoritative identity, so a miss falls back to the
@@ -980,8 +991,94 @@ def _candidate_field(candidate, key) -> str:
     return str(candidate.get(key) or "").strip()
 
 
+def _listing_identity(page_url) -> str:
+    """Canonical identity of one page-mode listing card, or ``""``.
+
+    Rendered page-mode cards print the page's *vanity* ``page_url`` and carry
+    ``page_id: ""``, so the URL is the only identity they share. The slug is
+    that identity for a vanity URL.
+
+    A ``profile.php?id=<digits>`` URL keeps its identity in the numeric query
+    ``id`` and nothing else: the whole URL would make two such pages look
+    distinct while a host-only URL (``https://www.facebook.com``) would look
+    like a page and could PASS for any requested ID. So a ``profile.php`` URL
+    yields the id digits, and a URL with no slug (root/host-only) yields
+    ``""`` — no identity, no false match.
+    """
+    text = str(page_url or "").strip()
+    if not text:
+        return ""
+    slug = page_slug(text)
+    if not slug:
+        return ""
+    if slug.casefold() == "profile.php":
+        try:
+            from urllib.parse import parse_qs, urlsplit
+
+            absolute = text if "://" in text else "https://" + text
+            ids = [
+                value.strip()
+                for value in parse_qs(urlsplit(absolute).query).get("id", [])
+                if value.strip().isdigit()
+            ]
+        except ValueError:
+            return ""
+        return ids[0] if len(ids) == 1 else ""
+    return slug.casefold()
+
+
+def _resolve_by_listing_identity(target, candidates, page_id) -> dict | None:
+    """Resolve a page-mode fetch to the one page its cards all belong to.
+
+    The requested numeric ``page_id`` names the *listing* the fetch was made
+    for; the cards do not repeat it. When every card prints the same
+    ``page_url`` slug, that slug is the listing's identity: the page was
+    found, and the name comes from the cards (the first one carrying one).
+    A numeric URL slug counts exactly like a vanity one — it is the same
+    identity evidence — but then it *is* the Meta Page ID, so a numeric
+    identity that differs from the requested ``page_id`` is a miss.
+
+    Returns ``None`` when no card carries a ``page_url`` (nothing observed) or
+    when the cards name more than one distinct page. The second case is a
+    listing that should not happen in page mode, and guessing the dominant
+    slug would be a false PASS — the caller reports a truthful miss instead.
+    """
+    identities: dict[str, str] = {}
+    for candidate in candidates or []:
+        identity = _listing_identity(_candidate_field(candidate, "page_url"))
+        if not identity:
+            continue
+        identities.setdefault(identity, _candidate_field(candidate, "page_name"))
+    if len(identities) != 1:
+        return None
+    identity, name = next(iter(identities.items()))
+    # A numeric identity is the Meta Page ID itself, so it must equal the
+    # requested ID (`profile.php?id=...` and a `/123/` slug). A vanity slug
+    # cannot be compared — the fetch URL already pinned the listing.
+    if identity.isdigit() and identity != page_id:
+        return None
+    if not name:
+        return None
+    return {
+        "page_name": name,
+        "score": PAGE_ID_SCORE,
+        "page_id": page_id,
+        # Vanity identity survives on the result so the caller can keep the
+        # listing's ads (they carry the slug, never the numeric ID).
+        "page_handle": identity,
+        "page_found": True,
+    }
+
+
 def _resolve_by_page_id(target, candidates, page_id) -> dict:
-    """Exact numeric Page ID match, or a truthful mismatch (no name fallback)."""
+    """Exact numeric Page ID match, listing-slug fallback, or a truthful miss.
+
+    An exact numeric match wins outright. Failing that, page mode still has a
+    usable identity: the single ``page_url`` slug the rendered cards share
+    (see ``_resolve_by_listing_identity``). A listing with no page URLs, or
+    with cards from several pages, is ``name_not_matched`` with
+    ``page_found: False`` — never a name guess.
+    """
     for candidate in candidates or []:
         if _candidate_field(candidate, "page_id") != page_id:
             continue
@@ -989,6 +1086,9 @@ def _resolve_by_page_id(target, candidates, page_id) -> dict:
         if not name:
             continue
         return {"page_name": name, "score": PAGE_ID_SCORE, "page_id": page_id}
+    identity = _resolve_by_listing_identity(target, candidates, page_id)
+    if identity is not None:
+        return identity
     return {
         "error": "name_not_matched",
         "target": target,
@@ -1063,7 +1163,10 @@ def resolve_advertiser(
     (see the module docstring for precedence). Candidates may be bare page
     names or ad dicts; only dicts can carry identity. When ``page_id`` is
     supplied, a page without that ID never resolves by name: the result is
-    ``name_not_matched`` with ``"page_found": False``. A ``page_handle`` miss
+    ``name_not_matched`` with ``"page_found": False`` — except that page mode
+    falls back to the single vanity ``page_url`` slug its cards share, which
+    is the listing's identity when no card repeats the numeric ID (see the
+    module docstring). A ``page_handle`` miss
     does fall back to names, because a vanity handle is a hint, not the
     authoritative numeric identity.
     """
@@ -1187,9 +1290,13 @@ def filter_ads(ads, target, market=None, page_id=None, page_handle=None):
     over both claims (see the module docstring). When present, the slug veto
     is skipped — an exact numeric ID beats a contradictory slug — and only ads
     carrying that identity are kept. A non-matching ``page_id`` is a truthful
-    ``name_not_matched`` with ``"page_found": False`` and no name fallback; a
-    non-matching ``page_handle`` falls back to the name ladder, including the
-    slug veto, so the behaviour is identical to a handle-less call.
+    ``name_not_matched`` with ``"page_found": False`` and no name fallback,
+    unless the listing's cards all share one ``page_url`` slug: that
+    slug is the page-mode identity, so the resolution names it and every ad on
+    that slug — plus every ad with no usable identity — is kept. A
+    non-matching ``page_handle`` falls back to the name
+    ladder, including the slug veto, so the behaviour is identical to a
+    handle-less call.
     """
     ads = list(ads or [])
     wanted_id = str(page_id or "").strip()
@@ -1202,6 +1309,23 @@ def filter_ads(ads, target, market=None, page_id=None, page_handle=None):
             for ad in ads
             if _candidate_field(ad, "page_id") == wanted_id
         ]
+        if not kept:
+            # Page mode: rendered cards print the vanity ``page_url`` and no
+            # numeric ID, so the listing is identified by its single slug
+            # (``page_handle`` on the resolution). Keep the ads on that page.
+            # A card with no usable identity (no ``page_url``, or a URL that
+            # yields none — root/host-only) came from this same pinned listing,
+            # so it shares the identity by construction; dropping it would be
+            # silent ad loss. Its ``page_name`` may be ``""``; that is a
+            # truthful empty field, not a reason to discard the ad.
+            identity = str(resolution.get("page_handle") or "")
+            if identity:
+                kept = [
+                    ad
+                    for ad in ads
+                    if _listing_identity(_candidate_field(ad, "page_url"))
+                    in ("", identity)
+                ]
         return resolution, kept
 
     wanted_handle = str(page_handle or "").strip().lstrip("@").casefold()

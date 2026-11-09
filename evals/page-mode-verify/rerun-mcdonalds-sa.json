@@ -1,0 +1,93 @@
+{
+  "pair": "mcdonalds-sa",
+  "brand": "McDonald's",
+  "country": "SA",
+  "requested_page_id": "50245567013",
+  "seconds": 0.01,
+  "count": 1,
+  "fetched": 1,
+  "complete": true,
+  "total_returned": 1,
+  "resolved": {
+    "page_name": "McDonald's",
+    "score": 1.0,
+    "page_id": "50245567013",
+    "page_handle": "mcdonalds",
+    "page_found": true
+  },
+  "page_found": true,
+  "country_filtered": false,
+  "error": null,
+  "candidates": [],
+  "page_names": [
+    "McDonald's"
+  ],
+  "page_urls": [
+    "https://www.facebook.com/McDonalds/"
+  ],
+  "page_ids_seen": [],
+  "attempts": [
+    {
+      "phase": "page_search",
+      "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=SA&is_targeted_country=false&media_type=all&search_type=page&view_all_page_id=50245567013",
+      "seconds": 0.01,
+      "chars": 40836,
+      "transport_failed": false,
+      "dead_render": null
+    }
+  ],
+  "raw": {
+    "count": 1,
+    "complete": true,
+    "complete_scope": "rendered_window",
+    "total_returned": 1,
+    "char_limit": 120000,
+    "fetched": 1,
+    "country": "SA",
+    "page_id": "50245567013",
+    "resolved": {
+      "page_name": "McDonald's",
+      "score": 1.0,
+      "page_id": "50245567013",
+      "page_handle": "mcdonalds",
+      "page_found": true
+    },
+    "page_found": true,
+    "country_filtered": false,
+    "ads": [
+      {
+        "id": "915272287995291",
+        "page_name": "McDonald's",
+        "status": "active",
+        "first_seen": "Apr 13, 2026",
+        "last_seen": "",
+        "creative_text": "Get your hands on this great deal.",
+        "library_url": "https://www.facebook.com/ads/library/?id=915272287995291",
+        "page_url": "https://www.facebook.com/McDonalds/",
+        "page_id": "",
+        "link_url": "https://www.mcdonalds.com/us/en-us/download-app.html",
+        "link_title": "it’s as simple as McDonald's Download",
+        "cta_text": "Order Now",
+        "link_caption": "MCDONALDS.COM",
+        "images": [
+          "https://scontent-lax7-1.xx.fbcdn.net/v/t39.35426-6/615487750_732136346636783_1395649993937322739_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=105&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=9xqGTsGS880Q7kNvwHXJVSv&_nc_oc=Adq7LqJwkSGJ_CBV0kxH1pbcb_43EsFKbt4geV3eUmXUAc6CAJ6Li7nGLaWTNAByeKc&_nc_zt=14&_nc_ht=scontent-lax7-1.xx&_nc_gid=SOeJDIyJYbLpVKTz2YHRCw&_nc_ss=7b289&oh=00_AQSvBs2M5pXITpo23oZChr4fNV375bqk5nTRGtQ2b6XnDw&oe=6AF7D2D0"
+        ],
+        "has_video": false,
+        "same_creative_count": 0,
+        "multiple_versions": true,
+        "cta_type": "ORDER_NOW",
+        "display_format": "image",
+        "cards": [
+          {
+            "body": "Get your hands on this great deal.",
+            "cta": "Order Now",
+            "image": "https://scontent-lax7-1.xx.fbcdn.net/v/t39.35426-6/615487750_732136346636783_1395649993937322739_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=105&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=9xqGTsGS880Q7kNvwHXJVSv&_nc_oc=Adq7LqJwkSGJ_CBV0kxH1pbcb_43EsFKbt4geV3eUmXUAc6CAJ6Li7nGLaWTNAByeKc&_nc_zt=14&_nc_ht=scontent-lax7-1.xx&_nc_gid=SOeJDIyJYbLpVKTz2YHRCw&_nc_ss=7b289&oh=00_AQSvBs2M5pXITpo23oZChr4fNV375bqk5nTRGtQ2b6XnDw&oe=6AF7D2D0",
+            "link_url": "https://www.mcdonalds.com/us/en-us/download-app.html",
+            "title": "it’s as simple as McDonald's Download",
+            "video": null
+          }
+        ]
+      }
+    ]
+  }
+}

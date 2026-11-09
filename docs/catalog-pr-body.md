@@ -14,8 +14,8 @@ Hermes. It reads Meta's public Ad Library and exposes three tools:
 
 | Tool | Purpose |
 | --- | --- |
-| `ad_search(query, limit, country, advertiser, active_status, media_type)` | Show who is running ads for a brand, advertiser or keyword. |
-| `ad_watch(action, query, country, advertiser, active_status, media_type)` | Track a competitor or keyword over time (`add` / `remove` / `list`). |
+| `ad_search(query, limit, country, advertiser, active_status, media_type, page_id)` | Show who is running ads for a brand, advertiser or keyword — or one Page's own listing when a numeric `page_id` is given. |
+| `ad_watch(action, query, country, advertiser, active_status, media_type, page_id)` | Track a competitor or keyword over time (`add` / `remove` / `list`). |
 | `ad_check()` | Diff every watch against the last snapshot: new, ended, changed ads, plus an HTML report + JSON digest. |
 
 Typical use: find a competitor's live creative, then get a weekly "what launched,
@@ -151,6 +151,18 @@ suppressed rather than guessed, while status flips that did render are still rep
   requested market, then by an exact name. A tie that survives both returns
   `name_not_matched` with `ambiguous: true` and the tied candidates — never a
   guess, and never keyword noise.
+- **Page mode is fetch-exact, identity resolves through the listing.** `page_id`
+  (digits only) sends Meta's own Page-search URL (`search_type=page&view_all_page_id=<id>`,
+  no `q=`) and `country` stays a separate delivery axis — a country-specific Page
+  plus its market (`209644529058679` + `GB`) and the global Page plus a market
+  (`50245567013` + `US`) are different watches. Results add `page_found` and
+  `country_filtered`. The listing itself is the identity: when its cards all share
+  one `page_url` slug, that slug resolves the requested ID at `1.0` even though the
+  cards carry no numeric `page_id` (KFC-US: 27 ads, `page_found: true`;
+  `evals/page-mode-verify/rerun-*.json`). Honest residual: a listing whose cards
+  name more than one slug still reports `name_not_matched` rather than guessing,
+  and a card with no usable `page_url` is kept on the resolved listing identity
+  with a possibly empty `page_name` (no silent ad loss).
 - Result pages are clipped at `char_limit=120000`; a clipped or limit-sliced fetch
   is partial, and partial runs suppress endings for ids missing from the clipped
   page while still reporting status flips on ads that did render. An `advertiser`
@@ -207,3 +219,39 @@ records what the same three tools now return without adding a surface.
   passed** (`.venv/bin/python -m pytest tests -q`). `hermes plugins validate .`
   passes with the expected `invisible_unicode` caution from committed eval data and
   the informational isolation note, both quoted above.
+
+## Addendum 2026-11-09 (Page search mode)
+
+- **`page_id` on `ad_search` and `ad_watch add`.** A numeric Meta Page ID
+  (ASCII digits only; anything else returns `invalid page_id`) switches the fetch
+  from keyword search to Meta's Page search:
+  `search_type=page&view_all_page_id=<id>` with no `q=` parameter. `query` still
+  names the watch but is not sent to the library. Snapshots and reports key on
+  `page_id` as well, so a keyword watch and a page watch on one query never share
+  a baseline.
+- **Two axes, not one.** Page identity (`page_id`) and delivery market (`country`)
+  are independent: `209644529058679` + `GB` is McDonald's UK's own Page in the UK
+  library; `50245567013` + `US` is the global McDonald's Page read in the US
+  library. Page-mode rows add `page_found` and `country_filtered` so a miss states
+  which axis failed instead of a bare `name_not_matched`.
+- **Keyword mode is unchanged** and remains the lead-generator path: byte-identical
+  URL, same name ladder and vetoes, same snapshots. Use `advertiser` for a
+  name-scoped watch and `page_id` when the exact Page is known.
+- **Listing-identity resolution shipped.** Live verification on the six
+  failed-pair Page IDs (KFC US, both Burger King, four McDonald's) had shown the
+  page-mode fetch is exact — every render was the requested Page's listing — while
+  resolution reported `name_not_matched` because cards expose vanity `page_url`s
+  and the per-ad `page_id` is only derived from a numeric URL. The fix treats the
+  listing itself as the identity: a single `page_url` slug across the cards
+  resolves the requested ID at `1.0`, so KFC-US now returns 27 ads with
+  `page_found: true` (`evals/page-mode-verify/rerun-kfc-us.json`). Residual, kept
+  honest: a listing whose cards name more than one slug still misses rather than
+  guesses. The one honest country miss stays unchanged (`burger-king-eg`:
+  `page_found: false`, `country_filtered: true` — the EG listing is empty, not a
+  resolver failure). Evidence: `evals/failed-pairs-crosscheck.md` §4 (historical
+  `FAILED` record, not rewritten) and §5 (dated rerun pointer),
+  `evals/page-mode-verify/`.
+- **Suite: 575 passed** (`.venv/bin/python -m pytest tests -q`), superseding the
+  count in the 2026-11-06 addendum above. `hermes plugins validate .` still passes
+  with the same expected `invisible_unicode` caution (committed eval data) and the
+  informational isolation note.
