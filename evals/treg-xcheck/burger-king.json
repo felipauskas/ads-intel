@@ -1,0 +1,2012 @@
+{
+  "output": {
+    "ads": [
+      {
+        "ad_archive_id": "1110866884909512",
+        "ad_url": "https://www.facebook.com/ads/library/?id=1110866884909512",
+        "body": "Clock in for Game Day any day with the new Game Day Menu, now at BK.",
+        "cards": [
+          {
+            "body": "Clock in for Game Day any day with the new Game Day Menu, now at BK.",
+            "cta": "Order Now",
+            "image": "https://scontent-phl2-1.xx.fbcdn.net/v/t39.35426-6/833346535_1830492441456111_2864033030878066651_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=i4loZSvUBVAQ7kNvwGZqvhl&_nc_oc=AdpRx9zAIOwrGtN6Y6Ab7GrrOzochOP0lQRU861s-fiE2gBGaU8FIRB-PVc96PHUqY0&_nc_zt=14&_nc_ht=scontent-phl2-1.xx&_nc_gid=pyRhB_HzpUF6tCjl0PO9iw&_nc_ss=70289&oh=00_AQRNCSK77K__XqUSv_GjKhZ0hp00EtcE8RmyPlSZIDDWtQ&oe=6AF7C3AC",
+            "link_url": "https://burgerking.app.link/PgbwFBAcH6b",
+            "title": "It's Game Day",
+            "video": null
+          },
+          {
+            "body": "Clock in for Game Day any day with the new Game Day Menu, now at BK.",
+            "cta": "Order Now",
+            "image": "https://scontent-phl2-1.xx.fbcdn.net/v/t39.35426-6/841341137_2263688914473584_3794360197458751429_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=MrlSaKlJoUcQ7kNvwFDmsFT&_nc_oc=AdrHMToO5B9F1SEi8tC3qLL5zmmzjt64-qhcxB3zhtUPGuUKlXIsF-dH2CA-pAPHNys&_nc_zt=14&_nc_ht=scontent-phl2-1.xx&_nc_gid=pyRhB_HzpUF6tCjl0PO9iw&_nc_ss=70289&oh=00_AQTbBJ_1mtllPPPXk56J_tfLIz3mPJ7VOXt1Pfp4z-ahYw&oe=6AF7C7C5",
+            "link_url": "https://burgerking.app.link/PgbwFBAcH6b",
+            "title": "It's Game Day",
+            "video": null
+          },
+          {
+            "body": "Clock in for Game Day any day with the new Game Day Menu, now at BK.",
+            "cta": "Order Now",
+            "image": "https://scontent-phl2-1.xx.fbcdn.net/v/t39.35426-6/845067408_2539478036574383_15228685911919652_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=yYdv1sK8hJkQ7kNvwG1jbe8&_nc_oc=Adq0YUQbp1Zs7PJ1e5OfVqkdhV2JUrEypeUNqPG5b7STqk2hv8Q_h29bftE35zDtQ_Q&_nc_zt=14&_nc_ht=scontent-phl2-1.xx&_nc_gid=pyRhB_HzpUF6tCjl0PO9iw&_nc_ss=70289&oh=00_AQShrY8_4pZq88B5A3yofWVmGzGiWJPvwbnYxBpCrN_1rg&oe=6AF7C91B",
+            "link_url": "https://burgerking.app.link/PgbwFBAcH6b",
+            "title": "It's Game Day",
+            "video": null
+          }
+        ],
+        "cta": "Order now",
+        "cta_type": "ORDER_NOW",
+        "currency": null,
+        "display_format": "dco",
+        "end_date": null,
+        "images": [
+          "https://scontent-phl2-1.xx.fbcdn.net/v/t39.35426-6/833346535_1830492441456111_2864033030878066651_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=i4loZSvUBVAQ7kNvwGZqvhl&_nc_oc=AdpRx9zAIOwrGtN6Y6Ab7GrrOzochOP0lQRU861s-fiE2gBGaU8FIRB-PVc96PHUqY0&_nc_zt=14&_nc_ht=scontent-phl2-1.xx&_nc_gid=pyRhB_HzpUF6tCjl0PO9iw&_nc_ss=70289&oh=00_AQRNCSK77K__XqUSv_GjKhZ0hp00EtcE8RmyPlSZIDDWtQ&oe=6AF7C3AC",
+          "https://scontent-phl2-1.xx.fbcdn.net/v/t39.35426-6/841341137_2263688914473584_3794360197458751429_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=MrlSaKlJoUcQ7kNvwFDmsFT&_nc_oc=AdrHMToO5B9F1SEi8tC3qLL5zmmzjt64-qhcxB3zhtUPGuUKlXIsF-dH2CA-pAPHNys&_nc_zt=14&_nc_ht=scontent-phl2-1.xx&_nc_gid=pyRhB_HzpUF6tCjl0PO9iw&_nc_ss=70289&oh=00_AQTbBJ_1mtllPPPXk56J_tfLIz3mPJ7VOXt1Pfp4z-ahYw&oe=6AF7C7C5",
+          "https://scontent-phl2-1.xx.fbcdn.net/v/t39.35426-6/845067408_2539478036574383_15228685911919652_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=yYdv1sK8hJkQ7kNvwG1jbe8&_nc_oc=Adq0YUQbp1Zs7PJ1e5OfVqkdhV2JUrEypeUNqPG5b7STqk2hv8Q_h29bftE35zDtQ_Q&_nc_zt=14&_nc_ht=scontent-phl2-1.xx&_nc_gid=pyRhB_HzpUF6tCjl0PO9iw&_nc_ss=70289&oh=00_AQShrY8_4pZq88B5A3yofWVmGzGiWJPvwbnYxBpCrN_1rg&oe=6AF7C91B"
+        ],
+        "impressions": null,
+        "is_active": true,
+        "link_caption": "bk.com",
+        "link_url": "https://burgerking.app.link/PgbwFBAcH6b",
+        "page_id": "134615383218473",
+        "page_likes": 8358855,
+        "page_name": "Burger King",
+        "page_url": "https://www.facebook.com/burgerking/",
+        "paid_for_by": null,
+        "platforms": [
+          "facebook",
+          "instagram"
+        ],
+        "same_creative_ads": 1,
+        "spend": null,
+        "start_date": "2026-10-19T07:00:00Z",
+        "title": "It's Game Day",
+        "videos": []
+      },
+      {
+        "ad_archive_id": "29400922729513555",
+        "ad_url": "https://www.facebook.com/ads/library/?id=29400922729513555",
+        "body": "Clock in for Game Day any day with the new Game Day Menu, now at BK.",
+        "cards": [],
+        "cta": "Order now",
+        "cta_type": "ORDER_NOW",
+        "currency": null,
+        "display_format": "image",
+        "end_date": null,
+        "images": [
+          "https://scontent-phl2-1.xx.fbcdn.net/v/t39.35426-6/859280828_2543673709457109_6977863580830473417_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=bkI4JhtVVDoQ7kNvwFuft1W&_nc_oc=AdpTR4LPxGSDT7ZevLkl7EMXAJAEjx4w4d3CqYlc0CZhafLf1xIQxtXV08X_ncrPLF4&_nc_zt=14&_nc_ht=scontent-phl2-1.xx&_nc_gid=pyRhB_HzpUF6tCjl0PO9iw&_nc_ss=70289&oh=00_AQTO7E6EaFvWe7bacElYFWsmuucdZbIqpWXdZ_mZtHCvpg&oe=6AF7C60C"
+        ],
+        "impressions": null,
+        "is_active": true,
+        "link_caption": "bk.com",
+        "link_url": "https://burgerking.app.link/PgbwFBAcH6b",
+        "page_id": "134615383218473",
+        "page_likes": 8358855,
+        "page_name": "Burger King",
+        "page_url": "https://www.facebook.com/burgerking/",
+        "paid_for_by": null,
+        "platforms": [
+          "facebook",
+          "instagram"
+        ],
+        "same_creative_ads": 5,
+        "spend": null,
+        "start_date": "2026-10-19T07:00:00Z",
+        "title": "It's Game Day",
+        "videos": []
+      },
+      {
+        "ad_archive_id": "2089270835042896",
+        "ad_url": "https://www.facebook.com/ads/library/?id=2089270835042896",
+        "body": "Bring Game Day energy to any day with the new Game Day Menu, now at BK.",
+        "cards": [
+          {
+            "body": "Bring Game Day energy to any day with the new Game Day Menu, now at BK.",
+            "cta": "Order Now",
+            "image": "https://scontent-phl2-1.xx.fbcdn.net/v/t39.35426-6/840070686_956314727547284_3397858416975617858_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=v579d33id7oQ7kNvwG6TKUE&_nc_oc=AdqYyj8so_9HJiIkTB80_aB9oNtP5UVBw6ie0CgCI5wem4MIHg1WygsSIELVoxe37VM&_nc_zt=14&_nc_ht=scontent-phl2-1.xx&_nc_gid=pyRhB_HzpUF6tCjl0PO9iw&_nc_ss=70289&oh=00_AQQwyQ9_KGW_36o-xQXOmQc45ygemrD09eRcc5Umd4capQ&oe=6AF7DBAA",
+            "link_url": "https://burgerking.app.link/STnfg8jcH6b",
+            "title": "That Game Day Feeling",
+            "video": null
+          },
+          {
+            "body": "Bring Game Day energy to any day with the new Game Day Menu, now at BK.",
+            "cta": "Order Now",
+            "image": "https://scontent-phl2-1.xx.fbcdn.net/v/t39.35426-6/842995259_1053355337811900_2415313264152569872_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=XdyG_ld4taIQ7kNvwFtQYbM&_nc_oc=Ado7tpajc4qJFXPg68w2kEAnIO2Yfh8LKpb9DigCNfi9nPpZ5Yt22bvhQNfWfUEHFTc&_nc_zt=14&_nc_ht=scontent-phl2-1.xx&_nc_gid=pyRhB_HzpUF6tCjl0PO9iw&_nc_ss=70289&oh=00_AQTc6Qo_88-rcwr3dDtha2RsjhEZ9TyNjuNx_O5RhApTsg&oe=6AF7D1E0",
+            "link_url": "https://burgerking.app.link/STnfg8jcH6b",
+            "title": "That Game Day Feeling",
+            "video": null
+          },
+          {
+            "body": "Bring Game Day energy to any day with the new Game Day Menu, now at BK.",
+            "cta": "Order Now",
+            "image": "https://scontent-phl2-1.xx.fbcdn.net/v/t39.35426-6/842786828_1748146546295209_5419165425870509753_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=PV3ydZcUCDgQ7kNvwETwdCe&_nc_oc=AdoZ7AxlsI4Z8DDu3rgyHEpeZ4lVHWaO70S57-O4DHXgowHrlTmucPMomYEzU0M4OK4&_nc_zt=14&_nc_ht=scontent-phl2-1.xx&_nc_gid=pyRhB_HzpUF6tCjl0PO9iw&_nc_ss=70289&oh=00_AQS5sGgwYSTPXneyDXCFwPTKh36feZy2J2XFqih9BseaJg&oe=6AF7B928",
+            "link_url": "https://burgerking.app.link/STnfg8jcH6b",
+            "title": "That Game Day Feeling",
+            "video": null
+          }
+        ],
+        "cta": "Order now",
+        "cta_type": "ORDER_NOW",
+        "currency": null,
+        "display_format": "dco",
+        "end_date": null,
+        "images": [
+          "https://scontent-phl2-1.xx.fbcdn.net/v/t39.35426-6/840070686_956314727547284_3397858416975617858_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=v579d33id7oQ7kNvwG6TKUE&_nc_oc=AdqYyj8so_9HJiIkTB80_aB9oNtP5UVBw6ie0CgCI5wem4MIHg1WygsSIELVoxe37VM&_nc_zt=14&_nc_ht=scontent-phl2-1.xx&_nc_gid=pyRhB_HzpUF6tCjl0PO9iw&_nc_ss=70289&oh=00_AQQwyQ9_KGW_36o-xQXOmQc45ygemrD09eRcc5Umd4capQ&oe=6AF7DBAA",
+          "https://scontent-phl2-1.xx.fbcdn.net/v/t39.35426-6/842995259_1053355337811900_2415313264152569872_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=XdyG_ld4taIQ7kNvwFtQYbM&_nc_oc=Ado7tpajc4qJFXPg68w2kEAnIO2Yfh8LKpb9DigCNfi9nPpZ5Yt22bvhQNfWfUEHFTc&_nc_zt=14&_nc_ht=scontent-phl2-1.xx&_nc_gid=pyRhB_HzpUF6tCjl0PO9iw&_nc_ss=70289&oh=00_AQTc6Qo_88-rcwr3dDtha2RsjhEZ9TyNjuNx_O5RhApTsg&oe=6AF7D1E0",
+          "https://scontent-phl2-1.xx.fbcdn.net/v/t39.35426-6/842786828_1748146546295209_5419165425870509753_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=PV3ydZcUCDgQ7kNvwETwdCe&_nc_oc=AdoZ7AxlsI4Z8DDu3rgyHEpeZ4lVHWaO70S57-O4DHXgowHrlTmucPMomYEzU0M4OK4&_nc_zt=14&_nc_ht=scontent-phl2-1.xx&_nc_gid=pyRhB_HzpUF6tCjl0PO9iw&_nc_ss=70289&oh=00_AQS5sGgwYSTPXneyDXCFwPTKh36feZy2J2XFqih9BseaJg&oe=6AF7B928"
+        ],
+        "impressions": null,
+        "is_active": true,
+        "link_caption": "bk.com",
+        "link_url": "https://burgerking.app.link/STnfg8jcH6b",
+        "page_id": "134615383218473",
+        "page_likes": 8358855,
+        "page_name": "Burger King",
+        "page_url": "https://www.facebook.com/burgerking/",
+        "paid_for_by": null,
+        "platforms": [
+          "facebook",
+          "instagram"
+        ],
+        "same_creative_ads": 2,
+        "spend": null,
+        "start_date": "2026-10-23T07:00:00Z",
+        "title": "That Game Day Feeling",
+        "videos": []
+      },
+      {
+        "ad_archive_id": "1657007032438099",
+        "ad_url": "https://www.facebook.com/ads/library/?id=1657007032438099",
+        "body": "Bring Game Day energy to any day with the new Game Day Menu, now at BK.",
+        "cards": [
+          {
+            "body": "Bring Game Day energy to any day with the new Game Day Menu, now at BK.",
+            "cta": "Order Now",
+            "image": "https://scontent-phl2-1.xx.fbcdn.net/v/t39.35426-6/841057096_1808555243671824_3202693254145925396_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=D8yA1auDDHUQ7kNvwFd5eJg&_nc_oc=AdogbGJAuhh3zsl4Vv_kmQzvx6861_Mnd-zHEJovf2O7RMxNhTWqaiVxIeh6TUeDBXo&_nc_zt=14&_nc_ht=scontent-phl2-1.xx&_nc_gid=pyRhB_HzpUF6tCjl0PO9iw&_nc_ss=70289&oh=00_AQQo97miwZ01prvo5vfkcnqUOve-p4ibFzQ8ttl6k6-3kw&oe=6AF7CBEB",
+            "link_url": "https://burgerking.app.link/STnfg8jcH6b",
+            "title": "That Game Day Feeling",
+            "video": null
+          },
+          {
+            "body": "Bring Game Day energy to any day with the new Game Day Menu, now at BK.",
+            "cta": "Order Now",
+            "image": "https://scontent-phl2-1.xx.fbcdn.net/v/t39.35426-6/843190879_1621410922788028_1266837038295081097_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=nQs4HngUn6MQ7kNvwH7SVuz&_nc_oc=AdpC5GWKW-UZxJcgRUUQLnWEU0jp7p5jdswUsX_Lrwa_ecXyhPY8hhiC6epsboEOK3w&_nc_zt=14&_nc_ht=scontent-phl2-1.xx&_nc_gid=pyRhB_HzpUF6tCjl0PO9iw&_nc_ss=70289&oh=00_AQSqP8M5XJPaEEM_Gynx6WKjeWQP_93XHpsb2J3PWAOEOg&oe=6AF7E1FD",
+            "link_url": "https://burgerking.app.link/STnfg8jcH6b",
+            "title": "That Game Day Feeling",
+            "video": null
+          },
+          {
+            "body": "Bring Game Day energy to any day with the new Game Day Menu, now at BK.",
+            "cta": "Order Now",
+            "image": "https://scontent-phl2-1.xx.fbcdn.net/v/t39.35426-6/841773998_976528368123293_5428686682889322444_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=0bgsSu8VXRAQ7kNvwG2eeoG&_nc_oc=Adpv-U9ba0CRFqeBYOLXitiT7VxTeEtQO8kS55mgIIJDQgkEGbCAoysmdgrGUAKKTAk&_nc_zt=14&_nc_ht=scontent-phl2-1.xx&_nc_gid=pyRhB_HzpUF6tCjl0PO9iw&_nc_ss=70289&oh=00_AQQimAdnfUvLkmmrOGmENZJoGauhrGfdiaZQMEeCA083vw&oe=6AF7CF7C",
+            "link_url": "https://burgerking.app.link/STnfg8jcH6b",
+            "title": "That Game Day Feeling",
+            "video": null
+          }
+        ],
+        "cta": "Order now",
+        "cta_type": "ORDER_NOW",
+        "currency": null,
+        "display_format": "dco",
+        "end_date": null,
+        "images": [
+          "https://scontent-phl2-1.xx.fbcdn.net/v/t39.35426-6/841057096_1808555243671824_3202693254145925396_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=D8yA1auDDHUQ7kNvwFd5eJg&_nc_oc=AdogbGJAuhh3zsl4Vv_kmQzvx6861_Mnd-zHEJovf2O7RMxNhTWqaiVxIeh6TUeDBXo&_nc_zt=14&_nc_ht=scontent-phl2-1.xx&_nc_gid=pyRhB_HzpUF6tCjl0PO9iw&_nc_ss=70289&oh=00_AQQo97miwZ01prvo5vfkcnqUOve-p4ibFzQ8ttl6k6-3kw&oe=6AF7CBEB",
+          "https://scontent-phl2-1.xx.fbcdn.net/v/t39.35426-6/843190879_1621410922788028_1266837038295081097_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=nQs4HngUn6MQ7kNvwH7SVuz&_nc_oc=AdpC5GWKW-UZxJcgRUUQLnWEU0jp7p5jdswUsX_Lrwa_ecXyhPY8hhiC6epsboEOK3w&_nc_zt=14&_nc_ht=scontent-phl2-1.xx&_nc_gid=pyRhB_HzpUF6tCjl0PO9iw&_nc_ss=70289&oh=00_AQSqP8M5XJPaEEM_Gynx6WKjeWQP_93XHpsb2J3PWAOEOg&oe=6AF7E1FD",
+          "https://scontent-phl2-1.xx.fbcdn.net/v/t39.35426-6/841773998_976528368123293_5428686682889322444_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=0bgsSu8VXRAQ7kNvwG2eeoG&_nc_oc=Adpv-U9ba0CRFqeBYOLXitiT7VxTeEtQO8kS55mgIIJDQgkEGbCAoysmdgrGUAKKTAk&_nc_zt=14&_nc_ht=scontent-phl2-1.xx&_nc_gid=pyRhB_HzpUF6tCjl0PO9iw&_nc_ss=70289&oh=00_AQQimAdnfUvLkmmrOGmENZJoGauhrGfdiaZQMEeCA083vw&oe=6AF7CF7C"
+        ],
+        "impressions": null,
+        "is_active": true,
+        "link_caption": "bk.com",
+        "link_url": "https://burgerking.app.link/STnfg8jcH6b",
+        "page_id": "134615383218473",
+        "page_likes": 8358855,
+        "page_name": "Burger King",
+        "page_url": "https://www.facebook.com/burgerking/",
+        "paid_for_by": null,
+        "platforms": [
+          "facebook",
+          "instagram"
+        ],
+        "same_creative_ads": null,
+        "spend": null,
+        "start_date": "2026-10-23T07:00:00Z",
+        "title": "That Game Day Feeling",
+        "videos": []
+      },
+      {
+        "ad_archive_id": "4038872423083469",
+        "ad_url": "https://www.facebook.com/ads/library/?id=4038872423083469",
+        "body": "Bring Game Day energy to any day with the new Game Day Menu, now at BK.",
+        "cards": [],
+        "cta": "Order now",
+        "cta_type": "ORDER_NOW",
+        "currency": null,
+        "display_format": "image",
+        "end_date": null,
+        "images": [
+          "https://scontent-phl2-1.xx.fbcdn.net/v/t39.35426-6/868223663_1820912385611918_4282961241742085943_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=4KcXRn8mjFAQ7kNvwEmiZ7q&_nc_oc=Adoqw8i3QAIW_BOttOxFN3AhzbFTbSk9h6q2EIaGW1M-BCN5dw5QyWpgdTcm2SC8JTo&_nc_zt=14&_nc_ht=scontent-phl2-1.xx&_nc_gid=pyRhB_HzpUF6tCjl0PO9iw&_nc_ss=70289&oh=00_AQQ3ghM_AKcY0TNsj0QE_YU2WPLYXliu3pij4pRnj2QZLg&oe=6AF7B849"
+        ],
+        "impressions": null,
+        "is_active": true,
+        "link_caption": "bk.com",
+        "link_url": "https://burgerking.app.link/STnfg8jcH6b",
+        "page_id": "134615383218473",
+        "page_likes": 8358855,
+        "page_name": "Burger King",
+        "page_url": "https://www.facebook.com/burgerking/",
+        "paid_for_by": null,
+        "platforms": [
+          "facebook",
+          "instagram"
+        ],
+        "same_creative_ads": 3,
+        "spend": null,
+        "start_date": "2026-10-26T07:00:00Z",
+        "title": "That Game Day Feeling",
+        "videos": []
+      },
+      {
+        "ad_archive_id": "29068087812824313",
+        "ad_url": "https://www.facebook.com/ads/library/?id=29068087812824313",
+        "body": "Bring Game Day energy to any day with the new Game Day Menu, now at BK.",
+        "cards": [],
+        "cta": "Order now",
+        "cta_type": "ORDER_NOW",
+        "currency": null,
+        "display_format": "image",
+        "end_date": null,
+        "images": [
+          "https://scontent-phl2-1.xx.fbcdn.net/v/t39.35426-6/862402435_2182451956006137_7877513400535766249_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=aaLC05sxyJsQ7kNvwHMDsIK&_nc_oc=Adq3R_9ncALxX3JC22jlt5fiHOdDYDRt6f1z3rmldbYeeFIhaf4w5bjR0rXrkJv2O6U&_nc_zt=14&_nc_ht=scontent-phl2-1.xx&_nc_gid=pyRhB_HzpUF6tCjl0PO9iw&_nc_ss=70289&oh=00_AQTFuKjRRRrjIRnUpQQObX8ky8pqKdNmodt91oKY8nQsWg&oe=6AF7B596"
+        ],
+        "impressions": null,
+        "is_active": true,
+        "link_caption": "bk.com",
+        "link_url": "https://burgerking.app.link/STnfg8jcH6b",
+        "page_id": "134615383218473",
+        "page_likes": 8358855,
+        "page_name": "Burger King",
+        "page_url": "https://www.facebook.com/burgerking/",
+        "paid_for_by": null,
+        "platforms": [
+          "facebook",
+          "instagram"
+        ],
+        "same_creative_ads": null,
+        "spend": null,
+        "start_date": "2026-10-26T07:00:00Z",
+        "title": "That Game Day Feeling",
+        "videos": []
+      },
+      {
+        "ad_archive_id": "1602151478591769",
+        "ad_url": "https://www.facebook.com/ads/library/?id=1602151478591769",
+        "body": "Bring Game Day energy to any day with the new Game Day Menu, now at BK.",
+        "cards": [],
+        "cta": "Order now",
+        "cta_type": "ORDER_NOW",
+        "currency": null,
+        "display_format": "image",
+        "end_date": null,
+        "images": [
+          "https://scontent-phl2-1.xx.fbcdn.net/v/t39.35426-6/863954549_1840929816913678_4428834926849126333_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=gIm4-IFSiqQQ7kNvwF-luou&_nc_oc=AdrzaA1oM6ro7wa58dIBkvGVBjFnJeXmwagp5MGMZNzAFBGo8rWtYwks7dlqp23J_E4&_nc_zt=14&_nc_ht=scontent-phl2-1.xx&_nc_gid=pyRhB_HzpUF6tCjl0PO9iw&_nc_ss=70289&oh=00_AQSCRT8k8P2xyARGoMnhbAlIKdnEHndjPFn3xQafjYd--w&oe=6AF7D822"
+        ],
+        "impressions": null,
+        "is_active": true,
+        "link_caption": "bk.com",
+        "link_url": "https://burgerking.app.link/STnfg8jcH6b",
+        "page_id": "134615383218473",
+        "page_likes": 8358855,
+        "page_name": "Burger King",
+        "page_url": "https://www.facebook.com/burgerking/",
+        "paid_for_by": null,
+        "platforms": [
+          "facebook",
+          "instagram"
+        ],
+        "same_creative_ads": null,
+        "spend": null,
+        "start_date": "2026-10-24T07:00:00Z",
+        "title": "That Game Day Feeling",
+        "videos": []
+      },
+      {
+        "ad_archive_id": "1105684848504230",
+        "ad_url": "https://www.facebook.com/ads/library/?id=1105684848504230",
+        "body": "Upgrade any seat to the best seat in the house. Get the Game Day Menu, now at BK.",
+        "cards": [
+          {
+            "body": "Upgrade any seat to the best seat in the house. Get the Game Day Menu, now at BK.",
+            "cta": "Order Now",
+            "image": null,
+            "link_url": "https://burgerking.app.link/yWxrBu1fH6b",
+            "title": "Any Seat is Game Ready",
+            "video": "https://video-phl2-1.xx.fbcdn.net/o1/v/t2/f2/m366/AQNyKXEAC6Z82MIDleNv12gWcGLGdCJnJthpYRK85DIV_Ee5hjJAPH9vaar6aSRIYC11GUGRP0pXSBZ5n5K4jOi9ULHfuz7hMG5DAvVYqtqUXA.mp4?_nc_cat=101&_nc_sid=b66105&_nc_ht=video-phl2-1.xx.fbcdn.net&_nc_ohc=hKtSamL2Ln0Q7kNvwFmwFAV&efg=eyJ2ZW5jb2RlX3RhZyI6Inhwdl9wcm9ncmVzc2l2ZS5WSV9VU0VDQVNFX1BST0RVQ1RfVFlQRS4uQzMuNzIwLmRhc2hfaDI2NC1iYXNpYy1nZW4yXzcyMHAiLCJ4cHZfYXNzZXRfaWQiOjEwMzA4NzE2NTk5NjMzMDgsImFzc2V0X2FnZV9kYXlzIjozMCwidmlfdXNlY2FzZV9pZCI6MTA3OTksImR1cmF0aW9uX3MiOjcsInVybGdlbl9zb3VyY2UiOiJ3d3cifQ%3D%3D&ccb=17-1&vs=81c5a0c5fdcd39f6&_nc_vs=HBksFQIYRWZiX2VwaGVtZXJhbC85MTJFQUYzNkYzQzg0RTMzODg2QThERkNERTY5QkNDRl9tdF8xX3ZpZGVvX2Rhc2hpbml0Lm1wNBUAAsgBEgAVAhhAZmJfcGVybWFuZW50L0Q3OUM2NkJFQjUxMjQ2M0Q4MjE1N0Q5NDYwQkVFQzQyX2F1ZGlvX2Rhc2hpbml0Lm1wNBUCAsgBEgAoABgAGwKIB3VzZV9vaWwBMRJwcm9ncmVzc2l2ZV9yZWNpcGUBMRUAACbYjs-x0OTUAxUCKAJDMywXQByxJul41P4YGWRhc2hfaDI2NC1iYXNpYy1nZW4yXzcyMHARAHUAZd6oAQA&_nc_gid=pyRhB_HzpUF6tCjl0PO9iw&_nc_ss=70289&_nc_zt=28&oh=00_AQRffgcjZ90HjY7D2Ybwkjidk8vrupwGbK3u2OooOW0NaA&oe=6AF7B0DF"
+          },
+          {
+            "body": "Upgrade any seat to the best seat in the house. Get the Game Day Menu, now at BK.",
+            "cta": "Order Now",
+            "image": null,
+            "link_url": "https://burgerking.app.link/yWxrBu1fH6b",
+            "title": "Any Seat is Game Ready",
+            "video": "https://video-phl2-1.xx.fbcdn.net/o1/v/t2/f2/m366/AQPATFE2kKbLCWVrcgGJ1M485J7CrRVOq8jlw54MOHcPNrNRPiU3qjimXcPJHeY8V_8qPkje5PTv5RGC4H8Gfxzb5ZbRsQwMsyEvz6Bp5ZWFCQ.mp4?_nc_cat=103&_nc_sid=b66105&_nc_ht=video-phl2-1.xx.fbcdn.net&_nc_ohc=fqj3JJyhiKoQ7kNvwGWTAzG&efg=eyJ2ZW5jb2RlX3RhZyI6Inhwdl9wcm9ncmVzc2l2ZS5WSV9VU0VDQVNFX1BST0RVQ1RfVFlQRS4uQzMuNzIwLmRhc2hfaDI2NC1iYXNpYy1nZW4yXzcyMHAiLCJ4cHZfYXNzZXRfaWQiOjE2MzExNDQyNzUzMTI3OTEsImFzc2V0X2FnZV9kYXlzIjozMCwidmlfdXNlY2FzZV9pZCI6MTA3OTksImR1cmF0aW9uX3MiOjcsInVybGdlbl9zb3VyY2UiOiJ3d3cifQ%3D%3D&ccb=17-1&vs=8830992814c295a&_nc_vs=HBksFQIYRWZiX2VwaGVtZXJhbC9EMUQ3ODI4Q0QxNzE0OEJDQURFQTYyRTYwQkY2NkMyN19tdF8xX3ZpZGVvX2Rhc2hpbml0Lm1wNBUAAsgBEgAVAhhAZmJfcGVybWFuZW50LzNGQzE2NTk3RUYyOTQ4MEZBNTNFN0RBMTQ3REE1RkEyX2F1ZGlvX2Rhc2hpbml0Lm1wNBUCAsgBEgAoABgAGwKIB3VzZV9vaWwBMRJwcm9ncmVzc2l2ZV9yZWNpcGUBMRUAACaugtzxi-HlBRUCKAJDMywXQByxJul41P4YGWRhc2hfaDI2NC1iYXNpYy1nZW4yXzcyMHARAHUAZd6oAQA&_nc_gid=pyRhB_HzpUF6tCjl0PO9iw&_nc_ss=70289&_nc_zt=28&oh=00_AQR6oLpl96d1OvrgP2pU_1VsEFtuwH51jWexRvog-uH2kw&oe=6AF7B565"
+          },
+          {
+            "body": "Upgrade any seat to the best seat in the house. Get the Game Day Menu, now at BK.",
+            "cta": "Order Now",
+            "image": null,
+            "link_url": "https://burgerking.app.link/yWxrBu1fH6b",
+            "title": "Any Seat is Game Ready",
+            "video": "https://video-phl2-1.xx.fbcdn.net/o1/v/t2/f2/m366/AQNyKXEAC6Z82MIDleNv12gWcGLGdCJnJthpYRK85DIV_Ee5hjJAPH9vaar6aSRIYC11GUGRP0pXSBZ5n5K4jOi9ULHfuz7hMG5DAvVYqtqUXA.mp4?_nc_cat=101&_nc_sid=b66105&_nc_ht=video-phl2-1.xx.fbcdn.net&_nc_ohc=hKtSamL2Ln0Q7kNvwFmwFAV&efg=eyJ2ZW5jb2RlX3RhZyI6Inhwdl9wcm9ncmVzc2l2ZS5WSV9VU0VDQVNFX1BST0RVQ1RfVFlQRS4uQzMuNzIwLmRhc2hfaDI2NC1iYXNpYy1nZW4yXzcyMHAiLCJ4cHZfYXNzZXRfaWQiOjEwMzA4NzE2NTk5NjMzMDgsImFzc2V0X2FnZV9kYXlzIjozMCwidmlfdXNlY2FzZV9pZCI6MTA3OTksImR1cmF0aW9uX3MiOjcsInVybGdlbl9zb3VyY2UiOiJ3d3cifQ%3D%3D&ccb=17-1&vs=81c5a0c5fdcd39f6&_nc_vs=HBksFQIYRWZiX2VwaGVtZXJhbC85MTJFQUYzNkYzQzg0RTMzODg2QThERkNERTY5QkNDRl9tdF8xX3ZpZGVvX2Rhc2hpbml0Lm1wNBUAAsgBEgAVAhhAZmJfcGVybWFuZW50L0Q3OUM2NkJFQjUxMjQ2M0Q4MjE1N0Q5NDYwQkVFQzQyX2F1ZGlvX2Rhc2hpbml0Lm1wNBUCAsgBEgAoABgAGwKIB3VzZV9vaWwBMRJwcm9ncmVzc2l2ZV9yZWNpcGUBMRUAACbYjs-x0OTUAxUCKAJDMywXQByxJul41P4YGWRhc2hfaDI2NC1iYXNpYy1nZW4yXzcyMHARAHUAZd6oAQA&_nc_gid=pyRhB_HzpUF6tCjl0PO9iw&_nc_ss=70289&_nc_zt=28&oh=00_AQRffgcjZ90HjY7D2Ybwkjidk8vrupwGbK3u2OooOW0NaA&oe=6AF7B0DF"
+          }
+        ],
+        "cta": "Order now",
+        "cta_type": "ORDER_NOW",
+        "currency": null,
+        "display_format": "dco",
+        "end_date": null,
+        "images": [],
+        "impressions": null,
+        "is_active": true,
+        "link_caption": "bk.com",
+        "link_url": "https://burgerking.app.link/yWxrBu1fH6b",
+        "page_id": "134615383218473",
+        "page_likes": 8358855,
+        "page_name": "Burger King",
+        "page_url": "https://www.facebook.com/burgerking/",
+        "paid_for_by": null,
+        "platforms": [
+          "facebook",
+          "instagram"
+        ],
+        "same_creative_ads": 1,
+        "spend": null,
+        "start_date": "2026-10-19T07:00:00Z",
+        "title": "Any Seat is Game Ready",
+        "videos": [
+          "https://video-phl2-1.xx.fbcdn.net/o1/v/t2/f2/m366/AQNyKXEAC6Z82MIDleNv12gWcGLGdCJnJthpYRK85DIV_Ee5hjJAPH9vaar6aSRIYC11GUGRP0pXSBZ5n5K4jOi9ULHfuz7hMG5DAvVYqtqUXA.mp4?_nc_cat=101&_nc_sid=b66105&_nc_ht=video-phl2-1.xx.fbcdn.net&_nc_ohc=hKtSamL2Ln0Q7kNvwFmwFAV&efg=eyJ2ZW5jb2RlX3RhZyI6Inhwdl9wcm9ncmVzc2l2ZS5WSV9VU0VDQVNFX1BST0RVQ1RfVFlQRS4uQzMuNzIwLmRhc2hfaDI2NC1iYXNpYy1nZW4yXzcyMHAiLCJ4cHZfYXNzZXRfaWQiOjEwMzA4NzE2NTk5NjMzMDgsImFzc2V0X2FnZV9kYXlzIjozMCwidmlfdXNlY2FzZV9pZCI6MTA3OTksImR1cmF0aW9uX3MiOjcsInVybGdlbl9zb3VyY2UiOiJ3d3cifQ%3D%3D&ccb=17-1&vs=81c5a0c5fdcd39f6&_nc_vs=HBksFQIYRWZiX2VwaGVtZXJhbC85MTJFQUYzNkYzQzg0RTMzODg2QThERkNERTY5QkNDRl9tdF8xX3ZpZGVvX2Rhc2hpbml0Lm1wNBUAAsgBEgAVAhhAZmJfcGVybWFuZW50L0Q3OUM2NkJFQjUxMjQ2M0Q4MjE1N0Q5NDYwQkVFQzQyX2F1ZGlvX2Rhc2hpbml0Lm1wNBUCAsgBEgAoABgAGwKIB3VzZV9vaWwBMRJwcm9ncmVzc2l2ZV9yZWNpcGUBMRUAACbYjs-x0OTUAxUCKAJDMywXQByxJul41P4YGWRhc2hfaDI2NC1iYXNpYy1nZW4yXzcyMHARAHUAZd6oAQA&_nc_gid=pyRhB_HzpUF6tCjl0PO9iw&_nc_ss=70289&_nc_zt=28&oh=00_AQRffgcjZ90HjY7D2Ybwkjidk8vrupwGbK3u2OooOW0NaA&oe=6AF7B0DF",
+          "https://video-phl2-1.xx.fbcdn.net/o1/v/t2/f2/m366/AQPATFE2kKbLCWVrcgGJ1M485J7CrRVOq8jlw54MOHcPNrNRPiU3qjimXcPJHeY8V_8qPkje5PTv5RGC4H8Gfxzb5ZbRsQwMsyEvz6Bp5ZWFCQ.mp4?_nc_cat=103&_nc_sid=b66105&_nc_ht=video-phl2-1.xx.fbcdn.net&_nc_ohc=fqj3JJyhiKoQ7kNvwGWTAzG&efg=eyJ2ZW5jb2RlX3RhZyI6Inhwdl9wcm9ncmVzc2l2ZS5WSV9VU0VDQVNFX1BST0RVQ1RfVFlQRS4uQzMuNzIwLmRhc2hfaDI2NC1iYXNpYy1nZW4yXzcyMHAiLCJ4cHZfYXNzZXRfaWQiOjE2MzExNDQyNzUzMTI3OTEsImFzc2V0X2FnZV9kYXlzIjozMCwidmlfdXNlY2FzZV9pZCI6MTA3OTksImR1cmF0aW9uX3MiOjcsInVybGdlbl9zb3VyY2UiOiJ3d3cifQ%3D%3D&ccb=17-1&vs=8830992814c295a&_nc_vs=HBksFQIYRWZiX2VwaGVtZXJhbC9EMUQ3ODI4Q0QxNzE0OEJDQURFQTYyRTYwQkY2NkMyN19tdF8xX3ZpZGVvX2Rhc2hpbml0Lm1wNBUAAsgBEgAVAhhAZmJfcGVybWFuZW50LzNGQzE2NTk3RUYyOTQ4MEZBNTNFN0RBMTQ3REE1RkEyX2F1ZGlvX2Rhc2hpbml0Lm1wNBUCAsgBEgAoABgAGwKIB3VzZV9vaWwBMRJwcm9ncmVzc2l2ZV9yZWNpcGUBMRUAACaugtzxi-HlBRUCKAJDMywXQByxJul41P4YGWRhc2hfaDI2NC1iYXNpYy1nZW4yXzcyMHARAHUAZd6oAQA&_nc_gid=pyRhB_HzpUF6tCjl0PO9iw&_nc_ss=70289&_nc_zt=28&oh=00_AQR6oLpl96d1OvrgP2pU_1VsEFtuwH51jWexRvog-uH2kw&oe=6AF7B565"
+        ]
+      },
+      {
+        "ad_archive_id": "3944374832525904",
+        "ad_url": "https://www.facebook.com/ads/library/?id=3944374832525904",
+        "body": "Put on your game face and dig into the new Game Day Burger. Now at BK.",
+        "cards": [
+          {
+            "body": "Put on your game face and dig into the new Game Day Burger. Now at BK.",
+            "cta": "Order Now",
+            "image": null,
+            "link_url": "https://burgerking.app.link/PXfIZqCfH6b",
+            "title": "Put Your Game Face On",
+            "video": "https://video-phl2-1.xx.fbcdn.net/o1/v/t2/f2/m366/AQMtkab5URaeuGTEWevK9HNKPER_J6QgQe_mMSUHQUR_x6q9XGS0qRqOEfyc0F3lKnuykSruNXJ-21GtxpXF6oWGt8tpnKh1x3ORD1839mRPlQ.mp4?_nc_cat=108&_nc_sid=b66105&_nc_ht=video-phl2-1.xx.fbcdn.net&_nc_ohc=m3Nkpi8Ns68Q7kNvwEWp5Q1&efg=eyJ2ZW5jb2RlX3RhZyI6Inhwdl9wcm9ncmVzc2l2ZS5WSV9VU0VDQVNFX1BST0RVQ1RfVFlQRS4uQzMuNzIwLmRhc2hfaDI2NC1iYXNpYy1nZW4yXzcyMHAiLCJ4cHZfYXNzZXRfaWQiOjE4MzA3NjA3MDgwOTU5MTUsImFzc2V0X2FnZV9kYXlzIjozMCwidmlfdXNlY2FzZV9pZCI6MTA3OTksImR1cmF0aW9uX3MiOjEwLCJ1cmxnZW5fc291cmNlIjoid3d3In0%3D&ccb=17-1&vs=567066b033db326e&_nc_vs=HBksFQIYRWZiX2VwaGVtZXJhbC9GQjJEN0IyNTU0REE0RDAyQTVERkMwMUQ0NUFEREQ3Q19tdF8xX3ZpZGVvX2Rhc2hpbml0Lm1wNBUAAsgBEgAVAhhAZmJfcGVybWFuZW50LzhCQjYxQTI0QzUxNjRCNjg4QURGNzIxMTdDOEE1QjAxX2F1ZGlvX2Rhc2hpbml0Lm1wNBUCAsgBEgAoABgAGwKIB3VzZV9vaWwBMRJwcm9ncmVzc2l2ZV9yZWNpcGUBMRUAACbW_uWapsTABhUCKAJDMywXQCWFHrhR64UYGWRhc2hfaDI2NC1iYXNpYy1nZW4yXzcyMHARAHUAZd6oAQA&_nc_gid=pyRhB_HzpUF6tCjl0PO9iw&_nc_ss=70289&_nc_zt=28&oh=00_AQSkCveXGQke58HjeMwZNHGrEFUdEbH-tcp8_N66vZzatQ&oe=6AF7D660"
+          },
+          {
+            "body": "Put on your game face and dig into the new Game Day Burger. Now at BK.",
+            "cta": "Order Now",
+            "image": null,
+            "link_url": "https://burgerking.app.link/PXfIZqCfH6b",
+            "title": "Put Your Game Face On",
+            "video": "https://video-phl2-1.xx.fbcdn.net/o1/v/t2/f2/m366/AQOeREJtCnDLObb-otnIPrFjR_PlIZGl7OMIj-VWiKsWtOqwpC2CwnzPmAtY1HzG70_Ol9hOXM4u4JSEKwYq5O36E6AVus7LFdpxJbUoJnzXMA.mp4?_nc_cat=104&_nc_sid=b66105&_nc_ht=video-phl2-1.xx.fbcdn.net&_nc_ohc=OPVrL9VmFO8Q7kNvwHVk1bG&efg=eyJ2ZW5jb2RlX3RhZyI6Inhwdl9wcm9ncmVzc2l2ZS5WSV9VU0VDQVNFX1BST0RVQ1RfVFlQRS4uQzMuNzIwLmRhc2hfaDI2NC1iYXNpYy1nZW4yXzcyMHAiLCJ4cHZfYXNzZXRfaWQiOjMyMTgyMzIwNjE3MTE2NTIsImFzc2V0X2FnZV9kYXlzIjozMCwidmlfdXNlY2FzZV9pZCI6MTA3OTksImR1cmF0aW9uX3MiOjEwLCJ1cmxnZW5fc291cmNlIjoid3d3In0%3D&ccb=17-1&vs=eb77a70a13a51b3c&_nc_vs=HBksFQIYRWZiX2VwaGVtZXJhbC83MDFFMTU2Mzg5QzQ0QUE1OTZDMUU3ODlCQzNCOTNBMV9tdF8xX3ZpZGVvX2Rhc2hpbml0Lm1wNBUAAsgBEgAVAhhAZmJfcGVybWFuZW50L0I3MDFFNzRCODJGMDQxMThCMTU1NzE4MEQ2NkNGQzdEX2F1ZGlvX2Rhc2hpbml0Lm1wNBUCAsgBEgAoABgAGwKIB3VzZV9vaWwBMRJwcm9ncmVzc2l2ZV9yZWNpcGUBMRUAACbI1L6t4b23CxUCKAJDMywXQCWFHrhR64UYGWRhc2hfaDI2NC1iYXNpYy1nZW4yXzcyMHARAHUAZd6oAQA&_nc_gid=pyRhB_HzpUF6tCjl0PO9iw&_nc_ss=70289&_nc_zt=28&oh=00_AQR2j0WN3YyJkW_QMsD-N0G0IcV3fwyRpLOwdhx-em9RMg&oe=6AF7C004"
+          },
+          {
+            "body": "Put on your game face and dig into the new Game Day Burger. Now at BK.",
+            "cta": "Order Now",
+            "image": null,
+            "link_url": "https://burgerking.app.link/PXfIZqCfH6b",
+            "title": "Put Your Game Face On",
+            "video": "https://video-phl2-1.xx.fbcdn.net/o1/v/t2/f2/m366/AQPjp1vwyZmC1JPoRxAkg4i4hrJi7M3dDci1Ee1K97VTJrWvW6ITUGNNYYbAr7N3xxkYPvTDVemMELSWu7ZF5cUdx4oz3DYKYTsFOaP2IqnyGg.mp4?_nc_cat=109&_nc_sid=b66105&_nc_ht=video-phl2-1.xx.fbcdn.net&_nc_ohc=Vjq1GKJlCt4Q7kNvwHe8mjf&efg=eyJ2ZW5jb2RlX3RhZyI6Inhwdl9wcm9ncmVzc2l2ZS5WSV9VU0VDQVNFX1BST0RVQ1RfVFlQRS4uQzMuNzIwLmRhc2hfaDI2NC1iYXNpYy1nZW4yXzcyMHAiLCJ4cHZfYXNzZXRfaWQiOjEzNTQwNjY3NTk4NjAxOTQsImFzc2V0X2FnZV9kYXlzIjo0NiwidmlfdXNlY2FzZV9pZCI6MTA3OTksImR1cmF0aW9uX3MiOjEwLCJ1cmxnZW5fc291cmNlIjoid3d3In0%3D&ccb=17-1&vs=9671c9c0a05626e4&_nc_vs=HBksFQIYRWZiX2VwaGVtZXJhbC9FRTRFQjMzOEQ0NDNCOEJENzJENDdBMTgyMzdFMjFBMV9tdF8xX3ZpZGVvX2Rhc2hpbml0Lm1wNBUAAsgBEgAVAhhAZmJfcGVybWFuZW50LzFGNDdGNjdEQkU1QTQ3Qzk4N0VDOTlBMjlBQjk0MTJCX2F1ZGlvX2Rhc2hpbml0Lm1wNBUCAsgBEgAoABgAGwKIB3VzZV9vaWwBMRJwcm9ncmVzc2l2ZV9yZWNpcGUBMRUAACbE_8nDh-HnBBUCKAJDMywXQCWFHrhR64UYGWRhc2hfaDI2NC1iYXNpYy1nZW4yXzcyMHARAHUAZd6oAQA&_nc_gid=pyRhB_HzpUF6tCjl0PO9iw&_nc_ss=70289&_nc_zt=28&oh=00_AQQeA0Wqppuv5bpwUt_SiQ8vmd9ZumvwwWjP7OkmzM3nIQ&oe=6AF7DCB7"
+          }
+        ],
+        "cta": "Order now",
+        "cta_type": "ORDER_NOW",
+        "currency": null,
+        "display_format": "dco",
+        "end_date": null,
+        "images": [],
+        "impressions": null,
+        "is_active": true,
+        "link_caption": "bk.com",
+        "link_url": "https://burgerking.app.link/PXfIZqCfH6b",
+        "page_id": "134615383218473",
+        "page_likes": 8358855,
+        "page_name": "Burger King",
+        "page_url": "https://www.facebook.com/burgerking/",
+        "paid_for_by": null,
+        "platforms": [
+          "facebook",
+          "instagram"
+        ],
+        "same_creative_ads": 1,
+        "spend": null,
+        "start_date": "2026-10-19T07:00:00Z",
+        "title": "Put Your Game Face On",
+        "videos": [
+          "https://video-phl2-1.xx.fbcdn.net/o1/v/t2/f2/m366/AQMtkab5URaeuGTEWevK9HNKPER_J6QgQe_mMSUHQUR_x6q9XGS0qRqOEfyc0F3lKnuykSruNXJ-21GtxpXF6oWGt8tpnKh1x3ORD1839mRPlQ.mp4?_nc_cat=108&_nc_sid=b66105&_nc_ht=video-phl2-1.xx.fbcdn.net&_nc_ohc=m3Nkpi8Ns68Q7kNvwEWp5Q1&efg=eyJ2ZW5jb2RlX3RhZyI6Inhwdl9wcm9ncmVzc2l2ZS5WSV9VU0VDQVNFX1BST0RVQ1RfVFlQRS4uQzMuNzIwLmRhc2hfaDI2NC1iYXNpYy1nZW4yXzcyMHAiLCJ4cHZfYXNzZXRfaWQiOjE4MzA3NjA3MDgwOTU5MTUsImFzc2V0X2FnZV9kYXlzIjozMCwidmlfdXNlY2FzZV9pZCI6MTA3OTksImR1cmF0aW9uX3MiOjEwLCJ1cmxnZW5fc291cmNlIjoid3d3In0%3D&ccb=17-1&vs=567066b033db326e&_nc_vs=HBksFQIYRWZiX2VwaGVtZXJhbC9GQjJEN0IyNTU0REE0RDAyQTVERkMwMUQ0NUFEREQ3Q19tdF8xX3ZpZGVvX2Rhc2hpbml0Lm1wNBUAAsgBEgAVAhhAZmJfcGVybWFuZW50LzhCQjYxQTI0QzUxNjRCNjg4QURGNzIxMTdDOEE1QjAxX2F1ZGlvX2Rhc2hpbml0Lm1wNBUCAsgBEgAoABgAGwKIB3VzZV9vaWwBMRJwcm9ncmVzc2l2ZV9yZWNpcGUBMRUAACbW_uWapsTABhUCKAJDMywXQCWFHrhR64UYGWRhc2hfaDI2NC1iYXNpYy1nZW4yXzcyMHARAHUAZd6oAQA&_nc_gid=pyRhB_HzpUF6tCjl0PO9iw&_nc_ss=70289&_nc_zt=28&oh=00_AQSkCveXGQke58HjeMwZNHGrEFUdEbH-tcp8_N66vZzatQ&oe=6AF7D660",
+          "https://video-phl2-1.xx.fbcdn.net/o1/v/t2/f2/m366/AQOeREJtCnDLObb-otnIPrFjR_PlIZGl7OMIj-VWiKsWtOqwpC2CwnzPmAtY1HzG70_Ol9hOXM4u4JSEKwYq5O36E6AVus7LFdpxJbUoJnzXMA.mp4?_nc_cat=104&_nc_sid=b66105&_nc_ht=video-phl2-1.xx.fbcdn.net&_nc_ohc=OPVrL9VmFO8Q7kNvwHVk1bG&efg=eyJ2ZW5jb2RlX3RhZyI6Inhwdl9wcm9ncmVzc2l2ZS5WSV9VU0VDQVNFX1BST0RVQ1RfVFlQRS4uQzMuNzIwLmRhc2hfaDI2NC1iYXNpYy1nZW4yXzcyMHAiLCJ4cHZfYXNzZXRfaWQiOjMyMTgyMzIwNjE3MTE2NTIsImFzc2V0X2FnZV9kYXlzIjozMCwidmlfdXNlY2FzZV9pZCI6MTA3OTksImR1cmF0aW9uX3MiOjEwLCJ1cmxnZW5fc291cmNlIjoid3d3In0%3D&ccb=17-1&vs=eb77a70a13a51b3c&_nc_vs=HBksFQIYRWZiX2VwaGVtZXJhbC83MDFFMTU2Mzg5QzQ0QUE1OTZDMUU3ODlCQzNCOTNBMV9tdF8xX3ZpZGVvX2Rhc2hpbml0Lm1wNBUAAsgBEgAVAhhAZmJfcGVybWFuZW50L0I3MDFFNzRCODJGMDQxMThCMTU1NzE4MEQ2NkNGQzdEX2F1ZGlvX2Rhc2hpbml0Lm1wNBUCAsgBEgAoABgAGwKIB3VzZV9vaWwBMRJwcm9ncmVzc2l2ZV9yZWNpcGUBMRUAACbI1L6t4b23CxUCKAJDMywXQCWFHrhR64UYGWRhc2hfaDI2NC1iYXNpYy1nZW4yXzcyMHARAHUAZd6oAQA&_nc_gid=pyRhB_HzpUF6tCjl0PO9iw&_nc_ss=70289&_nc_zt=28&oh=00_AQR2j0WN3YyJkW_QMsD-N0G0IcV3fwyRpLOwdhx-em9RMg&oe=6AF7C004",
+          "https://video-phl2-1.xx.fbcdn.net/o1/v/t2/f2/m366/AQPjp1vwyZmC1JPoRxAkg4i4hrJi7M3dDci1Ee1K97VTJrWvW6ITUGNNYYbAr7N3xxkYPvTDVemMELSWu7ZF5cUdx4oz3DYKYTsFOaP2IqnyGg.mp4?_nc_cat=109&_nc_sid=b66105&_nc_ht=video-phl2-1.xx.fbcdn.net&_nc_ohc=Vjq1GKJlCt4Q7kNvwHe8mjf&efg=eyJ2ZW5jb2RlX3RhZyI6Inhwdl9wcm9ncmVzc2l2ZS5WSV9VU0VDQVNFX1BST0RVQ1RfVFlQRS4uQzMuNzIwLmRhc2hfaDI2NC1iYXNpYy1nZW4yXzcyMHAiLCJ4cHZfYXNzZXRfaWQiOjEzNTQwNjY3NTk4NjAxOTQsImFzc2V0X2FnZV9kYXlzIjo0NiwidmlfdXNlY2FzZV9pZCI6MTA3OTksImR1cmF0aW9uX3MiOjEwLCJ1cmxnZW5fc291cmNlIjoid3d3In0%3D&ccb=17-1&vs=9671c9c0a05626e4&_nc_vs=HBksFQIYRWZiX2VwaGVtZXJhbC9FRTRFQjMzOEQ0NDNCOEJENzJENDdBMTgyMzdFMjFBMV9tdF8xX3ZpZGVvX2Rhc2hpbml0Lm1wNBUAAsgBEgAVAhhAZmJfcGVybWFuZW50LzFGNDdGNjdEQkU1QTQ3Qzk4N0VDOTlBMjlBQjk0MTJCX2F1ZGlvX2Rhc2hpbml0Lm1wNBUCAsgBEgAoABgAGwKIB3VzZV9vaWwBMRJwcm9ncmVzc2l2ZV9yZWNpcGUBMRUAACbE_8nDh-HnBBUCKAJDMywXQCWFHrhR64UYGWRhc2hfaDI2NC1iYXNpYy1nZW4yXzcyMHARAHUAZd6oAQA&_nc_gid=pyRhB_HzpUF6tCjl0PO9iw&_nc_ss=70289&_nc_zt=28&oh=00_AQQeA0Wqppuv5bpwUt_SiQ8vmd9ZumvwwWjP7OkmzM3nIQ&oe=6AF7DCB7"
+        ]
+      },
+      {
+        "ad_archive_id": "1023136627481589",
+        "ad_url": "https://www.facebook.com/ads/library/?id=1023136627481589",
+        "body": "Upgrade any seat to the best seat in the house. Get the Game Day Menu, now at BK.",
+        "cards": [],
+        "cta": "Order now",
+        "cta_type": "ORDER_NOW",
+        "currency": null,
+        "display_format": "video",
+        "end_date": null,
+        "images": [],
+        "impressions": null,
+        "is_active": true,
+        "link_caption": "bk.com",
+        "link_url": "https://burgerking.app.link/yWxrBu1fH6b",
+        "page_id": "134615383218473",
+        "page_likes": 8358855,
+        "page_name": "Burger King",
+        "page_url": "https://www.facebook.com/burgerking/",
+        "paid_for_by": null,
+        "platforms": [
+          "facebook",
+          "instagram"
+        ],
+        "same_creative_ads": 2,
+        "spend": null,
+        "start_date": "2026-10-19T07:00:00Z",
+        "title": "Any Seat is Game Ready",
+        "videos": [
+          "https://video-phl2-1.xx.fbcdn.net/o1/v/t2/f2/m366/AQNyKXEAC6Z82MIDleNv12gWcGLGdCJnJthpYRK85DIV_Ee5hjJAPH9vaar6aSRIYC11GUGRP0pXSBZ5n5K4jOi9ULHfuz7hMG5DAvVYqtqUXA.mp4?_nc_cat=101&_nc_sid=b66105&_nc_ht=video-phl2-1.xx.fbcdn.net&_nc_ohc=hKtSamL2Ln0Q7kNvwFmwFAV&efg=eyJ2ZW5jb2RlX3RhZyI6Inhwdl9wcm9ncmVzc2l2ZS5WSV9VU0VDQVNFX1BST0RVQ1RfVFlQRS4uQzMuNzIwLmRhc2hfaDI2NC1iYXNpYy1nZW4yXzcyMHAiLCJ4cHZfYXNzZXRfaWQiOjEwMzA4NzE2NTk5NjMzMDgsImFzc2V0X2FnZV9kYXlzIjozMCwidmlfdXNlY2FzZV9pZCI6MTA3OTksImR1cmF0aW9uX3MiOjcsInVybGdlbl9zb3VyY2UiOiJ3d3cifQ%3D%3D&ccb=17-1&vs=81c5a0c5fdcd39f6&_nc_vs=HBksFQIYRWZiX2VwaGVtZXJhbC85MTJFQUYzNkYzQzg0RTMzODg2QThERkNERTY5QkNDRl9tdF8xX3ZpZGVvX2Rhc2hpbml0Lm1wNBUAAsgBEgAVAhhAZmJfcGVybWFuZW50L0Q3OUM2NkJFQjUxMjQ2M0Q4MjE1N0Q5NDYwQkVFQzQyX2F1ZGlvX2Rhc2hpbml0Lm1wNBUCAsgBEgAoABgAGwKIB3VzZV9vaWwBMRJwcm9ncmVzc2l2ZV9yZWNpcGUBMRUAACbYjs-x0OTUAxUCKAJDMywXQByxJul41P4YGWRhc2hfaDI2NC1iYXNpYy1nZW4yXzcyMHARAHUAZd6oAQA&_nc_gid=pyRhB_HzpUF6tCjl0PO9iw&_nc_ss=70289&_nc_zt=28&oh=00_AQRffgcjZ90HjY7D2Ybwkjidk8vrupwGbK3u2OooOW0NaA&oe=6AF7B0DF"
+        ]
+      },
+      {
+        "ad_archive_id": "991787133204269",
+        "ad_url": "https://www.facebook.com/ads/library/?id=991787133204269",
+        "body": "Put on your game face and dig into the new Game Day Burger. Now at BK.",
+        "cards": [],
+        "cta": "Order now",
+        "cta_type": "ORDER_NOW",
+        "currency": null,
+        "display_format": "video",
+        "end_date": null,
+        "images": [],
+        "impressions": null,
+        "is_active": true,
+        "link_caption": "bk.com",
+        "link_url": "https://burgerking.app.link/PXfIZqCfH6b",
+        "page_id": "134615383218473",
+        "page_likes": 8358855,
+        "page_name": "Burger King",
+        "page_url": "https://www.facebook.com/burgerking/",
+        "paid_for_by": null,
+        "platforms": [
+          "facebook",
+          "instagram"
+        ],
+        "same_creative_ads": 3,
+        "spend": null,
+        "start_date": "2026-10-19T07:00:00Z",
+        "title": "Put Your Game Face On",
+        "videos": [
+          "https://video-phl2-1.xx.fbcdn.net/o1/v/t2/f2/m366/AQMtkab5URaeuGTEWevK9HNKPER_J6QgQe_mMSUHQUR_x6q9XGS0qRqOEfyc0F3lKnuykSruNXJ-21GtxpXF6oWGt8tpnKh1x3ORD1839mRPlQ.mp4?_nc_cat=108&_nc_sid=b66105&_nc_ht=video-phl2-1.xx.fbcdn.net&_nc_ohc=m3Nkpi8Ns68Q7kNvwEWp5Q1&efg=eyJ2ZW5jb2RlX3RhZyI6Inhwdl9wcm9ncmVzc2l2ZS5WSV9VU0VDQVNFX1BST0RVQ1RfVFlQRS4uQzMuNzIwLmRhc2hfaDI2NC1iYXNpYy1nZW4yXzcyMHAiLCJ4cHZfYXNzZXRfaWQiOjE4MzA3NjA3MDgwOTU5MTUsImFzc2V0X2FnZV9kYXlzIjozMCwidmlfdXNlY2FzZV9pZCI6MTA3OTksImR1cmF0aW9uX3MiOjEwLCJ1cmxnZW5fc291cmNlIjoid3d3In0%3D&ccb=17-1&vs=567066b033db326e&_nc_vs=HBksFQIYRWZiX2VwaGVtZXJhbC9GQjJEN0IyNTU0REE0RDAyQTVERkMwMUQ0NUFEREQ3Q19tdF8xX3ZpZGVvX2Rhc2hpbml0Lm1wNBUAAsgBEgAVAhhAZmJfcGVybWFuZW50LzhCQjYxQTI0QzUxNjRCNjg4QURGNzIxMTdDOEE1QjAxX2F1ZGlvX2Rhc2hpbml0Lm1wNBUCAsgBEgAoABgAGwKIB3VzZV9vaWwBMRJwcm9ncmVzc2l2ZV9yZWNpcGUBMRUAACbW_uWapsTABhUCKAJDMywXQCWFHrhR64UYGWRhc2hfaDI2NC1iYXNpYy1nZW4yXzcyMHARAHUAZd6oAQA&_nc_gid=pyRhB_HzpUF6tCjl0PO9iw&_nc_ss=70289&_nc_zt=28&oh=00_AQSkCveXGQke58HjeMwZNHGrEFUdEbH-tcp8_N66vZzatQ&oe=6AF7D660"
+        ]
+      },
+      {
+        "ad_archive_id": "1403905868472493",
+        "ad_url": "https://www.facebook.com/ads/library/?id=1403905868472493",
+        "body": "Get a FREE Original Chicken Sandwich or Whopper Jr. when you spend $3+.",
+        "cards": [
+          {
+            "body": "Get a FREE Original Chicken Sandwich or Whopper Jr. when you spend $3+.",
+            "cta": "Order Now",
+            "image": null,
+            "link_url": "http://itunes.apple.com/app/id638323895",
+            "title": "New to Royal Perks?",
+            "video": "https://video-phl2-1.xx.fbcdn.net/o1/v/t2/f2/m366/AQO98oeoRXeA6GfJRwbOUsC0eO-OaAamSHBqEm4nkvNRlyTFO4bdsydreptHavI4RvGaLckC7xmXndqbWeLBxUrcziF38H3rWuVH9D5hlYzIrQ.mp4?_nc_cat=104&_nc_sid=b66105&_nc_ht=video-phl2-1.xx.fbcdn.net&_nc_ohc=Ng5vSA-8TGIQ7kNvwGh2EWU&efg=eyJ2ZW5jb2RlX3RhZyI6Inhwdl9wcm9ncmVzc2l2ZS5WSV9VU0VDQVNFX1BST0RVQ1RfVFlQRS4uQzMuNzIwLmRhc2hfaDI2NC1iYXNpYy1nZW4yXzcyMHAiLCJ4cHZfYXNzZXRfaWQiOjEwMzc1NjUzODE5NTYyMjUsImFzc2V0X2FnZV9kYXlzIjoxMzcsInZpX3VzZWNhc2VfaWQiOjEwNzk5LCJkdXJhdGlvbl9zIjoxMywidXJsZ2VuX3NvdXJjZSI6Ind3dyJ9&ccb=17-1&vs=cb3f560db80316f4&_nc_vs=HBksFQIYRWZiX2VwaGVtZXJhbC84MjQ0MUMzNkIxRjIyRTIyMzI5QkJBQkU1Q0U1MzhCRF9tdF8xX3ZpZGVvX2Rhc2hpbml0Lm1wNBUAAsgBEgAVAhhAZmJfcGVybWFuZW50L0UzNDUwMTdDQUYyMDNEMDA5ODk0QTY3MUZDRDk0N0EwX2F1ZGlvX2Rhc2hpbml0Lm1wNBUCAsgBEgAoABgAGwKIB3VzZV9vaWwBMRJwcm9ncmVzc2l2ZV9yZWNpcGUBMRUAACaCyq7AoOrXAxUCKAJDMywXQCrhR64UeuEYGWRhc2hfaDI2NC1iYXNpYy1nZW4yXzcyMHARAHUAZd6oAQA&_nc_gid=pyRhB_HzpUF6tCjl0PO9iw&_nc_ss=70289&_nc_zt=28&oh=00_AQTnYeB3LM1fkSHAPgie7w50H9nDM17MPoI5LGNEuOzm8w&oe=6AF7B7C8"
+          },
+          {
+            "body": "Get a FREE Original Chicken Sandwich or Whopper Jr. when you spend $3+.",
+            "cta": "Order Now",
+            "image": null,
+            "link_url": "http://itunes.apple.com/app/id638323895",
+            "title": "New to Royal Perks?",
+            "video": "https://video-phl2-1.xx.fbcdn.net/o1/v/t2/f2/m366/AQO0WSNoXT1sYZnOmSDMAYRyRzICIoagiAB_amMMhRnlkTsKxvxjWLMZrZTATkcBSxL_8SEYNQda5sMDAXbZaYMZs9fuhQToDaZXYXQLJ0bGyQ.mp4?_nc_cat=101&_nc_sid=b66105&_nc_ht=video-phl2-1.xx.fbcdn.net&_nc_ohc=mcWe7DdsZ7UQ7kNvwHRcr5v&efg=eyJ2ZW5jb2RlX3RhZyI6Inhwdl9wcm9ncmVzc2l2ZS5WSV9VU0VDQVNFX1BST0RVQ1RfVFlQRS4uQzMuNzIwLmRhc2hfaDI2NC1iYXNpYy1nZW4yXzcyMHAiLCJ4cHZfYXNzZXRfaWQiOjI4MjA3MTY0NzE4ODg2MzE5LCJhc3NldF9hZ2VfZGF5cyI6MTMxLCJ2aV91c2VjYXNlX2lkIjoxMDc5OSwiZHVyYXRpb25fcyI6MTMsInVybGdlbl9zb3VyY2UiOiJ3d3cifQ%3D%3D&ccb=17-1&vs=38d5f25049b23507&_nc_vs=HBksFQIYRWZiX2VwaGVtZXJhbC9DQzRERTdEREJFMjUzNDY1NTIwODRCRkI0QkE0N0Q4M19tdF8xX3ZpZGVvX2Rhc2hpbml0Lm1wNBUAAsgBEgAVAhhAZmJfcGVybWFuZW50L0FBNDA4QThDMjFCRkIwOTVGNkQ3QTI2OTJCOERDMDk5X2F1ZGlvX2Rhc2hpbml0Lm1wNBUCAsgBEgAoABgAGwKIB3VzZV9vaWwBMRJwcm9ncmVzc2l2ZV9yZWNpcGUBMRUAACbetoWTipGbZBUCKAJDMywXQCrhR64UeuEYGWRhc2hfaDI2NC1iYXNpYy1nZW4yXzcyMHARAHUAZd6oAQA&_nc_gid=pyRhB_HzpUF6tCjl0PO9iw&_nc_ss=70289&_nc_zt=28&oh=00_AQRm5_S8_zMpLeWnGAY2FoX9bRaJ9nXjmWAF8mQ7Ld_5ZA&oe=6AF7BED7"
+          },
+          {
+            "body": "Get a FREE Original Chicken Sandwich or Whopper Jr. when you spend $3+.",
+            "cta": "Order Now",
+            "image": "https://scontent-phl2-1.xx.fbcdn.net/v/t39.35426-6/747820135_1071946185396231_9164471520227237059_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=SfVNodyZdnkQ7kNvwHV2cBt&_nc_oc=AdpsU_UyGF9w7sYjWOAwqJ7KFi1YuCVvtCWutD22rrV8L2ZLxBWP_vaq8ZVwRmOi4Bo&_nc_zt=14&_nc_ht=scontent-phl2-1.xx&_nc_gid=pyRhB_HzpUF6tCjl0PO9iw&_nc_ss=70289&oh=00_AQSLOTXPodavm-2MAnFLln-HR3Nnznrt7LR2ZMXiyO6i5Q&oe=6AF7CD69",
+            "link_url": "http://itunes.apple.com/app/id638323895",
+            "title": "New to Royal Perks?",
+            "video": "https://video-phl2-1.xx.fbcdn.net/o1/v/t2/f2/m366/AQO98oeoRXeA6GfJRwbOUsC0eO-OaAamSHBqEm4nkvNRlyTFO4bdsydreptHavI4RvGaLckC7xmXndqbWeLBxUrcziF38H3rWuVH9D5hlYzIrQ.mp4?_nc_cat=104&_nc_sid=b66105&_nc_ht=video-phl2-1.xx.fbcdn.net&_nc_ohc=Ng5vSA-8TGIQ7kNvwGh2EWU&efg=eyJ2ZW5jb2RlX3RhZyI6Inhwdl9wcm9ncmVzc2l2ZS5WSV9VU0VDQVNFX1BST0RVQ1RfVFlQRS4uQzMuNzIwLmRhc2hfaDI2NC1iYXNpYy1nZW4yXzcyMHAiLCJ4cHZfYXNzZXRfaWQiOjEwMzc1NjUzODE5NTYyMjUsImFzc2V0X2FnZV9kYXlzIjoxMzcsInZpX3VzZWNhc2VfaWQiOjEwNzk5LCJkdXJhdGlvbl9zIjoxMywidXJsZ2VuX3NvdXJjZSI6Ind3dyJ9&ccb=17-1&vs=cb3f560db80316f4&_nc_vs=HBksFQIYRWZiX2VwaGVtZXJhbC84MjQ0MUMzNkIxRjIyRTIyMzI5QkJBQkU1Q0U1MzhCRF9tdF8xX3ZpZGVvX2Rhc2hpbml0Lm1wNBUAAsgBEgAVAhhAZmJfcGVybWFuZW50L0UzNDUwMTdDQUYyMDNEMDA5ODk0QTY3MUZDRDk0N0EwX2F1ZGlvX2Rhc2hpbml0Lm1wNBUCAsgBEgAoABgAGwKIB3VzZV9vaWwBMRJwcm9ncmVzc2l2ZV9yZWNpcGUBMRUAACaCyq7AoOrXAxUCKAJDMywXQCrhR64UeuEYGWRhc2hfaDI2NC1iYXNpYy1nZW4yXzcyMHARAHUAZd6oAQA&_nc_gid=pyRhB_HzpUF6tCjl0PO9iw&_nc_ss=70289&_nc_zt=28&oh=00_AQTnYeB3LM1fkSHAPgie7w50H9nDM17MPoI5LGNEuOzm8w&oe=6AF7B7C8"
+          }
+        ],
+        "cta": "Order now",
+        "cta_type": "ORDER_NOW",
+        "currency": null,
+        "display_format": "dco",
+        "end_date": null,
+        "images": [
+          "https://scontent-phl2-1.xx.fbcdn.net/v/t39.35426-6/747820135_1071946185396231_9164471520227237059_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=SfVNodyZdnkQ7kNvwHV2cBt&_nc_oc=AdpsU_UyGF9w7sYjWOAwqJ7KFi1YuCVvtCWutD22rrV8L2ZLxBWP_vaq8ZVwRmOi4Bo&_nc_zt=14&_nc_ht=scontent-phl2-1.xx&_nc_gid=pyRhB_HzpUF6tCjl0PO9iw&_nc_ss=70289&oh=00_AQSLOTXPodavm-2MAnFLln-HR3Nnznrt7LR2ZMXiyO6i5Q&oe=6AF7CD69"
+        ],
+        "impressions": null,
+        "is_active": true,
+        "link_caption": "itunes.apple.com",
+        "link_url": "http://itunes.apple.com/app/id638323895",
+        "page_id": "134615383218473",
+        "page_likes": 8358855,
+        "page_name": "Burger King",
+        "page_url": "https://www.facebook.com/burgerking/",
+        "paid_for_by": null,
+        "platforms": [
+          "facebook",
+          "instagram"
+        ],
+        "same_creative_ads": 3,
+        "spend": null,
+        "start_date": "2026-09-04T07:00:00Z",
+        "title": "New to Royal Perks?",
+        "videos": [
+          "https://video-phl2-1.xx.fbcdn.net/o1/v/t2/f2/m366/AQO98oeoRXeA6GfJRwbOUsC0eO-OaAamSHBqEm4nkvNRlyTFO4bdsydreptHavI4RvGaLckC7xmXndqbWeLBxUrcziF38H3rWuVH9D5hlYzIrQ.mp4?_nc_cat=104&_nc_sid=b66105&_nc_ht=video-phl2-1.xx.fbcdn.net&_nc_ohc=Ng5vSA-8TGIQ7kNvwGh2EWU&efg=eyJ2ZW5jb2RlX3RhZyI6Inhwdl9wcm9ncmVzc2l2ZS5WSV9VU0VDQVNFX1BST0RVQ1RfVFlQRS4uQzMuNzIwLmRhc2hfaDI2NC1iYXNpYy1nZW4yXzcyMHAiLCJ4cHZfYXNzZXRfaWQiOjEwMzc1NjUzODE5NTYyMjUsImFzc2V0X2FnZV9kYXlzIjoxMzcsInZpX3VzZWNhc2VfaWQiOjEwNzk5LCJkdXJhdGlvbl9zIjoxMywidXJsZ2VuX3NvdXJjZSI6Ind3dyJ9&ccb=17-1&vs=cb3f560db80316f4&_nc_vs=HBksFQIYRWZiX2VwaGVtZXJhbC84MjQ0MUMzNkIxRjIyRTIyMzI5QkJBQkU1Q0U1MzhCRF9tdF8xX3ZpZGVvX2Rhc2hpbml0Lm1wNBUAAsgBEgAVAhhAZmJfcGVybWFuZW50L0UzNDUwMTdDQUYyMDNEMDA5ODk0QTY3MUZDRDk0N0EwX2F1ZGlvX2Rhc2hpbml0Lm1wNBUCAsgBEgAoABgAGwKIB3VzZV9vaWwBMRJwcm9ncmVzc2l2ZV9yZWNpcGUBMRUAACaCyq7AoOrXAxUCKAJDMywXQCrhR64UeuEYGWRhc2hfaDI2NC1iYXNpYy1nZW4yXzcyMHARAHUAZd6oAQA&_nc_gid=pyRhB_HzpUF6tCjl0PO9iw&_nc_ss=70289&_nc_zt=28&oh=00_AQTnYeB3LM1fkSHAPgie7w50H9nDM17MPoI5LGNEuOzm8w&oe=6AF7B7C8",
+          "https://video-phl2-1.xx.fbcdn.net/o1/v/t2/f2/m366/AQO0WSNoXT1sYZnOmSDMAYRyRzICIoagiAB_amMMhRnlkTsKxvxjWLMZrZTATkcBSxL_8SEYNQda5sMDAXbZaYMZs9fuhQToDaZXYXQLJ0bGyQ.mp4?_nc_cat=101&_nc_sid=b66105&_nc_ht=video-phl2-1.xx.fbcdn.net&_nc_ohc=mcWe7DdsZ7UQ7kNvwHRcr5v&efg=eyJ2ZW5jb2RlX3RhZyI6Inhwdl9wcm9ncmVzc2l2ZS5WSV9VU0VDQVNFX1BST0RVQ1RfVFlQRS4uQzMuNzIwLmRhc2hfaDI2NC1iYXNpYy1nZW4yXzcyMHAiLCJ4cHZfYXNzZXRfaWQiOjI4MjA3MTY0NzE4ODg2MzE5LCJhc3NldF9hZ2VfZGF5cyI6MTMxLCJ2aV91c2VjYXNlX2lkIjoxMDc5OSwiZHVyYXRpb25fcyI6MTMsInVybGdlbl9zb3VyY2UiOiJ3d3cifQ%3D%3D&ccb=17-1&vs=38d5f25049b23507&_nc_vs=HBksFQIYRWZiX2VwaGVtZXJhbC9DQzRERTdEREJFMjUzNDY1NTIwODRCRkI0QkE0N0Q4M19tdF8xX3ZpZGVvX2Rhc2hpbml0Lm1wNBUAAsgBEgAVAhhAZmJfcGVybWFuZW50L0FBNDA4QThDMjFCRkIwOTVGNkQ3QTI2OTJCOERDMDk5X2F1ZGlvX2Rhc2hpbml0Lm1wNBUCAsgBEgAoABgAGwKIB3VzZV9vaWwBMRJwcm9ncmVzc2l2ZV9yZWNpcGUBMRUAACbetoWTipGbZBUCKAJDMywXQCrhR64UeuEYGWRhc2hfaDI2NC1iYXNpYy1nZW4yXzcyMHARAHUAZd6oAQA&_nc_gid=pyRhB_HzpUF6tCjl0PO9iw&_nc_ss=70289&_nc_zt=28&oh=00_AQRm5_S8_zMpLeWnGAY2FoX9bRaJ9nXjmWAF8mQ7Ld_5ZA&oe=6AF7BED7"
+        ]
+      },
+      {
+        "ad_archive_id": "965016246680935",
+        "ad_url": "https://www.facebook.com/ads/library/?id=965016246680935",
+        "body": "Clock in for Game Day any day with the new Game Day Menu, now at BK.",
+        "cards": [],
+        "cta": "Order now",
+        "cta_type": "ORDER_NOW",
+        "currency": null,
+        "display_format": "image",
+        "end_date": null,
+        "images": [
+          "https://scontent-phl2-1.xx.fbcdn.net/v/t39.35426-6/858801039_1400619875118496_8217177770957907181_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=4bd5JG5Uy7AQ7kNvwGgvLGo&_nc_oc=AdocNBk2hznJI3ftFe-dpoxC2zepNWbyPzx-BQEYVIQ9zrW2eHg5Z-KFcqod3d2AcZE&_nc_zt=14&_nc_ht=scontent-phl2-1.xx&_nc_gid=pyRhB_HzpUF6tCjl0PO9iw&_nc_ss=70289&oh=00_AQRVjzO-sSl28eSNF6fTPSmASOxZ1Q9MOaN3isyPj-nnkg&oe=6AF7B471"
+        ],
+        "impressions": null,
+        "is_active": true,
+        "link_caption": "bk.com",
+        "link_url": "https://burgerking.app.link/PgbwFBAcH6b",
+        "page_id": "134615383218473",
+        "page_likes": 8358855,
+        "page_name": "Burger King",
+        "page_url": "https://www.facebook.com/burgerking/",
+        "paid_for_by": null,
+        "platforms": [
+          "facebook",
+          "instagram"
+        ],
+        "same_creative_ads": 4,
+        "spend": null,
+        "start_date": "2026-10-19T07:00:00Z",
+        "title": "It's Game Day",
+        "videos": []
+      },
+      {
+        "ad_archive_id": "1291945039732070",
+        "ad_url": "https://www.facebook.com/ads/library/?id=1291945039732070",
+        "body": "$3.99 10pc. Nuggets + Free Small Fries & Drink. Yeah, the perfect meal.",
+        "cards": [
+          {
+            "body": "$3.99 10pc. Nuggets + Free Small Fries & Drink. Yeah, the perfect meal.",
+            "cta": "Order Now",
+            "image": "https://scontent-phl2-1.xx.fbcdn.net/v/t39.35426-6/877552416_1304856918404573_9193112734006062237_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=sLKXxdP7sAgQ7kNvwGq3nLn&_nc_oc=Ados6wNNG29J9R69bmzp8I-8CQSWCk3rwiwFb0xfMxpYx2Y8HzQuDhrqQRvcjzFPaj8&_nc_zt=14&_nc_ht=scontent-phl2-1.xx&_nc_gid=pyRhB_HzpUF6tCjl0PO9iw&_nc_ss=70289&oh=00_AQTbrVoZI2YdxXBuTxjLDZKSdkGZAOu3AmHoug8MjI1GCw&oe=6AF7C835",
+            "link_url": "https://burgerking.app.link/7PVKu1Quy7b",
+            "title": "Don't Miss This! 11/6\u201311/15",
+            "video": null
+          },
+          {
+            "body": "$3.99 10pc. Nuggets + Free Small Fries & Drink. Yeah, the perfect meal.",
+            "cta": "Order Now",
+            "image": "https://scontent-phl2-1.xx.fbcdn.net/v/t39.35426-6/863182992_1447927566867943_8289706962081120265_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=GypOQqddpHYQ7kNvwGQddOQ&_nc_oc=AdoCWt41xWRU176wg9fGD40djUPmRpJgLuSMQea-I-2CICEMbfdFKQ1ih48RDUDafhA&_nc_zt=14&_nc_ht=scontent-phl2-1.xx&_nc_gid=pyRhB_HzpUF6tCjl0PO9iw&_nc_ss=70289&oh=00_AQRygnny90B8YzKOuinWuyh-CLcxJSeKmFPrMlxJI2lGJw&oe=6AF7BAE2",
+            "link_url": "https://burgerking.app.link/7PVKu1Quy7b",
+            "title": "Don't Miss This! 11/6\u201311/15",
+            "video": null
+          }
+        ],
+        "cta": "Order now",
+        "cta_type": "ORDER_NOW",
+        "currency": null,
+        "display_format": "dco",
+        "end_date": null,
+        "images": [
+          "https://scontent-phl2-1.xx.fbcdn.net/v/t39.35426-6/877552416_1304856918404573_9193112734006062237_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=sLKXxdP7sAgQ7kNvwGq3nLn&_nc_oc=Ados6wNNG29J9R69bmzp8I-8CQSWCk3rwiwFb0xfMxpYx2Y8HzQuDhrqQRvcjzFPaj8&_nc_zt=14&_nc_ht=scontent-phl2-1.xx&_nc_gid=pyRhB_HzpUF6tCjl0PO9iw&_nc_ss=70289&oh=00_AQTbrVoZI2YdxXBuTxjLDZKSdkGZAOu3AmHoug8MjI1GCw&oe=6AF7C835",
+          "https://scontent-phl2-1.xx.fbcdn.net/v/t39.35426-6/863182992_1447927566867943_8289706962081120265_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=GypOQqddpHYQ7kNvwGQddOQ&_nc_oc=AdoCWt41xWRU176wg9fGD40djUPmRpJgLuSMQea-I-2CICEMbfdFKQ1ih48RDUDafhA&_nc_zt=14&_nc_ht=scontent-phl2-1.xx&_nc_gid=pyRhB_HzpUF6tCjl0PO9iw&_nc_ss=70289&oh=00_AQRygnny90B8YzKOuinWuyh-CLcxJSeKmFPrMlxJI2lGJw&oe=6AF7BAE2"
+        ],
+        "impressions": null,
+        "is_active": true,
+        "link_caption": "bk.com",
+        "link_url": "https://burgerking.app.link/7PVKu1Quy7b",
+        "page_id": "134615383218473",
+        "page_likes": 8358855,
+        "page_name": "Burger King",
+        "page_url": "https://www.facebook.com/burgerking/",
+        "paid_for_by": null,
+        "platforms": [
+          "facebook",
+          "instagram"
+        ],
+        "same_creative_ads": 2,
+        "spend": null,
+        "start_date": "2026-11-06T08:00:00Z",
+        "title": "Don't Miss This! 11/6\u201311/15",
+        "videos": []
+      },
+      {
+        "ad_archive_id": "997992272620944",
+        "ad_url": "https://www.facebook.com/ads/library/?id=997992272620944",
+        "body": "$3.99 10pc. Nuggets + Free Small Fries & Drink. Yeah, the perfect meal.",
+        "cards": [
+          {
+            "body": "$3.99 10pc. Nuggets + Free Small Fries & Drink. Yeah, the perfect meal.",
+            "cta": "Order Now",
+            "image": "https://scontent-phl2-1.xx.fbcdn.net/v/t39.35426-6/867687602_1094390743475599_3198522252858438331_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=BfHJGWaV6OsQ7kNvwHYmYkb&_nc_oc=AdpzxqNHCxMuRNsftnlAioVJGWP3WDXdq8n0CPLJ1huT5SKjaGxa7u7DyG_g0rJMEVs&_nc_zt=14&_nc_ht=scontent-phl2-1.xx&_nc_gid=pyRhB_HzpUF6tCjl0PO9iw&_nc_ss=70289&oh=00_AQTCoZgOqG5BCV4cFKK1GTAkxnW-GzDJ_qYusg1GGJKX0A&oe=6AF7D419",
+            "link_url": "https://burgerking.app.link/7PVKu1Quy7b",
+            "title": "Don't Miss This! 11/6\u201311/15",
+            "video": null
+          },
+          {
+            "body": "$3.99 10pc. Nuggets + Free Small Fries & Drink. Yeah, the perfect meal.",
+            "cta": "Order Now",
+            "image": "https://scontent-phl2-1.xx.fbcdn.net/v/t39.35426-6/876938726_1058021483917210_7645026372474093839_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=FV_ScwyLaQAQ7kNvwEzNR5I&_nc_oc=AdrM4qyr5HX8gkPUOov6uBmqdwq4PwPwrklzav2XBrLb1Tcmj2bwT8qvaMSv2ZreDDg&_nc_zt=14&_nc_ht=scontent-phl2-1.xx&_nc_gid=pyRhB_HzpUF6tCjl0PO9iw&_nc_ss=70289&oh=00_AQSGXMbqUr4r6nh3V5F3Nj2rjVyxJwtC54e3mYbT1FajWA&oe=6AF7D26F",
+            "link_url": "https://burgerking.app.link/7PVKu1Quy7b",
+            "title": "Don't Miss This! 11/6\u201311/15",
+            "video": null
+          }
+        ],
+        "cta": "Order now",
+        "cta_type": "ORDER_NOW",
+        "currency": null,
+        "display_format": "dco",
+        "end_date": null,
+        "images": [
+          "https://scontent-phl2-1.xx.fbcdn.net/v/t39.35426-6/867687602_1094390743475599_3198522252858438331_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=BfHJGWaV6OsQ7kNvwHYmYkb&_nc_oc=AdpzxqNHCxMuRNsftnlAioVJGWP3WDXdq8n0CPLJ1huT5SKjaGxa7u7DyG_g0rJMEVs&_nc_zt=14&_nc_ht=scontent-phl2-1.xx&_nc_gid=pyRhB_HzpUF6tCjl0PO9iw&_nc_ss=70289&oh=00_AQTCoZgOqG5BCV4cFKK1GTAkxnW-GzDJ_qYusg1GGJKX0A&oe=6AF7D419",
+          "https://scontent-phl2-1.xx.fbcdn.net/v/t39.35426-6/876938726_1058021483917210_7645026372474093839_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=FV_ScwyLaQAQ7kNvwEzNR5I&_nc_oc=AdrM4qyr5HX8gkPUOov6uBmqdwq4PwPwrklzav2XBrLb1Tcmj2bwT8qvaMSv2ZreDDg&_nc_zt=14&_nc_ht=scontent-phl2-1.xx&_nc_gid=pyRhB_HzpUF6tCjl0PO9iw&_nc_ss=70289&oh=00_AQSGXMbqUr4r6nh3V5F3Nj2rjVyxJwtC54e3mYbT1FajWA&oe=6AF7D26F"
+        ],
+        "impressions": null,
+        "is_active": true,
+        "link_caption": "bk.com",
+        "link_url": "https://burgerking.app.link/7PVKu1Quy7b",
+        "page_id": "134615383218473",
+        "page_likes": 8358855,
+        "page_name": "Burger King",
+        "page_url": "https://www.facebook.com/burgerking/",
+        "paid_for_by": null,
+        "platforms": [
+          "facebook",
+          "instagram"
+        ],
+        "same_creative_ads": null,
+        "spend": null,
+        "start_date": "2026-11-06T08:00:00Z",
+        "title": "Don't Miss This! 11/6\u201311/15",
+        "videos": []
+      },
+      {
+        "ad_archive_id": "1778646603253315",
+        "ad_url": "https://www.facebook.com/ads/library/?id=1778646603253315",
+        "body": "The crowd goes crazy for the Game Day Menu's Super Pretzel Bun",
+        "cards": [
+          {
+            "body": "The crowd goes crazy for the Game Day Menu's Super Pretzel Bun",
+            "cta": "Order Now",
+            "image": "https://scontent-phl2-1.xx.fbcdn.net/v/t39.35426-6/840406832_2567225753792782_5072841335572476492_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=vwzbLsOrsuUQ7kNvwGAlIZe&_nc_oc=Adqu2rUayTQ1mXL9KiQYMRCutd58Zum3F8qT7SVrpBOfT2lRL1RWeOYbNP7W7TT3q40&_nc_zt=14&_nc_ht=scontent-phl2-1.xx&_nc_gid=pyRhB_HzpUF6tCjl0PO9iw&_nc_ss=70289&oh=00_AQQQgOw_QJe75Lzu_g96bVDtz27rxMtBzGDoe9Zp0DPvNA&oe=6AF7B294",
+            "link_url": "https://burgerking.app.link/MzzOFopcH6b",
+            "title": "Cheer For Game Day",
+            "video": null
+          },
+          {
+            "body": "The crowd goes crazy for the Game Day Menu's Super Pretzel Bun",
+            "cta": "Order Now",
+            "image": "https://scontent-phl2-1.xx.fbcdn.net/v/t39.35426-6/840379468_2285561202173898_4574350490317174373_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=B8XhNB9HXIoQ7kNvwGRG8bp&_nc_oc=AdrCgVuDrxn31XDE2GQ-JQqPAk7ymEPFK7z0jqDd33svFU6kW8IKaPVZp_n1lenrWGU&_nc_zt=14&_nc_ht=scontent-phl2-1.xx&_nc_gid=pyRhB_HzpUF6tCjl0PO9iw&_nc_ss=70289&oh=00_AQScqv1ZQh6WofelCxV3H_Uo-fmxSN9exFOi7NHTcqhNIg&oe=6AF7B44C",
+            "link_url": "https://burgerking.app.link/MzzOFopcH6b",
+            "title": "Cheer For Game Day",
+            "video": null
+          },
+          {
+            "body": "The crowd goes crazy for the Game Day Menu's Super Pretzel Bun",
+            "cta": "Order Now",
+            "image": "https://scontent-phl2-1.xx.fbcdn.net/v/t39.35426-6/841085387_1111853004580269_7488398644334008101_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=QrYtjSDR_0cQ7kNvwE7W-ZH&_nc_oc=AdqQH6BzztBelmyT13a8hOYpdoXkCYQFl7Vu6nf8cUheXQAJ-j4egs6Cl6AUD1JpLL4&_nc_zt=14&_nc_ht=scontent-phl2-1.xx&_nc_gid=pyRhB_HzpUF6tCjl0PO9iw&_nc_ss=70289&oh=00_AQS6um__-YQYO85E5emFDIvMVF_Rd5bHaOhASbA6J2qDzw&oe=6AF7BF24",
+            "link_url": "https://burgerking.app.link/MzzOFopcH6b",
+            "title": "Cheer For Game Day",
+            "video": null
+          }
+        ],
+        "cta": "Order now",
+        "cta_type": "ORDER_NOW",
+        "currency": null,
+        "display_format": "dco",
+        "end_date": null,
+        "images": [
+          "https://scontent-phl2-1.xx.fbcdn.net/v/t39.35426-6/840406832_2567225753792782_5072841335572476492_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=vwzbLsOrsuUQ7kNvwGAlIZe&_nc_oc=Adqu2rUayTQ1mXL9KiQYMRCutd58Zum3F8qT7SVrpBOfT2lRL1RWeOYbNP7W7TT3q40&_nc_zt=14&_nc_ht=scontent-phl2-1.xx&_nc_gid=pyRhB_HzpUF6tCjl0PO9iw&_nc_ss=70289&oh=00_AQQQgOw_QJe75Lzu_g96bVDtz27rxMtBzGDoe9Zp0DPvNA&oe=6AF7B294",
+          "https://scontent-phl2-1.xx.fbcdn.net/v/t39.35426-6/840379468_2285561202173898_4574350490317174373_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=B8XhNB9HXIoQ7kNvwGRG8bp&_nc_oc=AdrCgVuDrxn31XDE2GQ-JQqPAk7ymEPFK7z0jqDd33svFU6kW8IKaPVZp_n1lenrWGU&_nc_zt=14&_nc_ht=scontent-phl2-1.xx&_nc_gid=pyRhB_HzpUF6tCjl0PO9iw&_nc_ss=70289&oh=00_AQScqv1ZQh6WofelCxV3H_Uo-fmxSN9exFOi7NHTcqhNIg&oe=6AF7B44C",
+          "https://scontent-phl2-1.xx.fbcdn.net/v/t39.35426-6/841085387_1111853004580269_7488398644334008101_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=QrYtjSDR_0cQ7kNvwE7W-ZH&_nc_oc=AdqQH6BzztBelmyT13a8hOYpdoXkCYQFl7Vu6nf8cUheXQAJ-j4egs6Cl6AUD1JpLL4&_nc_zt=14&_nc_ht=scontent-phl2-1.xx&_nc_gid=pyRhB_HzpUF6tCjl0PO9iw&_nc_ss=70289&oh=00_AQS6um__-YQYO85E5emFDIvMVF_Rd5bHaOhASbA6J2qDzw&oe=6AF7BF24"
+        ],
+        "impressions": null,
+        "is_active": true,
+        "link_caption": "bk.com",
+        "link_url": "https://burgerking.app.link/MzzOFopcH6b",
+        "page_id": "134615383218473",
+        "page_likes": 8358855,
+        "page_name": "Burger King",
+        "page_url": "https://www.facebook.com/burgerking/",
+        "paid_for_by": null,
+        "platforms": [
+          "facebook",
+          "instagram"
+        ],
+        "same_creative_ads": 2,
+        "spend": null,
+        "start_date": "2026-10-23T07:00:00Z",
+        "title": "Cheer For Game Day",
+        "videos": []
+      },
+      {
+        "ad_archive_id": "2620840125020574",
+        "ad_url": "https://www.facebook.com/ads/library/?id=2620840125020574",
+        "body": "The crowd goes crazy for the Game Day Menu's Super Pretzel Bun",
+        "cards": [
+          {
+            "body": "The crowd goes crazy for the Game Day Menu's Super Pretzel Bun",
+            "cta": "Order Now",
+            "image": "https://scontent-phl2-1.xx.fbcdn.net/v/t39.35426-6/841411720_2676670706102795_5096181708311216378_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=7A_8TWeLxIQQ7kNvwEvSwVu&_nc_oc=Ado0WQ9Y5dUkvFfO2GrnIFti_BBPf5NJsMuF4-UVi1AHha-aErBnRJrAh6I7ccK8lv8&_nc_zt=14&_nc_ht=scontent-phl2-1.xx&_nc_gid=pyRhB_HzpUF6tCjl0PO9iw&_nc_ss=70289&oh=00_AQR2aFMJJyUZtkPt7Pi-vv2uVUJtjUM8vbjSfP1tlcN_AQ&oe=6AF7C580",
+            "link_url": "https://burgerking.app.link/MzzOFopcH6b",
+            "title": "Cheer For Game Day",
+            "video": null
+          },
+          {
+            "body": "The crowd goes crazy for the Game Day Menu's Super Pretzel Bun",
+            "cta": "Order Now",
+            "image": "https://scontent-phl2-1.xx.fbcdn.net/v/t39.35426-6/841437486_1593272539211021_5377619469139062544_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=s0UVhHwBitIQ7kNvwFIZ7Jf&_nc_oc=AdqUlYOhyIIQnZ6hV6IMFxk4_ZyjwDMPnXKjd7GWhtfy6PXq0gjX7T8f9pgEcX2XmEA&_nc_zt=14&_nc_ht=scontent-phl2-1.xx&_nc_gid=pyRhB_HzpUF6tCjl0PO9iw&_nc_ss=70289&oh=00_AQRNvZCy0pQ9J27o2aUj9dKRmSwM2UmLBOsaf5VqRayVYw&oe=6AF7E4CC",
+            "link_url": "https://burgerking.app.link/MzzOFopcH6b",
+            "title": "Cheer For Game Day",
+            "video": null
+          },
+          {
+            "body": "The crowd goes crazy for the Game Day Menu's Super Pretzel Bun",
+            "cta": "Order Now",
+            "image": "https://scontent-phl2-1.xx.fbcdn.net/v/t39.35426-6/843373057_1098604629243647_2572131021195250554_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=56kGQb8XPLAQ7kNvwGlG0HB&_nc_oc=AdpWPnGyge9N2mNVTO_1rHgqo8bzbKK_VEoA7qCr0uaqgeSGKRDSOzXto6dK3SVH1fU&_nc_zt=14&_nc_ht=scontent-phl2-1.xx&_nc_gid=pyRhB_HzpUF6tCjl0PO9iw&_nc_ss=70289&oh=00_AQTq0XK0U4m7TWLsbDpFChyQCAMsX5Z4FqceXLeAVBB3FQ&oe=6AF7DF37",
+            "link_url": "https://burgerking.app.link/MzzOFopcH6b",
+            "title": "Cheer For Game Day",
+            "video": null
+          }
+        ],
+        "cta": "Order now",
+        "cta_type": "ORDER_NOW",
+        "currency": null,
+        "display_format": "dco",
+        "end_date": null,
+        "images": [
+          "https://scontent-phl2-1.xx.fbcdn.net/v/t39.35426-6/841411720_2676670706102795_5096181708311216378_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=7A_8TWeLxIQQ7kNvwEvSwVu&_nc_oc=Ado0WQ9Y5dUkvFfO2GrnIFti_BBPf5NJsMuF4-UVi1AHha-aErBnRJrAh6I7ccK8lv8&_nc_zt=14&_nc_ht=scontent-phl2-1.xx&_nc_gid=pyRhB_HzpUF6tCjl0PO9iw&_nc_ss=70289&oh=00_AQR2aFMJJyUZtkPt7Pi-vv2uVUJtjUM8vbjSfP1tlcN_AQ&oe=6AF7C580",
+          "https://scontent-phl2-1.xx.fbcdn.net/v/t39.35426-6/841437486_1593272539211021_5377619469139062544_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=s0UVhHwBitIQ7kNvwFIZ7Jf&_nc_oc=AdqUlYOhyIIQnZ6hV6IMFxk4_ZyjwDMPnXKjd7GWhtfy6PXq0gjX7T8f9pgEcX2XmEA&_nc_zt=14&_nc_ht=scontent-phl2-1.xx&_nc_gid=pyRhB_HzpUF6tCjl0PO9iw&_nc_ss=70289&oh=00_AQRNvZCy0pQ9J27o2aUj9dKRmSwM2UmLBOsaf5VqRayVYw&oe=6AF7E4CC",
+          "https://scontent-phl2-1.xx.fbcdn.net/v/t39.35426-6/843373057_1098604629243647_2572131021195250554_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=56kGQb8XPLAQ7kNvwGlG0HB&_nc_oc=AdpWPnGyge9N2mNVTO_1rHgqo8bzbKK_VEoA7qCr0uaqgeSGKRDSOzXto6dK3SVH1fU&_nc_zt=14&_nc_ht=scontent-phl2-1.xx&_nc_gid=pyRhB_HzpUF6tCjl0PO9iw&_nc_ss=70289&oh=00_AQTq0XK0U4m7TWLsbDpFChyQCAMsX5Z4FqceXLeAVBB3FQ&oe=6AF7DF37"
+        ],
+        "impressions": null,
+        "is_active": true,
+        "link_caption": "bk.com",
+        "link_url": "https://burgerking.app.link/MzzOFopcH6b",
+        "page_id": "134615383218473",
+        "page_likes": 8358855,
+        "page_name": "Burger King",
+        "page_url": "https://www.facebook.com/burgerking/",
+        "paid_for_by": null,
+        "platforms": [
+          "facebook",
+          "instagram"
+        ],
+        "same_creative_ads": null,
+        "spend": null,
+        "start_date": "2026-10-23T07:00:00Z",
+        "title": "Cheer For Game Day",
+        "videos": []
+      },
+      {
+        "ad_archive_id": "1960105004659555",
+        "ad_url": "https://www.facebook.com/ads/library/?id=1960105004659555",
+        "body": "Get a FREE Original Chicken Sandwich or Whopper Jr. when you spend $3+.",
+        "cards": [
+          {
+            "body": "Get a FREE Original Chicken Sandwich or Whopper Jr. when you spend $3+.",
+            "cta": "Order Now",
+            "image": "https://scontent-phl2-1.xx.fbcdn.net/v/t39.35426-6/747695557_1551983179802591_8842817024351563275_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=t9vgLXNrVKcQ7kNvwFOvA5H&_nc_oc=AdpPs0lDPfJXw3dJss6atcsXIdR6BoDNX12DzPdQmE7-xViKF_9dVtsgoiC8_86zSH0&_nc_zt=14&_nc_ht=scontent-phl2-1.xx&_nc_gid=pyRhB_HzpUF6tCjl0PO9iw&_nc_ss=70289&oh=00_AQQMsJkqkyQx3Nsai4Ze5Cqz3Cmv9Wmp8Op9oBKVDmV3tw&oe=6AF7DEA1",
+            "link_url": "http://itunes.apple.com/app/id638323895",
+            "title": "New to Royal Perks?",
+            "video": null
+          },
+          {
+            "body": "Get a FREE Original Chicken Sandwich or Whopper Jr. when you spend $3+.",
+            "cta": "Order Now",
+            "image": "https://scontent-phl2-1.xx.fbcdn.net/v/t39.35426-6/747307192_1030318636074403_6115462564662572101_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=s0Eqg69y5SIQ7kNvwGQNm1m&_nc_oc=AdpWNVaerXkBjmJKb0t6wHb3cNRqWCFVwHBnf7Vr4zIq32TeQyVRkS1cfI-SZqH22yE&_nc_zt=14&_nc_ht=scontent-phl2-1.xx&_nc_gid=pyRhB_HzpUF6tCjl0PO9iw&_nc_ss=70289&oh=00_AQRzGGtishMFhXtYAaI2T-K3fpE5V6tgfGgaHIYe3jqkfg&oe=6AF7C44C",
+            "link_url": "http://itunes.apple.com/app/id638323895",
+            "title": "New to Royal Perks?",
+            "video": null
+          },
+          {
+            "body": "Get a FREE Original Chicken Sandwich or Whopper Jr. when you spend $3+.",
+            "cta": "Order Now",
+            "image": "https://scontent-phl2-1.xx.fbcdn.net/v/t39.35426-6/746522954_1351758890459539_2756269816260278821_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=C-80p2nbMy8Q7kNvwGgAjdL&_nc_oc=Adq3oH3gYyTm99aZ6pHFq9ZreaS5_P7WXFVXQzkcvgS3_rf6h0oBJtJGS8kN1iloquc&_nc_zt=14&_nc_ht=scontent-phl2-1.xx&_nc_gid=pyRhB_HzpUF6tCjl0PO9iw&_nc_ss=70289&oh=00_AQQ16i5jwbp8sUnV5lnf_tkqaFdjCet1V6C37oVrMn4cRw&oe=6AF7B3C6",
+            "link_url": "http://itunes.apple.com/app/id638323895",
+            "title": "New to Royal Perks?",
+            "video": null
+          }
+        ],
+        "cta": "Order now",
+        "cta_type": "ORDER_NOW",
+        "currency": null,
+        "display_format": "dco",
+        "end_date": null,
+        "images": [
+          "https://scontent-phl2-1.xx.fbcdn.net/v/t39.35426-6/747695557_1551983179802591_8842817024351563275_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=t9vgLXNrVKcQ7kNvwFOvA5H&_nc_oc=AdpPs0lDPfJXw3dJss6atcsXIdR6BoDNX12DzPdQmE7-xViKF_9dVtsgoiC8_86zSH0&_nc_zt=14&_nc_ht=scontent-phl2-1.xx&_nc_gid=pyRhB_HzpUF6tCjl0PO9iw&_nc_ss=70289&oh=00_AQQMsJkqkyQx3Nsai4Ze5Cqz3Cmv9Wmp8Op9oBKVDmV3tw&oe=6AF7DEA1",
+          "https://scontent-phl2-1.xx.fbcdn.net/v/t39.35426-6/747307192_1030318636074403_6115462564662572101_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=s0Eqg69y5SIQ7kNvwGQNm1m&_nc_oc=AdpWNVaerXkBjmJKb0t6wHb3cNRqWCFVwHBnf7Vr4zIq32TeQyVRkS1cfI-SZqH22yE&_nc_zt=14&_nc_ht=scontent-phl2-1.xx&_nc_gid=pyRhB_HzpUF6tCjl0PO9iw&_nc_ss=70289&oh=00_AQRzGGtishMFhXtYAaI2T-K3fpE5V6tgfGgaHIYe3jqkfg&oe=6AF7C44C",
+          "https://scontent-phl2-1.xx.fbcdn.net/v/t39.35426-6/746522954_1351758890459539_2756269816260278821_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=C-80p2nbMy8Q7kNvwGgAjdL&_nc_oc=Adq3oH3gYyTm99aZ6pHFq9ZreaS5_P7WXFVXQzkcvgS3_rf6h0oBJtJGS8kN1iloquc&_nc_zt=14&_nc_ht=scontent-phl2-1.xx&_nc_gid=pyRhB_HzpUF6tCjl0PO9iw&_nc_ss=70289&oh=00_AQQ16i5jwbp8sUnV5lnf_tkqaFdjCet1V6C37oVrMn4cRw&oe=6AF7B3C6"
+        ],
+        "impressions": null,
+        "is_active": true,
+        "link_caption": "itunes.apple.com",
+        "link_url": "http://itunes.apple.com/app/id638323895",
+        "page_id": "134615383218473",
+        "page_likes": 8358855,
+        "page_name": "Burger King",
+        "page_url": "https://www.facebook.com/burgerking/",
+        "paid_for_by": null,
+        "platforms": [
+          "facebook",
+          "instagram"
+        ],
+        "same_creative_ads": 3,
+        "spend": null,
+        "start_date": "2026-09-04T07:00:00Z",
+        "title": "New to Royal Perks?",
+        "videos": []
+      },
+      {
+        "ad_archive_id": "1591034302757673",
+        "ad_url": "https://www.facebook.com/ads/library/?id=1591034302757673",
+        "body": "Get a FREE Original Chicken Sandwich or Whopper Jr. when you spend $3+.",
+        "cards": [],
+        "cta": "Order now",
+        "cta_type": "ORDER_NOW",
+        "currency": null,
+        "display_format": "image",
+        "end_date": null,
+        "images": [
+          "https://scontent-phl2-1.xx.fbcdn.net/v/t39.35426-6/794145037_833500016456670_1617728977592720456_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=ARKit_Yk80EQ7kNvwGQJe1D&_nc_oc=AdoTDyr4HIPDzEauKNd73YLWKUcsuELqYsuLnX7bW7iNthGTN9al3l02UOvYlCeSFiA&_nc_zt=14&_nc_ht=scontent-phl2-1.xx&_nc_gid=pyRhB_HzpUF6tCjl0PO9iw&_nc_ss=70289&oh=00_AQTG3uyCrVWrJ4YDjyfzDKLxSWoXtc5fGZWfBEZb4BIaQA&oe=6AF7D5EA"
+        ],
+        "impressions": null,
+        "is_active": true,
+        "link_caption": "apps.apple.com",
+        "link_url": "http://itunes.apple.com/app/id638323895",
+        "page_id": "134615383218473",
+        "page_likes": 8358855,
+        "page_name": "Burger King",
+        "page_url": "https://www.facebook.com/burgerking/",
+        "paid_for_by": null,
+        "platforms": [
+          "facebook",
+          "instagram"
+        ],
+        "same_creative_ads": 1,
+        "spend": null,
+        "start_date": "2026-09-05T07:00:00Z",
+        "title": "New to Royal Perks?",
+        "videos": []
+      },
+      {
+        "ad_archive_id": "4452556608393884",
+        "ad_url": "https://www.facebook.com/ads/library/?id=4452556608393884",
+        "body": "Get a FREE Original Chicken Sandwich or Whopper Jr.\u200b when you spend $3+.",
+        "cards": [
+          {
+            "body": "Get a FREE Original Chicken Sandwich or Whopper Jr.\u200b when you spend $3+.",
+            "cta": "Order Now",
+            "image": "https://scontent-phl2-1.xx.fbcdn.net/v/t39.35426-6/747876995_1347458906857506_6851239208319432740_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=CgRFkvNK0YcQ7kNvwH4PMen&_nc_oc=AdrpwSfm4B_1xmPtrR4P4O9mPW1uv1GjEcfacnaZW4TFsfI3G9BeOIJte4-3THDWQIQ&_nc_zt=14&_nc_ht=scontent-phl2-1.xx&_nc_gid=pyRhB_HzpUF6tCjl0PO9iw&_nc_ss=70289&oh=00_AQQU7NXHgDt7UxzqtzQxJYKrIn7MF5AxpDL0PEuhDRld4g&oe=6AF7B5AD",
+            "link_url": "http://itunes.apple.com/app/id638323895",
+            "title": "New to Royal Perks?",
+            "video": null
+          },
+          {
+            "body": "Get a FREE Original Chicken Sandwich or Whopper Jr.\u200b when you spend $3+.",
+            "cta": "Order Now",
+            "image": "https://scontent-phl2-1.xx.fbcdn.net/v/t39.35426-6/747190915_1713468703320557_1864254225655339491_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=tGFrfot3EncQ7kNvwFNTslx&_nc_oc=AdoegsSY46k7f2syVyMJghm6oyCnq91z8LD_tqefuGRAQbPHzaY1XX0CJcp3RA3l1-U&_nc_zt=14&_nc_ht=scontent-phl2-1.xx&_nc_gid=pyRhB_HzpUF6tCjl0PO9iw&_nc_ss=70289&oh=00_AQQ9sWDp258xiAPw2kWHLOCObjwcjzJhvf2n7l_WNN-Kcg&oe=6AF7B2FD",
+            "link_url": "http://itunes.apple.com/app/id638323895",
+            "title": "New to Royal Perks?",
+            "video": null
+          },
+          {
+            "body": "Get a FREE Original Chicken Sandwich or Whopper Jr.\u200b when you spend $3+.",
+            "cta": "Order Now",
+            "image": "https://scontent-phl2-1.xx.fbcdn.net/v/t39.35426-6/746909337_1322662663227014_3879135436925973840_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=odR9SS-LPT0Q7kNvwEsE-ns&_nc_oc=AdpFeDfUaFxeLLleNovr5HfJSjle4qZITOirX3d7FWWbbMlp8YknmO1dQtoDMbCpqTc&_nc_zt=14&_nc_ht=scontent-phl2-1.xx&_nc_gid=pyRhB_HzpUF6tCjl0PO9iw&_nc_ss=70289&oh=00_AQRb6vQgVxSY-W20w61LOlJhTPid26x7_W6mvvquibDJnQ&oe=6AF7CB9F",
+            "link_url": "http://itunes.apple.com/app/id638323895",
+            "title": "New to Royal Perks?",
+            "video": null
+          }
+        ],
+        "cta": "Order now",
+        "cta_type": "ORDER_NOW",
+        "currency": null,
+        "display_format": "dco",
+        "end_date": null,
+        "images": [
+          "https://scontent-phl2-1.xx.fbcdn.net/v/t39.35426-6/747876995_1347458906857506_6851239208319432740_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=CgRFkvNK0YcQ7kNvwH4PMen&_nc_oc=AdrpwSfm4B_1xmPtrR4P4O9mPW1uv1GjEcfacnaZW4TFsfI3G9BeOIJte4-3THDWQIQ&_nc_zt=14&_nc_ht=scontent-phl2-1.xx&_nc_gid=pyRhB_HzpUF6tCjl0PO9iw&_nc_ss=70289&oh=00_AQQU7NXHgDt7UxzqtzQxJYKrIn7MF5AxpDL0PEuhDRld4g&oe=6AF7B5AD",
+          "https://scontent-phl2-1.xx.fbcdn.net/v/t39.35426-6/747190915_1713468703320557_1864254225655339491_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=tGFrfot3EncQ7kNvwFNTslx&_nc_oc=AdoegsSY46k7f2syVyMJghm6oyCnq91z8LD_tqefuGRAQbPHzaY1XX0CJcp3RA3l1-U&_nc_zt=14&_nc_ht=scontent-phl2-1.xx&_nc_gid=pyRhB_HzpUF6tCjl0PO9iw&_nc_ss=70289&oh=00_AQQ9sWDp258xiAPw2kWHLOCObjwcjzJhvf2n7l_WNN-Kcg&oe=6AF7B2FD",
+          "https://scontent-phl2-1.xx.fbcdn.net/v/t39.35426-6/746909337_1322662663227014_3879135436925973840_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=odR9SS-LPT0Q7kNvwEsE-ns&_nc_oc=AdpFeDfUaFxeLLleNovr5HfJSjle4qZITOirX3d7FWWbbMlp8YknmO1dQtoDMbCpqTc&_nc_zt=14&_nc_ht=scontent-phl2-1.xx&_nc_gid=pyRhB_HzpUF6tCjl0PO9iw&_nc_ss=70289&oh=00_AQRb6vQgVxSY-W20w61LOlJhTPid26x7_W6mvvquibDJnQ&oe=6AF7CB9F"
+        ],
+        "impressions": null,
+        "is_active": true,
+        "link_caption": "itunes.apple.com",
+        "link_url": "http://itunes.apple.com/app/id638323895",
+        "page_id": "134615383218473",
+        "page_likes": 8358855,
+        "page_name": "Burger King",
+        "page_url": "https://www.facebook.com/burgerking/",
+        "paid_for_by": null,
+        "platforms": [
+          "facebook",
+          "instagram"
+        ],
+        "same_creative_ads": 3,
+        "spend": null,
+        "start_date": "2026-09-04T07:00:00Z",
+        "title": "New to Royal Perks?",
+        "videos": []
+      }
+    ],
+    "page_id": "134615383218473",
+    "page_name": "Burger King",
+    "count": 20
+  },
+  "raw": {
+    "meta": {
+      "blocked": [],
+      "elapsed_ms": 2943,
+      "from_cache": false,
+      "llm_calls": 0,
+      "pages_fetched": 5,
+      "partial": false,
+      "warnings": [
+        "module: meta-ads-advertiser: 'Burger King' is the page Burger King, facebook.com/burgerking (id 134615383218473): the only page of that name in the Ad Library's advertiser search",
+        "module: meta-ads-advertiser: page 134615383218473 \u00b7 ALL \u00b7 active \u00b7 20 ad(s) \u00b7 one view \u00b7 direct"
+      ]
+    },
+    "recipe": "meta-ads-advertiser",
+    "rows": [
+      {
+        "ad_archive_id": "1110866884909512",
+        "ad_url": "https://www.facebook.com/ads/library/?id=1110866884909512",
+        "body": "Clock in for Game Day any day with the new Game Day Menu, now at BK.",
+        "cards": [
+          {
+            "body": "Clock in for Game Day any day with the new Game Day Menu, now at BK.",
+            "cta": "Order Now",
+            "image": "https://scontent-phl2-1.xx.fbcdn.net/v/t39.35426-6/833346535_1830492441456111_2864033030878066651_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=i4loZSvUBVAQ7kNvwGZqvhl&_nc_oc=AdpRx9zAIOwrGtN6Y6Ab7GrrOzochOP0lQRU861s-fiE2gBGaU8FIRB-PVc96PHUqY0&_nc_zt=14&_nc_ht=scontent-phl2-1.xx&_nc_gid=pyRhB_HzpUF6tCjl0PO9iw&_nc_ss=70289&oh=00_AQRNCSK77K__XqUSv_GjKhZ0hp00EtcE8RmyPlSZIDDWtQ&oe=6AF7C3AC",
+            "link_url": "https://burgerking.app.link/PgbwFBAcH6b",
+            "title": "It's Game Day",
+            "video": null
+          },
+          {
+            "body": "Clock in for Game Day any day with the new Game Day Menu, now at BK.",
+            "cta": "Order Now",
+            "image": "https://scontent-phl2-1.xx.fbcdn.net/v/t39.35426-6/841341137_2263688914473584_3794360197458751429_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=MrlSaKlJoUcQ7kNvwFDmsFT&_nc_oc=AdrHMToO5B9F1SEi8tC3qLL5zmmzjt64-qhcxB3zhtUPGuUKlXIsF-dH2CA-pAPHNys&_nc_zt=14&_nc_ht=scontent-phl2-1.xx&_nc_gid=pyRhB_HzpUF6tCjl0PO9iw&_nc_ss=70289&oh=00_AQTbBJ_1mtllPPPXk56J_tfLIz3mPJ7VOXt1Pfp4z-ahYw&oe=6AF7C7C5",
+            "link_url": "https://burgerking.app.link/PgbwFBAcH6b",
+            "title": "It's Game Day",
+            "video": null
+          },
+          {
+            "body": "Clock in for Game Day any day with the new Game Day Menu, now at BK.",
+            "cta": "Order Now",
+            "image": "https://scontent-phl2-1.xx.fbcdn.net/v/t39.35426-6/845067408_2539478036574383_15228685911919652_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=yYdv1sK8hJkQ7kNvwG1jbe8&_nc_oc=Adq0YUQbp1Zs7PJ1e5OfVqkdhV2JUrEypeUNqPG5b7STqk2hv8Q_h29bftE35zDtQ_Q&_nc_zt=14&_nc_ht=scontent-phl2-1.xx&_nc_gid=pyRhB_HzpUF6tCjl0PO9iw&_nc_ss=70289&oh=00_AQShrY8_4pZq88B5A3yofWVmGzGiWJPvwbnYxBpCrN_1rg&oe=6AF7C91B",
+            "link_url": "https://burgerking.app.link/PgbwFBAcH6b",
+            "title": "It's Game Day",
+            "video": null
+          }
+        ],
+        "cta": "Order now",
+        "cta_type": "ORDER_NOW",
+        "currency": null,
+        "display_format": "dco",
+        "end_date": null,
+        "images": [
+          "https://scontent-phl2-1.xx.fbcdn.net/v/t39.35426-6/833346535_1830492441456111_2864033030878066651_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=i4loZSvUBVAQ7kNvwGZqvhl&_nc_oc=AdpRx9zAIOwrGtN6Y6Ab7GrrOzochOP0lQRU861s-fiE2gBGaU8FIRB-PVc96PHUqY0&_nc_zt=14&_nc_ht=scontent-phl2-1.xx&_nc_gid=pyRhB_HzpUF6tCjl0PO9iw&_nc_ss=70289&oh=00_AQRNCSK77K__XqUSv_GjKhZ0hp00EtcE8RmyPlSZIDDWtQ&oe=6AF7C3AC",
+          "https://scontent-phl2-1.xx.fbcdn.net/v/t39.35426-6/841341137_2263688914473584_3794360197458751429_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=MrlSaKlJoUcQ7kNvwFDmsFT&_nc_oc=AdrHMToO5B9F1SEi8tC3qLL5zmmzjt64-qhcxB3zhtUPGuUKlXIsF-dH2CA-pAPHNys&_nc_zt=14&_nc_ht=scontent-phl2-1.xx&_nc_gid=pyRhB_HzpUF6tCjl0PO9iw&_nc_ss=70289&oh=00_AQTbBJ_1mtllPPPXk56J_tfLIz3mPJ7VOXt1Pfp4z-ahYw&oe=6AF7C7C5",
+          "https://scontent-phl2-1.xx.fbcdn.net/v/t39.35426-6/845067408_2539478036574383_15228685911919652_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=yYdv1sK8hJkQ7kNvwG1jbe8&_nc_oc=Adq0YUQbp1Zs7PJ1e5OfVqkdhV2JUrEypeUNqPG5b7STqk2hv8Q_h29bftE35zDtQ_Q&_nc_zt=14&_nc_ht=scontent-phl2-1.xx&_nc_gid=pyRhB_HzpUF6tCjl0PO9iw&_nc_ss=70289&oh=00_AQShrY8_4pZq88B5A3yofWVmGzGiWJPvwbnYxBpCrN_1rg&oe=6AF7C91B"
+        ],
+        "impressions": null,
+        "is_active": true,
+        "link_caption": "bk.com",
+        "link_url": "https://burgerking.app.link/PgbwFBAcH6b",
+        "page_id": "134615383218473",
+        "page_likes": 8358855,
+        "page_name": "Burger King",
+        "page_url": "https://www.facebook.com/burgerking/",
+        "paid_for_by": null,
+        "platforms": [
+          "facebook",
+          "instagram"
+        ],
+        "same_creative_ads": 1,
+        "spend": null,
+        "start_date": "2026-10-19T07:00:00Z",
+        "title": "It's Game Day",
+        "videos": []
+      },
+      {
+        "ad_archive_id": "29400922729513555",
+        "ad_url": "https://www.facebook.com/ads/library/?id=29400922729513555",
+        "body": "Clock in for Game Day any day with the new Game Day Menu, now at BK.",
+        "cards": [],
+        "cta": "Order now",
+        "cta_type": "ORDER_NOW",
+        "currency": null,
+        "display_format": "image",
+        "end_date": null,
+        "images": [
+          "https://scontent-phl2-1.xx.fbcdn.net/v/t39.35426-6/859280828_2543673709457109_6977863580830473417_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=bkI4JhtVVDoQ7kNvwFuft1W&_nc_oc=AdpTR4LPxGSDT7ZevLkl7EMXAJAEjx4w4d3CqYlc0CZhafLf1xIQxtXV08X_ncrPLF4&_nc_zt=14&_nc_ht=scontent-phl2-1.xx&_nc_gid=pyRhB_HzpUF6tCjl0PO9iw&_nc_ss=70289&oh=00_AQTO7E6EaFvWe7bacElYFWsmuucdZbIqpWXdZ_mZtHCvpg&oe=6AF7C60C"
+        ],
+        "impressions": null,
+        "is_active": true,
+        "link_caption": "bk.com",
+        "link_url": "https://burgerking.app.link/PgbwFBAcH6b",
+        "page_id": "134615383218473",
+        "page_likes": 8358855,
+        "page_name": "Burger King",
+        "page_url": "https://www.facebook.com/burgerking/",
+        "paid_for_by": null,
+        "platforms": [
+          "facebook",
+          "instagram"
+        ],
+        "same_creative_ads": 5,
+        "spend": null,
+        "start_date": "2026-10-19T07:00:00Z",
+        "title": "It's Game Day",
+        "videos": []
+      },
+      {
+        "ad_archive_id": "2089270835042896",
+        "ad_url": "https://www.facebook.com/ads/library/?id=2089270835042896",
+        "body": "Bring Game Day energy to any day with the new Game Day Menu, now at BK.",
+        "cards": [
+          {
+            "body": "Bring Game Day energy to any day with the new Game Day Menu, now at BK.",
+            "cta": "Order Now",
+            "image": "https://scontent-phl2-1.xx.fbcdn.net/v/t39.35426-6/840070686_956314727547284_3397858416975617858_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=v579d33id7oQ7kNvwG6TKUE&_nc_oc=AdqYyj8so_9HJiIkTB80_aB9oNtP5UVBw6ie0CgCI5wem4MIHg1WygsSIELVoxe37VM&_nc_zt=14&_nc_ht=scontent-phl2-1.xx&_nc_gid=pyRhB_HzpUF6tCjl0PO9iw&_nc_ss=70289&oh=00_AQQwyQ9_KGW_36o-xQXOmQc45ygemrD09eRcc5Umd4capQ&oe=6AF7DBAA",
+            "link_url": "https://burgerking.app.link/STnfg8jcH6b",
+            "title": "That Game Day Feeling",
+            "video": null
+          },
+          {
+            "body": "Bring Game Day energy to any day with the new Game Day Menu, now at BK.",
+            "cta": "Order Now",
+            "image": "https://scontent-phl2-1.xx.fbcdn.net/v/t39.35426-6/842995259_1053355337811900_2415313264152569872_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=XdyG_ld4taIQ7kNvwFtQYbM&_nc_oc=Ado7tpajc4qJFXPg68w2kEAnIO2Yfh8LKpb9DigCNfi9nPpZ5Yt22bvhQNfWfUEHFTc&_nc_zt=14&_nc_ht=scontent-phl2-1.xx&_nc_gid=pyRhB_HzpUF6tCjl0PO9iw&_nc_ss=70289&oh=00_AQTc6Qo_88-rcwr3dDtha2RsjhEZ9TyNjuNx_O5RhApTsg&oe=6AF7D1E0",
+            "link_url": "https://burgerking.app.link/STnfg8jcH6b",
+            "title": "That Game Day Feeling",
+            "video": null
+          },
+          {
+            "body": "Bring Game Day energy to any day with the new Game Day Menu, now at BK.",
+            "cta": "Order Now",
+            "image": "https://scontent-phl2-1.xx.fbcdn.net/v/t39.35426-6/842786828_1748146546295209_5419165425870509753_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=PV3ydZcUCDgQ7kNvwETwdCe&_nc_oc=AdoZ7AxlsI4Z8DDu3rgyHEpeZ4lVHWaO70S57-O4DHXgowHrlTmucPMomYEzU0M4OK4&_nc_zt=14&_nc_ht=scontent-phl2-1.xx&_nc_gid=pyRhB_HzpUF6tCjl0PO9iw&_nc_ss=70289&oh=00_AQS5sGgwYSTPXneyDXCFwPTKh36feZy2J2XFqih9BseaJg&oe=6AF7B928",
+            "link_url": "https://burgerking.app.link/STnfg8jcH6b",
+            "title": "That Game Day Feeling",
+            "video": null
+          }
+        ],
+        "cta": "Order now",
+        "cta_type": "ORDER_NOW",
+        "currency": null,
+        "display_format": "dco",
+        "end_date": null,
+        "images": [
+          "https://scontent-phl2-1.xx.fbcdn.net/v/t39.35426-6/840070686_956314727547284_3397858416975617858_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=v579d33id7oQ7kNvwG6TKUE&_nc_oc=AdqYyj8so_9HJiIkTB80_aB9oNtP5UVBw6ie0CgCI5wem4MIHg1WygsSIELVoxe37VM&_nc_zt=14&_nc_ht=scontent-phl2-1.xx&_nc_gid=pyRhB_HzpUF6tCjl0PO9iw&_nc_ss=70289&oh=00_AQQwyQ9_KGW_36o-xQXOmQc45ygemrD09eRcc5Umd4capQ&oe=6AF7DBAA",
+          "https://scontent-phl2-1.xx.fbcdn.net/v/t39.35426-6/842995259_1053355337811900_2415313264152569872_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=XdyG_ld4taIQ7kNvwFtQYbM&_nc_oc=Ado7tpajc4qJFXPg68w2kEAnIO2Yfh8LKpb9DigCNfi9nPpZ5Yt22bvhQNfWfUEHFTc&_nc_zt=14&_nc_ht=scontent-phl2-1.xx&_nc_gid=pyRhB_HzpUF6tCjl0PO9iw&_nc_ss=70289&oh=00_AQTc6Qo_88-rcwr3dDtha2RsjhEZ9TyNjuNx_O5RhApTsg&oe=6AF7D1E0",
+          "https://scontent-phl2-1.xx.fbcdn.net/v/t39.35426-6/842786828_1748146546295209_5419165425870509753_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=PV3ydZcUCDgQ7kNvwETwdCe&_nc_oc=AdoZ7AxlsI4Z8DDu3rgyHEpeZ4lVHWaO70S57-O4DHXgowHrlTmucPMomYEzU0M4OK4&_nc_zt=14&_nc_ht=scontent-phl2-1.xx&_nc_gid=pyRhB_HzpUF6tCjl0PO9iw&_nc_ss=70289&oh=00_AQS5sGgwYSTPXneyDXCFwPTKh36feZy2J2XFqih9BseaJg&oe=6AF7B928"
+        ],
+        "impressions": null,
+        "is_active": true,
+        "link_caption": "bk.com",
+        "link_url": "https://burgerking.app.link/STnfg8jcH6b",
+        "page_id": "134615383218473",
+        "page_likes": 8358855,
+        "page_name": "Burger King",
+        "page_url": "https://www.facebook.com/burgerking/",
+        "paid_for_by": null,
+        "platforms": [
+          "facebook",
+          "instagram"
+        ],
+        "same_creative_ads": 2,
+        "spend": null,
+        "start_date": "2026-10-23T07:00:00Z",
+        "title": "That Game Day Feeling",
+        "videos": []
+      },
+      {
+        "ad_archive_id": "1657007032438099",
+        "ad_url": "https://www.facebook.com/ads/library/?id=1657007032438099",
+        "body": "Bring Game Day energy to any day with the new Game Day Menu, now at BK.",
+        "cards": [
+          {
+            "body": "Bring Game Day energy to any day with the new Game Day Menu, now at BK.",
+            "cta": "Order Now",
+            "image": "https://scontent-phl2-1.xx.fbcdn.net/v/t39.35426-6/841057096_1808555243671824_3202693254145925396_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=D8yA1auDDHUQ7kNvwFd5eJg&_nc_oc=AdogbGJAuhh3zsl4Vv_kmQzvx6861_Mnd-zHEJovf2O7RMxNhTWqaiVxIeh6TUeDBXo&_nc_zt=14&_nc_ht=scontent-phl2-1.xx&_nc_gid=pyRhB_HzpUF6tCjl0PO9iw&_nc_ss=70289&oh=00_AQQo97miwZ01prvo5vfkcnqUOve-p4ibFzQ8ttl6k6-3kw&oe=6AF7CBEB",
+            "link_url": "https://burgerking.app.link/STnfg8jcH6b",
+            "title": "That Game Day Feeling",
+            "video": null
+          },
+          {
+            "body": "Bring Game Day energy to any day with the new Game Day Menu, now at BK.",
+            "cta": "Order Now",
+            "image": "https://scontent-phl2-1.xx.fbcdn.net/v/t39.35426-6/843190879_1621410922788028_1266837038295081097_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=nQs4HngUn6MQ7kNvwH7SVuz&_nc_oc=AdpC5GWKW-UZxJcgRUUQLnWEU0jp7p5jdswUsX_Lrwa_ecXyhPY8hhiC6epsboEOK3w&_nc_zt=14&_nc_ht=scontent-phl2-1.xx&_nc_gid=pyRhB_HzpUF6tCjl0PO9iw&_nc_ss=70289&oh=00_AQSqP8M5XJPaEEM_Gynx6WKjeWQP_93XHpsb2J3PWAOEOg&oe=6AF7E1FD",
+            "link_url": "https://burgerking.app.link/STnfg8jcH6b",
+            "title": "That Game Day Feeling",
+            "video": null
+          },
+          {
+            "body": "Bring Game Day energy to any day with the new Game Day Menu, now at BK.",
+            "cta": "Order Now",
+            "image": "https://scontent-phl2-1.xx.fbcdn.net/v/t39.35426-6/841773998_976528368123293_5428686682889322444_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=0bgsSu8VXRAQ7kNvwG2eeoG&_nc_oc=Adpv-U9ba0CRFqeBYOLXitiT7VxTeEtQO8kS55mgIIJDQgkEGbCAoysmdgrGUAKKTAk&_nc_zt=14&_nc_ht=scontent-phl2-1.xx&_nc_gid=pyRhB_HzpUF6tCjl0PO9iw&_nc_ss=70289&oh=00_AQQimAdnfUvLkmmrOGmENZJoGauhrGfdiaZQMEeCA083vw&oe=6AF7CF7C",
+            "link_url": "https://burgerking.app.link/STnfg8jcH6b",
+            "title": "That Game Day Feeling",
+            "video": null
+          }
+        ],
+        "cta": "Order now",
+        "cta_type": "ORDER_NOW",
+        "currency": null,
+        "display_format": "dco",
+        "end_date": null,
+        "images": [
+          "https://scontent-phl2-1.xx.fbcdn.net/v/t39.35426-6/841057096_1808555243671824_3202693254145925396_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=D8yA1auDDHUQ7kNvwFd5eJg&_nc_oc=AdogbGJAuhh3zsl4Vv_kmQzvx6861_Mnd-zHEJovf2O7RMxNhTWqaiVxIeh6TUeDBXo&_nc_zt=14&_nc_ht=scontent-phl2-1.xx&_nc_gid=pyRhB_HzpUF6tCjl0PO9iw&_nc_ss=70289&oh=00_AQQo97miwZ01prvo5vfkcnqUOve-p4ibFzQ8ttl6k6-3kw&oe=6AF7CBEB",
+          "https://scontent-phl2-1.xx.fbcdn.net/v/t39.35426-6/843190879_1621410922788028_1266837038295081097_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=nQs4HngUn6MQ7kNvwH7SVuz&_nc_oc=AdpC5GWKW-UZxJcgRUUQLnWEU0jp7p5jdswUsX_Lrwa_ecXyhPY8hhiC6epsboEOK3w&_nc_zt=14&_nc_ht=scontent-phl2-1.xx&_nc_gid=pyRhB_HzpUF6tCjl0PO9iw&_nc_ss=70289&oh=00_AQSqP8M5XJPaEEM_Gynx6WKjeWQP_93XHpsb2J3PWAOEOg&oe=6AF7E1FD",
+          "https://scontent-phl2-1.xx.fbcdn.net/v/t39.35426-6/841773998_976528368123293_5428686682889322444_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=0bgsSu8VXRAQ7kNvwG2eeoG&_nc_oc=Adpv-U9ba0CRFqeBYOLXitiT7VxTeEtQO8kS55mgIIJDQgkEGbCAoysmdgrGUAKKTAk&_nc_zt=14&_nc_ht=scontent-phl2-1.xx&_nc_gid=pyRhB_HzpUF6tCjl0PO9iw&_nc_ss=70289&oh=00_AQQimAdnfUvLkmmrOGmENZJoGauhrGfdiaZQMEeCA083vw&oe=6AF7CF7C"
+        ],
+        "impressions": null,
+        "is_active": true,
+        "link_caption": "bk.com",
+        "link_url": "https://burgerking.app.link/STnfg8jcH6b",
+        "page_id": "134615383218473",
+        "page_likes": 8358855,
+        "page_name": "Burger King",
+        "page_url": "https://www.facebook.com/burgerking/",
+        "paid_for_by": null,
+        "platforms": [
+          "facebook",
+          "instagram"
+        ],
+        "same_creative_ads": null,
+        "spend": null,
+        "start_date": "2026-10-23T07:00:00Z",
+        "title": "That Game Day Feeling",
+        "videos": []
+      },
+      {
+        "ad_archive_id": "4038872423083469",
+        "ad_url": "https://www.facebook.com/ads/library/?id=4038872423083469",
+        "body": "Bring Game Day energy to any day with the new Game Day Menu, now at BK.",
+        "cards": [],
+        "cta": "Order now",
+        "cta_type": "ORDER_NOW",
+        "currency": null,
+        "display_format": "image",
+        "end_date": null,
+        "images": [
+          "https://scontent-phl2-1.xx.fbcdn.net/v/t39.35426-6/868223663_1820912385611918_4282961241742085943_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=4KcXRn8mjFAQ7kNvwEmiZ7q&_nc_oc=Adoqw8i3QAIW_BOttOxFN3AhzbFTbSk9h6q2EIaGW1M-BCN5dw5QyWpgdTcm2SC8JTo&_nc_zt=14&_nc_ht=scontent-phl2-1.xx&_nc_gid=pyRhB_HzpUF6tCjl0PO9iw&_nc_ss=70289&oh=00_AQQ3ghM_AKcY0TNsj0QE_YU2WPLYXliu3pij4pRnj2QZLg&oe=6AF7B849"
+        ],
+        "impressions": null,
+        "is_active": true,
+        "link_caption": "bk.com",
+        "link_url": "https://burgerking.app.link/STnfg8jcH6b",
+        "page_id": "134615383218473",
+        "page_likes": 8358855,
+        "page_name": "Burger King",
+        "page_url": "https://www.facebook.com/burgerking/",
+        "paid_for_by": null,
+        "platforms": [
+          "facebook",
+          "instagram"
+        ],
+        "same_creative_ads": 3,
+        "spend": null,
+        "start_date": "2026-10-26T07:00:00Z",
+        "title": "That Game Day Feeling",
+        "videos": []
+      },
+      {
+        "ad_archive_id": "29068087812824313",
+        "ad_url": "https://www.facebook.com/ads/library/?id=29068087812824313",
+        "body": "Bring Game Day energy to any day with the new Game Day Menu, now at BK.",
+        "cards": [],
+        "cta": "Order now",
+        "cta_type": "ORDER_NOW",
+        "currency": null,
+        "display_format": "image",
+        "end_date": null,
+        "images": [
+          "https://scontent-phl2-1.xx.fbcdn.net/v/t39.35426-6/862402435_2182451956006137_7877513400535766249_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=aaLC05sxyJsQ7kNvwHMDsIK&_nc_oc=Adq3R_9ncALxX3JC22jlt5fiHOdDYDRt6f1z3rmldbYeeFIhaf4w5bjR0rXrkJv2O6U&_nc_zt=14&_nc_ht=scontent-phl2-1.xx&_nc_gid=pyRhB_HzpUF6tCjl0PO9iw&_nc_ss=70289&oh=00_AQTFuKjRRRrjIRnUpQQObX8ky8pqKdNmodt91oKY8nQsWg&oe=6AF7B596"
+        ],
+        "impressions": null,
+        "is_active": true,
+        "link_caption": "bk.com",
+        "link_url": "https://burgerking.app.link/STnfg8jcH6b",
+        "page_id": "134615383218473",
+        "page_likes": 8358855,
+        "page_name": "Burger King",
+        "page_url": "https://www.facebook.com/burgerking/",
+        "paid_for_by": null,
+        "platforms": [
+          "facebook",
+          "instagram"
+        ],
+        "same_creative_ads": null,
+        "spend": null,
+        "start_date": "2026-10-26T07:00:00Z",
+        "title": "That Game Day Feeling",
+        "videos": []
+      },
+      {
+        "ad_archive_id": "1602151478591769",
+        "ad_url": "https://www.facebook.com/ads/library/?id=1602151478591769",
+        "body": "Bring Game Day energy to any day with the new Game Day Menu, now at BK.",
+        "cards": [],
+        "cta": "Order now",
+        "cta_type": "ORDER_NOW",
+        "currency": null,
+        "display_format": "image",
+        "end_date": null,
+        "images": [
+          "https://scontent-phl2-1.xx.fbcdn.net/v/t39.35426-6/863954549_1840929816913678_4428834926849126333_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=gIm4-IFSiqQQ7kNvwF-luou&_nc_oc=AdrzaA1oM6ro7wa58dIBkvGVBjFnJeXmwagp5MGMZNzAFBGo8rWtYwks7dlqp23J_E4&_nc_zt=14&_nc_ht=scontent-phl2-1.xx&_nc_gid=pyRhB_HzpUF6tCjl0PO9iw&_nc_ss=70289&oh=00_AQSCRT8k8P2xyARGoMnhbAlIKdnEHndjPFn3xQafjYd--w&oe=6AF7D822"
+        ],
+        "impressions": null,
+        "is_active": true,
+        "link_caption": "bk.com",
+        "link_url": "https://burgerking.app.link/STnfg8jcH6b",
+        "page_id": "134615383218473",
+        "page_likes": 8358855,
+        "page_name": "Burger King",
+        "page_url": "https://www.facebook.com/burgerking/",
+        "paid_for_by": null,
+        "platforms": [
+          "facebook",
+          "instagram"
+        ],
+        "same_creative_ads": null,
+        "spend": null,
+        "start_date": "2026-10-24T07:00:00Z",
+        "title": "That Game Day Feeling",
+        "videos": []
+      },
+      {
+        "ad_archive_id": "1105684848504230",
+        "ad_url": "https://www.facebook.com/ads/library/?id=1105684848504230",
+        "body": "Upgrade any seat to the best seat in the house. Get the Game Day Menu, now at BK.",
+        "cards": [
+          {
+            "body": "Upgrade any seat to the best seat in the house. Get the Game Day Menu, now at BK.",
+            "cta": "Order Now",
+            "image": null,
+            "link_url": "https://burgerking.app.link/yWxrBu1fH6b",
+            "title": "Any Seat is Game Ready",
+            "video": "https://video-phl2-1.xx.fbcdn.net/o1/v/t2/f2/m366/AQNyKXEAC6Z82MIDleNv12gWcGLGdCJnJthpYRK85DIV_Ee5hjJAPH9vaar6aSRIYC11GUGRP0pXSBZ5n5K4jOi9ULHfuz7hMG5DAvVYqtqUXA.mp4?_nc_cat=101&_nc_sid=b66105&_nc_ht=video-phl2-1.xx.fbcdn.net&_nc_ohc=hKtSamL2Ln0Q7kNvwFmwFAV&efg=eyJ2ZW5jb2RlX3RhZyI6Inhwdl9wcm9ncmVzc2l2ZS5WSV9VU0VDQVNFX1BST0RVQ1RfVFlQRS4uQzMuNzIwLmRhc2hfaDI2NC1iYXNpYy1nZW4yXzcyMHAiLCJ4cHZfYXNzZXRfaWQiOjEwMzA4NzE2NTk5NjMzMDgsImFzc2V0X2FnZV9kYXlzIjozMCwidmlfdXNlY2FzZV9pZCI6MTA3OTksImR1cmF0aW9uX3MiOjcsInVybGdlbl9zb3VyY2UiOiJ3d3cifQ%3D%3D&ccb=17-1&vs=81c5a0c5fdcd39f6&_nc_vs=HBksFQIYRWZiX2VwaGVtZXJhbC85MTJFQUYzNkYzQzg0RTMzODg2QThERkNERTY5QkNDRl9tdF8xX3ZpZGVvX2Rhc2hpbml0Lm1wNBUAAsgBEgAVAhhAZmJfcGVybWFuZW50L0Q3OUM2NkJFQjUxMjQ2M0Q4MjE1N0Q5NDYwQkVFQzQyX2F1ZGlvX2Rhc2hpbml0Lm1wNBUCAsgBEgAoABgAGwKIB3VzZV9vaWwBMRJwcm9ncmVzc2l2ZV9yZWNpcGUBMRUAACbYjs-x0OTUAxUCKAJDMywXQByxJul41P4YGWRhc2hfaDI2NC1iYXNpYy1nZW4yXzcyMHARAHUAZd6oAQA&_nc_gid=pyRhB_HzpUF6tCjl0PO9iw&_nc_ss=70289&_nc_zt=28&oh=00_AQRffgcjZ90HjY7D2Ybwkjidk8vrupwGbK3u2OooOW0NaA&oe=6AF7B0DF"
+          },
+          {
+            "body": "Upgrade any seat to the best seat in the house. Get the Game Day Menu, now at BK.",
+            "cta": "Order Now",
+            "image": null,
+            "link_url": "https://burgerking.app.link/yWxrBu1fH6b",
+            "title": "Any Seat is Game Ready",
+            "video": "https://video-phl2-1.xx.fbcdn.net/o1/v/t2/f2/m366/AQPATFE2kKbLCWVrcgGJ1M485J7CrRVOq8jlw54MOHcPNrNRPiU3qjimXcPJHeY8V_8qPkje5PTv5RGC4H8Gfxzb5ZbRsQwMsyEvz6Bp5ZWFCQ.mp4?_nc_cat=103&_nc_sid=b66105&_nc_ht=video-phl2-1.xx.fbcdn.net&_nc_ohc=fqj3JJyhiKoQ7kNvwGWTAzG&efg=eyJ2ZW5jb2RlX3RhZyI6Inhwdl9wcm9ncmVzc2l2ZS5WSV9VU0VDQVNFX1BST0RVQ1RfVFlQRS4uQzMuNzIwLmRhc2hfaDI2NC1iYXNpYy1nZW4yXzcyMHAiLCJ4cHZfYXNzZXRfaWQiOjE2MzExNDQyNzUzMTI3OTEsImFzc2V0X2FnZV9kYXlzIjozMCwidmlfdXNlY2FzZV9pZCI6MTA3OTksImR1cmF0aW9uX3MiOjcsInVybGdlbl9zb3VyY2UiOiJ3d3cifQ%3D%3D&ccb=17-1&vs=8830992814c295a&_nc_vs=HBksFQIYRWZiX2VwaGVtZXJhbC9EMUQ3ODI4Q0QxNzE0OEJDQURFQTYyRTYwQkY2NkMyN19tdF8xX3ZpZGVvX2Rhc2hpbml0Lm1wNBUAAsgBEgAVAhhAZmJfcGVybWFuZW50LzNGQzE2NTk3RUYyOTQ4MEZBNTNFN0RBMTQ3REE1RkEyX2F1ZGlvX2Rhc2hpbml0Lm1wNBUCAsgBEgAoABgAGwKIB3VzZV9vaWwBMRJwcm9ncmVzc2l2ZV9yZWNpcGUBMRUAACaugtzxi-HlBRUCKAJDMywXQByxJul41P4YGWRhc2hfaDI2NC1iYXNpYy1nZW4yXzcyMHARAHUAZd6oAQA&_nc_gid=pyRhB_HzpUF6tCjl0PO9iw&_nc_ss=70289&_nc_zt=28&oh=00_AQR6oLpl96d1OvrgP2pU_1VsEFtuwH51jWexRvog-uH2kw&oe=6AF7B565"
+          },
+          {
+            "body": "Upgrade any seat to the best seat in the house. Get the Game Day Menu, now at BK.",
+            "cta": "Order Now",
+            "image": null,
+            "link_url": "https://burgerking.app.link/yWxrBu1fH6b",
+            "title": "Any Seat is Game Ready",
+            "video": "https://video-phl2-1.xx.fbcdn.net/o1/v/t2/f2/m366/AQNyKXEAC6Z82MIDleNv12gWcGLGdCJnJthpYRK85DIV_Ee5hjJAPH9vaar6aSRIYC11GUGRP0pXSBZ5n5K4jOi9ULHfuz7hMG5DAvVYqtqUXA.mp4?_nc_cat=101&_nc_sid=b66105&_nc_ht=video-phl2-1.xx.fbcdn.net&_nc_ohc=hKtSamL2Ln0Q7kNvwFmwFAV&efg=eyJ2ZW5jb2RlX3RhZyI6Inhwdl9wcm9ncmVzc2l2ZS5WSV9VU0VDQVNFX1BST0RVQ1RfVFlQRS4uQzMuNzIwLmRhc2hfaDI2NC1iYXNpYy1nZW4yXzcyMHAiLCJ4cHZfYXNzZXRfaWQiOjEwMzA4NzE2NTk5NjMzMDgsImFzc2V0X2FnZV9kYXlzIjozMCwidmlfdXNlY2FzZV9pZCI6MTA3OTksImR1cmF0aW9uX3MiOjcsInVybGdlbl9zb3VyY2UiOiJ3d3cifQ%3D%3D&ccb=17-1&vs=81c5a0c5fdcd39f6&_nc_vs=HBksFQIYRWZiX2VwaGVtZXJhbC85MTJFQUYzNkYzQzg0RTMzODg2QThERkNERTY5QkNDRl9tdF8xX3ZpZGVvX2Rhc2hpbml0Lm1wNBUAAsgBEgAVAhhAZmJfcGVybWFuZW50L0Q3OUM2NkJFQjUxMjQ2M0Q4MjE1N0Q5NDYwQkVFQzQyX2F1ZGlvX2Rhc2hpbml0Lm1wNBUCAsgBEgAoABgAGwKIB3VzZV9vaWwBMRJwcm9ncmVzc2l2ZV9yZWNpcGUBMRUAACbYjs-x0OTUAxUCKAJDMywXQByxJul41P4YGWRhc2hfaDI2NC1iYXNpYy1nZW4yXzcyMHARAHUAZd6oAQA&_nc_gid=pyRhB_HzpUF6tCjl0PO9iw&_nc_ss=70289&_nc_zt=28&oh=00_AQRffgcjZ90HjY7D2Ybwkjidk8vrupwGbK3u2OooOW0NaA&oe=6AF7B0DF"
+          }
+        ],
+        "cta": "Order now",
+        "cta_type": "ORDER_NOW",
+        "currency": null,
+        "display_format": "dco",
+        "end_date": null,
+        "images": [],
+        "impressions": null,
+        "is_active": true,
+        "link_caption": "bk.com",
+        "link_url": "https://burgerking.app.link/yWxrBu1fH6b",
+        "page_id": "134615383218473",
+        "page_likes": 8358855,
+        "page_name": "Burger King",
+        "page_url": "https://www.facebook.com/burgerking/",
+        "paid_for_by": null,
+        "platforms": [
+          "facebook",
+          "instagram"
+        ],
+        "same_creative_ads": 1,
+        "spend": null,
+        "start_date": "2026-10-19T07:00:00Z",
+        "title": "Any Seat is Game Ready",
+        "videos": [
+          "https://video-phl2-1.xx.fbcdn.net/o1/v/t2/f2/m366/AQNyKXEAC6Z82MIDleNv12gWcGLGdCJnJthpYRK85DIV_Ee5hjJAPH9vaar6aSRIYC11GUGRP0pXSBZ5n5K4jOi9ULHfuz7hMG5DAvVYqtqUXA.mp4?_nc_cat=101&_nc_sid=b66105&_nc_ht=video-phl2-1.xx.fbcdn.net&_nc_ohc=hKtSamL2Ln0Q7kNvwFmwFAV&efg=eyJ2ZW5jb2RlX3RhZyI6Inhwdl9wcm9ncmVzc2l2ZS5WSV9VU0VDQVNFX1BST0RVQ1RfVFlQRS4uQzMuNzIwLmRhc2hfaDI2NC1iYXNpYy1nZW4yXzcyMHAiLCJ4cHZfYXNzZXRfaWQiOjEwMzA4NzE2NTk5NjMzMDgsImFzc2V0X2FnZV9kYXlzIjozMCwidmlfdXNlY2FzZV9pZCI6MTA3OTksImR1cmF0aW9uX3MiOjcsInVybGdlbl9zb3VyY2UiOiJ3d3cifQ%3D%3D&ccb=17-1&vs=81c5a0c5fdcd39f6&_nc_vs=HBksFQIYRWZiX2VwaGVtZXJhbC85MTJFQUYzNkYzQzg0RTMzODg2QThERkNERTY5QkNDRl9tdF8xX3ZpZGVvX2Rhc2hpbml0Lm1wNBUAAsgBEgAVAhhAZmJfcGVybWFuZW50L0Q3OUM2NkJFQjUxMjQ2M0Q4MjE1N0Q5NDYwQkVFQzQyX2F1ZGlvX2Rhc2hpbml0Lm1wNBUCAsgBEgAoABgAGwKIB3VzZV9vaWwBMRJwcm9ncmVzc2l2ZV9yZWNpcGUBMRUAACbYjs-x0OTUAxUCKAJDMywXQByxJul41P4YGWRhc2hfaDI2NC1iYXNpYy1nZW4yXzcyMHARAHUAZd6oAQA&_nc_gid=pyRhB_HzpUF6tCjl0PO9iw&_nc_ss=70289&_nc_zt=28&oh=00_AQRffgcjZ90HjY7D2Ybwkjidk8vrupwGbK3u2OooOW0NaA&oe=6AF7B0DF",
+          "https://video-phl2-1.xx.fbcdn.net/o1/v/t2/f2/m366/AQPATFE2kKbLCWVrcgGJ1M485J7CrRVOq8jlw54MOHcPNrNRPiU3qjimXcPJHeY8V_8qPkje5PTv5RGC4H8Gfxzb5ZbRsQwMsyEvz6Bp5ZWFCQ.mp4?_nc_cat=103&_nc_sid=b66105&_nc_ht=video-phl2-1.xx.fbcdn.net&_nc_ohc=fqj3JJyhiKoQ7kNvwGWTAzG&efg=eyJ2ZW5jb2RlX3RhZyI6Inhwdl9wcm9ncmVzc2l2ZS5WSV9VU0VDQVNFX1BST0RVQ1RfVFlQRS4uQzMuNzIwLmRhc2hfaDI2NC1iYXNpYy1nZW4yXzcyMHAiLCJ4cHZfYXNzZXRfaWQiOjE2MzExNDQyNzUzMTI3OTEsImFzc2V0X2FnZV9kYXlzIjozMCwidmlfdXNlY2FzZV9pZCI6MTA3OTksImR1cmF0aW9uX3MiOjcsInVybGdlbl9zb3VyY2UiOiJ3d3cifQ%3D%3D&ccb=17-1&vs=8830992814c295a&_nc_vs=HBksFQIYRWZiX2VwaGVtZXJhbC9EMUQ3ODI4Q0QxNzE0OEJDQURFQTYyRTYwQkY2NkMyN19tdF8xX3ZpZGVvX2Rhc2hpbml0Lm1wNBUAAsgBEgAVAhhAZmJfcGVybWFuZW50LzNGQzE2NTk3RUYyOTQ4MEZBNTNFN0RBMTQ3REE1RkEyX2F1ZGlvX2Rhc2hpbml0Lm1wNBUCAsgBEgAoABgAGwKIB3VzZV9vaWwBMRJwcm9ncmVzc2l2ZV9yZWNpcGUBMRUAACaugtzxi-HlBRUCKAJDMywXQByxJul41P4YGWRhc2hfaDI2NC1iYXNpYy1nZW4yXzcyMHARAHUAZd6oAQA&_nc_gid=pyRhB_HzpUF6tCjl0PO9iw&_nc_ss=70289&_nc_zt=28&oh=00_AQR6oLpl96d1OvrgP2pU_1VsEFtuwH51jWexRvog-uH2kw&oe=6AF7B565"
+        ]
+      },
+      {
+        "ad_archive_id": "3944374832525904",
+        "ad_url": "https://www.facebook.com/ads/library/?id=3944374832525904",
+        "body": "Put on your game face and dig into the new Game Day Burger. Now at BK.",
+        "cards": [
+          {
+            "body": "Put on your game face and dig into the new Game Day Burger. Now at BK.",
+            "cta": "Order Now",
+            "image": null,
+            "link_url": "https://burgerking.app.link/PXfIZqCfH6b",
+            "title": "Put Your Game Face On",
+            "video": "https://video-phl2-1.xx.fbcdn.net/o1/v/t2/f2/m366/AQMtkab5URaeuGTEWevK9HNKPER_J6QgQe_mMSUHQUR_x6q9XGS0qRqOEfyc0F3lKnuykSruNXJ-21GtxpXF6oWGt8tpnKh1x3ORD1839mRPlQ.mp4?_nc_cat=108&_nc_sid=b66105&_nc_ht=video-phl2-1.xx.fbcdn.net&_nc_ohc=m3Nkpi8Ns68Q7kNvwEWp5Q1&efg=eyJ2ZW5jb2RlX3RhZyI6Inhwdl9wcm9ncmVzc2l2ZS5WSV9VU0VDQVNFX1BST0RVQ1RfVFlQRS4uQzMuNzIwLmRhc2hfaDI2NC1iYXNpYy1nZW4yXzcyMHAiLCJ4cHZfYXNzZXRfaWQiOjE4MzA3NjA3MDgwOTU5MTUsImFzc2V0X2FnZV9kYXlzIjozMCwidmlfdXNlY2FzZV9pZCI6MTA3OTksImR1cmF0aW9uX3MiOjEwLCJ1cmxnZW5fc291cmNlIjoid3d3In0%3D&ccb=17-1&vs=567066b033db326e&_nc_vs=HBksFQIYRWZiX2VwaGVtZXJhbC9GQjJEN0IyNTU0REE0RDAyQTVERkMwMUQ0NUFEREQ3Q19tdF8xX3ZpZGVvX2Rhc2hpbml0Lm1wNBUAAsgBEgAVAhhAZmJfcGVybWFuZW50LzhCQjYxQTI0QzUxNjRCNjg4QURGNzIxMTdDOEE1QjAxX2F1ZGlvX2Rhc2hpbml0Lm1wNBUCAsgBEgAoABgAGwKIB3VzZV9vaWwBMRJwcm9ncmVzc2l2ZV9yZWNpcGUBMRUAACbW_uWapsTABhUCKAJDMywXQCWFHrhR64UYGWRhc2hfaDI2NC1iYXNpYy1nZW4yXzcyMHARAHUAZd6oAQA&_nc_gid=pyRhB_HzpUF6tCjl0PO9iw&_nc_ss=70289&_nc_zt=28&oh=00_AQSkCveXGQke58HjeMwZNHGrEFUdEbH-tcp8_N66vZzatQ&oe=6AF7D660"
+          },
+          {
+            "body": "Put on your game face and dig into the new Game Day Burger. Now at BK.",
+            "cta": "Order Now",
+            "image": null,
+            "link_url": "https://burgerking.app.link/PXfIZqCfH6b",
+            "title": "Put Your Game Face On",
+            "video": "https://video-phl2-1.xx.fbcdn.net/o1/v/t2/f2/m366/AQOeREJtCnDLObb-otnIPrFjR_PlIZGl7OMIj-VWiKsWtOqwpC2CwnzPmAtY1HzG70_Ol9hOXM4u4JSEKwYq5O36E6AVus7LFdpxJbUoJnzXMA.mp4?_nc_cat=104&_nc_sid=b66105&_nc_ht=video-phl2-1.xx.fbcdn.net&_nc_ohc=OPVrL9VmFO8Q7kNvwHVk1bG&efg=eyJ2ZW5jb2RlX3RhZyI6Inhwdl9wcm9ncmVzc2l2ZS5WSV9VU0VDQVNFX1BST0RVQ1RfVFlQRS4uQzMuNzIwLmRhc2hfaDI2NC1iYXNpYy1nZW4yXzcyMHAiLCJ4cHZfYXNzZXRfaWQiOjMyMTgyMzIwNjE3MTE2NTIsImFzc2V0X2FnZV9kYXlzIjozMCwidmlfdXNlY2FzZV9pZCI6MTA3OTksImR1cmF0aW9uX3MiOjEwLCJ1cmxnZW5fc291cmNlIjoid3d3In0%3D&ccb=17-1&vs=eb77a70a13a51b3c&_nc_vs=HBksFQIYRWZiX2VwaGVtZXJhbC83MDFFMTU2Mzg5QzQ0QUE1OTZDMUU3ODlCQzNCOTNBMV9tdF8xX3ZpZGVvX2Rhc2hpbml0Lm1wNBUAAsgBEgAVAhhAZmJfcGVybWFuZW50L0I3MDFFNzRCODJGMDQxMThCMTU1NzE4MEQ2NkNGQzdEX2F1ZGlvX2Rhc2hpbml0Lm1wNBUCAsgBEgAoABgAGwKIB3VzZV9vaWwBMRJwcm9ncmVzc2l2ZV9yZWNpcGUBMRUAACbI1L6t4b23CxUCKAJDMywXQCWFHrhR64UYGWRhc2hfaDI2NC1iYXNpYy1nZW4yXzcyMHARAHUAZd6oAQA&_nc_gid=pyRhB_HzpUF6tCjl0PO9iw&_nc_ss=70289&_nc_zt=28&oh=00_AQR2j0WN3YyJkW_QMsD-N0G0IcV3fwyRpLOwdhx-em9RMg&oe=6AF7C004"
+          },
+          {
+            "body": "Put on your game face and dig into the new Game Day Burger. Now at BK.",
+            "cta": "Order Now",
+            "image": null,
+            "link_url": "https://burgerking.app.link/PXfIZqCfH6b",
+            "title": "Put Your Game Face On",
+            "video": "https://video-phl2-1.xx.fbcdn.net/o1/v/t2/f2/m366/AQPjp1vwyZmC1JPoRxAkg4i4hrJi7M3dDci1Ee1K97VTJrWvW6ITUGNNYYbAr7N3xxkYPvTDVemMELSWu7ZF5cUdx4oz3DYKYTsFOaP2IqnyGg.mp4?_nc_cat=109&_nc_sid=b66105&_nc_ht=video-phl2-1.xx.fbcdn.net&_nc_ohc=Vjq1GKJlCt4Q7kNvwHe8mjf&efg=eyJ2ZW5jb2RlX3RhZyI6Inhwdl9wcm9ncmVzc2l2ZS5WSV9VU0VDQVNFX1BST0RVQ1RfVFlQRS4uQzMuNzIwLmRhc2hfaDI2NC1iYXNpYy1nZW4yXzcyMHAiLCJ4cHZfYXNzZXRfaWQiOjEzNTQwNjY3NTk4NjAxOTQsImFzc2V0X2FnZV9kYXlzIjo0NiwidmlfdXNlY2FzZV9pZCI6MTA3OTksImR1cmF0aW9uX3MiOjEwLCJ1cmxnZW5fc291cmNlIjoid3d3In0%3D&ccb=17-1&vs=9671c9c0a05626e4&_nc_vs=HBksFQIYRWZiX2VwaGVtZXJhbC9FRTRFQjMzOEQ0NDNCOEJENzJENDdBMTgyMzdFMjFBMV9tdF8xX3ZpZGVvX2Rhc2hpbml0Lm1wNBUAAsgBEgAVAhhAZmJfcGVybWFuZW50LzFGNDdGNjdEQkU1QTQ3Qzk4N0VDOTlBMjlBQjk0MTJCX2F1ZGlvX2Rhc2hpbml0Lm1wNBUCAsgBEgAoABgAGwKIB3VzZV9vaWwBMRJwcm9ncmVzc2l2ZV9yZWNpcGUBMRUAACbE_8nDh-HnBBUCKAJDMywXQCWFHrhR64UYGWRhc2hfaDI2NC1iYXNpYy1nZW4yXzcyMHARAHUAZd6oAQA&_nc_gid=pyRhB_HzpUF6tCjl0PO9iw&_nc_ss=70289&_nc_zt=28&oh=00_AQQeA0Wqppuv5bpwUt_SiQ8vmd9ZumvwwWjP7OkmzM3nIQ&oe=6AF7DCB7"
+          }
+        ],
+        "cta": "Order now",
+        "cta_type": "ORDER_NOW",
+        "currency": null,
+        "display_format": "dco",
+        "end_date": null,
+        "images": [],
+        "impressions": null,
+        "is_active": true,
+        "link_caption": "bk.com",
+        "link_url": "https://burgerking.app.link/PXfIZqCfH6b",
+        "page_id": "134615383218473",
+        "page_likes": 8358855,
+        "page_name": "Burger King",
+        "page_url": "https://www.facebook.com/burgerking/",
+        "paid_for_by": null,
+        "platforms": [
+          "facebook",
+          "instagram"
+        ],
+        "same_creative_ads": 1,
+        "spend": null,
+        "start_date": "2026-10-19T07:00:00Z",
+        "title": "Put Your Game Face On",
+        "videos": [
+          "https://video-phl2-1.xx.fbcdn.net/o1/v/t2/f2/m366/AQMtkab5URaeuGTEWevK9HNKPER_J6QgQe_mMSUHQUR_x6q9XGS0qRqOEfyc0F3lKnuykSruNXJ-21GtxpXF6oWGt8tpnKh1x3ORD1839mRPlQ.mp4?_nc_cat=108&_nc_sid=b66105&_nc_ht=video-phl2-1.xx.fbcdn.net&_nc_ohc=m3Nkpi8Ns68Q7kNvwEWp5Q1&efg=eyJ2ZW5jb2RlX3RhZyI6Inhwdl9wcm9ncmVzc2l2ZS5WSV9VU0VDQVNFX1BST0RVQ1RfVFlQRS4uQzMuNzIwLmRhc2hfaDI2NC1iYXNpYy1nZW4yXzcyMHAiLCJ4cHZfYXNzZXRfaWQiOjE4MzA3NjA3MDgwOTU5MTUsImFzc2V0X2FnZV9kYXlzIjozMCwidmlfdXNlY2FzZV9pZCI6MTA3OTksImR1cmF0aW9uX3MiOjEwLCJ1cmxnZW5fc291cmNlIjoid3d3In0%3D&ccb=17-1&vs=567066b033db326e&_nc_vs=HBksFQIYRWZiX2VwaGVtZXJhbC9GQjJEN0IyNTU0REE0RDAyQTVERkMwMUQ0NUFEREQ3Q19tdF8xX3ZpZGVvX2Rhc2hpbml0Lm1wNBUAAsgBEgAVAhhAZmJfcGVybWFuZW50LzhCQjYxQTI0QzUxNjRCNjg4QURGNzIxMTdDOEE1QjAxX2F1ZGlvX2Rhc2hpbml0Lm1wNBUCAsgBEgAoABgAGwKIB3VzZV9vaWwBMRJwcm9ncmVzc2l2ZV9yZWNpcGUBMRUAACbW_uWapsTABhUCKAJDMywXQCWFHrhR64UYGWRhc2hfaDI2NC1iYXNpYy1nZW4yXzcyMHARAHUAZd6oAQA&_nc_gid=pyRhB_HzpUF6tCjl0PO9iw&_nc_ss=70289&_nc_zt=28&oh=00_AQSkCveXGQke58HjeMwZNHGrEFUdEbH-tcp8_N66vZzatQ&oe=6AF7D660",
+          "https://video-phl2-1.xx.fbcdn.net/o1/v/t2/f2/m366/AQOeREJtCnDLObb-otnIPrFjR_PlIZGl7OMIj-VWiKsWtOqwpC2CwnzPmAtY1HzG70_Ol9hOXM4u4JSEKwYq5O36E6AVus7LFdpxJbUoJnzXMA.mp4?_nc_cat=104&_nc_sid=b66105&_nc_ht=video-phl2-1.xx.fbcdn.net&_nc_ohc=OPVrL9VmFO8Q7kNvwHVk1bG&efg=eyJ2ZW5jb2RlX3RhZyI6Inhwdl9wcm9ncmVzc2l2ZS5WSV9VU0VDQVNFX1BST0RVQ1RfVFlQRS4uQzMuNzIwLmRhc2hfaDI2NC1iYXNpYy1nZW4yXzcyMHAiLCJ4cHZfYXNzZXRfaWQiOjMyMTgyMzIwNjE3MTE2NTIsImFzc2V0X2FnZV9kYXlzIjozMCwidmlfdXNlY2FzZV9pZCI6MTA3OTksImR1cmF0aW9uX3MiOjEwLCJ1cmxnZW5fc291cmNlIjoid3d3In0%3D&ccb=17-1&vs=eb77a70a13a51b3c&_nc_vs=HBksFQIYRWZiX2VwaGVtZXJhbC83MDFFMTU2Mzg5QzQ0QUE1OTZDMUU3ODlCQzNCOTNBMV9tdF8xX3ZpZGVvX2Rhc2hpbml0Lm1wNBUAAsgBEgAVAhhAZmJfcGVybWFuZW50L0I3MDFFNzRCODJGMDQxMThCMTU1NzE4MEQ2NkNGQzdEX2F1ZGlvX2Rhc2hpbml0Lm1wNBUCAsgBEgAoABgAGwKIB3VzZV9vaWwBMRJwcm9ncmVzc2l2ZV9yZWNpcGUBMRUAACbI1L6t4b23CxUCKAJDMywXQCWFHrhR64UYGWRhc2hfaDI2NC1iYXNpYy1nZW4yXzcyMHARAHUAZd6oAQA&_nc_gid=pyRhB_HzpUF6tCjl0PO9iw&_nc_ss=70289&_nc_zt=28&oh=00_AQR2j0WN3YyJkW_QMsD-N0G0IcV3fwyRpLOwdhx-em9RMg&oe=6AF7C004",
+          "https://video-phl2-1.xx.fbcdn.net/o1/v/t2/f2/m366/AQPjp1vwyZmC1JPoRxAkg4i4hrJi7M3dDci1Ee1K97VTJrWvW6ITUGNNYYbAr7N3xxkYPvTDVemMELSWu7ZF5cUdx4oz3DYKYTsFOaP2IqnyGg.mp4?_nc_cat=109&_nc_sid=b66105&_nc_ht=video-phl2-1.xx.fbcdn.net&_nc_ohc=Vjq1GKJlCt4Q7kNvwHe8mjf&efg=eyJ2ZW5jb2RlX3RhZyI6Inhwdl9wcm9ncmVzc2l2ZS5WSV9VU0VDQVNFX1BST0RVQ1RfVFlQRS4uQzMuNzIwLmRhc2hfaDI2NC1iYXNpYy1nZW4yXzcyMHAiLCJ4cHZfYXNzZXRfaWQiOjEzNTQwNjY3NTk4NjAxOTQsImFzc2V0X2FnZV9kYXlzIjo0NiwidmlfdXNlY2FzZV9pZCI6MTA3OTksImR1cmF0aW9uX3MiOjEwLCJ1cmxnZW5fc291cmNlIjoid3d3In0%3D&ccb=17-1&vs=9671c9c0a05626e4&_nc_vs=HBksFQIYRWZiX2VwaGVtZXJhbC9FRTRFQjMzOEQ0NDNCOEJENzJENDdBMTgyMzdFMjFBMV9tdF8xX3ZpZGVvX2Rhc2hpbml0Lm1wNBUAAsgBEgAVAhhAZmJfcGVybWFuZW50LzFGNDdGNjdEQkU1QTQ3Qzk4N0VDOTlBMjlBQjk0MTJCX2F1ZGlvX2Rhc2hpbml0Lm1wNBUCAsgBEgAoABgAGwKIB3VzZV9vaWwBMRJwcm9ncmVzc2l2ZV9yZWNpcGUBMRUAACbE_8nDh-HnBBUCKAJDMywXQCWFHrhR64UYGWRhc2hfaDI2NC1iYXNpYy1nZW4yXzcyMHARAHUAZd6oAQA&_nc_gid=pyRhB_HzpUF6tCjl0PO9iw&_nc_ss=70289&_nc_zt=28&oh=00_AQQeA0Wqppuv5bpwUt_SiQ8vmd9ZumvwwWjP7OkmzM3nIQ&oe=6AF7DCB7"
+        ]
+      },
+      {
+        "ad_archive_id": "1023136627481589",
+        "ad_url": "https://www.facebook.com/ads/library/?id=1023136627481589",
+        "body": "Upgrade any seat to the best seat in the house. Get the Game Day Menu, now at BK.",
+        "cards": [],
+        "cta": "Order now",
+        "cta_type": "ORDER_NOW",
+        "currency": null,
+        "display_format": "video",
+        "end_date": null,
+        "images": [],
+        "impressions": null,
+        "is_active": true,
+        "link_caption": "bk.com",
+        "link_url": "https://burgerking.app.link/yWxrBu1fH6b",
+        "page_id": "134615383218473",
+        "page_likes": 8358855,
+        "page_name": "Burger King",
+        "page_url": "https://www.facebook.com/burgerking/",
+        "paid_for_by": null,
+        "platforms": [
+          "facebook",
+          "instagram"
+        ],
+        "same_creative_ads": 2,
+        "spend": null,
+        "start_date": "2026-10-19T07:00:00Z",
+        "title": "Any Seat is Game Ready",
+        "videos": [
+          "https://video-phl2-1.xx.fbcdn.net/o1/v/t2/f2/m366/AQNyKXEAC6Z82MIDleNv12gWcGLGdCJnJthpYRK85DIV_Ee5hjJAPH9vaar6aSRIYC11GUGRP0pXSBZ5n5K4jOi9ULHfuz7hMG5DAvVYqtqUXA.mp4?_nc_cat=101&_nc_sid=b66105&_nc_ht=video-phl2-1.xx.fbcdn.net&_nc_ohc=hKtSamL2Ln0Q7kNvwFmwFAV&efg=eyJ2ZW5jb2RlX3RhZyI6Inhwdl9wcm9ncmVzc2l2ZS5WSV9VU0VDQVNFX1BST0RVQ1RfVFlQRS4uQzMuNzIwLmRhc2hfaDI2NC1iYXNpYy1nZW4yXzcyMHAiLCJ4cHZfYXNzZXRfaWQiOjEwMzA4NzE2NTk5NjMzMDgsImFzc2V0X2FnZV9kYXlzIjozMCwidmlfdXNlY2FzZV9pZCI6MTA3OTksImR1cmF0aW9uX3MiOjcsInVybGdlbl9zb3VyY2UiOiJ3d3cifQ%3D%3D&ccb=17-1&vs=81c5a0c5fdcd39f6&_nc_vs=HBksFQIYRWZiX2VwaGVtZXJhbC85MTJFQUYzNkYzQzg0RTMzODg2QThERkNERTY5QkNDRl9tdF8xX3ZpZGVvX2Rhc2hpbml0Lm1wNBUAAsgBEgAVAhhAZmJfcGVybWFuZW50L0Q3OUM2NkJFQjUxMjQ2M0Q4MjE1N0Q5NDYwQkVFQzQyX2F1ZGlvX2Rhc2hpbml0Lm1wNBUCAsgBEgAoABgAGwKIB3VzZV9vaWwBMRJwcm9ncmVzc2l2ZV9yZWNpcGUBMRUAACbYjs-x0OTUAxUCKAJDMywXQByxJul41P4YGWRhc2hfaDI2NC1iYXNpYy1nZW4yXzcyMHARAHUAZd6oAQA&_nc_gid=pyRhB_HzpUF6tCjl0PO9iw&_nc_ss=70289&_nc_zt=28&oh=00_AQRffgcjZ90HjY7D2Ybwkjidk8vrupwGbK3u2OooOW0NaA&oe=6AF7B0DF"
+        ]
+      },
+      {
+        "ad_archive_id": "991787133204269",
+        "ad_url": "https://www.facebook.com/ads/library/?id=991787133204269",
+        "body": "Put on your game face and dig into the new Game Day Burger. Now at BK.",
+        "cards": [],
+        "cta": "Order now",
+        "cta_type": "ORDER_NOW",
+        "currency": null,
+        "display_format": "video",
+        "end_date": null,
+        "images": [],
+        "impressions": null,
+        "is_active": true,
+        "link_caption": "bk.com",
+        "link_url": "https://burgerking.app.link/PXfIZqCfH6b",
+        "page_id": "134615383218473",
+        "page_likes": 8358855,
+        "page_name": "Burger King",
+        "page_url": "https://www.facebook.com/burgerking/",
+        "paid_for_by": null,
+        "platforms": [
+          "facebook",
+          "instagram"
+        ],
+        "same_creative_ads": 3,
+        "spend": null,
+        "start_date": "2026-10-19T07:00:00Z",
+        "title": "Put Your Game Face On",
+        "videos": [
+          "https://video-phl2-1.xx.fbcdn.net/o1/v/t2/f2/m366/AQMtkab5URaeuGTEWevK9HNKPER_J6QgQe_mMSUHQUR_x6q9XGS0qRqOEfyc0F3lKnuykSruNXJ-21GtxpXF6oWGt8tpnKh1x3ORD1839mRPlQ.mp4?_nc_cat=108&_nc_sid=b66105&_nc_ht=video-phl2-1.xx.fbcdn.net&_nc_ohc=m3Nkpi8Ns68Q7kNvwEWp5Q1&efg=eyJ2ZW5jb2RlX3RhZyI6Inhwdl9wcm9ncmVzc2l2ZS5WSV9VU0VDQVNFX1BST0RVQ1RfVFlQRS4uQzMuNzIwLmRhc2hfaDI2NC1iYXNpYy1nZW4yXzcyMHAiLCJ4cHZfYXNzZXRfaWQiOjE4MzA3NjA3MDgwOTU5MTUsImFzc2V0X2FnZV9kYXlzIjozMCwidmlfdXNlY2FzZV9pZCI6MTA3OTksImR1cmF0aW9uX3MiOjEwLCJ1cmxnZW5fc291cmNlIjoid3d3In0%3D&ccb=17-1&vs=567066b033db326e&_nc_vs=HBksFQIYRWZiX2VwaGVtZXJhbC9GQjJEN0IyNTU0REE0RDAyQTVERkMwMUQ0NUFEREQ3Q19tdF8xX3ZpZGVvX2Rhc2hpbml0Lm1wNBUAAsgBEgAVAhhAZmJfcGVybWFuZW50LzhCQjYxQTI0QzUxNjRCNjg4QURGNzIxMTdDOEE1QjAxX2F1ZGlvX2Rhc2hpbml0Lm1wNBUCAsgBEgAoABgAGwKIB3VzZV9vaWwBMRJwcm9ncmVzc2l2ZV9yZWNpcGUBMRUAACbW_uWapsTABhUCKAJDMywXQCWFHrhR64UYGWRhc2hfaDI2NC1iYXNpYy1nZW4yXzcyMHARAHUAZd6oAQA&_nc_gid=pyRhB_HzpUF6tCjl0PO9iw&_nc_ss=70289&_nc_zt=28&oh=00_AQSkCveXGQke58HjeMwZNHGrEFUdEbH-tcp8_N66vZzatQ&oe=6AF7D660"
+        ]
+      },
+      {
+        "ad_archive_id": "1403905868472493",
+        "ad_url": "https://www.facebook.com/ads/library/?id=1403905868472493",
+        "body": "Get a FREE Original Chicken Sandwich or Whopper Jr. when you spend $3+.",
+        "cards": [
+          {
+            "body": "Get a FREE Original Chicken Sandwich or Whopper Jr. when you spend $3+.",
+            "cta": "Order Now",
+            "image": null,
+            "link_url": "http://itunes.apple.com/app/id638323895",
+            "title": "New to Royal Perks?",
+            "video": "https://video-phl2-1.xx.fbcdn.net/o1/v/t2/f2/m366/AQO98oeoRXeA6GfJRwbOUsC0eO-OaAamSHBqEm4nkvNRlyTFO4bdsydreptHavI4RvGaLckC7xmXndqbWeLBxUrcziF38H3rWuVH9D5hlYzIrQ.mp4?_nc_cat=104&_nc_sid=b66105&_nc_ht=video-phl2-1.xx.fbcdn.net&_nc_ohc=Ng5vSA-8TGIQ7kNvwGh2EWU&efg=eyJ2ZW5jb2RlX3RhZyI6Inhwdl9wcm9ncmVzc2l2ZS5WSV9VU0VDQVNFX1BST0RVQ1RfVFlQRS4uQzMuNzIwLmRhc2hfaDI2NC1iYXNpYy1nZW4yXzcyMHAiLCJ4cHZfYXNzZXRfaWQiOjEwMzc1NjUzODE5NTYyMjUsImFzc2V0X2FnZV9kYXlzIjoxMzcsInZpX3VzZWNhc2VfaWQiOjEwNzk5LCJkdXJhdGlvbl9zIjoxMywidXJsZ2VuX3NvdXJjZSI6Ind3dyJ9&ccb=17-1&vs=cb3f560db80316f4&_nc_vs=HBksFQIYRWZiX2VwaGVtZXJhbC84MjQ0MUMzNkIxRjIyRTIyMzI5QkJBQkU1Q0U1MzhCRF9tdF8xX3ZpZGVvX2Rhc2hpbml0Lm1wNBUAAsgBEgAVAhhAZmJfcGVybWFuZW50L0UzNDUwMTdDQUYyMDNEMDA5ODk0QTY3MUZDRDk0N0EwX2F1ZGlvX2Rhc2hpbml0Lm1wNBUCAsgBEgAoABgAGwKIB3VzZV9vaWwBMRJwcm9ncmVzc2l2ZV9yZWNpcGUBMRUAACaCyq7AoOrXAxUCKAJDMywXQCrhR64UeuEYGWRhc2hfaDI2NC1iYXNpYy1nZW4yXzcyMHARAHUAZd6oAQA&_nc_gid=pyRhB_HzpUF6tCjl0PO9iw&_nc_ss=70289&_nc_zt=28&oh=00_AQTnYeB3LM1fkSHAPgie7w50H9nDM17MPoI5LGNEuOzm8w&oe=6AF7B7C8"
+          },
+          {
+            "body": "Get a FREE Original Chicken Sandwich or Whopper Jr. when you spend $3+.",
+            "cta": "Order Now",
+            "image": null,
+            "link_url": "http://itunes.apple.com/app/id638323895",
+            "title": "New to Royal Perks?",
+            "video": "https://video-phl2-1.xx.fbcdn.net/o1/v/t2/f2/m366/AQO0WSNoXT1sYZnOmSDMAYRyRzICIoagiAB_amMMhRnlkTsKxvxjWLMZrZTATkcBSxL_8SEYNQda5sMDAXbZaYMZs9fuhQToDaZXYXQLJ0bGyQ.mp4?_nc_cat=101&_nc_sid=b66105&_nc_ht=video-phl2-1.xx.fbcdn.net&_nc_ohc=mcWe7DdsZ7UQ7kNvwHRcr5v&efg=eyJ2ZW5jb2RlX3RhZyI6Inhwdl9wcm9ncmVzc2l2ZS5WSV9VU0VDQVNFX1BST0RVQ1RfVFlQRS4uQzMuNzIwLmRhc2hfaDI2NC1iYXNpYy1nZW4yXzcyMHAiLCJ4cHZfYXNzZXRfaWQiOjI4MjA3MTY0NzE4ODg2MzE5LCJhc3NldF9hZ2VfZGF5cyI6MTMxLCJ2aV91c2VjYXNlX2lkIjoxMDc5OSwiZHVyYXRpb25fcyI6MTMsInVybGdlbl9zb3VyY2UiOiJ3d3cifQ%3D%3D&ccb=17-1&vs=38d5f25049b23507&_nc_vs=HBksFQIYRWZiX2VwaGVtZXJhbC9DQzRERTdEREJFMjUzNDY1NTIwODRCRkI0QkE0N0Q4M19tdF8xX3ZpZGVvX2Rhc2hpbml0Lm1wNBUAAsgBEgAVAhhAZmJfcGVybWFuZW50L0FBNDA4QThDMjFCRkIwOTVGNkQ3QTI2OTJCOERDMDk5X2F1ZGlvX2Rhc2hpbml0Lm1wNBUCAsgBEgAoABgAGwKIB3VzZV9vaWwBMRJwcm9ncmVzc2l2ZV9yZWNpcGUBMRUAACbetoWTipGbZBUCKAJDMywXQCrhR64UeuEYGWRhc2hfaDI2NC1iYXNpYy1nZW4yXzcyMHARAHUAZd6oAQA&_nc_gid=pyRhB_HzpUF6tCjl0PO9iw&_nc_ss=70289&_nc_zt=28&oh=00_AQRm5_S8_zMpLeWnGAY2FoX9bRaJ9nXjmWAF8mQ7Ld_5ZA&oe=6AF7BED7"
+          },
+          {
+            "body": "Get a FREE Original Chicken Sandwich or Whopper Jr. when you spend $3+.",
+            "cta": "Order Now",
+            "image": "https://scontent-phl2-1.xx.fbcdn.net/v/t39.35426-6/747820135_1071946185396231_9164471520227237059_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=SfVNodyZdnkQ7kNvwHV2cBt&_nc_oc=AdpsU_UyGF9w7sYjWOAwqJ7KFi1YuCVvtCWutD22rrV8L2ZLxBWP_vaq8ZVwRmOi4Bo&_nc_zt=14&_nc_ht=scontent-phl2-1.xx&_nc_gid=pyRhB_HzpUF6tCjl0PO9iw&_nc_ss=70289&oh=00_AQSLOTXPodavm-2MAnFLln-HR3Nnznrt7LR2ZMXiyO6i5Q&oe=6AF7CD69",
+            "link_url": "http://itunes.apple.com/app/id638323895",
+            "title": "New to Royal Perks?",
+            "video": "https://video-phl2-1.xx.fbcdn.net/o1/v/t2/f2/m366/AQO98oeoRXeA6GfJRwbOUsC0eO-OaAamSHBqEm4nkvNRlyTFO4bdsydreptHavI4RvGaLckC7xmXndqbWeLBxUrcziF38H3rWuVH9D5hlYzIrQ.mp4?_nc_cat=104&_nc_sid=b66105&_nc_ht=video-phl2-1.xx.fbcdn.net&_nc_ohc=Ng5vSA-8TGIQ7kNvwGh2EWU&efg=eyJ2ZW5jb2RlX3RhZyI6Inhwdl9wcm9ncmVzc2l2ZS5WSV9VU0VDQVNFX1BST0RVQ1RfVFlQRS4uQzMuNzIwLmRhc2hfaDI2NC1iYXNpYy1nZW4yXzcyMHAiLCJ4cHZfYXNzZXRfaWQiOjEwMzc1NjUzODE5NTYyMjUsImFzc2V0X2FnZV9kYXlzIjoxMzcsInZpX3VzZWNhc2VfaWQiOjEwNzk5LCJkdXJhdGlvbl9zIjoxMywidXJsZ2VuX3NvdXJjZSI6Ind3dyJ9&ccb=17-1&vs=cb3f560db80316f4&_nc_vs=HBksFQIYRWZiX2VwaGVtZXJhbC84MjQ0MUMzNkIxRjIyRTIyMzI5QkJBQkU1Q0U1MzhCRF9tdF8xX3ZpZGVvX2Rhc2hpbml0Lm1wNBUAAsgBEgAVAhhAZmJfcGVybWFuZW50L0UzNDUwMTdDQUYyMDNEMDA5ODk0QTY3MUZDRDk0N0EwX2F1ZGlvX2Rhc2hpbml0Lm1wNBUCAsgBEgAoABgAGwKIB3VzZV9vaWwBMRJwcm9ncmVzc2l2ZV9yZWNpcGUBMRUAACaCyq7AoOrXAxUCKAJDMywXQCrhR64UeuEYGWRhc2hfaDI2NC1iYXNpYy1nZW4yXzcyMHARAHUAZd6oAQA&_nc_gid=pyRhB_HzpUF6tCjl0PO9iw&_nc_ss=70289&_nc_zt=28&oh=00_AQTnYeB3LM1fkSHAPgie7w50H9nDM17MPoI5LGNEuOzm8w&oe=6AF7B7C8"
+          }
+        ],
+        "cta": "Order now",
+        "cta_type": "ORDER_NOW",
+        "currency": null,
+        "display_format": "dco",
+        "end_date": null,
+        "images": [
+          "https://scontent-phl2-1.xx.fbcdn.net/v/t39.35426-6/747820135_1071946185396231_9164471520227237059_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=SfVNodyZdnkQ7kNvwHV2cBt&_nc_oc=AdpsU_UyGF9w7sYjWOAwqJ7KFi1YuCVvtCWutD22rrV8L2ZLxBWP_vaq8ZVwRmOi4Bo&_nc_zt=14&_nc_ht=scontent-phl2-1.xx&_nc_gid=pyRhB_HzpUF6tCjl0PO9iw&_nc_ss=70289&oh=00_AQSLOTXPodavm-2MAnFLln-HR3Nnznrt7LR2ZMXiyO6i5Q&oe=6AF7CD69"
+        ],
+        "impressions": null,
+        "is_active": true,
+        "link_caption": "itunes.apple.com",
+        "link_url": "http://itunes.apple.com/app/id638323895",
+        "page_id": "134615383218473",
+        "page_likes": 8358855,
+        "page_name": "Burger King",
+        "page_url": "https://www.facebook.com/burgerking/",
+        "paid_for_by": null,
+        "platforms": [
+          "facebook",
+          "instagram"
+        ],
+        "same_creative_ads": 3,
+        "spend": null,
+        "start_date": "2026-09-04T07:00:00Z",
+        "title": "New to Royal Perks?",
+        "videos": [
+          "https://video-phl2-1.xx.fbcdn.net/o1/v/t2/f2/m366/AQO98oeoRXeA6GfJRwbOUsC0eO-OaAamSHBqEm4nkvNRlyTFO4bdsydreptHavI4RvGaLckC7xmXndqbWeLBxUrcziF38H3rWuVH9D5hlYzIrQ.mp4?_nc_cat=104&_nc_sid=b66105&_nc_ht=video-phl2-1.xx.fbcdn.net&_nc_ohc=Ng5vSA-8TGIQ7kNvwGh2EWU&efg=eyJ2ZW5jb2RlX3RhZyI6Inhwdl9wcm9ncmVzc2l2ZS5WSV9VU0VDQVNFX1BST0RVQ1RfVFlQRS4uQzMuNzIwLmRhc2hfaDI2NC1iYXNpYy1nZW4yXzcyMHAiLCJ4cHZfYXNzZXRfaWQiOjEwMzc1NjUzODE5NTYyMjUsImFzc2V0X2FnZV9kYXlzIjoxMzcsInZpX3VzZWNhc2VfaWQiOjEwNzk5LCJkdXJhdGlvbl9zIjoxMywidXJsZ2VuX3NvdXJjZSI6Ind3dyJ9&ccb=17-1&vs=cb3f560db80316f4&_nc_vs=HBksFQIYRWZiX2VwaGVtZXJhbC84MjQ0MUMzNkIxRjIyRTIyMzI5QkJBQkU1Q0U1MzhCRF9tdF8xX3ZpZGVvX2Rhc2hpbml0Lm1wNBUAAsgBEgAVAhhAZmJfcGVybWFuZW50L0UzNDUwMTdDQUYyMDNEMDA5ODk0QTY3MUZDRDk0N0EwX2F1ZGlvX2Rhc2hpbml0Lm1wNBUCAsgBEgAoABgAGwKIB3VzZV9vaWwBMRJwcm9ncmVzc2l2ZV9yZWNpcGUBMRUAACaCyq7AoOrXAxUCKAJDMywXQCrhR64UeuEYGWRhc2hfaDI2NC1iYXNpYy1nZW4yXzcyMHARAHUAZd6oAQA&_nc_gid=pyRhB_HzpUF6tCjl0PO9iw&_nc_ss=70289&_nc_zt=28&oh=00_AQTnYeB3LM1fkSHAPgie7w50H9nDM17MPoI5LGNEuOzm8w&oe=6AF7B7C8",
+          "https://video-phl2-1.xx.fbcdn.net/o1/v/t2/f2/m366/AQO0WSNoXT1sYZnOmSDMAYRyRzICIoagiAB_amMMhRnlkTsKxvxjWLMZrZTATkcBSxL_8SEYNQda5sMDAXbZaYMZs9fuhQToDaZXYXQLJ0bGyQ.mp4?_nc_cat=101&_nc_sid=b66105&_nc_ht=video-phl2-1.xx.fbcdn.net&_nc_ohc=mcWe7DdsZ7UQ7kNvwHRcr5v&efg=eyJ2ZW5jb2RlX3RhZyI6Inhwdl9wcm9ncmVzc2l2ZS5WSV9VU0VDQVNFX1BST0RVQ1RfVFlQRS4uQzMuNzIwLmRhc2hfaDI2NC1iYXNpYy1nZW4yXzcyMHAiLCJ4cHZfYXNzZXRfaWQiOjI4MjA3MTY0NzE4ODg2MzE5LCJhc3NldF9hZ2VfZGF5cyI6MTMxLCJ2aV91c2VjYXNlX2lkIjoxMDc5OSwiZHVyYXRpb25fcyI6MTMsInVybGdlbl9zb3VyY2UiOiJ3d3cifQ%3D%3D&ccb=17-1&vs=38d5f25049b23507&_nc_vs=HBksFQIYRWZiX2VwaGVtZXJhbC9DQzRERTdEREJFMjUzNDY1NTIwODRCRkI0QkE0N0Q4M19tdF8xX3ZpZGVvX2Rhc2hpbml0Lm1wNBUAAsgBEgAVAhhAZmJfcGVybWFuZW50L0FBNDA4QThDMjFCRkIwOTVGNkQ3QTI2OTJCOERDMDk5X2F1ZGlvX2Rhc2hpbml0Lm1wNBUCAsgBEgAoABgAGwKIB3VzZV9vaWwBMRJwcm9ncmVzc2l2ZV9yZWNpcGUBMRUAACbetoWTipGbZBUCKAJDMywXQCrhR64UeuEYGWRhc2hfaDI2NC1iYXNpYy1nZW4yXzcyMHARAHUAZd6oAQA&_nc_gid=pyRhB_HzpUF6tCjl0PO9iw&_nc_ss=70289&_nc_zt=28&oh=00_AQRm5_S8_zMpLeWnGAY2FoX9bRaJ9nXjmWAF8mQ7Ld_5ZA&oe=6AF7BED7"
+        ]
+      },
+      {
+        "ad_archive_id": "965016246680935",
+        "ad_url": "https://www.facebook.com/ads/library/?id=965016246680935",
+        "body": "Clock in for Game Day any day with the new Game Day Menu, now at BK.",
+        "cards": [],
+        "cta": "Order now",
+        "cta_type": "ORDER_NOW",
+        "currency": null,
+        "display_format": "image",
+        "end_date": null,
+        "images": [
+          "https://scontent-phl2-1.xx.fbcdn.net/v/t39.35426-6/858801039_1400619875118496_8217177770957907181_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=4bd5JG5Uy7AQ7kNvwGgvLGo&_nc_oc=AdocNBk2hznJI3ftFe-dpoxC2zepNWbyPzx-BQEYVIQ9zrW2eHg5Z-KFcqod3d2AcZE&_nc_zt=14&_nc_ht=scontent-phl2-1.xx&_nc_gid=pyRhB_HzpUF6tCjl0PO9iw&_nc_ss=70289&oh=00_AQRVjzO-sSl28eSNF6fTPSmASOxZ1Q9MOaN3isyPj-nnkg&oe=6AF7B471"
+        ],
+        "impressions": null,
+        "is_active": true,
+        "link_caption": "bk.com",
+        "link_url": "https://burgerking.app.link/PgbwFBAcH6b",
+        "page_id": "134615383218473",
+        "page_likes": 8358855,
+        "page_name": "Burger King",
+        "page_url": "https://www.facebook.com/burgerking/",
+        "paid_for_by": null,
+        "platforms": [
+          "facebook",
+          "instagram"
+        ],
+        "same_creative_ads": 4,
+        "spend": null,
+        "start_date": "2026-10-19T07:00:00Z",
+        "title": "It's Game Day",
+        "videos": []
+      },
+      {
+        "ad_archive_id": "1291945039732070",
+        "ad_url": "https://www.facebook.com/ads/library/?id=1291945039732070",
+        "body": "$3.99 10pc. Nuggets + Free Small Fries & Drink. Yeah, the perfect meal.",
+        "cards": [
+          {
+            "body": "$3.99 10pc. Nuggets + Free Small Fries & Drink. Yeah, the perfect meal.",
+            "cta": "Order Now",
+            "image": "https://scontent-phl2-1.xx.fbcdn.net/v/t39.35426-6/877552416_1304856918404573_9193112734006062237_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=sLKXxdP7sAgQ7kNvwGq3nLn&_nc_oc=Ados6wNNG29J9R69bmzp8I-8CQSWCk3rwiwFb0xfMxpYx2Y8HzQuDhrqQRvcjzFPaj8&_nc_zt=14&_nc_ht=scontent-phl2-1.xx&_nc_gid=pyRhB_HzpUF6tCjl0PO9iw&_nc_ss=70289&oh=00_AQTbrVoZI2YdxXBuTxjLDZKSdkGZAOu3AmHoug8MjI1GCw&oe=6AF7C835",
+            "link_url": "https://burgerking.app.link/7PVKu1Quy7b",
+            "title": "Don't Miss This! 11/6\u201311/15",
+            "video": null
+          },
+          {
+            "body": "$3.99 10pc. Nuggets + Free Small Fries & Drink. Yeah, the perfect meal.",
+            "cta": "Order Now",
+            "image": "https://scontent-phl2-1.xx.fbcdn.net/v/t39.35426-6/863182992_1447927566867943_8289706962081120265_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=GypOQqddpHYQ7kNvwGQddOQ&_nc_oc=AdoCWt41xWRU176wg9fGD40djUPmRpJgLuSMQea-I-2CICEMbfdFKQ1ih48RDUDafhA&_nc_zt=14&_nc_ht=scontent-phl2-1.xx&_nc_gid=pyRhB_HzpUF6tCjl0PO9iw&_nc_ss=70289&oh=00_AQRygnny90B8YzKOuinWuyh-CLcxJSeKmFPrMlxJI2lGJw&oe=6AF7BAE2",
+            "link_url": "https://burgerking.app.link/7PVKu1Quy7b",
+            "title": "Don't Miss This! 11/6\u201311/15",
+            "video": null
+          }
+        ],
+        "cta": "Order now",
+        "cta_type": "ORDER_NOW",
+        "currency": null,
+        "display_format": "dco",
+        "end_date": null,
+        "images": [
+          "https://scontent-phl2-1.xx.fbcdn.net/v/t39.35426-6/877552416_1304856918404573_9193112734006062237_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=sLKXxdP7sAgQ7kNvwGq3nLn&_nc_oc=Ados6wNNG29J9R69bmzp8I-8CQSWCk3rwiwFb0xfMxpYx2Y8HzQuDhrqQRvcjzFPaj8&_nc_zt=14&_nc_ht=scontent-phl2-1.xx&_nc_gid=pyRhB_HzpUF6tCjl0PO9iw&_nc_ss=70289&oh=00_AQTbrVoZI2YdxXBuTxjLDZKSdkGZAOu3AmHoug8MjI1GCw&oe=6AF7C835",
+          "https://scontent-phl2-1.xx.fbcdn.net/v/t39.35426-6/863182992_1447927566867943_8289706962081120265_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=GypOQqddpHYQ7kNvwGQddOQ&_nc_oc=AdoCWt41xWRU176wg9fGD40djUPmRpJgLuSMQea-I-2CICEMbfdFKQ1ih48RDUDafhA&_nc_zt=14&_nc_ht=scontent-phl2-1.xx&_nc_gid=pyRhB_HzpUF6tCjl0PO9iw&_nc_ss=70289&oh=00_AQRygnny90B8YzKOuinWuyh-CLcxJSeKmFPrMlxJI2lGJw&oe=6AF7BAE2"
+        ],
+        "impressions": null,
+        "is_active": true,
+        "link_caption": "bk.com",
+        "link_url": "https://burgerking.app.link/7PVKu1Quy7b",
+        "page_id": "134615383218473",
+        "page_likes": 8358855,
+        "page_name": "Burger King",
+        "page_url": "https://www.facebook.com/burgerking/",
+        "paid_for_by": null,
+        "platforms": [
+          "facebook",
+          "instagram"
+        ],
+        "same_creative_ads": 2,
+        "spend": null,
+        "start_date": "2026-11-06T08:00:00Z",
+        "title": "Don't Miss This! 11/6\u201311/15",
+        "videos": []
+      },
+      {
+        "ad_archive_id": "997992272620944",
+        "ad_url": "https://www.facebook.com/ads/library/?id=997992272620944",
+        "body": "$3.99 10pc. Nuggets + Free Small Fries & Drink. Yeah, the perfect meal.",
+        "cards": [
+          {
+            "body": "$3.99 10pc. Nuggets + Free Small Fries & Drink. Yeah, the perfect meal.",
+            "cta": "Order Now",
+            "image": "https://scontent-phl2-1.xx.fbcdn.net/v/t39.35426-6/867687602_1094390743475599_3198522252858438331_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=BfHJGWaV6OsQ7kNvwHYmYkb&_nc_oc=AdpzxqNHCxMuRNsftnlAioVJGWP3WDXdq8n0CPLJ1huT5SKjaGxa7u7DyG_g0rJMEVs&_nc_zt=14&_nc_ht=scontent-phl2-1.xx&_nc_gid=pyRhB_HzpUF6tCjl0PO9iw&_nc_ss=70289&oh=00_AQTCoZgOqG5BCV4cFKK1GTAkxnW-GzDJ_qYusg1GGJKX0A&oe=6AF7D419",
+            "link_url": "https://burgerking.app.link/7PVKu1Quy7b",
+            "title": "Don't Miss This! 11/6\u201311/15",
+            "video": null
+          },
+          {
+            "body": "$3.99 10pc. Nuggets + Free Small Fries & Drink. Yeah, the perfect meal.",
+            "cta": "Order Now",
+            "image": "https://scontent-phl2-1.xx.fbcdn.net/v/t39.35426-6/876938726_1058021483917210_7645026372474093839_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=FV_ScwyLaQAQ7kNvwEzNR5I&_nc_oc=AdrM4qyr5HX8gkPUOov6uBmqdwq4PwPwrklzav2XBrLb1Tcmj2bwT8qvaMSv2ZreDDg&_nc_zt=14&_nc_ht=scontent-phl2-1.xx&_nc_gid=pyRhB_HzpUF6tCjl0PO9iw&_nc_ss=70289&oh=00_AQSGXMbqUr4r6nh3V5F3Nj2rjVyxJwtC54e3mYbT1FajWA&oe=6AF7D26F",
+            "link_url": "https://burgerking.app.link/7PVKu1Quy7b",
+            "title": "Don't Miss This! 11/6\u201311/15",
+            "video": null
+          }
+        ],
+        "cta": "Order now",
+        "cta_type": "ORDER_NOW",
+        "currency": null,
+        "display_format": "dco",
+        "end_date": null,
+        "images": [
+          "https://scontent-phl2-1.xx.fbcdn.net/v/t39.35426-6/867687602_1094390743475599_3198522252858438331_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=BfHJGWaV6OsQ7kNvwHYmYkb&_nc_oc=AdpzxqNHCxMuRNsftnlAioVJGWP3WDXdq8n0CPLJ1huT5SKjaGxa7u7DyG_g0rJMEVs&_nc_zt=14&_nc_ht=scontent-phl2-1.xx&_nc_gid=pyRhB_HzpUF6tCjl0PO9iw&_nc_ss=70289&oh=00_AQTCoZgOqG5BCV4cFKK1GTAkxnW-GzDJ_qYusg1GGJKX0A&oe=6AF7D419",
+          "https://scontent-phl2-1.xx.fbcdn.net/v/t39.35426-6/876938726_1058021483917210_7645026372474093839_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=FV_ScwyLaQAQ7kNvwEzNR5I&_nc_oc=AdrM4qyr5HX8gkPUOov6uBmqdwq4PwPwrklzav2XBrLb1Tcmj2bwT8qvaMSv2ZreDDg&_nc_zt=14&_nc_ht=scontent-phl2-1.xx&_nc_gid=pyRhB_HzpUF6tCjl0PO9iw&_nc_ss=70289&oh=00_AQSGXMbqUr4r6nh3V5F3Nj2rjVyxJwtC54e3mYbT1FajWA&oe=6AF7D26F"
+        ],
+        "impressions": null,
+        "is_active": true,
+        "link_caption": "bk.com",
+        "link_url": "https://burgerking.app.link/7PVKu1Quy7b",
+        "page_id": "134615383218473",
+        "page_likes": 8358855,
+        "page_name": "Burger King",
+        "page_url": "https://www.facebook.com/burgerking/",
+        "paid_for_by": null,
+        "platforms": [
+          "facebook",
+          "instagram"
+        ],
+        "same_creative_ads": null,
+        "spend": null,
+        "start_date": "2026-11-06T08:00:00Z",
+        "title": "Don't Miss This! 11/6\u201311/15",
+        "videos": []
+      },
+      {
+        "ad_archive_id": "1778646603253315",
+        "ad_url": "https://www.facebook.com/ads/library/?id=1778646603253315",
+        "body": "The crowd goes crazy for the Game Day Menu's Super Pretzel Bun",
+        "cards": [
+          {
+            "body": "The crowd goes crazy for the Game Day Menu's Super Pretzel Bun",
+            "cta": "Order Now",
+            "image": "https://scontent-phl2-1.xx.fbcdn.net/v/t39.35426-6/840406832_2567225753792782_5072841335572476492_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=vwzbLsOrsuUQ7kNvwGAlIZe&_nc_oc=Adqu2rUayTQ1mXL9KiQYMRCutd58Zum3F8qT7SVrpBOfT2lRL1RWeOYbNP7W7TT3q40&_nc_zt=14&_nc_ht=scontent-phl2-1.xx&_nc_gid=pyRhB_HzpUF6tCjl0PO9iw&_nc_ss=70289&oh=00_AQQQgOw_QJe75Lzu_g96bVDtz27rxMtBzGDoe9Zp0DPvNA&oe=6AF7B294",
+            "link_url": "https://burgerking.app.link/MzzOFopcH6b",
+            "title": "Cheer For Game Day",
+            "video": null
+          },
+          {
+            "body": "The crowd goes crazy for the Game Day Menu's Super Pretzel Bun",
+            "cta": "Order Now",
+            "image": "https://scontent-phl2-1.xx.fbcdn.net/v/t39.35426-6/840379468_2285561202173898_4574350490317174373_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=B8XhNB9HXIoQ7kNvwGRG8bp&_nc_oc=AdrCgVuDrxn31XDE2GQ-JQqPAk7ymEPFK7z0jqDd33svFU6kW8IKaPVZp_n1lenrWGU&_nc_zt=14&_nc_ht=scontent-phl2-1.xx&_nc_gid=pyRhB_HzpUF6tCjl0PO9iw&_nc_ss=70289&oh=00_AQScqv1ZQh6WofelCxV3H_Uo-fmxSN9exFOi7NHTcqhNIg&oe=6AF7B44C",
+            "link_url": "https://burgerking.app.link/MzzOFopcH6b",
+            "title": "Cheer For Game Day",
+            "video": null
+          },
+          {
+            "body": "The crowd goes crazy for the Game Day Menu's Super Pretzel Bun",
+            "cta": "Order Now",
+            "image": "https://scontent-phl2-1.xx.fbcdn.net/v/t39.35426-6/841085387_1111853004580269_7488398644334008101_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=QrYtjSDR_0cQ7kNvwE7W-ZH&_nc_oc=AdqQH6BzztBelmyT13a8hOYpdoXkCYQFl7Vu6nf8cUheXQAJ-j4egs6Cl6AUD1JpLL4&_nc_zt=14&_nc_ht=scontent-phl2-1.xx&_nc_gid=pyRhB_HzpUF6tCjl0PO9iw&_nc_ss=70289&oh=00_AQS6um__-YQYO85E5emFDIvMVF_Rd5bHaOhASbA6J2qDzw&oe=6AF7BF24",
+            "link_url": "https://burgerking.app.link/MzzOFopcH6b",
+            "title": "Cheer For Game Day",
+            "video": null
+          }
+        ],
+        "cta": "Order now",
+        "cta_type": "ORDER_NOW",
+        "currency": null,
+        "display_format": "dco",
+        "end_date": null,
+        "images": [
+          "https://scontent-phl2-1.xx.fbcdn.net/v/t39.35426-6/840406832_2567225753792782_5072841335572476492_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=vwzbLsOrsuUQ7kNvwGAlIZe&_nc_oc=Adqu2rUayTQ1mXL9KiQYMRCutd58Zum3F8qT7SVrpBOfT2lRL1RWeOYbNP7W7TT3q40&_nc_zt=14&_nc_ht=scontent-phl2-1.xx&_nc_gid=pyRhB_HzpUF6tCjl0PO9iw&_nc_ss=70289&oh=00_AQQQgOw_QJe75Lzu_g96bVDtz27rxMtBzGDoe9Zp0DPvNA&oe=6AF7B294",
+          "https://scontent-phl2-1.xx.fbcdn.net/v/t39.35426-6/840379468_2285561202173898_4574350490317174373_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=B8XhNB9HXIoQ7kNvwGRG8bp&_nc_oc=AdrCgVuDrxn31XDE2GQ-JQqPAk7ymEPFK7z0jqDd33svFU6kW8IKaPVZp_n1lenrWGU&_nc_zt=14&_nc_ht=scontent-phl2-1.xx&_nc_gid=pyRhB_HzpUF6tCjl0PO9iw&_nc_ss=70289&oh=00_AQScqv1ZQh6WofelCxV3H_Uo-fmxSN9exFOi7NHTcqhNIg&oe=6AF7B44C",
+          "https://scontent-phl2-1.xx.fbcdn.net/v/t39.35426-6/841085387_1111853004580269_7488398644334008101_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=QrYtjSDR_0cQ7kNvwE7W-ZH&_nc_oc=AdqQH6BzztBelmyT13a8hOYpdoXkCYQFl7Vu6nf8cUheXQAJ-j4egs6Cl6AUD1JpLL4&_nc_zt=14&_nc_ht=scontent-phl2-1.xx&_nc_gid=pyRhB_HzpUF6tCjl0PO9iw&_nc_ss=70289&oh=00_AQS6um__-YQYO85E5emFDIvMVF_Rd5bHaOhASbA6J2qDzw&oe=6AF7BF24"
+        ],
+        "impressions": null,
+        "is_active": true,
+        "link_caption": "bk.com",
+        "link_url": "https://burgerking.app.link/MzzOFopcH6b",
+        "page_id": "134615383218473",
+        "page_likes": 8358855,
+        "page_name": "Burger King",
+        "page_url": "https://www.facebook.com/burgerking/",
+        "paid_for_by": null,
+        "platforms": [
+          "facebook",
+          "instagram"
+        ],
+        "same_creative_ads": 2,
+        "spend": null,
+        "start_date": "2026-10-23T07:00:00Z",
+        "title": "Cheer For Game Day",
+        "videos": []
+      },
+      {
+        "ad_archive_id": "2620840125020574",
+        "ad_url": "https://www.facebook.com/ads/library/?id=2620840125020574",
+        "body": "The crowd goes crazy for the Game Day Menu's Super Pretzel Bun",
+        "cards": [
+          {
+            "body": "The crowd goes crazy for the Game Day Menu's Super Pretzel Bun",
+            "cta": "Order Now",
+            "image": "https://scontent-phl2-1.xx.fbcdn.net/v/t39.35426-6/841411720_2676670706102795_5096181708311216378_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=7A_8TWeLxIQQ7kNvwEvSwVu&_nc_oc=Ado0WQ9Y5dUkvFfO2GrnIFti_BBPf5NJsMuF4-UVi1AHha-aErBnRJrAh6I7ccK8lv8&_nc_zt=14&_nc_ht=scontent-phl2-1.xx&_nc_gid=pyRhB_HzpUF6tCjl0PO9iw&_nc_ss=70289&oh=00_AQR2aFMJJyUZtkPt7Pi-vv2uVUJtjUM8vbjSfP1tlcN_AQ&oe=6AF7C580",
+            "link_url": "https://burgerking.app.link/MzzOFopcH6b",
+            "title": "Cheer For Game Day",
+            "video": null
+          },
+          {
+            "body": "The crowd goes crazy for the Game Day Menu's Super Pretzel Bun",
+            "cta": "Order Now",
+            "image": "https://scontent-phl2-1.xx.fbcdn.net/v/t39.35426-6/841437486_1593272539211021_5377619469139062544_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=s0UVhHwBitIQ7kNvwFIZ7Jf&_nc_oc=AdqUlYOhyIIQnZ6hV6IMFxk4_ZyjwDMPnXKjd7GWhtfy6PXq0gjX7T8f9pgEcX2XmEA&_nc_zt=14&_nc_ht=scontent-phl2-1.xx&_nc_gid=pyRhB_HzpUF6tCjl0PO9iw&_nc_ss=70289&oh=00_AQRNvZCy0pQ9J27o2aUj9dKRmSwM2UmLBOsaf5VqRayVYw&oe=6AF7E4CC",
+            "link_url": "https://burgerking.app.link/MzzOFopcH6b",
+            "title": "Cheer For Game Day",
+            "video": null
+          },
+          {
+            "body": "The crowd goes crazy for the Game Day Menu's Super Pretzel Bun",
+            "cta": "Order Now",
+            "image": "https://scontent-phl2-1.xx.fbcdn.net/v/t39.35426-6/843373057_1098604629243647_2572131021195250554_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=56kGQb8XPLAQ7kNvwGlG0HB&_nc_oc=AdpWPnGyge9N2mNVTO_1rHgqo8bzbKK_VEoA7qCr0uaqgeSGKRDSOzXto6dK3SVH1fU&_nc_zt=14&_nc_ht=scontent-phl2-1.xx&_nc_gid=pyRhB_HzpUF6tCjl0PO9iw&_nc_ss=70289&oh=00_AQTq0XK0U4m7TWLsbDpFChyQCAMsX5Z4FqceXLeAVBB3FQ&oe=6AF7DF37",
+            "link_url": "https://burgerking.app.link/MzzOFopcH6b",
+            "title": "Cheer For Game Day",
+            "video": null
+          }
+        ],
+        "cta": "Order now",
+        "cta_type": "ORDER_NOW",
+        "currency": null,
+        "display_format": "dco",
+        "end_date": null,
+        "images": [
+          "https://scontent-phl2-1.xx.fbcdn.net/v/t39.35426-6/841411720_2676670706102795_5096181708311216378_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=7A_8TWeLxIQQ7kNvwEvSwVu&_nc_oc=Ado0WQ9Y5dUkvFfO2GrnIFti_BBPf5NJsMuF4-UVi1AHha-aErBnRJrAh6I7ccK8lv8&_nc_zt=14&_nc_ht=scontent-phl2-1.xx&_nc_gid=pyRhB_HzpUF6tCjl0PO9iw&_nc_ss=70289&oh=00_AQR2aFMJJyUZtkPt7Pi-vv2uVUJtjUM8vbjSfP1tlcN_AQ&oe=6AF7C580",
+          "https://scontent-phl2-1.xx.fbcdn.net/v/t39.35426-6/841437486_1593272539211021_5377619469139062544_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=s0UVhHwBitIQ7kNvwFIZ7Jf&_nc_oc=AdqUlYOhyIIQnZ6hV6IMFxk4_ZyjwDMPnXKjd7GWhtfy6PXq0gjX7T8f9pgEcX2XmEA&_nc_zt=14&_nc_ht=scontent-phl2-1.xx&_nc_gid=pyRhB_HzpUF6tCjl0PO9iw&_nc_ss=70289&oh=00_AQRNvZCy0pQ9J27o2aUj9dKRmSwM2UmLBOsaf5VqRayVYw&oe=6AF7E4CC",
+          "https://scontent-phl2-1.xx.fbcdn.net/v/t39.35426-6/843373057_1098604629243647_2572131021195250554_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=56kGQb8XPLAQ7kNvwGlG0HB&_nc_oc=AdpWPnGyge9N2mNVTO_1rHgqo8bzbKK_VEoA7qCr0uaqgeSGKRDSOzXto6dK3SVH1fU&_nc_zt=14&_nc_ht=scontent-phl2-1.xx&_nc_gid=pyRhB_HzpUF6tCjl0PO9iw&_nc_ss=70289&oh=00_AQTq0XK0U4m7TWLsbDpFChyQCAMsX5Z4FqceXLeAVBB3FQ&oe=6AF7DF37"
+        ],
+        "impressions": null,
+        "is_active": true,
+        "link_caption": "bk.com",
+        "link_url": "https://burgerking.app.link/MzzOFopcH6b",
+        "page_id": "134615383218473",
+        "page_likes": 8358855,
+        "page_name": "Burger King",
+        "page_url": "https://www.facebook.com/burgerking/",
+        "paid_for_by": null,
+        "platforms": [
+          "facebook",
+          "instagram"
+        ],
+        "same_creative_ads": null,
+        "spend": null,
+        "start_date": "2026-10-23T07:00:00Z",
+        "title": "Cheer For Game Day",
+        "videos": []
+      },
+      {
+        "ad_archive_id": "1960105004659555",
+        "ad_url": "https://www.facebook.com/ads/library/?id=1960105004659555",
+        "body": "Get a FREE Original Chicken Sandwich or Whopper Jr. when you spend $3+.",
+        "cards": [
+          {
+            "body": "Get a FREE Original Chicken Sandwich or Whopper Jr. when you spend $3+.",
+            "cta": "Order Now",
+            "image": "https://scontent-phl2-1.xx.fbcdn.net/v/t39.35426-6/747695557_1551983179802591_8842817024351563275_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=t9vgLXNrVKcQ7kNvwFOvA5H&_nc_oc=AdpPs0lDPfJXw3dJss6atcsXIdR6BoDNX12DzPdQmE7-xViKF_9dVtsgoiC8_86zSH0&_nc_zt=14&_nc_ht=scontent-phl2-1.xx&_nc_gid=pyRhB_HzpUF6tCjl0PO9iw&_nc_ss=70289&oh=00_AQQMsJkqkyQx3Nsai4Ze5Cqz3Cmv9Wmp8Op9oBKVDmV3tw&oe=6AF7DEA1",
+            "link_url": "http://itunes.apple.com/app/id638323895",
+            "title": "New to Royal Perks?",
+            "video": null
+          },
+          {
+            "body": "Get a FREE Original Chicken Sandwich or Whopper Jr. when you spend $3+.",
+            "cta": "Order Now",
+            "image": "https://scontent-phl2-1.xx.fbcdn.net/v/t39.35426-6/747307192_1030318636074403_6115462564662572101_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=s0Eqg69y5SIQ7kNvwGQNm1m&_nc_oc=AdpWNVaerXkBjmJKb0t6wHb3cNRqWCFVwHBnf7Vr4zIq32TeQyVRkS1cfI-SZqH22yE&_nc_zt=14&_nc_ht=scontent-phl2-1.xx&_nc_gid=pyRhB_HzpUF6tCjl0PO9iw&_nc_ss=70289&oh=00_AQRzGGtishMFhXtYAaI2T-K3fpE5V6tgfGgaHIYe3jqkfg&oe=6AF7C44C",
+            "link_url": "http://itunes.apple.com/app/id638323895",
+            "title": "New to Royal Perks?",
+            "video": null
+          },
+          {
+            "body": "Get a FREE Original Chicken Sandwich or Whopper Jr. when you spend $3+.",
+            "cta": "Order Now",
+            "image": "https://scontent-phl2-1.xx.fbcdn.net/v/t39.35426-6/746522954_1351758890459539_2756269816260278821_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=C-80p2nbMy8Q7kNvwGgAjdL&_nc_oc=Adq3oH3gYyTm99aZ6pHFq9ZreaS5_P7WXFVXQzkcvgS3_rf6h0oBJtJGS8kN1iloquc&_nc_zt=14&_nc_ht=scontent-phl2-1.xx&_nc_gid=pyRhB_HzpUF6tCjl0PO9iw&_nc_ss=70289&oh=00_AQQ16i5jwbp8sUnV5lnf_tkqaFdjCet1V6C37oVrMn4cRw&oe=6AF7B3C6",
+            "link_url": "http://itunes.apple.com/app/id638323895",
+            "title": "New to Royal Perks?",
+            "video": null
+          }
+        ],
+        "cta": "Order now",
+        "cta_type": "ORDER_NOW",
+        "currency": null,
+        "display_format": "dco",
+        "end_date": null,
+        "images": [
+          "https://scontent-phl2-1.xx.fbcdn.net/v/t39.35426-6/747695557_1551983179802591_8842817024351563275_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=t9vgLXNrVKcQ7kNvwFOvA5H&_nc_oc=AdpPs0lDPfJXw3dJss6atcsXIdR6BoDNX12DzPdQmE7-xViKF_9dVtsgoiC8_86zSH0&_nc_zt=14&_nc_ht=scontent-phl2-1.xx&_nc_gid=pyRhB_HzpUF6tCjl0PO9iw&_nc_ss=70289&oh=00_AQQMsJkqkyQx3Nsai4Ze5Cqz3Cmv9Wmp8Op9oBKVDmV3tw&oe=6AF7DEA1",
+          "https://scontent-phl2-1.xx.fbcdn.net/v/t39.35426-6/747307192_1030318636074403_6115462564662572101_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=s0Eqg69y5SIQ7kNvwGQNm1m&_nc_oc=AdpWNVaerXkBjmJKb0t6wHb3cNRqWCFVwHBnf7Vr4zIq32TeQyVRkS1cfI-SZqH22yE&_nc_zt=14&_nc_ht=scontent-phl2-1.xx&_nc_gid=pyRhB_HzpUF6tCjl0PO9iw&_nc_ss=70289&oh=00_AQRzGGtishMFhXtYAaI2T-K3fpE5V6tgfGgaHIYe3jqkfg&oe=6AF7C44C",
+          "https://scontent-phl2-1.xx.fbcdn.net/v/t39.35426-6/746522954_1351758890459539_2756269816260278821_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=C-80p2nbMy8Q7kNvwGgAjdL&_nc_oc=Adq3oH3gYyTm99aZ6pHFq9ZreaS5_P7WXFVXQzkcvgS3_rf6h0oBJtJGS8kN1iloquc&_nc_zt=14&_nc_ht=scontent-phl2-1.xx&_nc_gid=pyRhB_HzpUF6tCjl0PO9iw&_nc_ss=70289&oh=00_AQQ16i5jwbp8sUnV5lnf_tkqaFdjCet1V6C37oVrMn4cRw&oe=6AF7B3C6"
+        ],
+        "impressions": null,
+        "is_active": true,
+        "link_caption": "itunes.apple.com",
+        "link_url": "http://itunes.apple.com/app/id638323895",
+        "page_id": "134615383218473",
+        "page_likes": 8358855,
+        "page_name": "Burger King",
+        "page_url": "https://www.facebook.com/burgerking/",
+        "paid_for_by": null,
+        "platforms": [
+          "facebook",
+          "instagram"
+        ],
+        "same_creative_ads": 3,
+        "spend": null,
+        "start_date": "2026-09-04T07:00:00Z",
+        "title": "New to Royal Perks?",
+        "videos": []
+      },
+      {
+        "ad_archive_id": "1591034302757673",
+        "ad_url": "https://www.facebook.com/ads/library/?id=1591034302757673",
+        "body": "Get a FREE Original Chicken Sandwich or Whopper Jr. when you spend $3+.",
+        "cards": [],
+        "cta": "Order now",
+        "cta_type": "ORDER_NOW",
+        "currency": null,
+        "display_format": "image",
+        "end_date": null,
+        "images": [
+          "https://scontent-phl2-1.xx.fbcdn.net/v/t39.35426-6/794145037_833500016456670_1617728977592720456_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=ARKit_Yk80EQ7kNvwGQJe1D&_nc_oc=AdoTDyr4HIPDzEauKNd73YLWKUcsuELqYsuLnX7bW7iNthGTN9al3l02UOvYlCeSFiA&_nc_zt=14&_nc_ht=scontent-phl2-1.xx&_nc_gid=pyRhB_HzpUF6tCjl0PO9iw&_nc_ss=70289&oh=00_AQTG3uyCrVWrJ4YDjyfzDKLxSWoXtc5fGZWfBEZb4BIaQA&oe=6AF7D5EA"
+        ],
+        "impressions": null,
+        "is_active": true,
+        "link_caption": "apps.apple.com",
+        "link_url": "http://itunes.apple.com/app/id638323895",
+        "page_id": "134615383218473",
+        "page_likes": 8358855,
+        "page_name": "Burger King",
+        "page_url": "https://www.facebook.com/burgerking/",
+        "paid_for_by": null,
+        "platforms": [
+          "facebook",
+          "instagram"
+        ],
+        "same_creative_ads": 1,
+        "spend": null,
+        "start_date": "2026-09-05T07:00:00Z",
+        "title": "New to Royal Perks?",
+        "videos": []
+      },
+      {
+        "ad_archive_id": "4452556608393884",
+        "ad_url": "https://www.facebook.com/ads/library/?id=4452556608393884",
+        "body": "Get a FREE Original Chicken Sandwich or Whopper Jr.\u200b when you spend $3+.",
+        "cards": [
+          {
+            "body": "Get a FREE Original Chicken Sandwich or Whopper Jr.\u200b when you spend $3+.",
+            "cta": "Order Now",
+            "image": "https://scontent-phl2-1.xx.fbcdn.net/v/t39.35426-6/747876995_1347458906857506_6851239208319432740_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=CgRFkvNK0YcQ7kNvwH4PMen&_nc_oc=AdrpwSfm4B_1xmPtrR4P4O9mPW1uv1GjEcfacnaZW4TFsfI3G9BeOIJte4-3THDWQIQ&_nc_zt=14&_nc_ht=scontent-phl2-1.xx&_nc_gid=pyRhB_HzpUF6tCjl0PO9iw&_nc_ss=70289&oh=00_AQQU7NXHgDt7UxzqtzQxJYKrIn7MF5AxpDL0PEuhDRld4g&oe=6AF7B5AD",
+            "link_url": "http://itunes.apple.com/app/id638323895",
+            "title": "New to Royal Perks?",
+            "video": null
+          },
+          {
+            "body": "Get a FREE Original Chicken Sandwich or Whopper Jr.\u200b when you spend $3+.",
+            "cta": "Order Now",
+            "image": "https://scontent-phl2-1.xx.fbcdn.net/v/t39.35426-6/747190915_1713468703320557_1864254225655339491_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=tGFrfot3EncQ7kNvwFNTslx&_nc_oc=AdoegsSY46k7f2syVyMJghm6oyCnq91z8LD_tqefuGRAQbPHzaY1XX0CJcp3RA3l1-U&_nc_zt=14&_nc_ht=scontent-phl2-1.xx&_nc_gid=pyRhB_HzpUF6tCjl0PO9iw&_nc_ss=70289&oh=00_AQQ9sWDp258xiAPw2kWHLOCObjwcjzJhvf2n7l_WNN-Kcg&oe=6AF7B2FD",
+            "link_url": "http://itunes.apple.com/app/id638323895",
+            "title": "New to Royal Perks?",
+            "video": null
+          },
+          {
+            "body": "Get a FREE Original Chicken Sandwich or Whopper Jr.\u200b when you spend $3+.",
+            "cta": "Order Now",
+            "image": "https://scontent-phl2-1.xx.fbcdn.net/v/t39.35426-6/746909337_1322662663227014_3879135436925973840_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=odR9SS-LPT0Q7kNvwEsE-ns&_nc_oc=AdpFeDfUaFxeLLleNovr5HfJSjle4qZITOirX3d7FWWbbMlp8YknmO1dQtoDMbCpqTc&_nc_zt=14&_nc_ht=scontent-phl2-1.xx&_nc_gid=pyRhB_HzpUF6tCjl0PO9iw&_nc_ss=70289&oh=00_AQRb6vQgVxSY-W20w61LOlJhTPid26x7_W6mvvquibDJnQ&oe=6AF7CB9F",
+            "link_url": "http://itunes.apple.com/app/id638323895",
+            "title": "New to Royal Perks?",
+            "video": null
+          }
+        ],
+        "cta": "Order now",
+        "cta_type": "ORDER_NOW",
+        "currency": null,
+        "display_format": "dco",
+        "end_date": null,
+        "images": [
+          "https://scontent-phl2-1.xx.fbcdn.net/v/t39.35426-6/747876995_1347458906857506_6851239208319432740_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=CgRFkvNK0YcQ7kNvwH4PMen&_nc_oc=AdrpwSfm4B_1xmPtrR4P4O9mPW1uv1GjEcfacnaZW4TFsfI3G9BeOIJte4-3THDWQIQ&_nc_zt=14&_nc_ht=scontent-phl2-1.xx&_nc_gid=pyRhB_HzpUF6tCjl0PO9iw&_nc_ss=70289&oh=00_AQQU7NXHgDt7UxzqtzQxJYKrIn7MF5AxpDL0PEuhDRld4g&oe=6AF7B5AD",
+          "https://scontent-phl2-1.xx.fbcdn.net/v/t39.35426-6/747190915_1713468703320557_1864254225655339491_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=tGFrfot3EncQ7kNvwFNTslx&_nc_oc=AdoegsSY46k7f2syVyMJghm6oyCnq91z8LD_tqefuGRAQbPHzaY1XX0CJcp3RA3l1-U&_nc_zt=14&_nc_ht=scontent-phl2-1.xx&_nc_gid=pyRhB_HzpUF6tCjl0PO9iw&_nc_ss=70289&oh=00_AQQ9sWDp258xiAPw2kWHLOCObjwcjzJhvf2n7l_WNN-Kcg&oe=6AF7B2FD",
+          "https://scontent-phl2-1.xx.fbcdn.net/v/t39.35426-6/746909337_1322662663227014_3879135436925973840_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=odR9SS-LPT0Q7kNvwEsE-ns&_nc_oc=AdpFeDfUaFxeLLleNovr5HfJSjle4qZITOirX3d7FWWbbMlp8YknmO1dQtoDMbCpqTc&_nc_zt=14&_nc_ht=scontent-phl2-1.xx&_nc_gid=pyRhB_HzpUF6tCjl0PO9iw&_nc_ss=70289&oh=00_AQRb6vQgVxSY-W20w61LOlJhTPid26x7_W6mvvquibDJnQ&oe=6AF7CB9F"
+        ],
+        "impressions": null,
+        "is_active": true,
+        "link_caption": "itunes.apple.com",
+        "link_url": "http://itunes.apple.com/app/id638323895",
+        "page_id": "134615383218473",
+        "page_likes": 8358855,
+        "page_name": "Burger King",
+        "page_url": "https://www.facebook.com/burgerking/",
+        "paid_for_by": null,
+        "platforms": [
+          "facebook",
+          "instagram"
+        ],
+        "same_creative_ads": 3,
+        "spend": null,
+        "start_date": "2026-09-04T07:00:00Z",
+        "title": "New to Royal Perks?",
+        "videos": []
+      }
+    ],
+    "usage": {
+      "boxes": [
+        "gate",
+        "recipe"
+      ],
+      "cache": "miss",
+      "engine": "recipe",
+      "lines": [
+        {
+          "about": "the call",
+          "boxes": [
+            "gate"
+          ],
+          "cache": "miss",
+          "call": "recipes",
+          "engine": "gate",
+          "units": 1
+        },
+        {
+          "attempts": 1,
+          "cache": "api",
+          "call": "scrape",
+          "engine": "api",
+          "proxy": "isp",
+          "units": 1,
+          "url": "https://www.facebook.com/\u2026"
+        },
+        {
+          "attempts": 1,
+          "cache": "api",
+          "call": "scrape",
+          "engine": "api",
+          "proxy": "isp",
+          "units": 1,
+          "url": "https://www.facebook.com/\u2026"
+        },
+        {
+          "attempts": 1,
+          "cache": "api",
+          "call": "scrape",
+          "engine": "api",
+          "proxy": "isp",
+          "units": 1,
+          "url": "https://www.facebook.com/\u2026"
+        },
+        {
+          "attempts": 1,
+          "cache": "api",
+          "call": "scrape",
+          "engine": "api",
+          "proxy": "isp",
+          "units": 1,
+          "url": "https://www.facebook.com/\u2026"
+        },
+        {
+          "attempts": 1,
+          "cache": "api",
+          "call": "scrape",
+          "engine": "api",
+          "proxy": "isp",
+          "units": 1,
+          "url": "https://www.facebook.com/\u2026"
+        }
+      ],
+      "remaining_before": {
+        "concurrent": 1460,
+        "requests": 1480,
+        "search": 2979
+      },
+      "units": 6
+    },
+    "version": 3
+  },
+  "_treg": {
+    "served_by": "crawl4ai.meta-ads.library.advertiser",
+    "provider": "crawl4ai",
+    "tier": "platform",
+    "outcome": "hit",
+    "tried": [
+      {
+        "endpoint_id": "crawl4ai.meta-ads.library.advertiser",
+        "provider": "crawl4ai",
+        "outcome": "hit",
+        "status": 200,
+        "charged_micro": 1650
+      }
+    ],
+    "charged_micro": 1650,
+    "dropped": [
+      {
+        "endpoint_id": "adyntel.meta-ads.library.advertiser",
+        "why": "needs {company_domain}"
+      }
+    ]
+  }
+}

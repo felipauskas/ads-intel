@@ -1,0 +1,2059 @@
+{
+  "output": {
+    "ads": [
+      {
+        "ad_archive_id": "1096894712708319",
+        "ad_url": "https://www.facebook.com/ads/library/?id=1096894712708319",
+        "body": "Yang Ori, baru berbaloi! Bucket Berbaloi with 6-pc KFC, Cheezy Wedges, 14oz whipped potato, and 2 drinks from only RM42.99!",
+        "cards": [
+          {
+            "body": "Yang Ori, baru berbaloi! Bucket Berbaloi with 6-pc KFC, Cheezy Wedges, 14oz whipped potato, and 2 drinks from only RM42.99!",
+            "cta": "Order Now",
+            "image": "https://scontent-phl2-1.xx.fbcdn.net/v/t39.35426-6/825328742_28802136192713872_9031192571953605391_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=j6ksiMkS7JAQ7kNvwExRRnW&_nc_oc=AdoFyGFOZUZcaDzi7AEcRhTDBzTQ9FnWh3yo64v-jniUbmUwK_CeOgHbw7HMDRdvvzw&_nc_zt=14&_nc_ht=scontent-phl2-1.xx&_nc_gid=wzsbixDm_eJJKyQAwSV9kw&_nc_ss=70289&oh=00_AQQyrKnKa7IkEZ-M8eeL9K7QNfAXiK5ELb_Gxevt7UQm4A&oe=6AF7E1A7",
+            "link_url": "https://kfc.com.my/?utm_source=fbpaid&utm_medium=ppla&utm_campaign=he-w8_bucket-berbaloi-fbpaid-ppla-reach-cpm&utm_content=na-intr-mass-fbpaid-ppla-reach-cpm-img-w8-bucket-berbaloi-mix-bucket-berbaloi",
+            "title": "Bucket Berbaloi! Ni baru Ori!",
+            "video": null
+          },
+          {
+            "body": "Yang Ori, baru berbaloi! Bucket Berbaloi with 6-pc KFC, Cheezy Wedges, 14oz whipped potato, and 2 drinks from only RM42.99!",
+            "cta": "Order Now",
+            "image": "https://scontent-phl2-1.xx.fbcdn.net/v/t39.35426-6/825328784_1058738990502490_5841010587181033827_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=s_KBwKfW3EUQ7kNvwEO_mWU&_nc_oc=AdoSPSTgK1Oh51X20Si26NryIJEuGnZQUjlsJ-AN7zp_jo4FFzquqbpx8syDpr34Vks&_nc_zt=14&_nc_ht=scontent-phl2-1.xx&_nc_gid=wzsbixDm_eJJKyQAwSV9kw&_nc_ss=70289&oh=00_AQRnZfwrTLa-x5MYIkpr3zUGODQ69DE9vLhVKXbSf5pENw&oe=6AF7B5CA",
+            "link_url": "https://kfc.com.my/?utm_source=fbpaid&utm_medium=ppla&utm_campaign=he-w8_bucket-berbaloi-fbpaid-ppla-reach-cpm&utm_content=na-intr-mass-fbpaid-ppla-reach-cpm-img-w8-bucket-berbaloi-mix-bucket-berbaloi",
+            "title": "Bucket Berbaloi! Ni baru Ori!",
+            "video": null
+          }
+        ],
+        "cta": "Order now",
+        "cta_type": "ORDER_NOW",
+        "currency": null,
+        "display_format": "dco",
+        "end_date": null,
+        "images": [
+          "https://scontent-phl2-1.xx.fbcdn.net/v/t39.35426-6/825328742_28802136192713872_9031192571953605391_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=j6ksiMkS7JAQ7kNvwExRRnW&_nc_oc=AdoFyGFOZUZcaDzi7AEcRhTDBzTQ9FnWh3yo64v-jniUbmUwK_CeOgHbw7HMDRdvvzw&_nc_zt=14&_nc_ht=scontent-phl2-1.xx&_nc_gid=wzsbixDm_eJJKyQAwSV9kw&_nc_ss=70289&oh=00_AQQyrKnKa7IkEZ-M8eeL9K7QNfAXiK5ELb_Gxevt7UQm4A&oe=6AF7E1A7",
+          "https://scontent-phl2-1.xx.fbcdn.net/v/t39.35426-6/825328784_1058738990502490_5841010587181033827_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=s_KBwKfW3EUQ7kNvwEO_mWU&_nc_oc=AdoSPSTgK1Oh51X20Si26NryIJEuGnZQUjlsJ-AN7zp_jo4FFzquqbpx8syDpr34Vks&_nc_zt=14&_nc_ht=scontent-phl2-1.xx&_nc_gid=wzsbixDm_eJJKyQAwSV9kw&_nc_ss=70289&oh=00_AQRnZfwrTLa-x5MYIkpr3zUGODQ69DE9vLhVKXbSf5pENw&oe=6AF7B5CA"
+        ],
+        "impressions": null,
+        "is_active": true,
+        "link_caption": "kfc.com.my",
+        "link_url": "https://kfc.com.my/?utm_source=fbpaid&utm_medium=ppla&utm_campaign=he-w8_bucket-berbaloi-fbpaid-ppla-reach-cpm&utm_content=na-intr-mass-fbpaid-ppla-reach-cpm-img-w8-bucket-berbaloi-mix-bucket-berbaloi",
+        "page_id": "82034284246",
+        "page_likes": 61676377,
+        "page_name": "KFC",
+        "page_url": "https://www.facebook.com/KFCMalaysia/",
+        "paid_for_by": null,
+        "platforms": [
+          "facebook",
+          "instagram"
+        ],
+        "same_creative_ads": 3,
+        "spend": null,
+        "start_date": "2026-10-03T07:00:00Z",
+        "title": "Bucket Berbaloi! Ni baru Ori!",
+        "videos": []
+      },
+      {
+        "ad_archive_id": "2184293515845956",
+        "ad_url": "https://www.facebook.com/ads/library/?id=2184293515845956",
+        "body": "Jadi Member KFC dapat score ticket bola? Layan up to 50% OFF Kepci FC X Coca-Cola Combo.",
+        "cards": [
+          {
+            "body": "Jadi Member KFC dapat score ticket bola? Layan up to 50% OFF Kepci FC X Coca-Cola Combo.",
+            "cta": "Order Now",
+            "image": "https://scontent-phl2-1.xx.fbcdn.net/v/t39.35426-6/858569736_1087867497384811_7144572827301116674_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=ge7Mh619kxgQ7kNvwH-Nk3D&_nc_oc=Adp1nQxWLSjR1fkiIBGEctCiUcvBEsoKC8pg7q8IyXotvNETuhpdoHc-h8istOG7FR0&_nc_zt=14&_nc_ht=scontent-phl2-1.xx&_nc_gid=wzsbixDm_eJJKyQAwSV9kw&_nc_ss=70289&oh=00_AQR4yLmIN5Bs7i1yP3PoI8gvADNmobAkiA0dJoCa2jTxOw&oe=6AF7E456",
+            "link_url": "https://kfc.com.my/?utm_source=fbpaid&utm_medium=ppla&utm_campaign=lto-w8_romano-burger-fbpaid-ppla-reach-cpm&utm_content=na-intr-mass-ppla-img-romano-burger-mix-epl-contest-with-food-config-shout-out",
+            "title": "Feast On The Combo, Sorak Lagi Power!",
+            "video": null
+          },
+          {
+            "body": "Jadi Member KFC dapat score ticket bola? Layan up to 50% OFF Kepci FC X Coca-Cola Combo.",
+            "cta": "Order Now",
+            "image": "https://scontent-phl2-1.xx.fbcdn.net/v/t39.35426-6/858255755_2098369267711788_4626799333975018114_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=PP7UR53jkeQQ7kNvwGBcSI8&_nc_oc=AdoULzso_Gx0-2mcPFDuPhvCJ-Y3M4FploPB6--DMxezsWmTLlPYKqFRGoZr6hy645s&_nc_zt=14&_nc_ht=scontent-phl2-1.xx&_nc_gid=wzsbixDm_eJJKyQAwSV9kw&_nc_ss=70289&oh=00_AQR2rkZvVGZD6TM4ys-EENhk66UHSzjfOvc-NIvocUGFXA&oe=6AF7C4D2",
+            "link_url": "https://kfc.com.my/?utm_source=fbpaid&utm_medium=ppla&utm_campaign=lto-w8_romano-burger-fbpaid-ppla-reach-cpm&utm_content=na-intr-mass-ppla-img-romano-burger-mix-epl-contest-with-food-config-shout-out",
+            "title": "Feast On The Combo, Sorak Lagi Power!",
+            "video": null
+          },
+          {
+            "body": "Jadi Member KFC dapat score ticket bola? Layan up to 50% OFF Kepci FC X Coca-Cola Combo.",
+            "cta": "Order Now",
+            "image": "https://scontent-phl2-1.xx.fbcdn.net/v/t39.35426-6/854939773_2002791654460967_4886852065473218169_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=aK1mnyvy16cQ7kNvwE9tlz3&_nc_oc=AdqIdtFARxX0ZFNkEdWcVp_pRtuMWo5IVVwuEnk14V7kVGl4mEE32TNIc2OU3-VeYTw&_nc_zt=14&_nc_ht=scontent-phl2-1.xx&_nc_gid=wzsbixDm_eJJKyQAwSV9kw&_nc_ss=70289&oh=00_AQR4pcYJWDNTbMu74bjohCzRu8AxRi6fSDgqzCGzREOx7w&oe=6AF7CF9D",
+            "link_url": "https://kfc.com.my/?utm_source=fbpaid&utm_medium=ppla&utm_campaign=lto-w8_romano-burger-fbpaid-ppla-reach-cpm&utm_content=na-intr-mass-ppla-img-romano-burger-mix-epl-contest-with-food-config-shout-out",
+            "title": "Feast On The Combo, Sorak Lagi Power!",
+            "video": null
+          }
+        ],
+        "cta": "Order now",
+        "cta_type": "ORDER_NOW",
+        "currency": null,
+        "display_format": "dco",
+        "end_date": null,
+        "images": [
+          "https://scontent-phl2-1.xx.fbcdn.net/v/t39.35426-6/858569736_1087867497384811_7144572827301116674_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=ge7Mh619kxgQ7kNvwH-Nk3D&_nc_oc=Adp1nQxWLSjR1fkiIBGEctCiUcvBEsoKC8pg7q8IyXotvNETuhpdoHc-h8istOG7FR0&_nc_zt=14&_nc_ht=scontent-phl2-1.xx&_nc_gid=wzsbixDm_eJJKyQAwSV9kw&_nc_ss=70289&oh=00_AQR4yLmIN5Bs7i1yP3PoI8gvADNmobAkiA0dJoCa2jTxOw&oe=6AF7E456",
+          "https://scontent-phl2-1.xx.fbcdn.net/v/t39.35426-6/858255755_2098369267711788_4626799333975018114_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=PP7UR53jkeQQ7kNvwGBcSI8&_nc_oc=AdoULzso_Gx0-2mcPFDuPhvCJ-Y3M4FploPB6--DMxezsWmTLlPYKqFRGoZr6hy645s&_nc_zt=14&_nc_ht=scontent-phl2-1.xx&_nc_gid=wzsbixDm_eJJKyQAwSV9kw&_nc_ss=70289&oh=00_AQR2rkZvVGZD6TM4ys-EENhk66UHSzjfOvc-NIvocUGFXA&oe=6AF7C4D2",
+          "https://scontent-phl2-1.xx.fbcdn.net/v/t39.35426-6/854939773_2002791654460967_4886852065473218169_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=aK1mnyvy16cQ7kNvwE9tlz3&_nc_oc=AdqIdtFARxX0ZFNkEdWcVp_pRtuMWo5IVVwuEnk14V7kVGl4mEE32TNIc2OU3-VeYTw&_nc_zt=14&_nc_ht=scontent-phl2-1.xx&_nc_gid=wzsbixDm_eJJKyQAwSV9kw&_nc_ss=70289&oh=00_AQR4pcYJWDNTbMu74bjohCzRu8AxRi6fSDgqzCGzREOx7w&oe=6AF7CF9D"
+        ],
+        "impressions": null,
+        "is_active": true,
+        "link_caption": "kfc.com.my",
+        "link_url": "https://kfc.com.my/?utm_source=fbpaid&utm_medium=ppla&utm_campaign=lto-w8_romano-burger-fbpaid-ppla-reach-cpm&utm_content=na-intr-mass-ppla-img-romano-burger-mix-epl-contest-with-food-config-shout-out",
+        "page_id": "82034284246",
+        "page_likes": 61676377,
+        "page_name": "KFC",
+        "page_url": "https://www.facebook.com/KFCMalaysia/",
+        "paid_for_by": null,
+        "platforms": [
+          "facebook",
+          "instagram"
+        ],
+        "same_creative_ads": 13,
+        "spend": null,
+        "start_date": "2026-10-20T07:00:00Z",
+        "title": "Feast On The Combo, Sorak Lagi Power!",
+        "videos": []
+      },
+      {
+        "ad_archive_id": "1845935063428523",
+        "ad_url": "https://www.facebook.com/ads/library/?id=1845935063428523",
+        "body": "Yang Ori, baru berbaloi! Bucket Berbaloi with 6-pc KFC, Cheezy Wedges, 14oz whipped potato, and 2 drinks from only RM42.99!",
+        "cards": [],
+        "cta": "Order now",
+        "cta_type": "ORDER_NOW",
+        "currency": null,
+        "display_format": "image",
+        "end_date": null,
+        "images": [
+          "https://scontent-phl2-1.xx.fbcdn.net/v/t39.35426-6/833084645_1090085350472329_5071542782986421372_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=SL0UMlaoS1kQ7kNvwFv1Ewa&_nc_oc=Adr7Iu_UGWBlrEjbxAKlxjlm42PTY60pfQ0fZh1dxdN6__t-AtR93jfe7E9bAPGjZ6M&_nc_zt=14&_nc_ht=scontent-phl2-1.xx&_nc_gid=wzsbixDm_eJJKyQAwSV9kw&_nc_ss=70289&oh=00_AQSBX6jpoS75IW3KhX3qtsBOjbYbaZRcoVYDsloHLzsNEA&oe=6AF7CA3C"
+        ],
+        "impressions": null,
+        "is_active": true,
+        "link_caption": "kfc.com.my",
+        "link_url": "https://kfc.com.my/?utm_source=fbpaid&utm_medium=ppla&utm_campaign=he-w8_bucket-berbaloi-fbpaid-ppla-reach-cpm&utm_content=na-intr-mass-fbpaid-ppla-reach-cpm-img-w8-bucket-berbaloi-mix-bucket-berbaloi",
+        "page_id": "82034284246",
+        "page_likes": 61676377,
+        "page_name": "KFC",
+        "page_url": "https://www.facebook.com/KFCMalaysia/",
+        "paid_for_by": null,
+        "platforms": [
+          "facebook",
+          "instagram"
+        ],
+        "same_creative_ads": 1,
+        "spend": null,
+        "start_date": "2026-10-03T07:00:00Z",
+        "title": "Bucket Berbaloi! Ni baru Ori!",
+        "videos": []
+      },
+      {
+        "ad_archive_id": "1820242122583048",
+        "ad_url": "https://www.facebook.com/ads/library/?id=1820242122583048",
+        "body": "Jadi Member KFC dapat score ticket bola? Layan up to 50% OFF Kepci FC X Coca-Cola Combo.",
+        "cards": [],
+        "cta": "Order now",
+        "cta_type": "ORDER_NOW",
+        "currency": null,
+        "display_format": "image",
+        "end_date": null,
+        "images": [
+          "https://scontent-phl2-1.xx.fbcdn.net/v/t39.35426-6/857350137_1433394098896481_1076813130908659570_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=dVccr_Ua2YgQ7kNvwGx6uP4&_nc_oc=AdoXm5snN7bHTnl05VD46t012sxva4fqVvJO6_ekmhWnfbtQgQ9V3eom6ILmVDtk6zo&_nc_zt=14&_nc_ht=scontent-phl2-1.xx&_nc_gid=wzsbixDm_eJJKyQAwSV9kw&_nc_ss=70289&oh=00_AQScJgrcbk_5OkcdfHJ9j4rF-DICnf8Dk0sHTlJhHRS_4Q&oe=6AF7D562"
+        ],
+        "impressions": null,
+        "is_active": true,
+        "link_caption": "kfc.com.my",
+        "link_url": "https://kfc.com.my/?utm_source=fbpaid&utm_medium=ppla&utm_campaign=lto-w8_romano-burger-fbpaid-ppla-reach-cpm&utm_content=na-intr-mass-ppla-img-romano-burger-mix-epl-contest-with-food-config-shout-out",
+        "page_id": "82034284246",
+        "page_likes": 61676377,
+        "page_name": "KFC",
+        "page_url": "https://www.facebook.com/KFCMalaysia/",
+        "paid_for_by": null,
+        "platforms": [
+          "facebook",
+          "instagram"
+        ],
+        "same_creative_ads": 4,
+        "spend": null,
+        "start_date": "2026-10-20T07:00:00Z",
+        "title": "Feast On The Combo, Sorak Lagi Power!",
+        "videos": []
+      },
+      {
+        "ad_archive_id": "1407692878180981",
+        "ad_url": "https://www.facebook.com/ads/library/?id=1407692878180981",
+        "body": "Yang Ori, baru berbaloi! Bucket Berbaloi with 6-pc KFC, Cheezy Wedges, 14oz whipped potato, and 2 drinks from only RM42.99!",
+        "cards": [],
+        "cta": "Order now",
+        "cta_type": "ORDER_NOW",
+        "currency": null,
+        "display_format": "image",
+        "end_date": null,
+        "images": [
+          "https://scontent-phl2-1.xx.fbcdn.net/v/t39.35426-6/834019287_1616034940071904_6504410054560967147_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=UOICtNhMJCIQ7kNvwG5i5_J&_nc_oc=AdrKf5pHd9-EAO1bUI6VhTRYx7nQnfwp3uNs91aWHgDU79XZbdDfloEkfTbZ7j83GAo&_nc_zt=14&_nc_ht=scontent-phl2-1.xx&_nc_gid=wzsbixDm_eJJKyQAwSV9kw&_nc_ss=70289&oh=00_AQQleZ6tEubusIc8aubzbT5yt9h5PLDN8jOlEHQ44SGtBQ&oe=6AF7BEAC"
+        ],
+        "impressions": null,
+        "is_active": true,
+        "link_caption": "kfc.com.my",
+        "link_url": "https://kfc.com.my/?utm_source=fbpaid&utm_medium=ppla&utm_campaign=he-w8_bucket-berbaloi-fbpaid-ppla-reach-cpm&utm_content=na-intr-mass-fbpaid-ppla-reach-cpm-img-w8-bucket-berbaloi-mix-bucket-berbaloi",
+        "page_id": "82034284246",
+        "page_likes": 61676377,
+        "page_name": "KFC",
+        "page_url": "https://www.facebook.com/KFCMalaysia/",
+        "paid_for_by": null,
+        "platforms": [
+          "facebook",
+          "instagram"
+        ],
+        "same_creative_ads": 3,
+        "spend": null,
+        "start_date": "2026-10-03T07:00:00Z",
+        "title": "Bucket Berbaloi! Ni baru Ori!",
+        "videos": []
+      },
+      {
+        "ad_archive_id": "1383017590300285",
+        "ad_url": "https://www.facebook.com/ads/library/?id=1383017590300285",
+        "body": "Dah try sos KFC? Ada yang familiar, ada Sos Seoul Pedas yang baharu! Konfem puaskan citarasa korang!",
+        "cards": [
+          {
+            "body": "Dah try sos KFC? Ada yang familiar, ada Sos Seoul Pedas yang baharu! Konfem puaskan citarasa korang!",
+            "cta": "See Details",
+            "image": "https://scontent-phl2-1.xx.fbcdn.net/v/t39.35426-6/855835543_1807366200300727_7846562344964987573_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=q4lvz_6ihL4Q7kNvwEYfr6w&_nc_oc=AdoR2MH6KfXSJdK5rp2Fvr-KKilNkm07dVh-tak20-k6emfzGX2MSEMnfKS9Z7U1LMo&_nc_zt=14&_nc_ht=scontent-phl2-1.xx&_nc_gid=wzsbixDm_eJJKyQAwSV9kw&_nc_ss=70289&oh=00_AQQHA4ODh0jBNGNJGZEWWfdj5ibsUoJ4AqtWGRPd3uL3bg&oe=6AF7E80E",
+            "link_url": "https://kfc.com.my/?utm_source=fbpaid&utm_medium=ppla&utm_campaign=lto-w8-elevate-2-fbpaid-ppla-reach-cpm&utm_content=na-intr-mass-ppla-img-w8-elevate-2-mix-kfc-sauces",
+            "title": "Fuhhh, Sos-sos KFC Lain Macam!",
+            "video": null
+          },
+          {
+            "body": "Dah try sos KFC? Ada yang familiar, ada Sos Seoul Pedas yang baharu! Konfem puaskan citarasa korang!",
+            "cta": "See Details",
+            "image": "https://scontent-phl2-1.xx.fbcdn.net/v/t39.35426-6/855455714_1595569728326851_6690390087631600633_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=3Tvd5girC2gQ7kNvwGTEIGS&_nc_oc=AdrkRX4IRswvahqJF08u8UrZuQ8s7axHs7OBbF8ldl4V-4eyi5k89NypDQICpqK6fMo&_nc_zt=14&_nc_ht=scontent-phl2-1.xx&_nc_gid=wzsbixDm_eJJKyQAwSV9kw&_nc_ss=70289&oh=00_AQS9T72nOH1dNNKsyDw2vReDOCgWp18h3t6o3gSzhuNoPw&oe=6AF7D7AB",
+            "link_url": "http://kfc.com.my/",
+            "title": "Fuhhh, Sos-sos KFC Lain Macam!",
+            "video": null
+          },
+          {
+            "body": "Dah try sos KFC? Ada yang familiar, ada Sos Seoul Pedas yang baharu! Konfem puaskan citarasa korang!",
+            "cta": "See Details",
+            "image": "https://scontent-phl2-1.xx.fbcdn.net/v/t39.35426-6/855027236_2165499317678487_3827323631377369607_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=wNAIB4aFOiMQ7kNvwFMYmoh&_nc_oc=AdpZoAJwnFlSmOrfAxYpXRnRaw3XLh7iXXUH0lX1RY8V-AIujWXGtjJhqFedEHxTP-A&_nc_zt=14&_nc_ht=scontent-phl2-1.xx&_nc_gid=wzsbixDm_eJJKyQAwSV9kw&_nc_ss=70289&oh=00_AQQdnY77VBrtCNcqHLCvtjNPV5gkcd9CrMvlUp_PY7-PbQ&oe=6AF7C642",
+            "link_url": "http://kfc.com.my/",
+            "title": "Fuhhh, Sos-sos KFC Lain Macam!",
+            "video": null
+          }
+        ],
+        "cta": "See details",
+        "cta_type": "SEE_DETAILS",
+        "currency": null,
+        "display_format": "dco",
+        "end_date": null,
+        "images": [
+          "https://scontent-phl2-1.xx.fbcdn.net/v/t39.35426-6/855835543_1807366200300727_7846562344964987573_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=q4lvz_6ihL4Q7kNvwEYfr6w&_nc_oc=AdoR2MH6KfXSJdK5rp2Fvr-KKilNkm07dVh-tak20-k6emfzGX2MSEMnfKS9Z7U1LMo&_nc_zt=14&_nc_ht=scontent-phl2-1.xx&_nc_gid=wzsbixDm_eJJKyQAwSV9kw&_nc_ss=70289&oh=00_AQQHA4ODh0jBNGNJGZEWWfdj5ibsUoJ4AqtWGRPd3uL3bg&oe=6AF7E80E",
+          "https://scontent-phl2-1.xx.fbcdn.net/v/t39.35426-6/855455714_1595569728326851_6690390087631600633_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=3Tvd5girC2gQ7kNvwGTEIGS&_nc_oc=AdrkRX4IRswvahqJF08u8UrZuQ8s7axHs7OBbF8ldl4V-4eyi5k89NypDQICpqK6fMo&_nc_zt=14&_nc_ht=scontent-phl2-1.xx&_nc_gid=wzsbixDm_eJJKyQAwSV9kw&_nc_ss=70289&oh=00_AQS9T72nOH1dNNKsyDw2vReDOCgWp18h3t6o3gSzhuNoPw&oe=6AF7D7AB",
+          "https://scontent-phl2-1.xx.fbcdn.net/v/t39.35426-6/855027236_2165499317678487_3827323631377369607_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=wNAIB4aFOiMQ7kNvwFMYmoh&_nc_oc=AdpZoAJwnFlSmOrfAxYpXRnRaw3XLh7iXXUH0lX1RY8V-AIujWXGtjJhqFedEHxTP-A&_nc_zt=14&_nc_ht=scontent-phl2-1.xx&_nc_gid=wzsbixDm_eJJKyQAwSV9kw&_nc_ss=70289&oh=00_AQQdnY77VBrtCNcqHLCvtjNPV5gkcd9CrMvlUp_PY7-PbQ&oe=6AF7C642"
+        ],
+        "impressions": null,
+        "is_active": true,
+        "link_caption": "kfc.com.my",
+        "link_url": "http://kfc.com.my/",
+        "page_id": "82034284246",
+        "page_likes": 61676377,
+        "page_name": "KFC",
+        "page_url": "https://www.facebook.com/KFCMalaysia/",
+        "paid_for_by": null,
+        "platforms": [
+          "facebook",
+          "instagram"
+        ],
+        "same_creative_ads": 3,
+        "spend": null,
+        "start_date": "2026-10-29T07:00:00Z",
+        "title": "Fuhhh, Sos-sos KFC Lain Macam!",
+        "videos": []
+      },
+      {
+        "ad_archive_id": "1774123967173490",
+        "ad_url": "https://www.facebook.com/ads/library/?id=1774123967173490",
+        "body": "Football season is HERE. Korang nak watch Bola LIVE in England? Now\u2019s your chance to win an experience of a lifetime!",
+        "cards": [
+          {
+            "body": "Football season is HERE. Korang nak watch Bola LIVE in England? Now\u2019s your chance to win an experience of a lifetime!",
+            "cta": "Learn More",
+            "image": "https://scontent-phl2-1.xx.fbcdn.net/v/t39.35426-6/855946725_1478391214209904_3707309448846845746_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=GHntpnFd0CcQ7kNvwEhbco5&_nc_oc=AdoaAMXY4cPrYyLh3r5hEMClaMhLttlNaAFJXr1QtwQL_cldQedqcGyoiLY1ogBYWuk&_nc_zt=14&_nc_ht=scontent-phl2-1.xx&_nc_gid=wzsbixDm_eJJKyQAwSV9kw&_nc_ss=70289&oh=00_AQRXvuYaRiq1ioG8I_s617HtT8cid7e6LZzfSt52MlMHtw&oe=6AF7DF16",
+            "link_url": "https://kfc.com.my/kepcifc?type=web?utm_source=fbpaid&utm_medium=ppla&utm_campaign=lto-w8_romano-burger-fbpaid-ppla-reach-cpm&utm_content=na-intr-mass-ppla-img-romano-burger-mix-epl-contest-with-food-config-shout-out",
+            "title": "Makan, Minum, Menang!",
+            "video": null
+          },
+          {
+            "body": "Football season is HERE. Korang nak watch Bola LIVE in England? Now\u2019s your chance to win an experience of a lifetime!",
+            "cta": "Learn More",
+            "image": "https://scontent-phl2-1.xx.fbcdn.net/v/t39.35426-6/855467017_29184506574519888_2973568101031423289_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=4FwRXuOBhwQQ7kNvwFI4uwM&_nc_oc=AdoNmcf28nPnEyN_Y_iGgKazoYCcYkc4__1r1DcaTovUhP9YKthiM7IO5sDv91ZMvLM&_nc_zt=14&_nc_ht=scontent-phl2-1.xx&_nc_gid=wzsbixDm_eJJKyQAwSV9kw&_nc_ss=70289&oh=00_AQQmT9aryi_hHgXZad2DIPR2RCDqlWrGNPgj6HmeHl8PlQ&oe=6AF7B217",
+            "link_url": "https://kfc.com.my/kepcifc?type=web?utm_source=fbpaid&utm_medium=ppla&utm_campaign=lto-w8_romano-burger-fbpaid-ppla-reach-cpm&utm_content=na-intr-mass-ppla-img-romano-burger-mix-epl-contest-with-food-config-shout-out",
+            "title": "Makan, Minum, Menang!",
+            "video": null
+          },
+          {
+            "body": "Football season is HERE. Korang nak watch Bola LIVE in England? Now\u2019s your chance to win an experience of a lifetime!",
+            "cta": "Learn More",
+            "image": "https://scontent-phl2-1.xx.fbcdn.net/v/t39.35426-6/855575549_28913496744950968_5891310444896593743_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=14zHU-v7k10Q7kNvwGoRERs&_nc_oc=AdpZ_4eej7zUW-cwMpLQ93OPxozTxE3MobQ0dci2JPsNB5h22YHnO-dnyZFqhWdGzh4&_nc_zt=14&_nc_ht=scontent-phl2-1.xx&_nc_gid=wzsbixDm_eJJKyQAwSV9kw&_nc_ss=70289&oh=00_AQSMoaGlGv2qIzkQMb8kOZVbfBfPp0wlJhxK6z4ukpO2_g&oe=6AF7D80F",
+            "link_url": "https://kfc.com.my/kepcifc?type=web?utm_source=fbpaid&utm_medium=ppla&utm_campaign=lto-w8_romano-burger-fbpaid-ppla-reach-cpm&utm_content=na-intr-mass-ppla-img-romano-burger-mix-epl-contest-with-food-config-shout-out",
+            "title": "Makan, Minum, Menang!",
+            "video": null
+          }
+        ],
+        "cta": "Learn more",
+        "cta_type": "LEARN_MORE",
+        "currency": null,
+        "display_format": "dco",
+        "end_date": null,
+        "images": [
+          "https://scontent-phl2-1.xx.fbcdn.net/v/t39.35426-6/855946725_1478391214209904_3707309448846845746_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=GHntpnFd0CcQ7kNvwEhbco5&_nc_oc=AdoaAMXY4cPrYyLh3r5hEMClaMhLttlNaAFJXr1QtwQL_cldQedqcGyoiLY1ogBYWuk&_nc_zt=14&_nc_ht=scontent-phl2-1.xx&_nc_gid=wzsbixDm_eJJKyQAwSV9kw&_nc_ss=70289&oh=00_AQRXvuYaRiq1ioG8I_s617HtT8cid7e6LZzfSt52MlMHtw&oe=6AF7DF16",
+          "https://scontent-phl2-1.xx.fbcdn.net/v/t39.35426-6/855467017_29184506574519888_2973568101031423289_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=4FwRXuOBhwQQ7kNvwFI4uwM&_nc_oc=AdoNmcf28nPnEyN_Y_iGgKazoYCcYkc4__1r1DcaTovUhP9YKthiM7IO5sDv91ZMvLM&_nc_zt=14&_nc_ht=scontent-phl2-1.xx&_nc_gid=wzsbixDm_eJJKyQAwSV9kw&_nc_ss=70289&oh=00_AQQmT9aryi_hHgXZad2DIPR2RCDqlWrGNPgj6HmeHl8PlQ&oe=6AF7B217",
+          "https://scontent-phl2-1.xx.fbcdn.net/v/t39.35426-6/855575549_28913496744950968_5891310444896593743_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=14zHU-v7k10Q7kNvwGoRERs&_nc_oc=AdpZ_4eej7zUW-cwMpLQ93OPxozTxE3MobQ0dci2JPsNB5h22YHnO-dnyZFqhWdGzh4&_nc_zt=14&_nc_ht=scontent-phl2-1.xx&_nc_gid=wzsbixDm_eJJKyQAwSV9kw&_nc_ss=70289&oh=00_AQSMoaGlGv2qIzkQMb8kOZVbfBfPp0wlJhxK6z4ukpO2_g&oe=6AF7D80F"
+        ],
+        "impressions": null,
+        "is_active": true,
+        "link_caption": "kfc.com.my",
+        "link_url": "https://kfc.com.my/kepcifc?type=web?utm_source=fbpaid&utm_medium=ppla&utm_campaign=lto-w8_romano-burger-fbpaid-ppla-reach-cpm&utm_content=na-intr-mass-ppla-img-romano-burger-mix-epl-contest-with-food-config-shout-out",
+        "page_id": "82034284246",
+        "page_likes": 61676377,
+        "page_name": "KFC",
+        "page_url": "https://www.facebook.com/KFCMalaysia/",
+        "paid_for_by": null,
+        "platforms": [
+          "facebook",
+          "instagram"
+        ],
+        "same_creative_ads": 10,
+        "spend": null,
+        "start_date": "2026-10-21T07:00:00Z",
+        "title": "Makan, Minum, Menang!",
+        "videos": []
+      },
+      {
+        "ad_archive_id": "1326428086137163",
+        "ad_url": "https://www.facebook.com/ads/library/?id=1326428086137163",
+        "body": "Bila ada 10% OFF at KFC with RHB MySiswa Debit Card-i, baru syok belanja kawan makan! Nak more rewards? Jom jadi Member KFC.",
+        "cards": [
+          {
+            "body": "Bila ada 10% OFF at KFC with RHB MySiswa Debit Card-i, baru syok belanja kawan makan! Nak more rewards? Jom jadi Member KFC.",
+            "cta": "Learn More",
+            "image": "https://scontent-phl2-1.xx.fbcdn.net/v/t39.35426-6/848995158_1895319811436285_2658272908510010879_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=pmhTaKGBeBMQ7kNvwFaJgT_&_nc_oc=AdrXLWDcohPuLuUi5v0UIRKXEOLRKZC_a_Ztc0kmwIr08kL15YRunNvBwTYFn5TVZbo&_nc_zt=14&_nc_ht=scontent-phl2-1.xx&_nc_gid=wzsbixDm_eJJKyQAwSV9kw&_nc_ss=70289&oh=00_AQToIcm1emOEQ8PhEfm_Tozw-E4s1ryS9Ty67ZI8c6lrGA&oe=6AF7B756",
+            "link_url": "https://kfc.com.my/mysiswa?type=web?utm_source=fbpaid&utm_medium=ppla&utm_campaign=-always-on-fbpaid-ppla-reach-cpm&utm_content=na-intr-youth-ppla-img-always-on-mix-mysiswa",
+            "title": "Pay for the geng, get 10% OFF & a salute",
+            "video": null
+          },
+          {
+            "body": "Bila ada 10% OFF at KFC with RHB MySiswa Debit Card-i, baru syok belanja kawan makan! Nak more rewards? Jom jadi Member KFC.",
+            "cta": "Learn More",
+            "image": "https://scontent-phl2-1.xx.fbcdn.net/v/t39.35426-6/843373315_1123845763514513_6831567627803180334_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=B2mrj95z_9sQ7kNvwHxk492&_nc_oc=AdpIuO7UWjeZ1xr4507R6Tqb72tbh4Dsok_4nUCi_QGaCLXBXKHJm4MzvpfO6msIrpI&_nc_zt=14&_nc_ht=scontent-phl2-1.xx&_nc_gid=wzsbixDm_eJJKyQAwSV9kw&_nc_ss=70289&oh=00_AQRoUUu9zz5m1PiZVPflRzAnz_fEyB1RVBrxY4_ZUB6Peg&oe=6AF7C888",
+            "link_url": "https://kfc.com.my/mysiswa?type=web?utm_source=fbpaid&utm_medium=ppla&utm_campaign=-always-on-fbpaid-ppla-reach-cpm&utm_content=na-intr-youth-ppla-img-always-on-mix-mysiswa",
+            "title": "Pay for the geng, get 10% OFF & a salute",
+            "video": null
+          },
+          {
+            "body": "Bila ada 10% OFF at KFC with RHB MySiswa Debit Card-i, baru syok belanja kawan makan! Nak more rewards? Jom jadi Member KFC.",
+            "cta": "Learn More",
+            "image": "https://scontent-phl2-1.xx.fbcdn.net/v/t39.35426-6/848439471_1502220861665311_1270094652679279419_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=xtJvAsc2NKoQ7kNvwGI7ebX&_nc_oc=AdrBNJ9ZJhIv3PfVsgBhIZs3uQf_uoIiTcLc_ypCoIoympKrgrGV3lnsK5WQwnyI9RY&_nc_zt=14&_nc_ht=scontent-phl2-1.xx&_nc_gid=wzsbixDm_eJJKyQAwSV9kw&_nc_ss=70289&oh=00_AQRZIAQYHYZPsDf38gZBJrOns1L_xARspkvytYxJnLaF2w&oe=6AF7E5BA",
+            "link_url": "https://kfc.com.my/mysiswa?type=web?utm_source=fbpaid&utm_medium=ppla&utm_campaign=-always-on-fbpaid-ppla-reach-cpm&utm_content=na-intr-youth-ppla-img-always-on-mix-mysiswa",
+            "title": "Pay for the geng, get 10% OFF & a salute",
+            "video": null
+          }
+        ],
+        "cta": "Learn more",
+        "cta_type": "LEARN_MORE",
+        "currency": null,
+        "display_format": "dco",
+        "end_date": null,
+        "images": [
+          "https://scontent-phl2-1.xx.fbcdn.net/v/t39.35426-6/848995158_1895319811436285_2658272908510010879_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=pmhTaKGBeBMQ7kNvwFaJgT_&_nc_oc=AdrXLWDcohPuLuUi5v0UIRKXEOLRKZC_a_Ztc0kmwIr08kL15YRunNvBwTYFn5TVZbo&_nc_zt=14&_nc_ht=scontent-phl2-1.xx&_nc_gid=wzsbixDm_eJJKyQAwSV9kw&_nc_ss=70289&oh=00_AQToIcm1emOEQ8PhEfm_Tozw-E4s1ryS9Ty67ZI8c6lrGA&oe=6AF7B756",
+          "https://scontent-phl2-1.xx.fbcdn.net/v/t39.35426-6/843373315_1123845763514513_6831567627803180334_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=B2mrj95z_9sQ7kNvwHxk492&_nc_oc=AdpIuO7UWjeZ1xr4507R6Tqb72tbh4Dsok_4nUCi_QGaCLXBXKHJm4MzvpfO6msIrpI&_nc_zt=14&_nc_ht=scontent-phl2-1.xx&_nc_gid=wzsbixDm_eJJKyQAwSV9kw&_nc_ss=70289&oh=00_AQRoUUu9zz5m1PiZVPflRzAnz_fEyB1RVBrxY4_ZUB6Peg&oe=6AF7C888",
+          "https://scontent-phl2-1.xx.fbcdn.net/v/t39.35426-6/848439471_1502220861665311_1270094652679279419_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=xtJvAsc2NKoQ7kNvwGI7ebX&_nc_oc=AdrBNJ9ZJhIv3PfVsgBhIZs3uQf_uoIiTcLc_ypCoIoympKrgrGV3lnsK5WQwnyI9RY&_nc_zt=14&_nc_ht=scontent-phl2-1.xx&_nc_gid=wzsbixDm_eJJKyQAwSV9kw&_nc_ss=70289&oh=00_AQRZIAQYHYZPsDf38gZBJrOns1L_xARspkvytYxJnLaF2w&oe=6AF7E5BA"
+        ],
+        "impressions": null,
+        "is_active": true,
+        "link_caption": "kfc.com.my",
+        "link_url": "https://kfc.com.my/mysiswa?type=web?utm_source=fbpaid&utm_medium=ppla&utm_campaign=-always-on-fbpaid-ppla-reach-cpm&utm_content=na-intr-youth-ppla-img-always-on-mix-mysiswa",
+        "page_id": "82034284246",
+        "page_likes": 61676377,
+        "page_name": "KFC",
+        "page_url": "https://www.facebook.com/KFCMalaysia/",
+        "paid_for_by": null,
+        "platforms": [
+          "facebook",
+          "instagram"
+        ],
+        "same_creative_ads": 1,
+        "spend": null,
+        "start_date": "2026-10-14T07:00:00Z",
+        "title": "Pay for the geng, get 10% OFF & a salute",
+        "videos": []
+      },
+      {
+        "ad_archive_id": "1444658624435376",
+        "ad_url": "https://www.facebook.com/ads/library/?id=1444658624435376",
+        "body": "Jadi Member KFC dapat score ticket bola? Layan up to 50% OFF Kepci FC X Coca-Cola Combo.",
+        "cards": [],
+        "cta": "Order now",
+        "cta_type": "ORDER_NOW",
+        "currency": null,
+        "display_format": "image",
+        "end_date": null,
+        "images": [
+          "https://scontent-phl2-1.xx.fbcdn.net/v/t39.35426-6/859107122_2190924088192363_5620843889736218691_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=MWuEjP2T3tEQ7kNvwFJoWd_&_nc_oc=AdoE0wZFYoho261AhliTr37Bl8DGGfx6XaC1LpzVlPn0EdSfYFSvgGUMYLS9ZnQ1GkY&_nc_zt=14&_nc_ht=scontent-phl2-1.xx&_nc_gid=wzsbixDm_eJJKyQAwSV9kw&_nc_ss=70289&oh=00_AQQQ6Iec0MbXQd4h3oXGY4MBsnGZ22KnxB_Xu2l-1bwv8Q&oe=6AF7DAFC"
+        ],
+        "impressions": null,
+        "is_active": true,
+        "link_caption": "kfc.com.my",
+        "link_url": "https://kfc.com.my/?utm_source=fbpaid&utm_medium=ppla&utm_campaign=lto-w8_romano-burger-fbpaid-ppla-reach-cpm&utm_content=na-intr-mass-ppla-img-romano-burger-mix-epl-contest-with-food-config-shout-out",
+        "page_id": "82034284246",
+        "page_likes": 61676377,
+        "page_name": "KFC",
+        "page_url": "https://www.facebook.com/KFCMalaysia/",
+        "paid_for_by": null,
+        "platforms": [
+          "facebook",
+          "instagram"
+        ],
+        "same_creative_ads": 5,
+        "spend": null,
+        "start_date": "2026-10-20T07:00:00Z",
+        "title": "Feast On The Combo, Sorak Lagi Power!",
+        "videos": []
+      },
+      {
+        "ad_archive_id": "2356932031808469",
+        "ad_url": "https://www.facebook.com/ads/library/?id=2356932031808469",
+        "body": "Up to RM15 OFF your whole cart when you stay safe indoors, relax and order KFC Delivery!",
+        "cards": [
+          {
+            "body": "Up to RM15 OFF your whole cart when you stay safe indoors, relax and order KFC Delivery!",
+            "cta": "Order Now",
+            "image": "https://scontent-phl2-1.xx.fbcdn.net/v/t39.35426-6/848806328_29048388998119128_4870203562363515428_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=1uyy22EQZ3sQ7kNvwE3OI9O&_nc_oc=AdprUZ0rgZq6ecAZ4nrPjoDBoYznxaHSbh-Om0R0ex62t-n55zhe36HVHh5MqwSmgx0&_nc_zt=14&_nc_ht=scontent-phl2-1.xx&_nc_gid=wzsbixDm_eJJKyQAwSV9kw&_nc_ss=70289&oh=00_AQQLDMnP82FCZFZ9wFy35EVh3UdDZ_x42r4RMMSeuKcUDQ&oe=6AF7CEE6",
+            "link_url": "https://kfc.com.my/?utm_source=fbpaid&utm_medium=ppla&utm_campaign=kfcd-kfc-cartwide-october-fbpaid-ppla-reach-cpm&utm_content=na-intr-mass-high-ppla-img-kfc-cartwide-october-mix-haze",
+            "title": "Stay in, order KFC Delivery",
+            "video": null
+          },
+          {
+            "body": "Up to RM15 OFF your whole cart when you stay safe indoors, relax and order KFC Delivery!",
+            "cta": "Order Now",
+            "image": "https://scontent-phl2-1.xx.fbcdn.net/v/t39.35426-6/848935946_997053466755880_8901144847650352434_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=R2T1ZUnkuo0Q7kNvwGFHJTk&_nc_oc=Adqu_KQNgk164nTFXYozo7Ub2B_9Q_YqMrWrwK33Yoipn9tcJ64PGd8QkFGii4TF11g&_nc_zt=14&_nc_ht=scontent-phl2-1.xx&_nc_gid=wzsbixDm_eJJKyQAwSV9kw&_nc_ss=70289&oh=00_AQRPBh95Kr22WUJS3cZg1y3d6n6oAZcrq8IaAOFvStZ93w&oe=6AF7E784",
+            "link_url": "https://kfc.com.my/?utm_source=fbpaid&utm_medium=ppla&utm_campaign=kfcd-kfc-cartwide-october-fbpaid-ppla-reach-cpm&utm_content=na-intr-mass-high-ppla-img-kfc-cartwide-october-mix-haze",
+            "title": "Stay in, order KFC Delivery",
+            "video": null
+          }
+        ],
+        "cta": "Order now",
+        "cta_type": "ORDER_NOW",
+        "currency": null,
+        "display_format": "dco",
+        "end_date": null,
+        "images": [
+          "https://scontent-phl2-1.xx.fbcdn.net/v/t39.35426-6/848806328_29048388998119128_4870203562363515428_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=1uyy22EQZ3sQ7kNvwE3OI9O&_nc_oc=AdprUZ0rgZq6ecAZ4nrPjoDBoYznxaHSbh-Om0R0ex62t-n55zhe36HVHh5MqwSmgx0&_nc_zt=14&_nc_ht=scontent-phl2-1.xx&_nc_gid=wzsbixDm_eJJKyQAwSV9kw&_nc_ss=70289&oh=00_AQQLDMnP82FCZFZ9wFy35EVh3UdDZ_x42r4RMMSeuKcUDQ&oe=6AF7CEE6",
+          "https://scontent-phl2-1.xx.fbcdn.net/v/t39.35426-6/848935946_997053466755880_8901144847650352434_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=R2T1ZUnkuo0Q7kNvwGFHJTk&_nc_oc=Adqu_KQNgk164nTFXYozo7Ub2B_9Q_YqMrWrwK33Yoipn9tcJ64PGd8QkFGii4TF11g&_nc_zt=14&_nc_ht=scontent-phl2-1.xx&_nc_gid=wzsbixDm_eJJKyQAwSV9kw&_nc_ss=70289&oh=00_AQRPBh95Kr22WUJS3cZg1y3d6n6oAZcrq8IaAOFvStZ93w&oe=6AF7E784"
+        ],
+        "impressions": null,
+        "is_active": true,
+        "link_caption": "kfc.com.my",
+        "link_url": "https://kfc.com.my/?utm_source=fbpaid&utm_medium=ppla&utm_campaign=kfcd-kfc-cartwide-october-fbpaid-ppla-reach-cpm&utm_content=na-intr-mass-high-ppla-img-kfc-cartwide-october-mix-haze",
+        "page_id": "82034284246",
+        "page_likes": 61676377,
+        "page_name": "KFC",
+        "page_url": "https://www.facebook.com/KFCMalaysia/",
+        "paid_for_by": null,
+        "platforms": [
+          "facebook",
+          "instagram"
+        ],
+        "same_creative_ads": 10,
+        "spend": null,
+        "start_date": "2026-10-15T07:00:00Z",
+        "title": "Stay in, order KFC Delivery",
+        "videos": []
+      },
+      {
+        "ad_archive_id": "1623111942894277",
+        "ad_url": "https://www.facebook.com/ads/library/?id=1623111942894277",
+        "body": "\u7403\u8ff7\u4eec\uff0cKFC \u9a6c\u4e0a\u52a0\u5165\u4f1a\u5458\uff01Kepci FC X Coca-Cola\u5957\u9910\u53ef\u4eab\u9ad8\u8fbe50%\u6298\u6263\uff0c\u8fd8\u6709\u673a\u4f1a\u8d62\u7403\u8d5b\u5165\u95e8\u7968\uff01\u6cbe\u9171\u4e5f\u5b89\u6392\u4e0a\uff01\ud83d\ude0e",
+        "cards": [
+          {
+            "body": "\u7403\u8ff7\u4eec\uff0cKFC \u9a6c\u4e0a\u52a0\u5165\u4f1a\u5458\uff01Kepci FC X Coca-Cola\u5957\u9910\u53ef\u4eab\u9ad8\u8fbe50%\u6298\u6263\uff0c\u8fd8\u6709\u673a\u4f1a\u8d62\u7403\u8d5b\u5165\u95e8\u7968\uff01\u6cbe\u9171\u4e5f\u5b89\u6392\u4e0a\uff01\ud83d\ude0e",
+            "cta": "Order Now",
+            "image": "https://scontent-phl2-1.xx.fbcdn.net/v/t39.35426-6/856014902_1847635926655440_6609393865693384814_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=WkQD0KYeV5kQ7kNvwHP093T&_nc_oc=AdrmiY8po0qQP7R7uT7UEPbTa7Y6pc-gLZ97s4hHMvecHqHoEu4JyaeQ-pHG9i-R5U4&_nc_zt=14&_nc_ht=scontent-phl2-1.xx&_nc_gid=wzsbixDm_eJJKyQAwSV9kw&_nc_ss=70289&oh=00_AQSMRRVkC5jNayc8H2zgs441qrbPYO97ndwujZzeTBDtnw&oe=6AF7B3CB",
+            "link_url": "https://kfc.com.my/?utm_source=fbpaid&utm_medium=ppla&utm_campaign=lto-w8_romano-burger-fbpaid-ppla-reach-cpm&utm_content=na-intr-mass-ppla-img-romano-burger-cn-epl-contest-with-food-config-shout-out",
+            "title": "\u770b\u7403\u8d5b\uff0c\u4eab\u6298\u6263\uff0c\u70b9\u6cbe\u9171\uff01",
+            "video": null
+          },
+          {
+            "body": "\u7403\u8ff7\u4eec\uff0cKFC \u9a6c\u4e0a\u52a0\u5165\u4f1a\u5458\uff01Kepci FC X Coca-Cola\u5957\u9910\u53ef\u4eab\u9ad8\u8fbe50%\u6298\u6263\uff0c\u8fd8\u6709\u673a\u4f1a\u8d62\u7403\u8d5b\u5165\u95e8\u7968\uff01\u6cbe\u9171\u4e5f\u5b89\u6392\u4e0a\uff01\ud83d\ude0e",
+            "cta": "Order Now",
+            "image": "https://scontent-phl2-1.xx.fbcdn.net/v/t39.35426-6/856753328_3088490938167363_4882779250008213530_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=i0p7DecL7igQ7kNvwE5rGdp&_nc_oc=Adr5Py4JgeExLaGL3zd5pHkGkmY5YaU9-X9z8NEweXV7SDwm_gTPTVxDVGnTsCYEPig&_nc_zt=14&_nc_ht=scontent-phl2-1.xx&_nc_gid=wzsbixDm_eJJKyQAwSV9kw&_nc_ss=70289&oh=00_AQSUwqMYNPvhgnGIKv3wyzBlis_JtHDctkvYyMaOBAXunw&oe=6AF7E1C6",
+            "link_url": "https://kfc.com.my/?utm_source=fbpaid&utm_medium=ppla&utm_campaign=lto-w8_romano-burger-fbpaid-ppla-reach-cpm&utm_content=na-intr-mass-ppla-img-romano-burger-cn-epl-contest-with-food-config-shout-out",
+            "title": "\u770b\u7403\u8d5b\uff0c\u4eab\u6298\u6263\uff0c\u70b9\u6cbe\u9171\uff01",
+            "video": null
+          },
+          {
+            "body": "\u7403\u8ff7\u4eec\uff0cKFC \u9a6c\u4e0a\u52a0\u5165\u4f1a\u5458\uff01Kepci FC X Coca-Cola\u5957\u9910\u53ef\u4eab\u9ad8\u8fbe50%\u6298\u6263\uff0c\u8fd8\u6709\u673a\u4f1a\u8d62\u7403\u8d5b\u5165\u95e8\u7968\uff01\u6cbe\u9171\u4e5f\u5b89\u6392\u4e0a\uff01\ud83d\ude0e",
+            "cta": "Order Now",
+            "image": "https://scontent-phl2-1.xx.fbcdn.net/v/t39.35426-6/857681203_1058673727202275_1091412576712822894_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=vySjRAkEYDUQ7kNvwFmhB0z&_nc_oc=AdpKWOJEwptykoZMjBkcyB1Zd6mvFfBoVLkBYEzacbsPUdZ7rnfz11agD-XcqeqIzJs&_nc_zt=14&_nc_ht=scontent-phl2-1.xx&_nc_gid=wzsbixDm_eJJKyQAwSV9kw&_nc_ss=70289&oh=00_AQTxwA8UXDhAYhL1kC58ysTMjgw8ENaQYVbCkJD45jYRqA&oe=6AF7D1B8",
+            "link_url": "https://kfc.com.my/?utm_source=fbpaid&utm_medium=ppla&utm_campaign=lto-w8_romano-burger-fbpaid-ppla-reach-cpm&utm_content=na-intr-mass-ppla-img-romano-burger-cn-epl-contest-with-food-config-shout-out",
+            "title": "\u770b\u7403\u8d5b\uff0c\u4eab\u6298\u6263\uff0c\u70b9\u6cbe\u9171\uff01",
+            "video": null
+          }
+        ],
+        "cta": "Order now",
+        "cta_type": "ORDER_NOW",
+        "currency": null,
+        "display_format": "dco",
+        "end_date": null,
+        "images": [
+          "https://scontent-phl2-1.xx.fbcdn.net/v/t39.35426-6/856014902_1847635926655440_6609393865693384814_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=WkQD0KYeV5kQ7kNvwHP093T&_nc_oc=AdrmiY8po0qQP7R7uT7UEPbTa7Y6pc-gLZ97s4hHMvecHqHoEu4JyaeQ-pHG9i-R5U4&_nc_zt=14&_nc_ht=scontent-phl2-1.xx&_nc_gid=wzsbixDm_eJJKyQAwSV9kw&_nc_ss=70289&oh=00_AQSMRRVkC5jNayc8H2zgs441qrbPYO97ndwujZzeTBDtnw&oe=6AF7B3CB",
+          "https://scontent-phl2-1.xx.fbcdn.net/v/t39.35426-6/856753328_3088490938167363_4882779250008213530_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=i0p7DecL7igQ7kNvwE5rGdp&_nc_oc=Adr5Py4JgeExLaGL3zd5pHkGkmY5YaU9-X9z8NEweXV7SDwm_gTPTVxDVGnTsCYEPig&_nc_zt=14&_nc_ht=scontent-phl2-1.xx&_nc_gid=wzsbixDm_eJJKyQAwSV9kw&_nc_ss=70289&oh=00_AQSUwqMYNPvhgnGIKv3wyzBlis_JtHDctkvYyMaOBAXunw&oe=6AF7E1C6",
+          "https://scontent-phl2-1.xx.fbcdn.net/v/t39.35426-6/857681203_1058673727202275_1091412576712822894_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=vySjRAkEYDUQ7kNvwFmhB0z&_nc_oc=AdpKWOJEwptykoZMjBkcyB1Zd6mvFfBoVLkBYEzacbsPUdZ7rnfz11agD-XcqeqIzJs&_nc_zt=14&_nc_ht=scontent-phl2-1.xx&_nc_gid=wzsbixDm_eJJKyQAwSV9kw&_nc_ss=70289&oh=00_AQTxwA8UXDhAYhL1kC58ysTMjgw8ENaQYVbCkJD45jYRqA&oe=6AF7D1B8"
+        ],
+        "impressions": null,
+        "is_active": true,
+        "link_caption": "kfc.com.my/",
+        "link_url": "https://kfc.com.my/?utm_source=fbpaid&utm_medium=ppla&utm_campaign=lto-w8_romano-burger-fbpaid-ppla-reach-cpm&utm_content=na-intr-mass-ppla-img-romano-burger-cn-epl-contest-with-food-config-shout-out",
+        "page_id": "82034284246",
+        "page_likes": 61676377,
+        "page_name": "KFC",
+        "page_url": "https://www.facebook.com/KFCMalaysia/",
+        "paid_for_by": null,
+        "platforms": [
+          "facebook",
+          "instagram"
+        ],
+        "same_creative_ads": 11,
+        "spend": null,
+        "start_date": "2026-10-21T07:00:00Z",
+        "title": "\u770b\u7403\u8d5b\uff0c\u4eab\u6298\u6263\uff0c\u70b9\u6cbe\u9171\uff01",
+        "videos": []
+      },
+      {
+        "ad_archive_id": "3106106313060061",
+        "ad_url": "https://www.facebook.com/ads/library/?id=3106106313060061",
+        "body": "Guys, this is your chance to win 2x all-expenses-paid tickets to a live football match in England! \n\nJadi KFC Member and kasi settle your craving with any Kepci FC\u2122 X Coca-Cola Combo to join the contest.\n\nFor more information, visit: kfc.com.my/kepcifc\n\n#Kepci #KFCMembers #iykyk #ytjt",
+        "cards": [],
+        "cta": null,
+        "cta_type": null,
+        "currency": null,
+        "display_format": "multi_images",
+        "end_date": null,
+        "images": [
+          "https://scontent-phl2-1.xx.fbcdn.net/v/t39.35426-6/859832581_39422931417321464_7622890256378136563_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=pP_nL6DS2o4Q7kNvwEQz2Dv&_nc_oc=Adr6FZHZsclVXE3AUx7PzfyEZkaAEvsHmKWJmVaUy58KBHK_Yls524Jl-XNdQxvAo5k&_nc_zt=14&_nc_ht=scontent-phl2-1.xx&_nc_gid=wzsbixDm_eJJKyQAwSV9kw&_nc_ss=70289&oh=00_AQQGm4kk-h1pYMDd-GbNDxmgLM6kXWXqB-KqZspLJNj3dA&oe=6AF7D023",
+          "https://scontent-phl2-1.xx.fbcdn.net/v/t39.35426-6/861831547_1126437896916395_3150114430482818858_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=RmoFcee9hHgQ7kNvwGOymiA&_nc_oc=Ado6ekJ4YStkFc6g_4m1-GZzZEsRAu7DnDtGjC8cbV5fgwcbbLmUHgJWE1sdvQdtR64&_nc_zt=14&_nc_ht=scontent-phl2-1.xx&_nc_gid=wzsbixDm_eJJKyQAwSV9kw&_nc_ss=70289&oh=00_AQSULsnJL2IqtLCf3T6DO5A2wNfMKmNgKFjMTBhbSyRWxg&oe=6AF7B2B8"
+        ],
+        "impressions": null,
+        "is_active": true,
+        "link_caption": null,
+        "link_url": null,
+        "page_id": "82034284246",
+        "page_likes": 61676377,
+        "page_name": "KFC",
+        "page_url": "https://www.facebook.com/KFCMalaysia/",
+        "paid_for_by": null,
+        "platforms": [
+          "facebook",
+          "instagram"
+        ],
+        "same_creative_ads": 1,
+        "spend": null,
+        "start_date": "2026-10-22T07:00:00Z",
+        "title": null,
+        "videos": []
+      },
+      {
+        "ad_archive_id": "1472326784949197",
+        "ad_url": "https://www.facebook.com/ads/library/?id=1472326784949197",
+        "body": "Football season is HERE. Korang nak watch Bola LIVE in England? Now\u2019s your chance to win an experience of a lifetime!",
+        "cards": [],
+        "cta": "Learn more",
+        "cta_type": "LEARN_MORE",
+        "currency": null,
+        "display_format": "image",
+        "end_date": null,
+        "images": [
+          "https://scontent-phl2-1.xx.fbcdn.net/v/t39.35426-6/857666346_1812198593129043_8279791684844868315_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=dx-73h_hn7gQ7kNvwFIjGQO&_nc_oc=AdpqS2A7qNIV57hoOLSdgNqE7OR871tRJR8ZPrE-gLvQeDgYLTTituEauszX87nLtoY&_nc_zt=14&_nc_ht=scontent-phl2-1.xx&_nc_gid=wzsbixDm_eJJKyQAwSV9kw&_nc_ss=70289&oh=00_AQTKrxKv3EG1kmS7mx17lpNO6Uzr5WKd1sDDw6DHYlMPYg&oe=6AF7B601"
+        ],
+        "impressions": null,
+        "is_active": true,
+        "link_caption": "kfc.com.my",
+        "link_url": "https://kfc.com.my/kepcifc?type=web?utm_source=fbpaid&utm_medium=ppla&utm_campaign=lto-w8_romano-burger-fbpaid-ppla-reach-cpm&utm_content=na-intr-mass-ppla-img-romano-burger-mix-epl-contest-with-food-config-shout-out",
+        "page_id": "82034284246",
+        "page_likes": 61676377,
+        "page_name": "KFC",
+        "page_url": "https://www.facebook.com/KFCMalaysia/",
+        "paid_for_by": null,
+        "platforms": [
+          "facebook",
+          "instagram"
+        ],
+        "same_creative_ads": 3,
+        "spend": null,
+        "start_date": "2026-10-20T07:00:00Z",
+        "title": "Makan, Minum, Menang!",
+        "videos": []
+      },
+      {
+        "ad_archive_id": "2475015616356407",
+        "ad_url": "https://www.facebook.com/ads/library/?id=2475015616356407",
+        "body": "Dah try sos KFC? Ada yang familiar, ada Sos Seoul Pedas yang baharu! Konfem puaskan citarasa korang!",
+        "cards": [],
+        "cta": "See details",
+        "cta_type": "SEE_DETAILS",
+        "currency": null,
+        "display_format": "image",
+        "end_date": null,
+        "images": [
+          "https://scontent-phl2-1.xx.fbcdn.net/v/t39.35426-6/868404920_1376789567862864_1952440528099146699_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=rg0697rferAQ7kNvwFLJVRv&_nc_oc=Adr7N3Jc_Nb4JT2h44KTIaPNFtTSubgUO6Hm6nWLksJEuQhvC02hb-LTAuOYyh0s0XY&_nc_zt=14&_nc_ht=scontent-phl2-1.xx&_nc_gid=wzsbixDm_eJJKyQAwSV9kw&_nc_ss=70289&oh=00_AQQpyTgvTFEECJP0i8RLAdgPgA47HR_LTPHWv05AwuAi_A&oe=6AF7C262"
+        ],
+        "impressions": null,
+        "is_active": true,
+        "link_caption": "kfc.com.my",
+        "link_url": "https://kfc.com.my/?utm_source=fbpaid&utm_medium=ppla&utm_campaign=lto-w8-elevate-2-fbpaid-ppla-reach-cpm&utm_content=na-intr-mass-ppla-img-w8-elevate-2-mix-kfc-sauces",
+        "page_id": "82034284246",
+        "page_likes": 61676377,
+        "page_name": "KFC",
+        "page_url": "https://www.facebook.com/KFCMalaysia/",
+        "paid_for_by": null,
+        "platforms": [
+          "facebook",
+          "instagram"
+        ],
+        "same_creative_ads": 1,
+        "spend": null,
+        "start_date": "2026-10-30T07:00:00Z",
+        "title": "Fuhhh, Sos-sos KFC Lain Macam!",
+        "videos": []
+      },
+      {
+        "ad_archive_id": "1486092693340045",
+        "ad_url": "https://www.facebook.com/ads/library/?id=1486092693340045",
+        "body": "Member KFC, jom order KFC Delivery untuk diskaun hingga RM15. Jangan lepaskan promo best ini di KFC App.",
+        "cards": [
+          {
+            "body": "Member KFC, jom order KFC Delivery untuk diskaun hingga RM15. Jangan lepaskan promo best ini di KFC App.",
+            "cta": "Install Now",
+            "image": "https://scontent-phl2-1.xx.fbcdn.net/v/t39.35426-6/848455552_1097417229959041_4116287830351430611_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=E8Oc4SZCtKMQ7kNvwGPs02k&_nc_oc=AdqjQ5PLwTVIgmDt81fszLULlOIOjURvwDNGBZnBQO50TstrXJKAXpIj5OzFwe3gdk8&_nc_zt=14&_nc_ht=scontent-phl2-1.xx&_nc_gid=wzsbixDm_eJJKyQAwSV9kw&_nc_ss=70289&oh=00_AQSoHx_NfM5mwPwRJmWfY50sep3e0p7OsCfQ_YmZyPkH6Q&oe=6AF7C121",
+            "link_url": "http://play.google.com/store/apps/details?id=com.kfc.malaysia",
+            "title": "Diskaun KFC hingga RM15!",
+            "video": null
+          },
+          {
+            "body": "Member KFC, jom order KFC Delivery untuk diskaun hingga RM15. Jangan lepaskan promo best ini di KFC App.",
+            "cta": "Install Now",
+            "image": "https://scontent-phl2-1.xx.fbcdn.net/v/t39.35426-6/849350516_1100704862569096_7458387265653052839_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=FdsEb4DEXWoQ7kNvwGBowAh&_nc_oc=AdrC9OC2GVJRp8q7bEpA4Hyggd5D5zY7DCsLQ798kSWFdECZ89oT8eUum5ML-NLfGI4&_nc_zt=14&_nc_ht=scontent-phl2-1.xx&_nc_gid=wzsbixDm_eJJKyQAwSV9kw&_nc_ss=70289&oh=00_AQRNkYVPK9OvYZuwounMp-Vy2OvC5EogZmxxNHeinJ2GxQ&oe=6AF7DBD1",
+            "link_url": "http://play.google.com/store/apps/details?id=com.kfc.malaysia",
+            "title": "Diskaun KFC hingga RM15!",
+            "video": null
+          },
+          {
+            "body": "Member KFC, jom order KFC Delivery untuk diskaun hingga RM15. Jangan lepaskan promo best ini di KFC App.",
+            "cta": "Install Now",
+            "image": "https://scontent-phl2-1.xx.fbcdn.net/v/t39.35426-6/848733425_1642905503893537_6025955569091317877_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=-nIsvYBEWOMQ7kNvwGM3AgS&_nc_oc=AdqLD1hdzhBMowQaTQ8IQ4-aAeEaNT5jW3CW66K3dIH4W_QgGhuTtWOBBfP5a4PaZHo&_nc_zt=14&_nc_ht=scontent-phl2-1.xx&_nc_gid=wzsbixDm_eJJKyQAwSV9kw&_nc_ss=70289&oh=00_AQQxv-UNLR8Drwd6v-l-BjQi4fw0irhKky3GfKp27oMOEQ&oe=6AF7D2B9",
+            "link_url": "http://play.google.com/store/apps/details?id=com.kfc.malaysia",
+            "title": "Diskaun KFC hingga RM15!",
+            "video": null
+          }
+        ],
+        "cta": "Install now",
+        "cta_type": "INSTALL_MOBILE_APP",
+        "currency": null,
+        "display_format": "dco",
+        "end_date": null,
+        "images": [
+          "https://scontent-phl2-1.xx.fbcdn.net/v/t39.35426-6/848455552_1097417229959041_4116287830351430611_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=E8Oc4SZCtKMQ7kNvwGPs02k&_nc_oc=AdqjQ5PLwTVIgmDt81fszLULlOIOjURvwDNGBZnBQO50TstrXJKAXpIj5OzFwe3gdk8&_nc_zt=14&_nc_ht=scontent-phl2-1.xx&_nc_gid=wzsbixDm_eJJKyQAwSV9kw&_nc_ss=70289&oh=00_AQSoHx_NfM5mwPwRJmWfY50sep3e0p7OsCfQ_YmZyPkH6Q&oe=6AF7C121",
+          "https://scontent-phl2-1.xx.fbcdn.net/v/t39.35426-6/849350516_1100704862569096_7458387265653052839_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=FdsEb4DEXWoQ7kNvwGBowAh&_nc_oc=AdrC9OC2GVJRp8q7bEpA4Hyggd5D5zY7DCsLQ798kSWFdECZ89oT8eUum5ML-NLfGI4&_nc_zt=14&_nc_ht=scontent-phl2-1.xx&_nc_gid=wzsbixDm_eJJKyQAwSV9kw&_nc_ss=70289&oh=00_AQRNkYVPK9OvYZuwounMp-Vy2OvC5EogZmxxNHeinJ2GxQ&oe=6AF7DBD1",
+          "https://scontent-phl2-1.xx.fbcdn.net/v/t39.35426-6/848733425_1642905503893537_6025955569091317877_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=-nIsvYBEWOMQ7kNvwGM3AgS&_nc_oc=AdqLD1hdzhBMowQaTQ8IQ4-aAeEaNT5jW3CW66K3dIH4W_QgGhuTtWOBBfP5a4PaZHo&_nc_zt=14&_nc_ht=scontent-phl2-1.xx&_nc_gid=wzsbixDm_eJJKyQAwSV9kw&_nc_ss=70289&oh=00_AQQxv-UNLR8Drwd6v-l-BjQi4fw0irhKky3GfKp27oMOEQ&oe=6AF7D2B9"
+        ],
+        "impressions": null,
+        "is_active": true,
+        "link_caption": "play.google.com",
+        "link_url": "http://play.google.com/store/apps/details?id=com.kfc.malaysia",
+        "page_id": "82034284246",
+        "page_likes": 61676377,
+        "page_name": "KFC",
+        "page_url": "https://www.facebook.com/KFCMalaysia/",
+        "paid_for_by": null,
+        "platforms": [
+          "facebook",
+          "instagram"
+        ],
+        "same_creative_ads": 6,
+        "spend": null,
+        "start_date": "2026-10-15T07:00:00Z",
+        "title": "Diskaun KFC hingga RM15!",
+        "videos": []
+      },
+      {
+        "ad_archive_id": "2640315766397943",
+        "ad_url": "https://www.facebook.com/ads/library/?id=2640315766397943",
+        "body": "Member KFC, jom order KFC Delivery untuk diskaun hingga RM15. Jangan lepaskan promo best ini di KFC App.",
+        "cards": [
+          {
+            "body": "Member KFC, jom order KFC Delivery untuk diskaun hingga RM15. Jangan lepaskan promo best ini di KFC App.",
+            "cta": "Install Now",
+            "image": "https://scontent-phl2-1.xx.fbcdn.net/v/t39.35426-6/849854747_1067795839632455_4261632826336817279_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=MlM9dhbr5ucQ7kNvwHJG8vt&_nc_oc=AdqQq0ennEjvMcwCRQCvFYjUXpAJf4OqHIZD7a2TU71dUi2HwqAtaDCTTnqWUWGlbDg&_nc_zt=14&_nc_ht=scontent-phl2-1.xx&_nc_gid=wzsbixDm_eJJKyQAwSV9kw&_nc_ss=70289&oh=00_AQTzqlcZYq_cQcnwcQ_cT3d3mWetzXqGroNrSssvjzWvGQ&oe=6AF7DB0A",
+            "link_url": "http://play.google.com/store/apps/details?id=com.kfc.malaysia",
+            "title": "Diskaun KFC hingga RM15!",
+            "video": null
+          },
+          {
+            "body": "Member KFC, jom order KFC Delivery untuk diskaun hingga RM15. Jangan lepaskan promo best ini di KFC App.",
+            "cta": "Install Now",
+            "image": "https://scontent-phl2-1.xx.fbcdn.net/v/t39.35426-6/850245572_1800334044450702_4146610136986476896_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=cl7UwdZhVqAQ7kNvwHE_7Qu&_nc_oc=AdopOYZp4ShJsvJp0TufUouHhYZnTu5pHn7M23i-2tuGgxOK6rDfFoJJ1k2DSw08DX4&_nc_zt=14&_nc_ht=scontent-phl2-1.xx&_nc_gid=wzsbixDm_eJJKyQAwSV9kw&_nc_ss=70289&oh=00_AQSWhUfpSuC2IumelVucL8_nFKjaCpOQePQzglGK3YOFFw&oe=6AF7BC71",
+            "link_url": "http://play.google.com/store/apps/details?id=com.kfc.malaysia",
+            "title": "Diskaun KFC hingga RM15!",
+            "video": null
+          },
+          {
+            "body": "Member KFC, jom order KFC Delivery untuk diskaun hingga RM15. Jangan lepaskan promo best ini di KFC App.",
+            "cta": "Install Now",
+            "image": "https://scontent-phl2-1.xx.fbcdn.net/v/t39.35426-6/851061030_2315415762566906_8807056804469148322_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=OtAatsaCw_0Q7kNvwFN65I4&_nc_oc=AdpWb0dJ0tYKPY806hhPuaqUxV-GCDMNFkYMxvgHozGzRfumjKC3sKfF8rg8xuv9O9s&_nc_zt=14&_nc_ht=scontent-phl2-1.xx&_nc_gid=wzsbixDm_eJJKyQAwSV9kw&_nc_ss=70289&oh=00_AQT6lzfG9tMF0eVXuAkarmetCsH_Id1DklxyMZK97-uB3A&oe=6AF7C55C",
+            "link_url": "http://play.google.com/store/apps/details?id=com.kfc.malaysia",
+            "title": "Diskaun KFC hingga RM15!",
+            "video": null
+          }
+        ],
+        "cta": "Install now",
+        "cta_type": "INSTALL_MOBILE_APP",
+        "currency": null,
+        "display_format": "dco",
+        "end_date": null,
+        "images": [
+          "https://scontent-phl2-1.xx.fbcdn.net/v/t39.35426-6/849854747_1067795839632455_4261632826336817279_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=MlM9dhbr5ucQ7kNvwHJG8vt&_nc_oc=AdqQq0ennEjvMcwCRQCvFYjUXpAJf4OqHIZD7a2TU71dUi2HwqAtaDCTTnqWUWGlbDg&_nc_zt=14&_nc_ht=scontent-phl2-1.xx&_nc_gid=wzsbixDm_eJJKyQAwSV9kw&_nc_ss=70289&oh=00_AQTzqlcZYq_cQcnwcQ_cT3d3mWetzXqGroNrSssvjzWvGQ&oe=6AF7DB0A",
+          "https://scontent-phl2-1.xx.fbcdn.net/v/t39.35426-6/850245572_1800334044450702_4146610136986476896_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=cl7UwdZhVqAQ7kNvwHE_7Qu&_nc_oc=AdopOYZp4ShJsvJp0TufUouHhYZnTu5pHn7M23i-2tuGgxOK6rDfFoJJ1k2DSw08DX4&_nc_zt=14&_nc_ht=scontent-phl2-1.xx&_nc_gid=wzsbixDm_eJJKyQAwSV9kw&_nc_ss=70289&oh=00_AQSWhUfpSuC2IumelVucL8_nFKjaCpOQePQzglGK3YOFFw&oe=6AF7BC71",
+          "https://scontent-phl2-1.xx.fbcdn.net/v/t39.35426-6/851061030_2315415762566906_8807056804469148322_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=OtAatsaCw_0Q7kNvwFN65I4&_nc_oc=AdpWb0dJ0tYKPY806hhPuaqUxV-GCDMNFkYMxvgHozGzRfumjKC3sKfF8rg8xuv9O9s&_nc_zt=14&_nc_ht=scontent-phl2-1.xx&_nc_gid=wzsbixDm_eJJKyQAwSV9kw&_nc_ss=70289&oh=00_AQT6lzfG9tMF0eVXuAkarmetCsH_Id1DklxyMZK97-uB3A&oe=6AF7C55C"
+        ],
+        "impressions": null,
+        "is_active": true,
+        "link_caption": "play.google.com",
+        "link_url": "http://play.google.com/store/apps/details?id=com.kfc.malaysia",
+        "page_id": "82034284246",
+        "page_likes": 61676377,
+        "page_name": "KFC",
+        "page_url": "https://www.facebook.com/KFCMalaysia/",
+        "paid_for_by": null,
+        "platforms": [
+          "facebook",
+          "instagram"
+        ],
+        "same_creative_ads": null,
+        "spend": null,
+        "start_date": "2026-10-15T07:00:00Z",
+        "title": "Diskaun KFC hingga RM15!",
+        "videos": []
+      },
+      {
+        "ad_archive_id": "1420335532899092",
+        "ad_url": "https://www.facebook.com/ads/library/?id=1420335532899092",
+        "body": "Member KFC, jom order KFC Delivery untuk diskaun hingga RM15. Jangan lepaskan promo best ini di KFC App.",
+        "cards": [
+          {
+            "body": "Member KFC, jom order KFC Delivery untuk diskaun hingga RM15. Jangan lepaskan promo best ini di KFC App.",
+            "cta": "Install Now",
+            "image": "https://scontent-phl2-1.xx.fbcdn.net/v/t39.35426-6/850584322_4467478716837712_615759413743271685_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=wQ1-8s6_uiMQ7kNvwEoEURR&_nc_oc=AdrO4k2bUgPoheYWJbLhjWq8V5aohyyUisL5lpaQx9r-u5JxTgPqQqpI2PkS8jGlP8A&_nc_zt=14&_nc_ht=scontent-phl2-1.xx&_nc_gid=wzsbixDm_eJJKyQAwSV9kw&_nc_ss=70289&oh=00_AQSlSr9REdrLAr2DwcJNGsXcDCEM7puNDvGcaZHXLVohcA&oe=6AF7C850",
+            "link_url": "http://play.google.com/store/apps/details?id=com.kfc.malaysia",
+            "title": "Diskaun KFC hingga RM15!",
+            "video": null
+          },
+          {
+            "body": "Member KFC, jom order KFC Delivery untuk diskaun hingga RM15. Jangan lepaskan promo best ini di KFC App.",
+            "cta": "Install Now",
+            "image": "https://scontent-phl2-1.xx.fbcdn.net/v/t39.35426-6/848498198_1703486094814778_8694097702317613594_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=c2HcW9d9-KYQ7kNvwGS9doC&_nc_oc=AdpSJLgz7tmQ5OA96I1do4MOqn9FxfvBNsfmsjLuHFNtOaQM5ome1i35Pnx9PUeyIdI&_nc_zt=14&_nc_ht=scontent-phl2-1.xx&_nc_gid=wzsbixDm_eJJKyQAwSV9kw&_nc_ss=70289&oh=00_AQSIQyH1YA793ZPZ7Z-WwGTkNgDDNvUHeTtk_7nmhfTlAg&oe=6AF7E2C6",
+            "link_url": "http://play.google.com/store/apps/details?id=com.kfc.malaysia",
+            "title": "Diskaun KFC hingga RM15!",
+            "video": null
+          },
+          {
+            "body": "Member KFC, jom order KFC Delivery untuk diskaun hingga RM15. Jangan lepaskan promo best ini di KFC App.",
+            "cta": "Install Now",
+            "image": "https://scontent-phl2-1.xx.fbcdn.net/v/t39.35426-6/849272337_1596549055001266_7018884780408925211_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=hQ_14XgmqtgQ7kNvwFUkpFo&_nc_oc=Adpr0nm7v58PmXlbOHR-WPaB7n9g6dg84BphZnGlkPj4C60W1uRzNjXTPouHgDrhCN0&_nc_zt=14&_nc_ht=scontent-phl2-1.xx&_nc_gid=wzsbixDm_eJJKyQAwSV9kw&_nc_ss=70289&oh=00_AQQLBr-wN3EPnPqJhz33wFRxY_ABLDS45Fbmdjs_0jz9wg&oe=6AF7CA8C",
+            "link_url": "http://play.google.com/store/apps/details?id=com.kfc.malaysia",
+            "title": "Diskaun KFC hingga RM15!",
+            "video": null
+          }
+        ],
+        "cta": "Install now",
+        "cta_type": "INSTALL_MOBILE_APP",
+        "currency": null,
+        "display_format": "dco",
+        "end_date": null,
+        "images": [
+          "https://scontent-phl2-1.xx.fbcdn.net/v/t39.35426-6/850584322_4467478716837712_615759413743271685_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=wQ1-8s6_uiMQ7kNvwEoEURR&_nc_oc=AdrO4k2bUgPoheYWJbLhjWq8V5aohyyUisL5lpaQx9r-u5JxTgPqQqpI2PkS8jGlP8A&_nc_zt=14&_nc_ht=scontent-phl2-1.xx&_nc_gid=wzsbixDm_eJJKyQAwSV9kw&_nc_ss=70289&oh=00_AQSlSr9REdrLAr2DwcJNGsXcDCEM7puNDvGcaZHXLVohcA&oe=6AF7C850",
+          "https://scontent-phl2-1.xx.fbcdn.net/v/t39.35426-6/848498198_1703486094814778_8694097702317613594_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=c2HcW9d9-KYQ7kNvwGS9doC&_nc_oc=AdpSJLgz7tmQ5OA96I1do4MOqn9FxfvBNsfmsjLuHFNtOaQM5ome1i35Pnx9PUeyIdI&_nc_zt=14&_nc_ht=scontent-phl2-1.xx&_nc_gid=wzsbixDm_eJJKyQAwSV9kw&_nc_ss=70289&oh=00_AQSIQyH1YA793ZPZ7Z-WwGTkNgDDNvUHeTtk_7nmhfTlAg&oe=6AF7E2C6",
+          "https://scontent-phl2-1.xx.fbcdn.net/v/t39.35426-6/849272337_1596549055001266_7018884780408925211_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=hQ_14XgmqtgQ7kNvwFUkpFo&_nc_oc=Adpr0nm7v58PmXlbOHR-WPaB7n9g6dg84BphZnGlkPj4C60W1uRzNjXTPouHgDrhCN0&_nc_zt=14&_nc_ht=scontent-phl2-1.xx&_nc_gid=wzsbixDm_eJJKyQAwSV9kw&_nc_ss=70289&oh=00_AQQLBr-wN3EPnPqJhz33wFRxY_ABLDS45Fbmdjs_0jz9wg&oe=6AF7CA8C"
+        ],
+        "impressions": null,
+        "is_active": true,
+        "link_caption": "play.google.com",
+        "link_url": "http://play.google.com/store/apps/details?id=com.kfc.malaysia",
+        "page_id": "82034284246",
+        "page_likes": 61676377,
+        "page_name": "KFC",
+        "page_url": "https://www.facebook.com/KFCMalaysia/",
+        "paid_for_by": null,
+        "platforms": [
+          "facebook",
+          "instagram"
+        ],
+        "same_creative_ads": null,
+        "spend": null,
+        "start_date": "2026-10-15T07:00:00Z",
+        "title": "Diskaun KFC hingga RM15!",
+        "videos": []
+      },
+      {
+        "ad_archive_id": "1736615655007047",
+        "ad_url": "https://www.facebook.com/ads/library/?id=1736615655007047",
+        "body": "KFC Members, jom order KFC Delivery! Ada up to RM15 OFF on your whole cart! Don't miss this deal on the KFC App!",
+        "cards": [
+          {
+            "body": "KFC Members, jom order KFC Delivery! Ada up to RM15 OFF on your whole cart! Don't miss this deal on the KFC App!",
+            "cta": "Order Now",
+            "image": "https://scontent-phl2-1.xx.fbcdn.net/v/t39.35426-6/845685959_1632853084380025_5501380113251322860_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=qxwvBzseF0UQ7kNvwG5DtPv&_nc_oc=AdoNs0T1Eb0yLqm-F-GuEkzpX6HzgZVVq9BQktqof0FYHYf5EYe8N-pqS4gK7SM41-0&_nc_zt=14&_nc_ht=scontent-phl2-1.xx&_nc_gid=wzsbixDm_eJJKyQAwSV9kw&_nc_ss=70289&oh=00_AQQdrlSuPBnv5CZx5H54BYlmtp7u5CG8VKeq6e4Bm2Ww9Q&oe=6AF7DEC8",
+            "link_url": "https://kfc.com.my/?utm_source=fbpaid&utm_medium=ppla&utm_campaign=kfcd-kfc-cartwide-october-fbpaid-ppla-reach-cpm&utm_content=na-intr-mass-high-ppla-img-kfc-cartwide-october-en-cartwide-oct",
+            "title": "Up to RM15 OFF entire cart!",
+            "video": null
+          },
+          {
+            "body": "KFC Members, jom order KFC Delivery! Ada up to RM15 OFF on your whole cart! Don't miss this deal on the KFC App!",
+            "cta": "Order Now",
+            "image": "https://scontent-phl2-1.xx.fbcdn.net/v/t39.35426-6/848936105_1787500042580297_4272541333384448630_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=8EceQzglylIQ7kNvwEnJgwT&_nc_oc=Adp-vP829ttLef9ipmAC-X4eUMX3Xxi0jcNjf11Fw06Z5bFzBJQzmPPd8S31E4e-EbY&_nc_zt=14&_nc_ht=scontent-phl2-1.xx&_nc_gid=wzsbixDm_eJJKyQAwSV9kw&_nc_ss=70289&oh=00_AQQZzxPce9ghKLZbXkQ1l83OqS2PZIcDrWskgHXmUdn7iQ&oe=6AF7C1FC",
+            "link_url": "https://kfc.com.my/?utm_source=fbpaid&utm_medium=ppla&utm_campaign=kfcd-kfc-cartwide-october-fbpaid-ppla-reach-cpm&utm_content=na-intr-mass-high-ppla-img-kfc-cartwide-october-en-cartwide-oct",
+            "title": "Up to RM15 OFF entire cart!",
+            "video": null
+          },
+          {
+            "body": "KFC Members, jom order KFC Delivery! Ada up to RM15 OFF on your whole cart! Don't miss this deal on the KFC App!",
+            "cta": "Order Now",
+            "image": "https://scontent-phl2-1.xx.fbcdn.net/v/t39.35426-6/846379406_2869084950112801_846587137603355879_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=6gbttqeMVeQQ7kNvwFC7VkR&_nc_oc=AdpD4py3AdpMJRi2i6pouyrve28ct4bwlcllSidUXaG9glQbA9k7vGDWevSd5dKC5ng&_nc_zt=14&_nc_ht=scontent-phl2-1.xx&_nc_gid=wzsbixDm_eJJKyQAwSV9kw&_nc_ss=70289&oh=00_AQTdd9VLBhu6hatFX2P1--Cx1roUBMVY0EXMn1bf2PF_dw&oe=6AF7CB4B",
+            "link_url": "https://kfc.com.my/?utm_source=fbpaid&utm_medium=ppla&utm_campaign=kfcd-kfc-cartwide-october-fbpaid-ppla-reach-cpm&utm_content=na-intr-mass-high-ppla-img-kfc-cartwide-october-en-cartwide-oct",
+            "title": "Up to RM15 OFF entire cart!",
+            "video": null
+          }
+        ],
+        "cta": "Order now",
+        "cta_type": "ORDER_NOW",
+        "currency": null,
+        "display_format": "dco",
+        "end_date": null,
+        "images": [
+          "https://scontent-phl2-1.xx.fbcdn.net/v/t39.35426-6/845685959_1632853084380025_5501380113251322860_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=qxwvBzseF0UQ7kNvwG5DtPv&_nc_oc=AdoNs0T1Eb0yLqm-F-GuEkzpX6HzgZVVq9BQktqof0FYHYf5EYe8N-pqS4gK7SM41-0&_nc_zt=14&_nc_ht=scontent-phl2-1.xx&_nc_gid=wzsbixDm_eJJKyQAwSV9kw&_nc_ss=70289&oh=00_AQQdrlSuPBnv5CZx5H54BYlmtp7u5CG8VKeq6e4Bm2Ww9Q&oe=6AF7DEC8",
+          "https://scontent-phl2-1.xx.fbcdn.net/v/t39.35426-6/848936105_1787500042580297_4272541333384448630_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=8EceQzglylIQ7kNvwEnJgwT&_nc_oc=Adp-vP829ttLef9ipmAC-X4eUMX3Xxi0jcNjf11Fw06Z5bFzBJQzmPPd8S31E4e-EbY&_nc_zt=14&_nc_ht=scontent-phl2-1.xx&_nc_gid=wzsbixDm_eJJKyQAwSV9kw&_nc_ss=70289&oh=00_AQQZzxPce9ghKLZbXkQ1l83OqS2PZIcDrWskgHXmUdn7iQ&oe=6AF7C1FC",
+          "https://scontent-phl2-1.xx.fbcdn.net/v/t39.35426-6/846379406_2869084950112801_846587137603355879_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=6gbttqeMVeQQ7kNvwFC7VkR&_nc_oc=AdpD4py3AdpMJRi2i6pouyrve28ct4bwlcllSidUXaG9glQbA9k7vGDWevSd5dKC5ng&_nc_zt=14&_nc_ht=scontent-phl2-1.xx&_nc_gid=wzsbixDm_eJJKyQAwSV9kw&_nc_ss=70289&oh=00_AQTdd9VLBhu6hatFX2P1--Cx1roUBMVY0EXMn1bf2PF_dw&oe=6AF7CB4B"
+        ],
+        "impressions": null,
+        "is_active": true,
+        "link_caption": "kfc.com.my",
+        "link_url": "https://kfc.com.my/?utm_source=fbpaid&utm_medium=ppla&utm_campaign=kfcd-kfc-cartwide-october-fbpaid-ppla-reach-cpm&utm_content=na-intr-mass-high-ppla-img-kfc-cartwide-october-en-cartwide-oct",
+        "page_id": "82034284246",
+        "page_likes": 61676377,
+        "page_name": "KFC",
+        "page_url": "https://www.facebook.com/KFCMalaysia/",
+        "paid_for_by": null,
+        "platforms": [
+          "facebook",
+          "instagram"
+        ],
+        "same_creative_ads": 10,
+        "spend": null,
+        "start_date": "2026-10-15T07:00:00Z",
+        "title": "Up to RM15 OFF entire cart!",
+        "videos": []
+      },
+      {
+        "ad_archive_id": "872306535943828",
+        "ad_url": "https://www.facebook.com/ads/library/?id=872306535943828",
+        "body": "Istimewa 11.11: B1F1 untuk 2 kombo KFC! 3 hari sahaja dari 11-13 Nov 2026! Tersedia melalui KFC Delivery di KFC App.",
+        "cards": [
+          {
+            "body": "Istimewa 11.11: B1F1 untuk 2 kombo KFC! 3 hari sahaja dari 11-13 Nov 2026! Tersedia melalui KFC Delivery di KFC App.",
+            "cta": "Learn More",
+            "image": "https://scontent-phl2-1.xx.fbcdn.net/v/t39.35426-6/853710678_2223626541901408_1347172466942307865_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=L6VYNk7hP1gQ7kNvwHoS2rx&_nc_oc=Adq9IHReuyvR8zqpXSqjuDUZfrW93e6rWbpPdJAzsQTZdih0uf0mV7yMwdmux5FHgKc&_nc_zt=14&_nc_ht=scontent-phl2-1.xx&_nc_gid=wzsbixDm_eJJKyQAwSV9kw&_nc_ss=70289&oh=00_AQQ2xs1Yf8RxLmeboqiF_NDCjBy133XDBxa7AMdvZqNsbg&oe=6AF7B0FB",
+            "link_url": "https://kfc.com.my/kfcday?type=web?utm_source=fbpaid&utm_medium=ppla&utm_campaign=kfcd-kfc-day-november-fbpaid-ppla-reach-cpm&utm_content=na-mass-mass-ppla-img-kfc-day-november-bm-kfc-day-teaser",
+            "title": "Tawaran syok 11.11 KFC!",
+            "video": null
+          },
+          {
+            "body": "Istimewa 11.11: B1F1 untuk 2 kombo KFC! 3 hari sahaja dari 11-13 Nov 2026! Tersedia melalui KFC Delivery di KFC App.",
+            "cta": "Learn More",
+            "image": "https://scontent-phl2-1.xx.fbcdn.net/v/t39.35426-6/853711487_2472867220186785_15892426603988628_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=PEF_WnIexKoQ7kNvwFdzs6I&_nc_oc=Adq_RCXk9rEjLloeK59F5NjC5PuTELWLaosFG7Xms4dBt9-kq3PrFiLPeUO8xN4ZoFk&_nc_zt=14&_nc_ht=scontent-phl2-1.xx&_nc_gid=wzsbixDm_eJJKyQAwSV9kw&_nc_ss=70289&oh=00_AQR5pJyf2PLbScCDPbCmFbILrvCpgT2houE8aEh94qA8ww&oe=6AF7D71D",
+            "link_url": "https://kfc.com.my/kfcday?type=web?utm_source=fbpaid&utm_medium=ppla&utm_campaign=kfcd-kfc-day-november-fbpaid-ppla-reach-cpm&utm_content=na-mass-mass-ppla-img-kfc-day-november-bm-kfc-day-teaser",
+            "title": "Tawaran syok 11.11 KFC!",
+            "video": null
+          },
+          {
+            "body": "Istimewa 11.11: B1F1 untuk 2 kombo KFC! 3 hari sahaja dari 11-13 Nov 2026! Tersedia melalui KFC Delivery di KFC App.",
+            "cta": "Learn More",
+            "image": "https://scontent-phl2-1.xx.fbcdn.net/v/t39.35426-6/853711462_2318575415572424_6947638038360476401_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=Qv9klItKkrMQ7kNvwFhZ3GH&_nc_oc=Adrkf8Y3gR9SYAlNVBCFNWH6V_zSQxux9gXV5Nnz1IQeBLqSr_N1acXVTnAN7wEdyi0&_nc_zt=14&_nc_ht=scontent-phl2-1.xx&_nc_gid=wzsbixDm_eJJKyQAwSV9kw&_nc_ss=70289&oh=00_AQSeERV9-djHmUH7Yn5VhzF7L_YlFiIMKSRd9NZ3Igst_g&oe=6AF7CE02",
+            "link_url": "https://kfc.com.my/kfcday?type=web?utm_source=fbpaid&utm_medium=ppla&utm_campaign=kfcd-kfc-day-november-fbpaid-ppla-reach-cpm&utm_content=na-mass-mass-ppla-img-kfc-day-november-bm-kfc-day-teaser",
+            "title": "Tawaran syok 11.11 KFC!",
+            "video": null
+          }
+        ],
+        "cta": "Learn more",
+        "cta_type": "LEARN_MORE",
+        "currency": null,
+        "display_format": "dco",
+        "end_date": null,
+        "images": [
+          "https://scontent-phl2-1.xx.fbcdn.net/v/t39.35426-6/853710678_2223626541901408_1347172466942307865_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=L6VYNk7hP1gQ7kNvwHoS2rx&_nc_oc=Adq9IHReuyvR8zqpXSqjuDUZfrW93e6rWbpPdJAzsQTZdih0uf0mV7yMwdmux5FHgKc&_nc_zt=14&_nc_ht=scontent-phl2-1.xx&_nc_gid=wzsbixDm_eJJKyQAwSV9kw&_nc_ss=70289&oh=00_AQQ2xs1Yf8RxLmeboqiF_NDCjBy133XDBxa7AMdvZqNsbg&oe=6AF7B0FB",
+          "https://scontent-phl2-1.xx.fbcdn.net/v/t39.35426-6/853711487_2472867220186785_15892426603988628_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=PEF_WnIexKoQ7kNvwFdzs6I&_nc_oc=Adq_RCXk9rEjLloeK59F5NjC5PuTELWLaosFG7Xms4dBt9-kq3PrFiLPeUO8xN4ZoFk&_nc_zt=14&_nc_ht=scontent-phl2-1.xx&_nc_gid=wzsbixDm_eJJKyQAwSV9kw&_nc_ss=70289&oh=00_AQR5pJyf2PLbScCDPbCmFbILrvCpgT2houE8aEh94qA8ww&oe=6AF7D71D",
+          "https://scontent-phl2-1.xx.fbcdn.net/v/t39.35426-6/853711462_2318575415572424_6947638038360476401_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=Qv9klItKkrMQ7kNvwFhZ3GH&_nc_oc=Adrkf8Y3gR9SYAlNVBCFNWH6V_zSQxux9gXV5Nnz1IQeBLqSr_N1acXVTnAN7wEdyi0&_nc_zt=14&_nc_ht=scontent-phl2-1.xx&_nc_gid=wzsbixDm_eJJKyQAwSV9kw&_nc_ss=70289&oh=00_AQSeERV9-djHmUH7Yn5VhzF7L_YlFiIMKSRd9NZ3Igst_g&oe=6AF7CE02"
+        ],
+        "impressions": null,
+        "is_active": true,
+        "link_caption": "kfc.com.my",
+        "link_url": "https://kfc.com.my/kfcday?type=web?utm_source=fbpaid&utm_medium=ppla&utm_campaign=kfcd-kfc-day-november-fbpaid-ppla-reach-cpm&utm_content=na-mass-mass-ppla-img-kfc-day-november-bm-kfc-day-teaser",
+        "page_id": "82034284246",
+        "page_likes": 61676377,
+        "page_name": "KFC",
+        "page_url": "https://www.facebook.com/KFCMalaysia/",
+        "paid_for_by": null,
+        "platforms": [
+          "facebook",
+          "instagram"
+        ],
+        "same_creative_ads": null,
+        "spend": null,
+        "start_date": "2026-11-07T08:00:00Z",
+        "title": "Tawaran syok 11.11 KFC!",
+        "videos": []
+      },
+      {
+        "ad_archive_id": "28621459257506563",
+        "ad_url": "https://www.facebook.com/ads/library/?id=28621459257506563",
+        "body": "\u6700\u591f\u5473\uff0c\u6700\u8d85\u503c\uff01Bucket Berbaloi 6\u5757 KFC \u70b8\u9e21\u3001Cheezy Wedges\u300114oz \u9a6c\u94c3\u85af\u6ce5\uff0c\u518d\u52a02\u676f\u996e\u6599\uff0c\u53ea\u9700 RM42.99 \u8d77\uff01",
+        "cards": [
+          {
+            "body": "\u6700\u591f\u5473\uff0c\u6700\u8d85\u503c\uff01Bucket Berbaloi 6\u5757 KFC \u70b8\u9e21\u3001Cheezy Wedges\u300114oz \u9a6c\u94c3\u85af\u6ce5\uff0c\u518d\u52a02\u676f\u996e\u6599\uff0c\u53ea\u9700 RM42.99 \u8d77\uff01",
+            "cta": "Order Now",
+            "image": "https://scontent-phl2-1.xx.fbcdn.net/v/t39.35426-6/830117381_1415597457191550_7465915118363993386_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=t_PIWuECIkEQ7kNvwH4KA3k&_nc_oc=AdpZiMiyNqNl8SFGaBh7zaS7PT9p6dEs99ytOm9VwSILTzLt9vUuMI8DwK8_4rNAiMg&_nc_zt=14&_nc_ht=scontent-phl2-1.xx&_nc_gid=wzsbixDm_eJJKyQAwSV9kw&_nc_ss=70289&oh=00_AQSEI0Wla1k014C_x47UOBkcNhCCGV0nb3ocnklJlRGFyw&oe=6AF7C4C2",
+            "link_url": "https://kfc.com.my/?utm_source=fbpaid&utm_medium=ppla&utm_campaign=he-w8_bucket-berbaloi-fbpaid-ppla-reach-cpm&utm_content=na-intr-mass-fbpaid-ppla-reach-cpm-img-w8-bucket-berbaloi-cn-bucket-berbaloi",
+            "title": "Bucket Berbaloi\uff01\u8fd9\u624d\u53eb\u8d85\u503c\uff01",
+            "video": null
+          },
+          {
+            "body": "\u6700\u591f\u5473\uff0c\u6700\u8d85\u503c\uff01Bucket Berbaloi 6\u5757 KFC \u70b8\u9e21\u3001Cheezy Wedges\u300114oz \u9a6c\u94c3\u85af\u6ce5\uff0c\u518d\u52a02\u676f\u996e\u6599\uff0c\u53ea\u9700 RM42.99 \u8d77\uff01",
+            "cta": "Order Now",
+            "image": "https://scontent-phl2-1.xx.fbcdn.net/v/t39.35426-6/833313739_1854364155745864_6916075884580704934_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=23XW5RWR9HUQ7kNvwEN_5C8&_nc_oc=AdoL7-ZbA2ypxqEqMNiLAQNgmifHk31DQx5F6b3C9h7T_2LRDVqDvmfCN_OIAEtqoOc&_nc_zt=14&_nc_ht=scontent-phl2-1.xx&_nc_gid=wzsbixDm_eJJKyQAwSV9kw&_nc_ss=70289&oh=00_AQTS9Q4L-Wld4bm_R1GOJOj4Brs5vBsoBly0IyzPm5R-bA&oe=6AF7CF06",
+            "link_url": "https://kfc.com.my/?utm_source=fbpaid&utm_medium=ppla&utm_campaign=he-w8_bucket-berbaloi-fbpaid-ppla-reach-cpm&utm_content=na-intr-mass-fbpaid-ppla-reach-cpm-img-w8-bucket-berbaloi-cn-bucket-berbaloi",
+            "title": "Bucket Berbaloi\uff01\u8fd9\u624d\u53eb\u8d85\u503c\uff01",
+            "video": null
+          }
+        ],
+        "cta": "Order now",
+        "cta_type": "ORDER_NOW",
+        "currency": null,
+        "display_format": "dco",
+        "end_date": null,
+        "images": [
+          "https://scontent-phl2-1.xx.fbcdn.net/v/t39.35426-6/830117381_1415597457191550_7465915118363993386_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=t_PIWuECIkEQ7kNvwH4KA3k&_nc_oc=AdpZiMiyNqNl8SFGaBh7zaS7PT9p6dEs99ytOm9VwSILTzLt9vUuMI8DwK8_4rNAiMg&_nc_zt=14&_nc_ht=scontent-phl2-1.xx&_nc_gid=wzsbixDm_eJJKyQAwSV9kw&_nc_ss=70289&oh=00_AQSEI0Wla1k014C_x47UOBkcNhCCGV0nb3ocnklJlRGFyw&oe=6AF7C4C2",
+          "https://scontent-phl2-1.xx.fbcdn.net/v/t39.35426-6/833313739_1854364155745864_6916075884580704934_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=23XW5RWR9HUQ7kNvwEN_5C8&_nc_oc=AdoL7-ZbA2ypxqEqMNiLAQNgmifHk31DQx5F6b3C9h7T_2LRDVqDvmfCN_OIAEtqoOc&_nc_zt=14&_nc_ht=scontent-phl2-1.xx&_nc_gid=wzsbixDm_eJJKyQAwSV9kw&_nc_ss=70289&oh=00_AQTS9Q4L-Wld4bm_R1GOJOj4Brs5vBsoBly0IyzPm5R-bA&oe=6AF7CF06"
+        ],
+        "impressions": null,
+        "is_active": true,
+        "link_caption": "kfc.com.my",
+        "link_url": "https://kfc.com.my/?utm_source=fbpaid&utm_medium=ppla&utm_campaign=he-w8_bucket-berbaloi-fbpaid-ppla-reach-cpm&utm_content=na-intr-mass-fbpaid-ppla-reach-cpm-img-w8-bucket-berbaloi-cn-bucket-berbaloi",
+        "page_id": "82034284246",
+        "page_likes": 61676377,
+        "page_name": "KFC",
+        "page_url": "https://www.facebook.com/KFCMalaysia/",
+        "paid_for_by": null,
+        "platforms": [
+          "facebook",
+          "instagram"
+        ],
+        "same_creative_ads": 2,
+        "spend": null,
+        "start_date": "2026-10-03T07:00:00Z",
+        "title": "Bucket Berbaloi\uff01\u8fd9\u624d\u53eb\u8d85\u503c\uff01",
+        "videos": []
+      }
+    ],
+    "page_id": "82034284246",
+    "page_name": "KFC",
+    "count": 20
+  },
+  "raw": {
+    "meta": {
+      "blocked": [],
+      "elapsed_ms": 4239,
+      "from_cache": false,
+      "llm_calls": 0,
+      "pages_fetched": 6,
+      "partial": false,
+      "warnings": [
+        "module: meta-ads-advertiser: 'KFC' is the page KFC, facebook.com/KFCMalaysia (id 82034284246): 15 pages of that name in the advertiser search; this one has 3 ad(s) in a search for the name, then is verified or has the most likes",
+        "module: meta-ads-advertiser: page 82034284246 \u00b7 ALL \u00b7 active \u00b7 20 ad(s) \u00b7 one view \u00b7 direct"
+      ]
+    },
+    "recipe": "meta-ads-advertiser",
+    "rows": [
+      {
+        "ad_archive_id": "1096894712708319",
+        "ad_url": "https://www.facebook.com/ads/library/?id=1096894712708319",
+        "body": "Yang Ori, baru berbaloi! Bucket Berbaloi with 6-pc KFC, Cheezy Wedges, 14oz whipped potato, and 2 drinks from only RM42.99!",
+        "cards": [
+          {
+            "body": "Yang Ori, baru berbaloi! Bucket Berbaloi with 6-pc KFC, Cheezy Wedges, 14oz whipped potato, and 2 drinks from only RM42.99!",
+            "cta": "Order Now",
+            "image": "https://scontent-phl2-1.xx.fbcdn.net/v/t39.35426-6/825328742_28802136192713872_9031192571953605391_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=j6ksiMkS7JAQ7kNvwExRRnW&_nc_oc=AdoFyGFOZUZcaDzi7AEcRhTDBzTQ9FnWh3yo64v-jniUbmUwK_CeOgHbw7HMDRdvvzw&_nc_zt=14&_nc_ht=scontent-phl2-1.xx&_nc_gid=wzsbixDm_eJJKyQAwSV9kw&_nc_ss=70289&oh=00_AQQyrKnKa7IkEZ-M8eeL9K7QNfAXiK5ELb_Gxevt7UQm4A&oe=6AF7E1A7",
+            "link_url": "https://kfc.com.my/?utm_source=fbpaid&utm_medium=ppla&utm_campaign=he-w8_bucket-berbaloi-fbpaid-ppla-reach-cpm&utm_content=na-intr-mass-fbpaid-ppla-reach-cpm-img-w8-bucket-berbaloi-mix-bucket-berbaloi",
+            "title": "Bucket Berbaloi! Ni baru Ori!",
+            "video": null
+          },
+          {
+            "body": "Yang Ori, baru berbaloi! Bucket Berbaloi with 6-pc KFC, Cheezy Wedges, 14oz whipped potato, and 2 drinks from only RM42.99!",
+            "cta": "Order Now",
+            "image": "https://scontent-phl2-1.xx.fbcdn.net/v/t39.35426-6/825328784_1058738990502490_5841010587181033827_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=s_KBwKfW3EUQ7kNvwEO_mWU&_nc_oc=AdoSPSTgK1Oh51X20Si26NryIJEuGnZQUjlsJ-AN7zp_jo4FFzquqbpx8syDpr34Vks&_nc_zt=14&_nc_ht=scontent-phl2-1.xx&_nc_gid=wzsbixDm_eJJKyQAwSV9kw&_nc_ss=70289&oh=00_AQRnZfwrTLa-x5MYIkpr3zUGODQ69DE9vLhVKXbSf5pENw&oe=6AF7B5CA",
+            "link_url": "https://kfc.com.my/?utm_source=fbpaid&utm_medium=ppla&utm_campaign=he-w8_bucket-berbaloi-fbpaid-ppla-reach-cpm&utm_content=na-intr-mass-fbpaid-ppla-reach-cpm-img-w8-bucket-berbaloi-mix-bucket-berbaloi",
+            "title": "Bucket Berbaloi! Ni baru Ori!",
+            "video": null
+          }
+        ],
+        "cta": "Order now",
+        "cta_type": "ORDER_NOW",
+        "currency": null,
+        "display_format": "dco",
+        "end_date": null,
+        "images": [
+          "https://scontent-phl2-1.xx.fbcdn.net/v/t39.35426-6/825328742_28802136192713872_9031192571953605391_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=j6ksiMkS7JAQ7kNvwExRRnW&_nc_oc=AdoFyGFOZUZcaDzi7AEcRhTDBzTQ9FnWh3yo64v-jniUbmUwK_CeOgHbw7HMDRdvvzw&_nc_zt=14&_nc_ht=scontent-phl2-1.xx&_nc_gid=wzsbixDm_eJJKyQAwSV9kw&_nc_ss=70289&oh=00_AQQyrKnKa7IkEZ-M8eeL9K7QNfAXiK5ELb_Gxevt7UQm4A&oe=6AF7E1A7",
+          "https://scontent-phl2-1.xx.fbcdn.net/v/t39.35426-6/825328784_1058738990502490_5841010587181033827_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=s_KBwKfW3EUQ7kNvwEO_mWU&_nc_oc=AdoSPSTgK1Oh51X20Si26NryIJEuGnZQUjlsJ-AN7zp_jo4FFzquqbpx8syDpr34Vks&_nc_zt=14&_nc_ht=scontent-phl2-1.xx&_nc_gid=wzsbixDm_eJJKyQAwSV9kw&_nc_ss=70289&oh=00_AQRnZfwrTLa-x5MYIkpr3zUGODQ69DE9vLhVKXbSf5pENw&oe=6AF7B5CA"
+        ],
+        "impressions": null,
+        "is_active": true,
+        "link_caption": "kfc.com.my",
+        "link_url": "https://kfc.com.my/?utm_source=fbpaid&utm_medium=ppla&utm_campaign=he-w8_bucket-berbaloi-fbpaid-ppla-reach-cpm&utm_content=na-intr-mass-fbpaid-ppla-reach-cpm-img-w8-bucket-berbaloi-mix-bucket-berbaloi",
+        "page_id": "82034284246",
+        "page_likes": 61676377,
+        "page_name": "KFC",
+        "page_url": "https://www.facebook.com/KFCMalaysia/",
+        "paid_for_by": null,
+        "platforms": [
+          "facebook",
+          "instagram"
+        ],
+        "same_creative_ads": 3,
+        "spend": null,
+        "start_date": "2026-10-03T07:00:00Z",
+        "title": "Bucket Berbaloi! Ni baru Ori!",
+        "videos": []
+      },
+      {
+        "ad_archive_id": "2184293515845956",
+        "ad_url": "https://www.facebook.com/ads/library/?id=2184293515845956",
+        "body": "Jadi Member KFC dapat score ticket bola? Layan up to 50% OFF Kepci FC X Coca-Cola Combo.",
+        "cards": [
+          {
+            "body": "Jadi Member KFC dapat score ticket bola? Layan up to 50% OFF Kepci FC X Coca-Cola Combo.",
+            "cta": "Order Now",
+            "image": "https://scontent-phl2-1.xx.fbcdn.net/v/t39.35426-6/858569736_1087867497384811_7144572827301116674_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=ge7Mh619kxgQ7kNvwH-Nk3D&_nc_oc=Adp1nQxWLSjR1fkiIBGEctCiUcvBEsoKC8pg7q8IyXotvNETuhpdoHc-h8istOG7FR0&_nc_zt=14&_nc_ht=scontent-phl2-1.xx&_nc_gid=wzsbixDm_eJJKyQAwSV9kw&_nc_ss=70289&oh=00_AQR4yLmIN5Bs7i1yP3PoI8gvADNmobAkiA0dJoCa2jTxOw&oe=6AF7E456",
+            "link_url": "https://kfc.com.my/?utm_source=fbpaid&utm_medium=ppla&utm_campaign=lto-w8_romano-burger-fbpaid-ppla-reach-cpm&utm_content=na-intr-mass-ppla-img-romano-burger-mix-epl-contest-with-food-config-shout-out",
+            "title": "Feast On The Combo, Sorak Lagi Power!",
+            "video": null
+          },
+          {
+            "body": "Jadi Member KFC dapat score ticket bola? Layan up to 50% OFF Kepci FC X Coca-Cola Combo.",
+            "cta": "Order Now",
+            "image": "https://scontent-phl2-1.xx.fbcdn.net/v/t39.35426-6/858255755_2098369267711788_4626799333975018114_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=PP7UR53jkeQQ7kNvwGBcSI8&_nc_oc=AdoULzso_Gx0-2mcPFDuPhvCJ-Y3M4FploPB6--DMxezsWmTLlPYKqFRGoZr6hy645s&_nc_zt=14&_nc_ht=scontent-phl2-1.xx&_nc_gid=wzsbixDm_eJJKyQAwSV9kw&_nc_ss=70289&oh=00_AQR2rkZvVGZD6TM4ys-EENhk66UHSzjfOvc-NIvocUGFXA&oe=6AF7C4D2",
+            "link_url": "https://kfc.com.my/?utm_source=fbpaid&utm_medium=ppla&utm_campaign=lto-w8_romano-burger-fbpaid-ppla-reach-cpm&utm_content=na-intr-mass-ppla-img-romano-burger-mix-epl-contest-with-food-config-shout-out",
+            "title": "Feast On The Combo, Sorak Lagi Power!",
+            "video": null
+          },
+          {
+            "body": "Jadi Member KFC dapat score ticket bola? Layan up to 50% OFF Kepci FC X Coca-Cola Combo.",
+            "cta": "Order Now",
+            "image": "https://scontent-phl2-1.xx.fbcdn.net/v/t39.35426-6/854939773_2002791654460967_4886852065473218169_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=aK1mnyvy16cQ7kNvwE9tlz3&_nc_oc=AdqIdtFARxX0ZFNkEdWcVp_pRtuMWo5IVVwuEnk14V7kVGl4mEE32TNIc2OU3-VeYTw&_nc_zt=14&_nc_ht=scontent-phl2-1.xx&_nc_gid=wzsbixDm_eJJKyQAwSV9kw&_nc_ss=70289&oh=00_AQR4pcYJWDNTbMu74bjohCzRu8AxRi6fSDgqzCGzREOx7w&oe=6AF7CF9D",
+            "link_url": "https://kfc.com.my/?utm_source=fbpaid&utm_medium=ppla&utm_campaign=lto-w8_romano-burger-fbpaid-ppla-reach-cpm&utm_content=na-intr-mass-ppla-img-romano-burger-mix-epl-contest-with-food-config-shout-out",
+            "title": "Feast On The Combo, Sorak Lagi Power!",
+            "video": null
+          }
+        ],
+        "cta": "Order now",
+        "cta_type": "ORDER_NOW",
+        "currency": null,
+        "display_format": "dco",
+        "end_date": null,
+        "images": [
+          "https://scontent-phl2-1.xx.fbcdn.net/v/t39.35426-6/858569736_1087867497384811_7144572827301116674_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=ge7Mh619kxgQ7kNvwH-Nk3D&_nc_oc=Adp1nQxWLSjR1fkiIBGEctCiUcvBEsoKC8pg7q8IyXotvNETuhpdoHc-h8istOG7FR0&_nc_zt=14&_nc_ht=scontent-phl2-1.xx&_nc_gid=wzsbixDm_eJJKyQAwSV9kw&_nc_ss=70289&oh=00_AQR4yLmIN5Bs7i1yP3PoI8gvADNmobAkiA0dJoCa2jTxOw&oe=6AF7E456",
+          "https://scontent-phl2-1.xx.fbcdn.net/v/t39.35426-6/858255755_2098369267711788_4626799333975018114_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=PP7UR53jkeQQ7kNvwGBcSI8&_nc_oc=AdoULzso_Gx0-2mcPFDuPhvCJ-Y3M4FploPB6--DMxezsWmTLlPYKqFRGoZr6hy645s&_nc_zt=14&_nc_ht=scontent-phl2-1.xx&_nc_gid=wzsbixDm_eJJKyQAwSV9kw&_nc_ss=70289&oh=00_AQR2rkZvVGZD6TM4ys-EENhk66UHSzjfOvc-NIvocUGFXA&oe=6AF7C4D2",
+          "https://scontent-phl2-1.xx.fbcdn.net/v/t39.35426-6/854939773_2002791654460967_4886852065473218169_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=aK1mnyvy16cQ7kNvwE9tlz3&_nc_oc=AdqIdtFARxX0ZFNkEdWcVp_pRtuMWo5IVVwuEnk14V7kVGl4mEE32TNIc2OU3-VeYTw&_nc_zt=14&_nc_ht=scontent-phl2-1.xx&_nc_gid=wzsbixDm_eJJKyQAwSV9kw&_nc_ss=70289&oh=00_AQR4pcYJWDNTbMu74bjohCzRu8AxRi6fSDgqzCGzREOx7w&oe=6AF7CF9D"
+        ],
+        "impressions": null,
+        "is_active": true,
+        "link_caption": "kfc.com.my",
+        "link_url": "https://kfc.com.my/?utm_source=fbpaid&utm_medium=ppla&utm_campaign=lto-w8_romano-burger-fbpaid-ppla-reach-cpm&utm_content=na-intr-mass-ppla-img-romano-burger-mix-epl-contest-with-food-config-shout-out",
+        "page_id": "82034284246",
+        "page_likes": 61676377,
+        "page_name": "KFC",
+        "page_url": "https://www.facebook.com/KFCMalaysia/",
+        "paid_for_by": null,
+        "platforms": [
+          "facebook",
+          "instagram"
+        ],
+        "same_creative_ads": 13,
+        "spend": null,
+        "start_date": "2026-10-20T07:00:00Z",
+        "title": "Feast On The Combo, Sorak Lagi Power!",
+        "videos": []
+      },
+      {
+        "ad_archive_id": "1845935063428523",
+        "ad_url": "https://www.facebook.com/ads/library/?id=1845935063428523",
+        "body": "Yang Ori, baru berbaloi! Bucket Berbaloi with 6-pc KFC, Cheezy Wedges, 14oz whipped potato, and 2 drinks from only RM42.99!",
+        "cards": [],
+        "cta": "Order now",
+        "cta_type": "ORDER_NOW",
+        "currency": null,
+        "display_format": "image",
+        "end_date": null,
+        "images": [
+          "https://scontent-phl2-1.xx.fbcdn.net/v/t39.35426-6/833084645_1090085350472329_5071542782986421372_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=SL0UMlaoS1kQ7kNvwFv1Ewa&_nc_oc=Adr7Iu_UGWBlrEjbxAKlxjlm42PTY60pfQ0fZh1dxdN6__t-AtR93jfe7E9bAPGjZ6M&_nc_zt=14&_nc_ht=scontent-phl2-1.xx&_nc_gid=wzsbixDm_eJJKyQAwSV9kw&_nc_ss=70289&oh=00_AQSBX6jpoS75IW3KhX3qtsBOjbYbaZRcoVYDsloHLzsNEA&oe=6AF7CA3C"
+        ],
+        "impressions": null,
+        "is_active": true,
+        "link_caption": "kfc.com.my",
+        "link_url": "https://kfc.com.my/?utm_source=fbpaid&utm_medium=ppla&utm_campaign=he-w8_bucket-berbaloi-fbpaid-ppla-reach-cpm&utm_content=na-intr-mass-fbpaid-ppla-reach-cpm-img-w8-bucket-berbaloi-mix-bucket-berbaloi",
+        "page_id": "82034284246",
+        "page_likes": 61676377,
+        "page_name": "KFC",
+        "page_url": "https://www.facebook.com/KFCMalaysia/",
+        "paid_for_by": null,
+        "platforms": [
+          "facebook",
+          "instagram"
+        ],
+        "same_creative_ads": 1,
+        "spend": null,
+        "start_date": "2026-10-03T07:00:00Z",
+        "title": "Bucket Berbaloi! Ni baru Ori!",
+        "videos": []
+      },
+      {
+        "ad_archive_id": "1820242122583048",
+        "ad_url": "https://www.facebook.com/ads/library/?id=1820242122583048",
+        "body": "Jadi Member KFC dapat score ticket bola? Layan up to 50% OFF Kepci FC X Coca-Cola Combo.",
+        "cards": [],
+        "cta": "Order now",
+        "cta_type": "ORDER_NOW",
+        "currency": null,
+        "display_format": "image",
+        "end_date": null,
+        "images": [
+          "https://scontent-phl2-1.xx.fbcdn.net/v/t39.35426-6/857350137_1433394098896481_1076813130908659570_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=dVccr_Ua2YgQ7kNvwGx6uP4&_nc_oc=AdoXm5snN7bHTnl05VD46t012sxva4fqVvJO6_ekmhWnfbtQgQ9V3eom6ILmVDtk6zo&_nc_zt=14&_nc_ht=scontent-phl2-1.xx&_nc_gid=wzsbixDm_eJJKyQAwSV9kw&_nc_ss=70289&oh=00_AQScJgrcbk_5OkcdfHJ9j4rF-DICnf8Dk0sHTlJhHRS_4Q&oe=6AF7D562"
+        ],
+        "impressions": null,
+        "is_active": true,
+        "link_caption": "kfc.com.my",
+        "link_url": "https://kfc.com.my/?utm_source=fbpaid&utm_medium=ppla&utm_campaign=lto-w8_romano-burger-fbpaid-ppla-reach-cpm&utm_content=na-intr-mass-ppla-img-romano-burger-mix-epl-contest-with-food-config-shout-out",
+        "page_id": "82034284246",
+        "page_likes": 61676377,
+        "page_name": "KFC",
+        "page_url": "https://www.facebook.com/KFCMalaysia/",
+        "paid_for_by": null,
+        "platforms": [
+          "facebook",
+          "instagram"
+        ],
+        "same_creative_ads": 4,
+        "spend": null,
+        "start_date": "2026-10-20T07:00:00Z",
+        "title": "Feast On The Combo, Sorak Lagi Power!",
+        "videos": []
+      },
+      {
+        "ad_archive_id": "1407692878180981",
+        "ad_url": "https://www.facebook.com/ads/library/?id=1407692878180981",
+        "body": "Yang Ori, baru berbaloi! Bucket Berbaloi with 6-pc KFC, Cheezy Wedges, 14oz whipped potato, and 2 drinks from only RM42.99!",
+        "cards": [],
+        "cta": "Order now",
+        "cta_type": "ORDER_NOW",
+        "currency": null,
+        "display_format": "image",
+        "end_date": null,
+        "images": [
+          "https://scontent-phl2-1.xx.fbcdn.net/v/t39.35426-6/834019287_1616034940071904_6504410054560967147_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=UOICtNhMJCIQ7kNvwG5i5_J&_nc_oc=AdrKf5pHd9-EAO1bUI6VhTRYx7nQnfwp3uNs91aWHgDU79XZbdDfloEkfTbZ7j83GAo&_nc_zt=14&_nc_ht=scontent-phl2-1.xx&_nc_gid=wzsbixDm_eJJKyQAwSV9kw&_nc_ss=70289&oh=00_AQQleZ6tEubusIc8aubzbT5yt9h5PLDN8jOlEHQ44SGtBQ&oe=6AF7BEAC"
+        ],
+        "impressions": null,
+        "is_active": true,
+        "link_caption": "kfc.com.my",
+        "link_url": "https://kfc.com.my/?utm_source=fbpaid&utm_medium=ppla&utm_campaign=he-w8_bucket-berbaloi-fbpaid-ppla-reach-cpm&utm_content=na-intr-mass-fbpaid-ppla-reach-cpm-img-w8-bucket-berbaloi-mix-bucket-berbaloi",
+        "page_id": "82034284246",
+        "page_likes": 61676377,
+        "page_name": "KFC",
+        "page_url": "https://www.facebook.com/KFCMalaysia/",
+        "paid_for_by": null,
+        "platforms": [
+          "facebook",
+          "instagram"
+        ],
+        "same_creative_ads": 3,
+        "spend": null,
+        "start_date": "2026-10-03T07:00:00Z",
+        "title": "Bucket Berbaloi! Ni baru Ori!",
+        "videos": []
+      },
+      {
+        "ad_archive_id": "1383017590300285",
+        "ad_url": "https://www.facebook.com/ads/library/?id=1383017590300285",
+        "body": "Dah try sos KFC? Ada yang familiar, ada Sos Seoul Pedas yang baharu! Konfem puaskan citarasa korang!",
+        "cards": [
+          {
+            "body": "Dah try sos KFC? Ada yang familiar, ada Sos Seoul Pedas yang baharu! Konfem puaskan citarasa korang!",
+            "cta": "See Details",
+            "image": "https://scontent-phl2-1.xx.fbcdn.net/v/t39.35426-6/855835543_1807366200300727_7846562344964987573_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=q4lvz_6ihL4Q7kNvwEYfr6w&_nc_oc=AdoR2MH6KfXSJdK5rp2Fvr-KKilNkm07dVh-tak20-k6emfzGX2MSEMnfKS9Z7U1LMo&_nc_zt=14&_nc_ht=scontent-phl2-1.xx&_nc_gid=wzsbixDm_eJJKyQAwSV9kw&_nc_ss=70289&oh=00_AQQHA4ODh0jBNGNJGZEWWfdj5ibsUoJ4AqtWGRPd3uL3bg&oe=6AF7E80E",
+            "link_url": "https://kfc.com.my/?utm_source=fbpaid&utm_medium=ppla&utm_campaign=lto-w8-elevate-2-fbpaid-ppla-reach-cpm&utm_content=na-intr-mass-ppla-img-w8-elevate-2-mix-kfc-sauces",
+            "title": "Fuhhh, Sos-sos KFC Lain Macam!",
+            "video": null
+          },
+          {
+            "body": "Dah try sos KFC? Ada yang familiar, ada Sos Seoul Pedas yang baharu! Konfem puaskan citarasa korang!",
+            "cta": "See Details",
+            "image": "https://scontent-phl2-1.xx.fbcdn.net/v/t39.35426-6/855455714_1595569728326851_6690390087631600633_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=3Tvd5girC2gQ7kNvwGTEIGS&_nc_oc=AdrkRX4IRswvahqJF08u8UrZuQ8s7axHs7OBbF8ldl4V-4eyi5k89NypDQICpqK6fMo&_nc_zt=14&_nc_ht=scontent-phl2-1.xx&_nc_gid=wzsbixDm_eJJKyQAwSV9kw&_nc_ss=70289&oh=00_AQS9T72nOH1dNNKsyDw2vReDOCgWp18h3t6o3gSzhuNoPw&oe=6AF7D7AB",
+            "link_url": "http://kfc.com.my/",
+            "title": "Fuhhh, Sos-sos KFC Lain Macam!",
+            "video": null
+          },
+          {
+            "body": "Dah try sos KFC? Ada yang familiar, ada Sos Seoul Pedas yang baharu! Konfem puaskan citarasa korang!",
+            "cta": "See Details",
+            "image": "https://scontent-phl2-1.xx.fbcdn.net/v/t39.35426-6/855027236_2165499317678487_3827323631377369607_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=wNAIB4aFOiMQ7kNvwFMYmoh&_nc_oc=AdpZoAJwnFlSmOrfAxYpXRnRaw3XLh7iXXUH0lX1RY8V-AIujWXGtjJhqFedEHxTP-A&_nc_zt=14&_nc_ht=scontent-phl2-1.xx&_nc_gid=wzsbixDm_eJJKyQAwSV9kw&_nc_ss=70289&oh=00_AQQdnY77VBrtCNcqHLCvtjNPV5gkcd9CrMvlUp_PY7-PbQ&oe=6AF7C642",
+            "link_url": "http://kfc.com.my/",
+            "title": "Fuhhh, Sos-sos KFC Lain Macam!",
+            "video": null
+          }
+        ],
+        "cta": "See details",
+        "cta_type": "SEE_DETAILS",
+        "currency": null,
+        "display_format": "dco",
+        "end_date": null,
+        "images": [
+          "https://scontent-phl2-1.xx.fbcdn.net/v/t39.35426-6/855835543_1807366200300727_7846562344964987573_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=q4lvz_6ihL4Q7kNvwEYfr6w&_nc_oc=AdoR2MH6KfXSJdK5rp2Fvr-KKilNkm07dVh-tak20-k6emfzGX2MSEMnfKS9Z7U1LMo&_nc_zt=14&_nc_ht=scontent-phl2-1.xx&_nc_gid=wzsbixDm_eJJKyQAwSV9kw&_nc_ss=70289&oh=00_AQQHA4ODh0jBNGNJGZEWWfdj5ibsUoJ4AqtWGRPd3uL3bg&oe=6AF7E80E",
+          "https://scontent-phl2-1.xx.fbcdn.net/v/t39.35426-6/855455714_1595569728326851_6690390087631600633_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=3Tvd5girC2gQ7kNvwGTEIGS&_nc_oc=AdrkRX4IRswvahqJF08u8UrZuQ8s7axHs7OBbF8ldl4V-4eyi5k89NypDQICpqK6fMo&_nc_zt=14&_nc_ht=scontent-phl2-1.xx&_nc_gid=wzsbixDm_eJJKyQAwSV9kw&_nc_ss=70289&oh=00_AQS9T72nOH1dNNKsyDw2vReDOCgWp18h3t6o3gSzhuNoPw&oe=6AF7D7AB",
+          "https://scontent-phl2-1.xx.fbcdn.net/v/t39.35426-6/855027236_2165499317678487_3827323631377369607_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=wNAIB4aFOiMQ7kNvwFMYmoh&_nc_oc=AdpZoAJwnFlSmOrfAxYpXRnRaw3XLh7iXXUH0lX1RY8V-AIujWXGtjJhqFedEHxTP-A&_nc_zt=14&_nc_ht=scontent-phl2-1.xx&_nc_gid=wzsbixDm_eJJKyQAwSV9kw&_nc_ss=70289&oh=00_AQQdnY77VBrtCNcqHLCvtjNPV5gkcd9CrMvlUp_PY7-PbQ&oe=6AF7C642"
+        ],
+        "impressions": null,
+        "is_active": true,
+        "link_caption": "kfc.com.my",
+        "link_url": "http://kfc.com.my/",
+        "page_id": "82034284246",
+        "page_likes": 61676377,
+        "page_name": "KFC",
+        "page_url": "https://www.facebook.com/KFCMalaysia/",
+        "paid_for_by": null,
+        "platforms": [
+          "facebook",
+          "instagram"
+        ],
+        "same_creative_ads": 3,
+        "spend": null,
+        "start_date": "2026-10-29T07:00:00Z",
+        "title": "Fuhhh, Sos-sos KFC Lain Macam!",
+        "videos": []
+      },
+      {
+        "ad_archive_id": "1774123967173490",
+        "ad_url": "https://www.facebook.com/ads/library/?id=1774123967173490",
+        "body": "Football season is HERE. Korang nak watch Bola LIVE in England? Now\u2019s your chance to win an experience of a lifetime!",
+        "cards": [
+          {
+            "body": "Football season is HERE. Korang nak watch Bola LIVE in England? Now\u2019s your chance to win an experience of a lifetime!",
+            "cta": "Learn More",
+            "image": "https://scontent-phl2-1.xx.fbcdn.net/v/t39.35426-6/855946725_1478391214209904_3707309448846845746_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=GHntpnFd0CcQ7kNvwEhbco5&_nc_oc=AdoaAMXY4cPrYyLh3r5hEMClaMhLttlNaAFJXr1QtwQL_cldQedqcGyoiLY1ogBYWuk&_nc_zt=14&_nc_ht=scontent-phl2-1.xx&_nc_gid=wzsbixDm_eJJKyQAwSV9kw&_nc_ss=70289&oh=00_AQRXvuYaRiq1ioG8I_s617HtT8cid7e6LZzfSt52MlMHtw&oe=6AF7DF16",
+            "link_url": "https://kfc.com.my/kepcifc?type=web?utm_source=fbpaid&utm_medium=ppla&utm_campaign=lto-w8_romano-burger-fbpaid-ppla-reach-cpm&utm_content=na-intr-mass-ppla-img-romano-burger-mix-epl-contest-with-food-config-shout-out",
+            "title": "Makan, Minum, Menang!",
+            "video": null
+          },
+          {
+            "body": "Football season is HERE. Korang nak watch Bola LIVE in England? Now\u2019s your chance to win an experience of a lifetime!",
+            "cta": "Learn More",
+            "image": "https://scontent-phl2-1.xx.fbcdn.net/v/t39.35426-6/855467017_29184506574519888_2973568101031423289_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=4FwRXuOBhwQQ7kNvwFI4uwM&_nc_oc=AdoNmcf28nPnEyN_Y_iGgKazoYCcYkc4__1r1DcaTovUhP9YKthiM7IO5sDv91ZMvLM&_nc_zt=14&_nc_ht=scontent-phl2-1.xx&_nc_gid=wzsbixDm_eJJKyQAwSV9kw&_nc_ss=70289&oh=00_AQQmT9aryi_hHgXZad2DIPR2RCDqlWrGNPgj6HmeHl8PlQ&oe=6AF7B217",
+            "link_url": "https://kfc.com.my/kepcifc?type=web?utm_source=fbpaid&utm_medium=ppla&utm_campaign=lto-w8_romano-burger-fbpaid-ppla-reach-cpm&utm_content=na-intr-mass-ppla-img-romano-burger-mix-epl-contest-with-food-config-shout-out",
+            "title": "Makan, Minum, Menang!",
+            "video": null
+          },
+          {
+            "body": "Football season is HERE. Korang nak watch Bola LIVE in England? Now\u2019s your chance to win an experience of a lifetime!",
+            "cta": "Learn More",
+            "image": "https://scontent-phl2-1.xx.fbcdn.net/v/t39.35426-6/855575549_28913496744950968_5891310444896593743_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=14zHU-v7k10Q7kNvwGoRERs&_nc_oc=AdpZ_4eej7zUW-cwMpLQ93OPxozTxE3MobQ0dci2JPsNB5h22YHnO-dnyZFqhWdGzh4&_nc_zt=14&_nc_ht=scontent-phl2-1.xx&_nc_gid=wzsbixDm_eJJKyQAwSV9kw&_nc_ss=70289&oh=00_AQSMoaGlGv2qIzkQMb8kOZVbfBfPp0wlJhxK6z4ukpO2_g&oe=6AF7D80F",
+            "link_url": "https://kfc.com.my/kepcifc?type=web?utm_source=fbpaid&utm_medium=ppla&utm_campaign=lto-w8_romano-burger-fbpaid-ppla-reach-cpm&utm_content=na-intr-mass-ppla-img-romano-burger-mix-epl-contest-with-food-config-shout-out",
+            "title": "Makan, Minum, Menang!",
+            "video": null
+          }
+        ],
+        "cta": "Learn more",
+        "cta_type": "LEARN_MORE",
+        "currency": null,
+        "display_format": "dco",
+        "end_date": null,
+        "images": [
+          "https://scontent-phl2-1.xx.fbcdn.net/v/t39.35426-6/855946725_1478391214209904_3707309448846845746_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=GHntpnFd0CcQ7kNvwEhbco5&_nc_oc=AdoaAMXY4cPrYyLh3r5hEMClaMhLttlNaAFJXr1QtwQL_cldQedqcGyoiLY1ogBYWuk&_nc_zt=14&_nc_ht=scontent-phl2-1.xx&_nc_gid=wzsbixDm_eJJKyQAwSV9kw&_nc_ss=70289&oh=00_AQRXvuYaRiq1ioG8I_s617HtT8cid7e6LZzfSt52MlMHtw&oe=6AF7DF16",
+          "https://scontent-phl2-1.xx.fbcdn.net/v/t39.35426-6/855467017_29184506574519888_2973568101031423289_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=4FwRXuOBhwQQ7kNvwFI4uwM&_nc_oc=AdoNmcf28nPnEyN_Y_iGgKazoYCcYkc4__1r1DcaTovUhP9YKthiM7IO5sDv91ZMvLM&_nc_zt=14&_nc_ht=scontent-phl2-1.xx&_nc_gid=wzsbixDm_eJJKyQAwSV9kw&_nc_ss=70289&oh=00_AQQmT9aryi_hHgXZad2DIPR2RCDqlWrGNPgj6HmeHl8PlQ&oe=6AF7B217",
+          "https://scontent-phl2-1.xx.fbcdn.net/v/t39.35426-6/855575549_28913496744950968_5891310444896593743_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=14zHU-v7k10Q7kNvwGoRERs&_nc_oc=AdpZ_4eej7zUW-cwMpLQ93OPxozTxE3MobQ0dci2JPsNB5h22YHnO-dnyZFqhWdGzh4&_nc_zt=14&_nc_ht=scontent-phl2-1.xx&_nc_gid=wzsbixDm_eJJKyQAwSV9kw&_nc_ss=70289&oh=00_AQSMoaGlGv2qIzkQMb8kOZVbfBfPp0wlJhxK6z4ukpO2_g&oe=6AF7D80F"
+        ],
+        "impressions": null,
+        "is_active": true,
+        "link_caption": "kfc.com.my",
+        "link_url": "https://kfc.com.my/kepcifc?type=web?utm_source=fbpaid&utm_medium=ppla&utm_campaign=lto-w8_romano-burger-fbpaid-ppla-reach-cpm&utm_content=na-intr-mass-ppla-img-romano-burger-mix-epl-contest-with-food-config-shout-out",
+        "page_id": "82034284246",
+        "page_likes": 61676377,
+        "page_name": "KFC",
+        "page_url": "https://www.facebook.com/KFCMalaysia/",
+        "paid_for_by": null,
+        "platforms": [
+          "facebook",
+          "instagram"
+        ],
+        "same_creative_ads": 10,
+        "spend": null,
+        "start_date": "2026-10-21T07:00:00Z",
+        "title": "Makan, Minum, Menang!",
+        "videos": []
+      },
+      {
+        "ad_archive_id": "1326428086137163",
+        "ad_url": "https://www.facebook.com/ads/library/?id=1326428086137163",
+        "body": "Bila ada 10% OFF at KFC with RHB MySiswa Debit Card-i, baru syok belanja kawan makan! Nak more rewards? Jom jadi Member KFC.",
+        "cards": [
+          {
+            "body": "Bila ada 10% OFF at KFC with RHB MySiswa Debit Card-i, baru syok belanja kawan makan! Nak more rewards? Jom jadi Member KFC.",
+            "cta": "Learn More",
+            "image": "https://scontent-phl2-1.xx.fbcdn.net/v/t39.35426-6/848995158_1895319811436285_2658272908510010879_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=pmhTaKGBeBMQ7kNvwFaJgT_&_nc_oc=AdrXLWDcohPuLuUi5v0UIRKXEOLRKZC_a_Ztc0kmwIr08kL15YRunNvBwTYFn5TVZbo&_nc_zt=14&_nc_ht=scontent-phl2-1.xx&_nc_gid=wzsbixDm_eJJKyQAwSV9kw&_nc_ss=70289&oh=00_AQToIcm1emOEQ8PhEfm_Tozw-E4s1ryS9Ty67ZI8c6lrGA&oe=6AF7B756",
+            "link_url": "https://kfc.com.my/mysiswa?type=web?utm_source=fbpaid&utm_medium=ppla&utm_campaign=-always-on-fbpaid-ppla-reach-cpm&utm_content=na-intr-youth-ppla-img-always-on-mix-mysiswa",
+            "title": "Pay for the geng, get 10% OFF & a salute",
+            "video": null
+          },
+          {
+            "body": "Bila ada 10% OFF at KFC with RHB MySiswa Debit Card-i, baru syok belanja kawan makan! Nak more rewards? Jom jadi Member KFC.",
+            "cta": "Learn More",
+            "image": "https://scontent-phl2-1.xx.fbcdn.net/v/t39.35426-6/843373315_1123845763514513_6831567627803180334_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=B2mrj95z_9sQ7kNvwHxk492&_nc_oc=AdpIuO7UWjeZ1xr4507R6Tqb72tbh4Dsok_4nUCi_QGaCLXBXKHJm4MzvpfO6msIrpI&_nc_zt=14&_nc_ht=scontent-phl2-1.xx&_nc_gid=wzsbixDm_eJJKyQAwSV9kw&_nc_ss=70289&oh=00_AQRoUUu9zz5m1PiZVPflRzAnz_fEyB1RVBrxY4_ZUB6Peg&oe=6AF7C888",
+            "link_url": "https://kfc.com.my/mysiswa?type=web?utm_source=fbpaid&utm_medium=ppla&utm_campaign=-always-on-fbpaid-ppla-reach-cpm&utm_content=na-intr-youth-ppla-img-always-on-mix-mysiswa",
+            "title": "Pay for the geng, get 10% OFF & a salute",
+            "video": null
+          },
+          {
+            "body": "Bila ada 10% OFF at KFC with RHB MySiswa Debit Card-i, baru syok belanja kawan makan! Nak more rewards? Jom jadi Member KFC.",
+            "cta": "Learn More",
+            "image": "https://scontent-phl2-1.xx.fbcdn.net/v/t39.35426-6/848439471_1502220861665311_1270094652679279419_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=xtJvAsc2NKoQ7kNvwGI7ebX&_nc_oc=AdrBNJ9ZJhIv3PfVsgBhIZs3uQf_uoIiTcLc_ypCoIoympKrgrGV3lnsK5WQwnyI9RY&_nc_zt=14&_nc_ht=scontent-phl2-1.xx&_nc_gid=wzsbixDm_eJJKyQAwSV9kw&_nc_ss=70289&oh=00_AQRZIAQYHYZPsDf38gZBJrOns1L_xARspkvytYxJnLaF2w&oe=6AF7E5BA",
+            "link_url": "https://kfc.com.my/mysiswa?type=web?utm_source=fbpaid&utm_medium=ppla&utm_campaign=-always-on-fbpaid-ppla-reach-cpm&utm_content=na-intr-youth-ppla-img-always-on-mix-mysiswa",
+            "title": "Pay for the geng, get 10% OFF & a salute",
+            "video": null
+          }
+        ],
+        "cta": "Learn more",
+        "cta_type": "LEARN_MORE",
+        "currency": null,
+        "display_format": "dco",
+        "end_date": null,
+        "images": [
+          "https://scontent-phl2-1.xx.fbcdn.net/v/t39.35426-6/848995158_1895319811436285_2658272908510010879_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=pmhTaKGBeBMQ7kNvwFaJgT_&_nc_oc=AdrXLWDcohPuLuUi5v0UIRKXEOLRKZC_a_Ztc0kmwIr08kL15YRunNvBwTYFn5TVZbo&_nc_zt=14&_nc_ht=scontent-phl2-1.xx&_nc_gid=wzsbixDm_eJJKyQAwSV9kw&_nc_ss=70289&oh=00_AQToIcm1emOEQ8PhEfm_Tozw-E4s1ryS9Ty67ZI8c6lrGA&oe=6AF7B756",
+          "https://scontent-phl2-1.xx.fbcdn.net/v/t39.35426-6/843373315_1123845763514513_6831567627803180334_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=B2mrj95z_9sQ7kNvwHxk492&_nc_oc=AdpIuO7UWjeZ1xr4507R6Tqb72tbh4Dsok_4nUCi_QGaCLXBXKHJm4MzvpfO6msIrpI&_nc_zt=14&_nc_ht=scontent-phl2-1.xx&_nc_gid=wzsbixDm_eJJKyQAwSV9kw&_nc_ss=70289&oh=00_AQRoUUu9zz5m1PiZVPflRzAnz_fEyB1RVBrxY4_ZUB6Peg&oe=6AF7C888",
+          "https://scontent-phl2-1.xx.fbcdn.net/v/t39.35426-6/848439471_1502220861665311_1270094652679279419_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=xtJvAsc2NKoQ7kNvwGI7ebX&_nc_oc=AdrBNJ9ZJhIv3PfVsgBhIZs3uQf_uoIiTcLc_ypCoIoympKrgrGV3lnsK5WQwnyI9RY&_nc_zt=14&_nc_ht=scontent-phl2-1.xx&_nc_gid=wzsbixDm_eJJKyQAwSV9kw&_nc_ss=70289&oh=00_AQRZIAQYHYZPsDf38gZBJrOns1L_xARspkvytYxJnLaF2w&oe=6AF7E5BA"
+        ],
+        "impressions": null,
+        "is_active": true,
+        "link_caption": "kfc.com.my",
+        "link_url": "https://kfc.com.my/mysiswa?type=web?utm_source=fbpaid&utm_medium=ppla&utm_campaign=-always-on-fbpaid-ppla-reach-cpm&utm_content=na-intr-youth-ppla-img-always-on-mix-mysiswa",
+        "page_id": "82034284246",
+        "page_likes": 61676377,
+        "page_name": "KFC",
+        "page_url": "https://www.facebook.com/KFCMalaysia/",
+        "paid_for_by": null,
+        "platforms": [
+          "facebook",
+          "instagram"
+        ],
+        "same_creative_ads": 1,
+        "spend": null,
+        "start_date": "2026-10-14T07:00:00Z",
+        "title": "Pay for the geng, get 10% OFF & a salute",
+        "videos": []
+      },
+      {
+        "ad_archive_id": "1444658624435376",
+        "ad_url": "https://www.facebook.com/ads/library/?id=1444658624435376",
+        "body": "Jadi Member KFC dapat score ticket bola? Layan up to 50% OFF Kepci FC X Coca-Cola Combo.",
+        "cards": [],
+        "cta": "Order now",
+        "cta_type": "ORDER_NOW",
+        "currency": null,
+        "display_format": "image",
+        "end_date": null,
+        "images": [
+          "https://scontent-phl2-1.xx.fbcdn.net/v/t39.35426-6/859107122_2190924088192363_5620843889736218691_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=MWuEjP2T3tEQ7kNvwFJoWd_&_nc_oc=AdoE0wZFYoho261AhliTr37Bl8DGGfx6XaC1LpzVlPn0EdSfYFSvgGUMYLS9ZnQ1GkY&_nc_zt=14&_nc_ht=scontent-phl2-1.xx&_nc_gid=wzsbixDm_eJJKyQAwSV9kw&_nc_ss=70289&oh=00_AQQQ6Iec0MbXQd4h3oXGY4MBsnGZ22KnxB_Xu2l-1bwv8Q&oe=6AF7DAFC"
+        ],
+        "impressions": null,
+        "is_active": true,
+        "link_caption": "kfc.com.my",
+        "link_url": "https://kfc.com.my/?utm_source=fbpaid&utm_medium=ppla&utm_campaign=lto-w8_romano-burger-fbpaid-ppla-reach-cpm&utm_content=na-intr-mass-ppla-img-romano-burger-mix-epl-contest-with-food-config-shout-out",
+        "page_id": "82034284246",
+        "page_likes": 61676377,
+        "page_name": "KFC",
+        "page_url": "https://www.facebook.com/KFCMalaysia/",
+        "paid_for_by": null,
+        "platforms": [
+          "facebook",
+          "instagram"
+        ],
+        "same_creative_ads": 5,
+        "spend": null,
+        "start_date": "2026-10-20T07:00:00Z",
+        "title": "Feast On The Combo, Sorak Lagi Power!",
+        "videos": []
+      },
+      {
+        "ad_archive_id": "2356932031808469",
+        "ad_url": "https://www.facebook.com/ads/library/?id=2356932031808469",
+        "body": "Up to RM15 OFF your whole cart when you stay safe indoors, relax and order KFC Delivery!",
+        "cards": [
+          {
+            "body": "Up to RM15 OFF your whole cart when you stay safe indoors, relax and order KFC Delivery!",
+            "cta": "Order Now",
+            "image": "https://scontent-phl2-1.xx.fbcdn.net/v/t39.35426-6/848806328_29048388998119128_4870203562363515428_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=1uyy22EQZ3sQ7kNvwE3OI9O&_nc_oc=AdprUZ0rgZq6ecAZ4nrPjoDBoYznxaHSbh-Om0R0ex62t-n55zhe36HVHh5MqwSmgx0&_nc_zt=14&_nc_ht=scontent-phl2-1.xx&_nc_gid=wzsbixDm_eJJKyQAwSV9kw&_nc_ss=70289&oh=00_AQQLDMnP82FCZFZ9wFy35EVh3UdDZ_x42r4RMMSeuKcUDQ&oe=6AF7CEE6",
+            "link_url": "https://kfc.com.my/?utm_source=fbpaid&utm_medium=ppla&utm_campaign=kfcd-kfc-cartwide-october-fbpaid-ppla-reach-cpm&utm_content=na-intr-mass-high-ppla-img-kfc-cartwide-october-mix-haze",
+            "title": "Stay in, order KFC Delivery",
+            "video": null
+          },
+          {
+            "body": "Up to RM15 OFF your whole cart when you stay safe indoors, relax and order KFC Delivery!",
+            "cta": "Order Now",
+            "image": "https://scontent-phl2-1.xx.fbcdn.net/v/t39.35426-6/848935946_997053466755880_8901144847650352434_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=R2T1ZUnkuo0Q7kNvwGFHJTk&_nc_oc=Adqu_KQNgk164nTFXYozo7Ub2B_9Q_YqMrWrwK33Yoipn9tcJ64PGd8QkFGii4TF11g&_nc_zt=14&_nc_ht=scontent-phl2-1.xx&_nc_gid=wzsbixDm_eJJKyQAwSV9kw&_nc_ss=70289&oh=00_AQRPBh95Kr22WUJS3cZg1y3d6n6oAZcrq8IaAOFvStZ93w&oe=6AF7E784",
+            "link_url": "https://kfc.com.my/?utm_source=fbpaid&utm_medium=ppla&utm_campaign=kfcd-kfc-cartwide-october-fbpaid-ppla-reach-cpm&utm_content=na-intr-mass-high-ppla-img-kfc-cartwide-october-mix-haze",
+            "title": "Stay in, order KFC Delivery",
+            "video": null
+          }
+        ],
+        "cta": "Order now",
+        "cta_type": "ORDER_NOW",
+        "currency": null,
+        "display_format": "dco",
+        "end_date": null,
+        "images": [
+          "https://scontent-phl2-1.xx.fbcdn.net/v/t39.35426-6/848806328_29048388998119128_4870203562363515428_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=1uyy22EQZ3sQ7kNvwE3OI9O&_nc_oc=AdprUZ0rgZq6ecAZ4nrPjoDBoYznxaHSbh-Om0R0ex62t-n55zhe36HVHh5MqwSmgx0&_nc_zt=14&_nc_ht=scontent-phl2-1.xx&_nc_gid=wzsbixDm_eJJKyQAwSV9kw&_nc_ss=70289&oh=00_AQQLDMnP82FCZFZ9wFy35EVh3UdDZ_x42r4RMMSeuKcUDQ&oe=6AF7CEE6",
+          "https://scontent-phl2-1.xx.fbcdn.net/v/t39.35426-6/848935946_997053466755880_8901144847650352434_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=R2T1ZUnkuo0Q7kNvwGFHJTk&_nc_oc=Adqu_KQNgk164nTFXYozo7Ub2B_9Q_YqMrWrwK33Yoipn9tcJ64PGd8QkFGii4TF11g&_nc_zt=14&_nc_ht=scontent-phl2-1.xx&_nc_gid=wzsbixDm_eJJKyQAwSV9kw&_nc_ss=70289&oh=00_AQRPBh95Kr22WUJS3cZg1y3d6n6oAZcrq8IaAOFvStZ93w&oe=6AF7E784"
+        ],
+        "impressions": null,
+        "is_active": true,
+        "link_caption": "kfc.com.my",
+        "link_url": "https://kfc.com.my/?utm_source=fbpaid&utm_medium=ppla&utm_campaign=kfcd-kfc-cartwide-october-fbpaid-ppla-reach-cpm&utm_content=na-intr-mass-high-ppla-img-kfc-cartwide-october-mix-haze",
+        "page_id": "82034284246",
+        "page_likes": 61676377,
+        "page_name": "KFC",
+        "page_url": "https://www.facebook.com/KFCMalaysia/",
+        "paid_for_by": null,
+        "platforms": [
+          "facebook",
+          "instagram"
+        ],
+        "same_creative_ads": 10,
+        "spend": null,
+        "start_date": "2026-10-15T07:00:00Z",
+        "title": "Stay in, order KFC Delivery",
+        "videos": []
+      },
+      {
+        "ad_archive_id": "1623111942894277",
+        "ad_url": "https://www.facebook.com/ads/library/?id=1623111942894277",
+        "body": "\u7403\u8ff7\u4eec\uff0cKFC \u9a6c\u4e0a\u52a0\u5165\u4f1a\u5458\uff01Kepci FC X Coca-Cola\u5957\u9910\u53ef\u4eab\u9ad8\u8fbe50%\u6298\u6263\uff0c\u8fd8\u6709\u673a\u4f1a\u8d62\u7403\u8d5b\u5165\u95e8\u7968\uff01\u6cbe\u9171\u4e5f\u5b89\u6392\u4e0a\uff01\ud83d\ude0e",
+        "cards": [
+          {
+            "body": "\u7403\u8ff7\u4eec\uff0cKFC \u9a6c\u4e0a\u52a0\u5165\u4f1a\u5458\uff01Kepci FC X Coca-Cola\u5957\u9910\u53ef\u4eab\u9ad8\u8fbe50%\u6298\u6263\uff0c\u8fd8\u6709\u673a\u4f1a\u8d62\u7403\u8d5b\u5165\u95e8\u7968\uff01\u6cbe\u9171\u4e5f\u5b89\u6392\u4e0a\uff01\ud83d\ude0e",
+            "cta": "Order Now",
+            "image": "https://scontent-phl2-1.xx.fbcdn.net/v/t39.35426-6/856014902_1847635926655440_6609393865693384814_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=WkQD0KYeV5kQ7kNvwHP093T&_nc_oc=AdrmiY8po0qQP7R7uT7UEPbTa7Y6pc-gLZ97s4hHMvecHqHoEu4JyaeQ-pHG9i-R5U4&_nc_zt=14&_nc_ht=scontent-phl2-1.xx&_nc_gid=wzsbixDm_eJJKyQAwSV9kw&_nc_ss=70289&oh=00_AQSMRRVkC5jNayc8H2zgs441qrbPYO97ndwujZzeTBDtnw&oe=6AF7B3CB",
+            "link_url": "https://kfc.com.my/?utm_source=fbpaid&utm_medium=ppla&utm_campaign=lto-w8_romano-burger-fbpaid-ppla-reach-cpm&utm_content=na-intr-mass-ppla-img-romano-burger-cn-epl-contest-with-food-config-shout-out",
+            "title": "\u770b\u7403\u8d5b\uff0c\u4eab\u6298\u6263\uff0c\u70b9\u6cbe\u9171\uff01",
+            "video": null
+          },
+          {
+            "body": "\u7403\u8ff7\u4eec\uff0cKFC \u9a6c\u4e0a\u52a0\u5165\u4f1a\u5458\uff01Kepci FC X Coca-Cola\u5957\u9910\u53ef\u4eab\u9ad8\u8fbe50%\u6298\u6263\uff0c\u8fd8\u6709\u673a\u4f1a\u8d62\u7403\u8d5b\u5165\u95e8\u7968\uff01\u6cbe\u9171\u4e5f\u5b89\u6392\u4e0a\uff01\ud83d\ude0e",
+            "cta": "Order Now",
+            "image": "https://scontent-phl2-1.xx.fbcdn.net/v/t39.35426-6/856753328_3088490938167363_4882779250008213530_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=i0p7DecL7igQ7kNvwE5rGdp&_nc_oc=Adr5Py4JgeExLaGL3zd5pHkGkmY5YaU9-X9z8NEweXV7SDwm_gTPTVxDVGnTsCYEPig&_nc_zt=14&_nc_ht=scontent-phl2-1.xx&_nc_gid=wzsbixDm_eJJKyQAwSV9kw&_nc_ss=70289&oh=00_AQSUwqMYNPvhgnGIKv3wyzBlis_JtHDctkvYyMaOBAXunw&oe=6AF7E1C6",
+            "link_url": "https://kfc.com.my/?utm_source=fbpaid&utm_medium=ppla&utm_campaign=lto-w8_romano-burger-fbpaid-ppla-reach-cpm&utm_content=na-intr-mass-ppla-img-romano-burger-cn-epl-contest-with-food-config-shout-out",
+            "title": "\u770b\u7403\u8d5b\uff0c\u4eab\u6298\u6263\uff0c\u70b9\u6cbe\u9171\uff01",
+            "video": null
+          },
+          {
+            "body": "\u7403\u8ff7\u4eec\uff0cKFC \u9a6c\u4e0a\u52a0\u5165\u4f1a\u5458\uff01Kepci FC X Coca-Cola\u5957\u9910\u53ef\u4eab\u9ad8\u8fbe50%\u6298\u6263\uff0c\u8fd8\u6709\u673a\u4f1a\u8d62\u7403\u8d5b\u5165\u95e8\u7968\uff01\u6cbe\u9171\u4e5f\u5b89\u6392\u4e0a\uff01\ud83d\ude0e",
+            "cta": "Order Now",
+            "image": "https://scontent-phl2-1.xx.fbcdn.net/v/t39.35426-6/857681203_1058673727202275_1091412576712822894_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=vySjRAkEYDUQ7kNvwFmhB0z&_nc_oc=AdpKWOJEwptykoZMjBkcyB1Zd6mvFfBoVLkBYEzacbsPUdZ7rnfz11agD-XcqeqIzJs&_nc_zt=14&_nc_ht=scontent-phl2-1.xx&_nc_gid=wzsbixDm_eJJKyQAwSV9kw&_nc_ss=70289&oh=00_AQTxwA8UXDhAYhL1kC58ysTMjgw8ENaQYVbCkJD45jYRqA&oe=6AF7D1B8",
+            "link_url": "https://kfc.com.my/?utm_source=fbpaid&utm_medium=ppla&utm_campaign=lto-w8_romano-burger-fbpaid-ppla-reach-cpm&utm_content=na-intr-mass-ppla-img-romano-burger-cn-epl-contest-with-food-config-shout-out",
+            "title": "\u770b\u7403\u8d5b\uff0c\u4eab\u6298\u6263\uff0c\u70b9\u6cbe\u9171\uff01",
+            "video": null
+          }
+        ],
+        "cta": "Order now",
+        "cta_type": "ORDER_NOW",
+        "currency": null,
+        "display_format": "dco",
+        "end_date": null,
+        "images": [
+          "https://scontent-phl2-1.xx.fbcdn.net/v/t39.35426-6/856014902_1847635926655440_6609393865693384814_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=WkQD0KYeV5kQ7kNvwHP093T&_nc_oc=AdrmiY8po0qQP7R7uT7UEPbTa7Y6pc-gLZ97s4hHMvecHqHoEu4JyaeQ-pHG9i-R5U4&_nc_zt=14&_nc_ht=scontent-phl2-1.xx&_nc_gid=wzsbixDm_eJJKyQAwSV9kw&_nc_ss=70289&oh=00_AQSMRRVkC5jNayc8H2zgs441qrbPYO97ndwujZzeTBDtnw&oe=6AF7B3CB",
+          "https://scontent-phl2-1.xx.fbcdn.net/v/t39.35426-6/856753328_3088490938167363_4882779250008213530_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=i0p7DecL7igQ7kNvwE5rGdp&_nc_oc=Adr5Py4JgeExLaGL3zd5pHkGkmY5YaU9-X9z8NEweXV7SDwm_gTPTVxDVGnTsCYEPig&_nc_zt=14&_nc_ht=scontent-phl2-1.xx&_nc_gid=wzsbixDm_eJJKyQAwSV9kw&_nc_ss=70289&oh=00_AQSUwqMYNPvhgnGIKv3wyzBlis_JtHDctkvYyMaOBAXunw&oe=6AF7E1C6",
+          "https://scontent-phl2-1.xx.fbcdn.net/v/t39.35426-6/857681203_1058673727202275_1091412576712822894_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=vySjRAkEYDUQ7kNvwFmhB0z&_nc_oc=AdpKWOJEwptykoZMjBkcyB1Zd6mvFfBoVLkBYEzacbsPUdZ7rnfz11agD-XcqeqIzJs&_nc_zt=14&_nc_ht=scontent-phl2-1.xx&_nc_gid=wzsbixDm_eJJKyQAwSV9kw&_nc_ss=70289&oh=00_AQTxwA8UXDhAYhL1kC58ysTMjgw8ENaQYVbCkJD45jYRqA&oe=6AF7D1B8"
+        ],
+        "impressions": null,
+        "is_active": true,
+        "link_caption": "kfc.com.my/",
+        "link_url": "https://kfc.com.my/?utm_source=fbpaid&utm_medium=ppla&utm_campaign=lto-w8_romano-burger-fbpaid-ppla-reach-cpm&utm_content=na-intr-mass-ppla-img-romano-burger-cn-epl-contest-with-food-config-shout-out",
+        "page_id": "82034284246",
+        "page_likes": 61676377,
+        "page_name": "KFC",
+        "page_url": "https://www.facebook.com/KFCMalaysia/",
+        "paid_for_by": null,
+        "platforms": [
+          "facebook",
+          "instagram"
+        ],
+        "same_creative_ads": 11,
+        "spend": null,
+        "start_date": "2026-10-21T07:00:00Z",
+        "title": "\u770b\u7403\u8d5b\uff0c\u4eab\u6298\u6263\uff0c\u70b9\u6cbe\u9171\uff01",
+        "videos": []
+      },
+      {
+        "ad_archive_id": "3106106313060061",
+        "ad_url": "https://www.facebook.com/ads/library/?id=3106106313060061",
+        "body": "Guys, this is your chance to win 2x all-expenses-paid tickets to a live football match in England! \n\nJadi KFC Member and kasi settle your craving with any Kepci FC\u2122 X Coca-Cola Combo to join the contest.\n\nFor more information, visit: kfc.com.my/kepcifc\n\n#Kepci #KFCMembers #iykyk #ytjt",
+        "cards": [],
+        "cta": null,
+        "cta_type": null,
+        "currency": null,
+        "display_format": "multi_images",
+        "end_date": null,
+        "images": [
+          "https://scontent-phl2-1.xx.fbcdn.net/v/t39.35426-6/859832581_39422931417321464_7622890256378136563_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=pP_nL6DS2o4Q7kNvwEQz2Dv&_nc_oc=Adr6FZHZsclVXE3AUx7PzfyEZkaAEvsHmKWJmVaUy58KBHK_Yls524Jl-XNdQxvAo5k&_nc_zt=14&_nc_ht=scontent-phl2-1.xx&_nc_gid=wzsbixDm_eJJKyQAwSV9kw&_nc_ss=70289&oh=00_AQQGm4kk-h1pYMDd-GbNDxmgLM6kXWXqB-KqZspLJNj3dA&oe=6AF7D023",
+          "https://scontent-phl2-1.xx.fbcdn.net/v/t39.35426-6/861831547_1126437896916395_3150114430482818858_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=RmoFcee9hHgQ7kNvwGOymiA&_nc_oc=Ado6ekJ4YStkFc6g_4m1-GZzZEsRAu7DnDtGjC8cbV5fgwcbbLmUHgJWE1sdvQdtR64&_nc_zt=14&_nc_ht=scontent-phl2-1.xx&_nc_gid=wzsbixDm_eJJKyQAwSV9kw&_nc_ss=70289&oh=00_AQSULsnJL2IqtLCf3T6DO5A2wNfMKmNgKFjMTBhbSyRWxg&oe=6AF7B2B8"
+        ],
+        "impressions": null,
+        "is_active": true,
+        "link_caption": null,
+        "link_url": null,
+        "page_id": "82034284246",
+        "page_likes": 61676377,
+        "page_name": "KFC",
+        "page_url": "https://www.facebook.com/KFCMalaysia/",
+        "paid_for_by": null,
+        "platforms": [
+          "facebook",
+          "instagram"
+        ],
+        "same_creative_ads": 1,
+        "spend": null,
+        "start_date": "2026-10-22T07:00:00Z",
+        "title": null,
+        "videos": []
+      },
+      {
+        "ad_archive_id": "1472326784949197",
+        "ad_url": "https://www.facebook.com/ads/library/?id=1472326784949197",
+        "body": "Football season is HERE. Korang nak watch Bola LIVE in England? Now\u2019s your chance to win an experience of a lifetime!",
+        "cards": [],
+        "cta": "Learn more",
+        "cta_type": "LEARN_MORE",
+        "currency": null,
+        "display_format": "image",
+        "end_date": null,
+        "images": [
+          "https://scontent-phl2-1.xx.fbcdn.net/v/t39.35426-6/857666346_1812198593129043_8279791684844868315_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=dx-73h_hn7gQ7kNvwFIjGQO&_nc_oc=AdpqS2A7qNIV57hoOLSdgNqE7OR871tRJR8ZPrE-gLvQeDgYLTTituEauszX87nLtoY&_nc_zt=14&_nc_ht=scontent-phl2-1.xx&_nc_gid=wzsbixDm_eJJKyQAwSV9kw&_nc_ss=70289&oh=00_AQTKrxKv3EG1kmS7mx17lpNO6Uzr5WKd1sDDw6DHYlMPYg&oe=6AF7B601"
+        ],
+        "impressions": null,
+        "is_active": true,
+        "link_caption": "kfc.com.my",
+        "link_url": "https://kfc.com.my/kepcifc?type=web?utm_source=fbpaid&utm_medium=ppla&utm_campaign=lto-w8_romano-burger-fbpaid-ppla-reach-cpm&utm_content=na-intr-mass-ppla-img-romano-burger-mix-epl-contest-with-food-config-shout-out",
+        "page_id": "82034284246",
+        "page_likes": 61676377,
+        "page_name": "KFC",
+        "page_url": "https://www.facebook.com/KFCMalaysia/",
+        "paid_for_by": null,
+        "platforms": [
+          "facebook",
+          "instagram"
+        ],
+        "same_creative_ads": 3,
+        "spend": null,
+        "start_date": "2026-10-20T07:00:00Z",
+        "title": "Makan, Minum, Menang!",
+        "videos": []
+      },
+      {
+        "ad_archive_id": "2475015616356407",
+        "ad_url": "https://www.facebook.com/ads/library/?id=2475015616356407",
+        "body": "Dah try sos KFC? Ada yang familiar, ada Sos Seoul Pedas yang baharu! Konfem puaskan citarasa korang!",
+        "cards": [],
+        "cta": "See details",
+        "cta_type": "SEE_DETAILS",
+        "currency": null,
+        "display_format": "image",
+        "end_date": null,
+        "images": [
+          "https://scontent-phl2-1.xx.fbcdn.net/v/t39.35426-6/868404920_1376789567862864_1952440528099146699_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=rg0697rferAQ7kNvwFLJVRv&_nc_oc=Adr7N3Jc_Nb4JT2h44KTIaPNFtTSubgUO6Hm6nWLksJEuQhvC02hb-LTAuOYyh0s0XY&_nc_zt=14&_nc_ht=scontent-phl2-1.xx&_nc_gid=wzsbixDm_eJJKyQAwSV9kw&_nc_ss=70289&oh=00_AQQpyTgvTFEECJP0i8RLAdgPgA47HR_LTPHWv05AwuAi_A&oe=6AF7C262"
+        ],
+        "impressions": null,
+        "is_active": true,
+        "link_caption": "kfc.com.my",
+        "link_url": "https://kfc.com.my/?utm_source=fbpaid&utm_medium=ppla&utm_campaign=lto-w8-elevate-2-fbpaid-ppla-reach-cpm&utm_content=na-intr-mass-ppla-img-w8-elevate-2-mix-kfc-sauces",
+        "page_id": "82034284246",
+        "page_likes": 61676377,
+        "page_name": "KFC",
+        "page_url": "https://www.facebook.com/KFCMalaysia/",
+        "paid_for_by": null,
+        "platforms": [
+          "facebook",
+          "instagram"
+        ],
+        "same_creative_ads": 1,
+        "spend": null,
+        "start_date": "2026-10-30T07:00:00Z",
+        "title": "Fuhhh, Sos-sos KFC Lain Macam!",
+        "videos": []
+      },
+      {
+        "ad_archive_id": "1486092693340045",
+        "ad_url": "https://www.facebook.com/ads/library/?id=1486092693340045",
+        "body": "Member KFC, jom order KFC Delivery untuk diskaun hingga RM15. Jangan lepaskan promo best ini di KFC App.",
+        "cards": [
+          {
+            "body": "Member KFC, jom order KFC Delivery untuk diskaun hingga RM15. Jangan lepaskan promo best ini di KFC App.",
+            "cta": "Install Now",
+            "image": "https://scontent-phl2-1.xx.fbcdn.net/v/t39.35426-6/848455552_1097417229959041_4116287830351430611_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=E8Oc4SZCtKMQ7kNvwGPs02k&_nc_oc=AdqjQ5PLwTVIgmDt81fszLULlOIOjURvwDNGBZnBQO50TstrXJKAXpIj5OzFwe3gdk8&_nc_zt=14&_nc_ht=scontent-phl2-1.xx&_nc_gid=wzsbixDm_eJJKyQAwSV9kw&_nc_ss=70289&oh=00_AQSoHx_NfM5mwPwRJmWfY50sep3e0p7OsCfQ_YmZyPkH6Q&oe=6AF7C121",
+            "link_url": "http://play.google.com/store/apps/details?id=com.kfc.malaysia",
+            "title": "Diskaun KFC hingga RM15!",
+            "video": null
+          },
+          {
+            "body": "Member KFC, jom order KFC Delivery untuk diskaun hingga RM15. Jangan lepaskan promo best ini di KFC App.",
+            "cta": "Install Now",
+            "image": "https://scontent-phl2-1.xx.fbcdn.net/v/t39.35426-6/849350516_1100704862569096_7458387265653052839_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=FdsEb4DEXWoQ7kNvwGBowAh&_nc_oc=AdrC9OC2GVJRp8q7bEpA4Hyggd5D5zY7DCsLQ798kSWFdECZ89oT8eUum5ML-NLfGI4&_nc_zt=14&_nc_ht=scontent-phl2-1.xx&_nc_gid=wzsbixDm_eJJKyQAwSV9kw&_nc_ss=70289&oh=00_AQRNkYVPK9OvYZuwounMp-Vy2OvC5EogZmxxNHeinJ2GxQ&oe=6AF7DBD1",
+            "link_url": "http://play.google.com/store/apps/details?id=com.kfc.malaysia",
+            "title": "Diskaun KFC hingga RM15!",
+            "video": null
+          },
+          {
+            "body": "Member KFC, jom order KFC Delivery untuk diskaun hingga RM15. Jangan lepaskan promo best ini di KFC App.",
+            "cta": "Install Now",
+            "image": "https://scontent-phl2-1.xx.fbcdn.net/v/t39.35426-6/848733425_1642905503893537_6025955569091317877_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=-nIsvYBEWOMQ7kNvwGM3AgS&_nc_oc=AdqLD1hdzhBMowQaTQ8IQ4-aAeEaNT5jW3CW66K3dIH4W_QgGhuTtWOBBfP5a4PaZHo&_nc_zt=14&_nc_ht=scontent-phl2-1.xx&_nc_gid=wzsbixDm_eJJKyQAwSV9kw&_nc_ss=70289&oh=00_AQQxv-UNLR8Drwd6v-l-BjQi4fw0irhKky3GfKp27oMOEQ&oe=6AF7D2B9",
+            "link_url": "http://play.google.com/store/apps/details?id=com.kfc.malaysia",
+            "title": "Diskaun KFC hingga RM15!",
+            "video": null
+          }
+        ],
+        "cta": "Install now",
+        "cta_type": "INSTALL_MOBILE_APP",
+        "currency": null,
+        "display_format": "dco",
+        "end_date": null,
+        "images": [
+          "https://scontent-phl2-1.xx.fbcdn.net/v/t39.35426-6/848455552_1097417229959041_4116287830351430611_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=E8Oc4SZCtKMQ7kNvwGPs02k&_nc_oc=AdqjQ5PLwTVIgmDt81fszLULlOIOjURvwDNGBZnBQO50TstrXJKAXpIj5OzFwe3gdk8&_nc_zt=14&_nc_ht=scontent-phl2-1.xx&_nc_gid=wzsbixDm_eJJKyQAwSV9kw&_nc_ss=70289&oh=00_AQSoHx_NfM5mwPwRJmWfY50sep3e0p7OsCfQ_YmZyPkH6Q&oe=6AF7C121",
+          "https://scontent-phl2-1.xx.fbcdn.net/v/t39.35426-6/849350516_1100704862569096_7458387265653052839_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=FdsEb4DEXWoQ7kNvwGBowAh&_nc_oc=AdrC9OC2GVJRp8q7bEpA4Hyggd5D5zY7DCsLQ798kSWFdECZ89oT8eUum5ML-NLfGI4&_nc_zt=14&_nc_ht=scontent-phl2-1.xx&_nc_gid=wzsbixDm_eJJKyQAwSV9kw&_nc_ss=70289&oh=00_AQRNkYVPK9OvYZuwounMp-Vy2OvC5EogZmxxNHeinJ2GxQ&oe=6AF7DBD1",
+          "https://scontent-phl2-1.xx.fbcdn.net/v/t39.35426-6/848733425_1642905503893537_6025955569091317877_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=-nIsvYBEWOMQ7kNvwGM3AgS&_nc_oc=AdqLD1hdzhBMowQaTQ8IQ4-aAeEaNT5jW3CW66K3dIH4W_QgGhuTtWOBBfP5a4PaZHo&_nc_zt=14&_nc_ht=scontent-phl2-1.xx&_nc_gid=wzsbixDm_eJJKyQAwSV9kw&_nc_ss=70289&oh=00_AQQxv-UNLR8Drwd6v-l-BjQi4fw0irhKky3GfKp27oMOEQ&oe=6AF7D2B9"
+        ],
+        "impressions": null,
+        "is_active": true,
+        "link_caption": "play.google.com",
+        "link_url": "http://play.google.com/store/apps/details?id=com.kfc.malaysia",
+        "page_id": "82034284246",
+        "page_likes": 61676377,
+        "page_name": "KFC",
+        "page_url": "https://www.facebook.com/KFCMalaysia/",
+        "paid_for_by": null,
+        "platforms": [
+          "facebook",
+          "instagram"
+        ],
+        "same_creative_ads": 6,
+        "spend": null,
+        "start_date": "2026-10-15T07:00:00Z",
+        "title": "Diskaun KFC hingga RM15!",
+        "videos": []
+      },
+      {
+        "ad_archive_id": "2640315766397943",
+        "ad_url": "https://www.facebook.com/ads/library/?id=2640315766397943",
+        "body": "Member KFC, jom order KFC Delivery untuk diskaun hingga RM15. Jangan lepaskan promo best ini di KFC App.",
+        "cards": [
+          {
+            "body": "Member KFC, jom order KFC Delivery untuk diskaun hingga RM15. Jangan lepaskan promo best ini di KFC App.",
+            "cta": "Install Now",
+            "image": "https://scontent-phl2-1.xx.fbcdn.net/v/t39.35426-6/849854747_1067795839632455_4261632826336817279_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=MlM9dhbr5ucQ7kNvwHJG8vt&_nc_oc=AdqQq0ennEjvMcwCRQCvFYjUXpAJf4OqHIZD7a2TU71dUi2HwqAtaDCTTnqWUWGlbDg&_nc_zt=14&_nc_ht=scontent-phl2-1.xx&_nc_gid=wzsbixDm_eJJKyQAwSV9kw&_nc_ss=70289&oh=00_AQTzqlcZYq_cQcnwcQ_cT3d3mWetzXqGroNrSssvjzWvGQ&oe=6AF7DB0A",
+            "link_url": "http://play.google.com/store/apps/details?id=com.kfc.malaysia",
+            "title": "Diskaun KFC hingga RM15!",
+            "video": null
+          },
+          {
+            "body": "Member KFC, jom order KFC Delivery untuk diskaun hingga RM15. Jangan lepaskan promo best ini di KFC App.",
+            "cta": "Install Now",
+            "image": "https://scontent-phl2-1.xx.fbcdn.net/v/t39.35426-6/850245572_1800334044450702_4146610136986476896_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=cl7UwdZhVqAQ7kNvwHE_7Qu&_nc_oc=AdopOYZp4ShJsvJp0TufUouHhYZnTu5pHn7M23i-2tuGgxOK6rDfFoJJ1k2DSw08DX4&_nc_zt=14&_nc_ht=scontent-phl2-1.xx&_nc_gid=wzsbixDm_eJJKyQAwSV9kw&_nc_ss=70289&oh=00_AQSWhUfpSuC2IumelVucL8_nFKjaCpOQePQzglGK3YOFFw&oe=6AF7BC71",
+            "link_url": "http://play.google.com/store/apps/details?id=com.kfc.malaysia",
+            "title": "Diskaun KFC hingga RM15!",
+            "video": null
+          },
+          {
+            "body": "Member KFC, jom order KFC Delivery untuk diskaun hingga RM15. Jangan lepaskan promo best ini di KFC App.",
+            "cta": "Install Now",
+            "image": "https://scontent-phl2-1.xx.fbcdn.net/v/t39.35426-6/851061030_2315415762566906_8807056804469148322_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=OtAatsaCw_0Q7kNvwFN65I4&_nc_oc=AdpWb0dJ0tYKPY806hhPuaqUxV-GCDMNFkYMxvgHozGzRfumjKC3sKfF8rg8xuv9O9s&_nc_zt=14&_nc_ht=scontent-phl2-1.xx&_nc_gid=wzsbixDm_eJJKyQAwSV9kw&_nc_ss=70289&oh=00_AQT6lzfG9tMF0eVXuAkarmetCsH_Id1DklxyMZK97-uB3A&oe=6AF7C55C",
+            "link_url": "http://play.google.com/store/apps/details?id=com.kfc.malaysia",
+            "title": "Diskaun KFC hingga RM15!",
+            "video": null
+          }
+        ],
+        "cta": "Install now",
+        "cta_type": "INSTALL_MOBILE_APP",
+        "currency": null,
+        "display_format": "dco",
+        "end_date": null,
+        "images": [
+          "https://scontent-phl2-1.xx.fbcdn.net/v/t39.35426-6/849854747_1067795839632455_4261632826336817279_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=MlM9dhbr5ucQ7kNvwHJG8vt&_nc_oc=AdqQq0ennEjvMcwCRQCvFYjUXpAJf4OqHIZD7a2TU71dUi2HwqAtaDCTTnqWUWGlbDg&_nc_zt=14&_nc_ht=scontent-phl2-1.xx&_nc_gid=wzsbixDm_eJJKyQAwSV9kw&_nc_ss=70289&oh=00_AQTzqlcZYq_cQcnwcQ_cT3d3mWetzXqGroNrSssvjzWvGQ&oe=6AF7DB0A",
+          "https://scontent-phl2-1.xx.fbcdn.net/v/t39.35426-6/850245572_1800334044450702_4146610136986476896_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=cl7UwdZhVqAQ7kNvwHE_7Qu&_nc_oc=AdopOYZp4ShJsvJp0TufUouHhYZnTu5pHn7M23i-2tuGgxOK6rDfFoJJ1k2DSw08DX4&_nc_zt=14&_nc_ht=scontent-phl2-1.xx&_nc_gid=wzsbixDm_eJJKyQAwSV9kw&_nc_ss=70289&oh=00_AQSWhUfpSuC2IumelVucL8_nFKjaCpOQePQzglGK3YOFFw&oe=6AF7BC71",
+          "https://scontent-phl2-1.xx.fbcdn.net/v/t39.35426-6/851061030_2315415762566906_8807056804469148322_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=OtAatsaCw_0Q7kNvwFN65I4&_nc_oc=AdpWb0dJ0tYKPY806hhPuaqUxV-GCDMNFkYMxvgHozGzRfumjKC3sKfF8rg8xuv9O9s&_nc_zt=14&_nc_ht=scontent-phl2-1.xx&_nc_gid=wzsbixDm_eJJKyQAwSV9kw&_nc_ss=70289&oh=00_AQT6lzfG9tMF0eVXuAkarmetCsH_Id1DklxyMZK97-uB3A&oe=6AF7C55C"
+        ],
+        "impressions": null,
+        "is_active": true,
+        "link_caption": "play.google.com",
+        "link_url": "http://play.google.com/store/apps/details?id=com.kfc.malaysia",
+        "page_id": "82034284246",
+        "page_likes": 61676377,
+        "page_name": "KFC",
+        "page_url": "https://www.facebook.com/KFCMalaysia/",
+        "paid_for_by": null,
+        "platforms": [
+          "facebook",
+          "instagram"
+        ],
+        "same_creative_ads": null,
+        "spend": null,
+        "start_date": "2026-10-15T07:00:00Z",
+        "title": "Diskaun KFC hingga RM15!",
+        "videos": []
+      },
+      {
+        "ad_archive_id": "1420335532899092",
+        "ad_url": "https://www.facebook.com/ads/library/?id=1420335532899092",
+        "body": "Member KFC, jom order KFC Delivery untuk diskaun hingga RM15. Jangan lepaskan promo best ini di KFC App.",
+        "cards": [
+          {
+            "body": "Member KFC, jom order KFC Delivery untuk diskaun hingga RM15. Jangan lepaskan promo best ini di KFC App.",
+            "cta": "Install Now",
+            "image": "https://scontent-phl2-1.xx.fbcdn.net/v/t39.35426-6/850584322_4467478716837712_615759413743271685_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=wQ1-8s6_uiMQ7kNvwEoEURR&_nc_oc=AdrO4k2bUgPoheYWJbLhjWq8V5aohyyUisL5lpaQx9r-u5JxTgPqQqpI2PkS8jGlP8A&_nc_zt=14&_nc_ht=scontent-phl2-1.xx&_nc_gid=wzsbixDm_eJJKyQAwSV9kw&_nc_ss=70289&oh=00_AQSlSr9REdrLAr2DwcJNGsXcDCEM7puNDvGcaZHXLVohcA&oe=6AF7C850",
+            "link_url": "http://play.google.com/store/apps/details?id=com.kfc.malaysia",
+            "title": "Diskaun KFC hingga RM15!",
+            "video": null
+          },
+          {
+            "body": "Member KFC, jom order KFC Delivery untuk diskaun hingga RM15. Jangan lepaskan promo best ini di KFC App.",
+            "cta": "Install Now",
+            "image": "https://scontent-phl2-1.xx.fbcdn.net/v/t39.35426-6/848498198_1703486094814778_8694097702317613594_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=c2HcW9d9-KYQ7kNvwGS9doC&_nc_oc=AdpSJLgz7tmQ5OA96I1do4MOqn9FxfvBNsfmsjLuHFNtOaQM5ome1i35Pnx9PUeyIdI&_nc_zt=14&_nc_ht=scontent-phl2-1.xx&_nc_gid=wzsbixDm_eJJKyQAwSV9kw&_nc_ss=70289&oh=00_AQSIQyH1YA793ZPZ7Z-WwGTkNgDDNvUHeTtk_7nmhfTlAg&oe=6AF7E2C6",
+            "link_url": "http://play.google.com/store/apps/details?id=com.kfc.malaysia",
+            "title": "Diskaun KFC hingga RM15!",
+            "video": null
+          },
+          {
+            "body": "Member KFC, jom order KFC Delivery untuk diskaun hingga RM15. Jangan lepaskan promo best ini di KFC App.",
+            "cta": "Install Now",
+            "image": "https://scontent-phl2-1.xx.fbcdn.net/v/t39.35426-6/849272337_1596549055001266_7018884780408925211_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=hQ_14XgmqtgQ7kNvwFUkpFo&_nc_oc=Adpr0nm7v58PmXlbOHR-WPaB7n9g6dg84BphZnGlkPj4C60W1uRzNjXTPouHgDrhCN0&_nc_zt=14&_nc_ht=scontent-phl2-1.xx&_nc_gid=wzsbixDm_eJJKyQAwSV9kw&_nc_ss=70289&oh=00_AQQLBr-wN3EPnPqJhz33wFRxY_ABLDS45Fbmdjs_0jz9wg&oe=6AF7CA8C",
+            "link_url": "http://play.google.com/store/apps/details?id=com.kfc.malaysia",
+            "title": "Diskaun KFC hingga RM15!",
+            "video": null
+          }
+        ],
+        "cta": "Install now",
+        "cta_type": "INSTALL_MOBILE_APP",
+        "currency": null,
+        "display_format": "dco",
+        "end_date": null,
+        "images": [
+          "https://scontent-phl2-1.xx.fbcdn.net/v/t39.35426-6/850584322_4467478716837712_615759413743271685_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=wQ1-8s6_uiMQ7kNvwEoEURR&_nc_oc=AdrO4k2bUgPoheYWJbLhjWq8V5aohyyUisL5lpaQx9r-u5JxTgPqQqpI2PkS8jGlP8A&_nc_zt=14&_nc_ht=scontent-phl2-1.xx&_nc_gid=wzsbixDm_eJJKyQAwSV9kw&_nc_ss=70289&oh=00_AQSlSr9REdrLAr2DwcJNGsXcDCEM7puNDvGcaZHXLVohcA&oe=6AF7C850",
+          "https://scontent-phl2-1.xx.fbcdn.net/v/t39.35426-6/848498198_1703486094814778_8694097702317613594_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=c2HcW9d9-KYQ7kNvwGS9doC&_nc_oc=AdpSJLgz7tmQ5OA96I1do4MOqn9FxfvBNsfmsjLuHFNtOaQM5ome1i35Pnx9PUeyIdI&_nc_zt=14&_nc_ht=scontent-phl2-1.xx&_nc_gid=wzsbixDm_eJJKyQAwSV9kw&_nc_ss=70289&oh=00_AQSIQyH1YA793ZPZ7Z-WwGTkNgDDNvUHeTtk_7nmhfTlAg&oe=6AF7E2C6",
+          "https://scontent-phl2-1.xx.fbcdn.net/v/t39.35426-6/849272337_1596549055001266_7018884780408925211_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=hQ_14XgmqtgQ7kNvwFUkpFo&_nc_oc=Adpr0nm7v58PmXlbOHR-WPaB7n9g6dg84BphZnGlkPj4C60W1uRzNjXTPouHgDrhCN0&_nc_zt=14&_nc_ht=scontent-phl2-1.xx&_nc_gid=wzsbixDm_eJJKyQAwSV9kw&_nc_ss=70289&oh=00_AQQLBr-wN3EPnPqJhz33wFRxY_ABLDS45Fbmdjs_0jz9wg&oe=6AF7CA8C"
+        ],
+        "impressions": null,
+        "is_active": true,
+        "link_caption": "play.google.com",
+        "link_url": "http://play.google.com/store/apps/details?id=com.kfc.malaysia",
+        "page_id": "82034284246",
+        "page_likes": 61676377,
+        "page_name": "KFC",
+        "page_url": "https://www.facebook.com/KFCMalaysia/",
+        "paid_for_by": null,
+        "platforms": [
+          "facebook",
+          "instagram"
+        ],
+        "same_creative_ads": null,
+        "spend": null,
+        "start_date": "2026-10-15T07:00:00Z",
+        "title": "Diskaun KFC hingga RM15!",
+        "videos": []
+      },
+      {
+        "ad_archive_id": "1736615655007047",
+        "ad_url": "https://www.facebook.com/ads/library/?id=1736615655007047",
+        "body": "KFC Members, jom order KFC Delivery! Ada up to RM15 OFF on your whole cart! Don't miss this deal on the KFC App!",
+        "cards": [
+          {
+            "body": "KFC Members, jom order KFC Delivery! Ada up to RM15 OFF on your whole cart! Don't miss this deal on the KFC App!",
+            "cta": "Order Now",
+            "image": "https://scontent-phl2-1.xx.fbcdn.net/v/t39.35426-6/845685959_1632853084380025_5501380113251322860_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=qxwvBzseF0UQ7kNvwG5DtPv&_nc_oc=AdoNs0T1Eb0yLqm-F-GuEkzpX6HzgZVVq9BQktqof0FYHYf5EYe8N-pqS4gK7SM41-0&_nc_zt=14&_nc_ht=scontent-phl2-1.xx&_nc_gid=wzsbixDm_eJJKyQAwSV9kw&_nc_ss=70289&oh=00_AQQdrlSuPBnv5CZx5H54BYlmtp7u5CG8VKeq6e4Bm2Ww9Q&oe=6AF7DEC8",
+            "link_url": "https://kfc.com.my/?utm_source=fbpaid&utm_medium=ppla&utm_campaign=kfcd-kfc-cartwide-october-fbpaid-ppla-reach-cpm&utm_content=na-intr-mass-high-ppla-img-kfc-cartwide-october-en-cartwide-oct",
+            "title": "Up to RM15 OFF entire cart!",
+            "video": null
+          },
+          {
+            "body": "KFC Members, jom order KFC Delivery! Ada up to RM15 OFF on your whole cart! Don't miss this deal on the KFC App!",
+            "cta": "Order Now",
+            "image": "https://scontent-phl2-1.xx.fbcdn.net/v/t39.35426-6/848936105_1787500042580297_4272541333384448630_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=8EceQzglylIQ7kNvwEnJgwT&_nc_oc=Adp-vP829ttLef9ipmAC-X4eUMX3Xxi0jcNjf11Fw06Z5bFzBJQzmPPd8S31E4e-EbY&_nc_zt=14&_nc_ht=scontent-phl2-1.xx&_nc_gid=wzsbixDm_eJJKyQAwSV9kw&_nc_ss=70289&oh=00_AQQZzxPce9ghKLZbXkQ1l83OqS2PZIcDrWskgHXmUdn7iQ&oe=6AF7C1FC",
+            "link_url": "https://kfc.com.my/?utm_source=fbpaid&utm_medium=ppla&utm_campaign=kfcd-kfc-cartwide-october-fbpaid-ppla-reach-cpm&utm_content=na-intr-mass-high-ppla-img-kfc-cartwide-october-en-cartwide-oct",
+            "title": "Up to RM15 OFF entire cart!",
+            "video": null
+          },
+          {
+            "body": "KFC Members, jom order KFC Delivery! Ada up to RM15 OFF on your whole cart! Don't miss this deal on the KFC App!",
+            "cta": "Order Now",
+            "image": "https://scontent-phl2-1.xx.fbcdn.net/v/t39.35426-6/846379406_2869084950112801_846587137603355879_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=6gbttqeMVeQQ7kNvwFC7VkR&_nc_oc=AdpD4py3AdpMJRi2i6pouyrve28ct4bwlcllSidUXaG9glQbA9k7vGDWevSd5dKC5ng&_nc_zt=14&_nc_ht=scontent-phl2-1.xx&_nc_gid=wzsbixDm_eJJKyQAwSV9kw&_nc_ss=70289&oh=00_AQTdd9VLBhu6hatFX2P1--Cx1roUBMVY0EXMn1bf2PF_dw&oe=6AF7CB4B",
+            "link_url": "https://kfc.com.my/?utm_source=fbpaid&utm_medium=ppla&utm_campaign=kfcd-kfc-cartwide-october-fbpaid-ppla-reach-cpm&utm_content=na-intr-mass-high-ppla-img-kfc-cartwide-october-en-cartwide-oct",
+            "title": "Up to RM15 OFF entire cart!",
+            "video": null
+          }
+        ],
+        "cta": "Order now",
+        "cta_type": "ORDER_NOW",
+        "currency": null,
+        "display_format": "dco",
+        "end_date": null,
+        "images": [
+          "https://scontent-phl2-1.xx.fbcdn.net/v/t39.35426-6/845685959_1632853084380025_5501380113251322860_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=qxwvBzseF0UQ7kNvwG5DtPv&_nc_oc=AdoNs0T1Eb0yLqm-F-GuEkzpX6HzgZVVq9BQktqof0FYHYf5EYe8N-pqS4gK7SM41-0&_nc_zt=14&_nc_ht=scontent-phl2-1.xx&_nc_gid=wzsbixDm_eJJKyQAwSV9kw&_nc_ss=70289&oh=00_AQQdrlSuPBnv5CZx5H54BYlmtp7u5CG8VKeq6e4Bm2Ww9Q&oe=6AF7DEC8",
+          "https://scontent-phl2-1.xx.fbcdn.net/v/t39.35426-6/848936105_1787500042580297_4272541333384448630_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=8EceQzglylIQ7kNvwEnJgwT&_nc_oc=Adp-vP829ttLef9ipmAC-X4eUMX3Xxi0jcNjf11Fw06Z5bFzBJQzmPPd8S31E4e-EbY&_nc_zt=14&_nc_ht=scontent-phl2-1.xx&_nc_gid=wzsbixDm_eJJKyQAwSV9kw&_nc_ss=70289&oh=00_AQQZzxPce9ghKLZbXkQ1l83OqS2PZIcDrWskgHXmUdn7iQ&oe=6AF7C1FC",
+          "https://scontent-phl2-1.xx.fbcdn.net/v/t39.35426-6/846379406_2869084950112801_846587137603355879_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=6gbttqeMVeQQ7kNvwFC7VkR&_nc_oc=AdpD4py3AdpMJRi2i6pouyrve28ct4bwlcllSidUXaG9glQbA9k7vGDWevSd5dKC5ng&_nc_zt=14&_nc_ht=scontent-phl2-1.xx&_nc_gid=wzsbixDm_eJJKyQAwSV9kw&_nc_ss=70289&oh=00_AQTdd9VLBhu6hatFX2P1--Cx1roUBMVY0EXMn1bf2PF_dw&oe=6AF7CB4B"
+        ],
+        "impressions": null,
+        "is_active": true,
+        "link_caption": "kfc.com.my",
+        "link_url": "https://kfc.com.my/?utm_source=fbpaid&utm_medium=ppla&utm_campaign=kfcd-kfc-cartwide-october-fbpaid-ppla-reach-cpm&utm_content=na-intr-mass-high-ppla-img-kfc-cartwide-october-en-cartwide-oct",
+        "page_id": "82034284246",
+        "page_likes": 61676377,
+        "page_name": "KFC",
+        "page_url": "https://www.facebook.com/KFCMalaysia/",
+        "paid_for_by": null,
+        "platforms": [
+          "facebook",
+          "instagram"
+        ],
+        "same_creative_ads": 10,
+        "spend": null,
+        "start_date": "2026-10-15T07:00:00Z",
+        "title": "Up to RM15 OFF entire cart!",
+        "videos": []
+      },
+      {
+        "ad_archive_id": "872306535943828",
+        "ad_url": "https://www.facebook.com/ads/library/?id=872306535943828",
+        "body": "Istimewa 11.11: B1F1 untuk 2 kombo KFC! 3 hari sahaja dari 11-13 Nov 2026! Tersedia melalui KFC Delivery di KFC App.",
+        "cards": [
+          {
+            "body": "Istimewa 11.11: B1F1 untuk 2 kombo KFC! 3 hari sahaja dari 11-13 Nov 2026! Tersedia melalui KFC Delivery di KFC App.",
+            "cta": "Learn More",
+            "image": "https://scontent-phl2-1.xx.fbcdn.net/v/t39.35426-6/853710678_2223626541901408_1347172466942307865_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=L6VYNk7hP1gQ7kNvwHoS2rx&_nc_oc=Adq9IHReuyvR8zqpXSqjuDUZfrW93e6rWbpPdJAzsQTZdih0uf0mV7yMwdmux5FHgKc&_nc_zt=14&_nc_ht=scontent-phl2-1.xx&_nc_gid=wzsbixDm_eJJKyQAwSV9kw&_nc_ss=70289&oh=00_AQQ2xs1Yf8RxLmeboqiF_NDCjBy133XDBxa7AMdvZqNsbg&oe=6AF7B0FB",
+            "link_url": "https://kfc.com.my/kfcday?type=web?utm_source=fbpaid&utm_medium=ppla&utm_campaign=kfcd-kfc-day-november-fbpaid-ppla-reach-cpm&utm_content=na-mass-mass-ppla-img-kfc-day-november-bm-kfc-day-teaser",
+            "title": "Tawaran syok 11.11 KFC!",
+            "video": null
+          },
+          {
+            "body": "Istimewa 11.11: B1F1 untuk 2 kombo KFC! 3 hari sahaja dari 11-13 Nov 2026! Tersedia melalui KFC Delivery di KFC App.",
+            "cta": "Learn More",
+            "image": "https://scontent-phl2-1.xx.fbcdn.net/v/t39.35426-6/853711487_2472867220186785_15892426603988628_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=PEF_WnIexKoQ7kNvwFdzs6I&_nc_oc=Adq_RCXk9rEjLloeK59F5NjC5PuTELWLaosFG7Xms4dBt9-kq3PrFiLPeUO8xN4ZoFk&_nc_zt=14&_nc_ht=scontent-phl2-1.xx&_nc_gid=wzsbixDm_eJJKyQAwSV9kw&_nc_ss=70289&oh=00_AQR5pJyf2PLbScCDPbCmFbILrvCpgT2houE8aEh94qA8ww&oe=6AF7D71D",
+            "link_url": "https://kfc.com.my/kfcday?type=web?utm_source=fbpaid&utm_medium=ppla&utm_campaign=kfcd-kfc-day-november-fbpaid-ppla-reach-cpm&utm_content=na-mass-mass-ppla-img-kfc-day-november-bm-kfc-day-teaser",
+            "title": "Tawaran syok 11.11 KFC!",
+            "video": null
+          },
+          {
+            "body": "Istimewa 11.11: B1F1 untuk 2 kombo KFC! 3 hari sahaja dari 11-13 Nov 2026! Tersedia melalui KFC Delivery di KFC App.",
+            "cta": "Learn More",
+            "image": "https://scontent-phl2-1.xx.fbcdn.net/v/t39.35426-6/853711462_2318575415572424_6947638038360476401_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=Qv9klItKkrMQ7kNvwFhZ3GH&_nc_oc=Adrkf8Y3gR9SYAlNVBCFNWH6V_zSQxux9gXV5Nnz1IQeBLqSr_N1acXVTnAN7wEdyi0&_nc_zt=14&_nc_ht=scontent-phl2-1.xx&_nc_gid=wzsbixDm_eJJKyQAwSV9kw&_nc_ss=70289&oh=00_AQSeERV9-djHmUH7Yn5VhzF7L_YlFiIMKSRd9NZ3Igst_g&oe=6AF7CE02",
+            "link_url": "https://kfc.com.my/kfcday?type=web?utm_source=fbpaid&utm_medium=ppla&utm_campaign=kfcd-kfc-day-november-fbpaid-ppla-reach-cpm&utm_content=na-mass-mass-ppla-img-kfc-day-november-bm-kfc-day-teaser",
+            "title": "Tawaran syok 11.11 KFC!",
+            "video": null
+          }
+        ],
+        "cta": "Learn more",
+        "cta_type": "LEARN_MORE",
+        "currency": null,
+        "display_format": "dco",
+        "end_date": null,
+        "images": [
+          "https://scontent-phl2-1.xx.fbcdn.net/v/t39.35426-6/853710678_2223626541901408_1347172466942307865_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=L6VYNk7hP1gQ7kNvwHoS2rx&_nc_oc=Adq9IHReuyvR8zqpXSqjuDUZfrW93e6rWbpPdJAzsQTZdih0uf0mV7yMwdmux5FHgKc&_nc_zt=14&_nc_ht=scontent-phl2-1.xx&_nc_gid=wzsbixDm_eJJKyQAwSV9kw&_nc_ss=70289&oh=00_AQQ2xs1Yf8RxLmeboqiF_NDCjBy133XDBxa7AMdvZqNsbg&oe=6AF7B0FB",
+          "https://scontent-phl2-1.xx.fbcdn.net/v/t39.35426-6/853711487_2472867220186785_15892426603988628_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=PEF_WnIexKoQ7kNvwFdzs6I&_nc_oc=Adq_RCXk9rEjLloeK59F5NjC5PuTELWLaosFG7Xms4dBt9-kq3PrFiLPeUO8xN4ZoFk&_nc_zt=14&_nc_ht=scontent-phl2-1.xx&_nc_gid=wzsbixDm_eJJKyQAwSV9kw&_nc_ss=70289&oh=00_AQR5pJyf2PLbScCDPbCmFbILrvCpgT2houE8aEh94qA8ww&oe=6AF7D71D",
+          "https://scontent-phl2-1.xx.fbcdn.net/v/t39.35426-6/853711462_2318575415572424_6947638038360476401_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=Qv9klItKkrMQ7kNvwFhZ3GH&_nc_oc=Adrkf8Y3gR9SYAlNVBCFNWH6V_zSQxux9gXV5Nnz1IQeBLqSr_N1acXVTnAN7wEdyi0&_nc_zt=14&_nc_ht=scontent-phl2-1.xx&_nc_gid=wzsbixDm_eJJKyQAwSV9kw&_nc_ss=70289&oh=00_AQSeERV9-djHmUH7Yn5VhzF7L_YlFiIMKSRd9NZ3Igst_g&oe=6AF7CE02"
+        ],
+        "impressions": null,
+        "is_active": true,
+        "link_caption": "kfc.com.my",
+        "link_url": "https://kfc.com.my/kfcday?type=web?utm_source=fbpaid&utm_medium=ppla&utm_campaign=kfcd-kfc-day-november-fbpaid-ppla-reach-cpm&utm_content=na-mass-mass-ppla-img-kfc-day-november-bm-kfc-day-teaser",
+        "page_id": "82034284246",
+        "page_likes": 61676377,
+        "page_name": "KFC",
+        "page_url": "https://www.facebook.com/KFCMalaysia/",
+        "paid_for_by": null,
+        "platforms": [
+          "facebook",
+          "instagram"
+        ],
+        "same_creative_ads": null,
+        "spend": null,
+        "start_date": "2026-11-07T08:00:00Z",
+        "title": "Tawaran syok 11.11 KFC!",
+        "videos": []
+      },
+      {
+        "ad_archive_id": "28621459257506563",
+        "ad_url": "https://www.facebook.com/ads/library/?id=28621459257506563",
+        "body": "\u6700\u591f\u5473\uff0c\u6700\u8d85\u503c\uff01Bucket Berbaloi 6\u5757 KFC \u70b8\u9e21\u3001Cheezy Wedges\u300114oz \u9a6c\u94c3\u85af\u6ce5\uff0c\u518d\u52a02\u676f\u996e\u6599\uff0c\u53ea\u9700 RM42.99 \u8d77\uff01",
+        "cards": [
+          {
+            "body": "\u6700\u591f\u5473\uff0c\u6700\u8d85\u503c\uff01Bucket Berbaloi 6\u5757 KFC \u70b8\u9e21\u3001Cheezy Wedges\u300114oz \u9a6c\u94c3\u85af\u6ce5\uff0c\u518d\u52a02\u676f\u996e\u6599\uff0c\u53ea\u9700 RM42.99 \u8d77\uff01",
+            "cta": "Order Now",
+            "image": "https://scontent-phl2-1.xx.fbcdn.net/v/t39.35426-6/830117381_1415597457191550_7465915118363993386_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=t_PIWuECIkEQ7kNvwH4KA3k&_nc_oc=AdpZiMiyNqNl8SFGaBh7zaS7PT9p6dEs99ytOm9VwSILTzLt9vUuMI8DwK8_4rNAiMg&_nc_zt=14&_nc_ht=scontent-phl2-1.xx&_nc_gid=wzsbixDm_eJJKyQAwSV9kw&_nc_ss=70289&oh=00_AQSEI0Wla1k014C_x47UOBkcNhCCGV0nb3ocnklJlRGFyw&oe=6AF7C4C2",
+            "link_url": "https://kfc.com.my/?utm_source=fbpaid&utm_medium=ppla&utm_campaign=he-w8_bucket-berbaloi-fbpaid-ppla-reach-cpm&utm_content=na-intr-mass-fbpaid-ppla-reach-cpm-img-w8-bucket-berbaloi-cn-bucket-berbaloi",
+            "title": "Bucket Berbaloi\uff01\u8fd9\u624d\u53eb\u8d85\u503c\uff01",
+            "video": null
+          },
+          {
+            "body": "\u6700\u591f\u5473\uff0c\u6700\u8d85\u503c\uff01Bucket Berbaloi 6\u5757 KFC \u70b8\u9e21\u3001Cheezy Wedges\u300114oz \u9a6c\u94c3\u85af\u6ce5\uff0c\u518d\u52a02\u676f\u996e\u6599\uff0c\u53ea\u9700 RM42.99 \u8d77\uff01",
+            "cta": "Order Now",
+            "image": "https://scontent-phl2-1.xx.fbcdn.net/v/t39.35426-6/833313739_1854364155745864_6916075884580704934_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=23XW5RWR9HUQ7kNvwEN_5C8&_nc_oc=AdoL7-ZbA2ypxqEqMNiLAQNgmifHk31DQx5F6b3C9h7T_2LRDVqDvmfCN_OIAEtqoOc&_nc_zt=14&_nc_ht=scontent-phl2-1.xx&_nc_gid=wzsbixDm_eJJKyQAwSV9kw&_nc_ss=70289&oh=00_AQTS9Q4L-Wld4bm_R1GOJOj4Brs5vBsoBly0IyzPm5R-bA&oe=6AF7CF06",
+            "link_url": "https://kfc.com.my/?utm_source=fbpaid&utm_medium=ppla&utm_campaign=he-w8_bucket-berbaloi-fbpaid-ppla-reach-cpm&utm_content=na-intr-mass-fbpaid-ppla-reach-cpm-img-w8-bucket-berbaloi-cn-bucket-berbaloi",
+            "title": "Bucket Berbaloi\uff01\u8fd9\u624d\u53eb\u8d85\u503c\uff01",
+            "video": null
+          }
+        ],
+        "cta": "Order now",
+        "cta_type": "ORDER_NOW",
+        "currency": null,
+        "display_format": "dco",
+        "end_date": null,
+        "images": [
+          "https://scontent-phl2-1.xx.fbcdn.net/v/t39.35426-6/830117381_1415597457191550_7465915118363993386_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=t_PIWuECIkEQ7kNvwH4KA3k&_nc_oc=AdpZiMiyNqNl8SFGaBh7zaS7PT9p6dEs99ytOm9VwSILTzLt9vUuMI8DwK8_4rNAiMg&_nc_zt=14&_nc_ht=scontent-phl2-1.xx&_nc_gid=wzsbixDm_eJJKyQAwSV9kw&_nc_ss=70289&oh=00_AQSEI0Wla1k014C_x47UOBkcNhCCGV0nb3ocnklJlRGFyw&oe=6AF7C4C2",
+          "https://scontent-phl2-1.xx.fbcdn.net/v/t39.35426-6/833313739_1854364155745864_6916075884580704934_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=23XW5RWR9HUQ7kNvwEN_5C8&_nc_oc=AdoL7-ZbA2ypxqEqMNiLAQNgmifHk31DQx5F6b3C9h7T_2LRDVqDvmfCN_OIAEtqoOc&_nc_zt=14&_nc_ht=scontent-phl2-1.xx&_nc_gid=wzsbixDm_eJJKyQAwSV9kw&_nc_ss=70289&oh=00_AQTS9Q4L-Wld4bm_R1GOJOj4Brs5vBsoBly0IyzPm5R-bA&oe=6AF7CF06"
+        ],
+        "impressions": null,
+        "is_active": true,
+        "link_caption": "kfc.com.my",
+        "link_url": "https://kfc.com.my/?utm_source=fbpaid&utm_medium=ppla&utm_campaign=he-w8_bucket-berbaloi-fbpaid-ppla-reach-cpm&utm_content=na-intr-mass-fbpaid-ppla-reach-cpm-img-w8-bucket-berbaloi-cn-bucket-berbaloi",
+        "page_id": "82034284246",
+        "page_likes": 61676377,
+        "page_name": "KFC",
+        "page_url": "https://www.facebook.com/KFCMalaysia/",
+        "paid_for_by": null,
+        "platforms": [
+          "facebook",
+          "instagram"
+        ],
+        "same_creative_ads": 2,
+        "spend": null,
+        "start_date": "2026-10-03T07:00:00Z",
+        "title": "Bucket Berbaloi\uff01\u8fd9\u624d\u53eb\u8d85\u503c\uff01",
+        "videos": []
+      }
+    ],
+    "usage": {
+      "boxes": [
+        "gate",
+        "recipe"
+      ],
+      "cache": "miss",
+      "engine": "recipe",
+      "lines": [
+        {
+          "about": "the call",
+          "boxes": [
+            "gate"
+          ],
+          "cache": "miss",
+          "call": "recipes",
+          "engine": "gate",
+          "units": 1
+        },
+        {
+          "attempts": 1,
+          "cache": "api",
+          "call": "scrape",
+          "engine": "api",
+          "proxy": "isp",
+          "units": 1,
+          "url": "https://www.facebook.com/\u2026"
+        },
+        {
+          "attempts": 1,
+          "cache": "api",
+          "call": "scrape",
+          "engine": "api",
+          "proxy": "isp",
+          "units": 1,
+          "url": "https://www.facebook.com/\u2026"
+        },
+        {
+          "attempts": 1,
+          "cache": "api",
+          "call": "scrape",
+          "engine": "api",
+          "proxy": "isp",
+          "units": 1,
+          "url": "https://www.facebook.com/\u2026"
+        },
+        {
+          "attempts": 1,
+          "cache": "api",
+          "call": "scrape",
+          "engine": "api",
+          "proxy": "isp",
+          "units": 1,
+          "url": "https://www.facebook.com/\u2026"
+        },
+        {
+          "attempts": 1,
+          "cache": "api",
+          "call": "scrape",
+          "engine": "api",
+          "proxy": "isp",
+          "units": 1,
+          "url": "https://www.facebook.com/\u2026"
+        },
+        {
+          "attempts": 1,
+          "cache": "api",
+          "call": "scrape",
+          "engine": "api",
+          "proxy": "isp",
+          "units": 1,
+          "url": "https://www.facebook.com/\u2026"
+        }
+      ],
+      "remaining_before": {
+        "concurrent": 1446,
+        "requests": 1418,
+        "search": 2965
+      },
+      "units": 7
+    },
+    "version": 3
+  },
+  "_treg": {
+    "served_by": "crawl4ai.meta-ads.library.advertiser",
+    "provider": "crawl4ai",
+    "tier": "platform",
+    "outcome": "hit",
+    "tried": [
+      {
+        "endpoint_id": "crawl4ai.meta-ads.library.advertiser",
+        "provider": "crawl4ai",
+        "outcome": "hit",
+        "status": 200,
+        "charged_micro": 1650
+      }
+    ],
+    "charged_micro": 1650,
+    "dropped": [
+      {
+        "endpoint_id": "adyntel.meta-ads.library.advertiser",
+        "why": "needs {company_domain}"
+      }
+    ]
+  }
+}

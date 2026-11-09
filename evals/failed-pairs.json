@@ -1,0 +1,60 @@
+[
+  {
+    "pair": "burger-king-eg",
+    "failures": [
+      "check1_error: name_not_matched",
+      "check2_error: name_not_matched",
+      "artifacts_error: name_not_matched",
+      "artifacts2_error: name_not_matched"
+    ]
+  },
+  {
+    "pair": "burger-king-us",
+    "failures": [
+      "check2_not_settled: (6, 5, 0)"
+    ]
+  },
+  {
+    "pair": "kfc-us",
+    "failures": [
+      "check1_error: name_not_matched",
+      "check2_error: name_not_matched",
+      "artifacts_error: name_not_matched",
+      "artifacts2_error: name_not_matched"
+    ]
+  },
+  {
+    "pair": "mcdonalds-ae",
+    "failures": [
+      "check1_no_new_ads: (None, None, None)",
+      "check2_not_settled: (26, 0, 0)",
+      "artifacts_error: parse_failed"
+    ]
+  },
+  {
+    "pair": "mcdonalds-eg",
+    "failures": [
+      "search_error: parse_failed: dead_render: shell: render (5154 chars) with no card markers or empty-state text"
+    ]
+  },
+  {
+    "pair": "mcdonalds-gb",
+    "failures": [
+      "search_error: parse_failed: dead_render: shell: render (5217 chars) with no card markers or empty-state text"
+    ]
+  },
+  {
+    "pair": "mcdonalds-sa",
+    "failures": [
+      "search_error: parse_failed: dead_render: shell: render (5161 chars) with no card markers or empty-state text",
+      "check2_not_settled: (None, None, None)",
+      "artifacts2_error: parse_failed"
+    ]
+  },
+  {
+    "pair": "mcdonalds-us",
+    "failures": [
+      "search_error: parse_failed: dead_render: shell: render (5216 chars) with no card markers or empty-state text"
+    ]
+  }
+]
