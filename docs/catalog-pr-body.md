@@ -154,8 +154,12 @@ suppressed rather than guessed, while status flips that did render are still rep
 - Result pages are clipped at `char_limit=120000`; a clipped or limit-sliced fetch
   is partial, and partial runs suppress endings for ids missing from the clipped
   page while still reporting status flips on ads that did render. An `advertiser`
-  watch resolves the page name against the full listing before filtering, so a
-  brand page anywhere in the keyword hits is found and all of its ads are tracked.
+  watch resolves the page name against the whole rendered page — no result-limit
+  slice — before filtering, so a brand page anywhere in the rendered keyword hits
+  is found and all of its ads in that window are tracked. That is still
+  rendered-window semantics: the library's URL filters narrow what renders, the
+  120,000-character budget can clip it, and Meta's render is only the top of the
+  result set, so absence from the window proves nothing about the full listing.
 - A markup change on Meta's side surfaces as `parse_failed` (search) /
   `reason: "parse_failed"` (check) instead of a false "all ads ended".
 - No pagination in v1: one page per watch. Unfiltered `ad_check` keeps the first
@@ -167,20 +171,30 @@ The argument table above still names the original three arguments; this addendum
 records what the same three tools now return without adding a surface.
 
 - **New per-ad fields, all from the public render:** `page_url`, `page_id`,
-  `link_url`, `link_title`, `cta_text`, `images`, `has_video`,
-  `same_creative_count`, `multiple_versions`. Missing values are `""` / `[]` / `0`
-  / `false`; the original seven fields are unchanged.
+  `link_url`, `link_title`, `cta_text`, `link_caption`, `cta_type`,
+  `display_format`, `cards`, `images`, `has_video`, `same_creative_count`,
+  `multiple_versions` — the full 20-key set is `id`, `page_name`, `status`,
+  `first_seen`, `last_seen`, `creative_text`, `library_url`, `page_url`,
+  `page_id`, `link_url`, `link_title`, `cta_text`, `link_caption`, `cta_type`,
+  `display_format`, `cards`, `images`, `has_video`, `same_creative_count`,
+  `multiple_versions`. Missing values are `""` / `[]` / `0` / `false`; the
+  original seven fields are unchanged. `link_caption` is the domain the CTA block
+  prints (not necessarily the link URL's host), `cta_type` is `cta_text` as an
+  upper-snake enum, `display_format` is `image` / `video` / `dco` inferred from
+  the rendered media (`carousel` is never claimed), and `cards` is the per-card
+  grouping with `video` always `null` (no video file URL renders).
 - **New optional filters:** `active_status` (`all|active|inactive`) and
   `media_type` (`all|image|video`) on `ad_search` and on `ad_watch add`. They are
   query-string parameters on the same single `www.facebook.com` GET, stored on the
   watch entry when non-default, and each filtered watch keeps its own snapshot and
   report key. Invalid values return `invalid_active_status` / `invalid_media_type`.
 - **`ad_check` and reports:** the changed-ad signature now includes `link_url`,
-  `link_title` and `cta_text` (compared only when both the old and new record
-  carry them). Bucket summaries include the new fields. HTML cards show the CTA
-  and destination link (absolute `http(s)` only) plus creative-grouping and
-  image-count badges; the digest adds `with_link`, `with_cta`, `with_images`,
-  `with_same_creative`, `with_multiple_versions`.
+  `link_title`, `cta_text`, `link_caption`, `cta_type` and `display_format`
+  (compared only when both the old and new record carry them). Bucket summaries
+  include the new fields. HTML cards show the CTA and destination link (absolute
+  `http(s)` only) plus creative-grouping and image-count badges; the digest adds
+  `with_link`, `with_cta`, `with_images`, `with_same_creative`,
+  `with_multiple_versions`.
 - **Still absent, deliberately:** `platforms` (publisher placements),
   `page_likes`, `spend`, `impressions` and direct video file URLs are not in the
   public logged-out render and are not returned, estimated or sourced elsewhere.
@@ -189,7 +203,7 @@ records what the same three tools now return without adding a surface.
   host; one read-only GET per query in the normal case (up to 6 attempts only when
   a render fails to parse, each retry cache-busted, inside a 60-second wall-clock
   cap); stdlib only;
-  `plugin_data_dir("ads-intel")` is still the only filesystem path. Suite: **443
+  `plugin_data_dir("ads-intel")` is still the only filesystem path. Suite: **470
   passed** (`.venv/bin/python -m pytest tests -q`). `hermes plugins validate .`
   passes with the expected `invisible_unicode` caution from committed eval data and
   the informational isolation note, both quoted above.

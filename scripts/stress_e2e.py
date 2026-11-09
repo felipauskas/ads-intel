@@ -325,7 +325,20 @@ def run_iteration(index: int, markdown: str, base_dir: Path) -> dict:
         )
 
         # 6. Tamper with exactly one creative, then re-check.
-        target = expected[0]["id"]
+        # P2 diff skips keys left empty on either side, so a tamper target must
+        # be an ad the render actually gave creative text for (and that made it
+        # into the delivered slice the snapshot holds).
+        target = next(
+            (
+                ad["id"]
+                for ad in expected[:delivered]
+                if (ad.get("creative_text") or "").strip()
+            ),
+            None,
+        )
+        _check(failures, target is not None, "no delivered ad carries creative_text")
+        if target is None:
+            raise RuntimeError("cannot exercise tamper without a creative_text ad")
         snap = tools.store.load_snapshot(query)
         _check(failures, target in (snap.get("ads") or {}), f"tamper target {target} missing")
         snap["ads"][target]["creative_text"] = "tampered copy"

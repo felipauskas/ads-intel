@@ -1,8 +1,8 @@
 # Stress test results — pre-publication gate
 
-Audit date: 2026-11-06 (local +04, UTC+04:00)
+Audit date: 2026-11-09 (local +04, UTC+04:00)
 Repo: `~/coding-projects/ads-intel`
-HEAD: `0c2e6ec74e853efdb0773ea4d5c70ded33601f56` (`chore: local catalog entry pinned (unpublished, rule 5 pending)`) — run at `0c2e6ec`; committed as `8941692`
+HEAD: `440c513` (`fix(p3): meta surfacing, text bounds, narrow watch_remove, hygiene`) — re-run after the harness tamper-target fix (see addendum)
 Host: macOS 27.2, Python 3.14.10 (`./.venv/bin/python`), binary tree clean apart from this branch's own commit.
 
 Everything below is a local run. No push, no remote, no publish.
@@ -31,18 +31,30 @@ Per iteration: parse fixture → `ad_search` → `ad_watch add` → `ad_check`
 verify artifacts and digest counts.
 
 ```
-workdir: /var/folders/zf/…/T/ads-intel-stress-ir4sfach
+workdir: /var/folders/zf/…/T/ads-intel-stress-_21219b6
 repo:    /Users/felipevleon/coding-projects/ads-intel
 python:  3.14.10 (/Users/felipevleon/coding-projects/ads-intel/.venv/bin/python)
 
-iter 001 PASS    10.7ms baseline=20 settle=0/0/0 changed=1
+== offline iterations: 50 ==
+iter 001 PASS    15.0ms baseline=20 settle=0/0/0 changed=1
 …
-iter 050 PASS     8.2ms baseline=20 settle=0/0/0 changed=1
+iter 050 PASS    13.4ms baseline=20 settle=0/0/0 changed=1
 
-offline summary: iterations=50 failures=0 max_ms=10.7 total_s=0.38
+offline summary: iterations=50 failures=0 max_ms=15.0 total_s=0.67
+
+== concurrency ==
+threads=10 ops/thread=100 elapsed=97.02ms json_files=2 corrupt=0 exceptions=0
+watch entries: expected=10 got=10 lost=0 snapshot_ads=1
+
+== corruption resilience ==
+corruption: PASS (degraded as contracted, no crash)
+
 RESULT: PASS (0 failing section(s))
 EXIT=0
 ```
+
+Second run, `-n 20`: `20/20 PASS`, `max_ms=15.2`, `total_s=0.27`,
+`RESULT: PASS (0 failing section(s))`, `EXIT=0`.
 
 What each iteration asserted (all held 50/50):
 
@@ -55,21 +67,20 @@ What each iteration asserted (all held 50/50):
 | tampered `ad_check` | exactly `0 / 0 / 1`, `changed[0].id` is the tampered id |
 | artifacts | HTML + digest exist, both inside the isolated data dir, banner reads `0 new / 0 ended / 1 changed`, digest `new/ended/changed == 0/0/1` and `total == snapshot size` |
 
-Max single-iteration wall time: **10.7 ms**; 50 iterations: **0.38 s** (0.35 s on
-the earlier identical run). Each iteration creates 3 artifact files plus a
+Max single-iteration wall time: **15.0 ms**; 50 iterations: **0.67 s**. Each
+iteration creates 3 artifact files plus a
 snapshot, so the cost is dominated by `fsync`.
 
-## 2. Full pytest suite, 5 consecutive runs
+## 2. Full pytest suite, 3 consecutive runs
 
 ```
-78 passed in 0.11s
-78 passed in 0.10s
-78 passed in 0.11s
-78 passed in 0.13s
-78 passed in 0.10s
+470 passed, 1 warning in 3.90s
+470 passed, 1 warning in 4.36s
+470 passed, 1 warning in 3.90s
 ```
 
-**5/5 × 78 passed, 0 failed, no flakes, no ordering dependence.**
+**3/3 × 470 passed, 0 failed, no flakes, no ordering dependence.** (The warning
+is pytest's own `callspec` deprecation notice, not a plugin failure.)
 
 ## 3. Live mode — 4/4 PASS (real host `web_extract`)
 
@@ -135,7 +146,7 @@ Notes from building the live path (harness environment, not product defects):
 `save_snapshot` (shared key) → `load_snapshot`, all against one data dir.
 
 ```
-threads=10 ops/thread=100 elapsed=83.51ms json_files=2 corrupt=0 exceptions=0
+threads=10 ops/thread=100 elapsed=97.02ms json_files=2 corrupt=0 exceptions=0
 watch entries: expected=10 got=10 lost=0 snapshot_ads=1
 ```
 
@@ -162,7 +173,8 @@ contract says "empty".
 
 ## 6. Flakes and product changes
 
-- **Flakes: none.** 50/50 offline iterations, 5/5 pytest runs, 4/4 live queries.
+- **Flakes: none.** 50/50 and 20/20 offline iterations, 3/3 pytest runs, and the
+  recorded 4/4 live queries (live was not re-run in this pass).
 - **Product bugs found: none.** No production file was changed, so no
   regression test was added.
 - Only added files: `scripts/stress_e2e.py` and this document.
@@ -197,3 +209,31 @@ badges). Re-run on the working tree before commit:
 Live mode was not re-run in this pass, so the live table above remains the
 recorded 4/4 run on the pre-enrichment tree. The new fields do not add a host or
 a request; the filters are query-string parameters on the same GET.
+
+## Addendum 2026-11-09 (harness fix, HEAD `440c513`)
+
+Integration review found the committed harness **RED** while the product was fine.
+`scripts/stress_e2e.py:328` tampered `expected[0]["id"]`, but that first fixture
+ad has `creative_text == ""`. The P2 diff deliberately skips keys empty on either
+side (`partial=True`), so `"" -> "tampered copy"` is classed `unknown` and the
+changed bucket stays empty — 20/20 iterations failed on the harness's own
+assumption, not on product behaviour.
+
+Fix: the tamper target is now the first **delivered** ad whose `creative_text` is
+non-empty (`next(... for ad in expected[:delivered] if ad.get("creative_text")`),
+mirroring `tests/test_demo.py`; the iteration fails loudly with
+`no delivered ad carries creative_text` if no such ad exists. No production file
+was touched.
+
+Re-run on the working tree (tree otherwise identical to `440c513`):
+
+- `.venv/bin/python scripts/stress_e2e.py -n 50` → **RESULT: PASS**, 50/50
+  iterations, 0 failures, `max_ms=15.0`, `total_s=0.67`; concurrency 10×100 →
+  0 corrupt files / 0 exceptions / 0 lost watch entries; corruption section PASS.
+- `.venv/bin/python scripts/stress_e2e.py -n 20` → **RESULT: PASS**, 20/20,
+  `max_ms=15.2`, `total_s=0.27`.
+- `.venv/bin/python -m pytest tests -q` → **470 passed**, 3 consecutive runs.
+- `hermes plugins validate .` → **Validation passed** (same informational
+  isolation note about `scripts/stress_e2e.py` and `evals/live_eval.py`).
+
+Live mode was not re-run; the 4/4 table above remains the record.
