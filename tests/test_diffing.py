@@ -135,3 +135,99 @@ def test_diff_skips_non_dict_ad_values():
     new = {"ads": {"A1": {"id": "A1", "status": "active"},
                    "J2": ["junk"]}}
     assert diff_snapshots(old, new) == {"new": [], "ended": [], "changed": []}
+
+
+# --- F3: partial renders must not report hydration losses as changes --------
+
+
+def _ad(ad_id="H1", **extra):
+    return {"id": ad_id, "status": "active", "creative_text": "buy shoes", **extra}
+
+
+def test_partial_render_losing_cta_and_title_is_not_a_change():
+    """A re-render that never hydrated the CTA block leaves blanks.
+
+    Those blanks are unknown values, not a creative edit, so a partial diff
+    must not report the ad as changed (and so must not poison the baseline).
+    """
+    old = {"ads": {"H1": _ad(link_url="https://a.example/",
+                             link_title="Shop", cta_text="Shop Now")}}
+    new = {"ads": {"H1": _ad(link_url="https://a.example/",
+                             link_title="", cta_text="")}}
+    assert diff_snapshots(old, new, partial=True) == {
+        "new": [], "ended": [], "changed": []
+    }
+
+
+def test_partial_render_losing_creative_text_is_not_a_change():
+    old = {"ads": {"H1": _ad()}}
+    new = {"ads": {"H1": {**_ad(), "creative_text": ""}}}
+    assert diff_snapshots(old, new, partial=True)["changed"] == []
+
+
+def test_complete_render_losing_cta_is_still_a_change():
+    """On a complete render an empty field is an observation, not a gap.
+
+    ``partial=False`` (the default) keeps the existing rule: an empty field
+    that was populated before is a real edit, because the render finished and
+    the field is genuinely absent from the creative.
+    """
+    old = {"ads": {"H1": _ad(link_title="Shop", cta_text="Shop Now")}}
+    new = {"ads": {"H1": _ad(link_title="", cta_text="")}}
+    assert [a["id"] for a in diff_snapshots(old, new)["changed"]] == ["H1"]
+    assert [a["id"] for a in diff_snapshots(
+        old, new, partial=False
+    )["changed"]] == ["H1"]
+
+
+def test_partial_render_real_title_change_is_still_a_change():
+    """Both sides populated: a genuine title edit is reported even on partial."""
+    old = {"ads": {"H1": _ad(link_title="Shop shoes")}}
+    new = {"ads": {"H1": _ad(link_title="Shop boots")}}
+    assert [a["id"] for a in diff_snapshots(old, new, partial=True)["changed"]] == ["H1"]
+
+
+def test_partial_flag_leave_status_transitions_intact():
+    old = {"ads": {"H1": {**_ad(), "status": "active", "cta_text": "Shop Now"}}}
+    new = {"ads": {"H1": {**_ad(), "status": "ended", "cta_text": ""}}}
+    d = diff_snapshots(old, new, partial=True)
+    assert [a["id"] for a in d["ended"]] == ["H1"]
+    assert d["changed"] == []
+
+
+# --- F3: a partial render cannot prove an ad ended ---------------------------
+
+
+def test_partial_render_missing_id_is_not_ended():
+    """An id absent from a clipped render is unknown, not stopped.
+
+    A partial render never reached the card, so diffing it unfiltered would
+    fabricate an ending for every id past the clip.
+    """
+    old = {"ads": {"A1": _ad("A1"), "A2": _ad("A2")}}
+    new = {"ads": {"A1": _ad("A1")}}
+    assert diff_snapshots(old, new, partial=True)["ended"] == []
+    # Nothing else is invented either: A1 is unchanged.
+    assert diff_snapshots(old, new, partial=True) == {
+        "new": [], "ended": [], "changed": []
+    }
+
+
+def test_complete_render_missing_id_is_still_ended():
+    """On an unclipped render a missing id remains the `ended` bucket."""
+    old = {"ads": {"A1": _ad("A1"), "A2": _ad("A2")}}
+    new = {"ads": {"A1": _ad("A1")}}
+    assert [a["id"] for a in diff_snapshots(old, new)["ended"]] == ["A2"]
+    assert [a["id"] for a in diff_snapshots(old, new, partial=False)["ended"]] == [
+        "A2"
+    ]
+
+
+def test_partial_status_flip_survives_ended_suppression():
+    """A status flip is observed on a rendered card, not inferred from absence."""
+    old = {"ads": {"A1": _ad("A1"), "A2": _ad("A2")}}
+    new = {"ads": {"A1": {**_ad("A1"), "status": "inactive"}}}
+    d = diff_snapshots(old, new, partial=True)
+    assert [a["id"] for a in d["ended"]] == ["A1"]
+    # A2 is absent from the partial render: not reported at all.
+    assert all(a["id"] != "A2" for a in d["ended"])

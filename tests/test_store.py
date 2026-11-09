@@ -1,5 +1,7 @@
 import hashlib
 import json
+import threading
+import time
 
 import pytest
 
@@ -360,3 +362,143 @@ def test_load_snapshot_skips_stamped_legacy_fallback(data_dir):
     legacy.parent.mkdir(parents=True, exist_ok=True)
     legacy.write_text(json.dumps({"advertiser": "KFC", "ads": {"1": {"id": "1"}}}))
     assert store.load_snapshot("KFC") == {"ads": {}}
+
+
+# --- concurrency: watchlist / snapshot read-modify-write (F6) ---------------
+
+
+def _slow_writes(monkeypatch, seconds: float = 0.02):
+    """Widen the read-modify-write window like the audit's 50 ms delay.
+
+    The sleep sits inside the write call, i.e. between the read and the
+    replace, which is exactly where an unguarded writer loses its peer's
+    update.  It runs while the lock is held, so a correct implementation
+    serialises and the delay only costs wall-clock time.
+    """
+    real = store._write_json
+
+    def slow(path, payload):
+        time.sleep(seconds)
+        real(path, payload)
+
+    monkeypatch.setattr(store, "_write_json", slow)
+
+
+def test_concurrent_watch_add_keeps_every_entry(data_dir, monkeypatch):
+    """Ten racing watch_add calls must all land; last-writer-wins is the bug."""
+    count = 10
+    _slow_writes(monkeypatch)
+    barrier = threading.Barrier(count)
+    errors: list[str] = []
+
+    def worker(n: int) -> None:
+        try:
+            barrier.wait()
+            store.watch_add(f"brand-{n}")
+        except BaseException as exc:  # noqa: BLE001
+            errors.append(f"{n}: {type(exc).__name__}: {exc}")
+
+    threads = [threading.Thread(target=worker, args=(i,)) for i in range(count)]
+    for t in threads:
+        t.start()
+    for t in threads:
+        t.join(timeout=30)
+
+    assert errors == []
+    assert [t.name for t in threads if t.is_alive()] == []
+    queries = {e["query"] for e in store.watch_list()}
+    assert queries == {f"brand-{n}" for n in range(count)}
+
+
+def test_concurrent_watch_remove_and_add_never_lose_entries(data_dir, monkeypatch):
+    """Remove must not resurrect entries read before another thread's add."""
+    _slow_writes(monkeypatch, 0.01)
+    store.watch_add("keep")
+    store.watch_add("drop")
+    barrier = threading.Barrier(2)
+    errors: list[str] = []
+
+    def remover() -> None:
+        try:
+            barrier.wait()
+            store.watch_remove("drop")
+        except BaseException as exc:  # noqa: BLE001
+            errors.append(f"remove: {type(exc).__name__}: {exc}")
+
+    def adder() -> None:
+        try:
+            barrier.wait()
+            store.watch_add("new")
+        except BaseException as exc:  # noqa: BLE001
+            errors.append(f"add: {type(exc).__name__}: {exc}")
+
+    threads = [threading.Thread(target=remover), threading.Thread(target=adder)]
+    for t in threads:
+        t.start()
+    for t in threads:
+        t.join(timeout=30)
+
+    assert errors == []
+    queries = {e["query"] for e in store.watch_list()}
+    assert queries == {"keep", "new"}
+
+
+def test_concurrent_snapshot_read_modify_write_accumulates(data_dir, monkeypatch):
+    """The ad_check shape: load -> diff/merge -> save must be one critical section.
+
+    Without the lock two overlapping checks both read the same prior, each
+    writes prior+its own ad, and the later save erases the other's ad.
+    """
+    count = 10
+    _slow_writes(monkeypatch, 0.01)
+    barrier = threading.Barrier(count)
+    errors: list[str] = []
+
+    def worker(n: int) -> None:
+        try:
+            barrier.wait()
+            with store.data_lock():
+                ads = store.load_snapshot("shared").get("ads") or {}
+                time.sleep(0.005)  # rendering/diff time inside the section
+                ads[f"{n}"] = {"id": str(n)}
+                store.save_snapshot("shared", {"ads": ads})
+        except BaseException as exc:  # noqa: BLE001
+            errors.append(f"{n}: {type(exc).__name__}: {exc}")
+
+    threads = [threading.Thread(target=worker, args=(i,)) for i in range(count)]
+    for t in threads:
+        t.start()
+    for t in threads:
+        t.join(timeout=30)
+
+    assert errors == []
+    assert set(store.load_snapshot("shared")["ads"]) == {str(n) for n in range(count)}
+
+
+def test_concurrent_saves_of_distinct_keys_all_roundtrip(data_dir, monkeypatch):
+    """Parallel saves of different artifacts leave every file valid."""
+    count = 10
+    _slow_writes(monkeypatch, 0.005)
+    barrier = threading.Barrier(count)
+
+    def worker(n: int) -> None:
+        barrier.wait()
+        store.save_snapshot(f"q-{n}", {"ads": {str(n): {"id": str(n)}}})
+
+    threads = [threading.Thread(target=worker, args=(i,)) for i in range(count)]
+    for t in threads:
+        t.start()
+    for t in threads:
+        t.join(timeout=30)
+
+    for n in range(count):
+        assert store.load_snapshot(f"q-{n}")["ads"] == {str(n): {"id": str(n)}}
+
+
+def test_data_lock_creates_a_lock_file_and_is_reentrant(data_dir):
+    """The lock lives in the data dir, so separate processes contend on it."""
+    with store.data_lock():
+        with store.data_lock():
+            store.watch_add("nested")
+    assert (data_dir / ".lock").exists()
+    assert store.watch_list() == [{"query": "nested", "country": "US"}]

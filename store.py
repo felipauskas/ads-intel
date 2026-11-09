@@ -5,7 +5,14 @@ import json
 import os
 import re
 import tempfile
+import threading
+from contextlib import contextmanager
 from pathlib import Path
+
+try:  # POSIX only; a Windows dev box degrades to in-process locking.
+    import fcntl
+except ImportError:  # pragma: no cover - exercised only on Windows
+    fcntl = None
 
 try:
     from plugins.plugin_storage import plugin_data_dir
@@ -20,6 +27,7 @@ except ImportError:
 
 
 WATCH = "watchlist.json"
+LOCK = ".lock"
 
 DEFAULT_COUNTRY = "US"
 _COUNTRY_RE = re.compile(r"^[A-Z]{2}$")
@@ -40,6 +48,64 @@ def _norm_filter(value, default: str, allowed: tuple[str, ...]) -> str:
 
 def _watch_path() -> Path:
     return _data_dir() / WATCH
+
+
+#: Serialises read-modify-write cycles on the files in the data dir.
+#:
+#: ``flock`` is advisory, which is enough here: every writer — in this process
+#: or in any other ads-intel process — goes through :func:`data_lock`. It also
+#: handles crashes for free: the kernel drops the lock when the holder dies, so
+#: there is no lock file to stale out and no timeout to tune.
+#:
+#: Re-entrancy matters: ``ad_check`` holds the lock across load → diff → save,
+#: and ``save_snapshot`` takes it again. A second ``flock`` on a *different*
+#: descriptor of the same file would block forever, so the depth counter keeps
+#: only the outermost call holding the fd; intra-process threads queue on the
+#: RLock instead of on ``flock``.
+_PROC_LOCK = threading.RLock()
+_LOCK_DEPTH = 0
+
+
+@contextmanager
+def data_lock():
+    """Hold the data-dir write lock (re-entrant within a thread).
+
+    Hold this around a whole read-modify-write cycle, never around network
+    I/O: the lock is exclusive across processes, so a fetch inside it would
+    serialise every check behind the slowest one.
+    """
+    global _LOCK_DEPTH
+    with _PROC_LOCK:
+        if _LOCK_DEPTH:
+            _LOCK_DEPTH += 1
+            try:
+                yield
+            finally:
+                _LOCK_DEPTH -= 1
+            return
+        fd = None
+        if fcntl is not None:
+            directory = _data_dir()
+            directory.mkdir(parents=True, exist_ok=True)
+            fd = os.open(str(directory / LOCK), os.O_CREAT | os.O_RDWR, 0o644)
+            try:
+                fcntl.flock(fd, fcntl.LOCK_EX)
+            except BaseException:
+                os.close(fd)
+                raise
+        # No fcntl (Windows dev): the RLock still serialises this process's
+        # threads, but two processes could interleave. Accepted; production
+        # runs on POSIX.
+        _LOCK_DEPTH = 1
+        try:
+            yield
+        finally:
+            _LOCK_DEPTH = 0
+            if fd is not None and fcntl is not None:
+                try:
+                    fcntl.flock(fd, fcntl.LOCK_UN)
+                finally:
+                    os.close(fd)
 
 
 def _write_json(path: Path, payload) -> None:
@@ -156,21 +222,22 @@ def watch_add(
     )
     if entry is None:
         return watch_list()
-    items = watch_list()
-    if entry not in items:
-        items.append(entry)
-        _write_json(_watch_path(), items)
+    with data_lock():
+        items = watch_list()
+        if entry not in items:
+            items.append(entry)
+            _write_json(_watch_path(), items)
     return items
 
 
 def watch_remove(query: str) -> list[dict]:
     """Remove every entry for ``query``, regardless of country or filters."""
     q = _norm(query)
-    items = watch_list()
-    kept = [x for x in items if x["query"] != q]
-    if kept == items:
-        return items
-    _write_json(_watch_path(), kept)
+    with data_lock():
+        items = watch_list()
+        kept = [x for x in items if x["query"] != q]
+        if kept != items:
+            _write_json(_watch_path(), kept)
     return kept
 
 
@@ -304,10 +371,11 @@ def save_snapshot(
     if media_type != DEFAULT_MEDIA_TYPE:
         payload["media_type"] = media_type
     payload.setdefault("ads", {})
-    _write_json(
-        _snapshot_path(query, country, advertiser, active_status, media_type),
-        payload,
-    )
+    with data_lock():
+        _write_json(
+            _snapshot_path(query, country, advertiser, active_status, media_type),
+            payload,
+        )
 
 
 def _read_snapshot_file(path: Path) -> dict | None:

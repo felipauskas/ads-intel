@@ -89,10 +89,51 @@ def _quote_plus(text: str) -> str:
 
 _STATUS_RE = re.compile(r"^(Active|Inactive)$")
 _LIBRARY_ID_RE = re.compile(r"^Library ID:\s*(\d+)$")
+
+#: The ad marker. Renders carry the plain ``**Sponsored**`` label, but a
+#: variant appends the payer inline: ``**Sponsored** • Paid for by **Page**``.
+#: The card is otherwise identical, so the variant must be recognized as the
+#: same marker or the whole card is dropped as unparsed.
+_SPONSOR_MARKER_RE = re.compile(
+    r"^\*\*Sponsored\*\*(?:\s*[•\u2022·]\s*Paid for by\b.*)?$"
+)
 _PAGE_LINK_URL_RE = re.compile(
     r"^\[([^\]]+)\]\((https://www\.facebook\.com/[^)\s]*)\)"
 )
+#: Creator-run cards are labelled with an Instagram profile instead of a
+#: Facebook page: ``[handle](https://www.instagram.com/_u/<handle>)``, alone
+#: or as the first name of a co-advertiser label. Only profile paths count;
+#: ``/accounts/login``, ``/legal/terms`` and friends are page chrome.
+_IG_PAGE_LINK_URL_RE = re.compile(
+    r"^\[([^\]]+)\]\((https?://(?:www\.)?instagram\.com/"
+    r"(?:_u/)?(?P<handle>[A-Za-z0-9._]+)/?)\)"
+)
+_IG_RESERVED_PATHS = frozenset(
+    {
+        "_u",
+        "accounts",
+        "api",
+        "about",
+        "developer",
+        "directory",
+        "emails",
+        "explore",
+        "help",
+        "legal",
+        "p",
+        "privacy",
+        "reel",
+        "reels",
+        "session",
+        "stories",
+        "tv",
+    }
+)
 _NUMERIC_PAGE_RE = re.compile(r"facebook\.com/(\d+)(?:[/?#]|$)")
+# profile.php?id=<digits> is the other way the library links a numeric page.
+_PROFILE_PHP_PAGE_RE = re.compile(
+    r"facebook\.com/profile\.php\?[^)\s#]*\bid=(\d+)"
+)
 _IMAGE_ALT_RE = re.compile(r"^!\[([^\]]*)\]\(")
 _IMAGE_URL_RE = re.compile(r"!\[[^\]]*\]\((https?://[^)\s]+)\)")
 _CTA_DEST_RE = re.compile(r"\]\((https?://[^)\s]+)\)")
@@ -127,6 +168,19 @@ _NOISE_LINES = {
 _NOISE_PREFIXES = (
     "**",  # "**4 ads** use this creative and text" and similar annotations
 )
+
+#: A line that is nothing but a markdown link, e.g. ``[Shop Now](https://…)``.
+#: A trailing ``\`` is a wrap escape, not content. Only this shape is chrome:
+#: a broader "contains ](" test erased copy that merely mentioned a link.
+_LINK_LINE_RE = re.compile(r"^\[[^\]]*\]\([^)]*\)\\?$")
+
+#: A markdown link inside a line of copy, stripped down to its label.
+_INLINE_LINK_RE = re.compile(r"\[([^\]]*)\]\([^)]*\)")
+
+#: How many following non-blank lines may carry a wrapped CTA's ``](``
+#: destination. Bounded so an unbalanced bracket in real copy ("As seen in
+#: [Vogue") cannot swallow the rest of the creative.
+_CTA_LOOKAHEAD = 3
 
 # The library's page footer ("System status" plus links to its own policy
 # pages) trails the last card in every render. Match the destinations, not the
@@ -202,6 +256,47 @@ def _strip_footers(kept: list[str]) -> list[str]:
     return kept
 
 
+def _strip_footer_blocks(kept: list[str]) -> list[str]:
+    """Drop footer blocks *anywhere* in the cleaned creative lines.
+
+    A capture can append the host head+tail footer (or the library's page
+    footer) between two creative fragments — the footer is not always trailing
+    the last card. Left in place, its per-fetch cache path makes unchanged
+    creative look changed, so a footer block is removed wherever it appears,
+    not just at the end.
+
+    A block is chrome only when it is unambiguous: it carries a host footer
+    line (banner, size summary, cache path), or it is a run of at least two
+    page-footer lines (the ``System status`` label plus policy links). A lone
+    policy-looking link or a mid-copy ``System status`` line stays creative.
+    """
+    out: list[str] = []
+    index = 0
+    while index < len(kept):
+        line = kept[index]
+        if not (_is_footer_line(line) or _BOX_DIVIDER_RE.match(line)):
+            out.append(line)
+            index += 1
+            continue
+        end = index
+        while end < len(kept) and (
+            _is_footer_line(kept[end]) or _BOX_DIVIDER_RE.match(kept[end])
+        ):
+            end += 1
+        block = kept[index:end]
+        host_block = any(_HOST_FOOTER_RE.match(item) for item in block)
+        page_lines = sum(
+            1 for item in block
+            if _is_footer_line(item) and not _HOST_FOOTER_RE.match(item)
+        )
+        if host_block or page_lines >= 2:
+            index = end
+            continue
+        out.extend(block)
+        index = end
+    return out
+
+
 #: Filter vocabularies, mirroring the public library's own URL parameters.
 ACTIVE_STATUSES = ("all", "active", "inactive")
 MEDIA_TYPES = ("all", "image", "video")
@@ -254,16 +349,36 @@ def _card_blocks(md: str) -> list[list[str]]:
     return blocks
 
 
+def _is_sponsor_marker(line: str) -> bool:
+    """True for the card's ``**Sponsored**`` label, including the payer variant."""
+    return bool(_SPONSOR_MARKER_RE.match(line.strip()))
+
+
+def _sponsor_marker_count(lines: list[str]) -> int:
+    """How many cards' worth of ad markers a block carries.
+
+    One per card. Zero means the block is not a card body. Two or more means
+    cards were concatenated without the ``* * *`` separator (a render seam),
+    so only one of them can be parsed from that block and the rest are lost.
+    """
+    return sum(1 for line in lines if _is_sponsor_marker(line))
+
+
 def _has_card_marker(lines: list[str]) -> bool:
-    """A block that claims to be an ad card, whether or not it parses.
+    """A block that claims to be (part of) an ad card, whether or not it parses.
 
     Card markers, not separators, are the signal: a genuinely empty results
     page still has ``* * *`` chrome separators but no ``**Sponsored**`` or
     ``Library ID`` anywhere.
+
+    A ``Library ID`` alone is a *status block* — the half of a card a capture
+    boundary can split off — so it counts toward ``cards_seen`` here. It is
+    not, however, an ad marker for unparsed accounting: see
+    :func:`_sponsor_marker_count`.
     """
     for raw in lines:
         line = raw.strip()
-        if line == "**Sponsored**" or line.startswith("Library ID:"):
+        if _is_sponsor_marker(line) or line.startswith("Library ID:"):
             return True
     return False
 
@@ -282,28 +397,77 @@ def _status_index(lines: list[str]) -> int | None:
     return None
 
 
+def _cta_continues(lines: list[str], start: int) -> bool:
+    """True when the next few non-blank lines carry a link destination.
+
+    The signal that a line starting with ``[`` is a wrapped CTA opener rather
+    than copy with a bracket in it: somewhere just below, a line contains
+    ``](``. Lookahead is bounded (see :data:`_CTA_LOOKAHEAD`) so a stray
+    unbalanced bracket cannot swallow the rest of the creative.
+    """
+    seen = 0
+    for raw in lines[start + 1 :]:
+        if not raw.strip():
+            continue
+        if "](" in raw:
+            return True
+        seen += 1
+        if seen >= _CTA_LOOKAHEAD:
+            return False
+    return False
+
+
 def _clean_creative(lines: list[str]) -> str:
     kept: list[str] = []
     skipping_link_block = False
-    for raw in lines:
+    for i, raw in enumerate(lines):
         line = raw.strip()
         if skipping_link_block:
             # A multi-line markdown link/CTA continues until the "](" line.
             if "](" in line:
                 skipping_link_block = False
             continue
+        if line.startswith("]("):
+            # Destination half of a CTA whose ``[title`` opener is gone.
+            continue
         if line.startswith("["):
-            # A link-only line is dropped; an unclosed one starts a CTA block.
-            # A wrapped render can leave a trailing ``\`` after a complete
-            # link, so compare the line with escapes stripped. Repeated ``[``
-            # left unclosed (e.g. ``[![](img)``) still starts a CTA block.
-            if (
-                line.rstrip("\\").strip().endswith(")")
-                and "](" in line
-                and line.count("[") <= line.count("]")
-            ):
+            # Only link-shaped lines are chrome. Copy may legitimately start
+            # with a bracket ("[NEW] 50% off today"), and dropping every such
+            # line erased real creative text.
+            if _LINK_LINE_RE.match(line):
                 continue
-            skipping_link_block = True
+            bare = line.rstrip("\\").strip()
+            if "](" in line:
+                if bare.endswith(")") and line.count("[") == line.count("]"):
+                    # A link or a linked image (``[![](img)](dest)``): chrome.
+                    continue
+                if line.count("[") > line.count("]"):
+                    # The wrap broke before the closing "]": the destination
+                    # is on a later line.
+                    skipping_link_block = True
+                    continue
+                # Copy that merely mentions a link stays copy, with the link
+                # markup stripped.
+                kept.append(_INLINE_LINK_RE.sub(r"\1", line))
+                continue
+            if line.endswith("\\"):
+                # A wrapped first line of a multi-line CTA: "[Title \"
+                # with the destination (and ``](``) on a later line.
+                skipping_link_block = True
+                continue
+            if line.count("[") > line.count("]"):
+                # An unclosed opener: the CTA title wraps onto later lines.
+                # A wrapped render can end every line with ``\`` or with no
+                # escape at all, so the escape is not the signal — the missing
+                # ``]`` is. Confirm the paragraph really ends in a link;
+                # otherwise the bracket is copy ("As seen in [Vogue").
+                if _cta_continues(lines, i):
+                    skipping_link_block = True
+                    continue
+                kept.append(line)
+                continue
+            # Not link-shaped: keep it as copy.
+            kept.append(line)
             continue
         if (
             line in _NOISE_LINES
@@ -315,7 +479,7 @@ def _clean_creative(lines: list[str]) -> str:
         if line.startswith("!["):
             continue
         kept.append(line)
-    kept = _strip_footers(kept)
+    kept = _strip_footers(_strip_footer_blocks(kept))
     return "\n".join(kept).strip()
 
 
@@ -336,13 +500,29 @@ def _dates(lines: list[str], start: int) -> tuple[str, str]:
     return "", ""
 
 
+def _ig_page_label(line: str) -> tuple[str, str] | None:
+    """``(page_name, page_url)`` when ``line`` links an Instagram profile.
+
+    The page name is the profile handle (the ``_u/`` path segment is not
+    part of it), so a markdown-escaped label such as
+    ``[livelonger\\_livehealthier]`` still yields the real handle.
+    """
+    match = _IG_PAGE_LINK_URL_RE.match(line)
+    if not match:
+        return None
+    handle = match.group("handle")
+    if handle.lower() in _IG_RESERVED_PATHS:
+        return None
+    return handle, match.group(2).strip()
+
+
 def _page_label_before(lines: list[str], sponsored_idx: int) -> tuple[str, str]:
     """``(page_name, page_url)`` for the label above ``**Sponsored**``.
 
-    The URL is the label's own link (``facebook.com/nike/`` or a numeric
-    profile id), taken from the first link of a co-advertiser label such as
-    ``[Noemimisma](…) with [Nike](…)``. When only an image alt text names the
-    page, it is the name and the URL is ``""``.
+    The URL is the label's own link (``facebook.com/nike/``, a numeric
+    profile id, or an Instagram profile), taken from the first link of a
+    co-advertiser label such as ``[Noemimisma](…) with [Nike](…)``. When only
+    an image alt text names the page, it is the name and the URL is ``""``.
     """
     for raw in reversed(lines[:sponsored_idx]):
         line = raw.strip()
@@ -351,10 +531,13 @@ def _page_label_before(lines: list[str], sponsored_idx: int) -> tuple[str, str]:
         link = _PAGE_LINK_URL_RE.match(line)
         if link:
             return link.group(1).strip(), link.group(2).strip()
+        instagram = _ig_page_label(line)
+        if instagram:
+            return instagram
         image = _IMAGE_ALT_RE.match(line)
         if image and image.group(1).strip():
             return image.group(1).strip(), ""
-        if line != "**Sponsored**":
+        if not _is_sponsor_marker(line):
             return "", ""
     return "", ""
 
@@ -366,6 +549,10 @@ def _numeric_page_id(page_url: str) -> str:
     render, and inventing one would poison joins.
     """
     match = _NUMERIC_PAGE_RE.search(page_url or "")
+    if match:
+        return match.group(1)
+    # profile.php?id=<digits> is the other numeric-page link shape.
+    match = _PROFILE_PHP_PAGE_RE.search(page_url or "")
     return match.group(1) if match else ""
 
 
@@ -447,7 +634,7 @@ def _image_urls(lines: list[str]) -> list[str]:
 
 def _parse_block(lines: list[str]) -> dict | None:
     sponsored_idx = next(
-        (i for i, line in enumerate(lines) if line.strip() == "**Sponsored**"),
+        (i for i, line in enumerate(lines) if _is_sponsor_marker(line)),
         None,
     )
     status_idx = _status_index(lines)
@@ -506,26 +693,41 @@ def _parse_block(lines: list[str]) -> dict | None:
     return ad
 
 
-def parse_library_markdown(md: str) -> list[dict]:
-    """Parse a rendered Meta Ad Library results page into ad dicts.
+def parse_library_markdown_with_meta(md: str) -> tuple[list[dict], dict]:
+    """Parse a rendered results page, also reporting card-marker accounting.
 
-    Returns ``[]`` only when the render carries no card markers at all (a
-    genuinely empty results page). Markers without any parseable card mean
-    the markup changed, so :class:`ParseError` is raised instead.
+    Returns ``(ads, {"cards_seen": int, "unparsed_cards": int})``.
+    ``cards_seen`` is the number of blocks carrying a card marker
+    (``**Sponsored**``, its payer variant, or ``Library ID``).
+    ``unparsed_cards`` counts only marker-bearing blocks that produced no ad
+    *and* carry the ad marker itself — a Sponsored header whose status block
+    was cut off, or a card whose markup changed. A bare ``Library ID`` status
+    block at a window edge is not counted: its header was never in the capture,
+    so no card was lost. A block carrying more than one ad marker is a seam
+    where cards were concatenated without a separator: only the first parses,
+    so each extra marker adds one to ``unparsed_cards``. A capture that
+    dropped a card must not be reported as a complete listing, so the caller
+    folds ``unparsed_cards`` into its completeness decision.
+
+    Raises :class:`ParseError` with the same contract as
+    :func:`parse_library_markdown`.
     """
     if not md or not isinstance(md, str):
-        return []
+        return [], {"cards_seen": 0, "unparsed_cards": 0}
     blocks = _card_blocks(md)
-    records = [rec for rec in (_parse_block(b) for b in blocks) if rec]
+    parsed_blocks = [(block, _parse_block(block)) for block in blocks]
+    records = [rec for _, rec in parsed_blocks if rec]
     cards_seen = sum(1 for block in blocks if _has_card_marker(block))
 
     # Recover cards cut in two by a capture/separator boundary: a status block
     # with no page label picks up a page label with no status block. Complete
     # cards always consume their own label, so only leftovers pair here.
     orphans = [r for r in records if "id" not in r and r.get("page_name")]
+    consumed_orphans: set[int] = set()
     for rec in records:
         if "id" in rec and not rec.get("page_name") and orphans:
             orphan = orphans.pop(0)
+            consumed_orphans.add(id(orphan))
             rec["page_name"] = orphan["page_name"]
             rec["page_url"] = orphan.get("page_url", "")
             rec["page_id"] = orphan.get("page_id", "")
@@ -536,9 +738,11 @@ def parse_library_markdown(md: str) -> list[dict]:
                     rec[key] = orphan[key]
 
     ads: list[dict] = []
+    consumed: set[int] = set()
     for rec in records:
         if "id" not in rec or not rec.get("page_name"):
             continue
+        consumed.add(id(rec))
         ads.append(
             {
                 "id": rec["id"],
@@ -559,6 +763,28 @@ def parse_library_markdown(md: str) -> list[dict]:
                 "multiple_versions": rec.get("multiple_versions", False),
             }
         )
+    # A block carrying the ad marker that yielded no ad (and was not merged
+    # into one across a separator boundary) is a card the parse lost. A
+    # ``Library ID`` alone is NOT such evidence: at a window edge a capture
+    # can start mid-card with the status block whose header never rendered, so
+    # counting it would mark an unclipped render partial. Only a block that
+    # claims the *body* of a card (``**Sponsored**``, including the payer
+    # variant) can prove a card was dropped.
+    unparsed = 0
+    for block, rec in parsed_blocks:
+        markers = _sponsor_marker_count(block)
+        if not markers:
+            continue
+        if rec is None or (id(rec) not in consumed and id(rec) not in consumed_orphans):
+            unparsed += 1
+            continue
+        # Two cards concatenated without the ``* * *`` separator parse as a
+        # single ad (the first status block wins), so the others vanish. That
+        # reads downstream as those ads having ended — count them as lost.
+        if markers > 1:
+            unparsed += markers - 1
+    meta = {"cards_seen": cards_seen, "unparsed_cards": unparsed}
+
     if not ads and cards_seen:
         raise ParseError(
             f"{cards_seen} card markers but no parseable ad", cards_seen=cards_seen
@@ -571,7 +797,20 @@ def parse_library_markdown(md: str) -> list[dict]:
             f"render ({len(md)} chars) with no card markers or empty-state text",
             cards_seen=0,
         )
-    return ads
+    return ads, meta
+
+
+def parse_library_markdown(md: str) -> list[dict]:
+    """Parse a rendered Meta Ad Library results page into ad dicts.
+
+    Returns ``[]`` only when the render carries no card markers at all (a
+    genuinely empty results page). Markers without any parseable card mean
+    the markup changed, so :class:`ParseError` is raised instead.
+
+    Callers that must know whether the capture dropped *some* cards use
+    :func:`parse_library_markdown_with_meta`.
+    """
+    return parse_library_markdown_with_meta(md)[0]
 
 
 def _content_from_payload(payload: dict) -> str:
@@ -761,7 +1000,8 @@ def fetch_ads_with_meta(
 
     ``meta`` is
     ``{"complete": bool, "complete_scope": "rendered_window", "fetched": int,
-    "total_returned": int, "fetched_chars": int, "char_limit": int}``.
+    "total_returned": int, "fetched_chars": int, "char_limit": int,
+    "cards_seen": int, "unparsed_cards": int}``.
 
     **``complete`` means the rendered window was not clipped — never that the
     whole result set was retrieved.** There is no pagination here: one fetch is
@@ -782,7 +1022,12 @@ def fetch_ads_with_meta(
     * the text carries the host's head+tail truncation footer
       (:data:`_TRUNCATION_MARKERS`), which drops cards from the middle;
     * ``limit`` itself sliced the parsed ads (total parsed ``>= limit``), so
-      the tail beyond the limit was never returned.
+      the tail beyond the limit was never returned;
+    * a card marker produced no parseable ad (``unparsed_cards > 0``), so the
+      capture dropped a card even though the text was not visibly clipped.
+
+    ``cards_seen`` and ``unparsed_cards`` are the parse accounting behind that
+    last signal (see :func:`parse_library_markdown_with_meta`).
 
     ``limit=None`` disables result slicing: every parsed ad is returned and
     the limit signal is inapplicable (it is omitted from the completeness
@@ -887,6 +1132,10 @@ def _fetch_once(url, budget, lim, dispatch):
                 "total_returned": total,
                 "fetched_chars": 0,
                 "char_limit": budget,
+                # JSON carries whole ads, not rendered cards; an item that
+                # failed normalisation (no id) is still reported as dropped.
+                "cards_seen": total,
+                "unparsed_cards": max(len(decoded) - total, 0),
             }
         elif decoded is not None:
             # Any other decoded top-level value (scalar/null/bool) is a
@@ -897,11 +1146,16 @@ def _fetch_once(url, budget, lim, dispatch):
     else:
         raise FetchError("web_extract returned no result")
 
-    parsed = parse_library_markdown(content)
+    parsed, parse_meta = parse_library_markdown_with_meta(content)
+    # A marker that produced no ad is a card the parse lost, so the render is
+    # not complete even when it was neither clipped nor sliced: dropping a
+    # card would otherwise read downstream as that ad having ended.
+    unparsed_cards = parse_meta["unparsed_cards"]
     complete = (
         len(content) < budget
         and (lim is None or len(parsed) < lim)
         and not any(marker in content for marker in _TRUNCATION_MARKERS)
+        and unparsed_cards == 0
     )
     meta = {
         "complete": complete,
@@ -910,6 +1164,8 @@ def _fetch_once(url, budget, lim, dispatch):
         "total_returned": len(parsed),
         "fetched_chars": len(content),
         "char_limit": budget,
+        "cards_seen": parse_meta["cards_seen"],
+        "unparsed_cards": unparsed_cards,
     }
     return parsed if lim is None else parsed[:lim], meta
 

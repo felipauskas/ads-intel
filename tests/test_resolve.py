@@ -1,19 +1,72 @@
 import json
 from pathlib import Path
 
+import pytest
+
 import resolve
 
 LIVE_MATRIX = Path(__file__).resolve().parents[1] / "evals" / "live-matrix"
 
+# Pinned snapshots of the keyword-search listings recorded at commit a52be83.
+# Kept here on purpose: evals/live-matrix is refreshed by replaying live queries,
+# so its contents are mutable. These unit tests assert resolver behaviour, not
+# whatever a later harvest happens to return.
+RECORDED_BK_EG_PAGE_NAMES = [
+    # evals/live-matrix/burger-king-eg/ads.json -> "search", a52be83
+    "Ns-zlin-0125",
+    "BUFFALO BURGER",
+    "Burger King Malaysia",
+    "DoorDash",
+    "Cholesterol Relief Community",
+    "BlazeReel Drama",
+    "Tatiana Salazar",
+    "Ns-YXB-ST2dd",
+    "Talabat",
+    "Xc-twoseven-One",
+    "NS-Zs-02",
+    "Ns-st-zsuse",
+    "LumaWorld",
+    "비밀의 저택에서",
+    "Shortdrama-zlin-06",
+    "Burger King Arabia",
+]
 
-def _recorded_page_names(folder):
-    """Page names as recorded live, in listing order (duplicates removed)."""
-    data = json.loads((LIVE_MATRIX / folder / "ads.json").read_text())
-    names = []
-    for ad in data["search"]:
-        if ad["page_name"] not in names:
-            names.append(ad["page_name"])
-    return names
+RECORDED_BK_AE_PAGE_NAMES = [
+    # evals/live-matrix/burger-king-ae/ads.json -> "advertiser_search"
+    # ("search" was empty at a52be83: the pair failed upstream)
+    "Burger King Arabia",
+]
+
+
+def _live_page_names(folder, field, fallback=None):
+    """Page names from the live-matrix recording, or skip if unavailable.
+
+    The matrix is regenerated against the live ad library, so a missing or
+    empty recording means "no data to check", never a resolver failure. The
+    paired ``advertiser_search`` leg is the fallback: at a52be83 the AE
+    keyword-search leg failed upstream and recorded ``search: []`` while
+    ``advertiser_search`` still held the page, so reading only ``search``
+    skipped a recording that had data.
+    """
+    path = LIVE_MATRIX / folder / "ads.json"
+    if not path.is_file():
+        pytest.skip(f"live-matrix recording missing: {path}")
+    data = json.loads(path.read_text())
+    for name in (field, fallback):
+        if not name:
+            continue
+        rows = data.get(name)
+        # A non-list (legacy/partial recording) is "no data", not a crash.
+        if not isinstance(rows, list):
+            continue
+        names = []
+        for ad in rows:
+            page = ad.get("page_name") if isinstance(ad, dict) else None
+            if page and page not in names:
+                names.append(page)
+        if names:
+            return names
+    pytest.skip(f"live-matrix recording empty: {path} ({field})")
 
 
 def test_exact_name_scores_point_eight():
@@ -87,20 +140,25 @@ def test_country_suffix_does_not_weaken_substring_rung():
 def test_recorded_burger_king_eg_fails_truthfully():
     """Live bug: `burger-king-eg` resolved to `Burger King Malaysia`.
 
-    Names come from ``evals/live-matrix/burger-king-eg/ads.json``; the listing
-    never contained a bare ``Burger King`` page, so there is nothing correct to
+    The pinned a52be83 listing (see ``RECORDED_BK_EG_PAGE_NAMES``) never
+    contained a bare ``Burger King`` page, so there is nothing correct to
     pick. Asking for EG must FAIL truthfully rather than resolve the
-    Malaysian page (the false PASS this test used to codify).
+    Malaysian page (the false PASS this test used to codify). Both
+    country-qualified pages in the listing are ineligible for EG, so both
+    are reported as diagnostics.
     """
-    recorded = _recorded_page_names("burger-king-eg")
-    result = resolve.resolve_advertiser("Burger King", recorded, market="EG")
+    result = resolve.resolve_advertiser(
+        "Burger King", RECORDED_BK_EG_PAGE_NAMES, market="EG"
+    )
     assert result["error"] == "name_not_matched"
     assert result["target"] == "Burger King"
     assert result["threshold"] == 0.80
     assert "page_name" not in result
     assert [c["page_name"] for c in result["candidates"]] == [
-        "Burger King Malaysia"
+        "Burger King Malaysia",
+        "Burger King Arabia",
     ]
+    assert all(c["score"] == 0.80 for c in result["candidates"])
 
 
 def test_veto_only_fires_on_explicit_other_market():
@@ -218,10 +276,51 @@ def test_recorded_burger_king_ae_resolves_arabia():
     "Arabia" is a Gulf-regional qualifier, not a Saudi-only one: mapping it
     to SA alone vetoed the correct AE page and broke the recorded PASS.
     """
-    names = _recorded_page_names("burger-king-ae")
-    result = resolve.resolve_advertiser("Burger King", names, market="AE")
+    result = resolve.resolve_advertiser(
+        "Burger King", RECORDED_BK_AE_PAGE_NAMES, market="AE"
+    )
     assert "error" not in result
     assert result["page_name"] == "Burger King Arabia"
+
+
+def test_recorded_burger_king_eg_live_matrix_if_present():
+    """Smoke the live-matrix recording without asserting its exact contents.
+
+    The matrix is regenerated from live queries; if the EG listing has since
+    gained an Egypt-compatible page, a miss is no longer the expected outcome.
+    Only the invariant is checked here: with no eligible page the resolver has
+    to fail truthfully, and no cross-market page may be resolved.
+    """
+    names = _live_page_names("burger-king-eg", "search")
+    eligible = [
+        name
+        for name in names
+        if "error" not in resolve.resolve_advertiser(
+            "Burger King", [name], market="EG"
+        )
+    ]
+    if eligible:
+        pytest.skip(f"live recording now has EG-eligible pages: {eligible}")
+
+    result = resolve.resolve_advertiser("Burger King", names, market="EG")
+    assert result["error"] == "name_not_matched"
+    assert "page_name" not in result
+
+
+def test_recorded_burger_king_ae_live_matrix_if_present():
+    """Smoke the live AE recording when it exists; skip on upstream failure.
+
+    The AE keyword-search leg recorded empty upstream, so fall back to the
+    ``advertiser_search`` leg rather than skipping a recording that has data.
+    """
+    names = _live_page_names(
+        "burger-king-ae", "search", fallback="advertiser_search"
+    )
+    if "Burger King Arabia" not in names:
+        pytest.skip("live recording no longer contains 'Burger King Arabia'")
+
+    result = resolve.resolve_advertiser("Burger King", names, market="AE")
+    assert result.get("page_name") == "Burger King Arabia"
 
 
 def test_arabia_is_compatible_with_gulf_markets():

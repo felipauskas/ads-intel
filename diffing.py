@@ -78,8 +78,23 @@ def _sig(ad: dict, keys: tuple[str, ...] = ()) -> tuple:
 _CREATIVE_KEYS = ("creative_text", "link_url", "link_title", "cta_text")
 
 
-def _same_creative(before: dict, after: dict) -> bool:
+def _same_creative(before: dict, after: dict, partial: bool = False) -> bool:
+    """Do two records carry the same creative?
+
+    Only keys present on both sides are compared (a baseline that predates a
+    field is not compared on that field). When ``partial`` is set, a key is
+    also skipped if either side is empty: on a clipped/partially hydrated
+    render a blank CTA/title is an *unknown* value, not a creative edit, so
+    comparing it reported every re-render as changed and wrote the degraded
+    record into the baseline. A genuine edit where both sides are populated is
+    still detected.
+    """
     keys = tuple(k for k in _CREATIVE_KEYS if k in before and k in after)
+    if partial:
+        keys = tuple(
+            k for k in keys
+            if _norm_field(k, before.get(k)) and _norm_field(k, after.get(k))
+        )
     return _sig(before, keys) == _sig(after, keys)
 
 
@@ -96,12 +111,21 @@ def _ads_map(snapshot) -> dict:
     return ads if isinstance(ads, dict) else {}
 
 
-def diff_snapshots(old, new) -> dict:
+def diff_snapshots(old, new, partial: bool = False) -> dict:
     """Classify two snapshots into `new`, `ended` and `changed` buckets.
 
     Status strings are compared case- and whitespace-insensitively; volatile
     render counters (the Like-Page "N people like this" line in
     ``link_title``) are stripped before creative comparison.
+
+    ``partial`` marks the *new* snapshot as a clipped or partially hydrated
+    render. On a partial render a creative field that came back empty on
+    either side is treated as unknown and not compared, so a lost CTA/title
+    block does not read as a creative edit. On a complete render (the default)
+    an emptied field is a real observation and still counts as a change: the
+    render finished, so the field is genuinely absent from the creative. A
+    caller whose *new* snapshot came from a partial render must pass
+    ``partial=True``.
 
     **The buckets are window-scoped.** Both snapshots are single fetches of
     Meta's rendered listing, and the fetch has no pagination: even a fetch
@@ -110,12 +134,13 @@ def diff_snapshots(old, new) -> dict:
     and `new` means "appeared in this rendered window", not "proven
     launched". Callers must word their reports accordingly.
 
-    An id absent from *a clipped* new snapshot is weaker still. The buckets
-    above are the honest reading only for unclipped renders; when a render may
-    be clipped, the caller must either pass an old snapshot restricted to ids
-    the fetch actually returned, or drop the `ended` bucket. (Passing a clipped
-    render unfiltered would report every id past the clip as `ended`.)
-    :func:`tools.ad_check` does the former for partial renders.
+    An id absent from *a clipped* new snapshot is weaker still: absence may
+    only mean the render never reached it. ``partial=True`` therefore
+    suppresses the missing-id ``ended`` bucket entirely — those ids are
+    *unknown*, not ended. A status *flip* observed on a card that did render
+    is still reported: that is an observation, not an absence. On a complete
+    render (the default) a missing id is still reported as ``ended``. All
+    buckets remain window-scoped either way.
     """
     old_ads = _ads_map(old)
     new_ads = _ads_map(new)
@@ -124,7 +149,9 @@ def diff_snapshots(old, new) -> dict:
         ad for ad_id, ad in new_ads.items()
         if ad_id not in old_ads and isinstance(ad, dict)
     ]
-    ended = [
+    # Missing ids on a partial render are unknown, not ended. A status flip to
+    # inactive is still appended below (it was observed on a rendered card).
+    ended = [] if partial else [
         ad for ad_id, ad in old_ads.items()
         if ad_id not in new_ads and isinstance(ad, dict)
     ]
@@ -138,7 +165,7 @@ def diff_snapshots(old, new) -> dict:
             continue
         if _is_ended(before) != _is_ended(after):
             (ended if _is_ended(after) else new_ads_list).append(after)
-        elif not _same_creative(before, after):
+        elif not _same_creative(before, after, partial=partial):
             changed.append(after)
 
     return {"new": new_ads_list, "ended": ended, "changed": changed}

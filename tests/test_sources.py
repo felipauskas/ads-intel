@@ -114,6 +114,11 @@ def test_fetch_marks_truncated_when_render_hits_budget():
         "total_returned": 2,
         "fetched_chars": budget,
         "char_limit": budget,
+        # The cut-off prefix starts mid-page: block 1 is a bare status block
+        # whose header was never rendered. That is NOT a lost card (no ad
+        # marker), so the accounting is zero even though the render is clipped.
+        "cards_seen": 3,
+        "unparsed_cards": 0,
     }
 
     # A short render fits inside the budget: the listing is complete.
@@ -870,6 +875,8 @@ def test_json_meta_reports_fetched_and_total_returned():
         "total_returned": 29,
         "fetched_chars": 0,
         "char_limit": sources._CHAR_LIMIT,
+        "cards_seen": 29,
+        "unparsed_cards": 0,
     }
 
 
@@ -932,11 +939,17 @@ _FOOTER_LINKS = [
 ]
 
 
-def _card(creative: str, *, status: str = "Active", library_id: str = "1234567890") -> str:
+def _card(
+    creative: str,
+    *,
+    status: str = "Active",
+    library_id: str = "1234567890",
+    page_label: str = "[Nike](https://www.facebook.com/nike/)",
+) -> str:
     """One parseable card: page label, creative body, then the status block."""
     return "\n\n".join(
         [
-            "[Nike](https://www.facebook.com/nike/)",
+            page_label,
             "**Sponsored**",
             creative,
             status,
@@ -1199,3 +1212,460 @@ def test_string_body_whitespace_only_raises_empty_content():
 @pytest.mark.parametrize("value", [None, [], {}, object()])
 def test_as_bool_treats_non_scalar_values_as_false(value):
     assert sources._as_bool(value) is False
+
+
+# --- F2: a card marker with no parseable record makes the listing partial ----
+
+def test_parse_meta_exposes_cards_seen_and_unparsed_cards():
+    """Card-marker accounting is public, so callers can see a dropped card.
+
+    ``cards_seen`` counts marker-bearing blocks; ``unparsed_cards`` counts the
+    blocks that produced no ad (a Sponsored header whose status block was cut
+    off, a status block with no matching header, ...).
+    """
+    page = "\n\n* * *\n\n".join(
+        [
+            _card("First ad copy.", library_id="111"),
+            "\n\n".join(
+                [
+                    "[Nike](https://www.facebook.com/nike/)",
+                    "**Sponsored**",
+                    "Second ad copy, status block cut off",
+                ]
+            ),
+        ]
+    )
+    ads, meta = sources.parse_library_markdown_with_meta(page)
+    assert [ad["id"] for ad in ads] == ["111"]
+    assert meta == {"cards_seen": 2, "unparsed_cards": 1}
+
+    # Backwards compatibility: the plain parser still returns the ads it got.
+    assert [ad["id"] for ad in sources.parse_library_markdown(page)] == ["111"]
+
+
+def test_unparsed_card_makes_fetch_incomplete():
+    """One dropped card out of two: the listing is not complete.
+
+    ``complete`` previously meant only "not clipped, not limit-sliced", so a
+    half-parsed card sailed through as a complete listing and the missing ad
+    read as an ending.
+    """
+    page = "\n\n* * *\n\n".join(
+        [
+            _card("First ad copy.", library_id="111"),
+            "\n\n".join(
+                [
+                    "[Nike](https://www.facebook.com/nike/)",
+                    "**Sponsored**",
+                    "Second ad copy, status block cut off",
+                ]
+            ),
+        ]
+    )
+    ads, meta = sources.fetch_ads_with_meta(
+        "nike", limit=None, dispatch=lambda n, a: page
+    )
+    assert [ad["id"] for ad in ads] == ["111"]
+    assert meta["cards_seen"] == 2
+    assert meta["unparsed_cards"] == 1
+    assert meta["complete"] is False
+
+
+def test_every_card_parsed_is_complete_and_fully_accounted(ads):
+    """A clean render reports every marker as parsed and stays complete.
+
+    ``cards_seen`` counts marker-bearing blocks, not ads: the golden fixture
+    ends with a card split across a separator, so its header and status halves
+    are two marked blocks that pair into one ad.
+    """
+    full_ads, meta = sources.fetch_ads_with_meta(
+        "nike",
+        limit=None,
+        dispatch=lambda n, a: FIXTURE.read_text(),
+        char_limit=sources._CHAR_LIMIT,
+    )
+    assert meta["unparsed_cards"] == 0
+    assert len(full_ads) == 28
+    # 29 marked blocks pair into 28 ads: the fixture's last card is split
+    # across a separator into a header half and a status half.
+    assert meta["cards_seen"] == 29
+    assert meta["cards_seen"] == len(full_ads) + 1
+    assert meta["complete"] is True
+
+
+# --- F4: bracketed copy is copy, not a CTA block ----------------------------
+
+
+def test_bracketed_copy_is_preserved_as_creative():
+    """'[NEW] 50% off today' is body copy, not a markdown link block."""
+    page = _card("[NEW] 50% off today\n\nShop the drop.")
+    ad = sources.parse_library_markdown(page)[0]
+    assert ad["creative_text"] == "[NEW] 50% off today\nShop the drop."
+
+
+def test_multiline_cta_block_is_still_stripped_as_link_chrome():
+    """A genuine wrapped ``[title \\ ... Shop Now](url)`` block is dropped."""
+    creative = "\n\n".join(
+        [
+            "Real copy.",
+            "[Wrapped title \\",
+            "second title line \\",
+            "Shop Now](https://shop.example/p)",
+            "More real copy.",
+        ]
+    )
+    page = _card(creative)
+    ad = sources.parse_library_markdown(page)[0]
+    assert ad["creative_text"] == "Real copy.\nMore real copy."
+    assert ad["link_url"] == "https://shop.example/p"
+    assert ad["cta_text"] == "Shop Now"
+
+
+def test_unwrapped_cta_block_is_still_stripped_as_link_chrome():
+    """Without trailing ``\\`` the title and ``](url)`` still form one CTA block.
+
+    A render can soft-wrap the link opener with no escape: keeping the
+    fragment as copy corrupted ``creative_text`` and, worse, did it stably
+    enough to look like a real creative change downstream.
+    """
+    creative = "\n\n".join(
+        [
+            "Real copy.",
+            "[Shop the new drop",
+            "Now available.",
+            "](https://shop.example/p)",
+            "More real copy.",
+        ]
+    )
+    page = _card(creative)
+    ad = sources.parse_library_markdown(page)[0]
+    assert ad["creative_text"] == "Real copy.\nMore real copy."
+    assert ad["link_url"] == "https://shop.example/p"
+
+
+def test_orphan_link_destination_line_is_link_chrome():
+    """A bare ``](url)`` continuation is chrome even with no opener kept."""
+    creative = "\n\n".join(
+        ["Real copy.", "](https://shop.example/p)", "More real copy."]
+    )
+    page = _card(creative)
+    ad = sources.parse_library_markdown(page)[0]
+    assert ad["creative_text"] == "Real copy.\nMore real copy."
+
+
+def test_bracketed_copy_with_inline_link_is_preserved():
+    """Copy that merely *contains* a link is copy, not a CTA block."""
+    page = _card("[NEW] 50% off today, see [details](https://shop.example/x) now.")
+    ad = sources.parse_library_markdown(page)[0]
+    assert "50% off today" in ad["creative_text"]
+    assert "now." in ad["creative_text"]
+    assert "https://shop.example/x" not in ad["creative_text"]
+
+
+# --- F9: profile.php page ids ------------------------------------------------
+
+
+def test_profile_php_page_url_yields_page_id():
+    """`profile.php?id=<digits>` names a numeric page just as `/123/` does."""
+    page = _card("Copy.").replace(
+        "https://www.facebook.com/nike/",
+        "https://www.facebook.com/profile.php?id=61551864263186",
+    )
+    ad = sources.parse_library_markdown(page)[0]
+    assert ad["page_name"] == "Nike"
+    assert ad["page_id"] == "61551864263186"
+
+    # With extra query parameters the id is still the page id.
+    assert (
+        sources._numeric_page_id(
+            "https://www.facebook.com/profile.php?locale=es_LA&id=123456"
+        )
+        == "123456"
+    )
+    # The plain numeric path shape keeps working.
+    assert sources._numeric_page_id("https://www.facebook.com/123456/") == "123456"
+    # And a vanity handle still yields no invented id.
+    assert sources._numeric_page_id("https://www.facebook.com/nike/") == ""
+
+
+# --- F13: Instagram page labels ---------------------------------------------
+#
+# The library labels creator-run ads with an Instagram profile instead of a
+# Facebook page: ``[handle](https://www.instagram.com/_u/<handle>)``, alone or
+# as the first name of a co-advertiser label (``... with [Brand](facebook)``).
+# Those cards used to yield no page name and were silently dropped.
+
+
+def test_instagram_u_page_label_is_parsed():
+    """Real render (library id 304901805953079): escaped handle, ``_u`` link."""
+    card = _card(
+        "I asked my wife to guess the calories \U0001f369",
+        status="Active",
+        library_id="304901805953079",
+        page_label=(
+            r"[livelonger\_livehealthier]"
+            "(https://www.instagram.com/_u/livelonger_livehealthier)"
+        ),
+    )
+    ads = sources.parse_library_markdown(card)
+    assert len(ads) == 1
+    ad = ads[0]
+    # The handle is the page name; the markdown escape is not part of it.
+    assert ad["page_name"] == "livelonger_livehealthier"
+    assert ad["page_url"] == "https://www.instagram.com/_u/livelonger_livehealthier"
+    # An Instagram profile has no Facebook page id to report.
+    assert ad["page_id"] == ""
+
+
+def test_instagram_first_co_advertiser_label_is_parsed():
+    """Real render: ``[tarasutaria](ig) with [McDonald's India](facebook)``.
+
+    The first link names the page, matching the existing co-advertiser rule
+    for Facebook labels (``[Noemimisma](…) with [Nike](…)``).
+    """
+    card = _card(
+        "Coffee has always been my thing.",
+        status="Inactive",
+        library_id="1111111111111",
+        page_label=(
+            "[tarasutaria](https://www.instagram.com/_u/tarasutaria) with "
+            "[McDonald's India](https://www.facebook.com/McDonaldsinIndia/)"
+        ),
+    )
+    ad = sources.parse_library_markdown(card)[0]
+    assert ad["page_name"] == "tarasutaria"
+    assert ad["page_url"] == "https://www.instagram.com/_u/tarasutaria"
+    assert ad["page_id"] == ""
+
+
+def test_plain_instagram_profile_label_is_parsed():
+    card = _card(
+        "Ad copy.",
+        page_label="[cafebelgedubai](https://www.instagram.com/cafebelgedubai/)",
+    )
+    ad = sources.parse_library_markdown(card)[0]
+    assert ad["page_name"] == "cafebelgedubai"
+    assert ad["page_url"] == "https://www.instagram.com/cafebelgedubai/"
+
+
+def test_instagram_labelled_card_does_not_count_as_unparsed():
+    """A dropped card made ``unparsed_cards`` non-zero and broke completeness."""
+    page = "\n\n* * *\n\n".join(
+        [
+            _card("Facebook page card."),
+            _card(
+                "Instagram page card.",
+                library_id="2222222222222",
+                page_label="[coldestjoel](https://www.instagram.com/_u/coldestjoel)",
+            ),
+        ]
+    )
+    ads, meta = sources.parse_library_markdown_with_meta(page)
+    assert meta == {"cards_seen": 2, "unparsed_cards": 0}
+    assert [ad["id"] for ad in ads] == ["1234567890", "2222222222222"]
+    assert ads[1]["page_name"] == "coldestjoel"
+
+
+@pytest.mark.parametrize(
+    "label",
+    [
+        "[Log in](https://www.instagram.com/accounts/login/?next=x)",
+        "[Instagram](https://www.instagram.com/)",
+        "[Terms](https://www.instagram.com/legal/terms/)",
+        "[API](https://www.instagram.com/developer/)",
+    ],
+)
+def test_instagram_non_profile_links_are_not_page_labels(label):
+    """A footer/nav Instagram link is chrome, not the advertiser's page."""
+    assert sources._page_label_before([label, "**Sponsored**"], 1) == ("", "")
+
+
+# --- F12: footer blocks between creative lines ------------------------------
+
+
+def test_host_footer_between_creative_lines_is_stripped():
+    """A host footer mid-card must not survive into creative_text.
+
+    The cache path in that footer changes on every fetch, so a surviving
+    footer made byte-identical creative look changed.
+    """
+    creative = "\n\n".join(
+        [
+            "Copy before the footer.",
+            _host_footer("www.facebook.com-dddddddd"),
+            "Copy after the footer.",
+        ]
+    )
+    ad = sources.parse_library_markdown(_card(creative))[0]
+    assert ad["creative_text"] == (
+        "Copy before the footer.\nCopy after the footer."
+    )
+    assert "Full text saved to:" not in ad["creative_text"]
+    assert "TRUNCATED" not in ad["creative_text"]
+    assert "/Users/" not in ad["creative_text"]
+
+
+def test_page_footer_between_creative_lines_is_stripped():
+    creative = "\n\n".join(
+        ["Copy before.", "System status", *_FOOTER_LINKS, "Copy after."]
+    )
+    ad = sources.parse_library_markdown(_card(creative))[0]
+    assert ad["creative_text"] == "Copy before.\nCopy after."
+
+
+def test_single_policy_link_mid_copy_is_still_creative():
+    """One policy-looking link among copy is not a footer block."""
+    creative = "\n\n".join(
+        [
+            "Read our privacy notes:",
+            "- [Privacy](https://www.facebook.com/privacy/center/?entry_point=x)",
+            "Questions? Contact us.",
+        ]
+    )
+    ad = sources.parse_library_markdown(_card(creative))[0]
+    assert "facebook.com/privacy/center" in ad["creative_text"]
+
+
+# --- F2 refinement: what counts as a lost card, and the payer marker --------
+
+
+def _status_block(library_id: str = "999", status: str = "Inactive") -> str:
+    """The status half of a card: no page label, no ``**Sponsored**``."""
+    return "\n\n".join(
+        [status, f"Library ID: {library_id}", "Aug 4, 2026 - Sep 14, 2026"]
+    )
+
+
+def test_status_only_orphan_at_window_edge_is_not_a_lost_card():
+    """A capture can begin mid-card: status block, header never rendered.
+
+    That block carries no ad marker, so no card was lost inside the capture.
+    Counting it made unclipped renders look partial for no reason.
+    """
+    page = "\n\n* * *\n\n".join(
+        [
+            "Ad Library\nFilters\nSort by",
+            _status_block("999"),
+            _card("First ad copy.", library_id="111"),
+        ]
+    )
+    ads, meta = sources.parse_library_markdown_with_meta(page)
+    assert [ad["id"] for ad in ads] == ["111"]
+    # The status block still counts as a marker (cards_seen), not as a loss.
+    assert meta == {"cards_seen": 2, "unparsed_cards": 0}
+
+    _, fetch_meta = sources.fetch_ads_with_meta(
+        "nike", limit=None, dispatch=lambda n, a: page
+    )
+    assert fetch_meta["complete"] is True
+
+
+def test_sponsored_header_without_library_id_is_still_a_lost_card():
+    """A genuinely cut card carries the ad marker but no ``Library ID``.
+
+    Its header rendered; its status block did not. That is a card the capture
+    lost, so the listing must stay incomplete.
+    """
+    cut = "\n\n".join(
+        [
+            "[Nike](https://www.facebook.com/nike/)",
+            "**Sponsored**",
+            "Second ad copy, status block cut off",
+        ]
+    )
+    page = "\n\n* * *\n\n".join([_card("First ad copy.", library_id="111"), cut])
+    ads, meta = sources.parse_library_markdown_with_meta(page)
+    assert [ad["id"] for ad in ads] == ["111"]
+    assert meta == {"cards_seen": 2, "unparsed_cards": 1}
+
+    _, fetch_meta = sources.fetch_ads_with_meta(
+        "nike", limit=None, dispatch=lambda n, a: page
+    )
+    assert fetch_meta["complete"] is False
+
+
+def test_sponsored_payer_variant_marker_parses_the_card():
+    """``**Sponsored** • Paid for by **Page**`` is the same ad marker.
+
+    The whole card is otherwise standard; failing to recognize the marker
+    dropped a complete, parseable card and marked the render partial.
+    """
+    card = "\n\n".join(
+        [
+            "[Nike](https://www.facebook.com/nike/)",
+            "**Sponsored** • Paid for by **Nike**",
+            "Buy the new trainers.",
+            "Active",
+            "Library ID: 424242",
+            "Jul 1, 2026",
+        ]
+    )
+    ads, meta = sources.parse_library_markdown_with_meta(card)
+    assert len(ads) == 1
+    ad = ads[0]
+    assert ad["id"] == "424242"
+    assert ad["page_name"] == "Nike"
+    assert ad["status"] == "active"
+    assert ad["creative_text"] == "Buy the new trainers."
+    assert "Paid for by" not in ad["creative_text"]
+    assert meta == {"cards_seen": 1, "unparsed_cards": 0}
+
+
+def test_sponsored_payer_variant_without_status_is_a_lost_card():
+    """Recognizing the variant must not hide a genuinely cut card."""
+    cut = "\n\n".join(
+        [
+            "[Nike](https://www.facebook.com/nike/)",
+            "**Sponsored** • Paid for by **Nike**",
+            "Copy, status block cut off",
+        ]
+    )
+    page = "\n\n* * *\n\n".join([_card("First ad copy.", library_id="111"), cut])
+    _, meta = sources.parse_library_markdown_with_meta(page)
+    assert meta["unparsed_cards"] == 1
+
+
+def test_golden_fixture_stays_fully_accounted_after_refinement(ads):
+    """The golden fixture is unclipped: no marker may count as lost."""
+    full_ads, meta = sources.fetch_ads_with_meta(
+        "nike",
+        limit=None,
+        dispatch=lambda n, a: FIXTURE.read_text(),
+        char_limit=sources._CHAR_LIMIT,
+    )
+    assert len(full_ads) == 28
+    assert meta["unparsed_cards"] == 0
+    assert meta["complete"] is True
+
+
+def test_two_cards_merged_into_one_block_are_not_reported_complete():
+    """Two cards concatenated without ``* * *`` must not read as one ad.
+
+    The block parses one ad (the first status block wins), so the second card
+    vanishes. Downstream that reads as "the other ad ended" — the exact
+    false-negative class completeness accounting exists to prevent.
+    """
+    page = "\n\n".join(
+        [
+            _card("First ad copy.", library_id="111"),
+            _card("Second ad copy.", library_id="222"),
+        ]
+    )
+    ads, meta = sources.parse_library_markdown_with_meta(page)
+    assert [ad["id"] for ad in ads] == ["111"]
+    assert meta["cards_seen"] == 1
+    assert meta["unparsed_cards"] >= 1
+
+    _, fetch_meta = sources.fetch_ads_with_meta(
+        "nike", limit=None, dispatch=lambda n, a: page
+    )
+    assert fetch_meta["complete"] is False
+
+
+def test_three_merged_cards_count_every_lost_card():
+    page = "\n\n".join(
+        [_card(f"Copy {i}.", library_id=str(100 + i)) for i in (1, 2, 3)]
+    )
+    ads, meta = sources.parse_library_markdown_with_meta(page)
+    assert [ad["id"] for ad in ads] == ["101"]
+    assert meta["unparsed_cards"] == 2

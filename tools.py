@@ -477,35 +477,71 @@ def ad_check(args, **kwargs):
 
         try:
             by_id = {ad["id"]: ad for ad in ads}
-            prior = store.load_snapshot(
-                query,
-                country=country,
-                advertiser=advertiser,
-                active_status=active_status,
-                media_type=media_type,
-            )
-            if complete:
-                diff_old = prior
-                baseline = by_id
-            else:
-                # Partial listing: mask out prior ads the render never reached,
-                # so an absent id is not counted as ended. Status flips on ads
-                # that did render are still reported.
-                prior_ads = prior.get("ads") or {}
-                diff_old = {"ads": {k: v for k, v in prior_ads.items() if k in by_id}}
-                # Merge instead of replacing: a truncated render must not shrink
-                # the baseline, or the next complete run reports every masked id
-                # as new.
-                baseline = {**prior_ads, **by_id}
-            diff = diffing.diff_snapshots(diff_old, {"ads": by_id})
-            store.save_snapshot(
-                query,
-                {"ads": baseline},
-                country=country,
-                advertiser=advertiser,
-                active_status=active_status,
-                media_type=media_type,
-            )
+            # Load -> diff -> save is one critical section. The fetch already
+            # happened above, so nothing slow runs inside it; without it, two
+            # overlapping checks on one key diff the same prior and the later
+            # save silently erases the other's ads.
+            with store.data_lock():
+                prior = store.load_snapshot(
+                    query,
+                    country=country,
+                    advertiser=advertiser,
+                    active_status=active_status,
+                    media_type=media_type,
+                )
+                if complete:
+                    diff_old = prior
+                    baseline = by_id
+                else:
+                    # Partial listing: mask out prior ads the render never
+                    # reached, so an absent id is not counted as ended. Status
+                    # flips on ads that did render are still reported.
+                    # (diff_snapshots also suppresses the ended bucket when
+                    # `partial=True`; this mask keeps the two in step and
+                    # makes the diff's input honest for status comparisons.)
+                    prior_ads = prior.get("ads") or {}
+                    diff_old = {
+                        "ads": {k: v for k, v in prior_ads.items() if k in by_id}
+                    }
+                    # Merge instead of replacing: a truncated render must not
+                    # shrink the baseline, or the next complete run reports
+                    # every masked id as new. The merge is field-level: a
+                    # clipped/partially hydrated record can come back with a
+                    # blank CTA/title/url, and overlaying that verbatim would
+                    # write the degraded value into the baseline, so the next
+                    # complete run reports a false creative change. Keep the
+                    # prior value for a creative field the new record left
+                    # blank (same keys `diffing` compares, so the two cannot
+                    # diverge on what counts as a creative field).
+                    baseline = {**prior_ads}
+                    for ad_id, new_ad in by_id.items():
+                        old_ad = prior_ads.get(ad_id)
+                        if not isinstance(old_ad, dict) or not isinstance(
+                            new_ad, dict
+                        ):
+                            baseline[ad_id] = new_ad
+                            continue
+                        merged = {**old_ad, **new_ad}
+                        for key in diffing._CREATIVE_KEYS:
+                            if not str(merged.get(key) or "").strip() and str(
+                                old_ad.get(key) or ""
+                            ).strip():
+                                merged[key] = old_ad[key]
+                        baseline[ad_id] = merged
+                # A partial render's blank creative field is unknown, not an
+                # edit: compare with `partial=True` so only populated-vs-
+                # populated differences are reported.
+                diff = diffing.diff_snapshots(
+                    diff_old, {"ads": by_id}, partial=not complete
+                )
+                store.save_snapshot(
+                    query,
+                    {"ads": baseline},
+                    country=country,
+                    advertiser=advertiser,
+                    active_status=active_status,
+                    media_type=media_type,
+                )
             # A report failure must never fail the check itself.
             try:
                 artifacts = report.write_report(

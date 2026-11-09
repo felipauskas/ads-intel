@@ -73,10 +73,14 @@ def test_demo_path_end_to_end(data_dir):
         url = ctx.calls[0][1]["urls"][0]
         assert "country=US" in url and "q=nike" in url
 
-        # 3. Tamper with one saved ad's creative text.
+        # 3. Tamper with one saved ad's creative text. Pick an ad the render
+        # actually populates: on a partial render a blank field is "unknown",
+        # not an edit (F3), so blanking/raising an empty field is invisible.
         snapshot = tools.store.load_snapshot("nike")
         assert len(snapshot["ads"]) == delivered
-        target_id = expected[0]["id"]
+        target_id = next(
+            ad["id"] for ad in expected if (ad.get("creative_text") or "").strip()
+        )
         assert target_id in snapshot["ads"]
         snapshot["ads"][target_id]["creative_text"] = "tampered copy"
         tools.store.save_snapshot("nike", snapshot)

@@ -1,4 +1,6 @@
 import json
+import threading
+import time
 from pathlib import Path
 
 import pytest
@@ -370,6 +372,37 @@ def test_truncated_fetch_reports_no_ended_ads(monkeypatch):
     assert all(str(i) in snap for i in range(1, 30))
 
 
+def test_partial_status_flip_is_reported_once(monkeypatch):
+    """Partial: a rendered ad flipping inactive is `ended`; a missing id is not.
+
+    The status flip is observed on the card, so it survives ended-suppression.
+    The absent id was never rendered, so it must appear in no bucket — and the
+    mask/merge must not report it twice.
+    """
+    tools.ad_watch({"action": "add", "query": "nike"})
+    prior = {
+        "1": {**AD, "id": "1", "status": "active", "creative_text": "v1"},
+        "2": {**AD, "id": "2", "status": "active", "creative_text": "v1"},
+    }
+    tools.store.save_snapshot("nike", {"ads": prior})
+
+    # Partial render: ad 1 rendered and flipped inactive; ad 2 never rendered.
+    fetched = [{**AD, "id": "1", "status": "inactive", "creative_text": "v1"}]
+    monkeypatch.setattr(
+        tools.sources, "fetch_ads_with_meta", _stub_fetch(fetched, complete=False)
+    )
+
+    row = json.loads(tools.ad_check({}))["results"][0]
+    assert row["partial"] is True
+    assert row["ended_ads"] == 1
+    assert [ad["id"] for ad in row["ended"]] == ["1"]
+    assert row["new_ads"] == 0 and row["changed_ads"] == 0
+    # The unseen ad survives in the baseline; the flipped status is stored.
+    snap = tools.store.load_snapshot("nike")["ads"]
+    assert snap["2"]["status"] == "active"
+    assert snap["1"]["status"] == "inactive"
+
+
 def test_partial_run_then_complete_reports_no_new_ads(monkeypatch):
     """A partial run must not shrink the baseline into a false-new next run."""
     tools.ad_watch({"action": "add", "query": "nike"})
@@ -397,6 +430,121 @@ def test_partial_run_then_complete_reports_no_new_ads(monkeypatch):
     assert second["new_ads"] == 0
     assert second["ended_ads"] == 0
     assert second["changed_ads"] == 0
+
+
+def test_partial_blank_cta_is_not_a_change(monkeypatch):
+    """A clipped render's blank CTA is unknown, not an edit; a complete one is."""
+    tools.ad_watch({"action": "add", "query": "nike"})
+    tools.store.save_snapshot(
+        "nike", {"ads": {"1": {**AD, "cta_text": "Shop now"}}}
+    )
+
+    degraded = [{**AD, "cta_text": ""}]
+    monkeypatch.setattr(
+        tools.sources, "fetch_ads_with_meta", _stub_fetch(degraded, complete=False)
+    )
+    row = json.loads(tools.ad_check({}))["results"][0]
+    assert row["partial"] is True
+    assert (row["new_ads"], row["ended_ads"], row["changed_ads"]) == (0, 0, 0)
+
+    # Same blank CTA on an unclipped render is a real observation: the field
+    # genuinely left the creative, so it still counts as a change.
+    monkeypatch.setattr(tools.sources, "fetch_ads_with_meta", _stub_fetch(degraded))
+    row = json.loads(tools.ad_check({}))["results"][0]
+    assert row["partial"] is False
+    assert row["changed_ads"] == 1
+    assert [ad["id"] for ad in row["changed"]] == ["1"]
+
+
+def test_partial_blank_field_does_not_poison_baseline(monkeypatch):
+    """Field-level merge: a degraded partial record must not erase prior copy."""
+    tools.ad_watch({"action": "add", "query": "nike"})
+    prior_ad = {
+        **AD,
+        "creative_text": "v1",
+        "link_title": "Nike Store",
+        "cta_text": "Shop now",
+    }
+    tools.store.save_snapshot("nike", {"ads": {"1": prior_ad}})
+
+    # Partial render: CTA blanked, but the creative genuinely advanced to v2.
+    degraded = [{**AD, "creative_text": "v2", "link_title": "", "cta_text": ""}]
+    monkeypatch.setattr(
+        tools.sources, "fetch_ads_with_meta", _stub_fetch(degraded, complete=False)
+    )
+    row = json.loads(tools.ad_check({}))["results"][0]
+    # The blank CTA is not compared, but the v1 -> v2 text edit still is.
+    assert row["changed_ads"] == 1
+
+    saved = tools.store.load_snapshot("nike")["ads"]["1"]
+    # Populated new values win; blank ones keep the prior baseline value.
+    assert saved["creative_text"] == "v2"
+    assert saved["cta_text"] == "Shop now"
+    assert saved["link_title"] == "Nike Store"
+
+    # A later complete render with a real new CTA still diffs correctly.
+    completed = [{**AD, "creative_text": "v2", "link_title": "Nike Store",
+                  "cta_text": "Buy now"}]
+    monkeypatch.setattr(tools.sources, "fetch_ads_with_meta", _stub_fetch(completed))
+    row = json.loads(tools.ad_check({}))["results"][0]
+    assert row["partial"] is False
+    assert row["changed_ads"] == 1
+    assert [ad["id"] for ad in row["changed"]] == ["1"]
+    assert tools.store.load_snapshot("nike")["ads"]["1"]["cta_text"] == "Buy now"
+
+
+def test_concurrent_partial_checks_keep_both_ads(monkeypatch):
+    """ad_check's load -> diff/merge -> save must be one critical section.
+
+    Two overlapping checks on one partial watch each see only their own ad.
+    Without `store.data_lock()` around the cycle both read the same prior and
+    the later save erases the other's ad; the slow load below widens that
+    window so a lock regression fails here instead of flaking.
+    """
+    tools.ad_watch({"action": "add", "query": "nike"})
+    prior = {**AD, "id": "prior"}
+    tools.store.save_snapshot("nike", {"ads": {"prior": prior}})
+
+    barrier = threading.Barrier(2)
+    original_load = tools.store.load_snapshot
+
+    def slow_load(*args, **kwargs):
+        snap = original_load(*args, **kwargs)
+        time.sleep(0.05)  # diff/merge time inside the section
+        return snap
+
+    def fetch(query, **kwargs):
+        # Per-thread ad: both checks run the same watch, different renders.
+        name = threading.current_thread().name
+        barrier.wait(timeout=10)
+        return (
+            [{**AD, "id": name}],
+            {"complete": False, "fetched": 1, "fetched_chars": 1, "char_limit": 2},
+        )
+
+    monkeypatch.setattr(tools.store, "load_snapshot", slow_load)
+    monkeypatch.setattr(tools.sources, "fetch_ads_with_meta", fetch)
+
+    errors: list[str] = []
+
+    def worker() -> None:
+        try:
+            tools.ad_check({})
+        except BaseException as exc:  # noqa: BLE001
+            errors.append(f"{threading.current_thread().name}: {exc}")
+
+    threads = [
+        threading.Thread(target=worker, name=name, daemon=True)
+        for name in ("one", "two")
+    ]
+    for t in threads:
+        t.start()
+    for t in threads:
+        t.join(timeout=30)
+
+    assert [t.name for t in threads if t.is_alive()] == []
+    assert errors == []
+    assert set(tools.store.load_snapshot("nike")["ads"]) == {"prior", "one", "two"}
 
 
 def test_check_partial_when_limit_truncates(monkeypatch):
