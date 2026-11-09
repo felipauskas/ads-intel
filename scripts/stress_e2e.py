@@ -55,6 +55,12 @@ if str(ROOT) not in sys.path:
 import sources  # noqa: E402
 import tools  # noqa: E402
 
+# Content verification for a check's html/digest, shared with the live eval so
+# both readers apply the same rule (counts and identity must match the row, not
+# merely exist). live_eval imports only stdlib and local modules, so this does
+# not add a dependency to the offline harness.
+from evals.live_eval import _artifact_mismatches, _html_banner  # noqa: E402
+
 FIXTURE = ROOT / "tests" / "fixtures" / "library_page.md"
 
 # Unfiltered ad_check passes limit=20, so it inherits that slice; an advertiser
@@ -521,6 +527,49 @@ def run_corruption(base_dir: Path) -> dict:
 # ---------------------------------------------------------------------------
 
 
+def _artifact_problems(row: dict) -> list[str]:
+    """Why a check row's html/digest do not describe *this* check.
+
+    Existence is not enough: the report path is keyed only by the watch, so a
+    later check overwrites it, and a stale or wrong-content file can still be
+    ``is_file()``. The digest must carry this row's counts and identity, and
+    the HTML its counts banner — the same content rule
+    ``evals.live_eval.copy_artifacts`` applies to checked-in copies.
+    """
+    raw = row.get("artifacts")
+    if not isinstance(raw, dict) or raw.get("error"):
+        reason = raw.get("error") if isinstance(raw, dict) else None
+        return [f"artifacts_error: {reason or 'no artifacts'}"]
+
+    problems: list[str] = []
+    html_path = Path(str(raw.get("html") or ""))
+    digest_path = Path(str(raw.get("digest") or ""))
+    if not html_path.is_file():
+        problems.append(f"html_missing: {html_path}")
+    if not digest_path.is_file():
+        problems.append(f"digest_missing: {digest_path}")
+
+    if digest_path.is_file():
+        try:
+            digest = json.loads(digest_path.read_text(encoding="utf-8"))
+        except (OSError, ValueError):
+            digest = None
+        if not isinstance(digest, dict):
+            problems.append("digest_unreadable")
+        else:
+            problems.extend(_artifact_mismatches(row, digest))
+
+    banner = _html_banner(row)
+    if banner and html_path.is_file():
+        try:
+            html = html_path.read_text(encoding="utf-8", errors="replace")
+        except OSError:
+            html = ""
+        if banner not in html:
+            problems.append(f"html_banner_mismatch: expected {banner!r}")
+    return problems
+
+
 def run_live(base_dir: Path) -> dict:
     rows: list[dict] = []
     result: dict = {"status": "PASS", "rows": rows, "evidence": []}
@@ -592,10 +641,14 @@ def run_live(base_dir: Path) -> dict:
             first = json.loads(tools.ad_check({}))
             row["check1_seconds"] = round(time.perf_counter() - started, 2)
             row["check1"] = (first["results"] or [{}])[0]
+            # Verify check1's artifacts NOW: the report path is keyed by the
+            # watch, so check2 overwrites them. Existence alone proves nothing.
+            row["artifact_problems1"] = _artifact_problems(row["check1"])
             started = time.perf_counter()
             second = json.loads(tools.ad_check({}))
             row["check2_seconds"] = round(time.perf_counter() - started, 2)
             row["check2"] = (second["results"] or [{}])[0]
+            row["artifact_problems2"] = _artifact_problems(row["check2"])
 
             c1, c2 = row["check1"], row["check2"]
             counts1 = (c1.get("new_ads"), c1.get("ended_ads"), c1.get("changed_ads"))
@@ -603,10 +656,8 @@ def run_live(base_dir: Path) -> dict:
             row["counts1"] = counts1
             row["counts2"] = counts2
             row["partial1"] = c1.get("partial")
-            row["artifacts_ok"] = bool(
-                c1.get("artifacts")
-                and Path(c1["artifacts"].get("html", "")).is_file()
-                and Path(c1["artifacts"].get("digest", "")).is_file()
+            row["artifacts_ok"] = not (
+                row["artifact_problems1"] or row["artifact_problems2"]
             )
             ok = (
                 c1.get("new_ads", 0) > 0
@@ -667,6 +718,9 @@ def main(argv: list[str] | None = None) -> int:
                 print(f"  fetch {d['seconds']}s chars={d['chars']}{flag}")
             if row.get("search_error"):
                 print(f"  error: {row['search_error']}")
+            for label in ("artifact_problems1", "artifact_problems2"):
+                for problem in row.get(label) or []:
+                    print(f"  {label[:-1]}: {problem}")
         for line in live["evidence"]:
             print(f"  evidence: {line}")
         print(f"live status: {live['status']}")

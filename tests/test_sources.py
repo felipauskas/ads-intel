@@ -109,6 +109,7 @@ def test_fetch_marks_truncated_when_render_hits_budget():
     assert ads
     assert meta == {
         "complete": False,
+        "complete_scope": "rendered_window",
         "fetched": 2,
         "total_returned": 2,
         "fetched_chars": budget,
@@ -197,6 +198,30 @@ def test_json_array_exactly_limit_is_complete():
     assert len(ads) == 5
     assert meta["total_returned"] == 6
     assert meta["complete"] is False
+
+
+def test_completeness_is_scoped_to_the_rendered_window():
+    """``complete`` means the render was not clipped, not "all results got".
+
+    There is no pagination: a complete listing is still only the top-N window
+    Meta rendered. The machine-readable scope marker makes that explicit so a
+    caller cannot read ``complete`` as "the whole result set was retrieved".
+    """
+    text = FIXTURE.read_text()
+    assert sources.COMPLETENESS_SCOPE == "rendered_window"
+    _, meta = sources.fetch_ads_with_meta(
+        "nike", limit=50, dispatch=lambda n, a: text, char_limit=sources._CHAR_LIMIT
+    )
+    assert meta["complete"] is True
+    assert meta["complete_scope"] == sources.COMPLETENESS_SCOPE
+
+    # The scope marker is present on the partial side too: clipping changes
+    # only the boolean, never the meaning of what it is a completeness of.
+    _, clipped = sources.fetch_ads_with_meta(
+        "nike", limit=20, dispatch=lambda n, a: text, char_limit=sources._CHAR_LIMIT
+    )
+    assert clipped["complete"] is False
+    assert clipped["complete_scope"] == sources.COMPLETENESS_SCOPE
 
 
 def test_fetch_marks_partial_on_truncation_footer_marker():
@@ -840,6 +865,7 @@ def test_json_meta_reports_fetched_and_total_returned():
     assert len(ads) == 5
     assert meta == {
         "complete": False,
+        "complete_scope": "rendered_window",
         "fetched": 5,
         "total_returned": 29,
         "fetched_chars": 0,
@@ -886,3 +912,290 @@ def test_content_from_payload_object_without_results_raises(payload):
 def test_ads_from_payload_list_rejects_non_list_payload(items):
     with pytest.raises(sources.FetchError):
         sources._ads_from_payload_list(items, None)
+
+
+# --- page / host footers ---------------------------------------------------
+#
+# A render ends with the ad library's own page footer (``System status`` plus
+# the Ad Library API / About / Privacy / Terms / Cookies links). When the page
+# is clipped, the host appends a truncation footer naming an absolute cache
+# path. Neither is creative copy, and the cache path differs between two
+# renders of the same ad, which used to make ``diff_snapshots`` report a
+# spurious "changed".
+
+_FOOTER_LINKS = [
+    "- [Ad Library API](https://www.facebook.com/ads/library/api/?source=archive-landing-page)",
+    "- [About ads and data use](https://www.facebook.com/ads/about/?entry_product=ad_library)",
+    "- [Privacy](https://www.facebook.com/privacy/center/?entry_point=privacy_basics_redirect)",
+    "- [Terms](https://www.facebook.com/policies/)",
+    "- [Cookies](https://www.facebook.com/policies/cookies/)",
+]
+
+
+def _card(creative: str, *, status: str = "Active", library_id: str = "1234567890") -> str:
+    """One parseable card: page label, creative body, then the status block."""
+    return "\n\n".join(
+        [
+            "[Nike](https://www.facebook.com/nike/)",
+            "**Sponsored**",
+            creative,
+            status,
+            f"Library ID: {library_id}",
+            "Jul 1, 2026",
+            "Platforms",
+            "See ad details",
+        ]
+    )
+
+
+def _host_footer(cache_name: str) -> str:
+    return "\n\n".join(
+        [
+            "──────── [TRUNCATED] ────────",
+            "Showing 89,984 chars (head) + 29,896 chars (tail) of 283,270 total clean characters.",
+            f"Full text saved to: /Users/someone/.hermes/profiles/partner/cache/web/{cache_name}.md",
+            (
+                'To read the omitted middle: read_file path="/Users/someone/.hermes/'
+                f'profiles/partner/cache/web/{cache_name}.md" offset=3547 limit=200  '
+                "(the file is the complete page; raise/lower offset to page through it)."
+            ),
+            "─────────────────────────────",
+        ]
+    )
+
+
+def test_golden_fixture_creative_has_no_page_footer(ads):
+    """Ad 1046730950862281 is header-only (an image creative): the paired
+    status block must not contribute the page footer as "creative text"."""
+    ad = next(a for a in ads if a["id"] == "1046730950862281")
+    assert ad["creative_text"] == ""
+    assert "System status" not in ad["creative_text"]
+    assert "Ad Library API" not in ad["creative_text"]
+    assert "Cookies" not in ad["creative_text"]
+
+
+def test_page_footer_is_stripped_from_creative():
+    page = _card("\n\n".join(["Ad copy line one.", "Ad copy line two.", "System status", *_FOOTER_LINKS]))
+    ads = sources.parse_library_markdown(page)
+    assert len(ads) == 1
+    assert ads[0]["creative_text"] == "Ad copy line one.\nAd copy line two."
+
+
+def test_page_footer_with_backslash_wraps_is_stripped():
+    """Some renders escape the footer's wrapped markdown lines with ``\\``."""
+    footer = ["See more\\", "\\"] + [f"{line}\\" for line in _FOOTER_LINKS] + ["\\"]
+    page = _card("\n\n".join(["Ad copy.", *footer]))
+    ads = sources.parse_library_markdown(page)
+    assert len(ads) == 1
+    assert ads[0]["creative_text"] == "Ad copy."
+
+
+def test_host_truncation_footer_is_stripped_from_creative():
+    page = _card("\n\n".join(["Ad copy before the footer.", *_FOOTER_LINKS, _host_footer("www.facebook.com-dcfa2890c9")]))
+    ads = sources.parse_library_markdown(page)
+    assert len(ads) == 1
+    creative = ads[0]["creative_text"]
+    assert creative == "Ad copy before the footer."
+    assert "Full text saved to:" not in creative
+    assert "/Users/" not in creative
+    assert "TRUNCATED" not in creative
+
+
+def test_footer_cache_path_does_not_change_creative():
+    """Two renders of the same ad differ only in the host's cache filename."""
+    first = sources.parse_library_markdown(
+        _card("\n\n".join(["Ad copy.", *_FOOTER_LINKS, _host_footer("www.facebook.com-aaaaaaaa")]))
+    )
+    second = sources.parse_library_markdown(
+        _card("\n\n".join(["Ad copy.", *_FOOTER_LINKS, _host_footer("www.facebook.com-bbbbbbbb")]))
+    )
+    assert first[0]["creative_text"] == second[0]["creative_text"] == "Ad copy."
+
+
+def test_footer_only_creative_becomes_empty():
+    page = _card("\n\n".join(_FOOTER_LINKS))
+    ads = sources.parse_library_markdown(page)
+    assert len(ads) == 1
+    assert ads[0]["creative_text"] == ""
+
+
+def test_host_footer_unstored_variant_is_stripped():
+    """When the host cache write fails, its footer says so instead of naming
+    a path; that sentence is chrome too and must not leak into creative_text."""
+    footer = "\n\n".join(
+        [
+            "──────── [TRUNCATED] ────────",
+            "Showing 89,984 chars (head) + 29,896 chars (tail) of 283,270 total clean characters.",
+            (
+                "Full text could not be stored; re-run web_extract on a more "
+                "specific URL or open it in the browser for the complete page."
+            ),
+            "─────────────────────────────",
+        ]
+    )
+    page = _card("\n\n".join(["Ad copy before the footer.", footer]))
+    ads = sources.parse_library_markdown(page)
+    assert len(ads) == 1
+    creative = ads[0]["creative_text"]
+    assert creative == "Ad copy before the footer."
+    assert "could not be stored" not in creative
+    assert "TRUNCATED" not in creative
+
+
+def test_trailing_box_drawing_divider_is_creative_copy():
+    """A lone box-drawing line inside a creative is a divider, not a footer."""
+    page = _card("Copy line\n\n──────────")
+    ads = sources.parse_library_markdown(page)
+    assert len(ads) == 1
+    assert ads[0]["creative_text"] == "Copy line\n──────────"
+
+    # Same for a divider drawn with a different run length.
+    page = _card("Copy line\n\n────────────")
+    ads = sources.parse_library_markdown(page)
+    assert ads[0]["creative_text"] == "Copy line\n────────────"
+
+
+def test_host_footer_divider_still_stripped_after_tightening():
+    """The banner/divider pair around a host footer is still removed whole."""
+    page = _card("\n\n".join(["Ad copy.", _host_footer("www.facebook.com-cccccccc")]))
+    ads = sources.parse_library_markdown(page)
+    assert ads[0]["creative_text"] == "Ad copy."
+
+
+def test_doubled_backslash_escaped_footer_is_stripped():
+    """Some renders escape a wrapped footer line with two trailing backslashes."""
+    footer = [
+        "System status\\\\",
+        *[f"{line}\\\\" for line in _FOOTER_LINKS],
+        "─────────────────────────────\\\\",
+    ]
+    page = _card("\n\n".join(["Ad copy.", *footer]))
+    ads = sources.parse_library_markdown(page)
+    assert len(ads) == 1
+    assert ads[0]["creative_text"] == "Ad copy."
+    assert "facebook.com" not in ads[0]["creative_text"]
+
+
+def test_host_footer_cache_path_with_spaces_is_stripped():
+    """Cache directories can contain spaces; the path line is still chrome."""
+    footer = "\n\n".join(
+        [
+            "──────── [TRUNCATED] ────────",
+            "Showing 10,000 chars (head) + 5,000 chars (tail) of 40,000 total clean characters.",
+            "Full text saved to: /Users/Some User/Library/Application Support/cache/web/page.md",
+            (
+                "To read the omitted middle: read_file path=\"/Users/Some User/"
+                "Library/Application Support/cache/web/page.md\" offset=100 limit=200  "
+                "(the file is the complete page; raise/lower offset to page through it)."
+            ),
+            "─────────────────────────────",
+        ]
+    )
+    page = _card("\n\n".join(["Ad copy.", footer]))
+    ads = sources.parse_library_markdown(page)
+    assert len(ads) == 1
+    assert ads[0]["creative_text"] == "Ad copy."
+    assert "Full text saved to:" not in ads[0]["creative_text"]
+    assert "/Users/" not in ads[0]["creative_text"]
+
+
+def test_mid_copy_system_status_is_preserved():
+    """Only a *trailing* ``System status`` chrome label is stripped."""
+    page = _card("System status\nis what our customers care about.")
+    ads = sources.parse_library_markdown(page)
+    assert len(ads) == 1
+    assert ads[0]["creative_text"] == (
+        "System status\nis what our customers care about."
+    )
+
+
+def test_mid_copy_policy_url_is_preserved():
+    """A facebook policy link inside the copy is not the page footer."""
+    creative = "\n\n".join(
+        [
+            "Read our privacy notes:",
+            "- [Privacy](https://www.facebook.com/privacy/center/?entry_point=x)",
+            "Questions? Contact us.",
+        ]
+    )
+    page = _card(creative)
+    ads = sources.parse_library_markdown(page)
+    assert len(ads) == 1
+    assert "facebook.com/privacy/center" in ads[0]["creative_text"]
+    assert ads[0]["creative_text"].startswith("Read our privacy notes:")
+    assert ads[0]["creative_text"].endswith("Questions? Contact us.")
+
+
+def test_escaped_bare_link_does_not_swallow_copy():
+    """A wrapped-render ``\\`` after a complete link must not open a CTA block.
+
+    The link is a full ``[title](url)`` on one line; the trailing escape is
+    only a markdown line-wrap artifact. Treating it as an unclosed CTA block
+    dropped every following line of real copy.
+    """
+    creative = "\n\n".join(
+        [
+            "Real copy.",
+            "[English (US)](https://www.facebook.com/ads/library/?locale=es_LA&id=123#)",
+            "More real copy…",
+            "and this too",
+        ]
+    )
+    # Simulate the render's trailing backslash on the bare-link line.
+    creative = creative.replace("#)", "#)\\", 1)
+    page = _card(creative)
+    ads = sources.parse_library_markdown(page)
+    assert len(ads) == 1
+    assert ads[0]["creative_text"] == "Real copy.\nMore real copy…\nand this too"
+    assert "English (US)" not in ads[0]["creative_text"]
+
+
+# --- branch coverage: date fallback, payload edge cases ---------------------
+
+
+def test_dates_returns_empty_when_status_or_id_precedes_a_date():
+    """A status/id line before a date stops the scan: no dates.
+
+    The date after the status line is what makes this test bite: without the
+    early return, the scan would walk on and pick up "Jul 1, 2026".
+    """
+    assert sources._dates(["Library ID: 1", "Active"], 0) == ("", "")
+    assert sources._dates(["Library ID: 1", "Library ID: 2"], 0) == ("", "")
+    assert (
+        sources._dates(
+            ["Library ID: 1", "Active", "Started running on Jul 1, 2026"], 0
+        )
+        == ("", "")
+    )
+
+
+def test_dates_returns_empty_when_no_date_within_window():
+    assert sources._dates(["Library ID: 1", "", "", "", "", ""], 0) == ("", "")
+
+
+def test_normalise_ad_wraps_scalar_images_in_a_list():
+    """A payload that stores one image URL as a bare string still loads."""
+    ad = sources._normalise_ad({"id": "1", "images": "https://cdn.test/a.png"})
+    assert ad is not None
+    assert ad["images"] == ["https://cdn.test/a.png"]
+
+
+def test_ads_from_payload_list_rejects_empty_list():
+    with pytest.raises(sources.FetchError, match="empty results"):
+        sources._ads_from_payload_list([], None)
+
+
+@pytest.mark.parametrize("body", ["123abc", "-not json", "null-ish", "truex"])
+def test_looks_like_json_scalar_returns_false_when_undecodable(body):
+    """A scalar-looking prefix that will not decode is not a corrupt scalar."""
+    assert sources._looks_like_json_scalar(body) is False
+
+
+def test_string_body_whitespace_only_raises_empty_content():
+    with pytest.raises(sources.FetchError, match="empty content"):
+        sources.fetch_ads_with_meta("nike", dispatch=lambda n, a: "   \n")
+
+
+@pytest.mark.parametrize("value", [None, [], {}, object()])
+def test_as_bool_treats_non_scalar_values_as_false(value):
+    assert sources._as_bool(value) is False

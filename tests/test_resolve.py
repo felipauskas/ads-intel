@@ -1,4 +1,19 @@
+import json
+from pathlib import Path
+
 import resolve
+
+LIVE_MATRIX = Path(__file__).resolve().parents[1] / "evals" / "live-matrix"
+
+
+def _recorded_page_names(folder):
+    """Page names as recorded live, in listing order (duplicates removed)."""
+    data = json.loads((LIVE_MATRIX / folder / "ads.json").read_text())
+    names = []
+    for ad in data["search"]:
+        if ad["page_name"] not in names:
+            names.append(ad["page_name"])
+    return names
 
 
 def test_exact_name_scores_point_eight():
@@ -69,6 +84,213 @@ def test_country_suffix_does_not_weaken_substring_rung():
     assert resolve.score_candidate("Burger King", "Burger King Arabia Grill") == 0.60
 
 
+def test_recorded_burger_king_eg_fails_truthfully():
+    """Live bug: `burger-king-eg` resolved to `Burger King Malaysia`.
+
+    Names come from ``evals/live-matrix/burger-king-eg/ads.json``; the listing
+    never contained a bare ``Burger King`` page, so there is nothing correct to
+    pick. Asking for EG must FAIL truthfully rather than resolve the
+    Malaysian page (the false PASS this test used to codify).
+    """
+    recorded = _recorded_page_names("burger-king-eg")
+    result = resolve.resolve_advertiser("Burger King", recorded, market="EG")
+    assert result["error"] == "name_not_matched"
+    assert result["target"] == "Burger King"
+    assert result["threshold"] == 0.80
+    assert "page_name" not in result
+    assert [c["page_name"] for c in result["candidates"]] == [
+        "Burger King Malaysia"
+    ]
+
+
+def test_veto_only_fires_on_explicit_other_market():
+    """Bare/global pages still resolve; a matching qualifier resolves."""
+    # No qualifier: nothing contradicts the request.
+    result = resolve.resolve_advertiser("KFC", ["KFC"], market="EG")
+    assert result == {"page_name": "KFC", "score": 0.80}
+
+    # Qualifier matches the request.
+    result = resolve.resolve_advertiser(
+        "Burger King", ["Burger King Egypt"], market="EG"
+    )
+    assert result == {"page_name": "Burger King Egypt", "score": 0.80}
+
+    # Caller does not know the market: old behaviour, no veto.
+    result = resolve.resolve_advertiser("Burger King", ["Burger King Malaysia"])
+    assert result == {"page_name": "Burger King Malaysia", "score": 0.80}
+
+
+def test_prefers_market_qualified_page_when_no_bare_page_exists():
+    """Among country-qualified variants, the requested market wins."""
+    names = ["Burger King Malaysia", "Burger King Egypt"]
+    result = resolve.resolve_advertiser("Burger King", names, market="EG")
+    assert result == {"page_name": "Burger King Egypt", "score": 0.80}
+
+
+def test_cross_market_candidates_are_all_ineligible_not_ambiguous():
+    """With a market requested, pages naming other markets are simply out.
+
+    Malaysian and Indian pages cannot satisfy an EG query, so there is nothing
+    to disambiguate: both are reported as diagnostics and neither is offered
+    as a pickable tie.
+    """
+    names = ["Burger King Malaysia", "Burger King India"]
+    result = resolve.resolve_advertiser("Burger King", names, market="EG")
+    assert result["error"] == "name_not_matched"
+    assert "ambiguous" not in result
+    assert result["threshold"] == 0.80
+    assert [c["page_name"] for c in result["candidates"]] == [
+        "Burger King Malaysia",
+        "Burger King India",
+    ]
+    assert all(c["score"] == 0.80 for c in result["candidates"])
+
+
+def test_ambiguous_tie_without_requested_market_is_not_resolved_silently():
+    names = ["Pizza Hut UAE", "Pizza Hut KSA"]
+    result = resolve.resolve_advertiser("Pizza Hut", names)
+    assert result["error"] == "name_not_matched"
+    assert result["ambiguous"] is True
+
+
+def test_ambiguous_candidates_are_only_the_tied_set():
+    """A 0.60 runner-up is not an equally plausible page."""
+    names = ["Burger King UAE", "Burger King KSA"] + [
+        f"Burger King Region {i}" for i in range(10)
+    ]
+    result = resolve.resolve_advertiser("Burger King", names)
+    assert result["error"] == "name_not_matched"
+    assert result["ambiguous"] is True
+    assert [c["page_name"] for c in result["candidates"]] == [
+        "Burger King UAE",
+        "Burger King KSA",
+    ]
+    assert all(c["score"] == 0.80 for c in result["candidates"])
+
+
+def test_single_candidate_naming_another_market_is_rejected():
+    """Market is not just a ranking hint: it vetoes a known contradiction.
+
+    A lone ``Burger King Malaysia`` page must not be handed back for an EG
+    query — that was the false PASS the live matrix recorded as true.
+    """
+    result = resolve.resolve_advertiser(
+        "Burger King", ["Burger King Malaysia"], market="EG"
+    )
+    assert result["error"] == "name_not_matched"
+    assert result["target"] == "Burger King"
+    assert result["candidates"] == [
+        {"page_name": "Burger King Malaysia", "score": 0.80}
+    ]
+
+
+def test_market_match_outranks_bare_page():
+    """A market-scoped query prefers the qualifier that matches it."""
+    result = resolve.resolve_advertiser(
+        "Burger King",
+        ["Burger King", "Burger King Saudi Arabia"],
+        market="SA",
+    )
+    assert result == {"page_name": "Burger King Saudi Arabia", "score": 0.80}
+
+
+def test_exactness_still_decides_when_market_is_absent():
+    result = resolve.resolve_advertiser(
+        "Burger King", ["Burger King Malaysia", "Burger King"]
+    )
+    assert result == {"page_name": "Burger King", "score": 0.80}
+
+
+def test_market_tie_break_flows_through_filter_ads():
+    ads = [
+        {"id": "my", "page_name": "Burger King Malaysia"},
+        {"id": "eg", "page_name": "Burger King Egypt"},
+    ]
+    resolution, kept = resolve.filter_ads(ads, "Burger King", market="EG")
+    assert "error" not in resolution
+    assert resolution["page_name"] == "Burger King Egypt"
+    assert [ad["id"] for ad in kept] == ["eg"]
+
+
+def test_recorded_burger_king_ae_resolves_arabia():
+    """Recorded PASS pair `burger-king-ae` must survive the market veto.
+
+    "Arabia" is a Gulf-regional qualifier, not a Saudi-only one: mapping it
+    to SA alone vetoed the correct AE page and broke the recorded PASS.
+    """
+    names = _recorded_page_names("burger-king-ae")
+    result = resolve.resolve_advertiser("Burger King", names, market="AE")
+    assert "error" not in result
+    assert result["page_name"] == "Burger King Arabia"
+
+
+def test_arabia_is_compatible_with_gulf_markets():
+    """`Arabia` qualifies the Gulf, so every GCC market accepts that page.
+
+    Trade-off documented here: the set includes SA, so a page named
+    `Burger King Arabia` also resolves for a Saudi query. That is the
+    price of treating "Arabia" as regional instead of Saudi-exclusive.
+    """
+    for market in ("AE", "SA", "BH", "KW", "OM", "QA"):
+        result = resolve.resolve_advertiser(
+            "Burger King", ["Burger King Arabia"], market=market
+        )
+        assert result == {"page_name": "Burger King Arabia", "score": 0.80}
+
+    # Outside the Gulf it is still an explicit contradiction.
+    result = resolve.resolve_advertiser(
+        "Burger King", ["Burger King Arabia"], market="EG"
+    )
+    assert result["error"] == "name_not_matched"
+
+
+def test_specific_qualifier_beats_regional_one():
+    """`Saudi Arabia` names SA, not the whole Gulf the token `Arabia` spans."""
+    result = resolve.resolve_advertiser(
+        "Burger King", ["Burger King Saudi Arabia"], market="AE"
+    )
+    assert result["error"] == "name_not_matched"
+
+    result = resolve.resolve_advertiser(
+        "Burger King", ["Burger King Saudi Arabia"], market="SA"
+    )
+    assert result == {"page_name": "Burger King Saudi Arabia", "score": 0.80}
+
+
+def test_contradicting_candidates_are_filtered_before_selection():
+    """A wrong-market candidate must not shadow a correct one.
+
+    Score dominates rank and the veto only inspected the top candidate, so
+    `K.F.C. Malaysia` (0.85) shadowed `KFC Egypt` (0.80) and the EG query
+    failed despite the correct page being present.
+    """
+    result = resolve.resolve_advertiser(
+        "KFC", ["K.F.C. Malaysia", "KFC Egypt"], market="EG"
+    )
+    assert result == {"page_name": "KFC Egypt", "score": 0.80}
+
+
+def test_all_candidates_contradicting_market_fail_with_diagnostics():
+    """Filtering leaves nothing eligible: a truthful FAIL keeps the evidence."""
+    result = resolve.resolve_advertiser(
+        "KFC", ["K.F.C. Malaysia", "KFC India"], market="EG"
+    )
+    assert result["error"] == "name_not_matched"
+    assert result["target"] == "KFC"
+    assert {c["page_name"] for c in result["candidates"]} == {
+        "K.F.C. Malaysia",
+        "KFC India",
+    }
+
+
+def test_bare_page_survives_market_filter():
+    """No qualifier means global: a bare page is always eligible."""
+    result = resolve.resolve_advertiser(
+        "KFC", ["KFC", "K.F.C. Malaysia"], market="EG"
+    )
+    assert result == {"page_name": "KFC", "score": 0.80}
+
+
 def test_below_threshold_returns_name_not_matched():
     result = resolve.resolve_advertiser(
         "Burger King", ["entel", "Soundlines Group"]
@@ -78,3 +300,37 @@ def test_below_threshold_returns_name_not_matched():
     assert result["threshold"] == 0.80
     assert isinstance(result["candidates"], list)
     assert all(set(c) == {"page_name", "score"} for c in result["candidates"])
+
+
+def test_every_strippable_country_token_names_a_market():
+    """A token peeled from a page name must be explainable as a market.
+
+    ``_COUNTRY_TOKENS`` drives stripping (which decides what counts as a
+    country qualifier); ``_MARKET_BY_TOKEN`` / ``_REGIONAL_MARKET_TOKENS``
+    drive the market veto. A token in the first set with no entry in either
+    mapping would strip from the name yet name no market, so the veto would
+    silently stop seeing a contradiction. The two tables are hand-written,
+    not derived, so this guard is what keeps them in step.
+    """
+    unmapped = set(resolve._COUNTRY_TOKENS) - (
+        set(resolve._MARKET_BY_TOKEN) | set(resolve._REGIONAL_MARKET_TOKENS)
+    )
+    assert unmapped == set(), f"country tokens with no market mapping: {unmapped}"
+
+
+def test_ambiguous_candidate_list_is_capped():
+    """A wide tie reports `ambiguous` but does not return every tied page.
+
+    The list is a diagnostic, not an inventory: with more tied pages than
+    ``MAX_CANDIDATES`` the tie is still reported, and the list is bounded.
+    Country-qualified variants all score 0.80 and rank alike when no market is
+    requested, which is exactly the wide-tie case.
+    """
+    tokens = sorted(resolve._COUNTRY_TOKENS)[: resolve.MAX_CANDIDATES + 5]
+    names = [f"Burger King {token}" for token in tokens]
+    assert len(names) > resolve.MAX_CANDIDATES
+    result = resolve.resolve_advertiser("Burger King", names)
+    assert result["error"] == "name_not_matched"
+    assert result["ambiguous"] is True
+    assert len(result["candidates"]) == resolve.MAX_CANDIDATES
+    assert all(c["score"] == 0.80 for c in result["candidates"])

@@ -78,6 +78,38 @@ def test_diff_compares_enriched_fields_when_both_sides_have_them():
     assert diff_snapshots(old, new)["changed"] == []
 
 
+def test_diff_ignores_like_counter_churn_in_link_title():
+    """A re-render that only moves the page's like counter is not a change.
+
+    ``link_title`` can carry the public render's live "N people like this"
+    line (e.g. a Like-Page CTA block). Comparing it byte-for-byte made a
+    counter-only re-render look like a creative change, so the counter span is
+    normalised out before comparison.
+    """
+    base = {"id": "L1", "status": "active", "creative_text": "x",
+            "link_url": "https://a.example/", "cta_text": "Learn More"}
+    variants = [
+        "McDonald's Interest 19,720,345 people like this",
+        "McDonald's Interest 19,720,350 people like this",
+        "McDonald's Interest 19.8M people like this",
+        "McDonald's Interest",
+    ]
+    old = {"ads": {"L1": {**base, "link_title": variants[0]}}}
+    for title in variants[1:]:
+        new = {"ads": {"L1": {**base, "link_title": title}}}
+        assert diff_snapshots(old, new)["changed"] == [], title
+
+
+def test_diff_still_reports_real_link_title_change_with_counter():
+    """Stripping the counter must not swallow the rest of the title."""
+    old = {"ads": {"L1": {"id": "L1", "status": "active", "creative_text": "x",
+                          "link_title": "Shop shoes 1,000 people like this"}}}
+    new = {"ads": {"L1": {"id": "L1", "status": "active", "creative_text": "x",
+                          "link_title": "Shop boots 1,100 people like this"}}}
+    d = diff_snapshots(old, new)
+    assert [a["id"] for a in d["changed"]] == ["L1"]
+
+
 def test_diff_tolerates_malformed_snapshot_payloads():
     """A corrupt snapshot (None, or {"ads": "notadict"}) is empty, not a crash.
 

@@ -3,9 +3,34 @@
 An ad whose status flips to ended counts as `ended` even though its id is still
 present, and one that flips back to active counts as `new`: the watch's point is
 which ads started or stopped running, not merely which ids appeared.
+
+Two honesty caveats about what a diff can prove:
+
+* **Window-scoped.** The fetch has no pagination: even a `complete` listing is
+  only the top-N window Meta rendered (see ``sources.COMPLETENESS_SCOPE``). So
+  an id missing from the new page is not proof its ad ended, and a newly
+  appearing ad may merely have entered the visible window rather than launched.
+  These are observations about the rendered window, not about Meta's full
+  result set.
+* **Volatile render fields.** ``link_title`` can carry the live
+  "N people like this" counter from the Like-Page block. The counter moves
+  between identical renders, so it is normalised away before comparison; a
+  counter-only difference is not a creative change.
 """
 
+import re
+
 _ENDED_STATUSES = {"ended", "inactive", "stopped"}
+
+#: Live counters that move between renders of byte-identical creative. Stripped
+#: before comparison so page-engagement churn is not reported as a change.
+_LIKE_COUNTER_RE = re.compile(
+    r"\b[\d.,]+\s*[KMB]?\s+(?:people|followers)\s+(?:like this|follow this)\b\.?",
+    re.IGNORECASE,
+)
+
+#: Snapshot fields that need volatile normalisation, mapping field -> pattern.
+_VOLATILE_FIELD_RES = {"link_title": _LIKE_COUNTER_RE}
 
 
 def _norm_status(ad: dict) -> str:
@@ -16,6 +41,22 @@ def _is_ended(ad: dict) -> bool:
     return _norm_status(ad) in _ENDED_STATUSES
 
 
+def _norm_field(key: str, value) -> str:
+    """Comparable text for one creative field, volatile counters removed.
+
+    The public render mixes stable creative copy with live engagement lines in
+    the same string (``link_title`` can carry "19,720,345 people like this").
+    Comparing the raw bytes turned counter churn into a reported creative
+    change, so the volatile span is stripped and whitespace re-collapsed. A
+    genuine title edit still differs after normalisation.
+    """
+    text = str(value or "").strip()
+    pattern = _VOLATILE_FIELD_RES.get(key)
+    if pattern is not None:
+        text = " ".join(pattern.sub(" ", text).split())
+    return text
+
+
 def _sig(ad: dict, keys: tuple[str, ...] = ()) -> tuple:
     """Comparable ad signature: status plus the creative keys ``keys``.
 
@@ -24,11 +65,16 @@ def _sig(ad: dict, keys: tuple[str, ...] = ()) -> tuple:
     ad as changed just because it now carries ``link_url``/``cta_text``.
     """
     return (_norm_status(ad),) + tuple(
-        str(ad.get(key) or "").strip() for key in keys
+        _norm_field(key, ad.get(key)) for key in keys
     )
 
 
 #: Creative fields whose change is worth reporting, beyond creative text.
+#:
+#: Deliberately excludes ``same_creative_count`` and ``multiple_versions``:
+#: both are render-derived engagement/grouping signals that move without the
+#: creative changing. ``link_title`` is included but normalised, because the
+#: Like-Page block appends a live like counter to it.
 _CREATIVE_KEYS = ("creative_text", "link_url", "link_title", "cta_text")
 
 
@@ -53,11 +99,22 @@ def _ads_map(snapshot) -> dict:
 def diff_snapshots(old, new) -> dict:
     """Classify two snapshots into `new`, `ended` and `changed` buckets.
 
-    Status strings are compared case- and whitespace-insensitively. An id absent
-    from the new snapshot is reported as `ended`, so callers must pass complete
-    listings — a partial fetch will produce false `ended` reports. When a
-    listing may be truncated, the caller must either pass an old snapshot
-    restricted to ids the fetch actually returned, or drop the `ended` bucket.
+    Status strings are compared case- and whitespace-insensitively; volatile
+    render counters (the Like-Page "N people like this" line in
+    ``link_title``) are stripped before creative comparison.
+
+    **The buckets are window-scoped.** Both snapshots are single fetches of
+    Meta's rendered listing, and the fetch has no pagination: even a fetch
+    marked ``complete`` holds only the top-N window Meta rendered. So
+    `ended` means "absent from this rendered window", not "proven stopped",
+    and `new` means "appeared in this rendered window", not "proven
+    launched". Callers must word their reports accordingly.
+
+    An id absent from *a clipped* new snapshot is weaker still. The buckets
+    above are the honest reading only for unclipped renders; when a render may
+    be clipped, the caller must either pass an old snapshot restricted to ids
+    the fetch actually returned, or drop the `ended` bucket. (Passing a clipped
+    render unfiltered would report every id past the clip as `ended`.)
     :func:`tools.ad_check` does the former for partial renders.
     """
     old_ads = _ads_map(old)

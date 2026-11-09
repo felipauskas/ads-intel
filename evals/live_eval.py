@@ -9,7 +9,8 @@ Per pair, writes a self-contained folder under ``evals/live-matrix/``:
         ads.json       full ad objects (limit 20 per search)
         attempts.json  every web_extract dispatch attempt
         summary.md     counts, page names, statuses, currency spot-check
-        artifacts/     copied check1 HTML report + JSON digest
+        artifacts/     checked-in copies: check1 report+digest at the root,
+                       check2's under check2/ (distinct, never overwritten)
 
 Usage:
     .venv/bin/python evals/live_eval.py --smoke   # one pair: KFC/AE
@@ -283,30 +284,120 @@ def check_summary(row: dict, artifact_paths: dict | None = None) -> dict:
     return out
 
 
-def copy_artifacts(row: dict, target_dir: Path) -> tuple[dict, bool]:
-    """Copy check artifacts into the pair folder.
+def _artifact_mismatches(row: dict, digest: dict) -> list[str]:
+    """Reasons a copied digest does not describe ``row``'s check."""
+    problems: list[str] = []
+    for key, field in (
+        ("new", "new_ads"),
+        ("ended", "ended_ads"),
+        ("changed", "changed_ads"),
+    ):
+        want = row.get(field)
+        if want is None:
+            # A digest we cannot tie to this check's counts verifies nothing;
+            # fail closed rather than silently downgrade provenance.
+            problems.append(f"digest_{key}_unverified: row has no {field} count")
+            continue
+        got = digest.get(key)
+        if got != want:
+            problems.append(f"digest_{key}_mismatch: expected {want} got {got}")
+    for key in ("query", "country", "advertiser"):
+        want = str(row.get(key) or "").strip()
+        got = str(digest.get(key) or "").strip()
+        if want and got and want != got:
+            problems.append(f"digest_{key}_mismatch: expected {want!r} got {got!r}")
+    return problems
 
-    Returns (relative paths for result.json, whether both files exist).
+
+def _artifact_failure(label: str, problems: list[str]) -> str:
+    """Name the artifact failure truthfully: error, missing, or wrong content."""
+    if not problems:
+        return f"{label}_missing: html/digest"
+    heads = [p.split(":", 1)[0].strip() for p in problems]
+    if all(head == "artifacts_error" for head in heads):
+        category = "error"
+    elif all(head == "artifacts_error" or head.endswith("_missing") for head in heads):
+        category = "missing"
+    else:
+        category = "invalid"
+    if category == "error":
+        # The problems already carry the prefix; do not repeat it.
+        details = [p[len("artifacts_error: "):] if p.startswith("artifacts_error: ") else p for p in problems]
+        return f"{label}_error: {'; '.join(details)}"
+    return f"{label}_{category}: {'; '.join(problems)}"
+
+
+def _html_banner(row: dict) -> str | None:
+    """The counts banner report.build_html renders, or None if incomplete."""
+    parts = [row.get(key) for key in ("new_ads", "ended_ads", "changed_ads")]
+    if any(part is None for part in parts):
+        return None
+    return f"{parts[0]} new / {parts[1]} ended / {parts[2]} changed"
+
+
+def copy_artifacts(
+    row: dict, target_dir: Path, *, subdir: str = "artifacts"
+) -> tuple[dict, bool, list[str]]:
+    """Copy one check's artifacts into the pair folder and verify their content.
+
+    ad_check writes the HTML and digest under a path keyed only by the watch
+    (query/country/advertiser), so a later check for the same watch overwrites
+    them. Callers must copy each check right after it runs; ``subdir`` keeps
+    the copies of two checks apart. Existence is not enough: the copied digest
+    must still carry this check's counts and identity, and the HTML its counts
+    banner, or the copy is reported as failed.
+
+    Returns (relative paths for result.json, whether both files exist and
+    verify, list of problems).
     """
     raw = row.get("artifacts") or {}
     if not isinstance(raw, dict) or raw.get("error"):
-        return {"error": raw.get("error", "no artifacts")}, False
-    outdir = target_dir / "artifacts"
+        error = raw.get("error", "no artifacts") if isinstance(raw, dict) else None
+        error = error or "no artifacts"
+        return {"error": error}, False, [f"artifacts_error: {error}"]
+    outdir = target_dir / subdir
     outdir.mkdir(parents=True, exist_ok=True)
     rel: dict[str, str] = {}
-    ok = True
+    copied: dict[str, Path] = {}
+    problems: list[str] = []
     for key in ("html", "digest"):
         src = Path(str(raw.get(key) or ""))
         dst = outdir / f"{key}{src.suffix or ('.html' if key == 'html' else '.json')}"
         if not src.is_file():
-            ok = False
             rel[key] = f"missing:{src}"
+            problems.append(f"{key}_missing: {src}")
             continue
-        text = src.read_text(encoding="utf-8", errors="replace")
+        try:
+            text = src.read_text(encoding="utf-8", errors="replace")
+        except OSError as exc:
+            rel[key] = f"unreadable:{src}"
+            problems.append(f"{key}_unreadable: {src} ({exc.__class__.__name__})")
+            continue
         write_text(dst, text)
         rel[key] = str(dst.relative_to(target_dir))
-        ok = ok and dst.is_file()
-    return rel, ok
+        copied[key] = dst
+
+    if "digest" in copied:
+        try:
+            digest = json.loads(copied["digest"].read_text(encoding="utf-8"))
+        except (OSError, ValueError):
+            digest = None
+        if not isinstance(digest, dict):
+            problems.append("digest_unreadable")
+        else:
+            problems.extend(_artifact_mismatches(row, digest))
+
+    if "html" in copied:
+        banner = _html_banner(row)
+        if banner:
+            try:
+                html = copied["html"].read_text(encoding="utf-8", errors="replace")
+            except OSError:
+                html = ""
+            if banner not in html:
+                problems.append(f"html_banner_mismatch: expected {banner!r}")
+
+    return rel, not problems, problems
 
 
 def counts(row: dict) -> tuple:
@@ -462,6 +553,13 @@ def run_pair(
         first_raw = json.loads(tools.ad_check({}))
         c1 = (first_raw.get("results") or [{}])[0]
         c1_seconds = round(time.perf_counter() - started, 2)
+        # Copy now: check2 rewrites the same store-keyed report paths, so a
+        # copy taken after both checks records check2's files as check1's.
+        art_rel, artifacts_ok, art_problems = copy_artifacts(c1, target_dir)
+        row["check1"] = check_summary(c1, art_rel)
+        row["check1"]["seconds"] = c1_seconds
+        if art_problems:
+            row["check1"]["artifact_problems"] = art_problems
 
         phase["name"] = "check2"
         started = time.perf_counter()
@@ -469,12 +567,15 @@ def run_pair(
         c2 = (second_raw.get("results") or [{}])[0]
         c2_seconds = round(time.perf_counter() - started, 2)
 
-        art_rel, artifacts_ok = copy_artifacts(c1, target_dir)
-        row["check1"] = check_summary(c1, art_rel)
-        row["check1"]["seconds"] = c1_seconds
-        row["check2"] = check_summary(c2)
+        art2_rel, artifacts2_ok, art2_problems = copy_artifacts(
+            c2, target_dir, subdir="artifacts/check2"
+        )
+        row["check2"] = check_summary(c2, art2_rel)
         row["check2"]["seconds"] = c2_seconds
+        if art2_problems:
+            row["check2"]["artifact_problems"] = art2_problems
         row["artifacts_ok"] = artifacts_ok
+        row["artifacts2_ok"] = artifacts2_ok
 
         # 4. Assertions (Task 4).
         count = search.get("count")
@@ -507,7 +608,9 @@ def run_pair(
         elif c2_counts != (0, 0, 0):
             failures.append(f"check2_not_settled: {c2_counts}")
         if not artifacts_ok:
-            failures.append("artifacts_missing: html/digest")
+            failures.append(_artifact_failure("artifacts", art_problems))
+        if not artifacts2_ok:
+            failures.append(_artifact_failure("artifacts2", art2_problems))
 
         # 5. Currency spot-check. AE is the market proof; EG is recorded only.
         currency = {"expected": None, "found": [], "ok": None}
@@ -608,6 +711,7 @@ def write_pair_summary(target_dir: Path, row: dict) -> None:
         f"- check2: new={c2.get('new_ads')} ended={c2.get('ended_ads')} changed={c2.get('changed_ads')}"
         f" partial={c2.get('partial')} error={c2.get('error')} seconds={c2.get('seconds')}",
         f"- artifacts: {json.dumps(c1.get('artifacts'), ensure_ascii=False)} (ok={row.get('artifacts_ok')})",
+        f"- artifacts check2: {json.dumps(c2.get('artifacts'), ensure_ascii=False)} (ok={row.get('artifacts2_ok')})",
         "",
         "## Currency spot-check",
         f"- expected: {cur.get('expected') or '—'}  found: {', '.join(cur.get('found') or []) or 'none'}  ok: {cur.get('ok')}",

@@ -32,6 +32,14 @@ _CHAR_LIMIT = 120_000
 # the returned text means cards may be missing regardless of char count.
 _TRUNCATION_MARKERS = ("[TRUNCATED]", "middle omitted")
 
+#: What ``complete`` in the fetch meta actually measures: whether *the rendered
+#: page* came back unclipped. It never means Meta's whole result set was
+#: retrieved — there is no pagination, so even ``complete: True`` is only the
+#: top-N window the public render showed. Surfaced in the meta dict as
+#: ``complete_scope`` so a machine reader cannot mistake the boolean for
+#: "all results obtained".
+COMPLETENESS_SCOPE = "rendered_window"
+
 
 #: A render with no card markers is a genuinely empty listing ONLY when it
 #: actually says so. The ad-library empty state reads like "No ads match your
@@ -119,6 +127,79 @@ _NOISE_LINES = {
 _NOISE_PREFIXES = (
     "**",  # "**4 ads** use this creative and text" and similar annotations
 )
+
+# The library's page footer ("System status" plus links to its own policy
+# pages) trails the last card in every render. Match the destinations, not the
+# labels: the labels are localized, the URLs are not.
+_PAGE_FOOTER_LINK_RE = re.compile(
+    r"^-\s+\[[^\]]*\]\(https://www\.facebook\.com/"
+    r"(?:ads/library/api/|ads/about/|privacy/center/|policies/)[^)]*\)\\{0,2}$"
+)
+_PAGE_FOOTER_STATUS_RE = re.compile(r"^System status\\{0,2}$")
+
+# A bare box-drawing rule is only chrome as part of the host footer block; a
+# creative may end with its own divider ("Copy line" over a rule).
+_BOX_DIVIDER_RE = re.compile(r"^─{3,}\\{0,2}$")
+
+# The host's head+tail truncation footer (tools/web_tools_truncate.py) appends
+# a banner, a size summary and an absolute cache path — or, when the cache
+# write fails, a sentence saying the full text could not be stored. The path
+# changes on every fetch, so leaving it in creative_text makes unchanged ads
+# look changed.
+_HOST_FOOTER_RE = re.compile(
+    r"^(?:"
+    r"─{3,}\s*\[TRUNCATED\]\s*─{3,}"
+    r"|Showing [\d,]+ chars \(head\) \+ [\d,]+ chars \(tail\) "
+    r"of [\d,]+ total clean characters\.?"
+    r"|Full text saved to: .+"
+    r"|Full text could not be stored.*"
+    r"|To read the omitted middle: read_file path=.*"
+    r")\\{0,2}$"
+)
+
+
+def _is_footer_line(line: str) -> bool:
+    """True when ``line`` is one of the host/page footer chrome lines."""
+    return bool(
+        _HOST_FOOTER_RE.match(line)
+        or _PAGE_FOOTER_STATUS_RE.match(line)
+        or _PAGE_FOOTER_LINK_RE.match(line)
+    )
+
+
+def _preceded_by_footer_block(kept: list[str]) -> bool:
+    """True when the line above ``kept[-1]`` is part of a footer block."""
+    index = len(kept) - 2
+    while index >= 0 and not kept[index].strip("\\").strip():
+        index -= 1
+    return index >= 0 and _is_footer_line(kept[index])
+
+
+def _strip_footers(kept: list[str]) -> list[str]:
+    """Drop a trailing page/host footer from cleaned creative lines.
+
+    Only trailing runs are removed, and only lines that are unambiguously
+    chrome: the library's fixed policy links, its ``System status`` label, the
+    host's truncation banner/summary/cache-path lines, the closing rule of
+    that footer block, and the lone backslash wrap residue those lines leave
+    behind. A bare rule or one of those URLs mid-copy is creative and is
+    preserved.
+    """
+    while kept:
+        line = kept[-1]
+        if _is_footer_line(line):
+            kept.pop()
+            continue
+        # The footer block's closing rule is chrome only when it closes one.
+        if _BOX_DIVIDER_RE.match(line) and _preceded_by_footer_block(kept):
+            kept.pop()
+            continue
+        # Wrapped markdown leaves a lone backslash between/after footer lines.
+        if not line.strip("\\").strip():
+            kept.pop()
+            continue
+        break
+    return kept
 
 
 #: Filter vocabularies, mirroring the public library's own URL parameters.
@@ -213,15 +294,28 @@ def _clean_creative(lines: list[str]) -> str:
             continue
         if line.startswith("["):
             # A link-only line is dropped; an unclosed one starts a CTA block.
-            if line.endswith(")") and "](" in line:
+            # A wrapped render can leave a trailing ``\`` after a complete
+            # link, so compare the line with escapes stripped. Repeated ``[``
+            # left unclosed (e.g. ``[![](img)``) still starts a CTA block.
+            if (
+                line.rstrip("\\").strip().endswith(")")
+                and "](" in line
+                and line.count("[") <= line.count("]")
+            ):
                 continue
             skipping_link_block = True
             continue
-        if line in _NOISE_LINES or line.startswith(_NOISE_PREFIXES):
+        if (
+            line in _NOISE_LINES
+            or line.rstrip("\\").strip() in _NOISE_LINES
+            or line.startswith(_NOISE_PREFIXES)
+        ):
+            # Wrapped markdown can leave a trailing ``\`` on a chrome line.
             continue
         if line.startswith("!["):
             continue
         kept.append(line)
+    kept = _strip_footers(kept)
     return "\n".join(kept).strip()
 
 
@@ -666,16 +760,23 @@ def fetch_ads_with_meta(
     """Fetch and parse ``query``, returning ``(ads, meta)``.
 
     ``meta`` is
-    ``{"complete": bool, "fetched": int, "total_returned": int,
-    "fetched_chars": int, "char_limit": int}``.
+    ``{"complete": bool, "complete_scope": "rendered_window", "fetched": int,
+    "total_returned": int, "fetched_chars": int, "char_limit": int}``.
 
-    ``fetched`` is the number of ads actually returned and ``total_returned``
-    the number of ads the render held before ``limit`` sliced it, so a caller
-    can see how much of the listing it is missing. Both count the parsed ads,
-    not the char budget.
+    **``complete`` means the rendered window was not clipped — never that the
+    whole result set was retrieved.** There is no pagination here: one fetch is
+    one public render, and the render itself is a top-N window of Meta's
+    results. ``complete_scope`` (always :data:`COMPLETENESS_SCOPE`) is the
+    machine-readable reminder. Consequences downstream:
 
-    Completeness is a *heuristic*, not a guarantee, and it fails toward
-    ``False``. Three independent signals make a listing partial:
+    * an id absent from a *complete* render is absent from the visible window,
+      not proven stopped;
+    * an ad appearing for the first time may merely have entered the window,
+      not launched.
+
+    So ``complete`` rules out "the page was truncated", nothing more. It is a
+    *heuristic*, not a guarantee, and it fails toward ``False``. Three
+    independent signals make a listing partial:
 
     * the render reaches the char budget (the host clips oversized pages);
     * the text carries the host's head+tail truncation footer
@@ -693,7 +794,14 @@ def fetch_ads_with_meta(
 
     A partial listing only suppresses the ``ended`` bucket, so a false
     positive costs a missed retirement report while a false negative
-    manufactures ``new`` ads out of a shrunken baseline.
+    manufactures ``new`` ads out of a shrunken baseline. Even on a complete
+    listing, ``ended``/``new`` remain window-scoped (see above): the diff code
+    (:func:`diffing.diff_snapshots`) words them that way.
+
+    ``fetched`` is the number of ads actually returned and ``total_returned``
+    the number of ads the render held before ``limit`` sliced it, so a caller
+    can see how much of the window it is missing. Both count the parsed ads,
+    not the char budget.
 
     JSON payloads carry whole ads and have no footer, but their length is
     still capped by ``limit``; with ``limit=None`` they are returned whole.
@@ -712,9 +820,11 @@ def fetch_ads_with_meta(
         raise FetchError("web_extract unavailable")
 
     # A pre-hydration shell raises ParseError, and the host caches extractions
-    # by URL — retrying the identical URL replays the failure. Retry once with
-    # a cache-busting parameter (Meta ignores unknown params); a genuine
-    # empty listing returns [] rather than raising, so it never retries.
+    # by URL — retrying the identical URL replays the failure. So a parse
+    # failure gets up to 4 attempts in total: the first on the plain URL and
+    # the rest each with a fresh cache-busting parameter (Meta ignores unknown
+    # params). A genuine empty listing returns [] rather than raising, so it
+    # never retries.
     import uuid
 
     last_error: ParseError | None = None
@@ -772,6 +882,7 @@ def _fetch_once(url, budget, lim, dispatch):
             # a total beyond the limit proves the tail was sliced.
             return ads, {
                 "complete": True if lim is None else total <= lim,
+                "complete_scope": COMPLETENESS_SCOPE,
                 "fetched": len(ads),
                 "total_returned": total,
                 "fetched_chars": 0,
@@ -794,6 +905,7 @@ def _fetch_once(url, budget, lim, dispatch):
     )
     meta = {
         "complete": complete,
+        "complete_scope": COMPLETENESS_SCOPE,
         "fetched": len(parsed) if lim is None else min(len(parsed), lim),
         "total_returned": len(parsed),
         "fetched_chars": len(content),

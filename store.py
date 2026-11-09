@@ -68,6 +68,18 @@ def _norm(query) -> str:
     return str(query or "").strip()
 
 
+def has_nul(value) -> bool:
+    """True when a component carries NUL, the artifact-key field separator.
+
+    NUL is not printable in a query or a page name, and allowing it lets one
+    component impersonate the separator between two others (an advertiser
+    ``"b\\x00active_status=active"`` used to hash like advertiser ``"b"``
+    watched with the active filter). Callers reject such input; the key
+    builder refuses it rather than minting an ambiguous key.
+    """
+    return "\x00" in _norm(value)
+
+
 def _norm_country(country) -> str:
     """Normalise a market code; anything unusable falls back to US."""
     code = str(country or "").strip().upper()
@@ -84,13 +96,19 @@ def _entry(item) -> dict | None:
     """
     if isinstance(item, str):
         query = _norm(item)
-        return {"query": query, "country": DEFAULT_COUNTRY} if query else None
+        if not query or has_nul(query):
+            return None
+        return {"query": query, "country": DEFAULT_COUNTRY}
     if isinstance(item, dict):
         query = _norm(item.get("query"))
-        if not query:
+        # An entry whose query or advertiser carries NUL cannot be keyed
+        # unambiguously, so it is dropped instead of persisted.
+        if not query or has_nul(query):
             return None
         entry = {"query": query, "country": _norm_country(item.get("country"))}
         advertiser = _norm(item.get("advertiser"))
+        if has_nul(advertiser):
+            return None
         if advertiser:
             entry["advertiser"] = advertiser
         active_status = _norm_filter(
@@ -181,6 +199,12 @@ def _artifact_key(
     """
     base = f"{_norm(query)}\x00{_norm_country(country)}"
     adv = _norm(advertiser)
+    # NUL is what separates the fields above: a component carrying one could
+    # alias another watch's key (advertiser "b\x00active_status=active" and
+    # advertiser "b" + active filter used to hash the same file). Refuse to
+    # mint such a key instead of hashing an ambiguous string.
+    if has_nul(query) or has_nul(adv):
+        raise ValueError("NUL not allowed in snapshot-key components")
     if adv:
         base = f"{base}\x00{adv}"
     active_status = _norm_filter(

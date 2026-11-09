@@ -207,3 +207,156 @@ def test_advertiser_watch_does_not_adopt_pre_country_legacy_baseline(data_dir):
     # The same file is still the upgrade path for the unfiltered US watch.
     assert store.load_snapshot("KFC", "US") == {"ads": {"9": {"id": "9"}}}
 
+
+
+def test_artifact_key_rejects_nul_in_query_and_advertiser():
+    """NUL is the field separator; a component carrying one must be refused.
+
+    Pre-fix, `advertiser="b\\x00active_status=active"` hashed exactly like
+    advertiser "b" watched with the active filter, so two watches shared one
+    snapshot/report.
+    """
+    with pytest.raises(ValueError):
+        store._artifact_key("KFC\x00US", "US")
+    with pytest.raises(ValueError):
+        store._artifact_key("KFC", "US", "b\x00active_status=active")
+    with pytest.raises(ValueError):
+        store._snapshot_path("KFC", "US", "b\x00active_status=active")
+    with pytest.raises(ValueError):
+        store.report_paths("KFC", "US", "b\x00active_status=active")
+
+    # The legitimate keys those NUL strings used to alias remain distinct.
+    assert store._snapshot_path("KFC", "US", "b") != store._snapshot_path("KFC", "US")
+    assert (
+        store._snapshot_path("KFC", "US", "b", "active")
+        != store._snapshot_path("KFC", "US", "b")
+    )
+
+
+def test_advertisers_differing_only_by_nul_never_collide():
+    """Neither variant gets hashed, so neither can alias the other."""
+    for adv in ("a\x00b", "\x00ab"):
+        with pytest.raises(ValueError):
+            store._snapshot_path("KFC", "US", adv)
+
+
+def test_watch_add_drops_nul_advertiser_entry():
+    items = store.watch_add("KFC", advertiser="KFC\x00US")
+    assert items == []
+
+
+# --- branch coverage: atomic-write cleanup and corrupt reads -----------------
+
+
+def test_write_json_cleans_temp_file_when_replace_fails(monkeypatch, data_dir):
+    """A failed write must not leave a half-written temp file behind."""
+    target = data_dir / "out.json"
+
+    def boom(src, dst):
+        raise OSError("disk full")
+
+    monkeypatch.setattr(store.os, "replace", boom)
+    with pytest.raises(OSError, match="disk full"):
+        store._write_json(target, {"a": 1})
+    assert not target.exists()
+    assert list(data_dir.glob("*.tmp")) == []
+
+
+def test_write_text_cleans_temp_file_when_replace_fails(monkeypatch, data_dir):
+    target = data_dir / "out.txt"
+
+    def boom(src, dst):
+        raise OSError("disk full")
+
+    monkeypatch.setattr(store.os, "replace", boom)
+    with pytest.raises(OSError, match="disk full"):
+        store._write_text(target, "data")
+    assert not target.exists()
+    assert list(data_dir.glob("*.tmp")) == []
+
+
+def test_write_json_survives_unlink_failure_while_cleaning_up(monkeypatch, data_dir):
+    """If the temp file cannot be unlinked, the original error still wins."""
+    target = data_dir / "out.json"
+    unlinked = []
+
+    def boom(src, dst):
+        raise OSError("disk full")
+
+    def no_unlink(path):
+        unlinked.append(path)
+        raise OSError("busy")
+
+    monkeypatch.setattr(store.os, "replace", boom)
+    monkeypatch.setattr(store.os, "unlink", no_unlink)
+    with pytest.raises(OSError, match="disk full"):
+        store._write_json(target, {"a": 1})
+    assert len(unlinked) == 1
+
+
+def test_write_text_survives_unlink_failure_while_cleaning_up(monkeypatch, data_dir):
+    target = data_dir / "out.txt"
+    unlinked = []
+
+    def boom(src, dst):
+        raise OSError("disk full")
+
+    def no_unlink(path):
+        unlinked.append(path)
+        raise OSError("busy")
+
+    monkeypatch.setattr(store.os, "replace", boom)
+    monkeypatch.setattr(store.os, "unlink", no_unlink)
+    with pytest.raises(OSError, match="disk full"):
+        store._write_text(target, "data")
+    assert len(unlinked) == 1
+
+
+def test_watch_list_tolerates_corrupt_json(data_dir):
+    (data_dir / store.WATCH).write_text("{not json")
+    assert store.watch_list() == []
+
+
+def test_watch_list_tolerates_non_list_json(data_dir):
+    (data_dir / store.WATCH).write_text(json.dumps({"query": "nike"}))
+    assert store.watch_list() == []
+
+
+def test_watch_list_drops_unusable_entries(data_dir):
+    """Junk entries are skipped, not carried into the persisted list."""
+    (data_dir / store.WATCH).write_text(
+        json.dumps(
+            [
+                123,
+                None,
+                "   ",
+                "bad\x00query",
+                {"query": "  "},
+                {"query": "ok", "advertiser": "a\x00b"},
+                "good",
+            ]
+        )
+    )
+    assert store.watch_list() == [{"query": "good", "country": "US"}]
+
+
+def test_load_snapshot_tolerates_corrupt_json(data_dir):
+    path = store._snapshot_path("KFC", "US")
+    path.parent.mkdir(parents=True, exist_ok=True)
+    path.write_text("{not json")
+    assert store.load_snapshot("KFC") == {"ads": {}}
+
+
+def test_load_snapshot_tolerates_non_object_json(data_dir):
+    path = store._snapshot_path("KFC", "US")
+    path.parent.mkdir(parents=True, exist_ok=True)
+    path.write_text(json.dumps([{"id": "1"}]))
+    assert store.load_snapshot("KFC") == {"ads": {}}
+
+
+def test_load_snapshot_skips_stamped_legacy_fallback(data_dir):
+    """A fallback file stamped with metadata belongs to another watch."""
+    legacy = store._legacy_snapshot_path("KFC")
+    legacy.parent.mkdir(parents=True, exist_ok=True)
+    legacy.write_text(json.dumps({"advertiser": "KFC", "ads": {"1": {"id": "1"}}}))
+    assert store.load_snapshot("KFC") == {"ads": {}}
