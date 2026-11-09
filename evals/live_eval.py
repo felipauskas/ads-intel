@@ -404,6 +404,38 @@ def counts(row: dict) -> tuple:
     return (row.get("new_ads"), row.get("ended_ads"), row.get("changed_ads"))
 
 
+REASON_KEYS = ("shell", "blocked", "markup_changed")
+
+
+def attempt_counts(dispatches: list[dict]) -> dict:
+    """Tally dispatch attempts into transport vs. dead-render failures.
+
+    ``failed`` is every unusable attempt (both kinds), so the headline rate no
+    longer reports 0 for a run full of shells. Older attempts.json files carry
+    only ``failed`` and no reason fields; those count as transport failures.
+    """
+    transport = 0
+    dead: dict[str, int] = {}
+    for item in dispatches:
+        if item.get("transport_failed") or (
+            item.get("failed") and not item.get("dead_render")
+        ):
+            transport += 1
+        reason = item.get("dead_render")
+        if reason:
+            dead[reason] = dead.get(reason, 0) + 1
+    parse_failed = sum(dead.values())
+    out = {
+        "total": len(dispatches),
+        "failed": transport + parse_failed,
+        "transport_failed": transport,
+        "parse_failed": parse_failed,
+    }
+    for key in REASON_KEYS:
+        out[key] = dead.get(key, 0)
+    return out
+
+
 # ---------------------------------------------------------------------------
 # One pair
 # ---------------------------------------------------------------------------
@@ -446,18 +478,27 @@ def run_pair(
                         "seconds": round(time.perf_counter() - started, 2),
                         "chars": 0,
                         "failed": True,
+                        "transport_failed": True,
+                        "dead_render": None,
                         "error": f"{type(exc).__name__}: {exc}",
                     }
                 )
                 payload = {"error": f"{type(exc).__name__}: {exc}"}
                 break
             first = (payload.get("results") or [{}])[0] if isinstance(payload, dict) else {}
-            chars = len(first.get("content") or "") if isinstance(first, dict) else 0
-            failed = bool(
+            content = first.get("content") or "" if isinstance(first, dict) else ""
+            chars = len(content)
+            transport_failed = bool(
                 not isinstance(payload, dict)
                 or payload.get("error")
                 or (isinstance(first, dict) and first.get("error"))
                 or chars == 0
+            )
+            # A shell/blocked page is a 200 with content: the host counted it
+            # as success and the old harness did too, hiding the real defect
+            # rate (210 attempts, 0 failed, 10 parse-failed pairs).
+            dead_render = (
+                None if transport_failed else sources.classify_dead_render(content)
             )
             dispatches.append(
                 {
@@ -465,10 +506,15 @@ def run_pair(
                     "url": urls[0] if urls else None,
                     "seconds": round(time.perf_counter() - started, 2),
                     "chars": chars,
-                    "failed": failed,
+                    "failed": transport_failed or dead_render is not None,
+                    "transport_failed": transport_failed,
+                    "dead_render": dead_render,
                 }
             )
-            if not failed:
+            # Only a transport failure is retried here: dead renders are
+            # retried inside sources.fetch_ads_with_meta (with cache-busting),
+            # so retrying them again would multiply the render cost.
+            if not transport_failed:
                 break
             time.sleep(2)
         return payload
@@ -641,10 +687,7 @@ def run_pair(
                 search_seconds + adv_seconds + c1_seconds + c2_seconds, 2
             ),
         }
-        row["attempts"] = {
-            "total": len(dispatches),
-            "failed": sum(1 for d in dispatches if d["failed"]),
-        }
+        row["attempts"] = attempt_counts(dispatches)
 
         write_json(target_dir / "result.json", row)
         write_json(
@@ -666,10 +709,7 @@ def run_pair(
             f"exception: {type(exc).__name__}: {exc}",
         ]
         row["traceback"] = traceback.format_exc(limit=6)
-        row["attempts"] = {
-            "total": len(dispatches),
-            "failed": sum(1 for d in dispatches if d["failed"]),
-        }
+        row["attempts"] = attempt_counts(dispatches)
         write_json(target_dir / "result.json", row)
         write_json(
             target_dir / "attempts.json",
@@ -717,7 +757,11 @@ def write_pair_summary(target_dir: Path, row: dict) -> None:
         f"- expected: {cur.get('expected') or '—'}  found: {', '.join(cur.get('found') or []) or 'none'}  ok: {cur.get('ok')}",
         "",
         "## Hydration",
-        f"- attempts: {attempts.get('total')}  failed: {attempts.get('failed')}",
+        f"- attempts: {attempts.get('total')}  failed: {attempts.get('failed')}"
+        f"  transport: {attempts.get('transport_failed', 0)}"
+        f"  dead render: {attempts.get('parse_failed', 0)}"
+        f" (shell {attempts.get('shell', 0)}, blocked {attempts.get('blocked', 0)},"
+        f" markup_changed {attempts.get('markup_changed', 0)})",
         "",
         "## Failures",
     ]
@@ -771,14 +815,44 @@ def aggregate(out_root: Path) -> None:
             f"{cur_out} | {r.get('status')} | {reason} |"
         )
     totals = [r.get("attempts") or {} for r in rows]
-    total_attempts = sum(t.get("total") or 0 for t in totals)
-    failed_attempts = sum(t.get("failed") or 0 for t in totals)
+
+    def _sum(key: str, fallback: str | None = None) -> int:
+        total = 0
+        for t in totals:
+            value = t.get(key)
+            if value is None and fallback:
+                value = t.get(fallback)
+            total += value or 0
+        return total
+
+    total_attempts = _sum("total")
+    failed_attempts = _sum("failed")
+    transport_failed = _sum("transport_failed", "failed")
+    parse_failed = _sum("parse_failed")
+    shells = _sum("shell")
+    blocked = _sum("blocked")
+    markup = _sum("markup_changed")
     lines += [
         "",
         f"- web_extract attempts: {total_attempts}  failed: {failed_attempts}"
-        + (f" ({100 * failed_attempts / total_attempts:.0f}%)" if total_attempts else ""),
+        + (f" ({100 * failed_attempts / total_attempts:.0f}%)" if total_attempts else "")
+        + f" — transport {transport_failed}, dead render {parse_failed}"
+        f" (shell {shells}, blocked {blocked}, markup_changed {markup})",
         "",
     ]
+    if parse_failed:
+        lines += ["## Dead renders (200 with content, no listing)", ""]
+        for r in rows:
+            a = r.get("attempts") or {}
+            if not a.get("parse_failed"):
+                continue
+            lines.append(
+                f"- {r.get('brand')} {r.get('country')}: {a.get('parse_failed')}"
+                f" / {a.get('total')} attempts"
+                f" (shell {a.get('shell', 0)}, blocked {a.get('blocked', 0)},"
+                f" markup_changed {a.get('markup_changed', 0)})"
+            )
+        lines.append("")
     write_text(out_root / "summary.md", "\n".join(lines))
 
 

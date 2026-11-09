@@ -15,6 +15,7 @@ from __future__ import annotations
 
 import json
 import re
+import time
 
 _LIBRARY_BASE = "https://www.facebook.com/ads/library/"
 
@@ -40,6 +41,31 @@ _TRUNCATION_MARKERS = ("[TRUNCATED]", "middle omitted")
 #: "all results obtained".
 COMPLETENESS_SCOPE = "rendered_window"
 
+#: Fresh fetch attempts per call. The first is on the plain URL; the rest are
+#: cache-busted because the host replays a cached extraction byte-for-byte for
+#: the same URL. Four attempts left a contested phase failing ~29% of the
+#: time at p(success|fresh) = 0.34 (evals/d3-shell-rootcause.md); six brings
+#: that to ~8%, the doc's recommended budget.
+_MAX_ATTEMPTS = 6
+
+#: Wall-clock ceiling for the whole retry loop, so a pathological transport
+#: cannot stretch one phase past a minute (its worst case is ~50 s of renders).
+_FETCH_DEADLINE_S = 60.0
+
+#: Transport errors (not parse failures) are retried this many times.
+_TRANSPORT_RETRIES = 1
+
+#: Canonical URLs that already returned a pre-hydration shell in this process.
+#: The host caches extractions per URL, so the next fetch for such a URL must
+#: start cache-busted: attempt 1 on the plain URL would just replay the shell
+#: cached during an earlier phase (0.01 s, zero information).
+_dead_render_urls: set[str] = set()
+
+
+def reset_dead_render_cache() -> None:
+    """Forget the in-process shell URL cache (tests, and a manual reset)."""
+    _dead_render_urls.clear()
+
 
 #: A render with no card markers is a genuinely empty listing ONLY when it
 #: actually says so. The ad-library empty state reads like "No ads match your
@@ -49,6 +75,67 @@ _EMPTY_STATE_RE = re.compile(
     r"no ads (match|found)|we didn't find|we couldn.?t find|no results? (found|match)",
     re.IGNORECASE,
 )
+
+#: Typed reasons for a render that carried no usable listing. ``shell`` is the
+#: pre-hydration ad-library chrome (nav + country picker + footer, no results
+#: grid); ``blocked`` is a consent/login/rate-limit wall; ``markup_changed`` is
+#: anything else — the page rendered but the card markup no longer parses.
+DEAD_RENDER_SHELL = "shell"
+DEAD_RENDER_BLOCKED = "blocked"
+DEAD_RENDER_MARKUP = "markup_changed"
+
+# A wall the library shows instead of results. Deliberately phrase-level: the
+# normal shell footer links to a "Cookies" policy page, so a bare word like
+# "cookie" or "login" would misclassify a healthy render.
+_BLOCKED_RE = re.compile(
+    r"log ?in to continue|sign ?in to continue|you must log ?in"
+    r"|confirm your identity|unusual activity|account (?:is )?temporarily locked"
+    r"|too many requests|rate limit|temporarily blocked|access denied"
+    r"|request (?:was )?blocked|accept all cookies|allow all cookies",
+    re.IGNORECASE,
+)
+
+#: The ad-library SPA chrome that is present *before* the results grid paints.
+#: Any card marker at all wins over these (a real render carries both).
+_SHELL_NAV_MARKERS = ("Ad Library Report", "Ad Library API", "Branded Content")
+_SHELL_CHROME_MARKERS = (
+    "select country",
+    "search by keyword or advertiser",
+    "ad category",
+)
+_SHELL_FOOTER_MARKERS = (
+    "metastatus.com/ads-transparency",
+    "about ads and data use",
+    "system status",
+)
+_CARD_EVIDENCE_RE = re.compile(r"\*\*Sponsored\*\*|Library ID:\s*\d")
+
+
+def classify_dead_render(md: str) -> str | None:
+    """Type a render that carries no listing, or ``None`` when it is usable.
+
+    Returns one of :data:`DEAD_RENDER_SHELL` / :data:`DEAD_RENDER_BLOCKED` /
+    :data:`DEAD_RENDER_MARKUP`, or ``None`` for content that carries card
+    markers or the genuine empty-state wording. Header-only classification —
+    the actionability decision (retry vs. fail) stays with the caller.
+    """
+    if not md or not isinstance(md, str) or not md.strip():
+        return None
+    # A card marker means the results grid painted; whatever fails after that
+    # is a parse/markup problem, not a dead render.
+    if _CARD_EVIDENCE_RE.search(md):
+        return None
+    if _BLOCKED_RE.search(md):
+        return DEAD_RENDER_BLOCKED
+    if _EMPTY_STATE_RE.search(md):
+        return None
+    lowered = md.lower()
+    has_nav = any(marker in md for marker in _SHELL_NAV_MARKERS)
+    has_picker = any(marker in lowered for marker in _SHELL_CHROME_MARKERS)
+    has_footer = any(marker in lowered for marker in _SHELL_FOOTER_MARKERS)
+    if has_nav and (has_picker or has_footer):
+        return DEAD_RENDER_SHELL
+    return DEAD_RENDER_MARKUP
 
 
 class FetchError(RuntimeError):
@@ -62,11 +149,29 @@ class ParseError(Exception):
     for "this advertiser has no ads".
 
     ``cards_seen`` is the number of card markers found in the render.
+    ``reason`` types the failure (see the ``DEAD_RENDER_*`` constants);
+    ``dead_render`` is the same value, named for the meta/error field.
     """
 
-    def __init__(self, message: str = "no cards parsed", cards_seen: int = 0):
+    def __init__(
+        self,
+        message: str = "no cards parsed",
+        cards_seen: int = 0,
+        reason: str = DEAD_RENDER_MARKUP,
+    ):
         super().__init__(message)
         self.cards_seen = cards_seen
+        self.reason = reason
+        self.dead_render = reason
+
+    def __str__(self) -> str:
+        message = super().__str__()
+        # Only a pre-results render gets the typed prefix; a markup-change
+        # message keeps its original wording so existing error strings still
+        # match for callers that only stringify the exception.
+        if self.reason in (DEAD_RENDER_SHELL, DEAD_RENDER_BLOCKED):
+            return f"dead_render: {self.reason}: {message}"
+        return message
 
 
 _UNRESERVED = frozenset(
@@ -611,13 +716,124 @@ def _cta_fields(block: list[str]) -> dict | None:
         if value and (not segments or segments[-1] != value):
             segments.append(value)
     cta_text = segments[-1] if segments else ""
-    # The first segment is the display domain (AD.DOUBLECLICK.NET); drop it.
+    # The first segment is the display domain the card prints above the title
+    # (``AD.DOUBLECLICK.NET``). It is Treg's ``link_caption``: the caption
+    # shown, not the URL host (``bk.com`` can point at an ``app.link``
+    # redirect), so it is surfaced rather than dropped — but kept out of the
+    # title.
+    link_caption = ""
+    if segments and _DOMAIN_RE.match(segments[0]):
+        link_caption = segments[0].rstrip("/")
     title_parts = [s for s in segments[:-1] if not _DOMAIN_RE.match(s)]
     return {
         "link_url": dest,
         "link_title": " ".join(title_parts),
         "cta_text": cta_text,
+        "link_caption": link_caption,
     }
+
+
+#: Treg's ``cta_type`` vocabulary, keyed by the lowercased CTA label the public
+#: render prints. The labels come from Treg's own ``cta`` -> ``cta_type`` pairs
+#: (``Order now`` -> ``ORDER_NOW``, ``Install now`` -> ``INSTALL_MOBILE_APP``,
+#: ``Use app`` -> ``USE_MOBILE_APP``) plus the common labels from the fixture.
+_CTA_TYPES = {
+    "order now": "ORDER_NOW",
+    "shop now": "SHOP_NOW",
+    "learn more": "LEARN_MORE",
+    "sign up": "SIGN_UP",
+    "download": "DOWNLOAD",
+    "get offer": "GET_OFFER",
+    "install now": "INSTALL_MOBILE_APP",
+    "use app": "USE_MOBILE_APP",
+    "see details": "SEE_DETAILS",
+    "book now": "BOOK_NOW",
+    "buy now": "BUY_NOW",
+    "contact us": "CONTACT_US",
+    "apply now": "APPLY_NOW",
+    "subscribe": "SUBSCRIBE",
+    "message us": "MESSAGE_US",
+    "send message": "SEND_MESSAGE",
+}
+
+
+def cta_type(text=None) -> str:
+    """Upper-snake CTA type for a rendered CTA label.
+
+    Known labels map to Treg's vocabulary; anything else is normalised to
+    upper snake (``Visit Instagram profile`` -> ``VISIT_INSTAGRAM_PROFILE``)
+    rather than guessed at or dropped. An absent label yields ``""``.
+    """
+    key = " ".join(re.sub(r"[^a-z0-9]+", " ", str(text or "").lower()).split())
+    if not key:
+        return ""
+    return _CTA_TYPES.get(key) or "_".join(key.split()).upper()
+
+
+#: Display formats a stored payload may assert. Only the three the public
+#: render can support are trusted: ``carousel`` and ``multi_images`` are
+#: indistinguishable from ``dco`` in the render (see :func:`_display_format`),
+#: so an untrusted payload claiming them would emit a fact the plugin cannot
+#: verify. Such a claim is dropped to ``""`` rather than passed through.
+_PAYLOAD_DISPLAY_FORMATS = ("image", "video", "dco")
+
+
+def _display_format(images: list[str], has_video: bool) -> str:
+    """Infer Treg's ``display_format`` from what the card rendered.
+
+    Multiple rendered images (or an image mixed with video) is dynamic creative
+    — Treg's dominant multi-creative value, ``dco`` (57 of its 59 multi-image
+    ads). ``carousel`` cannot be told apart from ``dco`` in the public render,
+    so it is never claimed. One image is ``image``; video without images is
+    ``video``. No media signal yields ``""`` (unknown, not invented).
+    """
+    if has_video and images:
+        return "dco"
+    if len(images) > 1:
+        return "dco"
+    if images:
+        return "image"
+    if has_video:
+        return "video"
+    return ""
+
+
+def _cards(ad: dict) -> list[dict]:
+    """Per-card grouping in Treg's shape.
+
+    A multi-image ad is one card per rendered image (Treg repeats the ad body,
+    CTA and link on each card and varies only the image); a single-media ad is
+    a one-element list so the shape never varies. No video file URL is ever
+    invented: ``video`` stays ``None``.
+    """
+    images = ad.get("images") or []
+    body = ad.get("creative_text") or ""
+    cta = ad.get("cta_text") or ""
+    link_url = ad.get("link_url") or ""
+    title = ad.get("link_title") or ""
+    image_list = images if len(images) > 1 else images[:1] or [None]
+    return [
+        {
+            "body": body,
+            "cta": cta,
+            "image": image,
+            "link_url": link_url,
+            "title": title,
+            "video": None,
+        }
+        for image in image_list
+    ]
+
+
+def _with_free_fields(ad: dict) -> dict:
+    """Fill ``cta_type``/``display_format``/``cards`` from the parsed fields."""
+    ad["cta_type"] = cta_type(ad.get("cta_text"))
+    ad["display_format"] = _display_format(
+        ad.get("images") or [], bool(ad.get("has_video"))
+    )
+    ad["cards"] = _cards(ad)
+    ad.setdefault("link_caption", "")
+    return ad
 
 
 def _image_urls(lines: list[str]) -> list[str]:
@@ -744,24 +960,27 @@ def parse_library_markdown_with_meta(md: str) -> tuple[list[dict], dict]:
             continue
         consumed.add(id(rec))
         ads.append(
-            {
-                "id": rec["id"],
-                "page_name": rec["page_name"],
-                "status": rec["status"],
-                "first_seen": rec.get("first_seen", ""),
-                "last_seen": rec.get("last_seen", ""),
-                "creative_text": rec.get("creative_text", ""),
-                "library_url": f"{_LIBRARY_BASE}?id={rec['id']}",
-                "page_url": rec.get("page_url", ""),
-                "page_id": rec.get("page_id", ""),
-                "link_url": rec.get("link_url", ""),
-                "link_title": rec.get("link_title", ""),
-                "cta_text": rec.get("cta_text", ""),
-                "images": rec.get("images", []),
-                "has_video": rec.get("has_video", False),
-                "same_creative_count": rec.get("same_creative_count", 0),
-                "multiple_versions": rec.get("multiple_versions", False),
-            }
+            _with_free_fields(
+                {
+                    "id": rec["id"],
+                    "page_name": rec["page_name"],
+                    "status": rec["status"],
+                    "first_seen": rec.get("first_seen", ""),
+                    "last_seen": rec.get("last_seen", ""),
+                    "creative_text": rec.get("creative_text", ""),
+                    "library_url": f"{_LIBRARY_BASE}?id={rec['id']}",
+                    "page_url": rec.get("page_url", ""),
+                    "page_id": rec.get("page_id", ""),
+                    "link_url": rec.get("link_url", ""),
+                    "link_title": rec.get("link_title", ""),
+                    "cta_text": rec.get("cta_text", ""),
+                    "link_caption": rec.get("link_caption", ""),
+                    "images": rec.get("images", []),
+                    "has_video": rec.get("has_video", False),
+                    "same_creative_count": rec.get("same_creative_count", 0),
+                    "multiple_versions": rec.get("multiple_versions", False),
+                }
+            )
         )
     # A block carrying the ad marker that yielded no ad (and was not merged
     # into one across a separator boundary) is a card the parse lost. A
@@ -787,15 +1006,19 @@ def parse_library_markdown_with_meta(md: str) -> tuple[list[dict], dict]:
 
     if not ads and cards_seen:
         raise ParseError(
-            f"{cards_seen} card markers but no parseable ad", cards_seen=cards_seen
+            f"{cards_seen} card markers but no parseable ad",
+            cards_seen=cards_seen,
+            reason=DEAD_RENDER_MARKUP,
         )
     if not ads and not _EMPTY_STATE_RE.search(md):
         # No markers and no empty-state wording (at ANY size): the host
         # snapshotted the page before the results grid hydrated. Report it
         # as a transport/render failure, never as a confident empty listing.
+        reason = classify_dead_render(md) or DEAD_RENDER_MARKUP
         raise ParseError(
             f"render ({len(md)} chars) with no card markers or empty-state text",
             cards_seen=0,
+            reason=reason,
         )
     return ads, meta
 
@@ -854,6 +1077,7 @@ _AD_TEXT_KEYS = (
     "link_url",
     "link_title",
     "cta_text",
+    "link_caption",
 )
 
 # The fields that belong to the creative side of a card, so an orphan header
@@ -864,6 +1088,7 @@ _CREATIVE_KEYS = (
     "link_url",
     "link_title",
     "cta_text",
+    "link_caption",
     "has_video",
     "same_creative_count",
     "multiple_versions",
@@ -932,6 +1157,55 @@ def _normalise_ad(rec: dict) -> dict | None:
         count = 0
     ad["same_creative_count"] = max(count, 0)
     ad["multiple_versions"] = _as_bool(rec.get("multiple_versions", False))
+    return _with_payload_free_fields(ad, rec)
+
+
+def _normalise_card(card) -> dict | None:
+    """One card from an untrusted JSON payload, or ``None`` when unusable.
+
+    URLs are restricted to ``http(s)`` (a ``javascript:`` image/link would be
+    an injection vector in a report); no video URL is surfaced, because the
+    public render does not carry one and ``video`` is always ``None``.
+    """
+    if not isinstance(card, dict):
+        return None
+    return {
+        "body": str(card.get("body") or ""),
+        "cta": str(card.get("cta") or ""),
+        "image": _http_url(card.get("image")) or None,
+        "link_url": _http_url(card.get("link_url")),
+        "title": str(card.get("title") or ""),
+        "video": None,
+    }
+
+
+def _with_payload_free_fields(ad: dict, rec: dict) -> dict:
+    """P2 fields from a payload, deriving whatever the payload omits.
+
+    A stored payload may already carry ``cta_type``/``display_format``/``cards``
+    (this plugin's own JSON export does). Those win when valid; anything else is
+    derived from the same render fields the markdown parser uses, so an old
+    payload still gets a consistent shape.
+    """
+    known_cta = str(rec.get("cta_type") or "").strip().upper()
+    ad["cta_type"] = known_cta or cta_type(ad.get("cta_text"))
+    display = str(rec.get("display_format") or "").strip().lower()
+    if display in _PAYLOAD_DISPLAY_FORMATS:
+        ad["display_format"] = display
+    elif display:
+        # An explicit but unverifiable claim (``carousel``, ``multi_images``,
+        # anything unknown) is dropped: the public render cannot tell carousel
+        # from dco, so echoing the payload would invent a fact.
+        ad["display_format"] = ""
+    else:
+        ad["display_format"] = _display_format(
+            ad.get("images") or [], ad["has_video"]
+        )
+    raw_cards = rec.get("cards")
+    cards = []
+    if isinstance(raw_cards, list):
+        cards = [c for c in (_normalise_card(item) for item in raw_cards) if c]
+    ad["cards"] = cards or _cards(ad)
     return ad
 
 
@@ -1066,26 +1340,54 @@ def fetch_ads_with_meta(
 
     # A pre-hydration shell raises ParseError, and the host caches extractions
     # by URL — retrying the identical URL replays the failure. So a parse
-    # failure gets up to 4 attempts in total: the first on the plain URL and
+    # failure gets up to _MAX_ATTEMPTS attempts: the first on the plain URL and
     # the rest each with a fresh cache-busting parameter (Meta ignores unknown
     # params). A genuine empty listing returns [] rather than raising, so it
     # never retries.
+    #
+    # Budget rationale (evals/d3-shell-rootcause.md): p(success) on a *fresh*
+    # attempt is 0.34, and with 4 attempts a contested phase still failed ~29%
+    # of the time — partly because attempt 1 was usually a 0.01 s host-cache
+    # replay of the shell cached during the search phase. Six fresh attempts
+    # take that to ~8% (the doc's 6-attempt + wall-clock-cap recommendation)
+    # for at most ~50 s of render wait on a genuinely dead phase. The
+    # cache-bust on attempt 1 for a URL that already shelled this process
+    # reclaims the wasted replay at zero extra fetch cost.
     import uuid
 
-    last_error: ParseError | None = None
-    for attempt in range(4):
-        url = build_url(
-            query,
-            country=country,
-            active_status=active_status,
-            media_type=media_type,
-        )
-        if attempt:
-            url = f"{url}&cache_bust={uuid.uuid4().hex}"
+    _wire_url = build_url(
+        query,
+        country=country,
+        active_status=active_status,
+        media_type=media_type,
+    )
+    known_dead = _wire_url in _dead_render_urls
+    deadline = time.monotonic() + _FETCH_DEADLINE_S
+    last_error: ParseError | FetchError | None = None
+    transport_errors = 0
+    for attempt in range(_MAX_ATTEMPTS):
+        if attempt and time.monotonic() > deadline:
+            break
+        url = _wire_url
+        if attempt or known_dead:
+            url = f"{_wire_url}&cache_bust={uuid.uuid4().hex}"
         try:
             return _fetch_once(url, budget, lim, dispatch)
         except ParseError as exc:
             last_error = exc
+            if exc.reason == DEAD_RENDER_SHELL:
+                # Sticky: the host has this URL's shell cached, so every later
+                # fetch for it must start cache-busted even after a success.
+                _dead_render_urls.add(_wire_url)
+            continue
+        except FetchError as exc:
+            # Transport failures are transient and unrelated to the URL's
+            # cache key: retry once, then surface.
+            transport_errors += 1
+            last_error = exc
+            if transport_errors > _TRANSPORT_RETRIES:
+                raise
+            continue
     assert last_error is not None
     raise last_error
 

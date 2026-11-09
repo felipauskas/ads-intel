@@ -8,6 +8,14 @@ import sources
 FIXTURE = Path(__file__).parent / "fixtures" / "library_page.md"
 
 
+@pytest.fixture(autouse=True)
+def _clear_dead_render_cache():
+    """Every test starts with an empty in-process shell-URL cache."""
+    sources.reset_dead_render_cache()
+    yield
+    sources.reset_dead_render_cache()
+
+
 @pytest.fixture(scope="module")
 def ads():
     return sources.parse_library_markdown(FIXTURE.read_text())
@@ -389,6 +397,120 @@ def test_fetch_retries_once_with_cache_bust_on_parse_error():
     assert len(ads) == 5
     assert len(calls) == 2
     assert calls[1] != calls[0] and "cache_bust" in calls[1]
+
+
+SHELL_BODY = (
+    "Ad Library\n\n[Ad Library Report](https://www.facebook.com/ads/library/report/)\n\n"
+    "Select country\n\n[System status](https://metastatus.com/ads-transparency)\n"
+)
+
+
+def test_parse_error_types_shell_blocked_and_markup():
+    """A dead render carries a typed reason, not just a message."""
+    shell = Path("evals/raw/web_extract-KFC-AE.md").read_text()
+    with pytest.raises(sources.ParseError) as info:
+        sources.parse_library_markdown(shell)
+    assert info.value.reason == sources.DEAD_RENDER_SHELL
+    assert info.value.dead_render == sources.DEAD_RENDER_SHELL
+    assert str(info.value).startswith("dead_render: shell: ")
+    assert "no card markers" in str(info.value)  # message body preserved
+
+    blocked = "Ad Library\n\nYou must log in to continue.\n"
+    with pytest.raises(sources.ParseError) as info:
+        sources.parse_library_markdown(blocked)
+    assert info.value.reason == sources.DEAD_RENDER_BLOCKED
+    assert str(info.value).startswith("dead_render: blocked: ")
+
+    markup = (
+        "Ad Library\n\n**Sponsored**\n\nBuy shoes now.\n\nActive\n\n"
+        "Library ID 1046730950862281\n"
+    )
+    with pytest.raises(sources.ParseError) as info:
+        sources.parse_library_markdown(markup)
+    assert info.value.reason == sources.DEAD_RENDER_MARKUP
+    # A markup change keeps its original, unprefixed message.
+    assert str(info.value) == (
+        "1 card markers but no parseable ad"
+    )
+
+    # Genuine empty state is a healthy empty listing, not a dead render.
+    assert sources.classify_dead_render("No ads match your search.") is None
+    assert sources.classify_dead_render(Path("evals/raw/web_extract-KFC-AE.md").read_text()) == (
+        sources.DEAD_RENDER_SHELL
+    )
+    assert sources.classify_dead_render(FIXTURE.read_text()) is None
+
+
+def test_shell_budget_is_six_fresh_attempts():
+    """Four attempts left ~29% phase failure; the doc's budget is six."""
+    calls = []
+
+    def dispatch(name, args):
+        calls.append(args["urls"][0])
+        return {"results": [{"content": SHELL_BODY}]}
+
+    with pytest.raises(sources.ParseError) as info:
+        sources.fetch_ads("nike", limit=5, dispatch=dispatch)
+
+    assert info.value.reason == sources.DEAD_RENDER_SHELL
+    assert len(calls) == sources._MAX_ATTEMPTS == 6
+    assert "cache_bust" not in calls[0], "the first fetch uses the plain URL"
+    assert all("cache_bust" in url for url in calls[1:]), calls
+
+
+def test_second_fetch_for_a_known_shell_url_starts_cache_busted():
+    """Attempt 1 must not replay the shell the host cached earlier this process."""
+    text = FIXTURE.read_text()
+    first_calls = []
+
+    def shelled(name, args):
+        first_calls.append(args["urls"][0])
+        return {"results": [{"content": SHELL_BODY}]}
+
+    with pytest.raises(sources.ParseError):
+        sources.fetch_ads("nike", limit=5, dispatch=shelled)
+    assert "cache_bust" not in first_calls[0]
+
+    later_calls = []
+
+    def healthy(name, args):
+        later_calls.append(args["urls"][0])
+        return {"results": [{"content": text}]}
+
+    ads = sources.fetch_ads("nike", limit=5, dispatch=healthy)
+    assert len(ads) == 5
+    assert len(later_calls) == 1
+    assert "cache_bust" in later_calls[0]
+
+    # The cache is keyed on the canonical URL: a different query still starts
+    # on its plain URL.
+    other = []
+    sources.fetch_ads("adidas", limit=5, dispatch=lambda n, a: other.append(a["urls"][0]) or {"results": [{"content": text}]})
+    assert "cache_bust" not in other[0]
+
+
+def test_fetch_error_is_retried_once_then_surfaced():
+    text = FIXTURE.read_text()
+    calls = []
+
+    def flaky(name, args):
+        calls.append(args["urls"][0])
+        if len(calls) == 1:
+            return {"error": "connection reset"}
+        return {"results": [{"content": text}]}
+
+    assert len(sources.fetch_ads("nike", limit=5, dispatch=flaky)) == 5
+    assert len(calls) == 2
+
+    dead = []
+
+    def always_fails(name, args):
+        dead.append(args["urls"][0])
+        return {"error": "connection reset"}
+
+    with pytest.raises(sources.FetchError):
+        sources.fetch_ads("nike", limit=5, dispatch=always_fails)
+    assert len(dead) == 2, "transport failure is retried exactly once"
 
 
 def test_lowercase_country_is_normalized_not_rejected():
@@ -1669,3 +1791,235 @@ def test_three_merged_cards_count_every_lost_card():
     ads, meta = sources.parse_library_markdown_with_meta(page)
     assert [ad["id"] for ad in ads] == ["101"]
     assert meta["unparsed_cards"] == 2
+
+
+# --- P2 free fields: link_caption / cta_type / display_format / cards[] ---
+
+
+def test_every_ad_carries_p2_fields_with_safe_defaults(ads):
+    for ad in ads:
+        assert isinstance(ad["link_caption"], str)
+        assert isinstance(ad["cta_type"], str)
+        assert isinstance(ad["display_format"], str)
+        assert isinstance(ad["cards"], list)
+        assert ad["cards"], "every ad gets at least one card"
+        for card in ad["cards"]:
+            assert set(card) == {
+                "body", "cta", "image", "link_url", "title", "video",
+            }
+            assert isinstance(card["body"], str)
+            assert isinstance(card["cta"], str)
+            assert card["image"] is None or isinstance(card["image"], str)
+            assert isinstance(card["link_url"], str)
+            assert isinstance(card["title"], str)
+            assert card["video"] is None
+
+
+def test_link_caption_is_the_rendered_display_domain(ads):
+    """Treg's link_caption is the caption printed in the CTA block, not the
+    URL host: ``bk.com`` can point at ``burgerking.app.link``. Keep what the
+    render shows (uppercase here, as the library prints it)."""
+    nike = next(a for a in ads if a["id"] == "1785179045778580")
+    assert nike["link_caption"] == "AD.DOUBLECLICK.NET"
+    # The caption is not duplicated into the title any more than before.
+    assert nike["link_title"] == (
+        "Calzado de entrenamiento para hombre Nike MC Trainer 2 - Azul"
+    )
+
+    google = next(
+        a for a in ads
+        if a["link_url"].startswith("http://play.google.com/") and a["cta_text"]
+    )
+    assert google["link_caption"] == "PLAY.GOOGLE.COM"
+
+
+def test_link_caption_empty_when_render_has_no_caption(ads):
+    # Single-line CTA blocks carry no display-domain line.
+    ad = next(a for a in ads if a["id"] == "2016127759183309")
+    assert ad["link_url"].startswith("https://www.jdsports.com/")
+    assert ad["link_caption"] == ""
+    # A card with no CTA at all has neither.
+    supersports = next(a for a in ads if a["id"] == "950739567707496")
+    assert supersports["link_caption"] == ""
+
+
+def test_cta_type_maps_treg_vocabulary(ads):
+    nike = next(a for a in ads if a["id"] == "1785179045778580")
+    assert nike["cta_type"] == "SHOP_NOW"
+    install = next(a for a in ads if a["cta_text"] == "Install now")
+    assert install["cta_type"] == "INSTALL_MOBILE_APP"
+    learn = next(a for a in ads if a["cta_text"] == "Learn more")
+    assert learn["cta_type"] == "LEARN_MORE"
+    download = next(a for a in ads if a["cta_text"] == "Download")
+    assert download["cta_type"] == "DOWNLOAD"
+    assert next(a for a in ads if a["cta_text"] == "Visit Instagram profile")[
+        "cta_type"
+    ] == "VISIT_INSTAGRAM_PROFILE"
+    assert next(a for a in ads if not a["cta_text"])["cta_type"] == ""
+
+
+@pytest.mark.parametrize(
+    "text,expected",
+    [
+        ("Order Now", "ORDER_NOW"),
+        ("Order now", "ORDER_NOW"),
+        ("Shop now", "SHOP_NOW"),
+        ("Sign Up", "SIGN_UP"),
+        ("Get Offer", "GET_OFFER"),
+        ("Use app", "USE_MOBILE_APP"),
+        ("See details", "SEE_DETAILS"),
+        ("Book Now", "BOOK_NOW"),
+        ("Buy Now!", "BUY_NOW"),
+        ("   ", ""),
+        ("", ""),
+    ],
+)
+def test_cta_type_normalisation(text, expected):
+    assert sources.cta_type(text) == expected
+
+
+def test_display_format_uses_treg_vocabulary(ads):
+    nike = next(a for a in ads if a["id"] == "1785179045778580")
+    assert nike["display_format"] == "image"
+    video = next(a for a in ads if a["id"] == "161966936869658")
+    assert video["display_format"] == "video"
+    supersports = next(a for a in ads if a["id"] == "950739567707496")
+    assert supersports["display_format"] == "dco"
+
+
+def test_display_format_empty_when_no_media_signal():
+    assert sources._display_format([], False) == ""
+    assert sources._display_format([], True) == "video"
+    assert sources._display_format(["https://x/a.jpg"], False) == "image"
+    assert sources._display_format(
+        ["https://x/a.jpg", "https://x/b.jpg"], False
+    ) == "dco"
+
+
+def test_cards_split_one_per_rendered_image(ads):
+    nike = next(a for a in ads if a["id"] == "1785179045778580")
+    assert len(nike["cards"]) == 1
+    card = nike["cards"][0]
+    assert card["image"] == nike["images"][0]
+    assert card["body"] == nike["creative_text"]
+    assert card["cta"] == "Shop Now"
+    assert card["link_url"] == nike["link_url"]
+    assert card["title"] == nike["link_title"]
+    assert card["video"] is None
+
+    supersports = next(a for a in ads if a["id"] == "950739567707496")
+    assert len(supersports["cards"]) == len(supersports["images"]) == 16
+    assert [c["image"] for c in supersports["cards"]] == supersports["images"]
+    # A multi-image card gallery has no per-card CTA in this render.
+    assert all(c["cta"] == "" and c["link_url"] == "" for c in supersports["cards"])
+
+
+def test_cards_single_entry_for_an_ad_with_no_media():
+    cards = sources._cards(
+        {"creative_text": "copy", "images": [], "cta_text": "", "link_url": "",
+         "link_title": ""}
+    )
+    assert len(cards) == 1
+    assert cards[0]["image"] is None
+    assert cards[0]["body"] == "copy"
+
+
+def test_json_payload_derives_p2_fields_and_accepts_them():
+    """Old JSON payloads (no P2 keys) get derived values instead of failing;
+    an explicit payload value wins."""
+    ad = sources._normalise_ad(
+        {
+            "id": "9",
+            "page_name": "P",
+            "status": "active",
+            "creative_text": "copy",
+            "cta_text": "Shop Now",
+            "images": ["https://x.example/a.jpg", "https://x.example/b.jpg"],
+            "has_video": False,
+        }
+    )
+    assert ad["cta_type"] == "SHOP_NOW"
+    assert ad["display_format"] == "dco"
+    assert len(ad["cards"]) == 2
+
+    explicit = sources._normalise_ad(
+        {
+            "id": "10",
+            "cta_text": "Order Now",
+            "cta_type": "ORDER_NOW",
+            "display_format": "carousel",
+            "images": ["https://x.example/a.jpg"],
+            "cards": [
+                {
+                    "body": "b",
+                    "cta": "Order Now",
+                    "image": "https://x.example/a.jpg",
+                    "link_url": "https://x.example/",
+                    "title": "t",
+                    "video": None,
+                }
+            ],
+        }
+    )
+    assert explicit is not None
+    assert explicit["cta_type"] == "ORDER_NOW"
+    # ``carousel`` is never claimed: the render cannot tell it from ``dco``, so
+    # an untrusted payload asserting it is dropped rather than passed through.
+    assert explicit["display_format"] == ""
+    assert explicit["cards"][0]["title"] == "t"
+
+
+def test_json_payload_rejects_unverifiable_display_format_claims():
+    """Payload display_format is allowlisted to what the render can prove.
+
+    ``carousel``/``multi_images`` are indistinguishable from ``dco`` here, and
+    an unknown token is equally unverifiable, so each yields ``""`` even when
+    the payload's own images would derive a format. Supported values pass
+    through unchanged.
+    """
+    for claim in ("carousel", "multi_images", "Carousel", "html5", "dco-ish"):
+        ad = sources._normalise_ad(
+            {
+                "id": "12",
+                "display_format": claim,
+                "images": ["https://x.example/a.jpg", "https://x.example/b.jpg"],
+                "has_video": False,
+            }
+        )
+        assert ad is not None
+        assert ad["display_format"] == "", claim
+
+    for claim in ("image", "video", "dco"):
+        ad = sources._normalise_ad(
+            {
+                "id": "13",
+                "display_format": claim,
+                "images": ["https://x.example/a.jpg"],
+                "has_video": False,
+            }
+        )
+        assert ad is not None
+        assert ad["display_format"] == claim
+
+
+def test_json_payload_rejects_javascript_urls_inside_cards():
+    ad = sources._normalise_ad(
+        {
+            "id": "11",
+            "images": ["https://x.example/a.jpg"],
+            "cards": [
+                {
+                    "body": "b",
+                    "cta": "c",
+                    "image": "javascript:alert(1)",
+                    "link_url": "javascript:alert(1)",
+                    "title": "t",
+                    "video": "https://x.example/v.mp4",
+                }
+            ],
+        }
+    )
+    card = ad["cards"][0]
+    assert card["image"] is None
+    assert card["link_url"] == ""
+    assert card["video"] is None

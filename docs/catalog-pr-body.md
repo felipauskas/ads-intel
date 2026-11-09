@@ -29,7 +29,8 @@ what stopped, what copy changed" diff without a paid ad-intel subscription.
   GET per fetch to `https://www.facebook.com/ads/library/...`, performed by Hermes'
   built-in extractor, not by a bundled HTTP client. Normally one request per query;
   when a render fails to parse, the query is retried with a cache-busting parameter,
-  for at most 4 attempts in total (a transport failure is not retried).
+  for at most 6 attempts in total within a 60-second wall-clock cap (a transport
+  failure is retried once).
 - **`plugin_data_dir("ads-intel")`** — the only filesystem path. No paths outside it
   are read or written.
 - Standard library only: `python_dependencies: []`, `capabilities: []`.
@@ -39,8 +40,9 @@ what stopped, what copy changed" diff without a paid ad-intel subscription.
 **Network host**
 
 `www.facebook.com` (Meta Ad Library), one GET per fetch attempt, only while a tool
-runs. Normally that is a single request per query; up to 4 attempts are made only
-when a render fails to parse, each retry carrying a cache-busting query parameter.
+runs. Normally that is a single request per query; up to 6 attempts are made only
+when a render fails to parse, each retry carrying a cache-busting query parameter,
+and the whole retry loop stops at a 60-second wall-clock cap.
 No other host is contacted; nothing is fetched while idle; no telemetry, no
 analytics, no third-party API.
 
@@ -67,7 +69,8 @@ is required, read or stored. There is no account to create.
 
 The plugin reads Meta's *public* Ad Library — no login, no cookies, no logged-in
 scraping, no pagination, one sequential request per query in the normal case (a
-parse failure may add up to 3 cache-busted retries, 4 attempts maximum).
+parse failure may add up to 5 cache-busted retries, 6 attempts maximum, under a
+60-second wall-clock cap).
 **Meta's terms do not authorise automated collection of the Ad Library, and this
 plugin does not claim such authorisation.** It is a low-rate read-only client for
 personal, small-scale research; the user is responsible for their own compliance.
@@ -168,9 +171,10 @@ records what the same three tools now return without adding a surface.
   public logged-out render and are not returned, estimated or sourced elsewhere.
   `has_video` is only the render's video-playback signal.
 - **Invariants unchanged:** no key, account, cookie, third-party service or extra
-  host; one read-only GET per query in the normal case (up to 4 attempts only when
-  a render fails to parse, each retry cache-busted); stdlib only;
-  `plugin_data_dir("ads-intel")` is still the only filesystem path. Suite: **276
+  host; one read-only GET per query in the normal case (up to 6 attempts only when
+  a render fails to parse, each retry cache-busted, inside a 60-second wall-clock
+  cap); stdlib only;
+  `plugin_data_dir("ads-intel")` is still the only filesystem path. Suite: **443
   passed** (`.venv/bin/python -m pytest tests -q`). `hermes plugins validate .`
   passes with the expected `invisible_unicode` caution from committed eval data and
   the informational isolation note, both quoted above.

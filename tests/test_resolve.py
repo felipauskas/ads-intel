@@ -402,19 +402,31 @@ def test_below_threshold_returns_name_not_matched():
 
 
 def test_every_strippable_country_token_names_a_market():
-    """A token peeled from a page name must be explainable as a market.
+    """A qualifier peeled from a page name must be explainable as a market.
 
     ``_COUNTRY_TOKENS`` drives stripping (which decides what counts as a
-    country qualifier); ``_MARKET_BY_TOKEN`` / ``_REGIONAL_MARKET_TOKENS``
-    drive the market veto. A token in the first set with no entry in either
-    mapping would strip from the name yet name no market, so the veto would
-    silently stop seeing a contradiction. The two tables are hand-written,
-    not derived, so this guard is what keeps them in step.
+    country qualifier); ``_MARKET_BY_PHRASE`` / ``_REGIONAL_MARKET_TOKENS``
+    drive the market veto. A peelable key with no mapping would strip from the
+    name yet name no market, so the veto would silently stop seeing a
+    contradiction. This is checked *behaviourally* — peel the token off a page
+    name and require a non-empty market set — so it also covers the multi-word
+    phrases ("Saudi Arabia", "United Arab Emirates") the peeler now matches as
+    units, not just the single words in ``_COUNTRY_TOKENS``.
     """
-    unmapped = set(resolve._COUNTRY_TOKENS) - (
-        set(resolve._MARKET_BY_TOKEN) | set(resolve._REGIONAL_MARKET_TOKENS)
+    keys = set(resolve._MARKET_BY_PHRASE) | set(resolve._REGIONAL_MARKET_TOKENS)
+    # Two-letter ISO codes that double as English words only peel in all-caps
+    # form, so the probe must print them the way a page does (``KFC IN``).
+    ambiguous = resolve._AMBIGUOUS_TWO_LETTER_CODES
+    unmapped = sorted(
+        key
+        for key in keys
+        if not resolve._trailing_markets(
+            f"Burger King {key.upper() if key in ambiguous else key}"
+        )
     )
-    assert unmapped == set(), f"country tokens with no market mapping: {unmapped}"
+    assert unmapped == [], f"qualifiers with no market mapping: {unmapped}"
+    # The bare-word set is a subset of the keys above and must stay one.
+    assert set(resolve._COUNTRY_TOKENS) <= keys
 
 
 def test_ambiguous_candidate_list_is_capped():
@@ -425,11 +437,542 @@ def test_ambiguous_candidate_list_is_capped():
     Country-qualified variants all score 0.80 and rank alike when no market is
     requested, which is exactly the wide-tie case.
     """
-    tokens = sorted(resolve._COUNTRY_TOKENS)[: resolve.MAX_CANDIDATES + 5]
-    names = [f"Burger King {token}" for token in tokens]
+    tokens = sorted(resolve._COUNTRY_TOKENS)
+    ambiguous = resolve._AMBIGUOUS_TWO_LETTER_CODES
+    # Print ambiguous codes the way a page does (``KFC IN``): lowercase prose
+    # is deliberately not peeled, so it would not be a 0.80 candidate.
+    names = [
+        f"Burger King {token.upper() if token in ambiguous else token}"
+        for token in tokens
+    ][: resolve.MAX_CANDIDATES + 5]
     assert len(names) > resolve.MAX_CANDIDATES
     result = resolve.resolve_advertiser("Burger King", names)
     assert result["error"] == "name_not_matched"
     assert result["ambiguous"] is True
     assert len(result["candidates"]) == resolve.MAX_CANDIDATES
     assert all(c["score"] == 0.80 for c in result["candidates"])
+
+
+# ---------------------------------------------------------------------------
+# F5: full ISO-3166 market table and multi-word qualifier peeling.
+# ---------------------------------------------------------------------------
+
+#: The 25 live-matrix pairs recorded at commit 233b266 (5 brands x AE/SA/EG/
+#: US/GB), with the resolution each produced *before* the ISO table was added.
+#: This is the regression pin for the task: widening the country table must
+#: not change which pairs resolve. Page names come from ``search`` then
+#: ``advertiser_search``, first occurrence winning, exactly as the replay
+#: below reads them.
+#:
+#: One entry moved by design, not by accident: ``kfc-eg`` still resolves at
+#: 0.80, but the winner is now ``KFC Masr`` (the Egyptian page) instead of the
+#: bare ``KFC`` page, because ``masr`` is a requested alias and therefore
+#: ranks as a market match. Same PASS, more specific page.
+MATRIX_25_GOLDEN = {
+    "burger-king-ae": ("Burger King Arabia", 0.80),
+    "burger-king-eg": "name_not_matched",
+    "burger-king-gb": "name_not_matched",
+    "burger-king-sa": ("Burger King Arabia", 0.80),
+    "burger-king-us": "name_not_matched",
+    "dominos-pizza-ae": ("Domino's Pizza", 0.80),
+    "dominos-pizza-eg": ("Domino's Pizza", 0.80),
+    "dominos-pizza-gb": ("Domino's Pizza", 0.80),
+    "dominos-pizza-sa": ("Domino's Pizza", 0.80),
+    "dominos-pizza-us": ("Domino's Pizza", 0.80),
+    "kfc-ae": ("KFC", 0.80),
+    "kfc-eg": ("KFC Masr", 0.80),
+    "kfc-gb": ("KFC", 0.80),
+    "kfc-sa": ("KFC", 0.80),
+    "kfc-us": ("KFC", 0.80),
+    "mcdonalds-ae": ("McDonald's", 0.80),
+    "mcdonalds-eg": "name_not_matched",
+    "mcdonalds-gb": ("McDonald's", 0.80),
+    "mcdonalds-sa": ("McDonald's", 0.80),
+    "mcdonalds-us": ("McDonald's", 0.80),
+    "pizza-hut-ae": ("Pizza Hut", 0.80),
+    "pizza-hut-eg": ("Pizza Hut", 0.80),
+    "pizza-hut-gb": ("Pizza Hut", 0.80),
+    "pizza-hut-sa": ("Pizza Hut KSA", 0.80),
+    "pizza-hut-us": ("Pizza Hut", 0.80),
+}
+
+
+def _matrix_pairs():
+    """(folder, brand, country, page_names) for every recorded 25-pair folder."""
+    if not LIVE_MATRIX.is_dir():
+        pytest.skip(f"live-matrix missing: {LIVE_MATRIX}")
+    pairs = []
+    for folder in sorted(MATRIX_25_GOLDEN):
+        path = LIVE_MATRIX / folder / "ads.json"
+        if not path.is_file():
+            pytest.skip(f"live-matrix recording missing: {path}")
+        data = json.loads(path.read_text())
+        names = []
+        for field in ("search", "advertiser_search"):
+            for ad in data.get(field) or []:
+                page = ad.get("page_name") if isinstance(ad, dict) else None
+                if page and page not in names:
+                    names.append(page)
+        pairs.append((folder, data["brand"], data["country"], names))
+    return pairs
+
+
+def test_matrix_25_replay_is_unchanged():
+    """Replay every recorded pair; the 25-pair verdicts must not drift."""
+    pairs = _matrix_pairs()
+    assert len(pairs) == 25
+    assert set(MATRIX_25_GOLDEN) == {folder for folder, *_ in pairs}
+
+    actual = {}
+    for folder, brand, country, names in pairs:
+        result = resolve.resolve_advertiser(brand, names, market=country)
+        if "error" in result:
+            actual[folder] = "name_not_matched"
+        else:
+            actual[folder] = (result["page_name"], result["score"])
+
+    assert actual == MATRIX_25_GOLDEN
+
+
+def test_matrix_25_never_resolves_a_conflicting_market():
+    """Every resolved page is eligible for the market it was searched in."""
+    for folder, brand, country, names in _matrix_pairs():
+        result = resolve.resolve_advertiser(brand, names, market=country)
+        if "error" in result:
+            continue
+        markets = resolve._trailing_markets(result["page_name"])
+        assert not markets or country in markets, f"{folder}: {result}"
+
+
+def test_iso_table_covers_all_249_countries():
+    """Every officially assigned ISO-3166-1 country maps to its alpha-2 code."""
+    table = resolve._ISO_COUNTRY_NAMES
+    assert len(table) == 249
+    codes = list(table.values())
+    assert len(codes) == len(set(codes))
+    assert all(isinstance(code, str) and len(code) == 2 for code in codes)
+    # Spot checks across the range, not just the markets the matrix covers.
+    assert table["france"] == "FR"
+    assert table["germany"] == "DE"
+    assert table["philippines"] == "PH"
+    assert table["mexico"] == "MX"
+    assert table["japan"] == "JP"
+    assert table["zimbabwe"] == "ZW"
+
+
+@pytest.mark.parametrize(
+    "name, market",
+    [
+        ("France", "FR"),
+        ("Germany", "DE"),
+        ("Philippines", "PH"),
+        ("Mexico", "MX"),
+        ("Japan", "JP"),
+        ("Nigeria", "NG"),
+        ("Colombia", "CO"),
+        ("Poland", "PL"),
+        ("Viet Nam", "VN"),
+        ("Cote d'Ivoire", "CI"),
+    ],
+)
+def test_iso_country_name_peels_and_resolves(name, market):
+    """Any ISO country name may qualify a page, end to end."""
+    page = f"KFC {name}"
+    assert resolve.score_candidate("KFC", page) >= 0.80
+    assert resolve.resolve_advertiser("KFC", [page], market=market) == {
+        "page_name": page,
+        "score": 0.80,
+    }
+
+
+@pytest.mark.parametrize(
+    "name, market",
+    [
+        ("Masr", "EG"),          # Arabic endonym for Egypt
+        ("Deutschland", "DE"),   # German
+        ("Espana", "ES"),        # Spanish, unaccented
+        ("Italia", "IT"),        # Italian
+        ("Mexico", "MX"),        # Spanish, unaccented
+        ("Brasil", "BR"),        # Portuguese
+        ("Turkiye", "TR"),       # Turkish endonym
+        ("Nederland", "NL"),     # Dutch
+        ("Pilipinas", "PH"),     # Filipino
+    ],
+)
+def test_endonym_aliases_peel_and_resolve(name, market):
+    page = f"KFC {name}"
+    assert resolve.score_candidate("KFC", page) >= 0.80
+    result = resolve.resolve_advertiser("KFC", [page], market=market)
+    assert result == {"page_name": page, "score": 0.80}
+
+
+@pytest.mark.parametrize(
+    "name, market",
+    [
+        ("Saudi Arabia", "SA"),
+        ("United Arab Emirates", "AE"),
+        ("United Kingdom", "GB"),
+        ("South Africa", "ZA"),
+        ("New Zealand", "NZ"),
+        ("South Korea", "KR"),
+        ("Sri Lanka", "LK"),
+        ("Costa Rica", "CR"),
+        ("El Salvador", "SV"),
+        ("Trinidad and Tobago", "TT"),
+        ("Papua New Guinea", "PG"),
+        ("United States", "US"),
+    ],
+)
+def test_multiword_country_names_peel_as_whole_phrases(name, market):
+    """Multi-word names peel completely: no leftover words in the brand core.
+
+    Peeling only the last token would leave ``United Arab`` glued to the brand
+    and drop the score to the 0.60 substring rung.
+    """
+    page = f"Burger King {name}"
+    core, stripped = resolve._strip_trailing_countries(page)
+    assert (core, stripped) == ("burger king", True)
+    assert resolve._trailing_markets(page) == {market}
+    assert resolve.score_candidate("Burger King", page) >= 0.80
+    assert resolve.resolve_advertiser("Burger King", [page], market=market) == {
+        "page_name": page,
+        "score": 0.80,
+    }
+
+
+def test_f5_markets_that_used_to_score_zero_sixty_now_resolve():
+    """KFC France / McDonald's Deutschland / KFC Philippines / KFC Mexico.
+
+    All four scored 0.60 (substring) before the ISO table existed, so they
+    were rejected at the 0.80 threshold as ``name_not_matched``.
+    """
+    cases = [
+        ("KFC", "KFC France", "FR"),
+        ("McDonald's", "McDonald's Deutschland", "DE"),
+        ("KFC", "KFC Philippines", "PH"),
+        ("KFC", "KFC Mexico", "MX"),
+    ]
+    for brand, page, market in cases:
+        result = resolve.resolve_advertiser(brand, [page], market=market)
+        assert "error" not in result, (brand, page, result)
+        assert result["page_name"] == page
+        assert result["score"] >= 0.80
+
+
+def test_wrong_market_page_is_still_vetoed_after_widening():
+    """A French page cannot satisfy a German query, however well it scores."""
+    result = resolve.resolve_advertiser("KFC", ["KFC France"], market="DE")
+    assert result["error"] == "name_not_matched"
+    assert result["candidates"] == [{"page_name": "KFC France", "score": 0.80}]
+
+    result = resolve.resolve_advertiser(
+        "McDonald's", ["McDonald's Deutschland"], market="FR"
+    )
+    assert result["error"] == "name_not_matched"
+
+
+def test_bare_page_still_resolves_in_any_market_after_widening():
+    for market in ("FR", "DE", "PH", "MX", "JP", "NG"):
+        assert resolve.resolve_advertiser("KFC", ["KFC"], market=market) == {
+            "page_name": "KFC",
+            "score": 0.80,
+        }
+
+
+# ---------------------------------------------------------------------------
+# ISO spec review: a qualifier inside the brand name is not a market claim.
+# ---------------------------------------------------------------------------
+
+#: Brands whose *name* ends in a country word. The trailing phrase is part of
+#: the brand, so a US-scoped query must not read it as a non-US page.
+BRAND_QUALIFIER_NAMES = ["Little Italy", "Air New Zealand", "Bank of Georgia"]
+
+
+@pytest.mark.parametrize("brand", BRAND_QUALIFIER_NAMES)
+def test_brand_ending_in_country_word_is_not_vetoed_for_other_market(brand):
+    """``Little Italy`` for US: the ``Italy`` in the name is brand, not market.
+
+    Before the fix the page peeled ``italy`` -> IT and vetoed the brand's own
+    page for a US query (``name_not_matched``). The target carries the same
+    qualifier, so the page is an exact brand page and must resolve.
+    """
+    assert resolve._trailing_markets(brand)  # the qualifier really is peeled
+    assert resolve.resolve_advertiser(brand, [brand], market="US") == {
+        "page_name": brand,
+        "score": 0.80,
+    }
+
+
+@pytest.mark.parametrize(
+    "brand, market",
+    [
+        ("Little Italy", "IT"),
+        ("Air New Zealand", "NZ"),
+        ("Bank of Georgia", "GE"),
+    ],
+)
+def test_brand_ending_in_country_word_resolves_in_that_market(brand, market):
+    """For ``Air New Zealand`` in NZ the page *is* the local page."""
+    assert resolve.resolve_advertiser(brand, [brand], market=market) == {
+        "page_name": brand,
+        "score": 0.80,
+    }
+
+
+def test_foreign_qualifier_on_brand_page_still_vetoed():
+    """Control: an *extra* qualifier the target does not carry is a real claim.
+
+    ``Air New Zealand`` carries ``New Zealand``; a page that adds ``Australia``
+    names a market the brand does not, so it stays a truthful FAIL for US.
+    """
+    page = "Air New Zealand Australia"
+    assert resolve._trailing_markets(page) == {"NZ", "AU"}
+    result = resolve.resolve_advertiser("Air New Zealand", [page], market="US")
+    assert result["error"] == "name_not_matched"
+
+
+def test_page_qualifier_outside_target_still_vetoed():
+    """Control: ``Burger King Malaysia`` cannot satisfy an EG query.
+
+    ``Burger King`` carries no qualifier, so the page's ``Malaysia`` is a
+    market claim and the veto is unchanged by the target-aware fix.
+    """
+    result = resolve.resolve_advertiser("Burger King", ["Burger King Malaysia"], market="EG")
+    assert result["error"] == "name_not_matched"
+    assert result["candidates"] == [{"page_name": "Burger King Malaysia", "score": 0.80}]
+
+
+# ---------------------------------------------------------------------------
+# ISO re-review Gap 1: a peeled *target* core must not collapse to a generic
+# word and match a different brand.
+# ---------------------------------------------------------------------------
+
+
+@pytest.mark.parametrize(
+    "target, page, market",
+    [
+        ("Air France", "Air Canada", "CA"),
+        ("Air France", "Air India", "IN"),
+        ("Air New Zealand", "Air China", "CN"),
+    ],
+)
+def test_swapping_the_targets_country_word_is_not_a_match(target, page, market):
+    """Peeling the *target* collapsed both cores to ``air`` -> 0.80 false PASS.
+
+    ``Air France`` has core ``air`` once ``france`` is peeled, and so does
+    ``Air Canada``; core equality alone therefore resolved a different
+    airline. All three scored 0.0 on HEAD (the unguarded 0.80 was an
+    intermediate state of this fix) and must stay truthful misses.
+    """
+    assert resolve.score_candidate(target, page) < 0.80
+    result = resolve.resolve_advertiser(target, [page], market=market)
+    assert result["error"] == "name_not_matched"
+    assert "page_name" not in result
+
+
+@pytest.mark.parametrize(
+    "target, page, market",
+    [
+        ("Air France", "Air France Canada", "CA"),
+        ("Air France", "Air France Egypt", "EG"),
+        ("Air New Zealand", "Air New Zealand Australia", "AU"),
+    ],
+)
+def test_brand_qualifier_may_be_extended_by_an_added_market(target, page, market):
+    """The rule is "add, never replace": keeping the brand's country word is fine.
+
+    These pages exist in the wild (an airline's local pages). They keep the
+    target's own qualifier, so the core rungs stay available and the page
+    resolves for the market it adds. ``Air New Zealand Australia`` is still a
+    truthful FAIL for US — that is the market veto's job, not the score's.
+    """
+    assert resolve.score_candidate(target, page) == 0.80
+    assert resolve.resolve_advertiser(target, [page], market=market) == {
+        "page_name": page,
+        "score": 0.80,
+    }
+    assert resolve.resolve_advertiser(target, [page], market="US")["error"] == (
+        "name_not_matched"
+    )
+
+
+def test_qualifier_preservation_is_the_guard():
+    """Direct check of the predicate that gates the core rungs."""
+    assert resolve._qualifiers_preserved("Air France", "Air France Canada") is True
+    assert resolve._qualifiers_preserved("Air France", "Air Canada") is False
+    assert resolve._qualifiers_preserved("Air New Zealand", "Air China") is False
+    # A target with no country word is unconstrained: the page may add one.
+    assert resolve._qualifiers_preserved("Burger King", "Burger King Malaysia") is True
+
+
+# ---------------------------------------------------------------------------
+# ISO re-review Gap 1 (regressed from HEAD): a page with *no* trailing market
+# qualifier is the global page and satisfies every target qualifier.
+# ---------------------------------------------------------------------------
+
+
+@pytest.mark.parametrize(
+    "target, page, market",
+    [
+        ("KFC Saudi Arabia", "KFC", "SA"),
+        ("KFC Egypt", "KFC", "EG"),
+        ("Pizza Hut Saudi Arabia", "Pizza Hut", "SA"),
+        ("Air France Canada", "Air France", "CA"),
+    ],
+)
+def test_bare_page_satisfies_a_market_qualified_target(target, page, market):
+    """The user wrote the market into the advertiser string; the brand page is right.
+
+    A page that drops the qualifier is not a mismatch: ``KFC`` is KFC's global
+    page and the correct resolution for ``KFC Saudi Arabia``. The subset check
+    on peeled *phrases* read the dropped phrase as a contradiction and scored
+    0.0 (HEAD scored 0.80).
+    """
+    assert resolve._trailing_markets(page) <= resolve._trailing_markets(target)
+    assert resolve._qualifiers_preserved(target, page) is True
+    assert resolve.score_candidate(target, page) == 0.80
+    assert resolve.resolve_advertiser(target, [page], market=market) == {
+        "page_name": page,
+        "score": 0.80,
+    }
+
+
+# ---------------------------------------------------------------------------
+# ISO re-review Gap 2: compare market *codes*, not phrase strings, so the same
+# market spelled differently still preserves the qualifier.
+# ---------------------------------------------------------------------------
+
+
+@pytest.mark.parametrize(
+    "target, page, markets",
+    [
+        ("Pizza Hut Saudi Arabia", "Pizza Hut KSA", ("SA", "SA")),
+        ("KFC UAE", "KFC United Arab Emirates", ("AE", "AE")),
+        ("McDonald's United States", "McDonald's USA", ("US", "US")),
+        ("KFC Egypt", "KFC Masr", ("EG", "EG")),
+    ],
+)
+def test_same_market_spelled_differently_is_preserved(target, page, markets):
+    """One market spelled two ways (``KSA``/``Saudi Arabia``) is preserved.
+
+    ``UAE``/``United Arab Emirates``, ``USA``/``United States`` and
+    ``Masr``/``Egypt`` are the other three shapes. The old check compared
+    peeled *phrase strings*, so every one of these pairs scored 0.0; the
+    predicate now compares market codes.
+    """
+    target_codes, page_codes = markets
+    assert resolve._trailing_markets(target) == {target_codes}
+    assert resolve._trailing_markets(page) == {page_codes}
+    assert resolve._qualifiers_preserved(target, page) is True
+    assert resolve.score_candidate(target, page) == 0.80
+    assert resolve.resolve_advertiser(target, [page], market=page_codes) == {
+        "page_name": page,
+        "score": 0.80,
+    }
+
+
+@pytest.mark.parametrize(
+    "target, page",
+    [
+        ("KFC Saudi Arabia", "KFC Egypt"),
+        ("Pizza Hut Saudi Arabia", "Pizza Hut UAE"),
+        ("Air France", "Air Canada"),
+    ],
+)
+def test_different_market_is_still_not_preserved(target, page):
+    """A page that names another market still rejects the qualifier."""
+    assert not (resolve._trailing_markets(target) & resolve._trailing_markets(page))
+    assert resolve._qualifiers_preserved(target, page) is False
+    assert resolve.score_candidate(target, page) < 0.80
+
+
+@pytest.mark.parametrize(
+    "target, page, expected",
+    [
+        ("Little Italy", "Little Italy", 0.80),
+        ("Air New Zealand", "Air New Zealand", 0.80),
+        ("Burger King", "Burger King Malaysia", 0.80),
+        ("KFC", "KFC Egypt", 0.80),
+    ],
+)
+def test_legitimate_country_cases_keep_their_score(target, page, expected):
+    """The fix must not cost the recorded PASS shapes anything."""
+    assert resolve.score_candidate(target, page) == expected
+    assert resolve.resolve_advertiser(target, [page]) == {
+        "page_name": page,
+        "score": expected,
+    }
+
+
+#: Two-letter ISO codes that are also common English words. ``Burger King me``
+#: must not read as Montenegro; only the uppercase code is a market claim.
+AMBIGUOUS_TWO_LETTER_CODES = sorted(resolve._AMBIGUOUS_TWO_LETTER_CODES)
+
+#: Codes the ISO re-review named explicitly as still peeling in lowercase on
+#: HEAD. Every one of them is an assigned ISO alpha-2 code and an ordinary
+#: English word/token, so each must be guarded.
+REQUIRED_AMBIGUOUS_CODES = {
+    "us", "by", "am", "id", "ie", "ai", "la", "ma", "pa", "ne", "ye", "tv", "io",
+}
+
+
+def test_ambiguous_code_table_covers_every_english_word_code():
+    """Gap 2: only 12 codes were guarded; the English-word codes are all here.
+
+    Also asserts each entry really is an assigned ISO code that still peels in
+    capitals, so the guard narrows prose peeling without losing a market.
+    """
+    guarded = resolve._AMBIGUOUS_TWO_LETTER_CODES
+    assert REQUIRED_AMBIGUOUS_CODES <= guarded
+    assigned = {code.lower(): code for code in resolve._ISO_COUNTRY_NAMES.values()}
+    for code in guarded:
+        assert code in assigned, f"{code!r} is not an assigned ISO alpha-2 code"
+        assert resolve._trailing_markets(f"Burger King {code.upper()}") == {
+            assigned[code]
+        }
+
+
+@pytest.mark.parametrize("code", AMBIGUOUS_TWO_LETTER_CODES)
+def test_lowercase_english_word_is_not_peeled_as_country_code(code):
+    assert resolve._trailing_markets(f"Burger King {code}") == frozenset()
+    # Title case is prose too: only an all-caps token is the ISO code.
+    assert resolve._trailing_markets(f"Burger King {code.capitalize()}") == frozenset()
+
+
+def test_us_and_by_are_not_peeled_lowercase():
+    """The two codes the review called out by name."""
+    assert resolve._trailing_markets("Burger King us") == frozenset()
+    assert resolve._trailing_markets("Burger King by") == frozenset()
+    assert resolve._trailing_markets("Burger King US") == {"US"}
+    assert resolve._trailing_markets("Burger King BY") == {"BY"}
+
+
+def test_uppercase_two_letter_code_still_peels():
+    """An uppercase code remains a market claim: ``KFC IN`` is India."""
+    assert resolve._trailing_markets("Burger King IN") == {"IN"}
+    assert resolve._trailing_markets("Burger King IT") == {"IT"}
+    assert resolve.resolve_advertiser("Burger King", ["Burger King IT"], market="IT") == {
+        "page_name": "Burger King IT",
+        "score": 0.80,
+    }
+
+
+def test_uppercase_me_is_montenegro():
+    """Documented semantics: uppercase ``ME`` is the ISO code, never prose.
+
+    The word ``me`` is a pronoun, so any lowercase occurrence is left alone.
+    All-caps is how a page prints a code (``KFC SA``), so ``Burger King ME``
+    is Montenegro: it resolves for ME and is vetoed for another market.
+    """
+    assert resolve._trailing_markets("Burger King ME") == {"ME"}
+    assert resolve.resolve_advertiser("Burger King", ["Burger King ME"], market="ME") == {
+        "page_name": "Burger King ME",
+        "score": 0.80,
+    }
+    assert (
+        resolve.resolve_advertiser("Burger King", ["Burger King ME"], market="US")["error"]
+        == "name_not_matched"
+    )
+    # Lowercase prose is not a market claim at all (fails the score rung, not
+    # the market veto).
+    assert resolve._names_other_market("Burger King me", "ME") is False

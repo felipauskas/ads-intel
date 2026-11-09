@@ -210,3 +210,78 @@ def test_run_pair_preserves_check1_artifacts_when_check2_shares_paths(
     assert row["check1"]["artifacts"]["digest"] != row["check2"]["artifacts"]["digest"]
     assert row["artifacts_ok"] is True
     assert row["status"] == "PASS", row["failures"]
+
+
+def test_attempt_counts_separates_transport_from_dead_renders():
+    """A 200 shell is a failure, not a success: 210 attempts / 0 failed hid 10."""
+    dispatches = [
+        {"failed": True, "transport_failed": True, "dead_render": None},
+        {"failed": True, "transport_failed": False, "dead_render": "shell"},
+        {"failed": True, "transport_failed": False, "dead_render": "shell"},
+        {"failed": True, "transport_failed": False, "dead_render": "blocked"},
+        {"failed": False, "transport_failed": False, "dead_render": None},
+    ]
+    counts = live_eval.attempt_counts(dispatches)
+
+    assert counts["total"] == 5
+    assert counts["failed"] == 4, "dead renders must count in the headline"
+    assert counts["transport_failed"] == 1
+    assert counts["parse_failed"] == 3
+    assert counts["shell"] == 2
+    assert counts["blocked"] == 1
+    assert counts["markup_changed"] == 0
+
+
+def test_attempt_counts_treats_legacy_failed_as_transport():
+    """Old attempts.json rows carry only ``failed``."""
+    older = live_eval.attempt_counts([{"failed": True}, {"failed": False}])
+    assert older["transport_failed"] == 1
+    assert older["parse_failed"] == 0
+    assert older["failed"] == 1
+
+
+def test_aggregate_reports_dead_renders_as_failures(tmp_path):
+    rows = {
+        "kfc-ae": {
+            "brand": "KFC",
+            "country": "AE",
+            "status": "FAIL",
+            "failures": [],
+            "attempts": {
+                "total": 4,
+                "failed": 3,
+                "transport_failed": 0,
+                "parse_failed": 3,
+                "shell": 3,
+                "blocked": 0,
+                "markup_changed": 0,
+            },
+        },
+        "kfc-us": {
+            "brand": "KFC",
+            "country": "US",
+            "status": "PASS",
+            "failures": [],
+            "attempts": {
+                "total": 2,
+                "failed": 1,
+                "transport_failed": 1,
+                "parse_failed": 0,
+                "shell": 0,
+                "blocked": 0,
+                "markup_changed": 0,
+            },
+        },
+    }
+    for name, row in rows.items():
+        folder = tmp_path / name
+        folder.mkdir()
+        (folder / "result.json").write_text(json.dumps(row), encoding="utf-8")
+
+    live_eval.aggregate(tmp_path)
+    summary = (tmp_path / "summary.md").read_text(encoding="utf-8")
+
+    assert "attempts: 6  failed: 4 (67%)" in summary, summary
+    assert "transport 1, dead render 3 (shell 3, blocked 0, markup_changed 0)" in summary
+    assert "## Dead renders" in summary
+    assert "KFC AE: 3 / 4 attempts (shell 3" in summary

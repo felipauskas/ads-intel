@@ -74,8 +74,20 @@ def _sig(ad: dict, keys: tuple[str, ...] = ()) -> tuple:
 #: Deliberately excludes ``same_creative_count`` and ``multiple_versions``:
 #: both are render-derived engagement/grouping signals that move without the
 #: creative changing. ``link_title`` is included but normalised, because the
-#: Like-Page block appends a live like counter to it.
-_CREATIVE_KEYS = ("creative_text", "link_url", "link_title", "cta_text")
+#: Like-Page block appends a live like counter to it. ``cards`` is excluded:
+#: its image URLs are signed and rotate between renders, so comparing the
+#: gallery would report churn on byte-identical creative — ``link_caption``
+#: (the displayed CTA domain), ``cta_type`` and ``display_format`` are stable
+#: and compared only when the baseline carries them.
+_CREATIVE_KEYS = (
+    "creative_text",
+    "link_url",
+    "link_title",
+    "cta_text",
+    "link_caption",
+    "cta_type",
+    "display_format",
+)
 
 
 def _same_creative(before: dict, after: dict, partial: bool = False) -> bool:

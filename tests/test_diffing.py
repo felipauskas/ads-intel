@@ -231,3 +231,36 @@ def test_partial_status_flip_survives_ended_suppression():
     assert [a["id"] for a in d["ended"]] == ["A1"]
     # A2 is absent from the partial render: not reported at all.
     assert all(a["id"] != "A2" for a in d["ended"])
+
+
+def test_diff_detects_link_caption_change_when_both_sides_have_it():
+    old = {"ads": {"C1": {"id": "C1", "status": "active",
+                          "link_caption": "bk.com"}}}
+    new = {"ads": {"C1": {"id": "C1", "status": "active",
+                          "link_caption": "burgerking.com"}}}
+    assert [a["id"] for a in diff_snapshots(old, new)["changed"]] == ["C1"]
+
+
+def test_diff_ignores_new_fields_absent_from_the_baseline():
+    """An older baseline has no link_caption/cta_type/display_format; upgrading
+    must not report every ad as changed."""
+    old = {"ads": {"C1": {"id": "C1", "status": "active",
+                          "creative_text": "same"}}}
+    new = {"ads": {"C1": {"id": "C1", "status": "active",
+                          "creative_text": "same",
+                          "link_caption": "bk.com",
+                          "cta_type": "ORDER_NOW",
+                          "display_format": "image"}}}
+    assert diff_snapshots(old, new) == {
+        "new": [], "ended": [], "changed": []
+    }
+
+
+def test_diff_does_not_compare_card_galleries():
+    """cards[].image URLs are signed and rotate between renders; comparing them
+    would report churn on byte-identical creative."""
+    old = {"ads": {"C1": {"id": "C1", "status": "active",
+                          "cards": [{"image": "https://x/1.jpg?sig=a"}]}}}
+    new = {"ads": {"C1": {"id": "C1", "status": "active",
+                          "cards": [{"image": "https://x/1.jpg?sig=b"}]}}}
+    assert diff_snapshots(old, new)["changed"] == []

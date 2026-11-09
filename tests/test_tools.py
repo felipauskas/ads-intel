@@ -1056,7 +1056,7 @@ def test_summary_carries_last_seen_and_creative_text():
     assert "last_seen" in tools._SUMMARY_KEYS
     assert "creative_text" in tools._SUMMARY_KEYS
     summary = tools._summary(AD)
-    assert len(summary) == 16
+    assert len(summary) == 20
     assert summary["last_seen"] == AD["last_seen"]
     assert summary["creative_text"] == AD["creative_text"]
 
@@ -1066,18 +1066,18 @@ def test_summary_carries_last_seen_and_creative_text():
     assert defaults["creative_text"] == ""
 
 
-def test_check_bucket_items_are_sixteen_fields(monkeypatch):
+def test_check_bucket_items_are_twenty_fields(monkeypatch):
     tools.ad_watch({"action": "add", "query": "nike"})
     monkeypatch.setattr(tools.sources, "fetch_ads_with_meta", _stub_fetch([AD]))
 
     row = json.loads(tools.ad_check({}))["results"][0]
     item = row["new"][0]
     assert set(item) == set(tools._SUMMARY_KEYS)
-    assert len(item) == 16
+    assert len(item) == 20
     assert all(value is not None for value in item.values())
 
 
-def test_changed_and_ended_buckets_are_sixteen_fields(monkeypatch):
+def test_changed_and_ended_buckets_are_twenty_fields(monkeypatch):
     """Every bucket, not just `new`, carries the full ad-summary contract."""
     tools.ad_watch({"action": "add", "query": "nike"})
     prior = {
@@ -1097,7 +1097,7 @@ def test_changed_and_ended_buckets_are_sixteen_fields(monkeypatch):
     for bucket in ("changed", "ended"):
         item = row[bucket][0]
         assert set(item) == set(tools._SUMMARY_KEYS), bucket
-        assert len(item) == 16, bucket
+        assert len(item) == 20, bucket
         assert item["last_seen"] == AD["last_seen"]
         assert item["creative_text"] != ""
 

@@ -42,10 +42,14 @@ _SUMMARY_KEYS = (
     "link_url",
     "link_title",
     "cta_text",
+    "link_caption",
+    "cta_type",
+    "display_format",
     "images",
     "has_video",
     "same_creative_count",
     "multiple_versions",
+    "cards",
 )
 
 #: Typed defaults for every summarized field. Pre-upgrade snapshots and
@@ -65,10 +69,14 @@ _SUMMARY_DEFAULTS = {
     "link_url": "",
     "link_title": "",
     "cta_text": "",
+    "link_caption": "",
+    "cta_type": "",
+    "display_format": "",
     "images": [],
     "has_video": False,
     "same_creative_count": 0,
     "multiple_versions": False,
+    "cards": [],
 }
 
 _COUNTRY_RE = re.compile(r"^[A-Z]{2}$")
