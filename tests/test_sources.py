@@ -373,7 +373,7 @@ def test_chrome_shell_render_is_parse_error_not_silent_zero():
     # A pre-hydration shell (nav + country list, no cards, no empty-state
     # wording) must never be reported as a confident empty listing, at ANY
     # size. Live Meta renders hit both variants: ~2k and ~5.1k chars.
-    shell = Path("evals/raw/web_extract-KFC-AE.md").read_text()
+    shell = (Path(__file__).parent / "fixtures" / "web_extract-KFC-AE-shell.md").read_text()
     assert "Library ID" not in shell and "**Sponsored**" not in shell
     with pytest.raises(sources.ParseError):
         sources.parse_library_markdown(shell)
@@ -407,7 +407,7 @@ SHELL_BODY = (
 
 def test_parse_error_types_shell_blocked_and_markup():
     """A dead render carries a typed reason, not just a message."""
-    shell = Path("evals/raw/web_extract-KFC-AE.md").read_text()
+    shell = (Path(__file__).parent / "fixtures" / "web_extract-KFC-AE-shell.md").read_text()
     with pytest.raises(sources.ParseError) as info:
         sources.parse_library_markdown(shell)
     assert info.value.reason == sources.DEAD_RENDER_SHELL
@@ -435,7 +435,7 @@ def test_parse_error_types_shell_blocked_and_markup():
 
     # Genuine empty state is a healthy empty listing, not a dead render.
     assert sources.classify_dead_render("No ads match your search.") is None
-    assert sources.classify_dead_render(Path("evals/raw/web_extract-KFC-AE.md").read_text()) == (
+    assert sources.classify_dead_render((Path(__file__).parent / "fixtures" / "web_extract-KFC-AE-shell.md").read_text()) == (
         sources.DEAD_RENDER_SHELL
     )
     assert sources.classify_dead_render(FIXTURE.read_text()) is None
