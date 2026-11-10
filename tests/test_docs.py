@@ -53,12 +53,20 @@ def test_readme_discloses_network_filesystem_and_credentials():
         "README must state the catalog status plainly"
     )
 
-    # The caution verdict blocks a non-interactive install, so the documented
-    # command must carry --force and say why — a warning-only claim is false.
-    assert "hermes plugins install felipauskas/ads-intel --force" in text, (
-        "README install command must work non-interactively"
+    # The shipped tree now scans clean and installs without an override; --force
+    # remains documented only for an older tree that still tracks the evidence.
+    assert "hermes plugins install felipauskas/ads-intel\n" in text, (
+        "README install command must work non-interactively on the shipped tree"
     )
-    assert "Blocked" in text, "README must say the non-interactive install blocks"
+    assert "hermes plugins install felipauskas/ads-intel --force" not in text, (
+        "README must not require --force for the clean shipped tree"
+    )
+    assert "--force" in text, "README must still document --force for tracked evidence"
+    assert "Blocked" in text, "README must say a caution verdict blocks non-interactive installs"
+    assert "clean security scan" in lowered, "README must state the shipped scan is clean"
+    assert "untracked" in lowered and "regenerable" in lowered, (
+        "README must say the eval evidence is untracked and regenerable"
+    )
     assert "warning-free" in lowered, "README must not imply a warning-free install"
 
     _assert_readme_numbers_match_the_code()

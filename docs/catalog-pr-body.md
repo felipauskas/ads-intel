@@ -89,50 +89,50 @@ hermes plugins enable ads-intel
 From a checkout you can run the manifest + tool-schema check without installing:
 `hermes plugins validate .`.
 
-**`--force` is required in non-interactive use.** The plugin carries a `caution`
-security verdict (see below) and the source is not catalog-reviewed: a
-non-interactive install — an agent, CI or a scripted shell — treats that
-combination as **Blocked** and exits 1 rather than asking (`Decision: BLOCKED —
-Blocked (community source + caution verdict, 78 findings). Use --force to
-override.`). In a real terminal the same install blocks only until you answer the
-`[y/N] "install anyway?"` prompt; `--force` answers it up front. The force is
-accepting the scan's caution verdict, not silencing it: install still prints
-`Warning: custom (unreviewed) source — not from the Hermes catalog.` No route
-gives a warning-free install.
+**No `--force` is required for the shipped tree.** The shipped tree validates
+with a clean security scan (see below), so a normal install completes
+non-interactively. Install still prints `Warning: custom (unreviewed) source —
+not from the Hermes catalog.` because the source is not catalog-reviewed; it is
+not a warning-free install, but it is not blocked.
 
-Validation on this tree (`hermes plugins validate .`, Hermes v0.23.0): every check
-passes and the command ends in `Validation passed.` Two non-failing notices are
-expected and should be quoted to reviewers rather than hidden:
+`--force` is needed only for an older tree that still tracks the eval evidence.
+The captured renders (`evals/raw/`, `evals/live-matrix/`,
+`evals/page-mode-verify/`, `evals/treg-xcheck/`) are now untracked via
+`.gitignore`; `hermes plugins install` clones the git tree, so they never reach
+the install scan. A tree from before that change, or any tree that still tracks
+them, carries Arabic ad copy with invisible directional marks and scans as
+`caution`; a non-interactive install then treats community source + caution as
+**Blocked** and exits 1 rather than asking (`Decision: BLOCKED — Blocked
+(community source + caution verdict). Use --force to override.`). In a real
+terminal it blocks only until the `[y/N] "install anyway?"` prompt; `--force`
+answers it up front, accepting the verdict rather than silencing it.
+
+Validation on the shipped tree (`hermes plugins validate .` on a fresh clone,
+verified 2026-11-09, Hermes v0.23.0): every check passes, the security scan is
+`safe`, and the command ends in `Validation passed.` One informational notice
+remains and is quoted below rather than hidden:
 
 ```text
-✓ security scan — caution
-⚠ security scan caution: invisible_unicode (ads.json:104), invisible_unicode (ads.json:1086), invisible_unicode (ads.json:1102), invisible_unicode (ads.json:1150), invisible_unicode (ads.json:1166), invisible_unicode (ads.json:120), invisible_unicode (ads.json:230), invisible_unicode (ads.json:248), invisible_unicode (ads.json:45), invisible_unicode (ads.json:531), invisible_unicode (ads.json:547), invisible_unicode (ads.json:583), invisible_unicode (ads.json:595), invisible_unicode (ads.json:599), invisible_unicode (ads.json:61), invisible_unicode (ads.json:611), invisible_unicode (ads.json:76), invisible_unicode (ads.json:92), invisible_unicode (html.html:56), invisible_unicode (html.html:57), invisible_unicode (html.html:58), invisible_unicode (html.html:62), invisible_unicode (html.html:72), invisible_unicode (rerun-burger-king-us.json:355), invisible_unicode (rerun-burger-king-us.json:373), invisible_unicode (rerun-mcdonalds-eg.json:113), invisible_unicode (rerun-mcdonalds-eg.json:206), invisible_unicode (rerun-mcdonalds-eg.json:222), invisible_unicode (rerun-mcdonalds-eg.json:97)
+✓ security scan — safe
 ◇ Isolation — in-process only: evals/live_eval.py:202 patches tools.store._data_dir (a Hermes module attribute; the host's copy is not the one Hermes runs); scripts/stress_e2e.py:242 patches tools.store._data_dir (a Hermes module attribute; the host's copy is not the one Hermes runs)
 Validation passed.
 ```
 
-All 29 `invisible_unicode` findings are in committed eval evidence — Arabic ad copy
-with invisible directional marks — not in plugin code. `validate` prints basenames
-only: `ads.json` / `html.html` are the `evals/live-matrix/dominos-pizza-us/` pair
-(18 + 5), and `rerun-burger-king-us.json` (2) / `rerun-mcdonalds-eg.json` (4) are
-under `evals/page-mode-verify/`. The install-time scan is broader: it reports 78
-findings for the same tree (36 HIGH `injection` for those same characters, 34
-MEDIUM `obfuscation`, 4 MEDIUM `execution`, 2 MEDIUM `supply_chain`, 1 MEDIUM
-`injection`, 1 LOW `persistence`) across 22 files under `evals/`, `tests/`,
-`scripts/`, `.github/`, `README.md` and `docs/plans/` — and again **none in the
-modules Hermes loads** (`sources.py`, `tools.py`, `store.py`, `report.py`,
-`resolve.py`, `diffing.py`, `schemas.py`, `__init__.py`, `plugin.yaml`), which is
-why the verdict is `caution`, not a block on code.
-The plugin scanner
-has no ignore-file mechanism (only fixed directory exclusions), and excluding
-`evals/` alone would not yield a clean scan: `tests/test_sources.py` reads
-`evals/raw/web_extract-KFC-AE.md`, `tests/test_resolve.py` reads
-`evals/live-matrix/*/ads.json`, `tests/test_live_eval.py` imports
-`evals/live_eval.py`, and `scripts/stress_e2e.py` imports from
-`evals.live_eval`, so those fixtures and imports would have to move first. The
-decision — ship `evals/` and accept the documented caution, or relocate the
-fixtures/imports — is still open; either way the caution is accurate and does not
-block admission.
+Local working checkouts can differ, and this is expected. The evidence dirs are
+regenerable, not shipped: on a checkout that has re-run
+`.venv/bin/python evals/live_eval.py` and `evals/failed_pairs.py`, those
+untracked renders exist on disk, so `hermes plugins validate .` against the
+working directory reports a `caution` verdict with 29 `invisible_unicode`
+findings (Hermes v0.23.0) — 18 in `evals/live-matrix/dominos-pizza-us/ads.json`,
+5 in `evals/live-matrix/dominos-pizza-us/artifacts/html.html`, 2 in
+`evals/page-mode-verify/rerun-burger-king-us.json` and 4 in
+`evals/page-mode-verify/rerun-mcdonalds-eg.json`. All 29 are invisible
+directional marks in Arabic ad copy; **none are in plugin code** or in the
+modules Hermes loads (`sources.py`, `tools.py`, `store.py`, `report.py`,
+`resolve.py`, `diffing.py`, `schemas.py`, `__init__.py`, `plugin.yaml`). Because
+the evidence is untracked, a fresh clone — what a reviewer or catalog install
+actually receives — contains none of it and validates clean.
+
 The isolation note is informational: the offline eval and stress harnesses patch
 `tools.store._data_dir` to use a temp directory.
 
@@ -225,8 +225,9 @@ records what the same three tools now return without adding a surface.
   cap); stdlib only;
   `plugin_data_dir("ads-intel")` is still the only filesystem path. Suite: **470
   passed** (`.venv/bin/python -m pytest tests -q`). `hermes plugins validate .`
-  passes with the expected `invisible_unicode` caution from committed eval data and
-  the informational isolation note, both quoted above.
+  passes; at the time it carried an `invisible_unicode` caution from eval data,
+  which has since been untracked — see the 2026-11-09 addendum on the clean
+  shipped tree.
 
 ## Addendum 2026-11-09 (Page search mode)
 
@@ -260,6 +261,10 @@ records what the same three tools now return without adding a surface.
   `FAILED` record, not rewritten) and §5 (dated rerun pointer),
   `evals/page-mode-verify/`.
 - **Suite: 575 passed** (`.venv/bin/python -m pytest tests -q`), superseding the
-  count in the 2026-11-06 addendum above. `hermes plugins validate .` still passes
-  with the same expected `invisible_unicode` caution (committed eval data) and the
-  informational isolation note.
+  count in the 2026-11-06 addendum above. `hermes plugins validate .` passes on
+  the shipped tree with a **clean** security scan (`✓ security scan — safe`, no
+  findings); only local working checkouts that regenerate the untracked evidence
+  dirs show the `invisible_unicode` caution (29 findings, all in those renders),
+  plus the informational isolation note. The shipped evidence write-ups and code
+  remain tracked; the captured renders are regenerable via `evals/live_eval.py`
+  and `evals/failed_pairs.py` and are not cloned or installed.

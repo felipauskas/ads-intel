@@ -16,30 +16,40 @@ It is **not yet in the Hermes catalog**: the catalog entry is drafted in
 `NousResearch/hermes-agent`, so install it from the repo:
 
 ```bash
-hermes plugins install felipauskas/ads-intel --force
+hermes plugins install felipauskas/ads-intel
 hermes plugins enable ads-intel
 ```
 
-**`--force` is required in non-interactive use.** This plugin carries a
-`caution` security verdict (see below) and it is not a catalog-reviewed source:
-a non-interactive install — an agent, CI or a scripted shell — treats that
-combination as **Blocked** and exits 1 rather than asking. The current block
-reads `Decision: BLOCKED — Blocked (community source + caution verdict, 78
-findings). Use --force to override.` In a real terminal the same install blocks
-only until you answer the `[y/N] "install anyway?"` prompt; `--force` answers it
-up front. The force is accepting the scan's caution verdict, not silencing it:
-install still prints `Warning: custom (unreviewed) source — not from the Hermes
-catalog.` A `file://` checkout install additionally prints `Warning: Using
-insecure/local URL scheme`. Neither route gives a warning-free install.
+The shipped tree validates with a **clean security scan** (see below), so no
+override is needed for a normal install. Install still prints
+`Warning: custom (unreviewed) source — not from the Hermes catalog.` because the
+plugin is not catalog-reviewed; it is not a warning-free install, but it is not
+blocked.
 
-The caution is not a finding in plugin runtime code: it is committed eval
-evidence (Arabic ad copy with invisible directional marks under `evals/`), plus
-lower-severity heuristics on the eval JSON, the tests, `scripts/stress_e2e.py`
-and CI. The install-time scan and `hermes plugins validate .` count differently —
-see the two notes below. To drop the verdict you would have to stop shipping
-`evals/`; it is also imported by the tests and `scripts/stress_e2e.py`, so those
-fixtures and imports would have to move first. There is no warning-free path
-today.
+**`--force` is only needed for an older tree that still tracks the evidence.**
+The captured eval renders are *not shipped*: `evals/raw/`, `evals/live-matrix/`,
+`evals/page-mode-verify/` and `evals/treg-xcheck/` are untracked via `.gitignore`
+and exist only on a working checkout that regenerated them. `hermes plugins
+install` clones the git tree, so untracked evidence never reaches the install
+scan and a current install completes without `--force` (verified 2026-11-09). If
+you install from a checkout made *before* the evidence was untracked — or from
+any tree where those renders are still tracked — the scan sees Arabic ad copy
+with invisible directional marks and the verdict is `caution`. A non-interactive
+install then treats `caution` on a community source as **Blocked** and exits 1
+rather than asking (`Decision: BLOCKED — Blocked (community source + caution
+verdict). Use --force to override.`). In a real terminal it blocks only until you
+answer the `[y/N] "install anyway?"` prompt; `--force` answers it up front and
+accepts the verdict, it does not silence it:
+
+```bash
+hermes plugins install "file://$PWD" --force
+```
+
+Regenerate the evidence with `.venv/bin/python evals/live_eval.py` (live-matrix,
+page-mode and Treg outputs) and `.venv/bin/python evals/failed_pairs.py`. On an
+untracked checkout this affects only `hermes plugins validate .` against the
+working directory, never the install scan; deleting the four dirs (or cloning
+fresh) removes the caution again. Nothing in the plugin runtime code is involved.
 
 Verify the install and the scan:
 
@@ -48,10 +58,29 @@ hermes plugins list            # ads-intel should be listed as enabled
 hermes plugins validate .      # from a checkout; ends in "Validation passed."
 ```
 
-`hermes plugins validate .` ends in `Validation passed.` Every check passes, but it is **not a silent clean scan**:
+`hermes plugins validate .` ends in `Validation passed.` in both the shipped and
+the local-evidence state:
 
-- **Security scan caution — `invisible_unicode`.** 29 findings at the last check (`hermes plugins validate .`, Hermes v0.23.0), all in committed eval evidence, none in plugin code: 18 in `evals/live-matrix/dominos-pizza-us/ads.json` (invisible directional marks in the Arabic ad copy), 5 in `evals/live-matrix/dominos-pizza-us/artifacts/html.html`, 2 in `evals/page-mode-verify/rerun-burger-king-us.json` and 4 in `evals/page-mode-verify/rerun-mcdonalds-eg.json`. `validate` prints basenames only, so its `ads.json` / `html.html` entries are the dominos-pizza-us pair; the `rerun-*.json` entries were not previously listed here. The install-time scan is broader and reports **78 findings** for the same tree (36 HIGH `injection` for those characters, 34 MEDIUM `obfuscation`, 4 MEDIUM `execution`, 2 MEDIUM `supply_chain`, 1 MEDIUM `injection`, 1 LOW `persistence`) across 22 files under `evals/`, `tests/`, `scripts/`, `.github/`, `README.md` and `docs/plans/` — again none in the modules Hermes loads (`sources.py`, `tools.py`, `store.py`, `report.py`, `resolve.py`, `diffing.py`, `schemas.py`, `__init__.py`, `plugin.yaml`). The scanner has no ignore-file mechanism (only fixed dir exclusions such as `.git` and `__pycache__`), and deleting `evals/` alone would not produce a clean scan: `tests/test_sources.py` reads `evals/raw/web_extract-KFC-AE.md`, `tests/test_resolve.py` reads `evals/live-matrix/*/ads.json`, `tests/test_live_eval.py` imports `evals/live_eval.py`, and `scripts/stress_e2e.py` imports from `evals.live_eval`, so those fixtures and imports would have to be relocated first. The decision — ship `evals/` and accept the caution, or relocate them — is still open; until then the caution is expected, the plugin still passes admission, and the install needs `--force` as shown above.
-- **Isolation note (informational).** `evals/live_eval.py` and `scripts/stress_e2e.py` patch `tools.store._data_dir` to run offline against a temp directory. Hermes reports this as "in-process only" and does not treat it as a failure.
+- **Shipped tree — clean.** A fresh clone validates with `✓ security scan — safe`
+  and no caution (verified 2026-11-09, Hermes v0.23.0): **zero findings**. The
+  modules Hermes loads (`sources.py`, `tools.py`, `store.py`, `report.py`,
+  `resolve.py`, `diffing.py`, `schemas.py`, `__init__.py`, `plugin.yaml`) and the
+  tracked tests and scripts scan clean.
+- **Local evidence — caution, 29 findings.** On a checkout where the four
+  evidence dirs above exist, `hermes plugins validate .` prints `✓ security scan —
+  caution` and 29 `invisible_unicode` findings (`Hermes v0.23.0`), all in the
+  regenerable renders, none in plugin code: 18 in
+  `evals/live-matrix/dominos-pizza-us/ads.json`, 5 in
+  `evals/live-matrix/dominos-pizza-us/artifacts/html.html`, 2 in
+  `evals/page-mode-verify/rerun-burger-king-us.json` and 4 in
+  `evals/page-mode-verify/rerun-mcdonalds-eg.json`. `validate` prints basenames
+  only (`ads.json`, `html.html`, `rerun-*.json`). Because the evidence is
+  untracked and regenerable, it is not part of what a reviewer receives from the
+  repo.
+- **Isolation note (informational).** `evals/live_eval.py` and
+  `scripts/stress_e2e.py` patch `tools.store._data_dir` to run offline against a
+  temp directory. Hermes reports this as "in-process only" and does not treat it
+  as a failure.
 
 If `hermes plugins list` does not show it, re-run the install line; if you are installing from a local checkout instead, the `file://` path must point at the directory that contains `plugin.yaml` (`hermes plugins install "file://$PWD" --force`).
 
@@ -97,7 +126,8 @@ Pass `page_id` — a numeric Meta Page ID, digits only — to search one Page's 
 **Resolved, not open:** the page-mode fetch was always exact, and resolution
 now treats the page-mode listing itself as the identity. When every card on the
 listing shares one `page_url` slug, that slug resolves the requested numeric ID
-at score `1.0` (`evals/page-mode-verify/rerun-*.json`; KFC-US: 27 ads on the
+at score `1.0` (`evals/page-mode-verify/rerun-*.json`, untracked evidence
+regenerated by `evals/live_eval.py`; KFC-US: 27 ads on the
 listing, `page_found: true`). Residual limitation, stated honestly: a listing
 whose cards name *more than one* slug still reports `name_not_matched` rather
 than guessing, and a card with no usable `page_url` is kept on the resolved
@@ -204,7 +234,7 @@ Name resolution works on page names (and, with `page_id`, on the numeric Page id
 
 ## Limitations
 
-- **Page-ID resolution works through the listing identity.** A page-mode fetch is exact — the URL pins `view_all_page_id` and the render is that Page's listing — and resolution now uses the listing itself as the identity: when every card shares one `page_url` slug, that slug resolves the requested ID at score `1.0`, even though the cards carry no numeric `page_id` (`evals/page-mode-verify/rerun-*.json`; KFC-US: 27 ads on the listing, `page_found: true`). Honest residual: a listing whose cards name more than one slug still returns `name_not_matched` instead of guessing, and a card with no usable `page_url` is kept under the resolved slug's identity with a possibly empty `page_name`. History in `evals/failed-pairs-crosscheck.md` §4 (`FAILED`) with the dated rerun in §5.
+- **Page-ID resolution works through the listing identity.** A page-mode fetch is exact — the URL pins `view_all_page_id` and the render is that Page's listing — and resolution now uses the listing itself as the identity: when every card shares one `page_url` slug, that slug resolves the requested ID at score `1.0`, even though the cards carry no numeric `page_id` (`evals/page-mode-verify/rerun-*.json`, untracked regenerable evidence; KFC-US: 27 ads on the listing, `page_found: true`). Honest residual: a listing whose cards name more than one slug still returns `name_not_matched` instead of guessing, and a card with no usable `page_url` is kept under the resolved slug's identity with a possibly empty `page_name`. History in `evals/failed-pairs-crosscheck.md` §4 (`FAILED`) with the dated rerun in §5.
 - Meta may change the ad-library page markup; the parser lives in a single file (`sources.py`) and would need updating. When the page cannot be parsed at all, `ad_search` returns `{"error": "parse_failed: <detail>"}` and `ad_check` reports that entry as skipped with `reason: "parse_failed"` — it never writes an empty snapshot, so a markup break cannot masquerade as "everything ended".
 - Large result pages are truncated by the fetcher (`char_limit=120000`). A render that fills the whole budget, or that carries the fetch host's head+tail truncation footer, is treated as partial: `ad_check` merges the fetched ads into the stored snapshot and suppresses endings for ids missing from the clipped page (`partial: true`), because an id absent from a clipped page has not necessarily stopped running. Status flips on ads that *did* render are still reported.
 - A fetch that returns at least `limit` ads is also treated as partial: the tail past the limit was sliced off, so absent ids prove nothing there either. An unfiltered `ad_check` fetches the default `limit` of 20 ads per watch, which means **an unfiltered watch with 20 or more live ads reports `partial: true`; endings are suppressed for ids missing from the clipped page, while status flips that did render are still reported**. That is deliberate — a false "ended" is worse than a missed one — but it is a real ceiling: keep keyword watches narrow enough to stay under 20 results, and read `new`/`changed` (which stay accurate) rather than relying on retirements. A watch with `advertiser` is exempt from that 20-ad slice: it fetches the rendered page with no result-limit slice, resolves the page name against the whole rendered window, and tracks every ad that fetch returned for the resolved page. That is still rendered-window semantics, not a full inventory — the library's own URL filters (`active_status`, `media_type`) narrow what renders, the fetch's 120,000-character budget can clip the page, and Meta's render is itself only the top of the result set. So an `advertiser` watch is complete only when the fetch came back unclipped (`partial: false`, `complete_scope: "rendered_window"`); absence from that window still proves nothing.
